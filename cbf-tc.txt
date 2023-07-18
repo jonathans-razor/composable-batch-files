@@ -1,0 +1,238 @@
+
+Composable Batch Files (CBF) Table of Contents
+
+ .--.      .--.      .--.      .--.      .--.
+::::.\::::::::.\::::::::.\::::::::.\::::::::.\:::::
+      `--'      `--'      `--'      `--'      `--' 
+
+    File  Description
+
+       a  Cd .. and td accelerator.
+      ak  Awk.
+      an  Validate application name.
+     ang  Angular.
+     ans  Ansible.
+      ap  Application-centric way of running an application with an optional filename parameter
+  ascii-
+     art  ASCII art file for disploying more visual 
+      ax  Copy the ax DCV to the clipboard.
+       b  Shutdown windows.
+     b64  Base 64 encoding and decoding.
+      ba  Execute a bash file in Windows command prompt.
+	    bb  Building block code.
+      bi  Execute the Bitbucket DCV for the passed in alias.
+      br  Run Brave while leveraging the e.bat decision algorithm.
+      bu  Back up.
+     buc  Back up a file in the current folder to the code quick backup folder.
+     buq  Quickly back up and restore any registered file
+       c  Clear without modifiying the path.
+      ca  Go to the a folder and clear the screen.
+     cat  Wrapper around type command.
+      cf  Execute the Confluence DCV for the passed in alias.
+   cbf-2  Shows more CBF files.
+  cbf-el  CBF Error Level Codes.
+  cbf-gl  Glossary of terms used in CBF.
+  cbf-sg  CBF Style Guide.
+  cbf-tc  This table of contents of CBF batch files.
+      ce  Create clean slate j1 and j2 files.
+      cf  Surf to Confluence.
+      cl  Clear without modifiying the path.
+     clc  Simple calculator
+    cmpf  Are 2 files the same?
+    coco  Code Compare.
+   cocod  Run Code Compare using 2 DCVs.
+     col  Shell window colors operations
+  concop  Create a conflict copy report
+      cp  Copy files.
+     cpr  Surf to Create Pull Request page.
+      cs  File contents search
+      cu  Curl leveraging the nicknames dictionary.
+       d  Dir.
+      dc  Double-click a filename, back office operation
+     dcv  Given an alias and a DCV, returns the set DCV value.
+      de  Multipurpose delete batch file.
+    defn  Delete a file based on passed in filename alias.
+    depc  Delete the path contents of the passed in alias.
+    depn  Delete folder corresponding to CBF path alias parameter
+    devu  Demo file for Dev Universiy event on Jan-9-2020
+     dif  Are 2 files the same?
+      dn  Dot Net Core
+      dr  Create and delete directories. (swk mcd, folder)
+      dt  Date.
+     drt  Dir, with td parameter.
+      dw  Run NG UI from a dedicated command line window.
+       e  Edit a file based on a file choice algorithm.
+      ea  Use Mutli-Edit to edit the Ansible Playbook of an alias.
+      ed  Choose a file to edit based on a decision algorithm.
+	  edcv  Use Multi-Edit to edit DCV ASCII files.
+     edr  Edit a relative path constucted filename
+     edx  Edit file - back office operation.
+      el  Show or clear errorl level.
+     err  Show error graphic.
+      es  Edit settings file of an alias
+      ex  Run Excel with or without a filename alias parameter
+     exi  Exit.
+       f  Filename sapien. Use any application to open any file
+      fa  Windows file associations
+      fe  Check for the existence of a file based on the passed in filename alias.
+    file  New line at end of file tester.
+      fl  For loops using function routing.
+      fn  Edit a file in Multi-edit or Notepad by passing in the alias for the desired cbf-fn.
+     fnv  Validate a filename value. Using fnv instead of n helps the reader with clarity of intent.
+    fnv2  Validate a filename version 2. Deprecated (Going forward, use fe.bat.)
+      fq  Open file using its fully qualified filename.
+      fs  Filenames search.
+     fsp  Perennial filenames search.
+      fx  Open any file with any application using a DCV.
+     fxw  A wrapper around fx.bat.
+       g  Git
+      gg  Git Gui helper, with td parameter.
+      gh  Execute the GitHub DCV for the passed in alias.
+	   ghh  Surf to GitHub Historical record website.
+     ghf  Execute the GitHub historical file DCV for the passed in alias.
+      gl  Execute the GitLab DCV for the passed in alias.
+     god  Edit Go DCV file in VSC.
+     gol  Go.
+      gr  Grep.
+    grad  Gradle.
+	   gub  Run a utility from the Git User Bin.
+       h  Show the help file of a function routed parameter.
+    herk  Heroku.
+    hist  Doskey /history. Display the previous 50 commands.
+      hw  Hello world. The simplest possible batch file.
+     hw2  Echo off, pause and exit.
+     hw3  Teaches parameters foraccessing help or none, exit/b and displaying help.
+     hw4  Composed batch file.
+     hw5  Exterior batch file.
+       i  Show or clear CBF environment variables.
+       j  Simulate a double-click using default precedence operation or a DCV.
+     jav  Edit Java DCV file in VSC.
+      jb  Surf to the Jenkins Branch website for the passed in alias.
+      je  Execute the Jenkins DCV for the passed in alias.
+    jefd  Surf to Jenkins non-E. folder wepbage.
+      jf  Use Mutli-Edit to edit the Jenkinsfile of an alias.
+     jfd  Surf to Jenkins folder wepbage.
+      jg  Get a je, jn or jfd variable, in that order.
+      ji  Jira DCV operations
+      jj  Surf to Jenkins Build Console Output website.
+     jmb  Surf to the Jenkins Multibranch website for the passed in alias.
+      jp  Surf to Jenkins Pipeline.
+      jr  Use jar to inspect EAR files.
+      js  Edit DCV file in NotePad++ for file type js.
+    json  Edit DCV file in NotePad++ for file type json.
+      jv  Java.
+      kl  Kill a process.
+       l  Load file contents onto clipboard.
+      lf  Open latest file.
+      lh  Execute the localhost DCV for the passed in alias.
+      ll  Wrapper around dir command to help with Linux compatibility.
+   lower  Assing cbf-lower the value of the lower-cased parameter.
+      lp  Load clipboard path.
+     lpd  Use a DCV to copy a cbf variable to the clipboard.
+     lpf  Load cbf-fn of passed in alias onto the clipboard.
+    lpfc  Load cbf-fn contents to the clipboard.
+   lpfwp  Load cbf-fn without path of passed in alias onto the clipboard.
+      ls  Wrapper around dir command to help with Linux compatibility.
+       m  Perform simple miscellaneous tasks using a function routing style.
+     mav  Maven.
+  mav-eg  Maven example.
+      me  Multi-Edit
+     med  Use Multi-Edit to edit DCV files.
+  mirror  Attempts to demonostrate how it's easy to see what commands are running.
+      mv  Move files using function routing.
+       n  Nicknames path dictionary, a. k. a. the data layer.
+     net  A wrapper around the netstat command.
+     ney  An empty nicknames dictionary, useful for starting over
+      nm  NPM.
+      no  Use Notepad to edit a file chosen based on a decision algorithm.
+     nod  Use Notepad++ to edit a file chosen based on a decision algorithm.
+     nox  Use Notepad to edit a batch file in the CBF folder
+      np  Copy the np %cbf-pd% to the clipboard.
+     npp  Use Notepad++ and sfn to edit, or view without saving, a file.
+    nppd  Use Notepad++ to edit DCV files.
+      nx  Use Notepad++ to edit a batch file in the CBF folder
+      of  Open Folder, with td parameter.
+   ofdcv  Open folder using a DCV.
+    offn  Open folder where only the filename is known
+     ofp  Transform directory to parent folder
+      op  Openssl.
+    opat  Oracle patching.
+     orr  Status of officially registered repos.
+       p  Synchronize 2 folders, CBF and VDI.
+      pa  Fully automatic Git push of a single repository, with td parameter.
+     pdf  PDF DCV.
+      pg  Ping leveraging nicknames dictionary.
+      pi  Pipe a command line statement to a file.
+      pj  Edit package.json file DCV for the passed in alias.
+      pl  Git pull, with td parameter.
+      pn  Validate a pathname value. Using pn instead of n helps the reader with clarity of intent.
+     png  Run cbf-png as a DCV double-click filename.
+      pp  Git pull then push, with td parameter.
+     ppt  Run PowerPoint.
+      pq  Execute the pull requests DCV for the passed in alias.
+	    pr  Pull requests DCV.
+      ps  PowerShell
+      pt  Show path in a browser window.
+	   ptf  Pipe to file.
+     ptm  Sets the path using a monogamous CBF variable that sets the path only.
+	   ptt  Path test for Bash.
+	  purl  Using a DCV, surf to a PIV URL webpage.
+       q  Query Google.
+       r  Run application using CBF variables, mostly used in back office operations
+    reme  Execute the demo DCV for the passed in alias.
+      rl  Execute the releases DCV for the passed in alias.
+     rzr  Multi-Edit abstraction layer for running CBF files
+    rzrp  Multi-Edit abstraction layer for running CBF files, with a pause
+       s  Check updated git status, with td parameter.
+    senc  Sencha
+      sf  Surf to websites. A DCV is optional.
+     sfn  Set cbf-fn based on an evaluated filename parameter
+    sfn3  Using advanced routing, set the cbf filename.
+     sln  Open a Visual Studio solution, with td parameter.
+      sm  Use Sublime and sfn to edit a file.
+     smd  Use Sublime to edit DCV files.
+      sp  Super push, i.e. push all prewritten repositories
+     spl  Super pull, i.e. pull all prewritten repositories
+    splu  Splunk DCV.
+	   src  Hello from the CBF folder.
+      ss  Super status, that is status for all selected repositories
+      sx  Use Sublime to edit a batch file in the CBF folder
+      sy  Synchronize Share-zone and CBF folders.
+       t  Transform directory.
+     tdb  Back button for transform directory.
+     tdc  Transform directory to favorite child folder of alias
+     tdd  Open a folder using a DCV.
+	   tdh  Transform directory to home folder.
+     tdp  Transform directory to parent folder
+     tdr  Transform directory by appending a relative path onto a base path
+      te  Golden image template used for creating new batch files.
+      tf  Terraform.
+      tk  Taskkill.
+      tl  Tasklist.
+    touc  Wrapper around Git Touch command.
+      tr  Tar.
+      ty  Modernized type command. Use Microsoft Edge to view a file chosen based on a decision algorithm.
+     tyf  Reopen or see search results that have been piped to a file.
+     tyi  Use type command to view calculus file in Internet Explorer.
+     tys  TypeScript transpiler.
+     ujt  Update java timestamp.
+      un  Communicates that the intent is only to change the URL for a passed in alias
+     utc  Convert UTC to EST.
+       v  Vetted (Useful for copying-and-pasting).
+      va  Surf to a Vault webpage.
+     vsc  Visual Studio Code, with td parameter.
+      wi  Open the Wikipedia page for the passed in alias.
+      wl  Run WebLogic startup commands.
+      wo  Run Word with or without a filename alias parameter
+      wp  Use Wordpad and sfn to edit a file.
+     wpd  Use Wordpad to edit DCV files.
+       w  Unassigned.
+       x  Unassigned.
+     xac  Execute an application alias with a filename in the current folder.
+     xaf  Execute an application alias with a filename alias.
+     xfn  Filename-centric way to run an alias
+     xml  Edit an XML DCV file in VSC.
+       y  Using advanced routing, open text files for viewing or editing.
+     yml  Edit DCV file in NotePad++ for file type yml.
+      yt  Execute the YouTube DCV for the passed in alias.
+       z  Unassigned.

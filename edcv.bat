@@ -1,0 +1,75 @@
+:_
+
+@echo off
+
+
+
+:_
+
+set cbf-filep=* Use Multi-Edit to edit DCV ASCII files.
+
+
+
+:_
+
+set fp=* Route callers.
+
+if "%~1" == "" goto help
+
+if "%~1" == "?" goto help
+
+goto main
+
+
+
+:_
+
+:help
+
+cls
+
+echo.
+echo %cbf-filep%
+
+rem lu: 
+
+echo.
+echo Usage: %0 [space separated parameter(s)]
+
+set parameter_1=Parameter 1: Alias
+
+set parameter_2=Parameter 2: DCV.
+
+echo.
+echo %parameter_1%
+
+echo.
+echo %parameter_2%
+
+echo.
+echo Batch file style: Single Purpose
+
+exit/b
+
+(!rfsp) (mov4)
+
+
+
+:_
+  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ____
+ (______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(____
+ ____(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(
+
+
+
+:_
+
+:main
+
+call fx %1 %2 me
+
+exit/b
+
+
+
+:_ (!rfsp) (mov-7)

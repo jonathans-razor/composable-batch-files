@@ -1,0 +1,18 @@
+
+Composable Batch Files (CBF) Error Levels
+
+  .--.      .--.      .--.      .--.      .--.
+:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+       `--'      `--'      `--'      `--'      `--' 
+
+Error 
+Level  Definition/Description
+-----  -------------------------------------------------------------------
+    0  No error.
+    1  Generic error.
+    2  Application not installed.
+    3  Path does not exist.
+    4  Environment variable is not defined.
+    5  File not found.
+    6  Filename is required.
+   99  Cannot find the specified batch label in the nicknames dictionary.

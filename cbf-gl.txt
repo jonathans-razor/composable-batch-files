@@ -1,0 +1,71 @@
+
+Composable Batch Files (CBF) Glossary
+
+  .--.      .--.      .--.      .--.      .--.
+:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+       `--'      `--'      `--'      `--'      `--' 
+
+  Term/Abbreviation  Definition/Description
+-------------------  --------------------------------------------------------------------------
+                  ?  How to search for help in a CBF file.
+               /ver  How to get a version number in a CBF file.
+                  a  Application, when used in a batch file name
+                afn  ASCII filename. For example, j1.txt, j2.asc or Jenkinsfile would be
+                     an afn, where poker.xlsx would not be.
+                -ag  As a batch file parameter, means run an aggregte, not atomic, func.
+ aggregate function  A batch file function which is a collection of calls to other
+                     batch file functions. It is called by invoking its batch file 
+                     label. It also contains "exit/b',
+                     which is the end of the function.
+     alias/nickname  A batch file label, a.k.a. a function name, function alias, 
+                     alias or nickname.
+       alias lookup  Looking up cbf values in the n.bat dictionary.
+    atomic function  A single, self-contained batch file function, which usually
+                     performs a single task and is called by invoking its batch file 
+                     label. It also contains "exit/b', which is the end of the function.
+                 -c  As a batch file parameter, means force file creation
+                  c  Current folder filename, when used in a batch file name
+                cbf  Composable batch files
+     cbf definition  The function in n.bat where an alias' defintion is located.
+       cbf variable  An environment variable that begins with "cbf-", for example 
+                     "cbf-pt", that is used by CBF batch files.
+code execution area  Batch file style (bfs) where the router routes execution to near the 
+                     end of the file, unless a parameter is supllied, in which case 
+                     function routing occurs. Example(s): t.bat, v.bat.
+           consumer  Batch file style using function routing with time-stamps as function 
+                     names. Used for analysis and showing-your-work, not for repeatability. 
+                     By convention, files are suffixed with a "_c".
+             custom  Batch file style (bfs) where the structure does not fall into one  
+                     of the other batch file styles.
+  dynamically cons-  DCV. An environment variable that can be dynamically created at runtime.
+  tructed variable   For example, java is the dcv of the expression cbf-java. CBFs that
+                     use DCVs should have an "x" in their name.
+ entangled variable  A cbf variable associated with a particle batch file, e.g. cbf-pt
+                     and td.bat.
+         error code  fn.bat returns an error code of 2 for file not exists.
+ evaluated filename  Filename, filename alias or batch file prefix for a batch file 
+   parameter         that lives in either the CBF or Share-zone folder.
+              filep  File purpose
+                  f  Filename alias, when used in a batch file name
+                 fn  Filename in the general sense. For example, j1.txt is a filename as 
+                     is poker.xlsx.
+                 fp  Function purpose
+       multipurpose  Batch file style (bfs) where the batch file contains any number of
+                     disparate, atomic functions which are called via a function alias, 
+                     a.k.a. function routing. Example(s): g.bat, m.bat.
+                 lu  Last updated. The last time the file was updated.
+                  p  Path alias, when used in a batch file name
+                po_  Prefix which stands for "path only" meaning the a cbf definition only 
+                     has 1 variable set, viz. cbf-pt
+                rf_  Prefix used to designate that a label has at least one caller.
+                rp_  Prefix used to designate that a label is a relative path.
+     single purpose  Batch file style where the file tries to achieve a single task or 
+                     objective, e. g. td.bat, scpx.bat and usually calls a main.
+  single purpose nd  Batch file style which leverages the  nicknames dictionary.
+                skw  Search Keyword. Useful for finding things.
+       td parameter  Transform Directory passed in as a parameter, meaning to 
+                     change folders before running the batch file. For example,
+                     running "p cbf" switches to the CBF folder, the alias for 
+                     which is assigned in the nicknames dictionary (n.bat), 
+                     before running the batch file p.bat. Also known as a path walker alias.
+                 th  Test Harness

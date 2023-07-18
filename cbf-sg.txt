@@ -1,0 +1,30 @@
+
+Composable Batch Files (CBF) Style Guide
+
+  .--.      .--.      .--.      .--.      .--.
+:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+       `--'      `--'      `--'      `--'      `--' 
+
+:Apr-28-2023: Assumption: batch file labels are unique and do not contain periods.
+
+:Nov-17-2022: Unlike when you call n [blank], when you call pn [blank], you are expecting 
+that folder to exist. So don't use "call pn [blank]>nul" because you want to know when that 
+folder is not there.
+
+:CBF error messages should be accurate.
+
+:Calls to ivgn should be made before other iv calls.
+
+:On one hand I definitely want to see error messages. On the other I don't want to see a lot 
+of extraneous information.
+
+:When I used "call pn" in an "iv" rubric, I ran into problems. Sep-1-2021
+
+:You must put any call statements BEFORE cbf-pd is set. Otherwise it could get overwritten.
+
+:cbf-pd should NEVER be set in an "iv" rubric.
+
+:When passing in parameters, aliases should precede DCVs.
+
+:I kept the facade dictionaries because they help make clear the author's intent when calling 
+which variable is being set.
