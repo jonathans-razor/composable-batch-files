@@ -20,6 +20,7 @@ echo. & echo * Batch file style: Single purpose.
 echo. & echo * Samples:
 echo   %~n0 git clone -help
 echo   %~n0 /s g h-a
+echo   %~n0 set
 
 exit/b
 
