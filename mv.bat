@@ -132,9 +132,9 @@ exit/b
 
 :help
 
-echo. & echo Parameter Description(s):
-echo. & echo Parameter 2: Current folder filename.
-echo. & echo Parameter 3: Target folder alias.
+echo. & echo * Parameter Description(s):
+echo. & echo   Parameter 2: Current folder filename.
+echo   Parameter 3: Target folder alias.
 
 exit/b
 

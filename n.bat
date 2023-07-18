@@ -2884,6 +2884,8 @@ creation date: Jul-14-2023
 :_
 :inco
 echo. & echo * Interview code.
+call pn r
+set cbf-pt=%cbf-pt%\interview-code
 set cbf-gh=https://github.com/jonathans-razor/interview-code
 exit/b
 creation date: Jul-18-2023
