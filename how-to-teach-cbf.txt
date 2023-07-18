@@ -1,0 +1,8 @@
+:A good progression way to teach cbf:
+
+hw.bat series
+
+t.bat series, which utilizes n.bat
+
+of.bat which leverages t.bat
+

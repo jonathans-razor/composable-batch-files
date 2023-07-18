@@ -338,7 +338,6 @@ Footnote
 
 about: Windows Batch Scripting files that are function-based, modularized and easy to use and 
 understand.
-rem qq
 
 branches: 1
 
@@ -2879,6 +2878,15 @@ echo. & echo * Root.
 set cbf-gs=https://docs.google.com/spreadsheets/u/0/
 exit/b
 creation date: Jul-14-2023
+
+
+
+:_
+:inco
+echo. & echo * Interview code.
+set cbf-gh=https://github.com/jonathans-razor/interview-code
+exit/b
+creation date: Jul-18-2023
 
 
 
