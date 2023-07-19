@@ -2172,6 +2172,7 @@ exit/b
 :pom
 :pome
 :st (!qh)
+:fina
 :disc
 :resu
 :s
@@ -2889,6 +2890,33 @@ set cbf-pt=%cbf-pt%\interview-code
 set cbf-gh=https://github.com/jonathans-razor/interview-code
 exit/b
 creation date: Jul-18-2023
+
+
+
+:_+ QuickLauncher
+
+
+
+::_
+:qlld
+echo. & echo * Quickla on local.
+set cbf-pt=C:\Users\jonat\Documents\savannah\cmac\Quickla-for-Multi-Edit
+exit/b
+rem lu: May-24-2023
+
+Note: I edit Quickla in Dropbox but the official GitHub repository is on local.
+
+
+
+::_
+:drql
+:ql
+:qldr
+echo. & echo * Quickla CMAC on Dropbox.
+set cbf-pt=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit
+set cbf-gh=https://github.com/jonathans-razor/Quickla-for-Multi-Edit.git
+exit/b
+rem lu: Jun-27-2023
 
 
 
