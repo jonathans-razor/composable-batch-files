@@ -1,4 +1,4 @@
-:_
+:_ (!mv)
 
 @echo off
 
@@ -148,7 +148,7 @@ exit/b
 
 :pc2cj
 
-echo. & echo * Move podcasts from my computer's hard drive to ClipJam.
+echo. & echo * Move podcasts from my PC computer's hard drive to ClipJam.
 
 rem Make sure mp3 is plugged in and detected.
 call t clja
@@ -203,7 +203,9 @@ set mp3_staging_area=%cbf-pt%
 call t pc>nul
 
 echo.
-for /r %%j in (*.mp3) do move "%%j" "%mp3_staging_area%"
+rem On Jul-29-2023 I discovered that m4a files can also be played on my MP3 player, so I edited
+rem the line below to include all files, not just mp3 type files.
+for /r %%j in (*.*) do move "%%j" "%mp3_staging_area%"
 
 exit/b
 

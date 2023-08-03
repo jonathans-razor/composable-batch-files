@@ -2920,4 +2920,33 @@ rem lu: Jun-27-2023
 
 
 
+:_
+
+:dr
+:drop
+echo. & echo * Dropbox.
+set cbf-pt=%dropbox%
+if exist d:\Dropbox set cbf-pt=d:\Dropbox
+set cbf-url=http://www.dropbox.com
+exit/b
+rem lu: Sep-9-2021
+
+
+
+:_
+
+:ba
+
+echo. & echo * Bash code keepers.
+
+rem lu: May-12-2022
+
+call pn cbf>nul
+
+set cbf-fn=%cbf-pt%\ba.asc
+
+exit/b
+
+
+
 :_ (!efnb, !efn)

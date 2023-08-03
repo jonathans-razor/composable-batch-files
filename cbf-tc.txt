@@ -141,7 +141,7 @@ Composable Batch Files (CBF) Table of Contents
   mirror  Attempts to demonostrate how it's easy to see what commands are running.
       mv  Move files using function routing.
        n  Nicknames path dictionary, a. k. a. the data layer.
-      nd  Compile and run JavaScript files.
+      nd  Use node to compile and run JavaScript files.
      net  A wrapper around the netstat command.
      ney  An empty nicknames dictionary, useful for starting over
       nm  NPM.

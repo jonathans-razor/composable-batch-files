@@ -10,11 +10,11 @@ goto main
 :_
 :help
 cls
-echo. & echo * Node. Compile and run javascript.
+echo. & echo * Use Node to compile and run javascript files.
 
 echo. & echo * Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo * Parameter 1: The javascript file you wish to compile and run.
+echo. & echo * Parameter 1: The name of the javascript file you wish to compile and run.
 echo  
 
 echo. & echo * Batch file style: Multipurpose
