@@ -205,7 +205,13 @@ call t pc>nul
 echo.
 rem On Jul-29-2023 I discovered that m4a files can also be played on my MP3 player, so I edited
 rem the line below to include all files, not just mp3 type files.
-for /r %%j in (*.*) do move "%%j" "%mp3_staging_area%"
+rem On Aug-8-2023 I want to move the m4a and mp3 separately.
+
+echo. & echo * Move MP3 files.
+for /r %%j in (*.mp3) do move "%%j" "%mp3_staging_area%"
+
+echo. & echo * Move M4A files.
+for /r %%j in (*.m4a) do move "%%j" "%mp3_staging_area%"
 
 exit/b
 

@@ -511,6 +511,7 @@ exit/b
 
 ::_
 :brea
+:nppi
 set cbf-pd=Breakaway
 echo. & echo * %cbf-pd%.
 call pn pict
@@ -679,9 +680,11 @@ creation date: May-30-2023
 :_
 :shwe
 :shoe
+:snwe
 echo. & echo * Shoe weights.
 call pn exs>nul
 set cbf-ex=%cbf-pt%\shoe weights.xlsx
+set cbf-gs=https://docs.google.com/spreadsheets/d/1EiNU92RGqeGyt5RcAZXk3Ad8RosXlZXKeFzj1Luj6bw/edit#gid=349921952
 exit/b
 creation date: Jun-6-2023
 
@@ -2944,6 +2947,23 @@ rem lu: May-12-2022
 call pn cbf>nul
 
 set cbf-fn=%cbf-pt%\ba.asc
+
+exit/b
+
+
+
+:_
+
+:arp
+
+set fp=* Add or Remove Programs.
+
+rem lu: Apr-17-2019
+
+echo.
+echo %fp%
+
+set cbf-app=appwiz.cpl
 
 exit/b
 

@@ -31,6 +31,8 @@ echo          ba  Bare.
 echo           b  Big files.
 echo           d  Date, oldest first.
 echo          d-  Date, newest first.
+echo           e  extensionless files.
+echo         els  extensionless by size files.
 echo         fno  Filenames only.
 echo          fo  Folders only.
 echo           h  Hidden files and folders.
@@ -568,6 +570,25 @@ rem lu: Feb-21-2023
 :ba
 echo. & echo * Bare bones.
 set cbf-dir-command=dir/b
+goto process-arguments
+exit/b
+
+
+
+:_
+:el
+echo. & echo * Extensionless.
+set cbf-dir-command=dir *.
+goto process-arguments
+exit/b
+
+
+
+:_
+:els
+rem qq
+echo. & echo * Extensionless by size.
+set cbf-dir-command=dir /o-s *.
 goto process-arguments
 exit/b
 
