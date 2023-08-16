@@ -2879,6 +2879,7 @@ rem lu: Jun-20-2023
 :_
 :rt
 echo. & echo * Root.
+set cbf-gd=https://docs.google.com/document/u/5/
 set cbf-gs=https://docs.google.com/spreadsheets/u/0/
 exit/b
 creation date: Jul-14-2023
@@ -2969,4 +2970,4 @@ exit/b
 
 
 
-:_ (!efnb, !efn)
+:_ (!efn)

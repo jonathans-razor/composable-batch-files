@@ -1,4 +1,4 @@
-:_ Vetted Code (!v, !vb, !bfv, !bfvb)
+:_ Vetted Code (!bfv)
 
 @echo off
 
@@ -1421,8 +1421,6 @@ echo %0 k
 
 exit/b
 
-(!rfsp) (mov4)
-
 
 
 :_
@@ -2348,4 +2346,4 @@ exit/b
 
 
 
-:_ (!efvb, !efv)
+:_ (!efv)

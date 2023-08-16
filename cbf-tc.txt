@@ -86,6 +86,7 @@ Composable Batch Files (CBF) Table of Contents
       fx  Open any file with any application using a DCV.
      fxw  A wrapper around fx.bat.
        g  Git
+      gd  Surf to Google Docs website.
       gg  Git Gui helper, with td parameter.
       gh  Execute the GitHub DCV for the passed in alias.
 	   ghh  Surf to GitHub Historical record website.
@@ -95,6 +96,7 @@ Composable Batch Files (CBF) Table of Contents
      gol  Go.
       gr  Grep.
     grad  Gradle.
+      gs  Surf to Google Sheets website.
 	   gub  Run a utility from the Git User Bin.
        h  Show the help file of a function routed parameter.
     herk  Heroku.
@@ -210,7 +212,7 @@ Composable Batch Files (CBF) Table of Contents
       tf  Terraform.
       tk  Taskkill.
       tl  Tasklist.
-    touc  Wrapper around Git Touch command.
+    touc  Wrapper around Git Touch command, which updates file dates to the current date.
       tr  Tar.
       ty  Modernized type command. Use Microsoft Edge to view a file chosen based on a decision algorithm.
      tyf  Reopen or see search results that have been piped to a file.

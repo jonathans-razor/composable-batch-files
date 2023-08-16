@@ -64,6 +64,13 @@ exit/b
 
 
 :_
+:gd
+call fx rt %1 br>nul
+exit/b
+
+
+
+:_
 :gh
 call fx ghas %1 kr>nul
 exit/b
