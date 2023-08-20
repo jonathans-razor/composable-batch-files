@@ -3,7 +3,6 @@
 @echo off
 
 if "%~1" == "?" goto help
-if "%~3" == "" goto help
 
 goto main
 
@@ -68,7 +67,7 @@ if "%cbf-expanded-variable%" == "" (
   exit/b
 )
 
-call an %3>nul
+if "%cbf-app%" == "" call an kr>nul
 
 if errorlevel 1 exit/b
 

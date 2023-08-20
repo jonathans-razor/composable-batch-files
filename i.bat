@@ -638,9 +638,7 @@ set cbf-splu2=
 
 
 :_
-
 rem S. website
-
 set cbf-st=
 
 
@@ -671,17 +669,13 @@ set cbf-url2=
 
 
 :_
-
 rem VPN
-
 set cbf-vpn=
 
 
 
 :_
-
 rem Word
-
 set cbf-wo=
 set cbf-wo2=
 

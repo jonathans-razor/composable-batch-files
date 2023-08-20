@@ -1968,7 +1968,7 @@ exit/b
 
 :ap
 
-:wl
+:whli
 
 echo. & echo * Show whole line of parameters.
 

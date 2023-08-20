@@ -175,8 +175,5 @@ exit/b
 :_
 :main
 rem echo. & echo * FXW main.
-set cbf-app=%3
-if "%~3" == "" set cbf-app=kr
-rem @echo on
-fx %2 %1 %cbf-app%
+fx %2 %1 %3
 exit/b

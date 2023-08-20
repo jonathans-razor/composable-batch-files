@@ -15,12 +15,9 @@ echo. & echo * Use Node to compile and run javascript files.
 echo. & echo * Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1: The name of the javascript file you wish to compile and run.
-echo  
-
-echo. & echo * Batch file style: Multipurpose
 
 echo. & echo * Samples:
-echo   %~n0 
+echo   %~n0 fizz
 
 exit/b
 
