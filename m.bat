@@ -4902,25 +4902,13 @@ exit/b
 ::_
 
 :atn
-
 :ctf
-
 :file
-
-:fn
-
 :gdaf
 
-set fp=* Create timestamped file.
+echo. & echo * Create timestamped file.
 
 rem skw: add timestamped file, Create New File, Generate a timestamped name file, create file, make test file
-
-rem lu: Jun-12-2020
-
-rem This works.
-
-echo.
-echo %fp%
 
 rem The below class name is case sensitive.
 java -classpath %composable-batch-files% Get_timestamp_for_use_as_filename>date_as_filename.txt
@@ -4932,6 +4920,8 @@ ren date_as_filename.txt %date_as_filename%.txt
 dir *.txt
 
 exit/b
+rem This works.
+rem lu: Jun-12-2020
 
 
 

@@ -2175,7 +2175,7 @@ exit/b
 :pom
 :pome
 :st (!qh)
-:fina
+:fn
 :disc
 :resu
 :s

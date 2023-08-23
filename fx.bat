@@ -67,6 +67,7 @@ if "%cbf-expanded-variable%" == "" (
   exit/b
 )
 
+if not "%3" == "" call an %3>nul
 if "%cbf-app%" == "" call an kr>nul
 
 if errorlevel 1 exit/b
