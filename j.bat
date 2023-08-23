@@ -120,19 +120,9 @@ set fp=* Below here is the order of operations.
 
 :_
 
-if not "%cbf-app%" == "" (
-  rem echo. & echo * cbf-app is non-blank. Jun-9-2020_3_28_PM
-  call r
-  exit/b
-)
-
-
-
-:_
-
 if not "%cbf-gs%" == "" (
   rem echo. & echo * cbf-gs is non-blank. Aug-23-2023_1_53_PM
-  call fxw gs %1 %2 %3>nul
+  call fxw gs %1 %2 %3
   exit/b
 )
 
@@ -142,7 +132,17 @@ if not "%cbf-gs%" == "" (
 
 if not "%cbf-gd%" == "" (
   rem echo. & echo * cbf-gd is non-blank. Aug-23-2023_1_53_PM
-  call fxw gd %1 %2 %3>nul
+  call fxw gd %1 %2 %3
+  exit/b
+)
+
+
+
+:_
+
+if not "%cbf-app%" == "" (
+  echo. & echo * cbf-app is non-blank. Jun-9-2020_3_28_PM
+  call r
   exit/b
 )
 

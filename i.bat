@@ -274,17 +274,19 @@ set cbf-full-pem=
 
 
 :_
+rem Google Docs
+set cbf-gd=
 
+
+
+:_
 rem GitHub
-
 set cbf-gh=
 
 
 
 :_
-
 rem GitHub Historical record
-
 set cbf-ghh=
 
 
@@ -305,6 +307,12 @@ set cbf-glsv=
 rem Go
 set cbf-go=
 set cbf-go2=
+
+
+
+:_
+rem Google Sheets
+set cbf-gs=
 
 
 
