@@ -130,6 +130,26 @@ if not "%cbf-app%" == "" (
 
 :_
 
+if not "%cbf-gs%" == "" (
+  rem echo. & echo * cbf-gs is non-blank. Aug-23-2023_1_53_PM
+  call fxw gs %1 %2 %3>nul
+  exit/b
+)
+
+
+
+:_
+
+if not "%cbf-gd%" == "" (
+  rem echo. & echo * cbf-gd is non-blank. Aug-23-2023_1_53_PM
+  call fxw gd %1 %2 %3>nul
+  exit/b
+)
+
+
+
+:_
+
 if not "%cbf-wo%" == "" (
   if exist "%cbf-wo%" (
     set cbf-fn=%cbf-wo%
