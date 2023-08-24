@@ -3081,4 +3081,227 @@ rem lu: Jan-31-2022
 
 
 
+:_+ Shortcuts
+
+
+
+::_
+:bases
+:bashs
+:sh
+:shor
+echo. & echo * Base shortcuts.
+set cbf-pt=%dropbox%\it\shortcuts
+if exist w: set cbf-pt=w:\shortcuts
+exit/b
+rem base icons: skw
+rem lu: Jan-9-2020
+
+
+
+::_
+
+:bish
+
+set fp=* Big shortcuts.
+
+rem lu: Jul-2-2021
+
+echo.
+echo %fp%
+
+call pn s>nul
+
+set cbf-pd=big shortcuts
+
+set cbf-pt=%cbf-pt%\%cbf-pd%
+
+exit/b
+
+
+
+:_ + Appdata
+
+
+
+::_
+
+:apda
+
+:appd
+
+:appdata
+
+set fp=* App data.
+
+rem lu: Dec-4-2018
+
+echo.
+echo %fp%
+
+set cbf-pt=%appdata%
+
+exit/b
+
+
+
+::_
+
+:lad
+
+set fp=* Local app data.
+
+rem lu: Dec-4-2018
+
+echo.
+echo %fp%
+
+set cbf-pt=%localappdata%
+
+exit/b
+
+
+
+::_
+
+:dtbg
+
+set fp=* Desktop background.
+
+rem lu: Feb-24-2020
+
+echo.
+echo %fp%
+
+set cbf-pt=%localappdata%\microsoft\windows\themes\roamedthemefiles\desktopbackground
+
+exit/b
+
+:+ desktopbackground
+
+::C:\%appdata%
+
+::C:\Users\jonat\AppData\Local\Microsoft\Windows\Themes\RoamedThemeFiles\DesktopBackground
+
+::C:\Users\      jonat\AppData\Local\Microsoft\Windows\Themes\RoamedThemeFiles\DesktopBackground
+
+::C:\Users\jrj.GCITECH\AppData\Local\Microsoft\Windows\Themes\Snowy Nig\DesktopBackground
+
+
+
+
+:+_+ My Machines
+
+
+
+::_
+
+:earl
+
+set fp=* Earl.
+
+rem lu: Jun-30-2019
+
+echo.
+echo %fp%
+
+set cbf-fn=%dropbox%\savannah\reach out\earl.asc
+
+exit/b
+
+
+
+::_
+
+:sp7
+
+set fp=* SP7.
+
+rem lu: Feb-25-2020
+
+echo.
+echo %fp%
+
+set cbf-fn=%dropbox%\savannah\reach out\sp7.asc
+
+exit/b
+
+
+
+::_
+
+:ipad
+
+set fp=* iPad.
+
+rem lu: Oct-12-2020
+
+echo.
+echo %fp%
+
+set cbf-fn=%dropbox%\savannah\reach out\ipad.txt
+
+exit/b
+
+
+
+:_+ Bash
+
+
+
+::_
+:bash
+echo. & echo * Git bash.
+set cbf-app=C:\Program Files\Git\git-bash.exe
+rem if exist C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe set cbf-app=C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe
+exit/b
+
+
+
+::_
+:brc
+echo. & echo * Bash run commands.
+call pn home>nul
+set cbf-fn=%cbf-pt%\.bashrc
+exit/b
+
+rem Note: This points to the %HOME% folder. If that is not defined, it defaults to the
+rem user profile folder.
+
+
+
+::_
+:kbrc
+echo. & echo * Keld Bash rc.
+call pn d>nul
+set cbf-fn=.bashrc-keld-backup
+exit/b
+rem lu: Sep-01-2022
+
+
+
+::_
+:gc
+:ggc
+:ggcf
+echo. & echo. * Git global configuration file.
+call pn home>nul
+set cbf-fn=%cbf-pt%\.gitconfig
+exit/b
+
+rem lu: Jan-27-2022
+I don't know where the Git system configuration file is located.
+
+
+
+::_
+:obrc
+echo. & echo * Old Bash rc.
+call pn 1d>nul
+set cbf-fn=%cbf-pt%\Backups\Minishift\.bashrc
+exit/b
+rem lu: Sep-01-2022
+
+
+
 :_ (!efn)
