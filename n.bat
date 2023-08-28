@@ -3304,4 +3304,41 @@ rem lu: Sep-01-2022
 
 
 
+:_+ VSC Snippets Family (!fysnip)
+
+
+
+::_
+:snip
+echo. & echo * VSC Snippet folder and Snippet Generator.
+call pn up>nul
+set cbf-pt=%cbf-pt%\AppData\Roaming\Code\User\snippets
+set cbf-fn=%cbf-pt%\Jonathan's Global Snippets File.code-snippets
+set cbf-url=https://snippet-generator.app/
+exit/b
+rem lu: Aug-28-2023
+
+
+
+::_
+:bsnip
+echo. & echo * Batch snippets.
+call pn snip>nul
+set cbf-fn=%cbf-pt%\bat.json
+exit/b
+rem lu: Aug-28-2023
+
+
+
+::_
+:bksnip
+echo. & echo * Snippets backup folder.
+call pn it>nul
+set cbf-pt=%cbf-pt%\visual-studio-code-snippets
+set cbf-fn=%cbf-pt%\bat.json
+exit/b
+rem lu: Aug-28-2023
+
+
+
 :_ (!efn)
