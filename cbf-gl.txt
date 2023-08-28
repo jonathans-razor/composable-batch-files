@@ -1,5 +1,5 @@
 
-Composable Batch Files (CBF) Glossary
+Composable Batch Files (CBF) - Glossary
 
   .--.      .--.      .--.      .--.      .--.
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::

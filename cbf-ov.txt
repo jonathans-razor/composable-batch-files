@@ -1,0 +1,33 @@
+
+Composable Batch Files (CBF) - Overview - Components of Learning a Language - It's not just the code.
+
+  .--.      .--.      .--.      .--.      .--.
+:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+       `--'      `--'      `--'      `--'      `--' 
+
+
+:how-to-teach-cbf.txt
+
+::readme.md
+
+:error levels (cbf-el.txt): return codes
+
+:glossary (cbf-gl.txt): glossary of terms
+
+:i.bat: information on the current state of the environment AND resetting variables. Useful 
+for debugging.
+
+:style guide (cbf-sg.txt)
+
+:table of contents (cbf-tc.txt)
+
+:testing ground (k.bat): A probably messy space or place for testing and experimenting.
+
+:template (te.bat): Code that serves as a starter template.
+
+:vetted :model code (v.bat): This is code keepers or sterling examples of reusable code are 
+kept.
+
+:Each non-trivial batch file has a help section.
+
+:Unlimited comments are available.

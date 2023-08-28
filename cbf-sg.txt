@@ -1,9 +1,11 @@
 
-Composable Batch Files (CBF) Style Guide
+Composable Batch Files (CBF) - Style Guide
 
   .--.      .--.      .--.      .--.      .--.
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
        `--'      `--'      `--'      `--'      `--' 
+
+:Aug-28-2023: discreet batch files should not be mixed with composable batch files.
 
 :Apr-28-2023: Assumption: batch file labels are unique and do not contain periods.
 

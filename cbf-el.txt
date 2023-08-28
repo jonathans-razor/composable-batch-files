@@ -1,5 +1,5 @@
 
-Composable Batch Files (CBF) Error Levels
+Composable Batch Files (CBF) - Error Levels
 
   .--.      .--.      .--.      .--.      .--.
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
