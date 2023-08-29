@@ -1070,7 +1070,11 @@ rem )
 
 call %0 add-all-files
 
+if errorlevel 1 exit/b 
+
 call %0 commit-all-with-timestamp-message
+
+if errorlevel 1 exit/b 
 
 git push
 

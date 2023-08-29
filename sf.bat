@@ -70,6 +70,7 @@ if "%~2" == "" (
 
 if not "%~2" == "" (
   call :override_default_browser %2
+  if errorlevel 1 exit/b
   call :set-precedence %1 %2
   exit/b
 )
@@ -82,33 +83,18 @@ exit/b
 
 
 :_
-
 :use_default_browser
-
-set fp=* Use default browser.
-
-rem echo.
-rem echo %fp%
-
+rem echo. & echo * Use default browser.
 set cbf-app=%cbf-default-browser%
-
 exit/b
 
 
 
 :_
-
 :override_default_browser
-
-set fp=* Override default browser.
-
-echo.
-echo %fp%
-
+echo. & echo * Override default browser.
 call an %1
-
 if errorlevel 1 exit/b
-
 exit/b
 
 
