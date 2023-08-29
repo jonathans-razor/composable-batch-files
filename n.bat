@@ -2189,7 +2189,7 @@ exit/b
 :st (!qh)
 :fn
 :disc
-:resu
+:res
 :s
 :v
 :pete
@@ -3350,6 +3350,15 @@ set cbf-pt=%cbf-pt%\visual-studio-code-snippets
 set cbf-fn=%cbf-pt%\bat.json
 exit/b
 rem lu: Aug-28-2023
+
+
+
+:_
+:higolf
+echo. & echo * Golf history.
+set cbf-url=https://docs.google.com/spreadsheets/d/1obCaXWSyvMNdC4X8BFAXx3sI3aZhKR80MO7N0B9KD1w/edit#gid=0
+exit/b
+creation date: Aug-29-2023
 
 
 

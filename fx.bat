@@ -52,10 +52,33 @@ exit/b
 
 
 :_
+
+:path-exists
+
+if not exist "%cbf-expanded-variable%" (
+  echo.
+  echo * Note: The CBF Expanded variable "%cbf-expanded-variable%" did not previously exist. Aug-13-2021_12_18_PM
+)
+
+
+
+:_
+
+:finish-up
+
+set cbf-parameter=%cbf-expanded-variable%
+
+call r
+
+exit/b
+
+
+
+:_
 :main
 call m clear_errorlevel_silently>nul
 call i /c>nul
-call n %1>nul
+call n %1
 rem echo. & echo * Debug-me cbf-: %cbf-% EL: %errorlevel% - Oct-24-2022-12-25
 if errorlevel 1 exit/b
 rem echo. & echo * Debug-me cbf-: %cbf-% EL: %errorlevel% - Oct-24-2022-12-26
@@ -94,29 +117,6 @@ if exist "%cbf-expand-to-path-only-pt%" (
 echo. & echo * Error: the path for the file cbf-expanded-variable: "%cbf-expanded-variable%" doesn't exist. Aug-13-2021_12_19_PM
 
 exit/b 1
-
-
-
-:_
-
-:path-exists
-
-if not exist "%cbf-expanded-variable%" (
-  echo.
-  echo * Note: The CBF Expanded variable "%cbf-expanded-variable%" did not previously exist. Aug-13-2021_12_18_PM
-)
-
-
-
-:_
-
-:finish-up
-
-set cbf-parameter=%cbf-expanded-variable%
-
-call r
-
-exit/b
 
 
 

@@ -141,7 +141,7 @@ if not "%cbf-gd%" == "" (
 :_
 
 if not "%cbf-app%" == "" (
-  echo. & echo * cbf-app is non-blank. Jun-9-2020_3_28_PM
+  rem echo. & echo * cbf-app is non-blank. Aug-29-2023_11_59_AM
   call r
   exit/b
 )

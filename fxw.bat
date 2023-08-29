@@ -79,7 +79,7 @@ exit/b
 
 :_
 :gs
-call fx rt %1 br>nul
+call fx rt %1 br
 exit/b
 
 
