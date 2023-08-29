@@ -5,6 +5,10 @@ Composable Batch Files (CBF) - Style Guide
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
        `--'      `--'      `--'      `--'      `--' 
 
+:Aug-29-2023: A framework should be built in a recallable way. That is, the location of things 
+should be in a logical or recallable fashion so that when to trying recall things, things are 
+where you expect them to be.
+
 :Aug-28-2023: discreet batch files should not be mixed with composable batch files.
 
 :Apr-28-2023: Assumption: batch file labels are unique and do not contain periods.

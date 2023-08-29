@@ -3362,4 +3362,42 @@ creation date: Aug-29-2023
 
 
 
+:_+ Zoom and Microsoft Teams
+
+
+
+::_
+:mite
+:mste
+:team
+:teams
+echo. & echo * Microsoft Teams.
+set cbf-pt=%AppData%\Microsoft\Windows\Start Menu\Programs
+set cbf-app=%cbf-pt%\Microsoft Teams.lnk
+rem Top 8 Ways to Fix Cannot Record Meeting in Microsoft Teams
+set cbf-url=https://www.guidingtech.com/top-ways-to-fix-cant-record-meeting-in-microsoft-teams/
+set cbf-url2=https://teams.microsoft.com
+exit/b
+rem lu: Jan-27-2022
+
+
+
+::_
+:zoom
+echo. & echo * Zoom.
+set cbf-app=%AppData%\Zoom\bin\zoom.exe
+exit/b
+rem lu: Oct-12-2020
+
+
+
+::_
+:mtdd
+echo. & echo * Microsoft Teams down detector.
+set cbf-url=https://downdetector.com/status/teams/
+exit/b
+rem lu: Feb-3-2020
+
+
+
 :_ (!efn)
