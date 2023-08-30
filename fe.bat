@@ -52,7 +52,7 @@ goto main
 
 :set-filename
 set cbf-fn=%1
-echo. & echo cbf-fn: %cbf-fn%
+rem echo. & echo cbf-fn: %cbf-fn%
 goto main
 
 

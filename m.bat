@@ -5505,6 +5505,21 @@ exit/b
 
 
 ::_
+:file-is-present
+:specific_file_presence
+:specific-file-presence
+set fp=* Check the current folder for the presence of "%2". Deprecated: Going forward please use fe.bat.
+if not exist "%~2" (
+  call err The file "%2" does NOT exist in the current folder. Oct-20-2021_1_09_PM - %0.bat
+  exit/b 1
+)
+rem echo. & echo * Found file %2 so proceed. Oct-16-2020_12_53_PM
+exit/b 0
+rem lu: May-16-2022
+
+
+
+::_
 
 :specific_folder_presence
 
@@ -5558,21 +5573,6 @@ Footnote
 
 skw: specific folder
 
-
-
-
-::_
-:file-is-present
-:specific_file_presence
-:specific-file-presence
-set fp=* Check the current folder for the presence of "%2". Deprecated: Going forward please use fe.bat.
-if not exist "%~2" (
-  call err The file "%2" does NOT exist in the current folder. Oct-20-2021_1_09_PM - %0.bat
-  exit/b 1
-)
-rem echo. & echo * Found file %2 so proceed. Oct-16-2020_12_53_PM
-exit/b 0
-rem lu: May-16-2022
 
 
 

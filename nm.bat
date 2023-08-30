@@ -1,52 +1,29 @@
 :_
 
 @echo off
-
-
-
-:_
-
-set cbf-filep=* Perform NPM-related tasks.
-
-
-
-:_
-
-set fp=* Route callers.
-
 if "%~1" == "" goto help
-
 if "%~1" == "?" goto help
-
 goto %1
 
 
 
 :_
-
 :help
 
-echo.
-echo %cbf-filep%
-
-rem lu: Mar-6-2020
-
-echo.
-echo Usage: %0 [Parameter 1]
-
-echo.
-echo Batch file style: Multipurpose
-
-echo.
-echo Parameter 1: Nickname of command you wish to execute.
+echo. & echo * NPM-related tasks.
+echo. & echo * Usage: %0 [Parameter 1]
+echo. & echo * Parameter 1: Nickname of command you wish to execute.
+echo. & echo * Batch file style: Multipurpose
 
 echo.
 echo     Parameter  Description
 echo -------------  -----------------------------------------------------
 echo          init  Wizard that creates a package.json file.
-echo        init_d  Wizard that creates package.json file with defaults.
+echo        init-y  Wizard that creates package.json file with defaults.
 echo       get_lic  Get default license setting.
 echo          inst  Install a package and save it to package.json.
+echo        inst-t  Install TypeScript.
+echo       inst-tn  Install Types for Node.
 echo        list_g  Verbose list of my globally installed packages.
 echo           nhn  npm help npm. Involved help.
 echo           nhs  NPM help for a specific command.
@@ -61,13 +38,14 @@ echo        update  Update all dependencies to the latest version.
 echo          vers  Check NPM's version.
 
 exit/b
+rem lu: Aug-29-2023
 
 
 
 :_
-  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ____
- (______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(____
- ____(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(
+   .--.      .--.      .--.      .--.      .--.                 
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+        `--'      `--'      `--'      `--'      `--'     
 
 
 
@@ -151,22 +129,12 @@ exit/b
 
 
 ::_
-
-:init_d
-
-:inity
-
-set fp=* Automated wizard that walks you through creating a package.json file with defaults.
-
-rem lu: Apr-24-2018
-
-echo.
-echo %fp%
-
+:init-y
+echo. & echo * Automated wizard that walks you through creating a package.json file with defaults.
 echo.
 npm init -y
-
 exit/b
+rem lu: Aug-29-2023
 
 
 
@@ -767,37 +735,51 @@ exit/b
 
 
 
-:_+ Installing
+:_+ Installing (!fyinst)
 
 
 
 ::_
-
 :inst
+echo. & echo * Install any dependencies listed in package.json.
 
-:install
-
-set fp=* Install any dependencies listed in package.json.
-
-rem It's a good idea to run npm install before doing your build in case npm needs to update. - Sean
-
-rem lu: Aug-27-2021
-
-echo.
-echo %fp%
-
-if not exist "package.json" (
-  echo. & echo * Error: The file "package.json" must exist in the current folder order for you to run this command.
-  exit/b
-)
+call fe package.json & if errorlevel 1 exit/b
 
 echo.
 npm install
 
-rem If you have an issue with install or update, you may need to delete the node_modules ^
-subfolder.
+exit/b
+rem lu: Aug-29-2023
+rem It's a good idea to run npm install before doing your build in case npm needs to update. - Sean
+rem If you have an issue with install or update, try deleting the node_modules subfolder.
+
+
+
+::_
+:inst-t
+echo. & echo * Install TypeScript.
+
+call fe package.json & if errorlevel 1 exit/b
+
+echo.
+npm install typescript --save-dev
 
 exit/b
+rem lu: Aug-29-2023
+
+
+
+::_
+:inst-tn
+echo. & echo * Install Types for Node.
+
+call fe package.json & if errorlevel 1 exit/b
+
+echo.
+npm install i -D @types/node
+
+exit/b
+rem lu: Aug-29-2023
 
 
 
@@ -1410,27 +1392,17 @@ Ran all test suites.
 
 
 :_
-
 :rb
-
 :rubi
+echo. & echo * Bundles the app into static files for production into a subfolder called "build".
 
-set fp=* Bundles the app into static files for production into a subfolder called "build".
-
-rem lu: Sep-2-2021
-
-echo.
-echo %fp%
-
-if not exist "package.json" (
-  echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
-  exit/b
-)
+call fe package.json & if errorlevel 1 exit/b
 
 echo.
 npm run build
 
 exit/b
+rem lu: Aug-29-2023
 
 
 
@@ -1706,12 +1678,7 @@ exit/b
 
 :baps2
 
-set fp=* Install Dev dependency Nodemon.
-
-rem lu: Nov-1-2021
-
-echo.
-echo %fp%
+echo. & echo * Install Dev dependency Nodemon.
 
 call m specific_file_presence package.json & if errorlevel 1 exit/b
 
@@ -1719,6 +1686,7 @@ echo.
 npm i -D nodemon
 
 exit/b
+rem lu: Nov-1-2021
 
 
 

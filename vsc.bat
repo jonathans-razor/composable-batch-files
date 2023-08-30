@@ -15,12 +15,11 @@ echo. & echo * Run Visual Studio Code while leveraging the e.bat decision algori
 echo. & echo * Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1:
-echo  
 
 echo. & echo * Batch file style: Multipurpose
 
 echo. & echo * Samples:
-echo   %~n0 
+echo   %~n0 index.js
 
 exit/b
 
