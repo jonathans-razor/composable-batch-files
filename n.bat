@@ -2192,7 +2192,7 @@ exit/b
 :res
 :s
 :v
-:pete
+:pete2
 :psc
 :d
 :dbf
@@ -2202,6 +2202,7 @@ exit/b
 :tax22
 :tx21
 :tx22
+:tax
 :taxe
 :taxes
 :tx
