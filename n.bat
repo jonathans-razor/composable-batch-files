@@ -1,10 +1,15 @@
 :_ Nickname Dictionary (!nb, !bfn)
 
 @echo off
+
+
+echo. & echo * Error Level: %errorlevel% - qjq - p1: %1 - cbf- : %cbf-% - Sep-1-2023_3_45_PM
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
+
 rem In order to promote freshness, reset the error level and clear.
 ver>nul
+
 goto %1
 
 
@@ -25,7 +30,7 @@ if you call it yourself from the command line, it will set the variable plus it 
 describe itself.
 
 echo. & echo * Example(s):
-echo %0 cbf
+echo    %0 cbf
 exit/b
 
 
@@ -3398,6 +3403,18 @@ echo. & echo * Microsoft Teams down detector.
 set cbf-url=https://downdetector.com/status/teams/
 exit/b
 rem lu: Feb-3-2020
+
+
+
+:_
+:fj
+:hifj
+echo. & echo * Job search history.
+call pn jona
+set cbf-pt=%cbf-pt%\Find a Job
+set cbf-gs=https://docs.google.com/spreadsheets/d/1ekJKo09FxIsoTB1s5jB4bzjxx4vDWsBOWI8SuCEMrrc/edit#gid=0
+exit/b
+creation date: Aug-31-2023
 
 
 
