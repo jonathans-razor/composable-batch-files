@@ -3,7 +3,6 @@
 @echo off
 
 
-echo. & echo * Error Level: %errorlevel% - qjq - p1: %1 - cbf- : %cbf-% - Sep-1-2023_3_45_PM
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 

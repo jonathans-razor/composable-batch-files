@@ -325,8 +325,7 @@ exit/b
 
 :_
 :mecfg
-echo. & echo %fp%
-set fp=* Back up Mutli-edit config files.
+echo. & echo * Back up Mutli-edit config files.
 
 Get_JDate>%tmp%\JDate.txt
 set /p JDate=<%tmp%\JDate.txt
@@ -361,9 +360,24 @@ echo. & echo * Savannah.
 call pn belf>nul
 "Back up Savannah files to Dropbox folder.bat"
 exit/b
-
-
 creation date: Jul-3-2023
+
+
+
+:_
+:qlr
+echo. & echo * Reverse back up Quick Launch files from local to Dropbox.
+
+call pn ql
+
+set cbf-pt=%cbf-pt%
+
+call t qlld
+
+@echo on
+xcopy /s /y . "%cbf-pt%"
+
+exit/b
 
 
 
