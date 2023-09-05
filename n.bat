@@ -441,6 +441,15 @@ rem lu: Dec-31-2022
 
 
 :_
+:miss
+echo. & echo * Mission on Google Sheets.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1-C0vOpYyjAUTsTLBG8N632DP0VVlykLCKnF_wZNYbYs/edit#gid=0
+exit/b
+rem lu: Sep-5-2023
+
+
+
+:_
 
 :daap
 
@@ -2123,7 +2132,7 @@ exit/b
 
 :mibu
 
-:miss
+:missbu
 
 set fp=* Mission backups.
 
