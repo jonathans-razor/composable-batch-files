@@ -370,12 +370,12 @@ echo. & echo * Reverse back up Quick Launch files from local to Dropbox.
 
 call pn ql
 
-set cbf-pt=%cbf-pt%
+set cbf-ptx=%cbf-pt%
 
 call t qlld
 
 @echo on
-xcopy /s /y . "%cbf-pt%"
+xcopy /d /s /y . "%cbf-ptx%"
 
 exit/b
 

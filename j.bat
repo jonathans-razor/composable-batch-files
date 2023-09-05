@@ -59,7 +59,7 @@ rem call m reset_cbf-variables
 call i /c>nul
 ver>nul
 
-call n %1
+call n %1>nul
 
 if errorlevel 1 exit/b
 

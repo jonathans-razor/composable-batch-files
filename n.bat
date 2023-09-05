@@ -503,9 +503,10 @@ exit/b
 
 
 ::_
+:fvpi
 :fvpict
 :hura
-set cbf-pd=Huracan
+set cbf-pd=Favorites
 echo. & echo * %cbf-pd%. All time favorite pictures.
 call pn pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
@@ -1428,39 +1429,24 @@ exit/b
 
 
 ::_
-
 :sa
-
-:staging_area
-
+:stag
+:staging-area
 echo. & echo * Staging area.
-
-rem lu: Aug-20-2022
-
 set cbf-pt=%my documents%\mp3 staging area
-
 exit/b
+rem lu: Aug-20-2022
 
 
 
 ::_
-
 :ec
-
 :exco
-
 :mec
-
-set fp=* Extra content - MP3.
-
-rem lu: Jan-26-2022
-
-echo.
-echo %fp%
-
+echo. & echo * Extra content - MP3.
 set cbf-pt=%my documents%\mp3 extra content
-
 exit/b
+rem lu: Jan-26-2022
 
 
 

@@ -251,7 +251,7 @@ rem echo. & echo * Move staging area podcasts to the Clipjam folder.
 
 rem lu: Aug-20-2022
 
-call t staging_area>nul
+call t staging-area>nul
 
 call pn clipjam_podcasts
 
