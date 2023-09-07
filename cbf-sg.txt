@@ -5,9 +5,12 @@ Composable Batch Files (CBF) - Style Guide
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
        `--'      `--'      `--'      `--'      `--' 
 
-:Aug-29-2023: A framework should be built in a recallable way. That is, the location of things 
-should be in a logical or recallable fashion so that when to trying recall things, things are 
-where you expect them to be.
+:Sep-5-2023: CBF code reference should explicit whereas things you type often should be 
+abbreviations.
+
+:Aug-29-2023: A framework should be built in a memorable way. That is, the location of things 
+should be in a logical or memorable fashion so that when to trying recall things, things are 
+where you expect them to be or you are able to find them.
 
 :Aug-28-2023: discreet batch files should not be mixed with composable batch files.
 

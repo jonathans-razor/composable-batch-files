@@ -2186,6 +2186,8 @@ exit/b
 :pom
 :pome
 :st (!qh)
+:fina
+:hc2
 :fn
 :disc
 :res
@@ -3359,6 +3361,15 @@ echo. & echo * Golf history.
 set cbf-url=https://docs.google.com/spreadsheets/d/1obCaXWSyvMNdC4X8BFAXx3sI3aZhKR80MO7N0B9KD1w/edit#gid=0
 exit/b
 creation date: Aug-29-2023
+
+
+
+:_
+:hite
+echo. & echo * Tennis history.
+set cbf-url=https://docs.google.com/spreadsheets/d/15o3C0eYXmsUVKjo4PrP1CrnlBmuFrLtKAjX1qZfDT6A/edit#gid=0
+exit/b
+creation date: Sep-5-2023
 
 
 
