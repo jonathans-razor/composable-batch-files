@@ -3423,4 +3423,23 @@ creation date: Aug-31-2023
 
 
 
+:_
+:gmai
+:gmail
+echo. & echo * Gmail.
+set cbf-url=https://mail.google.com
+exit/b
+creation date: Sep-7-2023
+
+
+
+:_
+:chat
+echo. & echo * ChatGPT.
+set cbf-url=https://chat.openai.com/auth/login
+exit/b
+creation date: Sep-7-2023
+
+
+
 :_ (!efn)
