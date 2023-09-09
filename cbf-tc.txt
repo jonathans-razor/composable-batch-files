@@ -44,6 +44,7 @@ Composable Batch Files (CBF) - Table of Contents
    cocod  Run Code Compare using 2 DCVs.
      col  Shell window colors operations
   concop  Create a conflict copy report
+  cowsay  Talking cow.
       cp  Copy files.
      cpr  Surf to Create Pull Request page.
       cs  File contents search
