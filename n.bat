@@ -356,6 +356,18 @@ releases: 4
 
 
 ::_
+:f
+:ffb
+:ffbs
+echo. & echo * Function first bash scripts.
+set cbf-gh=https://github.com/jonathans-razor/function-first-bash-scripts
+set cbf-pt=%dropbox%\it\function-first-bash-scripts
+exit/b
+rem lu: Sep-9-2023
+
+
+
+::_
 :jj
 :jjgh
 :jjgit
@@ -969,7 +981,7 @@ table-of-contents-series: skw
 
 ::_
 :tck
-echo. & echo * KCR table of contents. (composable-bash-files)
+echo. & echo * KCR table of contents. (Key Crusher)
 call pn dbf>nul
 set cbf-fn=%cbf-pt%\kc-tc.txt
 exit/b
