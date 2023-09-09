@@ -3433,10 +3433,33 @@ creation date: Sep-7-2023
 
 
 
-:_
+:_+ AI Family
+
+
+
+::_
+:bard
+echo. & echo * Bard.
+set cbf-url=https://bard.google.com/
+exit/b
+creation date: Sep-7-2023
+
+
+
+::_
 :chat
 echo. & echo * ChatGPT.
 set cbf-url=https://chat.openai.com/auth/login
+exit/b
+creation date: Sep-7-2023
+
+
+
+::_
+:bing
+:new-bing
+echo. & echo * New Bing.
+set cbf-url=https://www.bing.com/search?q=Bing+AI
 exit/b
 creation date: Sep-7-2023
 
