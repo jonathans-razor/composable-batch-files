@@ -2160,13 +2160,14 @@ exit/b
 
 
 
-:_+ If Exist (!exis)
+:_+ If Exist (!ifex, !exis)
 
 
 
 ::_
+:ffex
 :fiex
-echo. & echo * File existence.
+echo. & echo * Test for the exisitence of a file or folder.
 call fe package.json & if errorlevel 1 exit/b
 exit/b
 rem lu: Aug-29-2023

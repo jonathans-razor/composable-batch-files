@@ -3465,4 +3465,24 @@ creation date: Sep-7-2023
 
 
 
+:_
+
+:aa
+
+:perm
+
+set fp=* Aa, a.k.a. permanent folders for Jonathan.
+
+rem lu: Nov-2-2018
+
+echo.
+echo %fp%
+
+if exist "c:\aa" set cbf-pt=c:\aa
+if exist "d:\aa" set cbf-pt=d:\aa
+
+exit/b
+
+
+
 :_ (!efn)

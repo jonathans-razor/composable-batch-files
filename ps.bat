@@ -20,7 +20,7 @@ echo. & echo * Batch file style: Single purpose
 
 exit/b
 
-rem lu: Sep-08-2022
+rem lu: Sep-9-2023
 
 
 
@@ -44,6 +44,7 @@ if errorlevel 1 exit/b
 
 :main
 
+call fe .git & if errorlevel 1 exit/b
 call g acp
 
 exit/b
