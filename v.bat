@@ -882,6 +882,38 @@ goto loop
 
 ::_
 
+:cowsay
+
+if "%~1" == "" cowsay Wait. What?
+
+exit/b
+rem lu: Sep-9-2023
+
+
+
+::_
+     
+set fp=* Call t versus call %0 versus call label, parameter passing.
+
+rem Result: Stangely, when calling with a colon, parameter doesn't seem to work. Mar-31-2019
+
+rem lu: Mar-21-2019
+
+echo.
+echo %fp%
+
+call %0 hw2 "Percent Zero!"
+
+call t hw2 "Called with t."
+
+call :hw2 "Called with colon."
+
+exit/b
+
+
+
+::_
+
 :passing_spaces
 
 set fp=* Passing spaces in parameters.
@@ -913,29 +945,6 @@ echo %fp%
 call n sa
 
 call %0 passing_spaces "%cbf-pt%"
-
-exit/b
-
-
-
-::_
-     
-:hw_battle_parm
-
-set fp=* Call t versus call %0 versus call label, parameter passing.
-
-rem Result: Stangely, when calling with a colon, parameter doesn't seem to work. Mar-31-2019
-
-rem lu: Mar-21-2019
-
-echo.
-echo %fp%
-
-call %0 hw2 "Percent Zero!"
-
-call t hw2 "Called with t."
-
-call :hw2 "Called with colon."
 
 exit/b
 

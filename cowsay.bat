@@ -2,6 +2,8 @@
 
 @echo off
 if "%~1" == "?" goto help
+rem qq
+if "%~1" == "" cowsay Wait. What?
 goto main
 
 
@@ -14,6 +16,7 @@ echo. & echo * Talking cow.
 echo. & echo * Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1: What should the cow say?
+echo. & echo   If left blank, the cow is confused.
 
 echo. & echo * Samples:
 echo   %~n0 Hi mom!
@@ -34,7 +37,9 @@ rem creation date:
 :_
 :main
 
-rem qq
+cls
+
+echo.
 echo.
 echo     -----------------
 echo      %*  
