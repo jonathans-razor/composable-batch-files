@@ -47,7 +47,7 @@ exit/b
 :_
 :main
 
-node %1
+node %*
 
 exit/b
 
