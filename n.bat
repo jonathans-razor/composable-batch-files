@@ -960,6 +960,7 @@ rem lu: Jul-10-2023
 
 ::_
 :tcc
+:tccbf
 echo. & echo * CBF table of contents.
 call pn cbf>nul
 set cbf-fn=%cbf-pt%\cbf-tc.txt
@@ -970,7 +971,20 @@ table-of-contents-series: skw
 
 
 ::_
+:tcf
+:tcffb
+echo. & echo * FFB table of contents.
+call pn f>nul
+set cbf-fn=%cbf-pt%\ffb-tc.txt
+exit/b
+rem lu: May-17-2022
+table-of-contents-series: skw
+
+
+
+::_
 :tcd
+:tcdbf
 echo. & echo * DBF table of contents.
 call pn dbf>nul
 set cbf-fn=%cbf-pt%\dbf-tc.txt
@@ -1003,6 +1017,7 @@ table-of-contents-series: skw
 
 ::_
 :cbf-el
+:elcbf
 echo. & echo * CBF error levels/codes.
 call pn cbf>nul
 set cbf-fn=%cbf-pt%\cbf-el.txt
@@ -1013,6 +1028,7 @@ rem lu: Jun-06-2022
 
 ::_
 :cbf-gl
+:glcbf
 echo. & echo * CBF glossary
 call pn cbf>nul
 set cbf-fn=%cbf-pt%\cbf-gl.txt
@@ -1023,6 +1039,7 @@ rem lu: Jun-06-2022
 
 ::_
 :cbf-ov
+:ovcbf
 echo. & echo * CBF Overview.
 call pn cbf>nul
 set cbf-fn=%cbf-pt%\cbf-ov.txt
@@ -1032,10 +1049,11 @@ rem lu: Aug-28-2023
 
 
 ::_
-:cbf-sg
+:cbf-sgd
+:sgdcbf
 echo. & echo * CBF style guide.
 call pn cbf>nul
-set cbf-fn=%cbf-pt%\cbf-sg.txt
+set cbf-fn=%cbf-pt%\cbf-sgd.txt
 exit/b
 rem lu: Jun-06-2022
 

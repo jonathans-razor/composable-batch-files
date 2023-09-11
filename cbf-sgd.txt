@@ -5,8 +5,8 @@ Composable Batch Files (CBF) - Style Guide
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
        `--'      `--'      `--'      `--'      `--' 
 
-:Sep-5-2023: CBF code reference should explicit whereas things you type often should be 
-abbreviations.
+:Sep-5-2023: CBF code references should be explicit whereas things you type repeatedly should 
+be abbreviations.
 
 :Aug-29-2023: A framework should be built in a memorable way. That is, the location of things 
 should be in a logical or memorable fashion so that when to trying recall things, things are 
