@@ -7,7 +7,7 @@ goto main
 
 :_
 :help
-echo. & echo * Synchronize 2 folders, CBF and VDI.
+echo. & echo * Synchronize 2 folders, CBF and QL.
 echo. & echo * Usage: %0
 echo. & echo * Batch file style: Single purpose
 exit/b
