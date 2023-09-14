@@ -3444,6 +3444,7 @@ rem lu: Feb-3-2020
 :_
 :fj
 :hifj
+:hires
 echo. & echo * Job search history.
 call pn jona
 set cbf-pt=%cbf-pt%\Find a Job
@@ -3477,19 +3478,19 @@ creation date: Sep-7-2023
 
 
 ::_
-:chat
-echo. & echo * ChatGPT.
-set cbf-url=https://chat.openai.com/auth/login
+:bing
+:new-bing
+echo. & echo * New Bing.
+set cbf-url=https://www.bing.com/search?q=Bing+AI
 exit/b
 creation date: Sep-7-2023
 
 
 
 ::_
-:bing
-:new-bing
-echo. & echo * New Bing.
-set cbf-url=https://www.bing.com/search?q=Bing+AI
+:chat
+echo. & echo * ChatGPT.
+set cbf-url=https://chat.openai.com/auth/login
 exit/b
 creation date: Sep-7-2023
 
@@ -3512,6 +3513,15 @@ if exist "c:\aa" set cbf-pt=c:\aa
 if exist "d:\aa" set cbf-pt=d:\aa
 
 exit/b
+
+
+
+:_
+:mons
+echo. & echo * Monster.com.
+set cbf-url=https://www.monster.com/resumes/resume/manageresumes?landedFrom=post-resume2
+exit/b
+creation date: Sep-12-2023
 
 
 
