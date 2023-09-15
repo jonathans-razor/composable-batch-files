@@ -66,25 +66,6 @@ exit/b
 
 :_
 
-:b
-
-:build
-
-set fp=* Build.
-
-echo.
-echo %fp%
-
-echo.
-dotnet build
-
-exit/b
-
-
-
-
-:_
-
 :db_up
 
 :up_db
@@ -172,25 +153,6 @@ exit/b
 
 
 
-
-:_
-
-:run
-
-set fp=* Run DotNetCore web server.
-
-echo.
-echo %fp%
-
-echo.
-dotnet run
-
-exit/b
-dotnet new console -o MyApp -f net7.0
-
-
-
-
 :_+ Console Apps
 
 
@@ -224,6 +186,32 @@ dotnet new console --force
 exit/b
 rem lu: Sep-15-2023
 
+
+
+:_
+:b
+:build
+
+echo. & echo * Build.
+
+echo.
+dotnet build
+
+exit/b
+rem lu: Sep-15-2023
+
+
+
+:_
+:r
+:run
+
+echo. & echo * Run DotNetCore web server.
+
+echo.
+dotnet run
+
+exit/b
 
 
 
