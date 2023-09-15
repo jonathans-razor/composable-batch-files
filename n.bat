@@ -3489,6 +3489,7 @@ creation date: Sep-7-2023
 
 ::_
 :chat
+:gpt
 echo. & echo * ChatGPT.
 set cbf-url=https://chat.openai.com/auth/login
 exit/b

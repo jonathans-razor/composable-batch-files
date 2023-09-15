@@ -2,20 +2,7 @@
 
 @echo off
 
-
-
-:_
-
-set cbf-filep=* Perform .NET Core functions.
-
-
-
-:_
-
-set fp=* Route callers.
-
 if "%~1" == "" goto run
-
 if "%~1" == "?" goto help
 
 goto %1
@@ -26,8 +13,7 @@ goto %1
 
 :help
 
-echo.
-echo %cbf-filep%
+echo. & echo * Perform .NET Core functions.
 
 echo.
 echo Usage: %0 [Parameter 1]
@@ -52,10 +38,12 @@ The following were installed at: 'C:\Program Files\dotnet\'
 
 
 
-:_
-  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ____
- (______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(____
- ____(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(
+:
+  _______   _______   _______   _______   _______
+ |  ___  | |  ___  | |  ___  | |  ___  | |  ___  |
+ | |  _| | | |  _| | | |  _| | | |  _| | | |  _| |
+ | | |___| | | |___| | | |___| | | |___| | | |___|
+ | |_______| |_______| |_______| |_______| |______
 
 
 
@@ -187,25 +175,6 @@ exit/b
 
 :_
 
-:neco
-
-rem lu: Jan-10-2022
-
-set fp=* Dotnet new console.
-
-echo.
-echo %fp%
-
-echo.
-dotnet new console --force
-
-exit/b
-
-
-
-
-:_
-
 :run
 
 set fp=* Run DotNetCore web server.
@@ -217,6 +186,43 @@ echo.
 dotnet run
 
 exit/b
+dotnet new console -o MyApp -f net7.0
+
+
+
+
+:_+ Console Apps
+
+
+
+::_
+
+:neco-not-working
+
+set fp=* New conosle app.
+
+echo.
+echo %fp%
+
+echo.
+dotnet new console -o MyApp -f net7.0
+
+exit/b
+rem lu: Sep-15-2023
+
+
+
+::_
+
+:neco
+
+echo. & echo * Dotnet new console.
+
+echo.
+dotnet new console --force
+
+exit/b
+rem lu: Sep-15-2023
 
 
 
