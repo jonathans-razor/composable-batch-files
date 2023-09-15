@@ -31,6 +31,7 @@ echo. & echo * Samples:
 echo.  %0 curl /l
 echo.  %0 find
 echo.  %0 dir
+echo.  %0 dotnet
 
 echo.
 echo * Note: Maven must be installed for this to work.

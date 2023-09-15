@@ -1,42 +1,26 @@
 :_
 @echo off
-
-if "%1" == "?" goto help
-if not "%~1" == "" goto switch-folder
-
+if not "%1" == "" goto help
 goto main
 
 
 
 :_
 :help
-echo. & echo * Fully automatic push (a.k.a. g acp) for single repository, with TD parameter.
-
-echo. & echo * Usage: %0 [space separated parameter(s)]
-
-echo. & echo * Parameter 1 (Optional): Folder to switch to.
-
+echo. & echo * Synchronize 2 folders, CBF and QL.
+echo. & echo * Usage: %0
 echo. & echo * Batch file style: Single purpose
-
 exit/b
-
-rem lu: Sep-9-2023
-
-
-
-:_
-
-   .--.      .--.      .--.      .--.      .--.                 
- :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
-        `--'      `--'      `--'      `--'      `--'     
+rem lu: Mar-4-2022
 
 
 
 :_
-:switch-folder
-rem echo. & echo * Switch folder.
-call t %1
-if errorlevel 1 exit/b
+
+   .--.      .--.      .--.      .--.      .--.      .--.      .--.      
+
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+        `--'      `--'      `--'      `--'      `--'      `--'      `--'     
 
 
 
@@ -44,8 +28,11 @@ if errorlevel 1 exit/b
 
 :main
 
-call fe .git & if errorlevel 1 exit/b
-call g acp
+call pp cbf
+
+call pp ql
+
+cd ..
 
 exit/b
 

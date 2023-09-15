@@ -27,10 +27,10 @@ echo    g sd  Status while disconnected.
 echo   g psf  Push single file with timestamp message.
 echo  g psfm  Push single file with custom message.
 echo   g rsf  Revert single file.
-echo       p  Fully automatic pull and push of selected repositories.
-echo      ps  Fully automatic push, same as "g acp", but with also a TD parameter.
+echo       p  Fully automatic push, same as "g acp", but with also a TD parameter.
 echo      pl  Git pull, with TD parameter. Sibling of ps.
 echo      pp  Pull then push, with TD parameter.
+echo      ps  Fully automatic pull and push of selected repositories.
 echo       s  Status while connected.
 exit/b
 rem lu: Sep-27-2022
