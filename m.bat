@@ -3291,28 +3291,6 @@ exit/b
 
 
 
-:_
-
-:dh
-
-:hist
-
-:history
-
-set fp=* Doskey history.
-
-rem lu: Feb-12-2019
-
-echo.
-echo %fp%
-
-echo.
-doskey /history
-
-exit/b
-
-
-
 :_+ Timer Script
 
 

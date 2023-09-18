@@ -36,7 +36,7 @@ rem creation date: Oct-11-2022
 
 :grep-on-percent-1
 
-doskey /history | grep %1
+doskey /history | "c:\Program Files\Git\usr\bin\grep" %1
 
 exit/b
 

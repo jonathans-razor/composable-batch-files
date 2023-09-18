@@ -153,11 +153,7 @@ exit/b
 
 
 
-:_+ Console Apps
-
-
-
-::_
+:_
 
 :neco-not-working
 
@@ -168,20 +164,6 @@ echo %fp%
 
 echo.
 dotnet new console -o MyApp -f net7.0
-
-exit/b
-rem lu: Sep-15-2023
-
-
-
-::_
-
-:neco
-
-echo. & echo * Dotnet new console.
-
-echo.
-dotnet new console --force
 
 exit/b
 rem lu: Sep-15-2023
@@ -202,15 +184,38 @@ rem lu: Sep-15-2023
 
 
 
-:_
+:_+ Create a New Console App
+
+
+
+::_
+:create-hello-world-c-sharp
+echo. & echo * Create hello world c sharp program.
+call dr hello-world-c-sharp
+call :neco
+call :run
+rem Provenance: Jul-16-2021_11_43_AM qq1
+exit/b
+creation date: Sep-18-2023
+
+
+
+::_
+:neco
+echo. & echo * Create a new Dotnet console app.
+echo.
+dotnet new console --force
+exit/b
+rem lu: Sep-15-2023
+
+
+
+::_
 :r
 :run
-
 echo. & echo * Run DotNetCore web server.
-
 echo.
 dotnet run
-
 exit/b
 
 
