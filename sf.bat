@@ -63,13 +63,13 @@ if "%cbf-url%" == "" (
 )
 
 if "%~2" == "" (
-  call :use_default_browser
+  rem call :use_default_browser
   call :set-precedence
   exit/b
 )
 
 if not "%~2" == "" (
-  call :override_default_browser %2
+  call :override-default-browser %2
   if errorlevel 1 exit/b
   call :set-precedence %1 %2
   exit/b
@@ -91,7 +91,7 @@ exit/b
 
 
 :_
-:override_default_browser
+:override-default-browser
 echo. & echo * Override default browser.
 call an %1
 if errorlevel 1 exit/b

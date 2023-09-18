@@ -2749,8 +2749,6 @@ exit/b
 
 ::_
 
-:h
-
 :hm
 
 :home
@@ -3458,6 +3456,7 @@ creation date: Aug-31-2023
 :gmai
 :gmail
 echo. & echo * Gmail.
+call an br
 set cbf-url=https://mail.google.com
 exit/b
 creation date: Sep-7-2023
