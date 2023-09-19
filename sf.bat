@@ -57,9 +57,8 @@ call n %1
          
 if errorlevel 1 exit/b
 
-if "%cbf-url%" == "" (
-  rem echo. &   echo * The cbf-url is not set for "%1" so try secondary methods. Sep-5-2021_8_12_PM
-  echo. & echo * Try hierarchical priority.
+if "%cbf-app%" == "" (
+  call :use_default_browser
 )
 
 if "%~2" == "" (
