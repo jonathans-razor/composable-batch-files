@@ -35,7 +35,9 @@ rem creation date: Sep-20-2023
 :main
 
 call p c
+echo.
 call p iw
+echo.
 call p ql
 
 exit/b
