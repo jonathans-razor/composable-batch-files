@@ -1,30 +1,31 @@
 :_
-
 @echo off
-if "%~1" == "?" goto help
+
+if "%1" == "?" goto help
+if not "%~1" == "" goto switch-folder
+
 goto main
 
 
 
 :_
 :help
-cls
-echo. & echo * Push selected repositories.
+echo. & echo * Fully automatic push (a.k.a. g acp) for single repository, with TD parameter.
 
-echo. & echo   Usage: %~n0 [space separated parameter(s)]
+echo. & echo * Usage: %0 [space separated parameter(s)]
 
-echo. & echo   Batch file style: Single purpose
+echo. & echo * Parameter 1 (Optional): Folder to switch to.
 
-echo. & echo   Samples:
-echo   %~n0 
+echo. & echo * Batch file style: Single purpose
 
 exit/b
 
-rem creation date: Sep-20-2023
+rem lu: Sep-9-2023
 
 
 
 :_
+
    .--.      .--.      .--.      .--.      .--.                 
  :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
         `--'      `--'      `--'      `--'      `--'     
@@ -32,14 +33,19 @@ rem creation date: Sep-20-2023
 
 
 :_
+:switch-folder
+rem echo. & echo * Switch folder.
+call t %1
+if errorlevel 1 exit/b
+
+
+
+:_
+
 :main
 
-call sep
-call p c
-call sep
-call p iw
-call sep
-call p ql
+call fe .git & if errorlevel 1 exit/b
+call g acp
 
 exit/b
 
