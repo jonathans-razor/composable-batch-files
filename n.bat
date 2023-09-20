@@ -61,6 +61,16 @@ Metadata: Track Size (!tsn)
 
 
 ::_
+:ascii-art-2023-separator
+echo. & echo * ASCII Art - %1.
+call n cbf
+set cbf-graphic=%cbf-pt%\ascii-art-2023-separator.txt
+exit/b
+rem lu: Sep-20-2023
+
+
+
+::_
 :ascii-art-error
 echo. & echo * ASCII Art - %1.
 call n cbf
