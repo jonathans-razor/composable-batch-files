@@ -3456,6 +3456,7 @@ creation date: Aug-31-2023
 :_
 :gmai
 :gmail
+:j3
 echo. & echo * Gmail.
 call an br
 set cbf-url=https://mail.google.com
