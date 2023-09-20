@@ -2,22 +2,7 @@
 
 @echo off
 
-
-
-:_
-
-set cbf-filep=* Summary: TypeScript transpiler.
-
-
-
-:_
-
-set fp=* Route callers.
-
-if -%~1- == -- goto run
-
-if -%~1- == -?- goto help
-if -%~1- == ---help- goto help
+if "%~1" == "?" goto help
 
 goto %1
 
@@ -29,38 +14,24 @@ goto %1
 
 cls
 
-echo. & echo %cbf-filep%
+echo. & echo * TypeScript transpiler.
 
-rem lu: 
+echo. & echo   Usage: %0 [space separated parameter(s)]
 
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo   Parameter 1: 
 
-set parameter-1=* Parameter 1 (Optional): 
-
-echo. & echo %parameter-1%
+echo. & echo   Name of the function you wish to run.
 
 exit/b
 
-(!rfsp) (mov4)
+rem lu: Sep-20-2023
 
 
 
 :_
-  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ____
- (______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(____
- ____(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(
-
-
-
-:_
-
-:run
-
-set fp=* Run.
-
-tsc
-
-exit/b
+   .--.      .--.      .--.      .--.      .--.                 
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+        `--'      `--'      `--'      `--'      `--'     
 
 
 
@@ -78,7 +49,17 @@ exit/b
 
 :_
 
-:w
+:init
+
+set fp=* Initialize.
+
+tsc --init
+
+exit/b
+
+
+
+:_
 
 :watch
 
@@ -89,22 +70,47 @@ tsc -w
 exit/b
 
 
-Footnote
->< >< ><
 
-How to watch a particular file:
-tsc -watch index.ts
-
+:_
+:vers
+set fp=* Version.
+echo.
+tsc --version
+exit/b
 
 
 
 :_
+:t
+echo. & echo * Transpile a TypeScipt file into JavaScript file.
+rem qq
 
-:init
+call fe "%~2" & if errorlevel 1 exit/b
 
-set fp=* Initialize.
+echo %2| find /i ".ts">nul
+if errorlevel 1 (
+  call err Expected a TypeScipt file.
+  exit/b
+)
 
-tsc --init
+tsc "%~2"
+exit/b
+
+
+
+:_
+:w
+set fp=* Watch a particular TypeScript file.
+
+call fe "%~2" & if errorlevel 1 exit/b
+
+echo %2| find /i ".ts">nul
+if errorlevel 1 (
+  call err Expected a TypeScipt file.
+  exit/b
+)
+
+tsc -watch "%~2"
 
 exit/b
 

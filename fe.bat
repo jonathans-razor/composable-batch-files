@@ -6,8 +6,8 @@ if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
 echo %1| find /i ".">nul
-
 if errorlevel 1 goto process-alias
+
 if "%2"=="/n" goto set-filename %*
 
 goto set-filename %*
@@ -62,7 +62,7 @@ if exist "%cbf-fn%" (
   rem echo. & echo * File "%cbf-fn%" exists. Jun-28-2023_10_26_PM
   exit/b 0
 ) else (
-  call err * File or folder "%cbf-fn%" DOES NOT exist. Jun-28-2023_10_04_PM
+  call err * File or folder %cbf-fn% DOES NOT exist. Jun-28-2023_10_04_PM
   rem echo. & echo * File "%cbf-fn%" DOES NOT exist. Jun-28-2023_10_04_PM
   exit/b 5
 )

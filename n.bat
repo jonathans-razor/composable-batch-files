@@ -3463,6 +3463,35 @@ creation date: Sep-7-2023
 
 
 
+:_
+
+:aa
+
+:perm
+
+set fp=* Aa, a.k.a. permanent folders for Jonathan.
+
+rem lu: Nov-2-2018
+
+echo.
+echo %fp%
+
+if exist "c:\aa" set cbf-pt=c:\aa
+if exist "d:\aa" set cbf-pt=d:\aa
+
+exit/b
+
+
+
+:_
+:mons
+echo. & echo * Monster.com.
+set cbf-url=https://www.monster.com/resumes/resume/manageresumes?landedFrom=post-resume2
+exit/b
+creation date: Sep-12-2023
+
+
+
 :_+ AI Family
 
 
@@ -3490,38 +3519,19 @@ creation date: Sep-7-2023
 :chat
 :gpt
 echo. & echo * ChatGPT.
-set cbf-url=https://chat.openai.com/auth/login
+set cbf-url=https://chat.openai.com
+set cbf-url2=https://chat.openai.com/auth/login
 exit/b
 creation date: Sep-7-2023
 
 
 
-:_
-
-:aa
-
-:perm
-
-set fp=* Aa, a.k.a. permanent folders for Jonathan.
-
-rem lu: Nov-2-2018
-
-echo.
-echo %fp%
-
-if exist "c:\aa" set cbf-pt=c:\aa
-if exist "d:\aa" set cbf-pt=d:\aa
-
+::_
+:clai
+echo. & echo * Claude.ai.
+set cbf-url=https://claude.ai/chats
 exit/b
-
-
-
-:_
-:mons
-echo. & echo * Monster.com.
-set cbf-url=https://www.monster.com/resumes/resume/manageresumes?landedFrom=post-resume2
-exit/b
-creation date: Sep-12-2023
+creation date: Sep-7-2023
 
 
 

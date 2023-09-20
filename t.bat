@@ -22,10 +22,10 @@ if %errorlevel% == 0 (
 :help
 
 echo. & echo * Transform directory.
-echo. & echo Usage: %0 [Parameter 1]
-echo. & echo Parameter 1: Path alias or the name of a child folder or ".." which emulates the cd command.
-echo. & echo Batch file style: Single purpose.
-echo. & echo Entangled variable: cbf-pt
+echo. & echo   Usage: %0 [Parameter 1]
+echo. & echo   Parameter 1: Path alias or the name of a child folder or ".." which emulates the cd command.
+echo. & echo   Batch file style: Single purpose.
+echo. & echo   Entangled variable: cbf-pt
 
 exit/b
 

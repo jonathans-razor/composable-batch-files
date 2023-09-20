@@ -2168,6 +2168,7 @@ exit/b
 :ffex
 :fiex
 echo. & echo * Test for the exisitence of a file or folder.
+rem skw filename existence, Test if file exists. (!fe)
 call fe package.json & if errorlevel 1 exit/b
 exit/b
 rem lu: Aug-29-2023
@@ -2179,8 +2180,6 @@ rem lu: Aug-29-2023
 :old-fiex
 
 set fp=* File existence.
-
-rem skw filename existence, Test if file exists.
 
 rem See also specific_file_presence in m.bat.
 
