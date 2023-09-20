@@ -34,6 +34,7 @@ rem creation date: Sep-20-2023
 :_
 :main
 
+call sep
 call p c
 call sep
 call p iw
