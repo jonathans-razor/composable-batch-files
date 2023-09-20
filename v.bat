@@ -2170,6 +2170,14 @@ exit/b
 echo. & echo * Test for the exisitence of a file or folder.
 rem skw filename existence, Test if file exists. (!fe)
 call fe package.json & if errorlevel 1 exit/b
+
+rem Expected type of file. (skw file extension)
+echo %2| find /i ".ts">nul
+if errorlevel 1 (
+  call err Expected a TypeScipt file.
+  exit/b
+)
+
 exit/b
 rem lu: Aug-29-2023
 

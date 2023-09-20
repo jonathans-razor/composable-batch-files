@@ -82,8 +82,8 @@ exit/b
 
 :_
 :t
+
 echo. & echo * Transpile a TypeScipt file into JavaScript file.
-rem qq
 
 call fe "%~2" & if errorlevel 1 exit/b
 
@@ -100,6 +100,7 @@ exit/b
 
 :_
 :w
+
 set fp=* Watch a particular TypeScript file.
 
 call fe "%~2" & if errorlevel 1 exit/b
