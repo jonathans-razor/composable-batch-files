@@ -190,6 +190,7 @@ Composable Batch Files (CBF) - Table of Contents
     rzrp  Multi-Edit abstraction layer for running CBF files, with a pause
        s  Check updated git status, with td parameter.
     senc  Sencha
+     sep  Show separator graphic.
       sf  Surf to websites. A DCV is optional.
      sfn  Set cbf-fn based on an evaluated filename parameter
     sfn3  Using advanced routing, set the cbf filename.
