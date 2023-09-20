@@ -3547,4 +3547,22 @@ creation date: Sep-7-2023
 
 
 
+::_
+:jasp
+echo. & echo * Jasper.ai.
+set cbf-url=https://www.jasper.ai
+exit/b
+creation date: Sep-20-2023
+
+
+
+::_
+:ubdu
+echo. & echo * Uberduck.ai.
+set cbf-url=https://www.uberduck.ai
+exit/b
+creation date: Sep-20-2023
+
+
+
 :_ (!efn)
