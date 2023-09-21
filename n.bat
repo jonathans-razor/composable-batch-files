@@ -3543,6 +3543,7 @@ creation date: Sep-7-2023
 
 ::_
 :chat
+:gp
 :gpt
 echo. & echo * ChatGPT.
 set cbf-url=https://chat.openai.com
@@ -3576,6 +3577,64 @@ echo. & echo * Uberduck.ai.
 set cbf-url=https://www.uberduck.ai
 exit/b
 creation date: Sep-20-2023
+
+
+
+:_+ Localhost
+
+
+
+::_
+
+:3000
+
+echo. & echo * Localhost port %1.
+
+set cbf-lh=http://localhost:%1/hello
+
+exit/b
+rem lu: Sep-21-2023
+
+
+
+::_
+
+:4200
+
+:8080
+
+:8800
+
+:9000
+
+echo. & echo * Localhost port %1.
+
+rem lu: Jul-06-2022
+
+set cbf-lh=http://localhost:%1
+
+exit/b
+
+
+
+::_
+
+:gsg
+
+:psg
+
+set fp=* Pipeline script generator.
+
+rem lu: Jan-11-2019
+
+echo.
+echo %fp%
+
+call an kr
+
+set cbf-url=http://localhost:8080/job/PipelineTest2/pipeline-syntax/
+
+exit/b
 
 
 

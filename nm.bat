@@ -22,9 +22,10 @@ echo          init  Wizard that creates a package.json file.
 echo        init-y  Wizard that creates package.json file with defaults.
 echo       get_lic  Get default license setting.
 echo          inst  Install a package and save it to package.json.
+echo        inst-e  Install Express.
 echo        inst-t  Install TypeScript.
 echo       inst-tn  Install Types for Node.
-echo        list_g  Verbose list of my globally installed packages.
+echo        list-g  Verbose list of my globally installed packages.
 echo           nhn  npm help npm. Involved help.
 echo           nhs  NPM help for a specific command.
 echo          nhss  NPM help-search for a specific command.
@@ -38,7 +39,7 @@ echo        update  Update all dependencies to the latest version.
 echo          vers  Check NPM's version.
 
 exit/b
-rem lu: Aug-29-2023
+rem lu: Sep-21-2023
 
 
 
@@ -183,7 +184,7 @@ exit/b
 
 ::_
 
-:list_g
+:list-g
 
 set fp=* Verbose list of my globally installed packages.
 
@@ -1548,7 +1549,22 @@ rem npm i -g typescript
 exit/b
 rem lu: Aug-29-2023
 
-If you don't install it globall, the tsc command doesn't seem to work. Oct-26-2021
+If you don't install it globally, the tsc command doesn't seem to work. Oct-26-2021
+
+
+
+::_
+:inst-e
+echo. & echo * Install Express.
+
+call fe package.json & if errorlevel 1 exit/b
+
+echo.
+
+npm install express
+
+exit/b
+rem lu: Sep-21-2023
 
 
 
