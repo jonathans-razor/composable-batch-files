@@ -36,10 +36,14 @@ rem creation date: Sep-20-2023
 
 call sep
 call pa c
+
 call sep
 call pa iw
+
 call sep
 call pa ql
+
+call sep
 call t a
 
 exit/b
