@@ -37,10 +37,10 @@ rem creation date: Sep-20-2023
 cls
 
 call sep
-call pa iw
+call pa ql
 
 call sep
-call pa ql
+call pa iw
 
 call sep
 call pa c
