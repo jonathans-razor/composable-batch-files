@@ -20,7 +20,6 @@ echo. & echo * Usage: %0 [space separated parameter(s)]
 
 echo. & echo * Examples:
 
-rem qq
 echo.
 echo   GitHub https, e.g: %0 /ghh https://github.com/jonathans-razor/For-Git-Testing.git
 echo   GitHub https stored value, e.g: %0 /ghv fgt
@@ -37,7 +36,6 @@ rem creation date: Sep-9-2023
 :_
 :help
 cls
-rem qq
 echo. & echo * Cloning operations.
 
 echo. & echo * Usage: %~n0 [space separated parameter(s)]

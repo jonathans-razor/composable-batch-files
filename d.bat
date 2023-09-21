@@ -586,7 +586,6 @@ exit/b
 
 :_
 :els
-rem qq
 echo. & echo * Extensionless by size.
 set cbf-dir-command=dir /o-s *.
 goto process-arguments

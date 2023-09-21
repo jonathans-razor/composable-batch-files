@@ -59,7 +59,6 @@ set cbf-url=
 
 call n %~1
 
-rem qq
 if %errorlevel% == 1 (
   echo.
   echo * Error: Cannot find label "%~1".
@@ -75,8 +74,6 @@ if "%cbf-fn%" == "" (
 call m double_click
 
 call r
-
-rem (!rfsp) (mov-2)
 
 exit/b
 

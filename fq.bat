@@ -234,7 +234,6 @@ c:\repositories\e2dro\drools-test-coverage\test-suite\target\test-classes\org\dr
 c:\repositories\e2dro\drools-test-coverage\test-suite\target\test-classes\org\drools\testcoverage\regression\multiple-sheets.drl.xls
 c:\repositories\e2dro\drools-test-coverage\test-suite\target\test-classes\org\drools\testcoverage\regression\fixedPattern.drl.xls
 c:\repositories\e2dro\kie-dmn\kie-dmn-xls2dmn-cli\ChineseLunarYearsXLSX.png
-qq
 c:\repositories\e2dro\kie-dmn\kie-dmn-xls2dmn-cli\src\test\resources\Loan_approvals.xlsx
 c:\repositories\e2dro\kie-dmn\kie-dmn-xls2dmn-cli\src\test\resources\ChineseLunarYears.xlsx
 c:\repositories\e2dro\kie-dmn\kie-dmn-xls2dmn-cli\src\test\resources\Card_approval.xlsx

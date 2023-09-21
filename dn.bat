@@ -194,7 +194,6 @@ echo. & echo * Create hello world c sharp program.
 call dr hello-world-c-sharp
 call :neco
 call :run
-rem Provenance: Jul-16-2021_11_43_AM qq1
 exit/b
 creation date: Sep-18-2023
 

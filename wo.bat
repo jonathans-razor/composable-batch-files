@@ -97,7 +97,6 @@ goto main
 :_
 :open-or-create-in-place-file
 if exist "%~1" (
-rem qq
   echo. & echo * Open existing file. Apr-16-2023_7_58_PM - %0.bat
   set cbf-wo=%1
   goto main

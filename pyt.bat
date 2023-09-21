@@ -88,6 +88,7 @@ echo. & echo * Execute python file.
 call fe "%~1" & if errorlevel 1 exit/b
 call fnc "%~1" .py & if errorlevel 1 exit/b
 
+echo.
 python "%~1"
 
 exit/b

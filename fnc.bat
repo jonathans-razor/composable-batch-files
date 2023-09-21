@@ -36,7 +36,6 @@ lu: Sep-21-2023
 :_
 
 :main
-rem qq
 echo %1| find /i "%2">nul
 if errorlevel 1 (
   call err Expected a %2 type file.

@@ -1541,7 +1541,6 @@ echo. & echo * Install TypeScript.
 call fe package.json & if errorlevel 1 exit/b
 
 echo.
-rem qq
 
 npm install typescript --save-dev
 rem npm i -g typescript

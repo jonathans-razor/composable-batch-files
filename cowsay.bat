@@ -2,7 +2,6 @@
 
 @echo off
 if "%~1" == "?" goto help
-rem qq
 if "%~1" == "" cowsay Wait. What?
 goto main
 

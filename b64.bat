@@ -222,7 +222,6 @@ exit/b
 
 
 
-rem qq
 :dec
 echo. & echo * Decode what was put into j2.txt in the previous encode step.
 call pn a>nul
