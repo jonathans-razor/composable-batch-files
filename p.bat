@@ -43,10 +43,10 @@ call sep
 call pa ql
 
 call sep
-call t a
+call pa c
 
 call sep
-call pa c
+call t a
 
 exit/b
 
