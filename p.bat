@@ -40,6 +40,7 @@ call sep
 call pa iw
 call sep
 call pa ql
+call t
 
 exit/b
 
