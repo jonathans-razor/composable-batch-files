@@ -40,23 +40,6 @@ rem creation date:
 
 
 :_
-:inst
-
-echo. & echo * Install module.
-
-if "%~2" == "" (
-  call err Expected module name. Sep-21-2023_12_47_PM
-  exit/b
-)
-
-@echo on
-pip install %2
-
-exit/b
-
-
-
-:_
 :upgr
 
 python -m pip install --upgrade pip
@@ -90,6 +73,53 @@ call fnc "%~1" .py & if errorlevel 1 exit/b
 
 echo.
 python "%~1"
+
+exit/b
+
+
+
+:_
+:list
+
+echo. & echo * Show installed modules.
+
+echo.
+pip list
+
+exit/b
+
+
+
+
+:_
+:inst
+
+echo. & echo * Install module.
+
+if "%~2" == "" (
+  call err Expected module name. Sep-21-2023_12_47_PM
+  exit/b
+)
+
+@echo on
+pip install %2
+
+exit/b
+
+
+
+:_
+:unin
+
+echo. & echo * Uninstall module.
+
+if "%~2" == "" (
+  call err Expected module name. Sep-21-2023_12_48_PM
+  exit/b
+)
+
+@echo on
+pip uninstall %2
 
 exit/b
 
