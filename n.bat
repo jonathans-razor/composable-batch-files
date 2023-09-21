@@ -558,7 +558,7 @@ exit/b
 
 
 ::_
-
+:fun
 :funn
 :humo
 set cbf-pd=humor
@@ -3463,7 +3463,11 @@ creation date: Aug-31-2023
 
 
 
-:_
+:_+ Family Gmail (!fygmai)
+
+
+
+::_
 :gmai
 :gmail
 :j3
@@ -3472,6 +3476,16 @@ call an br
 set cbf-url=https://mail.google.com
 exit/b
 creation date: Sep-7-2023
+
+
+
+::_
+:j7
+echo. & echo * Gmail.
+call an edge
+set cbf-url=https://mail.google.com
+exit/b
+creation date: Sep-21-2023
 
 
 

@@ -2372,4 +2372,19 @@ exit/b
 
 
 
+:_
+:
+
+set fp=* If filename.
+
+echo %1| find /i ".">nul
+if errorlevel 1 (
+  call err Period not present.
+  exit/b
+)
+
+exit/b
+
+
+
 :_ (!efv)

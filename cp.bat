@@ -9,9 +9,9 @@ goto %1
 :_
 :help
 echo. & echo * Copy files using function routing.
-echo. & echo * Usage: %0 [Parameter 1]
-echo. & echo * Parameter 1: Label method to run.
-echo. & echo * Batch file style: Multipurpose
+echo. & echo   Usage: %0 [Parameter 1]
+echo. & echo   Parameter 1: Label method to run.
+echo. & echo   Batch file style: Multipurpose
 echo.          
 echo     Parameter  Description
 echo     ---------  -------------------------------------------------------------------------

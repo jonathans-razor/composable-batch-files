@@ -80,6 +80,7 @@ Composable Batch Files (CBF) - Table of Contents
     file  New line at end of file tester.
       fl  For loops using function routing.
       fn  Edit a file in Multi-edit or Notepad by passing in the alias for the desired cbf-fn.
+     fnc  Filename contains.
      fnv  Validate a filename value. Using fnv instead of n helps the reader with clarity of intent.
     fnv2  Validate a filename version 2. Deprecated (Going forward, use fe.bat.)
       fq  Open file using its fully qualified filename.
@@ -182,6 +183,7 @@ Composable Batch Files (CBF) - Table of Contents
      ptm  Sets the path using a monogamous CBF variable that sets the path only.
 	   ptt  Path test for Bash.
 	  purl  Using a DCV, surf to a PIV URL webpage.
+     pyt  Python.
        q  Query Google.
        r  Run application using CBF variables, mostly used in back office operations
     reme  Execute the demo DCV for the passed in alias.

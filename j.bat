@@ -120,6 +120,27 @@ set fp=* Below here is the order of operations.
 
 :_
 
+if not "%cbf-url%" == "" (
+  echo. & echo * Execute URL. Sep-19-2023_2_44_PM
+  call sf %1>nul
+  exit/b
+)
+
+
+
+:_ 
+
+rem Note: This code block needs to be below the URL code block. Sep-19-2023
+if not "%cbf-app%" == "" (
+  rem echo. & echo * cbf-app is non-blank. Aug-29-2023_11_59_AM
+  call r
+  exit/b
+)
+
+
+
+:_
+
 if not "%cbf-gd%" == "" (
   rem echo. & echo * cbf-gd is non-blank. Aug-23-2023_1_53_PM
   call fxw gd %1 %2 %3
@@ -210,27 +231,6 @@ if not "%cbf-fn%" == "" (
 
 :_
 
-if not "%cbf-url%" == "" (
-  echo. & echo * Execute URL. Sep-19-2023_2_44_PM
-  call sf %1>nul
-  exit/b
-)
-
-
-
-:_ 
-
-rem Note: This code block needs to be below the URL code block. Sep-19-2023
-if not "%cbf-app%" == "" (
-  rem echo. & echo * cbf-app is non-blank. Aug-29-2023_11_59_AM
-  call r
-  exit/b
-)
-
-
-
-:_
-
 if not "%cbf-png%" == "" (
   if exist "%cbf-png%" (
     call dc "%cbf-png%"
@@ -302,9 +302,6 @@ if not "%cbf-ji%" == "" (
 
 echo.
 echo * Error: Could not find an executable CBF parameter.
-
-rem (!rfsp) (mov-2)
-
 exit/b
 
 

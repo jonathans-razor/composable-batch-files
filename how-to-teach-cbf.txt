@@ -6,3 +6,5 @@ t.bat series, which utilizes n.bat
 
 of.bat which leverages t.bat
 
+CBF is a learning and memory framework, not just code.
+
