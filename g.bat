@@ -3695,7 +3695,7 @@ exit/b
 
 :add-all-files
 
-echo. & echo * Add all files.
+rem echo. & echo * Add all files.
 
 git add --all
 
