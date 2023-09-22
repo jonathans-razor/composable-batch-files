@@ -1048,7 +1048,7 @@ exit/b
 
 :acp
 
-echo. & echo * Add, commit and push with timestamp commit description.
+rem echo. & echo * Add, commit and push with timestamp commit description.
 
 rem fcd: Apr-13-2017
 
