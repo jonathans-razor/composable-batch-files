@@ -64,21 +64,6 @@ exit/b
 
 
 :_
-:execute-python-file
-
-echo. & echo * Execute python file.
-
-call fe "%~1" & if errorlevel 1 exit/b
-call fnc "%~1" .py & if errorlevel 1 exit/b
-
-echo.
-python "%~1"
-
-exit/b
-
-
-
-:_
 :list
 
 echo. & echo * Show installed modules.
@@ -120,6 +105,21 @@ if "%~2" == "" (
 
 @echo on
 pip uninstall %2
+
+exit/b
+
+
+
+:_
+:execute-python-file
+
+echo. & echo * Execute python file.
+
+call fe "%~1" & if errorlevel 1 exit/b
+call fnc "%~1" .py & if errorlevel 1 exit/b
+
+echo.
+python "%~1"
 
 exit/b
 

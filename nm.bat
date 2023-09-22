@@ -34,7 +34,7 @@ echo          repo  Go to the GitHub repository for a given package.
 echo       set_lic  Set default license to MIT.
 echo       unin_gd  Uninstall global package and remove dependency note.
 echo      up_npm_1  Install latest stable version of NPM. Run as ADMIN.
-echo      up_npm_2  Update NPM.
+echo        up-npm  Update NPM.
 echo        update  Update all dependencies to the latest version.
 echo          vers  Check NPM's version.
 
@@ -288,64 +288,6 @@ exit/b
 
 
 
-:_+ Uninstalling
-
-
-
-::_
-
-:unin_s
-
-set fp=* Uninstall "%2" local package and remove dependency section in the package.json file.
-
-rem lu: Apr-24-2018
-
-echo.
-echo %fp%
-
-echo.
-npm uninstall %2 --save
-
-exit/b
-
-
-
-::_
-
-:unin_gd
-
-set fp=* Uninstall "%2" global package and remove dependency section in the package.json file.
-
-rem lu: Apr-24-2018
-
-echo.
-echo %fp%
-
-echo.
-npm uninstall %2 -g --save
-
-exit/b
-
-
-
-::_
-
-:unin_g
-
-set fp=* Uninstall "%2" global package.
-
-rem lu: Apr-24-2018
-
-echo.
-echo %fp%
-
-echo.
-npm uninstall %2 -g
-
-exit/b
-
-
-
 :_
 
 :prun
@@ -406,28 +348,17 @@ exit/b
 ::_
 
 :ver
-
 :vers
-
 :version
 
-set fp=* Check NPM's version.
-
-rem lu: Sep-12-2018
-
-echo.
-echo %fp%
+echo. & echo * NPM version.
 
 echo.
 npm --version
 
 exit/b
 
-Footnote
->< >< ><
-
-The following also works.
-npm -v
+rem lu: Sep-12-2018
 
 
 
@@ -646,14 +577,9 @@ exit/b
 
 ::_
 
-:up_npm_2
+:up-npm
 
-set fp=* Update NPM itself.
-
-rem lu: Sep-12-2018
-
-echo.
-echo %fp%
+echo. & echo * Update NPM itself.
 
 echo.
 echo * Before the update version number.
@@ -672,6 +598,7 @@ echo.
 echo * If the version numbers are the same, no update was actually done right?
 
 exit/b
+rem lu: Sep-12-2018
 
 
 
@@ -1718,24 +1645,6 @@ exit/b
 
 ::_
 
-:iac
-
-set fp=* Install Angular client.
-
-rem lu: Feb-11-2019
-
-echo.
-echo %fp%
-
-echo.
-npm install -g @angular/cli
-
-exit/b
-
-
-
-::_
-
 :npmh
 
 set fp=* NPM install command for Sencha on Windows.
@@ -1763,6 +1672,81 @@ echo.
 echo %fp%
 
 npm install -g sencha-cmd
+
+exit/b
+
+
+
+::_
+
+:iac
+
+echo. & echo * Install Angular client.
+
+echo.
+npm install -g @angular/cli
+
+exit/b
+
+rem lu: 
+Sep-22-2023
+Feb-11-2019
+
+
+
+:_+ Uninstalling
+
+
+
+::_
+
+:unin-g
+
+set fp=* Uninstall "%2" global package and remove dependency section in the package.json file.
+
+rem lu: Apr-24-2018
+
+echo.
+echo %fp%
+
+echo.
+npm uninstall %2 -g --save
+
+exit/b
+
+
+
+::_
+
+:unin_s
+
+set fp=* Uninstall "%2" local package and remove dependency section in the package.json file.
+
+rem lu: Apr-24-2018
+
+echo.
+echo %fp%
+
+echo.
+npm uninstall %2 --save
+
+exit/b
+
+
+
+::_
+
+:unin_g
+
+set fp=* Uninstall "%2" global package.
+
+rem lu: Apr-24-2018
+
+echo.
+echo %fp%
+
+echo.
+npm uninstall %2 -g
 
 exit/b
 

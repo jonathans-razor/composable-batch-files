@@ -39,10 +39,9 @@ rem creation date:
 
 :_
 :vers
-
+echo. & echo * Node version.
 echo.
 node --version
-
 exit/b
 
 

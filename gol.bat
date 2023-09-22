@@ -2,18 +2,6 @@
 
 @echo off
 
-
-
-:_
-
-set cbf-filep=* Summary: Golang command helper.
-
-
-
-:_
-
-set fp=* Route callers.
-
 if -%~1-==-- goto help
 if -%~1-==-?-goto help
 
@@ -27,17 +15,16 @@ goto %1
 
 cls
 
-echo. & echo %cbf-filep%
+echo. & echo * Golang command helper.
 
-rem lu: 
+echo. & echo   Usage: %0 [space separated parameter(s)]
 
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo * Parameter 1 (Optional):
 
-echo. & echo Parameter 1 (Optional):
-
-echo. & echo Batch file style: Multipurpose
+echo. & echo * Batch file style: Multipurpose
 
 exit/b
+rem lu: Sep-22-2023
 
 
 
@@ -51,7 +38,7 @@ exit/b
 
 :_
 
-:run
+:runm
 
 set fp=* Run a go program.
 
@@ -163,6 +150,21 @@ go mod tidy
 exit/b
 
 I got this command from Phil K. He says it will help me get our go code to compile.
+
+
+:_
+
+:run
+
+echo. & echo * Run a Go program.
+
+call fe "%~2" & if errorlevel 1 exit/b
+call fnc "%~2" .go & if errorlevel 1 exit/b
+
+go run "%~2"
+
+exit/b
+
 
 
 :_

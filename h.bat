@@ -23,7 +23,7 @@ echo. & echo * Show the help file of a function routed parameter.
 
 echo. & echo * Usage: %0 [space separated parameter(s)]
 echo.  Parameter 1: Application name.
-echo.  Parameter 2: If equals "/l", go to Linux style help.
+echo.  Parameter 2: If equals "-l", go to Linux style help.
 
 echo. & echo * Batch file style: Multipurpose.
 
@@ -55,11 +55,30 @@ rem lu: Jul-6-2022
 
 
 :_
+:git-usr-bin-help
+echo. & echo * Git usr bin style help for "%1", piped to a file.
+echo.
+call gub %1 --help>%tmp%\%1-help.txt
+
+if errorlevel 1 (
+  echo.
+  call err Couldn't find a working help call.
+)
+
+call an kr
+set cbf-parameter=%tmp%\%1-help.txt
+call r
+exit/b
+
+
+
+:_
 :windows-help
 echo. & echo * Windows style help for "%1", piped to a file. Under construnction.
 
 echo.
 rem This is the problematic line. I can't get the append " 1" out of the call.
+rem Also note that there is no "call" statement in fromt of the percent 1 like there is in the Linux version. Sep-22-2023
 %1/?>%tmp%\%1-help.txt
 
 if errorlevel 1 (
@@ -82,31 +101,15 @@ exit/b
 echo. & echo * Linux-style help for "%1", piped to a file.
 
 echo.
-%1 --help>%tmp%\%1-help.txt
+@echo on
+call %1 --help>%tmp%\%1-help.txt
 
 if errorlevel 1 (
-  echo.
+  call err Sep-22-2023
+  rem echo.
+  rem echo * Reroute to Git-usr-bin style help.
   exit/b
-  echo * Reroute to Git-usr-bin style help.
-  goto git-usr-bin-help
-)
-
-call an kr
-set cbf-parameter=%tmp%\%1-help.txt
-call r
-exit/b
-
-
-
-:_
-:git-usr-bin-help
-echo. & echo * Git usr bin style help for "%1", piped to a file.
-echo.
-call gub %1 --help>%tmp%\%1-help.txt
-
-if errorlevel 1 (
-  echo.
-  call err Couldn't find a working help call.
+  rem goto git-usr-bin-help
 )
 
 call an kr
