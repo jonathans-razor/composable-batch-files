@@ -3622,7 +3622,7 @@ rem cd | find /i "C:\projects\netbeans\mercury6">nul
 rem if %errorlevel% == 0 echo A commit message is required in this folder.
 rem if %errorlevel% == 0 exit/b
 
-call ujt
+call ujt>nul
 
 set /p commit_description=<%tmp%\java_timestamp.txt
 

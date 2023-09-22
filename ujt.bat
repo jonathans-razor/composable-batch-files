@@ -45,7 +45,7 @@ exit/b
 
 :main
 
-echo. & echo * Update current timestamp.
+echo. & echo * Update timestamp.
 call pn cbf>nul
 set classpath=%cbf-pt%
 java Get_Timestamp_With_No_Spaces>%tmp%\java_timestamp.txt
