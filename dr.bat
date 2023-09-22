@@ -15,7 +15,7 @@ goto create-directory
 
 :help
 echo. & echo * Create and delete directories.
-echo. & echo * Usage: %0 [Parameter (s)]
+echo. & echo   Usage: %0 [Parameter (s)]
 echo. & echo * Parameter 1: The name of the folder you wish to create and navigate to.
 echo   If equal to "d", delete the directory specified in Parameter 2.
 echo   If equal to "/np", the now playing folder will be created.

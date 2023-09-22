@@ -3638,4 +3638,14 @@ exit/b
 
 
 
+:_
+:sail
+echo. & echo * Sailing.
+call pn dr
+set cbf-pt=%cbf-pt%\Sailing
+exit/b
+creation date: Sep-22-2023
+
+
+
 :_ (!efn)
