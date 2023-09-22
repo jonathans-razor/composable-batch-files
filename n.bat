@@ -573,6 +573,7 @@ exit/b
 :ear
 :earx
 :em
+:emai
 echo. & echo * Email accounts registrar.
 call pn exs>nul
 set cbf-ex=%cbf-pt%\email accounts register.xlsx
@@ -3546,6 +3547,7 @@ creation date: Sep-7-2023
 :gp
 :gpt
 echo. & echo * ChatGPT.
+call an edge>nul
 set cbf-url=https://chat.openai.com
 set cbf-url2=https://chat.openai.com/auth/login
 exit/b
@@ -3643,6 +3645,16 @@ exit/b
 echo. & echo * Sailing.
 call pn dr
 set cbf-pt=%cbf-pt%\Sailing
+exit/b
+creation date: Sep-22-2023
+
+
+
+:_
+:brow
+echo. & echo * Browsers.
+call pn jona
+set cbf-gs=https://docs.google.com/spreadsheets/d/1UsvxljiNPkaOmtqXFjs3YSukX_GPuh560svFqhcq00M/edit#gid=0
 exit/b
 creation date: Sep-22-2023
 

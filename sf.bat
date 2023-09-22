@@ -114,6 +114,13 @@ if "%cbf-parameter%" == "" (
 )
 
 if "%cbf-parameter%" == "" (
+  if not "%cbf-gs%" == "" (
+    echo. & echo * Google Sheets.
+    set cbf-parameter=%cbf-gs%
+  )
+)
+
+if "%cbf-parameter%" == "" (
   if not "%cbf-ji%" == "" (
     echo. & echo * Jira.
     set cbf-parameter=%cbf-ji%
