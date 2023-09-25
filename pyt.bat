@@ -25,6 +25,7 @@ echo. & echo   Batch file style: Multipurpose
 
 echo. & echo   Samples:
 echo   %~n0 
+echo   %~n0 hello-world.py
 
 exit/b
 

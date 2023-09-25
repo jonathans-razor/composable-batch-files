@@ -3611,11 +3611,11 @@ rem lu: Sep-21-2023
 
 echo. & echo * Localhost port %1.
 
-rem lu: Jul-06-2022
-
 set cbf-lh=http://localhost:%1
 
 exit/b
+
+rem lu: Jul-06-2022
 
 
 

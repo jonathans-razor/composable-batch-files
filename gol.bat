@@ -23,6 +23,9 @@ echo. & echo * Parameter 1 (Optional):
 
 echo. & echo * Batch file style: Multipurpose
 
+echo. & echo * Examples:
+echo. & echo   gol run hello-world.go
+
 exit/b
 rem lu: Sep-22-2023
 
@@ -150,6 +153,7 @@ go mod tidy
 exit/b
 
 I got this command from Phil K. He says it will help me get our go code to compile.
+
 
 
 :_
