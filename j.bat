@@ -128,17 +128,6 @@ if not "%cbf-url%" == "" (
 
 
 
-:_ 
-
-rem Note: This code block needs to be below the URL code block. Sep-19-2023
-if not "%cbf-app%" == "" (
-  rem echo. & echo * cbf-app is non-blank. Aug-29-2023_11_59_AM
-  call r
-  exit/b
-)
-
-
-
 :_
 
 if not "%cbf-gd%" == "" (
@@ -154,6 +143,17 @@ if not "%cbf-gd%" == "" (
 if not "%cbf-gs%" == "" (
   rem echo. & echo * cbf-gs is non-blank. Aug-23-2023_1_53_PM
   call fxw gs %1 %2 %3
+  exit/b
+)
+
+
+
+:_ 
+
+rem Note: This code block needs to be below the URL code block. Sep-19-2023
+if not "%cbf-app%" == "" (
+  rem echo. & echo * cbf-app is non-blank. Aug-29-2023_11_59_AM
+  call r
   exit/b
 )
 

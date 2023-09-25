@@ -452,22 +452,22 @@ exit/b
 
 
 :_
-:po
-echo. & echo * Poker results.
-call pn exs>nul
-set cbf-ex=%cbf-pt%\poker_results.xlsx
-set cbf-gs=https://docs.google.com/spreadsheets/d/1e867T94-oPhp-23ryHJKt2U0v5oo44g16M79dFz4Cek/edit#gid=1224869523
+:gral
+echo. & echo * Greek Alphabet.
+call an br
+set cbf-gs=https://docs.google.com/spreadsheets/d/1tbV5cVzO5_5zTt4d4pLmohx1DeacuzFB3U5cb19Pcm0/edit#gid=1236387935
 exit/b
-rem lu: Dec-31-2022
+rem lu: Sep-25-2023
 
 
 
 :_
 :miss
-echo. & echo * Mission on Google Sheets.
-set cbf-gs=https://docs.google.com/spreadsheets/d/1-C0vOpYyjAUTsTLBG8N632DP0VVlykLCKnF_wZNYbYs/edit#gid=0
+echo. & echo * Mission.
+call an br
+set cbf-gs=https://docs.google.com/spreadsheets/d/1d1vwKHe2RjbkqmVt8trayVu7YKTzpeutBk2aXa2nxAg/edit#gid=847203255
 exit/b
-rem lu: Sep-5-2023
+rem lu: Sep-25-2023
 
 
 
@@ -719,10 +719,11 @@ creation date: May-30-2023
 :shwe
 :shoe
 :snwe
-echo. & echo * Shoe weights.
+echo. & echo * Shoe Weights.
 call pn exs>nul
-set cbf-ex=%cbf-pt%\shoe weights.xlsx
-set cbf-gs=https://docs.google.com/spreadsheets/d/1EiNU92RGqeGyt5RcAZXk3Ad8RosXlZXKeFzj1Luj6bw/edit#gid=349921952
+set cbf-ex=%cbf-pt%\Shoe Weights.xlsx
+call an br
+set cbf-gs=https://docs.google.com/spreadsheets/d/1_F2hoEwMmbB9B8Oqt4cV1O-4T_6gAyDaJdoX4-OORYU/edit#gid=523644252           
 exit/b
 creation date: Jun-6-2023
 
@@ -1291,18 +1292,15 @@ exit/b
 
 :op
 
-set fp=* Opera.
-
-rem lu: Feb-13-2018
-
-echo.
-echo %fp%
+echo. & echo * Opera.
 
 set cbf-app=c:\program files\opera\launcher.exe
-
 set cbf-pt=C:\ProgramData\Microsoft\Windows\Start Menu\Programs
 
 exit/b
+rem lu: 
+Sep-25-2023
+Feb-13-2018
 
 
 
@@ -2230,6 +2228,7 @@ exit/b
 :st (!qh)
 :fina
 :hc2
+:po
 :fn
 :disc
 :res
@@ -2933,8 +2932,8 @@ rem lu: Jun-20-2023
 :_
 :rt
 echo. & echo * Root.
-set cbf-gd=https://docs.google.com/document/u/5/
-set cbf-gs=https://docs.google.com/spreadsheets/u/0/
+set cbf-gd=https://docs.google.com/document/u/3/
+set cbf-gs=https://docs.google.com/spreadsheets/u/3/
 exit/b
 creation date: Jul-14-2023
 
@@ -3397,8 +3396,10 @@ rem lu: Aug-28-2023
 
 :_
 :higolf
-echo. & echo * Golf history.
-set cbf-url=https://docs.google.com/spreadsheets/d/1obCaXWSyvMNdC4X8BFAXx3sI3aZhKR80MO7N0B9KD1w/edit#gid=0
+echo. & echo * Golf History.
+call an br
+set cbf-gs=https://docs.google.com/spreadsheets/d/1Jd8ZEPJsjwozonWeRni0Fe3hTEOiTifWW42R_yMjNL0/edit#gid=233212548
+
 exit/b
 creation date: Aug-29-2023
 
@@ -3455,10 +3456,11 @@ rem lu: Feb-3-2020
 :fj
 :hifj
 :hires
-echo. & echo * Job search history.
+echo. & echo * Job Search History.
 call pn jona
 set cbf-pt=%cbf-pt%\Find a Job
-set cbf-gs=https://docs.google.com/spreadsheets/d/1ekJKo09FxIsoTB1s5jB4bzjxx4vDWsBOWI8SuCEMrrc/edit#gid=0
+call an br
+set cbf-gs=https://docs.google.com/spreadsheets/d/1MtAgqCRRMNliiAw6nNLj1a0IsIw7nM6n_AcsBm9bvVI/edit#gid=1499309585
 exit/b
 creation date: Aug-31-2023
 
@@ -3654,9 +3656,19 @@ creation date: Sep-22-2023
 :brow
 echo. & echo * Browsers.
 call pn jona
-set cbf-gs=https://docs.google.com/spreadsheets/d/1UsvxljiNPkaOmtqXFjs3YSukX_GPuh560svFqhcq00M/edit#gid=0
+set cbf-gs=https://docs.google.com/spreadsheets/d/10tSDycsuYNkc2ACvw9YeclwAwKIiHNpX7YN7PzpcV9Y/edit#gid=2066608253
 exit/b
 creation date: Sep-22-2023
+
+
+
+:_
+:blr
+echo. & echo * Better life registry.
+call an br
+set cbf-gs=https://docs.google.com/spreadsheets/d/10q6Lde4zafkKnqeSZq8uhgMI4c82DynKiL3dKAcpqGY/edit#gid=101239705
+exit/b
+creation date: Sep-25-2023
 
 
 
