@@ -2387,4 +2387,17 @@ exit/b
 
 
 
+::_
+:
+echo. & echo * Test presence of a file type.
+echo dir *.cs| find /i ".cs">nul
+if errorlevel 0 echo el0
+if errorlevel 1 echo el1
+if errorlevel 2 echo el2
+
+exit/b
+creation date: Sep-25-2023
+
+
+
 :_ (!efv)

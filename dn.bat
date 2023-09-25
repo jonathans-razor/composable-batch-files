@@ -16,7 +16,10 @@ goto %1
 echo. & echo * Perform .NET Core functions.
 
 echo.
-echo Usage: %0 [Parameter 1]
+echo * Usage: %0 [Parameter 1]
+
+echo. & echo * Samples:
+echo. & echo dn r
 
 exit/b
 
@@ -213,8 +216,12 @@ rem lu: Sep-15-2023
 :r
 :run
 echo. & echo * Run DotNetCore web server.
+
+call ftpr cs & if errorlevel 1 exit/b 1
+
 echo.
 dotnet run
+
 exit/b
 
 

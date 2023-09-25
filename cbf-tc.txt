@@ -58,7 +58,7 @@ Composable Batch Files (CBF) - Table of Contents
     depn  Delete folder corresponding to CBF path alias parameter
     devu  Demo file for Dev Universiy event on Jan-9-2020
      dif  Are 2 files the same?
-      dn  Dot Net Core
+      dn  Dot Net Core (skw dotnet)
       dr  Create and delete directories. (skw mcd, folder)
       dt  Date.
      drt  Dir, with td parameter.
@@ -86,6 +86,7 @@ Composable Batch Files (CBF) - Table of Contents
       fq  Open file using its fully qualified filename.
       fs  Filenames search.
      fsp  Perennial filenames search.
+    ftpr  File type presence in current folder checker.
       fx  Open any file with any application using a DCV.
      fxw  A wrapper around fx.bat.
        g  Git
