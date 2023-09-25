@@ -92,36 +92,6 @@ exit/b
 
 :_
 
-:run_ui
-
-:serve
-
-:srv
-
-set fp=* Compile and start Angular.
-
-rem lu: Feb-11-2019
-
-echo.
-echo %fp%
-
-echo %cd% | find /i "\portal-client">nul
-
-if %errorlevel% == 1 (
-  echo.
-  echo * Error: You must be in the portal-client folder for this command to work.
-  exit/b 1
-)
-
-echo.
-ng serve
-
-exit/b
-
-
-
-:_
-
 :lhp
 
 set fp=* Run the Admin Portal on localhost.
@@ -263,6 +233,67 @@ echo. & echo * Version.
 ng version
 exit/b
 creation date: Sep-25-2023
+
+
+
+:_
+:cna
+echo. & echo * Create new application.
+ng new hello-world-app
+exit/b
+creation date: Sep-25-2023
+
+
+
+:_
+:cnc
+echo. & echo * Create new component.
+ng generate component hello
+rem Provenance: Jul-16-2021_11_43_AM qq1
+exit/b
+creation date: Sep-25-2023
+
+
+
+:_
+
+:run_ui-old
+
+set fp=* Compile and start Angular.
+
+rem lu: Feb-11-2019
+
+echo.
+echo %fp%
+
+echo %cd% | find /i "\portal-client">nul
+
+if %errorlevel% == 1 (
+  echo.
+  echo * Error: You must be in the portal-client folder for this command to work.
+  exit/b 1
+)
+
+echo.
+ng serve
+
+exit/b
+
+
+
+:_
+
+:run-ui
+:serve
+:srv
+
+echo. & echo * Compile and start Angular.
+
+echo.
+ng serve
+
+exit/b
+rem lu: Sep-25-2023
 
 
 
