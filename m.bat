@@ -5602,7 +5602,6 @@ exit/b
 
 ::_
 
-rem qq
 :file_type_presence
 
 set fp=* Deprecated: Going forward, please use ftpr.bat. Sep-25-2023
