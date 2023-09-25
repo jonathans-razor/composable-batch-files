@@ -3672,4 +3672,14 @@ creation date: Sep-25-2023
 
 
 
+:_
+:otta
+echo. & echo * Otta.
+call pn
+set cbf-url=https://app.otta.com/
+exit/b
+creation date: Sep-25-2023
+
+
+
 :_ (!efn)
