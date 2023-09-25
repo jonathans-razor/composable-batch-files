@@ -2,23 +2,7 @@
 
 @echo off
 
-
-
-:_
-
-set cbf-filep=* Angular-related tasks.
-
-echo.
-echo %cbf-filep%
-
-
-
-:_
-
-set fp=* Route callers.
-
 if "%~1" == "" goto help
-
 if "%~1" == "?" goto help
 
 goto %1
@@ -29,19 +13,22 @@ goto %1
 
 :help
 
-rem lu: Oct-15-2019
+echo. & echo * Angular-related tasks.
 
 echo.
 echo Usage: %0 [Parameter 1] (where parameter one is the atomic function you wish to call)
 
 exit/b
 
+lu:
+Sep-25-2023
+Oct-15-2019
 
 
 :_
-  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ____
- (______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(____
- ____(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(
+   .--.      .--.      .--.      .--.      .--.                 
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+        `--'      `--'      `--'      `--'      `--'     
 
 
 
@@ -270,4 +257,13 @@ exit/b
 
 
 
-:_ (!efang, !rfsp) (mov-9)
+:_
+:vers
+echo. & echo * Version.
+ng version
+exit/b
+creation date: Sep-25-2023
+
+
+
+:_
