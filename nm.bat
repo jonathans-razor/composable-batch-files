@@ -1041,37 +1041,6 @@ rem lu: Aug-29-2023
 
 :_
 
-:star
-
-:start
-
-set fp=* Starts the development server.
-
-rem lu: Sep-2-2021
-
-echo.
-echo %fp%
-
-if not exist "package.json" (
-  echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
-  exit/b
-)
-
-echo.
-npm start
-
-exit/b
-
-
-Footnote
->< >< ><
-
-Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
-
-
-
-:_
-
 :fix
 
 set fp=* Fix npm installation in the current folder.
@@ -1140,36 +1109,6 @@ call m specific_file_presence package.json
 if errorlevel 1 exit/b
 
 npm install -g @aws-amplify/cli
-
-exit/b
-
-
-
-:_
-
-:rs
-
-:run
-
-:run-ui
-
-:rust
-
-set fp=* Run React UI.
-
-rem lu: Aug-27-2021
-
-echo.
-echo %fp%
-
-call m specific_file_presence package.json 
-
-if errorlevel 1 exit/b
-
-echo.
-rem npm run start
-rem npm start
-npm start
 
 exit/b
 
@@ -1764,6 +1703,33 @@ exit/b
 
 lu:
 Sep-26-2023
+
+
+
+:_
+
+:rs
+:run
+:run-ui
+:rust
+:star
+:start
+
+echo. & echo * Run React UI. Starts the development server.
+
+call fe package.json & if errorlevel 1 exit/b
+
+echo.
+npm start
+rem npm run start
+
+exit/b
+
+rem lu:
+Sep-26-2023
+Aug-27-2021
+
+Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
 
 
 
