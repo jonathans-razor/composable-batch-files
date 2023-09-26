@@ -9,22 +9,22 @@ goto main
 :_
 :help
 cls
-echo. & echo * 
+echo. & echo  * 
 
-echo. & echo   Usage: %~n0 [space separated parameter(s)]
+echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo   Parameter 1:
-echo  
+echo. & echo  * Parameter 1:
+echo    x 
 
-echo. & echo   Batch file style: Multipurpose
+echo. & echo  * Batch file style: Multipurpose
 
-echo. & echo   Samples:
-echo   %~n0 
+echo. & echo  * Samples:
+echo    %~n0 
 
 exit/b
 
-rem creation date: 
-
+lu: 
+Sep-26-2023
 
 
 :_

@@ -36,6 +36,7 @@ lu: Sep-21-2023
 :_
 
 :main
+call el /c>nul
 echo %1| find /i "%2">nul
 if errorlevel 1 (
   call err Expected a %2 type file.

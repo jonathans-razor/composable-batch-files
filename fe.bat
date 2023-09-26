@@ -5,6 +5,8 @@
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
+call el /c>nul
+
 echo %1| find /i ".">nul
 if errorlevel 1 goto process-alias
 

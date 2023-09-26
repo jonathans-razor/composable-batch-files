@@ -37,6 +37,7 @@ lu: Sep-21-2023
 :_
 
 :main
+call el /c>nul
 if not exist *.%1 (
   call err No "%1" file(s^) exist in the current folder.
   exit/b 1

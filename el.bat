@@ -16,17 +16,19 @@ cls
 
 echo. & echo * Show or clear errorl level.
 
-rem lu: Oct-06-2022
-
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo   Usage: %0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1 (Optional): 
 
-echo. & echo * If "/c" is passed in, the error level is cleared.
+echo. & echo   If "/c" is passed in, the error level is cleared.
 
 echo. & echo * Batch file style: Single purpose
 
 exit/b
+
+lu: 
+Sep-26-2023
+Oct-06-2022
 
 
 
