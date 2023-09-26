@@ -19,16 +19,17 @@ cls
 echo. & echo * Use a DCV to copy a cbf variable to the clipboard.
 
 echo. & echo * Usage: %0 [space separated parameter(s)]
-echo * Parameter 1: Alias.
-echo * Parameter 2: DCV.
-
-echo. & echo * Examples:
-echo * %0 sr66 hostname
-echo * %0 jjgh url
-echo * %0 fqma ip
-echo * %0 ma cron
+echo   Parameter 1: Alias.
+echo   Parameter 2: DCV.
 
 echo. & echo * Batch file style: Single task.
+
+echo. & echo * Examples:
+echo   %0 sr66 hostname
+echo   %0 jjgh url
+echo   %0 fqma ip
+echo   %0 ma cron
+
 
 exit/b
 rem lu: Mar-31-2022
