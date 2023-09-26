@@ -795,67 +795,6 @@ exit/b
 
 
 
-:_+ Create a React App
-
-
-
-::_
-
-:crar
-
-set fp=* Create a React app at root.
-
-rem lu: Aug-26-2021
-
-echo.
-echo %fp%
-
-npx create-react-app .
-
-exit/b
-
-
-
-::_
-
-:cra
-
-set fp=* Create a React app.
-
-rem lu: Aug-30-2021
-
-echo.
-echo %fp%
-
-if "%~2" == "" (
-  echo.
-  echo * Error: Parameter 2, the application/folder name, is required.
-  exit/b
-)
-
-npx create-react-app %2
-
-exit/b
-
-
-
-::_
-
-:crart
-
-set fp=* Create a React app at root that has TypeScript enabled.
-
-rem lu: Oct-26-2021
-
-echo.
-echo %fp%
-
-npx create-react-app . --template typescript
-
-exit/b
-
-
-
 :_
 
 :re
@@ -1749,6 +1688,82 @@ echo.
 npm uninstall %2 -g
 
 exit/b
+
+
+
+:_+ Create a React App
+
+
+
+::_
+
+:crar
+
+set fp=* Create a React app at root.
+
+rem lu: Aug-26-2021
+
+echo.
+echo %fp%
+
+npx create-react-app .
+
+exit/b
+
+
+
+::_
+
+:cra
+
+set fp=* Create a React app.
+
+rem lu: Aug-30-2021
+
+echo.
+echo %fp%
+
+if "%~2" == "" (
+  echo.
+  echo * Error: Parameter 2, the application/folder name, is required.
+  exit/b
+)
+
+npx create-react-app %2
+
+exit/b
+
+
+
+::_
+
+:crart
+
+set fp=* Create a React app at root that has TypeScript enabled.
+
+rem lu: Oct-26-2021
+
+echo.
+echo %fp%
+
+npx create-react-app . --template typescript
+
+exit/b
+
+
+
+::_
+
+:cra-gp
+
+echo. & echo * Create a React app per ChatGPT.
+
+npx create-react-app hello-world-react
+
+exit/b
+
+lu:
+Sep-26-2023
 
 
 
