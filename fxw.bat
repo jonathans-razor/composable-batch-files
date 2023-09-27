@@ -108,18 +108,6 @@ exit/b
 
 
 :_
-
-:lh
-
-rem echo. & echo * Bitbucket root 1.
-
-call fx od lh kr
-
-exit/b
-
-
-
-:_
 :pr
 
 set fp=* CVT pull requests webpage.
