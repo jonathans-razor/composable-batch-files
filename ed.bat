@@ -67,13 +67,9 @@ if "%cbf-fn%"=="" (
   call :open-share-zone-file %*>nul
 )
 
-echo Error Level: %errorlevel% - qjq - Jul-3-2023_3_51_PM
 if "%cbf-fn%"=="" (
   call :open-aliased-file %*
 )
-
-echo Error Level: %errorlevel% - qjq - Jul-3-2023_3_52_PM
-rem if errorlevel 1 exit/b
 
 if "%cbf-fn%"=="" (
   echo. & echo * Cbf-fn doesn't exist. Can't find an existing file to edit. Sep-02-2022

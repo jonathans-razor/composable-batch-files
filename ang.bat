@@ -249,7 +249,6 @@ creation date: Sep-25-2023
 :cnc
 echo. & echo * Create new component.
 ng generate component hello
-rem Provenance: Jul-16-2021_11_43_AM qq1
 exit/b
 creation date: Sep-25-2023
 

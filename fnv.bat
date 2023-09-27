@@ -54,8 +54,6 @@ call n %1
 
 if errorlevel 1 exit/b
 
-echo. & echo Error Level: %errorlevel% - qjq - Jul-13-2023_2_51_PM
-
 if defined cbf-fn (
   rem echo.
   rem echo * cbf-fn file is defined. {%cbf-fn%}
