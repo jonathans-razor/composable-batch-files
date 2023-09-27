@@ -165,6 +165,7 @@ echo. & echo * Run a Go program.
 call fe "%~2" & if errorlevel 1 exit/b
 call fnc "%~2" .go & if errorlevel 1 exit/b
 
+echo.
 go run "%~2"
 
 exit/b

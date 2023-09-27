@@ -78,23 +78,6 @@ exit/b
 
 
 :_
-:inst
-
-echo. & echo * Install module.
-
-if "%~2" == "" (
-  call err Expected module name. Sep-21-2023_12_47_PM
-  exit/b
-)
-
-@echo on
-pip install %2
-
-exit/b
-
-
-
-:_
 :unin
 
 echo. & echo * Uninstall module.
@@ -121,6 +104,24 @@ call fnc "%~1" .py & if errorlevel 1 exit/b
 
 echo.
 python "%~1"
+
+exit/b
+
+
+
+:_
+:inst
+
+echo. & echo * Install module.
+
+if "%~2" == "" (
+  call err Expected module name. Sep-21-2023_12_47_PM
+  exit/b
+)
+
+echo.
+@echo on
+pip install %2
 
 exit/b
 
