@@ -2,8 +2,8 @@
 
 @echo off
 
-if -%~1-==-- goto help
-if -%~1-==-?-goto help
+if "%~1" == "" goto help
+if "%~1" == "?" goto help
 
 goto %1
 
@@ -24,7 +24,7 @@ echo. & echo * Parameter 1 (Optional):
 echo. & echo * Batch file style: Multipurpose
 
 echo. & echo * Examples:
-echo. & echo   gol run hello-world.go
+echo   gol run hello-world.go
 
 exit/b
 rem lu: Sep-22-2023
