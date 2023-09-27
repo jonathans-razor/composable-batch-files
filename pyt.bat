@@ -128,3 +128,18 @@ exit/b
 
 
 :_
+:uvic
+
+echo. & echo * Run uvicorn.
+
+echo.
+uvicorn hello-world-api-using-python-and-fastapi:app --reload
+
+exit/b
+
+lu:
+Sep-27-2023
+
+
+
+:_

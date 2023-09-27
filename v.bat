@@ -1347,7 +1347,7 @@ exit/b
 
 :validate_path
 
-if errorlevel 1 exit/b (!ec, !gtr, !err, !erro, !el, !erle)
+if errorlevel 1 exit/b (!el1, !ec, !gtr, !err, !erro, !el, !erle)
 
 Inside an if loop: if %errorlevel% == 5 Jun-28-2023
 
@@ -1373,6 +1373,24 @@ if not exist "%cbf-pt%" (
   echo * Error: The cbf-pt "%cbf-pt%" could not be found.
   exit/b
 )
+
+
+
+::_
+
+:elt1
+
+echo. & echo * Error level test 1. If this returns 1, it means error level is working!
+
+rem lu: Feb-17-2022
+
+rem canary in a coal mine, error level testing
+
+echo %1 | find "not-present">nul
+
+call el
+
+exit/b
 
 
 
@@ -1538,24 +1556,6 @@ if errorlevel 1 (
 ) else (
   echo. & echo * Error level equals: %errorlevel%.
 )
-
-exit/b
-
-
-
-::_
-
-:el1
-
-echo. & echo * Error level test 1. If this returns 1, it means error level is working!
-
-rem lu: Feb-17-2022
-
-rem canary in a coal mine, error level testing
-
-echo %1 | find "not-present">nul
-
-call el
 
 exit/b
 

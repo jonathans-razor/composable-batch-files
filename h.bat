@@ -101,16 +101,9 @@ exit/b
 echo. & echo * Linux-style help for "%1", piped to a file.
 
 echo.
-@echo on
 call %1 --help>%tmp%\%1-help.txt
 
-if errorlevel 1 (
-  call err Sep-22-2023
-  rem echo.
-  rem echo * Reroute to Git-usr-bin style help.
-  exit/b
-  rem goto git-usr-bin-help
-)
+if errorlevel 1 exit/b
 
 call an kr
 set cbf-parameter=%tmp%\%1-help.txt
