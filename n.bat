@@ -3642,12 +3642,15 @@ creation date: Sep-25-2023
 
 
 ::_
-:bard
-echo. & echo * Bard.
-set cbf-url=https://bard.google.com/
+:chat
+:gp
+:gpt
+echo. & echo * ChatGPT.
+call an edge>nul
+set cbf-url=https://chat.openai.com
+set cbf-url2=https://chat.openai.com/auth/login
 exit/b
 creation date: Sep-7-2023
-
 
 
 ::_
@@ -3661,13 +3664,9 @@ creation date: Sep-7-2023
 
 
 ::_
-:chat
-:gp
-:gpt
-echo. & echo * ChatGPT.
-call an edge>nul
-set cbf-url=https://chat.openai.com
-set cbf-url2=https://chat.openai.com/auth/login
+:bard
+echo. & echo * Bard.
+set cbf-url=https://bard.google.com/
 exit/b
 creation date: Sep-7-2023
 
@@ -3683,6 +3682,15 @@ creation date: Sep-7-2023
 
 
 ::_
+:perp
+echo. & echo * Perplexity.ai.
+set cbf-url=https://www.perplexity.ai
+exit/b
+creation date: Sep-20-2023
+
+
+
+::_
 :jasp
 echo. & echo * Jasper.ai.
 set cbf-url=https://www.jasper.ai
@@ -3693,7 +3701,7 @@ creation date: Sep-20-2023
 
 ::_
 :ubdu
-echo. & echo * Uberduck.ai.
+echo. & echo * Uberduck.ai. Make Music WithAI Vocals.
 set cbf-url=https://www.uberduck.ai
 exit/b
 creation date: Sep-20-2023
@@ -3701,11 +3709,7 @@ creation date: Sep-20-2023
 
 
 ::_
-:perp
-echo. & echo * Perplexity.ai.
-set cbf-url=https://www.perplexity.ai
-exit/b
-creation date: Sep-20-2023
+rem qq
 
 
 
