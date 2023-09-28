@@ -3521,69 +3521,6 @@ creation date: Sep-12-2023
 
 
 
-:_+ AI Family
-
-
-
-::_
-:bard
-echo. & echo * Bard.
-set cbf-url=https://bard.google.com/
-exit/b
-creation date: Sep-7-2023
-
-
-
-::_
-:bing
-:new-bing
-echo. & echo * New Bing.
-set cbf-url=https://www.bing.com/search?q=Bing+AI
-exit/b
-creation date: Sep-7-2023
-
-
-
-::_
-:chat
-:gp
-:gpt
-echo. & echo * ChatGPT.
-call an edge>nul
-set cbf-url=https://chat.openai.com
-set cbf-url2=https://chat.openai.com/auth/login
-exit/b
-creation date: Sep-7-2023
-
-
-
-::_
-:clai
-echo. & echo * Claude.ai.
-set cbf-url=https://claude.ai/chats
-exit/b
-creation date: Sep-7-2023
-
-
-
-::_
-:jasp
-echo. & echo * Jasper.ai.
-set cbf-url=https://www.jasper.ai
-exit/b
-creation date: Sep-20-2023
-
-
-
-::_
-:ubdu
-echo. & echo * Uberduck.ai.
-set cbf-url=https://www.uberduck.ai
-exit/b
-creation date: Sep-20-2023
-
-
-
 :_+ Localhost
 
 
@@ -3697,6 +3634,78 @@ call pn
 set cbf-url=https://app.otta.com/
 exit/b
 creation date: Sep-25-2023
+
+
+
+:_+ AI Family
+
+
+
+::_
+:bard
+echo. & echo * Bard.
+set cbf-url=https://bard.google.com/
+exit/b
+creation date: Sep-7-2023
+
+
+
+::_
+:bing
+:new-bing
+echo. & echo * New Bing.
+set cbf-url=https://www.bing.com/search?q=Bing+AI
+exit/b
+creation date: Sep-7-2023
+
+
+
+::_
+:chat
+:gp
+:gpt
+echo. & echo * ChatGPT.
+call an edge>nul
+set cbf-url=https://chat.openai.com
+set cbf-url2=https://chat.openai.com/auth/login
+exit/b
+creation date: Sep-7-2023
+
+
+
+::_
+:clai
+echo. & echo * Claude.ai.
+set cbf-url=https://claude.ai/chats
+exit/b
+creation date: Sep-7-2023
+
+
+
+::_
+:jasp
+echo. & echo * Jasper.ai.
+set cbf-url=https://www.jasper.ai
+exit/b
+creation date: Sep-20-2023
+
+
+
+::_
+:ubdu
+echo. & echo * Uberduck.ai.
+set cbf-url=https://www.uberduck.ai
+exit/b
+creation date: Sep-20-2023
+
+
+
+::_
+:perp
+echo. & echo * Perplexity.ai.
+set cbf-url=https://www.perplexity.ai
+exit/b
+creation date: Sep-20-2023
 
 
 
