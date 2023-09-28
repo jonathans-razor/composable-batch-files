@@ -13,10 +13,15 @@ goto %1
 
 :help
 
+cls
+
 echo. & echo * Angular-related tasks.
 
+echo   Usage: %0 [Parameter 1] (where parameter one is the atomic function you wish to call)
+
 echo.
-echo Usage: %0 [Parameter 1] (where parameter one is the atomic function you wish to call)
+echo * Sample:
+echo   %0 srv
 
 exit/b
 

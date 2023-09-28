@@ -8,7 +8,9 @@ goto main
 
 :_
 :help
+
 cls
+
 echo. & echo  * 
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
