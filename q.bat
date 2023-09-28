@@ -19,15 +19,19 @@ goto main
 
 :help
 
+cls
+
 echo. & echo * Query Google.
 
 echo. & echo * Usage: %0
 
-echo. & echo * No double quotes are required.
+echo. & echo * Parameter 1: 
+echo   If equal to "/b", Bing is used.
+echo   If equal to "/dfw", the phrase " download for Windows" will be appended to your search query.
 
-echo. & echo * Parameter 1: If equal to "/dfw", the phrase " download for Windows" will be appended to your search query.
+echo. & echo * Parameter 2 and greater: search keyword(s)
 
-echo. & echo * Batch file style: Single purpose
+echo. & echo   No double quotes are required.
 
 echo. & echo * Example(s):
 echo   %0 /b What is the meaning of life?
