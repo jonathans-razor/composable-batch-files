@@ -411,3 +411,19 @@ rem lu: Sep-29-2023
 
 
 :_
+
+:afa
+
+echo. & echo * Add font awesome.
+
+call cdc \src\app & if errorlevel 1 exit/b
+
+echo.
+ng add @fortawesome/angular-fontawesome
+
+exit/b
+rem lu: Sep-29-2023
+
+
+
+:_
