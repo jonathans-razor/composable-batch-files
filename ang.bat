@@ -318,3 +318,26 @@ rem lu: Sep-25-2023
 
 
 :_
+
+:ghc
+
+echo. & echo * Generate header component.
+
+echo %cd% | find /i "\src\app">nul
+
+if %errorlevel% == 1 (
+  echo.
+  echo * Error: You must be in the src\app folder for this command to work.
+  exit/b 1
+)
+
+
+echo.
+ng generate component components/header
+
+exit/b
+rem lu: Sep-29-2023
+
+
+
+:_
