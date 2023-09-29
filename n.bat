@@ -3712,7 +3712,7 @@ creation date: Sep-20-2023
 :acc
 echo. & echo * Angular Crash Course.
 call pn iw
-set cbf-pt=%cbf-pt%\angular-crash
+set cbf-pt=%cbf-pt%\angular-crash\src\app
 set cbf-gh=https://github.com/bradtraversy/angular-crash-2021
 set cbf-yt=https://www.youtube.com/watch?v=3dHNOWTI7H8
 exit/b

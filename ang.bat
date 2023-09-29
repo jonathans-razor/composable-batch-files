@@ -341,22 +341,6 @@ rem lu: Sep-29-2023
 
 :_
 
-:gtc
-
-echo. & echo * Generate taskn component.
-
-call cdc \src\app & if errorlevel 1 exit/b
-
-echo.
-ng generate component components/tasks
-
-exit/b
-rem lu: Sep-29-2023
-
-
-
-:_
-
 :lh-old
 
 echo. & echo * Run the Admin Portal on localhost.
@@ -390,7 +374,24 @@ ng serve
 exit/b
 
 lu:
-Feb-11-2019
+Sep-29-2023
+
+
+
+:_
+
+:gtc
+
+echo. & echo * Generate task component.
+
+call cdc \src\app & if errorlevel 1 exit/b
+
+echo.
+ng generate component components/tasks
+
+exit/b
+rem lu: Sep-29-2023
+
 
 
 :_

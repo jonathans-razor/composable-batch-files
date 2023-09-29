@@ -1,8 +1,9 @@
 :_
 
 @echo off
-if "%~1" == "" goto run-application-without-parameter
 if "%~1" == "?" goto help
+if "%~1" == "" goto run-application-without-parameter
+if "%~1" == "." goto open-current-folder
 goto main
 
 
@@ -37,8 +38,16 @@ rem creation date: Jul-3-2023
 
 :_
 :run-application-without-parameter
-code
 echo. & echo * Run application without parameter.
+code
+exit/b
+
+
+
+:_
+:open-current-folder
+echo. & echo * Open current folder.
+code.
 exit/b
 
 
