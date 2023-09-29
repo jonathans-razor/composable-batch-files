@@ -36,6 +36,8 @@ rem creation date: Sep-20-2023
 
 cls
 
+set cbf-current-folder=%cd%
+
 call sep
 call pa ql
 
@@ -47,6 +49,8 @@ call pa c
 
 call sep
 call t a
+
+cd /d %cbf-current-folder%
 
 exit/b
 
