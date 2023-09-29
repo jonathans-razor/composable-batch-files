@@ -1105,31 +1105,6 @@ exit/b
 
 :_
 
-:ruse
-
-set fp=* Run JSON server.
-
-rem lu: Oct-18-2021
-
-echo.
-echo %fp%
-
-npm run server
-
-exit/b
-
-
-Footnote
->< >< ><
-
-When I was doing the React Crash Course, before running the react, first you need to run this 
-JSON server command in order to start your local database so that data is available for the to 
-do app that we created.
-
-
-
-:_
-
 :dist
 
 :in
@@ -1728,6 +1703,29 @@ exit/b
 lu:
 Sep-29-2023
 Oct-15-2021
+
+
+
+:_
+
+:rjs
+
+echo. & echo * Run JSON server.
+
+npm run server
+
+exit/b
+
+lu:
+Sep-29-2023
+Oct-18-2021
+
+Footnote
+>< >< ><
+
+When I was doing the React Crash Course, before running the react, first you need to run this 
+JSON server command in order to start your local database so that data is available for the to 
+do app that we created.
 
 
 

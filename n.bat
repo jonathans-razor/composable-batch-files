@@ -3556,6 +3556,22 @@ Jul-06-2022
 
 ::_
 
+:5000
+
+echo. & echo * Show JSON Server.
+
+rem set cbf-lh=http://localhost:5000
+set cbf-lh=http://localhost:5000/tasks
+
+exit/b
+
+lu:
+Sep-29-2023
+
+
+
+::_
+
 :8000
 
 :8080
