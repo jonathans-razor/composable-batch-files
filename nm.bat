@@ -1105,23 +1105,6 @@ exit/b
 
 :_
 
-:ijs
-
-set fp=* Install JSON server.
-
-rem lu: Oct-15-2021
-
-echo.
-echo %fp%
-
-npm i json-server
-
-exit/b
-
-
-
-:_
-
 :ruse
 
 set fp=* Run JSON server.
@@ -1726,6 +1709,26 @@ exit/b
 lu:
 Sep-29-2023
 Sep-2-2021
+
+
+
+:_
+
+:ijs
+
+echo. & echo * Install JSON server.
+
+call fe package.json & if errorlevel 1 exit/b
+
+rem qq
+npm i json-server
+
+exit/b
+
+lu:
+Sep-29-2023
+Oct-15-2021
+
 
 
 :_ (!rfsp) (mov-6)
