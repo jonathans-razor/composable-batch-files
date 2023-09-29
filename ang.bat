@@ -106,7 +106,7 @@ rem lu: Feb-11-2019
 echo.
 echo %fp%
 
-call sf 4200 krm
+call sf 4200 kr
 
 call t port
 
