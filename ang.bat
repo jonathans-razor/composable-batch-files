@@ -302,3 +302,17 @@ rem lu: Sep-25-2023
 
 
 :_
+
+:cras
+
+echo. & echo * Create crash course app.
+
+echo.
+ng new angular-crash
+
+exit/b
+rem lu: Sep-29-2023
+
+
+
+:_
