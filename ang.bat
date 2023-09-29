@@ -287,22 +287,6 @@ exit/b
 
 :_
 
-:run-ui
-:serve
-:srv
-
-echo. & echo * Compile and start Angular.
-
-echo.
-ng serve
-
-exit/b
-rem lu: Sep-25-2023
-
-
-
-:_
-
 :cras
 
 echo. & echo * Create crash course app.
@@ -312,6 +296,24 @@ ng new angular-crash
 
 exit/b
 rem lu: Sep-29-2023
+
+
+
+:_
+
+:run-ui
+:serve
+:srv
+
+echo. & echo * Compile and start Angular.
+
+call fe package.json & if errorlevel 1 exit/b
+
+echo.
+ng serve
+
+exit/b
+rem lu: Sep-25-2023
 
 
 

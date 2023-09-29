@@ -3708,7 +3708,13 @@ creation date: Sep-20-2023
 
 
 
-::_
+:_
+:acc
+echo. & echo * Angular Crash Course.
+call pn iw
+set cbf-pt=%cbf-pt%\angular-crash
+exit/b
+lu: Sep-29-2023
 
 
 
