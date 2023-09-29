@@ -3713,6 +3713,7 @@ creation date: Sep-20-2023
 echo. & echo * Angular Crash Course.
 call pn iw
 set cbf-pt=%cbf-pt%\angular-crash
+set cbf-gh=https://github.com/bradtraversy/angular-crash-2021
 exit/b
 lu: Sep-29-2023
 
