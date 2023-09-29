@@ -427,3 +427,19 @@ rem lu: Sep-29-2023
 
 
 :_
+
+:gs
+
+echo. & echo * Generate service.
+
+call cdc \src\app & if errorlevel 1 exit/b
+
+echo.
+ng generate service services/task
+
+exit/b
+rem lu: Sep-29-2023
+
+
+
+:_
