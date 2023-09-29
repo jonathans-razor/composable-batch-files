@@ -47,9 +47,6 @@ call pa iw
 call sep
 call pa c
 
-call sep
-call t a
-
 cd /d %cbf-current-folder%
 
 exit/b
