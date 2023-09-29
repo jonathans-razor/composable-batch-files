@@ -1695,7 +1695,6 @@ echo. & echo * Install JSON server.
 
 call fe package.json & if errorlevel 1 exit/b
 
-rem qq
 npm i json-server
 
 exit/b

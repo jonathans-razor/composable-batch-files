@@ -286,6 +286,12 @@ set cbf-gh=
 
 
 :_
+rem GitHub - My Implementation of Another GitHub Repository
+set cbf-ghmy=
+
+
+
+:_
 rem GitHub Historical record
 set cbf-ghh=
 
@@ -487,6 +493,11 @@ set cbf-lnk=
 :_
 rem Message
 set cbf-msg=
+
+
+
+:_
+><    ><    ><    ><    ><    Separator (!midwi, !half, !midw): Halfway point. (skw midway)
 
 
 
