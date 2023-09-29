@@ -1041,34 +1041,6 @@ rem lu: Aug-29-2023
 
 :_
 
-:fix
-
-set fp=* Fix npm installation in the current folder.
-
-rem lu: Sep-2-2021
-
-echo.
-echo %fp%
-
-if not exist "package.json" (
-  echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
-  exit/b
-)
-
-cls
-
-call m rd node_modules
-
-del package-lock.json
-
-call nm inst
-
-exit/b
-
-
-
-:_
-
 :pyth
 
 set fp=* Set Python configuration path.
@@ -1731,6 +1703,29 @@ Aug-27-2021
 
 Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
 
+
+
+:_
+
+:fix
+
+echo. & echo * Fix npm installation in the current folder.
+
+call fe package.json & if errorlevel 1 exit/b
+
+cls
+
+call dr d node_modules
+
+del package-lock.json
+
+call nm inst
+
+exit/b
+
+lu:
+Sep-29-2023
+Sep-2-2021
 
 
 :_ (!rfsp) (mov-6)

@@ -95,28 +95,6 @@ exit/b
 
 
 
-:_
-
-:lhp
-
-set fp=* Run the Admin Portal on localhost.
-
-rem lu: Feb-11-2019
-
-echo.
-echo %fp%
-
-call sf 4200 kr
-
-call t port
-
-echo.
-ng serve
-
-exit/b
-
-
-
 :_+ Build for Production family
 
 
@@ -370,12 +348,49 @@ echo. & echo * Generate taskn component.
 call cdc \src\app & if errorlevel 1 exit/b
 
 echo.
-rem qq
-ng generate component components/task
+ng generate component components/tasks
 
 exit/b
 rem lu: Sep-29-2023
 
+
+
+:_
+
+:lh-old
+
+echo. & echo * Run the Admin Portal on localhost.
+
+call sf 4200 kr
+
+call t port
+
+echo.
+ng serve
+
+exit/b
+
+lu: Feb-11-2019
+
+
+
+:_
+
+:acc
+
+echo. & echo * Run Angular Crash Course on localhost.
+
+call lh 4200 edge
+
+call t acc
+
+echo.
+ng serve
+
+exit/b
+
+lu:
+Feb-11-2019
 
 
 :_

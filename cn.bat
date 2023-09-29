@@ -98,15 +98,18 @@ exit/b
 
 :_
 :github-https-stored-value
+
 echo. & echo * GitHub https stored value.
-if "%~1" == "" (
+
+if "%~2" == "" (
   call err The alias for the repository you wish to clone is required. Mar-06-2023-14-27
   exit/b
 )
+
 set cbf-gh=
-call n %1
+call n %2
 if "%cbf-gh%" == "" (
-  call err "cbf-gh" is not defined for alias "%1". Mar-06-2023-14-26
+  call err "cbf-gh" is not defined for alias "%2". Mar-06-2023-14-26
   exit/b
 )
 echo.

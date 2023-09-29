@@ -1,9 +1,9 @@
 @echo off
-set cbf-%1=
-if -%~1- == -- goto help
-if -%~1- == -?- goto help
-if -%~2- == -- goto %1
-if -%~2- == -?-goto help
+
+if "%~1" == "" goto help
+if "%~1" == "?" goto help
+if "%~2" == "" goto %1
+
 goto main
 
 
@@ -103,6 +103,14 @@ exit/b
 :ji
 echo. & echo * Default Jira ticket.
 call fx np ji kr
+exit/b
+
+
+
+:_
+:lh
+rem echo. & echo * Default Localhost.
+call fx 4200 lh br
 exit/b
 
 
