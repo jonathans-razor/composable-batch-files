@@ -35,6 +35,7 @@ Composable Batch Files (CBF) - Table of Contents
   cbf-ov  CBF Overview.
   cbf-sg  CBF Style Guide.
   cbf-tc  This table of contents of CBF batch files.
+     cdc  Current directory contains.
       ce  Create clean slate j1 and j2 files.
       cf  Surf to Confluence.
       cl  Clear without modifiying the path.

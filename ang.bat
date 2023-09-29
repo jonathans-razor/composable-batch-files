@@ -362,3 +362,20 @@ rem lu: Sep-29-2023
 
 
 :_
+
+:gtc
+
+echo. & echo * Generate taskn component.
+
+call cdc \src\app & if errorlevel 1 exit/b
+
+echo.
+rem qq
+ng generate component components/task
+
+exit/b
+rem lu: Sep-29-2023
+
+
+
+:_
