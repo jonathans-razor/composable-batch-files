@@ -3730,6 +3730,7 @@ echo. & echo * Angular Crash Course.
 call pn iw
 set cbf-pt=%cbf-pt%\angular-crash\src\app
 set cbf-gh=https://github.com/bradtraversy/angular-crash-2021
+rem qq
 set cbf-ghmy=https://github.com/jonathans-razor/interview-code/tree/main/hello-world-angular
 set cbf-yt=https://www.youtube.com/watch?v=3dHNOWTI7H8
 exit/b

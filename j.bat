@@ -12,6 +12,8 @@ goto validate-input
 
 :help
 
+cls
+
 echo. & echo * Simulate a double-click using a default precedence of operation preferences or a dynamically constructed variable.
 
 echo. & echo * Usage: %0 [Parameters]
@@ -32,6 +34,7 @@ echo   %0 kanb
 
 rem This opens the now playing's jav2 file. Oct-25-2022
 echo   %0 np jav2
+echo   %0 acc ghmy
 
 exit/b
 

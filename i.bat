@@ -496,8 +496,7 @@ set cbf-msg=
 
 
 
-:_
-><    ><    ><    ><    ><    Separator (!midwi, !half, !midw): Halfway point. (skw midway)
+:_ Separator (!midwi, !half, !midw): Halfway point. (skw midway) ****************************************
 
 
 
