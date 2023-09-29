@@ -395,3 +395,19 @@ rem lu: Sep-29-2023
 
 
 :_
+
+:gti
+
+echo. & echo * Generate task item.
+
+call cdc \src\app & if errorlevel 1 exit/b
+
+echo.
+ng generate component components/task-item
+
+exit/b
+rem lu: Sep-29-2023
+
+
+
+:_
