@@ -279,24 +279,6 @@ rem lu: Sep-29-2023
 
 :_
 
-:run-ui
-:serve
-:srv
-
-echo. & echo * Compile and start Angular.
-
-call fe package.json & if errorlevel 1 exit/b
-
-echo.
-ng serve
-
-exit/b
-rem lu: Sep-25-2023
-
-
-
-:_
-
 :ghc
 
 echo. & echo * Generate header component.
@@ -438,7 +420,29 @@ echo.
 ng generate service services/task
 
 exit/b
-rem lu: Sep-29-2023
+
+lu:
+Sep-29-2023
+
+
+
+:_
+
+:run-ui
+:serve
+:srv
+
+echo. & echo * Compile and start Angular.
+
+call fe package.json & if errorlevel 1 exit/b
+
+echo.
+ng serve
+
+exit/b
+
+lu: 
+Sep-25-2023
 
 
 

@@ -47,7 +47,7 @@ exit/b
 :_
 :open-current-folder
 echo. & echo * Open current folder.
-code.
+code .
 exit/b
 
 
