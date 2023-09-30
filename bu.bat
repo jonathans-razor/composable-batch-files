@@ -346,14 +346,9 @@ call t home>nul
 
 if errorlevel 1 exit/b
 
-rem qq
-echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Sep-30-2023_5_07_PM
 call m cona
 
-echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Sep-30-2023_5_08_PM
 if errorlevel 1 exit/b
-
-echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Sep-30-2023_5_09_PM
 
 if "%cbf-cona%" == "vdi" (
   echo. & echo Create VDI brc backup.
@@ -369,10 +364,9 @@ if "%cbf-cona%" == "vdi" (
   exit/b
 )
 
-echo. & echo Create XPS brc backup.
+echo. & echo * Create XPS brc backup.
 echo.
-rem qq
-call pn ffbs
+call pn ffbs>nul
 xcopy /d /y .bashrc %cbf-pt%
 
 exit/b
