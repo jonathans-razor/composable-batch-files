@@ -1687,7 +1687,11 @@ Sep-2-2021
 
 
 
-:_
+:_+ Local JSON Server
+
+
+
+::_
 
 :ijs
 
@@ -1705,11 +1709,13 @@ Oct-15-2021
 
 
 
-:_
+::_
 
 :rjs
 
 echo. & echo * Run JSON server.
+
+call fe package.json & if errorlevel 1 exit/b
 
 npm run server
 
@@ -1723,8 +1729,8 @@ Footnote
 >< >< ><
 
 When I was doing the React Crash Course, before running the react, first you need to run this 
-JSON server command in order to start your local database so that data is available for the to 
-do app that we created.
+JSON server command in order to start your local database so that data is available for the 
+"to do" app that we created.
 
 
 
