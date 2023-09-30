@@ -1,6 +1,8 @@
 @echo off
+
 if "%~1" == "?" goto help
 if "%~1" == "" goto help
+
 goto %1
 
 
@@ -107,60 +109,6 @@ exit/b
 
 echo. & echo Parameter Descriptions:
 echo. & echo Parameter 2: Restore flag. If equal "/r", perform a restore instead of a back up.
-
-exit/b
-
-
-
-:_
-
-:brc
-
-if -%2-==-?- goto help
-if -%2-==-/r- goto restore-brc
-
-echo. & echo * Back up .brc.
-
-call t home>nul
-
-if errorlevel 1 exit/b
-
-call m cona>nul
-
-if "%cbf-cona%" == "vdi" (
-  echo. & echo Create VDI brc backup.
-  echo.
-  xcopy /d /y .bashrc w:\git-repos\composable-batch-files\.bashrc-vdi-backup
-  exit/b
-) else if "%cbf-cona%" == "keld" (
-  echo. & echo * Create Keld brc backup.
-  echo.
-  @echo on
-  xcopy /d /y .bashrc %cbf-repo%\composable-batch-files\.bashrc-keld-backup
-  @echo off
-  exit/b
-)
-
-echo. & echo Create XPS brc backup.
-echo.
-xcopy /d /y .bashrc %composable-batch-files%\.bashrc-xps-backup
-
-exit/b
-
-:restore-brc
-
-echo. & echo * Restore .brc.
-
-call pn r>nul
-
-xcopy /d /r /s /y %cbf-pt%\composable-batch-files\.bashrc-xps-backup %home%\.bashrc
-
-exit/b
-
-:help
-
-echo. & echo Parameter Descriptions:
-echo. & echo Parameter 2: If equal to "/r", restore instead of back up the brc file.
 
 exit/b
 
@@ -376,6 +324,75 @@ call t qlld
 
 @echo on
 xcopy /d /s /y . "%cbf-ptx%"
+
+exit/b
+
+
+
+:_
+
+:brc
+
+if -%2-==-?- goto help
+if -%2-==-/r- goto restore-brc
+
+cls
+
+call el /c
+
+echo. & echo * Back up .brc.
+
+call t home>nul
+
+if errorlevel 1 exit/b
+
+rem qq
+echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Sep-30-2023_5_07_PM
+call m cona
+
+echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Sep-30-2023_5_08_PM
+if errorlevel 1 exit/b
+
+echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Sep-30-2023_5_09_PM
+
+if "%cbf-cona%" == "vdi" (
+  echo. & echo Create VDI brc backup.
+  echo.
+  xcopy /d /y .bashrc w:\git-repos\composable-batch-files\.bashrc-vdi-backup
+  exit/b
+) else if "%cbf-cona%" == "keld" (
+  echo. & echo * Create Keld brc backup.
+  echo.
+  @echo on
+  xcopy /d /y .bashrc %cbf-repo%\composable-batch-files\.bashrc-keld-backup
+  @echo off
+  exit/b
+)
+
+echo. & echo Create XPS brc backup.
+echo.
+rem qq
+call pn ffbs
+xcopy /d /y .bashrc %cbf-pt%
+
+exit/b
+
+
+:restore-brc
+
+echo. & echo * Restore .brc.
+
+call pn r>nul
+
+xcopy /d /r /s /y %cbf-pt%\composable-batch-files\.bashrc-xps-backup %home%\.bashrc
+
+exit/b
+
+
+:help
+
+echo. & echo Parameter Descriptions:
+echo. & echo Parameter 2: If equal to "/r", restore instead of back up the brc file.
 
 exit/b
 

@@ -3298,65 +3298,6 @@ exit/b
 
 
 
-:_+ Bash
-
-
-
-::_
-:bash
-echo. & echo * Git bash.
-set cbf-app=C:\Program Files\Git\git-bash.exe
-rem if exist C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe set cbf-app=C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe
-exit/b
-
-
-
-::_
-:brc
-echo. & echo * Bash run commands.
-call pn home>nul
-set cbf-fn=%cbf-pt%\.bashrc
-exit/b
-
-rem Note: This points to the %HOME% folder. If that is not defined, it defaults to the
-rem user profile folder.
-
-
-
-::_
-:kbrc
-echo. & echo * Keld Bash rc.
-call pn d>nul
-set cbf-fn=.bashrc-keld-backup
-exit/b
-rem lu: Sep-01-2022
-
-
-
-::_
-:gc
-:ggc
-:ggcf
-echo. & echo. * Git global configuration file.
-call pn home>nul
-set cbf-fn=%cbf-pt%\.gitconfig
-exit/b
-
-rem lu: Jan-27-2022
-I don't know where the Git system configuration file is located.
-
-
-
-::_
-:obrc
-echo. & echo * Old Bash rc.
-call pn 1d>nul
-set cbf-fn=%cbf-pt%\Backups\Minishift\.bashrc
-exit/b
-rem lu: Sep-01-2022
-
-
-
 :_+ VSC Snippets Family (!fysnip)
 
 
@@ -3734,6 +3675,65 @@ set cbf-ghmy=https://github.com/jonathans-razor/interview-code/tree/main/hello-w
 set cbf-yt=https://www.youtube.com/watch?v=3dHNOWTI7H8
 exit/b
 lu: Sep-29-2023
+
+
+
+:_+ Bash
+
+
+
+::_
+:bash
+echo. & echo * Git bash.
+set cbf-app=C:\Program Files\Git\git-bash.exe
+rem if exist C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe set cbf-app=C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe
+exit/b
+
+
+
+::_
+:brc
+echo. & echo * Bash run commands.
+call pn home>nul
+set cbf-fn=%cbf-pt%\.bashrc
+exit/b
+
+rem Note: This points to the %HOME% folder. If that is not defined, it defaults to the
+rem user profile folder.
+
+
+
+::_
+:kbrc
+echo. & echo * Keld Bash rc.
+call pn d>nul
+set cbf-fn=.bashrc-keld-backup
+exit/b
+rem lu: Sep-01-2022
+
+
+
+::_
+:gc
+:ggc
+:ggcf
+echo. & echo. * Git global configuration file.
+call pn home>nul
+set cbf-fn=%cbf-pt%\.gitconfig
+exit/b
+
+rem lu: Jan-27-2022
+I don't know where the Git system configuration file is located.
+
+
+
+::_
+:obrc
+echo. & echo * Old Bash rc.
+call pn 1d>nul
+set cbf-fn=%cbf-pt%\Backups\Minishift\.bashrc
+exit/b
+rem lu: Sep-01-2022
 
 
 

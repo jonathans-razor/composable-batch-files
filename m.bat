@@ -5628,28 +5628,6 @@ exit/b 0
 
 :_
 
-:cona
-
-echo. & echo * Set computer name.
-
-rem lu: Apr-11-2022
-
-echo %computername% | find /i "xps">nul
-
-if not errorlevel 1 set cbf-cona=xps
-
-echo %computername% | find /i "keld">nul
-
-if not errorlevel 1 set cbf-cona=keld
-
-if exist w:\ set cbf-cona=vdi
-
-exit/b
-
-
-
-:_
-
 :star-pql
 
 echo. & echo * Start Postgres database server.
@@ -5739,6 +5717,35 @@ call gub df -H
 exit/b
 
 q is there command line utility that can tell you how much free disk space you have?
+
+
+
+:_
+
+:cona
+
+echo. & echo * Set computer name.
+
+echo %computername% | find /i "xps">nul
+
+if not errorlevel 1 (
+  set cbf-cona=xps
+  exit/b
+)
+
+echo %computername% | find /i "keld">nul
+
+if not errorlevel 1 (
+  set cbf-cona=keld
+  exit/b
+)
+
+if exist w:\ set cbf-cona=vdi
+
+exit/b
+
+lu: 
+Apr-11-2022
 
 
 
