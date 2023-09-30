@@ -39,6 +39,9 @@ cls
 set cbf-current-folder=%cd%
 
 call sep
+call pa f
+
+call sep
 call pa ql
 
 call sep
