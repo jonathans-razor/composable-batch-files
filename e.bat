@@ -13,27 +13,29 @@ goto preprocess
 
 :help
 
+cls
+
 echo. & echo * Edit a file based on a file choice algorithm.
 
 echo. & echo * Usage: %0 [space separated parameter(s)]
 
-echo. & echo * Parameter 1:
+echo. & echo * Parameter 0:
 echo   Editor alias to use.
 
-echo. & echo * Parameter 2 (Optional):
+echo. & echo * Parameter 1 (Optional):
 echo   Blank: open current folder.
 echo   Not blank: use routing intelligence, which checks DBF.bat files then falls back to an aliased file.
 echo   If contains ".": open current folder file, which may or may not exist. This assumes that no alias ever contains a period in it.
 
 echo. & echo * Parameter 2 (Optional):
 echo   /a: open aliased file. Since this is the default, it's only necessary for overriding purposes.
-echo   /b: open DBF bash file.
+echo   /af: open aliased folder.
 echo   /d: open DBF batch file.
-echo   /f: open aliased folder.
+echo   /f: open FF bash file.
 echo   /n: open np file.
 echo   /o: open CBF batch file.
 
-echo. & echo * Parameter (Optional):
+echo. & echo * Parameter 3 (Optional):
 echo   /e: override default editor.
 
 echo. & echo * Batch file style: Custom
@@ -70,7 +72,7 @@ if "%~2" == "/a" (
   goto main
 )
 
-if "%~2" == "/f" goto open-aliased-folder
+if "%~2" == "/af" goto open-aliased-folder
 
 if "%~2" == "/n" (
   call :open-np-file %*
@@ -88,8 +90,8 @@ if -%~2-==-/d- (
   goto main
 )
 
-if -%~2-==-/b- (
-  call :open-dbf-bash-file %*
+if -%~2-==-/f- (
+  call :open-ff-bash-file %*
   if errorlevel 1 exit/b
   goto main
 )
@@ -185,8 +187,23 @@ exit/b
 
 
 :_
+:open-ff-bash-file
+call pn f>nul
+if exist "%cbf-pt%\%1.sh" (
+  echo. & echo * Open FF bash file.
+  rem echo. & echo * "%1" exists.
+) else (
+  rem echo. & echo * FF bash file: "%cbf-pt%\%1" NOT found.
+  exit/b 5
+)
+set cbf-fn=%cbf-pt%\%1
+exit/b
+
+
+
+:_
 :open-dbf-bash-file
-call pn dbf>nul
+call pn d>nul
 if exist "%cbf-pt%\%1" (
   echo. & echo * Open DBF bash file.
   rem echo. & echo * "%1" exists.

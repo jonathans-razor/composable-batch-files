@@ -985,23 +985,24 @@ exit/b
 
 ::_
 
-:teb
+:tef
 
-echo. & echo * Turn the template file into a new bash file.
+echo. & echo * Turn the FF template file into a new bash file.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
-rem lu: Jul-06-2022
-
-call t v
+call t f
 
 echo.
-copy te %2
+copy te.sh %~2.sh
 
-call e %2
+echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Sep-30-2023_6_57_PM
+@echo on
+call e %~2.sh
 
 exit/b
+
 
 :help
 
@@ -1009,6 +1010,10 @@ echo. & echo Parameter Description(s):
 echo. & echo Parameter 2: Targeted bash file, without extension, to copy the template to.
 
 exit/b
+
+lu:
+Sep-30-2023
+Jul-6-2022
 
 
 
