@@ -997,7 +997,6 @@ call t f
 echo.
 copy te.sh %~2.sh
 
-echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Sep-30-2023_6_57_PM
 @echo on
 call e %~2.sh
 

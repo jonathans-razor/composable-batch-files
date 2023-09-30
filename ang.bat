@@ -211,15 +211,6 @@ exit/b
 
 
 :_
-:vers
-echo. & echo * Version.
-ng version
-exit/b
-creation date: Sep-25-2023
-
-
-
-:_
 :cna
 echo. & echo * Create new application.
 ng new hello-world-app
@@ -442,6 +433,17 @@ ng serve
 exit/b
 
 lu: 
+Sep-25-2023
+
+
+
+:_
+:vers
+echo. & echo * Version.
+ng version
+exit/b
+
+lu:
 Sep-25-2023
 
 
