@@ -367,7 +367,7 @@ if "%cbf-cona%" == "vdi" (
 echo. & echo * Create XPS brc backup.
 echo.
 call pn ffbs>nul
-xcopy /d /y .bashrc %cbf-pt%
+xcopy /d /y .bashrc %cbf-pt%\.bashrc-xps-backup
 
 exit/b
 
