@@ -6,20 +6,10 @@
 
 :_
 
-set cbf-filep=* Edit file in Notepad.
-
-echo.
-echo %cbf-filep%
-
-
-
-:_
-
-set fp=* Route callers.
+echo. & echo * Use Sublime and sfn to edit a file.
 
 if "%~1" == "" exit
-
-if "%~1" == "/?" sfn /?
+if "%~1" == "?" sfn ?
 
 goto validate-input
 
@@ -29,7 +19,7 @@ goto validate-input
 
 :help
 
-The help for this file is in sfn.bat. 
+echo. & echo * The help for this file is in sfn.bat. 
 
 exit/b
 

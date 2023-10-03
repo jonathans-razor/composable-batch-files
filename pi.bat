@@ -1,12 +1,16 @@
 @echo off
+
 if "%~1" == "?" goto help
 if "%~1" == "/s" goto syntax-difference-for-batch-files
+
 goto main
 
 
 
 :help
+
 cls
+
 echo. & echo * Pipe a command line statement to a file.
 
 echo. & echo * Usage: %~n0 [space separated parameter(s)]

@@ -2762,10 +2762,8 @@ exit/b
 ::_
 
 :sde
-
 :sdte
-
-:set_default_text_editor
+:set-default-text-editor
 
 echo. & echo * Set default text editor.
 
@@ -5283,10 +5281,10 @@ exit/b
 :initialize-default-text-editor
 echo. & echo * Initialize default text editor.
 
-if /i "%computername%" == "asus" call m set_default_text_editor no
-if /i "%computername%" == "sp7" call m set_default_text_editor no
-if /i "%computername%" == "xps" call m set_default_text_editor me
-if "%cbf-default-text-editor%" == "" call m set_default_text_editor no
+if /i "%computername%" == "asus" call m set-default-text-editor no
+if /i "%computername%" == "sp7" call m set-default-text-editor no
+if /i "%computername%" == "xps" call m set-default-text-editor me
+if "%cbf-default-text-editor%" == "" call m set-default-text-editor no
 
 exit/b
 rem lu: Nov-2-2018
@@ -5316,7 +5314,7 @@ call %0 set_big_path
 
 call %0 set_default_browser kr
 
-call %0 set_default_text_editor sm
+call %0 set-default-text-editor sm
 
 set aa=c:\aa
 set cbf-repo=C:\Users\[put--name-of-user-of-interest-here]\j

@@ -1152,7 +1152,7 @@ exit/b
 :_
 :pv
 echo. & echo * PV CBFs.
-call pn s
+call pn bel
 set cbf-fn=%cbf-pt%\pv.bat
 exit/b
 creation date: May-24-2023
@@ -1927,39 +1927,23 @@ certified monogamous CBF
 
 :sv
 
-set fp=* Dropbox Savannah.
-
-rem lu: May-26-2019
-
-echo.
-echo %fp%
-
+echo. & echo * Dropbox Savannah.
 set cbf-pt=%dropbox%\savannah
-
 exit/b
 
-
-Footnote
->< >< ><
+lu: May-26-2019
 
 certified monogamous CBF
 
 
 
 ::_
-
 :ldsv
-
-set fp=* Local drive Savannah.
-
-rem lu: Jan-25-2021
-
-echo.
-echo %fp%
-
+echo. & echo * Local drive Savannah.
 set cbf-pt=%savannah%
-
 exit/b
+
+lu: Jan-25-2021
 
 
 
@@ -2231,6 +2215,7 @@ exit/b
 :po
 :fn
 :disc
+:emdo
 :res
 :s
 :v
@@ -2251,7 +2236,8 @@ exit/b
 
 rem Priv pass-through.
 
-if exist "%share-zone%\pv.bat" call %share-zone%\pv.bat %1
+call pn bel>nul
+if exist "%cbf-pt%\pv.bat" call %cbf-pt%\pv.bat %1
 
 exit/b
 
@@ -3734,6 +3720,47 @@ call pn 1d>nul
 set cbf-fn=%cbf-pt%\Backups\Minishift\.bashrc
 exit/b
 rem lu: Sep-01-2022
+
+
+
+:_+ EMDO Family (!emdo)
+
+
+
+::_
+:doj
+:dtg
+:gci
+:efg
+:lbm
+:msl
+:nes
+:nes2
+echo. & echo * %1.
+call pn emdo
+set cbf-fn=%cbf-pt%\%1.asc
+exit/b
+lu: Oct-3-2023
+
+
+
+::_
+:sai
+echo. & echo * %1.
+call pn emdo
+set cbf-fn=%cbf-pt%\%1.bul
+exit/b
+lu: Oct-3-2023
+
+
+
+::_
+:idv
+echo. & echo * %1.
+call pn emdo
+set cbf-fn=%cbf-pt%\%1.txt
+exit/b
+lu: Oct-3-2023
 
 
 
