@@ -5753,6 +5753,7 @@ Apr-11-2022
 :acc
 echo. & echo * Start Angular Crash course.
 call t acc
+call vsc .
 start cmd /k nm json
 start cmd /k ang srv
 call sf 4200
