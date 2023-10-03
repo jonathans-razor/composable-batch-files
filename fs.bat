@@ -48,7 +48,7 @@ exit/b
 
 echo.>%temp%\search_results_fs.txt
 
-echo. & echo * File/Folder Name Search
+echo. & echo * File/Folder Name Search.
 echo * File/Folder Name Search>>%temp%\search_results_fs.txt
 
 echo. & echo * Search Criterion: %~1

@@ -98,7 +98,7 @@ echo. & echo File type: %cbf-file-type%
 
 echo.>%tmp%\cs-search-results.txt
 
-echo. & echo * Contents Search
+echo. & echo * Contents Search.
 echo. & echo * Contents Search>>%tmp%\cs-search-results.txt
 
 echo * Search Criterion: %~1

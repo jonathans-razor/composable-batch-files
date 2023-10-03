@@ -34,7 +34,7 @@ echo. & echo * Batch file style: Single purpose.
 
 exit/b
 
-rem lu: Oct-29-2022
+lu: Oct-29-2022
 
 
 
@@ -49,6 +49,8 @@ rem lu: Oct-29-2022
 :_
 :clear-cbf-variables
 echo. & echo * Clear CBF variables.
+
+rem Note: This list is alphabetical by the CBF variable name, and not its description.
 
 
 
@@ -122,9 +124,7 @@ set cbf-composed-variable=
 
 
 :_
-
 rem Confluence
-
 set cbf-cf=
 set cbf-cf1=
 set cbf-cf2=
@@ -133,44 +133,33 @@ set cbf-cf3=
 
 
 :_
-
 rem Create Pull Request
-
 set cbf-cpr=
 
 
 
 :_
-
 rem Default Browser
-
 rem I commented this because normally I don't want to see this.
 rem set cbf-default-browser=
-
 if "%cbf-default-browser%"=="" echo. & echo * Warning: cbf-default-browser is blank.
 
 
 
 :_
-
 rem Default Text Editor
-
 rem set cbf-default-text-editor=
 
 
 
 :_
-
 rem Development Website
-
 set cbf-dv=
 
 
 
 :_
-
 rem Demo
-
 set cbf-demo=
 set cbf-demo2=
 set cbf-demo3=
@@ -181,9 +170,7 @@ set cbf-demo6=
 
 
 :_
-
 rem Desired path
-
 set cbf-desired-path=
 
 
@@ -211,25 +198,19 @@ set cbf-ex3=
 
 
 :_
-
 rem expand-to-path-only-pt
-
 set cbf-expand-to-path-only-pt=
 
 
 
 :_
-
 rem Expanded Variable
-
 set cbf-expanded-variable=
 
 
 
 :_
-
 rem File purpose
-
 set cbf-filep=
 
 
@@ -542,17 +523,13 @@ set cbf-po=
 
 
 :_
-
 rem Pull Requests
-
 set cbf-pr=
 
 
 
 :_
-
 rem Png
-
 set cbf-png=
 set cbf-png2=
 set cbf-png3=
@@ -560,9 +537,7 @@ set cbf-png3=
 
 
 :_
-
 rem PowerPoint
-
 set cbf-ppt=
 
 
@@ -574,9 +549,7 @@ set cbf-pptm=
 
 
 :_
-
 rem Path
-
 set cbf-pt=
 set cbf-pt2=
 set cbf-pt3=
@@ -590,58 +563,44 @@ set cbf-purl=
 
 
 :_
-
 rem Previous Path.
-
 set cbf-previous-pt=
 
 
 
 :_
+rem Microsoft Teams Recorded Meeting
+set cbf-reme=
 
+
+
+:_
 rem Releases
-
 set cbf-rl=
 
 
 
 :_
-
-rem Recording - Microsoft Teams Recorded Meeting
-
-rem set cbf-rg=
-
-
-
-:_
-
 rem Reserved Path
-
 rem Commented for now because it causes an issue. Jun-11-2021
 rem set cbf-reserved-path=
 
 
 
 :_
-
 rem Sharepoint website
-
 set cbf-shar=
 
 
 
 :_
-
 rem Screenshot
-
 set cbf-ss=
 
 
 
 :_
-
 rem S. website
-
 set cbf-st=
 
 
