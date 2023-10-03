@@ -4,7 +4,7 @@
 
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
-if "%~1" == "d" goto delete-directory
+if "%~1" == "/d" goto delete-directory
 if "%~1" == "/np" goto np
 
 goto create-directory
@@ -14,14 +14,19 @@ goto create-directory
 :_
 
 :help
+cls
 echo. & echo * Create and delete directories.
 echo. & echo   Usage: %0 [Parameter (s)]
 echo. & echo * Parameter 1: The name of the folder you wish to create and navigate to.
-echo   If equal to "d", delete the directory specified in Parameter 2.
+echo   If equal to "/d", delete the directory specified in Parameter 2.
 echo   If equal to "/np", the now playing folder will be created.
-echo. & echo * Parameter 2: If parameter 1 equals "d", the name of the folder you wish to delete.
+echo   Note: When creating new folders, quotes are not necessary.
+echo. & echo * Parameter 2 (Optional): The name of the folder you wish to delete.
 exit/b
-rem lu: Jun-12-2023
+
+lu:
+Oct-3-2023
+Jun-12-2023
 
 
 
