@@ -5749,4 +5749,16 @@ Apr-11-2022
 
 
 
+:_
+:acc
+echo. & echo * Start Angular Crash course.
+call t acc
+start cmd /k nm json
+start cmd /k ang srv
+call sf 4200
+exit/b
+lu: Oct-3-2023
+
+
+
 :_ (!efm, !rfsp) (mov-9)
