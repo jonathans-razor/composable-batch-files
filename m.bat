@@ -13,6 +13,8 @@ goto %1
 
 :help
 
+cls
+
 echo. & echo * Perform simple miscellaneous tasks using a function routing style.
 
 echo. & echo * Usage: m [single parameter]
@@ -27,10 +29,10 @@ echo. & echo * Batch File Style: Multipurpose.
 
 echo.
 echo          Parameter  Description
-echo ------------------  -------------------------------------------------------------------
+echo ------------------  --------------------------------------------------------
+echo                acc  Open all aspects of the Angular Crash Course.
 echo               free  Report on free hard disk space.
 echo               log4  Is log4j jar file present?
-echo                 rd  Remove folder at current location.
 echo                sde  Set default text editor.
 
 exit/b
