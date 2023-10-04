@@ -449,3 +449,14 @@ Sep-25-2023
 
 
 :_
+:geco
+echo. & echo * Generate component.
+ng generate component components/add-task
+exit/b
+
+lu:
+Oct-4-2023
+
+
+
+:_

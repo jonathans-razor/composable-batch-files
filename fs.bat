@@ -79,9 +79,9 @@ rem dir /a-h /b /s /o-d "*%~1*">>%temp%\search_results_fs.txt
 rem dir /a-d /b /s /o-d "*%~1*">>%temp%\search_results_fs.txt
 rem dir /b /s /o-d "*%~1*">>%temp%\search_results_fs.txt
 
-set cbf-default-text-editor=c:\windows\system32\notepad.exe
+call an note>nul
 
-start "Test Title" "%cbf-default-text-editor%" "%temp%\search_results_fs.txt"
+start "Test Title" "%cbf-app%" "%temp%\search_results_fs.txt"
 
 exit/b
 
