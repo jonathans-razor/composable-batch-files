@@ -3610,13 +3610,10 @@ rem lu: Oct-19-2022
 
 echo. & echo * Open XPS affinity files.
 
-rem lu: Apr-8-2022
-
 set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
 
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CC.asc"
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CM.asc"
-rem set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\IT.asc"
 
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\it\Miscellany\it3.asc"
 
@@ -3629,13 +3626,37 @@ set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CI.asc"
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\TR.asc"
 
 set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\pv.bat"
+call pn bel>nul
+set cbf-fn-list=%cbf-fn-list% "%cbf-pt%\pv.bat"
 set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
 set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
 
 start mew32 %cbf-fn-list%
 
 exit/b
+
+lu:
+Oct-4-2023
+Apr-8-2022
+
+
+
+::_
+:pete
+
+echo. & echo * Open Pete files.
+
+call pn d>nul
+set cbf-fn-list="%cbf-pt%\nold.bat"
+set cbf-fn-list=%cbf-fn-list% "%cbf-pt%\nv.bat"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
+
+start mew32 %cbf-fn-list%
+
+exit/b
+
+lu:
+Oct-4-2023
 
 
 
