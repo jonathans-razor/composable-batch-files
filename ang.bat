@@ -418,26 +418,6 @@ Sep-29-2023
 
 
 :_
-
-:run-ui
-:serve
-:srv
-
-echo. & echo * Compile and start Angular.
-
-call fe package.json & if errorlevel 1 exit/b
-
-echo.
-ng serve
-
-exit/b
-
-lu: 
-Sep-25-2023
-
-
-
-:_
 :vers
 echo. & echo * Version.
 ng version
@@ -456,6 +436,26 @@ exit/b
 
 lu:
 Oct-4-2023
+
+
+
+:_
+
+:run-ui
+:serve
+:srv
+
+echo. & echo * Compile and start Angular.
+
+call fe package.json & if errorlevel 1 exit/b
+
+echo.
+start "Angular" cmd /k ng serve
+
+exit/b
+
+lu: 
+Sep-25-2023
 
 
 

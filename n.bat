@@ -2248,6 +2248,15 @@ exit/b
 
 
 ::_
+:magn
+echo. & echo * Start Windows Magnifier.
+set cbf-app=%windir%\system32\magnify.exe
+exit/b
+lu: Oct-6-2023
+
+
+
+::_
 
 :clea
 

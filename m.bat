@@ -5775,8 +5775,8 @@ Apr-11-2022
 echo. & echo * Start Angular Crash course.
 call t acc
 call vsc .
-start "JSON" cmd /k nm json
-start "Angular" cmd /k ang srv
+call nm json
+call ang srv
 call sf 4200
 call yt acc
 exit/b
