@@ -1715,7 +1715,7 @@ Oct-15-2021
 
 echo. & echo * Run JSON server.
 
-call fe package.json & if errorlevel 1 exit/b
+rem call fe package.json & if errorlevel 1 exit/b
 
 start "JSON" cmd /k npm run server
 
@@ -1734,4 +1734,4 @@ JSON server command in order to start your local database so that data is availa
 
 
 
-:_ (!rfsp) (mov-6)
+:_ (!efnm)

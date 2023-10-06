@@ -30,6 +30,7 @@ Sep-25-2023
 Oct-15-2019
 
 
+
 :_
    .--.      .--.      .--.      .--.      .--.                 
  :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
@@ -400,24 +401,6 @@ rem lu: Sep-29-2023
 
 
 :_
-
-:gs
-
-echo. & echo * Generate service.
-
-call cdc \src\app & if errorlevel 1 exit/b
-
-echo.
-ng generate service services/task
-
-exit/b
-
-lu:
-Sep-29-2023
-
-
-
-:_
 :vers
 echo. & echo * Version.
 ng version
@@ -456,6 +439,47 @@ exit/b
 
 lu: 
 Sep-25-2023
+
+
+
+:_
+
+:gs-hardcoded
+
+echo. & echo * Generate service.
+
+call cdc \src\app & if errorlevel 1 exit/b
+
+echo.
+ng generate service services/task
+
+exit/b
+
+lu:
+Sep-29-2023
+
+
+
+:_
+
+:gs
+
+echo. & echo * Generate service.
+
+if "%~2" == "" (
+  call err The new service's name is required.
+  exit/b
+)
+
+call cdc \src\app & if errorlevel 1 exit/b
+
+echo.
+ng generate service services/%2
+
+exit/b
+
+lu:
+Oct-6-2023
 
 
 
