@@ -1715,7 +1715,7 @@ Oct-15-2021
 
 echo. & echo * Run JSON server.
 
-rem call fe package.json & if errorlevel 1 exit/b
+call fe package.json & if errorlevel 1 exit/b
 
 start "JSON" cmd /k npm run server
 

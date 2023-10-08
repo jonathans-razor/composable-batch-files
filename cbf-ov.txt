@@ -32,3 +32,5 @@ kept.
 :Each non-trivial batch file has a help section.
 
 :Unlimited comments are available.
+
+:example-[externally produced filename] for learning purposes.

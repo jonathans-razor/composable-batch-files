@@ -412,17 +412,6 @@ Sep-25-2023
 
 
 :_
-:geco
-echo. & echo * Generate component.
-ng generate component components/add-task
-exit/b
-
-lu:
-Oct-4-2023
-
-
-
-:_
 
 :run-ui
 :serve
@@ -461,6 +450,17 @@ Sep-29-2023
 
 
 :_
+:geco-hardcode
+echo. & echo * Generate component.
+ng generate component components/add-task
+exit/b
+
+lu:
+Oct-4-2023
+
+
+
+:_
 
 :gs
 
@@ -480,6 +480,25 @@ exit/b
 
 lu:
 Oct-6-2023
+
+
+
+:_
+:geco
+echo. & echo * Generate component.
+
+if "%~2" == "" (
+  call err The new component's name is required.
+  exit/b
+)
+
+call fe package.json & if errorlevel 1 exit/b
+
+ng generate component components/%2
+exit/b
+
+lu:
+Oct-7-2023
 
 
 
