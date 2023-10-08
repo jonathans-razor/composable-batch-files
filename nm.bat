@@ -1713,7 +1713,7 @@ Oct-15-2021
 
 :json
 
-echo. & echo * Run JSON server.
+echo. & echo * Run JSON local database server.
 
 call fe package.json & if errorlevel 1 exit/b
 
