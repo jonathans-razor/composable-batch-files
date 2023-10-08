@@ -6,7 +6,6 @@
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
-rem In order to promote freshness, reset the error level and clear.
 ver>nul
 
 goto %1
@@ -15,21 +14,38 @@ goto %1
 
 :_
 :help
-echo. & echo * Nickname/alias path dictionary that sets recyclable environment variables corresponding to a given unique nickname parameter. This can be thought of as a large ^
-configuration file or data layer. The idea is that you register your folder, file, etc. here ^
-and then you can easily access it via your chosen alias. This can also be thought of a global variable database of sorts.
+
+cls
+
+echo. & echo ^
+* Nickname/alias path dictionary that sets recyclable environment variables
+echo ^
+corresponding to a given unique nickname parameter. This can be thought of 
+echo ^
+as a large configuration file, batch file database or data layer. The idea 
+echo ^
+is that you register your folder, file, etc. here and then you can easily 
+echo ^
+access it via your chosen alias. This can also be thought of a global 
+echo ^
+variable database of sorts.
 
 echo. & echo * Usage: %0 [single parameter]
 echo. & echo * Parameter 1: Alias to run assignment for.
 
-echo. & echo * In the function block corresponding to the label, you can set any or all ^
-of the CBF environment variables. Typically this batch file would be called by echo a ^
-different batch file looking to set a particular CBF rem environment variable. However, ^
-if you call it yourself from the command line, it will set the variable plus it will ^
-describe itself.
+echo. & echo ^
+* In the function block corresponding to the label, you can set any or all
+echo ^
+of the CBF environment variables. Typically this batch file would be called
+echo ^
+by echo a different batch file looking to set a particular CBF environment
+echo ^
+variable. However, if you call it yourself from the command line, it will
+echo ^
+set the variable plus it will describe itself.
 
 echo. & echo * Example(s):
-echo    %0 cbf
+echo   %0 cbf
 exit/b
 
 
@@ -3666,10 +3682,10 @@ creation date: Sep-20-2023
 :_
 :acc
 echo. & echo * Angular Crash Course.
-call pn iw
-set cbf-pt=%cbf-pt%\angular-crash
-set cbf-gh=https://github.com/bradtraversy/angular-crash-2021
-set cbf-ghmy=https://github.com/jonathans-razor/interview-code/tree/main/hello-world-angular
+call pn it
+set cbf-pt=%cbf-pt%\angular-crash-course-by-traversy-media
+set cbf-gho=https://github.com/bradtraversy/angular-crash-2021
+set cbf-gh=https://github.com/jonathans-razor/angular-crash-course-by-traversy-media
 set cbf-yt=https://www.youtube.com/watch?v=3dHNOWTI7H8
 exit/b
 lu: Sep-29-2023

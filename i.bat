@@ -273,6 +273,12 @@ set cbf-ghmy=
 
 
 :_
+rem GitHub Original Content
+set cbf-gho=
+
+
+
+:_
 rem GitHub Historical record
 set cbf-ghh=
 
@@ -456,9 +462,7 @@ set cbf-json2=
 
 
 :_
-
 rem Local Host
-
 set cbf-lh=
 
 

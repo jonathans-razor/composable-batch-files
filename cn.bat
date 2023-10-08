@@ -17,10 +17,9 @@ cls
 echo. & echo * Clone a repository.
 
 echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo If parameter 2 is left blank, GitHub https stored value is used.
 
 echo. & echo * Examples:
-
-echo.
 echo   GitHub https, e.g: %0 /ghh https://github.com/jonathans-razor/For-Git-Testing.git
 echo   GitHub https stored value, e.g: %0 /ghv fgt
 echo   GitHub ssh, e.g: %0 /ghs git@github.com:jonathans-razor/For-Git-Testing.git
@@ -101,13 +100,14 @@ exit/b
 
 echo. & echo * GitHub https stored value.
 
+set cbf-gh=
+
 if "%~2" == "" (
-  call err The alias for the repository you wish to clone is required. Mar-06-2023-14-27
-  exit/b
+  call n %1
+) else (
+  call n %2
 )
 
-set cbf-gh=
-call n %2
 if "%cbf-gh%" == "" (
   call err "cbf-gh" is not defined for alias "%2". Mar-06-2023-14-26
   exit/b
