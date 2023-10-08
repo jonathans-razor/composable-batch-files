@@ -2,18 +2,6 @@
 
 @echo off
 
-
-
-:_
-
-set cbf-filep=* 
-
-
-
-:_
-
-set fp=* Route callers.
-
 if "%~1" == "?" goto help
 
 goto hello_world
@@ -24,10 +12,9 @@ goto hello_world
 
 :help
 
-echo.
-echo %cbf-filep%
+cls
 
-rem lu: 
+echo. & echo * Building block code.
 
 echo.
 echo Usage: %0 [space separated parameter(s)]
