@@ -3504,14 +3504,19 @@ creation date: Sep-25-2023
 
 
 ::_
-:bg
+:bn
 :bing
 :new-bing
 echo. & echo * New Bing.
-call an edge>nul
-set cbf-url=https://www.bing.com/search?q=Bing+AI
+call pn c>nul
+set cbf-lnk=%cbf-pt%\bing.url
 exit/b
-creation date: Sep-7-2023
+
+set cbf-url=https://www.bing.com/search?q=Bing+AI
+https://www.bing.com/search?q=Bing+AI&showconv=1
+
+lu:
+Oct-9-2023
 
 Uses up-to-date data.
 
@@ -3828,7 +3833,6 @@ rem lu: Jan-31-2022
 :iw
 echo. & echo * Interview preparation code.
 call pn it>nul
-rem Provenance: Jul-16-2021_11_43_AM qq1
 set cbf-pt=%cbf-pt%\interview-code
 exit/b
 lu: Oct-9-2023

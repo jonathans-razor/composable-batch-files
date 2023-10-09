@@ -2,20 +2,7 @@
 
 @echo off
 
-
-
-:_
-
-set cbf-filep=* Windows file association commands.
-
-
-
-:_
-
-set fp=* Route callers.
-
 if "%~1" == "" goto help
-
 if "%~1" == "?" goto help
 
 goto %1
@@ -26,15 +13,22 @@ goto %1
 
 :help
 
-echo.
-echo Usage: %0 [space separated parameter(s)]
+cls
 
-set parameter_1=Parameter 1: Nickname block to run.
+echo. & echo * Windows file association commands.
 
-echo.
-echo %parameter_1%
+echo. & echo * Usage: %0 [space separated parameter(s)]
+
+echo. & echo * Parameter 1: Nickname block to run.
 
 exit/b
+
+
+
+:_
+   .--.      .--.      .--.      .--.      .--.                 
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+        `--'      `--'      `--'      `--'      `--'     
 
 
 
@@ -42,16 +36,49 @@ exit/b
 
 :me
 
-set fp=* Associate asc files with Multi-Edit.
+echo. & echo * Associate asc files with Multi-Edit.
 
-rem lu: Mar-5-2019
+echo.
+assoc .asc=asc
+ftype asc=mew32.exe %%1 %%*
+
+exit/b
+
+lu:
+Oct-9-2023
+Mar-5-2019
+
+
+
+:_
+
+:url
+
+echo. & echo * Associate %1 files with Microsoft Edge.
+
+echo.
+assoc .url=url
+ftype url=msedge.exe %%1 %%*
+
+exit/b
+
+lu:
+Oct-9-2023
+
+
+
+:_
+
+:gradle
+
+set fp=* Associate gradle files with Notepad++.
 
 echo.
 echo %fp%
 
 echo.
-assoc .asc=asc
-ftype asc=mew32.exe %%1 %%*
+assoc .gradle=gradle
+ftype gradle=notepad++.exe %%1 %%*
 
 exit/b
 
@@ -78,16 +105,16 @@ exit/b
 
 :_
 
-:gradle
+:xlsx
 
-set fp=* Associate gradle files with Notepad++.
+set fp=* Associate xlsx files with Excel.
 
 echo.
 echo %fp%
 
 echo.
-assoc .gradle=gradle
-ftype gradle=notepad++.exe %%1 %%*
+assoc .xlsx=Excel.Sheet.16
+ftype Excel.Sheet.16="C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE" %%1 %%*
 
 exit/b
 
@@ -111,20 +138,3 @@ exit/b
 
 
 :_
-
-:xlsx
-
-set fp=* Associate xlsx files with Excel.
-
-echo.
-echo %fp%
-
-echo.
-assoc .xlsx=Excel.Sheet.16
-ftype Excel.Sheet.16="C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE" %%1 %%*
-
-exit/b
-
-
-
-:_ (!rfsp) (mov-6)

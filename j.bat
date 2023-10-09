@@ -123,6 +123,17 @@ set fp=* Below here is the order of operations.
 
 :_
 
+if not "%cbf-lnk%" == "" (
+  if exist "%cbf-lnk%" (
+    call dc "%cbf-lnk%"
+    exit/b
+  )
+)
+
+
+
+:_
+
 if not "%cbf-url%" == "" (
   echo. & echo * Execute URL. Sep-19-2023_2_44_PM
   call sf %1>nul
@@ -259,17 +270,6 @@ if not "%cbf-pt%" == "" (
 if not "%cbf-gh%" == "" (
   call sf %1>nul
   exit/b
-)
-
-
-
-:_
-
-if not "%cbf-lnk%" == "" (
-  if exist "%cbf-lnk%" (
-    call dc "%cbf-lnk%"
-    exit/b
-  )
 )
 
 
