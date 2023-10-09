@@ -781,17 +781,6 @@ creation date: Jun-20-2023
 
 
 :_
-:ch
-set cbf-pd=%1.asc
-echo. & echo * %cbf-pd%.
-call pn ro
-set cbf-fn=%cbf-pt%\%cbf-pd%
-exit/b
-creation date: Jun-24-2023
-
-
-
-:_
 :tsh
 echo. & echo * Tysons Sport and Health.
 set cbf-url=https://www.mysportandhealth.com
@@ -3836,6 +3825,17 @@ call pn it>nul
 set cbf-pt=%cbf-pt%\interview-code
 exit/b
 lu: Oct-9-2023
+
+
+
+:_
+:ch
+set cbf-pd=%1.asc
+echo. & echo * %cbf-pd%.
+call pn ro
+set cbf-fn=%cbf-pt%\%cbf-pd%
+exit/b
+creation date: Jun-24-2023
 
 
 
