@@ -2381,7 +2381,6 @@ exit/b
 set fp=* Use of the at sign "@" before rem. Even with echo on, the statement "Hello 2" will ^
 not be disploayed.
 
-rem qq
 rem lu: Jan-31-2019
 
 echo.

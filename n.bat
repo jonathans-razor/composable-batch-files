@@ -3704,7 +3704,6 @@ lu: Oct-3-2023
 
 echo. & echo * Get ampersands to work in cbf-urls. For example, get "sf wlcbf" to work. It has an ampersand in the cbf-url string.
 
-rem qq
 set cbf-url1=https://www.bing.com/search?q=Bing+AI
 set cbf-url2=%%&
 set cbf-url3=showconv=1
