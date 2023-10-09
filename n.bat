@@ -3824,4 +3824,15 @@ rem lu: Jan-31-2022
 
 
 
+:_
+:iw
+echo. & echo * Interview preparation code.
+call pn it>nul
+rem Provenance: Jul-16-2021_11_43_AM qq1
+set cbf-pt=%cbf-pt%\interview-code
+exit/b
+lu: Oct-9-2023
+
+
+
 :_ (!efn)
