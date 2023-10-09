@@ -191,8 +191,7 @@ if "%cbf-parameter%" == "" (
 )
 
 if "%cbf-parameter%" == "" (
-  echo.
-  echo * Error: Could not find a suitable CBF parameter for sf.bat to use. Nov-17-2020_7_03_PM
+  call err Could not find a suitable CBF parameter for sf.bat to use. Nov-17-2020_7_03_PM
   exit/b
 )
 

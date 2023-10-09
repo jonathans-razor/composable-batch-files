@@ -575,169 +575,6 @@ exit/b 0
 
 
 
-:_+ Line Continuation Characters, Escape Characters and more.
-
-
-
-::_
-
-:ampe
-
-set fp=* The ampersand character allows you to multiple commands on single line.
-
-rem The ampersand is the line continuation character for batch files.
-
-echo.
-echo %fp%
-
-echo. & echo hey 1 & echo hey 2
-
-exit/b
-
-
-
-::_
-
-:ga
-
-:care
-
-:caret
-
-:echo
-
-set fp=* Line continuation with caret character.
-
-rem How do you continue a batch file line onto a second line?
-
-rem The caret only works with the "echo" statement and not the "rem" statement.
-
-rem expository echo statement
-
-rem lu: Nov-2-2018
-
-echo.
-echo %fp%
-
-echo.
-echo The Gettysburg Address is a speech that U.S. President Abraham Lincoln delivered during ^
-the American Civil War at the dedication of the Soldiers' National Cemetery in Gettysburg, ^
-Pennsylvania, on the afternoon of Thursday, November 19, 1863, four and a half months after ^
-the Union armies defeated those of the ...
-
-exit/b
-
-
-
-::_
-
-:
-
-set fp=* Test line continuation character in environment variables.
-
-rem lu: Jun-17-2019
-
-echo.
-echo %fp%
-
-echo.
-set test=asdflasdff asdfasjklasdf asdflkasdfl  asdfasdfjklasdf asdfl asdf asdflasdfjklasdfl^
-abcdefzzz
-
-echo.
-echo %test%
-
-exit/b
-
-
-
-::_
-
-:debug
-
-set fp=* Debugging statement.
-
-echo. & echo Aug-18-2020_3_39_PM q
-
-exit/b
-
-
-
-::_
-
-:percent_20
-
-set fp=* How do you escape a percent sign in a batch file?
-
-rem Answer: 2 '%' signs equals one.
-
-rem percent percent, double percent sign: skw
-
-rem percent 20 issue in environment variables. skw
-
-rem fcd: Aug-2-2017
-
-echo %fp%
-
-set cbf-url='https://cyber-balance.visualstudio.com/SPDR%%20LOB/_git/Mobile'
-
-echo.
-echo cbf-url: %cbf-url%
-
-exit/b
-
-
-
-::_
-
-:pare
-
-set fp=* Escape character for a parenthesis.
-
-rem skw what's the escape character for a batch file?
-
-rem Escaping Specific Characters: ^esch
-
-rem lu: Nov-20-2018
-
-echo.
-echo %fp%
-
-echo.
-echo * Error: No "*.%2" file exist(s^) in the current folder.
-
-rem echo The rain in Spain(s) is great.
-
-exit/b
-
-
-
-::_
-
-:at_sign
-
-set fp=* Use of the at sign "@" before rem. Even with echo on, the statement "Hello 2" will ^
-not be disploayed.
-
-rem lu: Jan-31-2019
-
-echo.
-echo %fp%
-
-echo.
-
-@echo on
-
-rem Hello 1.
-
-@rem Hello 2.
-
-@echo off
-
-exit/b
-
-
-
 :_
 
 :
@@ -2397,6 +2234,170 @@ if errorlevel 2 echo el2
 
 exit/b
 creation date: Sep-25-2023
+
+
+
+:_+ Line Continuation Characters, Escape Characters and more.
+
+
+
+::_
+
+:ampe
+
+set fp=* The ampersand character allows you to multiple commands on single line.
+
+rem The ampersand is the line continuation character for batch files.
+
+echo.
+echo %fp%
+
+echo. & echo hey 1 & echo hey 2
+
+exit/b
+
+
+
+::_
+
+:ga
+
+:care
+
+:caret
+
+:echo
+
+set fp=* Line continuation with caret character.
+
+rem How do you continue a batch file line onto a second line?
+
+rem The caret only works with the "echo" statement and not the "rem" statement.
+
+rem expository echo statement
+
+rem lu: Nov-2-2018
+
+echo.
+echo %fp%
+
+echo.
+echo The Gettysburg Address is a speech that U.S. President Abraham Lincoln delivered during ^
+the American Civil War at the dedication of the Soldiers' National Cemetery in Gettysburg, ^
+Pennsylvania, on the afternoon of Thursday, November 19, 1863, four and a half months after ^
+the Union armies defeated those of the ...
+
+exit/b
+
+
+
+::_
+
+:
+
+set fp=* Test line continuation character in environment variables.
+
+rem lu: Jun-17-2019
+
+echo.
+echo %fp%
+
+echo.
+set test=asdflasdff asdfasjklasdf asdflkasdfl  asdfasdfjklasdf asdfl asdf asdflasdfjklasdfl^
+abcdefzzz
+
+echo.
+echo %test%
+
+exit/b
+
+
+
+::_
+
+:debug
+
+set fp=* Debugging statement.
+
+echo. & echo Aug-18-2020_3_39_PM q
+
+exit/b
+
+
+
+::_
+
+:percent_20
+
+set fp=* How do you escape a percent sign in a batch file?
+
+rem Answer: 2 '%' signs equals one.
+
+rem percent percent, double percent sign: skw
+
+rem percent 20 issue in environment variables. skw
+
+rem fcd: Aug-2-2017
+
+echo %fp%
+
+set cbf-url='https://cyber-balance.visualstudio.com/SPDR%%20LOB/_git/Mobile'
+
+echo.
+echo cbf-url: %cbf-url%
+
+exit/b
+
+
+
+::_
+
+:pare
+
+set fp=* Escape character for a parenthesis.
+
+rem skw what's the escape character for a batch file?
+
+rem Escaping Specific Characters: ^esch
+
+rem lu: Nov-20-2018
+
+echo.
+echo %fp%
+
+echo.
+echo * Error: No "*.%2" file exist(s^) in the current folder.
+
+rem echo The rain in Spain(s) is great.
+
+exit/b
+
+
+
+::_
+
+:at_sign
+
+set fp=* Use of the at sign "@" before rem. Even with echo on, the statement "Hello 2" will ^
+not be disploayed.
+
+rem qq
+rem lu: Jan-31-2019
+
+echo.
+echo %fp%
+
+echo.
+
+@echo on
+
+rem Hello 1.
+
+@rem Hello 2.
+
+@echo off
+
+exit/b
 
 
 

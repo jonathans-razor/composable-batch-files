@@ -3036,115 +3036,6 @@ exit/b
 
 
 
-:_+ CBF Testing (skw test-cbf, test cbf, cbf-testing, Batch File Meta Rubric)
-
-
-
-::_
-:t1
-echo. & echo * Test folder.
-call pn aa>nul
-set cbf-pt=%cbf-pt%\test-folder
-exit/b
-
-
-
-::_
-:t2
-echo. & echo * Test 2.
-exit/b
-rem created: Nov-01-2022
-
-
-
-::_
-:bog
-:bogu
-:bogus
-:k
-echo. & echo * Bogus CBF for error testing.
-
-set cbf-app=xx
-set cbf-ex=c:\a\test4.xlsx
-set cbf-fn=c:\b\j5.txt
-set cbf-pt=d:\Dropbox\IT\share-zone\Relaxing Reading Room\Playbooks-4
-set cbf-pd=bogus-test
-set cbf-wo=c:\a\test3.docx
-set cbf-yt=https://www.youtube.com/watch?v=8WZmIdXZe3Q
-set cbf-url=xxx
-call pn vft
-set cbf-pdf=%cbf-pt%\Access Google's Web Service.pdf
-exit/b
-rem lu: Mar-31-2022
-
-
-
-::_
-:obf
-echo. & echo * An overcomplicated(?) way to call a batch file.
-call pn cbf>nul
-set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-app=%cbf-pt%\t.bat
-exit/b
-rem lu: Aug-18-2021
-
-
-
-::_
-:ccm
-echo. & echo * Compile CMAC macros.
-call pn belf
-set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-app=%cbf-pt%\compile_cmac_files_1.bat
-exit/b
-rem lu: Aug-18-2021
-
-
-
-::_
-:repa
-echo. & echo * Relative path.
-set cbf-pt=\test\integration
-exit/b
-rem lu: Mar-31-2022
-
-
-
-::_
-:ambu
-:ampe-bug
-:wlcbf
-echo. & echo * Get ampersands to work in cbf-urls. For example, get "sf wlcbf" to work. It has an ampersand in the cbf-url string.
-echo.
-echo * cbf-url: %cbf-url%
-exit/b
-
-
-rem lu: Sep-5-2021
-rem This is a copy of the original, listed at the bottom.
-set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8&list=WL&index=10&t=831s
-
-set cbf-url=https://www.youtube.com
-
-rem This is the original minus everything to the right of the first ampersand.
-rem Result? Same friggin link.
-set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8
-
-rem This is the original.
-set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8&list=WL&index=10&t=831s
-
-
-
-::_
-:el-test
-echo. & echo * Test where error level 4 is coming from.
-rem call n vdi>nul
-set cbf-fn=%cbf-pt%\Miscellany\message-to-xps.txt
-exit/b
-rem lu: Jan-31-2022
-
-
-
 :_+ Shortcuts
 
 
@@ -3613,6 +3504,31 @@ creation date: Sep-25-2023
 
 
 ::_
+:bg
+:bing
+:new-bing
+echo. & echo * New Bing.
+call an edge>nul
+set cbf-url=https://www.bing.com/search?q=Bing+AI
+exit/b
+creation date: Sep-7-2023
+
+Uses up-to-date data.
+
+
+
+::_
+:bard
+echo. & echo * Bard.
+set cbf-url=https://bard.google.com/
+exit/b
+creation date: Sep-7-2023
+
+Best code generator.
+
+
+
+::_
 :chat
 :gp
 :gpt
@@ -3623,23 +3539,7 @@ set cbf-url2=https://chat.openai.com/auth/login
 exit/b
 creation date: Sep-7-2023
 
-
-::_
-:bing
-:new-bing
-echo. & echo * New Bing.
-set cbf-url=https://www.bing.com/search?q=Bing+AI
-exit/b
-creation date: Sep-7-2023
-
-
-
-::_
-:bard
-echo. & echo * Bard.
-set cbf-url=https://bard.google.com/
-exit/b
-creation date: Sep-7-2023
+Data is out of date.
 
 
 
@@ -3789,6 +3689,139 @@ call pn emdo
 set cbf-fn=%cbf-pt%\%1.txt
 exit/b
 lu: Oct-3-2023
+
+
+
+:_+ CBF Testing (skw test-cbf, test cbf, cbf-testing, Batch File Meta Rubric)
+
+
+
+::_
+:amp
+:ambu
+:ampe-bug
+:wlcbf
+
+echo. & echo * Get ampersands to work in cbf-urls. For example, get "sf wlcbf" to work. It has an ampersand in the cbf-url string.
+
+rem qq
+set cbf-url1=https://www.bing.com/search?q=Bing+AI
+set cbf-url2=%%&
+set cbf-url3=showconv=1
+
+set cbf-url=%cbf-url1%
+
+echo.
+echo * cbf-url: %cbf-url%%cbf-url2%%cbf-url3%
+
+exit/b
+
+set cbf-url=https://www.bing.com/search?q=Bing+AI%%38showconv=1
+
+Double backslash doesn't work.
+set cbf-url=https://www.bing.com/search?q=Bing+AI\\&showconv=1
+
+Slash doesn't work.
+set cbf-url=https://www.bing.com/search?q=Bing+AI/&showconv=1
+
+Backslash doesn't work.
+set cbf-url=https://www.bing.com/search?q=Bing+AI\&showconv=1
+
+Original Oct-9-2023 - Doesn't work.
+set cbf-url=https://www.bing.com/search?q=Bing+AI&showconv=1
+
+rem lu: Sep-5-2021
+rem This is a copy of the original, listed at the bottom.
+set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8&list=WL&index=10&t=831s
+
+set cbf-url=https://www.youtube.com
+
+rem This is the original minus everything to the right of the first ampersand.
+rem Result? Same friggin link.
+set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8
+
+rem This is the original.
+set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8&list=WL&index=10&t=831s
+
+
+
+::_
+:t1
+echo. & echo * Test folder.
+call pn aa>nul
+set cbf-pt=%cbf-pt%\test-folder
+exit/b
+
+
+
+::_
+:t2
+echo. & echo * Test 2.
+exit/b
+rem created: Nov-01-2022
+
+
+
+::_
+:bog
+:bogu
+:bogus
+:k
+echo. & echo * Bogus CBF for error testing.
+
+set cbf-app=xx
+set cbf-ex=c:\a\test4.xlsx
+set cbf-fn=c:\b\j5.txt
+set cbf-pt=d:\Dropbox\IT\share-zone\Relaxing Reading Room\Playbooks-4
+set cbf-pd=bogus-test
+set cbf-wo=c:\a\test3.docx
+set cbf-yt=https://www.youtube.com/watch?v=8WZmIdXZe3Q
+set cbf-url=xxx
+call pn vft
+set cbf-pdf=%cbf-pt%\Access Google's Web Service.pdf
+exit/b
+rem lu: Mar-31-2022
+
+
+
+::_
+:obf
+echo. & echo * An overcomplicated(?) way to call a batch file.
+call pn cbf>nul
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-app=%cbf-pt%\t.bat
+exit/b
+rem lu: Aug-18-2021
+
+
+
+::_
+:ccm
+echo. & echo * Compile CMAC macros.
+call pn belf
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-app=%cbf-pt%\compile_cmac_files_1.bat
+exit/b
+rem lu: Aug-18-2021
+
+
+
+::_
+:repa
+echo. & echo * Relative path.
+set cbf-pt=\test\integration
+exit/b
+rem lu: Mar-31-2022
+
+
+
+::_
+:el-test
+echo. & echo * Test where error level 4 is coming from.
+rem call n vdi>nul
+set cbf-fn=%cbf-pt%\Miscellany\message-to-xps.txt
+exit/b
+rem lu: Jan-31-2022
 
 
 
