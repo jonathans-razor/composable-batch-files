@@ -2245,11 +2245,37 @@ creation date: Sep-25-2023
 
 :caret
 :cubed-caret
+:hat-trick
 
-echo. & echo * The triple caret seems to work for URLS!
+echo. & echo * The triple hat/caret seems to work for URLS!
 
 rem This works! Oct-10-2023 (skw triple hat works, triple caret)
 set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
+
+exit/b
+
+
+
+::_
+
+:percent_20
+
+set fp=* How do you escape a percent sign in a batch file?
+
+rem Answer: 2 '%' signs equals one.
+
+rem percent percent, double percent sign: skw
+
+rem percent 20 issue in environment variables. skw
+
+rem fcd: Aug-2-2017
+
+echo %fp%
+
+set cbf-url='https://cyber-balance.visualstudio.com/SPDR%%20LOB/_git/Mobile'
+
+echo.
+echo cbf-url: %cbf-url%
 
 exit/b
 
@@ -2334,31 +2360,6 @@ exit/b
 set fp=* Debugging statement.
 
 echo. & echo Aug-18-2020_3_39_PM q
-
-exit/b
-
-
-
-::_
-
-:percent_20
-
-set fp=* How do you escape a percent sign in a batch file?
-
-rem Answer: 2 '%' signs equals one.
-
-rem percent percent, double percent sign: skw
-
-rem percent 20 issue in environment variables. skw
-
-rem fcd: Aug-2-2017
-
-echo %fp%
-
-set cbf-url='https://cyber-balance.visualstudio.com/SPDR%%20LOB/_git/Mobile'
-
-echo.
-echo cbf-url: %cbf-url%
 
 exit/b
 
