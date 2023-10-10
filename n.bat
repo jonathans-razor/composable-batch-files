@@ -3645,47 +3645,6 @@ rem lu: Sep-01-2022
 
 
 
-:_+ EMDO Family (!emdo)
-
-
-
-::_
-:doj
-:dtg
-:gci
-:efg
-:lbm
-:msl
-:nes
-:nes2
-echo. & echo * %1.
-call pn emdo
-set cbf-fn=%cbf-pt%\%1.asc
-exit/b
-lu: Oct-3-2023
-
-
-
-::_
-:sai
-echo. & echo * %1.
-call pn emdo
-set cbf-fn=%cbf-pt%\%1.bul
-exit/b
-lu: Oct-3-2023
-
-
-
-::_
-:idv
-echo. & echo * %1.
-call pn emdo
-set cbf-fn=%cbf-pt%\%1.txt
-exit/b
-lu: Oct-3-2023
-
-
-
 :_+ CBF Testing (skw test-cbf, test cbf, cbf-testing, Batch File Meta Rubric)
 
 
@@ -3698,16 +3657,20 @@ lu: Oct-3-2023
 
 echo. & echo * Get ampersands to work in cbf-urls. For example, get "sf wlcbf" to work. It has an ampersand in the cbf-url string.
 
-set cbf-url1=https://www.bing.com/search?q=Bing+AI
-set cbf-url2=%%&
-set cbf-url3=showconv=1
-
-set cbf-url=%cbf-url1%
+rem This works! Oct-10-2023 (skw triple hat works, triple caret)
+set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
 
 echo.
 echo * cbf-url: %cbf-url%%cbf-url2%%cbf-url3%
 
 exit/b
+
+Double quoates didn't work.
+set cbf-url=https://www.bing.com/search?q=Bing+AI"&"showconv=1
+
+set cbf-url1=https://www.bing.com/search?q=Bing+AI
+set cbf-url2=%%&
+set cbf-url3=showconv=1
 
 set cbf-url=https://www.bing.com/search?q=Bing+AI%%38showconv=1
 
@@ -3815,6 +3778,47 @@ rem call n vdi>nul
 set cbf-fn=%cbf-pt%\Miscellany\message-to-xps.txt
 exit/b
 rem lu: Jan-31-2022
+
+
+
+:_+ EMDO Family (!emdo)
+
+
+
+::_
+:doj
+:dtg
+:gci
+:efg
+:lbm
+:msl
+:nes
+:nes2
+echo. & echo * %1.
+call pn emdo
+set cbf-fn=%cbf-pt%\%1.asc
+exit/b
+lu: Oct-3-2023
+
+
+
+::_
+:sai
+echo. & echo * %1.
+call pn emdo
+set cbf-fn=%cbf-pt%\%1.bul
+exit/b
+lu: Oct-3-2023
+
+
+
+::_
+:idv
+echo. & echo * %1.
+call pn emdo
+set cbf-fn=%cbf-pt%\%1.txt
+exit/b
+lu: Oct-3-2023
 
 
 

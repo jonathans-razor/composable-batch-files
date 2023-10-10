@@ -163,7 +163,7 @@ I got this command from Phil K. He says it will help me get our go code to compi
 echo. & echo * Run a Go program.
 
 call fe "%~2" & if errorlevel 1 exit/b
-call fnc "%~2" .go & if errorlevel 1 exit/b
+call paco "%~2" .go & if errorlevel 1 exit/b
 
 echo.
 go run "%~2"

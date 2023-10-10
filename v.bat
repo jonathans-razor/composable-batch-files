@@ -2237,7 +2237,21 @@ creation date: Sep-25-2023
 
 
 
-:_+ Line Continuation Characters, Escape Characters and more.
+:_+ Line Continuation Characters, Escape Characters and more. (!esch)
+
+
+
+::_
+
+:caret
+:cubed-caret
+
+echo. & echo * The triple caret seems to work for URLS!
+
+rem This works! Oct-10-2023 (skw triple hat works, triple caret)
+set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
+
+exit/b
 
 
 
@@ -2397,6 +2411,22 @@ rem Hello 1.
 @echo off
 
 exit/b
+
+
+
+:_
+:
+echo. & echo * New error handling style.
+call paco "%~1" . || exit/b
+echo made it here.
+exit/b
+lu: Oct-10-2023
+
+:command1 && command2 will run command1 and then command2, only if command1 succeeded (error 
+level 0).
+
+::command1 || command2 will run command1 and then command2, only if command1 failed (error 
+level not 0
 
 
 

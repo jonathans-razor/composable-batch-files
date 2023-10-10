@@ -5786,4 +5786,14 @@ Oct-3-2023
 
 
 
+:_
+:ipco
+cls
+echo. & echo * Ipconfig.
+ipconfig/all
+exit/b
+lu: Oct-10-2023
+
+
+
 :_ (!efm, !rfsp) (mov-9)

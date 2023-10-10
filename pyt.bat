@@ -7,14 +7,14 @@ if "%~1" == "?" goto help
 echo %1| find /i ".">nul
 if errorlevel 1 goto %1
 
-goto execute-python-file
+goto run
 
 
 
 :_
 :help
 cls
-echo. & echo * Python
+echo. & echo * Python.
 
 echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
@@ -128,14 +128,12 @@ Sep-27-2023
 
 
 :_
-
-:execute-python-file
 :run
 
-echo. & echo * Run python file.
+echo. & echo * Run Python file.
 
-call fe "%~1" & if errorlevel 1 exit/b
-call fnc "%~1" .py & if errorlevel 1 exit/b
+call fe "%~1" || exit/b
+call paco "%~1" .py || exit/b
 
 echo.
 python "%~1"

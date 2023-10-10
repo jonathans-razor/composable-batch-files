@@ -52,7 +52,7 @@ exit/b
 echo. & echo * Execute JS file.
 
 call fe "%~1" & if errorlevel 1 exit/b
-call fnc "%~1" .js & if errorlevel 1 exit/b
+call paco "%~1" .js & if errorlevel 1 exit/b
 
 echo.
 node "%~1"

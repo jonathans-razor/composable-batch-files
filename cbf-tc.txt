@@ -81,7 +81,6 @@ Composable Batch Files (CBF) - Table of Contents
     file  New line at end of file tester.
       fl  For loops using function routing.
       fn  Edit a file in Multi-edit or Notepad by passing in the alias for the desired cbf-fn.
-     fnc  Filename contains.
      fnv  Validate a filename value. Using fnv instead of n helps the reader with clarity of intent.
     fnv2  Validate a filename version 2. Deprecated (Going forward, use fe.bat.)
       fq  Open file using its fully qualified filename.
@@ -168,6 +167,7 @@ Composable Batch Files (CBF) - Table of Contents
      orr  Status of officially registered repos.
        p  Synchronize 2 folders, CBF and VDI.
       pa  Fully automatic Git push of a single repository, with td parameter.
+    paco  Parameter contains.
      pdf  PDF DCV.
       pg  Ping leveraging nicknames dictionary.
       pi  Pipe a command line statement to a file.
