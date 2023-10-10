@@ -32,6 +32,7 @@ echo          Parameter  Description
 echo ------------------  --------------------------------------------------------
 echo                acc  Open all aspects of the Angular Crash Course.
 echo               free  Report on free hard disk space.
+echo               ipco  Ipconfig/all.
 echo               log4  Is log4j jar file present?
 echo                sde  Set default text editor.
 

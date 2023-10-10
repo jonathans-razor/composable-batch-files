@@ -157,6 +157,7 @@ Composable Batch Files (CBF) - Table of Contents
       np  Copy the np %cbf-pd% to the clipboard.
      npp  Use Notepad++ and sfn to edit, or view without saving, a file.
     nppd  Use Notepad++ to edit DCV files.
+      ns  Nslookup.
       nx  Use Notepad++ to edit a batch file in the CBF folder
       of  Open Folder, with td parameter.
    ofdcv  Open folder using a DCV.
