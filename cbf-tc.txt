@@ -238,7 +238,7 @@ Composable Batch Files (CBF) - Table of Contents
       wp  Use Wordpad and sfn to edit a file.
      wpd  Use Wordpad to edit DCV files.
        w  Unassigned.
-       x  Unassigned.
+       x  Bing shortcu.
      xac  Execute an application alias with a filename in the current folder.
      xaf  Execute an application alias with a filename alias.
      xfn  Filename-centric way to run an alias

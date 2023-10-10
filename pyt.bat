@@ -130,13 +130,15 @@ Sep-27-2023
 :_
 :run
 
+cls
+
 echo. & echo * Run Python file.
 
 call fe "%~1" || exit/b
 call paco "%~1" .py || exit/b
 
 echo.
-python "%~1"
+python "%~1" %2 %3 %4 %5 %6 %7 %8 %9
 
 exit/b
 

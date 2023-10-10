@@ -50,6 +50,9 @@ call pa iw
 call sep
 call pa c
 
+call sep
+call pa dsa
+
 cd /d %cbf-current-folder%
 
 exit/b

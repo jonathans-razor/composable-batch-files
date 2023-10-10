@@ -1664,7 +1664,7 @@ echo. & echo * %1.
 if -%5-==-?-goto help
 
 rem skw: all parameters, command line parameters, all command line parameters, whole command line
-rem all_parameters, all_command_line_parameters, all_command_line
+rem all_parameters, all_command_line_parameters, all_command_line, all arguments, all command line arguments
 
 call :aclp-test %*
 
