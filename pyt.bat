@@ -95,21 +95,6 @@ exit/b
 
 
 :_
-:execute-python-file
-
-echo. & echo * Execute python file.
-
-call fe "%~1" & if errorlevel 1 exit/b
-call fnc "%~1" .py & if errorlevel 1 exit/b
-
-echo.
-python "%~1"
-
-exit/b
-
-
-
-:_
 :inst
 
 echo. & echo * Install module.
@@ -139,6 +124,23 @@ exit/b
 
 lu:
 Sep-27-2023
+
+
+
+:_
+
+:execute-python-file
+:run
+
+echo. & echo * Run python file.
+
+call fe "%~1" & if errorlevel 1 exit/b
+call fnc "%~1" .py & if errorlevel 1 exit/b
+
+echo.
+python "%~1"
+
+exit/b
 
 
 
