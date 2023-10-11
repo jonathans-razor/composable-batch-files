@@ -4414,7 +4414,7 @@ call s | find /i "working tree clean">nul
 if errorlevel 1 (
   call pa
 ) else (
-  echo. & echo * There are no changes in this repository.
+  rem echo. & echo * There are no changes in this repository.
 )
 
 exit/b
