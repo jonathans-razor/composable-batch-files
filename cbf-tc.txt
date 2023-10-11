@@ -129,6 +129,7 @@ Composable Batch Files (CBF) - Table of Contents
       jv  Java.
       kl  Kill a process.
        l  Load file contents onto clipboard.
+      le  Leet code tester.
       lf  Open latest file.
       lh  Execute the localhost DCV for the passed in alias.
       ll  Wrapper around dir command to help with Linux compatibility.

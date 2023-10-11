@@ -3847,7 +3847,7 @@ creation date: Jun-24-2023
 :dsa
 echo. & echo * Data structures and algorithms.
 call pn it>nul
-set cbf-pt=%cbf-pt%\data-structures-and-algorithms
+set cbf-pt=%cbf-pt%\dsa
 set cbf-gh=https://github.com/jonathans-razor/data-structures-and-algorithms
 exit/b
 lu: Oct-10-2023

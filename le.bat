@@ -22,7 +22,7 @@ echo    Atomic leet code function test you wish to run.
 echo. & echo  * Batch file style: Multipurpose
 
 echo. & echo  * Samples:
-echo    %~n0 
+echo    %~n0 Oct-11-2023-2
 
 exit/b
 
@@ -89,6 +89,26 @@ call t dsa>nul
 
 @echo on
 call pyt 217-contains-duplicate.py 1 2 3 3
+
+exit/b
+
+
+
+:_
+:Oct-11-2023-5
+
+cls
+
+call t dsa>nul
+
+@echo on
+call pyt 217-contains-duplicate.py 1 2 3 
+@echo on
+call pyt 217-contains-duplicate.py 1 2 3 3
+@echo on
+call pyt 217-contains-duplicate.py 5 1 2 3 3
+@echo on
+call pyt 217-contains-duplicate.py 62 7 88 62
 
 exit/b
 
