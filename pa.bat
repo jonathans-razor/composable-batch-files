@@ -44,7 +44,6 @@ if errorlevel 1 exit/b
 
 :main
 
-call fe .git & if errorlevel 1 exit/b
 call g acp
 
 exit/b

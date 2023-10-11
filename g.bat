@@ -1051,38 +1051,20 @@ exit/b
 
 :acp
 
-rem echo. & echo * Add, commit and push with timestamp commit description.
+rem Add, commit and push.
 
-rem fcd: Apr-13-2017
+call fe .git || exit/b
 
-rem cd | find /i "C:\projects\netbeans\sencha">nul
-rem if %errorlevel% == 0 echo * A commit message is required in this folder. Jan-20-2022-5-06-pm
-rem if %errorlevel% == 0 exit/b
+call %0 add-all-files || exit/b
 
-rem cd | find /i "c:\users\[put--name-of-user-of-interest-here]\dev\cart">nul
-rem if %errorlevel% == 0 echo. & echo * Error: This folder has restrictive rules for check-in.
-rem if %errorlevel% == 0 exit/b
-
-rem call m cart_path_only
-
-rem echo Cart Path Return Value: %errorlevel%
-
-rem if %errorlevel% == 1 (
-rem    call m clear_errorlevel_silently
-rem    exit/b
-rem )
-
-call %0 add-all-files
-
-if errorlevel 1 exit/b 
-
-call %0 commit-all-with-timestamp-message
-
-if errorlevel 1 exit/b 
+call %0 commit-all-with-timestamp-message || exit/b
 
 git push
 
 exit/b
+
+lu:
+Oct-11-2023
 
 
 
@@ -4416,9 +4398,9 @@ exit/b
 
 ::_
 
-:is-working-tree-clean
+:commit-changes-if-dirty
 
-echo. & echo * Is working tree clean?
+echo. & echo * Commit changes if dirty.
 
 if "%~2" == "" (
   call err Path alias is required.
@@ -4433,7 +4415,7 @@ call s | find /i "working tree clean">nul
 if errorlevel 1 (
   call pa
 ) else (
-  echo * No changes.
+  echo. & echo * No changes in this repository.
 )
 
 exit/b
