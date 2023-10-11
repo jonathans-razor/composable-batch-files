@@ -4400,15 +4400,14 @@ exit/b
 
 :commit-changes-if-dirty
 
-echo. & echo * Commit changes if dirty.
+rem echo. & echo * Commit changes if dirty.
 
 if "%~2" == "" (
   call err Path alias is required.
   exit/b
 )
 
-rem qq
-call t %2>nul
+call t %2
 
 call s | find /i "working tree clean">nul
 
