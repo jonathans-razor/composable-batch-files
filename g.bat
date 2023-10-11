@@ -1,7 +1,10 @@
 :_ (!bfg)
+
 @echo off
+
 if "%~1" == "?" goto help
 if "%~1" == "" goto help
+
 goto %1
 
 
@@ -1162,99 +1165,6 @@ call s cbf
 call s s
 
 exit/b
-
-
-
-:_
-
-:is_working_tree_clean
-
-echo. & echo * Is working tree clean?
-
-rem lu: Mar-28-2019
-
-call t %1>nul
-
-call s | find /i "working tree clean">nul
-
-set current_folder=%cd%
-
-if %errorlevel% == 1 (
-  echo.
-  echo * Warning: Dirty tree at %current_folder%.
-  exit/b 1
-)
-
-exit/b
-
-
-
-:_
-
-:evaluate_folders_git_status
-
-echo. & echo * Evaluate folder's git status.
-
-rem lu: Apr-1-2019
-
-rem echo.
-rem 
-
-call t %2>nul
-
-set current_folder=%cd%
-
-call m clear_errorlevel_silently
-
-call s>%tmp%\git_status_message.txt
-
-
-type %tmp%\git_status_message.txt | find /i "diverged">nul
-
-if %errorlevel% == 0 (
-  echo.
-  echo * Diverged code found at %current_folder%.  _,.-'~'-.,__,.-'~'-.,_
-  exit/b 1
-)
-
-
-type %tmp%\git_status_message.txt | find /i "behind">nul
-
-if %errorlevel% == 0 (
-  echo.
-  echo * Behind origin found at %current_folder%.  _,.-'~'-.,__,.-'~'-.,_
-  exit/b 1
-)
-
-
-type %tmp%\git_status_message.txt | find /i "modified:">nul
-
-if %errorlevel% == 0 (
-  echo.
-  echo * Modified file found at %current_folder%.  _,.-'~'-.,__,.-'~'-.,_
-  exit/b 1
-)
-
-
-type %tmp%\git_status_message.txt | find /i "Untracked files:">nul
-
-if %errorlevel% == 0 (
-  echo.
-  echo * Untracked file found at %current_folder%.  _,.-'~'-.,__,.-'~'-.,_
-  exit/b 1
-)
-
-
-type %tmp%\git_status_message.txt | find /i "ahead">nul
-
-if %errorlevel% == 0 (
-  echo.
-  echo * Ahead of origin found at %current_folder%.  _,.-'~'-.,__,.-'~'-.,_
-  exit/b 1
-)
-
-
-exit/b 0
 
 
 
@@ -4497,6 +4407,130 @@ rem lu: Feb-17-2023
 echo. & echo * Parameter Description(s):
 echo. & echo * Parameter 2: Name of the file you wish to check out.
 exit/b
+
+
+
+:_+ Git Status Evaluation Family
+
+
+
+::_
+
+:is-working-tree-clean
+
+echo. & echo * Is working tree clean?
+
+if "%~2" == "" (
+  call err Path alias is required.
+  exit/b
+)
+
+rem qq
+call t %1>nul
+
+call s | find /i "working tree clean">nul
+
+if errorlevel 1 (
+  call p
+) else (
+  echo * No changes.
+)
+
+exit/b
+
+lu: 
+Oct-11-2023
+
+
+::_
+
+:is_working_tree_clean
+
+echo. & echo * Is working tree clean?
+
+call t %1>nul
+
+call s | find /i "working tree clean">nul
+
+set current_folder=%cd%
+
+if %errorlevel% == 1 (
+  echo.
+  echo * Warning: Dirty tree at %current_folder%.
+  exit/b 1
+)
+
+exit/b
+
+lu: Mar-28-2019
+
+
+::_
+
+:evaluate_folders_git_status
+
+echo. & echo * Evaluate folder's git status.
+
+rem lu: Apr-1-2019
+
+rem echo.
+rem 
+
+call t %2>nul
+
+set current_folder=%cd%
+
+call m clear_errorlevel_silently
+
+call s>%tmp%\git_status_message.txt
+
+
+type %tmp%\git_status_message.txt | find /i "diverged">nul
+
+if %errorlevel% == 0 (
+  echo.
+  echo * Diverged code found at %current_folder%.  _,.-'~'-.,__,.-'~'-.,_
+  exit/b 1
+)
+
+
+type %tmp%\git_status_message.txt | find /i "behind">nul
+
+if %errorlevel% == 0 (
+  echo.
+  echo * Behind origin found at %current_folder%.  _,.-'~'-.,__,.-'~'-.,_
+  exit/b 1
+)
+
+
+type %tmp%\git_status_message.txt | find /i "modified:">nul
+
+if %errorlevel% == 0 (
+  echo.
+  echo * Modified file found at %current_folder%.  _,.-'~'-.,__,.-'~'-.,_
+  exit/b 1
+)
+
+
+type %tmp%\git_status_message.txt | find /i "Untracked files:">nul
+
+if %errorlevel% == 0 (
+  echo.
+  echo * Untracked file found at %current_folder%.  _,.-'~'-.,__,.-'~'-.,_
+  exit/b 1
+)
+
+
+type %tmp%\git_status_message.txt | find /i "ahead">nul
+
+if %errorlevel% == 0 (
+  echo.
+  echo * Ahead of origin found at %current_folder%.  _,.-'~'-.,__,.-'~'-.,_
+  exit/b 1
+)
+
+
+exit/b 0
 
 
 
