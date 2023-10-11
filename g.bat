@@ -4426,12 +4426,12 @@ if "%~2" == "" (
 )
 
 rem qq
-call t %1>nul
+call t %2>nul
 
 call s | find /i "working tree clean">nul
 
 if errorlevel 1 (
-  call p
+  call pa
 ) else (
   echo * No changes.
 )
