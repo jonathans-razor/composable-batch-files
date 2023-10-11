@@ -7,7 +7,7 @@ if "%~1" == "" goto help
 echo %1| find /i ".">nul
 if errorlevel 1 goto %1
 
-goto execute-js-file
+goto run
 
 
 
@@ -47,15 +47,16 @@ exit/b
 
 
 :_
-:execute-js-file
 
-echo. & echo * Execute JS file.
+:run
+
+rem echo. & echo * Run JavaScript file.
 
 call fe "%~1" & if errorlevel 1 exit/b
 call paco "%~1" .js & if errorlevel 1 exit/b
 
 echo.
-node "%~1"
+node "%~1" %2 %3 %4 %5 %6 %7 %8 %9
 
 exit/b
 

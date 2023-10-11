@@ -132,3 +132,59 @@ exit/b
 
 
 :_
+:Oct-11-2023-7
+
+cls
+
+call t dsa>nul
+
+@echo on
+call nd 49-groups-of-anagrams.js "listen" "silent" "enlist" "hello" "world" "dog" "god"
+
+exit/b
+
+
+
+:_
+:Oct-11-2023-8
+
+cls
+
+call t dsa>nul
+
+@echo on
+call nd 49-groups-of-anagrams.js "beast" "stab" "bats" "feel" "left" "felt"
+
+exit/b
+
+
+
+:_
+:Oct-11-2023-9
+
+cls
+
+call t dsa>nul
+
+@echo on
+call nd 49-groups-of-anagrams-2.js "beast" "stab" "bats" "feel" "left" "felt"
+
+exit/b
+
+
+
+:_
+:Oct-11-2023-10
+
+cls
+
+call t dsa>nul
+
+@echo on
+call nd 49-groups-of-anagrams-2.js "listen" "silent" "enlist" "hello" "world" "dog" "god" "ogd"
+
+exit/b
+
+
+
+:_
