@@ -115,3 +115,20 @@ exit/b
 
 
 :_
+:Oct-11-2023-6
+
+cls
+
+call t dsa>nul
+
+@echo on
+call pyt 1-two-sum.py 2 7 11 15 9
+
+@echo on
+call pyt 1-two-sum.py 3 2 4 6
+
+exit/b
+
+
+
+:_
