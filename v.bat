@@ -1839,23 +1839,31 @@ if %errorlevel% == 0 (
   echo. & echo Parameter list does NOT contain a "/s".
 )
 
-rem (!find, !cont, !contains, !pipe, !echo) 
-rem skw: contains, find period in filename, all command line variables, all parameters, entire 
-rem command line, command line arguments, parameter passing, passing parameters
-rem Does the parameter list contain "/test"?, command line options, how to detect command line 
-rem options, how to detect command line parameters
-
 echo %*| find /i "/p">nul
 
 if %errorlevel% == 0 (
-  echo. & echo Parameter list contains "/p".
+  echo. & echo Entire parameter list contains "/p".
   set cbf-pipe-to-file=1
 ) else (
   echo. & echo Parameter list does NOT contain a "/p".
 )
 
 exit/b
-rem lu: Jul-5-2023
+
+rem lu:
+Oct-11-2023
+Jul-5-2023
+
+(!find, !cont, !contains, !pipe, !echo) 
+skw: contains, find period in filename, all command line variables, all parameters, entire 
+command line, command line arguments, parameter passing, passing parameters
+
+Does the parameter list contain "/test"?, command line options, how to detect command line 
+options, how to detect command line parameters
+
+This is akin to turning a message into an error code.
+
+call s | find /i "working tree clean">nul
 
 
 
