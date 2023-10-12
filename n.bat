@@ -3854,4 +3854,38 @@ lu: Oct-10-2023
 
 
 
+:_+ Code Compare Family
+
+
+
+::_
+:icoco
+echo. & echo * Install Code Compare.
+set cbf-app=C:\Users\jonat\Dropbox\Software\Code Compare\codecomparepro40.exe
+set cbf-fn=%cbf-app%
+exit/b
+rem lu: Feb-27-2020
+
+
+
+::_
+:coco
+echo. & echo * Run Code compare.
+set cbf-app=c:\program files\devart\code compare\codecompare.exe
+set cbf-fn=%cbf-app%
+exit/b
+rem lu: Jan-31-2019
+
+
+
+::_
+:teco
+echo. & echo * Text compare.
+set cbf-url=https://text-compare.com/
+exit/b
+
+skw Online comparison tool, code compare
+
+
+
 :_ (!efn)

@@ -62,16 +62,15 @@ exit/b
 
 :compare-j-files
 
-set fp=* Use default behavior, viz. compare j files.
+echo. & echo * Use default behavior, viz. compare j files.
 
-rem lu: Nov-7-2019
-
-echo.
-echo %fp%
-
+rem qq
 call %0 j1 j2
 
 exit/b
+
+lu:
+Oct-12-2023
 
 
 
@@ -121,9 +120,6 @@ exit/b
 
 :main
 
-echo.
-echo %cbf-filep%
-
 call fnv %1
 
 if errorlevel 1 (
@@ -144,9 +140,7 @@ set file_2=%cbf-fn%
 
 call an coco
 
-if errorlevel 1 (
-  exit/b
-)
+if errorlevel 1 exit/b
 
 start  "Code Compare" "%cbf-app%" "%file_1%" "%file_2%"
 
