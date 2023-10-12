@@ -106,6 +106,7 @@ Composable Batch Files (CBF) - Table of Contents
     herk  Heroku.
     hist  Doskey /history. Display the previous 50 commands.
       hw  Hello world. The simplest possible batch file.
+     hwe  Hello world everyone. Runs all hello world programs separately or together.
      hw2  Echo off, pause and exit.
      hw3  Teaches parameters foraccessing help or none, exit/b and displaying help.
      hw4  Composed batch file.
