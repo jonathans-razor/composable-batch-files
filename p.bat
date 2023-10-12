@@ -38,20 +38,34 @@ cls
 
 set cbf-current-folder=%cd%
 
-rem call sep
-rem f
 
+:_
 call sep
 call t c & call g dirt
 
+
+
+:_
 call sep
 call t dsa & call g dirt
+goto :close
 
-rem call sep
-rem ql
 
-rem call sep
-rem  iw
+
+:_
+call sep
+call t iw & call g dirt
+
+
+
+:_
+call sep
+call t f & call g dirt
+
+
+
+:_
+:close
 
 cd /d %cbf-current-folder%
 
