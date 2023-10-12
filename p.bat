@@ -68,6 +68,7 @@ call t f & call g dirt
 :close
 
 cd /d %cbf-current-folder%
+echo.
 
 exit/b
 
