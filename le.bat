@@ -188,3 +188,17 @@ exit/b
 
 
 :_
+:Oct-12-2023-1
+
+cls
+
+call t iw>nul
+
+@echo on
+call nd 49-groups-of-anagrams-2.js "listen" "silent" "enlist" "hello" "world" "dog" "god" "ogd"
+
+exit/b
+
+
+
+:_

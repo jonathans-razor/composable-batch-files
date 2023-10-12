@@ -1,13 +1,11 @@
 :_
 
 @echo off
+
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
-echo %1| find /i ".">nul
-if errorlevel 1 goto %1
-
-goto run
+goto %1
 
 
 
@@ -132,11 +130,11 @@ Sep-27-2023
 
 rem echo. & echo * Run Python file.
 
-call fe "%~1" || exit/b
-call paco "%~1" .py || exit/b
+call fe "%~2" || exit/b
+call paco "%~2" .py || exit/b
 
 echo.
-python "%~1" %2 %3 %4 %5 %6 %7 %8 %9
+python %2 %3 %4 %5 %6 %7 %8 %9
 
 exit/b
 

@@ -1658,6 +1658,8 @@ exit/b
 ::_
 
 :aclp
+:allp
+:alpa
 
 echo. & echo * %1.
 

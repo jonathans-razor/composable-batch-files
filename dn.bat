@@ -215,7 +215,8 @@ rem lu: Sep-15-2023
 ::_
 :r
 :run
-echo. & echo * Run DotNetCore web server.
+
+rem echo. & echo * Run DotNetCore web server.
 
 call ftpr cs & if errorlevel 1 exit/b 1
 

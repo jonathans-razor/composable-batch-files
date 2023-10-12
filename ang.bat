@@ -413,26 +413,6 @@ Sep-25-2023
 
 :_
 
-:run-ui
-:serve
-:srv
-
-echo. & echo * Compile and start Angular.
-
-call fe package.json & if errorlevel 1 exit/b
-
-echo.
-start "Angular" cmd /k ng serve
-
-exit/b
-
-lu: 
-Sep-25-2023
-
-
-
-:_
-
 :gs-hardcoded
 
 echo. & echo * Generate service.
@@ -499,6 +479,27 @@ exit/b
 
 lu:
 Oct-7-2023
+
+
+
+:_
+
+:run
+:run-ui
+:serve
+:srv
+
+echo. & echo * Compile and start Angular.
+
+call fe package.json & if errorlevel 1 exit/b
+
+echo.
+start "Angular" cmd /k ng serve
+
+exit/b
+
+lu: 
+Oct-12-2023
 
 
 

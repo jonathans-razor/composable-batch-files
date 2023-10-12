@@ -281,9 +281,9 @@ nut when you merely run it.
 
 ::_
 
-:r
+:run
 
-echo. & echo * Interpret and run a java file.
+rem echo. & echo * Interpret and run a java file.
 
 if -%2-==-?- goto help
 if -%2-==-- goto help
