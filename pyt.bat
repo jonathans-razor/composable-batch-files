@@ -3,7 +3,6 @@
 @echo off
 
 if "%~1" == "" goto help
-call paco "%~1" . goto shift
 if "%~1" == "?" goto help
 
 goto %1
@@ -48,7 +47,11 @@ exit/b
 
 
 
-:_
+:_+ DSA Family (!fydsapy)
+
+
+
+::_
 :vers
 
 echo.
@@ -62,7 +65,7 @@ exit/b
 
 
 
-:_
+::_
 :hw
 
 call t iw>nul
@@ -72,8 +75,52 @@ exit/b
 
 
 
+::_
+:rs
+
+echo. & echo * Reverse string.
+
+call t dsa>nul
+@echo on
+call pyt run reverse-string.py hello
+
+exit/b
+
+
+
+::_
+:arnu
+
+echo. & echo * Array of numbers.
+
+call t dsa>nul
+@echo on
+call pyt run array-of-numbers.py 1 2 3
+
+exit/b
+
+
+
+::_
+:arst
+
+echo. & echo * Array of strings.
+
+call t dsa>nul
+@echo on
+call pyt run array-of-strings.py hat cat bat
+
+exit/b
+
+
+
 :_
 :list
+:pass in an array of numbers
+
+:pass in an array of strings
+
+
 
 echo. & echo * Show installed modules.
 
