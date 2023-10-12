@@ -51,7 +51,6 @@ exit/b
 :vers
 
 echo.
-rem py --version
 python --version
 
 exit/b
@@ -59,6 +58,16 @@ exit/b
 * Sep-21-2023_12_05_PM: Python 3.11.5
 
 * Sep-21-2023_11_54_AM: Python 3.10.0
+
+
+
+:_
+:hw
+
+call t iw>nul
+call pyt run hello-world.py
+
+exit/b
 
 
 

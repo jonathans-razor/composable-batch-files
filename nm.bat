@@ -1395,15 +1395,16 @@ Sep-26-2023
 
 echo. & echo * Run React UI. Starts the development server.
 
-call fe package.json & if errorlevel 1 exit/b
+call fe package.json || exit/b
 
 echo.
-npm start
+start "NPM" cmd /k npm start
 rem npm run start
 
 exit/b
 
 rem lu:
+Oct-12-2023
 Sep-26-2023
 Aug-27-2021
 

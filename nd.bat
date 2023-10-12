@@ -45,6 +45,15 @@ exit/b
 
 
 :_
+:hw
+rem echo. & echo * Hello world.
+call t iw>nul
+call nd run hello-world.js
+exit/b
+
+
+
+:_
 
 :run
 

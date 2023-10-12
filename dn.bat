@@ -159,6 +159,11 @@ exit/b
 
 rem echo. & echo * Hello world.
 
+call t iw>nul
+cd hello-world-c-sharp
+call dn run
+
+
 rem qq
 
 exit/b
@@ -222,6 +227,7 @@ rem lu: Sep-15-2023
 
 
 ::_
+
 :r
 :run
 

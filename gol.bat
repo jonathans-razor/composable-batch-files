@@ -158,6 +158,32 @@ I got this command from Phil K. He says it will help me get our go code to compi
 
 :_
 
+:vers
+
+echo. & echo * Version.
+
+echo.
+go version
+
+exit/b
+
+
+
+:_
+
+:hw
+
+rem echo. & echo * Hello world.
+
+call t iw>nul
+call gol run hello-world.go
+
+exit/b
+
+
+
+:_
+
 :run
 
 rem echo. & echo * Run a Go program.

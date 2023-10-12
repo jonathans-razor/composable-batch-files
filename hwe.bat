@@ -44,10 +44,7 @@ Oct-12-2023
 
 :cs
 
-rem qq
-call t iw>nul
-cd hello-world-c-sharp
-call dn run hello-world.go
+call dn hw
 
 exit/b
 
@@ -57,8 +54,7 @@ exit/b
 
 :go
 
-call t iw>nul
-call gol run hello-world.go
+call go hw
 
 exit/b
 
@@ -68,8 +64,7 @@ exit/b
 
 :js
 
-call t iw>nul
-call nd run hello-world.js
+call nd hw
 
 exit/b
 
@@ -79,8 +74,7 @@ exit/b
 
 :jv
 
-call t iw>nul
-call jv run HelloWorld.java
+call jv hw
 
 exit/b
 
@@ -100,8 +94,19 @@ exit/b
 
 :py
 
-call t iw>nul
-call pyt run hello-world.py
+call pyt hw
+
+exit/b
+
+
+
+:_  React
+
+:re
+
+call t iw
+cd hello-world-react
+call nm star
 
 exit/b
 
@@ -111,8 +116,7 @@ exit/b
 
 :ts
 
-rem echo. & echo * Hello world from TypeScript.
-call nd run hello-world.ts
+call tys hw
 
 exit/b
 
@@ -131,6 +135,7 @@ call :ng
 call :js
 call :jv
 call :py
+call :ts
 
 exit/b
 

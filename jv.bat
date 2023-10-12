@@ -160,25 +160,11 @@ exit/b
 
 
 :_
+:vers
 
-:old-vers
-
-set fp=* Which Java version is running on this machine?
-
-rem FCD: Mar-2-2017
-
-rem echo.
-rem echo %fp%
-echo.
-
-call c:\mercury\batch_files\update_java_timestamp.bat
-
-set /p timestamp=<%tmp%\java_timestamp.txt
-
-echo Java Version on %computername% on %timestamp%:
+echo. & echo * Version.
 
 echo.
-
 java -version
 
 exit/b
@@ -186,26 +172,13 @@ exit/b
 
 
 :_
-:/ver
-:v
-:ver
-:vers
-set fp=* Display Java version currently in use.
+:hw
+rem echo. & echo * Hello world.
 
-echo.
-echo %fp%
-
-echo.
-java -version
+call t iw>nul
+call jv run HelloWorld.java
 
 exit/b
-
-Possibly confusing error message just because I added an extra dash!
-
-C:\JDK8>java --version
-Unrecognized option: --version
-Error: Could not create the Java Virtual Machine.
-Error: A fatal exception has occurred. Program will exit.
 
 
 
