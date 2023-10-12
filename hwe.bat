@@ -54,7 +54,7 @@ exit/b
 
 :go
 
-call go hw
+call gol hw
 
 exit/b
 
@@ -104,9 +104,9 @@ exit/b
 
 :re
 
-call t iw
+call t iw>nul
 cd hello-world-react
-call nm star
+call nm star>nul
 
 exit/b
 
@@ -135,6 +135,7 @@ call :ng
 call :js
 call :jv
 call :py
+call :re
 call :ts
 
 exit/b
