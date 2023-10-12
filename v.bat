@@ -1619,19 +1619,6 @@ rem Cool code.
 
 
 
-:_
-rem This makes "no" for Notepad = %0, where it was %1.
-rem (!shift)
-if not "%0" == "e.bat" goto next
-shift/0
-call an %0
-echo. & echo * p0: %0
-echo. & echo * p1: %1
-:next
-exit/b
-
-
-
 :_+ All Command Line Parameters
 
 
@@ -2442,6 +2429,19 @@ rem Hello 1.
 
 @echo off
 
+exit/b
+
+
+
+:_
+:shift
+rem This makes "no" for Notepad = %0, where it was %1.
+rem qq
+rem (!shift)
+shift/1
+echo. & echo * p0: %0
+echo. & echo * p1: %1
+echo. & echo * p2: %2
 exit/b
 
 

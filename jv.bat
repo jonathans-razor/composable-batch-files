@@ -254,6 +254,7 @@ nut when you merely run it.
 
 ::_
 
+:r
 :run
 
 rem echo. & echo * Interpret and run a java file.

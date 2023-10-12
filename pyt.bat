@@ -3,6 +3,7 @@
 @echo off
 
 if "%~1" == "" goto help
+call paco "%~1" . goto shift
 if "%~1" == "?" goto help
 
 goto %1

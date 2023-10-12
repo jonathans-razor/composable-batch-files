@@ -55,6 +55,7 @@ exit/b
 
 :_
 
+:r
 :run
 
 rem echo. & echo * Run JavaScript file.
