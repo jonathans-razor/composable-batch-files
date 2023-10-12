@@ -134,7 +134,7 @@ call fe "%~2" || exit/b
 call paco "%~2" .py || exit/b
 
 echo.
-python %2 %3 %4 %5 %6 %7 %8 %9
+python "%~2" %3 %4 %5 %6 %7 %8 %9
 
 exit/b
 

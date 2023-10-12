@@ -334,26 +334,6 @@ lu: Feb-11-2019
 
 :_
 
-:acc
-
-echo. & echo * Run Angular Crash Course on localhost.
-
-call lh 4200 edge
-
-call t acc
-
-echo.
-ng serve
-
-exit/b
-
-lu:
-Sep-29-2023
-
-
-
-:_
-
 :gtc
 
 echo. & echo * Generate task component.
@@ -484,6 +464,26 @@ Oct-7-2023
 
 :_
 
+:acc
+
+echo. & echo * Run Angular Crash Course on localhost.
+
+call lh 4200 edge
+
+call t acc
+
+echo.
+ng serve
+
+exit/b
+
+lu:
+Sep-29-2023
+
+
+
+:_
+
 :run
 :run-ui
 :serve
@@ -491,7 +491,7 @@ Oct-7-2023
 
 echo. & echo * Compile and start Angular.
 
-call fe package.json & if errorlevel 1 exit/b
+rem call fe package.json & if errorlevel 1 exit/b
 
 echo.
 start "Angular" cmd /k ng serve

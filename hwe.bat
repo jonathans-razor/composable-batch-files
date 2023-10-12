@@ -57,7 +57,6 @@ exit/b
 :go
 
 call t iw>nul
-
 call gol run hello-world.go
 
 exit/b
@@ -69,8 +68,7 @@ exit/b
 :js
 
 call t iw>nul
-
-call nd hello-world.js
+call nd run hello-world.js
 
 exit/b
 
@@ -81,8 +79,20 @@ exit/b
 :jv
 
 call t iw>nul
-
 call jv run HelloWorld.java
+
+exit/b
+
+
+
+:_
+
+:ng
+
+rem qq
+call t iw>nul
+cd hello-world-angular
+call ang run
 
 exit/b
 
@@ -93,7 +103,6 @@ exit/b
 :py
 
 call t iw>nul
-
 call pyt run hello-world.py
 
 exit/b
@@ -105,8 +114,7 @@ exit/b
 :ts
 
 rem echo. & echo * Hello world from TypeScript.
-
-call nd hello-world.ts
+call nd run hello-world.ts
 
 exit/b
 
