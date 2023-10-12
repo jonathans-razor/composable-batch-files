@@ -1,6 +1,7 @@
 :_
 
 @echo off
+if not "%~1" == "" goto help
 if "%~1" == "?" goto help
 goto main
 
@@ -9,9 +10,9 @@ goto main
 :_
 :help
 cls
-echo. & echo * Push selected repositories.
+echo. & echo * Push predetermined repositories.
 
-echo. & echo   Usage: %~n0 [space separated parameter(s)]
+echo. & echo   Usage: %~n0 (NO parameters)
 
 echo. & echo   Batch file style: Single purpose
 
