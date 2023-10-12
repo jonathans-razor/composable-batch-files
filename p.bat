@@ -39,19 +39,19 @@ cls
 set cbf-current-folder=%cd%
 
 rem call sep
-rem call g commit-changes-if-dirty f
+rem f
 
 call sep
-call g commit-changes-if-dirty c
+call t c & call g dirt
 
 call sep
-call g commit-changes-if-dirty dsa
+call t dsa & call g dirt
 
 rem call sep
-rem call g commit-changes-if-dirty ql
+rem ql
 
 rem call sep
-rem call g commit-changes-if-dirty iw
+rem  iw
 
 cd /d %cbf-current-folder%
 
