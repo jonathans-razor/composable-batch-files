@@ -1182,7 +1182,28 @@ exit/b
 
 ::_
 
-:validate_path
+:new-style
+
+echo. & echo * New style error handling
+
+call paco "%~1" . || exit/b
+
+echo made it here.
+
+exit/b
+lu: Oct-12-2023
+
+:command1 && command2 will run command1 and then command2, only if command1 succeeded (error 
+level 0).
+
+::command1 || command2 will run command1 and then command2, only if command1 failed (error 
+level not 0
+
+
+
+::_
+
+:old-style
 
 if errorlevel 1 exit/b (!el1, !ec, !gtr, !err, !erro, !el, !erle)
 
@@ -2422,22 +2443,6 @@ rem Hello 1.
 @echo off
 
 exit/b
-
-
-
-:_
-:
-echo. & echo * New error handling style.
-call paco "%~1" . || exit/b
-echo made it here.
-exit/b
-lu: Oct-10-2023
-
-:command1 && command2 will run command1 and then command2, only if command1 succeeded (error 
-level 0).
-
-::command1 || command2 will run command1 and then command2, only if command1 failed (error 
-level not 0
 
 
 
