@@ -1250,15 +1250,248 @@ exit/b
 
 
 
+:_+ Uninstalling
+
+
+
+::_
+
+:unin-g
+
+set fp=* Uninstall "%2" global package and remove dependency section in the package.json file.
+
+rem lu: Apr-24-2018
+
+echo.
+echo %fp%
+
+echo.
+npm uninstall %2 -g --save
+
+exit/b
+
+
+
+::_
+
+:unin_s
+
+set fp=* Uninstall "%2" local package and remove dependency section in the package.json file.
+
+rem lu: Apr-24-2018
+
+echo.
+echo %fp%
+
+echo.
+npm uninstall %2 --save
+
+exit/b
+
+
+
+::_
+
+:unin_g
+
+set fp=* Uninstall "%2" global package.
+
+rem lu: Apr-24-2018
+
+echo.
+echo %fp%
+
+echo.
+npm uninstall %2 -g
+
+exit/b
+
+
+
+:_+ Create a React App
+
+
+
+::_
+
+:crar
+
+set fp=* Create a React app at root.
+
+rem lu: Aug-26-2021
+
+echo.
+echo %fp%
+
+npx create-react-app .
+
+exit/b
+
+
+
+::_
+
+:cra
+
+set fp=* Create a React app.
+
+rem lu: Aug-30-2021
+
+echo.
+echo %fp%
+
+if "%~2" == "" (
+  echo.
+  echo * Error: Parameter 2, the application/folder name, is required.
+  exit/b
+)
+
+npx create-react-app %2
+
+exit/b
+
+
+
+::_
+
+:crart
+
+set fp=* Create a React app at root that has TypeScript enabled.
+
+rem lu: Oct-26-2021
+
+echo.
+echo %fp%
+
+npx create-react-app . --template typescript
+
+exit/b
+
+
+
+::_
+
+:cra-gp
+
+echo. & echo * Create a React app per ChatGPT.
+
+npx create-react-app hello-world-react
+
+exit/b
+
+lu:
+Sep-26-2023
+
+
+
+:_
+
+:rs
+:run
+:run-ui
+:rust
+:star
+:start
+
+echo. & echo * Run React UI. Starts the development server.
+
+call fe package.json & if errorlevel 1 exit/b
+
+echo.
+npm start
+rem npm run start
+
+exit/b
+
+rem lu:
+Sep-26-2023
+Aug-27-2021
+
+Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
+
+
+
+:_
+
+:fix
+
+echo. & echo * Fix npm installation in the current folder.
+
+call fe package.json & if errorlevel 1 exit/b
+
+cls
+
+call dr d node_modules
+
+del package-lock.json
+
+call nm inst
+
+exit/b
+
+lu:
+Sep-29-2023
+Sep-2-2021
+
+
+
+:_+ Local JSON Server
+
+
+
+::_
+
+:ijs
+
+echo. & echo * Install JSON server.
+
+call fe package.json & if errorlevel 1 exit/b
+
+npm i json-server
+
+exit/b
+
+lu:
+Sep-29-2023
+Oct-15-2021
+
+
+
+::_
+
+:json
+
+echo. & echo * Run JSON local database server.
+
+call fe package.json & if errorlevel 1 exit/b
+
+start "JSON" cmd /k npm run server
+
+exit/b
+
+lu:
+Sep-29-2023
+Oct-18-2021
+
+Footnote
+>< >< ><
+
+When I was doing the React Crash Course, before running the react, first you need to run this 
+JSON server command in order to start your local database so that data is available for the 
+"to do" app that we created.
+
+
+
 :_+ Installing (!fyinst)
 
 
 
 ::_
 :inst
+
 echo. & echo * Install any dependencies listed in package.json.
 
-call fe package.json & if errorlevel 1 exit/b
+call fe package.json || exit/b
 
 echo.
 npm install
@@ -1499,238 +1732,6 @@ exit/b
 rem lu: 
 Sep-22-2023
 Feb-11-2019
-
-
-
-:_+ Uninstalling
-
-
-
-::_
-
-:unin-g
-
-set fp=* Uninstall "%2" global package and remove dependency section in the package.json file.
-
-rem lu: Apr-24-2018
-
-echo.
-echo %fp%
-
-echo.
-npm uninstall %2 -g --save
-
-exit/b
-
-
-
-::_
-
-:unin_s
-
-set fp=* Uninstall "%2" local package and remove dependency section in the package.json file.
-
-rem lu: Apr-24-2018
-
-echo.
-echo %fp%
-
-echo.
-npm uninstall %2 --save
-
-exit/b
-
-
-
-::_
-
-:unin_g
-
-set fp=* Uninstall "%2" global package.
-
-rem lu: Apr-24-2018
-
-echo.
-echo %fp%
-
-echo.
-npm uninstall %2 -g
-
-exit/b
-
-
-
-:_+ Create a React App
-
-
-
-::_
-
-:crar
-
-set fp=* Create a React app at root.
-
-rem lu: Aug-26-2021
-
-echo.
-echo %fp%
-
-npx create-react-app .
-
-exit/b
-
-
-
-::_
-
-:cra
-
-set fp=* Create a React app.
-
-rem lu: Aug-30-2021
-
-echo.
-echo %fp%
-
-if "%~2" == "" (
-  echo.
-  echo * Error: Parameter 2, the application/folder name, is required.
-  exit/b
-)
-
-npx create-react-app %2
-
-exit/b
-
-
-
-::_
-
-:crart
-
-set fp=* Create a React app at root that has TypeScript enabled.
-
-rem lu: Oct-26-2021
-
-echo.
-echo %fp%
-
-npx create-react-app . --template typescript
-
-exit/b
-
-
-
-::_
-
-:cra-gp
-
-echo. & echo * Create a React app per ChatGPT.
-
-npx create-react-app hello-world-react
-
-exit/b
-
-lu:
-Sep-26-2023
-
-
-
-:_
-
-:rs
-:run
-:run-ui
-:rust
-:star
-:start
-
-echo. & echo * Run React UI. Starts the development server.
-
-call fe package.json & if errorlevel 1 exit/b
-
-echo.
-npm start
-rem npm run start
-
-exit/b
-
-rem lu:
-Sep-26-2023
-Aug-27-2021
-
-Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
-
-
-
-:_
-
-:fix
-
-echo. & echo * Fix npm installation in the current folder.
-
-call fe package.json & if errorlevel 1 exit/b
-
-cls
-
-call dr d node_modules
-
-del package-lock.json
-
-call nm inst
-
-exit/b
-
-lu:
-Sep-29-2023
-Sep-2-2021
-
-
-
-:_+ Local JSON Server
-
-
-
-::_
-
-:ijs
-
-echo. & echo * Install JSON server.
-
-call fe package.json & if errorlevel 1 exit/b
-
-npm i json-server
-
-exit/b
-
-lu:
-Sep-29-2023
-Oct-15-2021
-
-
-
-::_
-
-:json
-
-echo. & echo * Run JSON local database server.
-
-call fe package.json & if errorlevel 1 exit/b
-
-start "JSON" cmd /k npm run server
-
-exit/b
-
-lu:
-Sep-29-2023
-Oct-18-2021
-
-Footnote
->< >< ><
-
-When I was doing the React Crash Course, before running the react, first you need to run this 
-JSON server command in order to start your local database so that data is available for the 
-"to do" app that we created.
 
 
 

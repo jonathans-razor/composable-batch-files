@@ -126,6 +126,7 @@ Sep-27-2023
 
 
 :_
+:r
 :run
 
 rem echo. & echo * Run Python file.

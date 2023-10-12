@@ -462,10 +462,47 @@ Oct-7-2023
 
 
 
-:_
+:_+ Starting Angular
 
+
+
+::_
+:hw
+:start-hello-world
+echo. & echo * Start Angular Hello world.
+rem qq
+call t iw>nul
+cd hello-world-angular
+call vsc .
+call ang srv
+call sf 4200
+exit/b
+
+lu:
+Oct-12-2023
+
+
+
+::_
 :acc
+echo. & echo * Start Angular Crash course and open all aspects.
 
+call t acc
+call vsc .
+call nm json
+call ang srv
+call sf 4200
+call yt acc
+exit/b
+
+lu:
+Oct-12-2023
+
+
+
+::_
+
+:acc-old
 echo. & echo * Run Angular Crash Course on localhost.
 
 call lh 4200 edge
@@ -484,6 +521,7 @@ Sep-29-2023
 
 :_
 
+:r
 :run
 :run-ui
 :serve

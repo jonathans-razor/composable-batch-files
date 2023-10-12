@@ -44,6 +44,7 @@ Oct-12-2023
 
 :cs
 
+rem qq
 call t iw>nul
 cd hello-world-c-sharp
 call dn run hello-world.go
@@ -89,10 +90,7 @@ exit/b
 
 :ng
 
-rem qq
-call t iw>nul
-cd hello-world-angular
-call ang run
+call ang hw
 
 exit/b
 
@@ -129,6 +127,7 @@ echo. & echo * Hello world from everyone.
 
 call :cs
 call :go
+call :ng
 call :js
 call :jv
 call :py

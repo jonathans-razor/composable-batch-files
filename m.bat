@@ -30,7 +30,6 @@ echo. & echo * Batch File Style: Multipurpose.
 echo.
 echo          Parameter  Description
 echo ------------------  --------------------------------------------------------
-echo                acc  Open all aspects of the Angular Crash Course.
 echo               free  Report on free hard disk space.
 echo               ipco  Ipconfig/all.
 echo               log4  Is log4j jar file present?
@@ -5768,22 +5767,6 @@ exit/b
 
 lu: 
 Apr-11-2022
-
-
-
-:_
-:acc
-echo. & echo * Start Angular Crash course.
-call t acc
-call vsc .
-call nm json
-call ang srv
-call sf 4200
-call yt acc
-exit/b
-
-lu:
-Oct-3-2023
 
 
 

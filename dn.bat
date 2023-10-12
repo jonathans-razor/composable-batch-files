@@ -144,13 +144,22 @@ exit/b
 
 :vers
 
-set fp=* Get version.
-
-echo.
-echo %fp%
+echo. & echo * Get version.
 
 echo.
 dotnet --version
+
+exit/b
+
+
+
+:_
+
+:hw
+
+rem echo. & echo * Hello world.
+
+rem qq
 
 exit/b
 
