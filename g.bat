@@ -4399,22 +4399,18 @@ exit/b
 ::_
 
 :commit-changes-if-dirty
+:dirt
 
 rem echo. & echo * Commit changes if dirty.
 
-if "%~2" == "" (
-  call err Path alias is required.
-  exit/b
-)
-
-call t %2
+call fe .git || exit/b
 
 call s | find /i "working tree clean">nul
 
 if errorlevel 1 (
-  call pa
+  goto :acp
 ) else (
-  rem echo. & echo * There are no changes in this repository.
+  echo. & echo * No changes.
 )
 
 exit/b

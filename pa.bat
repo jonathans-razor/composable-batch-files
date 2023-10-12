@@ -44,7 +44,7 @@ if errorlevel 1 exit/b
 
 :main
 
-call g acp
+call g dirt
 
 exit/b
 
