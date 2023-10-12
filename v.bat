@@ -2436,7 +2436,6 @@ exit/b
 :_
 :shift
 rem This makes "no" for Notepad = %0, where it was %1.
-rem qq
 rem (!shift)
 shift/1
 echo. & echo * p0: %0
