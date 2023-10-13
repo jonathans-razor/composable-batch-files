@@ -115,23 +115,6 @@ exit/b
 
 
 :_
-:Oct-11-2023-6
-
-cls
-
-call t dsa>nul
-
-@echo on
-call pyt 1-two-sum.py 2 7 11 15 9
-
-@echo on
-call pyt 1-two-sum.py 3 2 4 6
-
-exit/b
-
-
-
-:_
 :Oct-11-2023-7
 
 cls
@@ -196,6 +179,37 @@ call t dsa>nul
 
 @echo on
 call nd run 49-groups-of-anagrams-3.js "listen" "silent" "enlist" "hello" "dog" "god" "orldw"
+
+exit/b
+
+
+
+:_
+:Oct-13-2023-2
+
+cls
+call t dsa>nul
+
+@echo on
+call pyt run 1-two-sum.py 2 7 11 15 9
+rem qq
+
+exit/b
+
+
+
+:_
+:Oct-13-2023-3
+
+cls
+
+call t dsa>nul
+
+@echo on
+call pyt run 1-two-sum.py 2 7 11 15 9
+
+@echo on
+call pyt run 1-two-sum.py 3 2 4 6
 
 exit/b
 
