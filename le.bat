@@ -223,9 +223,7 @@ cls
 
 call t dsa>nul
 
-rem qq
 @echo on
-rem qq
 call pyt run 49-groups-of-anagrams.py "eat" "tea" "tan" "ate" "nat" "bat"
 
 exit/b
@@ -242,13 +240,11 @@ cls
 
 call t dsa>nul
 
-rem qq
 @echo on
-rem qq
 call pyt run 49-groups-of-anagrams.py eat tea tan ate nat bat
 
 exit/b
 
 
 
-:_
+:_     qq
