@@ -2226,7 +2226,6 @@ exit/b
 :v
 :pete2
 :psc
-:d
 :dbf
 :vesp
 :sth
@@ -3844,6 +3843,7 @@ creation date: Jun-24-2023
 
 
 :_
+:d
 :dsa
 echo. & echo * Data structures and algorithms.
 call pn it>nul

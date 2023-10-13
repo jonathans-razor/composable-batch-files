@@ -225,7 +225,27 @@ call t dsa>nul
 
 rem qq
 @echo on
-call pyt run 217-contains-duplicate.py 1 2 3
+rem qq
+call pyt run 49-groups-of-anagrams.py "eat" "tea" "tan" "ate" "nat" "bat"
+
+exit/b
+
+
+
+:_
+:Oct-13-2023-6
+
+rem Try again without using double quotes.
+rem Result: Double quotes are not necessary, at least in this case.
+
+cls
+
+call t dsa>nul
+
+rem qq
+@echo on
+rem qq
+call pyt run 49-groups-of-anagrams.py eat tea tan ate nat bat
 
 exit/b
 
