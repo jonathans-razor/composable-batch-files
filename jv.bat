@@ -186,7 +186,7 @@ exit/b
 :rs
 rem echo. & echo * Reverse string.
 call t dsa>nul
-rem qq
+call jv c ReverseString.java>nul
 call jv run ReverseString.java Hello
 exit/b
 
@@ -239,13 +239,13 @@ echo. & echo Parameter 2: Jar file name.
 ::_
 
 :c
+:comp
 
 echo. & echo * Compile and rebuild the class file.
 
 if -%2-==-?- goto help
 if -%2-==-- goto help
 
-rem qq
 javac %2
 
 exit/b
