@@ -73,14 +73,11 @@ exit/b
 
 :_
 :run-snowflake-application
-echo. & echo * VSC requires special formatting.
+
+rem echo. & echo * VSC requires special formatting.
+
 code "%cbf-parameter%"
-rem echo. & echo * cbf-app: %cbf-app%
-rem call "%cbf-app%" "%cbf-parameter%"
-rem "%cbf-app%"
-rem start "%cbf-app%"
-rem start "%cbf-app%" "%cbf-parameter%"
-rem "%cbf-app%" "%cbf-parameter%"
+
 exit/b
 
 

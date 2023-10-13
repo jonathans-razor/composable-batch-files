@@ -3888,4 +3888,24 @@ skw Online comparison tool, code compare
 
 
 
+:_
+:jo
+echo. & echo * Jonathan
+call pn dr>nul
+set cbf-pt=%cbf-pt%\jonathan
+exit/b
+lu: Oct-13-2023
+
+
+
+:_
+:mi
+echo. & echo * Miscellany
+call pn jo>nul
+set cbf-pt=%cbf-pt%\miscellany
+exit/b
+lu: Oct-13-2023
+
+
+
 :_ (!efn)

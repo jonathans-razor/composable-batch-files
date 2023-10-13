@@ -181,21 +181,22 @@ cls
 call t dsa>nul
 
 @echo on
-call nd 49-groups-of-anagrams-2.js "listen" "silent" "enlist" "hello" "world" "dog" "god" "ogd"
+call nd run 49-groups-of-anagrams-2.js "listen" "silent" "enlist" "hello" "world" "dog" "god" "ogd"
 
 exit/b
 
 
 
 :_
-:Oct-12-2023-1
+:Oct-13-2023-1
 
 cls
 
-call t iw>nul
+rem qq
+call t dsa>nul
 
 @echo on
-call nd 49-groups-of-anagrams-2.js "listen" "silent" "enlist" "hello" "world" "dog" "god" "ogd"
+call nd run 49-groups-of-anagrams-3.js "listen" "silent" "enlist" "hello" "world" "dog" "god" "ogd"
 
 exit/b
 
