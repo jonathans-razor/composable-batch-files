@@ -183,6 +183,16 @@ exit/b
 
 
 :_
+:rs
+rem echo. & echo * Reverse string.
+call t dsa>nul
+rem qq
+call jv run ReverseString.java Hello
+exit/b
+
+
+
+:_
 
 :cr
 
@@ -235,6 +245,7 @@ echo. & echo * Compile and rebuild the class file.
 if -%2-==-?- goto help
 if -%2-==-- goto help
 
+rem qq
 javac %2
 
 exit/b
@@ -263,7 +274,7 @@ if -%2-==-?- goto help
 if -%2-==-- goto help
 
 echo.
-java %2
+java %2 %3 %4 %5 %6 %7 %8 %9
 
 exit/b
 

@@ -54,6 +54,15 @@ exit/b
 
 
 :_
+:rs
+rem echo. & echo * Reverse string.
+call t dsa>nul
+call nd run reverse-string-3.js hello
+exit/b
+
+
+
+:_
 
 :r
 :run
