@@ -192,11 +192,10 @@ exit/b
 
 cls
 
-rem qq
 call t dsa>nul
 
 @echo on
-call nd run 49-groups-of-anagrams-3.js "listen" "silent" "enlist" "hello" "world" "dog" "god" "ogd"
+call nd run 49-groups-of-anagrams-3.js "listen" "silent" "enlist" "hello" "dog" "god" "orldw"
 
 exit/b
 
