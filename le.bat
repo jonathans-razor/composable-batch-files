@@ -53,20 +53,6 @@ exit/b
 
 
 :_
-:Oct-11-2023-2
-
-cls
-
-call t dsa>nul
-
-@echo on
-call pyt 242-valid-anagram.py cat act
-
-exit/b
-
-
-
-:_
 :Oct-11-2023-3
 
 cls
@@ -74,7 +60,6 @@ cls
 call t dsa>nul
 
 @echo on
-rem qq
 call pyt run 217-contains-duplicate.py 1 2 3
 
 exit/b
@@ -193,7 +178,6 @@ call t dsa>nul
 
 @echo on
 call pyt run 1-two-sum.py 2 7 11 15 9
-rem qq
 
 exit/b
 
@@ -211,6 +195,37 @@ call pyt run 1-two-sum.py 2 7 11 15 9
 
 @echo on
 call pyt run 1-two-sum.py 3 2 4 6
+
+exit/b
+
+
+
+:_
+:Oct-13-2023-4
+
+cls
+
+call t dsa>nul
+
+@echo on
+call pyt run 242-valid-anagram.py cat act
+
+call pyt run 242-valid-anagram.py bullshit noshit
+
+exit/b
+
+
+
+:_
+:Oct-13-2023-5
+
+cls
+
+call t dsa>nul
+
+rem qq
+@echo on
+call pyt run 217-contains-duplicate.py 1 2 3
 
 exit/b
 
