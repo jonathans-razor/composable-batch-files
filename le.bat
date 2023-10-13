@@ -74,7 +74,8 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt 217-contains-duplicate.py 1 2 3
+rem qq
+call pyt run 217-contains-duplicate.py 1 2 3
 
 exit/b
 
@@ -88,7 +89,7 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt 217-contains-duplicate.py 1 2 3 3
+call pyt run 217-contains-duplicate.py 1 2 3 3
 
 exit/b
 
