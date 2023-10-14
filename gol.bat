@@ -184,6 +184,19 @@ exit/b
 
 :_
 
+:rs
+
+rem echo. & echo * Reverse string.
+
+call t dsa>nul
+call gol run reverse-string.go hello
+
+exit/b
+
+
+
+:_
+
 :run
 
 rem echo. & echo * Run a Go program.
@@ -192,7 +205,7 @@ call fe "%~2" || exit/b
 call paco "%~2" .go || exit/b
 
 echo.
-go run "%~2"
+go run "%~2" %3 %4 %5
 
 exit/b
 
