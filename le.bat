@@ -247,4 +247,46 @@ exit/b
 
 
 
+:_
+:Oct-13-2023-7
+
+cls
+
+call t dsa>nul
+
+@echo on
+call pyt run 347-top-k-frequent-elements.py 4,5,6,71,2,3,,8,9,10 3
+
+exit/b
+
+
+
+:_
+:Oct-13-2023-8
+
+cls
+
+call t dsa>nul
+
+@echo on
+call pyt run 347-top-k-frequent-elements.py 1 1 2 2 2 3 3
+
+exit/b
+
+
+
+:_
+:Oct-13-2023-9
+
+cls
+
+call t dsa>nul
+
+@echo on
+call pyt run 347-top-k-frequent-elements.py 3 1 2 2 2 3 3
+
+exit/b
+
+
+
 :_     qq
