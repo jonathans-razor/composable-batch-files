@@ -4411,6 +4411,7 @@ if errorlevel 1 (
   goto :acp
 ) else (
 rem qq
+  echo p0: %0
   if "%0" == "pat" echo. & echo * No changes.
 )
 
