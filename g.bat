@@ -4411,7 +4411,7 @@ if errorlevel 1 (
   goto :acp
 ) else (
 rem qq
-  if "%0" == "pa.bat" echo. & echo * No changes.
+  if "%0" == "pat" echo. & echo * No changes.
 )
 
 exit/b
