@@ -4410,6 +4410,7 @@ call s | find /i "working tree clean">nul
 if errorlevel 1 (
   goto :acp
 ) else (
+rem qq
   rem echo. & echo * No changes.
 )
 

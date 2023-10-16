@@ -44,7 +44,8 @@ if errorlevel 1 exit/b
 
 :main
 
-call g dirt
+rem qq
+call g dirt && 0 * No changes.
 
 exit/b
 
