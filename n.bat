@@ -643,7 +643,7 @@ rem lu: Mar-28-2023
 
 
 
-;+ Code Keepers Family (!fycck)
+;+ Code Keepers Family (!fyck)
 
 
 
@@ -654,11 +654,9 @@ rem lu: Mar-28-2023
 :ckcs
 :ckjv
 echo. & echo * %1 code keepers.
-call pn vdi>nul
+call pn dbf>nul
 set cbf-pt=%cbf-pt%\code keepers
 set cbf-fn=%cbf-pt%\%1.asc
-rem This is creating a default for "e ck", since Jenkins is what I do mostly lately. May-01-2023
-if "%1"=="ck" call :jf
 exit/b
 rem lu: May-12-2022
 rem Ansible, Bash, C#, Java Code Keepers
