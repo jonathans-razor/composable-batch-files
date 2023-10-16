@@ -45,7 +45,7 @@ if errorlevel 1 exit/b
 :main
 
 rem qq
-call g dirt && 0 echo. & echo * No changes.
+call g dirt && echo. & echo * No changes.
 
 exit/b
 
