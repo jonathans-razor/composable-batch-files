@@ -4410,9 +4410,7 @@ call s | find /i "working tree clean">nul
 if errorlevel 1 (
   goto :acp
 ) else (
-rem qq
-  echo p0: %0
-  if "%0" == "pat" echo. & echo * No changes.
+  echo. & echo * No changes.
 )
 
 exit/b
