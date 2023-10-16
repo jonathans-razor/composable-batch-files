@@ -203,7 +203,7 @@ exit/b
 
 :_
 :open-dbf-bash-file
-call pn d>nul
+call pn dbf>nul
 if exist "%cbf-pt%\%1" (
   echo. & echo * Open DBF bash file.
   rem echo. & echo * "%1" exists.
