@@ -3907,7 +3907,22 @@ lu: Oct-13-2023
 
 
 
-:_
+:_+ LeetCode (!fyle)
+
+
+
+::_
+:ne
+:neet
+echo. & echo * Neet.
+call an br>nul
+set cbf-url=https://neetcode.io/practice
+exit/b
+lu: Oct-16-2023
+
+
+
+::_
 :le
 :leet
 echo. & echo * Leet.
