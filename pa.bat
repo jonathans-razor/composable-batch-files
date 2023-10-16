@@ -44,7 +44,6 @@ if errorlevel 1 exit/b
 
 :main
 
-rem qq
 call g dirt
 
 exit/b
