@@ -4411,7 +4411,7 @@ if errorlevel 1 (
   goto :acp
 ) else (
 rem qq
-  if "%0" == "pa" echo. & echo * No changes.
+  rem if "%0" == "pa" echo. & echo * No changes.
 )
 
 exit/b
