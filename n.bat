@@ -3910,6 +3910,7 @@ lu: Oct-13-2023
 
 
 :_
+:le
 :leet
 echo. & echo * Leet.
 call an br>nul

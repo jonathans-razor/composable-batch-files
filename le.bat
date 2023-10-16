@@ -289,4 +289,18 @@ exit/b
 
 
 
+:_
+:Oct-16-2023-1
+
+cls
+
+call t dsa>nul
+
+@echo on
+call pyt run 238-product-of-array-except-self.py 1 2 3 4
+
+exit/b
+
+
+
 :_     qq
