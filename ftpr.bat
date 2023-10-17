@@ -13,7 +13,6 @@ goto main
 
 :help
 
-rem qq
 echo. & echo * File type presence.
 
 echo. & echo * Usage: %0 [space separated parameter(s)]

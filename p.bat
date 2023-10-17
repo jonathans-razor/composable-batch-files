@@ -49,7 +49,12 @@ call t c & call g dirt
 :_
 call sep
 call t dsa & call g dirt
-goto :close
+
+
+
+:_
+call sep
+call t nwe & call g dirt
 
 
 
@@ -61,17 +66,23 @@ call t iw & call g dirt
 
 :_
 call sep
-call t f & call g dirt
+call t ql & call g dirt
 
 
 
-:_
+:_                             *********************************
 :close
 
 cd /d %cbf-current-folder%
 echo.
 
 exit/b
+
+
+
+:_
+call sep
+call t f & call g dirt
 
 
 

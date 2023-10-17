@@ -6,14 +6,6 @@
 
 :_
 
-set cbf-filep=* Summary: Using advanced routing, open text files for viewing or editing.
-
-
-
-:_
-
-set fp=* Route callers.
-
 if -%~1-==-- goto help
 if -%~1-==-?-goto help
 
@@ -26,11 +18,16 @@ goto main
 
 :_
 
+
+
+
+:_
+
 :help
 
 cls
 
-echo. & echo %cbf-filep%
+echo. & echo * Using advanced routing, open text files for viewing or editing.
 
 rem lu: 
 
@@ -55,16 +52,6 @@ mn    /  __________________()         /  __________________()         /  _______
     /  /_/________________()        /  /_/________________()        /  /_/________________()
    /______________________         /______________________         /______________________
    |_____________________()        |_____________________()        |_____________________()  
-
-
-
-:_
-
-:
-
-echo. & echo *
-
-exit/b
 
 
 
