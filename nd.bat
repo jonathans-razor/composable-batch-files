@@ -76,7 +76,7 @@ call paco "%~1" .js || exit/b
 set cbf-fn=%~1
 
 echo.
-shift /1
+shift/1
 node "%cbf-fn%" %*
 
 exit/b
