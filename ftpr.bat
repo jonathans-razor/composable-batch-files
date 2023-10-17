@@ -20,7 +20,7 @@ echo. & echo * Usage: %0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1: File type current folder
 
-echo. & echo * Return Code: If equal to 0, you know that %cbf-fn% contains the passed in characters.
+echo. & echo * Return Code: If equal to 0, you know that cbf-fn contains the passed in characters.
 
 exit/b
 

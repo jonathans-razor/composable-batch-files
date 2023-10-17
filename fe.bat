@@ -27,7 +27,7 @@ echo. & echo * Parameter 1: Fliename in current folder or filename alias to chec
 
 echo. & echo * Parameter 2: If equal to "/n", the filename has no period.
 
-echo. & echo * Return Code: If equal to 0, you know that %cbf-fn% is a valid file.
+echo. & echo * Return Code: If equal to 0, you know that cbf-fn is a valid file.
 
 exit/b
 
