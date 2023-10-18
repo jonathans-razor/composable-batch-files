@@ -182,7 +182,7 @@ exit/b
 rem echo. & echo * Hello world.
 
 call t iw>nul
-call jv run HelloWorld.java
+call jv HelloWorld.java
 
 exit/b
 

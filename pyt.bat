@@ -70,7 +70,7 @@ exit/b
 :hw
 
 call t iw>nul
-call pyt run hello-world.py
+call pyt hello-world.py
 
 exit/b
 

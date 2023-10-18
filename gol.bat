@@ -180,7 +180,7 @@ exit/b
 rem echo. & echo * Hello world.
 
 call t iw>nul
-call gol run hello-world.go
+call %0 hello-world.go
 
 exit/b
 

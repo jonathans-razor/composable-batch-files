@@ -52,7 +52,7 @@ exit/b
 :hw
 rem echo. & echo * Hello world.
 call t iw>nul
-call nd run hello-world.js
+call %0 hello-world.js
 exit/b
 
 
