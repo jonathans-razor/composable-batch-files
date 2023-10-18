@@ -10,7 +10,6 @@ Composable Batch Files (CBF) - Table of Contents
        a  Cd .. and td accelerator.
       ak  Awk.
       an  Validate application name.
-     ang  Angular.
      ans  Ansible.
       ap  Application-centric way of running an application with an optional filename parameter
   ascii-
@@ -101,6 +100,7 @@ Composable Batch Files (CBF) - Table of Contents
       gr  Grep.
     grad  Gradle.
       gs  Surf to Google Sheets website.
+      gu  Angular.
 	   gub  Run a utility from the Git User Bin.
        h  Show the help file of a function routed parameter.
     herk  Heroku.
@@ -233,7 +233,7 @@ Composable Batch Files (CBF) - Table of Contents
      utc  Convert UTC to EST.
        v  Vetted (Useful for copying-and-pasting).
       va  Surf to a Vault webpage.
-     vsc  Visual Studio Code, with td parameter.
+      vc  Visual Studio Code, with td parameter.
       wi  Open the Wikipedia page for the passed in alias.
       wl  Run WebLogic startup commands.
       wo  Run Word with or without a filename alias parameter

@@ -2481,15 +2481,6 @@ lu: Oct-13-2023
 
 
 ::_
-:vers
-echo. & echo * Version.
-echo.
-[executable name] --version
-exit/b
-
-
-
-::_
 :hw
 rem echo. & echo * Hello world.
 call t iw>nul
@@ -2512,6 +2503,15 @@ exit/b
 rem echo. & echo * Start the server.
 call t nwe>nul
 start "[Server Title]" cmd /k [executable name start syntax] .
+exit/b
+
+
+
+::_
+:vers
+echo. & echo * Version.
+echo.
+[executable name] --version
 exit/b
 
 

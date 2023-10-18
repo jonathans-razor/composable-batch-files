@@ -84,7 +84,7 @@ exit/b
 
 :ng
 
-call ang hw
+call gu hw
 
 exit/b
 
@@ -94,7 +94,7 @@ exit/b
 
 :py
 
-call pyt hw
+call ph hw
 
 exit/b
 

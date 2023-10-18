@@ -496,9 +496,12 @@ echo. & echo * Dating apps.
 call pn exs
 
 set cbf-ex=%cbf-pt%\dating apps.xlsx
+call ap br>nul
+set cbf-gs=https://docs.google.com/spreadsheets/d/1y4CQHUdMAQrZu_qYtKcGUm-qtD93-QNAs8upLvcr-eM/edit#gid=0
 
 exit/b
-
+lu:
+Oct-18-2023
 creation date: Jan-25-2023
 
 
@@ -2098,7 +2101,7 @@ exit/b
 
 :lnk-vsc
 
-:vsc
+:vc
 
 set fp=* Visual Studio Code.
 
