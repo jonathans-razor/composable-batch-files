@@ -1381,10 +1381,8 @@ Sep-26-2023
 
 :_
 
-:rs
 :run
-:run-ui
-:rust
+:serv
 :star
 :start
 

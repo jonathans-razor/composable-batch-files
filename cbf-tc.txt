@@ -173,6 +173,7 @@ Composable Batch Files (CBF) - Table of Contents
     paco  Parameter contains.
      pdf  PDF DCV.
       pg  Ping leveraging nicknames dictionary.
+      ph  Python. (language-features-series-jj)
       pi  Pipe a command line statement to a file.
       pj  Edit package.json file DCV for the passed in alias.
       pl  Git pull, with td parameter.
@@ -188,7 +189,6 @@ Composable Batch Files (CBF) - Table of Contents
      ptm  Sets the path using a monogamous CBF variable that sets the path only.
 	   ptt  Path test for Bash.
 	  purl  Using a DCV, surf to a PIV URL webpage.
-     pyt  Python. (language-features-series-jj)
        q  Query Google.
        r  Run application using CBF variables, mostly used in back office operations
     reme  Execute the demo DCV for the passed in alias.

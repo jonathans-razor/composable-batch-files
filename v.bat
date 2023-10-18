@@ -2476,4 +2476,44 @@ lu: Oct-13-2023
 
 
 
+:_+ Language Features Family (!fylf)
+
+
+
+::_
+:vers
+echo. & echo * Version.
+echo.
+[executable name] --version
+exit/b
+
+
+
+::_
+:hw
+rem echo. & echo * Hello world.
+call t iw>nul
+call %0 hello-world.[filename extension]
+exit/b
+
+
+
+::_
+:rs
+rem echo. & echo * Reverse string.
+call t iw>nul
+%0 reverse-string.[filename extension] hello
+exit/b
+
+
+
+::_
+:star
+rem echo. & echo * Start the server.
+call t nwe>nul
+start "[Server Title]" cmd /k [executable name start syntax] .
+exit/b
+
+
+
 :_ (!efv)

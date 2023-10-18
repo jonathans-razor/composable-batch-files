@@ -470,11 +470,10 @@ Oct-7-2023
 :hw
 :start-hello-world
 echo. & echo * Start Angular Hello world.
-rem qq
 call t iw>nul
 cd hello-world-angular
 call vsc .
-call ang srv
+call ang star
 call sf 4200
 exit/b
 
@@ -490,7 +489,7 @@ echo. & echo * Start Angular Crash course and open all aspects.
 call t acc
 call vsc .
 call nm json
-call ang srv
+call ang star
 call sf 4200
 call yt acc
 exit/b
@@ -523,8 +522,9 @@ Sep-29-2023
 
 :r
 :run
-:run-ui
+:serv
 :serve
+:star
 :srv
 
 echo. & echo * Compile and start Angular.

@@ -30,6 +30,7 @@ echo   If contains ".": open current folder file, which may or may not exist. Th
 echo. & echo * Parameter 2 (Optional):
 echo   /a: open aliased file. Since this is the default, it's only necessary for overriding purposes.
 echo   /af: open aliased folder.
+echo   /c: open current folder file (used for creating new extenionless files)
 echo   /d: open DBF batch file.
 echo   /f: open FF bash file.
 echo   /n: open np file.
@@ -44,6 +45,8 @@ echo. & echo * Examples:
 echo   %0 j1
 rem * Edit j1 in Notepad.
 echo   %0 j1 /e:no
+echo   %0 jenkinsfile /c
+echo   %0 dockerfile /c
 
 exit/b
 
@@ -101,10 +104,14 @@ rem Begin routing intelligence section.
 
 if exist "%~1" goto open-current-folder-file
 
-rem Notice that this if clause appears AFTER checking for existence of the file This assumes that no alias would ever contain a period. (skw contains period)
-echo %1| find /i ".">nul
-if %errorlevel% == 0 (
-  goto open-new-file
+rem Notice that this if clause appears AFTER checking for existence of the file This assumes 
+rem that no alias would ever contain a period. (skw contains period)
+echo %1| find /i ".">nul && goto open-current-folder-file
+
+if -%~2-==-/c- (
+  call :open-current-folder-file %*
+  if errorlevel 1 exit/b
+  goto main
 )
 
 set cbf-fn=
@@ -160,7 +167,12 @@ goto main
 :_
 :open-new-file
 echo. & echo * Open current folder new file.
-code "%~1"
+
+echo. & echo * Error Level: %errorlevel% - qjq - p1: %1 - Oct-18-2023_11_35_AM
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-fn : %cbf-fn% - Oct-18-2023_11_36_AM
+rem qq
+rem code "%~1"
+echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Oct-18-2023_11_37_AM
 exit/b
 
 
