@@ -165,19 +165,6 @@ goto main
 
 
 :_
-:open-new-file
-echo. & echo * Open current folder new file.
-
-echo. & echo * Error Level: %errorlevel% - qjq - p1: %1 - Oct-18-2023_11_35_AM
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-fn : %cbf-fn% - Oct-18-2023_11_36_AM
-rem qq
-rem code "%~1"
-echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Oct-18-2023_11_37_AM
-exit/b
-
-
-
-:_
 
 :open-cbf-batch-file
 

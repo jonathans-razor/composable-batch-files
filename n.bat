@@ -3963,7 +3963,6 @@ echo. & echo * node-with-express-fireship-tutorial. Node.js Quickstart
 call pn it>nul
 set cbf-pt=%cbf-pt%\node-with-express-fireship-tutorial
 set cbf-gh=https://github.com/jonathans-razor/node-with-express-fireship-tutorial
-rem qjq
 set cbf-url=https://fireship.io/courses/javascript/node-basics
 set cbf-yt=https://www.youtube.com/watch?v=ENrzD9HAZK4
 exit/b
