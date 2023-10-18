@@ -61,7 +61,6 @@ exit/b
 :rs
 rem echo. & echo * Reverse string.
 call t iw>nul
-rem qq1 master rs
 %0 reverse-string-3.js hello
 exit/b
 
@@ -80,7 +79,6 @@ set cbf-fn=%~1
 
 echo.
 shift/1
-rem qq1 master bottom
 node %cbf-fn% %1 %2 %3 %4 %5 %6 %7 %8 %9
 
 exit/b

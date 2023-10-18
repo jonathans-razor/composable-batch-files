@@ -193,7 +193,6 @@ exit/b
 rem echo. & echo * Reverse string.
 
 call t iw>nul
-rem qq1 master a
 call %0 reverse-string.go hello
 
 exit/b
@@ -213,7 +212,6 @@ set cbf-fn=%~1
 
 echo.
 shift/1
-rem qq
 go run "%cbf-fn%" %1 %2 %3 %4 %5 %6 %7 %8 %9
 
 exit/b
