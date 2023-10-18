@@ -67,6 +67,15 @@ exit/b
 
 
 :_
+:star
+rem echo. & echo * Start the Node server.
+call t nwe>nul
+start "Node Server" cmd /k node .
+exit/b
+
+
+
+:_
 
 :run
 

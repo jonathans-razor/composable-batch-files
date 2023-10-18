@@ -3359,7 +3359,21 @@ creation date: Sep-12-2023
 
 ::_
 
+:nd
 :3000
+
+echo. & echo * Localhost port 3000. Used by Node.
+
+set cbf-lh=http://localhost:3000
+
+exit/b
+rem lu: Oct-18-2023
+
+
+
+::_
+
+:3000h
 
 echo. & echo * Localhost port %1.
 

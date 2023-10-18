@@ -112,30 +112,25 @@ exit/b
 
 
 ::_
-
 :init
-
-set fp=* Automated wizard that walks you through creating a package.json file.
-
-rem lu: Apr-24-2018
-
+echo. & echo * Uses defaults.
 echo.
-echo %fp%
+npm init -y
+exit/b
+rem lu: Oct-18-2023
+
+
+
+::_
+
+:init-n
+
+echo. & echo * No defaults. Automated wizard that walks you through creating a package.json file.
 
 echo.
 npm init
 
 exit/b
-
-
-
-::_
-:init-y
-echo. & echo * Automated wizard that walks you through creating a package.json file with defaults.
-echo.
-npm init -y
-exit/b
-rem lu: Aug-29-2023
 
 
 
@@ -1505,6 +1500,21 @@ rem If you have an issue with install or update, try deleting the node_modules s
 
 
 ::_
+:inst-e
+echo. & echo * Install Express.
+
+call fe package.json & if errorlevel 1 exit/b
+
+echo.
+
+npm install express
+
+exit/b
+rem lu: Sep-21-2023
+
+
+
+::_
 :inst-t
 echo. & echo * Install TypeScript.
 
@@ -1519,21 +1529,6 @@ exit/b
 rem lu: Aug-29-2023
 
 If you don't install it globally, the tsc command doesn't seem to work. Oct-26-2021
-
-
-
-::_
-:inst-e
-echo. & echo * Install Express.
-
-call fe package.json & if errorlevel 1 exit/b
-
-echo.
-
-npm install express
-
-exit/b
-rem lu: Sep-21-2023
 
 
 
