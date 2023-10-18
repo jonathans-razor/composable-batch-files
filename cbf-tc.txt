@@ -97,7 +97,7 @@ Composable Batch Files (CBF) - Table of Contents
      ghf  Execute the GitHub historical file DCV for the passed in alias.
       gl  Execute the GitLab DCV for the passed in alias.
      god  Edit Go DCV file in VSC.
-     gol  Go.
+     gol  Go. (language-features-series-jj)
       gr  Grep.
     grad  Gradle.
       gs  Surf to Google Sheets website.
@@ -127,7 +127,7 @@ Composable Batch Files (CBF) - Table of Contents
       jr  Use jar to inspect EAR files.
       js  Edit DCV file in NotePad++ for file type js.
     json  Edit DCV file in NotePad++ for file type json.
-      jv  Java.
+      jv  Java. (language-features-series-jj)
       kl  Kill a process.
        l  Load file contents onto clipboard.
       le  Leet code tester.
@@ -149,7 +149,7 @@ Composable Batch Files (CBF) - Table of Contents
   mirror  Attempts to demonostrate how it's easy to see what commands are running.
       mv  Move files using function routing.
        n  Nicknames path dictionary, a. k. a. the data layer.
-      nd  Use Node to compile and run JavaScript files.
+      nd  Use Node to compile and run JavaScript files. (language-features-series-jj)
      net  A wrapper around the netstat command.
      ney  An empty nicknames dictionary, useful for starting over
       nm  NPM.
@@ -188,7 +188,7 @@ Composable Batch Files (CBF) - Table of Contents
      ptm  Sets the path using a monogamous CBF variable that sets the path only.
 	   ptt  Path test for Bash.
 	  purl  Using a DCV, surf to a PIV URL webpage.
-     pyt  Python.
+     pyt  Python. (language-features-series-jj)
        q  Query Google.
        r  Run application using CBF variables, mostly used in back office operations
     reme  Execute the demo DCV for the passed in alias.

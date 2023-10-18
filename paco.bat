@@ -16,11 +16,11 @@ goto main
 cls
 
 echo. & echo * Parameter contains. Check for characters in a passed in parameter.
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo   Usage: %0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1: Fliename in current folder
 
-echo. & echo * Return Code: If equal to 0, you know that cbf-fn contains the passed in characters.
+echo. & echo   Return Code: If equal to 0, you know that cbf-fn contains the passed in characters.
 
 exit/b
 
@@ -41,7 +41,7 @@ lu: Sep-21-2023
 call el /c>nul
 echo %1| find /i "%2">nul
 if errorlevel 1 (
-  call err Expected "%2" in parameter 1.
+  rem call err Expected "%2" in parameter 1.
   exit/b 1
 )
 

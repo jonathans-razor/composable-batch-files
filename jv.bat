@@ -2,10 +2,11 @@
 
 @echo off
 
-set cbf-filep=* Perform Java-related operations.
 
-if -%~1-==-?-goto help
-if -%~1-==-- goto help
+if "%~1" == "?" goto help
+if "%~1" == "" goto help
+
+call paco "%~1" . && goto run
 
 goto %1
 
@@ -15,12 +16,17 @@ goto %1
 
 :help
 
+cls
+
 echo.
-echo %cbf-filep%
+echo * Perform Java-related operations.
 
-echo. & echo Usage: %0 [Parameter 1]
+echo. & echo   Usage: %0 [Parameter 1]
 
-echo. & echo Parameter 1: Function to execute.
+echo. & echo * Parameter 1: The name of the Java file you wish to run.
+echo   Or the function you wish to run.
+
+echo. & echo * Parameter 1: Function to execute.
 
 exit/b
 
@@ -185,9 +191,9 @@ exit/b
 :_
 :rs
 rem echo. & echo * Reverse string.
-call t dsa>nul
+call t iw>nul
 call jv c ReverseString.java>nul
-call jv run ReverseString.java Hello
+call %0 ReverseString.java Hello
 exit/b
 
 
@@ -246,9 +252,10 @@ echo. & echo * Compile and rebuild the class file.
 if -%2-==-?- goto help
 if -%2-==-- goto help
 
-javac %2
+javac %~2
 
 exit/b
+
 
 :help
 
@@ -265,26 +272,16 @@ nut when you merely run it.
 
 ::_
 
-:r
 :run
 
 rem echo. & echo * Interpret and run a java file.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+set cbf-fn=%~1
 
 echo.
-java %2 %3 %4 %5 %6 %7 %8 %9
+shift/1
 
-exit/b
-
-:help
-
-echo. & echo Parameter Descriptions
-echo. & echo Parameter 2: The java File you wish to run.
-echo. & echo Example: %0 r HelloWorld.java, which is the same as typing java HelloWorld.java.
-echo. & echo Which means that this batch file is useless from a typing perspective,
-echo. & echo but still useful from an tutorial perspective.
+java "%cbf-fn%" %1 %2 %3 %4 %5 %6 %7 %8 %9
 
 exit/b
 

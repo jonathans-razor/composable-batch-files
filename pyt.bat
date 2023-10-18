@@ -5,6 +5,8 @@
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
+call paco "%~1" . && goto run
+
 goto %1
 
 
@@ -16,12 +18,11 @@ echo. & echo * Python.
 
 echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo   Parameter 1:
-echo  
+echo. & echo * Parameter 1:
 
 echo. & echo   Batch file style: Multipurpose
 
-echo. & echo   Samples:
+echo. & echo * Samples:
 echo   %~n0 
 echo   %~n0 hello-world.py
 
@@ -76,13 +77,14 @@ exit/b
 
 
 ::_
+
 :rs
 
 echo. & echo * Reverse string.
 
-call t dsa>nul
-@echo on
-call pyt run reverse-string.py hello
+call t iw>nul
+
+%0 reverse-string.py hello
 
 exit/b
 
@@ -183,19 +185,22 @@ Sep-27-2023
 
 
 :_
-:r
+
 :run
 
 rem echo. & echo * Run Python file.
 
-call fe "%~2" || exit/b
-call paco "%~2" .py || exit/b
+call fe "%~1" || exit/b
+call paco "%~1" .py || exit/b
+
+set cbf-fn=%~1
 
 echo.
-python "%~2" %3 %4 %5 %6 %7 %8 %9
+shift/1
+python %cbf-fn% %1 %2 %3 %4 %5 %6 %7 %8 %9
 
 exit/b
 
 
 
-:_
+:_ (!efpyt)

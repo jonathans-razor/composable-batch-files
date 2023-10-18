@@ -5,6 +5,8 @@
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
+call paco "%~1" . && goto run
+
 goto %1
 
 
@@ -24,7 +26,9 @@ echo. & echo * Parameter 1 (Optional):
 echo. & echo * Batch file style: Multipurpose
 
 echo. & echo * Examples:
-echo   gol run hello-world.go
+echo   gol hello-world.go
+echo   gol gs
+echo   gol vers
 
 exit/b
 rem lu: Sep-22-2023
@@ -188,8 +192,9 @@ exit/b
 
 rem echo. & echo * Reverse string.
 
-call t dsa>nul
-call gol run reverse-string.go hello
+call t iw>nul
+rem qq1 master a
+call %0 reverse-string.go hello
 
 exit/b
 
@@ -201,11 +206,15 @@ exit/b
 
 rem echo. & echo * Run a Go program.
 
-call fe "%~2" || exit/b
-call paco "%~2" .go || exit/b
+call fe "%~1" || exit/b
+call paco "%~1" .go || exit/b
+
+set cbf-fn=%~1
 
 echo.
-go run "%~2" %3 %4 %5
+shift/1
+rem qq
+go run "%cbf-fn%" %1 %2 %3 %4 %5 %6 %7 %8 %9
 
 exit/b
 

@@ -13,10 +13,12 @@ goto %1
 
 :_
 :help
+
 cls
+
 echo. & echo * Use Node to compile and run javascript files and for Node operations.
 
-echo. & echo * Usage: %~n0 [space separated parameter(s)]
+echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1: The name of the javascript file you wish to compile and run.
 echo   Or function you wish to run.
@@ -58,8 +60,9 @@ exit/b
 :_
 :rs
 rem echo. & echo * Reverse string.
-call t dsa>nul
-call nd run reverse-string-3.js hello
+call t iw>nul
+rem qq1 master rs
+%0 reverse-string-3.js hello
 exit/b
 
 
@@ -77,7 +80,8 @@ set cbf-fn=%~1
 
 echo.
 shift/1
-node "%cbf-fn%" %*
+rem qq1 master bottom
+node %cbf-fn% %1 %2 %3 %4 %5 %6 %7 %8 %9
 
 exit/b
 
