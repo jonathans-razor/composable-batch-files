@@ -90,13 +90,12 @@ Composable Batch Files (CBF) - Table of Contents
      fxw  A wrapper around fx.bat.
        g  Git
       gd  Surf to Google Docs website.
-      gg  Git Gui helper, with td parameter.
+      gg  Go. (language-features-series-jj)
       gh  Execute the GitHub DCV for the passed in alias.
 	   ghh  Surf to GitHub Historical record website.
      ghf  Execute the GitHub historical file DCV for the passed in alias.
       gl  Execute the GitLab DCV for the passed in alias.
      god  Edit Go DCV file in VSC.
-     gol  Go. (language-features-series-jj)
       gr  Grep.
     grad  Gradle.
       gs  Surf to Google Sheets website.

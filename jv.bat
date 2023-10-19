@@ -276,12 +276,12 @@ nut when you merely run it.
 
 rem echo. & echo * Interpret and run a java file.
 
-set cbf-fn=%~1
+call fe "%~1" || exit/b
+call paco "%~1" .java || exit/b
 
+shift
 echo.
-shift/1
-
-java "%cbf-fn%" %1 %2 %3 %4 %5 %6 %7 %8 %9
+java %*
 
 exit/b
 

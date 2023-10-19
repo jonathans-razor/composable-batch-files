@@ -288,22 +288,6 @@ exit/b
 
 
 :_
-:Oct-18-2023-1
-
-cls
-
-call t dsa>nul
-
-@echo on
-call ph 242-valid-anagram.py cat act
-
-call ph 242-valid-anagram.py bullshit noshit
-
-exit/b
-
-
-
-:_
 :Oct-18-2023-2
 
 cls
@@ -317,4 +301,21 @@ exit/b
 
 
 
-:_  Permanent QQ-6 **********************
+:_
+:Oct-19-2023-1
+
+cls
+
+call t dsa>nul
+
+@echo on
+call ph 242-valid-anagram.py cat act
+@echo off
+
+call ph 242-valid-anagram.py bullshit noshit
+
+exit/b
+
+
+
+:_  Permanent QQ **********************

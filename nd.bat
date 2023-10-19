@@ -88,11 +88,9 @@ rem echo. & echo * Run JavaScript file.
 call fe "%~1" || exit/b
 call paco "%~1" .js || exit/b
 
-set cbf-fn=%~1
-
+shift
 echo.
-shift/1
-node %cbf-fn% %1 %2 %3 %4 %5 %6 %7 %8 %9
+node %*
 
 exit/b
 

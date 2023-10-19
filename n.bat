@@ -1882,7 +1882,7 @@ exit/b
 
 ::_
 
-:gg
+:gigu
 
 set fp=* Git gui.
 

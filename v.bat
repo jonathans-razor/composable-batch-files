@@ -1624,10 +1624,117 @@ rem Cool code.
 
 
 ::_
+:epl
+:epl1
+:evaluate-the-parameter-list
+:find
+
+echo. & echo * Find example.
+
+call m cel
+echo. & echo EL: %errorlevel%
+echo %1| find /i ".">nul
+echo %*| find /i "/s">nul
+
+if %errorlevel% == 0 (
+  echo. & echo Parameter list contains "/s".
+  set cbf-search-subfolders=1
+) else (
+  echo. & echo Parameter list does NOT contain a "/s".
+)
+
+echo %*| find /i "/p">nul
+
+if %errorlevel% == 0 (
+  echo. & echo Entire parameter list contains "/p".
+  set cbf-pipe-to-file=1
+) else (
+  echo. & echo Parameter list does NOT contain a "/p".
+)
+
+exit/b
+
+rem lu:
+Oct-11-2023
+Jul-5-2023
+
+(!find, !cont, !contains, !pipe, !echo) 
+skw: contains, find period in filename, all command line variables, all parameters, 
+entire command line, command line arguments, parameter passing, passing parameters, 
+how to process parameters, parameter processing, process parameters
+
+Does the parameter list contain "/test"?, command line options, how to detect command line 
+options, how to detect command line parameters
+
+This is akin to turning a message into an error code.
+
+call s | find /i "working tree clean">nul
+
+
+
+::_
+
+:epl2
+
+set fp=* Evaluate the parameter list, less capable version.
+
+rem lu: Nov-27-2019
+
+echo.
+echo %fp%
+
+set d_switch=0
+set e_switch=0
+set v_switch=0
+
+:top_of_parameter_line_evaluation
+
+if "%~1" == "" goto exit_loop
+
+if "%~1" == "-d" set d_switch=1
+if "%~1" == "-e" set e_switch=1
+if "%~1" == "-v" set v_switch=1
+
+shift
+
+goto top_of_parameter_line_evaluation
+
+:exit_loop
+
+echo %d_switch%
+echo %e_switch%
+echo %v_switch%
+
+exit/b
+
+
+
+::_
+:
+echo. & echo * Parameter processing 1.
+
+echo.
+echo p0: %0
+echo p1: %1
+echo p2: %2
+
+shift
+echo.
+echo p0: %0
+echo p1: %1
+echo p2: %2
+
+exit/b
+lu: Oct-19-2023
+
+
+
+::_
 
 :ap
-
 :whli
+
+cls
 
 echo. & echo * Show whole line of parameters.
 
@@ -1635,6 +1742,7 @@ echo.
 echo %*
 
 exit/b
+lu: Oct-19-2023
 
 
 
@@ -1792,89 +1900,6 @@ echo.
 pause
 
 exit/b
-
-
-
-::_
-
-:epl
-
-set fp=* Evaluate the parameter list, less capable version.
-
-rem lu: Nov-27-2019
-
-echo.
-echo %fp%
-
-set d_switch=0
-set e_switch=0
-set v_switch=0
-
-:top_of_parameter_line_evaluation
-
-if "%~1" == "" goto exit_loop
-
-if "%~1" == "-d" set d_switch=1
-if "%~1" == "-e" set e_switch=1
-if "%~1" == "-v" set v_switch=1
-
-shift
-
-goto top_of_parameter_line_evaluation
-
-:exit_loop
-
-echo %d_switch%
-echo %e_switch%
-echo %v_switch%
-
-exit/b
-
-
-
-::_
-:evaluate-the-parameter-list
-:find
-
-echo. & echo * Find example.
-
-call m cel
-echo. & echo EL: %errorlevel%
-echo %1| find /i ".">nul
-echo %*| find /i "/s">nul
-
-if %errorlevel% == 0 (
-  echo. & echo Parameter list contains "/s".
-  set cbf-search-subfolders=1
-) else (
-  echo. & echo Parameter list does NOT contain a "/s".
-)
-
-echo %*| find /i "/p">nul
-
-if %errorlevel% == 0 (
-  echo. & echo Entire parameter list contains "/p".
-  set cbf-pipe-to-file=1
-) else (
-  echo. & echo Parameter list does NOT contain a "/p".
-)
-
-exit/b
-
-rem lu:
-Oct-11-2023
-Jul-5-2023
-
-(!find, !cont, !contains, !pipe, !echo) 
-skw: contains, find period in filename, all command line variables, all parameters, entire 
-command line, command line arguments, parameter passing, passing parameters
-
-Does the parameter list contain "/test"?, command line options, how to detect command line 
-options, how to detect command line parameters
-
-This is akin to turning a message into an error code.
-
-call s | find /i "working tree clean">nul
 
 
 

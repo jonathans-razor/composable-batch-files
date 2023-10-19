@@ -192,15 +192,9 @@ rem echo. & echo * Run Python file.
 call fe "%~1" || exit/b
 call paco "%~1" .py || exit/b
 
-set cbf-fn=%~1
-
+shift
 echo.
-shift/1
-@echo on
-rem python %cbf-fn% %*
-rem python %cbf-fn% %1 %2 %3 %4 %5 %6 %7 %8 %9
-rem qq
-python %cbf-fn% %1
+python %*
 
 exit/b
 
