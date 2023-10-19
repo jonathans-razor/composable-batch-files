@@ -506,88 +506,6 @@ creation date: Jan-25-2023
 
 
 
-:_+ Pictures (!fypict)
-
-
-
-::_
-
-:pict
-echo. & echo * Pictures.
-set cbf-pt=%dropbox%\pictures
-set cbf-ex=%cbf-pt%\pictures.xlsx
-exit/b
-rem lu: Sep-25-2020
-
-
-
-::_
-:nex
-:nx
-echo. & echo * New and exciting.
-call pn dr
-set cbf-pt=%cbf-pt%\pictures\new and exciting
-exit/b
-
-
-
-::_
-
-:baar
-echo. & echo * Bahamian art.
-call pn pict
-set cbf-pd=bahamian art
-set cbf-pt=%cbf-pt%\%cbf-pd%
-exit/b
-
-
-
-::_
-:wosa
-set cbf-pd=Work Safe
-echo. & echo * %cbf-pd%.
-call pn pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-exit/b
-
-
-
-::_
-:fvpi
-:fvpict
-:hura
-set cbf-pd=Favorites
-echo. & echo * %cbf-pd%. All time favorite pictures.
-call pn pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-exit/b
-
-
-
-::_
-:b
-:brea
-:nppi
-set cbf-pd=Breakaway
-echo. & echo * %cbf-pd%.
-call pn pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-exit/b
-
-
-
-::_
-:fun
-:funn
-:humo
-set cbf-pd=humor
-echo. & echo * %cbf-pd%.
-call pn pict
-set cbf-pt=%cbf-pt%\humor
-exit/b
-
-
-
 :_
 :ear
 :earx
@@ -2224,6 +2142,7 @@ exit/b
 :emdo
 :res
 :mcres
+:resmc
 :s
 :v
 :pete2
@@ -3971,6 +3890,88 @@ set cbf-url=https://fireship.io/courses/javascript/node-basics
 set cbf-yt=https://www.youtube.com/watch?v=ENrzD9HAZK4
 exit/b
 lu: Oct-17-2023
+
+
+
+:_+ Pictures (!fypict)
+
+
+
+::_
+:fvpi
+:fvpict
+:hura
+set cbf-pd=Favorites
+echo. & echo * %cbf-pd%. All time favorite pictures.
+call pn pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+exit/b
+
+
+
+::_
+
+:pict
+echo. & echo * Pictures.
+set cbf-pt=%dropbox%\pictures
+set cbf-ex=%cbf-pt%\pictures.xlsx
+exit/b
+rem lu: Sep-25-2020
+
+
+
+::_
+:nex
+:nx
+echo. & echo * New and exciting.
+call pn dr
+set cbf-pt=%cbf-pt%\pictures\new and exciting
+exit/b
+
+
+
+::_
+
+:baar
+echo. & echo * Bahamian art.
+call pn pict
+set cbf-pd=bahamian art
+set cbf-pt=%cbf-pt%\%cbf-pd%
+exit/b
+
+
+
+::_
+:wosa
+set cbf-pd=Work Safe
+echo. & echo * %cbf-pd%.
+call pn pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+exit/b
+
+
+
+::_
+:b
+:brea
+:nppi
+set cbf-pd=Breakaway
+echo. & echo * %cbf-pd%.
+call pn pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+exit/b
+
+
+
+::_
+:fun
+:funn
+:humo
+set cbf-pd=humor
+echo. & echo * %cbf-pd%.
+call pn pict
+set cbf-pt=%cbf-pt%\humor
+exit/b
 
 
 
