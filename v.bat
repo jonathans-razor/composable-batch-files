@@ -2541,4 +2541,13 @@ exit/b
 
 
 
+::_
+:echo-parameters
+echo. & echo * Echo parameters
+call t dsa>nul
+call %0 echo-parameters..[filename extension] cat hat 1 2 3
+exit/b
+
+
+
 :_ (!efv)
