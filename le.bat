@@ -319,7 +319,7 @@ exit/b
 
 
 :_
-:Oct-19-2023
+:Oct-19-2023-2
 
 cls
 
@@ -328,6 +328,32 @@ call t dsa>nul
 @echo on
 call ph echo-parameters.py cat hat
 @echo off
+
+exit/b
+
+
+
+:_
+:Oct-19-2023-3
+
+cls
+
+call t dsa>nul
+
+call ph echo-parameters.py
+
+exit/b
+
+
+
+:_
+:Oct-19-2023
+
+cls
+
+call t dsa>nul
+
+call ph echo-parameters.py cat hat 1 2 3
 
 exit/b
 
