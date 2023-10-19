@@ -318,4 +318,19 @@ exit/b
 
 
 
+:_
+:Oct-19-2023
+
+cls
+
+call t dsa>nul
+
+@echo on
+call ph echo-parameters.py
+@echo off
+
+exit/b
+
+
+
 :_  Permanent QQ **********************
