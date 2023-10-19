@@ -326,7 +326,7 @@ cls
 call t dsa>nul
 
 @echo on
-call ph echo-parameters.py
+call ph echo-parameters.py cat hat
 @echo off
 
 exit/b
