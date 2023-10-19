@@ -347,13 +347,41 @@ exit/b
 
 
 :_
-:Oct-19-2023
+:Oct-19-2023-4
 
 cls
 
 call t dsa>nul
 
 call ph echo-parameters.py cat hat 1 2 3
+
+exit/b
+
+
+
+:_
+:Oct-19-2023-5
+
+cls
+
+call t dsa>nul
+
+@echo on
+call nd echo-parameters.js cat hat 1 2 3
+@echo off
+
+exit/b
+
+
+
+:_
+:Oct-19-2023
+
+cls
+
+call t dsa>nul
+
+call nd echo-parameters.js
 
 exit/b
 
