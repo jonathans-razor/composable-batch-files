@@ -46,7 +46,7 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt reverse-string.py hello
+call ph reverse-string.py hello
 
 exit/b
 
@@ -60,7 +60,7 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt run 217-contains-duplicate.py 1 2 3
+call ph 217-contains-duplicate.py 1 2 3
 
 exit/b
 
@@ -74,7 +74,7 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt run 217-contains-duplicate.py 1 2 3 3
+call ph 217-contains-duplicate.py 1 2 3 3
 
 exit/b
 
@@ -88,13 +88,13 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt 217-contains-duplicate.py 1 2 3 
+call ph 217-contains-duplicate.py 1 2 3 
 @echo on
-call pyt 217-contains-duplicate.py 1 2 3 3
+call ph 217-contains-duplicate.py 1 2 3 3
 @echo on
-call pyt 217-contains-duplicate.py 5 1 2 3 3
+call ph 217-contains-duplicate.py 5 1 2 3 3
 @echo on
-call pyt 217-contains-duplicate.py 62 7 88 62
+call ph 217-contains-duplicate.py 62 7 88 62
 
 exit/b
 
@@ -150,7 +150,7 @@ cls
 call t dsa>nul
 
 @echo on
-call nd run 49-groups-of-anagrams-2.js "listen" "silent" "enlist" "hello" "world" "dog" "god" "ogd"
+call nd 49-groups-of-anagrams-2.js "listen" "silent" "enlist" "hello" "world" "dog" "god" "ogd"
 
 exit/b
 
@@ -164,7 +164,7 @@ cls
 call t dsa>nul
 
 @echo on
-call nd run 49-groups-of-anagrams-3.js "listen" "silent" "enlist" "hello" "dog" "god" "orldw"
+call nd 49-groups-of-anagrams-3.js "listen" "silent" "enlist" "hello" "dog" "god" "orldw"
 
 exit/b
 
@@ -177,7 +177,7 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt run 1-two-sum.py 2 7 11 15 9
+call ph 1-two-sum.py 2 7 11 15 9
 
 exit/b
 
@@ -191,26 +191,10 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt run 1-two-sum.py 2 7 11 15 9
+call ph 1-two-sum.py 2 7 11 15 9
 
 @echo on
-call pyt run 1-two-sum.py 3 2 4 6
-
-exit/b
-
-
-
-:_
-:Oct-13-2023-4
-
-cls
-
-call t dsa>nul
-
-@echo on
-call pyt run 242-valid-anagram.py cat act
-
-call pyt run 242-valid-anagram.py bullshit noshit
+call ph 1-two-sum.py 3 2 4 6
 
 exit/b
 
@@ -224,7 +208,7 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt run 49-groups-of-anagrams.py "eat" "tea" "tan" "ate" "nat" "bat"
+call ph 49-groups-of-anagrams.py "eat" "tea" "tan" "ate" "nat" "bat"
 
 exit/b
 
@@ -241,7 +225,7 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt run 49-groups-of-anagrams.py eat tea tan ate nat bat
+call ph 49-groups-of-anagrams.py eat tea tan ate nat bat
 
 exit/b
 
@@ -255,7 +239,7 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt run 347-top-k-frequent-elements.py 4,5,6,71,2,3,,8,9,10 3
+call ph 347-top-k-frequent-elements.py 4,5,6,71,2,3,,8,9,10 3
 
 exit/b
 
@@ -269,7 +253,7 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt run 347-top-k-frequent-elements.py 1 1 2 2 2 3 3
+call ph 347-top-k-frequent-elements.py 1 1 2 2 2 3 3
 
 exit/b
 
@@ -283,7 +267,7 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt run 347-top-k-frequent-elements.py 3 1 2 2 2 3 3
+call ph 347-top-k-frequent-elements.py 3 1 2 2 2 3 3
 
 exit/b
 
@@ -297,10 +281,40 @@ cls
 call t dsa>nul
 
 @echo on
-call pyt run 238-product-of-array-except-self.py 1 2 3 4
+call ph 238-product-of-array-except-self.py 1 2 3 4
 
 exit/b
 
 
 
-:_     qq
+:_
+:Oct-18-2023-1
+
+cls
+
+call t dsa>nul
+
+@echo on
+call ph 242-valid-anagram.py cat act
+
+call ph 242-valid-anagram.py bullshit noshit
+
+exit/b
+
+
+
+:_
+:Oct-18-2023-2
+
+cls
+
+call t dsa>nul
+
+@echo on
+call ph 36-valid-sudoku.py
+
+exit/b
+
+
+
+:_  Permanent QQ-6 **********************

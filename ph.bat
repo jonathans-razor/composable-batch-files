@@ -23,7 +23,6 @@ echo. & echo * Parameter 1:
 echo. & echo   Batch file style: Multipurpose
 
 echo. & echo * Samples:
-echo   %~n0 
 echo   %~n0 hello-world.py
 
 exit/b
@@ -197,7 +196,11 @@ set cbf-fn=%~1
 
 echo.
 shift/1
-python %cbf-fn% %1 %2 %3 %4 %5 %6 %7 %8 %9
+@echo on
+rem python %cbf-fn% %*
+rem python %cbf-fn% %1 %2 %3 %4 %5 %6 %7 %8 %9
+rem qq
+python %cbf-fn% %1
 
 exit/b
 
