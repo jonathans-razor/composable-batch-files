@@ -174,12 +174,14 @@ exit/b
 
 rem echo. & echo * Run Python file.
 
-call fe "%~1" || exit/b
-call paco "%~1" .py || exit/b
+rem call fe "%~1" || exit/b
+rem call paco "%~1" .py || exit/b
 
 shift
 echo.
+@echo on
 python %*
+@echo off
 
 exit/b
 

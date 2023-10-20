@@ -41,7 +41,7 @@ lu: Sep-21-2023
 call el /c>nul
 echo %1| find /i "%2">nul
 if errorlevel 1 (
-  rem call err Expected "%2" in parameter 1.
+  call err Expected "%2" in parameter 1.
   exit/b 1
 )
 
