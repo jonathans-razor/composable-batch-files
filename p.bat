@@ -48,19 +48,13 @@ call t c & call g dirt
 
 :_
 call sep
-call t dsa & call g dirt
-
-
-
-:_
-call sep
-call t dsa & call g dirt
-
-
-
-:_
-call sep
 call t ql & call g dirt
+
+
+
+:_
+call sep
+call t dsa & call g dirt
 
 
 
