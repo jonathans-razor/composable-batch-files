@@ -186,7 +186,6 @@ go version go1.17.2 windows/amd64 on XPS - Oct-20-2023 (before upgrade)
 
 rem echo. & echo * Hello world.
 
-rem qq
 call t dsa>nul
 call %0 hello-world.go
 
