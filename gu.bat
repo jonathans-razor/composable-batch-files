@@ -470,7 +470,7 @@ Oct-7-2023
 :hw
 :start-hello-world
 echo. & echo * Start Angular Hello world.
-call t iw>nul
+call t dsa>nul
 cd hello-world-angular
 call vsc .
 call ang star

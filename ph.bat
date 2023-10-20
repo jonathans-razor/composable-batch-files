@@ -138,7 +138,7 @@ exit/b
 ::_
 :hw
 
-call t iw>nul
+call t dsa>nul
 call pyt hello-world.py
 
 exit/b
@@ -151,7 +151,7 @@ exit/b
 
 echo. & echo * Reverse string.
 
-call t iw>nul
+call t dsa>nul
 
 %0 reverse-string.py hello
 

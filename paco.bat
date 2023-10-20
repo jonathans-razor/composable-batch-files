@@ -41,6 +41,11 @@ lu: Sep-21-2023
 call el /c>nul
 echo %1| find /i "%2">nul
 if errorlevel 1 (
+
+  rem We don't want to see an error message for a missing periond because that is not 
+  rem necessarily an error. Oct-20-2023
+
+  if "%2" == "." exit/b 1
   call err Expected "%2" in parameter 1.
   exit/b 1
 )

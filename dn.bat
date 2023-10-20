@@ -159,7 +159,7 @@ exit/b
 
 rem echo. & echo * Hello world.
 
-call t iw>nul
+call t dsa>nul
 cd hello-world-c-sharp
 call dn run
 

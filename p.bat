@@ -54,7 +54,7 @@ call t dsa & call g dirt
 
 :_
 call sep
-call t iw & call g dirt
+call t dsa & call g dirt
 
 
 

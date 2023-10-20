@@ -375,19 +375,6 @@ exit/b
 
 
 :_
-:Oct-20-2023
-
-cls
-
-call t dsa>nul
-
-call ph 128-longest-consecutive-sequence.py 100 4 200 1 3 2
-
-exit/b
-
-
-
-:_
 :Oct-20-2023-1
 
 cls
@@ -408,6 +395,45 @@ cls
 call t dsa>nul
 
 call ph 128-longest-consecutive-sequence.py
+
+exit/b
+
+
+
+:_
+:Oct-20-2023-3
+
+cls
+
+call t dsa>nul
+
+call ph 128-longest-consecutive-sequence.py 100 4 200 1 3 2
+
+exit/b
+
+
+
+:_
+:Oct-20-2023-4
+
+cls
+
+call t dsa>nul
+
+call ph fizz.py
+
+exit/b
+
+
+
+:_
+:Oct-20-2023
+
+cls
+
+call t dsa>nul
+
+call ph fizz-parameterized.py 1 2 3 4
 
 exit/b
 

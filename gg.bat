@@ -186,7 +186,8 @@ go version go1.17.2 windows/amd64 on XPS - Oct-20-2023 (before upgrade)
 
 rem echo. & echo * Hello world.
 
-call t iw>nul
+rem qq
+call t dsa>nul
 call %0 hello-world.go
 
 exit/b
@@ -199,7 +200,7 @@ exit/b
 
 rem echo. & echo * Reverse string.
 
-call t iw>nul
+call t dsa>nul
 call %0 reverse-string.go hello
 
 exit/b

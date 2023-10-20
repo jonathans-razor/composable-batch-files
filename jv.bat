@@ -181,7 +181,7 @@ exit/b
 :hw
 rem echo. & echo * Hello world.
 
-call t iw>nul
+call t dsa>nul
 call jv HelloWorld.java
 
 exit/b
@@ -191,7 +191,7 @@ exit/b
 :_
 :rs
 rem echo. & echo * Reverse string.
-call t iw>nul
+call t dsa>nul
 call jv c ReverseString.java>nul
 call %0 ReverseString.java Hello
 exit/b

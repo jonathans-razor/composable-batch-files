@@ -55,7 +55,7 @@ exit/b
 ::_
 :hw
 rem echo. & echo * Hello world.
-call t iw>nul
+call t dsa>nul
 call %0 hello-world.js
 exit/b
 
@@ -64,7 +64,7 @@ exit/b
 ::_
 :rs
 rem echo. & echo * Reverse string.
-call t iw>nul
+call t dsa>nul
 %0 reverse-string-3.js hello
 exit/b
 

@@ -114,7 +114,7 @@ exit/b
 
 :re
 
-call t iw>nul
+call t dsa>nul
 cd hello-world-react
 call nm star>nul
 

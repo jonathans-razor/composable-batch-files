@@ -83,7 +83,7 @@ exit/b
 :_
 :hw
 rem echo. & echo * Hello world from %0.
-call t iw>nul
+call t dsa>nul
 rem If I uncomment the transpile statement, the program won't run. Hmm. Oct-12-2023
 rem tsc hello-world-transpile-target.ts
 call nd run hello-world-transpile-target.js
