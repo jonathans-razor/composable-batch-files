@@ -92,6 +92,16 @@ exit/b
 
 :_
 
+:perl
+
+perl hello-world.pl
+
+exit/b
+
+
+
+:_
+
 :py
 
 call ph hw
