@@ -41,75 +41,9 @@ rem creation date:
 :_
 :upgr
 
+echo. & echo * Upgrade Python.
+
 python -m pip install --upgrade pip
-
-exit/b
-
-
-
-:_+ DSA Family (!fydsapy)
-
-
-
-::_
-:vers
-
-echo.
-python --version
-
-exit/b
-
-* Sep-21-2023_12_05_PM: Python 3.11.5
-
-* Sep-21-2023_11_54_AM: Python 3.10.0
-
-
-
-::_
-:hw
-
-call t iw>nul
-call pyt hello-world.py
-
-exit/b
-
-
-
-::_
-
-:rs
-
-echo. & echo * Reverse string.
-
-call t iw>nul
-
-%0 reverse-string.py hello
-
-exit/b
-
-
-
-::_
-:arnu
-
-echo. & echo * Array of numbers.
-
-call t dsa>nul
-@echo on
-call pyt run array-of-numbers.py 1 2 3
-
-exit/b
-
-
-
-::_
-:arst
-
-echo. & echo * Array of strings.
-
-call t dsa>nul
-@echo on
-call pyt run array-of-strings.py hat cat bat
 
 exit/b
 
@@ -183,7 +117,58 @@ Sep-27-2023
 
 
 
-:_
+:_+ Language Feature Family (!fylgphy)
+
+
+
+::_
+:vers
+
+echo.
+python --version
+
+exit/b
+
+* Sep-21-2023_12_05_PM: Python 3.11.5
+
+* Sep-21-2023_11_54_AM: Python 3.10.0
+
+
+
+::_
+:hw
+
+call t iw>nul
+call pyt hello-world.py
+
+exit/b
+
+
+
+::_
+
+:rs
+
+echo. & echo * Reverse string.
+
+call t iw>nul
+
+%0 reverse-string.py hello
+
+exit/b
+
+
+
+::_
+:ep
+rem echo. & echo * Echo parameters
+call t dsa>nul
+call %0 echo-parameters.py 1 2 3
+exit/b
+
+
+
+::_
 
 :run
 

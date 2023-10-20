@@ -2501,7 +2501,16 @@ lu: Oct-13-2023
 
 
 
-:_+ Language Features Family (!fylf)
+:_+ Language Features Template Code Family (!fylg)
+
+
+
+::_
+:vers
+echo. & echo * Version.
+echo.
+[executable name] --version
+exit/b
 
 
 
@@ -2524,6 +2533,16 @@ exit/b
 
 
 ::_
+:echo-parameters
+:ep
+echo. & echo * Echo parameters
+call t dsa>nul
+call %0 echo-parameters.[filename extension] cat hat 1 2 3
+exit/b
+
+
+
+::_
 :star
 rem echo. & echo * Start the server.
 call t nwe>nul
@@ -2533,19 +2552,18 @@ exit/b
 
 
 ::_
-:vers
-echo. & echo * Version.
+
+:run
+
+rem echo. & echo * Run a [language name] program.
+
+call fe "%~1" || exit/b
+call paco "%~1" .[language extension] || exit/b
+
+shift
 echo.
-[executable name] --version
-exit/b
+[language executable name] %*
 
-
-
-::_
-:echo-parameters
-echo. & echo * Echo parameters
-call t dsa>nul
-call %0 echo-parameters..[filename extension] cat hat 1 2 3
 exit/b
 
 

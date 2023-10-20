@@ -71,6 +71,15 @@ exit/b
 
 
 ::_
+:ep
+rem echo. & echo * Echo parameters
+call t dsa>nul
+call %0 echo-parameters.js 1 2 3
+exit/b
+
+
+
+::_
 :star
 rem echo. & echo * Start the Node server.
 call t nwe>nul
@@ -79,7 +88,7 @@ exit/b
 
 
 
-:_
+::_
 
 :run
 

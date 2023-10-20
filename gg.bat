@@ -160,7 +160,11 @@ I got this command from Phil K. He says it will help me get our go code to compi
 
 
 
-:_
+:_+ Language Features Family (!fylggo)
+
+
+
+::_
 
 :vers
 
@@ -171,9 +175,12 @@ go version
 
 exit/b
 
+go version go1.21.3 windows/amd64 on XPS - Oct-20-2023 (after upgrade)
+go version go1.17.2 windows/amd64 on XPS - Oct-20-2023 (before upgrade)
 
 
-:_
+
+::_
 
 :hw
 
@@ -186,7 +193,7 @@ exit/b
 
 
 
-:_
+::_
 
 :rs
 
@@ -199,7 +206,17 @@ exit/b
 
 
 
-:_
+::_
+:echo-parameters
+:ep
+echo. & echo * Echo parameters
+call t dsa>nul
+call %0 echo-parameters.go cat hat 1 2 3 4
+exit/b
+
+
+
+::_
 
 :run
 
