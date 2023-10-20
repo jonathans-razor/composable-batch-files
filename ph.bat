@@ -139,7 +139,7 @@ exit/b
 :hw
 
 call t dsa>nul
-call pyt hello-world.py
+call ph hello-world.py
 
 exit/b
 
@@ -179,9 +179,7 @@ rem call paco "%~1" .py || exit/b
 
 shift
 echo.
-@echo on
 python %*
-@echo off
 
 exit/b
 
