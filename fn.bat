@@ -38,7 +38,7 @@ call fnv2 %1
 if errorlevel 1 exit/b
 call an me>nul
 if errorlevel 1 (
-  call an vsc
+  call an vc
 )
 if errorlevel 1 (
   call an no

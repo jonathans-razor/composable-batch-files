@@ -39,7 +39,7 @@ rem lu: Sep-20-2023
 
 :runi
 
-set fp=* Run index.
+set fp=* Run index from %0.
 
 tsc index
 
@@ -73,7 +73,7 @@ exit/b
 
 :_
 :vers
-rem echo. & echo * Version.
+rem echo. & echo * Version from %0.
 echo.
 tsc --version
 exit/b
@@ -86,13 +86,13 @@ rem echo. & echo * Hello world from %0.
 call t dsa>nul
 rem If I uncomment the transpile statement, the program won't run. Hmm. Oct-12-2023
 rem tsc hello-world-transpile-target.ts
-call nd run hello-world-transpile-target.js
+call nd hello-world-transpile-target.js
 exit/b
 
 
 
 :_
-:t
+:run
 
 echo. & echo * Transpile a TypeScipt file into JavaScript file.
 

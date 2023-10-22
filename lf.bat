@@ -12,7 +12,7 @@ goto %1
 
 cls
 
-echo. & echo  * Language functions batch file.
+echo. & echo  * Language functions tester batch file.
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
@@ -38,68 +38,199 @@ Sep-26-2023
 
 
 
+:_
+:hw3
+
+cls
+
+echo. & echo * Call the 3 different versions of hello world.
+
+call t d>nul
+
+:
+call sep
+echo. & echo * Version 1.
+echo.
+python hello-world.py
+
+:
+call sep
+echo. & echo * Version 2.
+call ph hello-world.py
+
+:
+call sep
+echo. & echo * Version 3.
+call ph hw
+
+:
+echo.
+exit/b
+
+
+
+:_
+:rs3
+
+cls
+
+echo. & echo * Call the 3 different versions of reverse string.
+
+call t d>nul
+
+:
+call sep
+echo. & echo * Version 1.
+python reverse-string.py Oct-22-2023
+
+:
+call sep
+echo. & echo * Version 2.
+call ph rsf
+
+:
+call sep
+echo. & echo * Version 3.
+call ph rs Oct-22-2023-tonto
+
+:
+echo.
+exit/b
+
+
+
 :_+ Language Functions Template Code Family (!fylg) (skw language-functions-series-jj)
 
 
 
 ::_
-:echo-parameters
 :ep
+
+cls
+
 echo. & echo * Echo parameters from %0.bat.
-echo. & echo %*
+
+:
+call sep
+call gg ep 44 hat cat 1 2 3 4 5 6 7
+
+:
+call sep
+call jv ep Oct-22-2023 1 2 3
+
+:
+call sep
+call lf ep hat cat 1 2 3 Oct-22-2023
+
+:
+call sep
+call nd ep Oct-22-2023
+
+:
+call sep
+call ph ep
+
+:
+echo.
 exit/b
 
 
 
 ::_
 :hw
-echo. & echo * Hello world from a from %0.bat.
+
+cls
+
+echo. & echo * Hello world from language-functions-series-jj supported languages.
+
+:
+echo.
+call gg hw
+
+:
+echo.
+call jv hw
+
+:
+echo.
+call lf hw
+
+:
+echo.
+call ph hw
+
+:
+echo.
+call nd hw
+
+:
+echo.
 exit/b
 
 
 
 ::_
 :rs
-echo. & echo * Reverse string, with some help from Python from %0.
-call t d>nul
-call ph rs Oct-22-2023-3
-exit/b
 
+echo. & echo * Reverse string from %0.
 
+cls
 
-::_
-:star
-rem echo. & echo * Start the server from %0.
-call t nwe>nul
-start "[Server Title]" cmd /k [executable name start syntax] .
-exit/b
+:
+call sep
+call gg rs Oct-22-2023-6
 
+:
+call sep
+call lf rs Oct-22-2023-10
 
+:
+call sep
+call jv rs Oct-22-2023-7
 
-::_
+:
+call sep
+call nd rs Oct-22-2023-2
 
-:run
+:
+call sep
+call ph rs Oct-22-2023-8
 
-rem echo. & echo * Run a [language name] program from %0.
-
-call fe "%~1" || exit/b
-call paco "%~1" .[language extension] || exit/b
-
-shift
+:
 echo.
-[language executable name] %*
-
 exit/b
 
 
 
 ::_
 :vers
+
+cls
+
 echo. & echo * Version from %0.
 
-echo. & echo * Version Made-up number Oct-22-2023_4_40_PM.
+:
+call sep
+call gg vers
+
+:
+call sep
+call jv vers
+
+:
+call sep
+call lf vers
+
+:
+call sep
+call nd vers
+
+:
+call sep
+call ph vers
+
 exit/b
 
 
 
-:_
+:_ (!eflf)

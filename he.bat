@@ -52,9 +52,9 @@ exit/b
 
 :_
 
-:go
+:gg
 
-call gol hw
+call gg hw
 
 exit/b
 
@@ -82,7 +82,7 @@ exit/b
 
 :_
 
-:ng
+:gu
 
 call gu hw
 
@@ -114,6 +114,8 @@ exit/b
 
 :re
 
+echo. & echo * React hello-world from %0.
+
 call t dsa>nul
 cd hello-world-react
 call nm star>nul
@@ -139,216 +141,37 @@ cls
 
 echo. & echo * Hello world from everyone.
 
+:
+call sep
 call :cs
-call :go
-call :ng
+
+:
+call sep
+call :gg
+
+:
+call sep
+call :gu
+
+:
+call sep
 call :js
+
+:
+call sep
 call :jv
+
+:
+call sep
 call :py
+
+:
+call sep
 call :re
+
+:
+call sep
 call :ts
-
-exit/b
-
-
-
-:_+ Language Functions Template Code Family (!fylg) (skw language-functions-series-jj)
-
-
-
-::_
-:dt
-
-echo. & echo * Date time for %0.
-
-:
-call sep
-call ph dt
-
-:
-call lf dt
-rem call nd rs Oct-22-2023-2
-rem call ph rs Oct-22-2023
-rem call gg rs 
-rem call jv rs
-rem call ph rs
-
-:
-.
-exit/b
-
-
-
-::_
-:echo-parameters
-:ep
-
-cls
-
-echo. & echo * Echo parameters from %0.bat.
-
-:
-call sep
-call gg ep 44 hat cat 1 2 3 4 5 6 7
-
-:
-call sep
-call jv ep Oct-22-2023 1 2 3
-
-:
-call sep
-call lf ep hat cat 1 2 3 Oct-22-2023
-
-:
-call sep
-call nd ep Oct-22-2023
-
-:
-call sep
-call ph ep
-
-:
-exit/b
-
-
-
-::_
-:hw
-:slhw
-
-cls
-
-echo. & echo * Hello world from language-functions-series-jj supported languages.
-
-call gg hw
-call jv hw
-call lf hw
-call ph hw
-call nd hw
-
-exit/b
-
-
-
-::_
-:rs
-:slrs
-
-echo. & echo * Reverse string from %0.
-
-cls
-
-:
-call sep
-call gg rs Oct-22-2023-6
-
-:
-call sep
-call lf rs Oct-22-2023-10
-
-:
-call sep
-call jv rs Oct-22-2023-7
-
-:
-call sep
-call nd rs Oct-22-2023-2
-
-:
-call sep
-call ph rs Oct-22-2023-8
-
-:
-echo.
-exit/b
-
-
-
-::_
-:vers
-
-cls
-
-echo. & echo * Version from %0.
-
-:
-call sep
-call gg vers
-
-:
-call sep
-call jv vers
-
-:
-call sep
-call lf vers
-
-:
-call sep
-call nd vers
-
-:
-call sep
-call ph vers
-
-exit/b
-
-
-
-:_
-:hw3
-
-cls
-
-echo. & echo * Call the 3 different versions of hello world.
-
-call t d>nul
-
-:
-call sep
-echo. & echo * Version 1.
-echo.
-python hello-world.py
-
-:
-call sep
-echo. & echo * Version 2.
-call ph hello-world.py
-
-:
-call sep
-echo. & echo * Version 3.
-call ph hw
-
-:
-echo.
-exit/b
-
-
-
-:_
-:rs3
-
-cls
-
-echo. & echo * Call the 3 different versions of reverse string.
-
-call t d>nul
-
-:
-call sep
-echo. & echo * Version 1.
-python reverse-string.py Oct-22-2023
-
-:
-call sep
-echo. & echo * Version 2.
-call ph rsf
-
-:
-call sep
-echo. & echo * Version 3.
-call ph rs Oct-22-2023-tonto
 
 :
 echo.

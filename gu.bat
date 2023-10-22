@@ -470,10 +470,10 @@ Oct-7-2023
 :hw
 :start-hello-world
 echo. & echo * Start Angular Hello world.
-call t dsa>nul
+call t d>nul
 cd hello-world-angular
-call vsc .
-call ang star
+call vc .
+call gu star
 call sf 4200
 exit/b
 
@@ -487,7 +487,7 @@ Oct-12-2023
 echo. & echo * Start Angular Crash course and open all aspects.
 
 call t acc
-call vsc .
+call vc .
 call nm json
 call ang star
 call sf 4200
