@@ -160,7 +160,7 @@ I got this command from Phil K. He says it will help me get our go code to compi
 
 
 
-:_+ Language Features Family (!fylggo)
+:_+ Language Features Family (!fylggo) (skw language-functions-series-jj)
 
 
 
@@ -207,10 +207,10 @@ exit/b
 
 :rs
 
-rem echo. & echo * Reverse string.
+echo. & echo * Reverse string from %0.
 
 call t dsa>nul
-call %0 reverse-string.go hello
+call %0 reverse-string.go %*
 
 exit/b
 

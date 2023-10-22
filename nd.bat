@@ -39,7 +39,7 @@ rem creation date:
 
 
 
-:_+ Language Features Family (!fylf)
+:_+ Language Features Family (!fylf) (skw language-functions-series-jj)
 
 
 
@@ -65,7 +65,7 @@ exit/b
 :rs
 rem echo. & echo * Reverse string.
 call t dsa>nul
-%0 reverse-string-3.js hello
+call %0 reverse-string-3.js %*
 exit/b
 
 

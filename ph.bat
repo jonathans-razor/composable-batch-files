@@ -117,7 +117,7 @@ Sep-27-2023
 
 
 
-:_+ Language Feature Family (!fylgphy)
+:_+ Language Feature Family (!fylgphy) (skw language-functions-series-jj)
 
 
 
@@ -125,32 +125,128 @@ Sep-27-2023
 :ep
 echo. & echo * Echo parameters from %0.bat.
 call t dsa>nul
-call %0 echo-parameters.py 1 2 3 Oct-22-2023-2
+call %0 echo-parameters.py %0 %1 %2 Oct-22-2023-2
 exit/b
 
 
 
 ::_
 :hw
-
 echo. & echo * Hello world from %0.bat.
-
 call t dsa>nul
 call ph hello-world.py
+exit/b
 
+
+
+::_
+:rsf
+
+echo. & echo * Reverse string with furnished parameter from "%0".
+call t dsa>nul
+call :run reverse-string.py hello-Oct-22-2023
+exit/b
+This works!
+
+
+
+::_
+:rsf2
+
+cls
+
+echo. & echo * Reverse string with furnished parameter from %0.bat.
+call t dsa>nul
+call :run reverse-string.py %*
+exit/b
+This reverses the label name, not the passed in string.
+
+
+
+::_
+:rsf3
+
+cls
+
+echo. & echo * Reverse string with furnished parameter from %0.bat.
+call t dsa>nul
+shift
+shift
+call :run reverse-string.py %*
+exit/b
+This also reverses the label name, not the passed in string.
+
+
+
+::_
+:rsf4
+
+cls
+
+echo. & echo * Reverse string with furnished parameter from %0.bat.
+call t dsa>nul
+call :rs-test reverse-string.py %*
+exit/b
+
+
+
+::_
+:rs-test
+
+cls
+
+echo. & echo * Reverse string test from %0.bat.
+call t dsa>nul
+echo. & echo p0: %0
+echo. & echo p1: %1
+echo. & echo p2: %2
+echo. & echo p3: %3
+shift/2
+echo. & echo p0: %0
+echo. & echo p1: %1
+echo. & echo p2: %2
+echo. & echo p3: %3
+exit/b
+
+
+
+::_
+:rs
+
+echo. & echo * Reverse string from %0.bat.
+call t dsa>nul
+
+rem qq
+call :run reverse-string.py %*
 exit/b
 
 
 
 ::_
 
-:rs
+:irun
 
-echo. & echo * Reverse string from %0.bat.
+echo. & echo * Internal run Python file from %0.bat.
 
-call t dsa>nul
+rem call fe "%~1" || exit/b
+rem call paco "%~1" .py || exit/b
 
-%0 reverse-string.py hello-world
+echo. & echo p0: %0
+echo. & echo p1: %1
+echo. & echo p2: %2
+echo. & echo p3: %3
+
+shift
+
+echo. & echo p0: %0
+echo. & echo p1: %1
+echo. & echo p2: %2
+echo. & echo p3: %3
+
+echo.
+@echo on
+python %*
+@echo off
 
 exit/b
 
@@ -160,12 +256,11 @@ exit/b
 
 :run
 
-rem echo. & echo * Run Python file from %0.bat.
+echo. & echo * Run Python file from %0.bat.
 
-rem call fe "%~1" || exit/b
-rem call paco "%~1" .py || exit/b
+call fe "%~1" || exit/b
+call paco "%~1" .py || exit/b
 
-shift
 echo.
 python %*
 

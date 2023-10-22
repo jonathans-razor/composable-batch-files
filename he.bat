@@ -178,7 +178,6 @@ call lf ep hat cat 1 2 3 Oct-22-2023
 
 :
 call sep
-rem qq
 call nd ep Oct-22-2023
 
 :
@@ -212,9 +211,11 @@ exit/b
 :rs
 :slrs
 
-cls
-
 echo. & echo * Reverse string.
+
+:
+call sep
+call nd rs Oct-22-2023
 
 rem call nd rs
 rem call gg rs 
@@ -239,6 +240,68 @@ call lf vers
 call nd vers
 call ph vers
 
+exit/b
+
+
+
+:_
+:hw3
+
+cls
+
+echo. & echo * Call the 3 different versions of hello world.
+
+call t d>nul
+
+:
+call sep
+echo. & echo * Version 1.
+echo.
+python hello-world.py
+
+:
+call sep
+echo. & echo * Version 2.
+call ph hello-world.py
+
+:
+call sep
+echo. & echo * Version 3.
+call ph hw
+
+:
+echo.
+exit/b
+
+
+
+:_
+:rs3
+
+cls
+
+echo. & echo * Call the 3 different versions of reverse string.
+
+call t d>nul
+
+:
+call sep
+echo. & echo * Version 1.
+python reverse-string.py Oct-22-2023
+
+:
+call sep
+echo. & echo * Version 2.
+call ph rsf
+
+:
+call sep
+echo. & echo * Version 3.
+rem qq
+call ph rs
+
+:
+echo.
 exit/b
 
 
