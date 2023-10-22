@@ -63,9 +63,11 @@ exit/b
 
 ::_
 :rs
-rem echo. & echo * Reverse string.
-call t dsa>nul
-call %0 reverse-string-3.js %*
+rem echo. & echo * Reverse string for %0.
+call t d>nul
+rem qq
+echo.
+node reverse-string.js %2
 exit/b
 
 

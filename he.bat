@@ -211,16 +211,17 @@ exit/b
 :rs
 :slrs
 
-echo. & echo * Reverse string.
+echo. & echo * Reverse string for %0.
 
 :
 call sep
-call nd rs Oct-22-2023
-
-rem call nd rs
-rem call gg rs 
-rem call jv rs
 rem call lf rs
+rem call nd rs Oct-22-2023-2
+rem call ph rs Oct-22-2023
+rem call gg rs 
+rem qq
+
+rem call jv rs
 rem call ph rs
 
 exit/b
@@ -297,8 +298,7 @@ call ph rsf
 :
 call sep
 echo. & echo * Version 3.
-rem qq
-call ph rs
+call ph rs Oct-22-2023-tonto
 
 :
 echo.

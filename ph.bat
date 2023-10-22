@@ -212,12 +212,10 @@ exit/b
 
 ::_
 :rs
-
-echo. & echo * Reverse string from %0.bat.
+echo. & echo * Reverse string from %0.
 call t dsa>nul
-
-rem qq
-call :run reverse-string.py %*
+echo.
+python reverse-string.py %2
 exit/b
 
 
@@ -237,6 +235,8 @@ echo. & echo p2: %2
 echo. & echo p3: %3
 
 shift
+shift
+shift/2
 
 echo. & echo p0: %0
 echo. & echo p1: %1

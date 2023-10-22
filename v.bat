@@ -2548,11 +2548,12 @@ Level 2 Program: Simplest possible program that does something.
 
 ::_
 :rs
-rem echo. & echo * Reverse string from %0.bat.
-call t dsa>nul
-%0 reverse-string.[filename extension] hello
+echo. & echo * Reverse string from %0.
+call t d>nul
+echo.
+rem qq
+[] reverse-string.[] %2
 exit/b
-Level 3 Program: Depends on parameters that you learned how to process in a level 2 program.
 
 
 

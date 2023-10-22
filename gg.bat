@@ -204,14 +204,11 @@ exit/b
 
 
 ::_
-
 :rs
-
 echo. & echo * Reverse string from %0.
-
 call t dsa>nul
-call %0 reverse-string.go %*
-
+echo.
+go run reverse-string.go %2
 exit/b
 
 

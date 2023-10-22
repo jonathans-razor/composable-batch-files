@@ -190,10 +190,11 @@ exit/b
 
 :_
 :rs
-rem echo. & echo * Reverse string.
+rem echo. & echo * Reverse string from %0.
 call t dsa>nul
 call jv c ReverseString.java>nul
-call %0 ReverseString.java Hello
+echo.
+java ReverseString.java %2
 exit/b
 
 

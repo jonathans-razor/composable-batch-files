@@ -62,7 +62,7 @@ exit/b
 :rs
 echo. & echo * Reverse string, with some help from Python from %0.bat.
 call t d>nul
-call ph reverse-string %*
+call ph rs Oct-22-2023-3
 exit/b
 
 
