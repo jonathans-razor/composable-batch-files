@@ -44,10 +44,10 @@ rem creation date:
 
 
 ::_
-:vers
-echo. & echo * Node version.
-echo.
-node --version
+:ep
+echo. & echo * Echo parameters from %0.bat.
+call t dsa>nul
+call %0 echo-parameters.js 1 2 3
 exit/b
 
 
@@ -71,10 +71,18 @@ exit/b
 
 
 ::_
-:ep
-rem echo. & echo * Echo parameters
-call t dsa>nul
-call %0 echo-parameters.js 1 2 3
+
+:run
+
+rem echo. & echo * Run JavaScript file.
+
+call fe "%~1" || exit/b
+call paco "%~1" .js || exit/b
+
+shift
+echo.
+node %*
+
 exit/b
 
 
@@ -89,18 +97,10 @@ exit/b
 
 
 ::_
-
-:run
-
-rem echo. & echo * Run JavaScript file.
-
-call fe "%~1" || exit/b
-call paco "%~1" .js || exit/b
-
-shift
+:vers
+echo. & echo * Node version.
 echo.
-node %*
-
+node --version
 exit/b
 
 

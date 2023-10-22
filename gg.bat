@@ -167,7 +167,7 @@ I got this command from Phil K. He says it will help me get our go code to compi
 ::_
 :echo-parameters
 :ep
-echo. & echo * Echo parameters
+echo. & echo * Echo parameters from %0.bat.
 call t dsa>nul
 call %0 echo-parameters.go %*
 exit/b

@@ -122,21 +122,18 @@ Sep-27-2023
 
 
 ::_
-:vers
-
-echo.
-python --version
-
+:ep
+echo. & echo * Echo parameters from %0.bat.
+call t dsa>nul
+call %0 echo-parameters.py 1 2 3 Oct-22-2023-2
 exit/b
-
-* Sep-21-2023_12_05_PM: Python 3.11.5
-
-* Sep-21-2023_11_54_AM: Python 3.10.0
 
 
 
 ::_
 :hw
+
+echo. & echo * Hello world from %0.bat.
 
 call t dsa>nul
 call ph hello-world.py
@@ -149,7 +146,7 @@ exit/b
 
 :rs
 
-echo. & echo * Reverse string.
+echo. & echo * Reverse string from %0.bat.
 
 call t dsa>nul
 
@@ -160,19 +157,10 @@ exit/b
 
 
 ::_
-:ep
-rem echo. & echo * Echo parameters
-call t dsa>nul
-call %0 echo-parameters.py 1 2 3
-exit/b
-
-
-
-::_
 
 :run
 
-rem echo. & echo * Run Python file.
+rem echo. & echo * Run Python file from %0.bat.
 
 rem call fe "%~1" || exit/b
 rem call paco "%~1" .py || exit/b
@@ -182,6 +170,22 @@ echo.
 python %*
 
 exit/b
+
+
+
+::_
+:vers
+
+echo. & echo * Version from %0.bat.
+
+echo.
+python --version
+
+exit/b
+
+* Sep-21-2023_12_05_PM: Python 3.11.5
+
+* Sep-21-2023_11_54_AM: Python 3.10.0
 
 
 

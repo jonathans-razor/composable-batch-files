@@ -2507,7 +2507,7 @@ lu: Oct-13-2023
 
 ::_
 :dt
-rem echo. & echo * Return a date string.
+rem echo. & echo * Return a date string from %0.bat.
 call t dsa>nul
 %0 reverse-string.[filename extension] hello
 exit/b
@@ -2517,7 +2517,7 @@ Level 2 Program: Simplest possible program that does something.
 
 ::_
 :dt
-rem echo. & echo * Return a date plus time string.
+rem echo. & echo * Return a date plus time string from %0.bat.
 call t dsa>nul
 %0 reverse-string.[filename extension] hello
 exit/b
@@ -2528,7 +2528,7 @@ Level 2 Program: Simplest possible program that does something.
 ::_
 :echo-parameters
 :ep
-echo. & echo * Echo parameters
+echo. & echo * Echo parameters from %0.bat.
 call t dsa>nul
 call %0 echo-parameters.[filename extension] cat hat 1 2 3
 exit/b
@@ -2538,7 +2538,7 @@ Level 2 Program: Simplest possible program that does something.
 
 ::_
 :hw
-rem echo. & echo * Hello world.
+rem echo. & echo * Hello world from %0.bat.
 call t dsa>nul
 call %0 hello-world.[filename extension]
 exit/b
@@ -2548,7 +2548,7 @@ Level 2 Program: Simplest possible program that does something.
 
 ::_
 :rs
-rem echo. & echo * Reverse string.
+rem echo. & echo * Reverse string from %0.bat.
 call t dsa>nul
 %0 reverse-string.[filename extension] hello
 exit/b
@@ -2560,7 +2560,7 @@ Level 3 Program
 
 :run
 
-rem echo. & echo * Run a [language name] program.
+rem echo. & echo * Run a [language name] program from %0.bat.
 
 call fe "%~1" || exit/b
 call paco "%~1" .[language extension] || exit/b
@@ -2576,7 +2576,7 @@ Level 1 Program: Is the program even installed.
 
 ::_
 :vers
-echo. & echo * Version.
+echo. & echo * Version from %0.bat.
 echo.
 [executable name] --version
 exit/b
@@ -2586,7 +2586,7 @@ Level 1 Program: Is the program even installed.
 
 ::_
 :star
-rem echo. & echo * Start the server.
+rem echo. & echo * Start the server from %0.bat.
 call t nwe>nul
 start "[Server Title]" cmd /k [executable name start syntax] .
 exit/b

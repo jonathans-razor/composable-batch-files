@@ -294,9 +294,9 @@ exit/b
 ::_
 :echo-parameters
 :ep
-echo. & echo * Echo parameters
+echo. & echo * Echo parameters from %0.bat.
 call t dsa>nul
-call %0 EchoParameters.jv %*
+call %0 EchoParameters.java %*
 exit/b
 
 

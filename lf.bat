@@ -45,7 +45,7 @@ Sep-26-2023
 ::_
 :echo-parameters
 :ep
-echo. & echo * Echo parameters.
+echo. & echo * Echo parameters from %0.bat.
 echo. & echo %*
 exit/b
 
@@ -53,14 +53,14 @@ exit/b
 
 ::_
 :hw
-echo. & echo * Hello world from a batch file.
+echo. & echo * Hello world from a from %0.bat.
 exit/b
 
 
 
 ::_
 :rs
-echo. & echo * Reverse string, with some help from Python.
+echo. & echo * Reverse string, with some help from Python from %0.bat.
 call t d>nul
 call ph reverse-string %*
 exit/b
@@ -69,7 +69,7 @@ exit/b
 
 ::_
 :star
-rem echo. & echo * Start the server.
+rem echo. & echo * Start the server from %0.bat.
 call t nwe>nul
 start "[Server Title]" cmd /k [executable name start syntax] .
 exit/b
@@ -80,7 +80,7 @@ exit/b
 
 :run
 
-rem echo. & echo * Run a [language name] program.
+rem echo. & echo * Run a [language name] program from %0.bat.
 
 call fe "%~1" || exit/b
 call paco "%~1" .[language extension] || exit/b

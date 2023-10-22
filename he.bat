@@ -164,13 +164,28 @@ cls
 
 echo. & echo * Echo parameters from %0.bat.
 
-rem call gg ep 44 hat cat 1 2 3 4 5 6 7
-rem qq
-call jv ep Oct-22-2023 1 2 3
-rem call lf ep hat cat 1 2 3
-rem call nd ep
-rem call ph ep
+:
+call sep
+call gg ep 44 hat cat 1 2 3 4 5 6 7
 
+:
+call sep
+call jv ep Oct-22-2023 1 2 3
+
+:
+call sep
+call lf ep hat cat 1 2 3 Oct-22-2023
+
+:
+call sep
+rem qq
+call nd ep Oct-22-2023
+
+:
+call sep
+call ph ep
+
+:
 exit/b
 
 
