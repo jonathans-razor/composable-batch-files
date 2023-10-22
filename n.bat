@@ -3975,4 +3975,26 @@ exit/b
 
 
 
+:_+ Temporary Folders
+
+
+
+::_
+:tmp
+echo. & echo * Temporary user folder.
+set cbf-pt=%tmp%
+exit/b
+rem lu: Jan-23-2018
+rem This is used as a cbf system default, if none is set. Please DO NOT DELETE.
+
+
+
+::_
+:temp
+echo. & echo * Temporary c: drive folder.
+set cbf-pt=c:\temp
+exit/b
+
+
+
 :_ (!efn)

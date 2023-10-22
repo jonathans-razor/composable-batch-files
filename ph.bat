@@ -134,9 +134,8 @@ exit/b
 ::_
 :dtt
 :rf-dtt
-echo. & echo * Date time from %0.
-call t d>nul
-echo.
+rem echo. & echo * Date time from %0. NOTE: This is an official timestamp so whitespace is allowed.
+rem echo.
 python date-time.py
 exit/b
 

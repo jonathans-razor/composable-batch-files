@@ -1057,7 +1057,9 @@ call fe .git || exit/b
 
 call %0 add-all-files || exit/b
 
-call %0 commit-all-with-timestamp-message || exit/b
+call %0 commit-all-with-python-timestamp-message
+
+rem  || exit/b
 
 git push
 
@@ -3494,107 +3496,6 @@ exit/b
 
 
 
-:_+ Commit Family
-
-
-
-::_
-
-:captm
-
-:commit-all-with-python-timestamp-message
-
-echo. & echo * Commit all files with Python timestamp message.
-
-rem qq
-call ph dtt>%tmp%\python-timestamp.tmxt
-
-set /p commit-description=<%tmp%\python-timestamp.txt
-
-echo.
-call git commit -a -m %commit-description%
-
-exit/b
-
-
-
-::_
-
-:catm
-
-:commit-all-with-timestamp-message
-
-echo. & echo * Commit all files with timestamp message.
-
-rem cd | find /i "C:\projects\netbeans\sencha">nul
-rem if %errorlevel% == 0 echo A commit message is required in this folder.
-rem if %errorlevel% == 0 exit/b
-
-rem cd | find /i "C:\projects\netbeans\mercury6">nul
-rem if %errorlevel% == 0 echo A commit message is required in this folder.
-rem if %errorlevel% == 0 exit/b
-
-call ujt>nul
-
-set /p commit_description=<%tmp%\java_timestamp.txt
-
-echo.
-call git commit -a -m %commit_description%
-
-exit/b
-
-
-
-::_
-:cacm
-:commit-all
-echo. & echo * Commit all files with custom message.
-echo.
-
-if "%~2" == "" (
-  call err A custom commit description is required. Jul-11-2023_3_52_PM - %0.bat
-  exit/b 1
-)
-
-git commit -a -m %2
-
-exit/b
-
-
-
-::_
-
-:c
-
-:c_only
-
-:commit
-
-echo. & echo * Commit ONLY those files that were staged for commit.
-
-if "%~2" == "" echo * Error: A commit description is required.
-if "%~2" == "" exit/b
-
-echo.
-git commit -m %2
-
-exit/b
-
-
-
-::_
-
-:cbig
-
-echo. & echo * Commit with big description.
-
-echo.
-call git commit -a -m "From big latpop."
-
-exit/b
-
-
-
 :_+ Add Family
 
 
@@ -4528,6 +4429,106 @@ if %errorlevel% == 0 (
 
 
 exit/b 0
+
+
+
+:_+ Commit Family
+
+
+
+::_
+
+:captm
+
+:commit-all-with-python-timestamp-message
+
+echo. & echo * Commit all files with Python timestamp message.
+
+call ph dtt>%tmp%\python-timestamp.txt
+
+set /p commit-description=<%tmp%\python-timestamp.txt
+
+echo.
+call git commit -a -m %commit-description%
+
+exit/b
+
+
+
+::_
+
+:catm
+
+:commit-all-with-timestamp-message
+
+echo. & echo * Commit all files with timestamp message.
+
+rem cd | find /i "C:\projects\netbeans\sencha">nul
+rem if %errorlevel% == 0 echo A commit message is required in this folder.
+rem if %errorlevel% == 0 exit/b
+
+rem cd | find /i "C:\projects\netbeans\mercury6">nul
+rem if %errorlevel% == 0 echo A commit message is required in this folder.
+rem if %errorlevel% == 0 exit/b
+
+call ujt>nul
+
+set /p commit_description=<%tmp%\java_timestamp.txt
+
+echo.
+call git commit -a -m %commit_description%
+
+exit/b
+
+
+
+::_
+:cacm
+:commit-all
+echo. & echo * Commit all files with custom message.
+echo.
+
+if "%~2" == "" (
+  call err A custom commit description is required. Jul-11-2023_3_52_PM - %0.bat
+  exit/b 1
+)
+
+git commit -a -m %2
+
+exit/b
+
+
+
+::_
+
+:c
+
+:c_only
+
+:commit
+
+echo. & echo * Commit ONLY those files that were staged for commit.
+
+if "%~2" == "" echo * Error: A commit description is required.
+if "%~2" == "" exit/b
+
+echo.
+git commit -m %2
+
+exit/b
+
+
+
+::_
+
+:cbig
+
+echo. & echo * Commit with big description.
+
+echo.
+call git commit -a -m "From big latpop."
+
+exit/b
 
 
 
