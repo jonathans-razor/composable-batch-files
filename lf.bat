@@ -104,6 +104,40 @@ exit/b
 
 
 ::_
+:dt
+
+cls
+
+echo. & echo * Date time from %0.bat.
+
+:
+call sep
+rem call gg ep 44 hat cat 1 2 3 4 5 6 7
+
+:
+call sep
+rem call jv ep Oct-22-2023 1 2 3
+
+:
+call sep
+rem call lf ep hat cat 1 2 3 Oct-22-2023
+
+:
+call sep
+rem call nd ep Oct-22-2023
+
+:
+call sep
+rem qq
+call ph dt
+
+:
+echo.
+exit/b
+
+
+
+::_
 :ep
 
 cls
