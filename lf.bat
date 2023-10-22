@@ -60,7 +60,7 @@ exit/b
 
 ::_
 :rs
-echo. & echo * Reverse string, with some help from Python from %0.bat.
+echo. & echo * Reverse string, with some help from Python from %0.
 call t d>nul
 call ph rs Oct-22-2023-3
 exit/b
@@ -69,7 +69,7 @@ exit/b
 
 ::_
 :star
-rem echo. & echo * Start the server from %0.bat.
+rem echo. & echo * Start the server from %0.
 call t nwe>nul
 start "[Server Title]" cmd /k [executable name start syntax] .
 exit/b
@@ -80,7 +80,7 @@ exit/b
 
 :run
 
-rem echo. & echo * Run a [language name] program from %0.bat.
+rem echo. & echo * Run a [language name] program from %0.
 
 call fe "%~1" || exit/b
 call paco "%~1" .[language extension] || exit/b
@@ -95,7 +95,9 @@ exit/b
 
 ::_
 :vers
-echo. & echo * Version Oct-22-2023_12_08_PM.
+echo. & echo * Version from %0.
+
+echo. & echo * Version Made-up number Oct-22-2023_4_40_PM.
 exit/b
 
 

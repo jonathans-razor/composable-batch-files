@@ -178,7 +178,7 @@ exit/b
 
 :vers
 
-echo. & echo * Version.
+echo. & echo * Version from %0.
 
 echo.
 go version
@@ -194,7 +194,7 @@ go version go1.17.2 windows/amd64 on XPS - Oct-20-2023 (before upgrade)
 
 :hw
 
-rem echo. & echo * Hello world.
+rem echo. & echo * Hello world from %0.
 
 call t dsa>nul
 call %0 hello-world.go
@@ -206,7 +206,7 @@ exit/b
 ::_
 :rs
 echo. & echo * Reverse string from %0.
-call t dsa>nul
+call t d>nul
 echo.
 go run reverse-string.go %2
 exit/b
@@ -222,7 +222,6 @@ rem echo. & echo * Run a Go program.
 call fe "%~1" || exit/b
 call paco "%~1" .go || exit/b
 
-shift
 echo.
 go run %*
 

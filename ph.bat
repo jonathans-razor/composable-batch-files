@@ -122,6 +122,16 @@ Sep-27-2023
 
 
 ::_
+:dt
+echo. & echo * Date time from %0.
+call t d>nul
+echo.
+python date-time.py
+exit/b
+
+
+
+::_
 :ep
 echo. & echo * Echo parameters from %0.bat.
 call t dsa>nul

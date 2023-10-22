@@ -63,9 +63,8 @@ exit/b
 
 ::_
 :rs
-rem echo. & echo * Reverse string for %0.
+echo. & echo * Reverse string from %0.
 call t d>nul
-rem qq
 echo.
 node reverse-string.js %2
 exit/b
@@ -81,7 +80,6 @@ rem echo. & echo * Run JavaScript file.
 call fe "%~1" || exit/b
 call paco "%~1" .js || exit/b
 
-shift
 echo.
 node %*
 
@@ -100,7 +98,7 @@ exit/b
 
 ::_
 :vers
-echo. & echo * Node version.
+echo. & echo * Node version from %0.
 echo.
 node --version
 exit/b

@@ -157,6 +157,29 @@ exit/b
 
 
 ::_
+:dt
+
+echo. & echo * Date time for %0.
+
+:
+call sep
+call ph dt
+
+:
+call lf dt
+rem call nd rs Oct-22-2023-2
+rem call ph rs Oct-22-2023
+rem call gg rs 
+rem call jv rs
+rem call ph rs
+
+:
+.
+exit/b
+
+
+
+::_
 :echo-parameters
 :ep
 
@@ -211,19 +234,32 @@ exit/b
 :rs
 :slrs
 
-echo. & echo * Reverse string for %0.
+echo. & echo * Reverse string from %0.
+
+cls
 
 :
 call sep
-rem call lf rs
-rem call nd rs Oct-22-2023-2
-rem call ph rs Oct-22-2023
-rem call gg rs 
-rem qq
+call gg rs Oct-22-2023-6
 
-rem call jv rs
-rem call ph rs
+:
+call sep
+call lf rs Oct-22-2023-10
 
+:
+call sep
+call jv rs Oct-22-2023-7
+
+:
+call sep
+call nd rs Oct-22-2023-2
+
+:
+call sep
+call ph rs Oct-22-2023-8
+
+:
+echo.
 exit/b
 
 
@@ -233,12 +269,26 @@ exit/b
 
 cls
 
-echo. & echo * Version.
+echo. & echo * Version from %0.
 
+:
+call sep
 call gg vers
+
+:
+call sep
 call jv vers
+
+:
+call sep
 call lf vers
+
+:
+call sep
 call nd vers
+
+:
+call sep
 call ph vers
 
 exit/b

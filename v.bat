@@ -2551,7 +2551,6 @@ Level 2 Program: Simplest possible program that does something.
 echo. & echo * Reverse string from %0.
 call t d>nul
 echo.
-rem qq
 [] reverse-string.[] %2
 exit/b
 

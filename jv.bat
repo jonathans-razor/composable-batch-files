@@ -168,7 +168,7 @@ exit/b
 :_
 :vers
 
-echo. & echo * Version.
+echo. & echo * Version from %0.
 
 echo.
 java -version
@@ -179,7 +179,7 @@ exit/b
 
 :_
 :hw
-rem echo. & echo * Hello world.
+rem echo. & echo * Hello world from %0.
 
 call t dsa>nul
 call jv HelloWorld.java
@@ -190,7 +190,7 @@ exit/b
 
 :_
 :rs
-rem echo. & echo * Reverse string from %0.
+echo. & echo * Reverse string from %0.
 call t dsa>nul
 call jv c ReverseString.java>nul
 echo.
@@ -280,7 +280,6 @@ rem echo. & echo * Interpret and run a java file.
 call fe "%~1" || exit/b
 call paco "%~1" .java || exit/b
 
-shift
 echo.
 java %*
 
