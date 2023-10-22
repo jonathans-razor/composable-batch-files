@@ -2501,34 +2501,7 @@ lu: Oct-13-2023
 
 
 
-:_+ Language Features Template Code Family (!fylg)
-
-
-
-::_
-:vers
-echo. & echo * Version.
-echo.
-[executable name] --version
-exit/b
-
-
-
-::_
-:hw
-rem echo. & echo * Hello world.
-call t dsa>nul
-call %0 hello-world.[filename extension]
-exit/b
-
-
-
-::_
-:rs
-rem echo. & echo * Reverse string.
-call t dsa>nul
-%0 reverse-string.[filename extension] hello
-exit/b
+:_+ Language Functions Template Code Family (!lfs, !fylg) (skw language-functions-series-jj)
 
 
 
@@ -2539,15 +2512,28 @@ echo. & echo * Echo parameters
 call t dsa>nul
 call %0 echo-parameters.[filename extension] cat hat 1 2 3
 exit/b
+Level 2 Program: Simplest possible program that does something.
 
 
 
 ::_
-:star
-rem echo. & echo * Start the server.
-call t nwe>nul
-start "[Server Title]" cmd /k [executable name start syntax] .
+:hw
+rem echo. & echo * Hello world.
+call t dsa>nul
+call %0 hello-world.[filename extension]
 exit/b
+Level 2 Program: Simplest possible program that does something.
+
+
+
+::_
+:rs
+rem echo. & echo * Reverse string.
+call t dsa>nul
+rem qq
+%0 reverse-string.[filename extension] hello
+exit/b
+Level 3 Program
 
 
 
@@ -2565,6 +2551,27 @@ echo.
 [language executable name] %*
 
 exit/b
+Level 1 Program: Is the program even installed.
+
+
+
+::_
+:vers
+echo. & echo * Version.
+echo.
+[executable name] --version
+exit/b
+Level 1 Program: Is the program even installed.
+
+
+
+::_
+:star
+rem echo. & echo * Start the server.
+call t nwe>nul
+start "[Server Title]" cmd /k [executable name start syntax] .
+exit/b
+Level 1 Program: Is the program even installed.
 
 
 

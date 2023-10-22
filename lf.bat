@@ -1,117 +1,101 @@
 :_
 
 @echo off
+if "%~1" == "?" goto help
+if "%~1" == "" goto help
+goto %1
 
 
 
 :_
-
-set cbf-filep=* Open latest file.
-
-
-
-:_
-
-set fp=* Route callers.
-
-if not -%~1- == -- goto switch-location
-
-if -%~1- == -?- goto help
-
-goto main
-
-
-
-:_
-
 :help
 
 cls
 
-echo.
-echo %cbf-filep%
+echo. & echo  * Language functions batch file.
 
-rem skw:
+echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
-rem lu: 
+echo. & echo  * Parameter 1:
+echo    Function alias you wish to run.
 
-echo.
-echo Batch file style: Single purpose
+echo. & echo  * Batch file style: Multipurpose
 
-echo.
-echo Entangled variable: cbf-%0
-
-echo.
-echo Pit of Success Strategy: For example, if cbf-cf is not found, the algorithm will look for cbf-url.
-
-echo.
-echo Usage: %0 [space separated parameter(s)]
-
-set parameter-1=Parameter 1 (Optional): 
-
-set parameter-2=Parameter 2 (Optional): 
-
-echo.
-echo %parameter-1%
-
-echo.
-echo %parameter-2%
-
-echo.
-echo Example(s):
-
-echo.
-echo %0
+echo. & echo  * Samples:
+echo    %~n0 vers
 
 exit/b
 
-(!rfsp) (mov4)
+lu: 
+Sep-26-2023
 
 
 
 :_
-  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ____
- (______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(____
- ____(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(
+   .--.      .--.      .--.      .--.      .--.                 
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+        `--'      `--'      `--'      `--'      `--'     
 
 
 
-:_
+:_+ Language Functions Template Code Family (!fylg) (skw language-functions-series-jj)
 
-:perform-default-action
 
-set fp=* Peform the default action which is 
 
-echo.
-echo %fp%
-
+::_
+:echo-parameters
+:ep
+echo. & echo * Echo parameters
+echo. & echo %*
 exit/b
 
 
 
-:_
-
-:switch-location
-
-call t %1
-
-if errorlevel 1 exit/b
+::_
+:hw
+echo. & echo * Hello world from a batch file.
+exit/b
 
 
 
-:_
+::_
+:rs
+echo. & echo * Reverse string, with some help from Python.
+call t d>nul
+call ph reverse-string %*
+exit/b
 
-:main
 
-dir /a-d /b /o-d>%tmp%\latest-file-results.txt
 
-set /p cbf-latest-file=<%tmp%\latest-file-results.txt
+::_
+:star
+rem echo. & echo * Start the server.
+call t nwe>nul
+start "[Server Title]" cmd /k [executable name start syntax] .
+exit/b
 
+
+
+::_
+
+:run
+
+rem echo. & echo * Run a [language name] program.
+
+call fe "%~1" || exit/b
+call paco "%~1" .[language extension] || exit/b
+
+shift
 echo.
-echo * cbf-latest-file: %cbf-latest-file%
+[language executable name] %*
 
-"%cbf-latest-file%"
+exit/b
 
+
+
+::_
+:vers
+echo. & echo * Version Oct-22-2023_12_08_PM.
 exit/b
 
 

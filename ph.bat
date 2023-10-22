@@ -153,7 +153,7 @@ echo. & echo * Reverse string.
 
 call t dsa>nul
 
-%0 reverse-string.py hello
+%0 reverse-string.py hello-world
 
 exit/b
 

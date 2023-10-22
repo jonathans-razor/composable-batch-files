@@ -90,7 +90,7 @@ Composable Batch Files (CBF) - Table of Contents
      fxw  A wrapper around fx.bat.
        g  Git
       gd  Surf to Google Docs website.
-      gg  Go. (language-features-series-jj)
+      gg  Go. (skw language-functions-series-jj)
       gh  Execute the GitHub DCV for the passed in alias.
 	   ghh  Surf to GitHub Historical record website.
      ghf  Execute the GitHub historical file DCV for the passed in alias.
@@ -102,10 +102,10 @@ Composable Batch Files (CBF) - Table of Contents
       gu  Angular.
 	   gub  Run a utility from the Git User Bin.
        h  Show the help file of a function routed parameter.
+      he  Hello world everyone. Runs all hello world programs separately or together.
     herk  Heroku.
     hist  Doskey /history. Display the previous 50 commands.
       hw  Hello world. The simplest possible batch file.
-     hwe  Hello world everyone. Runs all hello world programs separately or together.
      hw2  Echo off, pause and exit.
      hw3  Teaches parameters foraccessing help or none, exit/b and displaying help.
      hw4  Composed batch file.
@@ -126,11 +126,11 @@ Composable Batch Files (CBF) - Table of Contents
       jr  Use jar to inspect EAR files.
       js  Edit DCV file in NotePad++ for file type js.
     json  Edit DCV file in NotePad++ for file type json.
-      jv  Java. (language-features-series-jj)
+      jv  Java. (skw language-functions-series-jj)
       kl  Kill a process.
        l  Load file contents onto clipboard.
       le  Leet code tester.
-      lf  Open latest file.
+      lf  Language features. (skw language-functions-series-jj)
       lh  Execute the localhost DCV for the passed in alias.
       ll  Wrapper around dir command to help with Linux compatibility.
    lower  Assing cbf-lower the value of the lower-cased parameter.
@@ -148,7 +148,7 @@ Composable Batch Files (CBF) - Table of Contents
   mirror  Attempts to demonostrate how it's easy to see what commands are running.
       mv  Move files using function routing.
        n  Nicknames path dictionary, a. k. a. the data layer.
-      nd  Use Node to compile and run JavaScript files. (language-features-series-jj)
+      nd  Use Node to compile and run JavaScript files. (skw language-functions-series-jj)
      net  A wrapper around the netstat command.
      ney  An empty nicknames dictionary, useful for starting over
       nm  NPM.
@@ -172,7 +172,7 @@ Composable Batch Files (CBF) - Table of Contents
     paco  Parameter contains.
      pdf  PDF DCV.
       pg  Ping leveraging nicknames dictionary.
-      ph  Python. (language-features-series-jj)
+      ph  Python. (skw language-functions-series-jj)
       pi  Pipe a command line statement to a file.
       pj  Edit package.json file DCV for the passed in alias.
       pl  Git pull, with td parameter.

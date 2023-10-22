@@ -152,4 +152,80 @@ exit/b
 
 
 
+:_+ Language Functions Template Code Family (!fylg) (skw language-functions-series-jj)
+
+
+
+::_
+:echo-parameters
+:ep
+
+cls
+
+echo. & echo * Echo parameters
+
+rem call gg ep
+rem call jv ep
+rem qq
+call lf ep
+rem call nd ep
+rem call ph ep
+
+exit/b
+
+
+
+::_
+:hw
+:slhw
+
+cls
+
+echo. & echo * Hello world from language-functions-series-jj supported languages.
+
+call gg hw
+call jv hw
+call lf hw
+call ph hw
+call nd hw
+
+exit/b
+
+
+
+::_
+:rs
+:slrs
+
+cls
+
+echo. & echo * Reverse string.
+
+rem call nd rs
+rem call gg rs 
+rem call jv rs
+rem call lf rs
+rem call ph rs
+
+exit/b
+
+
+
+::_
+:vers
+
+cls
+
+echo. & echo * Version.
+
+call gg vers
+call jv vers
+call lf vers
+call nd vers
+call ph vers
+
+exit/b
+
+
+
 :_
