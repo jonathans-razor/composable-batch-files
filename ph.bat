@@ -126,6 +126,17 @@ Sep-27-2023
 echo. & echo * Date time from %0.
 call t d>nul
 echo.
+python date.py
+exit/b
+
+
+
+::_
+:dtt
+:rf-dtt
+echo. & echo * Date time from %0.
+call t d>nul
+echo.
 python date-time.py
 exit/b
 

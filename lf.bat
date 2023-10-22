@@ -120,15 +120,10 @@ rem call jv ep Oct-22-2023 1 2 3
 
 :
 call sep
-rem call lf ep hat cat 1 2 3 Oct-22-2023
-
-:
-call sep
 rem call nd ep Oct-22-2023
 
 :
 call sep
-rem qq
 call ph dt
 
 :
@@ -154,7 +149,7 @@ call jv ep Oct-22-2023 1 2 3
 
 :
 call sep
-call lf ep hat cat 1 2 3 Oct-22-2023
+call lfb ep hat cat 1 2 3 Oct-22-2023
 
 :
 call sep
@@ -216,10 +211,6 @@ call gg rs Oct-22-2023-6
 
 :
 call sep
-call lf rs Oct-22-2023-10
-
-:
-call sep
 call jv rs Oct-22-2023-7
 
 :
@@ -250,10 +241,6 @@ call gg vers
 :
 call sep
 call jv vers
-
-:
-call sep
-call lf vers
 
 :
 call sep

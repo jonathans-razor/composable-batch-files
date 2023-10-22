@@ -102,7 +102,7 @@ exit/b
 
 :_
 
-:py
+:ph
 
 call ph hw
 
@@ -163,7 +163,7 @@ call :jv
 
 :
 call sep
-call :py
+call :ph
 
 :
 call sep

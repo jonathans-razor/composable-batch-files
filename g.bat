@@ -3500,6 +3500,26 @@ exit/b
 
 ::_
 
+:captm
+
+:commit-all-with-python-timestamp-message
+
+echo. & echo * Commit all files with Python timestamp message.
+
+rem qq
+call ph dtt>%tmp%\python-timestamp.tmxt
+
+set /p commit-description=<%tmp%\python-timestamp.txt
+
+echo.
+call git commit -a -m %commit-description%
+
+exit/b
+
+
+
+::_
+
 :catm
 
 :commit-all-with-timestamp-message

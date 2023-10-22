@@ -2516,8 +2516,8 @@ Level 2 Program: Simplest possible program that does something.
 
 
 ::_
-:dt
-rem echo. & echo * Return a date plus time string from %0.bat.
+:dtt
+rem echo. & echo * Return a date string from %0.bat.
 call t dsa>nul
 %0 reverse-string.[filename extension] hello
 exit/b
