@@ -223,10 +223,10 @@ Composable Batch Files (CBF) - Table of Contents
       tl  Tasklist.
     touc  Wrapper around Git Touch command, which updates file dates to the current date.
       tr  Tar.
+      ts  TypeScript transpiler.
       ty  Modernized type command. Use Microsoft Edge to view a file chosen based on a decision algorithm.
      tyf  Reopen or see search results that have been piped to a file.
      tyi  Use type command to view calculus file in Internet Explorer.
-     tys  TypeScript transpiler.
      ujt  Update java timestamp.
       un  Communicates that the intent is only to change the URL for a passed in alias
      utc  Convert UTC to EST.

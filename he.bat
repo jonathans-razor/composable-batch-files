@@ -128,7 +128,7 @@ exit/b
 
 :ts
 
-call tys hw
+call ts hw
 
 exit/b
 
