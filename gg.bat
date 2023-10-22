@@ -165,6 +165,16 @@ I got this command from Phil K. He says it will help me get our go code to compi
 
 
 ::_
+:echo-parameters
+:ep
+echo. & echo * Echo parameters
+call t dsa>nul
+call %0 echo-parameters.go %*
+exit/b
+
+
+
+::_
 
 :vers
 
@@ -202,16 +212,6 @@ rem echo. & echo * Reverse string.
 call t dsa>nul
 call %0 reverse-string.go hello
 
-exit/b
-
-
-
-::_
-:echo-parameters
-:ep
-echo. & echo * Echo parameters
-call t dsa>nul
-call %0 echo-parameters.go cat hat 1 2 3 4
 exit/b
 
 

@@ -287,4 +287,18 @@ exit/b
 
 
 
-:_ (!rfsp) (mov-6)
+::_+ Language Features Family (!fylfjv)
+
+
+
+::_
+:echo-parameters
+:ep
+echo. & echo * Echo parameters
+call t dsa>nul
+call %0 EchoParameters.jv %*
+exit/b
+
+
+
+_ (!rfsp) (mov-6)

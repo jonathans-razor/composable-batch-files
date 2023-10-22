@@ -2506,6 +2506,26 @@ lu: Oct-13-2023
 
 
 ::_
+:dt
+rem echo. & echo * Return a date string.
+call t dsa>nul
+%0 reverse-string.[filename extension] hello
+exit/b
+Level 2 Program: Simplest possible program that does something.
+
+
+
+::_
+:dt
+rem echo. & echo * Return a date plus time string.
+call t dsa>nul
+%0 reverse-string.[filename extension] hello
+exit/b
+Level 2 Program: Simplest possible program that does something.
+
+
+
+::_
 :echo-parameters
 :ep
 echo. & echo * Echo parameters
@@ -2530,7 +2550,6 @@ Level 2 Program: Simplest possible program that does something.
 :rs
 rem echo. & echo * Reverse string.
 call t dsa>nul
-rem qq
 %0 reverse-string.[filename extension] hello
 exit/b
 Level 3 Program

@@ -45,7 +45,7 @@ Sep-26-2023
 ::_
 :echo-parameters
 :ep
-echo. & echo * Echo parameters
+echo. & echo * Echo parameters.
 echo. & echo %*
 exit/b
 
