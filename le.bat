@@ -439,4 +439,17 @@ exit/b
 
 
 
+:_
+:Oct-23-2023
+
+cls
+
+call t dsa>nul
+
+call ph reverse-string.py "tacocat is my favorite palindrome"
+
+exit/b
+
+
+
 :_  Permanent QQ **********************
