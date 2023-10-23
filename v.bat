@@ -2506,22 +2506,13 @@ lu: Oct-13-2023
 
 
 ::_
-:dt
-rem echo. & echo * Return a date string from %0.bat.
-call t dsa>nul
-%0 reverse-string.[filename extension] hello
-exit/b
-Level 2 Program: Simplest possible program that does something.
-
-
-
-::_
 :dtt
-rem echo. & echo * Return a date string from %0.bat.
-call t dsa>nul
-%0 reverse-string.[filename extension] hello
+rem echo. & echo * Return a date plus time string from %0.bat.
+call t d>nul
+[] date-time.[filename extension]
 exit/b
 Level 2 Program: Simplest possible program that does something.
+Limited adoption.
 
 
 
@@ -2533,6 +2524,7 @@ call t dsa>nul
 call %0 echo-parameters.[filename extension] cat hat 1 2 3
 exit/b
 Level 2 Program: Simplest possible program that does something.
+Universal adoption by all supported languages.
 
 
 
@@ -2540,9 +2532,10 @@ Level 2 Program: Simplest possible program that does something.
 :hw
 rem echo. & echo * Hello world from %0.bat.
 call t dsa>nul
-call %0 hello-world.[filename extension]
+[] hello-world.[filename extension]
 exit/b
 Level 2 Program: Simplest possible program that does something.
+Universal adoption by all supported languages.
 
 
 
@@ -2553,6 +2546,7 @@ call t d>nul
 echo.
 [] reverse-string.[] %2
 exit/b
+Universal adoption by all supported languages.
 
 
 
