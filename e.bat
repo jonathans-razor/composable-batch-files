@@ -208,11 +208,12 @@ exit/b
 :_
 :open-python-file
 call pn d>nul
+
 if exist "%cbf-pt%\%1.py" (
   echo. & echo * Open Python file.
   rem echo. & echo * "%1" exists.
 ) else (
-  rem echo. & echo * Python file: "%cbf-pt%\%1" NOT found.
+  echo. & echo * Python file: "%cbf-pt%\%1" NOT found.
   exit/b 5
 )
 set cbf-fn=%cbf-pt%\%1.py
