@@ -2737,6 +2737,7 @@ exit/b
 
 :_
 :scsh
+:ss
 echo. & echo * Screenshots folder.
 call pn up>nul
 set cbf-pt=%cbf-pt%\pictures\screenshots
