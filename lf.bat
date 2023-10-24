@@ -12,7 +12,7 @@ goto %1
 
 cls
 
-echo. & echo  * Language functions tester batch file.
+echo. & echo  * Language functions aggregrate runner tester batch file.
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
