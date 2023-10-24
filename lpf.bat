@@ -2,23 +2,10 @@
 
 @echo off
 
-
-
-:_
-
-set cbf-filep=* Copy the filename to clipboard.
-
-echo.
-echo %cbf-filep%
-
-
-
-:_
-
-set fp=* Route callers.
-
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
+
+call paco "%~1" . && goto current-folder-filename
 
 goto validate_user_input
 
@@ -28,15 +15,35 @@ goto validate_user_input
 
 :help
 
-rem lu: 
+cls
+
+echo. & echo * Copy a filename to the clipboard.
 
 echo.
-echo Usage: %0 [space separated parameter(s)]
+echo   Usage: %0 [space separated parameter(s)]
 
-set parameter_1=Parameter 1: Alias of the filename of you wish to copy to the clipboard.
+echo. & echo * Parameter 1: Current folder filename or alias of the filename of you wish to copy to the clipboard.
 
-echo.
-echo %parameter_1%
+exit/b
+
+rem lu: Oct-24-2023
+
+
+
+:_
+   .--.      .--.      .--.      .--.      .--.                 
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+        `--'      `--'      `--'      `--'      `--'     
+
+
+
+:_
+
+:current-folder-filename
+
+echo. & echo * Copy filename "%~1" to the clipboard.
+
+echo %~1 | clip
 
 exit/b
 
@@ -48,9 +55,7 @@ exit/b
 
 call fnv %1
 
-if errorlevel 1 (
-  exit/b
-)
+if errorlevel 1 exit/b
 
 
 
@@ -58,10 +63,9 @@ if errorlevel 1 (
 
 :main
 
-echo %cbf-fn% | clip
+echo. & * Copy filename "%cbf-fn%" to the clipboard.
 
-echo.
-echo * Filename "%cbf-fn%" has been copied to clipboard.
+echo %cbf-fn% | clip
 
 exit/b
 
