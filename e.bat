@@ -28,13 +28,14 @@ echo   Not blank: use routing intelligence, which checks DBF.bat files then fall
 echo   If contains ".": open current folder file, which may or may not exist. This assumes that no alias ever contains a period in it.
 
 echo. & echo * Parameter 2 (Optional):
-echo   /a: open aliased file. Since this is the default, it's only necessary for overriding purposes.
-echo   /af: open aliased folder.
-echo   /c: open current folder file (used for creating new extenionless files)
-echo   /d: open DBF batch file.
-echo   /f: open FF bash file.
-echo   /n: open np file.
-echo   /o: open CBF batch file.
+echo   /a: aliased file. Since this is the default, it's only necessary for overriding purposes.
+echo   /af: aliased folder.
+echo   /c: current folder file (used for creating new extenionless files)
+echo   /d: DBF batch file.
+echo   /f: FF bash file.
+echo   /n: np file.
+echo   /o: CBF batch file.
+echo   /p: Pyton file.
 
 echo. & echo * Parameter 3 (Optional):
 echo   /e: override default editor.
@@ -77,29 +78,33 @@ if "%~2" == "/a" (
 
 if "%~2" == "/af" goto open-aliased-folder
 
+:
 if "%~2" == "/n" (
   call :open-np-file %*
   goto main
 )
 
+:
 if "%~2" == "/o" (
   call :open-cbf-batch-file %*
   goto main
 )
 
-if -%~2-==-/d- (
-  call :open-dbf-batch-file %*
-  if errorlevel 1 exit/b
-  goto main
-)
-
-if -%~2-==-/f- (
+:
+if "%~2" == "/f" (
   call :open-ff-bash-file %*
   if errorlevel 1 exit/b
   goto main
 )
 
+:
+if "%~2" == "/p" (
+  call :open-python-file %*
+  if errorlevel 1 exit/b
+  goto main
+)
 
+:
 rem Begin routing intelligence section.
 
 if exist "%~1" goto open-current-folder-file
@@ -195,7 +200,22 @@ if exist "%cbf-pt%\%1.sh" (
   rem echo. & echo * FF bash file: "%cbf-pt%\%1" NOT found.
   exit/b 5
 )
-set cbf-fn=%cbf-pt%\%1
+set cbf-fn=%cbf-pt%\%1.sh
+exit/b
+
+
+
+:_
+:open-python-file
+call pn d>nul
+if exist "%cbf-pt%\%1.py" (
+  echo. & echo * Open Python file.
+  rem echo. & echo * "%1" exists.
+) else (
+  rem echo. & echo * Python file: "%cbf-pt%\%1" NOT found.
+  exit/b 5
+)
+set cbf-fn=%cbf-pt%\%1.py
 exit/b
 
 
