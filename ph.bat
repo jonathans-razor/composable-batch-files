@@ -145,7 +145,7 @@ exit/b
 :ep
 echo. & echo * Echo parameters from %0.bat.
 call t dsa>nul
-call %0 echo-parameters.py %0 %1 %2 Oct-22-2023-2
+call %0 echo-parameters.py %*
 exit/b
 
 
