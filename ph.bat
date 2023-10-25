@@ -276,7 +276,7 @@ exit/b
 
 :run
 
-echo. & echo * Run Python file from %0.bat.
+rem echo. & echo * Run Python file from %0.bat.
 
 call fe "%~1" || exit/b
 call paco "%~1" .py || exit/b
