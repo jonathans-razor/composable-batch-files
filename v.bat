@@ -2506,6 +2506,13 @@ lu: Oct-13-2023
 
 
 ::_
+:docs
+call sf [docs URL alias]
+exit/b
+
+
+
+::_
 :dtt
 rem echo. & echo * Return a date plus time string from %0.bat.
 call t d>nul

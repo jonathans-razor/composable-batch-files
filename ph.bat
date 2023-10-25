@@ -122,6 +122,13 @@ Sep-27-2023
 
 
 ::_
+:docs
+call sf phdocs
+exit/b
+
+
+
+::_
 :dt
 echo. & echo * Date time from %0.
 call t d>nul

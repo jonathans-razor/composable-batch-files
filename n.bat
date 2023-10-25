@@ -4001,4 +4001,13 @@ exit/b
 
 
 
+:_
+:phdocs
+echo. & echo * Python docs.
+set cbf-url=https://docs.python.org/3/
+exit/b
+lu: Oct-25-2023
+
+
+
 :_ (!efn)

@@ -15,11 +15,11 @@ goto main
 
 echo. & echo * Validate a path value. Using "pn" instead of "n" helps clarify the intent of the call.
 
-echo. & echo * Usage: %0 [Parameter 1]
+echo. & echo   Usage: %0 [Parameter 1]
 
 echo. & echo * Parameter 1: Alias.
 
-echo. & echo * Bach file style: Single purpose.
+echo. & echo * Batch file style: Single purpose.
 
 exit/b
 
