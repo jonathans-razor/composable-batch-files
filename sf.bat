@@ -2,7 +2,7 @@
 
 @echo off
 
-if "%~1" == "" goto set-precedence
+if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
 goto validate-input
@@ -13,16 +13,18 @@ goto validate-input
 
 :help
 
+cls
+
 echo. & echo * Surf the internet.
 
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo   Usage: %0 [space separated parameter(s)]
 
 echo. & echo   Parameter 1: URL alias.
 echo   Parameter 2 (Optional): The alias of the browser application you wish to use.
 
-echo. & echo * Entangled variable: cbf-url
+echo. & echo   Entangled variable: cbf-url
 
-echo. & echo * Pit of Success Strategy: If cb_url is not found, the algorithm will look for cbf-cf or cbf-gh.
+echo. & echo   Pit of Success Strategy: If cb_url is not found, the algorithm will look for cbf-cf or cbf-gh.
 
 echo. & echo * Examples:
 echo   %0 gas
