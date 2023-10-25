@@ -144,7 +144,6 @@ exit/b
 rem echo. & echo * Date time from %0. NOTE: This is an official timestamp so whitespace is allowed.
 rem echo.
 call pn c>null
-rem qq
 python %cbf-pt%\date-time.py
 exit/b
 
