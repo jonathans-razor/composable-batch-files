@@ -521,7 +521,7 @@ cls
 
 call t d>nul
 
-rem These rolls should equal a score of: 180
+rem These rolls should equal a score of: 179
 call ph calculate-bowling-score.py 5 3 7 2 10 10 8 1 10 9 0 10 10 10 8 2
 
 exit/b
@@ -547,6 +547,20 @@ exit/b
 :code-execution-area
 
 rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Oct-24-2023-179
+
+cls
+
+call t d>nul
+
+rem These rolls should equal a score of: 150
+call ph calculate-bowling-score.py 5 5 8 0 10 6 3 9 1 6 3 10 10 6 3 10 7 1
+
+exit/b
 
 
 
