@@ -143,7 +143,8 @@ exit/b
 :rf-dtt
 rem echo. & echo * Date time from %0. NOTE: This is an official timestamp so whitespace is allowed.
 rem echo.
-python date-time.py
+call pn c>null
+%cbf-pt%\python date-time.py
 exit/b
 
 
