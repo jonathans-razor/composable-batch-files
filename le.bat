@@ -1,9 +1,15 @@
 :_
 
 @echo off
-if "%~1" == "" goto help
+
 if "%~1" == "?" goto help
-goto %1
+
+goto code-execution-area
+if "%~1" == "" (
+  goto code-execution-area
+) else (
+  goto %1
+)
 
 
 
@@ -449,6 +455,98 @@ call t dsa>nul
 call ph reverse-string.py "tacocat is my favorite palindrome"
 
 exit/b
+
+
+
+:_
+:Oct-24-2023-2
+
+cls
+
+call t d>nul
+
+rem These rolls should equal a score of: 40
+call ph calculate-bowling-score.py 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+exit/b
+
+
+
+:_
+:Oct-24-2023
+
+cls
+
+call t d>nul
+
+rem These rolls should equal a score of: 
+call ph calculate-bowling-score.py "X 9/ 5/ 72 X X X 9/ 8/ 9/ 9"
+
+exit/b
+
+
+
+:_
+:Oct-24-2023-3-0
+
+cls
+
+call t d>nul
+
+rem These rolls should equal a score of: 0
+call ph calculate-bowling-score.py 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+exit/b
+
+
+
+:_
+:Oct-24-2023-20
+
+cls
+
+call t d>nul
+
+rem These rolls should equal a score of: 20
+call ph calculate-bowling-score.py 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 9 10
+
+exit/b
+
+
+
+:_
+:Oct-24-2023-179
+
+cls
+
+call t d>nul
+
+rem These rolls should equal a score of: 180
+call ph calculate-bowling-score.py 5 3 7 2 10 10 8 1 10 9 0 10 10 10 8 2
+
+exit/b
+
+
+
+:_
+:Oct-24-2023-300
+
+cls
+
+call t d>nul
+
+rem These rolls should equal a score of: 300
+call ph calculate-bowling-score.py 10 10 10 10 10 10 10 10 10 10 10 10
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 
