@@ -36,6 +36,10 @@ echo      pl  Git pull, with TD parameter. Sibling of ps.
 echo      pp  Pull then push, with TD parameter.
 echo      ps  Fully automatic pull and push of selected repositories.
 echo       s  Status while connected.
+echo      sp  Super push, i.e. push all prewritten repositories.
+echo     spl  Super pull, i.e. pull all prewritten repositories.
+echo      ss  Super status, that is status for all selected repositories.
+
 exit/b
 rem lu: Sep-27-2022
 

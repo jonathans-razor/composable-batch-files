@@ -6,14 +6,13 @@ Composable Batch Files (CBF) - Table of Contents
       `--'      `--'      `--'      `--'      `--' 
 
     File  Description
-
        a  Cd .. and td accelerator.
       ak  Awk.
       an  Validate application name.
      ans  Ansible.
       ap  Application-centric way of running an application with an optional filename parameter
   ascii-
-     art  ASCII art file for disploying more visual 
+     art  ASCII art file for displaying more visual content.
       ax  Copy the ax DCV to the clipboard.
        b  Shutdown windows.
      b64  Base 64 encoding and decoding.
@@ -23,9 +22,9 @@ Composable Batch Files (CBF) - Table of Contents
       br  Run Brave while leveraging the e.bat decision algorithm.
       bu  Back up.
      buc  Back up a file in the current folder to the code quick backup folder.
-     buq  Quickly back up and restore any registered file
-       c  Clear without modifiying the path.
-      ca  Go to the a folder and clear the screen.
+     buq  Quickly back up and restore any registered file.
+       c  Clear without modifying the path.
+      ca  Go to a folder and clear the screen.
      cat  Wrapper around type command.
       cf  Execute the Confluence DCV for the passed in alias.
    cbf-2  Shows more CBF files.
@@ -37,26 +36,26 @@ Composable Batch Files (CBF) - Table of Contents
      cdc  Current directory contains.
       ce  Create clean slate j1 and j2 files.
       cf  Surf to Confluence.
-      cl  Clear without modifiying the path.
-     clc  Simple calculator
+      cl  Clear without modifying the path.
+     clc  Simple calculator.
     cmpf  Are 2 files the same?
     coco  Code Compare.
    cocod  Run Code Compare using 2 DCVs.
-     col  Shell window colors operations
-  concop  Create a conflict copy report
+     col  Shell window colors operations.
+  concop  Create a conflict copy report.
   cowsay  Talking cow.
       cp  Copy files.
      cpr  Surf to Create Pull Request page.
-      cs  File contents search
+      cs  File contents search.
       cu  Curl leveraging the nicknames dictionary.
        d  Dir.
-      dc  Double-click a filename, back office operation
+      dc  Double-click a filename, back office operation.
      dcv  Given an alias and a DCV, returns the set DCV value.
       de  Multipurpose delete batch file.
     defn  Delete a file based on passed in filename alias.
     depc  Delete the path contents of the passed in alias.
-    depn  Delete folder corresponding to CBF path alias parameter
-    devu  Demo file for Dev Universiy event on Jan-9-2020
+    depn  Delete folder corresponding to CBF path alias parameter.
+    devu  Demo file for Dev University event on Jan-9-2020.
      dif  Are 2 files the same?
       dn  Dot Net Core (skw dotnet).
       dr  Create and delete directories. (skw mcd, folder)
@@ -66,16 +65,17 @@ Composable Batch Files (CBF) - Table of Contents
        e  Edit a file based on a file choice algorithm.
       ea  Use Mutli-Edit to edit the Ansible Playbook of an alias.
       ed  Choose a file to edit based on a decision algorithm.
-	  edcv  Use Multi-Edit to edit DCV ASCII files.
-     edr  Edit a relative path constucted filename
+    edcv  Use Multi-Edit to edit DCV ASCII files.
+     edr  Edit a relative path constructed filename
      edx  Edit file - back office operation.
       el  Show or clear errorl level.
      err  Show error graphic.
-      es  Edit settings file of an alias
-      ex  Run Excel with or without a filename alias parameter
+      es  Edit settings file of an alias.
+      ex  Run Excel with or without a filename alias parameter.
+example-  Prefix for files written by other authors for learning and comparison purposes.
      exi  Exit.
-       f  Filename sapien. Use any application to open any file
-      fa  Windows file associations
+       f  Filename sapien. Use any application to open any file.
+      fa  Windows file associations.
       fe  Check for the existence of a file based on the passed in filename alias.
     file  New line at end of file tester.
       fl  For loops using function routing.
@@ -88,7 +88,7 @@ Composable Batch Files (CBF) - Table of Contents
     ftpr  File type presence in current folder checker.
       fx  Open any file with any application using a DCV.
      fxw  A wrapper around fx.bat.
-       g  Git
+       g  Git. One of the earliest CBFs.
       gd  Surf to Google Docs website.
       gg  Go. (skw language-functions-series-jj)
       gh  Execute the GitHub DCV for the passed in alias.
@@ -107,7 +107,7 @@ Composable Batch Files (CBF) - Table of Contents
     hist  Doskey /history. Display the previous 50 commands.
       hw  Hello world. The simplest possible batch file.
      hw2  Echo off, pause and exit.
-     hw3  Teaches parameters foraccessing help or none, exit/b and displaying help.
+     hw3  Teaches parameters for accessing help or none, exit/b and displaying help.
      hw4  Composed batch file.
      hw5  Exterior batch file.
        i  Show or clear CBF environment variables.
@@ -119,7 +119,7 @@ Composable Batch Files (CBF) - Table of Contents
       jf  Use Mutli-Edit to edit the Jenkinsfile of an alias.
      jfd  Surf to Jenkins folder wepbage.
       jg  Get a je, jn or jfd variable, in that order.
-      ji  Jira DCV operations
+      ji  Jira DCV operations.
       jj  Surf to Jenkins Build Console Output website.
      jmb  Surf to the Jenkins Multibranch website for the passed in alias.
       jp  Surf to Jenkins Pipeline.
@@ -128,12 +128,12 @@ Composable Batch Files (CBF) - Table of Contents
     json  Edit DCV file in NotePad++ for file type json.
       jv  Java. (skw language-functions-series-jj)
       kl  Kill a process.
-       l  Load file contents onto clipboard.
+       l  Load file contents onto the clipboard.
       le  Leet code tester.
       lf  Language functions aggregate runner. (skw language-functions-series-jj)
       lh  Execute the localhost DCV for the passed in alias.
       ll  Wrapper around dir command to help with Linux compatibility.
-   lower  Assing cbf-lower the value of the lower-cased parameter.
+   lower  Convert the passed in parameter to lower case.
       lp  Load clipboard path.
      lpd  Use a DCV to copy a cbf variable to the clipboard.
      lpf  Load cbf-fn of passed in alias onto the clipboard.
@@ -143,27 +143,27 @@ Composable Batch Files (CBF) - Table of Contents
        m  Perform simple miscellaneous tasks using a function routing style.
      mav  Maven.
   mav-eg  Maven example.
-      me  Multi-Edit
+      me  Multi-Edit.
      med  Use Multi-Edit to edit DCV files.
-  mirror  Attempts to demonostrate how it's easy to see what commands are running.
+  mirror  Attempts to demonstrate how is easy it is to see what commands are running.
       mv  Move files using function routing.
        n  Nicknames path dictionary, a. k. a. the data layer.
       nd  Use Node to compile and run JavaScript files. (skw language-functions-series-jj)
      net  A wrapper around the netstat command.
-     ney  An empty nicknames dictionary, useful for starting over
+     ney  An empty nicknames dictionary, useful for starting over.
       nm  NPM.
       no  Use Notepad to edit a file chosen based on a decision algorithm.
      nod  Use Notepad++ to edit a file chosen based on a decision algorithm.
-     nox  Use Notepad to edit a batch file in the CBF folder
+     nox  Use Notepad to edit a batch file in the CBF folder.
       np  Copy the np %cbf-pd% to the clipboard.
      npp  Use Notepad++ and sfn to edit, or view without saving, a file.
     nppd  Use Notepad++ to edit DCV files.
       ns  Nslookup.
-      nx  Use Notepad++ to edit a batch file in the CBF folder
+      nx  Use Notepad++ to edit a batch file in the CBF folder.
       of  Open Folder, with td parameter.
    ofdcv  Open folder using a DCV.
-    offn  Open folder where only the filename is known
-     ofp  Transform directory to parent folder
+    offn  Open folder where only the filename is known.
+     ofp  Transform directory to parent folder.
       op  Openssl.
     opat  Oracle patching.
      orr  Status of officially registered repos.
@@ -178,24 +178,23 @@ Composable Batch Files (CBF) - Table of Contents
       pl  Git pull, with td parameter.
       pn  Validate a pathname value. Using pn instead of n helps the reader with clarity of intent.
      png  Run cbf-png as a DCV double-click filename.
-      pp  Git pull then push, with td parameter.
      ppt  Run PowerPoint.
       pq  Execute the pull requests DCV for the passed in alias.
 	    pr  Pull requests DCV.
-      ps  PowerShell
+      ps  PowerShell.
       pt  Show path in a browser window.
 	   ptf  Pipe to file.
      ptm  Sets the path using a monogamous CBF variable that sets the path only.
 	   ptt  Path test for Bash.
 	  purl  Using a DCV, surf to a PIV URL webpage.
        q  Query Google.
-       r  Run application using CBF variables, mostly used in back office operations
+       r  Run application using CBF variables, mostly used in back office operations.
     reme  Execute the demo DCV for the passed in alias.
       rl  Execute the releases DCV for the passed in alias.
-     rzr  Multi-Edit abstraction layer for running CBF files
-    rzrp  Multi-Edit abstraction layer for running CBF files, with a pause
+     rzr  Multi-Edit abstraction layer for running CBF files.
+    rzrp  Multi-Edit abstraction layer for running CBF files, with a pause.
        s  Check updated git status, with td parameter.
-    senc  Sencha
+    senc  Sencha.
      sep  Show separator graphic.
       sf  Surf to websites. A DCV is optional.
      sfn  Set cbf-fn based on an evaluated filename parameter
@@ -203,20 +202,17 @@ Composable Batch Files (CBF) - Table of Contents
      sln  Open a Visual Studio solution, with td parameter.
       sm  Use Sublime and sfn to edit a file.
      smd  Use Sublime to edit DCV files.
-      sp  Super push, i.e. push all prewritten repositories
-     spl  Super pull, i.e. pull all prewritten repositories
     splu  Splunk DCV.
 	   src  Hello from the CBF folder.
-      ss  Super status, that is status for all selected repositories
-      sx  Use Sublime to edit a batch file in the CBF folder
+      sx  Use Sublime to edit a batch file in the CBF folder.
       sy  Synchronize Share-zone and CBF folders.
        t  Transform directory.
      tdb  Back button for transform directory.
-     tdc  Transform directory to favorite child folder of alias
+     tdc  Transform directory to favorite child folder of alias.
      tdd  Open a folder using a DCV.
 	   tdh  Transform directory to home folder.
-     tdp  Transform directory to parent folder
-     tdr  Transform directory by appending a relative path onto a base path
+     tdp  Transform directory to parent folder.
+     tdr  Transform directory by appending a relative path onto a base path.
       te  Golden image template used for creating new batch files.
       tf  Terraform.
       tk  Taskkill.
@@ -228,21 +224,21 @@ Composable Batch Files (CBF) - Table of Contents
      tyf  Reopen or see search results that have been piped to a file.
      tyi  Use type command to view calculus file in Internet Explorer.
      ujt  Update java timestamp.
-      un  Communicates that the intent is only to change the URL for a passed in alias
+      un  Communicates that the intent is only to change the URL for a passed in alias.
      utc  Convert UTC to EST.
        v  Vetted (Useful for copying-and-pasting).
       va  Surf to a Vault webpage.
       vc  Visual Studio Code, with td parameter.
       wi  Open the Wikipedia page for the passed in alias.
       wl  Run WebLogic startup commands.
-      wo  Run Word with or without a filename alias parameter
+      wo  Run Word with or without a filename alias parameter.
       wp  Use Wordpad and sfn to edit a file.
      wpd  Use Wordpad to edit DCV files.
        w  Unassigned.
-       x  Bing shortcu.
+       x  Bing shortcut.
      xac  Execute an application alias with a filename in the current folder.
      xaf  Execute an application alias with a filename alias.
-     xfn  Filename-centric way to run an alias
+     xfn  Filename-centric way to run an alias.
      xml  Edit an XML DCV file in VSC.
        y  Using advanced routing, open text files for viewing or editing.
      yml  Edit DCV file in NotePad++ for file type yml.

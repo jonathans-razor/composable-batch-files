@@ -35,7 +35,7 @@ echo %cbf-filep%
 rem lu: 
 
 echo.
-echo Usage: %0 [space separated parameter(s)]
+echo   Usage: %0 [space separated parameter(s)]
 
 set parameter-1=Parameter 1: Parameter to convert to lower case.
 
