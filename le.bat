@@ -571,14 +571,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Oct-25-2023
 
 cls
@@ -587,6 +579,34 @@ call t d>nul
 
 @echo on
 call ph 14-longest-common-prefix.py lower flow flight
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Oct-26-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 20-valid-parentheses.py ()
+
+call ph 20-valid-parentheses.py x
+
+call ph 20-valid-parentheses.py (x)
+
+call ph 20-valid-parentheses.py []
 
 exit/b
 
