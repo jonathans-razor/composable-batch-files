@@ -585,14 +585,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Oct-26-2023
 
 cls
@@ -612,4 +604,27 @@ exit/b
 
 
 
-:_  Permanent QQ **********************
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Oct-27-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 3-longest-substring-without-repeating-characters.py abcabcbb
+
+
+exit/b
+
+
+
+:_ (!efle)

@@ -65,7 +65,7 @@ if errorlevel 1 exit/b
 
 echo. & * Copy filename "%cbf-fn%" to the clipboard.
 
-echo %cbf-fn% | clip
+echo %cbf-fn%|clip
 
 exit/b
 

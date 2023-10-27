@@ -897,6 +897,17 @@ rem lu: Jul-10-2023
 
 
 ::_
+:tcp
+echo. & echo * Python table of contents.
+call pn d>nul
+set cbf-fn=%cbf-pt%\ph-tc.txt
+exit/b
+rem lu: May-17-2022
+table-of-contents-series: skw
+
+
+
+::_
 :tcc
 :tccbf
 echo. & echo * CBF table of contents.
