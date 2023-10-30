@@ -1295,148 +1295,6 @@ exit/b
 
 
 
-:_+ Podcast and ClipJam Folders
-
-
-
-::_
-
-:cldr
-
-:clip
-
-:clp
-
-echo. & echo * Clip drive.
-
-rem lu: Feb-9-2022
-
-set cbf-pt=
-
-if exist "g:\" (
-  echo. & echo * G exists.
-  set cbf-pt=g:\
-  exit/b
-)
-
-if exist "h:\" (
-  rem echo H exists.
-  set cbf-pt=h:\
-  exit/b
-)
-
-if "%cbf-pt%" == "" (
-  echo. & echo * Error: Is the MP3 player plugged in?
-  exit/b 1
-)
-
-exit/b 3
-
-
-
-::_
-
-:pc
-
-:podcast_folder
-
-set fp=* Podcaster.
-
-rem lu: Jun-24-2020
-
-echo.
-echo %fp%
-
-set cbf-pt=%my documents%\gpodder\downloads
-
-set cbf-app=C:\Program Files (x86)\gPodder\bin\gpodder.exe
-
-exit/b
-
-     
-
-::_
-
-:audi
-
-:cja
-
-set fp=* Audiobooks.
-
-rem lu: Oct-18-2021
-
-echo.
-echo %fp%
-
-set cbf-pt=
-
-if exist g:\audiobooks set cbf-pt=g:\audiobooks
-if exist h:\audiobooks set cbf-pt=h:\audiobooks
-
-if "%cbf-pt%" == "" (
-  echo.
-  echo * Error: cbf-pt is undefined. Is the MP3 player plugged in?
-  exit/b 1
-)
-
-exit/b
-
-
-
-::_
-
-:cj
-
-:cl
-
-:cjp
-
-:clip
-
-:clja
-
-:clipjam_podcasts
-
-rem echo. & echo * set fp=* ClipJam podcasts folder.
-
-rem lu: Jul-15-2018
-
-set cbf-pt=
-
-if exist g:\podcasts set cbf-pt=g:\podcasts
-if exist h:\podcasts set cbf-pt=h:\podcasts
-
-if "%cbf-pt%" == "" (
-  call err "cbf-pt" is undefined. Is the MP3 player plugged in? Sep-22-2022_11_32_AM - %0.bat
-  exit/b 1
-)
-
-exit/b
-
-
-
-::_
-:sa
-:stag
-:staging-area
-echo. & echo * Staging area.
-set cbf-pt=%my documents%\mp3 staging area
-exit/b
-rem lu: Aug-20-2022
-
-
-
-::_
-:ec
-:exco
-:mec
-echo. & echo * Extra content - MP3.
-set cbf-pt=%my documents%\mp3 extra content
-exit/b
-rem lu: Jan-26-2022
-
-
-
 :_+ Repositories
 
 
@@ -4019,6 +3877,129 @@ echo. & echo * Python docs.
 set cbf-url=https://docs.python.org/3/
 exit/b
 lu: Oct-25-2023
+
+
+
+:_+ Podcast and ClipJam Folders
+
+
+
+::_
+
+:cldr
+:clip
+:clp
+
+echo. & echo * Clip drive.
+
+set cbf-pt=
+
+if exist "g:\" (
+  rem echo. & echo * G exists.
+  set cbf-pt=g:\
+  exit/b
+)
+
+if exist "h:\" (
+  rem echo. & echo * H exists.
+  set cbf-pt=h:\
+  exit/b
+)
+
+if "%cbf-pt%" == "" (
+rem qq a
+  call err "cbf-pt" is undefined. Is the MP3 player plugged in? Oct-30-2023_11_10_AM - %0.bat
+  exit/b 1
+)
+
+exit/b 3
+
+rem lu: Feb-9-2022
+
+
+
+::_
+
+:audi
+:cja
+
+call pn clp || exit/b
+
+echo. & echo * Audiobooks.
+
+set cbf-pt=%cbf-pt%audiobooks
+
+exit/b
+
+rem lu: 
+Oct-30-2023
+Oct-18-2021
+
+
+
+::_
+
+:cj
+:cl
+:cjp
+:clip
+:clja
+:clipjam_podcasts
+
+call pn clp || exit/b
+
+echo. & echo * Podcasts.
+
+set cbf-pt=%cbf-pt%podcasts
+
+exit/b
+
+rem lu: 
+Oct-30-2023
+Jul-15-2018
+
+
+
+::_
+
+:pc
+
+:podcast_folder
+
+set fp=* Podcaster.
+
+rem lu: Jun-24-2020
+
+echo.
+echo %fp%
+
+set cbf-pt=%my documents%\gpodder\downloads
+
+set cbf-app=C:\Program Files (x86)\gPodder\bin\gpodder.exe
+
+exit/b
+
+     
+
+::_
+:sa
+:stag
+:staging-area
+echo. & echo * Staging area.
+set cbf-pt=%my documents%\mp3 staging area
+exit/b
+rem lu: Aug-20-2022
+
+
+
+::_
+:ec
+:exco
+:mec
+echo. & echo * Extra content - MP3.
+set cbf-pt=%my documents%\mp3 extra content
+exit/b
+rem lu: Jan-26-2022
 
 
 
