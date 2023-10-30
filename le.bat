@@ -620,14 +620,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Oct-27-2023
 
 cls
@@ -637,6 +629,35 @@ call t d>nul
 @echo on
 call ph 2-add-two-numbers.py 2 4 3 5 6 4
 
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Oct-30-2023
+
+cls
+
+call t d>nul
+
+rem qq
+@echo on
+call ph 7-reverse-integer.py 123
+@echo on
+call ph 7-reverse-integer.py -123
+@echo on
+call ph 7-reverse-integer.py 120
+@echo on
+call ph 7-reverse-integer.py 1534236469
 
 exit/b
 
