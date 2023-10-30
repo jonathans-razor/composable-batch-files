@@ -3907,7 +3907,6 @@ if exist "h:\" (
 )
 
 if "%cbf-pt%" == "" (
-rem qq a
   call err "cbf-pt" is undefined. Is the MP3 player plugged in? Oct-30-2023_11_10_AM - %0.bat
   exit/b 1
 )

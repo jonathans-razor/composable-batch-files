@@ -7,7 +7,7 @@ Composable Batch Files (CBF) - Error Levels
 
 Error 
 Level  Definition/Description
------  -------------------------------------------------------------------
+-----  ----------------------------------------------------------------------
     0  No error.
     1  Generic error.
     2  Application not installed.
