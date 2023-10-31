@@ -4077,7 +4077,7 @@ lu: Oct-31-2023
 ::_
 :ndrs
 set cbf-pd=reverse-string
-echo. & echo * %cbf-pd%.
+echo. & echo * %cbf-pd%. Reverses a string the manual way, without using a built-in function.
 call pn d>nul
 set cbf-fn=%cbf-pt%\%cbf-pd%.js
 exit/b
