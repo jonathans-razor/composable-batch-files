@@ -159,10 +159,30 @@ exit/b
 
 
 ::_
+:fz
+echo. & echo * Fizz from %0.
+call t d>nul
+echo.
+%0 fizz.py
+exit/b
+
+
+
+::_
 :hw
 echo. & echo * Hello world from %0.bat.
 call t dsa>nul
 call ph hello-world.py
+exit/b
+
+
+
+::_
+:rs
+echo. & echo * Reverse string from %0.
+call t d>nul
+echo.
+%0 reverse-string.py %2
 exit/b
 
 
@@ -239,20 +259,9 @@ exit/b
 
 
 ::_
-:rs
-echo. & echo * Reverse string from %0.
-call t d>nul
-echo.
-python reverse-string.py %2
-exit/b
-
-
-
-::_
 :ls
 echo. & echo * Lower case string from %0.
 call t d>nul
-rem qq
 if "%~2" == "" (
   call err Expected a string in parameter 2, which is missing.
   exit/b

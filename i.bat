@@ -8,9 +8,7 @@ if "%~1" == "/c" goto clear-cbf-variables
 
 call :clear-cbf-variables
 
-call n %1
-
-if errorlevel 1 exit/b
+call n %1 || exit/b
 
 call :show-cbf-variables-2 %1
 

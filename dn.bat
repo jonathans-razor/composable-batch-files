@@ -140,31 +140,64 @@ exit/b
 
 
 
-:_
+:_+ Language Functions Template Code Family (!lfs, !fylg) (skw language-functions-series-jj)
 
-:vers
 
-echo. & echo * Get version.
 
-echo.
-dotnet --version
+::_
+
+:hw
+
+echo. & echo * Hello world from %0.
+
+call t d>nul
+cd hello-world-c-sharp
+call dn run
 
 exit/b
 
 
 
-:_
+::_
 
-:hw
+:fz
 
-rem echo. & echo * Hello world.
+cls
 
-call t dsa>nul
-cd hello-world-c-sharp
-call dn run
+echo. & echo * Fizz from %0.
+
+call t d>nul
+cd fizz-csharp
+call %0 run
+
+exit/b
 
 
-rem qq
+
+::_
+
+:rs
+
+cls
+
+echo. & echo * Reverse string from %0.
+
+call t d>nul
+cd reverse-string-csharp
+call %0 run hello
+
+exit/b
+
+
+
+::_
+
+:vers
+
+echo. & echo * Get version from %0.
+
+echo.
+dotnet --version
 
 exit/b
 
@@ -217,7 +250,7 @@ creation date: Sep-18-2023
 
 
 ::_
-:neco
+:neco-no-parameter
 echo. & echo * Create a new Dotnet console app.
 echo.
 dotnet new console --force
@@ -227,16 +260,27 @@ rem lu: Sep-15-2023
 
 
 ::_
+:neco
+echo. & echo * Create a new Dotnet console app.
+if "%2" == "" (
+  call err Parameter 2, app name, is required.
+  exit/b
+)
+echo.
+dotnet new console -n %2
+exit/b
+rem lu: Sep-15-2023
 
+
+
+::_
 :r
 :run
 
 rem echo. & echo * Run DotNetCore web server.
 
-call ftpr cs & if errorlevel 1 exit/b 1
-
 echo.
-dotnet run
+dotnet run %2
 
 exit/b
 

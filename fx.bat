@@ -35,10 +35,11 @@ echo   %0 aws pt2 wiex
 
 echo. & echo   %0 owok yt fx
 echo   %0 hbit bi edge
-echo   %0 cds go vsc
+echo   %0 cds go vc
 echo   %0 gh jj edge
 echo   %0 wl app vsc
 echo   %0 ear gs br
+echo   %0 nd fz vc
 
 exit/b
 

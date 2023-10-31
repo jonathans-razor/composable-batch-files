@@ -2713,13 +2713,23 @@ exit/b
 
 ::_
 :it
+echo. & echo * IT.
+set cbf-gh=https://github.com/jonathans-razor
+set cbf-pt=%dropbox%\it
+exit/b
+rem lu: Jun-20-2023
+
+
+
+::_
 :it3
 echo. & echo * IT.
 set cbf-gh=https://github.com/jonathans-razor
 set cbf-pt=%dropbox%\it
 set cbf-fn=%cbf-pt%\miscellany\it3.asc
 exit/b
-rem lu: Jun-20-2023
+rem lu: 
+Oct-31-2023
 
 
 
@@ -4011,6 +4021,76 @@ call pn it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=qbLc5a9jdXo
+exit/b
+lu: Oct-31-2023
+
+
+
+:_+ Language Functions Family (!fylfn) (skw language-functions-series-jj)
+
+
+
+::_
+:dnhw
+set cbf-pd=hello-world
+echo. & echo * %cbf-pd%.
+call pn d>nul
+set cbf-fn=%cbf-pt%\%cbf-pd%.cs
+exit/b
+lu: Oct-31-2023
+
+
+
+::_
+:dnfz
+set cbf-pd=fizz
+echo. & echo * %cbf-pd%.
+call pn d>nul
+set cbf-fn=%cbf-pt%\fizz-csharp\Program.cs
+exit/b
+lu: Oct-31-2023
+
+
+
+::_
+:dnrs
+set cbf-pd=reverse-string
+echo. & echo * %cbf-pd%.
+call pn d>nul
+set cbf-fn=%cbf-pt%\reverse-string-csharp\Program.cs
+exit/b
+lu: Oct-31-2023
+
+
+
+::_
+:ndfz
+set cbf-pd=fizz
+echo. & echo * %cbf-pd%.
+call pn d>nul
+set cbf-fn=%cbf-pt%\%cbf-pd%.js
+exit/b
+lu: Oct-31-2023
+
+
+
+::_
+:ndrs
+set cbf-pd=reverse-string
+echo. & echo * %cbf-pd%.
+call pn d>nul
+set cbf-fn=%cbf-pt%\%cbf-pd%.js
+exit/b
+lu: Oct-31-2023
+
+
+
+::_
+:phfz
+set cbf-pd=fizz
+echo. & echo * %cbf-pd%.
+call pn d>nul
+set cbf-fn=%cbf-pt%\%cbf-pd%.py
 exit/b
 lu: Oct-31-2023
 

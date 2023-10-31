@@ -53,9 +53,19 @@ exit/b
 
 
 ::_
+:fz
+call n ndfz>nul || exit/b
+echo. & echo * %cbf-fn% from %0.bat.
+call t d>nul
+call %0 %cbf-fn%
+exit/b
+
+
+
+::_
 :hw
-rem echo. & echo * Hello world.
-call t dsa>nul
+rem echo. & echo * Hello world from %0.bat.
+call t d>nul
 call %0 hello-world.js
 exit/b
 
@@ -63,10 +73,20 @@ exit/b
 
 ::_
 :rs
-echo. & echo * Reverse string from %0.
+echo. & echo * Reverse string from %0.bat.
 call t d>nul
 echo.
 node reverse-string.js %2
+exit/b
+
+
+
+::_
+:rs
+call n ndrs>nul || exit/b
+echo. & echo * %cbf-fn% from %0.bat.
+call t d>nul
+call %0 %cbf-fn%
 exit/b
 
 
