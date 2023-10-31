@@ -649,7 +649,6 @@ cls
 
 call t d>nul
 
-rem qq
 @echo on
 call ph 7-reverse-integer.py 123
 @echo on
