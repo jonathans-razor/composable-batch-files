@@ -635,14 +635,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Oct-30-2023
 
 cls
@@ -657,6 +649,30 @@ call ph 7-reverse-integer.py -123
 call ph 7-reverse-integer.py 120
 @echo on
 call ph 7-reverse-integer.py 1534236469
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Oct-31-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 21-merge-two-sorted-lists.py "1 3 5" "2 4 6 7"
+
+echo.
 
 exit/b
 
