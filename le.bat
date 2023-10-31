@@ -655,6 +655,22 @@ exit/b
 
 
 :_
+:Oct-31-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 21-merge-two-sorted-lists.py "1 3 5" "2 4 6 7"
+
+echo.
+
+exit/b
+
+
+
+:_
 
 :code-execution-area
 
@@ -670,7 +686,7 @@ cls
 call t d>nul
 
 @echo on
-call ph 21-merge-two-sorted-lists.py "1 3 5" "2 4 6 7"
+call ph 26-remove-duplicates-from-sorted-array.py 1 2 3 4 4 6 7
 
 echo.
 
