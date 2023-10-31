@@ -4005,12 +4005,10 @@ rem lu: Jan-26-2022
 
 :_
 :prat
-rem qq
 set cbf-pd=python-rest-api-tutorial
 echo. & echo * %cbf-pd%.
 call pn it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
-rem Provenance: Jul-16-2021_11_43_AM qq1
 set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=qbLc5a9jdXo
 exit/b
