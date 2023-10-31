@@ -58,6 +58,12 @@ call t dsa & call g dirt
 
 
 
+:_
+call sep
+call t prat & call g dirt
+
+
+
 :_                             *********************************
 :close
 

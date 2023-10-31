@@ -2715,6 +2715,7 @@ exit/b
 :it
 :it3
 echo. & echo * IT.
+set cbf-gh=https://github.com/jonathans-razor
 set cbf-pt=%dropbox%\it
 set cbf-fn=%cbf-pt%\miscellany\it3.asc
 exit/b
@@ -3999,6 +4000,21 @@ echo. & echo * Extra content - MP3.
 set cbf-pt=%my documents%\mp3 extra content
 exit/b
 rem lu: Jan-26-2022
+
+
+
+:_
+:prat
+rem qq
+set cbf-pd=python-rest-api-tutorial
+echo. & echo * %cbf-pd%.
+call pn it
+set cbf-pt=%cbf-pt%\%cbf-pd%
+rem Provenance: Jul-16-2021_11_43_AM qq1
+set cbf-gh=%cbf-gh%/%cbf-pd%
+set cbf-yt=https://www.youtube.com/watch?v=qbLc5a9jdXo
+exit/b
+lu: Oct-31-2023
 
 
 
