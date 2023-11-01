@@ -4021,6 +4021,7 @@ call pn it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=qbLc5a9jdXo
+set cbf-url=https://api.stackexchange.com
 exit/b
 lu: Oct-31-2023
 
