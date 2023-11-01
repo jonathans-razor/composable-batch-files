@@ -2536,6 +2536,18 @@ Universal adoption by all supported languages.
 
 
 ::_
+:fz
+call n gg%1>nul || exit/b
+echo. & echo * %cbf-fn% from %0.bat.
+call t d>nul
+@echo on
+go run %cbf-fn%
+exit/b
+1-Nov-2023-series-jj
+
+
+
+::_
 :hw
 rem echo. & echo * Hello world from %0.bat.
 call t dsa>nul

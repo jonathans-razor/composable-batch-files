@@ -191,7 +191,6 @@ call t d>nul
 @echo on
 go run %cbf-fn%
 exit/b
-Nov-2023-series-jj
 
 
 
@@ -200,7 +199,6 @@ Nov-2023-series-jj
 call n ggrs>nul || exit/b
 echo. & echo * %cbf-fn% from %0.bat.
 call t d>nul
-rem qq
 @echo on
 go run %cbf-fn% heynow
 exit/b
