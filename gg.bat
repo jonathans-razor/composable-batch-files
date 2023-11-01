@@ -184,6 +184,18 @@ exit/b
 
 
 ::_
+:fz
+call n gg%1>nul || exit/b
+echo. & echo * %cbf-fn% from %0.bat.
+call t d>nul
+@echo on
+go run %cbf-fn%
+exit/b
+Nov-2023-series-jj
+
+
+
+::_
 :rs
 call n ggrs>nul || exit/b
 echo. & echo * %cbf-fn% from %0.bat.
