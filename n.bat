@@ -4054,6 +4054,18 @@ lu: Oct-31-2023
 
 
 ::_
+:ggrs
+set cbf-pd=reverse-string
+echo. & echo * %cbf-pd%.
+call pn d>nul
+set cbf-fn=%cbf-pt%\%cbf-pd%.go
+exit/b
+lu: 
+Nov-1-2023
+
+
+
+::_
 :dnrs
 set cbf-pd=reverse-string
 echo. & echo * %cbf-pd%.

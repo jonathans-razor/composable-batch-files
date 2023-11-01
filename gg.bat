@@ -175,6 +175,27 @@ exit/b
 
 
 ::_
+:hw
+rem echo. & echo * Hello world from %0.
+call t dsa>nul
+call %0 hello-world.go
+exit/b
+
+
+
+::_
+:rs
+call n ggrs>nul || exit/b
+echo. & echo * %cbf-fn% from %0.bat.
+call t d>nul
+rem qq
+@echo on
+go run %cbf-fn% heynow
+exit/b
+
+
+
+::_
 
 :vers
 
@@ -187,19 +208,6 @@ exit/b
 
 go version go1.21.3 windows/amd64 on XPS - Oct-20-2023 (after upgrade)
 go version go1.17.2 windows/amd64 on XPS - Oct-20-2023 (before upgrade)
-
-
-
-::_
-
-:hw
-
-rem echo. & echo * Hello world from %0.
-
-call t dsa>nul
-call %0 hello-world.go
-
-exit/b
 
 
 
@@ -219,8 +227,8 @@ exit/b
 
 rem echo. & echo * Run a Go program.
 
-call fe "%~1" || exit/b
-call paco "%~1" .go || exit/b
+call fe "%~2" || exit/b
+call paco "%~2" .go || exit/b
 
 echo.
 go run %*

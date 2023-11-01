@@ -124,7 +124,6 @@ set cbf-previous-pt=%cbf-pt%
 call m cel
 
 set cbf-app=
-set cbf-fn=
 set cbf-pt=
 
 call pn %1
