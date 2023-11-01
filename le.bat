@@ -671,14 +671,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Oct-31-2023
 
 cls
@@ -687,6 +679,30 @@ call t d>nul
 
 @echo on
 call ph 26-remove-duplicates-from-sorted-array.py 1 2 3 4 4 6 7
+
+echo.
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-1-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 27-remove-element.py 3 2 2 3 3
 
 echo.
 
