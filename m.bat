@@ -2560,8 +2560,6 @@ exit/b
 
 :rcv
 
-:res
-
 :rese
 
 :reset

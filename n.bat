@@ -675,7 +675,7 @@ creation date: Jun-11-2023
 
 
 :_
-:r
+:rp
 :repo
 :repos
 :repository_folder
@@ -2012,6 +2012,7 @@ exit/b
 :fn
 :disc
 :emdo
+:r
 :res
 :mcres
 :resmc
