@@ -461,4 +461,30 @@ Nov-1-2023
 
 
 
+:_
+
+:star
+
+echo. & echo * Start a Flask application.
+
+call fe .venv || exit/b
+
+set flask_app=application.py
+set flask_env=development
+
+rem qq
+echo.
+start "Flask" cmd /k flask run
+
+exit/b
+
+rem lu:
+Oct-12-2023
+Sep-26-2023
+Aug-27-2021
+
+Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
+
+
+
 :_ (!efpyt)

@@ -3214,8 +3214,8 @@ Jul-06-2022
 
 echo. & echo * Show JSON Server.
 
-rem set cbf-lh=http://localhost:5000
-set cbf-lh=http://localhost:5000/tasks
+set cbf-lh=http://localhost:5000
+rem set cbf-lh=http://localhost:5000/tasks
 
 exit/b
 
