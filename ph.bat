@@ -365,6 +365,52 @@ exit/b
 
 
 :_
+:venv
+
+echo. & echo * Install virtual environment.
+
+echo.
+python -m venv .venv
+
+exit/b
+lu:
+Nov-1-2023
+
+
+
+:_
+:ave
+
+echo. & echo * Activate virtual environment.
+
+call fe .venv || exit/b
+
+echo.
+.venv/Scripts/activate
+
+exit/b
+lu:
+Nov-1-2023
+
+
+
+:_
+:dve
+
+echo. & echo * Dectivate virtual environment.
+
+call fe .venv || exit/b
+
+echo.
+.venv/Scripts/deactivate
+
+exit/b
+lu:
+Nov-1-2023
+
+
+
+:_
 :inst-r
 
 echo. & echo * Install requests.
@@ -378,16 +424,41 @@ exit/b
 
 
 :_
-:venv
+:inst-f
 
-echo. & echo * Install virtual environment.
+echo. & echo * Install flask.
 
 echo.
-python -m venv .venv
+pip install flask
+
+exit/b
+
+
+
+:_
+:inst-fs
+
+echo. & echo * Install flask sqlalchemy.
+
+echo.
+pip install flask-sqlalchemy
+
+exit/b
+
+
+
+:_
+:lr
+
+echo. & echo * List requirements.
+
+echo.
+pip freeze>requirements.txt
 
 exit/b
 lu:
 Nov-1-2023
+
 
 
 :_ (!efpyt)
