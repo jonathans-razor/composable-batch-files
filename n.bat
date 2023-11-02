@@ -4122,4 +4122,24 @@ lu: Oct-31-2023
 
 
 
+:_
+
+:post
+
+set fp=* Postman.
+
+rem lu: Jun-14-2018
+
+echo.
+echo %fp%
+
+rem set cbf-app=C:\Users\jonat\AppData\Local\Postman\Update.exe --processStart "Postman.exe"
+set cbf-app=C:\Users\jonat\AppData\Local\Postman\Postman.exe
+
+set cbf-url=https://web.postman.com
+
+exit/b
+
+
+
 :_ (!efn)

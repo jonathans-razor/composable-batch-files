@@ -85,24 +85,6 @@ exit/b
 
 
 :_
-:inst
-
-echo. & echo * Install module.
-
-if "%~2" == "" (
-  call err Expected module name. Sep-21-2023_12_47_PM
-  exit/b
-)
-
-echo.
-@echo on
-pip install %2
-
-exit/b
-
-
-
-:_
 :uvic
 
 echo. & echo * Run uvicorn.
@@ -350,6 +332,62 @@ exit/b
 
 * Sep-21-2023_11_54_AM: Python 3.10.0
 
+
+
+::_
+:vers-pip
+
+echo. & echo * Pip version from %0.bat.
+
+echo.
+pip --version
+
+exit/b
+
+
+
+:_
+:inst
+
+echo. & echo * Install module.
+
+if "%~2" == "" (
+  call err Expected module name. Sep-21-2023_12_47_PM
+  exit/b
+)
+
+echo.
+@echo on
+pip install %2
+
+exit/b
+
+
+
+:_
+:inst-r
+
+echo. & echo * Install requests.
+
+echo.
+@echo on
+pip install requests
+
+exit/b
+
+
+
+:_
+:venv
+
+echo. & echo * Install virtual environment.
+
+echo.
+python -m venv .venv
+
+exit/b
+lu:
+Nov-1-2023
 
 
 :_ (!efpyt)
