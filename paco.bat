@@ -26,8 +26,6 @@ echo. & echo   Return Code: If equal to 0, you know that parameter 1 contains th
 
 echo. & echo * Sample(s):
 
-rem qq
-
 echo. & echo   The following line would return 1, if this code were rune from c:\a be that path does not contain the string "b".
 echo. & echo   call paco "%cd%" b || exit/b
 
