@@ -58,12 +58,6 @@ call t dsa & call g dirt
 
 
 
-:_
-call sep
-call t prat & call g dirt
-
-
-
 :_                             *********************************
 :close
 
@@ -71,6 +65,12 @@ cd /d %cbf-current-folder%
 echo.
 
 exit/b
+
+
+
+:_
+call sep
+call t prat & call g dirt
 
 
 
