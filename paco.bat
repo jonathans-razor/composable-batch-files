@@ -18,9 +18,18 @@ cls
 echo. & echo * Parameter contains. Check for characters in a passed in parameter.
 echo. & echo   Usage: %0 [space separated parameter(s)]
 
-echo. & echo * Parameter 1: Fliename in current folder
+echo. & echo * Parameter 1: Path, filename, etc. in current folder
 
-echo. & echo   Return Code: If equal to 0, you know that cbf-fn contains the passed in characters.
+echo. & echo * Parameter 2: The character string to search for.
+
+echo. & echo   Return Code: If equal to 0, you know that parameter 1 contains the passed in characters.
+
+echo. & echo * Sample(s):
+
+rem qq
+
+echo. & echo   The following line would return 1, if this code were rune from c:\a be that path does not contain the string "b".
+echo. & echo   call paco "%cd%" b || exit/b
 
 exit/b
 
