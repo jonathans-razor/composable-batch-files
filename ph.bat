@@ -125,7 +125,7 @@ exit/b
 :rf-dtt
 rem echo. & echo * Date time from %0. NOTE: This is an official timestamp so whitespace is allowed.
 rem echo.
-call pn c>null
+call pn c>nul
 python %cbf-pt%\date-time.py
 exit/b
 
@@ -469,21 +469,16 @@ echo. & echo * Start a Flask application.
 
 call fe .venv || exit/b
 
-set flask_app=application.py
-set flask_env=development
+set FLASK_APP=application.py
+set FLASK_ENV=development
 
-rem qq
 echo.
-start "Flask" cmd /k flask run
+start "Flask" cmd /k flask run --debug
 
 exit/b
 
 rem lu:
-Oct-12-2023
-Sep-26-2023
-Aug-27-2021
-
-Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
+Nov-1-2023
 
 
 
