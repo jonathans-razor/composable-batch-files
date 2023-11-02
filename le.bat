@@ -687,14 +687,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Nov-1-2023
 
 cls
@@ -703,6 +695,39 @@ call t d>nul
 
 @echo on
 call ph 27-remove-element.py 3 2 2 3 3
+
+echo.
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-2-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 28-find-the-index-of-the-first-occurrence-in-a-string.py sadbutsad sad
+
+@echo on
+call ph 28-find-the-index-of-the-first-occurrence-in-a-string.py sadbutsad sax
+
+@echo on
+call ph 28-find-the-index-of-the-first-occurrence-in-a-string.py sadbutsad but
+
+@echo on
+call ph 28-find-the-index-of-the-first-occurrence-in-a-string.py leetcode leeto
 
 echo.
 
