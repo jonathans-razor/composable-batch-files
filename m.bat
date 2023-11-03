@@ -3618,7 +3618,7 @@ set cbf-fn-list="%share-zone%\Miscellany\j.asc"
 
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\msl.asc"
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\lbm\miscellany\lbm.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\gfe.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\atoi.asc"
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\copy of cc.asc"
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\it.asc"
 rem I put ni.bat before n.bat and m.bat because I want ni.bat to be the first file that is searched!
@@ -3706,7 +3706,7 @@ exit/b
 
 :xam
 
-set fp=* Open GFE Affinity files.
+set fp=* Open XAM Affinity files.
 
 rem lu: Aug-11-2021
 
@@ -3716,7 +3716,7 @@ echo %fp%
 set cbf-fn-list="%share-zone%\Miscellany\z.asc"
 
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\lbm\miscellany\lbm.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\gfe.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\atoi.asc"
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\copy of cc.asc"
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\it2.asc"
 rem I put ni.bat before n.bat and m.bat because I want ni.bat to be the first file that is searched!
@@ -3766,9 +3766,9 @@ rem lu: Apr-8-2022
 
 ::_
 
-:gfe
+:atoi
 
-set fp=* Open GFE Affinity files.
+set fp=* Open ATOI Affinity files.
 
 rem lu: Aug-11-2021
 
@@ -3778,7 +3778,7 @@ echo %fp%
 set cbf-fn-list="%share-zone%\Miscellany\J.asc"
 
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\lbm\miscellany\lbm.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\gfe.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\atoi.asc"
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\copy of cc.asc"
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\it2.asc"
 rem I put ni.bat before n.bat and m.bat because I want ni.bat to be the first file that is searched!
@@ -5177,7 +5177,7 @@ rem lu: Nov-2-2018
 
 :initialize_big_environment
 
-set fp=* Initialize GFE environment.
+set fp=* Initialize ATOI environment.
 
 rem lu: Dec-4-2018
 
@@ -5197,7 +5197,7 @@ set cbf-repo=C:\Users\[put--name-of-user-of-interest-here]\j
 set composable-batch-files=C:\Users\[put--name-of-user-of-interest-here]\j\Composable-Batch-Files
 set JAVA_TOOL_OPTIONS=
 set KITCHEN_YAML=.kitchen-aws.yml
-set machinename=gfe
+set machinename=atoi
 
 call ni full_pem
 set SSH_KEY_PATH=%cbf-full-pem%

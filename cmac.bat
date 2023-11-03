@@ -1,8 +1,9 @@
 :_
 
 @echo off
+if "%~1" == "" goto c
 if "%~1" == "?" goto help
-goto main
+goto %1
 
 
 
@@ -41,7 +42,7 @@ Nov-3-2023
 :o
 :ocf
 echo. & echo * Open CMAC files.
-call pn ql>nul
+call t ql>nul
 echo.
 call me Aliases.s
 call me Clif.s

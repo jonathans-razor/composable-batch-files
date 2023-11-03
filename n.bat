@@ -1,4 +1,4 @@
-:_ Nickname Dictionary (!nb, !bfn)
+:_ Nickname Dictionary (!n, !bfn)
 
 @echo off
 
@@ -2175,7 +2175,7 @@ rem call pn exs>nul
 set cbf-ex=%cbf-pt%\My Official Inter-Computer Environment Variables.xlsx
 set cbf-fn=%cbf-app%
 exit/b
-rem set cbf-fn2=%cbf-pt%\Environment Variables from GFE on Aug-5-2021.txt
+rem set cbf-fn2=%cbf-pt%\Environment Variables from ATOI on Aug-5-2021.txt
 rem set cbf-fn3=%cbf-pt%\Environment Variables from XAM on Aug-5-2021.txt
 rem lu: Apr-29-2019
 
@@ -2337,7 +2337,7 @@ Java Home on XPS on Nov-19-2021 is:             C:\Program Files\Eclipse Adoptiu
 Java Home on XPS on Nov-18-2021 is:             C:\Program Files\Java\jdk1.8.0_241
 Java Runtime Path on Nov-18-2021 (JRE_HOME) is: C:\Program Files\Java\jdk1.8.0_241\jre
 
-Java Home on GFE on Dec-18-2020. I removed the first 1.
+Java Home on ATOI on Dec-18-2020. I removed the first 1.
 
 :C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe
 C:\Program Files\Java\jdk1.8.0_241\bin\java.exe
@@ -2348,7 +2348,7 @@ Java Home on XPS Nov-24-2020. I removed the first 2.
 C:\ProgramData\Oracle\Java\javapath\java.exe
 C:\Program Files\Java\jdk1.8.0_241\bin\java.exe
 
-:+ Java Home on GFE
+:+ Java Home on ATOI
 
 C:\Program Files\Common Files\Oracle\Java\javapath\java.exe
 C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe
@@ -2368,7 +2368,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.241-b07, mixed mode)
 
 c:\aa\jdk-11.0.9
 
-Prior to Nov-9-2020 Java Home on GFE was: c:\aa\Java_Jdk_1.8.0.241
+Prior to Nov-9-2020 Java Home on ATOI was: c:\aa\Java_Jdk_1.8.0.241
 
 setx -m JAVA_HOME "c:\aa\jdk-11.0.9"
 
