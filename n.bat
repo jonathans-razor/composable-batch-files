@@ -2012,6 +2012,7 @@ exit/b
 :hc2
 :po
 :fn
+:idv
 :disc
 :emdo
 :r
@@ -2020,7 +2021,7 @@ exit/b
 :resmc
 :s
 :v
-:pete2
+:pete
 :psc
 :dbf
 :vesp
@@ -3607,16 +3608,6 @@ lu: Oct-3-2023
 echo. & echo * %1.
 call pn emdo
 set cbf-fn=%cbf-pt%\%1.bul
-exit/b
-lu: Oct-3-2023
-
-
-
-::_
-:idv
-echo. & echo * %1.
-call pn emdo
-set cbf-fn=%cbf-pt%\%1.txt
 exit/b
 lu: Oct-3-2023
 
