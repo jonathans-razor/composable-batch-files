@@ -703,14 +703,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Nov-2-2023
 
 cls
@@ -728,6 +720,36 @@ call ph 28-find-the-index-of-the-first-occurrence-in-a-string.py sadbutsad but
 
 @echo on
 call ph 28-find-the-index-of-the-first-occurrence-in-a-string.py leetcode leeto
+
+echo.
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-3-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 6-zigzag-conversion.py paypalishiring 3
+
+@echo on
+call ph 6-zigzag-conversion.py paypalishiring 4
+
+@echo on
+call ph 6-zigzag-conversion.py A 1
 
 echo.
 
