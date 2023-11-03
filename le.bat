@@ -728,6 +728,28 @@ exit/b
 
 
 :_
+:Nov-3-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 6-zigzag-conversion.py paypalishiring 3
+
+@echo on
+call ph 6-zigzag-conversion.py paypalishiring 4
+
+@echo on
+call ph 6-zigzag-conversion.py A 1
+
+echo.
+
+exit/b
+
+
+
+:_
 
 :code-execution-area
 
@@ -743,13 +765,13 @@ cls
 call t d>nul
 
 @echo on
-call ph 6-zigzag-conversion.py paypalishiring 3
+call ph 35-search-insert-position.py 1 3 5 6 5
 
 @echo on
-call ph 6-zigzag-conversion.py paypalishiring 4
+call ph 35-search-insert-position.py 1 3 5 6 2
 
 @echo on
-call ph 6-zigzag-conversion.py A 1
+call ph 35-search-insert-position.py 1 3 5 6 7
 
 echo.
 

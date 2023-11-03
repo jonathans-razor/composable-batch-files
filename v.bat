@@ -2298,6 +2298,39 @@ creation date: Sep-25-2023
 
 ::_
 
+:ga
+
+:care
+
+:caret
+
+:echo
+
+set fp=* Line continuation with caret character.
+
+rem How do you continue a batch file line onto a second line?
+
+rem The caret only works with the "echo" statement and not the "rem" statement.
+
+rem expository echo statement
+
+rem lu: Nov-2-2018
+
+echo.
+echo %fp%
+
+echo.
+echo The Gettysburg Address is a speech that U.S. President Abraham Lincoln delivered during ^
+the American Civil War at the dedication of the Soldiers' National Cemetery in Gettysburg, ^
+Pennsylvania, on the afternoon of Thursday, November 19, 1863, four and a half months after ^
+the Union armies defeated those of the ...
+
+exit/b
+
+
+
+::_
+
 :caret
 :cubed-caret
 :hat-trick
@@ -2348,39 +2381,6 @@ echo.
 echo %fp%
 
 echo. & echo hey 1 & echo hey 2
-
-exit/b
-
-
-
-::_
-
-:ga
-
-:care
-
-:caret
-
-:echo
-
-set fp=* Line continuation with caret character.
-
-rem How do you continue a batch file line onto a second line?
-
-rem The caret only works with the "echo" statement and not the "rem" statement.
-
-rem expository echo statement
-
-rem lu: Nov-2-2018
-
-echo.
-echo %fp%
-
-echo.
-echo The Gettysburg Address is a speech that U.S. President Abraham Lincoln delivered during ^
-the American Civil War at the dedication of the Soldiers' National Cemetery in Gettysburg, ^
-Pennsylvania, on the afternoon of Thursday, November 19, 1863, four and a half months after ^
-the Union armies defeated those of the ...
 
 exit/b
 

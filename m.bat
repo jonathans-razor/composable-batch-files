@@ -17,13 +17,17 @@ cls
 
 echo. & echo * Perform simple miscellaneous tasks using a function routing style.
 
-echo. & echo * Usage: m [single parameter]
+echo. & echo   Usage: m [single parameter]
 
-echo. & echo * Parameter 1: Function to execute.
+echo. & echo   Parameter 1: Alias of the function you wish to execute.
 
-echo. & echo * Batch File Style: Function routing.
+echo. & echo   Batch File Style: Function routing.
 
-echo. & echo * Usage note: This file should only be used for simple functions that do not require many parameters or require a dedicated help section. A need for a more complicated process should be entered into a separate batch file.
+echo. & echo * Usage note: 
+echo   This file should only be used for simple functions that do not require many parameters ^
+or require a dedicated help section. If there is a need for a more complicated ^
+process should or multiple related commands, then a separate standalone batch file should ^
+be created.
 
 echo. & echo * Batch File Style: Multipurpose.
 

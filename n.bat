@@ -3385,19 +3385,6 @@ creation date: Sep-20-2023
 
 
 
-:_
-:acc
-echo. & echo * Angular Crash Course.
-call pn it
-set cbf-pt=%cbf-pt%\angular-crash-course-by-traversy-media
-set cbf-gho=https://github.com/bradtraversy/angular-crash-2021
-set cbf-gh=https://github.com/jonathans-razor/angular-crash-course-by-traversy-media
-set cbf-yt=https://www.youtube.com/watch?v=3dHNOWTI7H8
-exit/b
-lu: Sep-29-2023
-
-
-
 :_+ Bash
 
 
@@ -3634,18 +3621,6 @@ creation date: Jun-24-2023
 
 
 
-:_
-:d
-:dsa
-echo. & echo * Data structures and algorithms.
-call pn it>nul
-set cbf-pt=%cbf-pt%\dsa
-set cbf-gh=https://github.com/jonathans-razor/data-structures-and-algorithms
-exit/b
-lu: Oct-10-2023
-
-
-
 :_+ Code Compare Family
 
 
@@ -3732,19 +3707,6 @@ lu: Oct-13-2023
 echo. & echo * TheIncLab.
 call pn aa>nul
 set cbf-pt=%cbf-pt%\theinclab
-exit/b
-lu: Oct-17-2023
-
-
-
-:_
-:nwe
-echo. & echo * node-with-express-fireship-tutorial. Node.js Quickstart
-call pn it>nul
-set cbf-pt=%cbf-pt%\node-with-express-fireship-tutorial
-set cbf-gh=https://github.com/jonathans-razor/node-with-express-fireship-tutorial
-set cbf-url=https://fireship.io/courses/javascript/node-basics
-set cbf-yt=https://www.youtube.com/watch?v=ENrzD9HAZK4
 exit/b
 lu: Oct-17-2023
 
@@ -3985,20 +3947,6 @@ rem lu: Jan-26-2022
 
 
 
-:_
-:prat
-set cbf-pd=python-rest-api-tutorial
-echo. & echo * %cbf-pd%.
-call pn it>nul
-set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-gh=%cbf-gh%/%cbf-pd%
-set cbf-yt=https://www.youtube.com/watch?v=qbLc5a9jdXo
-set cbf-url=https://api.stackexchange.com
-exit/b
-lu: Oct-31-2023
-
-
-
 :_+ Language Functions Family (!fylfn) (skw language-functions-series-jj)
 
 
@@ -4121,6 +4069,62 @@ call pn up>nul
 set cbf-pt=%cbf-pt%\pictures\screenshots
 exit/b
 creation date: Jul-12-2023
+
+
+
+:_+ Find a Job Family (!fycfj)
+
+
+
+::_
+:prat
+set cbf-pd=python-rest-api-tutorial
+echo. & echo * %cbf-pd%.
+call pn it>nul
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-gh=%cbf-gh%/%cbf-pd%
+set cbf-yt=https://www.youtube.com/watch?v=qbLc5a9jdXo
+set cbf-url=https://api.stackexchange.com
+exit/b
+lu: Oct-31-2023
+
+
+
+::_
+:nwe
+echo. & echo * node-with-express-fireship-tutorial. Node.js Quickstart
+call pn it>nul
+set cbf-pt=%cbf-pt%\node-with-express-fireship-tutorial
+set cbf-gh=https://github.com/jonathans-razor/node-with-express-fireship-tutorial
+set cbf-url=https://fireship.io/courses/javascript/node-basics
+set cbf-yt=https://www.youtube.com/watch?v=ENrzD9HAZK4
+exit/b
+lu: Oct-17-2023
+
+
+
+::_
+:d
+:dsa
+echo. & echo * Data structures and algorithms.
+call pn it>nul
+set cbf-pt=%cbf-pt%\dsa
+set cbf-gh=https://github.com/jonathans-razor/data-structures-and-algorithms
+exit/b
+lu: Oct-10-2023
+
+
+
+::_
+:acc
+echo. & echo * Angular Crash Course.
+call pn it
+set cbf-pt=%cbf-pt%\angular-crash-course-by-traversy-media
+set cbf-gho=https://github.com/bradtraversy/angular-crash-2021
+set cbf-gh=https://github.com/jonathans-razor/angular-crash-course-by-traversy-media
+set cbf-yt=https://www.youtube.com/watch?v=3dHNOWTI7H8
+exit/b
+lu: Sep-29-2023
 
 
 
