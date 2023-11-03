@@ -39,6 +39,7 @@ Composable Batch Files (CBF) - Table of Contents
       cf  Surf to Confluence.
       cl  Clear without modifying the path.
      clc  Simple calculator.
+    cmac  CMAC operations.
     cmpf  Are 2 files the same?
     coco  Code Compare.
    cocod  Run Code Compare using 2 DCVs.

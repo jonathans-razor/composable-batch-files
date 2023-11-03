@@ -30,10 +30,13 @@ echo. & echo * Batch File Style: Multipurpose.
 echo.
 echo          Parameter  Description
 echo ------------------  --------------------------------------------------------
-echo                ccm  Compile CMAC macros.
+echo                ctm  Create timestamped file.
 echo               free  Report on free hard disk space.
 echo               ipco  Ipconfig/all.
+echo                ise  Initialize environment. 
 echo               log4  Is log4j jar file present?
+echo                ocf  Open CMAC files.
+echo               path  Pipe path to file.
 echo                sde  Set default text editor.
 echo               tran  Open latest transfer.
 echo                 ss  Open latest screenshot.
@@ -107,6 +110,39 @@ echo             wiz_lh  Run wizard that builds a WAR file for localhost.
 echo             wiz_jv  Run wizard that builds only Java changes for localhost.
 echo           wiz_prod  Run wizard that builds a WAR file for production.
 echo           wiz_stag  Run wizard that builds a WAR file for staging.
+
+
+
+:_
+
+Metadata: Track Size (!tsm)
+
+     Date      Lines      Bytes  Functions  Notes
+ -----------  ------  ---------  ---------  -------------------------------------------------
+
+: Nov-3-2023   5,835     97,420      249
+
+: Jan-1-2019   3,870     67,129      166
+
+:Jun-13-2018   3,287     61,665      136
+
+: Feb-9-2018   2,944     57,139      120
+
+: Jan-4-2018   2,891     56,098      117
+
+: Nov-9-2017   2,645     49,604      101
+
+: Aug-8-2017   2,432     44,512       91
+
+: Aug-2-2017   2,274     43,034       82
+
+: May-9-2017   2,126     40,700       75
+
+:Apr-17-2017   1,574     22,170       60
+
+:Apr-11-2017   1,310     17,930       53
+
+: Apr-6-2017     893     12,731       38
 
 
 
@@ -370,37 +406,6 @@ call :set_wildfly_location
 call %wildfly_location%\bin\standalone.bat
 
 exit/b
-
-
-
-:_
-
-Metadata: Track Size (!tsm)
-
-     Date      Lines      Bytes  Functions  Notes
- -----------  ------  ---------  ---------  -------------------------------------------------
-
-: Jan-1-2019   3,870     67,129      166
-
-:Jun-13-2018   3,287     61,665      136
-
-: Feb-9-2018   2,944     57,139      120
-
-: Jan-4-2018   2,891     56,098      117
-
-: Nov-9-2017   2,645     49,604      101
-
-: Aug-8-2017   2,432     44,512       91
-
-: Aug-2-2017   2,274     43,034       82
-
-: May-9-2017   2,126     40,700       75
-
-:Apr-17-2017   1,574     22,170       60
-
-:Apr-11-2017   1,310     17,930       53
-
-: Apr-6-2017     893     12,731       38
 
 
 
@@ -4241,6 +4246,7 @@ cmd_start_db
 
 lq
 
+rem qq
 tdc ma
 
 rem I saw a case where the API will build but not run, so you may want to run on your
@@ -4832,94 +4838,7 @@ exit/b
 
 
 
-:_+ Generate Date as Filename
-
-
-
-::_
-
-:atn
-:ctf
-:file
-:gdaf
-
-echo. & echo * Create timestamped file.
-
-rem skw: add timestamped file, Create New File, Generate a timestamped name file, create file, make test file
-
-rem The below class name is case sensitive.
-java -classpath %composable-batch-files% Get_timestamp_for_use_as_filename>date_as_filename.txt
-
-set /p date_as_filename=<date_as_filename.txt
-
-ren date_as_filename.txt %date_as_filename%.txt
-
-dir *.txt
-
-exit/b
-rem This works.
-rem lu: Jun-12-2020
-
-
-
-::_
-
-:gdt_old
-
-:generate_date_as_filename
-
-set fp=* Generate date as filename.
-
-rem fcd: Mar-12-2019
-
-echo.
-echo %fp%
-
-call t cbf
-
-rem The below class name is case sensitive.
-java -cp . Get_timestamp_for_use_as_filename>%tmp%\mercury_date_as_filename.txt
-
-set /p date_as_filename=<%tmp%\mercury_date_as_filename.txt
-
-echo Mar-12-2019
-
-echo %date_as_filename%
-
-exit/b
-
-
-
-::_
-
-:gdt_1
-
-:generate_date_as_filename
-
-set fp=* Generate date as filename.
-
-rem fcd: Mar-12-2019
-
-rem This works.
-
-echo.
-echo %fp%
-
-call t a
-
-rem The below class name is case sensitive.
-java -classpath %composable-batch-files% Get_timestamp_for_use_as_filename>%tmp%\date_as_filename.txt
-
-set /p date_as_filename=<%tmp%\date_as_filename.txt
-
-echo.
-echo %date_as_filename%
-
-exit/b
-
-
-
-::_
+:_
 
 :net
 
@@ -5015,7 +4934,6 @@ exit/b
 :rc-xps
 
 echo. & echo * Initialize environment. The idea is to create a pit of success for the user.
-
 
 set JAVA_TOOL_OPTIONS=
 
@@ -5560,54 +5478,6 @@ exit/b 0
 
 :_
 
-:star-pql
-
-echo. & echo * Start Postgres database server.
-
-rem lu: May-10-2022
-
-call t pql
-
-pg_ctl.exe -D "C:\Program Files\PostgreSQL\14\data" start
-
-exit/b
-
-
-
-:_
-
-:stop-pql
-
-echo. & echo * Stop Postgres database server.
-
-rem lu: May-10-2022
-
-call t pql
-
-pg_ctl.exe -D "C:\Program Files\PostgreSQL\14\data" stop
-
-exit/b
-
-
-
-:_
-
-:a-pql
-
-echo. & echo * Is Postgres database server alive?
-
-rem lu: May-10-2022
-
-call t pql
-
-pg_isready.exe
-
-exit/b
-
-
-
-:_
-
 :log4
 
 echo. & echo * Is log4j jar file present?
@@ -5691,87 +5561,6 @@ lu: Oct-10-2023
 
 
 
-:_
-:ocf
-echo. & echo * Open CMAC files.
-call pn ql>nul
-call me Aliases.s
-call me Clif.s
-call me Finder.s
-call me Format.s
-call me "Jonathan's_Macros.s"
-call me ListMgr.s
-call me Regexes.s
-call me Searcher.s
-call me Shared.s
-
-exit/b
-lu: Nov-3-2023
-
-
-
-:_
-:ccm
-
-echo. & echo * Compile CMAC macros.
-echo.
-
-set macro_folder=%dropbox%\Multi-Edit_2008_Config_Files\Mac
-
-echo Compile Aliases.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Aliases.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Shared.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Shared.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Regexes.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Regexes.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Finder.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Finder.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Format.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Format.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile ListMgr.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\ListMgr.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Clif.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Clif.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Searcher.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Searcher.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Jonathan's_Macro.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Jonathan's_Macros.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Build CMAC Macros.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Build_CMAC_Macros.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-:This works.
-rem :"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%"
-rem :cmacwin.exe "%filename%" -p"%macro_folder%"
-rem :"c:\program files (x86)\multi-edit 2008\cmacwin.exe"
-rem :cmacwin.exe
-
-exit/b
-
-lu:
-Nov-3-2023
-Feb-19-2019
-
-
-
 :_+ Automated Openers
 
 
@@ -5820,6 +5609,32 @@ echo. & echo * cbf-transfer-item: %cbf-transfer-item%
 "%cbf-transfer-item%"
 
 exit/b
+
+
+
+:_
+
+:atn
+:ctf
+:file
+:gdaf
+
+echo. & echo * Create timestamped file.
+
+rem skw: add timestamped file, Create New File, Generate a timestamped name file, create file, make test file
+
+rem The below class name is case sensitive.
+java -classpath %composable-batch-files% Get_timestamp_for_use_as_filename>date_as_filename.txt
+
+set /p date_as_filename=<date_as_filename.txt
+
+ren date_as_filename.txt %date_as_filename%.txt
+
+dir *.txt
+
+exit/b
+rem This works.
+rem lu: Jun-12-2020
 
 
 
