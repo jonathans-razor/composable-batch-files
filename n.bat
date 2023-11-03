@@ -2607,17 +2607,6 @@ exit/b
 
 
 :_
-:scsh
-:ss
-echo. & echo * Screenshots folder.
-call pn up>nul
-set cbf-pt=%cbf-pt%\pictures\screenshots
-exit/b
-creation date: Jul-12-2023
-
-
-
-:_
 
 :foo
 
@@ -3572,17 +3561,6 @@ rem lu: Aug-18-2021
 
 
 ::_
-:ccm
-echo. & echo * Compile CMAC macros.
-call pn belf
-set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-app=%cbf-pt%\compile_cmac_files_1.bat
-exit/b
-rem lu: Aug-18-2021
-
-
-
-::_
 :repa
 echo. & echo * Relative path.
 set cbf-pt=\test\integration
@@ -4139,6 +4117,17 @@ set cbf-app=C:\Users\jonat\AppData\Local\Postman\Postman.exe
 set cbf-url=https://web.postman.com
 
 exit/b
+
+
+
+:_
+:scsh
+:ss
+echo. & echo * Screenshots folder.
+call pn up>nul
+set cbf-pt=%cbf-pt%\pictures\screenshots
+exit/b
+creation date: Jul-12-2023
 
 
 

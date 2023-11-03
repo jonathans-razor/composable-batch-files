@@ -30,10 +30,13 @@ echo. & echo * Batch File Style: Multipurpose.
 echo.
 echo          Parameter  Description
 echo ------------------  --------------------------------------------------------
+echo                ccm  Compile CMAC macros.
 echo               free  Report on free hard disk space.
 echo               ipco  Ipconfig/all.
 echo               log4  Is log4j jar file present?
 echo                sde  Set default text editor.
+echo               tran  Open latest transfer.
+echo                 ss  Open latest screenshot.
 
 exit/b
 
@@ -3376,69 +3379,6 @@ exit/b
 
 :_
 
-:ccm
-
-set fp=* Compile CMAC macros.
-
-rem lu: Feb-19-2019
-
-echo.
-echo %fp%
-
-set macro_folder=%dropbox%\Multi-Edit_2008_Config_Files\Mac
-
-echo Compile Aliases.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Aliases.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Shared.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Shared.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Regexes.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Regexes.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Finder.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Finder.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Format.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Format.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile ListMgr.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\ListMgr.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Clif.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Clif.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Searcher.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Searcher.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Jonathan's_Macro.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Jonathan's_Macros.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-echo Compile Build CMAC Macros.
-set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Build_CMAC_Macros.s
-"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
-
-:This works.
-rem :"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%"
-rem :cmacwin.exe "%filename%" -p"%macro_folder%"
-rem :"c:\program files (x86)\multi-edit 2008\cmacwin.exe"
-rem :cmacwin.exe
-
-exit/b
-
-
-
-:_
-
 :si
 
 :syin
@@ -5470,33 +5410,6 @@ exit/b
 
 
 
-:_
-
-:scsh
-:ss
-
-echo. & echo * Open latest screenshot.
-
-rem (file contents, get file contents into an environment variable: skw)
-
-rem lu: Jul-8-2021
-
-call t scsh
-
-if errorlevel 1 exit/b
-
-dir /b /o-d>c:\a\screen-shot-results.txt
-
-set /p cbf-screen-shot=<c:\a\screen-shot-results.txt
-
-echo. & echo * cbf-screen-shot: %cbf-screen-shot%
-
-"%cbf-screen-shot%"
-
-exit/b
-
-
-
 :_+ The existence of a particular file plus testing.
 
 
@@ -5775,6 +5688,138 @@ echo. & echo * Ipconfig.
 ipconfig/all
 exit/b
 lu: Oct-10-2023
+
+
+
+:_
+:ocf
+echo. & echo * Open CMAC files.
+call pn ql>nul
+call me Aliases.s
+call me Clif.s
+call me Finder.s
+call me Format.s
+call me "Jonathan's_Macros.s"
+call me ListMgr.s
+call me Regexes.s
+call me Searcher.s
+call me Shared.s
+
+exit/b
+lu: Nov-3-2023
+
+
+
+:_
+:ccm
+
+echo. & echo * Compile CMAC macros.
+echo.
+
+set macro_folder=%dropbox%\Multi-Edit_2008_Config_Files\Mac
+
+echo Compile Aliases.
+set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Aliases.s
+"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
+
+echo Compile Shared.
+set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Shared.s
+"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
+
+echo Compile Regexes.
+set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Regexes.s
+"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
+
+echo Compile Finder.
+set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Finder.s
+"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
+
+echo Compile Format.
+set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Format.s
+"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
+
+echo Compile ListMgr.
+set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\ListMgr.s
+"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
+
+echo Compile Clif.
+set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Clif.s
+"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
+
+echo Compile Searcher.
+set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Searcher.s
+"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
+
+echo Compile Jonathan's_Macro.
+set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Jonathan's_Macros.s
+"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
+
+echo Compile Build CMAC Macros.
+set filename=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit\Build_CMAC_Macros.s
+"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%" -WE -I"c:\program files (x86)\Multi-Edit 2008\Src"
+
+:This works.
+rem :"c:\program files (x86)\multi-edit 2008\cmacwin.exe" "%filename%" -p"%macro_folder%"
+rem :cmacwin.exe "%filename%" -p"%macro_folder%"
+rem :"c:\program files (x86)\multi-edit 2008\cmacwin.exe"
+rem :cmacwin.exe
+
+exit/b
+
+lu:
+Nov-3-2023
+Feb-19-2019
+
+
+
+:_+ Automated Openers
+
+
+
+::_
+
+:scsh
+:ss
+
+echo. & echo * Open latest screenshot.
+
+rem (file contents, get file contents into an environment variable: skw)
+
+rem lu: Jul-8-2021
+
+call t scsh
+
+if errorlevel 1 exit/b
+
+dir /b /o-d>c:\a\screen-shot-results.txt
+
+set /p cbf-screen-shot=<c:\a\screen-shot-results.txt
+
+echo. & echo * cbf-screen-shot: %cbf-screen-shot%
+
+"%cbf-screen-shot%"
+
+exit/b
+
+
+
+::_
+
+:tran
+
+echo. & echo * Open latest transfer folder item.
+
+call t tran || exit/b
+
+dir /b /o-d>%tmp%\transfer-folder-results.txt
+
+set /p cbf-transfer-item=<%tmp%\transfer-folder-results.txt
+
+echo. & echo * cbf-transfer-item: %cbf-transfer-item%
+
+"%cbf-transfer-item%"
+
+exit/b
 
 
 

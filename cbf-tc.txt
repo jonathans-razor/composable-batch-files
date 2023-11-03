@@ -26,6 +26,7 @@ Composable Batch Files (CBF) - Table of Contents
        c  Clear without modifying the path.
       ca  Go to a folder and clear the screen.
      cat  Wrapper around type command.
+     ccm  Compile CMAC macros.
       cf  Execute the Confluence DCV for the passed in alias.
    cbf-2  Shows more CBF files.
   cbf-el  CBF Error Level Codes.
