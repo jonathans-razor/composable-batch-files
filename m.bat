@@ -43,15 +43,7 @@ echo                 ss  Open latest screenshot.
 
 exit/b
 
-lu: Apr-27-2023
-
-
-
-:_
-
-   .--.      .--.      .--.      .--.      .--.
- :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::
-        `--'      `--'      `--'      `--'      `--' 
+lu: Nov-3-2023
 
 
 
@@ -143,6 +135,14 @@ Metadata: Track Size (!tsm)
 :Apr-11-2017   1,310     17,930       53
 
 : Apr-6-2017     893     12,731       38
+
+
+
+:_
+
+   .--.      .--.      .--.      .--.      .--.
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::
+        `--'      `--'      `--'      `--'      `--' 
 
 
 
@@ -4246,7 +4246,6 @@ cmd_start_db
 
 lq
 
-rem qq
 tdc ma
 
 rem I saw a case where the API will build but not run, so you may want to run on your
