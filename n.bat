@@ -1940,7 +1940,7 @@ call tdp ma>nul
 
 set cbf-pt=%cd%
 
-set cbf-fn=%cbf-pt%\cart_vscode.code-workspace
+set cbf-fn=%cbf-pt%\riverstone_vscode.code-workspace
 
 exit/b
 

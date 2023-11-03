@@ -1102,7 +1102,7 @@ set cbb-pt=%cbf-pt%\%cbf-pd%
 
 set cbf-jpg=%cbf-pt%\The difference between the CHIS and ETD folders before I make ticket lbm-1488 changes.png
 
-set cbf-jpg2=%cbf-pt%\%cbf-pd%\The difference between the CART and ETD folders before I make ticket lbm-1488 changes.png
+set cbf-jpg2=%cbf-pt%\%cbf-pd%\The difference between the riverstone and ETD folders before I make ticket lbm-1488 changes.png
 
 exit/b
 

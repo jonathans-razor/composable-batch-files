@@ -3166,9 +3166,9 @@ exit/b
 
 :_
 
-:cart_count
+:riverstone_count
 
-set fp=* Count lines of code in Cart.
+set fp=* Count lines of code in riverstone.
 
 rem lu: Oct-17-2018
 
@@ -3177,11 +3177,11 @@ echo %fp%
 
 del %temp%\j1.txt
 
-rem call t cart
+rem call t riverstone
 
-rem call cp.bat copy_cart_cs_files_to_a_temp_folder
+rem call cp.bat copy_riverstone_cs_files_to_a_temp_folder
 
-cd /d %temp%\cart_cs
+cd /d %temp%\riverstone_cs
 
 for /r %%j in (*.cs) do type "%%j">>"%temp%\j1.txt"
 
@@ -3405,13 +3405,13 @@ exit/b
 
 :cart_path_only
 
-set fp=* Is this hole cart path only? Disallow check-ins from the cart path.
+set fp=* Is this hole cart path only? Disallow check-ins from the riverstone path.
 
 rem lu: Mar-18-2019
 
 rem echo %fp%
 
-echo %cd% | find /i "j\cart_cookbook">nul
+echo %cd% | find /i "j\riverstone_cookbook">nul
 
 if %errorlevel% == 0 (
   echo.
@@ -3419,11 +3419,11 @@ if %errorlevel% == 0 (
   exit/b 0
 )
 
-echo %cd% | find /i "\cart">nul
+echo %cd% | find /i "\riverstone">nul
 
 if %errorlevel% == 0 (
   echo.
-  echo * You are on the cart path. You've been a bad golfer.
+  echo * You are on the riverstone path. You've been a bad golfer.
   exit/b 1
 )
 
@@ -4074,7 +4074,7 @@ exit/b
 
 :rc
 
-set fp=* How to run CART locally, the overarching process.
+set fp=* How to run riverstone locally, the overarching process.
 
 rem lu: Mar-30-2020
 
@@ -4113,9 +4113,9 @@ rem Also read direction on how to attach the debugger at: &atde
 j bash
 
 rem Run 1 of the following. First one is easier.
-rem ./get_cart_jwt.sh
+rem ./get_riverstone_jwt.sh
 rem or
-rem ./craigs_get_cart_jwt_rpl.sh - deprecated
+rem ./craigs_get_riverstone_jwt_rpl.sh - deprecated
 rem If you have an issue with obtaining the jwt, you can try getting the latest jwt script
 rem from "td scri".
 
@@ -4166,7 +4166,7 @@ gr build_jar
 
 td lib
 
-ren cart-api-1.2.0.jar cart-api.jar
+ren riverstone-api-1.2.0.jar riverstone-api.jar
 
 td dp
 
@@ -4196,9 +4196,9 @@ cd /var/www
 
 sudo mkdir html
 
-cd /opt/cart
+cd /opt/riverstone
 
-sudo cp /tmp/cart-api.jar .
+sudo cp /tmp/riverstone-api.jar .
 
 sudo cp /tmp/ui.zip .
 
@@ -4212,9 +4212,9 @@ sudo unzip -o ./ui.zip -d /var/www/html/
 rem On master server only.
 export SERVER_NODE=master
 
-sudo service cart restart
+sudo service riverstone restart
 
-sudo service cart status
+sudo service riverstone status
 
 rem Verify that the server is working.
 
@@ -4256,7 +4256,7 @@ gr build_jar_for_fqt
 
 td lib
 
-ren cart-api-1.2.0.jar cart-api.jar
+ren riverstone-api-1.2.0.jar riverstone-api.jar
 
 td dp
 
@@ -4286,9 +4286,9 @@ cd /var/www
 
 sudo mkdir html
 
-cd /opt/cart
+cd /opt/riverstone
 
-sudo cp /tmp/cart-api.jar .
+sudo cp /tmp/riverstone-api.jar .
 
 sudo cp /tmp/ui.zip .
 
@@ -4304,11 +4304,11 @@ sudo unzip -o ./ui.zip -d /var/www/html/
 rem On master server only.
 export SERVER_NODE=master
 
-sudo nohup ./cart-api.jar &
+sudo nohup ./riverstone-api.jar &
 
-sudo service cart restart
+sudo service riverstone restart
 
-sudo service cart status
+sudo service riverstone status
 
 rem Verify that the website is up.
 
@@ -4356,7 +4356,7 @@ exit/b
 
 :lnk_ui
 
-set fp=* CART UI
+set fp=* riverstone UI
 
 rem lu: Mar-26-2020
 
@@ -4475,7 +4475,7 @@ exit/b
 
 :lnk_api
 
-set fp=* CART API
+set fp=* riverstone API
 
 rem Run API cmd, for use by shortcut icons.
 
