@@ -48,12 +48,6 @@ call t c & call g dirt
 
 :_
 call sep
-call t ql & call g dirt
-
-
-
-:_
-call sep
 call t dsa & call g dirt
 
 
@@ -65,6 +59,12 @@ cd /d %cbf-current-folder%
 echo.
 
 exit/b
+
+
+
+:_
+call sep
+call t ql & call g dirt
 
 
 
