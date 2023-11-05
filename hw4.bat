@@ -25,8 +25,8 @@ echo --------------------  -----------------------------------------------------
 echo           function-1  Function that does [blank].
 echo           function-2  Function that does [blank].
 echo           function-3  Function in ANOTHER batch file that does [blank].
-echo    same-function-3ds  Same function called 2 different ways.
 echo        all-functions  Function that runs all functions.
+echo                  4ds  Same function called 2 different syntaxes.
 
 echo.
 echo Question: How many functions are in this file?
@@ -69,12 +69,13 @@ exit/b
 
 
 :_
-:same-function-3ds
-rem qq
-echo. & echo * Same function called 3 different syntaxes.
+:4ds
+echo. & echo * Same function called 4 different syntaxes.
 call :function-3
 call hw4 function-3
 call %0 function-3
+goto function-3
+rem Question: What is the difference between "call" and "goto"?
 exit/b
 
 
