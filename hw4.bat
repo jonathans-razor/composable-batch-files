@@ -25,7 +25,7 @@ echo --------------------  -----------------------------------------------------
 echo           function-1  Function that does [blank].
 echo           function-2  Function that does [blank].
 echo           function-3  Function in ANOTHER batch file that does [blank].
-echo    same-function-2dw  Same function called 2 different ways.
+echo    same-function-3ds  Same function called 2 different ways.
 echo        all-functions  Function that runs all functions.
 
 echo.
@@ -69,10 +69,12 @@ exit/b
 
 
 :_
-:same-function-2dw
-echo. & echo * Same function called 2 different ways.
+:same-function-3ds
+rem qq
+echo. & echo * Same function called 3 different syntaxes.
 call :function-3
 call hw4 function-3
+call %0 function-3
 exit/b
 
 
