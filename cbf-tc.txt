@@ -111,8 +111,8 @@ example-  Prefix for files written by other authors for learning and comparison 
      hw2  Echo off, pause and exit.
 qq
      hw3  Teaches parameters for accessing help or none, exit/b and displaying help.
-     hw4  Composed batch file.
-     hw5  Exterior batch file.
+     hw4  Hello World batch file that demonstrates the basic function structure behind Composable Batch Files.
+     hw5  Demonstrates how to call a function in a different batch file.
        i  Show or clear CBF environment variables.
        j  Simulate a double-click using default precedence operation or a DCV.
      jav  Edit Java DCV file in VSC.

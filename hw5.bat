@@ -13,7 +13,7 @@ goto %1
 
 cls 
 
-echo. & echo * This file demonstrates how to call a function in a different batch file.
+echo. & echo * Demonstrates how to call a function in a different batch file.
 
 echo. & echo * Usage: %0 [single parameter]
 
