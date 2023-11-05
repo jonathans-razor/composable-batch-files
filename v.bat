@@ -2517,12 +2517,13 @@ lu: Oct-13-2023
 
 
 ::_
-:c3f
+:c4f
 cls
-echo. & echo * Call 3 functions.
+echo. & echo * Call 4 functions.
 call %0 function-1
 call %0 function-2
 call %0 function-3
+call hw5 function-1
 exit/b
 
 

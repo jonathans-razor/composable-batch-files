@@ -38,68 +38,17 @@ rem creation date:
 
 
 
-:_
-:upgr
-
-echo. & echo * Upgrade Python.
-
-python -m pip install --upgrade pip
-
-exit/b
-
-
-
-:_
-:list
-:pass in an array of numbers
-
-:pass in an array of strings
-
-
-
-echo. & echo * Show installed modules.
-
-echo.
-pip list
-
-exit/b
-
-
-
-
-:_
-:unin
-
-echo. & echo * Uninstall module.
-
-if "%~2" == "" (
-  call err Expected module name. Sep-21-2023_12_48_PM
-  exit/b
-)
-
-@echo on
-pip uninstall %2
-
-exit/b
-
-
-
-:_
-:uvic
-
-echo. & echo * Run uvicorn.
-
-echo.
-uvicorn hello-world-api-using-python-and-fastapi:app --reload
-
-exit/b
-
-lu:
-Sep-27-2023
-
-
-
 :_+ Language Feature Family (!fylgphy) (skw language-functions-series-jj)
+
+
+
+::_
+:c4f
+cls
+echo. & echo * Call 4 functions.
+echo.
+python call-4-functions.py
+exit/b
 
 
 
@@ -343,6 +292,67 @@ echo.
 pip --version
 
 exit/b
+
+
+
+:_
+:upgr
+
+echo. & echo * Upgrade Python.
+
+python -m pip install --upgrade pip
+
+exit/b
+
+
+
+:_
+:list
+:pass in an array of numbers
+
+:pass in an array of strings
+
+
+
+echo. & echo * Show installed modules.
+
+echo.
+pip list
+
+exit/b
+
+
+
+
+:_
+:unin
+
+echo. & echo * Uninstall module.
+
+if "%~2" == "" (
+  call err Expected module name. Sep-21-2023_12_48_PM
+  exit/b
+)
+
+@echo on
+pip uninstall %2
+
+exit/b
+
+
+
+:_
+:uvic
+
+echo. & echo * Run uvicorn.
+
+echo.
+uvicorn hello-world-api-using-python-and-fastapi:app --reload
+
+exit/b
+
+lu:
+Sep-27-2023
 
 
 

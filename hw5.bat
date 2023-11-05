@@ -28,7 +28,7 @@ exit/b
 
 :_
 :function-1
-echo. & echo Function 3 in %0.bat.
+echo. & echo * Function 1 in %0.bat.
 rem Put some code here.
 exit/b
 
