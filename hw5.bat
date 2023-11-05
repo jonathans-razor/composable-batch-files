@@ -2,20 +2,7 @@
 
 @echo off
 
-
-
-:_
-
-set cbf-filep=* This file is used to illustrate how Composable Batch Files work.
-
-
-
-:_
-
-set fp=* Route callers.
-
 if "%~1" == "" goto help
-
 if "%~1" == "?" goto help
 
 goto %1
@@ -26,34 +13,27 @@ goto %1
 
 :help
 
-echo.
-echo %cbf-filep%
+cls 
 
-echo.
-echo Usage: hello_world_2.bat [single parameter]
+echo. & echo * This file demonstrates how to call a function in a different batch file.
+
+echo. & echo * Usage: %0 [single parameter]
 
 echo.
 echo     Parameter  Description
 echo -------------  -----------------------------------------------------
-echo    function_3  Function that does [blank].
+echo    function-1  Function that does [blank].
 
 exit/b
 
 
 
 :_
-
-:function_3
-
-set fp=* Function 3. Code from another batch file.
-
-echo.
-echo %fp%
-
-rem echo * From %0.bat. Put some code here.
-
+:function-1
+echo. & echo Function 3 in %0.bat.
+rem Put some code here.
 exit/b
 
 
 
-:_ (!rfsp) (mov-9)
+:_

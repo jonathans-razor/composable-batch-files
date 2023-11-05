@@ -3,6 +3,7 @@
 
 if "%~1" == "" goto help
 
+rem The line below is is a very helpful command.
 goto %1
 
 
@@ -11,110 +12,78 @@ goto %1
 
 :help
 
-echo. & echo * Hello World batch file that demonstrates the basic structure concept behind Composable Batch Files.
+cls
 
-echo. & echo * Usage: %0 [Parameter 1]
+echo. & echo * Hello World batch file that demonstrates the basic function structure behind Composable Batch Files.
 
-echo. & echo Parameter 1: Function you wish to execute.
+echo. & echo   Usage: %0 [Parameter 1]
 
-echo.
-echo       Parameter  Description
-echo ---------------  -----------------------------------------------------
-echo      function-1  Function that does [blank].
-echo      function-2  Function that does [blank].
-echo      function-3  Function in ANOTHER batch file that does [blank].
-echo  some_functions  Function that runs some functions.
-echo   all_functions  Function that runs all functions.
-
-exit/b
-
-echo Last Updated: Jun-21-2023
-
-
-
-:_
-
-:some-functions
-
-set fp=* Some functions.
+echo. & echo * Parameter 1: Function you wish to execute.
 
 echo.
-echo %fp%
-
-call :function-1
-
-call hello_world_3 function_3
-
-exit/b
-
-
-
-:_
-
-:all_functions
-
-set fp=* All functions.
+echo            Parameter  Description
+echo --------------------  -----------------------------------------------------
+echo           function-1  Function that does [blank].
+echo           function-2  Function that does [blank].
+echo           function-3  Function in ANOTHER batch file that does [blank].
+echo    same-function-2dw  Same function called 2 different ways.
+echo        all-functions  Function that runs all functions.
 
 echo.
-echo %fp%
-
-call :function-1
-
-call :function-2
-
-call hello_world_2 function_3
+echo Question: How many functions are in this file?
 
 exit/b
 
-
-
-:_
-
-:function-2
-
-set fp=* Function 2. Another call to this batch file.
-
-echo.
-echo %fp%
-
-rem echo * Put some code here.
-
-exit/b
-
-
-
-:_
-
-:composer_function
-
-set fp=* Composing encourages modularity, which is a software best practice.
-
-echo.
-echo %fp%
-
-call :function-1
-
-call :function-2
-
-exit/b
-
-
-
-:_
-
-:function-3
-
-set fp=* Function 3. A call to another batch file.
-
-call hello_world_2 function-3
-
-exit/b
 
 
 :_
 :function-1
 echo. & echo * Function 1.
-echo. & echo * Put some code here.
+rem Put some code here.
+exit/b
+
+
+
+:_
+:function-2
+echo. & echo * Function 2.
+rem Put some code here.
+exit/b
+
+
+
+:_
+:function-3
+echo. & echo * Function 3.
+rem Put some code here.
+exit/b
+
+
+:_
+:all-functions
+echo. & echo %fp% * All functions.
+call :function-1
+call :function-2
+call :function-3
+exit/b
+
+
+
+:_
+:same-function-2dw
+echo. & echo * Same function called 2 different ways.
+call :function-3
+call hw4 function-3
+exit/b
+
+
+
+:_
+:function-4
+cls
+echo. & echo * Function 3 in another batch file.
+call hw5 function-1
+
 exit/b
 
 

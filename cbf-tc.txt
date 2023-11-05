@@ -107,8 +107,9 @@ example-  Prefix for files written by other authors for learning and comparison 
       he  Hello world everyone. Runs all hello world programs separately or together.
     herk  Heroku.
     hist  Doskey /history. Display the previous 50 commands.
-      hw  Hello world. The simplest possible batch file.
+     hw1  Hello world. The simplest possible batch file.
      hw2  Echo off, pause and exit.
+qq
      hw3  Teaches parameters for accessing help or none, exit/b and displaying help.
      hw4  Composed batch file.
      hw5  Exterior batch file.
