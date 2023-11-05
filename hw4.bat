@@ -1,4 +1,3 @@
-:_
 @echo off
 
 if "%~1" == "" goto help
@@ -61,7 +60,7 @@ exit/b
 
 :_
 :all-functions
-echo. & echo %fp% * All functions.
+echo. & echo * All functions.
 call :function-1
 call :function-2
 call :function-3

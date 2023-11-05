@@ -2517,8 +2517,40 @@ lu: Oct-13-2023
 
 
 ::_
+:c3f
+cls
+echo. & echo * Call 3 functions.
+call %0 function-1
+call %0 function-2
+call %0 function-3
+exit/b
+
+
+
+::_
 :docs
 call sf [docs URL alias]
+exit/b
+
+
+
+::_
+:function-1
+echo. & echo * %1 in %0.bat.
+exit/b
+
+
+
+::_
+:function-2
+echo. & echo * %1 in %0.bat.
+exit/b
+
+
+
+::_
+:function-3
+echo. & echo * %1 in %0.bat.
 exit/b
 
 
