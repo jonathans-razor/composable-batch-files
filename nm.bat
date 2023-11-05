@@ -760,38 +760,6 @@ exit/b
 
 :_
 
-:fswi
-
-set fp=* Fix service worker issue.
-
-rem lu: Aug-27-2021
-
-echo.
-echo %fp%
-
-if not exist "package.json" (
-  echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
-  exit/b
-)
-
-npx msw init public/ --save
-
-
-Footnote
->< >< ><
-
-Thuy had me run this on Aug-27-2021 agains SUUI to fix an issue with Service Worker.
-
-rem Service Worker successfully created!
-
-I see your MSW is not running. - Thuy Sep-3-2021
-
-exit/b
-
-
-
-:_
-
 :re
 
 :ruej
@@ -1069,21 +1037,6 @@ exit/b
 
 
 
-:_
-
-:npk
-
-echo. & echo * NPKill, find all node modules that can be removed and allows you to delete them.
-
-rem lu: Aug-15-2022
-
-echo.
-npx npkill
-
-exit/b
-
-
-
 :_+ Uninstalling
 
 
@@ -1139,82 +1092,6 @@ echo.
 npm uninstall %2 -g
 
 exit/b
-
-
-
-:_+ Create a React App
-
-
-
-::_
-
-:crar
-
-set fp=* Create a React app at root.
-
-rem lu: Aug-26-2021
-
-echo.
-echo %fp%
-
-npx create-react-app .
-
-exit/b
-
-
-
-::_
-
-:cra
-
-set fp=* Create a React app.
-
-rem lu: Aug-30-2021
-
-echo.
-echo %fp%
-
-if "%~2" == "" (
-  echo.
-  echo * Error: Parameter 2, the application/folder name, is required.
-  exit/b
-)
-
-npx create-react-app %2
-
-exit/b
-
-
-
-::_
-
-:crart
-
-set fp=* Create a React app at root that has TypeScript enabled.
-
-rem lu: Oct-26-2021
-
-echo.
-echo %fp%
-
-npx create-react-app . --template typescript
-
-exit/b
-
-
-
-::_
-
-:cra-gp
-
-echo. & echo * Create a React app per ChatGPT.
-
-npx create-react-app hello-world-react
-
-exit/b
-
-lu:
-Sep-26-2023
 
 
 
@@ -1565,6 +1442,133 @@ exit/b
 rem lu: 
 Sep-22-2023
 Feb-11-2019
+
+
+
+:_+ NPX (!fynpx)
+
+
+
+::_
+
+:fswi
+
+set fp=* Fix service worker issue.
+
+rem lu: Aug-27-2021
+
+echo.
+echo %fp%
+
+if not exist "package.json" (
+  echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
+  exit/b
+)
+
+npx msw init public/ --save
+
+
+Footnote
+>< >< ><
+
+Thuy had me run this on Aug-27-2021 agains SUUI to fix an issue with Service Worker.
+
+rem Service Worker successfully created!
+
+I see your MSW is not running. - Thuy Sep-3-2021
+
+exit/b
+
+
+
+::_
+
+:npk
+
+echo. & echo * NPKill, find all node modules that can be removed and allows you to delete them.
+
+rem lu: Aug-15-2022
+
+echo.
+npx npkill
+
+exit/b
+
+
+
+:_+ Create a React App
+
+
+
+::_
+
+:crar
+
+set fp=* Create a React app at root.
+
+rem lu: Aug-26-2021
+
+echo.
+echo %fp%
+
+npx create-react-app .
+
+exit/b
+
+
+
+::_
+
+:cra
+
+set fp=* Create a React app.
+
+rem lu: Aug-30-2021
+
+echo.
+echo %fp%
+
+if "%~2" == "" (
+  echo.
+  echo * Error: Parameter 2, the application/folder name, is required.
+  exit/b
+)
+
+npx create-react-app %2
+
+exit/b
+
+
+
+::_
+
+:crart
+
+set fp=* Create a React app at root that has TypeScript enabled.
+
+rem lu: Oct-26-2021
+
+echo.
+echo %fp%
+
+npx create-react-app . --template typescript
+
+exit/b
+
+
+
+::_
+
+:cra-gp
+
+echo. & echo * Create a React app per ChatGPT.
+
+npx create-react-app hello-world-react
+
+exit/b
+
+lu:
+Sep-26-2023
 
 
 
