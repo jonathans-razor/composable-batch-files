@@ -1139,7 +1139,6 @@ exit/b
 ::_
 
 :adam
-:fire
 :fx
 
 echo. & echo * Firefox.
