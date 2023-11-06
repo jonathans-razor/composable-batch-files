@@ -772,14 +772,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Nov-5-2023
 
 cls
@@ -794,6 +786,36 @@ call ph 58-length-of-last-word.py "fly me to the moon"
 
 @echo on
 call ph 58-length-of-last-word.py "luffy is still joyboy"
+
+echo.
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-5-2023-2
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 66-plus-one.py 1 2 3
+
+@echo on
+call ph 66-plus-one.py 4 3 2 1
+
+@echo on
+call ph 66-plus-one.py 9
 
 echo.
 
