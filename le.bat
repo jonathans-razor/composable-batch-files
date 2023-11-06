@@ -832,14 +832,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Nov-6-2023
 
 cls
@@ -851,6 +843,35 @@ call ph 67-add-binary.py 11 1
 
 @echo on
 call ph 67-add-binary.py 1010 1011
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-6-2023-3
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 69-sqrt-x.py 4
+
+@echo on
+call ph 69-sqrt-x.py 8
+
+rem I predict the answer will be 8. Nov-6-2023
+@echo on
+call ph 69-sqrt-x.py 69
 
 exit/b
 
