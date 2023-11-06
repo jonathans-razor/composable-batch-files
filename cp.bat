@@ -2,6 +2,9 @@
 @echo off
 if "%~1" == "?" goto help
 if "%~1" == "" goto help
+
+call paco "%~1" . && goto cp2
+
 goto %1
 
 
@@ -19,7 +22,8 @@ echo           all  Copy all current folder files to a alias-specified path.
 echo            ca  Copy all current folder files to a nickname-specified path.
 echo            cb  Copy background image for testing purposes.
 echo            cf  Use current folder file to "save as" a filename alias.
-echo            cp  Copy current folder file to a nickname-specified path.
+echo            cp  Copy current folder file to nickname-specified path.
+echo           cp2  Copy current folder file to nickname-specified path. (Nov-5-2023 version)
 echo           cps  Copy current folder file to a nickname-specified path and stay in current folder.
 echo            cv  Copy CBF file to VDI.
 echo            dd  Copy a file to another file using 2 DCVs.
@@ -1150,6 +1154,42 @@ exit/b
 echo. & echo * Parameter Description(s):
 echo. & echo * Parameter 2: Either "on" or "off".
 echo. & echo * Parameter 2: If left blank, processing is turned off.
+exit/b
+
+
+
+:_
+
+:cp2
+
+echo. & echo * Copy file in the current directory to nickname-specified path. (Nov-5-2023 version)
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+call fe "%~1" || exit/b 5
+
+call pn %2 || exit/b
+
+@echo on
+move "%~1" "%cbf-pt%"
+@echo off
+
+if errorlevel 1 exit/b
+
+rem qq
+call t %2
+dir "%~1"
+
+exit/b
+
+
+:help
+
+echo. & echo * Parameter Description(s):
+echo. & echo   Parameter 1: Current folder filename.
+echo   Parameter 2: Target folder alias.
+
 exit/b
 
 

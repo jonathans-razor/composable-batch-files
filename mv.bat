@@ -314,9 +314,8 @@ if "%~2" == "?" goto help
 if "%~2" == "" goto help
 
 call fe "%~1" || exit/b 5
-rem qq
 
-call pn %3 || exit/b
+call pn %2 || exit/b
 
 @echo on
 move "%~1" "%cbf-pt%"
@@ -324,8 +323,8 @@ move "%~1" "%cbf-pt%"
 
 if errorlevel 1 exit/b
 
-call t %3
-dir "%~2"
+call t %2
+dir "%~1"
 
 exit/b
 
@@ -333,8 +332,8 @@ exit/b
 :help
 
 echo. & echo * Parameter Description(s):
-echo. & echo   Parameter 2: Current folder filename.
-echo   Parameter 3: Target folder alias.
+echo. & echo   Parameter 1: Current folder filename.
+echo   Parameter 2: Target folder alias.
 
 exit/b
 

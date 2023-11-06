@@ -41,7 +41,7 @@ Nov-3-2023
 :_
 :recall
 
-echo. & echo * Recall current directory.
+echo. & echo * Recall previous directory.
 
 cd /d "%cbf-current-directory%"
 
