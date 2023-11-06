@@ -634,7 +634,6 @@ rem lu: Apr-20-2023
 
 
 :_
-:cd
 :cdr
 echo. & echo * C: drive.
 set cbf-pt=c:\

@@ -1619,17 +1619,6 @@ exit/b
 
 
 
-:_
-:Apr-28-2023
-rem Same line error checking.
-call fe %2 & if errorlevel 1 exit/b
-exit/b
-
-
-rem Cool code.
-
-
-
 :_+ All Command Line Parameters
 
 
@@ -2648,6 +2637,16 @@ call t nwe>nul
 start "[Server Title]" cmd /k [executable name start syntax] .
 exit/b
 Level 1 Program: Is the program even installed.
+
+
+
+:_
+:Nov-5-2023
+rem File exists checking.
+call fe "%~1" || exit/b 5
+exit/b
+
+rem Cool code. (!feex)
 
 
 

@@ -5,6 +5,8 @@
 if "%~1" == "" goto pc2cj
 if "%~1" == "?" goto help
 
+call paco "%~1" . && goto cp2
+
 goto %1
 
 
@@ -23,9 +25,9 @@ echo.
 echo     Parameter  Description
 echo -------------  ------------------------------------------------------------------------
 echo            cp  Move file in the current directory to nickname-specified path.
+echo           cp2  Move file in the current directory to nickname-specified path (newer version).
 echo           cps  Move file in the current directory to nickname-specified path and stay in current folder.
 echo           cpa  Move all files in the current directory to nickname-specified 
-path.
 echo            pc  Overarching podcast mover.
 
 exit/b
@@ -91,50 +93,6 @@ exit/b
 
 echo. & echo Parameter Description(s):
 echo. & echo Parameter 2: Target folder alias.
-
-exit/b
-
-
-
-:_
-
-:cp
-:cps
-
-echo. & echo * Move file in the current directory to nickname-specified path.
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-if "%~3" == "" goto help
-
-if not exist "%~2" (
-  echo. & echo * Error: File "%~2" doesn't exist.
-  exit/b 5
-)
-
-call pn %3
-
-if errorlevel 1 exit/b
-
-@echo on
-move "%~2" "%cbf-pt%"
-@echo off
-
-if errorlevel 1 exit/b
-
-if "%~2"=="cp" (
-  call t %3
-  dir "%~2"
-)
-
-exit/b
-
-
-:help
-
-echo. & echo * Parameter Description(s):
-echo. & echo   Parameter 2: Current folder filename.
-echo   Parameter 3: Target folder alias.
 
 exit/b
 
@@ -297,6 +255,86 @@ exit/b
 
 echo. & echo Parameter Description(s):
 echo. & echo Parameter 2: target folder alias.
+
+exit/b
+
+
+
+:_
+
+:cp
+:cps
+
+echo. & echo * Move file in the current directory to nickname-specified path.
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+if "%~3" == "" goto help
+
+if not exist "%~2" (
+  echo. & echo * Error: File "%~2" doesn't exist.
+  exit/b 5
+)
+
+call pn %3
+
+if errorlevel 1 exit/b
+
+@echo on
+move "%~2" "%cbf-pt%"
+@echo off
+
+if errorlevel 1 exit/b
+
+if "%~1"=="cp" (
+  call t %3
+  dir "%~2"
+)
+
+exit/b
+
+
+:help
+
+echo. & echo * Parameter Description(s):
+echo. & echo   Parameter 2: Current folder filename.
+echo   Parameter 3: Target folder alias.
+
+exit/b
+
+
+
+:_
+
+:cp2
+
+echo. & echo * Move file in the current directory to nickname-specified path.
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+call fe "%~1" || exit/b 5
+rem qq
+
+call pn %3 || exit/b
+
+@echo on
+move "%~1" "%cbf-pt%"
+@echo off
+
+if errorlevel 1 exit/b
+
+call t %3
+dir "%~2"
+
+exit/b
+
+
+:help
+
+echo. & echo * Parameter Description(s):
+echo. & echo   Parameter 2: Current folder filename.
+echo   Parameter 3: Target folder alias.
 
 exit/b
 

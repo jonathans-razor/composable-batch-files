@@ -38,6 +38,203 @@ rem creation date:
 
 
 
+:_
+:upgr
+
+echo. & echo * Upgrade Python.
+
+python -m pip install --upgrade pip
+
+exit/b
+
+
+
+:_
+:list
+:pass in an array of numbers
+
+:pass in an array of strings
+
+
+
+echo. & echo * Show installed modules.
+
+echo.
+pip list
+
+exit/b
+
+
+
+
+:_
+:unin
+
+echo. & echo * Uninstall module.
+
+if "%~2" == "" (
+  call err Expected module name. Sep-21-2023_12_48_PM
+  exit/b
+)
+
+@echo on
+pip uninstall %2
+
+exit/b
+
+
+
+:_
+:uvic
+
+echo. & echo * Run uvicorn.
+
+echo.
+uvicorn hello-world-api-using-python-and-fastapi:app --reload
+
+exit/b
+
+lu:
+Sep-27-2023
+
+
+
+:_
+:inst
+
+echo. & echo * Install module.
+
+if "%~2" == "" (
+  call err Expected module name. Sep-21-2023_12_47_PM
+  exit/b
+)
+
+echo.
+@echo on
+pip install %2
+
+exit/b
+
+
+
+:_
+:venv
+
+echo. & echo * Install virtual environment.
+
+echo.
+python -m venv .venv
+
+exit/b
+lu:
+Nov-1-2023
+
+
+
+:_
+:ave
+
+echo. & echo * Activate virtual environment.
+
+call fe .venv || exit/b
+
+echo.
+.venv/Scripts/activate
+
+exit/b
+lu:
+Nov-1-2023
+
+
+
+:_
+:dve
+
+echo. & echo * Dectivate virtual environment.
+
+call fe .venv || exit/b
+
+echo.
+.venv/Scripts/deactivate
+
+exit/b
+lu:
+Nov-1-2023
+
+
+
+:_
+:inst-r
+
+echo. & echo * Install requests.
+
+echo.
+@echo on
+pip install requests
+
+exit/b
+
+
+
+:_
+:inst-f
+
+echo. & echo * Install flask.
+
+echo.
+pip install flask
+
+exit/b
+
+
+
+:_
+:inst-fs
+
+echo. & echo * Install flask sqlalchemy.
+
+echo.
+pip install flask-sqlalchemy
+
+exit/b
+
+
+
+:_
+:lr
+
+echo. & echo * List requirements.
+
+echo.
+pip freeze>requirements.txt
+
+exit/b
+lu:
+Nov-1-2023
+
+
+
+:_
+
+:star
+
+echo. & echo * Start a Flask application.
+
+call fe .venv || exit/b
+
+set FLASK_APP=application.py
+set FLASK_ENV=development
+
+echo.
+start "Flask" cmd /k flask run --debug
+
+exit/b
+
+rem lu:
+Nov-1-2023
+
+
+
 :_+ Language Feature Family (!fylgphy) (skw language-functions-series-jj)
 
 
@@ -257,7 +454,7 @@ exit/b
 
 rem echo. & echo * Run Python file from %0.bat.
 
-call fe "%~1" || exit/b
+call fe "%~1" || exit/b 5
 call paco "%~1" .py || exit/b
 
 echo.
@@ -292,203 +489,6 @@ echo.
 pip --version
 
 exit/b
-
-
-
-:_
-:upgr
-
-echo. & echo * Upgrade Python.
-
-python -m pip install --upgrade pip
-
-exit/b
-
-
-
-:_
-:list
-:pass in an array of numbers
-
-:pass in an array of strings
-
-
-
-echo. & echo * Show installed modules.
-
-echo.
-pip list
-
-exit/b
-
-
-
-
-:_
-:unin
-
-echo. & echo * Uninstall module.
-
-if "%~2" == "" (
-  call err Expected module name. Sep-21-2023_12_48_PM
-  exit/b
-)
-
-@echo on
-pip uninstall %2
-
-exit/b
-
-
-
-:_
-:uvic
-
-echo. & echo * Run uvicorn.
-
-echo.
-uvicorn hello-world-api-using-python-and-fastapi:app --reload
-
-exit/b
-
-lu:
-Sep-27-2023
-
-
-
-:_
-:inst
-
-echo. & echo * Install module.
-
-if "%~2" == "" (
-  call err Expected module name. Sep-21-2023_12_47_PM
-  exit/b
-)
-
-echo.
-@echo on
-pip install %2
-
-exit/b
-
-
-
-:_
-:venv
-
-echo. & echo * Install virtual environment.
-
-echo.
-python -m venv .venv
-
-exit/b
-lu:
-Nov-1-2023
-
-
-
-:_
-:ave
-
-echo. & echo * Activate virtual environment.
-
-call fe .venv || exit/b
-
-echo.
-.venv/Scripts/activate
-
-exit/b
-lu:
-Nov-1-2023
-
-
-
-:_
-:dve
-
-echo. & echo * Dectivate virtual environment.
-
-call fe .venv || exit/b
-
-echo.
-.venv/Scripts/deactivate
-
-exit/b
-lu:
-Nov-1-2023
-
-
-
-:_
-:inst-r
-
-echo. & echo * Install requests.
-
-echo.
-@echo on
-pip install requests
-
-exit/b
-
-
-
-:_
-:inst-f
-
-echo. & echo * Install flask.
-
-echo.
-pip install flask
-
-exit/b
-
-
-
-:_
-:inst-fs
-
-echo. & echo * Install flask sqlalchemy.
-
-echo.
-pip install flask-sqlalchemy
-
-exit/b
-
-
-
-:_
-:lr
-
-echo. & echo * List requirements.
-
-echo.
-pip freeze>requirements.txt
-
-exit/b
-lu:
-Nov-1-2023
-
-
-
-:_
-
-:star
-
-echo. & echo * Start a Flask application.
-
-call fe .venv || exit/b
-
-set FLASK_APP=application.py
-set FLASK_ENV=development
-
-echo.
-start "Flask" cmd /k flask run --debug
-
-exit/b
-
-rem lu:
-Nov-1-2023
 
 
 

@@ -750,14 +750,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Nov-3-2023
 
 cls
@@ -772,6 +764,36 @@ call ph 35-search-insert-position.py 1 3 5 6 2
 
 @echo on
 call ph 35-search-insert-position.py 1 3 5 6 7
+
+echo.
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-5-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 58-length-of-last-word.py "hello world"
+
+@echo on
+call ph 58-length-of-last-word.py "fly me to the moon"
+
+@echo on
+call ph 58-length-of-last-word.py "luffy is still joyboy"
 
 echo.
 

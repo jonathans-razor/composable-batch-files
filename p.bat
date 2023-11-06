@@ -37,7 +37,7 @@ rem creation date: Sep-20-2023
 
 cls
 
-set cbf-current-folder=%cd%
+call rcd
 
 
 :_
@@ -55,7 +55,7 @@ call t dsa & call g dirt
 :_                             *********************************
 :close
 
-cd /d %cbf-current-folder%
+call rcd r
 echo.
 
 exit/b
