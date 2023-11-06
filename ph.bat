@@ -240,6 +240,17 @@ Nov-1-2023
 
 
 ::_
+:a2n
+cls
+echo. & echo * Add 2 numbers.
+rem python add-2-numbers.py 55 102
+@echo on
+call %0 add-2-numbers.py 55 102
+exit/b
+
+
+
+::_
 :c4f
 cls
 echo. & echo * Call 4 functions.

@@ -815,14 +815,17 @@ exit/b
 
 
 :_
-:Nov-6-2023
+:Nov-6-2023-2
 
 cls
 
 call t d>nul
 
 @echo on
-call ph 67-add-binary.py 11 1
+call ph solution-class.py 1 1
+
+@echo on
+call ph solution-class.py 2 27
 
 exit/b
 
@@ -837,17 +840,17 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-6-2023-2
+:Nov-6-2023
 
 cls
 
 call t d>nul
 
 @echo on
-call ph solution-class.py 1 1
+call ph 67-add-binary.py 11 1
 
 @echo on
-call ph solution-class.py 2 27
+call ph 67-add-binary.py 1010 1011
 
 exit/b
 
