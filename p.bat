@@ -55,7 +55,7 @@ call t dsa & call g dirt
 :_                             *********************************
 :close
 
-call rcd r
+call rcd r>nul
 echo.
 
 exit/b
