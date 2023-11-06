@@ -315,6 +315,8 @@ if "%~2" == "" goto help
 
 call fe "%~1" || exit/b 5
 
+call rf r>nul
+
 call pn %2 || exit/b
 
 @echo on

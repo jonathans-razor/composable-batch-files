@@ -1,9 +1,8 @@
-:_
-
 @echo off
 if "%~1" == "?" goto help
-if "%~1" == "r" goto recall
-goto main
+if "%~1" == "r" goto main
+
+goto recall
 
 
 
@@ -12,12 +11,12 @@ goto main
 
 cls
 
-echo. & echo  * Remember current directory.
+echo. & echo  * Recall previous folder.
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo  * Parameter 1:
-echo    x
+echo    If equal to r.
 
 echo. & echo  * Batch file style: Multipurpose
 
@@ -41,7 +40,7 @@ Nov-3-2023
 :_
 :recall
 
-echo. & echo * Recall previous directory.
+echo. & echo * Recall previous folder.
 
 cd /d "%cbf-current-directory%"
 
@@ -51,6 +50,8 @@ exit/b
 
 :_
 :main
+
+rem echo. & echo Remember current folder.
 
 set cbf-current-directory=%cd%
 

@@ -37,7 +37,7 @@ rem creation date: Sep-20-2023
 
 cls
 
-call rcd
+call rf r>nul
 
 
 :_
@@ -55,7 +55,7 @@ call t dsa & call g dirt
 :_                             *********************************
 :close
 
-call rcd r>nul
+call rf>nul
 echo.
 
 exit/b

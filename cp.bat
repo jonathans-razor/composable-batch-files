@@ -1169,15 +1169,16 @@ if "%~2" == "" goto help
 
 call fe "%~1" || exit/b 5
 
+call rf r>nul
+
 call pn %2 || exit/b
 
 @echo on
-move "%~1" "%cbf-pt%"
+copy "%~1" "%cbf-pt%"
 @echo off
 
 if errorlevel 1 exit/b
 
-rem qq
 call t %2
 dir "%~1"
 

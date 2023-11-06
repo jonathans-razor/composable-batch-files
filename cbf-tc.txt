@@ -192,7 +192,7 @@ qq
 	  purl  Using a DCV, surf to a PIV URL webpage.
        q  Query Google.
        r  Run application using CBF variables, mostly used in back office operations.
-     rcd  Remember current directory.
+      rf  Recall previous folder.
     reme  Execute the demo DCV for the passed in alias.
       rl  Execute the releases DCV for the passed in alias.
      rzr  Multi-Edit abstraction layer for running CBF files.
