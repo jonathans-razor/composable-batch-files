@@ -4,7 +4,6 @@
 
 if "%~1" == "?" goto help
 
-goto code-execution-area
 if "%~1" == "" (
   goto code-execution-area
 ) else (
@@ -635,26 +634,6 @@ exit/b
 
 
 :_
-:Oct-30-2023
-
-cls
-
-call t d>nul
-
-@echo on
-call ph 7-reverse-integer.py 123
-@echo on
-call ph 7-reverse-integer.py -123
-@echo on
-call ph 7-reverse-integer.py 120
-@echo on
-call ph 7-reverse-integer.py 1534236469
-
-exit/b
-
-
-
-:_
 :Oct-31-2023
 
 cls
@@ -794,14 +773,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Nov-5-2023-2
 
 cls
@@ -818,6 +789,65 @@ call ph 66-plus-one.py 4 3 2 1
 call ph 66-plus-one.py 9
 
 echo.
+
+exit/b
+
+
+
+:_
+:Oct-30-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 7-reverse-integer.py 123
+@echo on
+call ph 7-reverse-integer.py -123
+@echo on
+call ph 7-reverse-integer.py 120
+@echo on
+call ph 7-reverse-integer.py 1534236469
+
+exit/b
+
+
+
+:_
+:Nov-6-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 67-add-binary.py 11 1
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-6-2023-2
+
+cls
+
+call t d>nul
+
+@echo on
+call ph solution-class.py 1 1
+
+@echo on
+call ph solution-class.py 2 27
 
 exit/b
 
