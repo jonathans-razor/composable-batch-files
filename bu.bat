@@ -93,7 +93,7 @@ exit/b
 
 echo. & echo * Back up snippets folder.
 
-if -%2-==-?- goto help
+if "%~2" == "?" goto help
 
 rem lu: Apr-8-2022
 
@@ -122,7 +122,7 @@ exit/b
 
 :redo
 
-if -%2-==-?- goto help
+if "%~2" == "?" goto help
 if -%2-==-/r- goto restore-mcfg
 
 echo. & echo * Back up Minishift config file.
@@ -186,7 +186,7 @@ exit/b
 
 :brcp
 
-if -%2-==-?- goto help
+if "%~2" == "?" goto help
 if -%2-==-/r- goto restore-brc
 
 echo. & echo * Back up .brc profile.
@@ -333,7 +333,7 @@ exit/b
 
 :brc
 
-if -%2-==-?- goto help
+if "%~2" == "?" goto help
 if -%2-==-/r- goto restore-brc
 
 cls

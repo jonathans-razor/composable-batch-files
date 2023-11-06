@@ -1780,7 +1780,7 @@ exit/b
 
 echo. & echo * %1.
 
-if -%5-==-?-goto help
+if "%5" == "?" goto help
 
 rem skw: all parameters, command line parameters, all command line parameters, whole command line
 rem all_parameters, all_command_line_parameters, all_command_line, all arguments, all command line arguments
@@ -2653,10 +2653,10 @@ Level 1 Program: Is the program even installed.
 :_
 :Nov-5-2023
 rem File exists checking.
+rem Cool code. (!feex)
 call fe "%~1" || exit/b 5
 exit/b
 
-rem Cool code. (!feex)
 
 
 

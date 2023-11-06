@@ -14,11 +14,11 @@ set cbf-filep=* Given an alias and a DCV, returns the set DCV value.
 
 set fp=* Route callers.
 
-if -%~1- == -- goto help
+if "%~1" == "" goto help
 
-if -%~2- == -- goto help
+if "%~2" == "" goto help
 
-if -%~1- == -?- goto help
+if "%~1" == "?" goto help
 
 goto main
 

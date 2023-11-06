@@ -58,9 +58,9 @@ goto main
 
 :load-dcv-path-only-to-clipboard
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
-if -%3-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+if "%~3" == "" goto help
 
 call n %2
                                                        

@@ -8,8 +8,8 @@
 
 set cbf-filep=* Summary: Using advanced routing, set the cbf filename.
 
-if -%~1-==-?-goto help
-if -%~1-==-- goto help
+if "%~1" == "?"goto help
+if "%~1" == "" goto help
 
 set cbf-fn=
 

@@ -2,8 +2,8 @@
 
 @echo off
 
-if -%~1-==-?-goto help
-if not -%~1-==-- call t %1
+if "%~1" == "?"goto help
+if not "%~1" == "" call t %1
 
 goto main
 

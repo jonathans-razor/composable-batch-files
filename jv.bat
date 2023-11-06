@@ -223,8 +223,8 @@ exit/b
 
 echo. & echo * Run jar.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 rem lu: Mar-22-2022
 
@@ -250,8 +250,8 @@ echo. & echo Parameter 2: Jar file name.
 
 echo. & echo * Compile and rebuild the class file.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 javac %~2
 

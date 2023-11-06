@@ -36,8 +36,8 @@ exit/b
 
 echo. & echo * List archived file content.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 call fe %2 & if errorlevel 1 exit/b
 call fe *.tar & if errorlevel 0 goto file-found
@@ -70,8 +70,8 @@ rem lu: Apr-25-2022
 :x
 echo. & echo * Extract archived file content.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 call fe %2 & if errorlevel 1 exit/b
 call fe *.tar & if errorlevel 0 goto file-found

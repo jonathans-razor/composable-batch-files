@@ -3483,8 +3483,8 @@ echo. & echo * Revert or check out single file.
 rem lu: Feb-18-2022
 rem This worked on CBF files. Mar-22-2019
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 git reset head %2
 git checkout %2

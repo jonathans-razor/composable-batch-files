@@ -477,9 +477,9 @@ exit/b
 
 echo. & echo * Copy an aliased file to an aliased folder.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
-if -%3-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+if "%~3" == "" goto help
 
 call n %2
 
@@ -513,9 +513,9 @@ exit/b
 
 echo. & echo * Use current folder file to "save as" a filename alias.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
-if -%3-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+if "%~3" == "" goto help
 
 set cbf-fn=
 
@@ -550,9 +550,9 @@ exit/b
 
 echo. & echo * Copy a file to another file using 2 DCVs.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
-if -%3-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+if "%~3" == "" goto help
 
 call i /c>nul
 
@@ -628,8 +628,8 @@ exit/b
 
 echo. & echo * Use filename alias to "save as" a file in the current folder.
 
-if -%2-==-- goto help
-if -%2-==-?- goto help
+if "%~2" == "" goto help
+if "%~2" == "?" goto help
 
 echo. & echo p2: %2
 
@@ -658,9 +658,9 @@ exit/b
 
 echo. & echo * Use filename alias 1 to "save as" filename alias 2.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
-if -%3-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+if "%~3" == "" goto help
 
 call fnv %2
 
@@ -701,8 +701,8 @@ exit/b
 
 echo. & echo * Copy folder aliased files to current folder.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 call pn %2
 
@@ -733,8 +733,8 @@ exit/b
 
 echo. & echo * Copy CBF file to VDI file.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 call pn cbf>nul
 
@@ -768,8 +768,8 @@ exit/b
 
 set fp=* Copy a vdi file to the cbf folder.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 call pn vdi>nul
 
@@ -803,8 +803,8 @@ exit/b
 
 echo. & echo * Copy CBF file template.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 call pn vdi>nul
 
@@ -834,9 +834,9 @@ exit/b
 
 echo. & echo * Copy all files from alias path param 1 to alias path param 2.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
-if -%3-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+if "%~3" == "" goto help
 
 rem lu: Mar-03-2022
 
@@ -964,8 +964,8 @@ exit/b
 
 echo. & echo * Turn the template file into a new batch file.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 rem lu: Feb-18-2022
 
@@ -1027,8 +1027,8 @@ Jul-6-2022
 
 echo. & echo * Copy current folder file to a nickname-specified path.
 
-if -%2-==-?- goto help
-if -%3-==-- goto help
+if "%~2" == "?" goto help
+if "%~3" == "" goto help
 
 call pn %3
 
@@ -1072,8 +1072,8 @@ exit/b
 :all
 :ca
 echo. & echo * Copy all current folder files to a alias-specified path.
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 call pn %2
 if errorlevel 1 exit/b
 @echo on
@@ -1099,8 +1099,8 @@ exit/b
 ::_
 :fall
 echo. & echo * Copy all alias-specified files to current folder.
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 call pn %2
 if errorlevel 1 exit/b
 @echo on
@@ -1126,7 +1126,7 @@ exit/b
 :mmf
 :rms
 echo. & echo * Turn on or off RMS processing.
-if -%2-==-?- goto help
+if "%~2" == "?" goto help
 call t rms>nul
 if "%2"=="" goto turn-on-processing
 if "%2"=="off" goto turn-off-processing

@@ -6,12 +6,12 @@ set cbf-filep=* Run Code Compare using DCVs.
 
 set fp=* Route callers.
 
-if -%~1-==-?-goto help
+if "%~1" == "?"goto help
 
-if -%~1-==-- goto help
-if -%~2-==-- goto help
-if -%~3-==-- goto help
-if -%~4-==-- goto help
+if "%~1" == "" goto help
+if "%~2" == "" goto help
+if "%~3" == "" goto help
+if "%~4" == "" goto help
 
 goto main
 

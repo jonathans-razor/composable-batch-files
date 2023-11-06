@@ -76,8 +76,8 @@ exit/b
 
 echo. & echo * Move all files in the current directory to nickname-specified path.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 call pn %2
 
@@ -227,8 +227,8 @@ exit/b
 :all
 echo. & echo * Move all current folder files to a nickname-specified path.
 
-if -%2-==-?- goto help
-if -%2-==-- goto help
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
 
 call pn %2
 

@@ -6,8 +6,8 @@
 
 :_
 
-if -%~1-==-- goto help
-if -%~1-==-?-goto help
+if "%~1" == "" goto help
+if "%~1" == "?"goto help
 
 rem Routing intelligence
 call sfn3 %*

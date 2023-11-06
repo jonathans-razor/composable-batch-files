@@ -342,7 +342,7 @@ rem echo. & echo * Tree view.
 
 rem lu: Jan-8-2019
 
-if -%2-==-?- goto help
+if "%~2" == "?" goto help
 
 echo.
 echo %fp%
@@ -361,7 +361,7 @@ if errorlevel 1 (
 )
 
 call an no>nul
-if not -%2-==-- (
+if not "%~2" == "" (
   call an %2>nul
 )
 

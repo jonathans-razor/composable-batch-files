@@ -14,9 +14,9 @@ set cbf-filep=* Get a je, jn or jfd variable, in that order.
 
 set fp=* Route callers.
 
-if -%~1- == -- goto help
+if "%~1" == "" goto help
 
-if -%~1- == -?- goto help
+if "%~1" == "?" goto help
 
 goto main
 
@@ -69,28 +69,28 @@ set cbf-jm=
 
 call n %1
 
-if not -%cbf-je%- == -- (
+if not "%cbf-je%" == "" (
   echo.
   echo * cbf-je exists.
   call je %1
   exit/b
 )
 
-if not -%cbf-jm%- == -- (
+if not "%cbf-jm%" == "" (
   echo.
   echo * cbf-jm exists.
   call jn %1
   exit/b
 )
 
-if not -%cbf-jfd%- == -- (
+if not "%cbf-jfd%" == "" (
   echo.
   echo * cbf-jfd exists.
   call jfd %1
   exit/b
 )
 
-if not -%cbf-jj%- == -- (
+if not "%cbf-jj%" == "" (
   echo.
   echo * cbf-jj exists.
   call jj %1

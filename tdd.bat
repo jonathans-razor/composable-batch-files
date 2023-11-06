@@ -2,8 +2,8 @@
 
 @echo off
 
-if -%~1- == -- goto help
-if -%~1- == -?- goto help
+if "%~1" == "" goto help
+if "%~1" == "?" goto help
 
 goto main
 
