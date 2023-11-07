@@ -4,6 +4,9 @@
 
 if "%~1" == "?" goto help
 
+call t dsa>nul
+call ph is-natural-number-less-than-5000.py %1 && goto look-up-leetcode-number
+
 if "%~1" == "" (
   goto code-execution-area
 ) else (
@@ -44,6 +47,21 @@ Sep-26-2023
 
 
 :_
+:look-up-leetcode-number
+
+cls
+
+echo. & echo * Look up LeetCode number %1.
+rem qq
+
+call an kr>nul
+set cbf-parameter=https://www.google.com/search?q=LeetCode+problem+number+%*
+call r
+exit/b
+
+
+
+:_look-up-leetcode-number
 :Oct-11-2023-1
 
 cls
