@@ -489,7 +489,7 @@ echo. & echo * Start Angular Crash course and open all aspects.
 call t acc
 call vc .
 call nm json
-call ang star
+call gu star
 call sf 4200
 call yt acc
 exit/b
