@@ -1,110 +1,53 @@
-:_
-
 @echo off
 
-set cbf-ax=
-set cbf-pt=
-
-if "%~1" == "" goto load-current-folder
+if "%~1" == "" goto help
 if "%~1" == "?" goto help
-if "%~1" == "/dp" goto load-dcv-path-only-to-clipboard
 
-goto preprocess
+call paco "%~1" . && goto current-folder-filename
+
+goto validate-input
 
 
 
 :_
 :help
-cls
-
-echo. & echo * Load clipboard path.
-
-echo. & echo * Usage: %0 [space separated parameter(s)]
-
-echo. & echo * Parameter 1 (Optional):
-echo   If blank, load current folder path ontol clipboard.
-echo   If alias, load alias' path to clipboard.
-echo   If equals /dp, load DCV path only to clipboard.
-
-echo. & echo * Batch file style: Single purpose.
-
+echo. & echo * Copy a file's content to the clipboard.
+echo. & echo   Usage: %0 [space separated parameter(s)]
+echo. & echo * Parameter 1:
+echo   Alias of the file you wish to copy.
+echo   Or name of current folder filename.
 exit/b
 
 
 
 :_
-
    .--.      .--.      .--.      .--.      .--.                 
- :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
         `--'      `--'      `--'      `--'      `--'     
 
 
 
 :_
 
-:preprocess
+:current-folder-filename
 
-rem echo. & echo * Preprocess.
+echo. & echo * Copy contents of filename "%~1" to the clipboard.
 
-call n %1
+clip < %~1
 
-if errorlevel 1 exit/b
-
-goto main
+exit/b
 
 
 
 :_
 
-:load-dcv-path-only-to-clipboard
+:validate-input
 
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-if "%~3" == "" goto help
+call fnv %1
 
-call n %2
-                                                       
-if errorlevel 1 exit/b
-
-call m compose_variable %3>nul
-
-if "%cbf-expanded-variable%" == "" (
-  echo. & echo * Error: There is no definition of "cbf-%2" for the alias "%1".
+if errorlevel 1 (
   exit/b
 )
-
-call m expand-to-path-only "%cbf-expanded-variable%"
-
-rem echo. & echo cbf-expand-to-path-only-pt: %cbf-expand-to-path-only-pt%
-
-echo %cbf-expand-to-path-only-pt% | clip
-
-echo. & echo * "%cbf-expand-to-path-only-pt%" has been copied to the clipboard.
-
-exit/b
-
-:help
-
-echo. & echo * Load DCV path only to clipboard.
-
-echo. & echo * Parameter Descriptions:
-echo. & echo * Parameter 2: Alias
-echo. & echo * Parameter 3: DCV
-
-exit/b
-
-
-
-:_
-
-:load-current-folder
-
-echo. & echo * Load current folder path onto clipboard.
-
-echo %cd%| clip
-echo. & echo * "%cd%" has been loaded onto the clipboard.
-
-exit/b
 
 
 
@@ -112,20 +55,11 @@ exit/b
 
 :main
 
-echo. & echo * Load alias path or ax onto clipboard.
+echo. & echo * Copy contents of filename "%~1" to the clipboard.
 
-if not "%cbf-pt%" == "" (
-  echo %cbf-pt%| clip
-  echo. & echo * cbf-pt "%cbf-pt%" has been loaded onto the clipboard.
-) else if not "%cbf-ax%" == "" (
-  echo "%cbf-ax%"| clip
-  echo. & echo * cbf-ax "%cbf-ax%" has been loaded onto the clipboard.
-) else (
-  echo. & echo * Error: cbf-pt not found for alias "%1".
-)
+clip < "%cbf-fn%"
 
 exit/b
 
 
 
-:_

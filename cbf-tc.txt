@@ -136,10 +136,10 @@ example-  Prefix for files written by other authors for learning and comparison 
       lh  Execute the localhost DCV for the passed in alias.
       ll  Wrapper around dir command to help with Linux compatibility.
    lower  Convert the passed in parameter to lower case.
-      lp  Load clipboard path.
+       l  Load clipboard path.
+      lp  Load cbf-fn contents to the clipboard.
      lpd  Use a DCV to copy a cbf variable to the clipboard.
      lpf  Load cbf-fn of passed in alias onto the clipboard.
-    lpfc  Load cbf-fn contents to the clipboard.
    lpfwp  Load cbf-fn without path of passed in alias onto the clipboard.
       ls  Wrapper around dir command to help with Linux compatibility.
        m  Perform simple miscellaneous tasks using a function routing style.
@@ -211,6 +211,7 @@ qq
       sx  Use Sublime to edit a batch file in the CBF folder.
       sy  Synchronize Share-zone and CBF folders.
        t  Transform directory.
+      td  Call t.bat then d.bat.
      tdb  Back button for transform directory.
      tdc  Transform directory to favorite child folder of alias.
      tdd  Open a folder using a DCV.
