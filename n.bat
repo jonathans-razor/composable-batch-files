@@ -4116,7 +4116,7 @@ lu: Oct-10-2023
 ::_
 :acc
 echo. & echo * Angular Crash Course.
-call pn it
+call pn it>nul
 set cbf-pt=%cbf-pt%\angular-crash-course-by-traversy-media
 set cbf-gho=https://github.com/bradtraversy/angular-crash-2021
 set cbf-gh=https://github.com/jonathans-razor/angular-crash-course-by-traversy-media

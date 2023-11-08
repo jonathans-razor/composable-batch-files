@@ -117,7 +117,7 @@ exit/b
 
 :preprocess
 
-echo. & echo * Analyze environment and decide upon the proper course of action. This is an order of operations.
+rem echo. & echo * Analyze environment and decide upon the proper course of action. This is an order of operations.
 
 set cbf-previous-pt=%cbf-pt%
 
