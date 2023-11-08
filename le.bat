@@ -5,7 +5,7 @@
 if "%~1" == "?" goto help
 
 call t dsa>nul
-call ph is-natural-number-less-than-5000.py %1 && goto look-up-leetcode-number
+call :is-leetcode-number %1 && exit/b
 
 if "%~1" == "" (
   goto code-execution-area
@@ -26,11 +26,14 @@ echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo  * Parameter 1:
 echo    Atomic leet code function test you wish to run.
+echo    OR a LeetCode number you wish to look up on the web.
+echo    If left blank, the bottom function after the code execution area is run.
 
 echo. & echo  * Batch file style: Multipurpose
 
 echo. & echo  * Samples:
 echo    %~n0 Oct-11-2023-2
+echo    %~n0 7
 
 exit/b
 
@@ -47,17 +50,23 @@ Sep-26-2023
 
 
 :_
-:look-up-leetcode-number
-
+:is-leetcode-number
 cls
+echo. & echo * Is LeetCode number.
+python is-natural-number-less-than-5000.py %1 > %tmp%\cbf-is-leetcode-number.txt
+set /p cbf-is-leetcode-number=<%tmp%\cbf-is-leetcode-number.txt
+if "%cbf-is-leetcode-number%" == "0" goto look-up-leetcode-number
+exit/b 1
 
+
+
+:_
+:look-up-leetcode-number
 echo. & echo * Look up LeetCode number %1.
-rem qq
-
 call an kr>nul
 set cbf-parameter=https://www.google.com/search?q=LeetCode+problem+number+%*
 call r
-exit/b
+exit/b 0
 
 
 
@@ -916,6 +925,9 @@ call ph is-natural-number-less-than-5000.py 22.22
 
 @echo on
 call ph is-natural-number-less-than-5000.py 24
+
+@echo on
+call ph is-natural-number-less-than-5000.py Oct-11-2023-3
 
 exit/b
 
