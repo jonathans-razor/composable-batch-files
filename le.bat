@@ -646,21 +646,6 @@ exit/b
 
 
 :_
-:Oct-27-2023
-
-cls
-
-call t d>nul
-
-@echo on
-call ph 2-add-two-numbers.py 2 4 3 5 6 4
-
-
-exit/b
-
-
-
-:_
 :Oct-31-2023
 
 cls
@@ -897,14 +882,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Nov-7-2023
 
 cls
@@ -926,6 +903,89 @@ call ph is-natural-number-less-than-5000.py 24
 
 @echo on
 call ph is-natural-number-less-than-5000.py Oct-11-2023-3
+
+exit/b
+
+
+
+:_
+:Nov-7-2023-2
+
+cls
+
+:
+@echo on
+call ph 70-climbing-stairs.py 2
+
+:
+@echo on
+call ph 70-climbing-stairs.py 3
+
+:
+@echo on
+call ph 70-climbing-stairs.py 4
+rem I predict 1+1+2, 1+2+1, 2+1+1, 2+2, 1+1+1+1 = 5
+
+:necessary edge case spacer
+
+exit/b
+
+
+
+:_
+:Oct-27-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 2-add-two-numbers.py 2 4 3 5 6 4
+
+
+exit/b
+
+
+
+:_
+:Nov-7-2023-3
+
+cls
+
+:
+@echo on
+call ph 83-remove-duplicates-from-sorted-list.py "1 1 2"
+
+exit/b
+
+:
+@echo on
+call ph 83-remove-duplicates-from-sorted-list.py "1 1 2 3 3"
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-7-2023-4
+
+cls
+
+:
+@echo on
+call ph 88-merge-sorted-array.py 1,2,3,0 3 2,5,6 3
+
+:Necessary Edge Case Spacer - Please do not delete.
 
 exit/b
 
