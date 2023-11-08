@@ -44,10 +44,10 @@ exit/b
 
 :main
 
-set fp=* Reset color to original value.
+echo. & echo * Reset color to original value.
 
 echo.
-echo %fp%
+
 
 color
 
@@ -59,12 +59,12 @@ exit/b
 
 :flash
 
-set fp=* Yellow on black.
+echo. & echo * Yellow on black.
 
 rem lu: Jan-22-2019
 
 echo.
-echo %fp%
+
 
 color 0e
 
@@ -78,12 +78,12 @@ exit/b
 
 :show
 
-set fp=* Show values.
+echo. & echo * Show values.
 
 rem lu: Jan-22-2019
 
 echo.
-echo %fp%
+
 
 color /?
 

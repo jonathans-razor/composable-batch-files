@@ -12,7 +12,7 @@ set cbf-filep=* Use Multi-Edit to edit DCV ASCII files.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 

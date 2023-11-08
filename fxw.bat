@@ -38,10 +38,10 @@ exit/b
 
 :cf
 
-set fp=* Open the Confluence Homepage.
+echo. & echo * Open the Confluence Homepage.
 
 echo.
-echo %fp%
+
 
 call fx cfrp %1 kr>nul
 
@@ -53,9 +53,9 @@ exit/b
 
 :demo
 
-set fp=* Demo series collection.
+echo. & echo * Demo series collection.
 
-echo. & echo %fp%
+echo. & 
 
 call fx demo-series-0 url kr>nul
 
@@ -88,10 +88,10 @@ exit/b
 
 :je
 
-set fp=* Jenkins root.
+echo. & echo * Jenkins root.
 
 echo.
-echo %fp%
+
 
 call fx jero %1 kr
 
@@ -118,10 +118,10 @@ exit/b
 :_
 :pr
 
-set fp=* CVT pull requests webpage.
+echo. & echo * CVT pull requests webpage.
 
 echo.
-echo %fp%
+
 
 @echo on
 call fx cvt %1 kr>nul
@@ -134,10 +134,10 @@ exit/b
 
 :rl
 
-set fp=* Art Playbook releases webpage.
+echo. & echo * Art Playbook releases webpage.
 
 echo.
-echo %fp%
+
 
 call fx cp %1 kr>nul
 
@@ -149,10 +149,10 @@ exit/b
 
 :va
 
-set fp=* Vault home page.
+echo. & echo * Vault home page.
 
 echo.
-echo %fp%
+
 
 call fx et %1 kr>nul
 

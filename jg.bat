@@ -12,7 +12,7 @@ set cbf-filep=* Get a je, jn or jfd variable, in that order.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 

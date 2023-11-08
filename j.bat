@@ -117,7 +117,7 @@ exit/b
 
 :main
 
-set fp=* Below here is the order of operations.
+echo. & echo * Below here is the order of operations.
 
 
 

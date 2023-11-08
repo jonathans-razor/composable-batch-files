@@ -34,12 +34,12 @@ exit/b
 
 :macmecfg
 
-set fp=* Delete conflicted copies in the mac folder.
+echo. & echo * Delete conflicted copies in the mac folder.
 
 rem lu: Feb-13-2019
 
 echo.
-echo %fp%
+
 
 call t smecfg
 
@@ -55,12 +55,12 @@ exit/b
 
 :multi-edit_conflicted_files
 
-set fp=* Delete conflicted copies in Mutli-Edit folders.
+echo. & echo * Delete conflicted copies in Mutli-Edit folders.
 
 rem lu: Mar-6-2019
 
 echo.
-echo %fp%
+
 
 rem 1.
 call t s
@@ -82,12 +82,12 @@ exit/b
 
 :concop_af
 
-set fp=* Delete conflicted copies aggregate functions.
+echo. & echo * Delete conflicted copies aggregate functions.
 
 rem lu: Mar-14-2020
 
 echo.
-echo %fp%
+
 
 
 call t s
@@ -110,12 +110,12 @@ exit/b
 
 :tmp
 
-set fp=* Temp folder.
+echo. & echo * Temp folder.
 
 rem lu: Apr-8-2020
 
 echo.
-echo %fp%
+
 
 td tmp>nul
 

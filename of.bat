@@ -30,7 +30,7 @@ exit/b
 
 :open_folder_in_windows_explorer
 
-set fp=* Open folder in Windows Explorer.
+echo. & echo * Open folder in Windows Explorer.
 
 rem fcd: May-9-2017
 

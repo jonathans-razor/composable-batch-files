@@ -99,12 +99,12 @@ exit/b
 :_
 :repl
 :sr
-set fp=* String replacement is cool.
+echo. & echo * String replacement is cool.
 
 rem skw dos search and replace
 rem echo(%text:%search%=%replace%%)
 
-echo. & echo %fp%
+echo. & 
 
 cls
 
@@ -269,9 +269,9 @@ exit/b
 
 :else
 
-set fp=* The else statement.
+echo. & echo * The else statement.
 
-echo %fp%
+
 echo.
 
 rem (!else)
@@ -300,9 +300,9 @@ exit/b
 
 :percent_2
 
-set fp=* Percent 2 is a required field.
+echo. & echo * Percent 2 is a required field.
 
-echo %fp%
+
 
 if "%~2" == "" (
   echo.
@@ -318,12 +318,12 @@ exit/b
 
 :percent
 
-set fp=* Testing percent 2 and not equals.
+echo. & echo * Testing percent 2 and not equals.
 
 rem Function Creation Date: Jun-8-2018
 
 echo.
-echo %fp%
+
 
 set test_var=Rain in Spain.
 
@@ -408,11 +408,11 @@ exit/b
 
 :var_com
 
-set fp=* Variable comparisons.
+echo. & echo * Variable comparisons.
 
 rem lu: Jun-8-2018
 
-echo %fp%
+
 
 
 set variable_1=
@@ -458,11 +458,11 @@ exit/b
 
 :multiline
 
-set fp=* Ho to do multiline echo statements.
+echo. & echo * Ho to do multiline echo statements.
 
 rem lu: Jun-7-2018 (!multiline)
 
-echo %fp%
+
 
 set cbf-filep=* Chicken Blah blah blahblah Blah blah blahblahBlah blah blahblahBlah blah
 set cbf-filep=%cbf-filep% 2 222 22 22 22 22 2 2 2 22  22 blah 222 22 2 to boldly go where
@@ -480,11 +480,11 @@ exit/b
 
 :not
 
-set fp=* Testing inequality using the not statement.
+echo. & echo * Testing inequality using the not statement.
 
 rem Imprimatur (!not, !notba)
 
-echo %fp%
+
 
 set message=hello
 
@@ -504,13 +504,13 @@ exit/b
 
 rem skw addition (!vmath)
 
-set fp=* Set math!
+echo. & echo * Set math!
 
 rem lu: Jul-6-2018
 
 rem skw addition
 
-echo %fp%
+
 
 set /a addition=15+12
 
@@ -544,11 +544,11 @@ exit/b
 
 :guard_clause_caller
 
-set fp=* Guard clause caller.
+echo. & echo * Guard clause caller.
 
 rem lu: Nov-1-2018
 
-echo %fp%
+
 
 call %0 guard_clause
 
@@ -571,11 +571,11 @@ exit/b
 
 :guard_clause
 
-set fp=* Guard clause.
+echo. & echo * Guard clause.
 
 rem lu: Nov-1-2018
 
-echo %fp%
+
 
 if not exist "%~2" (
   echo. & echo * Error: File "%~2" doesn't exist.
@@ -590,14 +590,14 @@ exit/b 0
 
 :
 
-set fp=* Set statements aren't allowed inside if blocks so here is the workaround.
+echo. & echo * Set statements aren't allowed inside if blocks so here is the workaround.
 
 rem lu: Feb-4-2019
 
 rem set statements inside if blocks: skw
 
 echo.
-echo %fp%
+
 
 echo.
 if "%~2" == "" (
@@ -612,12 +612,12 @@ exit/b
 
 :
 
-set fp=* How to sort a file.
+echo. & echo * How to sort a file.
 
 rem lu: Feb-5-2019
 
 echo.
-echo %fp%
+
 
 echo.
 sort j3.txt>j4.txt
@@ -630,7 +630,7 @@ exit/b
 
 :where
 
-set fp=* How to tell from where a command is being run.
+echo. & echo * How to tell from where a command is being run.
 
 rem lu: Feb-5-2019
 
@@ -649,7 +649,7 @@ Try where /? for help.
 :Feb-5-2019
 
 echo.
-echo %fp%
+
 
 echo.
 where j.bat
@@ -662,12 +662,12 @@ exit/b
 
 :locl
 
-set fp=* Load clipboard. How to put something onto the clipboard!
+echo. & echo * Load clipboard. How to put something onto the clipboard!
 
 rem lu: Feb-7-2019
 
 echo.
-echo %fp%
+
 
 echo "This text is on the clipboard. Cool." | clip
 rem echo "%cbf-pt%" | clip
@@ -684,12 +684,12 @@ exit/b
 
 :do_while
 
-set fp=* A loop that iterates x amount of times.
+echo. & echo * A loop that iterates x amount of times.
 
 rem lu: Mar-30-2020
 
 echo.
-echo %fp%
+
 
 set current_iteration_number=1
 set x=4
@@ -711,12 +711,12 @@ goto :iterate
 
 :loop
 
-set fp=* An endless loop that pauses for 3 seconds.
+echo. & echo * An endless loop that pauses for 3 seconds.
 
 rem lu: Mar-30-2020
 
 echo.
-echo %fp%
+
 
 timeout /t 3
 
@@ -741,14 +741,14 @@ rem lu: Sep-9-2023
 
 ::_
      
-set fp=* Call t versus call %0 versus call label, parameter passing.
+echo. & echo * Call t versus call %0 versus call label, parameter passing.
 
 rem Result: Stangely, when calling with a colon, parameter doesn't seem to work. Mar-31-2019
 
 rem lu: Mar-21-2019
 
 echo.
-echo %fp%
+
 
 call %0 hw2 "Percent Zero!"
 
@@ -764,11 +764,11 @@ exit/b
 
 :passing_spaces
 
-set fp=* Passing spaces in parameters.
+echo. & echo * Passing spaces in parameters.
 
 rem lu: Sep-9-2018
 
-echo %fp%
+
 
 echo.
 echo Percent 2: %2
@@ -784,11 +784,11 @@ exit/b
 
 :pass_spaces
 
-set fp=* The lesson learned is that you should put double quotes around parameters that may contain spaces.
+echo. & echo * The lesson learned is that you should put double quotes around parameters that may contain spaces.
 
 rem lu: Sep-9-2018
 
-echo %fp%
+
 
 call n sa
 
@@ -802,12 +802,12 @@ exit/b
 
 :
 
-set fp=* Checking the command line parameters.
+echo. & echo * Checking the command line parameters.
 
 rem lu: Nov-27-2019
 
 echo.
-echo %fp%
+
 
 echo.
 rem This equals the entire parameter list!
@@ -828,12 +828,12 @@ exit/b
 
 :ref3
 
-set fp=* Reflection version 3. Dynamic variable naming.
+echo. & echo * Reflection version 3. Dynamic variable naming.
 
 rem lu: Mar-30-2020
 
 echo.
-echo %fp%
+
 
 if "%~2" == "" (
   echo.
@@ -858,12 +858,12 @@ exit/b
 
 :ref4
 
-set fp=* Reflection version 4. Dynamic variable naming.
+echo. & echo * Reflection version 4. Dynamic variable naming.
 
 rem lu: Mar-30-2020
 
 echo.
-echo %fp%
+
 
 if "%~3" == "" (
   echo.
@@ -888,12 +888,12 @@ exit/b
 
 :
 
-set fp=* Test if folder exists. Test folder existence.
+echo. & echo * Test if folder exists. Test folder existence.
 
 rem lu: Apr-21-2020
 
 echo.
-echo %fp%
+
 
 cd /d %dropbox%\Backups\Savannah
 
@@ -919,12 +919,12 @@ exit/b
 
 :htse
 
-set fp=* How to suppress error messages in batch files.
+echo. & echo * How to suppress error messages in batch files.
 
 rem lu: Nov-24-2020
 
 echo.
-echo %fp%
+
 
 rem For example, this would suppress the standard cannot find label error message.
 goto %1 2>nul
@@ -964,12 +964,12 @@ command 2>&1
 
 :
 
-set fp=* Interesting Java code snippet that I'm not sure what it does.
+echo. & echo * Interesting Java code snippet that I'm not sure what it does.
 
 rem lu: Jan-31-2019
 
 echo.
-echo %fp%
+
 
 rem From gradlew.bat
 
@@ -989,13 +989,13 @@ exit/b
 
 :tgw
 
-set fp=* Test goto with no label found.
+echo. & echo * Test goto with no label found.
 
 rem Is there a way to test if a label exists in a batch file before calling the goto statemnt?
 
 rem lu: Jul-9-2018
 
-echo %fp%
+
 
 rem goto nonexistinglabel
 
@@ -1020,13 +1020,13 @@ exit/b
 
 :
 
-set fp=* If not defined.
+echo. & echo * If not defined.
 
 
 rem lu: Nov-1-2019
 
 echo.
-echo %fp%
+
 
 echo.
 set cbf-test=
@@ -1087,12 +1087,12 @@ exit/b
 
 :_
 
-set fp=* Inheritance and global variables.
+echo. & echo * Inheritance and global variables.
 
 rem lu: Sep-1-2021
 
 echo.
-echo %fp%
+
 
 call pn tickl>nul
 
@@ -1142,10 +1142,10 @@ exit/b
 
 :hlp-old
 
-set fp=* Command line help.
+echo. & echo * Command line help.
 
 echo.
-echo %fp%
+
 
 set help_filename=%temp%\help_contents.txt
 
@@ -1344,11 +1344,11 @@ if not exist "%cbf-app%" (
 
 :reset-error-level
 
-set fp=* Test return codes for "n" calls. How do you reset errorlevel?
+echo. & echo * Test return codes for "n" calls. How do you reset errorlevel?
 
 rem lu: Jul-18-2018
 
-echo %fp%
+
 
 call n bullshit
 
@@ -1434,9 +1434,9 @@ exit/b
 
 :style_old
 
-set fp=* The errorlevel statement.
+echo. & echo * The errorlevel statement.
 
-echo %fp%
+
 
 echo.
 echo * Errorlevel: %errorlevel%
@@ -1473,14 +1473,14 @@ exit/b
 
 :style_2
 
-set fp=* Test error level when looking for folders. %1
+echo. & echo * Test error level when looking for folders. %1
 
 rem lu: Nov-1-2019
 
 rem This works.
 
 echo.
-echo %fp%
+
 
 cd /d c:\aq
 
@@ -1500,14 +1500,14 @@ exit/b
 
 :style_10
 
-set fp=* Test error level when looking for folders. %1
+echo. & echo * Test error level when looking for folders. %1
 
 rem lu: Nov-1-2019
 
 rem This works.
 
 echo.
-echo %fp%
+
 
 cd /d c:\a
 
@@ -1676,12 +1676,12 @@ call s | find /i "working tree clean">nul
 
 :epl2
 
-set fp=* Evaluate the parameter list, less capable version.
+echo. & echo * Evaluate the parameter list, less capable version.
 
 rem lu: Nov-27-2019
 
 echo.
-echo %fp%
+
 
 set d_switch=0
 set e_switch=0
@@ -1750,14 +1750,14 @@ lu: Oct-19-2023
 
 :cla
 
-set fp=* How to save command line arguments. This works.
+echo. & echo * How to save command line arguments. This works.
 
 rem Test percent star command.
 
 rem lu: Jan-31-2019
 
 echo.
-echo %fp%
+
 
 rem set cmd_line_args=%*
 
@@ -1818,12 +1818,12 @@ echo. & echo * 5: %5.
 
 :telp2
 
-set fp=* Testing errorlevel part 2.
+echo. & echo * Testing errorlevel part 2.
 
 rem lu: Jan-28-2022
 
 echo.
-echo %fp%
+
 
 echo. & echo EL Begin: %errorlevel%
 
@@ -1851,10 +1851,10 @@ exit/b
 
 :tfc
 
-set fp=* Test find command.
+echo. & echo * Test find command.
 
 echo.
-echo %fp%
+
 
 set test_find=hello
 
@@ -1878,10 +1878,10 @@ exit/b
 
 :which_environment_is_currently_set
 
-set fp=* Which environment is the kiosk pointing to? (skw finding text in file)
+echo. & echo * Which environment is the kiosk pointing to? (skw finding text in file)
 
 echo.
-echo %fp%
+
 
 type %config_1_destination% | find /i "fqt">nul
 
@@ -1925,7 +1925,7 @@ rem lu: Apr-1-2019
 
 :pev
 
-set fp=* How to populate an environment variable from a file.
+echo. & echo * How to populate an environment variable from a file.
 
 rem lu: Oct-24-2019
 
@@ -1934,7 +1934,7 @@ rem populating an environment variable from a file: skw
 rem The problem with this command is that it only does the first line of the file.
 
 echo.
-echo %fp%
+
 
 echo.
 set /p test=<c:\a\j1.txt
@@ -1952,10 +1952,10 @@ how do you set an environment variable from file: skw
 
 :user_choice
 
-set fp=* Ask the user a question and proceed accordingly.
+echo. & echo * Ask the user a question and proceed accordingly.
 
 echo.
-echo %fp%
+
 
 rem option, choose, choice
 
@@ -1972,12 +1972,12 @@ exit/b
 
 :where
 
-set fp=* Go to the where location.
+echo. & echo * Go to the where location.
 
 rem lu: Jun-20-2019
 
 echo.
-echo %fp%
+
 
 echo.
 where>c:\a\j1.txt
@@ -2004,12 +2004,12 @@ creation date: Jul-3-2023
 
 :squi
 
-set fp=* Squiggle help.
+echo. & echo * Squiggle help.
 
 rem lu: Dec-30-2018
 
 echo.
-echo %fp%
+
 
 exit/b
 
@@ -2068,14 +2068,14 @@ rem lu: Aug-29-2023
 
 :old-fiex
 
-set fp=* File existence.
+echo. & echo * File existence.
 
 rem See also specific_file_presence in m.bat.
 
 rem lu: Dec-27-2018
 
 echo.
-echo %fp%
+
 
 echo.
 
@@ -2100,12 +2100,12 @@ exit/b
 
 :th_specific_folder_presence
 
-set fp=* Test harness for specific_folder_presence.
+echo. & echo * Test harness for specific_folder_presence.
 
 rem lu: Nov-11-2019
 
 echo.
-echo %fp%
+
 
 call %0 specific_folder_presence .chef
 
@@ -2124,12 +2124,12 @@ exit/b
 
 :hie
 
-set fp=* To get help on the "if exist" command, use this code block.
+echo. & echo * To get help on the "if exist" command, use this code block.
 
 rem lu: Dec-27-2018
 
 echo.
-echo %fp%
+
 
 echo.
 if exist/?
@@ -2142,12 +2142,12 @@ exit/b
 
 :finex
 
-set fp=* Test if a File does not exist.
+echo. & echo * Test if a File does not exist.
 
 rem lu: Dec-27-2018
 
 echo.
-echo %fp%
+
 
 if not exist "amx.bat" (
   echo.
@@ -2162,11 +2162,11 @@ exit/b
 
 :folder_exists_2
 
-set fp=* Testing whether a folder exists 2.
+echo. & echo * Testing whether a folder exists 2.
 
 rem lu: May-23-2018
 
-echo %fp%
+
 
 if exist "%1" (
   echo.
@@ -2256,7 +2256,7 @@ exit/b
 :_
 :
 
-set fp=* If filename.
+echo. & echo * If filename.
 
 echo %1| find /i ".">nul
 if errorlevel 1 (
@@ -2295,7 +2295,7 @@ creation date: Sep-25-2023
 
 :echo
 
-set fp=* Line continuation with caret character.
+echo. & echo * Line continuation with caret character.
 
 rem How do you continue a batch file line onto a second line?
 
@@ -2306,7 +2306,7 @@ rem expository echo statement
 rem lu: Nov-2-2018
 
 echo.
-echo %fp%
+
 
 echo.
 echo The Gettysburg Address is a speech that U.S. President Abraham Lincoln delivered during ^
@@ -2337,7 +2337,7 @@ exit/b
 
 :percent_20
 
-set fp=* How do you escape a percent sign in a batch file?
+echo. & echo * How do you escape a percent sign in a batch file?
 
 rem Answer: 2 '%' signs equals one.
 
@@ -2347,7 +2347,7 @@ rem percent 20 issue in environment variables. skw
 
 rem fcd: Aug-2-2017
 
-echo %fp%
+
 
 set cbf-url='https://cyber-balance.visualstudio.com/SPDR%%20LOB/_git/Mobile'
 
@@ -2362,12 +2362,12 @@ exit/b
 
 :ampe
 
-set fp=* The ampersand character allows you to multiple commands on single line.
+echo. & echo * The ampersand character allows you to multiple commands on single line.
 
 rem The ampersand is the line continuation character for batch files.
 
 echo.
-echo %fp%
+
 
 echo. & echo hey 1 & echo hey 2
 
@@ -2379,12 +2379,12 @@ exit/b
 
 :
 
-set fp=* Test line continuation character in environment variables.
+echo. & echo * Test line continuation character in environment variables.
 
 rem lu: Jun-17-2019
 
 echo.
-echo %fp%
+
 
 echo.
 set test=asdflasdff asdfasjklasdf asdflkasdfl  asdfasdfjklasdf asdfl asdf asdflasdfjklasdfl^
@@ -2401,7 +2401,7 @@ exit/b
 
 :debug
 
-set fp=* Debugging statement.
+echo. & echo * Debugging statement.
 
 echo. & echo Aug-18-2020_3_39_PM q
 
@@ -2413,7 +2413,7 @@ exit/b
 
 :pare
 
-set fp=* Escape character for a parenthesis.
+echo. & echo * Escape character for a parenthesis.
 
 rem skw what's the escape character for a batch file?
 
@@ -2422,7 +2422,7 @@ rem Escaping Specific Characters: ^esch
 rem lu: Nov-20-2018
 
 echo.
-echo %fp%
+
 
 echo.
 echo * Error: No "*.%2" file exist(s^) in the current folder.
@@ -2437,13 +2437,13 @@ exit/b
 
 :at_sign
 
-set fp=* Use of the at sign "@" before rem. Even with echo on, the statement "Hello 2" will ^
+echo. & echo * Use of the at sign "@" before rem. Even with echo on, the statement "Hello 2" will ^
 not be disploayed.
 
 rem lu: Jan-31-2019
 
 echo.
-echo %fp%
+
 
 echo.
 

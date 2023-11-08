@@ -46,7 +46,7 @@ exit/b
 
 :validate-input
 
-set fp=* Validate if a file is defined and exists.
+echo. & echo * Validate if a file is defined and exists.
 
 set cbf-fn=
 
@@ -93,10 +93,10 @@ exit/b 2
 
 :file_exists
 
-set fp=* File exists. {%cbf-fn%}
+echo. & echo * File exists. {%cbf-fn%}
 
 rem echo.
-rem echo %fp%
+rem 
 
 exit/b
 

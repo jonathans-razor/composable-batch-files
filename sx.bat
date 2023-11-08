@@ -12,7 +12,7 @@ set cbf-filep=* Use Sublime to edit a batch file in the CBF folder.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 
@@ -43,7 +43,7 @@ exit/b
 
 :main
 
-set fp=* Main function.
+echo. & echo * Main function.
 
 echo %cbf-filep%
 

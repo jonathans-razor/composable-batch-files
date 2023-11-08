@@ -43,9 +43,9 @@ exit/b
 
 :lex
 
-set fp=* List running ex images.
+echo. & echo * List running ex images.
 
-echo %fp%
+
 echo.
 
 tasklist /v /fi "imagename eq ex*"
@@ -58,9 +58,9 @@ exit/b
 
 :l
 
-set fp=* List running images.
+echo. & echo * List running images.
 
-echo %fp%
+
 
 tasklist /fo table
 
@@ -72,9 +72,9 @@ exit/b
 
 :ll
 
-set fp=* List running images.
+echo. & echo * List running images.
 
-echo %fp%
+
 
 tasklist /fo list
 
@@ -86,7 +86,7 @@ exit/b
 
 :x
 
-set fp=* Tasklist examples.
+echo. & echo * Tasklist examples.
 
 TASKLIST
 rem TASKLIST /M
@@ -107,9 +107,9 @@ exit/b
 
 :sort
 
-set fp=* Pipe running images to a sortable text file.
+echo. & echo * Pipe running images to a sortable text file.
 
-echo %fp%
+
 
 tasklist /fo table>%temp%\search_results.txt
 
@@ -123,12 +123,12 @@ exit/b
 
 :test
 
-set fp=* Test. This works.
+echo. & echo * Test. This works.
 
 rem lu: Jan-4-2019
 
 echo.
-echo %fp%
+
 
 TASKLIST /FI "USERNAME ne NT AUTHORITY\SYSTEM" /FI "STATUS eq running"
 
@@ -140,12 +140,12 @@ exit/b
 
 :test2
 
-set fp=* Undercase. This works.
+echo. & echo * Undercase. This works.
 
 rem lu: Jan-4-2019
 
 echo.
-echo %fp%
+
 
 tasklist /fi "username ne nt authority\system" /fi "status eq running"
 
@@ -159,12 +159,12 @@ exit/b
 
 :we
 
-set fp=* Windows Explorer.
+echo. & echo * Windows Explorer.
 
 rem lu: Jan-4-2019
 
 echo.
-echo %fp%
+
 
 tasklist /fi "username ne nt authority\system" /fi "status eq running" /fi "imagename eq explorer.exe" /fi "windowtitle ne untitle*"
 

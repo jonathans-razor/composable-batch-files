@@ -12,7 +12,7 @@ set cbf-filep=* Summary: Heroku-related functions.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 
@@ -56,7 +56,7 @@ exit/b
 
 :vers
 
-set fp=* Version information.
+echo. & echo * Version information.
 
 heroku --version
 
@@ -68,7 +68,7 @@ exit/b
 
 :help
 
-set fp=* Help information.
+echo. & echo * Help information.
 
 heroku --help
 
@@ -80,7 +80,7 @@ exit/b
 
 :logi
 
-set fp=* Log in.
+echo. & echo * Log in.
 
 heroku login
 
@@ -94,7 +94,7 @@ exit/b
 
 :crea
 
-set fp=* Create app.
+echo. & echo * Create app.
 
 rem skw baps-Nov-3-2021_5_34_PM-series
 
@@ -114,7 +114,7 @@ exit/b
 
 :set
 
-set fp=* Set remote target.
+echo. & echo * Set remote target.
 
 heroku git:remote -a rocket-weather
 
@@ -126,7 +126,7 @@ exit/b
 
 :push
 
-set fp=* Push app.
+echo. & echo * Push app.
 
 git push heroku main
 

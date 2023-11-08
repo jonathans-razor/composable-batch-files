@@ -12,7 +12,7 @@ set cbf-filep=* Perform Terraform-related tasks.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help s
 
@@ -51,12 +51,12 @@ exit/b
 
 :vers
 
-set fp=* Get the Terraform version number.
+echo. & echo * Get the Terraform version number.
 
 rem lu: Oct-29-2018
 
 echo.
-echo %fp%
+
 
 echo.
 terraform version
@@ -69,12 +69,12 @@ exit/b
 
 :plan_experimental
 
-set fp=* Check Terraform plan status.
+echo. & echo * Check Terraform plan status.
 
 rem lu: Oct-29-2018
 
 echo.
-echo %fp%
+
 
 echo.
 terraform plan
@@ -87,13 +87,13 @@ exit/b
 
 :plan_chapter_2
 
-set fp=* This execution plan can be reviewed prior to running apply to get a sense for what ^
+echo. & echo * This execution plan can be reviewed prior to running apply to get a sense for what ^
 Terraform will do.
 
 rem lu: Oct-29-2018
 
 echo.
-echo %fp%
+
 
 echo.
 terraform plan -var-file="%tfkeys%\terraform.tfvars" -var "private_key_path=%tfkeys%\TerraformTest2.pem" -no-color
@@ -109,12 +109,12 @@ exit/b
 
 :destroy_chapter_2
 
-set fp=* Destroy a plan.
+echo. & echo * Destroy a plan.
 
 rem lu: Oct-29-2018
 
 echo.
-echo %fp%
+
 
 echo.
 terraform destroy -var-file="%tfkeys%\terraform.tfvars" -var "private_key_path=%tfkeys%\TerraformTest2.pem" -no-color -auto-approve
@@ -130,12 +130,12 @@ exit/b
 
 :apply_chapter_2
 
-set fp=* Execute a plan!
+echo. & echo * Execute a plan!
 
 rem lu: Oct-29-2018
 
 echo.
-echo %fp%
+
 
 echo.
 terraform apply -var-file="%tfkeys%\terraform.tfvars" -var "private_key_path=%tfkeys%\TerraformTest2.pem" -no-color -auto-approve
@@ -156,12 +156,12 @@ rem which comes with the AWS access and secret keys, which I need for Terraform.
 
 :plan12
 
-set fp=* Plan.
+echo. & echo * Plan.
 
 rem lu: Oct-30-2018
 
 echo.
-echo %fp%
+
 
 echo.
 terraform plan -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\Cart_Test.pem" -no-color
@@ -174,12 +174,12 @@ exit/b
 
 :apply12
 
-set fp=* Apply.
+echo. & echo * Apply.
 
 rem lu: Oct-30-2018
 
 echo.
-echo %fp%
+
 
 echo.
 terraform apply -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\Cart_Test.pem" -no-color -auto-approve
@@ -192,12 +192,12 @@ exit/b
 
 :destroy12
 
-set fp=* Destroy.
+echo. & echo * Destroy.
 
 rem lu: Oct-30-2018
 
 echo.
-echo %fp%
+
 
 echo.
 terraform destroy -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\Cart_Test.pem" -no-color -auto-approve
@@ -210,12 +210,12 @@ exit/b
 
 :check_tf_existence
 
-set fp=* Check the current folder for the presence of Terraform file(s).
+echo. & echo * Check the current folder for the presence of Terraform file(s).
 
 rem lu: Oct-31-2018
 
 echo.
-echo %fp%
+
 
 if not exist *.tf (
   echo.
@@ -235,12 +235,12 @@ exit/b 0
 
 :repl
 
-set fp=* Terraform console.
+echo. & echo * Terraform console.
 
 rem lu: Nov-1-2018
 
 echo.
-echo %fp%
+
 
 call %0 check_tf_existence
 
@@ -259,12 +259,12 @@ exit/b
 
 :fmt
 
-set fp=* Format tf file.
+echo. & echo * Format tf file.
 
 rem lu: Nov-1-2018
 
 echo.
-echo %fp%
+
 
 call %0 check_tf_existence
 
@@ -283,12 +283,12 @@ exit/b
 
 :refresh
 
-set fp=* Refresh state file.
+echo. & echo * Refresh state file.
 
 rem lu: Nov-1-2018
 
 echo.
-echo %fp%
+
 
 call %0 check_tf_existence
 
@@ -307,12 +307,12 @@ exit/b
 
 :taint
 
-set fp=* Manually mark a resource for recreation.
+echo. & echo * Manually mark a resource for recreation.
 
 rem lu: Nov-1-2018
 
 echo.
-echo %fp%
+
 
 call %0 check_tf_existence
 
@@ -339,12 +339,12 @@ exit/b
 
 :destroy
 
-set fp=* Destroy.
+echo. & echo * Destroy.
 
 rem lu: Oct-30-2018
 
 echo.
-echo %fp%
+
 
 call %0 check_tf_existence
 
@@ -363,13 +363,13 @@ exit/b
 
 :init_old
 
-set fp=* Initialize Terraform. This downloads necessary or missing plugins, e.g. from ^
+echo. & echo * Initialize Terraform. This downloads necessary or missing plugins, e.g. from ^
 Hashicorp. This worked from the "dv" folder.
 
 rem lu: Jun-20-2019
 
 echo.
-echo %fp%
+
 
 call t ci
 
@@ -402,12 +402,12 @@ exit/b
 
 :plan_amq
 
-set fp=* Init AMQ.
+echo. & echo * Init AMQ.
 
 rem lu: Nov-11-2019
 
 echo.
-echo %fp%
+
 
 call t mqfq
 
@@ -421,12 +421,12 @@ exit/b
 
 :appl_amq
 
-set fp=* Apply AMQ.
+echo. & echo * Apply AMQ.
 
 rem lu: Nov-11-2019
 
 echo.
-echo %fp%
+
 
 call t mqfq
 
@@ -444,12 +444,12 @@ exit/b
 
 :init
 
-set fp=* Initialize, which picks up the settings from the current folder.
+echo. & echo * Initialize, which picks up the settings from the current folder.
 
 rem lu: Jan-16-2020
 
 echo.
-echo %fp%
+
 
 call m specific_file_presence main.tf
 
@@ -488,12 +488,12 @@ exit/b
 
 :plan
 
-set fp=* Plan.
+echo. & echo * Plan.
 
 rem lu: May-24-2019
 
 echo.
-echo %fp%
+
 
 call m specific_file_presence main.tf
 
@@ -527,12 +527,12 @@ exit/b
 
 :apply
 
-set fp=* Apply.
+echo. & echo * Apply.
 
 rem lu: Jan-16-2020
 
 echo.
-echo %fp%
+
 
 call m specific_file_presence main.tf
 

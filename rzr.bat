@@ -15,7 +15,7 @@ echo %cbf-filep%
 
 :_
 
-set fp=* Shift parameters.
+echo. & echo * Shift parameters.
 
 shift /0
 
@@ -23,7 +23,7 @@ shift /0
 
 :_
 
-set fp=* Set color.
+echo. & echo * Set color.
 
 call col yob
 
@@ -31,11 +31,11 @@ call col yob
 
 :_
 
-set fp=* Preprocess.
+echo. & echo * Preprocess.
 
 rem lu: Jan-31-2019
 
-rem echo %fp%
+rem 
 
 set cbf-fn=
 
@@ -45,7 +45,7 @@ call m initialize_environment_router
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~0" == "?" goto help
 
@@ -83,12 +83,12 @@ exit/b
 
 :main
 
-set fp=* Rzr batch file's main function.
+echo. & echo * Rzr batch file's main function.
 
 rem lu: Feb-1-2019
 
 echo.
-echo %fp%
+
 
 cd\
 

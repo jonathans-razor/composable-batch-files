@@ -12,7 +12,7 @@ title=%cbf-filep%
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1"=="" %0 msl
 

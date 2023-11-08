@@ -15,7 +15,7 @@ echo %cbf-filep% Jun-9-2020_3_28_PM
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 
@@ -91,7 +91,7 @@ set cbf-parameter=
 
 :main
 
-set fp=* Main function of %0.bat.
+echo. & echo * Main function of %0.bat.
 
 call r
 

@@ -37,7 +37,7 @@ exit/b
 
 :preprocess
 
-set fp=* Preprocess.
+echo. & echo * Preprocess.
 
 call m clear-errorlevel
 

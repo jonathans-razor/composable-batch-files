@@ -15,7 +15,7 @@ rem echo %cbf-filep%
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "?" goto help
 
@@ -114,7 +114,7 @@ call dr renamed>>%temp%\search_results_concop.txt
 
 :_
 
-set fp=* Open the report.
+echo. & echo * Open the report.
 
 call an me>nul
 

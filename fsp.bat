@@ -33,17 +33,17 @@ exit/b
 
 :concop
 
-set fp=* Conflicted Copy Report
+echo. & echo * Conflicted Copy Report
 
 rem lu: Feb-15-2019
 
 echo.
-echo %fp%
+
 
 set cbf-fn=%temp%\conflicted copy report.txt
 
 echo. > "%cbf-fn%"
-echo %fp% >> "%cbf-fn%"
+ >> "%cbf-fn%"
 
 echo -------------------------------------------------------- >> "%cbf-fn%"
 

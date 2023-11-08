@@ -39,7 +39,7 @@ rem lu: Sep-20-2023
 
 :runi
 
-set fp=* Run index from %0.
+echo. & echo * Run index from %0.
 
 tsc index
 
@@ -51,7 +51,7 @@ exit/b
 
 :init
 
-set fp=* Initialize.
+echo. & echo * Initialize.
 
 tsc --init
 
@@ -63,7 +63,7 @@ exit/b
 
 :watch
 
-set fp=* Watch all files in a folder.
+echo. & echo * Watch all files in a folder.
 
 tsc -w
 
@@ -112,7 +112,7 @@ exit/b
 :_
 :w
 
-set fp=* Watch a particular TypeScript file.
+echo. & echo * Watch a particular TypeScript file.
 
 call fe "%~2" & if errorlevel 1 exit/b
 

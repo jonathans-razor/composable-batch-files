@@ -72,10 +72,10 @@ exit/b
 
 :addition
 
-set fp=* Addition.
+echo. & echo * Addition.
 
 echo.
-echo %fp%
+
 
 set /a addition=%1+%3
 
@@ -89,10 +89,10 @@ exit/b
 
 :subtraction
 
-set fp=* Subtraction.
+echo. & echo * Subtraction.
 
 echo.
-echo %fp%
+
 
 set /a subtraction=%1-%3
 
@@ -107,10 +107,10 @@ exit/b
 
 :multiplication
 
-set fp=* Multiplication.
+echo. & echo * Multiplication.
 
 echo.
-echo %fp%
+
 
 set /a multiplication=%1*%3
 
@@ -125,10 +125,10 @@ exit/b
 
 :division
 
-set fp=* Division.
+echo. & echo * Division.
 
 echo.
-echo %fp%
+
 
 set /a division=%1/%3
 

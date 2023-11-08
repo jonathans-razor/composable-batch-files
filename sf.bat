@@ -53,7 +53,7 @@ exit/b
 
 call i /c>nul
 
-set fp=* Evaluate the parameter list.
+echo. & echo * Evaluate the parameter list.
 
 call n %1
          
@@ -205,7 +205,7 @@ goto main
 
 :main
 
-set fp=* Surf the internet.
+echo. & echo * Surf the internet.
 
 rem lu: Jan-31-2018
 

@@ -47,7 +47,7 @@ rem lu: Sep-22-2023
 
 :runm
 
-set fp=* Run a go program.
+echo. & echo * Run a go program.
 
 call m specific_file_presence main.go
 
@@ -66,7 +66,7 @@ exit/b
 
 :inst
 
-set fp=* Create a binary.
+echo. & echo * Create a binary.
 
 go install
 
@@ -78,7 +78,7 @@ exit/b
 
 :test
 
-set fp=* Test.
+echo. & echo * Test.
 
 go test
 

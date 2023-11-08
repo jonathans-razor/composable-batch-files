@@ -12,7 +12,7 @@ set cbf-filep=* Nickname dictionary that sets the environment variables correspo
 
 :_
 
-set fp=* In order to promote freshness, reset the error level.
+echo. & echo * In order to promote freshness, reset the error level.
 
 ver>nul
 
@@ -20,7 +20,7 @@ ver>nul
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 

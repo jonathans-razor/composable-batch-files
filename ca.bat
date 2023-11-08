@@ -17,7 +17,7 @@ title=CBF
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "?" goto help
 
@@ -40,7 +40,7 @@ exit/b
 
 :main
 
-set fp=* Clear screen and reset color.
+echo. & echo * Clear screen and reset color.
 
 call t a
 

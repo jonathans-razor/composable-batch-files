@@ -15,7 +15,7 @@ echo %cbf-filep%
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto rute
 
@@ -59,12 +59,12 @@ exit/b
 
 :vers
 
-set fp=* Version.
+echo. & echo * Version.
 
 rem lu: Jan-8-2019
 
 echo.
-echo %fp%
+
 
 gradle -version
 
@@ -78,12 +78,12 @@ exit/b
 
 :tasks
 
-set fp=* List tasks.
+echo. & echo * List tasks.
 
 rem lu: Jan-9-2019
 
 echo.
-echo %fp%
+
 
 echo.
 gradle tasks
@@ -96,12 +96,12 @@ exit/b
 
 :stat
 
-set fp=* Status.
+echo. & echo * Status.
 
 rem lu: Jan-9-2019
 
 echo.
-echo %fp%
+
 
 echo.
 call gradle --status
@@ -118,12 +118,12 @@ exit/b
 
 :build
 
-set fp=* Build.
+echo. & echo * Build.
 
 rem lu: Jan-9-2019
 
 echo.
-echo %fp%
+
 
 echo.
 call gradle build
@@ -140,14 +140,14 @@ exit/b
 
 :gr_dev
 
-set fp=* Build CAPI for development.
+echo. & echo * Build CAPI for development.
 
 rem color 60
 
 rem lu: Jan-8-2019
 
 echo.
-echo %fp%
+
 
 call %0 d
 
@@ -159,12 +159,12 @@ exit/b
 
 :help
 
-set fp=* Help
+echo. & echo * Help
 
 rem lu: Jan-9-2019
 
 echo.
-echo %fp%
+
 
 echo.
 gradle help
@@ -177,12 +177,12 @@ exit/b
 
 :model
 
-set fp=* Model.
+echo. & echo * Model.
 
 rem lu: Jan-9-2019
 
 echo.
-echo %fp%
+
 
 echo.
 gradle model
@@ -195,12 +195,12 @@ exit/b
 
 :prop
 
-set fp=* Properties.
+echo. & echo * Properties.
 
 rem lu: Jan-9-2019
 
 echo.
-echo %fp%
+
 
 echo.
 gradle properties
@@ -213,12 +213,12 @@ exit/b
 
 :scan
 
-set fp=* Scan. Builds an online report.
+echo. & echo * Scan. Builds an online report.
 
 rem lu: Jan-11-2019
 
 echo.
-echo %fp%
+
 
 echo.
 gradle --scan
@@ -231,12 +231,12 @@ exit/b
 
 :upli
 
-set fp=* Update Liquibase.
+echo. & echo * Update Liquibase.
 
 rem lu: Jan-16-2019
 
 echo.
-echo %fp%
+
 
 echo.
 gradle liquibaseUpdate
@@ -249,14 +249,14 @@ exit/b
 
 :rgw
 
-set fp=* Run gradlew.
+echo. & echo * Run gradlew.
 
 rem color 60
 
 rem lu: Jan-8-2019
 
 echo.
-echo %fp%
+
 
 echo.
 gradlew
@@ -272,12 +272,12 @@ exit/b
 
 :buildw
 
-set fp=* Gradlew build.
+echo. & echo * Gradlew build.
 
 rem lu: Jan-9-2019
 
 echo.
-echo %fp%
+
 
 echo.
 gradlew build
@@ -290,12 +290,12 @@ exit/b
 
 :bfpw
 
-set fp=* Build for production, war file. This optimizes the cart-api application for production.
+echo. & echo * Build for production, war file. This optimizes the cart-api application for production.
 
 rem lu: Jan-8-2019
 
 echo.
-echo %fp%
+
 
 echo.
 call gradlew -Pprod clean bootWar
@@ -309,12 +309,12 @@ exit/b
 
 :fqt
 
-set fp=* FQT bootrun.
+echo. & echo * FQT bootrun.
 
 rem lu: Mar-6-2019
 
 echo.
-echo %fp%
+
 
 echo.
 gradle -Pfqt bootrun
@@ -327,12 +327,12 @@ exit/b
 
 :bapi
 
-set fp=* Daily build per Sean.
+echo. & echo * Daily build per Sean.
 
 rem lu: Jun-20-2019
 
 echo.
-echo %fp%
+
 
 call tdc cart
 
@@ -348,12 +348,12 @@ exit/b
 
 :br
 
-set fp=* Bootrun from Sean. Notice that there is also a Maven version of this same command.
+echo. & echo * Bootrun from Sean. Notice that there is also a Maven version of this same command.
 
 rem lu: Jan-9-2019
 
 echo.
-echo %fp%
+
 
 echo %cd% | find /i "\api">nul
 
@@ -377,12 +377,12 @@ exit/b
 
 :ed
 
-set fp=* Edward's gradle command.
+echo. & echo * Edward's gradle command.
 
 rem lu: Jun-21-2019
 
 echo.
-echo %fp%
+
 
 echo %cd% | find /i "\api">nul
 
@@ -405,12 +405,12 @@ exit/b
 
 :run_api_with_debugger
 
-set fp=* Run the API using Matt's gradle command and attach the debugger.
+echo. & echo * Run the API using Matt's gradle command and attach the debugger.
 
 rem lu: Nov-8-2019
 
 echo.
-echo %fp%
+
 
 echo %cd% | find /i "\api">nul
 
@@ -431,12 +431,12 @@ exit/b
 
 :run_fqt
 
-set fp=* Run the API using Matt's gradle command with the FQT option too.
+echo. & echo * Run the API using Matt's gradle command with the FQT option too.
 
 rem lu: Nov-8-2019
 
 echo.
-echo %fp%
+
 
 echo %cd% | find /i "\api">nul
 
@@ -457,12 +457,12 @@ exit/b
 
 :matt1
 
-set fp=* Bootrun from Matt.
+echo. & echo * Bootrun from Matt.
 
 rem lu: Aug-12-2019
 
 echo.
-echo %fp%
+
 
 echo %cd% | find /i "\api">nul
 
@@ -485,12 +485,12 @@ exit/b
 
 :run_api
 
-set fp=* Run the API using Matt's gradle command.
+echo. & echo * Run the API using Matt's gradle command.
 
 rem lu: Nov-8-2019
 
 echo.
-echo %fp%
+
 
 echo %cd% | find /i "\api">nul
 
@@ -513,14 +513,14 @@ exit/b
 
 :bootjar
 
-set fp=* Bootjar command.
+echo. & echo * Bootjar command.
 
 rem This worked on Jun-20-2019 but only after I fixed the PKIX issue.
 
 rem lu: Jun-20-2019
 
 echo.
-echo %fp%
+
 
 echo %cd% | find /i "\api">nul
 
@@ -541,12 +541,12 @@ exit/b
 
 :debu
 
-set fp=* Gradlew Debug. You should only use gradlew, not gradle.
+echo. & echo * Gradlew Debug. You should only use gradlew, not gradle.
 
 rem lu: Nov-12-2019
 
 echo.
-echo %fp%
+
 
 echo.
 gradlew --debug
@@ -563,12 +563,12 @@ exit/b
 
 :build_jar_for_dev
 
-set fp=* Build Jar for dev environment.
+echo. & echo * Build Jar for dev environment.
 
 rem lu: Aug-14-2019
 
 echo.
-echo %fp%
+
 
 call m specific_file_presence gradlew.bat
 
@@ -587,12 +587,12 @@ exit/b
 
 :build_jar_for_fqt
 
-set fp=* Build Jar for FQT environment.
+echo. & echo * Build Jar for FQT environment.
 
 rem lu: Sep-17-2019
 
 echo.
-echo %fp%
+
 
 call m specific_file_presence gradlew.bat
 
@@ -611,12 +611,12 @@ exit/b
 
 :build_jar_for_dock
 
-set fp=* Build Jar for Docker environment.
+echo. & echo * Build Jar for Docker environment.
 
 rem lu: Sep-17-2019
 
 echo.
-echo %fp%
+
 
 call m specific_file_presence gradlew.bat
 
@@ -641,12 +641,12 @@ exit/b
 
 :build_jar_for_dock_clean
 
-set fp=* Build Jar for Docker environment with clean.
+echo. & echo * Build Jar for Docker environment with clean.
 
 rem lu: Sep-17-2019
 
 echo.
-echo %fp%
+
 
 call m specific_file_presence gradlew.bat
 
@@ -673,12 +673,12 @@ exit/b
 
 :webpack
 
-set fp=* Webpack.
+echo. & echo * Webpack.
 
 rem lu: Mar-27-2020
 
 echo.
-echo %fp%
+
 
 echo.
 gradlew -x webpack
@@ -692,14 +692,14 @@ exit/b
 
 :wrap
 
-set fp=* Gradle Wrapper. If gradelw doesn't work, try running "gradle wrapper" at the command line.
+echo. & echo * Gradle Wrapper. If gradelw doesn't work, try running "gradle wrapper" at the command line.
 
 rem lu: Apr-22-2020
 
 rem Run gradle wrapper to get gradle w to work.
 
 echo.
-echo %fp%
+
 
 echo.
 gradle wrapper
@@ -712,7 +712,7 @@ exit/b
 
 :csc
 
-set fp=* Gradle task to build the client Maven project from the Swagger definition file.
+echo. & echo * Gradle task to build the client Maven project from the Swagger definition file.
 
 rem lu: Apr-21-2020
 
@@ -721,7 +721,7 @@ rem You may need to disconnect from the VPN for this function to work.
 cls
 
 echo.
-echo %fp%
+
 
 call t csc
 
@@ -742,12 +742,12 @@ exit/b
 
 :bfp
 
-set fp=* Build for production, jar file with td alias.
+echo. & echo * Build for production, jar file with td alias.
 
 rem lu: Jan-17-2020
 
 echo.
-echo %fp%
+
 
 call t rf_ma
 
@@ -763,12 +763,12 @@ exit/b
 
 :bfpc
 
-set fp=* Build for production jar file for the rest-client.
+echo. & echo * Build for production jar file for the rest-client.
 
 rem lu: Apr-27-2020
 
 echo.
-echo %fp%
+
 
 call tdc csc>nul
 
@@ -782,12 +782,12 @@ exit/b
 
 :build_jar_for_production
 
-set fp=* Build Jar for prod environment.
+echo. & echo * Build Jar for prod environment.
 
 rem lu: Jan-17-2020
 
 echo.
-echo %fp%
+
 
 call m specific_file_presence gradlew.bat
 
@@ -818,14 +818,14 @@ exit/b
 
 :tests
 
-set fp=* Run Java unit tests.
+echo. & echo * Run Java unit tests.
 
 rem skw run tests, run unit tests
 
 rem lu: Jun-30-2020
 
 echo.
-echo %fp%
+
 
 call t api
 

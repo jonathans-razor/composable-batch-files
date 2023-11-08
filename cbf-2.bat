@@ -4,7 +4,7 @@
 
 echo. & echo * List of batch file descriptions. (In Beta)
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "?" goto help
 if not "%~1" == "" goto %1
@@ -44,12 +44,12 @@ exit/b
 
 :main
 
-set fp=* For loop test.
+echo. & echo * For loop test.
 
 rem lu: May-10-2019
 
 echo.
-echo %fp%
+
 
 call t cbf
 
@@ -68,7 +68,7 @@ exit/b
 
 :process_file
 
-set fp=* Process file.
+echo. & echo * Process file.
 
 rem lu: May-10-2019
 

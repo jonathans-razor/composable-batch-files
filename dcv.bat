@@ -12,7 +12,7 @@ set cbf-filep=* Given an alias and a DCV, returns the set DCV value.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 

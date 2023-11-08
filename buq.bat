@@ -12,7 +12,7 @@ set cbf-filep=* Quick backup and restore.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 
@@ -116,7 +116,7 @@ goto save_file
 
 :save_file
 
-set fp=* Save file.
+echo. & echo * Save file.
 
 set cbf-source_fn=%cbf-expanded-variable%
 
@@ -145,10 +145,10 @@ goto main
 
 :restore_file
 
-set fp=* Restore file.
+echo. & echo * Restore file.
 
 echo.
-echo %fp%
+
 
 set cbf-destination_fn=%cbf-expanded-variable%
 

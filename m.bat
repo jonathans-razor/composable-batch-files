@@ -154,9 +154,9 @@ Metadata: Track Size (!tsm)
 
 :delete_stale_ext_from_wildfly_dynamic_folder
 
-set fp=* Delete stale Ext JS. On Feb-10-2017, this rubric fixed enabled this to work.
+echo. & echo * Delete stale Ext JS. On Feb-10-2017, this rubric fixed enabled this to work.
 
-echo %fp%
+
 echo.
 
 call t set_wildfly_dynamic_folder
@@ -190,9 +190,9 @@ exit/b
 
 :delete_stale_ext_js_from_testing_folder
 
-set fp=* Delete stale Ext JS from the testing folder.
+echo. & echo * Delete stale Ext JS from the testing folder.
 
-echo %fp%
+
 echo.
 
 if not exist c:\projects\netbeans\sencha\HTML5Application\public_html\build\testing\Mercury echo Testing folder's not there.
@@ -229,9 +229,9 @@ exit/b
 
 :delete_stale_ext_js_from_webapp_folder
 
-set fp=* Delete stale Ext JS from webapp folder.
+echo. & echo * Delete stale Ext JS from webapp folder.
 
-echo %fp%
+
 echo.
 
 cd \projects\netbeans\mercury6\Mercury-web\src\main\webapp
@@ -265,11 +265,11 @@ exit/b
 
 :htwar
 
-set fp=* How to Build a War File Document
+echo. & echo * How to Build a War File Document
 
 rem fcd: Feb-17-2017
 
-echo %fp%
+
 
 cd \mercury\batch_files
 
@@ -287,14 +287,14 @@ exit/b
 
 :run_tirem
 
-set fp=* Run Tirem.
+echo. & echo * Run Tirem.
 
 rem I was only able to successfully do this after I copied David's .m2 folder 
 rem into my %homedrive%%homepath% folder.
 
 rem fcd: Mar-6-2017
 
-echo %fp%
+
 
 cd c:\projects\netbeans\mercury6\mercury-tirem
 
@@ -313,11 +313,11 @@ exit/b
 
 :rename_for_production_war
 
-set fp=* Rename index to Mercury. Mike Stonkey said we needed to do this.
+echo. & echo * Rename index to Mercury. Mike Stonkey said we needed to do this.
 
 rem fcd: Mar-7-2017
 
-echo %fp%
+
 
 cd \projects\netbeans\sencha\HTML5Application\public_html\build\production\Mercury
 
@@ -332,11 +332,11 @@ exit/b
 
 :rename_for_debug_war
 
-set fp=* Rename index to Mercury.
+echo. & echo * Rename index to Mercury.
 
 rem fcd: Apr-5-2017
 
-echo %fp%
+
 
 cd \projects\netbeans\sencha\HTML5Application\public_html\build\testing\Mercury
 
@@ -353,11 +353,11 @@ exit/b
 
 :delete_target_folder
 
-set fp=* Delete target folder so that you know you have a fresh war file.
+echo. & echo * Delete target folder so that you know you have a fresh war file.
 
 rem fcd: Apr-4-2017
 
-echo %fp%
+
 
 cd C:\projects\netbeans\mercury6\Mercury-web
 
@@ -371,9 +371,9 @@ exit/b
 
 :copy_for_production
 
-set fp=* Copy fresh Ext JS into WildFly folder.
+echo. & echo * Copy fresh Ext JS into WildFly folder.
 
-echo %fp%
+
 echo.
 
 cd \projects\netbeans\mercury6\Mercury-web\src\main\webapp
@@ -393,7 +393,7 @@ exit/b
 
 :wilddn
 
-set fp=* Start WildFly - do not delete hex folder. Deprecated.
+echo. & echo * Start WildFly - do not delete hex folder. Deprecated.
 
 rem Deprecated because I can't think of a time when you would want to do this.
 rem Each time WildFly starts it creates a new hex folder so the old hex folder is of no use
@@ -401,7 +401,7 @@ rem other than as an archive.
 
 rem fcd: Apr-5-2017
 
-echo %fp%
+
 
 color 0b
 
@@ -423,11 +423,11 @@ exit/b
 
 :delete_wildfly_dynamic_folder
 
-set fp=* Delete WildFly Dynamic Folder.
+echo. & echo * Delete WildFly Dynamic Folder.
 
 rem fcd: Feb-9-2017
 
-echo %fp%
+
 
 call :set_wildfly_location
 rem echo Sep-19-2017.3
@@ -463,11 +463,11 @@ exit/b
 
 :tirem_prereq_1
 
-set fp=* These folders must be present for tirem to work.
+echo. & echo * These folders must be present for tirem to work.
 
 rem fcd: Apr-10-2017
 
-echo %fp%
+
 
 mcd c:\mercury\files
 
@@ -487,11 +487,11 @@ exit/b
 
 :tirem_prereq_2
 
-set fp=* This is one-time copy that needs to be made in order to properly prepare the target folder prior to tirem running.
+echo. & echo * This is one-time copy that needs to be made in order to properly prepare the target folder prior to tirem running.
 
 rem fcd: Apr-10-2017
 
-echo %fp%
+
 echo.
 
 cd c:\mercury\tirem
@@ -508,11 +508,11 @@ exit/b
 
 :tirem_prereq_3
 
-set fp=* This is one-time copy that needs to be made in order to properly prepare the target folder prior to tirem running.
+echo. & echo * This is one-time copy that needs to be made in order to properly prepare the target folder prior to tirem running.
 
 rem fcd: Mar-6-2017
 
-echo %fp%
+
 echo.
 
 cd c:\projects\netbeans\mercury6\mercury-tirem\target
@@ -534,11 +534,11 @@ exit/b
 
 :copy_stand
 
-set fp=* Copy standalone.xml to j1 and j2.
+echo. & echo * Copy standalone.xml to j1 and j2.
 
 rem fcd: Apr-10-2017
 
-echo %fp%
+
 echo.
 
 cd c:\mercury\batch_files
@@ -556,12 +556,12 @@ exit/b
 
 :generate_version_number
 
-set fp=* Generate a new timestamp-based Mercury version number.
+echo. & echo * Generate a new timestamp-based Mercury version number.
 
 rem fcd: Apr-10-2017
 
 echo.
-echo %fp%
+
 echo.
 
 cd c:\mercury\batch_files
@@ -578,11 +578,11 @@ exit/b
 
 :use_testing_jnlp_file
 
-set fp=* Use the debug JNLP file.
+echo. & echo * Use the debug JNLP file.
 
 rem fcd: Apr-13-2017
 
-echo %fp%
+
 echo.
 
 cd C:\projects\netbeans\mercury6\Mercury-web\src\main\webapp\resources\applet
@@ -599,11 +599,11 @@ exit/b
 
 :use_testing_jnlp_file
 
-set fp=* Use the debug JNLP file.
+echo. & echo * Use the debug JNLP file.
 
 rem fcd: Apr-13-2017
 
-echo %fp%
+
 echo.
 
 cd C:\projects\netbeans\mercury6\Mercury-web\src\main\webapp\resources\applet
@@ -618,12 +618,12 @@ exit/b
 
 :use_production_jnlp_file
 
-set fp=* Use the production JNLP file.
+echo. & echo * Use the production JNLP file.
 echo.
 
 rem fcd: Apr-13-2017
 
-echo %fp%
+
 echo.
 
 cd C:\projects\netbeans\mercury6\Mercury-web\src\main\webapp\resources\applet
@@ -638,9 +638,9 @@ exit/b
 
 :delete_stale_ext_js_from_production_folder
 
-set fp=* Delete stale Ext JS from the production folder.
+echo. & echo * Delete stale Ext JS from the production folder.
 
-echo %fp%
+
 echo.
 
 if not exist c:\projects\netbeans\sencha\HTML5Application\public_html\build\production\Mercury echo Production folder's not there.
@@ -678,9 +678,9 @@ exit/b
 
 :copy_for_debug
 
-set fp=* Copy fresh Ext JS for use in building a debuggable War file.
+echo. & echo * Copy fresh Ext JS for use in building a debuggable War file.
 
-echo %fp%
+
 echo.
 
 cd C:\projects\netbeans\mercury6\Mercury-web\src\main\webapp
@@ -704,9 +704,9 @@ exit/b
 
 call :delete_stale_ext_from_wildfly_dynamic_folder
 
-set fp=* Copy fresh Ext JS into WildFly folder. This should be used only when WildFly is running because it depends on the presence of an active hex folder.
+echo. & echo * Copy fresh Ext JS into WildFly folder. This should be used only when WildFly is running because it depends on the presence of an active hex folder.
 
-echo %fp%
+
 echo.
 
 echo Current Folder: %cd%
@@ -724,11 +724,11 @@ goto exit
 
 :use_6_button_test_files
 
-set fp=* Use 6 button test files.
+echo. & echo * Use 6 button test files.
 
 rem fcd: Apr-17-2017
 
-echo %fp%
+
 echo.
 
 cd c:\projects\netbeans\sencha\HTML5Application\public_html\classic\src\view\dashboard\
@@ -747,14 +747,14 @@ exit/b
 
 :compile_and_refresh_wildfly
 
-set fp=* Compile and refresh Ext JS code in the existing WildFly folder.
+echo. & echo * Compile and refresh Ext JS code in the existing WildFly folder.
 
 rem Remember that if you restart WildFly, the hex folder gets recreated, meaning that
 rem any new JavaScript code is deleted in the process.
 
 rem fcd: Apr-7-2017
 
-echo %fp%
+
 
 call :run_sencha_app_build_testing
 
@@ -776,11 +776,11 @@ goto exit
 
 :wildd
 
-set fp=* Start WildFly. Refresh the environment.
+echo. & echo * Start WildFly. Refresh the environment.
 
 rem fcd: Apr-5-2017
 
-echo %fp%
+
 
 echo Sep-19-2017.1
 call :delete_wildfly_dynamic_folder
@@ -821,7 +821,7 @@ set is_hosted_on_server=true
 set is_java_change_only=false
 set target_server=staging
 
-set fp=* Run wizard for deployment to staging.
+echo. & echo * Run wizard for deployment to staging.
 
 goto begin_wizard
 
@@ -838,7 +838,7 @@ set is_hosted_on_server=true
 set is_java_change_only=false
 set target_server=production
 
-set fp=* Run wizard for deployment to production.
+echo. & echo * Run wizard for deployment to production.
 
 goto begin_wizard
 
@@ -853,7 +853,7 @@ set is_hosted_on_server=false
 set is_java_change_only=false
 set target_server=localhost
 
-set fp=* Run wizard for deployment to localhost.
+echo. & echo * Run wizard for deployment to localhost.
 
 goto begin_wizard
 
@@ -868,9 +868,9 @@ set is_hosted_on_server=false
 set is_java_change_only=true
 set target_server=localhost
 
-set fp=* Run wizard for deployment to localhost that has Java changes only.
+echo. & echo * Run wizard for deployment to localhost that has Java changes only.
 
-echo %fp%
+
 
 goto begin_wizard_midway
 
@@ -882,7 +882,7 @@ goto begin_wizard_midway
 
 :begin_wizard
 
-echo %fp%
+
 
 echo.
 set /P user_option=Did you remember to do a get-latest? (y/n): 
@@ -972,11 +972,11 @@ exit/b
 
 :stop_wildfly
 
-set fp=* Stop WildFly.
+echo. & echo * Stop WildFly.
 
 rem fcd: Apr-28-2017
 
-echo %fp%
+
 echo.
 
 taskkill /f /fi "windowtitle eq wildfly"
@@ -992,11 +992,11 @@ exit/b
 
 :fix_buttons
 
-set fp=* Fix button warnings by Mike Stonkey.
+echo. & echo * Fix button warnings by Mike Stonkey.
 
 rem fcd: May-2-2017
 
-echo %fp%
+
 echo.
 
 rem This will get rid of the warnings when compiling and adds the icons to the buttons when 
@@ -1196,11 +1196,11 @@ exit/b
 
 :fix_menu
 
-set fp=* Fix menu warnings by Mike Stonkey.
+echo. & echo * Fix menu warnings by Mike Stonkey.
 
 rem fcd: May-2-2017
 
-echo %fp%
+
 echo.
 
 rem This will get rid of the warnings when compiling and adds the icons to the buttons when 
@@ -1262,11 +1262,11 @@ exit/b
 
 :c13
 
-set fp=* Copy background.
+echo. & echo * Copy background.
 
 rem fcd: May-2-2017
 
-echo %fp%
+
 echo.
 
 call t open_hex_folder
@@ -1283,11 +1283,11 @@ exit/b
 
 :process_mercury_version_number
 
-set fp=* Generate a Mercury version number, set it to an environment variable and then echo it to the command line.
+echo. & echo * Generate a Mercury version number, set it to an environment variable and then echo it to the command line.
 
 rem fcd: May-3-2017
 
-echo %fp%
+
 echo.
 
 cd c:\mercury\batch_files
@@ -1308,11 +1308,11 @@ exit/b
 
 :buw
 
-set fp=* Back up war file.
+echo. & echo * Back up war file.
 
 rem fcd: May-3-2017
 
-echo %fp%
+
 echo.
 
 cd C:\projects\netbeans\mercury6\Mercury-web\target
@@ -1330,11 +1330,11 @@ exit/b
 
 :christen_development_war_file
 
-set fp=* Christen development war file.
+echo. & echo * Christen development war file.
 
 rem fcd: May-3-2017
 
-echo %fp%
+
 
 cd C:\projects\netbeans\mercury6\Mercury-web\target
 
@@ -1350,10 +1350,10 @@ exit/b
 
 :set_server_title
 
-set fp=* Set server title.
+echo. & echo * Set server title.
 
 rem echo.
-rem echo %fp%
+rem 
 
 title = Composable Batch Files Helper
 
@@ -1363,11 +1363,11 @@ title = Composable Batch Files Helper
 
 :set_server_path
 
-set fp=* Set server path.
+echo. & echo * Set server path.
 
 rem Function Creation Date: May-8-2017
 
-echo %fp%
+
 
 rem set path=C:\Program Files\MySQL\MySQL Server 5.7\bin;%path%
 rem set path=C:\Program Files\MySQL\MySQL Utilities 1.6;%path%
@@ -1381,11 +1381,11 @@ exit/b
 
 :wild_svc
 
-set fp=* Install WildFly as a service.
+echo. & echo * Install WildFly as a service.
 
 rem fcd: May-10-2017
 
-echo %fp%
+
 
 call :set_wildfly_location
 
@@ -1405,12 +1405,12 @@ exit/b
 
 :power
 
-set fp=* CBF Powerpoint Presentation.
+echo. & echo * CBF Powerpoint Presentation.
 
 rem fcd: May-19-2017
 
 echo.
-echo %fp%
+
 
 call start "my title" "Composable Batch File Helper.pptx"
 
@@ -1424,13 +1424,13 @@ exit/b
 
 :old_ppt
 
-set fp=* Powerpoint Presentation on Mercury.
+echo. & echo * Powerpoint Presentation on Mercury.
 
 rem fcd: May-19-2017
 
 rem This way of opening a PowerPoint document also works.
 
-echo %fp%
+
 
 cd c:\mercury\batch_files
 
@@ -1444,11 +1444,11 @@ exit/b
 
 :set_wildfly_location
 
-set fp=* Set WildFly location.
+echo. & echo * Set WildFly location.
 
 rem fcd: May-22-2017
 
-echo %fp%
+
 
 set wildfly_location=c:\mercury\server\wildfly-9.0.2.final
 
@@ -1467,11 +1467,11 @@ exit/b
 
 :scrub_deployment_environment
 
-set fp=* Scrub deployment environment.
+echo. & echo * Scrub deployment environment.
 
 rem FCD: Apr-7-2017
 
-echo %fp%
+
 
 call :set_wildfly_location
 
@@ -1510,11 +1510,11 @@ exit/b
 
 :pscrub
 
-set fp=* Partially scrub deployment environment.
+echo. & echo * Partially scrub deployment environment.
 
 rem FCD: Apr-7-2017
 
-echo %fp%
+
 
 call :set_wildfly_location
 
@@ -1548,7 +1548,7 @@ exit/b
 
 :pack
 
-set fp=* Build a MacOS Cordova-Sencha package.
+echo. & echo * Build a MacOS Cordova-Sencha package.
 
 rem fcd: Jun-22-2017
 
@@ -1556,7 +1556,7 @@ rem From my research, it looks like I need to create a folder that I drop into C
 rem Cordova's "www" folder. This function creates the necessary items for that 
 rem folder/package.
 
-echo %fp%
+
 echo.
 
 call t mac
@@ -1585,11 +1585,11 @@ exit/b
 
 :update_pub
 
-set fp=* In preparation for a mobile deployment, update Public HTML folder.
+echo. & echo * In preparation for a mobile deployment, update Public HTML folder.
 
 rem fcd: Jul-3-2017
 
-echo %fp%
+
 echo.
 
 cd C:\Users\jonathan.r.jones\Documents\DropBox\nes\macintosh\public_html
@@ -1604,11 +1604,11 @@ exit/b
 
 :trgm
 
-set fp=* Trace route our new production server issue.
+echo. & echo * Trace route our new production server issue.
 
 rem fcd: Jul-28-2017
 
-echo %fp%
+
 
 tracert smtp.gmail.com
 
@@ -1620,11 +1620,11 @@ exit/b
 
 :traws
 
-set fp=* Trace route to AWS smtp.
+echo. & echo * Trace route to AWS smtp.
 
 rem fcd: Jul-28-2017
 
-echo %fp%
+
 
 tracert email-smtp.us-east-1.amazonaws.com
 
@@ -1636,11 +1636,11 @@ exit/b
 
 :wb
 
-set fp=* Start MySQL Workbench.
+echo. & echo * Start MySQL Workbench.
 
 rem fud: Aug-21-2017
 
-echo %fp%
+
 
 start "Test Title" "C:\Program Files\MySQL\MySQL Workbench 6.3 CE\MySQLWorkbench.exe"
 
@@ -1652,11 +1652,11 @@ exit/b
 
 :ajm
 
-set fp=* Use the app.json file used for a mobile build.
+echo. & echo * Use the app.json file used for a mobile build.
 
 rem fcd: Aug-28-2017
 
-echo %fp%
+
 echo.
 
 cd C:\projects\netbeans\sencha\HTML5Application\public_html
@@ -1671,11 +1671,11 @@ exit/b
 
 :s6_deleted
 
-set fp=* Rerun these commands if Sencha folder was deleted.
+echo. & echo * Rerun these commands if Sencha folder was deleted.
 
 rem fcd: May-3-2017
 
-echo %fp%
+
 
 call :fix_buttons
 
@@ -1693,9 +1693,9 @@ exit/b
 
 call :delete_stale_ext_from_wildfly_dynamic_folder
 
-set fp=* Copy fresh Ext JS into WildFly folder. This should be used only when WildFly is running because it depends on the presence of an active hex folder.
+echo. & echo * Copy fresh Ext JS into WildFly folder. This should be used only when WildFly is running because it depends on the presence of an active hex folder.
 
-echo %fp%
+
 echo.
 
 echo Current Folder: %cd%
@@ -1715,11 +1715,11 @@ exit/b
 
 :use_default_netconfig_file
 
-set fp=* Use the default Net.config file. Use this method building WAR files.
+echo. & echo * Use the default Net.config file. Use this method building WAR files.
 
 rem fcd: Aug-23-2017
 
-echo %fp%
+
 echo.
 
 cd C:\projects\netbeans\sencha\HTML5Application\public_html\modern\src\utils
@@ -1738,11 +1738,11 @@ exit/b
 
 :use_production_netconfig_file
 
-set fp=* Use the production Net.config file. Caution: Do not use building WAR files, only for Cordova builds.
+echo. & echo * Use the production Net.config file. Caution: Do not use building WAR files, only for Cordova builds.
 
 rem fcd: Aug-23-2017
 
-echo %fp%
+
 echo.
 
 cd C:\projects\netbeans\sencha\HTML5Application\public_html\modern\src\utils
@@ -1761,11 +1761,11 @@ exit/b
 
 :use_localhost_netconfig_file
 
-set fp=* Use the Localhost Net.config file. Do not use building WAR files, only for Cordova builds.
+echo. & echo * Use the Localhost Net.config file. Do not use building WAR files, only for Cordova builds.
 
 rem fcd: Sep-13-2017
 
-echo %fp%
+
 echo.
 
 cd C:\projects\netbeans\sencha\HTML5Application\public_html\modern\src\utils
@@ -1784,11 +1784,11 @@ exit/b
 
 :use_staging_netconfig_file
 
-set fp=* Use the staging Net.config file. Do not use building WAR files, only for Cordova builds.
+echo. & echo * Use the staging Net.config file. Do not use building WAR files, only for Cordova builds.
 
 rem fcd: Aug-28-2017
 
-echo %fp%
+
 echo.
 
 cd C:\projects\netbeans\sencha\HTML5Application\public_html\modern\src\utils
@@ -1807,11 +1807,11 @@ exit/b
 
 :ncaw
 
-set fp=* Copy over NetConfig - for App Watch.js for both classic and modern.
+echo. & echo * Copy over NetConfig - for App Watch.js for both classic and modern.
 
 rem lu: Sep-6-2017
 
-echo %fp%
+
 echo.
 
 call t cutils
@@ -1830,11 +1830,11 @@ exit/b
 
 :copy_war_for_s3
 
-set fp=* Copy WAR file to the deployment folder.
+echo. & echo * Copy WAR file to the deployment folder.
 
 rem lu: Oct-25-2017
 
-echo %fp%
+
 echo.
 
 call t depl
@@ -1856,11 +1856,11 @@ exit/b
 
 :copy_war
 
-set fp=* Copy over the desired war file to the local deployments folder.
+echo. & echo * Copy over the desired war file to the local deployments folder.
 
 rem fcd: Apr-28-2017
 
-echo %fp%
+
 echo.
 
 cd c:\projects\netbeans\mercury6\mercury-web\target\
@@ -1881,11 +1881,11 @@ exit/b
 
 :deploy_war
 
-set fp=* Locally deploy war file.
+echo. & echo * Locally deploy war file.
 
 rem FCD: Apr-7-2017
 
-echo %fp%
+
 
 call :stop_wildfly
 
@@ -1903,11 +1903,11 @@ exit/b
 
 :deploy_s3
 
-set fp=* Deploy a new WAR file in the S3 environment.
+echo. & echo * Deploy a new WAR file in the S3 environment.
 
 rem lu: Oct-25-2017
 
-echo %fp%
+
 
 rem Start COPA?
 
@@ -1929,11 +1929,11 @@ exit/b
 
 :import_preq_1
 
-set fp=* This folder must be present for the import feature to work.
+echo. & echo * This folder must be present for the import feature to work.
 
 rem fcd: Apr-10-2017
 
-echo %fp%
+
 
 mcd c:\mercury
 
@@ -1947,11 +1947,11 @@ exit/b
 
 :scowl
 
-set fp=* Scrub, copy the war and start WildFly.
+echo. & echo * Scrub, copy the war and start WildFly.
 
 rem lu: Oct-31-2017
 
-echo %fp%
+
 
 call :scrub
 
@@ -1967,11 +1967,11 @@ exit/b
 
 :use_agi_license_for_staging
 
-set fp=* Use AGI License for Staging.
+echo. & echo * Use AGI License for Staging.
 
 rem lu: Nov-9-2017
 
-echo %fp%
+
 echo.
 
 call t agi
@@ -1992,11 +1992,11 @@ exit/b
 
 :use_agi_license_for_production
 
-set fp=* Use AGI License for Production.
+echo. & echo * Use AGI License for Production.
 
 rem lu: Nov-9-2017
 
-echo %fp%
+
 echo.
 
 call t agi
@@ -2023,11 +2023,11 @@ exit/b
 
 :mdev
 
-set fp=* Verify Mercury development environment settings. Perequisites part 1.
+echo. & echo * Verify Mercury development environment settings. Perequisites part 1.
 
 rem lu: Nov-17-2017
 
-echo %fp%
+
 
 call t ba
 
@@ -2093,11 +2093,11 @@ exit/b
 
 :mde1b
 
-set fp=* Here is sample MDE report from Nestle on Nov-17-2017.
+echo. & echo * Here is sample MDE report from Nestle on Nov-17-2017.
 
 rem lu: Nov-17-2017
 
-echo %fp%
+
 
 call t ba
 
@@ -2111,11 +2111,11 @@ exit/b
 
 :mde2
 
-set fp=* Mercury development environment settings. Prerequisites part 2.
+echo. & echo * Mercury development environment settings. Prerequisites part 2.
 
 rem lu: Nov-17-2017
 
-echo %fp%
+
 
 echo.
 set /P user_option=Would you like to run Sencha App Upgrade? (y/n): 
@@ -2146,11 +2146,11 @@ exit/b
 
 :mde3
 
-set fp=* Open MDE document. Prerequisites part 3.
+echo. & echo * Open MDE document. Prerequisites part 3.
 
 rem lu: Nov-17-2017
 
-echo %fp%
+
 
 call start "my title" "Mercury Development Environment.xlsx - Shortcut.lnk"
 rem call start "my title" "c:\mercury\batch_files\Mercury Development Environment.xlsx - Shortcut.lnk"
@@ -2171,12 +2171,12 @@ exit/b
 
 call :delete_stale_ext_js_from_testing_folder
 
-set fp=* Run sencha app build testing.
+echo. & echo * Run sencha app build testing.
 
 rem According to what Ron said on Aug-8-2017, app build testing may be more performant than
 rem app build development.
 
-echo %fp%
+
 echo.
 
 color 2f
@@ -2200,12 +2200,12 @@ exit/b
 
 :update_the_version_number_2
 
-set fp=* Update the version number 2.
+echo. & echo * Update the version number 2.
 
 rem lu: Dec-5-2017
 
 echo.
-echo %fp%
+
 
 call np pom_root
 
@@ -2229,11 +2229,11 @@ exit/b
 
 :vscmd
 
-set fp=* Run Visual Studio Command prompt.
+echo. & echo * Run Visual Studio Command prompt.
 
 rem lu: Dec-18-2017
 
-echo %fp%
+
 echo.
 
 call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
@@ -2246,11 +2246,11 @@ exit/b
 
 :loggers
 
-set fp=* List loggers.
+echo. & echo * List loggers.
 
 rem lu: Dec-18-2017
 
-echo %fp%
+
 
 vstest.console.exe /ListLoggers
 
@@ -2262,11 +2262,11 @@ exit/b
 
 :run_specific_test
 
-set fp=* Run a specific test.
+echo. & echo * Run a specific test.
 
 rem lu: Dec-18-2017
 
-echo %fp%
+
 echo.
 
 vstest.console.exe unittestproject4.dll /TestCaseFilter:Name=AreCollectionEquivalentTest
@@ -2279,11 +2279,11 @@ exit/b
 
 :run_specific_test
 
-set fp=* Run a specific test.
+echo. & echo * Run a specific test.
 
 rem lu: Dec-18-2017
 
-echo %fp%
+
 echo.
 
 vstest.console.exe unittestproject4.dll /TestCaseFilter:Name=AreCollectionEquivalentTest
@@ -2296,11 +2296,11 @@ exit/b
 
 :run_matching_test_names
 
-set fp=* Run matching test names.
+echo. & echo * Run matching test names.
 
 rem lu: Dec-18-2017
 
-echo %fp%
+
 echo.
 
 vstest.console.exe unittestproject4.dll /Tests:FileName
@@ -2313,11 +2313,11 @@ exit/b
 
 :run_matching_test_names_2
 
-set fp=* Run matching test names 2.
+echo. & echo * Run matching test names 2.
 
 rem lu: Dec-18-2017
 
-echo %fp%
+
 echo.
 
 vstest.console.exe unittestproject4.dll /Tests:Exist
@@ -2330,11 +2330,11 @@ exit/b
 
 :run_matching_test_names_3
 
-set fp=* Run matching test names 3, exist and lowercase are in the test name.
+echo. & echo * Run matching test names 3, exist and lowercase are in the test name.
 
 rem lu: Dec-18-2017
 
-echo %fp%
+
 echo.
 
 vstest.console.exe unittestproject4.dll /Tests:Exist,LowerCase
@@ -2347,11 +2347,11 @@ exit/b
 
 :run_filter
 
-set fp=* Run filtered tests.
+echo. & echo * Run filtered tests.
 
 rem lu: Dec-18-2017
 
-echo %fp%
+
 echo.
 
 vstest.console.exe unittestproject4.dll /TestCaseFilter:"Priority=1"
@@ -2364,11 +2364,11 @@ exit/b
 
 :run_filter_2
 
-set fp=* Run filtered tests.
+echo. & echo * Run filtered tests.
 
 rem lu: Dec-18-2017
 
-echo %fp%
+
 echo.
 
 vstest.console.exe unittestproject4.dll /TestCaseFilter:"TestCategory=NoException"
@@ -2385,11 +2385,11 @@ exit/b
 
 :made
 
-set fp=* How to recreate Maven dependencies.
+echo. & echo * How to recreate Maven dependencies.
 
 rem lu: Jan-3-2018
 
-echo %fp%
+
 
 call t m2
 
@@ -2410,11 +2410,11 @@ exit/b
 
 :gen_cred_proc
 
-set fp=* Run the generate encrypted Maven credentials process.
+echo. & echo * Run the generate encrypted Maven credentials process.
 
 rem fcd: Jul-17-2017
 
-echo %fp%
+
 
 call np gencred_input
 
@@ -2446,11 +2446,11 @@ exit/b
 
 :gen_creds
 
-set fp=* Generate Bitbucket encrypted credentials and delete the certutil input file.
+echo. & echo * Generate Bitbucket encrypted credentials and delete the certutil input file.
 
 rem fcd: Jul-17-2017
 
-echo %fp%
+
 echo.
 
 if exist %tmp%\certutil_output.txt del %tmp%\certutil_output.txt
@@ -2478,11 +2478,11 @@ exit/b
 
 :publish
 
-set fp=* The steps to publish a new version.
+echo. & echo * The steps to publish a new version.
 
 rem lu: Apr-25-2018
 
-echo %fp%
+
 
 echo.
 echo Update the NPM version number.
@@ -2512,13 +2512,13 @@ exit/b
 
 :set_parent_fd
 
-set fp=* Set parent folder.
+echo. & echo * Set parent folder.
 
 rem batch file path parsing parent folder, cd.., 
 
 rem lu: Apr-9-2018
 
-echo %fp%
+
 
 set %3=%~f2
 
@@ -2534,12 +2534,12 @@ exit/b
 
 :set_cbf-app_equal_to_cbf-fn
 
-set fp=* Simulate a remote double click. Deprecated. Going forward, use dc.bat. **************
+echo. & echo * Simulate a remote double click. Deprecated. Going forward, use dc.bat. **************
 
 rem lu: Feb-1-2018
 
 rem echo.
-rem echo %fp%
+rem 
 
 rem Strangely, this also works. Feb-1-2018
 rem set cbf-app="%cbf-fn% - Shortcut.lnk"
@@ -2578,12 +2578,12 @@ exit/b
 
 :reset_cbf-variables
 
-set fp=* Reset CBF variables. Deprecated: Going forward, please use cv.bat.
+echo. & echo * Reset CBF variables. Deprecated: Going forward, please use cv.bat.
 
 rem skw clear environment variables, clear_cbf-variables
 
 rem echo.
-rem echo %fp%
+rem 
 
 set cbf-appended_words=
 
@@ -2648,11 +2648,11 @@ exit/b
 
 :set_cbf-app_to_dte
 
-set fp=* Set cbf-app.
+echo. & echo * Set cbf-app.
 
 rem lu: Jun-8-2018
 
-echo %fp%
+
 
 set cbf-app=%cbf-default-text-editor%
 
@@ -2664,12 +2664,12 @@ exit/b
 
 :open_application_without_a_parameter
 
-set fp=* Open application without a parameter.
+echo. & echo * Open application without a parameter.
 
 rem lu: Jun-8-2018
 
 echo.
-echo %fp%
+
 
 set cbf-parameter=
 
@@ -2712,12 +2712,12 @@ exit/b
 
 :sdb
 
-set fp=* Set default browser.
+echo. & echo * Set default browser.
 
 rem lu: Aug-8-2018
 
 echo.
-echo %fp%
+
 
 if "%~2" == "" call an edge
 if not "%~2" == "" call an %2
@@ -2732,12 +2732,12 @@ exit/b
 
 :set_specific_browser
 
-set fp=* Set specific browser.
+echo. & echo * Set specific browser.
 
 rem lu: Mar-4-2019
 
 echo.
-echo %fp%
+
 
 if "%~2" == "" set cbf-specific_browser=
 if "%~2" == "" exit/b
@@ -2754,12 +2754,12 @@ exit/b
 
 :set_default_repository_folder
 
-set fp=* Set default repository folder.
+echo. & echo * Set default repository folder.
 
 rem lu: Jul-10-2018
 
 echo.
-echo %fp%
+
 
 if not "%~2" == "" call n %2
 
@@ -2794,12 +2794,12 @@ exit/b
 
 :remove_hidden_attributes
 
-set fp=* Remove hidden attributes.
+echo. & echo * Remove hidden attributes.
 
 rem lu: Jul-15-2018
 
 echo.
-echo %fp%
+
 
 echo.
 attrib -h *.*
@@ -2812,11 +2812,11 @@ exit/b
 
 :ece
 
-set fp=* Echo current errorlevel.
+echo. & echo * Echo current errorlevel.
 
 rem lu: Jul-16-2018
 
-echo %fp%
+
 
 echo.
 echo * Errorlevel: %errorlevel%
@@ -2835,11 +2835,11 @@ exit/b
 
 :de_obj_fr
 
-set fp=* Delete bin and obj folders for Fresnel.
+echo. & echo * Delete bin and obj folders for Fresnel.
 
 rem lu: Jun-25-2018
 
-echo %fp%
+
 
 rem Delete obj folders.
 rd /q /s .\Fresnel\obj
@@ -2861,11 +2861,11 @@ exit/b
 
 :de_bin
 
-set fp=* Delete bin and obj folders.
+echo. & echo * Delete bin and obj folders.
 
 rem lu: Jul-5-2018
 
-echo %fp%
+
 
 if "%~2" == "" (
   echo.
@@ -2891,12 +2891,12 @@ exit/b
 
 :compose
 
-set fp=* Composer function that demos aggregation of calls that can be run separately.
+echo. & echo * Composer function that demos aggregation of calls that can be run separately.
 
 rem lu: Aug-13-2018
 
 echo.
-echo %fp%
+
 
 call t foo
 
@@ -2916,12 +2916,12 @@ exit/b
 
 :frbu
 
-set fp=* Perform a fresnel dated backup.
+echo. & echo * Perform a fresnel dated backup.
 
 rem lu: Aug-16-2018
 
 echo.
-echo %fp%
+
 
 Get_JDate>%tmp%\JDate.txt
 set /p JDate=<%tmp%\JDate.txt
@@ -2941,7 +2941,7 @@ call cn fr c
 
 :folder_is_empty
 
-set fp=* Empty folder check.
+echo. & echo * Empty folder check.
 
 rem lu: Sep-2-2018
 
@@ -2978,7 +2978,7 @@ exit/b 1
 
 :sel
 
-rem set fp=* Clear/reset errorLevel silently.
+rem echo. & echo * Clear/reset errorLevel silently.
 
 rem reset_errorlevel: skw
 
@@ -3006,12 +3006,12 @@ exit/b
 
 :clear-errorlevel
 
-set fp=* Clear ErrorLevel.
+echo. & echo * Clear ErrorLevel.
 
 rem lu: Aug-3-2018
 
 echo.
-echo %fp%
+
 
 echo.
 echo * Current ErrorLevel: %errorlevel%
@@ -3033,12 +3033,12 @@ exit/b
 
 :get_el
 
-set fp=* Get ErrorLevel.
+echo. & echo * Get ErrorLevel.
 
 rem lu: Aug-3-2018
 
 echo.
-echo %fp%
+
 
 echo.
 echo * ErrorLevel: %errorlevel%
@@ -3055,12 +3055,12 @@ exit/b
 
 :set_el
 
-set fp=* Set ErrorLevel.
+echo. & echo * Set ErrorLevel.
 
 rem lu: Aug-3-2018
 
 echo.
-echo %fp%
+
 
 echo.
 echo * Current ErrorLevel: %errorlevel%
@@ -3082,12 +3082,12 @@ exit/b
 
 :u2d
 
-set fp=* Unix to DOS.
+echo. & echo * Unix to DOS.
 
 rem lu: Dec-6-2018
 
 echo.
-echo %fp%
+
 
 echo.
 %localappdata%\Programs\Git\usr\bin\unix2dos ca-bundle.crt
@@ -3106,9 +3106,9 @@ exit/b
 
 :color
 
-set fp=* Clear color setting.
+echo. & echo * Clear color setting.
 
-echo %fp%
+
 
 color
 
@@ -3122,9 +3122,9 @@ exit/b
 
 :clear_color_setting
 
-set fp=* Clear color setting and clear screen.
+echo. & echo * Clear color setting and clear screen.
 
-echo %fp%
+
 
 color
 
@@ -3138,12 +3138,12 @@ exit/b
 
 :dosc_blongo
 
-set fp=* Change dos window color to: black on gold
+echo. & echo * Change dos window color to: black on gold
 
 rem lu: Dec-13-2018
 
 echo.
-echo %fp%
+
 
 color 60
 
@@ -3155,12 +3155,12 @@ exit/b
 
 :dos_color_yeonbl
 
-set fp=* Change dos window color to: yellow on black
+echo. & echo * Change dos window color to: yellow on black
 
 rem lu: Dec-13-2018
 
 echo.
-echo %fp%
+
 
 color 0e
 
@@ -3172,12 +3172,12 @@ exit/b
 
 :riverstone_count
 
-set fp=* Count lines of code in riverstone.
+echo. & echo * Count lines of code in riverstone.
 
 rem lu: Oct-17-2018
 
 echo.
-echo %fp%
+
 
 del %temp%\j1.txt
 
@@ -3199,12 +3199,12 @@ exit/b
 
 :cosy
 
-set fp=* Compose synchronization.
+echo. & echo * Compose synchronization.
 
 rem lu: Jan-23-2019
 
 echo.
-echo %fp%
+
 
 call col sailboat
 
@@ -3220,12 +3220,12 @@ exit
 
 :demo_old
 
-set fp=* Demo on Jan-29-2019.
+echo. & echo * Demo on Jan-29-2019.
 
 rem lu: Jan-29-2019
 
 echo.
-echo %fp%
+
 
 rem Jenkins 2 is a place for ERO Pipelines.
 
@@ -3253,12 +3253,12 @@ exit/b
 
 :jump
 
-set fp=* Jump.
+echo. & echo * Jump.
 
 rem lu: Feb-1-2019
 
 echo.
-echo %fp%
+
 
 echo.
 echo * How high? Feb-1-2019 1:04 AM
@@ -3275,12 +3275,12 @@ exit/b
 
 :update_lu
 
-set fp=* Update the last_updated_log.txt.
+echo. & echo * Update the last_updated_log.txt.
 
 rem lu: Feb-8-2019
 
 echo.
-echo %fp%
+
 
 rem echo 9.
 date /t>%temp%\date_9.txt
@@ -3309,12 +3309,12 @@ exit/b
 
 :start_timer
 
-set fp=* Start timer.
+echo. & echo * Start timer.
 
 rem lu: Feb-15-2019
 
 echo.
-echo %fp%
+
 
 set starttime=%time%
 
@@ -3326,12 +3326,12 @@ exit/b
 
 :stop_timer
 
-set fp=* Stop timer.
+echo. & echo * Stop timer.
 
 rem lu: Feb-15-2019
 
 echo.
-echo %fp%
+
 
 set endtime=%time%
 
@@ -3367,12 +3367,12 @@ exit/b
 
 :timer
 
-set fp=* Call time example.
+echo. & echo * Call time example.
 
 rem lu: Feb-15-2019
 
 echo.
-echo %fp%
+
 
 call %0 start_timer
 
@@ -3392,12 +3392,12 @@ exit/b
 
 :syin
 
-set fp=* System Information.
+echo. & echo * System Information.
 
 rem lu: Mar-4-2019
 
 echo.
-echo %fp%
+
 
 systeminfo
 
@@ -3409,11 +3409,11 @@ exit/b
 
 :cart_path_only
 
-set fp=* Is this hole cart path only? Disallow check-ins from the riverstone path.
+echo. & echo * Is this hole cart path only? Disallow check-ins from the riverstone path.
 
 rem lu: Mar-18-2019
 
-rem echo %fp%
+rem 
 
 echo %cd% | find /i "j\riverstone_cookbook">nul
 
@@ -3439,12 +3439,12 @@ exit/b 0
 
 :ag
 
-set fp=* QuickLauncer menu for caling g.
+echo. & echo * QuickLauncer menu for caling g.
 
 rem lu: Apr-30-2019
 
 echo.
-echo %fp%
+
 
 echo.
 call %0 g
@@ -3461,12 +3461,12 @@ exit
 
 :save_location
 
-set fp=* Save location.
+echo. & echo * Save location.
 
 rem lu: Apr-24-2019
 
 rem echo.
-rem echo %fp%
+rem 
 
 set cbf-saved_location=%cd%
 
@@ -3478,12 +3478,12 @@ exit/b
 
 :restore_location
 
-set fp=* Restore location.
+echo. & echo * Restore location.
 
 rem lu: Apr-24-2019
 
 rem echo.
-rem echo %fp%
+rem 
 
 cd /d "%cbf-saved_location%"
 
@@ -3497,14 +3497,14 @@ exit/b
 
 :width
 
-set fp=* Console window width.
+echo. & echo * Console window width.
 
 rem How wide is the command window?
 
 rem lu: May-20-2019
 
 echo.
-echo %fp%
+
 
 echo.
 echo * The following line is 80 characters wide:
@@ -3518,12 +3518,12 @@ exit/b
 
 :who
 
-set fp=* Who am I?
+echo. & echo * Who am I?
 
 rem lu: May-31-2019
 
 echo.
-echo %fp%
+
 
 echo.
 echo * Computername: %computername%
@@ -3611,12 +3611,12 @@ Oct-4-2023
 
 :msl
 
-set fp=* Open MSL Affinity files.
+echo. & echo * Open MSL Affinity files.
 
 rem lu: Dec-8-2021
 
 echo.
-echo %fp%
+
 
 set cbf-fn-list="%share-zone%\Miscellany\j.asc"
 
@@ -3644,12 +3644,12 @@ exit/b
 
 :meet
 
-set fp=* Open Meeting affinity files.
+echo. & echo * Open Meeting affinity files.
 
 rem lu: Mar-8-2020
 
 echo.
-echo %fp%
+
 
 set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\msl.asc"
@@ -3685,12 +3685,12 @@ exit/b
 
 :ocm
 
-set fp=* Open files to make CBFs.
+echo. & echo * Open files to make CBFs.
 
 rem lu: Aug-9-2021
 
 echo.
-echo %fp%
+
 
 set cbf-fn-list="%share-zone%\ni.bat"
 
@@ -3710,12 +3710,12 @@ exit/b
 
 :xam
 
-set fp=* Open XAM Affinity files.
+echo. & echo * Open XAM Affinity files.
 
 rem lu: Aug-11-2021
 
 echo.
-echo %fp%
+
 
 set cbf-fn-list="%share-zone%\Miscellany\z.asc"
 
@@ -3772,12 +3772,12 @@ rem lu: Apr-8-2022
 
 :atoi
 
-set fp=* Open ATOI Affinity files.
+echo. & echo * Open ATOI Affinity files.
 
 rem lu: Aug-11-2021
 
 echo.
-echo %fp%
+
 
 set cbf-fn-list="%share-zone%\Miscellany\J.asc"
 
@@ -3804,12 +3804,12 @@ exit/b
 
 :xam-first
 
-set fp=* Open XAM Affinity files in Notepad.
+echo. & echo * Open XAM Affinity files in Notepad.
 
 rem lu: Aug-11-2021
 
 echo.
-echo %fp%
+
 
 call xac np "%share-zone%\Miscellany\z.asc"
 call xac np "%composable-batch-files%\n.bat"
@@ -3825,12 +3825,12 @@ exit/b
 
 :pres
 
-set fp=* Open presentation files.
+echo. & echo * Open presentation files.
 
 rem lu: Nov-11-2020
 
 echo.
-echo %fp%
+
 
 set cbf-fn-list="%dropbox%\savannah\reach out\WK.asc"
 
@@ -3856,12 +3856,12 @@ exit/b
 
 :inot_old
 
-set fp=* Open affinity files - old.
+echo. & echo * Open affinity files - old.
 
 rem lu: Jan-9-2019
 
 echo.
-echo %fp%
+
 
 start Mew32.exe "%reach out%\WK.asc" "%reach out%\CC.asc" "%reach out%\CM.asc" "%reach out%\IT.asc" 
 "%reach out%\DI.asc" 
@@ -3878,12 +3878,12 @@ exit/b
 
 :wait
 
-set fp=* Open "waiting" files.
+echo. & echo * Open "waiting" files.
 
 rem lu: Feb-27-2019
 
 echo.
-echo %fp%
+
 
 call fnv machine-specific-file
 
@@ -3903,12 +3903,12 @@ exit/b
 
 :affc
 
-set fp=* Open affinity files and close the DOS window.
+echo. & echo * Open affinity files and close the DOS window.
 
 rem lu: Jan-23-2019
 
 echo.
-echo %fp%
+
 
 call :aff
 
@@ -3920,12 +3920,12 @@ exit
 
 :waitc
 
-set fp=* Wait and close.
+echo. & echo * Wait and close.
 
 rem lu: Mar-18-2019
 
 echo.
-echo %fp%
+
 
 call %0 wait
 
@@ -3945,12 +3945,12 @@ exit
 
 :set_fn_eqt_app
 
-set fp=* Set cbf-fn equal to cbf-app.
+echo. & echo * Set cbf-fn equal to cbf-app.
 
 rem lu: Feb-4-2019
 
 echo.
-echo %fp%
+
 
 set cbf-fn=%cbf-app%
 
@@ -3968,12 +3968,12 @@ exit/b
 
 :associate_cbf-parameter_to_cbf-fn
 
-set fp=* Associate cbf-parameter to cbf-fn.
+echo. & echo * Associate cbf-parameter to cbf-fn.
 
 rem lu: Dec-19-2018
 
 echo.
-echo %fp%
+
 
 set cbf-parameter=%cbf-fn%
 
@@ -4020,12 +4020,12 @@ rem lu: Aug-17-2022
 
 :distill_filename
 
-set fp=* Distill filename.
+echo. & echo * Distill filename.
 
 rem lu: May-18-2020
 
 rem echo.
-rem echo %fp%
+rem 
 
 set cbf-distilled_filename=%~nx2
 
@@ -4043,12 +4043,12 @@ exit/b
 
 :distill_path
 
-set fp=* Distill path.
+echo. & echo * Distill path.
 
 rem lu: May-26-2020
 
 rem echo.
-rem echo %fp%
+rem 
 
 set cbf-distilled_path=%~dp2
 
@@ -4078,12 +4078,12 @@ exit/b
 
 :rc
 
-set fp=* How to run riverstone locally, the overarching process.
+echo. & echo * How to run riverstone locally, the overarching process.
 
 rem lu: Mar-30-2020
 
 echo.
-echo %fp%
+
 
 rem Check status and what branch you are on.
 s ma
@@ -4141,12 +4141,12 @@ exit/b
 
 :htr
 
-set fp=* How to refresh the server, Sean's manual deployment instructions.
+echo. & echo * How to refresh the server, Sean's manual deployment instructions.
 
 rem lu: Aug-22-2019
 
 echo.
-echo %fp%
+
 
 sf dv
 
@@ -4231,12 +4231,12 @@ exit/b
 
 :htr_fqt
 
-set fp=* How to refresh FQT.
+echo. & echo * How to refresh FQT.
 
 rem lu: Sep-17-2019
 
 echo.
-echo %fp%
+
 
 sf fq
 
@@ -4335,14 +4335,14 @@ exit/b
 
 :lnk-suui
 
-set fp=* Run NG UI.
+echo. & echo * Run NG UI.
 
 rem lu: Aug-27-2021
 
 title=%fp%
 
 echo.
-echo %fp%
+
 
 rem call t cpoc
 call t paui
@@ -4360,14 +4360,14 @@ exit/b
 
 :lnk_ui
 
-set fp=* riverstone UI
+echo. & echo * riverstone UI
 
 rem lu: Mar-26-2020
 
 title=%fp%
 
 echo.
-echo %fp%
+
 
 call %0 lnk_ui_do_not_install_npm
 rem call %0 lnk_ui_install_npm
@@ -4380,12 +4380,12 @@ exit/b
 
 :lnk_ui_install_npm
 
-set fp=* Run UI lnk and install npm.
+echo. & echo * Run UI lnk and install npm.
 
 rem lu: Mar-24-2020
 
 echo.
-echo %fp%
+
 
 call m big
 
@@ -4406,12 +4406,12 @@ exit/b
 
 :lnk_ui_do_not_install_npm
 
-set fp=* Run UI lnk, do not install npm.
+echo. & echo * Run UI lnk, do not install npm.
 
 rem lu: Mar-24-2020
 
 echo.
-echo %fp%
+
 
 call m big
 
@@ -4430,12 +4430,12 @@ exit/b
 
 :lnk_webpack
 
-set fp=* Run UI lnk, do not install npm.
+echo. & echo * Run UI lnk, do not install npm.
 
 rem lu: Mar-24-2020
 
 echo.
-echo %fp%
+
 
 call m ise
 
@@ -4451,12 +4451,12 @@ exit/b
 
 :lnk_ui_old
 
-set fp=* Run UI lnk, for use by shortcut icons.
+echo. & echo * Run UI lnk, for use by shortcut icons.
 
 rem lu: Aug-16-2019
 
 echo.
-echo %fp%
+
 
 call m big
 
@@ -4479,7 +4479,7 @@ exit/b
 
 :lnk_api
 
-set fp=* riverstone API
+echo. & echo * riverstone API
 
 rem Run API cmd, for use by shortcut icons.
 
@@ -4488,7 +4488,7 @@ rem lu: Mar-24-2020
 title=%fp%
 
 echo.
-echo %fp%
+
 
 rem call %0 lnk_api_attach_debugger
 call %0 lnk_api_do_not_attach_debugger
@@ -4501,12 +4501,12 @@ exit/b
 
 :lnk_api_attach_debugger
 
-set fp=* Run API cmd and ATTACH DEBUGGER!
+echo. & echo * Run API cmd and ATTACH DEBUGGER!
 
 rem lu: Aug-16-2019
 
 echo.
-echo %fp%
+
 
 call m big
 
@@ -4522,12 +4522,12 @@ exit/b
 
 :lnk_api_do_not_attach_debugger
 
-set fp=* Run API cmd and do not attach debugger.
+echo. & echo * Run API cmd and do not attach debugger.
 
 rem lu: Aug-16-2019
 
 echo.
-echo %fp%
+
 
 call m big
 
@@ -4543,12 +4543,12 @@ exit/b
 
 :lnk_api_old
 
-set fp=* Run API cmd, for use by shortcut icons.
+echo. & echo * Run API cmd, for use by shortcut icons.
 
 rem lu: Aug-16-2019
 
 echo.
-echo %fp%
+
 
 call m big
 
@@ -4571,12 +4571,12 @@ exit/b
 
 :lnk_api_with_debugger
 
-set fp=* Run API cmd and attach the debugger.
+echo. & echo * Run API cmd and attach the debugger.
 
 rem lu: Aug-16-2019
 
 echo.
-echo %fp%
+
 
 call m big
 
@@ -4612,12 +4612,12 @@ exit/b
 
 :cmd_golf
 
-set fp=* Run Golf cmd.
+echo. & echo * Run Golf cmd.
 
 rem lu: Aug-16-2019
 
 echo.
-echo %fp%
+
 
 call m big
 
@@ -4633,12 +4633,12 @@ exit/b
 
 :lnk_db
 
-set fp=* Start local database.
+echo. & echo * Start local database.
 
 rem lu: Aug-16-2019
 
 echo.
-echo %fp%
+
 
 call m big
 
@@ -4656,7 +4656,7 @@ exit/b
 
 :show_ascii_art
 
-set fp=* Show Ascii art.
+echo. & echo * Show Ascii art.
 
 rem lu: Apr-1-2019
 
@@ -4672,7 +4672,7 @@ exit/b
 
 :show_ascii_art_2
 
-set fp=* Show Ascii art 2.
+echo. & echo * Show Ascii art 2.
 
 rem lu: Jul-26-2019
 
@@ -4688,7 +4688,7 @@ exit/b
 
 :show_ascii_art_sans_souci
 
-set fp=* Show Ascii art.
+echo. & echo * Show Ascii art.
 
 rem lu: Nov-25-2019
 
@@ -4755,11 +4755,11 @@ exit/b 0
 
 :cltestl
 
-set fp=* Run tests on command line with an attached logger.
+echo. & echo * Run tests on command line with an attached logger.
 
 rem lu: Dec-18-2017
 
-echo %fp%
+
 echo.
 
 vstest.console.exe unittestproject4.dll /Logger:trx
@@ -4772,11 +4772,11 @@ exit/b
 
 :cltest
 
-set fp=* Run tests on command line.
+echo. & echo * Run tests on command line.
 
 rem lu: Dec-18-2017
 
-echo %fp%
+
 echo.
 
 call :vscmd
@@ -4795,12 +4795,12 @@ exit/b
 
 :rscsh
 
-set fp=* Rename screenshots.
+echo. & echo * Rename screenshots.
 
 rem lu: Mar-12-2020
 
 echo.
-echo %fp%
+
 
 echo.
 ren Screen*.* Mar-12-2020*.*
@@ -4813,7 +4813,7 @@ exit/b
 
 :validate_instance
 
-set fp=* Validate instance.
+echo. & echo * Validate instance.
 
 if "%~2" == "" (
   echo.
@@ -4845,11 +4845,11 @@ exit/b
 
 :net
 
-set fp=* Netstat.
+echo. & echo * Netstat.
 
 rem fcd: Jun-26-2017
 
-echo %fp%
+
 
 cd c:\mercury\batch_files
 
@@ -4872,12 +4872,12 @@ exit/b
 
 :jfs
 
-set fp=* Open Jenkinsfiles.
+echo. & echo * Open Jenkinsfiles.
 
 rem lu: Jan-10-2019
 
 echo.
-echo %fp%
+
 
 call e acr
 
@@ -5078,7 +5078,7 @@ exit/b
 
 :initialize_environment_router
 
-set fp=* Initialize environment router.
+echo. & echo * Initialize environment router.
 
 rem lu: Feb-1-2019
 
@@ -5124,12 +5124,12 @@ exit/b
 
 :initialize_default_browser
 
-set fp=* Initialize default browser.
+echo. & echo * Initialize default browser.
 
 rem lu: Nov-2-2018
 
 echo.
-echo %fp%
+
 
 rem if /i "%computername%" == "asus" call m set_default_browser ie
 if "%cbf-default-browser%" == "" call m set_default_browser kr
@@ -5142,12 +5142,12 @@ exit/b
 
 :initialize_default_repository_folder
 
-set fp=* Initialize default repository folder.
+echo. & echo * Initialize default repository folder.
 
 rem lu: Nov-2-2018
 
 echo.
-echo %fp%
+
 
 call %0 set_default_repository_folder c_aa_repos
 
@@ -5181,12 +5181,12 @@ rem lu: Nov-2-2018
 
 :initialize_big_environment
 
-set fp=* Initialize ATOI environment.
+echo. & echo * Initialize ATOI environment.
 
 rem lu: Dec-4-2018
 
 echo.
-echo %fp%
+
 
 call %0 initialize_environment
 
@@ -5216,7 +5216,7 @@ exit/b
 
 :lnk-xam
 
-set fp=* Initialize CBF environment on XAM.
+echo. & echo * Initialize CBF environment on XAM.
 
 title=CBF
 
@@ -5234,7 +5234,7 @@ exit/b
 
 :lnk_cbf
 
-set fp=* Initialize CBF environment.
+echo. & echo * Initialize CBF environment.
 
 title=CBF
 
@@ -5252,7 +5252,7 @@ exit/b
 
 :lnk-code
 
-set fp=* Initialize VS Code environment.
+echo. & echo * Initialize VS Code environment.
 
 title=VS Code
 
@@ -5274,7 +5274,7 @@ exit/b
 
 ::_
 :expand-to-path-only
-set fp=* Expand to path only. Version 2.
+echo. & echo * Expand to path only. Version 2.
 set cbf-expand-to-path-only-pt=%~d2%~p2
 exit/b
 rem lu: Aug-13-2021
@@ -5287,7 +5287,7 @@ rem lu: Aug-13-2021
 
 :expand_to_path_only
 
-set fp=* Expand to path only.
+echo. & echo * Expand to path only.
 
 rem lu: Mar-14-2018
 
@@ -5301,12 +5301,12 @@ exit/b
 
 :expand_to_filename_without_path
 
-set fp=* Expand to filename without path.
+echo. & echo * Expand to filename without path.
 
 rem lu: Nov-8-2019
 
 echo.
-echo %fp%
+
 
 set cbf-fn_without_path=%~nx2
 
@@ -5318,12 +5318,12 @@ exit/b
 
 :expand_to_filename_without_path
 
-set fp=* Expand to filename without path.
+echo. & echo * Expand to filename without path.
 
 rem lu: Nov-8-2019
 
 echo.
-echo %fp%
+
 
 set cbf-fn_without_path=%~nx2
 
@@ -5339,7 +5339,7 @@ exit/b
 :file-is-present
 :specific_file_presence
 :specific-file-presence
-set fp=* Check the current folder for the presence of "%2". Deprecated: Going forward please use fe.bat.
+echo. & echo * Check the current folder for the presence of "%2". Deprecated: Going forward please use fe.bat.
 if not exist "%~2" (
   call err The file "%2" does NOT exist in the current folder. Oct-20-2021_1_09_PM - %0.bat
   exit/b 1
@@ -5354,12 +5354,12 @@ rem lu: May-16-2022
 
 :specific_folder_presence
 
-set fp=* Check for presence of a paricular foldder in the current folder.
+echo. & echo * Check for presence of a paricular foldder in the current folder.
 
 rem lu: Nov-11-2019
 
 echo.
-echo %fp%
+
 
 dir | find /i "%2">nul
 
@@ -5380,10 +5380,10 @@ exit/b
 
 :within_a_specific_folder
 
-set fp=* Current location must be within a paricular foldder.
+echo. & echo * Current location must be within a paricular foldder.
 
 echo.
-echo %fp%
+
 
 echo %cd% | find /i "%2"
 
@@ -5430,12 +5430,12 @@ rem lu: Apr-27-2020
 
 :delete_folder_if_present
 
-set fp=* Delete a paricular folder if it exists in the current folder.
+echo. & echo * Delete a paricular folder if it exists in the current folder.
 
 rem lu: May-22-2020
 
 echo.
-echo %fp%
+
 
 dir | find /i "%2">nul
 
@@ -5457,9 +5457,9 @@ exit/b
 
 :file_type_presence
 
-set fp=* Deprecated: Going forward, please use ftpr.bat. Sep-25-2023
+echo. & echo * Deprecated: Going forward, please use ftpr.bat. Sep-25-2023
 
-set fp=* Check the current folder for the presence of a particlar file type.
+echo. & echo * Check the current folder for the presence of a particlar file type.
 
 rem lu: Nov-19-2018
 

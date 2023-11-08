@@ -12,7 +12,7 @@ set cbf-filep=* Delete the path contents of the passed in alias.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 

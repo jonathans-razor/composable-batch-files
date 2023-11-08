@@ -44,12 +44,12 @@ exit/b
 
 :iji
 
-set fp=* Investigate Java installation.
+echo. & echo * Investigate Java installation.
 
 rem lu: Dec-13-2018
 
 echo.
-echo %fp%
+
 
 call t jvpf
 
@@ -79,12 +79,12 @@ exit/b
 
 :rjz
 
-set fp=* Rename Jar file to zip file in order to examine its contents.
+echo. & echo * Rename Jar file to zip file in order to examine its contents.
 
 rem lu: Dec-14-2018
 
 echo.
-echo %fp%
+
 
 echo.
 ren *.jar *.zip
@@ -97,10 +97,10 @@ exit/b
 
 :je
 
-set fp=* Run Jenkins.
+echo. & echo * Run Jenkins.
 
 echo.
-echo %fp%
+
 
 call t desk
 
@@ -125,12 +125,12 @@ exit/b
 
 :get_java_version
 
-set fp=* Get Java version.
+echo. & echo * Get Java version.
 
 rem Outcome: This works!
 
 echo.
-echo %fp%
+
 echo.
 
 cd c:\mercury\batch_files
@@ -151,12 +151,12 @@ exit/b
 
 :all
 
-set fp=* Build all the jars in the libs folder?
+echo. & echo * Build all the jars in the libs folder?
 
 rem lu: Apr-2-2020
 
 echo.
-echo %fp%
+
 
 echo.
 java -jar build/libs/*.jar
@@ -203,12 +203,12 @@ exit/b
 
 :cr
 
-set fp=* Never used notional prototype. Compile, interpret and run the file you just compiled.
+echo. & echo * Never used notional prototype. Compile, interpret and run the file you just compiled.
 
 rem I never needed to use this one because "%0 ir" seemed to run the java program just fine.
 
 echo.
-echo %fp%
+
 
 call %0 c %2
 call %0 r %2.java

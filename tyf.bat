@@ -12,7 +12,7 @@ set cbf-filep=* Reopen or see search results that have been piped to a file.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 

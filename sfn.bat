@@ -85,7 +85,7 @@ goto use_alias_or_batch_file
 
 :evaluate_the_parameter_list
 
-set fp=* Evaluate the parameter list.
+echo. & echo * Evaluate the parameter list.
 
 rem lu: Nov-27-2019
 
@@ -117,19 +117,19 @@ exit/b
 
 :use_alias_or_batch_file
 
-set fp=* Use batch file to find filename.
+echo. & echo * Use batch file to find filename.
 
 if exist "%composable-batch-files%\%~1.bat" (
   set cbf-fn=%composable-batch-files%\%~1.bat
   rem echo.
-  rem echo %fp% Ran from CBF folder.
+  rem  Ran from CBF folder.
   goto file_exists
 )
 
 if exist "%share-zone%\%~1.bat" (
   set cbf-fn=%share-zone%\%~1.bat
   echo.
-  echo %fp% Ran from Share-Zone folder.
+   Ran from Share-Zone folder.
   goto file_exists
 )
 
@@ -141,10 +141,10 @@ goto use_alias
 
 :use_alias
 
-set fp=* Use alias to find filename. Sep-5-2021_6_02_PM
+echo. & echo * Use alias to find filename. Sep-5-2021_6_02_PM
 
 echo.
-echo %fp%
+
 
 call fnv %~1
 
@@ -217,10 +217,10 @@ exit/b 0
 
 :file_does_not_exist
 
-set fp=* The batch file label and CBF were found but file does MOT exist.
+echo. & echo * The batch file label and CBF were found but file does MOT exist.
 
 echo.
-echo %fp%
+
 
 echo.>"%cbf-fn%"
 

@@ -15,7 +15,7 @@ echo %cbf-filep%
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "?" goto help
 

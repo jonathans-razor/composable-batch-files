@@ -12,7 +12,7 @@ set cbf-filep=* Remote double-click equivalent way to run a file.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 

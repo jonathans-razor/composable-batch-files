@@ -12,7 +12,7 @@ set cbf-filep=* Remove folder of the specified CBF path nickname. WARNING: Power
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 

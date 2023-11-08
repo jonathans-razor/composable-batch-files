@@ -12,7 +12,7 @@ set cbf-filep=* Sets the path using a monogamous CBF variable that sets the path
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 

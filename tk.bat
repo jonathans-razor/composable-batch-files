@@ -42,9 +42,9 @@ exit/b
 
 :kill
 
-set fp=* Taskkill all nonessential processes. My current essential process are ME and CBF window.
+echo. & echo * Taskkill all nonessential processes. My current essential process are ME and CBF window.
 
-echo %fp%
+
 echo.
 
 taskkill /f /im chrome.exe
@@ -66,10 +66,10 @@ exit/b
 
 :kill_old
 
-set fp=* Taskkill all nonessential processes. My current essential process are ME, Visual Studio and TMT.
+echo. & echo * Taskkill all nonessential processes. My current essential process are ME, Visual Studio and TMT.
 
 echo.
-echo %fp%
+
 echo.
 
 taskkill /f /im anb.exe 
@@ -105,9 +105,9 @@ exit/b
 
 :dev
 
-set fp=* Taskkill devenv.
+echo. & echo * Taskkill devenv.
 
-echo %fp%
+
 echo.
 
 taskkill /f /im devenv.exe
@@ -122,10 +122,10 @@ exit/b
 
 :we
 
-set fp=* Taskkill Explorer windows.
+echo. & echo * Taskkill Explorer windows.
 
 echo.
-echo %fp%
+
 
 echo.
 
@@ -145,12 +145,12 @@ exit/b
 
 :id
 
-set fp=* Kill using ID.
+echo. & echo * Kill using ID.
 
 rem lu: Mar-5-2019
 
 echo.
-echo %fp%
+
 
 echo.
 taskkill /pid %2 /f
@@ -163,12 +163,12 @@ exit/b
 
 :5432
 
-set fp=* Kill Postgres.
+echo. & echo * Kill Postgres.
 
 rem lu: Mar-5-2019
 
 echo.
-echo %fp%
+
 
 echo.
 rem Under construction.

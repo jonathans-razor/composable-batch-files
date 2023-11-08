@@ -46,12 +46,12 @@ Oct-15-2019
 
 :build_for_fqt
 
-set fp=* Build for FQT.
+echo. & echo * Build for FQT.
 
 rem lu: Sep-17-2019
 
 echo.
-echo %fp%
+
 
 echo.
 ng build --configuration=fqt
@@ -64,12 +64,12 @@ exit/b
 
 :ngp_old
 
-set fp=* Complie and start Angular for production - old. Not sure this works..
+echo. & echo * Complie and start Angular for production - old. Not sure this works..
 
 rem lu: Feb-12-2019
 
 echo.
-echo %fp%
+
 
 echo.
 ng build --prod
@@ -82,12 +82,12 @@ exit/b
 
 :build
 
-set fp=* Build angular.
+echo. & echo * Build angular.
 
 rem lu: Mar-19-2019
 
 echo.
-echo %fp%
+
 
 echo.
 ng build
@@ -106,12 +106,12 @@ exit/b
 
 :build_for_production
 
-set fp=* Build for production, zip file with td alias.
+echo. & echo * Build for production, zip file with td alias.
 
 rem lu: Nov-21-2019
 
 echo.
-echo %fp%
+
 
 call t rf_ma
 
@@ -131,12 +131,12 @@ exit/b
 
 :ngp
 
-set fp=* Compile and start Angular for production. I have used this since version 1.3.
+echo. & echo * Compile and start Angular for production. I have used this since version 1.3.
 
 rem lu: Mar-3-2020
 
 echo.
-echo %fp%
+
 
 echo.
 ng build --configuration=prod
@@ -155,14 +155,14 @@ exit/b
 
 :test
 
-set fp=* Run Angular unit tests.
+echo. & echo * Run Angular unit tests.
 
 rem skw run tests, run unit tests
 
 rem lu: Jun-30-2020
 
 echo.
-echo %fp%
+
 
 call t ui
 
@@ -181,12 +181,12 @@ As of Mar-5-2020 there are 428 API tests
 
 :new
 
-set fp=* Create a starter app.
+echo. & echo * Create a starter app.
 
 rem lu: Oct-29-2021
 
 echo.
-echo %fp%
+
 
 ng new myapp
 
@@ -198,12 +198,12 @@ exit/b
 
 :comp
 
-set fp=* Create a component.
+echo. & echo * Create a component.
 
 rem lu: Oct-29-2021
 
 echo.
-echo %fp%
+
 
 ng generate component
 
@@ -233,12 +233,12 @@ creation date: Sep-25-2023
 
 :run_ui-old
 
-set fp=* Compile and start Angular.
+echo. & echo * Compile and start Angular.
 
 rem lu: Feb-11-2019
 
 echo.
-echo %fp%
+
 
 echo %cd% | find /i "\portal-client">nul
 

@@ -15,7 +15,7 @@ echo %cbf-filep%
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 
@@ -79,7 +79,7 @@ exit/b
 
 :use_alias_or_batch_file
 
-set fp=* Use batch file to find filename.
+echo. & echo * Use batch file to find filename.
 
 if exist "%composable-batch-files%\%~1.bat" (
   set cbf-fn=%composable-batch-files%\%~1.bat
@@ -99,10 +99,10 @@ goto use_alias
 
 :use_alias
 
-set fp=* Use alias to find filename.
+echo. & echo * Use alias to find filename.
 
 rem echo.
-rem echo %fp%
+rem 
 
 call fnv %~1
 
@@ -124,10 +124,10 @@ exit/b 0
 
 :use_current_folder_filename
 
-set fp=* Use current folder filename.
+echo. & echo * Use current folder filename.
 
 echo.
-echo %fp%
+
 
 set cbf-fn=%~1
 

@@ -71,10 +71,10 @@ Oct-9-2023
 
 :gradle
 
-set fp=* Associate gradle files with Notepad++.
+echo. & echo * Associate gradle files with Notepad++.
 
 echo.
-echo %fp%
+
 
 echo.
 assoc .gradle=gradle
@@ -90,10 +90,10 @@ exit/b
 
 :yml
 
-set fp=* Associate yml files with Notepad++.
+echo. & echo * Associate yml files with Notepad++.
 
 echo.
-echo %fp%
+
 
 echo.
 assoc .yml=yml
@@ -107,10 +107,10 @@ exit/b
 
 :xlsx
 
-set fp=* Associate xlsx files with Excel.
+echo. & echo * Associate xlsx files with Excel.
 
 echo.
-echo %fp%
+
 
 echo.
 assoc .xlsx=Excel.Sheet.16
@@ -124,10 +124,10 @@ exit/b
 
 :xml
 
-set fp=* Associate xml files with Notepad++.
+echo. & echo * Associate xml files with Notepad++.
 
 echo.
-echo %fp%
+
 
 echo.
 assoc .xml=xmlfile

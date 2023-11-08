@@ -59,12 +59,12 @@ exit/b
 
 :cb
 
-set fp=* Copy background image for testing purposes.
+echo. & echo * Copy background image for testing purposes.
 
 rem lu: Nov-9-2017
 
 echo.
-echo %fp%
+
 
 call t wir1
 
@@ -86,11 +86,11 @@ exit/b
 
 :md
 
-set fp=* Copy settings.xml file into the Maven Dependencies path.
+echo. & echo * Copy settings.xml file into the Maven Dependencies path.
 
 rem lu: Nov-21-2017
 
-echo %fp%
+
 
 call t m2
 
@@ -104,11 +104,11 @@ exit/b
 
 :mc
 
-set fp=* Copy Mobility resources to the Cordova folder.
+echo. & echo * Copy Mobility resources to the Cordova folder.
 
 rem lu: Sep-28-2017
 
-echo %fp%
+
 echo.
 
 call t pu
@@ -133,12 +133,12 @@ exit/b
 
 :aj
 
-set fp=* Copy over App.json for mobile build.
+echo. & echo * Copy over App.json for mobile build.
 
 rem lu: Sep-6-2017
 
 echo.
-echo %fp%
+
 
 call t pu
 
@@ -152,12 +152,12 @@ exit/b
 
 :t1
 
-set fp=* Copy over Testing 1 NetConfig.
+echo. & echo * Copy over Testing 1 NetConfig.
 
 rem lu: Dec-6-2017
 
 echo.
-echo %fp%
+
 
 call t util
 
@@ -171,14 +171,14 @@ exit/b
 
 :bu
 
-set fp=* Copy file to code backup folder.
+echo. & echo * Copy file to code backup folder.
 
 rem lu: Nov-9-2017
 
 rem skw: slash replace
 
 echo.
-echo %fp%
+
 echo.
 
 set reformatted_string=%2
@@ -197,11 +197,11 @@ exit/b
 
 :cbf
 
-set fp=* CBF.png file to cbf folder.
+echo. & echo * CBF.png file to cbf folder.
 
 rem lu: Apr-24-2018
 
-echo %fp%
+
 
 call t cbf
 
@@ -218,12 +218,12 @@ exit/b
 
 :res
 
-set fp=* Copy Fresnel images to their respective Android and iOS folders.
+echo. & echo * Copy Fresnel images to their respective Android and iOS folders.
 
 rem lu: Jul-13-2018
 
 echo.
-echo %fp%
+
 
 call t fr_ra
 
@@ -245,12 +245,12 @@ exit/b
 
 :test3
 
-set fp=* Move test3 files to test1.
+echo. & echo * Move test3 files to test1.
 
 rem lu: Sep-3-2018
 
 echo.
-echo %fp%
+
 
 xcopy %aa%\test3 %aa%\test1
 
@@ -262,12 +262,12 @@ exit/b
 
 :copy_cart_cs_files_to_a_temp_folder
 
-set fp=* Copy cart cs files to a temp folder.
+echo. & echo * Copy cart cs files to a temp folder.
 
 rem lu: Oct-17-2018
 
 echo.
-echo %fp%
+
 
 xcopy *.cs %temp%\cart_cs /s
 
@@ -279,10 +279,10 @@ exit/b
 
 :cc
 
-set fp=* Make a copy of CC.asc.
+echo. & echo * Make a copy of CC.asc.
 
 echo.
-echo %fp%
+
 
 echo.
 xcopy /d /h /r /y "%reach out%\cc.asc" "%share-zone%\copy of cc.asc"
@@ -295,12 +295,12 @@ exit/b
 
 :apn
 
-set fp=* Copy all files in the current folder to an alias specified path.
+echo. & echo * Copy all files in the current folder to an alias specified path.
 
 rem lu: May-7-2019
 
 echo.
-echo %fp%
+
 
 if "%~2" == "" (
   echo.
@@ -328,12 +328,12 @@ exit/b
 
 :jfds
 
-set fp=* Copy jj_devops Jenkinsfile to share-zone Jenkinsfile.
+echo. & echo * Copy jj_devops Jenkinsfile to share-zone Jenkinsfile.
 
 rem lu: May-16-2019
 
 echo.
-echo %fp%
+
 
 call n j
 
@@ -354,12 +354,12 @@ exit/b
 
 :jfsd
 
-set fp=* Copy share-zone Jenkinsfile to jj_devops Jenkinsfile.
+echo. & echo * Copy share-zone Jenkinsfile to jj_devops Jenkinsfile.
 
 rem lu: May-16-2019
 
 echo.
-echo %fp%
+
 
 call n jft
 
@@ -380,10 +380,10 @@ exit/b
 
 :sv_dr_to_local
 
-set fp=* Copy newer Savannah files from dropbox to local drive.
+echo. & echo * Copy newer Savannah files from dropbox to local drive.
 
 echo.
-echo %fp%
+
 
 echo.
 xcopy /d /r /s /y "%dropbox%\savannah" "%my documents%\savannah"
@@ -396,12 +396,12 @@ exit/b
 
 :ldd
 
-set fp=* Copy LDD from H drive to Share-zone.
+echo. & echo * Copy LDD from H drive to Share-zone.
 
 rem lu: Jul-1-2019
 
 echo.
-echo %fp%
+
 
 call cyff hldd ldd
 
@@ -415,12 +415,12 @@ exit/b
 
 :max
 
-set fp=* Copy empty max on top of max.
+echo. & echo * Copy empty max on top of max.
 
 rem lu: Jun-2-2020
 
 echo.
-echo %fp%
+
 
 call t max
 
@@ -436,12 +436,12 @@ exit/b
 
 :fis
 
-set fp=* Copy folder including subfolders.
+echo. & echo * Copy folder including subfolders.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 xcopy /r /s %2 %3
 
@@ -453,12 +453,12 @@ exit/b
 
 :nv
 
-set fp=* New vdi pass-through batch file.
+echo. & echo * New vdi pass-through batch file.
 
 rem lu: Feb-4-2022
 
 echo.
-echo %fp%
+
 
 if "%~1" == "" (
   echo. & echo * Error: Percent 2, new batch file name, is required.
@@ -766,7 +766,7 @@ exit/b
 
 :vc
 
-set fp=* Copy a vdi file to the cbf folder.
+echo. & echo * Copy a vdi file to the cbf folder.
 
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
@@ -872,12 +872,12 @@ exit/b
 
 :mecfg
 
-set fp=* The Multi-Edit config files seem to be corrupt, so copy mecfg files from dropbox to local.
+echo. & echo * The Multi-Edit config files seem to be corrupt, so copy mecfg files from dropbox to local.
 
 rem lu: Aug-29-2020
 
 echo.
-echo %fp%
+
 
 call t mecfg
 
@@ -900,12 +900,12 @@ exit/b
 
 :copy_from_me_sz
 
-set fp=* Copy Multi-Edit config files from share-zone.
+echo. & echo * Copy Multi-Edit config files from share-zone.
 
 rem lu: Dec-27-2018
 
 echo.
-echo %fp%
+
 
 call t mecfg
 
@@ -920,12 +920,12 @@ exit/b
 
 :copy_to_sz
 
-set fp=* Copy Multi-Edit config files to share-zone.
+echo. & echo * Copy Multi-Edit config files to share-zone.
 
 rem lu: Dec-27-2018
 
 echo.
-echo %fp%
+
 
 call t mecfg
 
@@ -940,12 +940,12 @@ exit/b
 
 :cfg_dr_to_local
 
-set fp=* Copy Multi-Edit configuration files from dropbox to my local drive.
+echo. & echo * Copy Multi-Edit configuration files from dropbox to my local drive.
 
-set fp=* Now do vice versa.
+echo. & echo * Now do vice versa.
 
 echo.
-echo %fp%
+
 
 echo.
 xcopy /d /r /s /y "%dropbox%\Multi-Edit_2008_Config_Files" "%Multi-Edit_2008_Config_Files%"

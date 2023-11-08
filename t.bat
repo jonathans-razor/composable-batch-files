@@ -56,7 +56,7 @@ exit/b
 
 :back_magic
 
-set fp=* Back magic
+echo. & echo * Back magic
 
 cd..
 
@@ -117,7 +117,7 @@ exit/b
 
 :preprocess
 
-set fp=* Analyze environment and decide upon the proper course of action. This is an order of operations.
+echo. & echo * Analyze environment and decide upon the proper course of action. This is an order of operations.
 
 set cbf-previous-pt=%cbf-pt%
 

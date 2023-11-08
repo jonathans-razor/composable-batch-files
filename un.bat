@@ -12,7 +12,7 @@ set cbf-filep=* URL nickname dictionary that sets the full URL name correspondin
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 
@@ -50,7 +50,7 @@ exit/b
 
 :preprocess
 
-set fp=* In order to promote freshness, clear the environment variable.
+echo. & echo * In order to promote freshness, clear the environment variable.
 
 set cbf-url=
 

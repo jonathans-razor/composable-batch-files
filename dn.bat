@@ -54,10 +54,10 @@ The following were installed at: 'C:\Program Files\dotnet\'
 
 :rest
 
-set fp=* Restore Nuget packages.
+echo. & echo * Restore Nuget packages.
 
 echo.
-echo %fp%
+
 
 echo.
 dotnet restore
@@ -73,12 +73,12 @@ exit/b
 
 :up_db
 
-set fp=* Create a database based on the current project's DbContext.
+echo. & echo * Create a database based on the current project's DbContext.
 
 rem lu: Sep-17-2018
 
 echo.
-echo %fp%
+
 
 echo.
 dotnet ef database update
@@ -91,12 +91,12 @@ exit/b
 
 :ef_mig
 
-set fp=* Use EF migragions
+echo. & echo * Use EF migragions
 
 rem lu: Sep-18-2018
 
 echo.
-echo %fp%
+
 
 echo.
 dotnet ef migrations add initialdb
@@ -109,12 +109,12 @@ exit/b
 
 :se_mig
 
-set fp=* Seed migration.
+echo. & echo * Seed migration.
 
 rem lu: Sep-18-2018
 
 echo.
-echo %fp%
+
 
 echo.
 dotnet ef migrations add SeeData
@@ -127,12 +127,12 @@ exit/b
 
 :dev
 
-set fp=* Set environment to development. This is helpful to see debugging messages when running at the command line.
+echo. & echo * Set environment to development. This is helpful to see debugging messages when running at the command line.
 
 rem lu: Sep-19-2018
 
 echo.
-echo %fp%
+
 
 set ASPNETCORE_ENVIRONMENT=Development
 
@@ -207,10 +207,10 @@ exit/b
 
 :neco-not-working
 
-set fp=* New conosle app.
+echo. & echo * New conosle app.
 
 echo.
-echo %fp%
+
 
 echo.
 dotnet new console -o MyApp -f net7.0

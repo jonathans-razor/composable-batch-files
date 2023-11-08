@@ -60,6 +60,7 @@ Composable Batch Files (CBF) - Table of Contents
     devu  Demo file for Dev University event on Jan-9-2020.
      dif  Are 2 files the same?
       dn  Dot Net Core (skw dotnet).
+     dok  Docker.
       dr  Create and delete directories. (skw mcd, folder)
       dt  Date.
      drt  Dir, with td parameter.

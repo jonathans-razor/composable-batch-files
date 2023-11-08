@@ -46,7 +46,7 @@ exit/b
 
 :microsoft_edge_edge_case
 
-set fp=* Use special syntax for Microsoft Edge.
+echo. & echo * Use special syntax for Microsoft Edge.
 
 if "%cbf-parameter%" == "" (
   call start "Start Process 1" "%cbf-app%:"
@@ -86,7 +86,7 @@ exit/b
 
 :main
 
-set fp=* Run application - main function.
+echo. & echo * Run application - main function.
 
 if "%cbf-app%" == "microsoft-edge" goto microsoft_edge_edge_case
 

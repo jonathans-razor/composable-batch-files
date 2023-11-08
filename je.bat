@@ -12,7 +12,7 @@ set cbf-filep=* Summary: Surf the Jenkins internet site.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" fxw %0 %1 %2 %3
 if "%~1" == ""-help- goto help
@@ -58,7 +58,7 @@ exit/b
 
 call m reset
 
-set fp=* Evaluate the parameter list.
+echo. & echo * Evaluate the parameter list.
 
 call n %1
 
@@ -70,7 +70,7 @@ if errorlevel 1 exit/b
 
 :set_precedence
 
-set fp=* Set precedence. This is a precedence hierarchy.
+echo. & echo * Set precedence. This is a precedence hierarchy.
 
 set cbf-parameter=
 

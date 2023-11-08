@@ -12,7 +12,7 @@ set cbf-filep=* Open a Visual Studio solution.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "?" goto help
 
@@ -41,7 +41,7 @@ exit/b
 
 :preprocess
 
-set fp=* preprocess. If it is provided, go to percent 1.
+echo. & echo * preprocess. If it is provided, go to percent 1.
 
 call m clear_errorlevel_silently
 
@@ -62,12 +62,12 @@ if not "%~1" == "" (
 
 :main
 
-set fp=* Run the Visual Studio solution in the current folder.
+echo. & echo * Run the Visual Studio solution in the current folder.
 
 rem (!rfsp) (mov2)
 
 echo.
-echo %fp%
+
 
 dir /b *.sln>%tmp%\filename.txt
 

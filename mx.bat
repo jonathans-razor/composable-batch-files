@@ -15,7 +15,7 @@ rem echo %cbf-filep%
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 rem echo Percent 1: %1
 rem exit/b
@@ -50,12 +50,12 @@ exit/b
 
 :edit_a_share_zone_file
 
-set fp=* Edit a share-zone batch file.
+echo. & echo * Edit a share-zone batch file.
 
 rem lu: Apr-19-2019
 
 rem echo.
-rem echo %fp%
+rem 
 
 set cbf-fn=%share-zone%\%~1.bat
 
@@ -77,7 +77,7 @@ exit/b
 
 :main
 
-set fp=* Main function.
+echo. & echo * Main function.
 
 call n me
 

@@ -12,7 +12,7 @@ set cbf-filep=* Run PowerPoint.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto use_blank_document
 

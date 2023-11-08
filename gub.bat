@@ -5,7 +5,7 @@
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto perform-default-action
 
@@ -51,10 +51,10 @@ rem Coreutils - GNU core utilities
 
 :perform-default-action
 
-set fp=* Peform the default action which is 
+echo. & echo * Peform the default action which is 
 
 echo.
-echo %fp%
+
 
 exit/b
 

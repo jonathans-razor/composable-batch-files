@@ -33,12 +33,12 @@ rem lu: Apr-27-2022
 
 :jf_old
 
-set fp=* Copy rf_ma Jenkinsfile to the share-zone Jenkinsfile.
+echo. & echo * Copy rf_ma Jenkinsfile to the share-zone Jenkinsfile.
 
 rem lu: Apr-24-2020
 
 echo.
-echo %fp%
+
 
 call n api
 
@@ -63,12 +63,12 @@ exit/b
 
 :ctfj
 
-set fp=* Create timestamped Jenkinsfile.
+echo. & echo * Create timestamped Jenkinsfile.
 
 rem lu: Oct-5-2020
 
 echo.
-echo %fp%
+
 
 call t api
 

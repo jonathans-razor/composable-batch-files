@@ -14,7 +14,7 @@ set cbf-filep=%cbf-filep% you are running. This can help you build easy and cool
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 
@@ -52,10 +52,10 @@ exit/b
 
 :1
 
-set fp=* You entered %1.
+echo. & echo * You entered %1.
 
 echo.
-echo %fp%
+
 
 exit/b
 
@@ -65,10 +65,10 @@ exit/b
 
 :2
 
-set fp=* You entered the number %1.
+echo. & echo * You entered the number %1.
 
 echo.
-echo %fp%
+
 
 exit/b
 
@@ -78,10 +78,10 @@ exit/b
 
 :3
 
-set fp=* %1 is what you typed.
+echo. & echo * %1 is what you typed.
 
 echo.
-echo %fp%
+
 
 exit/b
 

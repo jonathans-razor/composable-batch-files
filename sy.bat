@@ -12,7 +12,7 @@ set cbf-filep=* Synchronize Share-zone and CBF folders.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "?" goto help
 

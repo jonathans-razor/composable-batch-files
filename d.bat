@@ -59,9 +59,9 @@ exit/b
 
 :_
 :h
-set fp=* Look for the hidden files and folders.
+echo. & echo * Look for the hidden files and folders.
 echo.
-echo %fp%
+
 echo.
 dir /ah
 exit/b
@@ -75,12 +75,12 @@ rem Creation Date: Feb-7-2017
 
 :fo
 
-set fp=* Folders only.
+echo. & echo * Folders only.
 
 rem lu: Dec-27-2018
 
 echo.
-echo %fp%
+
 
 echo.
 dir /a:d
@@ -93,12 +93,12 @@ exit/b
 
 :concop
 
-set fp=* Conflicted copy.
+echo. & echo * Conflicted copy.
 
 rem lu: Feb-15-2019
 
 echo.
-echo %fp%
+
 
 echo.
 del "*conflicted copy*.*"
@@ -151,12 +151,12 @@ rem lu: Jan-12-2023
 
 :s-
 
-set fp=* Size, smallest first.
+echo. & echo * Size, smallest first.
 
 rem lu: Feb-1-2018
 
 echo.
-echo %fp%
+
 echo.
 
 dir /os %2
@@ -173,10 +173,10 @@ exit/b
 
 :rm
 
-set fp=* Recently modified.
+echo. & echo * Recently modified.
 
 echo.
-echo %fp%
+
 
 forfiles /s /d 06/24/2020 /c "cmd /c echo @fdate @path"
 
@@ -194,7 +194,7 @@ locale specific. Thus, allows to find most recently modified files.
 
 :today
 
-set fp=* Files changed today.
+echo. & echo * Files changed today.
 
 rem findstr /bvc:" " removes header and summary
 
@@ -203,7 +203,7 @@ rem The problem is that this doesn't search subfolders.
 rem lu: Mar-6-2019
 
 echo.
-echo %fp%
+
 
 forfiles /s /d +0 /c "cmd /c if @isdir==FALSE echo @path @ftime @fsize">%temp%\d_search_results_fs.txt
 
@@ -226,12 +226,12 @@ exit/b
 
 :todff
 
-set fp=* Files and folders changed today.
+echo. & echo * Files and folders changed today.
 
 rem lu: Feb-1-2018
 
 echo.
-echo %fp%
+
 
 forfiles /d +0 /c "cmd /c echo @file @ftime @fsize"
 
@@ -243,14 +243,14 @@ exit/b
 
 :e
 
-set fp=* Group by extension.
+echo. & echo * Group by extension.
 
 rem skw: by file type
 
 rem lu: Jun-24-2021
 
 echo.
-echo %fp%
+
 
 echo.
 dir /oe
@@ -345,7 +345,7 @@ rem lu: Jan-8-2019
 if "%~2" == "?" goto help
 
 echo.
-echo %fp%
+
 
 if -%2-==-/h- (
   tree/f
@@ -478,12 +478,12 @@ exit/b
 
 :a-
 
-set fp=* Reverse Alphabetical, folders first.
+echo. & echo * Reverse Alphabetical, folders first.
 
 rem lu: Jun-24-2021
 
 echo.
-echo %fp%
+
 
 echo.
 dir /og-n
@@ -496,10 +496,10 @@ exit/b
 
 :concop
 
-set fp=* Dir concop.
+echo. & echo * Dir concop.
 
 echo.
-echo %fp%
+
 
 echo.
 dir "*conflicted copy*.*" /s
@@ -512,10 +512,10 @@ exit/b
 
 :renamed
 
-set fp=* Dir renamed.
+echo. & echo * Dir renamed.
 
 echo.
-echo %fp%
+
 
 echo.
 dir "*renamed*.*" /s

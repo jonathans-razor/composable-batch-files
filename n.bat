@@ -104,12 +104,12 @@ rem lu: Sep-22-2022
 
 :aass
 
-set fp=* ASCII Art - %1.
+echo. & echo * ASCII Art - %1.
 
 rem lu: Nov-25-2019
 
 echo.
-echo %fp%
+
 
 call n cbf
 
@@ -125,12 +125,12 @@ exit/b
 
 :aass
 
-set fp=* ASCII Art - %1.
+echo. & echo * ASCII Art - %1.
 
 rem lu: Nov-6-2019
 
 echo.
-echo %fp%
+
 
 call n cbf
 
@@ -146,12 +146,12 @@ exit/b
 
 :aa_sc
 
-set fp=* Ascii art - scuba.
+echo. & echo * Ascii art - scuba.
 
 rem lu: Nov-6-2019
 
 echo.
-echo %fp%
+
 
 call n cbf
 
@@ -165,11 +165,11 @@ exit/b
 
 :parrot
 
-set fp=* Parrot.
+echo. & echo * Parrot.
 
 rem lu: Apr-1-2019
 
-echo %fp%
+
 
 set cbf-fn=%composable-batch-files%\parrot.txt
 
@@ -181,11 +181,11 @@ exit/b
 
 :ascii_art
 
-set fp=* ASCII art.
+echo. & echo * ASCII art.
 
 rem lu: Apr-1-2019
 
-rem echo %fp%
+rem 
 
 set cbf-fn=%composable-batch-files%\ascii_art.txt
 
@@ -197,11 +197,11 @@ exit/b
 
 :ascii_art_2
 
-set fp=* ASCII art.
+echo. & echo * ASCII art.
 
 rem lu: Apr-1-2019
 
-rem echo %fp%
+rem 
 
 set cbf-fn=%composable-batch-files%\ascii_art_2.txt
 
@@ -232,12 +232,12 @@ rem lu: Jan-24-2018
 
 :wopa
 
-set fp=* WordPad.
+echo. & echo * WordPad.
 
 rem lu: Aug-9-2018
 
 echo.
-echo %fp%
+
 
 set cbf-app=c:\program files\windows nt\accessories\wordpad.exe
 
@@ -249,12 +249,12 @@ exit/b
 
 :npp
 
-set fp=* Notepad++.
+echo. & echo * Notepad++.
 
 rem lu: Mar-9-2018
 
 echo.
-echo %fp%
+
 
 rem Determine installation path.
 
@@ -277,12 +277,12 @@ exit/b
 
 :me
 
-set fp=* Multi-Edit.
+echo. & echo * Multi-Edit.
 
 rem lu: Feb-7-2020
 
 echo.
-echo %fp%
+
 
 set cbf-app=C:\Program Files (x86)\multi-edit 2008\mew32.exe
 
@@ -294,12 +294,12 @@ exit/b
 
 :subl
 
-set fp=* Sublime.
+echo. & echo * Sublime.
 
 rem lu: Oct-9-2019
 
 echo.
-echo %fp%
+
 
 set cbf-app=C:\Program Files\Sublime Text 3\sublime_text.exe
 
@@ -311,12 +311,12 @@ exit/b
 
 :viva
 
-set fp=* Vivaldi.
+echo. & echo * Vivaldi.
 
 rem lu: Jul-17-2018
 
 echo.
-echo %fp%
+
 
 set cbf-app=%LOCALAPPDATA%\Vivaldi\Application\vivaldi.exe
 
@@ -328,12 +328,12 @@ exit/b
 
 :feed
 
-set fp=* Feed reader sample.
+echo. & echo * Feed reader sample.
 
 rem lu: Jul-17-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cbf-repo%\feedreader
 
@@ -413,12 +413,12 @@ rem lu: Jun-27-2023
 
 :ghp
 
-set fp=* CBF on GitHub Pages.
+echo. & echo * CBF on GitHub Pages.
 
 rem lu: Jan-31-2018
 
 echo.
-echo %fp%
+
 
 set cbf-url=https://jonathan-r-jones.github.io/Composable-Batch-Files/
 
@@ -430,12 +430,12 @@ exit/b
 
 :cbf-p
 
-set fp=* CBF Pulse on GitHub.
+echo. & echo * CBF Pulse on GitHub.
 
 rem lu: Jan-24-2018
 
 echo.
-echo %fp%
+
 
 set cbf-url=https://github.com/jonathan-r-jones/Composable-Batch-Files/pulse
 
@@ -715,12 +715,12 @@ creation date: Jun-26-2023
 :a
 :afd
 
-set fp=* A folder.
+echo. & echo * A folder.
 
 rem lu: Dec-12-2017
 
 echo.
-echo %fp%
+
 
 if exist c:\a set cbf-pt=c:\a
 if exist w:\a set cbf-pt=w:\a
@@ -757,12 +757,12 @@ rem lu: Jun-7-2018
 
 :rece
 
-set fp=* Recents folder.
+echo. & echo * Recents folder.
 
 rem lu: Nov-19-2019
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%appdata%\Microsoft\Windows\Recent
 
@@ -774,12 +774,12 @@ exit/b
 
 :stme
 
-set fp=* Open Windows start menu folder.
+echo. & echo * Open Windows start menu folder.
 
 rem lu: Mar-27-2020
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu
 
@@ -793,12 +793,12 @@ exit/b
 
 :start
 
-set fp=* Windows Startup folder.
+echo. & echo * Windows Startup folder.
 
 rem fcd: May-9-2017
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%appdata%\Microsoft\Windows\Start Menu\Programs\Startup
 
@@ -810,12 +810,12 @@ exit/b
 
 :udocs
 
-set fp=* Userprofile Documents folder.
+echo. & echo * Userprofile Documents folder.
 
 rem lu: Jul-9-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%userprofile%\documents
 
@@ -847,12 +847,12 @@ rem lu: Dec-27-2018
 
 :sys32
 
-set fp=* Windows system 32.
+echo. & echo * Windows system 32.
 
 rem lu: Dec-27-2018
 
 echo.
-echo %fp%
+
 
 call pn cbf>nul
 
@@ -870,12 +870,12 @@ exit/b
 
 :wind
 
-set fp=* Windows.
+echo. & echo * Windows.
 
 rem lu: Feb-5-2019
 
 echo.
-echo %fp%
+
 
 set cbf-pt=c:\windows
 
@@ -1051,12 +1051,12 @@ exit/b
 
 :mtxps
 
-set fp=* Message to XPS.
+echo. & echo * Message to XPS.
 
 rem lu: Jan-31-2022
 
 echo.
-echo %fp%
+
 
 call pn vdi>nul
 
@@ -1164,12 +1164,12 @@ exit/b
 
 :viv
 
-set fp=* Vivaldi.
+echo. & echo * Vivaldi.
 
 rem lu: Feb-12-2020
 
 echo.
-echo %fp%
+
 
 rem Determine installation path.
 
@@ -1191,12 +1191,12 @@ exit/b
 
 :edge
 
-set fp=* Microsoft Edge browser.
+echo. & echo * Microsoft Edge browser.
 
 rem lu: Feb-7-2018
 
 echo.
-echo %fp%
+
 
 rem set cbf-app=microsoft-edge
 set cbf-app=C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
@@ -1209,14 +1209,14 @@ exit/b
 
 :ie
 
-set fp=* Internet Explorer.
+echo. & echo * Internet Explorer.
 
 rem This is used as the system default browser, if none is set. Please DO NOT DELETE.
 
 rem lu: Jan-24-2018
 
 echo.
-echo %fp%
+
 
 set cbf-app=c:\program files\internet explorer\iexplore.exe
 
@@ -1248,12 +1248,12 @@ Feb-13-2018
 
 :cdr
 
-set fp=* Root of the C Drive.
+echo. & echo * Root of the C Drive.
 
 rem lu: Feb-5-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=c:\
 
@@ -1265,12 +1265,12 @@ exit/b
 
 :gdr
 
-set fp=* G drive.
+echo. & echo * G drive.
 
 rem lu: Jul-15-2019
 
 echo.
-echo %fp%
+
 
 set cbf-pt=g:\
 
@@ -1282,12 +1282,12 @@ exit/b
 
 :hdr
 
-set fp=* H drive.
+echo. & echo * H drive.
 
 rem lu: Jul-1-2019
 
 echo.
-echo %fp%
+
 
 set cbf-pt=h:\
 
@@ -1303,12 +1303,12 @@ exit/b
 
 :d_aa_repos
 
-set fp=* D aa repositories.
+echo. & echo * D aa repositories.
 
 rem lu: Nov-2-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=d:\aa\repositories
 
@@ -1320,12 +1320,12 @@ exit/b
 
 :c_aa_repos
 
-set fp=* C aa repositories.
+echo. & echo * C aa repositories.
 
 rem lu: Nov-2-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=c:\aa\repositories
 
@@ -1479,12 +1479,12 @@ exit/b
 
 :vft
 
-set fp=* Various file types.
+echo. & echo * Various file types.
 
 rem lu: Jun-8-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%dropbox%\it\various file types
 
@@ -1500,12 +1500,12 @@ exit/b
 
 :ex
 
-set fp=* Excel.
+echo. & echo * Excel.
 
 rem lu: Jan-3-2019
 
 echo.
-echo %fp%
+
 
 rem Determine installation path.
 
@@ -1532,12 +1532,12 @@ exit/b
 
 :pp
 
-set fp=* PowerPoint.
+echo. & echo * PowerPoint.
 
 rem lu: Oct-25-2020
 
 echo.
-echo %fp%
+
 
 rem Determine installation path.
 
@@ -1562,12 +1562,12 @@ exit/b
 
 :wo
 
-set fp=* Word.
+echo. & echo * Word.
 
 rem lu: Jan-24-2019
 
 echo.
-echo %fp%
+
 
 rem Determine installation path.
 
@@ -1612,14 +1612,14 @@ exit/b
 
 :super_git
 
-set fp=* Git power user bin. Loaded with utilities.
+echo. & echo * Git power user bin. Loaded with utilities.
 
 rem skw: git utilities, git user bin, super path, super git
 
 rem lu: Oct-23-2020
 
 echo.
-echo %fp%
+
 
 rem skw git super location, git super path, super git, GitHub super
 
@@ -1643,12 +1643,12 @@ exit/b
 
 :git
 
-set fp=* Git.
+echo. & echo * Git.
 
 rem lu: Dec-6-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%localappdata%\Programs\Git
 
@@ -1674,12 +1674,12 @@ exit/b
 
 :gigu
 
-set fp=* Git gui.
+echo. & echo * Git gui.
 
 rem lu: Aug-1-2018
 
 echo.
-echo %fp%
+
 
 set cbf-app=C:\Program Files\Git\cmd\git-gui.exe
 
@@ -1767,12 +1767,12 @@ exit/b
 
 :ldbelf
 
-set fp=* Local drive Belfy.
+echo. & echo * Local drive Belfy.
 
 rem lu: Mar-1-2020
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%dropbox%\savannah\belfry
 
@@ -1813,12 +1813,12 @@ rem lu: Jun-30-2023
 
 :mecfg
 
-set fp=* Multi-Edit Config file folder.
+echo. & echo * Multi-Edit Config file folder.
 
 rem lu: Dec-7-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%appdata%\Multi Edit Software\Multi-Edit\11\Config.04
 
@@ -1832,12 +1832,12 @@ exit/b
 
 :mecfg_dr
 
-set fp=* Dropbox Multi-Edit Config files.
+echo. & echo * Dropbox Multi-Edit Config files.
 
 rem lu: Dec-7-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%dropbox%\Multi-Edit_2008_Config_Files
 
@@ -1851,12 +1851,12 @@ exit/b
 
 :mecfg_bu
 
-set fp=* Multi-Edit Config Files Backups.
+echo. & echo * Multi-Edit Config Files Backups.
 
 rem lu: Jan-3-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%dropbox%\Backups\Multi-Edit Config Files
 
@@ -1868,12 +1868,12 @@ exit/b
 
 :smecfg
 
-set fp=* Multi-Edit Config file folder in Share-Zone.
+echo. & echo * Multi-Edit Config file folder in Share-Zone.
 
 rem lu: Feb-13-2019
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%share-zone%\Multi-Edit_2008_Config_Files
 
@@ -1893,12 +1893,12 @@ exit/b
 
 :vc
 
-set fp=* Visual Studio Code.
+echo. & echo * Visual Studio Code.
 
 rem lu: Feb-23-2022
 
 echo.
-echo %fp%
+
 
 set cbf-app=C:\Users\jonat\AppData\Local\Programs\Microsoft VS Code\Code.exe
 
@@ -1927,12 +1927,12 @@ To run Visual Studio Code in a particular folder type: "code ."
 
 :vsc_ws
 
-set fp=* Visual Studio Code workspace..
+echo. & echo * Visual Studio Code workspace..
 
 rem lu: Jul-1-2020
 
 echo.
-echo %fp%
+
 
 call tdp ma>nul
 
@@ -1954,12 +1954,12 @@ exit/b
 
 :missbu
 
-set fp=* Mission backups.
+echo. & echo * Mission backups.
 
 rem lu: Jan-8-2020
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%dropbox%\backups\mission
 
@@ -1971,12 +1971,12 @@ exit/b
 
 :svbu
 
-set fp=* Savannah backups.
+echo. & echo * Savannah backups.
 
 rem lu: Jan-8-2020
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%dropbox%\backups\savannah
 
@@ -2079,14 +2079,14 @@ exit/b
 
 :snto
 
-set fp=* Snipping tool.
+echo. & echo * Snipping tool.
 
 rem lu: Feb-4-2019
 
 rem clip, screen shot: skw
 
 echo.
-echo %fp%
+
 
 set cbf-app=%windir%\system32\SnippingTool.exe
 
@@ -2098,12 +2098,12 @@ exit/b
 
 :copa
 
-set fp=* Control panel.
+echo. & echo * Control panel.
 
 rem lu: Jan-31-2019
 
 echo.
-echo %fp%
+
 
 set cbf-app=%systemroot%\system32\control.exe
 
@@ -2121,12 +2121,12 @@ exit/b
 
 :skype
 
-set fp=* Skype for business.
+echo. & echo * Skype for business.
 
 rem lu: Jan-18-2019
 
 echo.
-echo %fp%
+
 
 set cbf-app=C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Skype for Business.lnk
 
@@ -2140,12 +2140,12 @@ exit/b
 
 :zoomit
 
-set fp=* ZoomIt
+echo. & echo * ZoomIt
 
 rem lu: Dec-14-2018
 
 echo.
-echo %fp%
+
 
 call %0 pounders
 
@@ -2196,12 +2196,12 @@ rem fcd: May-11-2017
 
 :shde
 
-set fp=* Show desktop.
+echo. & echo * Show desktop.
 
 rem lu: Jun-13-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%userprofile%\desktop
 
@@ -2215,12 +2215,12 @@ exit/b
 
 :sow
 
-set fp=* Show open windows.
+echo. & echo * Show open windows.
 
 rem lu: Jun-13-2018
 
 echo.
-echo %fp%
+
 
 set cbf-fn=%appdata%\microsoft\internet explorer\quick launch\window switcher.lnk
 
@@ -2273,12 +2273,12 @@ rem lu: Oct-7-2019
 
 :java_home
 
-set fp=* Java Home.
+echo. & echo * Java Home.
 
 rem fcd: Dec-14-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%java_home%
 
@@ -2387,12 +2387,12 @@ https://www.codejava.net/java-se/download-and-install-java-11-openjdk-and-oracle
 
 :jvre
 
-set fp=* Java runtime path. According to Craig M., this should be %java_home%\jre.
+echo. & echo * Java runtime path. According to Craig M., this should be %java_home%\jre.
 
 rem lu: Apr-7-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%jre_home%
 
@@ -2424,12 +2424,12 @@ exit/b
 
 :node_home
 
-set fp=* Node home.
+echo. & echo * Node home.
 
 rem fcd: Feb-11-2019
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%node_home%
 
@@ -2446,7 +2446,7 @@ set fp=M2 or Maven2 repository.
 rem fcd: Jul-7-2017
 
 echo.
-echo %fp%
+
 
 set cbf-url=https://mvnrepository.com
 
@@ -2514,12 +2514,12 @@ exit/b
 
 :aws_home
 
-set fp=* AWS configuration.
+echo. & echo * AWS configuration.
 
 rem lu: Nov-6-2018
 
 echo.
-echo %fp%
+
 
 set cbf-fn=%userprofile%\.aws\credentials
 
@@ -2537,12 +2537,12 @@ exit/b
 
 :je_home
 
-set fp=* Jenkins home
+echo. & echo * Jenkins home
 
 rem lu: Dec-15-2018
 
 echo.
-echo %fp%
+
 
 call %0 home
 
@@ -2594,12 +2594,12 @@ exit/b
 
 :wa
 
-set fp=* Windows Apps.
+echo. & echo * Windows Apps.
 
 rem lu: Dec-19-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%localappdata%\Microsoft\WindowsApps
 
@@ -2611,12 +2611,12 @@ exit/b
 
 :foo
 
-set fp=* Foo takes you to the bar folder. Of course it does.
+echo. & echo * Foo takes you to the bar folder. Of course it does.
 
 rem lu: Aug-10-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=C:\Program Files\MSBuild\Microsoft\Windows Workflow Foundation\bar
 
@@ -2628,12 +2628,12 @@ exit/b
 
 :gett
 
-set fp=* Gettysburg Address.
+echo. & echo * Gettysburg Address.
 
 rem lu: Aug-13-2018
 
 echo.
-echo %fp%
+
 
 set cbf-fn=%composable-batch-files%\Gettysburg_Address.txt
 
@@ -2645,12 +2645,12 @@ exit/b
 
 :fox
 
-set fp=* Fox.
+echo. & echo * Fox.
 
 rem lu: Jun-4-2020
 
 echo.
-echo %fp%
+
 
 set cbf-url=https://www.foxnews.com
 
@@ -2666,12 +2666,12 @@ exit/b
 
 :it-old
 
-set fp=* IT.
+echo. & echo * IT.
 
 rem lu: May-10-2022
 
 echo.
-echo %fp%
+
 
 set cbf-fn=%share-zone%\it.asc
 
@@ -2686,12 +2686,12 @@ exit/b
 :i2
 :it2
 
-set fp=* IT.
+echo. & echo * IT.
 
 rem lu: May-10-2022
 
 echo.
-echo %fp%
+
 
 call pn pm>nul
 set cbf-fn=%cbf-pt%\it2.asc
@@ -2807,12 +2807,12 @@ exit/b
 
 :arp
 
-set fp=* Add or Remove Programs.
+echo. & echo * Add or Remove Programs.
 
 rem lu: Apr-17-2019
 
 echo.
-echo %fp%
+
 
 set cbf-app=appwiz.cpl
 
@@ -2842,12 +2842,12 @@ rem lu: Jan-9-2020
 
 :bish
 
-set fp=* Big shortcuts.
+echo. & echo * Big shortcuts.
 
 rem lu: Jul-2-2021
 
 echo.
-echo %fp%
+
 
 call pn s>nul
 
@@ -2871,12 +2871,12 @@ exit/b
 
 :appdata
 
-set fp=* App data.
+echo. & echo * App data.
 
 rem lu: Dec-4-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%appdata%
 
@@ -2888,12 +2888,12 @@ exit/b
 
 :lad
 
-set fp=* Local app data.
+echo. & echo * Local app data.
 
 rem lu: Dec-4-2018
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%localappdata%
 
@@ -2905,12 +2905,12 @@ exit/b
 
 :dtbg
 
-set fp=* Desktop background.
+echo. & echo * Desktop background.
 
 rem lu: Feb-24-2020
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%localappdata%\microsoft\windows\themes\roamedthemefiles\desktopbackground
 
@@ -2937,12 +2937,12 @@ exit/b
 
 :earl
 
-set fp=* Earl.
+echo. & echo * Earl.
 
 rem lu: Jun-30-2019
 
 echo.
-echo %fp%
+
 
 set cbf-fn=%dropbox%\savannah\reach out\earl.asc
 
@@ -2954,12 +2954,12 @@ exit/b
 
 :sp7
 
-set fp=* SP7.
+echo. & echo * SP7.
 
 rem lu: Feb-25-2020
 
 echo.
-echo %fp%
+
 
 set cbf-fn=%dropbox%\savannah\reach out\sp7.asc
 
@@ -2971,12 +2971,12 @@ exit/b
 
 :ipad
 
-set fp=* iPad.
+echo. & echo * iPad.
 
 rem lu: Oct-12-2020
 
 echo.
-echo %fp%
+
 
 set cbf-fn=%dropbox%\savannah\reach out\ipad.txt
 
@@ -3128,12 +3128,12 @@ creation date: Sep-21-2023
 
 :perm
 
-set fp=* Aa, a.k.a. permanent folders for Jonathan.
+echo. & echo * Aa, a.k.a. permanent folders for Jonathan.
 
 rem lu: Nov-2-2018
 
 echo.
-echo %fp%
+
 
 if exist "c:\aa" set cbf-pt=c:\aa
 if exist "d:\aa" set cbf-pt=d:\aa
@@ -3242,12 +3242,12 @@ Jul-06-2022
 
 :psg
 
-set fp=* Pipeline script generator.
+echo. & echo * Pipeline script generator.
 
 rem lu: Jan-11-2019
 
 echo.
-echo %fp%
+
 
 call an kr
 
@@ -3908,12 +3908,12 @@ Jul-15-2018
 
 :podcast_folder
 
-set fp=* Podcaster.
+echo. & echo * Podcaster.
 
 rem lu: Jun-24-2020
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%my documents%\gpodder\downloads
 
@@ -4043,12 +4043,12 @@ lu: Oct-31-2023
 
 :post
 
-set fp=* Postman.
+echo. & echo * Postman.
 
 rem lu: Jun-14-2018
 
 echo.
-echo %fp%
+
 
 rem set cbf-app=C:\Users\jonat\AppData\Local\Postman\Update.exe --processStart "Postman.exe"
 set cbf-app=C:\Users\jonat\AppData\Local\Postman\Postman.exe

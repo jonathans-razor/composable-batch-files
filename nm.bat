@@ -58,12 +58,12 @@ rem lu: Sep-21-2023
 
 :nhn
 
-set fp=* Involved help.
+echo. & echo * Involved help.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 npm help npm
 
@@ -75,13 +75,13 @@ exit/b
 
 :nhs
 
-set fp=* NPM help for a specific command.
+echo. & echo * NPM help for a specific command.
 
 rem lu: Apr-24-2018
 
 echo.
 echo.
-echo %fp%
+
 
 npm help %2
 
@@ -93,12 +93,12 @@ exit/b
 
 :nhss
 
-set fp=* NPM help-search for a specific command.
+echo. & echo * NPM help-search for a specific command.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm help-search %2
@@ -142,12 +142,12 @@ exit/b
 
 :set_lic
 
-set fp=* Set default license to MIT.
+echo. & echo * Set default license to MIT.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 npm set init-license 'MIT'
 
@@ -159,12 +159,12 @@ exit/b
 
 :get_lic
 
-set fp=* Get default license setting.
+echo. & echo * Get default license setting.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm get init-license
@@ -181,12 +181,12 @@ exit/b
 
 :list-g
 
-set fp=* Verbose list of my globally installed packages.
+echo. & echo * Verbose list of my globally installed packages.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 npm list -g --depth 0 --long true
 
@@ -198,12 +198,12 @@ exit/b
 
 :list
 
-set fp=* List of installed packages.
+echo. & echo * List of installed packages.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm list --long true
@@ -216,12 +216,12 @@ exit/b
 
 :list_my
 
-set fp=* List of installed packages that only I have installed. As opposed to the hierarchy of what those packages have installed.
+echo. & echo * List of installed packages that only I have installed. As opposed to the hierarchy of what those packages have installed.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm list --depth 0
@@ -234,12 +234,12 @@ exit/b
 
 :list_all
 
-set fp=* List of globally installed packages.
+echo. & echo * List of globally installed packages.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 npm list --global true
 
@@ -251,12 +251,12 @@ exit/b
 
 :my_g_json_list
 
-set fp=* Verbose list of my globally installed packages in JSON format.
+echo. & echo * Verbose list of my globally installed packages in JSON format.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm list --global true --depth 0 --long true --json true
@@ -269,12 +269,12 @@ exit/b
 
 :my_g_json_dlist
 
-set fp=* Verbose list of my globally installed packages in JSON format for dev dependencies only.
+echo. & echo * Verbose list of my globally installed packages in JSON format for dev dependencies only.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm list --global true --depth 0 --long true --dev true
@@ -287,12 +287,12 @@ exit/b
 
 :prun
 
-set fp=* Prune extraneous packages, that is, those that are not in the package.json file.
+echo. & echo * Prune extraneous packages, that is, those that are not in the package.json file.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm prune
@@ -305,12 +305,12 @@ exit/b
 
 :repo
 
-set fp=* Go to the GitHub repository for a given package.
+echo. & echo * Go to the GitHub repository for a given package.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 npm repo %2
 
@@ -322,12 +322,12 @@ exit/b
 
 :add
 
-set fp=* Add user which is similar to Git's author stuff.
+echo. & echo * Add user which is similar to Git's author stuff.
 
 rem lu: Apr-25-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm adduser
@@ -362,12 +362,12 @@ rem lu: Sep-12-2018
 
 :nvers
 
-set fp=* Get the Node version number.
+echo. & echo * Get the Node version number.
 
 rem lu: Sep-3-2021
 
 echo.
-echo %fp%
+
 
 echo.
 node -v
@@ -384,12 +384,12 @@ exit/b
 
 :lovg_ver
 
-set fp=* Check NPM's long version.
+echo. & echo * Check NPM's long version.
 
 rem lu: Sep-12-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm version
@@ -402,12 +402,12 @@ exit/b
 
 :patch
 
-set fp=* Automatically increment the patch version number.
+echo. & echo * Automatically increment the patch version number.
 
 rem lu: Apr-25-2018
 
 echo.
-echo %fp%
+
 
 npm version patch
 
@@ -419,12 +419,12 @@ exit/b
 
 :minor
 
-set fp=* Automatically increment the minor version number.
+echo. & echo * Automatically increment the minor version number.
 
 rem lu: Apr-25-2018
 
 echo.
-echo %fp%
+
 
 npm version minor
 
@@ -436,12 +436,12 @@ exit/b
 
 :major
 
-set fp=* Automatically increment the major version number.
+echo. & echo * Automatically increment the major version number.
 
 rem lu: Apr-25-2018
 
 echo.
-echo %fp%
+
 
 npm version major
 
@@ -457,12 +457,12 @@ exit/b
 
 :pub
 
-set fp=* Publish project to NPM.
+echo. & echo * Publish project to NPM.
 
 rem lu: Apr-25-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm publish
@@ -475,12 +475,12 @@ exit/b
 
 :pub_beta
 
-set fp=* Publish project to NPM in a beta release.
+echo. & echo * Publish project to NPM in a beta release.
 
 rem lu: Apr-25-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm publish --tag beta
@@ -497,12 +497,12 @@ exit/b
 
 :info
 
-set fp=* Information about the current repository.
+echo. & echo * Information about the current repository.
 
 rem lu: Apr-25-2018
 
 echo.
-echo %fp%
+
 
 npm info
 
@@ -514,12 +514,12 @@ exit/b
 
 :info_n
 
-set fp=* Information about a named repository.
+echo. & echo * Information about a named repository.
 
 rem lu: Apr-25-2018
 
 echo.
-echo %fp%
+
 
 npm info %2
 
@@ -531,12 +531,12 @@ exit/b
 
 :bi
 
-set fp=* Batch install DutchTreat packages.
+echo. & echo * Batch install DutchTreat packages.
 
 rem lu: Sep-18-2018
 
 echo.
-echo %fp%
+
 
 call %0 inst bootstrap
 call %0 inst jquery
@@ -556,12 +556,12 @@ exit/b
 
 :up_npm_1
 
-set fp=* Install latest stable version of NPM. Be sure to run as ADMINISTRATOR.
+echo. & echo * Install latest stable version of NPM. Be sure to run as ADMINISTRATOR.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm i npm@latest -g
@@ -603,12 +603,12 @@ rem lu: Sep-12-2018
 
 :update
 
-set fp=* Update all dependencies to the latest version.
+echo. & echo * Update all dependencies to the latest version.
 
 rem lu: Aug-12-2019
 
 echo.
-echo %fp%
+
 echo.
 
 if not exist "package.json" (
@@ -626,12 +626,12 @@ exit/b
 
 :update_s
 
-set fp=* Update all dependencies to the latest version.
+echo. & echo * Update all dependencies to the latest version.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm update --save
@@ -644,12 +644,12 @@ exit/b
 
 :update_sp
 
-set fp=* Update a single package dependency, in this case "%2".
+echo. & echo * Update a single package dependency, in this case "%2".
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm update %2
@@ -664,12 +664,12 @@ exit/b
 
 :insls
 
-set fp=* Install serverless.
+echo. & echo * Install serverless.
 
 rem lu: Jul-15-2021
 
 echo.
-echo %fp%
+
 
 npm install serverless -g
 
@@ -700,10 +700,10 @@ Is this command folder-specific?
 
 :rtit
 
-set fp=* Run the integration tests.
+echo. & echo * Run the integration tests.
 
 echo.
-echo %fp%
+
 
 npm run test:int
 
@@ -726,10 +726,10 @@ REPLAY=record npm run test:int
 
 :rt
 
-set fp=* Run test like Joshua does in Visual Studio Code.
+echo. & echo * Run test like Joshua does in Visual Studio Code.
 
 echo.
-echo %fp%
+
 
 npm run test
 
@@ -745,12 +745,12 @@ Footnote
 
 :icog
 
-set fp=* Install cognito. (I actually ran this in bash, not cmd.)
+echo. & echo * Install cognito. (I actually ran this in bash, not cmd.)
 
 rem lu: Aug-26-2021
 
 echo.
-echo %fp%
+
 
 npm i amazon-cognito-identity-js
 
@@ -764,13 +764,13 @@ exit/b
 
 :ruej
 
-set fp=* Removes this tool and copies build dependencies, configuration files and scripts &
+echo. & echo * Removes this tool and copies build dependencies, configuration files and scripts &
 into the app directory. If you do this, you can�t go back!
 
 rem lu: Sep-2-2021
 
 echo.
-echo %fp%
+
 
 if not exist "package.json" (
   echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
@@ -795,12 +795,12 @@ What does npm run eject do?
 
 :test
 
-set fp=* Starts the test runner.
+echo. & echo * Starts the test runner.
 
 rem skw: Run tests. (skw run unit tests)
 
 echo.
-echo %fp%
+
 
 if not exist "package.json" (
   echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
@@ -845,12 +845,12 @@ rem lu: Aug-29-2023
 
 :pyth
 
-set fp=* Set Python configuration path.
+echo. & echo * Set Python configuration path.
 
 rem lu: Sep-2-2021
 
 echo.
-echo %fp%
+
 
 npm config set python "C:\Users\J[put--name-of-user-of-interest-here]\AppData\Local\Programs\Python\Python38\python.exe"
 
@@ -871,12 +871,12 @@ ownload Windows embedda
 
 :iaa
 
-set fp=* Install AWS Amplify.
+echo. & echo * Install AWS Amplify.
 
 rem lu: Sep-5-2021
 
 echo.
-echo %fp%
+
 
 call m specific_file_presence package.json 
 
@@ -892,12 +892,12 @@ exit/b
 
 :iri
 
-set fp=* Install react icons.
+echo. & echo * Install react icons.
 
 rem lu: Oct-12-2021
 
 echo.
-echo %fp%
+
 
 npm i react-icons
 
@@ -913,12 +913,12 @@ exit/b
 
 :index
 
-set fp=* Run node in the dist folder.
+echo. & echo * Run node in the dist folder.
 
 rem lu: Oct-26-2021
 
 echo.
-echo %fp%
+
 
 call m within_a_specific_folder dist & if errorlevel 1 exit/b
 
@@ -937,12 +937,12 @@ exit/b
 
 :ibaps
 
-set fp=* Install dependencies from my BAPS project.
+echo. & echo * Install dependencies from my BAPS project.
 
 rem lu: Oct-29-2021
 
 echo.
-echo %fp%
+
 
 call m specific_file_presence package.json & if errorlevel 1 exit/b
 
@@ -973,12 +973,12 @@ rem lu: Nov-1-2021
 
 :rdev
 
-set fp=* Run server on http://localhost:5000.
+echo. & echo * Run server on http://localhost:5000.
 
 rem lu: Oct-27-2021
 
 echo.
-echo %fp%
+
 
 echo.
 npm run dev
@@ -991,12 +991,12 @@ exit/b
 
 :baps3
 
-set fp=* Install rate limit.
+echo. & echo * Install rate limit.
 
 rem lu: Nov-1-2021
 
 echo.
-echo %fp%
+
 
 call m specific_file_presence package.json & if errorlevel 1 exit/b
 
@@ -1045,12 +1045,12 @@ exit/b
 
 :unin-g
 
-set fp=* Uninstall "%2" global package and remove dependency section in the package.json file.
+echo. & echo * Uninstall "%2" global package and remove dependency section in the package.json file.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm uninstall %2 -g --save
@@ -1063,12 +1063,12 @@ exit/b
 
 :unin_s
 
-set fp=* Uninstall "%2" local package and remove dependency section in the package.json file.
+echo. & echo * Uninstall "%2" local package and remove dependency section in the package.json file.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm uninstall %2 --save
@@ -1081,12 +1081,12 @@ exit/b
 
 :unin_g
 
-set fp=* Uninstall "%2" global package.
+echo. & echo * Uninstall "%2" global package.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm uninstall %2 -g
@@ -1264,12 +1264,12 @@ rem lu: Aug-29-2023
 
 :inst_s
 
-set fp=* Install third party package and save setting in the package.json file.
+echo. & echo * Install third party package and save setting in the package.json file.
 
 rem lu: Sep-12-2018
 
 echo.
-echo %fp%
+
 
 if not exist package.json (
   echo.
@@ -1288,12 +1288,12 @@ exit/b
 
 :inst_g
 
-set fp=* Globally install a package so that it works everywhere on the command line.
+echo. & echo * Globally install a package so that it works everywhere on the command line.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm i %2 -g
@@ -1317,12 +1317,12 @@ exit/b
 
 :inst_sd
 
-set fp=* Install package and save setting in the development section of the package.json file.
+echo. & echo * Install package and save setting in the development section of the package.json file.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm install %2 --save--dev
@@ -1335,12 +1335,12 @@ exit/b
 
 :inst_gh
 
-set fp=* Install a package using its GitHub URL.
+echo. & echo * Install a package using its GitHub URL.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 call n %2
 
@@ -1355,14 +1355,14 @@ exit/b
 
 :inst_svh
 
-set fp=* Install a specific version of a package and HOLD at this version.
+echo. & echo * Install a specific version of a package and HOLD at this version.
 
 set fp=%fp% NPM will not upgrade automically in this case.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 npm i underscore@1.8.2 --save --save-exact
@@ -1375,14 +1375,14 @@ exit/b
 
 :inst_sv
 
-set fp=* Install a specific version of a package.
+echo. & echo * Install a specific version of a package.
 
 set fp=%fp% Given this example, this will install the latest 1.8 version.
 
 rem lu: Apr-24-2018
 
 echo.
-echo %fp%
+
 
 echo.
 
@@ -1398,11 +1398,11 @@ exit/b
 
 :npmh
 
-set fp=* NPM install command for Sencha on Windows.
+echo. & echo * NPM install command for Sencha on Windows.
 
 rem lu: Mar-1-2018
 
-echo %fp%
+
 echo.
 
 npm install -g sencha
@@ -1415,12 +1415,12 @@ exit/b
 
 :npmc
 
-set fp=* NPM install command for Sencha on Windows.
+echo. & echo * NPM install command for Sencha on Windows.
 
 rem lu: Mar-1-2018
 
 echo.
-echo %fp%
+
 
 npm install -g sencha-cmd
 
@@ -1453,12 +1453,12 @@ Feb-11-2019
 
 :fswi
 
-set fp=* Fix service worker issue.
+echo. & echo * Fix service worker issue.
 
 rem lu: Aug-27-2021
 
 echo.
-echo %fp%
+
 
 if not exist "package.json" (
   echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
@@ -1504,12 +1504,12 @@ exit/b
 
 :crar
 
-set fp=* Create a React app at root.
+echo. & echo * Create a React app at root.
 
 rem lu: Aug-26-2021
 
 echo.
-echo %fp%
+
 
 npx create-react-app .
 
@@ -1521,12 +1521,12 @@ exit/b
 
 :cra
 
-set fp=* Create a React app.
+echo. & echo * Create a React app.
 
 rem lu: Aug-30-2021
 
 echo.
-echo %fp%
+
 
 if "%~2" == "" (
   echo.
@@ -1544,12 +1544,12 @@ exit/b
 
 :crart
 
-set fp=* Create a React app at root that has TypeScript enabled.
+echo. & echo * Create a React app at root that has TypeScript enabled.
 
 rem lu: Oct-26-2021
 
 echo.
-echo %fp%
+
 
 npx create-react-app . --template typescript
 

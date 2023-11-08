@@ -46,10 +46,10 @@ exit/b
 
 :pl
 
-set fp=* Plain.
+echo. & echo * Plain.
 
 echo.
-echo %fp%
+
 
 echo.
 netstat -a -n -o
@@ -62,10 +62,10 @@ exit/b
 
 :s
 
-set fp=* Search for string.
+echo. & echo * Search for string.
 
 echo.
-echo %fp%
+
 
 netstat -ano | findstr :%1
 
@@ -77,12 +77,12 @@ exit/b
 
 :merc1
 
-set fp=* Netstat used by Mercury version 1.
+echo. & echo * Netstat used by Mercury version 1.
 
 rem lu: Mar-6-2019
 
 echo.
-echo %fp%
+
 
 echo.
 netstat -a -n>%temp%\j1.txt
@@ -95,12 +95,12 @@ exit/b
 
 :merc2
 
-set fp=* Netstat used by Mercury version 2.
+echo. & echo * Netstat used by Mercury version 2.
 
 rem lu: Mar-6-2019
 
 echo.
-echo %fp%
+
 
 echo.
 netstat -an>%temp%\j2.txt

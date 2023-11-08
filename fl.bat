@@ -41,14 +41,14 @@ rem lu: Mar-11-2022
 
 :4
 
-set fp=* Rename files recursively.
+echo. & echo * Rename files recursively.
 
 rem This worked.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=d:\aa\test1
 
@@ -64,14 +64,14 @@ exit/b
 
 :rfr
 
-set fp=* In the current folder, rename files recursively.
+echo. & echo * In the current folder, rename files recursively.
 
 rem This worked.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -85,12 +85,12 @@ exit/b
 
 :7
 
-set fp=* Iterate recursively over the files.
+echo. & echo * Iterate recursively over the files.
 
 rem lu: Aug-13-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -105,12 +105,12 @@ exit/b
 
 :8
 
-set fp=* Find zero-length files.
+echo. & echo * Find zero-length files.
 
 rem lu: Aug-13-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -125,12 +125,12 @@ exit/b
 
 :9
 
-set fp=* Find zero-length files.
+echo. & echo * Find zero-length files.
 
 rem lu: Aug-13-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -147,14 +147,14 @@ exit/b
 
 :this-works-series-10
 
-set fp=* In the current folder, rename all files recursively to be of type txt.
+echo. & echo * In the current folder, rename all files recursively to be of type txt.
 
 rem This worked. It was helpful because the Dropbox app on my iPad can't seem to read yml files.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -170,14 +170,14 @@ exit/b
 
 :this-works-series-6
 
-set fp=* In the current folder, rename all files recursively to be of type txt.
+echo. & echo * In the current folder, rename all files recursively to be of type txt.
 
 rem This worked. It was helpful because the Dropbox app on my iPad can't seem to read yml files.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -195,12 +195,12 @@ exit/b
 
 :this-works-series-11
 
-set fp=* In the current folder, find zero-length files.
+echo. & echo * In the current folder, find zero-length files.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -216,14 +216,14 @@ exit/b
 
 :this-works-series-12
 
-set fp=* In the current folder, find zero-length files.
+echo. & echo * In the current folder, find zero-length files.
 
 rem The space in the folder name did surprisingly NOT mess this up.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -239,14 +239,14 @@ exit/b
 
 :this-works-series-13
 
-set fp=* In the current folder, delete zero-length files.
+echo. & echo * In the current folder, delete zero-length files.
 
 rem The space in the folder name did surprisingly NOT mess this up.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -270,14 +270,14 @@ Is there a windows batch file that can delete files that are of zero size?
 
 :this-works-series-14
 
-set fp=* In the current folder, find files of size 5 bytes or less.
+echo. & echo * In the current folder, find files of size 5 bytes or less.
 
 rem The space in the folder name did surprisingly NOT mess this up.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -293,12 +293,12 @@ exit/b
 
 :this-works-series-15
 
-set fp=* In the current folder, delete zero-length files.
+echo. & echo * In the current folder, delete zero-length files.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -313,7 +313,7 @@ exit/b
 set fp= 9. * Copy theme jpegs.
 
 echo.
-echo %fp%
+
 echo.
 
 cd \Users\jrj.GCITECH\AppData\Local\Microsoft\Windows\Themes
@@ -332,12 +332,12 @@ exit/b
 
 :_
 
-set fp=* Copy files to examination location.
+echo. & echo * Copy files to examination location.
 
 rem FCD: Mar-21-2017
 
 echo.
-echo %fp%
+
 
 cd "\aa\Count Lines of Code in Mercury"
 
@@ -353,12 +353,12 @@ m exitp
 
 :_
 
-set fp=* Count the number of lines of Java code.
+echo. & echo * Count the number of lines of Java code.
 
 rem FCD: Mar-21-2017
 
 echo.
-echo %fp%
+
 
 cd "\projects"
 
@@ -372,12 +372,12 @@ m exitp
 
 :_
 
-set fp=* Count the number of lines of JavaScript code.
+echo. & echo * Count the number of lines of JavaScript code.
 
 rem FCD: Mar-21-2017
 
 echo.
-echo %fp%
+
 
 cd "\projects"
 
@@ -391,12 +391,12 @@ m exitp
 
 :_
 
-set fp=* Count the number of JavaScript files.
+echo. & echo * Count the number of JavaScript files.
 
 rem FCD: Mar-21-2017
 
 echo.
-echo %fp%
+
 
 cd "\projects"
 
@@ -410,12 +410,12 @@ m exitp
 
 :_
 
-set fp=* Count the number of Java files.
+echo. & echo * Count the number of Java files.
 
 rem FCD: Mar-21-2017
 
 echo.
-echo %fp%
+
 
 cd "\projects"
 
@@ -429,12 +429,12 @@ m exitp
 
 :_
 
-set fp=* Count the number of lines of JavaScript code.
+echo. & echo * Count the number of lines of JavaScript code.
 
 rem FCD: Mar-21-2017
 
 echo.
-echo %fp%
+
 
 cd "%my documents%\gpodder\downloads"
 
@@ -448,10 +448,10 @@ m exitp
 
 :_
 
-set fp=* Look for empty folder.
+echo. & echo * Look for empty folder.
 
 echo.
-echo %fp%
+
 echo.
 
 rem Outcome: This works!
@@ -467,12 +467,12 @@ exit/b
 
 :_
 
-set fp=* Find all empty subfolders.
+echo. & echo * Find all empty subfolders.
 
 rem Outcome: This works!
 
 echo.
-echo %fp%
+
 echo.
 
 cd\aa
@@ -485,12 +485,12 @@ exit/b
 
 :_
 
-set fp=* Find all empty subfolders.
+echo. & echo * Find all empty subfolders.
 
 rem Outcome: This works!
 
 echo.
-echo %fp%
+
 echo.
 
 cd %dropbox%
@@ -503,10 +503,10 @@ exit/b
 
 :_
 
-set fp=* Find all empty folders in Dropbox. Version 2. Do the recursion.
+echo. & echo * Find all empty folders in Dropbox. Version 2. Do the recursion.
 
 echo.
-echo %fp%
+
 echo.
 
 rem Outcome: This works!
@@ -531,10 +531,10 @@ m exitp
 
 :_
 
-set fp=* Copy java files.
+echo. & echo * Copy java files.
 
 echo.
-echo %fp%
+
 echo.
 
 for /r "c:\pcarss" %%f in ("*.java") do copy "%%f" "c:\!!\Copied Java Files"
@@ -545,10 +545,10 @@ m exit
 
 :_
 
-set fp=* Copy text files.
+echo. & echo * Copy text files.
 
 echo.
-echo %fp%
+
 echo.
 
 cd\!!
@@ -573,12 +573,12 @@ m exit
 
 :fsf
 
-set fp=* Find files of size less than 6 bytes.
+echo. & echo * Find files of size less than 6 bytes.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -593,12 +593,12 @@ exit/b
 
 :16d
 
-set fp=* Delete files of size less than 6 bytes.
+echo. & echo * Delete files of size less than 6 bytes.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -617,12 +617,12 @@ exit/b
 
 :19
 
-set fp=* Delete empty folders.
+echo. & echo * Delete empty folders.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -639,12 +639,12 @@ exit/b
 
 :20f
 
-set fp=* Find empty folders even if the folder has a space in it.
+echo. & echo * Find empty folders even if the folder has a space in it.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -667,12 +667,12 @@ Is there a windows batch file that can delete empty folder?
 
 :20d
 
-set fp=* Delete empty folders even if the folder has a space in it.
+echo. & echo * Delete empty folders even if the folder has a space in it.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -687,10 +687,10 @@ exit/b
 
 :Aug-13-2021_9_32_PM
 
-set fp=* Find all empty folders in Dropbox.
+echo. & echo * Find all empty folders in Dropbox.
 
 echo.
-echo %fp%
+
 
 rem Outcome: This works!
 
@@ -709,12 +709,12 @@ exit/b
 
 :Aug-13-2021_9_06_PM
 
-set fp=* Find files of size less than 6 bytes.
+echo. & echo * Find files of size less than 6 bytes.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -729,12 +729,12 @@ exit/b
 
 :feft
 
-set fp=* Prettier find empty folder that doesn't work.
+echo. & echo * Prettier find empty folder that doesn't work.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 
@@ -753,12 +753,12 @@ exit/b
 
 :feft2
 
-set fp=* Prettier find empty folder that doesn't work 2.
+echo. & echo * Prettier find empty folder that doesn't work 2.
 
 rem lu: Aug-12-2021
 
 echo.
-echo %fp%
+
 
 set cbf-pt=%cd%
 

@@ -12,7 +12,7 @@ set cbf-filep=* Ansible functions.
 
 :_
 
-set fp=* Route callers.
+echo. & echo * Route callers.
 
 if "%~1" == "" goto help
 
@@ -89,12 +89,12 @@ Outcome: This worked! Dev slave returned "pong".
 
 :vers
 
-set fp=* Version info.
+echo. & echo * Version info.
 
 rem lu: Jul-31-2020
 
 echo.
-echo %fp%
+
 
 echo.
 ansible --version
@@ -107,12 +107,12 @@ exit/b
 
 :pvers
 
-set fp=* Playbook Version info.
+echo. & echo * Playbook Version info.
 
 rem lu: Jul-31-2020
 
 echo.
-echo %fp%
+
 
 ansible-playbook --version
 
@@ -124,12 +124,12 @@ exit/b
 
 :uptime
 
-set fp=* %1.
+echo. & echo * %1.
 
 rem lu: Jul-31-2020
 
 echo.
-echo %fp%
+
 
 echo.
 ansible all -i hosts -u zs_ci_user -m command -a "uptime" --key-file /tmp/cart-np-key.pem
@@ -148,7 +148,7 @@ exit/b
 
 :first_long
 
-set fp=* First command to run to make sure you can communcate. Long version.
+echo. & echo * First command to run to make sure you can communcate. Long version.
 
 ansible ancl -i hosts -u zs_ci_user -m ping --key-file /tmp/cart-np-key.pem
 
@@ -170,7 +170,7 @@ Outcome: This worked! The Ansible slave returned "pong".
 
 rem lu: Jul-31-2020
 
-set fp=* First command to run to make sure you can communicate with the client(s).
+echo. & echo * First command to run to make sure you can communicate with the client(s).
 
 ansible ancl -i hosts -u zs_ci_user -m ping
 
@@ -196,7 +196,7 @@ private_key_file = /tmp/cart-np-key.pem
 
 rem lu: Aug-6-2020
 
-set fp=* Running yum from Ansible.
+echo. & echo * Running yum from Ansible.
 
 ansible ancl -i hosts -u zs_ci_user -m yum -a "name=httpd state=present " -b
 
@@ -214,7 +214,7 @@ Outcome: This worked!
 
 rem lu: Aug-6-2020
 
-set fp=* Uninstall httpd.
+echo. & echo * Uninstall httpd.
 
 ansible ancl -i hosts -u zs_ci_user -m yum -a "name=httpd state=absent " -b
 
@@ -247,12 +247,12 @@ Outcome: This worked! Dev slave returned "pong".
 
 :setup
 
-set fp=* %1.
+echo. & echo * %1.
 
 rem lu: Jul-31-2020
 
 echo.
-echo %fp%
+
 
 echo.
 ansible ansl -i hosts -u zs_ci_user -m setup --key-file /tmp/cart-np-key.pem
@@ -267,7 +267,7 @@ exit/b
 
 :Aug-21-2020_7_04_PM
 
-set fp=* Simplest possible ping command.
+echo. & echo * Simplest possible ping command.
 
 ansible all -i ./hosts -u zs_ci_user -m ping --key-file cart-np-key.pem
 
@@ -283,12 +283,12 @@ Outcome: This worked! Ansible slave returned "pong".
 
 :setup2
 
-set fp=* %1. Per Craig L.
+echo. & echo * %1. Per Craig L.
 
 rem lu: Jul-31-2020
 
 echo.
-echo %fp%
+
 
 echo.
 ansible all -i ./hosts -u zs_ci_user -m setup --key-file cart-np-key.pem
