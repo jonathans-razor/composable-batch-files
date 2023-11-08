@@ -1203,7 +1203,6 @@ echo. & echo * Turn the Python template file into a new Python file.
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 
-
 call t d>nul
 
 echo.

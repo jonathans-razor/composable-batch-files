@@ -55,6 +55,7 @@ cls
 echo. & echo * Is LeetCode number.
 python is-natural-number-less-than-5000.py %1 > %tmp%\cbf-is-leetcode-number.txt
 set /p cbf-is-leetcode-number=<%tmp%\cbf-is-leetcode-number.txt
+rem Zero equals true, in this case.
 if "%cbf-is-leetcode-number%" == "0" goto look-up-leetcode-number
 exit/b 1
 
@@ -969,14 +970,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Nov-7-2023-4
 
 cls
@@ -991,4 +984,68 @@ exit/b
 
 
 
-:_ (!efle)
+:_
+:Nov-8-2023
+
+cls
+
+:
+@echo on
+rem python 100-same-tree.py [1, 2, 3] [1, 2, 3]
+rem python 100-same-tree.py "1, 2, 3" "1, 2, 3"
+rem python 100-same-tree.py "[1, 2, 3]" "[1, 2, 3]"
+python 100-same-tree.py 1 2 1 2 3 4
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
+:
+
+cls
+
+:
+@echo on
+python 
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-8-2023
+
+cls
+
+:
+@echo on
+python 101-symmetric-tree.py 1 2 2 3 4 4 3
+
+:
+@echo on
+python 101-symmetric-tree.py 1 2 2 3 4 4 5
+
+:
+@echo on
+python 101-symmetric-tree.py 1 2 2 null 3 null 3
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_ (!efle, !rfsp) (mov-7)
