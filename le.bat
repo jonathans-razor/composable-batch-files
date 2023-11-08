@@ -909,8 +909,6 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 cls
 
-call t d>nul
-
 @echo on
 call ph is-natural-number-less-than-5000.py 1
 
