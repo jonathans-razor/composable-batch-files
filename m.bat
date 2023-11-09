@@ -3705,87 +3705,6 @@ exit/b
 
 
 
-:_+ Composing and Expanding Variables
-
-
-
-::_
-
-:compose_variable
-
-rem echo. & echo * Compose variable.
-
-rem lu: Jul-16-2019
-
-rem echo. & echo * Variable to expand: %2
-
-set cbf-composed-variable=cbf-%2
-
-rem echo. & echo * Composed variable: %cbf-composed-variable%
-
-rem goto :expand-variable "%%%cbf-composed-variable%%%"
-call %0 expand-variable "%%%cbf-composed-variable%%%"
-
-exit/b
-
-
-
-::_
-:expand-variable
-rem echo. & echo * Expand variable.
-set cbf-expanded-variable=%~2
-rem echo. & echo * Expanded variable: %cbf-expanded-variable%
-exit/b
-rem lu: Aug-17-2022
-
-
-
-::_
-
-:distill_filename
-
-echo. & echo * Distill filename.
-
-rem lu: May-18-2020
-
-rem echo.
-rem 
-
-set cbf-distilled_filename=%~nx2
-
-rem echo.
-rem echo P2: %2
-
-echo.
-echo * Distilled Filename: %cbf-distilled_filename%
-
-exit/b
-
-
-
-::_
-
-:distill_path
-
-echo. & echo * Distill path.
-
-rem lu: May-26-2020
-
-rem echo.
-rem 
-
-set cbf-distilled_path=%~dp2
-
-rem echo.
-rem echo F2: %2
-
-echo.
-echo * Distilled Path: %cbf-distilled_path%
-
-exit/b
-
-
-
 :_+ How To Family (!fyht)
 
 
@@ -5295,16 +5214,16 @@ exit/b
 
 
 
-:_+ Expand Family (!fyexpa)
+:_+ Expand and Compose Family (!fyexpa)
 
 
 
 ::_
-:expand-to-filename-or-current-folder-without-path
+:distill-file-folder
 
-echo. & echo * Expand to filename or current folder without path.
+echo. & echo * Distill to filename or current folder without path.
 
-set cbf-fn-or-cf-without-path=%~nx2
+set cbf-distill-file-folder=%~nx2
 
 exit/b
 
@@ -5312,12 +5231,40 @@ lu:
 Nov-8-2023
 
 Sample call to get current folder name:
-call m expand-to-filename-or-current-folder-without-path %cd%
+call m distill-file-folder %cd%
 
-Then this variable "cbf-fn-or-cf-without-path" will have the value for the current folder or 
+Then this variable "cbf-distill-file-folder" will have the value for the current folder or 
 filename.
 
 skw: full filename, file path only
+
+
+
+::_
+:scdff
+
+echo. & echo * Sample call to distill-file-folder. Current folder version.
+
+call %0 distill-file-folder %cd%
+
+echo. & echo * cbf-distill-file-folder: %cbf-distill-file-folder%
+
+exit/b
+
+
+
+::_
+:scdff2
+
+echo. & echo * Sample call to distill-file-folder 2. Filename version.
+
+call n j1
+
+call %0 distill-file-folder %cbf-fn%
+
+echo. & echo * cbf-distill-file-folder: %cbf-distill-file-folder%
+
+exit/b
 
 
 
@@ -5334,6 +5281,31 @@ lu:
 Nov-8-2019
 
 Deprecated.
+
+
+
+::_
+
+:distill_filename
+
+echo. & echo * Distill filename.
+
+rem lu: May-18-2020
+
+rem echo.
+rem 
+
+set cbf-distilled_filename=%~nx2
+
+rem echo.
+rem echo P2: %2
+
+echo.
+echo * Distilled Filename: %cbf-distilled_filename%
+
+exit/b
+
+Deprecated
 
 
 
@@ -5357,6 +5329,60 @@ echo. & echo * Expand to path only.
 rem lu: Mar-14-2018
 
 set cbf-pt=%~d2%~p2
+
+exit/b
+
+
+
+::_
+
+:compose_variable
+
+rem echo. & echo * Compose variable.
+
+rem lu: Jul-16-2019
+
+rem echo. & echo * Variable to expand: %2
+
+set cbf-composed-variable=cbf-%2
+
+rem echo. & echo * Composed variable: %cbf-composed-variable%
+
+rem goto :expand-variable "%%%cbf-composed-variable%%%"
+call %0 expand-variable "%%%cbf-composed-variable%%%"
+
+exit/b
+
+
+
+::_
+:expand-variable
+rem echo. & echo * Expand variable.
+set cbf-expanded-variable=%~2
+rem echo. & echo * Expanded variable: %cbf-expanded-variable%
+exit/b
+rem lu: Aug-17-2022
+
+
+
+::_
+
+:distill_path
+
+echo. & echo * Distill path.
+
+rem lu: May-26-2020
+
+rem echo.
+rem 
+
+set cbf-distilled_path=%~dp2
+
+rem echo.
+rem echo F2: %2
+
+echo.
+echo * Distilled Path: %cbf-distilled_path%
 
 exit/b
 
