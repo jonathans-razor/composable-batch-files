@@ -38,9 +38,6 @@ echo. & echo * Delete conflicted copies in the mac folder.
 
 rem lu: Feb-13-2019
 
-echo.
-
-
 call t smecfg
 
 cd mac
@@ -58,9 +55,6 @@ exit/b
 echo. & echo * Delete conflicted copies in Mutli-Edit folders.
 
 rem lu: Mar-6-2019
-
-echo.
-
 
 rem 1.
 call t s
@@ -86,19 +80,13 @@ echo. & echo * Delete conflicted copies aggregate functions.
 
 rem lu: Mar-14-2020
 
-echo.
-
-
-
 call t s
 
 call :concop
 
-
 call t cbf
 
 call :concop
-
 
 exit/b
 
@@ -113,9 +101,6 @@ exit/b
 echo. & echo * Temp folder.
 
 rem lu: Apr-8-2020
-
-echo.
-
 
 td tmp>nul
 
