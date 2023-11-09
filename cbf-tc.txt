@@ -140,7 +140,7 @@ example-  Prefix for files written by other authors for learning and comparison 
        l  Load clipboard path.
       lp  Load cbf-fn contents to the clipboard.
      lpd  Use a DCV to copy a cbf variable to the clipboard.
-     lpf  Load cbf-fn of passed in alias onto the clipboard.
+     lpf  Copy a filename to the clipboard.
    lpfwp  Load cbf-fn without path of passed in alias onto the clipboard.
       ls  Wrapper around dir command to help with Linux compatibility.
        m  Perform simple miscellaneous tasks using a function routing style.

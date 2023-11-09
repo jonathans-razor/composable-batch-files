@@ -3485,7 +3485,7 @@ lu: Oct-16-2023
 ::_
 :le
 :leet
-echo. & echo * Leet.
+echo. & echo * LeetCode.
 call an br>nul
 set cbf-gs=https://docs.google.com/spreadsheets/d/1cPViBct-hqOPcmxnw7awCmwNFFOqwpmbzbJaNhzwyPE/edit#gid=0
 set cbf-url=https://leetcode.com/problemset/all/

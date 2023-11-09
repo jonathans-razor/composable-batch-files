@@ -1003,6 +1003,29 @@ exit/b
 
 
 :_
+:Nov-8-2023
+
+cls
+
+:
+@echo on
+python 101-symmetric-tree.py 1 2 2 3 4 4 3
+
+:
+@echo on
+python 101-symmetric-tree.py 1 2 2 3 4 4 5
+
+:
+@echo on
+python 101-symmetric-tree.py 1 2 2 null 3 null 3
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1026,21 +1049,33 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-8-2023
+:Nov-9-2023
 
 cls
 
 :
 @echo on
-python 101-symmetric-tree.py 1 2 2 3 4 4 3
+python 118-pascals-triangle.py 1
 
 :
 @echo on
-python 101-symmetric-tree.py 1 2 2 3 4 4 5
+python 118-pascals-triangle.py 2
 
 :
 @echo on
-python 101-symmetric-tree.py 1 2 2 null 3 null 3
+python 118-pascals-triangle.py 3
+
+:
+@echo on
+python 118-pascals-triangle.py 4
+
+:
+@echo on
+python 118-pascals-triangle.py 5
+
+:
+@echo on
+python 118-pascals-triangle.py 6
 
 :Necessary Edge Case Spacer - Please do not delete.
 
