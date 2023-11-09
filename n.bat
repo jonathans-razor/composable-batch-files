@@ -4126,4 +4126,18 @@ lu: Sep-29-2023
 
 
 
+:_
+:d3
+set cbf-pd=d3-js-data-visualization-full-course
+echo. & echo * %cbf-pd%.
+call pn it>nul
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-gh=https://github.com/jonathans-razor/%cbf-pd%
+
+exit/b
+lu:
+Nov-8-2023
+
+
+
 :_ (!efn)

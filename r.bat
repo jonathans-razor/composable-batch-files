@@ -86,7 +86,7 @@ exit/b
 
 :main
 
-echo. & echo * Run application - main function.
+rem echo. & echo * Run application - main function.
 
 if "%cbf-app%" == "microsoft-edge" goto microsoft_edge_edge_case
 
