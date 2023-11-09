@@ -729,7 +729,7 @@ echo. & echo * Add Readme.md.
 
 call m expand-to-filename-or-current-folder-without-path %cd%
 
-echo #%cbf-fn-or-cf--without-path%>Readme.md
+echo #%cbf-fn-or-cf-without-path%>Readme.md
 
 exit/b
 
