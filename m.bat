@@ -5317,6 +5317,8 @@ call m expand-to-filename-or-current-folder-without-path %cd%
 Then this variable "cbf-fn-or-cf-without-path" will have the value for the current folder or 
 filename.
 
+skw: full filename, file path only
+
 
 
 ::_
