@@ -5282,6 +5282,30 @@ rem lu: Aug-13-2021
 
 
 ::_
+:expand-to-filename-or-current-folder-without-path
+echo. & echo * Expand to filename or current folder without path.
+
+set cbf-fn-or-cf--without-path=%~nx2
+
+exit/b
+lu:
+Nov-8-2023
+
+
+
+::_
+:expand_to_filename_without_path
+echo. & echo * Expand to filename or current folder without path.
+
+set cbf-fn_without_path=%~nx2
+
+exit/b
+lu:
+Nov-8-2019
+
+
+
+::_
 
 :convert_to_path
 
@@ -5292,23 +5316,6 @@ echo. & echo * Expand to path only.
 rem lu: Mar-14-2018
 
 set cbf-pt=%~d2%~p2
-
-exit/b
-
-
-
-::_
-
-:expand_to_filename_without_path
-
-echo. & echo * Expand to filename without path.
-
-rem lu: Nov-8-2019
-
-echo.
-
-
-set cbf-fn_without_path=%~nx2
 
 exit/b
 

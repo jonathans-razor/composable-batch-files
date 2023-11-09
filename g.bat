@@ -673,86 +673,67 @@ exit/b
 
 
 ::_
+:0
 
+echo. & echo * Create a new repo from the command line.
+
+call %0 1
+call %0 2
+call %0 3
+call %0 4
+call %0 5
+call %0 6
+
+exit/b
+lu:
+Nov-8-2023
+
+git-steps-seriess-jj
+
+
+
+::_
 :1
-
 :i
-
 :init
 
-:step1
-
 echo. & echo * Step 1. Initialize Git in the current folder. This is a one-time generic action.
-
-rem (!step)
-
-echo.
-
 
 echo.
 git init
 
 exit/b
 
+git-steps-seriess-jj
+
 
 
 ::_
-
 :aro
-
 :2
-
-:2a
 
 echo. & echo * Add remote origin for CBF URL.
 
-echo.
-
-
-call n %2
-
-git remote add origin %cbf-url%
+git remote add origin https://github.com/jonathans-razor/d3-js-data-visualization-full-course
 
 exit/b
+
+git-steps-seriess-jj
 
 
 
 ::_
+:3
 
-:2b
+echo. & echo * Add Readme.md.
 
-:origin
+call m expand-to-filename-or-current-folder-without-path %cd%
 
-echo. & echo * Step 2. Add remote origin. This is a one-time origin-specific action. (!step2, !aro)
-
-rem (!step)
-
-echo.
-
-
-goto grao
-
-git remote add origin https://github.com/jonathan-r-jones/neighborhood.git
-git remote add origin https://github.com/jonathan-r-jones/pcarss.git
-git remote add origin https://github.com/jonathan-r-jones/Software.git
-git remote add origin https://github.com/jonathan-r-jones/Mercury.git
-git remote add origin https://Jonathan17@bitbucket.org/nesmercuryteam/sencha.git
-git remote add origin https://Jonathan17@bitbucket.org/nesmercuryteam/batch_files.git
-git remote add origin https://Jonathan17@bitbucket.org/nesmercuryteam/mercury6.git
-git remote add origin https://Jonathan17@bitbucket.org/nesmercuryteam/tirem.git
-git remote add origin https://Jonathan17@bitbucket.org/nesmercuryteam/sencha.git
-git remote add origin https://github.com/jonathan-r-jones/ForGitTesting.git
-git remote add origin https://Jonathan17@bitbucket.org/nesmercuryteam/tirem.git
-git remote add origin https://github.com/jonathan-r-jones/java_bouillabaisse.git 
-git remote add origin https://Jonathan17@bitbucket.org/Jonathan17/ticktockmenumaker.git
-git remote add origin https://github.com/jonathan-r-jones/composable-batch-files.git 
-git remote add origin https://Jonathan17@bitbucket.org/Jonathan17/resume.git
-
-:grao
-
-git remote add origin https://github.com/jonathan-r-jones/BigProject.git 
+echo #%cbf-fn-or-cf--without-path%>Readme.md
 
 exit/b
+
+git-steps-seriess-jj
 
 
 
@@ -1630,78 +1611,6 @@ rem lu: Dec-12-2019
 call n %1
 
 call sf
-
-exit/b
-
-
-
-:_+ Upstream Origin
-
-
-
-::_
-
-:pullm
-
-echo. & echo * Pull master
-
-rem lu: Jan-17-2018
-
-git pull origin master
-
-exit/b
-
-
-
-::_
-
-:4
-
-:suom
-
-echo. & echo * Push changes into master.
-
-echo.
-
-echo.
-
-git push --set-upstream origin master
-
-rem (!step)
-
-exit/b
-
-
-
-::_
-
-:fixbranch
-
-echo. & echo * 14. Fix branch.
-
-echo.
-git branch --unset -upstream
-
-exit/b
-
-
-
-::_
-
-:reor
-
-echo. & echo * Revove origin.
-
-rem lu: Dec-17-2019
-
-echo.
-git remote remove origin
-
-rem git branch --set-upstream-to=origin/master
-
-rem git remote add origin https://github.com/jonathan-r-jones/ansible-for-devops-workshop.git
-
-rem git push -u origin master
 
 exit/b
 
@@ -3505,11 +3414,9 @@ exit/b
 
 
 ::_
-
+:4
 :a
-
 :add
-
 :add-all-files
 
 rem echo. & echo * Add all files.
@@ -3517,6 +3424,8 @@ rem echo. & echo * Add all files.
 git add --all
 
 exit/b
+
+git-steps-seriess-jj
 
 
 
@@ -4441,10 +4350,10 @@ exit/b 0
 
 
 ::_
-
+:5
 :captm
-
 :commit-all-with-python-timestamp-message
+:commt
 
 echo. & echo * Commit all files with Python timestamp message.
 
@@ -4457,12 +4366,13 @@ call git commit -a -m %commit-description%
 
 exit/b
 
+git-steps-seriess-jj
+
 
 
 ::_
 
 :catm
-
 :commit-all-with-timestamp-message
 
 echo. & echo * Commit all files with timestamp message.
@@ -4504,11 +4414,8 @@ exit/b
 
 
 ::_
-
 :c
-
-:c_only
-
+:comm
 :commit
 
 echo. & echo * Commit ONLY those files that were staged for commit.
@@ -4531,6 +4438,72 @@ echo. & echo * Commit with big description.
 
 echo.
 call git commit -a -m "From big latpop."
+
+exit/b
+
+
+
+:_+ Upstream Origin
+
+
+
+::_
+
+:pullm
+
+echo. & echo * Pull master
+
+rem lu: Jan-17-2018
+
+git pull origin master
+
+exit/b
+
+
+
+::_
+:6
+
+echo. & echo * Push changes into main.
+
+echo.
+git push --set-upstream origin main
+
+exit/b
+
+git-steps-seriess-jj
+
+
+
+::_
+
+:fixbranch
+
+echo. & echo * 14. Fix branch.
+
+echo.
+git branch --unset -upstream
+
+exit/b
+
+
+
+::_
+
+:reor
+
+echo. & echo * Revove origin.
+
+rem lu: Dec-17-2019
+
+echo.
+git remote remove origin
+
+rem git branch --set-upstream-to=origin/master
+
+rem git remote add origin https://github.com/jonathan-r-jones/ansible-for-devops-workshop.git
+
+rem git push -u origin master
 
 exit/b
 
