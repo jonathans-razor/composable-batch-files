@@ -4958,7 +4958,7 @@ exit/b
 
 
 
-:_+ Initialization Family (!fylnk)
+:_+ Initialization Family (!fyinit, !fylnk)
 
 
 
@@ -5083,22 +5083,6 @@ if not "%~2" == "" call n %2
 set cbf-default-text-editor=%cbf-app%
 
 exit/b
-
-
-
-::_
-
-:initialize-default-repository-folder
-
-echo. & echo * Initialize default repository folder.
-
-if /i "%computername%" == "xps" call %0 set-default-repository-folder d-aa-repos
-
-exit/b
-
-rem lu: 
-Nov-9-2023
-Nov-2-2018
 
 
 
@@ -5265,21 +5249,6 @@ exit/b
 
 set share-zone=%dropbox%\it\share-zone
 set path=%dropbox%\savannah\belfry;%path%
-
-exit/b
-
-
-
-::_
-
-:initialize_default_browser
-
-echo. & echo * Initialize default browser.
-
-rem lu: Nov-2-2018
-
-rem if /i "%computername%" == "asus" call m set_default_browser ie
-if "%cbf-default-browser%" == "" call m set_default_browser kr
 
 exit/b
 
