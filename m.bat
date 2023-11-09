@@ -156,7 +156,6 @@ Metadata: Track Size (!tsm)
 
 echo. & echo * Delete stale Ext JS. On Feb-10-2017, this rubric fixed enabled this to work.
 
-
 echo.
 
 call t set_wildfly_dynamic_folder
@@ -191,9 +190,6 @@ exit/b
 :delete_stale_ext_js_from_testing_folder
 
 echo. & echo * Delete stale Ext JS from the testing folder.
-
-
-echo.
 
 if not exist c:\projects\netbeans\sencha\HTML5Application\public_html\build\testing\Mercury echo Testing folder's not there.
 if not exist c:\projects\netbeans\sencha\HTML5Application\public_html\build\testing\Mercury exit/b
@@ -230,7 +226,6 @@ exit/b
 :delete_stale_ext_js_from_webapp_folder
 
 echo. & echo * Delete stale Ext JS from webapp folder.
-
 
 echo.
 
@@ -373,9 +368,6 @@ exit/b
 
 echo. & echo * Copy fresh Ext JS into WildFly folder.
 
-
-echo.
-
 cd \projects\netbeans\mercury6\Mercury-web\src\main\webapp
 
 echo Current Folder: %cd%
@@ -491,9 +483,6 @@ echo. & echo * This is one-time copy that needs to be made in order to properly 
 
 rem fcd: Apr-10-2017
 
-
-echo.
-
 cd c:\mercury\tirem
 
 xcopy /d /h /r /s /y "c:\projects\netbeans\mercury6\mercury-tirem"
@@ -511,9 +500,6 @@ exit/b
 echo. & echo * This is one-time copy that needs to be made in order to properly prepare the target folder prior to tirem running.
 
 rem fcd: Mar-6-2017
-
-
-echo.
 
 cd c:\projects\netbeans\mercury6\mercury-tirem\target
 
@@ -537,9 +523,6 @@ exit/b
 echo. & echo * Copy standalone.xml to j1 and j2.
 
 rem fcd: Apr-10-2017
-
-
-echo.
 
 cd c:\mercury\batch_files
 
@@ -582,9 +565,6 @@ echo. & echo * Use the debug JNLP file.
 
 rem fcd: Apr-13-2017
 
-
-echo.
-
 cd C:\projects\netbeans\mercury6\Mercury-web\src\main\webapp\resources\applet
 
 xcopy /r /y MercuryRequestApplet.jp.jnlp MercuryRequestApplet.jnlp
@@ -603,9 +583,6 @@ echo. & echo * Use the debug JNLP file.
 
 rem fcd: Apr-13-2017
 
-
-echo.
-
 cd C:\projects\netbeans\mercury6\Mercury-web\src\main\webapp\resources\applet
 
 xcopy /r /y MercuryRequestApplet.proto.jnlp MercuryRequestApplet.jnlp
@@ -623,9 +600,6 @@ echo.
 
 rem fcd: Apr-13-2017
 
-
-echo.
-
 cd C:\projects\netbeans\mercury6\Mercury-web\src\main\webapp\resources\applet
 
 xcopy /y MercuryRequestApplet.va.jnlp MercuryRequestApplet.jnlp
@@ -639,9 +613,6 @@ exit/b
 :delete_stale_ext_js_from_production_folder
 
 echo. & echo * Delete stale Ext JS from the production folder.
-
-
-echo.
 
 if not exist c:\projects\netbeans\sencha\HTML5Application\public_html\build\production\Mercury echo Production folder's not there.
 if not exist c:\projects\netbeans\sencha\HTML5Application\public_html\build\production\Mercury echo.
@@ -680,9 +651,6 @@ exit/b
 
 echo. & echo * Copy fresh Ext JS for use in building a debuggable War file.
 
-
-echo.
-
 cd C:\projects\netbeans\mercury6\Mercury-web\src\main\webapp
 
 echo Current Folder: %cd%
@@ -706,9 +674,7 @@ call :delete_stale_ext_from_wildfly_dynamic_folder
 
 echo. & echo * Copy fresh Ext JS into WildFly folder. This should be used only when WildFly is running because it depends on the presence of an active hex folder.
 
-
 echo.
-
 echo Current Folder: %cd%
 echo.
 
@@ -727,7 +693,6 @@ goto exit
 echo. & echo * Use 6 button test files.
 
 rem fcd: Apr-17-2017
-
 
 echo.
 
@@ -779,8 +744,6 @@ goto exit
 echo. & echo * Start WildFly. Refresh the environment.
 
 rem fcd: Apr-5-2017
-
-
 
 echo Sep-19-2017.1
 call :delete_wildfly_dynamic_folder
@@ -882,8 +845,6 @@ goto begin_wizard_midway
 
 :begin_wizard
 
-
-
 echo.
 set /P user_option=Did you remember to do a get-latest? (y/n): 
 
@@ -976,7 +937,6 @@ echo. & echo * Stop WildFly.
 
 rem fcd: Apr-28-2017
 
-
 echo.
 
 taskkill /f /fi "windowtitle eq wildfly"
@@ -995,7 +955,6 @@ exit/b
 echo. & echo * Fix button warnings by Mike Stonkey.
 
 rem fcd: May-2-2017
-
 
 echo.
 
@@ -1200,7 +1159,6 @@ echo. & echo * Fix menu warnings by Mike Stonkey.
 
 rem fcd: May-2-2017
 
-
 echo.
 
 rem This will get rid of the warnings when compiling and adds the icons to the buttons when 
@@ -1266,7 +1224,6 @@ echo. & echo * Copy background.
 
 rem fcd: May-2-2017
 
-
 echo.
 
 call t open_hex_folder
@@ -1286,7 +1243,6 @@ exit/b
 echo. & echo * Generate a Mercury version number, set it to an environment variable and then echo it to the command line.
 
 rem fcd: May-3-2017
-
 
 echo.
 
@@ -1311,7 +1267,6 @@ exit/b
 echo. & echo * Back up war file.
 
 rem fcd: May-3-2017
-
 
 echo.
 
@@ -1408,9 +1363,6 @@ exit/b
 echo. & echo * CBF Powerpoint Presentation.
 
 rem fcd: May-19-2017
-
-echo.
-
 
 call start "my title" "Composable Batch File Helper.pptx"
 
@@ -1536,7 +1488,6 @@ echo.
 echo Delete data folder.
 rd /q /s data
 
-
 echo Delete tmp folder.
 rd /q /s tmp
 
@@ -1555,7 +1506,6 @@ rem fcd: Jun-22-2017
 rem From my research, it looks like I need to create a folder that I drop into Cordova's
 rem Cordova's "www" folder. This function creates the necessary items for that 
 rem folder/package.
-
 
 echo.
 
@@ -1588,7 +1538,6 @@ exit/b
 echo. & echo * In preparation for a mobile deployment, update Public HTML folder.
 
 rem fcd: Jul-3-2017
-
 
 echo.
 
@@ -1656,7 +1605,6 @@ echo. & echo * Use the app.json file used for a mobile build.
 
 rem fcd: Aug-28-2017
 
-
 echo.
 
 cd C:\projects\netbeans\sencha\HTML5Application\public_html
@@ -1695,7 +1643,6 @@ call :delete_stale_ext_from_wildfly_dynamic_folder
 
 echo. & echo * Copy fresh Ext JS into WildFly folder. This should be used only when WildFly is running because it depends on the presence of an active hex folder.
 
-
 echo.
 
 echo Current Folder: %cd%
@@ -1719,7 +1666,6 @@ echo. & echo * Use the default Net.config file. Use this method building WAR fil
 
 rem fcd: Aug-23-2017
 
-
 echo.
 
 cd C:\projects\netbeans\sencha\HTML5Application\public_html\modern\src\utils
@@ -1741,7 +1687,6 @@ exit/b
 echo. & echo * Use the production Net.config file. Caution: Do not use building WAR files, only for Cordova builds.
 
 rem fcd: Aug-23-2017
-
 
 echo.
 
@@ -1765,7 +1710,6 @@ echo. & echo * Use the Localhost Net.config file. Do not use building WAR files,
 
 rem fcd: Sep-13-2017
 
-
 echo.
 
 cd C:\projects\netbeans\sencha\HTML5Application\public_html\modern\src\utils
@@ -1787,7 +1731,6 @@ exit/b
 echo. & echo * Use the staging Net.config file. Do not use building WAR files, only for Cordova builds.
 
 rem fcd: Aug-28-2017
-
 
 echo.
 
@@ -1811,7 +1754,6 @@ echo. & echo * Copy over NetConfig - for App Watch.js for both classic and moder
 
 rem lu: Sep-6-2017
 
-
 echo.
 
 call t cutils
@@ -1833,7 +1775,6 @@ exit/b
 echo. & echo * Copy WAR file to the deployment folder.
 
 rem lu: Oct-25-2017
-
 
 echo.
 
@@ -1859,7 +1800,6 @@ exit/b
 echo. & echo * Copy over the desired war file to the local deployments folder.
 
 rem fcd: Apr-28-2017
-
 
 echo.
 
@@ -1971,7 +1911,6 @@ echo. & echo * Use AGI License for Staging.
 
 rem lu: Nov-9-2017
 
-
 echo.
 
 call t agi
@@ -1995,7 +1934,6 @@ exit/b
 echo. & echo * Use AGI License for Production.
 
 rem lu: Nov-9-2017
-
 
 echo.
 
@@ -2115,8 +2053,6 @@ echo. & echo * Mercury development environment settings. Prerequisites part 2.
 
 rem lu: Nov-17-2017
 
-
-
 echo.
 set /P user_option=Would you like to run Sencha App Upgrade? (y/n): 
 
@@ -2176,7 +2112,6 @@ echo. & echo * Run sencha app build testing.
 rem According to what Ron said on Aug-8-2017, app build testing may be more performant than
 rem app build development.
 
-
 echo.
 
 color 2f
@@ -2204,9 +2139,6 @@ echo. & echo * Update the version number 2.
 
 rem lu: Dec-5-2017
 
-echo.
-
-
 call np pom_root
 
 call np pom_ear
@@ -2232,7 +2164,6 @@ exit/b
 echo. & echo * Run Visual Studio Command prompt.
 
 rem lu: Dec-18-2017
-
 
 echo.
 
@@ -2266,7 +2197,6 @@ echo. & echo * Run a specific test.
 
 rem lu: Dec-18-2017
 
-
 echo.
 
 vstest.console.exe unittestproject4.dll /TestCaseFilter:Name=AreCollectionEquivalentTest
@@ -2282,7 +2212,6 @@ exit/b
 echo. & echo * Run a specific test.
 
 rem lu: Dec-18-2017
-
 
 echo.
 
@@ -2300,7 +2229,6 @@ echo. & echo * Run matching test names.
 
 rem lu: Dec-18-2017
 
-
 echo.
 
 vstest.console.exe unittestproject4.dll /Tests:FileName
@@ -2316,7 +2244,6 @@ exit/b
 echo. & echo * Run matching test names 2.
 
 rem lu: Dec-18-2017
-
 
 echo.
 
@@ -2334,7 +2261,6 @@ echo. & echo * Run matching test names 3, exist and lowercase are in the test na
 
 rem lu: Dec-18-2017
 
-
 echo.
 
 vstest.console.exe unittestproject4.dll /Tests:Exist,LowerCase
@@ -2351,7 +2277,6 @@ echo. & echo * Run filtered tests.
 
 rem lu: Dec-18-2017
 
-
 echo.
 
 vstest.console.exe unittestproject4.dll /TestCaseFilter:"Priority=1"
@@ -2367,7 +2292,6 @@ exit/b
 echo. & echo * Run filtered tests.
 
 rem lu: Dec-18-2017
-
 
 echo.
 
@@ -2450,7 +2374,6 @@ echo. & echo * Generate Bitbucket encrypted credentials and delete the certutil 
 
 rem fcd: Jul-17-2017
 
-
 echo.
 
 if exist %tmp%\certutil_output.txt del %tmp%\certutil_output.txt
@@ -2481,8 +2404,6 @@ exit/b
 echo. & echo * The steps to publish a new version.
 
 rem lu: Apr-25-2018
-
-
 
 echo.
 echo Update the NPM version number.
@@ -2668,9 +2589,6 @@ echo. & echo * Open application without a parameter.
 
 rem lu: Jun-8-2018
 
-echo.
-
-
 set cbf-parameter=
 
 call r
@@ -2700,96 +2618,6 @@ exit/b
 
 
 
-:_+ Set default environment variables.
-
-
-
-::_
-
-:set_default_browser
-
-:set-default-browser
-
-:sdb
-
-echo. & echo * Set default browser.
-
-rem lu: Aug-8-2018
-
-echo.
-
-
-if "%~2" == "" call an edge
-if not "%~2" == "" call an %2
-
-set cbf-default-browser=%cbf-app%
-
-exit/b
-
-
-
-::_
-
-:set_specific_browser
-
-echo. & echo * Set specific browser.
-
-rem lu: Mar-4-2019
-
-echo.
-
-
-if "%~2" == "" set cbf-specific_browser=
-if "%~2" == "" exit/b
-
-call an %2
-
-set cbf-specific_browser=%cbf-app%
-
-exit/b
-
-
-
-::_
-
-:set_default_repository_folder
-
-echo. & echo * Set default repository folder.
-
-rem lu: Jul-10-2018
-
-echo.
-
-
-if not "%~2" == "" call n %2
-
-set cbf-repo=%cbf-pt%
-
-exit/b
-
-
-
-::_
-
-:sde
-:sdte
-:set-default-text-editor
-
-echo. & echo * Set default text editor.
-
-if "%~2" == "" (
-  echo. & echo * Error: You must supply the alias of the text editor you wish to set as default.
-  exit/b 1
-)
-
-call n %2
-
-set cbf-default-text-editor=%cbf-app%
-
-exit/b
-
-
-
 :_
 
 :remove_hidden_attributes
@@ -2797,9 +2625,6 @@ exit/b
 echo. & echo * Remove hidden attributes.
 
 rem lu: Jul-15-2018
-
-echo.
-
 
 echo.
 attrib -h *.*
@@ -2815,8 +2640,6 @@ exit/b
 echo. & echo * Echo current errorlevel.
 
 rem lu: Jul-16-2018
-
-
 
 echo.
 echo * Errorlevel: %errorlevel%
@@ -2895,9 +2718,6 @@ echo. & echo * Composer function that demos aggregation of calls that can be run
 
 rem lu: Aug-13-2018
 
-echo.
-
-
 call t foo
 
 call of foo
@@ -2919,9 +2739,6 @@ exit/b
 echo. & echo * Perform a fresnel dated backup.
 
 rem lu: Aug-16-2018
-
-echo.
-
 
 Get_JDate>%tmp%\JDate.txt
 set /p JDate=<%tmp%\JDate.txt
@@ -3011,9 +2828,6 @@ echo. & echo * Clear ErrorLevel.
 rem lu: Aug-3-2018
 
 echo.
-
-
-echo.
 echo * Current ErrorLevel: %errorlevel%
 
 ver>nul
@@ -3038,9 +2852,6 @@ echo. & echo * Get ErrorLevel.
 rem lu: Aug-3-2018
 
 echo.
-
-
-echo.
 echo * ErrorLevel: %errorlevel%
 
 exit/b
@@ -3058,9 +2869,6 @@ exit/b
 echo. & echo * Set ErrorLevel.
 
 rem lu: Aug-3-2018
-
-echo.
-
 
 echo.
 echo * Current ErrorLevel: %errorlevel%
@@ -3085,9 +2893,6 @@ exit/b
 echo. & echo * Unix to DOS.
 
 rem lu: Dec-6-2018
-
-echo.
-
 
 echo.
 %localappdata%\Programs\Git\usr\bin\unix2dos ca-bundle.crt
@@ -3142,9 +2947,6 @@ echo. & echo * Change dos window color to: black on gold
 
 rem lu: Dec-13-2018
 
-echo.
-
-
 color 60
 
 exit/b
@@ -3159,9 +2961,6 @@ echo. & echo * Change dos window color to: yellow on black
 
 rem lu: Dec-13-2018
 
-echo.
-
-
 color 0e
 
 exit/b
@@ -3175,9 +2974,6 @@ exit/b
 echo. & echo * Count lines of code in riverstone.
 
 rem lu: Oct-17-2018
-
-echo.
-
 
 del %temp%\j1.txt
 
@@ -3203,9 +2999,6 @@ echo. & echo * Compose synchronization.
 
 rem lu: Jan-23-2019
 
-echo.
-
-
 call col sailboat
 
 call %0 initialize_environment
@@ -3223,9 +3016,6 @@ exit
 echo. & echo * Demo on Jan-29-2019.
 
 rem lu: Jan-29-2019
-
-echo.
-
 
 rem Jenkins 2 is a place for ERO Pipelines.
 
@@ -3258,9 +3048,6 @@ echo. & echo * Jump.
 rem lu: Feb-1-2019
 
 echo.
-
-
-echo.
 echo * How high? Feb-1-2019 1:04 AM
 
 exit/b
@@ -3278,9 +3065,6 @@ exit/b
 echo. & echo * Update the last_updated_log.txt.
 
 rem lu: Feb-8-2019
-
-echo.
-
 
 rem echo 9.
 date /t>%temp%\date_9.txt
@@ -3313,9 +3097,6 @@ echo. & echo * Start timer.
 
 rem lu: Feb-15-2019
 
-echo.
-
-
 set starttime=%time%
 
 exit/b
@@ -3329,9 +3110,6 @@ exit/b
 echo. & echo * Stop timer.
 
 rem lu: Feb-15-2019
-
-echo.
-
 
 set endtime=%time%
 
@@ -3371,9 +3149,6 @@ echo. & echo * Call time example.
 
 rem lu: Feb-15-2019
 
-echo.
-
-
 call %0 start_timer
 
 echo.
@@ -3395,9 +3170,6 @@ exit/b
 echo. & echo * System Information.
 
 rem lu: Mar-4-2019
-
-echo.
-
 
 systeminfo
 
@@ -3442,9 +3214,6 @@ exit/b 0
 echo. & echo * QuickLauncer menu for caling g.
 
 rem lu: Apr-30-2019
-
-echo.
-
 
 echo.
 call %0 g
@@ -3504,9 +3273,6 @@ rem How wide is the command window?
 rem lu: May-20-2019
 
 echo.
-
-
-echo.
 echo * The following line is 80 characters wide:
 echo 12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8
 
@@ -3521,9 +3287,6 @@ exit/b
 echo. & echo * Who am I?
 
 rem lu: May-31-2019
-
-echo.
-
 
 echo.
 echo * Computername: %computername%
@@ -3615,9 +3378,6 @@ echo. & echo * Open MSL Affinity files.
 
 rem lu: Dec-8-2021
 
-echo.
-
-
 set cbf-fn-list="%share-zone%\Miscellany\j.asc"
 
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\msl.asc"
@@ -3647,9 +3407,6 @@ exit/b
 echo. & echo * Open Meeting affinity files.
 
 rem lu: Mar-8-2020
-
-echo.
-
 
 set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\msl.asc"
@@ -3689,9 +3446,6 @@ echo. & echo * Open files to make CBFs.
 
 rem lu: Aug-9-2021
 
-echo.
-
-
 set cbf-fn-list="%share-zone%\ni.bat"
 
 set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
@@ -3713,9 +3467,6 @@ exit/b
 echo. & echo * Open XAM Affinity files.
 
 rem lu: Aug-11-2021
-
-echo.
-
 
 set cbf-fn-list="%share-zone%\Miscellany\z.asc"
 
@@ -3776,9 +3527,6 @@ echo. & echo * Open ATOI Affinity files.
 
 rem lu: Aug-11-2021
 
-echo.
-
-
 set cbf-fn-list="%share-zone%\Miscellany\J.asc"
 
 set cbf-fn-list=%cbf-fn-list% "%share-zone%\lbm\miscellany\lbm.asc"
@@ -3808,9 +3556,6 @@ echo. & echo * Open XAM Affinity files in Notepad.
 
 rem lu: Aug-11-2021
 
-echo.
-
-
 call xac np "%share-zone%\Miscellany\z.asc"
 call xac np "%composable-batch-files%\n.bat"
 call xac np "%share-zone%\ni.bat"
@@ -3828,9 +3573,6 @@ exit/b
 echo. & echo * Open presentation files.
 
 rem lu: Nov-11-2020
-
-echo.
-
 
 set cbf-fn-list="%dropbox%\savannah\reach out\WK.asc"
 
@@ -3860,9 +3602,6 @@ echo. & echo * Open affinity files - old.
 
 rem lu: Jan-9-2019
 
-echo.
-
-
 start Mew32.exe "%reach out%\WK.asc" "%reach out%\CC.asc" "%reach out%\CM.asc" "%reach out%\IT.asc" 
 "%reach out%\DI.asc" 
 "%reach out%\JD.asc" "%reach out%\CH.asc" "%reach out%\RB.asc" "%reach out%\TJ.asc" "%reach out%\CI.asc" 
@@ -3881,9 +3620,6 @@ exit/b
 echo. & echo * Open "waiting" files.
 
 rem lu: Feb-27-2019
-
-echo.
-
 
 call fnv machine-specific-file
 
@@ -3907,9 +3643,6 @@ echo. & echo * Open affinity files and close the DOS window.
 
 rem lu: Jan-23-2019
 
-echo.
-
-
 call :aff
 
 exit
@@ -3923,9 +3656,6 @@ exit
 echo. & echo * Wait and close.
 
 rem lu: Mar-18-2019
-
-echo.
-
 
 call %0 wait
 
@@ -3949,9 +3679,6 @@ echo. & echo * Set cbf-fn equal to cbf-app.
 
 rem lu: Feb-4-2019
 
-echo.
-
-
 set cbf-fn=%cbf-app%
 
 exit/b
@@ -3971,9 +3698,6 @@ exit/b
 echo. & echo * Associate cbf-parameter to cbf-fn.
 
 rem lu: Dec-19-2018
-
-echo.
-
 
 set cbf-parameter=%cbf-fn%
 
@@ -4082,9 +3806,6 @@ echo. & echo * How to run riverstone locally, the overarching process.
 
 rem lu: Mar-30-2020
 
-echo.
-
-
 rem Check status and what branch you are on.
 s ma
 
@@ -4144,9 +3865,6 @@ exit/b
 echo. & echo * How to refresh the server, Sean's manual deployment instructions.
 
 rem lu: Aug-22-2019
-
-echo.
-
 
 sf dv
 
@@ -4234,9 +3952,6 @@ exit/b
 echo. & echo * How to refresh FQT.
 
 rem lu: Sep-17-2019
-
-echo.
-
 
 sf fq
 
@@ -4341,9 +4056,6 @@ rem lu: Aug-27-2021
 
 title=%fp%
 
-echo.
-
-
 rem call t cpoc
 call t paui
 
@@ -4366,9 +4078,6 @@ rem lu: Mar-26-2020
 
 title=%fp%
 
-echo.
-
-
 call %0 lnk_ui_do_not_install_npm
 rem call %0 lnk_ui_install_npm
 
@@ -4383,9 +4092,6 @@ exit/b
 echo. & echo * Run UI lnk and install npm.
 
 rem lu: Mar-24-2020
-
-echo.
-
 
 call m big
 
@@ -4410,9 +4116,6 @@ echo. & echo * Run UI lnk, do not install npm.
 
 rem lu: Mar-24-2020
 
-echo.
-
-
 call m big
 
 call t rf_ui
@@ -4434,9 +4137,6 @@ echo. & echo * Run UI lnk, do not install npm.
 
 rem lu: Mar-24-2020
 
-echo.
-
-
 call m ise
 
 call t deli
@@ -4454,9 +4154,6 @@ exit/b
 echo. & echo * Run UI lnk, for use by shortcut icons.
 
 rem lu: Aug-16-2019
-
-echo.
-
 
 call m big
 
@@ -4487,9 +4184,6 @@ rem lu: Mar-24-2020
 
 title=%fp%
 
-echo.
-
-
 rem call %0 lnk_api_attach_debugger
 call %0 lnk_api_do_not_attach_debugger
 
@@ -4504,9 +4198,6 @@ exit/b
 echo. & echo * Run API cmd and ATTACH DEBUGGER!
 
 rem lu: Aug-16-2019
-
-echo.
-
 
 call m big
 
@@ -4526,9 +4217,6 @@ echo. & echo * Run API cmd and do not attach debugger.
 
 rem lu: Aug-16-2019
 
-echo.
-
-
 call m big
 
 call t rf_api
@@ -4546,9 +4234,6 @@ exit/b
 echo. & echo * Run API cmd, for use by shortcut icons.
 
 rem lu: Aug-16-2019
-
-echo.
-
 
 call m big
 
@@ -4574,9 +4259,6 @@ exit/b
 echo. & echo * Run API cmd and attach the debugger.
 
 rem lu: Aug-16-2019
-
-echo.
-
 
 call m big
 
@@ -4616,9 +4298,6 @@ echo. & echo * Run Golf cmd.
 
 rem lu: Aug-16-2019
 
-echo.
-
-
 call m big
 
 call j golf
@@ -4636,9 +4315,6 @@ exit/b
 echo. & echo * Start local database.
 
 rem lu: Aug-16-2019
-
-echo.
-
 
 call m big
 
@@ -4759,9 +4435,7 @@ echo. & echo * Run tests on command line with an attached logger.
 
 rem lu: Dec-18-2017
 
-
 echo.
-
 vstest.console.exe unittestproject4.dll /Logger:trx
 
 exit/b
@@ -4775,7 +4449,6 @@ exit/b
 echo. & echo * Run tests on command line.
 
 rem lu: Dec-18-2017
-
 
 echo.
 
@@ -4798,9 +4471,6 @@ exit/b
 echo. & echo * Rename screenshots.
 
 rem lu: Mar-12-2020
-
-echo.
-
 
 echo.
 ren Screen*.* Mar-12-2020*.*
@@ -4876,9 +4546,6 @@ echo. & echo * Open Jenkinsfiles.
 
 rem lu: Jan-10-2019
 
-echo.
-
-
 call e acr
 
 call e ant
@@ -4894,375 +4561,6 @@ call e gfs
 call e iac
 
 call e odls
-
-exit/b
-
-
-
-:_+ Initialization Family
-
-
-
-::_
-
-:startup-lnk-keld
-
-call %0 lnk-keld
-
-call m a
-
-exit/b
-
-
-
-::_
-
-:startup-lnk-xps
-
-call %0 lnk-xps
-
-call m a
-
-exit/b
-
-
-
-::_
-
-:initialize_environment
-:in_env
-:ise
-:lnk-ise
-:lnk-xps
-:rc-xps
-
-echo. & echo * Initialize environment. The idea is to create a pit of success for the user.
-
-set JAVA_TOOL_OPTIONS=
-
-rem (!zz)
-rem set cbf-zz=G6V!#2CEDdg3oz3o
-
-call %0 initialize_default_browser
-
-call %0 initialize_default_repository_folder
-
-call %0 initialize-default-text-editor
-
-call %0 set_white_list_settings_1
-
-call t a
-exit/b
-
-
-rem fcd: Apr-8-2022
-
-Footnote
->< >< ><
-
-The convention of calling these "lnk" methods is very similar to having a .bashrc file.
-
-
-
-::_
-
-:lnk-keld
-
-echo. & echo * Initialize Keld environment.
-
-set JAVA_TOOL_OPTIONS=
-
-rem Order matters. Mar-2-2022
-set cbf-repo=c:\repos
-
-rem set path=%path%;c:\repositories\composable-batch-files
-rem set path=%path%;C:\Program Files (x86)\Java\jre1.8.0_321\bin
-
-call an no>nul
-set cbf-default-text-editor=%cbf-app%
-
-call an edge>nul
-set cbf-default-browser=%cbf-app%
-
-rem Created here as a reminder that this is set in your
-rem local environment variable.
-rem This may be incorrect.
-set HOME=%userprofile%
-
-exit/b
-
-
-
-::_
-
-:lnk-vdi
-
-:vdi-cbf-rc
-
-echo. & echo * Initialize VDI environment.
-
-rem Order matters. Mar-2-2022
-set cbf-repo=w:\git-repos
-
-set path=%path%;w:\git-repos\vdi-batch-files
-set path=%path%;w:\git-repos\Composable-Batch-Files
-set path=%path%;C:\Program Files\Java\jdk1.8.0_301\bin
-
-call an no>nul
-set cbf-default-text-editor=%cbf-app%
-
-call an edge
-set cbf-default-browser=%cbf-app%
-
-rem Created here as a reminder that this is set in your
-rem local environment variable.
-set HOME=W:\CYGWIN\home\[put--name-of-user-of-interest-here]
-
-exit/b
-
-
-
-::_
-
-:lnk_right
-
-title=Right Justified CBF
-
-call %0 big
-
-call t a
-
-cls
-
-exit/b
-
-
-
-::_
-
-:lnk_chef
-
-title=Chef
-
-set homedrive=c:
-
-set homepath=\Users\[put--name-of-user-of-interest-here]
-
-call %0 big
-
-call t a
-
-cls
-
-exit/b
-
-
-
-::_
-
-:lnk_linux
-
-title=Linux
-
-call %0 big
-
-call t a
-
-cls
-
-exit/b
-
-
-
-::_
-
-:initialize_environment_router
-
-echo. & echo * Initialize environment router.
-
-rem lu: Feb-1-2019
-
-echo %computername% | find /i "lipt">nul
-
-if %errorlevel% == 0 (
-   echo.
-   echo * Computer name contains "lipt".
-   call %0 initialize_big_environment
-   exit/b
-)
-
-call %0 initialize_environment
-
-exit/b
-
-
-
-::_
-
-:set_white_list_settings_1
-
-if /i "%computername%" == "asus" goto set_white_list_settings_2
-if /i "%computername%" == "buzz" goto set_white_list_settings_2
-if /i "%computername%" == "xps" goto set_white_list_settings_2
-
-exit/b
-
-
-
-::_
-
-:set_white_list_settings_2
-
-set share-zone=%dropbox%\it\share-zone
-set path=%dropbox%\savannah\belfry;%path%
-
-exit/b
-
-
-
-::_
-
-:initialize_default_browser
-
-echo. & echo * Initialize default browser.
-
-rem lu: Nov-2-2018
-
-echo.
-
-
-rem if /i "%computername%" == "asus" call m set_default_browser ie
-if "%cbf-default-browser%" == "" call m set_default_browser kr
-
-exit/b
-
-
-
-::_
-
-:initialize_default_repository_folder
-
-echo. & echo * Initialize default repository folder.
-
-rem lu: Nov-2-2018
-
-echo.
-
-
-call %0 set_default_repository_folder c_aa_repos
-
-if /i "%computername%" == "xps" call %0 set_default_repository_folder d_aa_repos
-
-exit/b
-
-
-
-::_
-:initialize-default-text-editor
-echo. & echo * Initialize default text editor.
-
-if /i "%computername%" == "asus" call m set-default-text-editor no
-if /i "%computername%" == "sp7" call m set-default-text-editor no
-if /i "%computername%" == "xps" call m set-default-text-editor me
-if "%cbf-default-text-editor%" == "" call m set-default-text-editor no
-
-exit/b
-rem lu: Nov-2-2018
-
-
-
-::_
-
-:big
-
-:ibe
-
-:ige
-
-:initialize_big_environment
-
-echo. & echo * Initialize ATOI environment.
-
-rem lu: Dec-4-2018
-
-echo.
-
-
-call %0 initialize_environment
-
-call %0 set_big_path
-
-call %0 set_default_browser kr
-
-call %0 set-default-text-editor sm
-
-set aa=c:\aa
-set cbf-repo=C:\Users\[put--name-of-user-of-interest-here]\j
-set composable-batch-files=C:\Users\[put--name-of-user-of-interest-here]\j\Composable-Batch-Files
-set JAVA_TOOL_OPTIONS=
-set KITCHEN_YAML=.kitchen-aws.yml
-set machinename=atoi
-
-call ni full_pem
-set SSH_KEY_PATH=%cbf-full-pem%
-
-cls
-
-exit/b
-
-
-
-::_
-
-:lnk-xam
-
-echo. & echo * Initialize CBF environment on XAM.
-
-title=CBF
-
-call %0 initialize_environment
-
-call t a
-
-cls
-
-exit/b
-
-
-
-::_
-
-:lnk_cbf
-
-echo. & echo * Initialize CBF environment.
-
-title=CBF
-
-call %0 big
-
-call t a
-
-cls
-
-exit/b
-
-
-
-::_
-
-:lnk-code
-
-echo. & echo * Initialize VS Code environment.
-
-title=VS Code
-
-call %0 big
-
-call t a
-
-cls
-
-code
 
 exit/b
 
@@ -5329,9 +4627,6 @@ echo. & echo * Expand to filename without path.
 
 rem lu: Nov-8-2019
 
-echo.
-
-
 set cbf-fn_without_path=%~nx2
 
 exit/b
@@ -5365,9 +4660,6 @@ echo. & echo * Check for presence of a paricular foldder in the current folder.
 
 rem lu: Nov-11-2019
 
-echo.
-
-
 dir | find /i "%2">nul
 
 if %errorlevel% == 1 (
@@ -5390,8 +4682,6 @@ exit/b
 echo. & echo * Current location must be within a paricular foldder.
 
 echo.
-
-
 echo %cd% | find /i "%2"
 
 if %errorlevel% == 1 (
@@ -5440,9 +4730,6 @@ rem lu: Apr-27-2020
 echo. & echo * Delete a paricular folder if it exists in the current folder.
 
 rem lu: May-22-2020
-
-echo.
-
 
 dir | find /i "%2">nul
 
@@ -5645,6 +4932,464 @@ dir *.txt
 exit/b
 rem This works.
 rem lu: Jun-12-2020
+
+
+
+:_+ Set default environment variables.
+
+
+
+::_
+
+:set_specific_browser
+
+echo. & echo * Set specific browser.
+
+rem lu: Mar-4-2019
+
+if "%~2" == "" set cbf-specific_browser=
+if "%~2" == "" exit/b
+
+call an %2
+
+set cbf-specific_browser=%cbf-app%
+
+exit/b
+
+
+
+:_+ Initialization Family (!fylnk)
+
+
+
+::_
+
+:startup-lnk-xps
+
+call %0 lnk-xps
+
+call m a
+
+exit/b
+
+
+
+::_
+
+:startup-lnk-sp7
+
+call %0 lnk-sp7
+
+call m a
+
+exit/b
+
+
+
+::_
+:lnk-xps
+
+echo. & echo * Initialize environment fpr %1.
+
+call %0 set-default-browser br
+
+call %0 set-default-repository-folder d-aa-repos
+
+call %0 set-default-text-editor me
+
+call t a
+
+exit/b
+
+fcd:
+Apr-8-2022
+
+Footnote
+>< >< ><
+
+The convention of calling these "lnk" methods is very similar to having a .bashrc file.
+
+
+
+::_
+:lnk-sp7
+
+echo. & echo * Initialize environment fpr %1.
+
+call %0 set-default-browser br
+
+call %0 set-default-repository-folder c-aa-repos
+
+call %0 set-default-text-editor me
+
+call t a
+
+call m a
+
+exit/b
+
+fcd:
+Nov-9-2023
+
+
+
+::_
+:set-default-browser
+:sdb
+
+echo. & echo * Set default browser.
+
+if "%~2" == "" call an edge
+if not "%~2" == "" call an %2
+
+set cbf-default-browser=%cbf-app%
+
+exit/b
+
+lu:
+Nov-9-2023
+Aug-8-2018
+
+
+
+::_
+
+:set-default-repository-folder
+
+echo. & echo * Set default repository folder.
+
+if "%~2" == "" call n c-aa-repos
+if not "%~2" == "" call n %2
+set cbf-repo=%cbf-pt%
+
+exit/b
+
+lu:
+Nov-9-2023
+Jul-10-2018
+
+
+
+::_
+
+:sdte
+:set-default-text-editor
+
+echo. & echo * Set default text editor.
+
+if "%~2" == "" call n no
+if not "%~2" == "" call n %2
+
+set cbf-default-text-editor=%cbf-app%
+
+exit/b
+
+
+
+::_
+
+:initialize-default-repository-folder
+
+echo. & echo * Initialize default repository folder.
+
+if /i "%computername%" == "xps" call %0 set-default-repository-folder d-aa-repos
+
+exit/b
+
+rem lu: 
+Nov-9-2023
+Nov-2-2018
+
+
+
+::_
+
+:startup-lnk-keld
+
+call %0 lnk-keld
+
+call m a
+
+exit/b
+
+
+
+::_
+
+:lnk-keld
+
+echo. & echo * Initialize Keld environment.
+
+set JAVA_TOOL_OPTIONS=
+
+rem Order matters. Mar-2-2022
+set cbf-repo=c:\repos
+
+rem set path=%path%;c:\repositories\composable-batch-files
+rem set path=%path%;C:\Program Files (x86)\Java\jre1.8.0_321\bin
+
+call an no>nul
+set cbf-default-text-editor=%cbf-app%
+
+call an edge>nul
+set cbf-default-browser=%cbf-app%
+
+rem Created here as a reminder that this is set in your
+rem local environment variable.
+rem This may be incorrect.
+set HOME=%userprofile%
+
+exit/b
+
+
+
+::_
+
+:lnk-vdi
+
+:vdi-cbf-rc
+
+echo. & echo * Initialize VDI environment.
+
+rem Order matters. Mar-2-2022
+set cbf-repo=w:\git-repos
+
+set path=%path%;w:\git-repos\vdi-batch-files
+set path=%path%;w:\git-repos\Composable-Batch-Files
+set path=%path%;C:\Program Files\Java\jdk1.8.0_301\bin
+
+call an no>nul
+set cbf-default-text-editor=%cbf-app%
+
+call an edge
+set cbf-default-browser=%cbf-app%
+
+rem Created here as a reminder that this is set in your
+rem local environment variable.
+set HOME=W:\CYGWIN\home\[put--name-of-user-of-interest-here]
+
+exit/b
+
+
+
+::_
+
+:lnk_right
+
+title=Right Justified CBF
+
+call %0 big
+
+call t a
+
+cls
+
+exit/b
+
+
+
+::_
+
+:lnk_chef
+
+title=Chef
+
+set homedrive=c:
+
+set homepath=\Users\[put--name-of-user-of-interest-here]
+
+call %0 big
+
+call t a
+
+cls
+
+exit/b
+
+
+
+::_
+
+:lnk_linux
+
+title=Linux
+
+call %0 big
+
+call t a
+
+cls
+
+exit/b
+
+
+
+::_
+
+:initialize_environment_router
+
+echo. & echo * Initialize environment router.
+
+rem lu: Feb-1-2019
+
+echo %computername% | find /i "lipt">nul
+
+if %errorlevel% == 0 (
+   echo.
+   echo * Computer name contains "lipt".
+   call %0 initialize_big_environment
+   exit/b
+)
+
+call %0 initialize_environment
+
+exit/b
+
+
+
+::_
+
+:set_white_list_settings_1
+
+if /i "%computername%" == "asus" goto set_white_list_settings_2
+if /i "%computername%" == "buzz" goto set_white_list_settings_2
+if /i "%computername%" == "xps" goto set_white_list_settings_2
+
+exit/b
+
+
+
+::_
+
+:set_white_list_settings_2
+
+set share-zone=%dropbox%\it\share-zone
+set path=%dropbox%\savannah\belfry;%path%
+
+exit/b
+
+
+
+::_
+
+:initialize_default_browser
+
+echo. & echo * Initialize default browser.
+
+rem lu: Nov-2-2018
+
+rem if /i "%computername%" == "asus" call m set_default_browser ie
+if "%cbf-default-browser%" == "" call m set_default_browser kr
+
+exit/b
+
+
+
+::_
+:initialize-default-text-editor
+echo. & echo * Initialize default text editor.
+
+if /i "%computername%" == "asus" call m set-default-text-editor no
+if /i "%computername%" == "sp7" call m set-default-text-editor no
+if /i "%computername%" == "xps" call m set-default-text-editor me
+if "%cbf-default-text-editor%" == "" call m set-default-text-editor no
+
+exit/b
+rem lu: Nov-2-2018
+
+
+
+::_
+
+:big
+
+:ibe
+
+:ige
+
+:initialize_big_environment
+
+echo. & echo * Initialize ATOI environment.
+
+rem lu: Dec-4-2018
+
+call %0 initialize_environment
+
+call %0 set_big_path
+
+call %0 set_default_browser kr
+
+call %0 set-default-text-editor sm
+
+set aa=c:\aa
+set cbf-repo=C:\Users\[put--name-of-user-of-interest-here]\j
+set composable-batch-files=C:\Users\[put--name-of-user-of-interest-here]\j\Composable-Batch-Files
+set JAVA_TOOL_OPTIONS=
+set KITCHEN_YAML=.kitchen-aws.yml
+set machinename=atoi
+
+call ni full_pem
+set SSH_KEY_PATH=%cbf-full-pem%
+
+cls
+
+exit/b
+
+
+
+::_
+
+:lnk-xam
+
+echo. & echo * Initialize CBF environment on XAM.
+
+title=CBF
+
+call %0 initialize_environment
+
+call t a
+
+cls
+
+exit/b
+
+
+
+::_
+
+:lnk_cbf
+
+echo. & echo * Initialize CBF environment.
+
+title=CBF
+
+call %0 big
+
+call t a
+
+cls
+
+exit/b
+
+
+
+::_
+
+:lnk-code
+
+echo. & echo * Initialize VS Code environment.
+
+title=VS Code
+
+call %0 big
+
+call t a
+
+cls
+
+code
+
+exit/b
 
 
 

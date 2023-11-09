@@ -271,9 +271,6 @@ exit/b
 
 echo. & echo * The else statement.
 
-
-echo.
-
 rem (!else)
 
 if "%~1" == "" (
@@ -321,9 +318,6 @@ exit/b
 echo. & echo * Testing percent 2 and not equals.
 
 rem Function Creation Date: Jun-8-2018
-
-echo.
-
 
 set test_var=Rain in Spain.
 
@@ -379,7 +373,6 @@ echo. & echo Parameter Descriptions
 echo. & echo Parameter 2: alias.
 
 exit/b
-
 
 echo. & echo 8.
 if "%~2" == "" echo. & echo * Error: Parameter 2, ,is required. & exit/b
@@ -597,9 +590,6 @@ rem lu: Feb-4-2019
 rem set statements inside if blocks: skw
 
 echo.
-
-
-echo.
 if "%~2" == "" (
   call m set_cbf-app_to_dte
 )
@@ -615,9 +605,6 @@ exit/b
 echo. & echo * How to sort a file.
 
 rem lu: Feb-5-2019
-
-echo.
-
 
 echo.
 sort j3.txt>j4.txt
@@ -649,9 +636,6 @@ Try where /? for help.
 :Feb-5-2019
 
 echo.
-
-
-echo.
 where j.bat
 
 exit/b
@@ -665,9 +649,6 @@ exit/b
 echo. & echo * Load clipboard. How to put something onto the clipboard!
 
 rem lu: Feb-7-2019
-
-echo.
-
 
 echo "This text is on the clipboard. Cool." | clip
 rem echo "%cbf-pt%" | clip
@@ -687,9 +668,6 @@ exit/b
 echo. & echo * A loop that iterates x amount of times.
 
 rem lu: Mar-30-2020
-
-echo.
-
 
 set current_iteration_number=1
 set x=4
@@ -714,9 +692,6 @@ goto :iterate
 echo. & echo * An endless loop that pauses for 3 seconds.
 
 rem lu: Mar-30-2020
-
-echo.
-
 
 timeout /t 3
 
@@ -747,9 +722,6 @@ rem Result: Stangely, when calling with a colon, parameter doesn't seem to work.
 
 rem lu: Mar-21-2019
 
-echo.
-
-
 call %0 hw2 "Percent Zero!"
 
 call t hw2 "Called with t."
@@ -767,8 +739,6 @@ exit/b
 echo. & echo * Passing spaces in parameters.
 
 rem lu: Sep-9-2018
-
-
 
 echo.
 echo Percent 2: %2
@@ -807,9 +777,6 @@ echo. & echo * Checking the command line parameters.
 rem lu: Nov-27-2019
 
 echo.
-
-
-echo.
 rem This equals the entire parameter list!
 echo %*
 
@@ -831,9 +798,6 @@ exit/b
 echo. & echo * Reflection version 3. Dynamic variable naming.
 
 rem lu: Mar-30-2020
-
-echo.
-
 
 if "%~2" == "" (
   echo.
@@ -862,9 +826,6 @@ echo. & echo * Reflection version 4. Dynamic variable naming.
 
 rem lu: Mar-30-2020
 
-echo.
-
-
 if "%~3" == "" (
   echo.
   echo * Percent 2. Extension and 3. Alias are required.
@@ -891,9 +852,6 @@ exit/b
 echo. & echo * Test if folder exists. Test folder existence.
 
 rem lu: Apr-21-2020
-
-echo.
-
 
 cd /d %dropbox%\Backups\Savannah
 
@@ -922,9 +880,6 @@ exit/b
 echo. & echo * How to suppress error messages in batch files.
 
 rem lu: Nov-24-2020
-
-echo.
-
 
 rem For example, this would suppress the standard cannot find label error message.
 goto %1 2>nul
@@ -967,9 +922,6 @@ command 2>&1
 echo. & echo * Interesting Java code snippet that I'm not sure what it does.
 
 rem lu: Jan-31-2019
-
-echo.
-
 
 rem From gradlew.bat
 
@@ -1022,11 +974,7 @@ exit/b
 
 echo. & echo * If not defined.
 
-
 rem lu: Nov-1-2019
-
-echo.
-
 
 echo.
 set cbf-test=
@@ -1091,9 +1039,6 @@ echo. & echo * Inheritance and global variables.
 
 rem lu: Sep-1-2021
 
-echo.
-
-
 call pn tickl>nul
 
 set cbf-pd=1488
@@ -1143,9 +1088,6 @@ exit/b
 :hlp-old
 
 echo. & echo * Command line help.
-
-echo.
-
 
 set help_filename=%temp%\help_contents.txt
 
@@ -1436,8 +1378,6 @@ exit/b
 
 echo. & echo * The errorlevel statement.
 
-
-
 echo.
 echo * Errorlevel: %errorlevel%
 
@@ -1479,9 +1419,6 @@ rem lu: Nov-1-2019
 
 rem This works.
 
-echo.
-
-
 cd /d c:\aq
 
 if %errorlevel% equ 0 (
@@ -1505,9 +1442,6 @@ echo. & echo * Test error level when looking for folders. %1
 rem lu: Nov-1-2019
 
 rem This works.
-
-echo.
-
 
 cd /d c:\a
 
@@ -1680,9 +1614,6 @@ echo. & echo * Evaluate the parameter list, less capable version.
 
 rem lu: Nov-27-2019
 
-echo.
-
-
 set d_switch=0
 set e_switch=0
 set v_switch=0
@@ -1756,9 +1687,6 @@ rem Test percent star command.
 
 rem lu: Jan-31-2019
 
-echo.
-
-
 rem set cmd_line_args=%*
 
 rem echo.
@@ -1822,9 +1750,6 @@ echo. & echo * Testing errorlevel part 2.
 
 rem lu: Jan-28-2022
 
-echo.
-
-
 echo. & echo EL Begin: %errorlevel%
 
 if "%1" == "" (
@@ -1853,9 +1778,6 @@ exit/b
 
 echo. & echo * Test find command.
 
-echo.
-
-
 set test_find=hello
 
 echo %test_find% | find /i "hello">nul
@@ -1879,9 +1801,6 @@ exit/b
 :which_environment_is_currently_set
 
 echo. & echo * Which environment is the kiosk pointing to? (skw finding text in file)
-
-echo.
-
 
 type %config_1_destination% | find /i "fqt">nul
 
@@ -1934,9 +1853,6 @@ rem populating an environment variable from a file: skw
 rem The problem with this command is that it only does the first line of the file.
 
 echo.
-
-
-echo.
 set /p test=<c:\a\j1.txt
 
 echo.
@@ -1953,9 +1869,6 @@ how do you set an environment variable from file: skw
 :user_choice
 
 echo. & echo * Ask the user a question and proceed accordingly.
-
-echo.
-
 
 rem option, choose, choice
 
@@ -1975,9 +1888,6 @@ exit/b
 echo. & echo * Go to the where location.
 
 rem lu: Jun-20-2019
-
-echo.
-
 
 echo.
 where>c:\a\j1.txt
@@ -2007,9 +1917,6 @@ creation date: Jul-3-2023
 echo. & echo * Squiggle help.
 
 rem lu: Dec-30-2018
-
-echo.
-
 
 exit/b
 
@@ -2076,9 +1983,6 @@ rem lu: Dec-27-2018
 
 echo.
 
-
-echo.
-
 if not exist "package.json" (
   echo. & echo * Error: The file "package.json" must exist in order for you to run this command.
   exit/b
@@ -2104,9 +2008,6 @@ echo. & echo * Test harness for specific_folder_presence.
 
 rem lu: Nov-11-2019
 
-echo.
-
-
 call %0 specific_folder_presence .chef
 
 if %errorlevel% == 1 (
@@ -2129,9 +2030,6 @@ echo. & echo * To get help on the "if exist" command, use this code block.
 rem lu: Dec-27-2018
 
 echo.
-
-
-echo.
 if exist/?
 
 exit/b
@@ -2145,9 +2043,6 @@ exit/b
 echo. & echo * Test if a File does not exist.
 
 rem lu: Dec-27-2018
-
-echo.
-
 
 if not exist "amx.bat" (
   echo.
@@ -2306,9 +2201,6 @@ rem expository echo statement
 rem lu: Nov-2-2018
 
 echo.
-
-
-echo.
 echo The Gettysburg Address is a speech that U.S. President Abraham Lincoln delivered during ^
 the American Civil War at the dedication of the Soldiers' National Cemetery in Gettysburg, ^
 Pennsylvania, on the afternoon of Thursday, November 19, 1863, four and a half months after ^
@@ -2366,9 +2258,6 @@ echo. & echo * The ampersand character allows you to multiple commands on single
 
 rem The ampersand is the line continuation character for batch files.
 
-echo.
-
-
 echo. & echo hey 1 & echo hey 2
 
 exit/b
@@ -2382,9 +2271,6 @@ exit/b
 echo. & echo * Test line continuation character in environment variables.
 
 rem lu: Jun-17-2019
-
-echo.
-
 
 echo.
 set test=asdflasdff asdfasjklasdf asdflkasdfl  asdfasdfjklasdf asdfl asdf asdflasdfjklasdfl^
@@ -2422,9 +2308,6 @@ rem Escaping Specific Characters: ^esch
 rem lu: Nov-20-2018
 
 echo.
-
-
-echo.
 echo * Error: No "*.%2" file exist(s^) in the current folder.
 
 rem echo The rain in Spain(s) is great.
@@ -2441,9 +2324,6 @@ echo. & echo * Use of the at sign "@" before rem. Even with echo on, the stateme
 not be disploayed.
 
 rem lu: Jan-31-2019
-
-echo.
-
 
 echo.
 
