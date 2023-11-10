@@ -2,12 +2,16 @@
 
 @echo off
 
-
 if "%~1" == "" goto main
 if "%~1" == "?" goto help
 
 rem qq
 call paco "%~1" . && goto commit-current-folder
+
+if not "%~1" == "" (
+  call pa %1
+  exit/b
+)
 
 goto push-predetermined-repositories
 
@@ -18,7 +22,7 @@ goto push-predetermined-repositories
 
 cls
 
-echo. & echo * Push repositories.
+echo. & echo * Push predetermined repositories and more.
 
 echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
