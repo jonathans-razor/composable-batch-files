@@ -65,7 +65,6 @@ rem lu: Nov-9-2017
 
 echo.
 
-
 call t wir1
 
 xcopy /y "c:\mercury\batch_files\Wave_4_invert.png"
@@ -90,8 +89,6 @@ echo. & echo * Copy settings.xml file into the Maven Dependencies path.
 
 rem lu: Nov-21-2017
 
-
-
 call t m2
 
 xcopy c:\mercury\batch_files\settings.xml
@@ -107,7 +104,6 @@ exit/b
 echo. & echo * Copy Mobility resources to the Cordova folder.
 
 rem lu: Sep-28-2017
-
 
 echo.
 
@@ -138,8 +134,6 @@ echo. & echo * Copy over App.json for mobile build.
 rem lu: Sep-6-2017
 
 echo.
-
-
 call t pu
 
 xcopy /y "c:\mercury\mobility\androidspecific\app.json" "app.json"
@@ -157,8 +151,6 @@ echo. & echo * Copy over Testing 1 NetConfig.
 rem lu: Dec-6-2017
 
 echo.
-
-
 call t util
 
 xcopy /y "c:\mercury\mobility\NetConfig - for Testing1.js" "NetConfig.js"
@@ -176,8 +168,6 @@ echo. & echo * Copy file to code backup folder.
 rem lu: Nov-9-2017
 
 rem skw: slash replace
-
-echo.
 
 echo.
 
@@ -224,7 +214,6 @@ rem lu: Jul-13-2018
 
 echo.
 
-
 call t fr_ra
 
 call n fr_rs
@@ -251,7 +240,6 @@ rem lu: Sep-3-2018
 
 echo.
 
-
 xcopy %aa%\test3 %aa%\test1
 
 exit/b
@@ -268,7 +256,6 @@ rem lu: Oct-17-2018
 
 echo.
 
-
 xcopy *.cs %temp%\cart_cs /s
 
 exit/b
@@ -283,8 +270,6 @@ echo. & echo * Make a copy of CC.asc.
 
 echo.
 
-
-echo.
 xcopy /d /h /r /y "%reach out%\cc.asc" "%share-zone%\copy of cc.asc"
 
 exit/b
@@ -300,7 +285,6 @@ echo. & echo * Copy all files in the current folder to an alias specified path.
 rem lu: May-7-2019
 
 echo.
-
 
 if "%~2" == "" (
   echo.
@@ -334,7 +318,6 @@ rem lu: May-16-2019
 
 echo.
 
-
 call n j
 
 set source_filename=%cbf-jf%
@@ -358,8 +341,8 @@ echo. & echo * Copy share-zone Jenkinsfile to jj_devops Jenkinsfile.
 
 rem lu: May-16-2019
 
+rem qq
 echo.
-
 
 call n jft
 
@@ -383,9 +366,6 @@ exit/b
 echo. & echo * Copy newer Savannah files from dropbox to local drive.
 
 echo.
-
-
-echo.
 xcopy /d /r /s /y "%dropbox%\savannah" "%my documents%\savannah"
 
 exit/b
@@ -401,7 +381,6 @@ echo. & echo * Copy LDD from H drive to Share-zone.
 rem lu: Jul-1-2019
 
 echo.
-
 
 call cyff hldd ldd
 
@@ -420,7 +399,6 @@ echo. & echo * Copy empty max on top of max.
 rem lu: Jun-2-2020
 
 echo.
-
 
 call t max
 
@@ -442,7 +420,6 @@ rem lu: Aug-12-2021
 
 echo.
 
-
 xcopy /r /s %2 %3
 
 exit/b
@@ -458,7 +435,6 @@ echo. & echo * New vdi pass-through batch file.
 rem lu: Feb-4-2022
 
 echo.
-
 
 if "%~1" == "" (
   echo. & echo * Error: Percent 2, new batch file name, is required.
@@ -878,7 +854,6 @@ rem lu: Aug-29-2020
 
 echo.
 
-
 call t mecfg
 
 cd..
@@ -906,7 +881,6 @@ rem lu: Dec-27-2018
 
 echo.
 
-
 call t mecfg
 
 echo.
@@ -926,7 +900,6 @@ rem lu: Dec-27-2018
 
 echo.
 
-
 call t mecfg
 
 echo.
@@ -943,9 +916,6 @@ exit/b
 echo. & echo * Copy Multi-Edit configuration files from dropbox to my local drive.
 
 echo. & echo * Now do vice versa.
-
-echo.
-
 
 echo.
 xcopy /d /r /s /y "%dropbox%\Multi-Edit_2008_Config_Files" "%Multi-Edit_2008_Config_Files%"

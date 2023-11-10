@@ -51,8 +51,6 @@ echo. & echo * Build for FQT.
 rem lu: Sep-17-2019
 
 echo.
-
-
 echo.
 ng build --configuration=fqt
 
@@ -69,8 +67,6 @@ echo. & echo * Complie and start Angular for production - old. Not sure this wor
 rem lu: Feb-12-2019
 
 echo.
-
-
 echo.
 ng build --prod
 
@@ -87,8 +83,6 @@ echo. & echo * Build angular.
 rem lu: Mar-19-2019
 
 echo.
-
-
 echo.
 ng build
 
@@ -111,8 +105,6 @@ echo. & echo * Build for production, zip file with td alias.
 rem lu: Nov-21-2019
 
 echo.
-
-
 call t rf_ma
 
 cd portal-client
@@ -136,8 +128,6 @@ echo. & echo * Compile and start Angular for production. I have used this since 
 rem lu: Mar-3-2020
 
 echo.
-
-
 echo.
 ng build --configuration=prod
 
@@ -162,8 +152,6 @@ rem skw run tests, run unit tests
 rem lu: Jun-30-2020
 
 echo.
-
-
 call t ui
 
 echo.
@@ -186,8 +174,6 @@ echo. & echo * Create a starter app.
 rem lu: Oct-29-2021
 
 echo.
-
-
 ng new myapp
 
 exit/b
@@ -203,8 +189,6 @@ echo. & echo * Create a component.
 rem lu: Oct-29-2021
 
 echo.
-
-
 ng generate component
 
 exit/b
@@ -238,8 +222,6 @@ echo. & echo * Compile and start Angular.
 rem lu: Feb-11-2019
 
 echo.
-
-
 echo %cd% | find /i "\portal-client">nul
 
 if %errorlevel% == 1 (

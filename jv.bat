@@ -49,8 +49,6 @@ echo. & echo * Investigate Java installation.
 rem lu: Dec-13-2018
 
 echo.
-
-
 call t jvpf
 
 if %errorlevel% == 0 (
@@ -84,8 +82,6 @@ echo. & echo * Rename Jar file to zip file in order to examine its contents.
 rem lu: Dec-14-2018
 
 echo.
-
-
 echo.
 ren *.jar *.zip
 
@@ -100,8 +96,6 @@ exit/b
 echo. & echo * Run Jenkins.
 
 echo.
-
-
 call t desk
 
 call m file_type_presence war
@@ -131,8 +125,6 @@ rem Outcome: This works!
 
 echo.
 
-echo.
-
 cd c:\mercury\batch_files
 
 javac generate_mercury_version_number.java
@@ -156,8 +148,6 @@ echo. & echo * Build all the jars in the libs folder?
 rem lu: Apr-2-2020
 
 echo.
-
-
 echo.
 java -jar build/libs/*.jar
 
@@ -208,8 +198,6 @@ echo. & echo * Never used notional prototype. Compile, interpret and run the fil
 rem I never needed to use this one because "%0 ir" seemed to run the java program just fine.
 
 echo.
-
-
 call %0 c %2
 call %0 r %2.java
 

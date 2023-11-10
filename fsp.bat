@@ -38,8 +38,6 @@ echo. & echo * Conflicted Copy Report
 rem lu: Feb-15-2019
 
 echo.
-
-
 set cbf-fn=%temp%\conflicted copy report.txt
 
 echo. > "%cbf-fn%"

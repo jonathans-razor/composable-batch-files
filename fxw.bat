@@ -41,8 +41,6 @@ exit/b
 echo. & echo * Open the Confluence Homepage.
 
 echo.
-
-
 call fx cfrp %1 kr>nul
 
 exit/b
@@ -91,8 +89,6 @@ exit/b
 echo. & echo * Jenkins root.
 
 echo.
-
-
 call fx jero %1 kr
 
 exit/b
@@ -121,8 +117,6 @@ exit/b
 echo. & echo * CVT pull requests webpage.
 
 echo.
-
-
 @echo on
 call fx cvt %1 kr>nul
 
@@ -137,8 +131,6 @@ exit/b
 echo. & echo * Art Playbook releases webpage.
 
 echo.
-
-
 call fx cp %1 kr>nul
 
 exit/b
@@ -152,8 +144,6 @@ exit/b
 echo. & echo * Vault home page.
 
 echo.
-
-
 call fx et %1 kr>nul
 
 exit/b

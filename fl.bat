@@ -48,8 +48,6 @@ rem This worked.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=d:\aa\test1
 
 for /r %cbf-pt% %%j in (*.yml) do ren %%j *.txt
@@ -71,8 +69,6 @@ rem This worked.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 for /r %cbf-pt% %%j in (*.yml) do ren %%j *.txt
@@ -90,8 +86,6 @@ echo. & echo * Iterate recursively over the files.
 rem lu: Aug-13-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 echo.
@@ -110,8 +104,6 @@ echo. & echo * Find zero-length files.
 rem lu: Aug-13-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 echo.
@@ -130,8 +122,6 @@ echo. & echo * Find zero-length files.
 rem lu: Aug-13-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 echo.
@@ -154,8 +144,6 @@ rem This worked. It was helpful because the Dropbox app on my iPad can't seem to
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 for /r "%cbf-pt%" %%f in (*.*) do echo Here's a file.
@@ -177,8 +165,6 @@ rem This worked. It was helpful because the Dropbox app on my iPad can't seem to
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 @echo on
@@ -200,8 +186,6 @@ echo. & echo * In the current folder, find zero-length files.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 for /r "%cbf-pt%" %%f in (*.*) do if %%~zf==0 echo Here's a file.
@@ -223,8 +207,6 @@ rem The space in the folder name did surprisingly NOT mess this up.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 for /r "%cbf-pt%" %%f in (*.*) do if %%~zf==0 echo Here's a file.
@@ -246,8 +228,6 @@ rem The space in the folder name did surprisingly NOT mess this up.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 for /r "%cbf-pt%" %%f in (*.*) do if %%~zf==0 del "%%f"
@@ -277,8 +257,6 @@ rem The space in the folder name did surprisingly NOT mess this up.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 for /r "%cbf-pt%" %%f in (*.*) do if %%~zf lss 6 echo Here's a file.
@@ -298,8 +276,6 @@ echo. & echo * In the current folder, delete zero-length files.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 for /r "%cbf-pt%" %%f in (*.*) do if %%~zf lss 6 del "%%f"
@@ -311,8 +287,6 @@ exit/b
 :_
 
 set fp= 9. * Copy theme jpegs.
-
-echo.
 
 echo.
 
@@ -337,8 +311,6 @@ echo. & echo * Copy files to examination location.
 rem FCD: Mar-21-2017
 
 echo.
-
-
 cd "\aa\Count Lines of Code in Mercury"
 
 cd
@@ -358,8 +330,6 @@ echo. & echo * Count the number of lines of Java code.
 rem FCD: Mar-21-2017
 
 echo.
-
-
 cd "\projects"
 
 cd
@@ -377,8 +347,6 @@ echo. & echo * Count the number of lines of JavaScript code.
 rem FCD: Mar-21-2017
 
 echo.
-
-
 cd "\projects"
 
 cd
@@ -396,8 +364,6 @@ echo. & echo * Count the number of JavaScript files.
 rem FCD: Mar-21-2017
 
 echo.
-
-
 cd "\projects"
 
 cd
@@ -415,8 +381,6 @@ echo. & echo * Count the number of Java files.
 rem FCD: Mar-21-2017
 
 echo.
-
-
 cd "\projects"
 
 cd
@@ -434,8 +398,6 @@ echo. & echo * Count the number of lines of JavaScript code.
 rem FCD: Mar-21-2017
 
 echo.
-
-
 cd "%my documents%\gpodder\downloads"
 
 cd
@@ -449,8 +411,6 @@ m exitp
 :_
 
 echo. & echo * Look for empty folder.
-
-echo.
 
 echo.
 
@@ -473,8 +433,6 @@ rem Outcome: This works!
 
 echo.
 
-echo.
-
 cd\aa
 
 for /r %%a in (.) do (dir /b "%%a" | find /v "NoTlIkElY" >nul && echo %%a NOT empty || >>FILES.TXT echo %%a empty)
@@ -491,8 +449,6 @@ rem Outcome: This works!
 
 echo.
 
-echo.
-
 cd %dropbox%
 
 for /r %%a in (.) do (dir /b "%%a" | find /v "NoTlIkElY" >nul && echo %%a NOT empty || >>Empty_Dropbox_Folders.txt echo %%a Empty folder.)
@@ -504,8 +460,6 @@ exit/b
 :_
 
 echo. & echo * Find all empty folders in Dropbox. Version 2. Do the recursion.
-
-echo.
 
 echo.
 
@@ -535,8 +489,6 @@ echo. & echo * Copy java files.
 
 echo.
 
-echo.
-
 for /r "c:\pcarss" %%f in ("*.java") do copy "%%f" "c:\!!\Copied Java Files"
 
 m exit
@@ -546,8 +498,6 @@ m exit
 :_
 
 echo. & echo * Copy text files.
-
-echo.
 
 echo.
 
@@ -578,8 +528,6 @@ echo. & echo * Find files of size less than 6 bytes.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 echo.
@@ -598,8 +546,6 @@ echo. & echo * Delete files of size less than 6 bytes.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 echo.
@@ -622,8 +568,6 @@ echo. & echo * Delete empty folders.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 echo.
@@ -644,8 +588,6 @@ echo. & echo * Find empty folders even if the folder has a space in it.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 echo.
@@ -672,8 +614,6 @@ echo. & echo * Delete empty folders even if the folder has a space in it.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 echo.
@@ -690,8 +630,6 @@ exit/b
 echo. & echo * Find all empty folders in Dropbox.
 
 echo.
-
-
 rem Outcome: This works!
 
 dir | find /i "0 file">nul
@@ -714,8 +652,6 @@ echo. & echo * Find files of size less than 6 bytes.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 echo.
@@ -734,8 +670,6 @@ echo. & echo * Prettier find empty folder that doesn't work.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 echo.
@@ -758,8 +692,6 @@ echo. & echo * Prettier find empty folder that doesn't work 2.
 rem lu: Aug-12-2021
 
 echo.
-
-
 set cbf-pt=%cd%
 
 echo.

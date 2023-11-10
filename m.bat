@@ -504,9 +504,7 @@ rem fcd: Mar-6-2017
 cd c:\projects\netbeans\mercury6\mercury-tirem\target
 
 echo Current folder: %cd%
-echo.
-
-echo If target folder is not present, you should create it.
+echo.If target folder is not present, you should create it.
 
 pause
 
@@ -542,8 +540,6 @@ exit/b
 echo. & echo * Generate a new timestamp-based Mercury version number.
 
 rem fcd: Apr-10-2017
-
-echo.
 
 echo.
 
@@ -1430,17 +1426,13 @@ call :set_wildfly_location
 cd %wildfly_location%\standalone\deployments
 
 echo Current folder: %cd%
-echo.
-
-echo Delete old war files.
+echo.Delete old war files.
 del /f /q *.*
 
 cd %wildfly_location%\standalone
 
 echo Current folder: %cd%
-echo.
-
-echo Delete data folder.
+echo.Delete data folder.
 rd /q /s data
 
 echo Delete tmp folder.
@@ -1473,9 +1465,7 @@ call :set_wildfly_location
 cd %wildfly_location%\standalone\deployments
 
 echo Current folder: %cd%
-echo.
-
-echo Delete deployed war file.
+echo.Delete deployed war file.
 echo.
 
 del /q *.*deployed
@@ -1483,9 +1473,7 @@ del /q *.*deployed
 cd %wildfly_location%\standalone
 
 echo Current folder: %cd%
-echo.
-
-echo Delete data folder.
+echo.Delete data folder.
 rd /q /s data
 
 echo Delete tmp folder.
@@ -1643,9 +1631,7 @@ call :delete_stale_ext_from_wildfly_dynamic_folder
 
 echo. & echo * Copy fresh Ext JS into WildFly folder. This should be used only when WildFly is running because it depends on the presence of an active hex folder.
 
-echo.
-
-echo Current Folder: %cd%
+echo.Current Folder: %cd%
 echo.
 
 xcopy /d /h /r /s /y c:\projects\netbeans\sencha\HTML5Application\public_html\build\development\Mercury

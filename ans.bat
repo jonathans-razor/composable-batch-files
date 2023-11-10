@@ -94,8 +94,6 @@ echo. & echo * Version info.
 rem lu: Jul-31-2020
 
 echo.
-
-
 echo.
 ansible --version
 
@@ -112,8 +110,6 @@ echo. & echo * Playbook Version info.
 rem lu: Jul-31-2020
 
 echo.
-
-
 ansible-playbook --version
 
 exit/b
@@ -129,8 +125,6 @@ echo. & echo * %1.
 rem lu: Jul-31-2020
 
 echo.
-
-
 echo.
 ansible all -i hosts -u zs_ci_user -m command -a "uptime" --key-file /tmp/cart-np-key.pem
 
@@ -252,8 +246,6 @@ echo. & echo * %1.
 rem lu: Jul-31-2020
 
 echo.
-
-
 echo.
 ansible ansl -i hosts -u zs_ci_user -m setup --key-file /tmp/cart-np-key.pem
 
@@ -288,8 +280,6 @@ echo. & echo * %1. Per Craig L.
 rem lu: Jul-31-2020
 
 echo.
-
-
 echo.
 ansible all -i ./hosts -u zs_ci_user -m setup --key-file cart-np-key.pem
 

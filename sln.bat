@@ -67,8 +67,6 @@ echo. & echo * Run the Visual Studio solution in the current folder.
 rem (!rfsp) (mov2)
 
 echo.
-
-
 dir /b *.sln>%tmp%\filename.txt
 
 if %errorlevel% == 1 (

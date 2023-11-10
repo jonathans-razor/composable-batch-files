@@ -144,8 +144,6 @@ goto use_alias
 echo. & echo * Use alias to find filename. Sep-5-2021_6_02_PM
 
 echo.
-
-
 call fnv %~1
 
 if %errorlevel% == 4 (
@@ -220,8 +218,6 @@ exit/b 0
 echo. & echo * The batch file label and CBF were found but file does MOT exist.
 
 echo.
-
-
 echo.>"%cbf-fn%"
 
 echo.

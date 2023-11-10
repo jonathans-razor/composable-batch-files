@@ -149,8 +149,6 @@ rem lu: Feb-1-2018
 
 echo.
 
-echo.
-
 dir /os %2
 
 exit/b
@@ -168,8 +166,6 @@ exit/b
 echo. & echo * Recently modified.
 
 echo.
-
-
 forfiles /s /d 06/24/2020 /c "cmd /c echo @fdate @path"
 
 exit/b
@@ -195,8 +191,6 @@ rem The problem is that this doesn't search subfolders.
 rem lu: Mar-6-2019
 
 echo.
-
-
 forfiles /s /d +0 /c "cmd /c if @isdir==FALSE echo @path @ftime @fsize">%temp%\d_search_results_fs.txt
 
 if %Errorlevel% == 0 echo.
@@ -223,8 +217,6 @@ echo. & echo * Files and folders changed today.
 rem lu: Feb-1-2018
 
 echo.
-
-
 forfiles /d +0 /c "cmd /c echo @file @ftime @fsize"
 
 exit/b
@@ -242,8 +234,6 @@ rem skw: by file type
 rem lu: Jun-24-2021
 
 echo.
-
-
 echo.
 dir /oe
 

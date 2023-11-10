@@ -22,9 +22,7 @@ echo. & echo * Usage: %0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1 (Optional): If not blank, will show current timestamp.
 
-echo. & echo 
-
-echo. & echo * Batch file style: Single purpose
+echo. & echo. & echo * Batch file style: Single purpose
 
 echo. & echo * Sample(s):
 echo. & echo * 

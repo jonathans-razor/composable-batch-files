@@ -47,8 +47,6 @@ exit/b
 echo. & echo * Reset color to original value.
 
 echo.
-
-
 color
 
 exit/b
@@ -64,8 +62,6 @@ echo. & echo * Yellow on black.
 rem lu: Jan-22-2019
 
 echo.
-
-
 color 0e
 
 exit/b
@@ -83,8 +79,6 @@ echo. & echo * Show values.
 rem lu: Jan-22-2019
 
 echo.
-
-
 color /?
 
 exit/b

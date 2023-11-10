@@ -55,8 +55,6 @@ exit/b
 echo. & echo * You entered %1.
 
 echo.
-
-
 exit/b
 
 
@@ -68,8 +66,6 @@ exit/b
 echo. & echo * You entered the number %1.
 
 echo.
-
-
 exit/b
 
 
@@ -81,8 +77,6 @@ exit/b
 echo. & echo * %1 is what you typed.
 
 echo.
-
-
 exit/b
 
 

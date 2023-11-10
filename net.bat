@@ -49,8 +49,6 @@ exit/b
 echo. & echo * Plain.
 
 echo.
-
-
 echo.
 netstat -a -n -o
 
@@ -65,8 +63,6 @@ exit/b
 echo. & echo * Search for string.
 
 echo.
-
-
 netstat -ano | findstr :%1
 
 exit/b
@@ -82,8 +78,6 @@ echo. & echo * Netstat used by Mercury version 1.
 rem lu: Mar-6-2019
 
 echo.
-
-
 echo.
 netstat -a -n>%temp%\j1.txt
 
@@ -100,8 +94,6 @@ echo. & echo * Netstat used by Mercury version 2.
 rem lu: Mar-6-2019
 
 echo.
-
-
 echo.
 netstat -an>%temp%\j2.txt
 

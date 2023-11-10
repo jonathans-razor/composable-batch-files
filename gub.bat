@@ -54,8 +54,6 @@ rem Coreutils - GNU core utilities
 echo. & echo * Peform the default action which is 
 
 echo.
-
-
 exit/b
 
 

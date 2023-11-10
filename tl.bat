@@ -128,8 +128,6 @@ echo. & echo * Test. This works.
 rem lu: Jan-4-2019
 
 echo.
-
-
 TASKLIST /FI "USERNAME ne NT AUTHORITY\SYSTEM" /FI "STATUS eq running"
 
 exit/b
@@ -145,8 +143,6 @@ echo. & echo * Undercase. This works.
 rem lu: Jan-4-2019
 
 echo.
-
-
 tasklist /fi "username ne nt authority\system" /fi "status eq running"
 
 exit/b
@@ -164,8 +160,6 @@ echo. & echo * Windows Explorer.
 rem lu: Jan-4-2019
 
 echo.
-
-
 tasklist /fi "username ne nt authority\system" /fi "status eq running" /fi "imagename eq explorer.exe" /fi "windowtitle ne untitle*"
 
 rem These don't work.

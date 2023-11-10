@@ -148,8 +148,6 @@ goto main
 echo. & echo * Restore file.
 
 echo.
-
-
 set cbf-destination_fn=%cbf-expanded-variable%
 
 echo.

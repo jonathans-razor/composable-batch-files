@@ -57,8 +57,6 @@ The following were installed at: 'C:\Program Files\dotnet\'
 echo. & echo * Restore Nuget packages.
 
 echo.
-
-
 echo.
 dotnet restore
 
@@ -78,8 +76,6 @@ echo. & echo * Create a database based on the current project's DbContext.
 rem lu: Sep-17-2018
 
 echo.
-
-
 echo.
 dotnet ef database update
 
@@ -96,8 +92,6 @@ echo. & echo * Use EF migragions
 rem lu: Sep-18-2018
 
 echo.
-
-
 echo.
 dotnet ef migrations add initialdb
 
@@ -114,8 +108,6 @@ echo. & echo * Seed migration.
 rem lu: Sep-18-2018
 
 echo.
-
-
 echo.
 dotnet ef migrations add SeeData
 
@@ -132,8 +124,6 @@ echo. & echo * Set environment to development. This is helpful to see debugging 
 rem lu: Sep-19-2018
 
 echo.
-
-
 set ASPNETCORE_ENVIRONMENT=Development
 
 exit/b
@@ -210,8 +200,6 @@ exit/b
 echo. & echo * New conosle app.
 
 echo.
-
-
 echo.
 dotnet new console -o MyApp -f net7.0
 

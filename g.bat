@@ -61,8 +61,6 @@ rem lu: Sep-27-2022
 echo. & echo * 3a. Push changes into development branch.
 
 echo.
-
-
 cd | find /i "Development">nul
 if not %errorlevel% == 0 echo * Error: This is the master, not the development, folder so exiting.
 if not %errorlevel% == 0 echo exit/b
@@ -81,8 +79,6 @@ exit/b
 echo. & echo * 5a. Add remote origin for testing. This is a one-time action. (!arot)
 
 echo.
-
-
 echo.
 git remote add origin https://github.com/jonathan-r-jones/for_git_testing_and_learning.git
 
@@ -97,8 +93,6 @@ exit/b
 echo. & echo * 5a. Add remote origin for testing. This is a one-time action. (!arot)
 
 echo.
-
-
 echo.
 git remote add origin https://github.com/jonathan-r-jones/for_git_testing_and_learning.git
 
@@ -113,8 +107,6 @@ exit/b
 echo. & echo * 5b. Add remote origin for testing. This is a one-time action.
 
 echo.
-
-
 echo.
 git remote add origin https://github.com/jonathan-r-jones/test-eclipse-project.git
 
@@ -129,8 +121,6 @@ exit/b
 echo. & echo * 5d. Add remote origin for Quickla. This is a one-time action.
 
 echo.
-
-
 echo.
 git remote add origin https://github.com/jonathan-r-jones/quickla.git
 
@@ -145,8 +135,6 @@ exit/b
 echo. & echo * 5e. Add remote origin for Batch Files. This is a one-time action.
 
 echo.
-
-
 echo.
 git remote add origin https://github.com/jonathan-r-jones/batch-files.git
 
@@ -161,8 +149,6 @@ exit/b
 echo. & echo * 8. Read help.
 
 echo.
-
-
 git --help>"%temp%\git_help.txt"
 
 "%cbf-default-text-editor%" "%temp%\git_help.txt"
@@ -179,8 +165,6 @@ exit/b
 echo. & echo * 3a. Push changes into Nov-1 development branch.
 
 echo.
-
-
 echo.
 git push -u origin HEAD:development-Nov-1-2016
 
@@ -199,8 +183,6 @@ exit/b
 echo. & echo * pushnv
 
 echo.
-
-
 echo.
 git push -u origin HEAD:dev-Dec-5-2016
 
@@ -235,8 +217,6 @@ echo. & echo * Fetch branch.
 rem Creation Date: Jan-23-2017
 
 echo.
-
-
 rem Didn't work on Dec-20-2016.
 rem git fetch && git checkout Dec-20-2016
 rem git fetch && git checkout clean6.2
@@ -256,8 +236,6 @@ exit/b
 echo. & echo * 9b. Pull original branch.
 
 echo.
-
-
 @echo on
 git pull origin original
 @echo off
@@ -275,8 +253,6 @@ echo. & echo * Remove an individual file.
 rem fcd: Feb-16-2017
 
 echo.
-
-
 git rm -f %2
 
 exit/b
@@ -290,8 +266,6 @@ echo. & echo * This code block was added from my machine named Buzz.
 rem fcd: Feb-28-2017
 
 echo.
-
-
 exit/b
 
 
@@ -327,8 +301,6 @@ echo. & echo * Push changes into master.
 
 echo.
 
-echo.
-
 git push -u origin master
 
 exit/b
@@ -344,8 +316,6 @@ echo. & echo * Add and commit a Pom file.
 rem fcd: Apr-11-2017
 
 echo.
-
-
 call %0 csf pom.xml "Update version number."
 call %0 csf Mercury-ear/pom.xml "Update version number."
 call %0 csf Mercury-ejb/pom.xml "Update version number."
@@ -364,8 +334,6 @@ echo. & echo * Add, commit and push for batch file changes for mobility.
 rem fcd: Oct-24-2017
 
 echo.
-
-
 cd c:\mercury\mobility
 
 call %0 acp
@@ -398,8 +366,6 @@ echo. & echo * Add POM files for version labelling.
 rem fcd: May-3-2017
 
 echo.
-
-
 call %0 asf Mercury-ear/pom.xml
 
 call %0 asf Mercury-ejb/pom.xml
@@ -423,8 +389,6 @@ echo. & echo * Add, commit and push for regression test document changes.
 rem fcd: May-30-2017
 
 echo.
-
-
 cd c:\mercury\documentation
 
 call %0 acp
@@ -444,8 +408,6 @@ echo. & echo * Delete mysteriously added png image files.
 rem fcd: Apr-28-2017
 
 echo.
-
-
 cd c:\projects\netbeans\mercury6
 
 del Mercury-web\src\main\webapp\classic\resources\images\font-awesome_4-7-0_rss-square_16_16_000000_none.png
@@ -468,8 +430,6 @@ rem specific folder: skw
 rem Creation Date: Jun-20-2017
 
 echo.
-
-
 call t m6
  
 cd .\Mercury-web\src\main\webapp\classic\resources\images
@@ -491,8 +451,6 @@ echo. & echo * Delete pngs 2.
 rem Creation Date: Aug-3-2017
 
 echo.
-
-
 call t m6
  
 cd .\Mercury-web\src\main\webapp\resources\WorldWind\images\pushpins
@@ -530,8 +488,6 @@ echo. & echo * Check remote status.
 
 echo.
 
-echo.
-
 git remote update
 
 exit/b
@@ -547,8 +503,6 @@ echo. & echo * Pull batch files.
 rem lu: Nov-17-2017
 
 echo.
-
-
 call t ba
 
 call g pull
@@ -566,8 +520,6 @@ echo. & echo * Check 4 statuses.
 rem lu: Dec-5-2017
 
 echo.
-
-
 call cls
 
 call %0 ss
@@ -637,8 +589,6 @@ git push -u origin master
 
 echo.
 
-echo.
-
 exit/b
 
 
@@ -654,8 +604,6 @@ echo. & echo * Add, commit and push for batch file changes.
 rem fcd: Apr-13-2017
 
 echo.
-
-
 call t cbf
 
 call %0 acp
@@ -741,8 +689,6 @@ echo. & echo * Surf to this repository in Git.
 rem lu: Jan-5-2018
 
 echo.
-
-
 start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://github.com/jonathan-r-jones/composable-batch-files
 
 exit/b
@@ -764,8 +710,6 @@ rem Creation Date: Jan-23-2017
 rem remove: skw
 
 echo.
-
-
 rd /q /s .git
 
 exit/b
@@ -779,8 +723,6 @@ exit/b
 echo. & echo * 9b. Identify branch.
 
 rem skw: identify_branch
-
-echo.
 
 echo.
 
@@ -807,8 +749,6 @@ echo. & echo * Set the tag version number.
 rem lu: Apr-25-2018
 
 echo.
-
-
 git tag %2
 
 exit/b
@@ -824,8 +764,6 @@ echo. & echo * Get the tag version numbers.
 rem lu: Apr-25-2018
 
 echo.
-
-
 echo.
 git tag
 
@@ -842,8 +780,6 @@ echo. & echo * Push tags.
 rem lu: Apr-25-2018
 
 echo.
-
-
 echo.
 git push --tags
 
@@ -2088,8 +2024,6 @@ rem lu: Jan-22-2018
 
 echo.
 
-echo.
-
 git mergetool --tool-help
 
 exit/b
@@ -2103,8 +2037,6 @@ exit/b
 echo. & echo * Set default merge tool to use.
 
 rem lu: Jan-22-2018
-
-echo.
 
 echo.
 

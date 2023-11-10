@@ -64,8 +64,6 @@ echo. & echo * Version.
 rem lu: Jan-8-2019
 
 echo.
-
-
 gradle -version
 
 exit/b
@@ -83,8 +81,6 @@ echo. & echo * List tasks.
 rem lu: Jan-9-2019
 
 echo.
-
-
 echo.
 gradle tasks
 
@@ -101,8 +97,6 @@ echo. & echo * Status.
 rem lu: Jan-9-2019
 
 echo.
-
-
 echo.
 call gradle --status
 
@@ -123,8 +117,6 @@ echo. & echo * Build.
 rem lu: Jan-9-2019
 
 echo.
-
-
 echo.
 call gradle build
 
@@ -147,8 +139,6 @@ rem color 60
 rem lu: Jan-8-2019
 
 echo.
-
-
 call %0 d
 
 exit/b
@@ -164,8 +154,6 @@ echo. & echo * Help
 rem lu: Jan-9-2019
 
 echo.
-
-
 echo.
 gradle help
 
@@ -182,8 +170,6 @@ echo. & echo * Model.
 rem lu: Jan-9-2019
 
 echo.
-
-
 echo.
 gradle model
 
@@ -200,8 +186,6 @@ echo. & echo * Properties.
 rem lu: Jan-9-2019
 
 echo.
-
-
 echo.
 gradle properties
 
@@ -218,8 +202,6 @@ echo. & echo * Scan. Builds an online report.
 rem lu: Jan-11-2019
 
 echo.
-
-
 echo.
 gradle --scan
 
@@ -236,8 +218,6 @@ echo. & echo * Update Liquibase.
 rem lu: Jan-16-2019
 
 echo.
-
-
 echo.
 gradle liquibaseUpdate
 
@@ -256,8 +236,6 @@ rem color 60
 rem lu: Jan-8-2019
 
 echo.
-
-
 echo.
 gradlew
 
@@ -277,8 +255,6 @@ echo. & echo * Gradlew build.
 rem lu: Jan-9-2019
 
 echo.
-
-
 echo.
 gradlew build
 
@@ -295,8 +271,6 @@ echo. & echo * Build for production, war file. This optimizes the cart-api appli
 rem lu: Jan-8-2019
 
 echo.
-
-
 echo.
 call gradlew -Pprod clean bootWar
 echo.
@@ -314,8 +288,6 @@ echo. & echo * FQT bootrun.
 rem lu: Mar-6-2019
 
 echo.
-
-
 echo.
 gradle -Pfqt bootrun
 
@@ -332,8 +304,6 @@ echo. & echo * Daily build per Sean.
 rem lu: Jun-20-2019
 
 echo.
-
-
 call tdc cart
 
 call pl
@@ -353,8 +323,6 @@ echo. & echo * Bootrun from Sean. Notice that there is also a Maven version of t
 rem lu: Jan-9-2019
 
 echo.
-
-
 echo %cd% | find /i "\api">nul
 
 if %errorlevel% == 1 (
@@ -382,8 +350,6 @@ echo. & echo * Edward's gradle command.
 rem lu: Jun-21-2019
 
 echo.
-
-
 echo %cd% | find /i "\api">nul
 
 if %errorlevel% == 1 (
@@ -410,8 +376,6 @@ echo. & echo * Run the API using Matt's gradle command and attach the debugger.
 rem lu: Nov-8-2019
 
 echo.
-
-
 echo %cd% | find /i "\api">nul
 
 if %errorlevel% == 1 (
@@ -436,8 +400,6 @@ echo. & echo * Run the API using Matt's gradle command with the FQT option too.
 rem lu: Nov-8-2019
 
 echo.
-
-
 echo %cd% | find /i "\api">nul
 
 if %errorlevel% == 1 (
@@ -462,8 +424,6 @@ echo. & echo * Bootrun from Matt.
 rem lu: Aug-12-2019
 
 echo.
-
-
 echo %cd% | find /i "\api">nul
 
 if %errorlevel% == 1 (
@@ -490,8 +450,6 @@ echo. & echo * Run the API using Matt's gradle command.
 rem lu: Nov-8-2019
 
 echo.
-
-
 echo %cd% | find /i "\api">nul
 
 if %errorlevel% == 1 (
@@ -520,8 +478,6 @@ rem This worked on Jun-20-2019 but only after I fixed the PKIX issue.
 rem lu: Jun-20-2019
 
 echo.
-
-
 echo %cd% | find /i "\api">nul
 
 if %errorlevel% == 1 (
@@ -546,8 +502,6 @@ echo. & echo * Gradlew Debug. You should only use gradlew, not gradle.
 rem lu: Nov-12-2019
 
 echo.
-
-
 echo.
 gradlew --debug
 
@@ -568,8 +522,6 @@ echo. & echo * Build Jar for dev environment.
 rem lu: Aug-14-2019
 
 echo.
-
-
 call m specific_file_presence gradlew.bat
 
 if %errorlevel% == 1 (
@@ -592,8 +544,6 @@ echo. & echo * Build Jar for FQT environment.
 rem lu: Sep-17-2019
 
 echo.
-
-
 call m specific_file_presence gradlew.bat
 
 if %errorlevel% == 1 (
@@ -616,8 +566,6 @@ echo. & echo * Build Jar for Docker environment.
 rem lu: Sep-17-2019
 
 echo.
-
-
 call m specific_file_presence gradlew.bat
 
 if %errorlevel% == 1 (
@@ -646,8 +594,6 @@ echo. & echo * Build Jar for Docker environment with clean.
 rem lu: Sep-17-2019
 
 echo.
-
-
 call m specific_file_presence gradlew.bat
 
 if %errorlevel% == 1 (
@@ -678,8 +624,6 @@ echo. & echo * Webpack.
 rem lu: Mar-27-2020
 
 echo.
-
-
 echo.
 gradlew -x webpack
 npm start
@@ -699,8 +643,6 @@ rem lu: Apr-22-2020
 rem Run gradle wrapper to get gradle w to work.
 
 echo.
-
-
 echo.
 gradle wrapper
 
@@ -721,8 +663,6 @@ rem You may need to disconnect from the VPN for this function to work.
 cls
 
 echo.
-
-
 call t csc
 
 rem Gradlew didn't initially work, but now it does after I ran gradle wrapper. Apr-22-2020
@@ -747,8 +687,6 @@ echo. & echo * Build for production, jar file with td alias.
 rem lu: Jan-17-2020
 
 echo.
-
-
 call t rf_ma
 
 cd api
@@ -768,8 +706,6 @@ echo. & echo * Build for production jar file for the rest-client.
 rem lu: Apr-27-2020
 
 echo.
-
-
 call tdc csc>nul
 
 call %0 build_jar_for_production
@@ -787,8 +723,6 @@ echo. & echo * Build Jar for prod environment.
 rem lu: Jan-17-2020
 
 echo.
-
-
 call m specific_file_presence gradlew.bat
 
 if errorlevel 1 exit/b 1
@@ -825,8 +759,6 @@ rem skw run tests, run unit tests
 rem lu: Jun-30-2020
 
 echo.
-
-
 call t api
 
 echo.

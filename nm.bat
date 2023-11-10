@@ -63,8 +63,6 @@ echo. & echo * Involved help.
 rem lu: Apr-24-2018
 
 echo.
-
-
 npm help npm
 
 exit/b
@@ -81,8 +79,6 @@ rem lu: Apr-24-2018
 
 echo.
 echo.
-
-
 npm help %2
 
 exit/b
@@ -98,8 +94,6 @@ echo. & echo * NPM help-search for a specific command.
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm help-search %2
 
@@ -147,8 +141,6 @@ echo. & echo * Set default license to MIT.
 rem lu: Apr-24-2018
 
 echo.
-
-
 npm set init-license 'MIT'
 
 exit/b
@@ -164,8 +156,6 @@ echo. & echo * Get default license setting.
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm get init-license
 
@@ -186,8 +176,6 @@ echo. & echo * Verbose list of my globally installed packages.
 rem lu: Apr-24-2018
 
 echo.
-
-
 npm list -g --depth 0 --long true
 
 exit/b
@@ -203,8 +191,6 @@ echo. & echo * List of installed packages.
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm list --long true
 
@@ -221,8 +207,6 @@ echo. & echo * List of installed packages that only I have installed. As opposed
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm list --depth 0
 
@@ -239,8 +223,6 @@ echo. & echo * List of globally installed packages.
 rem lu: Apr-24-2018
 
 echo.
-
-
 npm list --global true
 
 exit/b
@@ -256,8 +238,6 @@ echo. & echo * Verbose list of my globally installed packages in JSON format.
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm list --global true --depth 0 --long true --json true
 
@@ -274,8 +254,6 @@ echo. & echo * Verbose list of my globally installed packages in JSON format for
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm list --global true --depth 0 --long true --dev true
 
@@ -292,8 +270,6 @@ echo. & echo * Prune extraneous packages, that is, those that are not in the pac
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm prune
 
@@ -310,8 +286,6 @@ echo. & echo * Go to the GitHub repository for a given package.
 rem lu: Apr-24-2018
 
 echo.
-
-
 npm repo %2
 
 exit/b
@@ -327,8 +301,6 @@ echo. & echo * Add user which is similar to Git's author stuff.
 rem lu: Apr-25-2018
 
 echo.
-
-
 echo.
 npm adduser
 
@@ -367,8 +339,6 @@ echo. & echo * Get the Node version number.
 rem lu: Sep-3-2021
 
 echo.
-
-
 echo.
 node -v
 
@@ -389,8 +359,6 @@ echo. & echo * Check NPM's long version.
 rem lu: Sep-12-2018
 
 echo.
-
-
 echo.
 npm version
 
@@ -407,8 +375,6 @@ echo. & echo * Automatically increment the patch version number.
 rem lu: Apr-25-2018
 
 echo.
-
-
 npm version patch
 
 exit/b
@@ -424,8 +390,6 @@ echo. & echo * Automatically increment the minor version number.
 rem lu: Apr-25-2018
 
 echo.
-
-
 npm version minor
 
 exit/b
@@ -441,8 +405,6 @@ echo. & echo * Automatically increment the major version number.
 rem lu: Apr-25-2018
 
 echo.
-
-
 npm version major
 
 exit/b
@@ -462,8 +424,6 @@ echo. & echo * Publish project to NPM.
 rem lu: Apr-25-2018
 
 echo.
-
-
 echo.
 npm publish
 
@@ -480,8 +440,6 @@ echo. & echo * Publish project to NPM in a beta release.
 rem lu: Apr-25-2018
 
 echo.
-
-
 echo.
 npm publish --tag beta
 
@@ -502,8 +460,6 @@ echo. & echo * Information about the current repository.
 rem lu: Apr-25-2018
 
 echo.
-
-
 npm info
 
 exit/b
@@ -519,8 +475,6 @@ echo. & echo * Information about a named repository.
 rem lu: Apr-25-2018
 
 echo.
-
-
 npm info %2
 
 exit/b
@@ -536,8 +490,6 @@ echo. & echo * Batch install DutchTreat packages.
 rem lu: Sep-18-2018
 
 echo.
-
-
 call %0 inst bootstrap
 call %0 inst jquery
 call %0 inst jquery-validation
@@ -561,8 +513,6 @@ echo. & echo * Install latest stable version of NPM. Be sure to run as ADMINISTR
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm i npm@latest -g
 
@@ -609,8 +559,6 @@ rem lu: Aug-12-2019
 
 echo.
 
-echo.
-
 if not exist "package.json" (
   echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
   exit/b
@@ -631,8 +579,6 @@ echo. & echo * Update all dependencies to the latest version.
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm update --save
 
@@ -649,8 +595,6 @@ echo. & echo * Update a single package dependency, in this case "%2".
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm update %2
 
@@ -669,8 +613,6 @@ echo. & echo * Install serverless.
 rem lu: Jul-15-2021
 
 echo.
-
-
 npm install serverless -g
 
 exit/b
@@ -703,8 +645,6 @@ Is this command folder-specific?
 echo. & echo * Run the integration tests.
 
 echo.
-
-
 npm run test:int
 
 exit/b
@@ -729,8 +669,6 @@ REPLAY=record npm run test:int
 echo. & echo * Run test like Joshua does in Visual Studio Code.
 
 echo.
-
-
 npm run test
 
 exit/b
@@ -750,8 +688,6 @@ echo. & echo * Install cognito. (I actually ran this in bash, not cmd.)
 rem lu: Aug-26-2021
 
 echo.
-
-
 npm i amazon-cognito-identity-js
 
 exit/b
@@ -770,8 +706,6 @@ into the app directory. If you do this, you can�t go back!
 rem lu: Sep-2-2021
 
 echo.
-
-
 if not exist "package.json" (
   echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
   exit/b
@@ -800,8 +734,6 @@ echo. & echo * Starts the test runner.
 rem skw: Run tests. (skw run unit tests)
 
 echo.
-
-
 if not exist "package.json" (
   echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
   exit/b
@@ -850,8 +782,6 @@ echo. & echo * Set Python configuration path.
 rem lu: Sep-2-2021
 
 echo.
-
-
 npm config set python "C:\Users\J[put--name-of-user-of-interest-here]\AppData\Local\Programs\Python\Python38\python.exe"
 
 exit/b
@@ -876,8 +806,6 @@ echo. & echo * Install AWS Amplify.
 rem lu: Sep-5-2021
 
 echo.
-
-
 call m specific_file_presence package.json 
 
 if errorlevel 1 exit/b
@@ -897,8 +825,6 @@ echo. & echo * Install react icons.
 rem lu: Oct-12-2021
 
 echo.
-
-
 npm i react-icons
 
 exit/b
@@ -918,8 +844,6 @@ echo. & echo * Run node in the dist folder.
 rem lu: Oct-26-2021
 
 echo.
-
-
 call m within_a_specific_folder dist & if errorlevel 1 exit/b
 
 echo.
@@ -942,8 +866,6 @@ echo. & echo * Install dependencies from my BAPS project.
 rem lu: Oct-29-2021
 
 echo.
-
-
 call m specific_file_presence package.json & if errorlevel 1 exit/b
 
 echo.
@@ -978,8 +900,6 @@ echo. & echo * Run server on http://localhost:5000.
 rem lu: Oct-27-2021
 
 echo.
-
-
 echo.
 npm run dev
 
@@ -996,8 +916,6 @@ echo. & echo * Install rate limit.
 rem lu: Nov-1-2021
 
 echo.
-
-
 call m specific_file_presence package.json & if errorlevel 1 exit/b
 
 echo.
@@ -1050,8 +968,6 @@ echo. & echo * Uninstall "%2" global package and remove dependency section in th
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm uninstall %2 -g --save
 
@@ -1068,8 +984,6 @@ echo. & echo * Uninstall "%2" local package and remove dependency section in the
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm uninstall %2 --save
 
@@ -1086,8 +1000,6 @@ echo. & echo * Uninstall "%2" global package.
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm uninstall %2 -g
 
@@ -1269,8 +1181,6 @@ echo. & echo * Install third party package and save setting in the package.json 
 rem lu: Sep-12-2018
 
 echo.
-
-
 if not exist package.json (
   echo.
   echo * Error: The file package.json does not exist in the current folder.
@@ -1293,8 +1203,6 @@ echo. & echo * Globally install a package so that it works everywhere on the com
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm i %2 -g
 
@@ -1322,8 +1230,6 @@ echo. & echo * Install package and save setting in the development section of th
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm install %2 --save--dev
 
@@ -1340,8 +1246,6 @@ echo. & echo * Install a package using its GitHub URL.
 rem lu: Apr-24-2018
 
 echo.
-
-
 call n %2
 
 echo.
@@ -1362,8 +1266,6 @@ set fp=%fp% NPM will not upgrade automically in this case.
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 npm i underscore@1.8.2 --save --save-exact
 
@@ -1382,8 +1284,6 @@ set fp=%fp% Given this example, this will install the latest 1.8 version.
 rem lu: Apr-24-2018
 
 echo.
-
-
 echo.
 
 rem For example: npm i underscore@1.7 --save
@@ -1420,8 +1320,6 @@ echo. & echo * NPM install command for Sencha on Windows.
 rem lu: Mar-1-2018
 
 echo.
-
-
 npm install -g sencha-cmd
 
 exit/b
@@ -1458,8 +1356,6 @@ echo. & echo * Fix service worker issue.
 rem lu: Aug-27-2021
 
 echo.
-
-
 if not exist "package.json" (
   echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
   exit/b
@@ -1509,8 +1405,6 @@ echo. & echo * Create a React app at root.
 rem lu: Aug-26-2021
 
 echo.
-
-
 npx create-react-app .
 
 exit/b
@@ -1526,8 +1420,6 @@ echo. & echo * Create a React app.
 rem lu: Aug-30-2021
 
 echo.
-
-
 if "%~2" == "" (
   echo.
   echo * Error: Parameter 2, the application/folder name, is required.
@@ -1549,8 +1441,6 @@ echo. & echo * Create a React app at root that has TypeScript enabled.
 rem lu: Oct-26-2021
 
 echo.
-
-
 npx create-react-app . --template typescript
 
 exit/b

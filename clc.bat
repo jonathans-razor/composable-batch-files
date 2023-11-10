@@ -75,8 +75,6 @@ exit/b
 echo. & echo * Addition.
 
 echo.
-
-
 set /a addition=%1+%3
 
 echo. & echo %addition%
@@ -92,8 +90,6 @@ exit/b
 echo. & echo * Subtraction.
 
 echo.
-
-
 set /a subtraction=%1-%3
 
 echo.
@@ -110,8 +106,6 @@ exit/b
 echo. & echo * Multiplication.
 
 echo.
-
-
 set /a multiplication=%1*%3
 
 echo.
@@ -128,8 +122,6 @@ exit/b
 echo. & echo * Division.
 
 echo.
-
-
 set /a division=%1/%3
 
 echo.

@@ -38,8 +38,6 @@ echo. & echo * Copy rf_ma Jenkinsfile to the share-zone Jenkinsfile.
 rem lu: Apr-24-2020
 
 echo.
-
-
 call n api
 
 set source_filename=%cbf-jf%
@@ -68,8 +66,6 @@ echo. & echo * Create timestamped Jenkinsfile.
 rem lu: Oct-5-2020
 
 echo.
-
-
 call t api
 
 call cpcp Jenkinsfile jf

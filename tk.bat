@@ -70,8 +70,6 @@ echo. & echo * Taskkill all nonessential processes. My current essential process
 
 echo.
 
-echo.
-
 taskkill /f /im anb.exe 
 taskkill /f /im arcmap.exe 
 taskkill /f /im chrome.exe
@@ -125,8 +123,6 @@ exit/b
 echo. & echo * Taskkill Explorer windows.
 
 echo.
-
-
 echo.
 
 rem taskkill /fi "imagename eq explorer.exe" /fi "windowtitle ne N/A"
@@ -150,8 +146,6 @@ echo. & echo * Kill using ID.
 rem lu: Mar-5-2019
 
 echo.
-
-
 echo.
 taskkill /pid %2 /f
 
@@ -168,8 +162,6 @@ echo. & echo * Kill Postgres.
 rem lu: Mar-5-2019
 
 echo.
-
-
 echo.
 rem Under construction.
 rem taskkill /pid %2 /f

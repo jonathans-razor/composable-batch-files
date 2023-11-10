@@ -88,8 +88,6 @@ echo. & echo * Rzr batch file's main function.
 rem lu: Feb-1-2019
 
 echo.
-
-
 cd\
 
 call %0 %1 %2 %3 %4 %5 %6

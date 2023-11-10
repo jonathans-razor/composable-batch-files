@@ -74,8 +74,6 @@ Oct-9-2023
 echo. & echo * Associate gradle files with Notepad++.
 
 echo.
-
-
 echo.
 assoc .gradle=gradle
 ftype gradle=notepad++.exe %%1 %%*
@@ -93,8 +91,6 @@ exit/b
 echo. & echo * Associate yml files with Notepad++.
 
 echo.
-
-
 echo.
 assoc .yml=yml
 ftype yml=notepad++.exe %%1 %%*
@@ -110,8 +106,6 @@ exit/b
 echo. & echo * Associate xlsx files with Excel.
 
 echo.
-
-
 echo.
 assoc .xlsx=Excel.Sheet.16
 ftype Excel.Sheet.16="C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE" %%1 %%*
@@ -127,8 +121,6 @@ exit/b
 echo. & echo * Associate xml files with Notepad++.
 
 echo.
-
-
 echo.
 assoc .xml=xmlfile
 ftype xmlfile=notepad++.exe %%1 %%*

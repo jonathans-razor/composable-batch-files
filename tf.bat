@@ -56,8 +56,6 @@ echo. & echo * Get the Terraform version number.
 rem lu: Oct-29-2018
 
 echo.
-
-
 echo.
 terraform version
 
@@ -74,8 +72,6 @@ echo. & echo * Check Terraform plan status.
 rem lu: Oct-29-2018
 
 echo.
-
-
 echo.
 terraform plan
 
@@ -93,8 +89,6 @@ Terraform will do.
 rem lu: Oct-29-2018
 
 echo.
-
-
 echo.
 terraform plan -var-file="%tfkeys%\terraform.tfvars" -var "private_key_path=%tfkeys%\TerraformTest2.pem" -no-color
 
@@ -114,8 +108,6 @@ echo. & echo * Destroy a plan.
 rem lu: Oct-29-2018
 
 echo.
-
-
 echo.
 terraform destroy -var-file="%tfkeys%\terraform.tfvars" -var "private_key_path=%tfkeys%\TerraformTest2.pem" -no-color -auto-approve
 
@@ -135,8 +127,6 @@ echo. & echo * Execute a plan!
 rem lu: Oct-29-2018
 
 echo.
-
-
 echo.
 terraform apply -var-file="%tfkeys%\terraform.tfvars" -var "private_key_path=%tfkeys%\TerraformTest2.pem" -no-color -auto-approve
 
@@ -161,8 +151,6 @@ echo. & echo * Plan.
 rem lu: Oct-30-2018
 
 echo.
-
-
 echo.
 terraform plan -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\Cart_Test.pem" -no-color
 
@@ -179,8 +167,6 @@ echo. & echo * Apply.
 rem lu: Oct-30-2018
 
 echo.
-
-
 echo.
 terraform apply -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\Cart_Test.pem" -no-color -auto-approve
 
@@ -197,8 +183,6 @@ echo. & echo * Destroy.
 rem lu: Oct-30-2018
 
 echo.
-
-
 echo.
 terraform destroy -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\Cart_Test.pem" -no-color -auto-approve
 
@@ -215,8 +199,6 @@ echo. & echo * Check the current folder for the presence of Terraform file(s).
 rem lu: Oct-31-2018
 
 echo.
-
-
 if not exist *.tf (
   echo.
   echo * Error: No Terraform files exist in the current folder.
@@ -240,8 +222,6 @@ echo. & echo * Terraform console.
 rem lu: Nov-1-2018
 
 echo.
-
-
 call %0 check_tf_existence
 
 if %errorlevel% == 1 (
@@ -264,8 +244,6 @@ echo. & echo * Format tf file.
 rem lu: Nov-1-2018
 
 echo.
-
-
 call %0 check_tf_existence
 
 if %errorlevel% == 1 (
@@ -288,8 +266,6 @@ echo. & echo * Refresh state file.
 rem lu: Nov-1-2018
 
 echo.
-
-
 call %0 check_tf_existence
 
 if %errorlevel% == 1 (
@@ -312,8 +288,6 @@ echo. & echo * Manually mark a resource for recreation.
 rem lu: Nov-1-2018
 
 echo.
-
-
 call %0 check_tf_existence
 
 if %errorlevel% == 1 (
@@ -344,8 +318,6 @@ echo. & echo * Destroy.
 rem lu: Oct-30-2018
 
 echo.
-
-
 call %0 check_tf_existence
 
 if %errorlevel% == 1 (
@@ -369,8 +341,6 @@ Hashicorp. This worked from the "dv" folder.
 rem lu: Jun-20-2019
 
 echo.
-
-
 call t ci
 
 cd dv
@@ -407,8 +377,6 @@ echo. & echo * Init AMQ.
 rem lu: Nov-11-2019
 
 echo.
-
-
 call t mqfq
 
 call :plan
@@ -426,8 +394,6 @@ echo. & echo * Apply AMQ.
 rem lu: Nov-11-2019
 
 echo.
-
-
 call t mqfq
 
 call :appl
@@ -449,8 +415,6 @@ echo. & echo * Initialize, which picks up the settings from the current folder.
 rem lu: Jan-16-2020
 
 echo.
-
-
 call m specific_file_presence main.tf
 
 if %errorlevel% == 1 (
@@ -493,8 +457,6 @@ echo. & echo * Plan.
 rem lu: May-24-2019
 
 echo.
-
-
 call m specific_file_presence main.tf
 
 if %errorlevel% == 1 (
@@ -532,8 +494,6 @@ echo. & echo * Apply.
 rem lu: Jan-16-2020
 
 echo.
-
-
 call m specific_file_presence main.tf
 
 if %errorlevel% == 1 (

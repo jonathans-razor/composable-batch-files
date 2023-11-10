@@ -49,8 +49,6 @@ echo. & echo * For loop test.
 rem lu: May-10-2019
 
 echo.
-
-
 call t cbf
 
 set folder_to_search=c:\aa\test1

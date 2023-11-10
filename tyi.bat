@@ -127,8 +127,6 @@ exit/b 0
 echo. & echo * Use current folder filename.
 
 echo.
-
-
 set cbf-fn=%~1
 
 if not exist "%cbf-fn%" (
