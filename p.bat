@@ -9,7 +9,7 @@ if "%~1" == "?" goto help
 rem qq
 call paco "%~1" . && goto commit-current-folder
 
-goto main
+goto push-predetermined-repositories
 
 
 
@@ -18,14 +18,21 @@ goto main
 
 cls
 
-echo. & echo * Push predetermined repositories.
+echo. & echo * Push repositories.
 
-echo. & echo   Usage: %~n0 (NO parameters)
+echo. & echo   Usage: %~n0 [space separated parameter(s)]
+
+echo. & echo * Parameter 1:
+echo     If blank, push predetermined repositories.
+echo     If equal to ".", push current folder.
+echo     If equal to an alias, switch to alias' folder then push.
 
 echo. & echo   Batch file style: Multipurpose
 
-echo. & echo   Samples:
-echo   %~n0 
+echo. & echo * Samples:
+echo     %~n0 
+echo     %~n0 .
+echo     %~n0 cbf
 
 exit/b
 
@@ -41,7 +48,7 @@ rem creation date: Sep-20-2023
 
 
 :_
-:main
+:push-predetermined-repositories
 
 cls
 
