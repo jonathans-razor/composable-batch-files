@@ -117,7 +117,7 @@ exit/b
 
 :main
 
-echo. & echo * Below here is the order of operations.
+rem echo. & echo * Execute a function based on the following order of operations. Nov-10-2023_12_18_PM
 
 
 
@@ -166,7 +166,7 @@ if not "%cbf-gs%" == "" (
 
 rem Note: This code block needs to be below the URL code block. Sep-19-2023
 if not "%cbf-app%" == "" (
-  rem echo. & echo * cbf-app is non-blank. Aug-29-2023_11_59_AM
+  echo. & echo * Run an application. {cbf-app is non-blank. Aug-29-2023_11_59_AM}
   call r
   exit/b
 )
