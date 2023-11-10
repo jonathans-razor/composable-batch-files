@@ -72,7 +72,7 @@ exit/b
 
 :_
 :gh
-call fx ghas %1 kr>nul
+call sf cfgh
 exit/b
 
 

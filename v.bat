@@ -1137,7 +1137,7 @@ exit/b
 
 :new-style
 
-echo. & echo * New style error handling
+echo. & echo * New style error handling (!paco)
 
 call paco "%~1" . || exit/b
 
@@ -1567,6 +1567,7 @@ echo. & echo * Find example.
 
 call m cel
 echo. & echo EL: %errorlevel%
+call g is-git-folder && echo true
 echo %1| find /i ".">nul
 echo %*| find /i "/s">nul
 

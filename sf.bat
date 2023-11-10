@@ -53,7 +53,7 @@ exit/b
 
 call i /c>nul
 
-echo. & echo * Evaluate the parameter list.
+rem echo. & echo * Evaluate the parameter list.
 
 call n %1
          

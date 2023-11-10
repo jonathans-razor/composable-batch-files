@@ -42,6 +42,7 @@ echo               log4  Is log4j jar file present?
 echo                ocf  Open CMAC files.
 echo               path  Pipe path to file.
 echo                sde  Set default text editor.
+echo               touc  Update all files in the current folder to the current time.
 echo               tran  Open latest transfer.
 echo                 ss  Open latest screenshot.
 
@@ -98,7 +99,6 @@ echo                svc  Start Windows Services viewer.
 echo       tirem_preq_1  One-time copy necessary to set up target folder.
 echo       tirem_preq_2  Tirem prerequisite 2: One-time setup requirement.
 echo       tirem_preq_3  Tirem prerequisite 3: One-time setup requirement.
-echo               touc  Update all files in the current folder to the current time.
 echo         update_pub  In preparation for mobile deploy., update public.
 echo        update_tags  Update tag files.
 echo           wild_svc  Install WildFly as a service.
@@ -5245,6 +5245,7 @@ skw: full filename, file path only
 
 echo. & echo * Sample call to distill-file-folder. Current folder version.
 
+rem Copy the following line.
 call %0 distill-file-folder %cd%
 
 echo. & echo * cbf-distill-file-folder: %cbf-distill-file-folder%

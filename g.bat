@@ -593,8 +593,6 @@ echo. & echo * Add bowling folder to git.
 rem lu: Jan-12-2018
 
 echo.
-
-
 echo "# bowling" >> README.md
 git init
 git add README.md
@@ -618,8 +616,6 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/jonathan-r-jones/[put new repo name here].git
 git push -u origin master
-
-echo.
 
 echo.
 
@@ -714,7 +710,8 @@ git-steps-seriess-jj
 
 echo. & echo * Add remote origin for CBF URL.
 
-git remote add origin https://github.com/jonathans-razor/d3-js-data-visualization-full-course
+call m distill-file-folder %cd%
+git remote add origin https://github.com/jonathans-razor/%cbf-distill-file-folder%.git
 
 exit/b
 
@@ -727,9 +724,7 @@ git-steps-seriess-jj
 
 echo. & echo * Add Readme.md.
 
-call m expand-to-filename-or-current-folder-without-path %cd%
-
-echo #%cbf-fn-or-cf-without-path%>Readme.md
+echo # %cbf-distill-file-folder%>Readme.md
 
 exit/b
 
@@ -4494,8 +4489,6 @@ exit/b
 
 echo. & echo * Revove origin.
 
-rem lu: Dec-17-2019
-
 echo.
 git remote remove origin
 
@@ -4507,6 +4500,21 @@ rem git push -u origin master
 
 exit/b
 
+lu:
+Dec-17-2019
+
 
 
 :_
+
+:is-git-folder
+
+rem echo. & echo * Is current folder a Git folder?
+
+dir /ah | find /i ".git">nul && exit/b 0
+
+exit/b 1
+
+
+
+:_ (!efg)

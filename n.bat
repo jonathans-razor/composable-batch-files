@@ -437,6 +437,16 @@ exit/b
 
 
 
+::_
+:hp
+echo. & echo * Github home page.
+set cbf-gh=https://github.com
+exit/b
+lu: 
+Nov-10-2023
+
+
+
 :_
 :gral
 echo. & echo * Greek Alphabet.
@@ -3369,7 +3379,7 @@ rem lu: Jan-31-2022
 :doj
 :dtg
 :gci
-:efg
+:atoi
 :lbm
 :msl
 :nes
@@ -3925,6 +3935,55 @@ set cbf-gh=https://github.com/jonathans-razor/%cbf-pd%
 exit/b
 lu:
 Nov-8-2023
+
+
+
+:_
+
+:cfgh
+:ghcf
+
+echo. & echo * Go to the current folder's GitHub repository.
+
+call g is-git-folder>nul
+
+if errorlevel 1 (
+  call err Not a git folder.
+  exit/b 1
+)
+
+call m distill-file-folder %cd%>nul
+
+set cbf-url=https://github.com/jonathans-razor/%cbf-distill-file-folder%
+
+exit/b
+
+lu:
+Nov-10-2023
+
+
+
+:_
+
+:sett
+
+echo. & echo * Go to the setting page of the current folder's GitHub repository.
+
+call g is-git-folder>nul
+
+if errorlevel 1 (
+  call err Not a git folder.
+  exit/b 1
+)
+
+call m distill-file-folder %cd%>nul
+
+set cbf-url=https://github.com/jonathans-razor/%cbf-distill-file-folder%/settings
+
+exit/b
+
+lu:
+Nov-10-2023
 
 
 

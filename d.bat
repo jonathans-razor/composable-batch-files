@@ -61,8 +61,6 @@ exit/b
 :h
 echo. & echo * Look for the hidden files and folders.
 echo.
-
-echo.
 dir /ah
 exit/b
 rem Creation Date: Feb-7-2017
@@ -80,9 +78,6 @@ echo. & echo * Folders only.
 rem lu: Dec-27-2018
 
 echo.
-
-
-echo.
 dir /a:d
 
 exit/b
@@ -96,9 +91,6 @@ exit/b
 echo. & echo * Conflicted copy.
 
 rem lu: Feb-15-2019
-
-echo.
-
 
 echo.
 del "*conflicted copy*.*"
@@ -346,7 +338,6 @@ if "%~2" == "?" goto help
 
 echo.
 
-
 if -%2-==-/h- (
   tree/f
   exit/b
@@ -483,9 +474,6 @@ echo. & echo * Reverse Alphabetical, folders first.
 rem lu: Jun-24-2021
 
 echo.
-
-
-echo.
 dir /og-n
 
 exit/b
@@ -499,9 +487,6 @@ exit/b
 echo. & echo * Dir concop.
 
 echo.
-
-
-echo.
 dir "*conflicted copy*.*" /s
 
 exit/b
@@ -513,9 +498,6 @@ exit/b
 :renamed
 
 echo. & echo * Dir renamed.
-
-echo.
-
 
 echo.
 dir "*renamed*.*" /s
