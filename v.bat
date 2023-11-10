@@ -2488,7 +2488,7 @@ rem echo. & echo * Start the server from %0.bat.
 call t nwe>nul
 start "[Server Title]" cmd /k [executable name start syntax] .
 exit/b
-Level 1 Program: Is the program even installed.
+Level 1 Program: Is the program even installed?
 
 
 
