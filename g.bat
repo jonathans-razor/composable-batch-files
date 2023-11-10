@@ -659,7 +659,7 @@ git-steps-seriess-jj
 echo. & echo * Add remote origin for CBF URL.
 
 call m distill-file-folder %cd%
-git remote add origin https://github.com/jonathans-razor/%cbf-distill-file-folder%.git
+git remote add origin https://github.com/jonathans-razor/%cbf-distilled-file-folder%.git
 
 exit/b
 
@@ -672,7 +672,7 @@ git-steps-seriess-jj
 
 echo. & echo * Add Readme.md.
 
-echo # %cbf-distill-file-folder%>Readme.md
+echo # %cbf-distilled-file-folder%>Readme.md
 
 exit/b
 

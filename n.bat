@@ -3954,7 +3954,7 @@ if errorlevel 1 (
 
 call m distill-file-folder %cd%>nul
 
-set cbf-url=https://github.com/jonathans-razor/%cbf-distill-file-folder%
+set cbf-url=https://github.com/jonathans-razor/%cbf-distilled-file-folder%
 
 exit/b
 
@@ -3978,7 +3978,7 @@ if errorlevel 1 (
 
 call m distill-file-folder %cd%>nul
 
-set cbf-url=https://github.com/jonathans-razor/%cbf-distill-file-folder%/settings
+set cbf-url=https://github.com/jonathans-razor/%cbf-distilled-file-folder%/settings
 
 exit/b
 
