@@ -5,14 +5,12 @@
 if "%~1" == "" goto push-predetermined-repositories
 if "%~1" == "?" goto help
 
-rem qq
 call paco "%~1" . && goto commit-current-folder
 
 if not "%~1" == "" (
   call pa %1
   exit/b
 )
-
 
 
 
@@ -100,11 +98,7 @@ call t f & call g dirt
 
 :_
 :commit-current-folder
-
-echo. & echo * Commit current folder.
-
 call g dirt
-
 exit/b
 
 
