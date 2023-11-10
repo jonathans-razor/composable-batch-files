@@ -68,15 +68,15 @@ call sep
 call t ql & call g dirt
 
 :
-call sep
-call t prat & call g dirt
-
-:
 rem echo. & echo * Exiting here ***************************************.
 call rf>nul
 echo.
 echo.
 goto exit
+
+:
+call sep
+call t prat & call g dirt
 
 :
 call sep
@@ -95,4 +95,8 @@ exit/b
 
 :_
 :exit
+exit/b
+
+
+
 :_
