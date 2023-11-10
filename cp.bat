@@ -341,7 +341,6 @@ echo. & echo * Copy share-zone Jenkinsfile to jj_devops Jenkinsfile.
 
 rem lu: May-16-2019
 
-rem qq
 echo.
 
 call n jft
