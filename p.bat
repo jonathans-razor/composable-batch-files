@@ -2,10 +2,12 @@
 
 @echo off
 
-call paco "%~1" . && goto commit-current-folder
 
-if not "%~1" == "" goto help
+if "%~1" == "" goto main
 if "%~1" == "?" goto help
+
+rem qq
+call paco "%~1" . && goto commit-current-folder
 
 goto main
 
@@ -87,8 +89,9 @@ call t f & call g dirt
 
 
 :_
-rem qq
 :commit-current-folder
+
+echo. & echo * Commit current folder.
 
 call g dirt
 
