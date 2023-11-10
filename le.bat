@@ -1026,29 +1026,6 @@ exit/b
 
 
 :_
-:
-
-cls
-
-:
-@echo on
-python 
-
-:Necessary Edge Case Spacer - Please do not delete.
-
-exit/b
-
-
-
-:_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Nov-9-2023
 
 cls
@@ -1076,6 +1053,56 @@ python 118-pascals-triangle.py 5
 :
 @echo on
 python 118-pascals-triangle.py 6
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
+:
+
+cls
+
+:
+@echo on
+python 
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-10-2023
+
+cls
+
+:
+@echo on
+python 121-best-time-to-buy-and-sell-stock.py 7 1 5 3 6 4
+
+:
+@echo on
+python 121-best-time-to-buy-and-sell-stock.py 7 6 4 3 1
+
+:
+@echo on
+python 121-best-time-to-buy-and-sell-stock.py 1 14 6 4 3 515 712
+
+:
+@echo on
+python 121-best-time-to-buy-and-sell-stock.py 42 88 14 6 4 3 1 515 714
 
 :Necessary Edge Case Spacer - Please do not delete.
 

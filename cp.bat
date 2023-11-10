@@ -1196,6 +1196,7 @@ exit/b
 
 
 :_
+:le
 :py
 
 echo. & echo * Turn the Python template file into a new Python file.
