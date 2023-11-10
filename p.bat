@@ -55,44 +55,32 @@ cls
 
 call rf r>nul
 
-
-:_
+:
 call sep
 call t c & call g dirt
 
-
-
-:_
+:
 call sep
 call t dsa & call g dirt
 
-
-
-:_                             *********************************
-:close
-
-call rf>nul
-echo.
-
-exit/b
-
-
-
-:_
+:
 call sep
 call t ql & call g dirt
 
+:
+rem echo. & echo * Exiting here ***************************************.
+call rf>nul
+goto exit
 
-
-:_
+:
 call sep
 call t prat & call g dirt
 
-
-
-:_
+:
 call sep
 call t f & call g dirt
+
+:Necessary Edge Case Spacer - Please do not delete.
 
 
 
@@ -103,4 +91,6 @@ exit/b
 
 
 
+:_
+:exit
 :_

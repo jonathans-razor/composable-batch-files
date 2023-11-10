@@ -1,6 +1,6 @@
 @echo off
 if "%~1" == "?" goto help
-if "%~1" == "r" goto main
+if "%~1" == "r" goto remember-current-folder
 
 goto recall
 
@@ -16,12 +16,13 @@ echo. & echo  * Recall previous folder.
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo  * Parameter 1:
-echo    If equal to r.
+echo      If equal to r, remember current folder.
 
-echo. & echo  * Batch file style: Multipurpose
+echo. & echo    Batch file style: Multipurpose
 
 echo. & echo  * Samples:
-echo    %~n0 
+echo      %~n0 
+echo      %~n0  r
 
 exit/b
 
@@ -49,7 +50,7 @@ exit/b
 
 
 :_
-:main
+:remember-current-folder
 
 rem echo. & echo Remember current folder.
 

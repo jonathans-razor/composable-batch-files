@@ -377,7 +377,6 @@ set cbf-previous-pt=
 :
 rem Microsoft Teams Recorded Meeting
 set cbf-reme=
-      rem qq
 
 :
 rem Pipe to File
