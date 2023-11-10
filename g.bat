@@ -30,7 +30,7 @@ echo    g sd  Status while disconnected.
 echo   g psf  Push single file with timestamp message.
 echo  g psfm  Push single file with custom message.
 echo   g rsf  Revert single file.
-echo       p  Push predetermined repositories.
+echo       p  Push predetermined repositories and more.
 echo      pa  Fully automatic push, same as "g acp", but with also a TD parameter.
 echo      pl  Git pull, with TD parameter. Sibling of ps.
 echo      pp  Pull then push, with TD parameter.

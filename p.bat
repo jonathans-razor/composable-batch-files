@@ -2,7 +2,7 @@
 
 @echo off
 
-if "%~1" == "" goto main
+if "%~1" == "" goto push-predetermined-repositories
 if "%~1" == "?" goto help
 
 rem qq
@@ -13,7 +13,6 @@ if not "%~1" == "" (
   exit/b
 )
 
-goto push-predetermined-repositories
 
 
 
