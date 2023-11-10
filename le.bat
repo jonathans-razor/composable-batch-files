@@ -1026,33 +1026,25 @@ exit/b
 
 
 :_
-:Nov-9-2023
+:Nov-10-2023
 
 cls
 
 :
 @echo on
-python 118-pascals-triangle.py 1
+python 121-best-time-to-buy-and-sell-stock.py 7 1 5 3 6 4
 
 :
 @echo on
-python 118-pascals-triangle.py 2
+python 121-best-time-to-buy-and-sell-stock.py 7 6 4 3 1
 
 :
 @echo on
-python 118-pascals-triangle.py 3
+python 121-best-time-to-buy-and-sell-stock.py 1 14 6 4 3 515 712
 
 :
 @echo on
-python 118-pascals-triangle.py 4
-
-:
-@echo on
-python 118-pascals-triangle.py 5
-
-:
-@echo on
-python 118-pascals-triangle.py 6
+python 121-best-time-to-buy-and-sell-stock.py 42 88 14 6 4 3 1 515 714
 
 :Necessary Edge Case Spacer - Please do not delete.
 
@@ -1084,25 +1076,33 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-10-2023
+:Nov-9-2023
 
 cls
 
 :
 @echo on
-python 121-best-time-to-buy-and-sell-stock.py 7 1 5 3 6 4
+python 118-pascals-triangle.py 1
 
 :
 @echo on
-python 121-best-time-to-buy-and-sell-stock.py 7 6 4 3 1
+python 118-pascals-triangle.py 2
 
 :
 @echo on
-python 121-best-time-to-buy-and-sell-stock.py 1 14 6 4 3 515 712
+python 118-pascals-triangle.py 3
 
 :
 @echo on
-python 121-best-time-to-buy-and-sell-stock.py 42 88 14 6 4 3 1 515 714
+python 118-pascals-triangle.py 4
+
+:
+@echo on
+python 118-pascals-triangle.py 5
+
+:
+@echo on
+python 118-pascals-triangle.py 6
 
 :Necessary Edge Case Spacer - Please do not delete.
 
