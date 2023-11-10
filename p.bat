@@ -6,6 +6,7 @@ call paco "%~1" . && goto commit-current-folder
 
 if not "%~1" == "" goto help
 if "%~1" == "?" goto help
+
 goto main
 
 
