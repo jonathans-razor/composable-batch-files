@@ -71,6 +71,7 @@ call t ql & call g dirt
 rem echo. & echo * Exiting here ***************************************.
 call rf>nul
 echo.
+echo.
 goto exit
 
 :
