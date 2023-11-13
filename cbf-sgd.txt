@@ -5,6 +5,8 @@ Composable Batch Files (CBF) - Style Guide
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
        `--'      `--'      `--'      `--'      `--' 
 
+:Nov-13-2023: Assumption: All CBF variables are prefixed with "cbf-".
+
 :Nov-6-2023: It's not so much that "goto" statements are the problem. Rather there is not a 
 recognition of a label being the equivalent of a function name and the exit/b statement as 
 vital as the function ending.
