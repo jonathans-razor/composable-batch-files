@@ -16,16 +16,18 @@ cls
 
 echo. & echo * Simulate a double-click using a default precedence of operation preferences or a dynamically constructed variable.
 
-echo. & echo * Usage: %0 [Parameters]
+echo. & echo   Usage: %0 [Parameters]
 
-echo. & echo * Parameter 1: Alias of the cbf that you want to run or "double click" if you will. Think of parameter 1 as the command version of the GUI double-click.
-echo. & echo * Parameter 2 (Optional): Dynamically constructed variable you wish to use, which will override the default.
+echo. & echo * Parameter 1: 
+echo   Alias of the cbf that you want to run or "double click" if you will. Think of parameter 1 as the command version of the GUI double-click.
+echo. & echo * Parameter 2 (Optional): 
+echo   Dynamically constructed variable you wish to use, which will override the default.
 
-echo. & echo * Pit of Success Strategy: The algorithm will look many different cbf variables to double-click on so you are not restricted to using a single cbf variable for this batch file.
+echo. & echo   Pit of Success Strategy: The algorithm will look many different cbf variables to double-click on so you are not restricted to using a single cbf variable for this batch file.
 
-echo. & echo * Entangled variable: cbf-app
+echo. & echo   Entangled variable: cbf-app
 
-echo. & echo * Batch File Style: Single Purpose
+echo. & echo   Batch File Style: Single Purpose
 
 echo. & echo * Example(s):
 echo   %0 1518 png5
@@ -119,20 +121,17 @@ exit/b
 
 rem echo. & echo * Execute a function based on the following order of operations. Nov-10-2023_12_18_PM
 
-
-
-:_
+:
 
 if not "%cbf-lnk%" == "" (
   if exist "%cbf-lnk%" (
+    echo. & echo * cbf-lnk is non-blank. Nov-13-2023_12_32_PM
     call dc "%cbf-lnk%"
     exit/b
   )
 )
 
-
-
-:_
+:
 
 if not "%cbf-url%" == "" (
   echo. & echo * Execute URL. Sep-19-2023_2_44_PM
@@ -140,29 +139,25 @@ if not "%cbf-url%" == "" (
   exit/b
 )
 
-
-
-:_
+:
 
 if not "%cbf-gd%" == "" (
-  rem echo. & echo * cbf-gd is non-blank. Aug-23-2023_1_53_PM
-  call fxw gd %1 %2 %3
+  rem call fxw gd %1 %2 %3
+  set cbf-parameter=%cbf-gd%
+  call r
   exit/b
 )
 
-
-
-:_
+:
 
 if not "%cbf-gs%" == "" (
-  rem echo. & echo * cbf-gs is non-blank. Aug-23-2023_1_53_PM
+rem qq
+  echo. & echo * cbf-gs is non-blank. Aug-23-2023_1_53_PM
   call fxw gs %1 %2 %3
   exit/b
 )
 
-
-
-:_ 
+: 
 
 rem Note: This code block needs to be below the URL code block. Sep-19-2023
 if not "%cbf-app%" == "" (
@@ -171,9 +166,7 @@ if not "%cbf-app%" == "" (
   exit/b
 )
 
-
-
-:_
+:
 
 if not "%cbf-wo%" == "" (
   if exist "%cbf-wo%" (
@@ -189,9 +182,7 @@ if not "%cbf-wo%" == "" (
   )
 )
 
-
-
-:_
+:
 
 if not "%cbf-ex%" == "" (
   if exist "%cbf-ex%" (
@@ -209,9 +200,7 @@ if not "%cbf-ex%" == "" (
   )
 )
 
-
-
-:_
+:
 
 if not "%cbf-pptx%" == "" (
   if exist "%cbf-pptx%" (
@@ -224,9 +213,7 @@ if not "%cbf-pptx%" == "" (
   )
 )
 
-
-
-:_
+:
 
 if not "%cbf-fn%" == "" (
   if exist "%cbf-fn%" (
@@ -241,9 +228,7 @@ if not "%cbf-fn%" == "" (
   )
 )
 
-
-
-:_
+:
 
 if not "%cbf-png%" == "" (
   if exist "%cbf-png%" (
@@ -252,9 +237,7 @@ if not "%cbf-png%" == "" (
   )
 )
 
-
-
-:_
+:
 
 if not "%cbf-pt%" == "" (
   if exist "%cbf-pt%" (
@@ -263,45 +246,35 @@ if not "%cbf-pt%" == "" (
   )
 )
 
-
-
-:_
+:
 
 if not "%cbf-gh%" == "" (
   call sf %1>nul
   exit/b
 )
 
-
-
-:_
+:
 
 if not "%cbf-cf%" == "" (
   call sf %1>nul
   exit/b
 )
 
-
-
-:_
+:
 
 if not "%cbf-demo%" == "" (
   call demo %1>nul
   exit/b
 )
 
-
-
-:_
+:
 
 if not "%cbf-ji%" == "" (
   call ji %1>nul
   exit/b
 )
 
-
-
-:_
+:
 
 echo.
 echo * Error: Could not find an executable CBF parameter.

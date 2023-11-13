@@ -1088,6 +1088,33 @@ exit/b
 
 
 :_
+:Nov-12-2023
+
+cls
+
+:
+@echo on
+python 125-valid-palindrome.py canal
+
+:
+@echo on
+python 125-valid-palindrome.py "a man, a plan, a canal: panama"
+
+:
+@echo on
+python 125-valid-palindrome.py "race a car"
+
+:
+@echo on
+python 125-valid-palindrome.py " "
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1111,25 +1138,25 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-12-2023
+:Nov-13-2023
 
 cls
 
 :
 @echo on
-python 125-valid-palindrome.py canal
+python 136-single-number.py 4 2 2 1 1
 
 :
 @echo on
-python 125-valid-palindrome.py "a man, a plan, a canal: panama"
+python 136-single-number.py 4 2 2 1 1 4 6
 
 :
 @echo on
-python 125-valid-palindrome.py "race a car"
+python 136-single-number.py 4 4 2 55 2 1 1 6 6
 
 :
 @echo on
-python 125-valid-palindrome.py " "
+python 136-single-number.py 4 4 2 55 55 2 1 1 6 103 6 
 
 :Necessary Edge Case Spacer - Please do not delete.
 
