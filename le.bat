@@ -1053,29 +1053,6 @@ exit/b
 
 
 :_
-:
-
-cls
-
-:
-@echo on
-python 
-
-:Necessary Edge Case Spacer - Please do not delete.
-
-exit/b
-
-
-
-:_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Nov-9-2023
 
 cls
@@ -1103,6 +1080,56 @@ python 118-pascals-triangle.py 5
 :
 @echo on
 python 118-pascals-triangle.py 6
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
+:
+
+cls
+
+:
+@echo on
+python 
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-12-2023
+
+cls
+
+:
+@echo on
+python 125-valid-palindrome.py canal
+
+:
+@echo on
+python 125-valid-palindrome.py "a man, a plan, a canal: panama"
+
+:
+@echo on
+python 125-valid-palindrome.py "race a car"
+
+:
+@echo on
+python 125-valid-palindrome.py " "
 
 :Necessary Edge Case Spacer - Please do not delete.
 
