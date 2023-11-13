@@ -1,5 +1,6 @@
 :_
 @echo off
+echo p1: %1
 if "%~1" == "" goto d
 if "%~1" == "?" goto help
 call :evaluate-the-parameter-list %*

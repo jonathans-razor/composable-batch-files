@@ -62,7 +62,7 @@ rem call m reset_cbf-variables
 call i /c>nul
 ver>nul
 
-call n %1>nul
+call n %1
 
 if errorlevel 1 exit/b
 
@@ -166,7 +166,7 @@ if not "%cbf-gs%" == "" (
 
 rem Note: This code block needs to be below the URL code block. Sep-19-2023
 if not "%cbf-app%" == "" (
-  echo. & echo * Run an application. {cbf-app is non-blank. Aug-29-2023_11_59_AM}
+  rem echo. & echo * Run an application. {cbf-app is non-blank. Aug-29-2023_11_59_AM}
   call r
   exit/b
 )
