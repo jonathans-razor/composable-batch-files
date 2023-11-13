@@ -49,6 +49,7 @@ echo   %0 winz cart-rest-client-0.0.3-RELEASE.jar
 echo   %0 ie ma
 echo   %0 kr j1
 echo   %0 kr j1.txt
+echo   %0 br j1.txt
 
 exit/b
 
