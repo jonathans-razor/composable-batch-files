@@ -78,6 +78,23 @@ if errorlevel 1 (
   exit/b
 )
 
+call paco "%~2" . && goto open-current-folder-file
+
+goto main
+
+
+
+:_
+
+:open-current-folder-file
+
+echo. & echo * Open current folder file.
+
+rem @echo on
+start "title" "%cbf-app%" "%cd%\%~2"
+
+exit/b
+
 
 
 :_

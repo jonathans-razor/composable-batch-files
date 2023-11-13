@@ -1141,7 +1141,7 @@ exit/b
 
 
 ::_
-
+:ed
 :edge
 
 echo. & echo * Microsoft Edge browser.
@@ -3984,6 +3984,32 @@ exit/b
 
 lu:
 Nov-10-2023
+
+
+
+:_
+:cska
+set cbf-pd=css-kata
+echo. & echo * %cbf-pd%. 
+call pn it>nul
+rem Provenance: Jul-16-2021_11_43_AM qq1
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-gh=%cbf-gh%/%cbf-pd%
+exit/b
+lu: 
+Nov-13-2023
+
+
+
+:_
+:cid
+rem qq
+set cbf-pd=Comodo Ice Dragon.
+echo. & echo * %cbf-pd%. 
+set cbf-app=C:\Program Files\Comodo\IceDragon\icedragon.exe
+exit/b
+lu: 
+Nov-13-2023
 
 
 
