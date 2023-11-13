@@ -85,9 +85,7 @@ goto use_alias_or_batch_file
 
 :evaluate_the_parameter_list
 
-echo. & echo * Evaluate the parameter list.
-
-rem lu: Nov-27-2019
+rem echo. & echo * Evaluate the parameter list.
 
 set d_switch=0
 set e_switch=0
@@ -110,6 +108,9 @@ rem echo d: %d_switch%
 rem echo e: %e_switch%
 
 exit/b
+
+lu:
+Nov-27-2019
 
 
 
