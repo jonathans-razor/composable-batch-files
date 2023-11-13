@@ -3992,7 +3992,6 @@ Nov-10-2023
 set cbf-pd=css-kata
 echo. & echo * %cbf-pd%. 
 call pn it>nul
-rem Provenance: Jul-16-2021_11_43_AM qq1
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=Z4pCqK-V_Wo
@@ -4004,7 +4003,6 @@ Nov-13-2023
 
 :_
 :cid
-rem qq
 set cbf-pd=Comodo Ice Dragon.
 echo. & echo * %cbf-pd%. 
 set cbf-app=C:\Program Files\Comodo\IceDragon\icedragon.exe

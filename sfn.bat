@@ -118,7 +118,7 @@ Nov-27-2019
 
 :use_alias_or_batch_file
 
-echo. & echo * Use batch file to find filename.
+rem echo. & echo * Use batch file to find filename.
 
 if exist "%composable-batch-files%\%~1.bat" (
   set cbf-fn=%composable-batch-files%\%~1.bat
@@ -129,8 +129,7 @@ if exist "%composable-batch-files%\%~1.bat" (
 
 if exist "%share-zone%\%~1.bat" (
   set cbf-fn=%share-zone%\%~1.bat
-  echo.
-   Ran from Share-Zone folder.
+  echo Ran from Share-Zone folder.
   goto file_exists
 )
 
@@ -144,8 +143,7 @@ goto use_alias
 
 echo. & echo * Use alias to find filename. Sep-5-2021_6_02_PM
 
-echo.
-call fnv %~1
+call fnv %~1>nul
 
 if %errorlevel% == 4 (
   exit/b
@@ -156,7 +154,6 @@ if %errorlevel% gtr 1 (
 )
 
 if errorlevel 1 (
-  rem echo.
   rem echo Error finding filename. May-11-2020_9_11_PM
   exit/b 1
 )
