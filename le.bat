@@ -64,7 +64,7 @@ exit/b 1
 :_
 :look-up-leetcode-number
 echo. & echo * Look up LeetCode number %1.
-call an kr>nul
+call an br>nul
 set cbf-parameter=https://www.google.com/search?q=LeetCode+problem+number+%*
 call r
 exit/b 0
@@ -1115,6 +1115,33 @@ exit/b
 
 
 :_
+:Nov-13-2023
+
+cls
+
+:
+@echo on
+python 136-single-number.py 4 2 2 1 1
+
+:
+@echo on
+python 136-single-number.py 4 2 2 1 1 4 6
+
+:
+@echo on
+python 136-single-number.py 4 4 2 55 2 1 1 6 6
+
+:
+@echo on
+python 136-single-number.py 4 4 2 55 55 2 1 1 6 103 6 
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1138,25 +1165,25 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-13-2023
+:Nov-14-2023
 
 cls
 
 :
 @echo on
-python 136-single-number.py 4 2 2 1 1
+python 168-excel-sheet-column-title.py 1
 
 :
 @echo on
-python 136-single-number.py 4 2 2 1 1 4 6
+python 168-excel-sheet-column-title.py 28
 
 :
 @echo on
-python 136-single-number.py 4 4 2 55 2 1 1 6 6
+python 168-excel-sheet-column-title.py 701
 
 :
 @echo on
-python 136-single-number.py 4 4 2 55 55 2 1 1 6 103 6 
+python 168-excel-sheet-column-title.py 1200
 
 :Necessary Edge Case Spacer - Please do not delete.
 
