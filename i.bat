@@ -18,12 +18,16 @@ exit/b
 cls
 
 echo. & echo * Show or clear CBF environment variables.
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo   Usage: %0 [space separated parameter(s)]
 echo. & echo * Parameter 1 (Optional): 
 echo   If left blank, current CBF variables are shown.
-echo   If "/c" is passed in, CBF variables are cleared.
+echo   If "/c", CBF variables are cleared.
 echo   Else the CBF variables for the passed in alias are shown.
-echo. & echo * Batch file style: Single purpose.
+
+echo. & echo   Batch file style: Single purpose.
+
+echo. & echo * Example(s):
+echo   %0 cbf
 
 exit/b
 lu:

@@ -40,6 +40,7 @@ echo   %0 gh jj edge
 echo   %0 wl app vsc
 echo   %0 ear gs br
 echo   %0 nd fz vc
+echo   %0 jj gh2 br
 
 exit/b
 

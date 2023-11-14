@@ -17,17 +17,18 @@ goto %1
 
 cls
 
-echo. & echo * Nicknames dictionary. This can be thought of as a large configuration 
-echo file, batch file database or data layer that set enviornment variables. 
-echo The idea is that you register your folder, file, etc. here and then you can 
-echo easily access it via your chosen alias.
-echo. & echo In the function block corresponding to the label, you can set any or all
-echo of the CBF environment variables. Typically this batch file would be called 
-echo by a different batch file looking to set a particular CBF environment variable.
+echo. & echo * Nicknames dictionary. This can be thought of as a large configuration ^
+file, batch file database or data layer that sets enviornment variables. ^
+The idea is that you register your folder, file, etc. here and then you can ^
+easily access it via your chosen alias.
+
+echo. & echo In the function block corresponding to the label, you can set any or all ^
+of the CBF environment variables. Typically this batch file would be called ^
+by a different batch file looking to set a particular CBF environment variable.
 
 
 echo. & echo   Usage: %0 [single parameter]
-echo. & echo * Parameter 1: Alias to run assignment for.
+echo. & echo   Parameter 1: Alias to run assignment for.
 
 echo. & echo * Example(s):
 echo   %0 cbf
@@ -360,6 +361,8 @@ rem lu: Sep-9-2023
 :jjgit
 echo. & echo * Jonathan's Github page.
 set cbf-gh=https://github.com/jonathans-razor
+rem qq
+set cbf-gh2=https://github.com/jonathans-razor?tab=repositories
 set cbf-rl=%cbf-gh%\Composable-Batch-Files\releases
 exit/b
 rem lu: Jun-27-2023

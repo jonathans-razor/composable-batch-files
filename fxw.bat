@@ -14,15 +14,15 @@ cls
 
 echo. & echo * A wrapper around fx.bat. Execute the namesake DCV for the passed in alias.
 
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo   Usage: %0 [space separated parameter(s)]
 
-echo. & echo   Parameter 1 (Optional): Alias to process.
-echo   Parameter 2 (Optional): DCV.
-echo. & echo * Batch file style: Multipurpose
+echo. & echo   Parameter 1: Alias to process.
+echo   Parameter 2: DCV.
+echo. & echo   Batch file style: Multipurpose
 
 echo. & echo * Example(s):
-echo   cf ht
-echo   gl np
+echo   %0 cf ht
+echo   %0 gl np
 exit/b
 
 
