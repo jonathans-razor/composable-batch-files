@@ -71,8 +71,7 @@ if exist "%cbf-fn%" (
   rem echo. & echo * File "%cbf-fn%" exists. Jun-28-2023_10_26_PM
   exit/b 0
 ) else (
-  call err * File or folder %cbf-fn% DOES NOT exist. Jun-28-2023_10_04_PM
-  rem echo. & echo * File "%cbf-fn%" DOES NOT exist. Jun-28-2023_10_04_PM
+  call err * File or folder "%cbf-fn%" DOES NOT exist. Jun-28-2023_10_04_PM
   exit/b 5
 )
 exit/b
