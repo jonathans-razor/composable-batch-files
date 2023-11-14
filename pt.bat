@@ -165,6 +165,8 @@ echo. & echo * Show formatted path.
 
 echo.>%tmp%\path.txt
 echo.>>%tmp%\path.txt
+echo.>>%tmp%\path.txt
+echo.>>%tmp%\path.txt
 path>>%tmp%\path.txt
 
 set cbf-parameter=%tmp%\path.txt

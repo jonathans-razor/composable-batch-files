@@ -4802,6 +4802,18 @@ exit/b
 
 ::_
 
+:augment-path
+
+echo. & echo * Augment path.
+
+set path=%dropbox%\savannah\belfry;%path%
+
+exit/b
+
+
+
+::_
+
 :startup-lnk-xps
 
 call %0 lnk-xps
@@ -4834,6 +4846,8 @@ call %0 set-default-browser br
 call %0 set-default-repository-folder d-aa-repos
 
 call %0 set-default-text-editor me
+
+call %0 augment-path
 
 call t a
 
