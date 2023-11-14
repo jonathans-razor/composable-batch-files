@@ -362,6 +362,7 @@ rem lu: Sep-9-2023
 echo. & echo * Jonathan's Github page.
 set cbf-gh=https://github.com/jonathans-razor
 set cbf-gh2=https://github.com/jonathans-razor?tab=repositories
+set cbf-gh3=https://github.com/settings/profile
 set cbf-rl=%cbf-gh%\Composable-Batch-Files\releases
 exit/b
 rem lu: Jun-27-2023
@@ -3996,6 +3997,20 @@ set cbf-app=C:\Program Files\Comodo\IceDragon\icedragon.exe
 exit/b
 lu: 
 Nov-13-2023
+
+
+
+:_
+:gcc
+set cbf-pd=graphql-crash-course
+echo. & echo * %cbf-pd%. 
+call pn it>nul
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-yt=https://www.youtube.com/watch?v=xMCnDesBggM&list=PL4cUxeGkcC9gUxtblNUahcsg0WLxmrK_y
+set cbf-gh=https://github.com/jonathans-razor/%cbf-pd%
+exit/b
+lu: 
+Nov-14-2023
 
 
 
