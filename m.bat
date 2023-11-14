@@ -1,4 +1,4 @@
-:_ Miscellaneous Functions (!m, !bfm)
+:_ (!m)
 
 @echo off
 

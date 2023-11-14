@@ -1,4 +1,4 @@
-:_ Nickname Dictionary (!n, !bfn)
+:_ (!n)
 
 @echo off
 

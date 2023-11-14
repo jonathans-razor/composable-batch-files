@@ -1,4 +1,4 @@
-:_ Vetted Code (!bfv)
+:_ (!v)
 
 @echo off
 
