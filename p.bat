@@ -57,15 +57,23 @@ call rf r>nul
 
 :
 call sep
-call t c & call g dirt
+call t cbf
+call g dirt
 
 :
 call sep
-call t dsa & call g dirt
+call t dsa
+call g dirt
 
 :
 call sep
-call t ql & call g dirt
+call t ql
+call g dirt
+
+:
+call sep
+call t gcc
+call g dirt
 
 :
 rem echo. & echo * Exiting here ***************************************.
