@@ -17,32 +17,17 @@ goto %1
 
 cls
 
-echo. & echo ^
-* Nickname/alias path dictionary that sets recyclable environment variables
-echo ^
-corresponding to a given unique nickname parameter. This can be thought of 
-echo ^
-as a large configuration file, batch file database or data layer. The idea 
-echo ^
-is that you register your folder, file, etc. here and then you can easily 
-echo ^
-access it via your chosen alias. This can also be thought of a global 
-echo ^
-variable database of sorts.
+echo. & echo * Nicknames dictionary. This can be thought of as a large configuration 
+echo file, batch file database or data layer that set enviornment variables. 
+echo The idea is that you register your folder, file, etc. here and then you can 
+echo easily access it via your chosen alias.
+echo. & echo In the function block corresponding to the label, you can set any or all
+echo of the CBF environment variables. Typically this batch file would be called 
+echo by a different batch file looking to set a particular CBF environment variable.
 
-echo. & echo * Usage: %0 [single parameter]
+
+echo. & echo   Usage: %0 [single parameter]
 echo. & echo * Parameter 1: Alias to run assignment for.
-
-echo. & echo ^
-* In the function block corresponding to the label, you can set any or all
-echo ^
-of the CBF environment variables. Typically this batch file would be called
-echo ^
-by echo a different batch file looking to set a particular CBF environment
-echo ^
-variable. However, if you call it yourself from the command line, it will
-echo ^
-set the variable plus it will describe itself.
 
 echo. & echo * Example(s):
 echo   %0 cbf
