@@ -67,7 +67,6 @@ Composable Batch Files (CBF) - Table of Contents
       dw  Run NG UI from a dedicated command line window.
        e  Edit a file based on a file choice algorithm.
       ea  Use Mutli-Edit to edit the Ansible Playbook of an alias.
-      ed  Choose a file to edit based on a decision algorithm.
     edcv  Use Multi-Edit to edit DCV ASCII files.
      edr  Edit a relative path constructed filename
      edx  Edit file - back office operation.
