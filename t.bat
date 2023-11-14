@@ -210,7 +210,7 @@ goto main
 :_
 :main
 cd /d "%cbf-pt%"
-title 
+title %0.bat - Transformed directory.
 exit/b
 
 
