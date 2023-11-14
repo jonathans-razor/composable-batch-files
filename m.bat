@@ -2,7 +2,7 @@
 
 @echo off
 
-title %0.bat  
+title %0
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
@@ -4705,7 +4705,6 @@ lu: Oct-10-2023
 :le
 :py
 
-rem qq
 rem echo. & echo * Copy latest Python filename to clipboard.
 
 call t d>nul || exit/b

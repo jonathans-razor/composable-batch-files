@@ -2,7 +2,7 @@
 
 @echo off
 
-title %0.bat  
+title %0
 if "%~1" == "?" goto help
 goto 
 
