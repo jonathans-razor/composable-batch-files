@@ -2144,24 +2144,13 @@ creation date: Sep-25-2023
 
 
 ::_
-
-:ga
-
 :care
-
 :caret
-
 :echo
+:ga
+:lcc
 
 echo. & echo * Line continuation with caret character.
-
-rem How do you continue a batch file line onto a second line?
-
-rem The caret only works with the "echo" statement and not the "rem" statement.
-
-rem expository echo statement
-
-rem lu: Nov-2-2018
 
 echo.
 echo The Gettysburg Address is a speech that U.S. President Abraham Lincoln delivered during ^
@@ -2170,6 +2159,14 @@ Pennsylvania, on the afternoon of Thursday, November 19, 1863, four and a half m
 the Union armies defeated those of the ...
 
 exit/b
+
+skw: How do you continue a batch file line onto a second line?
+
+Note: The caret only works with the "echo" statement and not the "rem" statement.
+
+lu:
+Nov-14-2023
+Nov-2-2018
 
 
 
