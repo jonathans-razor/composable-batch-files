@@ -1,6 +1,8 @@
 :_
 
 @echo off
+
+title %0.bat  
 if "%~1" == "?" goto help
 goto 
 

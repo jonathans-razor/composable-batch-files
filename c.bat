@@ -1,2 +1,2 @@
-title %0.bat - The screen is as clean as a whistle.
+title %0.bat - The screen is clean, oh so clean.
 cls

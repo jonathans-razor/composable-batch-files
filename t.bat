@@ -4,6 +4,7 @@
 
 call m cel
 
+title %0.bat
 if "%~1" == "?" goto help
 if "%~1" == "" goto ta
 
@@ -210,7 +211,6 @@ goto main
 :_
 :main
 cd /d "%cbf-pt%"
-title %0.bat - Transformed directory.
 exit/b
 
 
