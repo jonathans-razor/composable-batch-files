@@ -37,7 +37,6 @@ Composable Batch Files (CBF) - Table of Contents
      cdc  Current directory contains.
       ce  Create clean slate j1 and j2 files.
       cf  Surf to Confluence.
-      cl  Clear without modifying the path.
      clc  Simple calculator.
     cmac  CMAC operations.
     cmpf  Are 2 files the same?

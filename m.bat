@@ -4862,8 +4862,6 @@ call %0 set-default-text-editor me
 
 call t a
 
-call m a
-
 exit/b
 
 fcd:
