@@ -361,7 +361,6 @@ rem lu: Sep-9-2023
 :jjgit
 echo. & echo * Jonathan's Github page.
 set cbf-gh=https://github.com/jonathans-razor
-rem qq
 set cbf-gh2=https://github.com/jonathans-razor?tab=repositories
 set cbf-rl=%cbf-gh%\Composable-Batch-Files\releases
 exit/b

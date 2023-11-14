@@ -148,7 +148,6 @@ example-  Prefix for files written by other authors for learning and comparison 
      med  Use Multi-Edit to edit DCV files.
   mirror  Attempts to demonstrate how is easy it is to see what commands are running.
       mv  Move files using function routing.
-qq
        n  Nicknames path dictionary, a. k. a. the data layer.
       nd  Use Node to compile and run JavaScript files. (skw language-functions-series-jj)
      net  A wrapper around the netstat command.
