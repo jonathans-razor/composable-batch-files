@@ -4006,9 +4006,25 @@ set cbf-pd=graphql-crash-course
 echo. & echo * %cbf-pd%. 
 call pn it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-yt=https://www.youtube.com/watch?v=xMCnDesBggM&list=PL4cUxeGkcC9gUxtblNUahcsg0WLxmrK_y
+set cbf-yt=https://www.youtube.com/watch?v=xMCnDesBggM
 set cbf-gh=https://github.com/jonathans-razor/%cbf-pd%
 exit/b
+lu: 
+Nov-14-2023
+
+
+
+:_
+:mah
+set cbf-pd=Mission at Home
+echo. & echo * %cbf-pd%. 
+set cbf-gs=https://docs.google.com/spreadsheets/d/1MonEhCyxbEwQ^
+QZFsG6g-DD7gcO6DeyW3awwHUmyMVvM/edit#gid=506097238
+call an br>nul
+exit/b
+
+Note: I used a line continuation character above to circumvent a double q conflict.
+
 lu: 
 Nov-14-2023
 
