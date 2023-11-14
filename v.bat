@@ -12,13 +12,16 @@ goto %1
 :_
 :help
 
+cls
+
 echo. & echo * This file is used for vetted functions.
 
-echo. & echo * Usage: %0 (optional parameter 1)
+echo. & echo   Usage: %0 (optional parameter 1)
 
 echo. & echo * Parameter 1: The batch file label of the function you wish to execute.
 
-echo. & echo * Batch file style: Multipurpose
+echo. & echo   Batch file style: Multipurpose
+
 exit/b
 
 
