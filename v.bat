@@ -46,6 +46,166 @@ Metadata: Track Size (!tsv)
 
 
 
+:_+ Line Continuation Characters, Escape Characters and more. (!esch)
+
+
+
+::_
+:care
+:caret
+:echo
+:ga
+:lcc
+
+echo. & echo * Line continuation with caret character.
+
+echo.
+echo The Gettysburg Address is a speech that U.S. President Abraham Lincoln delivered during ^
+the American Civil War at the dedication of the Soldiers' National Cemetery in Gettysburg, ^
+Pennsylvania, on the afternoon of Thursday, November 19, 1863, four and a half months after ^
+the Union armies defeated those of the ...
+
+exit/b
+
+skw: How do you continue a batch file line onto a second line?
+
+Note: The caret only works with the "echo" statement and not the "rem" statement.
+
+lu:
+Nov-14-2023
+Nov-2-2018
+
+
+
+::_
+
+:caret
+:cubed-caret
+:hat-trick
+
+echo. & echo * The triple hat/caret seems to work for URLS!
+
+rem This works! Oct-10-2023 (skw triple hat works, triple caret)
+set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
+
+exit/b
+
+
+
+::_
+
+:percent_20
+
+echo. & echo * How do you escape a percent sign in a batch file?
+
+rem Answer: 2 '%' signs equals one.
+
+rem percent percent, double percent sign: skw
+
+rem percent 20 issue in environment variables. skw
+
+rem fcd: Aug-2-2017
+
+
+
+set cbf-url='https://cyber-balance.visualstudio.com/SPDR%%20LOB/_git/Mobile'
+
+echo.
+echo cbf-url: %cbf-url%
+
+exit/b
+
+
+
+::_
+
+:ampe
+
+echo. & echo * The ampersand character allows you to multiple commands on single line.
+
+rem The ampersand is the line continuation character for batch files.
+
+echo. & echo hey 1 & echo hey 2
+
+exit/b
+
+
+
+::_
+
+:
+
+echo. & echo * Test line continuation character in environment variables.
+
+rem lu: Jun-17-2019
+
+echo.
+set test=asdflasdff asdfasjklasdf asdflkasdfl  asdfasdfjklasdf asdfl asdf asdflasdfjklasdfl^
+abcdefzzz
+
+echo.
+echo %test%
+
+exit/b
+
+
+
+::_
+
+:debug
+
+echo. & echo * Debugging statement.
+
+echo. & echo Aug-18-2020_3_39_PM q
+
+exit/b
+
+
+
+::_
+
+:pare
+
+echo. & echo * Escape character for a parenthesis.
+
+rem skw what's the escape character for a batch file?
+
+rem Escaping Specific Characters: ^esch
+
+rem lu: Nov-20-2018
+
+echo.
+echo * Error: No "*.%2" file exist(s^) in the current folder.
+
+rem echo The rain in Spain(s) is great.
+
+exit/b
+
+
+
+::_
+
+:at_sign
+
+echo. & echo * Use of the at sign "@" before rem. Even with echo on, the statement "Hello 2" will ^
+not be disploayed.
+
+rem lu: Jan-31-2019
+
+echo.
+
+@echo on
+
+rem Hello 1.
+
+@rem Hello 2.
+
+@echo off
+
+exit/b
+
+
+
 :_
 
 :
@@ -2136,166 +2296,6 @@ if errorlevel 2 echo el2
 
 exit/b
 creation date: Sep-25-2023
-
-
-
-:_+ Line Continuation Characters, Escape Characters and more. (!esch)
-
-
-
-::_
-:care
-:caret
-:echo
-:ga
-:lcc
-
-echo. & echo * Line continuation with caret character.
-
-echo.
-echo The Gettysburg Address is a speech that U.S. President Abraham Lincoln delivered during ^
-the American Civil War at the dedication of the Soldiers' National Cemetery in Gettysburg, ^
-Pennsylvania, on the afternoon of Thursday, November 19, 1863, four and a half months after ^
-the Union armies defeated those of the ...
-
-exit/b
-
-skw: How do you continue a batch file line onto a second line?
-
-Note: The caret only works with the "echo" statement and not the "rem" statement.
-
-lu:
-Nov-14-2023
-Nov-2-2018
-
-
-
-::_
-
-:caret
-:cubed-caret
-:hat-trick
-
-echo. & echo * The triple hat/caret seems to work for URLS!
-
-rem This works! Oct-10-2023 (skw triple hat works, triple caret)
-set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
-
-exit/b
-
-
-
-::_
-
-:percent_20
-
-echo. & echo * How do you escape a percent sign in a batch file?
-
-rem Answer: 2 '%' signs equals one.
-
-rem percent percent, double percent sign: skw
-
-rem percent 20 issue in environment variables. skw
-
-rem fcd: Aug-2-2017
-
-
-
-set cbf-url='https://cyber-balance.visualstudio.com/SPDR%%20LOB/_git/Mobile'
-
-echo.
-echo cbf-url: %cbf-url%
-
-exit/b
-
-
-
-::_
-
-:ampe
-
-echo. & echo * The ampersand character allows you to multiple commands on single line.
-
-rem The ampersand is the line continuation character for batch files.
-
-echo. & echo hey 1 & echo hey 2
-
-exit/b
-
-
-
-::_
-
-:
-
-echo. & echo * Test line continuation character in environment variables.
-
-rem lu: Jun-17-2019
-
-echo.
-set test=asdflasdff asdfasjklasdf asdflkasdfl  asdfasdfjklasdf asdfl asdf asdflasdfjklasdfl^
-abcdefzzz
-
-echo.
-echo %test%
-
-exit/b
-
-
-
-::_
-
-:debug
-
-echo. & echo * Debugging statement.
-
-echo. & echo Aug-18-2020_3_39_PM q
-
-exit/b
-
-
-
-::_
-
-:pare
-
-echo. & echo * Escape character for a parenthesis.
-
-rem skw what's the escape character for a batch file?
-
-rem Escaping Specific Characters: ^esch
-
-rem lu: Nov-20-2018
-
-echo.
-echo * Error: No "*.%2" file exist(s^) in the current folder.
-
-rem echo The rain in Spain(s) is great.
-
-exit/b
-
-
-
-::_
-
-:at_sign
-
-echo. & echo * Use of the at sign "@" before rem. Even with echo on, the statement "Hello 2" will ^
-not be disploayed.
-
-rem lu: Jan-31-2019
-
-echo.
-
-@echo on
-
-rem Hello 1.
-
-@rem Hello 2.
-
-@echo off
-
-exit/b
 
 
 
