@@ -4050,4 +4050,18 @@ Nov-15-2023
 
 
 
+:_
+:k9s
+set cbf-pd=k9s
+echo. & echo * %cbf-pd%. 
+call pn it>nul
+rem Provenance: Jul-16-2021_11_43_AM qq1
+set cbf-gh=https://github.com/derailed/k9s/releases
+exit/b
+
+lu: 
+Nov-15-2023
+
+
+
 :_ (!efn)
