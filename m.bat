@@ -5245,7 +5245,8 @@ exit/b
 
 echo. & echo * Distill to filename or current folder without path.
 
-set cbf-distilled-file-folder=%~nx2
+rem qq
+set cbf-distill-file-folder=%~nx2
 
 exit/b
 
@@ -5255,7 +5256,7 @@ Nov-8-2023
 Sample call to get current folder name:
 call m distill-file-folder %cd%
 
-Then this variable "cbf-distilled-file-folder" will have the value for the current folder or 
+Then this variable "cbf-distill-file-folder" will have the value for the current folder or 
 filename.
 
 skw: full filename, file path only

@@ -58,7 +58,6 @@ Metadata: Track Size (!tsv)
 :care
 :caret
 :echo
-:ga
 :lcc
 
 echo. & echo * Line continuation with caret character.
@@ -1293,185 +1292,6 @@ exit/b
 
 
 
-:_+ Validation Family (!fyva) error-level-educational-series
-
-
-
-::_
-
-:new-style
-
-echo. & echo * New style error handling (!paco)
-
-call paco "%~1" . || exit/b
-
-echo made it here.
-
-exit/b
-lu: Oct-12-2023
-
-:command1 && command2 will run command1 and then command2, only if command1 succeeded (error 
-level 0).
-
-::command1 || command2 will run command1 and then command2, only if command1 failed (error 
-level not 0
-
-
-
-::_
-
-:old-style
-
-if errorlevel 1 exit/b (!el1, !ec, !gtr, !err, !erro, !el, !erle)
-
-Inside an if loop: if %errorlevel% == 5 Jun-28-2023
-
-if %errorlevel-old% gtr 0 exit/b
-
-if %errorlevel-old% gtr 0 exit/b %errorlevel%
-
-if %errorlevel-old% gtr 0 (
-  echo.
-  echo * Error: Label not found.
-  call m clear_errorlevel_silently 
-  exit/b
-)
-
-if "%cbf-pt%" == "" (
-  echo.
-  echo * The cbf-pt is not defined for "%1".
-  exit/b
-)
-
-if not exist "%cbf-pt%" (
-  echo.
-  echo * Error: The cbf-pt "%cbf-pt%" could not be found.
-  exit/b
-)
-
-
-
-::_
-
-:elt1
-
-echo. & echo * Error level test 1. If this returns 1, it means error level is working!
-
-rem lu: Feb-17-2022
-
-rem canary in a coal mine, error level testing
-
-echo %1 | find "not-present">nul
-
-call el
-
-exit/b
-
-
-
-::_
-
-:validate_filename
-
-call fnv %1
-
-if errorlevel 1 (
-  echo.
-  echo * Error: Label not found.
-  call m clear_errorlevel_silently 
-  exit/b
-)
-
-if "%cbf-fn%" == "" (
-  echo.
-  echo * The cbf-fn is not defined for "%1".
-  exit/b
-)
-
-rem (!noex)
-
-if not exist "%cbf-fn%" (
-  echo.
-  echo * Error: The cbf-fn "%cbf-fn%" could not be found.
-  exit/b
-)
-
-
-
-::_
-
-:validate_url
-
-call un %1
-
-if errorlevel 1 (
-  echo.
-  echo * Error: Label not found.
-  call m clear_errorlevel_silently 
-  exit/b
-)
-
-if "%cbf-url%" == "" (
-  echo.
-  echo * The cbf-url is not defined for "%1".
-  exit/b
-)
-
-
-
-::_
-
-:validate_application
-
-call an %1
-
-if %errorlevel% == 1 (
-  echo.
-  echo * Error: Label not found. - skw
-  call m clear_errorlevel_silently 
-  exit/b
-)
-
-if "%cbf-app%" == "" (
-  echo.
-  echo * The cbf-app is not definied for "%1".
-  exit/b
-)
-
-if not exist "%cbf-app%" (
-  echo.
-  echo * Error: The cbf-app "%cbf-app%" could not be found.
-  exit/b
-)
-
-
-
-::_
-
-:reset-error-level
-
-echo. & echo * Test return codes for "n" calls. How do you reset errorlevel?
-
-rem lu: Jul-18-2018
-
-
-
-call n bullshit
-
-echo.
-echo * Errorlevel: %errorlevel%
-
-ver>nul
-
-call n cnn
-
-echo.
-echo * Errorlevel: %errorlevel%
-
-exit/b
-
-
-
 :_+ Testing Error Level. (!tel) (skw test error level, test errorlevel)
 
 
@@ -1705,69 +1525,7 @@ exit/b
 
 
 
-:_
-
-:
-
-(skw contains period, contains a period)
-echo %1| find /i ".">nul
-if errorlevel 0 goto
-if errorlevel 1 goto
-exit/b
-
-
-
 :_+ All Command Line Parameters
-
-
-
-::_
-:epl
-:epl1
-:evaluate-the-parameter-list
-:find
-
-echo. & echo * Find example.
-
-call m cel
-echo. & echo EL: %errorlevel%
-call g is-git-folder && echo true
-echo %1| find /i ".">nul
-echo %*| find /i "/s">nul
-
-if %errorlevel% == 0 (
-  echo. & echo Parameter list contains "/s".
-  set cbf-search-subfolders=1
-) else (
-  echo. & echo Parameter list does NOT contain a "/s".
-)
-
-echo %*| find /i "/p">nul
-
-if %errorlevel% == 0 (
-  echo. & echo Entire parameter list contains "/p".
-  set cbf-pipe-to-file=1
-) else (
-  echo. & echo Parameter list does NOT contain a "/p".
-)
-
-exit/b
-
-rem lu:
-Oct-11-2023
-Jul-5-2023
-
-(!find, !cont, !contains, !pipe, !echo) 
-skw: contains, find period in filename, all command line variables, all parameters, 
-entire command line, command line arguments, parameter passing, passing parameters, 
-how to process parameters, parameter processing, process parameters
-
-Does the parameter list contain "/test"?, command line options, how to detect command line 
-options, how to detect command line parameters
-
-This is akin to turning a message into an error code.
-
-call s | find /i "working tree clean">nul
 
 
 
@@ -2540,6 +2298,248 @@ exit/b
 %~ftza1     - expands %1 to a DIR like output line
 
 exit/b
+
+
+
+:_+ Validation Family (!fyva) error-level-educational-series
+
+
+
+::_
+
+:old-style
+
+if errorlevel 1 exit/b (!el1, !ec, !gtr, !err, !erro, !el, !erle)
+
+Inside an if loop: if %errorlevel% == 5 Jun-28-2023
+
+if %errorlevel-old% gtr 0 exit/b
+
+if %errorlevel-old% gtr 0 exit/b %errorlevel%
+
+if %errorlevel-old% gtr 0 (
+  echo.
+  echo * Error: Label not found.
+  call m clear_errorlevel_silently 
+  exit/b
+)
+
+if "%cbf-pt%" == "" (
+  echo.
+  echo * The cbf-pt is not defined for "%1".
+  exit/b
+)
+
+if not exist "%cbf-pt%" (
+  echo.
+  echo * Error: The cbf-pt "%cbf-pt%" could not be found.
+  exit/b
+)
+
+
+
+::_
+
+:elt1
+
+echo. & echo * Error level test 1. If this returns 1, it means error level is working!
+
+rem lu: Feb-17-2022
+
+rem canary in a coal mine, error level testing
+
+echo %1 | find "not-present">nul
+
+call el
+
+exit/b
+
+
+
+::_
+
+:validate_filename
+
+call fnv %1
+
+if errorlevel 1 (
+  echo.
+  echo * Error: Label not found.
+  call m clear_errorlevel_silently 
+  exit/b
+)
+
+if "%cbf-fn%" == "" (
+  echo.
+  echo * The cbf-fn is not defined for "%1".
+  exit/b
+)
+
+rem (!noex)
+
+if not exist "%cbf-fn%" (
+  echo.
+  echo * Error: The cbf-fn "%cbf-fn%" could not be found.
+  exit/b
+)
+
+
+
+::_
+
+:validate_url
+
+call un %1
+
+if errorlevel 1 (
+  echo.
+  echo * Error: Label not found.
+  call m clear_errorlevel_silently 
+  exit/b
+)
+
+if "%cbf-url%" == "" (
+  echo.
+  echo * The cbf-url is not defined for "%1".
+  exit/b
+)
+
+
+
+::_
+
+:validate_application
+
+call an %1
+
+if %errorlevel% == 1 (
+  echo.
+  echo * Error: Label not found. - skw
+  call m clear_errorlevel_silently 
+  exit/b
+)
+
+if "%cbf-app%" == "" (
+  echo.
+  echo * The cbf-app is not definied for "%1".
+  exit/b
+)
+
+if not exist "%cbf-app%" (
+  echo.
+  echo * Error: The cbf-app "%cbf-app%" could not be found.
+  exit/b
+)
+
+
+
+::_
+
+:reset-error-level
+
+echo. & echo * Test return codes for "n" calls. How do you reset errorlevel?
+
+rem lu: Jul-18-2018
+
+
+
+call n bullshit
+
+echo.
+echo * Errorlevel: %errorlevel%
+
+ver>nul
+
+call n cnn
+
+echo.
+echo * Errorlevel: %errorlevel%
+
+exit/b
+
+
+
+::_
+
+:
+
+(skw contains period, contains a period)
+echo %1| find /i ".">nul
+if errorlevel 0 goto
+if errorlevel 1 goto
+exit/b
+
+
+
+::_
+:epl
+:epl1
+:evaluate-the-parameter-list
+:find
+
+echo. & echo * Find example.
+
+call m cel
+echo. & echo EL: %errorlevel%
+call g is-git-folder && echo true
+echo %1| find /i ".">nul
+echo %*| find /i "/s">nul
+
+if %errorlevel% == 0 (
+  echo. & echo Parameter list contains "/s".
+  set cbf-search-subfolders=1
+) else (
+  echo. & echo Parameter list does NOT contain a "/s".
+)
+
+echo %*| find /i "/p">nul
+
+if %errorlevel% == 0 (
+  echo. & echo Entire parameter list contains "/p".
+  set cbf-pipe-to-file=1
+) else (
+  echo. & echo Parameter list does NOT contain a "/p".
+)
+
+exit/b
+
+rem lu:
+Oct-11-2023
+Jul-5-2023
+
+(!find, !cont, !contains, !pipe, !echo) 
+skw: contains, find period in filename, all command line variables, all parameters, 
+entire command line, command line arguments, parameter passing, passing parameters, 
+how to process parameters, parameter processing, process parameters
+
+Does the parameter list contain "/test"?, command line options, how to detect command line 
+options, how to detect command line parameters
+
+This is akin to turning a message into an error code.
+
+call s | find /i "working tree clean">nul
+
+
+
+::_
+
+:new-style
+
+echo. & echo * New style error handling (!peri, !paco)
+
+call paco "%~1" . && goto run
+call paco "%~2" /n && goto 
+
+echo made it here.
+
+exit/b
+lu: Oct-12-2023
+
+:command1 && command2 will run command1 and then command2, only if command1 succeeded (error 
+level 0).
+
+::command1 || command2 will run command1 and then command2, only if command1 failed (error 
+level not 0
 
 
 

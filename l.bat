@@ -17,7 +17,7 @@ goto preprocess
 :help
 cls
 
-echo. & echo * Load clipboard path.
+echo. & echo * Load path onto clipboard.
 
 echo. & echo * Usage: %0 [space separated parameter(s)]
 

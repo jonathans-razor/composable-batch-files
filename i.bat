@@ -130,8 +130,8 @@ rem Desired path
 set cbf-desired-path=
 
 :
-rem Distilled file folder.
-set cbf-distilled-file-folder=
+rem Distill file folder.
+set cbf-distill-file-folder=
 
 :
 rem Distilled
