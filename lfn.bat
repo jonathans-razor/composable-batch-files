@@ -53,9 +53,7 @@ exit/b
 
 :validate_user_input
 
-call fnv %1
-
-if errorlevel 1 exit/b
+call fnv %1>nul || exit/b
 
 
 
@@ -63,7 +61,7 @@ if errorlevel 1 exit/b
 
 :main
 
-echo. & * Copy filename "%cbf-fn%" to the clipboard.
+echo. & echo * Copy filename "%cbf-fn%" to the clipboard.
 
 echo %cbf-fn%|clip
 

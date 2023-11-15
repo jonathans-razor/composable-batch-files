@@ -129,16 +129,17 @@ example-  Prefix for files written by other authors for learning and comparison 
     json  Edit DCV file in NotePad++ for file type json.
       jv  Java. (skw language-functions-series-jj)
       kl  Kill a process.
-       l  Load file contents onto the clipboard.
+       l  Load clipboard path.
+      ld  Use a DCV to load a cbf variable onto the clipboard.
       le  Leet code tester.
       lf  Language functions aggregate runner. (skw language-functions-series-jj)
+     lfb  Batch that supports language functions.
+     lfc  Load cbf-fn contents to the clipboard.
+     lfn  Load a filename to the clipboard.
       lh  Execute the localhost DCV for the passed in alias.
       ll  Wrapper around dir command to help with Linux compatibility.
+      lm  Load clipboard multipurpose.
    lower  Convert the passed in parameter to lower case.
-       l  Load clipboard path.
-      lp  Load cbf-fn contents to the clipboard.
-     lpd  Use a DCV to copy a cbf variable to the clipboard.
-     lpf  Copy a filename to the clipboard.
    lpfwp  Load cbf-fn without path of passed in alias onto the clipboard.
       ls  Wrapper around dir command to help with Linux compatibility.
        m  Perform simple miscellaneous tasks using a function routing style.
