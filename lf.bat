@@ -26,7 +26,7 @@ echo. & echo  * Parameter 1:
 echo      If contains period, operates on the current folder filename.
 echo      If alias, operates on alias' filename.
 
-echo. & echo  * Parameter 2:
+echo. & echo  * Parameter 2 (Optional):
 echo      If /n, loads the filename with no path onto the clipboard.
 echo      If /c, loads the filename's contents onto the clipboard.
 
