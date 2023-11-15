@@ -4042,7 +4042,6 @@ set cbf-pd=apollo-sandbox
 echo. & echo * %cbf-pd%. 
 call pn it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
-rem Provenance: Jul-16-2021_11_43_AM qq1
 set cbf-url=https://studio.apollographql.com/sandbox/explorer/
 call an kr
 exit/b

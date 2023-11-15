@@ -1,9 +1,10 @@
 :_
 
 @echo off
-
 title %0
+
 if "%~1" == "?" goto help
+
 goto 
 
 
@@ -28,7 +29,7 @@ echo      %~n0
 exit/b
 
 lu: 
-Nov-3-2023
+Nov-15-2023
 
 
 
