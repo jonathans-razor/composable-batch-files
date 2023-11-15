@@ -76,6 +76,13 @@ exit/b
 
 
 :_
+:gh2
+call sf cfgh
+exit/b
+
+
+
+:_
 :gs
 call fx rt %1 br
 exit/b

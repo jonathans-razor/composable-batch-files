@@ -93,6 +93,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       gd  Surf to Google Docs website.
       gg  Go. (skw language-functions-series-jj)
       gh  Execute the GitHub DCV for the passed in alias.
+     gh2  Execute the GitHub DCV for the passed in alias.
 	   ghh  Surf to GitHub Historical record website.
      ghf  Execute the GitHub historical file DCV for the passed in alias.
       gl  Execute the GitLab DCV for the passed in alias.

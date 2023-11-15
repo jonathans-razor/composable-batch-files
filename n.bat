@@ -4008,6 +4008,8 @@ call pn it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=xMCnDesBggM
 set cbf-gh=https://github.com/jonathans-razor/%cbf-pd%
+rem The original repo.
+set cbf-gh2=https://github.com/iamshaunjp/%cbf-pd%
 exit/b
 lu: 
 Nov-14-2023
