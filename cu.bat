@@ -38,7 +38,6 @@ Nov-15-2023
         `--'      `--'      `--'      `--'      `--'     
 
 
-rem qq
 
 :_
 :main
@@ -73,6 +72,20 @@ set cbf-parameter=%tmp%\curl-%1.txt
 call r
 
 exit/b
+
+
+
+:_
+:Nov-15-2023
+cls
+
+echo. & echo * Download Kubernetes CLI tool K9s.
+rem Provenance: Jul-16-2021_11_43_AM qq1
+curl -o c:\a\k9s.tar.gz -sLO https://github.com/derailed/k9s/releases/download/v0.27.4/k9s_Linux_amd64.tar.gz
+exit/b
+
+lu: 
+Nov-15-2023
 
 
 
