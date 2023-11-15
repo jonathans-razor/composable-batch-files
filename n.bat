@@ -4001,6 +4001,26 @@ Nov-13-2023
 
 
 :_
+:mah
+set cbf-pd=Mission at Home
+echo. & echo * %cbf-pd%. 
+set cbf-gs=https://docs.google.com/spreadsheets/d/1MonEhCyxbEwQ^
+QZFsG6g-DD7gcO6DeyW3awwHUmyMVvM/edit#gid=506097238
+call an br>nul
+exit/b
+
+Note: I used a line continuation character above to circumvent a double q conflict.
+
+lu: 
+Nov-14-2023
+
+
+
+:_+ GraphQL Family (!fygcc)
+
+
+
+::_
 :gcc
 set cbf-pd=graphql-crash-course
 echo. & echo * %cbf-pd%. 
@@ -4016,19 +4036,18 @@ Nov-14-2023
 
 
 
-:_
-:mah
-set cbf-pd=Mission at Home
+::_
+:apsa
+set cbf-pd=apollo-sandbox
 echo. & echo * %cbf-pd%. 
-set cbf-gs=https://docs.google.com/spreadsheets/d/1MonEhCyxbEwQ^
-QZFsG6g-DD7gcO6DeyW3awwHUmyMVvM/edit#gid=506097238
-call an br>nul
+call pn it>nul
+set cbf-pt=%cbf-pt%\%cbf-pd%
+rem Provenance: Jul-16-2021_11_43_AM qq1
+set cbf-url=https://studio.apollographql.com/sandbox/explorer/
+call an kr
 exit/b
-
-Note: I used a line continuation character above to circumvent a double q conflict.
-
 lu: 
-Nov-14-2023
+Nov-15-2023
 
 
 
