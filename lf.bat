@@ -4,6 +4,7 @@
 
 title %0
 if "%~1" == "?" goto help
+call paco "%~2" /c>nul && goto load-contents "%~1"
 call paco "%~1" .>nul && goto load-current-folder-filename-onto-clipboard
 call paco "%~2" /n>nul && goto loads-the-filename-with-no-path-onto-the-clipboard
 goto load-alias-filename-onto-the-clipboard
@@ -22,16 +23,21 @@ echo. & echo  * Load file name or contents onto clipboard.
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo  * Parameter 1:
-echo      If contains period, load current folder filename onto clipboard.
-echo      If alias, load alias' filename onto the clipboard.
+echo      If contains period, operates on the current folder filename.
+echo      If alias, operates on alias' filename.
 
 echo. & echo  * Parameter 2:
 echo      If /n, loads the filename with no path onto the clipboard.
+echo      If /c, loads the filename's contents onto the clipboard.
 
 echo. & echo    Batch file style: Multipurpose
 
 echo. & echo  * Samples:
-echo      %~n0 
+echo      %~n0 ga
+echo      %~n0 ga /n
+echo      %~n0 ga /c
+echo      %~n0 j1.txt
+echo      %~n0 j1.txt /c
 
 exit/b
 
@@ -83,6 +89,34 @@ call m distill-file-folder %cbf-fn%
 echo %cbf-distill-file-folder%| clip
 
 echo. & echo * Load filename "%cbf-distill-file-folder%" (path was removed) onto the clipboard.
+
+exit/b
+
+
+
+:_
+
+:load-contents
+
+call paco "%~1" .>nul && goto current-folder-filename "%~1"
+
+call fnv %1 || exit/b
+
+echo. & echo * Copy contents of file "%cbf-fn%" to the clipboard.
+
+clip < "%cbf-fn%"
+
+exit/b
+
+
+
+:_
+
+:current-folder-filename
+
+echo. & echo * Copy contents of filename "%~1" to the clipboard.
+
+clip < %~1
 
 exit/b
 

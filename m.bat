@@ -5245,7 +5245,6 @@ exit/b
 
 echo. & echo * Distill to filename or current folder without path.
 
-rem qq
 set cbf-distill-file-folder=%~nx2
 
 exit/b
