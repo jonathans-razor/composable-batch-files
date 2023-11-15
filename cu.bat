@@ -1,3 +1,4 @@
+:_ (!cu)
 @echo off
 title: %0
 
@@ -80,8 +81,35 @@ exit/b
 cls
 
 echo. & echo * Download Kubernetes CLI tool K9s.
-rem Provenance: Jul-16-2021_11_43_AM qq1
 curl -o c:\a\k9s.tar.gz -sLO https://github.com/derailed/k9s/releases/download/v0.27.4/k9s_Linux_amd64.tar.gz
+exit/b
+
+lu: 
+Nov-15-2023
+
+
+
+:_
+:Nov-15-2023-2
+cls
+
+echo. & echo * Download Kubernetes CLI tool K9s.
+rem Provenance: Jul-16-2021_11_43_AM qq1
+curl -O -sLO https://github.com/derailed/k9s/releases/download/v0.28.2/k9s_Windows_amd64.zip
+exit/b
+
+lu: 
+Nov-15-2023
+
+
+
+:_
+:Nov-15-2023-3
+cls
+
+echo. & echo * Download Kubernetes CLI tool K9s.
+rem Provenance: Jul-16-2021_11_43_AM qq1
+curl -O -sLO https://github.com/derailed/k9s/releases/download/v0.28.2/k9s_Windows_arm64.zip
 exit/b
 
 lu: 
