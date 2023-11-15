@@ -135,10 +135,6 @@ example-  Prefix for files written by other authors for learning and comparison 
      lfa  Language functions aggregate runner. (skw language-functions-series-jj)
      lfb  Batch that supports language functions.
       lf  Load file name or contents onto clipboard.
-qjq Combine the following 3 batch files into 1 called lf.bat
-     lfc  Load cbf-fn contents to the clipboard.
-     lfn  Load a filename to the clipboard.
-   lpfwp  Load cbf-fn without path of passed in alias onto the clipboard.
       lh  Execute the localhost DCV for the passed in alias.
       ll  Wrapper around dir command to help with Linux compatibility.
       lm  Load clipboard multipurpose.
