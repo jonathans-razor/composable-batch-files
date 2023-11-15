@@ -1,25 +1,34 @@
 @echo off
+title: %0
+
+call paco "%~1" -20>nul && goto %1
 if "%~1" == "?" goto help
+
 goto main
 
 
 
 :help
 cls
-echo. & echo * Curl leveraging the  nicknames dictionary.
 
-echo. & echo * Usage: %~n0 [space separated parameter(s)]
+echo. & echo * Curl leveraging the nicknames dictionary and date runs.
 
-echo. & echo * Parameter 1: Alias to process.
+echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo * Batch file style: Single purpose nd.
+echo. & echo * Parameter 1: 
+echo   Alias to process.
+echo   Or date function to run. Should conatin the string "-20".
+
+echo. & echo   Batch file style: Single purpose nd.
 
 echo. & echo * Samples:
 echo   %~n0 jfro
+echo   %~n0 Nov-15-2023
 
 exit/b
 
-rem creation date: 
+lu:
+Nov-15-2023
 
 
 
@@ -29,6 +38,7 @@ rem creation date:
         `--'      `--'      `--'      `--'      `--'     
 
 
+rem qq
 
 :_
 :main
@@ -63,3 +73,7 @@ set cbf-parameter=%tmp%\curl-%1.txt
 call r
 
 exit/b
+
+
+
+:_

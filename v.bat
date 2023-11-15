@@ -2526,8 +2526,7 @@ call s | find /i "working tree clean">nul
 :new-style
 
 echo. & echo * New style error handling (!peri, !paco)
-
-call paco "%~1" . && goto run
+call paco "%~1" .>nul && goto 
 call paco "%~2" /n && goto 
 
 echo made it here.
