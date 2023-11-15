@@ -4057,6 +4057,7 @@ echo. & echo * %cbf-pd%.
 call pn it>nul
 rem Provenance: Jul-16-2021_11_43_AM qq1
 set cbf-gh=https://github.com/derailed/k9s/releases
+set cbf-yt=https://www.youtube.com/results?search_query=kubernetes+cli
 exit/b
 
 lu: 
