@@ -86,9 +86,9 @@ call fnv %1>nul || exit/b
 
 call m distill-file-folder %cbf-fn%
 
-echo %cbf-distill-file-folder%| clip
+echo %cbf-distilled-file-folder%| clip
 
-echo. & echo * Load filename "%cbf-distill-file-folder%" (path was removed) onto the clipboard.
+echo. & echo * Load filename "%cbf-distilled-file-folder%" (path was removed) onto the clipboard.
 
 exit/b
 
@@ -102,7 +102,7 @@ call paco "%~1" .>nul && goto current-folder-filename "%~1"
 
 call fnv %1 || exit/b
 
-echo. & echo * Copy contents of file "%cbf-fn%" to the clipboard.
+echo. & echo * Load contents of file "%cbf-fn%" to the clipboard.
 
 clip < "%cbf-fn%"
 
@@ -114,7 +114,7 @@ exit/b
 
 :current-folder-filename
 
-echo. & echo * Copy contents of filename "%~1" to the clipboard.
+echo. & echo * Load contents of filename "%~1" to the clipboard.
 
 clip < %~1
 
