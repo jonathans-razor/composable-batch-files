@@ -1142,6 +1142,25 @@ exit/b
 
 
 :_
+:Nov-15-2023
+
+cls
+
+:
+@echo on
+python 169-majority-element.py 3 2 3
+
+:
+@echo on
+python 169-majority-element.py 2 2 1 1 1 2 2
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
 :Nov-14-2023
 
 cls
@@ -1192,19 +1211,26 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-15-2023
+:Nov-16-2023
 
 cls
 
-:
 @echo on
-python 169-majority-element.py 3 2 3
 
-:
-@echo on
-python 169-majority-element.py 2 2 1 1 1 2 2
+python 171-excel-sheet-column-number.py A
 
-:Necessary Edge Case Spacer - Please do not delete.
+python 171-excel-sheet-column-number.py B
+
+python 171-excel-sheet-column-number.py C
+
+python 171-excel-sheet-column-number.py Z
+
+python 171-excel-sheet-column-number.py AA
+python 171-excel-sheet-column-number.py AB
+python 171-excel-sheet-column-number.py BA
+python 171-excel-sheet-column-number.py ZY
+
+@echo off
 
 exit/b
 
