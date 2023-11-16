@@ -1088,33 +1088,6 @@ exit/b
 
 
 :_
-:Nov-12-2023
-
-cls
-
-:
-@echo on
-python 125-valid-palindrome.py canal
-
-:
-@echo on
-python 125-valid-palindrome.py "a man, a plan, a canal: panama"
-
-:
-@echo on
-python 125-valid-palindrome.py "race a car"
-
-:
-@echo on
-python 125-valid-palindrome.py " "
-
-:Necessary Edge Case Spacer - Please do not delete.
-
-exit/b
-
-
-
-:_
 :Nov-13-2023
 
 cls
@@ -1188,6 +1161,32 @@ exit/b
 
 
 :_
+:Nov-16-2023
+
+cls
+
+@echo on
+
+python 171-excel-sheet-column-number.py A
+
+python 171-excel-sheet-column-number.py B
+
+python 171-excel-sheet-column-number.py C
+
+python 171-excel-sheet-column-number.py Z
+
+python 171-excel-sheet-column-number.py AA
+python 171-excel-sheet-column-number.py AB
+python 171-excel-sheet-column-number.py BA
+python 171-excel-sheet-column-number.py ZY
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1211,26 +1210,27 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-16-2023
+:Nov-12-2023
 
 cls
 
+:
 @echo on
+python 125-valid-palindrome.py canal
 
-python 171-excel-sheet-column-number.py A
+:
+@echo on
+python 125-valid-palindrome.py "a man, a plan, a canal: panama"
 
-python 171-excel-sheet-column-number.py B
+:
+@echo on
+python 125-valid-palindrome.py "race a car"
 
-python 171-excel-sheet-column-number.py C
+:
+@echo on
+python 125-valid-palindrome.py " "
 
-python 171-excel-sheet-column-number.py Z
-
-python 171-excel-sheet-column-number.py AA
-python 171-excel-sheet-column-number.py AB
-python 171-excel-sheet-column-number.py BA
-python 171-excel-sheet-column-number.py ZY
-
-@echo off
+:Necessary Edge Case Spacer - Please do not delete.
 
 exit/b
 

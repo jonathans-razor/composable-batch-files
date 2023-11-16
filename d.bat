@@ -32,11 +32,12 @@ echo          ba  Bare.
 echo           b  Big files.
 echo           d  Date, oldest first.
 echo          d-  Date, newest first.
-echo           e  extensionless files.
-echo         els  extensionless by size files.
+echo           e  Extensionless files.
+echo         els  Extensionless by size files.
 echo         fno  Filenames only.
 echo          fo  Folders only.
 echo           h  Hidden files and folders.
+echo           r  Show read-only files.
 echo           s  Size, biggest first.
 echo          s-  Size, smallest first.
 echo           t  Treeview normal.
@@ -604,3 +605,16 @@ exit/b
 
 
 
+:_
+:r
+echo. & echo * Look for the read-only files and folders.
+echo.
+dir /ar
+exit/b
+
+lu:
+Nov-16-2023
+
+
+
+:_
