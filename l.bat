@@ -7,7 +7,7 @@ set cbf-pt=
 
 if "%~1" == "" goto load-current-folder
 if "%~1" == "?" goto help
-if "%~1" == "/dp" goto load-dcv-path-only-to-clipboard
+if "%~1" == "/n" goto loads-the-current-folder-with-no-path-onto-the-clipboard
 
 goto preprocess
 
@@ -56,40 +56,13 @@ goto main
 
 :_
 
-:load-dcv-path-only-to-clipboard
+:loads-the-current-folder-with-no-path-onto-the-clipboard
 
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-if "%~3" == "" goto help
+call m distill-file-folder %cd%
 
-call n %2
-                                                       
-if errorlevel 1 exit/b
+echo %cbf-distilled-file-folder%| clip
 
-call m compose_variable %3>nul
-
-if "%cbf-expanded-variable%" == "" (
-  echo. & echo * Error: There is no definition of "cbf-%2" for the alias "%1".
-  exit/b
-)
-
-call m expand-to-path-only "%cbf-expanded-variable%"
-
-rem echo. & echo cbf-expand-to-path-only-pt: %cbf-expand-to-path-only-pt%
-
-echo %cbf-expand-to-path-only-pt% | clip
-
-echo. & echo * "%cbf-expand-to-path-only-pt%" has been copied to the clipboard.
-
-exit/b
-
-:help
-
-echo. & echo * Load DCV path only to clipboard.
-
-echo. & echo * Parameter Descriptions:
-echo. & echo * Parameter 2: Alias
-echo. & echo * Parameter 3: DCV
+echo. & echo * Load current folder "%cbf-distilled-file-folder%" (path was removed) onto the clipboard.
 
 exit/b
 
