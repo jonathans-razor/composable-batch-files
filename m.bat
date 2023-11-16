@@ -5417,7 +5417,6 @@ exit/b
 :make-all-files-in-the-current-folder-read-only
 set cbf-pd=make-all-files-in-the-current-folder-read-only
 echo. & echo * %cbf-pd%. 
-rem Provenance: Jul-16-2021_11_43_AM qq1
 
 attrib +r *.*
 

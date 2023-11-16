@@ -4,7 +4,7 @@
 
 if "%~1" == "?" goto help
 
-call t dsa>nul
+rem call t dsa>nul
 call :is-leetcode-number %1 && exit/b
 
 if "%~1" == "" (
@@ -1187,6 +1187,33 @@ exit/b
 
 
 :_
+:Nov-12-2023
+
+cls
+
+:
+@echo on
+python 125-valid-palindrome.py canal
+
+:
+@echo on
+python 125-valid-palindrome.py "a man, a plan, a canal: panama"
+
+:
+@echo on
+python 125-valid-palindrome.py "race a car"
+
+:
+@echo on
+python 125-valid-palindrome.py " "
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1210,27 +1237,15 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-12-2023
+:Nov-16-2023
 
 cls
 
 :
 @echo on
-python 125-valid-palindrome.py canal
+python curate-data.py words1.txt words2.txt words3.txt curated-data.txt
 
-:
-@echo on
-python 125-valid-palindrome.py "a man, a plan, a canal: panama"
-
-:
-@echo on
-python 125-valid-palindrome.py "race a car"
-
-:
-@echo on
-python 125-valid-palindrome.py " "
-
-:Necessary Edge Case Spacer - Please do not delete.
+@echo off
 
 exit/b
 
