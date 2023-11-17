@@ -1246,6 +1246,33 @@ exit/b
 
 
 :_
+:Nov-17-2023
+
+cls
+
+@echo on
+
+:
+python 205-isomorphic-strings.py egg add
+
+:
+python 205-isomorphic-strings.py egg addt
+
+:
+python 205-isomorphic-strings.py foo bar
+
+:
+python 205-isomorphic-strings.py paper title
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1272,7 +1299,7 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-17-2023
+:Nov-17-2023-2
 
 cls
 
@@ -1280,15 +1307,6 @@ cls
 
 :
 python 205-isomorphic-strings.py egg add
-
-:
-python 205-isomorphic-strings.py egg addt
-
-:
-python 205-isomorphic-strings.py foo bar
-
-:
-python 205-isomorphic-strings.py paper title
 
 :Necessary Edge Case Spacer - Please do not delete.
 
