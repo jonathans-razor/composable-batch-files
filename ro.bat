@@ -35,6 +35,9 @@ echo. & echo    Batch file style: Multipurpose
 
 echo. & echo  * Samples:
 echo      %~n0 
+echo      %~n0 /n
+echo      %~n0 j1.txt
+echo      %~n0 j1.txt /n
 
 exit/b
 
@@ -47,13 +50,6 @@ Nov-15-2023
    .--.      .--.      .--.      .--.      .--.                 
  :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
         `--'      `--'      `--'      `--'      `--'     
-
-
-
-:_
-:
-
-exit/b
 
 
 
@@ -86,11 +82,11 @@ Nov-16-2023
 
 
 :_
-:all-not-read-only
+:all-read-only
 
-echo. & echo * Make all files in the current folder not read-only.
+echo. & echo * Make all files in the current folder read-only.
 
-attrib -r *.*
+attrib +r *.*
 
 exit/b
 
@@ -100,11 +96,11 @@ Nov-16-2023
 
 
 :_
-:all-read-only
+:all-not-read-only
 
-echo. & echo * Make all files in the current folder read-only.
+echo. & echo * Make all files in the current folder not read-only.
 
-attrib +r *.*
+attrib -r *.*
 
 exit/b
 
