@@ -71,16 +71,16 @@ call t ql
 call g dirt
 
 :
-call sep
-call t gcc
-call g dirt
-
-:
 rem echo. & echo * Exiting here ***************************************.
 call rf>nul
 echo.
 echo.
 goto exit
+
+:
+call sep
+call t gcc
+call g dirt
 
 :
 call sep
