@@ -39,7 +39,6 @@ echo               free  Report on free hard disk space.
 echo               ipco  Ipconfig/all.
 echo                ise  Initialize environment. 
 echo               log4  Is log4j jar file present?
-echo                mro  Make all files in the current folder read only.
 echo                ocf  Open CMAC files.
 echo               path  Pipe path to file.
 echo                sde  Set default text editor.
@@ -5409,21 +5408,6 @@ echo.
 echo * Distilled Path: %cbf-distilled_path%
 
 exit/b
-
-
-
-:_
-:mro
-:make-all-files-in-the-current-folder-read-only
-set cbf-pd=make-all-files-in-the-current-folder-read-only
-echo. & echo * %cbf-pd%. 
-
-attrib +r *.*
-
-exit/b
-
-lu: 
-Nov-16-2023
 
 
 

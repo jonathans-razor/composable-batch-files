@@ -5,7 +5,7 @@ title %0
 
 if "%~1" == "?" goto help
 
-goto 
+goto %1
 
 
 

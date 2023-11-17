@@ -193,6 +193,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       rf  Recall previous folder.
     reme  Execute the demo DCV for the passed in alias.
       rl  Execute the releases DCV for the passed in alias.
+      ro  Read-only.
      rzr  Multi-Edit abstraction layer for running CBF files.
     rzrp  Multi-Edit abstraction layer for running CBF files, with a pause.
        s  Check updated git status, with td parameter.
