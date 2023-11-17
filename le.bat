@@ -4,7 +4,7 @@
 
 if "%~1" == "?" goto help
 
-rem call t dsa>nul
+call t dsa>nul
 call :is-leetcode-number %1 && exit/b
 
 if "%~1" == "" (
