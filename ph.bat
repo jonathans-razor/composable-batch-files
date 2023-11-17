@@ -262,7 +262,7 @@ exit/b
 
 ::_
 :docs
-call sf phdocs
+call fx ph docs
 exit/b
 
 

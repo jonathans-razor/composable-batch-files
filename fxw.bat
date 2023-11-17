@@ -62,6 +62,13 @@ exit/b
 
 
 :_
+:docs
+call fx ph docs>nul
+exit/b
+
+
+
+:_
 :gd
 call fx rt %1 br>nul
 exit/b

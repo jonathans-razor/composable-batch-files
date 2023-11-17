@@ -3608,9 +3608,9 @@ exit/b
 
 
 :_
-:phdocs
+:ph
 echo. & echo * Python docs.
-set cbf-url=https://docs.python.org/3/
+set cbf-docs=https://docs.python.org/3/
 exit/b
 lu: Oct-25-2023
 
@@ -4057,7 +4057,8 @@ set cbf-pd=k9s
 echo. & echo * %cbf-pd%. 
 call pn it>nul
 set cbf-gh=https://github.com/derailed/k9s/releases
-set cbf-yt=https://www.youtube.com/results?search_query=kubernetes+cli
+set cbf-yt=https://www.youtube.com/watch?v=q^
+qR0c-qcILI
 exit/b
 
 lu: 
