@@ -4,8 +4,8 @@
 
 title %0
 if "%~1" == "?" goto help
-call paco "%~2" /c>nul && goto load-contents "%~1"
 call paco "%~1" .>nul && goto load-current-folder-filename-onto-clipboard
+call paco "%~2" /c>nul && goto load-contents "%~1"
 call paco "%~2" /n>nul && goto loads-the-filename-with-no-path-onto-the-clipboard
 goto load-alias-filename-onto-the-clipboard
 

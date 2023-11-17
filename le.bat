@@ -1214,29 +1214,6 @@ exit/b
 
 
 :_
-:
-
-cls
-
-:
-@echo on
-python 
-
-:Necessary Edge Case Spacer - Please do not delete.
-
-exit/b
-
-
-
-:_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Nov-16-2023-1
 
 cls
@@ -1263,6 +1240,59 @@ python curate-data.py words4.txt words5.txt words6.txt curated-data.txt
 @echo off
 
 :Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
+:
+
+cls
+
+@echo on
+
+:
+python 
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+@echo off
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Nov-17-2023
+
+cls
+
+@echo on
+
+:
+python 205-isomorphic-strings.py egg add
+
+:
+python 205-isomorphic-strings.py egg addt
+
+:
+python 205-isomorphic-strings.py foo bar
+
+:
+python 205-isomorphic-strings.py paper title
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+@echo off
 
 exit/b
 
