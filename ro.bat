@@ -20,11 +20,11 @@ goto %1
 
 cls
 
-echo. & echo  * Make files read-only.
+echo. & echo  * Make files read-only or not.
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo  * Parameter 1:
+echo. & echo  * Parameter 1 (Optional):
 echo    If blank, make all files in the current folder read-only.
 echo    If /n, make all files in the current folder not read-only.
 echo    If filename, make that file read-only.
