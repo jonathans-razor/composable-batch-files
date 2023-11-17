@@ -27,6 +27,7 @@ echo. & echo    Usage: %~n0 [space separated parameter(s)]
 echo. & echo  * Parameter 1:
 echo    If blank, make all files in the current folder read-only.
 echo    If /n, make all files in the current folder not read-only.
+echo    If filename, make that file read-only.
 
 echo. & echo  * Parameter 2 (Optional):
 echo    If /n, make file, specified in parameter one, not read-only.
