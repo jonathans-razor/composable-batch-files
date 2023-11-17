@@ -1237,15 +1237,32 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-16-2023
+:Nov-16-2023-1
 
 cls
 
 :
 @echo on
 python curate-data.py words1.txt words2.txt words3.txt curated-data.txt
-
 @echo off
+
+:Necessary Edge Case Spacer - Please do not delete.
+
+exit/b
+
+
+
+:_
+:Nov-16-2023-2
+
+cls
+
+:
+@echo on
+python curate-data.py words4.txt words5.txt words6.txt curated-data.txt
+@echo off
+
+:Necessary Edge Case Spacer - Please do not delete.
 
 exit/b
 
