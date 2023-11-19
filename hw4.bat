@@ -39,6 +39,7 @@ exit/b
 
 :_
 :function-1
+rem Note: Each function has a "function purpose" which describes what the function does.
 echo. & echo * Function 1.
 rem Put some code here.
 exit/b
