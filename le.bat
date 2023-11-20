@@ -86,34 +86,6 @@ exit/b
 
 
 :_
-:Oct-11-2023-3
-
-cls
-
-call t dsa>nul
-
-@echo on
-call ph 217-contains-duplicate.py 1 2 3
-
-exit/b
-
-
-
-:_
-:Oct-11-2023-4
-
-cls
-
-call t dsa>nul
-
-@echo on
-call ph 217-contains-duplicate.py 1 2 3 3
-
-exit/b
-
-
-
-:_
 :Oct-11-2023-5
 
 cls
@@ -1273,16 +1245,52 @@ exit/b
 
 
 :_
-:
+:Oct-11-2023-3
+
+cls
+
+@echo on
+
+call ph 217-contains-duplicate.py 1 2 3 1
+
+call ph 217-contains-duplicate.py 1 2 3 4
+
+call ph 217-contains-duplicate.py 1 1 1 3 3 4 3 2 4 2
+
+call ph 217-contains-duplicate.py 5 4 3 2 1 6
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Nov-17-2023-2
 
 cls
 
 @echo on
 
 :
-python 
+python 205-isomorphic-strings.py egg add
 
 :Necessary Edge Case Spacer - Please do not delete.
+
+@echo off
+
+exit/b
+
+
+
+:_
+:
+
+cls
+
+@echo on
+
+python 
 
 @echo off
 
@@ -1299,16 +1307,23 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-17-2023-2
+:
 
 cls
 
 @echo on
 
-:
-python 205-isomorphic-strings.py egg add
+python 231-power-of-two.py 1
 
-:Necessary Edge Case Spacer - Please do not delete.
+python 231-power-of-two.py 2
+
+python 231-power-of-two.py 4
+
+python 231-power-of-two.py 5
+
+python 231-power-of-two.py 82
+
+python 231-power-of-two.py 128
 
 @echo off
 
