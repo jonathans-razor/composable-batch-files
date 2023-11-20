@@ -47,9 +47,7 @@ echo. & echo * Unzip zip file's contents to current folder.
 call fe "%~1" || exit/b 5
 call paco "%~1" .zip || exit/b
 
-rem qq
 pkzipc -extract -overwrite %1
-
 
 exit/b
 
