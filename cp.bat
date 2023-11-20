@@ -923,72 +923,6 @@ exit/b
 
 
 
-;+ TE Family (!fyte)
-
-
-
-::_
-
-:te
-
-echo. & echo * Turn the template file into a new batch file.
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-
-rem lu: Feb-18-2022
-
-call t cbf
-
-echo.
-copy te.bat %2.bat
-
-call e %2.bat
-
-exit/b
-
-:help
-
-echo. & echo Parameter Descriptions:
-echo. & echo Parameter 2: Targeted batch file, without extension, to copy the template to.
-
-exit/b
-
-
-
-::_
-
-:tef
-
-echo. & echo * Turn the FF template file into a new bash file.
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-
-call t f
-
-echo.
-copy te.sh %~2.sh
-
-@echo on
-call e %~2.sh
-
-exit/b
-
-
-:help
-
-echo. & echo Parameter Description(s):
-echo. & echo Parameter 2: Targeted bash file, without extension, to copy the template to.
-
-exit/b
-
-lu:
-Sep-30-2023
-Jul-6-2022
-
-
-
 :_
 
 :cp
@@ -1192,6 +1126,75 @@ exit/b
 
 lu:
 Nov-7-2023
+
+
+
+:_ + TE Family (!fyte)
+
+
+
+::_
+
+:te
+
+echo. & echo * Turn the template file into a new batch file.
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+call t cbf
+
+echo.
+copy te.bat %2.bat
+
+call e %2.bat
+
+exit/b
+
+:help
+
+cls
+echo. & echo * Parameter Descriptions:
+echo. & echo   Parameter 2: Targeted batch file, without extension, to copy the template to.
+
+exit/b
+
+lu:
+Feb-18-2022
+
+
+
+::_
+
+:tef
+
+echo. & echo * Turn the FF template file into a new bash file.
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+call t f
+
+echo.
+copy te.sh %~2.sh
+
+@echo on
+call e %~2.sh
+
+exit/b
+
+
+:help
+
+echo. & echo Parameter Description(s):
+echo. & echo Parameter 2: Targeted bash file, without extension, to copy the template to.
+
+exit/b
+
+lu:
+Sep-30-2023
+Jul-6-2022
+
 
 
 :_

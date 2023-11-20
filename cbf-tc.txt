@@ -247,4 +247,4 @@ example-  Prefix for files written by other authors for learning and comparison 
        y  Using advanced routing, open text files for viewing or editing.
      yml  Edit DCV file in NotePad++ for file type yml.
       yt  Execute the YouTube DCV for the passed in alias.
-       z  Unassigned.
+       z  Zip.
