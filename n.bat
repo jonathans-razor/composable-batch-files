@@ -840,122 +840,6 @@ rem lu: Jul-10-2023
 
 
 
-:_+ Meta files
-
-
-
-::_
-:tcp
-echo. & echo * Python table of contents.
-call pn d>nul
-set cbf-fn=%cbf-pt%\ph-tc.txt
-exit/b
-rem lu: May-17-2022
-table-of-contents-series: skw
-
-
-
-::_
-:tcc
-:tccbf
-echo. & echo * CBF table of contents.
-call pn cbf>nul
-set cbf-fn=%cbf-pt%\cbf-tc.txt
-exit/b
-rem lu: May-17-2022
-table-of-contents-series: skw
-
-
-
-::_
-:tcf
-:tcffb
-echo. & echo * FFB table of contents.
-call pn f>nul
-set cbf-fn=%cbf-pt%\ffb-tc.txt
-exit/b
-rem lu: May-17-2022
-table-of-contents-series: skw
-
-
-
-::_
-:tcd
-:tcdbf
-echo. & echo * DBF table of contents.
-call pn dbf>nul
-set cbf-fn=%cbf-pt%\dbf-tc.txt
-exit/b
-table-of-contents-series: skw
-
-
-
-::_
-:tck
-echo. & echo * KCR table of contents. (Key Crusher)
-call pn dbf>nul
-set cbf-fn=%cbf-pt%\kc-tc.txt
-exit/b
-rem lu: Jun-26-2023
-table-of-contents-series: skw
-
-
-
-::_
-:tcs
-echo. & echo * Share-zone table of contents.
-call pn s>nul
-set cbf-fn=%cbf-pt%\s-tc.txt
-exit/b
-rem lu: May-17-2022
-table-of-contents-series: skw
-
-
-
-::_
-:cbf-el
-:elcbf
-echo. & echo * CBF error levels/codes.
-call pn cbf>nul
-set cbf-fn=%cbf-pt%\cbf-el.txt
-exit/b
-rem lu: Jun-06-2022
-
-
-
-::_
-:cbf-gl
-:glcbf
-echo. & echo * CBF glossary
-call pn cbf>nul
-set cbf-fn=%cbf-pt%\cbf-gl.txt
-exit/b
-rem lu: Jun-06-2022
-
-
-
-::_
-:cbf-ov
-:ovcbf
-echo. & echo * CBF Overview.
-call pn cbf>nul
-set cbf-fn=%cbf-pt%\cbf-ov.txt
-exit/b
-rem lu: Aug-28-2023
-
-
-
-::_
-:cbf-sgd
-:sgdcbf
-echo. & echo * CBF style guide.
-call pn cbf>nul
-set cbf-fn=%cbf-pt%\cbf-sgd.txt
-exit/b
-rem lu: Jun-06-2022
-
-
-
 :_
 
 :8
@@ -4063,6 +3947,122 @@ exit/b
 
 lu: 
 Nov-15-2023
+
+
+
+:_+ Meta files
+
+
+
+::_
+:tcc
+:tccbf
+echo. & echo * CBF table of contents.
+call pn cbf>nul
+set cbf-fn=%cbf-pt%\cbf-tc.txt
+exit/b
+rem lu: May-17-2022
+table-of-contents-series: skw
+
+
+
+::_
+:tcp
+echo. & echo * Python table of contents.
+call pn d>nul
+set cbf-fn=%cbf-pt%\ph-tc.txt
+exit/b
+rem lu: May-17-2022
+table-of-contents-series: skw
+
+
+
+::_
+:tcf
+:tcffb
+echo. & echo * FFB table of contents.
+call pn f>nul
+set cbf-fn=%cbf-pt%\ffb-tc.txt
+exit/b
+rem lu: May-17-2022
+table-of-contents-series: skw
+
+
+
+::_
+:tcd
+:tcdbf
+echo. & echo * DBF table of contents.
+call pn dbf>nul
+set cbf-fn=%cbf-pt%\dbf-tc.txt
+exit/b
+table-of-contents-series: skw
+
+
+
+::_
+:tck
+echo. & echo * KCR table of contents. (Key Crusher)
+call pn dbf>nul
+set cbf-fn=%cbf-pt%\kc-tc.txt
+exit/b
+rem lu: Jun-26-2023
+table-of-contents-series: skw
+
+
+
+::_
+:tcs
+echo. & echo * Share-zone table of contents.
+call pn s>nul
+set cbf-fn=%cbf-pt%\s-tc.txt
+exit/b
+rem lu: May-17-2022
+table-of-contents-series: skw
+
+
+
+::_
+:cbf-el
+:elcbf
+echo. & echo * CBF error levels/codes.
+call pn cbf>nul
+set cbf-fn=%cbf-pt%\cbf-el.txt
+exit/b
+rem lu: Jun-06-2022
+
+
+
+::_
+:cbf-gl
+:glcbf
+echo. & echo * CBF glossary
+call pn cbf>nul
+set cbf-fn=%cbf-pt%\cbf-gl.txt
+exit/b
+rem lu: Jun-06-2022
+
+
+
+::_
+:cbf-ov
+:ovcbf
+echo. & echo * CBF Overview.
+call pn cbf>nul
+set cbf-fn=%cbf-pt%\cbf-ov.txt
+exit/b
+rem lu: Aug-28-2023
+
+
+
+::_
+:cbf-sgd
+:sgdcbf
+echo. & echo * CBF style guide.
+call pn cbf>nul
+set cbf-fn=%cbf-pt%\cbf-sgd.txt
+exit/b
+rem lu: Jun-06-2022
 
 
 
