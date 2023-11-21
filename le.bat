@@ -293,23 +293,6 @@ exit/b
 
 
 :_
-:Oct-19-2023-1
-
-cls
-
-call t dsa>nul
-
-@echo on
-call ph 242-valid-anagram.py cat act
-@echo off
-
-call ph 242-valid-anagram.py bullshit noshit
-
-exit/b
-
-
-
-:_
 :Oct-19-2023-2
 
 cls
@@ -1290,6 +1273,48 @@ cls
 
 @echo on
 
+python 231-power-of-two.py 1
+
+python 231-power-of-two.py 2
+
+python 231-power-of-two.py 4
+
+python 231-power-of-two.py 5
+
+python 231-power-of-two.py 82
+
+python 231-power-of-two.py 128
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Oct-19-2023-1
+
+cls
+
+call t dsa>nul
+
+@echo on
+call ph 242-valid-anagram.py cat act
+@echo off
+
+call ph 242-valid-anagram.py bullshit noshit
+
+exit/b
+
+
+
+:_
+:
+
+cls
+
+@echo on
+
 python 
 
 @echo off
@@ -1307,23 +1332,19 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:
+:Nov-21-2023
 
 cls
 
 @echo on
 
-python 231-power-of-two.py 1
+python 268-missing-number.py 3 0 1
 
-python 231-power-of-two.py 2
+python 268-missing-number.py 0 1
 
-python 231-power-of-two.py 4
+python 268-missing-number.py 9 6 4 2 3 5 7 0 1
 
-python 231-power-of-two.py 5
-
-python 231-power-of-two.py 82
-
-python 231-power-of-two.py 128
+python 268-missing-number.py 9 6 4 2 3 5 7 0 1 8 11
 
 @echo off
 
