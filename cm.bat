@@ -18,6 +18,8 @@ echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo  * Parameter 1:
 echo    Alias of the operation you wish to run.
+echo    If blank, compile CMAC macros.
+echo    If "o", open CMAC files.
 
 echo. & echo  * Batch file style: Multipurpose
 
