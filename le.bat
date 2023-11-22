@@ -1309,6 +1309,27 @@ exit/b
 
 
 :_
+:Nov-21-2023
+
+cls
+
+@echo on
+
+python 268-missing-number.py 3 0 1
+
+python 268-missing-number.py 0 1
+
+python 268-missing-number.py 9 6 4 2 3 5 7 0 1
+
+python 268-missing-number.py 9 6 4 2 3 5 7 0 1 8 11
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1332,19 +1353,17 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-21-2023
+:Nov-22-2023
 
 cls
 
 @echo on
 
-python 268-missing-number.py 3 0 1
+python 412-fizz-buzz.py 3
 
-python 268-missing-number.py 0 1
+python 412-fizz-buzz.py 5
 
-python 268-missing-number.py 9 6 4 2 3 5 7 0 1
-
-python 268-missing-number.py 9 6 4 2 3 5 7 0 1 8 11
+python 412-fizz-buzz.py 15
 
 @echo off
 
