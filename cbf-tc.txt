@@ -130,6 +130,7 @@ example-  Prefix for files written by other authors for learning and comparison 
     json  Edit DCV file in NotePad++ for file type json.
       jv  Java. (skw language-functions-series-jj)
       kl  Kill a process.
+      kr  Open Chrome.
        l  Load path onto clipboard.
       ld  Use a DCV to load a cbf variable onto the clipboard.
       le  Leet code tester.
