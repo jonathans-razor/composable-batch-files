@@ -172,6 +172,7 @@ example-  Prefix for files written by other authors for learning and comparison 
        p  Synchronize 2 folders, CBF and VDI.
       pa  Fully automatic Git push of a single repository, with td parameter.
     paco  Parameter contains.
+      pc  Run Podcaster.
      pdf  PDF DCV.
       pg  Ping leveraging nicknames dictionary.
       ph  Python. (skw language-functions-series-jj)
