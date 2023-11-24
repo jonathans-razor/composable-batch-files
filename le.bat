@@ -1349,6 +1349,24 @@ exit/b
 
 
 :_
+:Nov-24-2023
+
+cls
+
+@echo on
+
+python 9-palindrome-number.py 131
+python 9-palindrome-number.py 1311
+python 9-palindrome-number.py 444555
+python 9-palindrome-number.py 444555444
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1378,10 +1396,7 @@ cls
 
 @echo on
 
-python 9-palindrome-number.py 131
-python 9-palindrome-number.py 1311
-python 9-palindrome-number.py 444555
-python 9-palindrome-number.py 444555444
+python concatenate-2-numbers-into-1py
 
 @echo off
 
