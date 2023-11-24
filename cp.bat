@@ -1098,37 +1098,6 @@ exit/b
 
 
 
-:_
-:le
-:py
-
-echo. & echo * Turn the Python template file into a new Python file.
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-
-call t d>nul
-
-echo.
-copy te.py %2.py
-
-call vc %2.py
-
-exit/b
-
-
-:help
-
-echo. & echo Parameter Descriptions:
-echo. & echo Parameter 2: Targeted new Python file, without extension, to copy the template to.
-
-exit/b
-
-lu:
-Nov-7-2023
-
-
-
 :_ + TE Family (!fyte)
 
 
@@ -1194,6 +1163,39 @@ exit/b
 lu:
 Sep-30-2023
 Jul-6-2022
+
+
+
+:_
+:le
+:py
+
+echo. & echo * Turn the Python template file into a new Python file.
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+call t d>nul
+
+echo.
+copy te.py %2.py
+
+call touc %2.py
+
+call vc %2.py
+
+exit/b
+
+
+:help
+
+echo. & echo Parameter Descriptions:
+echo. & echo Parameter 2: Targeted new Python file, without extension, to copy the template to.
+
+exit/b
+
+lu:
+Nov-7-2023
 
 
 

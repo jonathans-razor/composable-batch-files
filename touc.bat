@@ -2,8 +2,9 @@
 
 @echo off
 
-if "%~1" == "" goto main
 if "%~1" == "?" goto help
+call pn sg>nul
+if "%~1" == "" goto main
 
 goto update-single-file
 
@@ -14,7 +15,10 @@ goto update-single-file
 :help
 cls
 echo. & echo * Wrapper around Git touch command.
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo   Usage: %0 [space separated parameter(s)]
+echo. & echo * Parameter 1:
+echo.  If blank, all files in current folder are updated.
+echo.  Else, the filename in parameter 1 is updated.
 echo. & echo * Batch file style: Single purpose
 exit/b
 
@@ -31,7 +35,6 @@ exit/b
 :update-single-file
 echo. & echo * Update a single file to the current date.
 call fe "%~1" || exit/b 5
-call pn sg>nul
 "%cbf-pt%\touch.exe" "%~1"
 exit/b
 
@@ -40,7 +43,6 @@ exit/b
 :_
 :main
 echo. & echo * Update all files in the current folder to the current date.
-call pn sg>nul
 "%cbf-pt%\touch.exe" *.*
 exit/b
 

@@ -1330,6 +1330,25 @@ exit/b
 
 
 :_
+:Nov-22-2023
+
+cls
+
+@echo on
+
+python 412-fizz-buzz.py 3
+
+python 412-fizz-buzz.py 5
+
+python 412-fizz-buzz.py 15
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1353,17 +1372,16 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-22-2023
+:Nov-24-2023
 
 cls
 
 @echo on
 
-python 412-fizz-buzz.py 3
-
-python 412-fizz-buzz.py 5
-
-python 412-fizz-buzz.py 15
+python 9-palindrome-number.py 131
+python 9-palindrome-number.py 1311
+python 9-palindrome-number.py 444555
+python 9-palindrome-number.py 444555444
 
 @echo off
 
