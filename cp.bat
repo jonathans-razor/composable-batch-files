@@ -1124,7 +1124,7 @@ exit/b
 
 cls
 echo. & echo * Parameter Descriptions:
-echo. & echo   Parameter 2: Targeted batch file, without extension, to copy the template to.
+echo   Parameter 2: Targeted batch file, without extension, to copy the template to.
 
 exit/b
 
@@ -1155,8 +1155,8 @@ exit/b
 
 :help
 
-echo. & echo Parameter Description(s):
-echo. & echo Parameter 2: Targeted bash file, without extension, to copy the template to.
+echo. & echo * Parameter Description(s):
+echo   Parameter 2: Targeted bash file, without extension, to copy the template to.
 
 exit/b
 
