@@ -19,7 +19,7 @@ cls
 echo. & echo * Filename sapien. Use any application to open any file in the current ^
 folder or via alias, with extension or not, with spaces or not.
 
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo   Usage: %0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1: Application alias.
 

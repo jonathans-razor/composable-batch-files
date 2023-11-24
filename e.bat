@@ -35,7 +35,7 @@ echo   /d: DBF batch file.
 echo   /f: FF bash file.
 echo   /n: np file.
 echo   /o: CBF batch file.
-echo   /p: Pyton file.
+echo   /p: Python file.
 
 echo. & echo * Parameter 3 (Optional):
 echo   /e: override default editor.
