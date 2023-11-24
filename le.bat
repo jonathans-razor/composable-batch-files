@@ -293,21 +293,6 @@ exit/b
 
 
 :_
-:Oct-19-2023-2
-
-cls
-
-call t dsa>nul
-
-@echo on
-call ph echo-parameters.py cat hat
-@echo off
-
-exit/b
-
-
-
-:_
 :Oct-19-2023-3
 
 cls
@@ -1367,6 +1352,50 @@ exit/b
 
 
 :_
+:ecpa
+:Oct-19-2023-2
+
+cls
+
+call t dsa>nul
+
+@echo on
+call ph echo-parameters.py cat hat
+@echo off
+
+exit/b
+
+
+
+:_
+:ecpa1
+
+cls
+
+@echo on
+call ph echo-parameters-1.py cat hat
+@echo off
+
+exit/b
+
+
+
+:_
+:Nov-24-2023
+
+cls
+
+@echo on
+
+python concatenate-2-numbers-into-1.py 31 13
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1396,7 +1425,14 @@ cls
 
 @echo on
 
-python concatenate-2-numbers-into-1py
+python is-football-score-palindrome.py 31 13
+python is-football-score-palindrome.py 31 14
+python is-football-score-palindrome.py 21 21
+python is-football-score-palindrome.py 11 11
+python is-football-score-palindrome.py 11 10
+python is-football-score-palindrome.py 9 19
+python is-football-score-palindrome.py 21 7
+python is-football-score-palindrome.py 21 28
 
 @echo off
 
