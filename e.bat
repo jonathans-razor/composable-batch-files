@@ -107,19 +107,13 @@ if "%~2" == "/p" (
 :
 rem Begin routing intelligence section.
 
-if exist "%~1" goto open-current-folder-file
+set cbf-fn=
+
+call paco "%~1" .>nul && goto open-current-folder-file
 
 rem Notice that this if clause appears AFTER checking for existence of the file This assumes 
 rem that no alias would ever contain a period. (skw contains period)
 echo %1| find /i ".">nul && goto open-current-folder-file
-
-if -%~2-==-/c- (
-  call :open-current-folder-file %*
-  if errorlevel 1 exit/b
-  goto main
-)
-
-set cbf-fn=
 
 call :open-cbf-batch-file %*
 
@@ -132,10 +126,12 @@ if "%cbf-fn%"=="" (
 )
 
 if "%cbf-fn%"=="" (
+  echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Nov-24-2023_10_55_PM
   call :open-aliased-file %*
-  rem if errorlevel 1 exit/b
+  echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Nov-24-2023_10_56_PM
 )
 
+rem qqa
 if "%cbf-fn%"=="" (
   exit/b
 )
@@ -163,7 +159,7 @@ exit/b
 :_
 :open-current-folder-file
 echo. & echo * Open current folder file.
-rem code "%~1"
+call fe "%~1" || exit/b 5
 set cbf-fn=%~1
 goto main
 
