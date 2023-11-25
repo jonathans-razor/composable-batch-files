@@ -32,15 +32,17 @@ echo   /a: aliased file. Since this is the default, it's only necessary for over
 echo   /af: aliased folder.
 echo   /c: current folder file (used for creating new extenionless files)
 echo   /d: DBF batch file.
+echo   /e: override default editor.
 echo   /f: FF bash file.
 echo   /n: np file.
 echo   /o: CBF batch file.
 echo   /p: Python file.
 
 echo. & echo * Parameter 3 (Optional):
-echo   /e: override default editor.
+echo   /e: Override default editor.
 
 echo. & echo * Batch file style: Custom
+
 
 echo. & echo * Examples:
 echo   %0 j1
@@ -48,6 +50,7 @@ rem * Edit j1 in Notepad.
 echo   %0 j1 /e:no
 echo   %0 jenkinsfile /c
 echo   %0 dockerfile /c
+echo   vc te /p
 
 exit/b
 
@@ -70,6 +73,7 @@ call m cel
 call i /c>nul
 
 rem Override switches section.
+
 if "%~2" == "/a" (
   call :open-aliased-file %*
   if errorlevel 1 exit/b  
@@ -126,12 +130,9 @@ if "%cbf-fn%"=="" (
 )
 
 if "%cbf-fn%"=="" (
-  echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Nov-24-2023_10_55_PM
   call :open-aliased-file %*
-  echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Nov-24-2023_10_56_PM
 )
 
-rem qqa
 if "%cbf-fn%"=="" (
   exit/b
 )
@@ -204,10 +205,10 @@ exit/b
 :_
 :open-python-file
 call pn d>nul
-
+rem echo. & echo * Open Python file. Nov-24-2023_11_37_PM
 if exist "%cbf-pt%\%1.py" (
-  echo. & echo * Open Python file.
-  rem echo. & echo * "%1" exists.
+  echo. & echo * Open Python file. Nov-24-2023_11_38_PM
+  rem echo. & echo * "%cbf-pt%\%1.py" exists.
 ) else (
   echo. & echo * Python file: "%cbf-pt%\%1" NOT found.
   exit/b 5
@@ -285,26 +286,29 @@ exit/b
 :main
 set cbf-app=%cbf-default-text-editor%
 
-set cbf-editor-parameter=%2
-echo %2| find /i "/e">nul
+set cbf-editor-parameter=%*
 rem echo. & echo * all parameters: %*
-if %errorlevel% == 0 (
-  rem echo. & echo * Parameter list contains "/e".
-  rem echo. & echo * cbf-editor-parameter [before replacement]: %cbf-editor-parameter%
-  set cbf-editor-parameter=%cbf-editor-parameter:/e:=%
-) else (
-  goto next
-)
+
+echo %*| find /i "/e">nul
+if not errorlevel 1 goto first
+goto next
+
+
+:first
+rem echo. & echo * Parameter list contains "/e".
+rem echo. & echo * cbf-editor-parameter [before replacement]: %cbf-editor-parameter%
+set cbf-editor-parameter=%cbf-editor-parameter:*/e:=%
 rem echo. & echo *  cbf-editor-parameter [after replacement]: %cbf-editor-parameter%
 call an %cbf-editor-parameter%
-:next
 
+
+:next
 rem echo. & echo * p0: %0
 rem echo * p1: %1
-rem echo * p2: %2
+rem echo * cbf-app: %cbf-app%
 rem echo * cbf-fn: %cbf-fn%
 
-rem When we reach the main function, cbf-fn will have been determined a set.
+rem When we reach the main function, cbf-fn will have been determined and set.
 set cbf-parameter=%cbf-fn%
 call r
 

@@ -41,22 +41,6 @@ Nov-15-2023
 
 
 :_
-:use-current-folder-filename
-
-call fe "%~1" || exit/b 5
-
-echo. & echo * Use current folder filename.
-
-set cbf-fn=%~1
-
-echo.
-call set cbf-fn
-
-exit/b
-
-
-
-:_
 
 :preprocess
 
@@ -64,6 +48,8 @@ call m cel
 call i /c>nul
 
 call paco "%~1" . && goto use-current-folder-filename
+
+rem qq
 
 rem Override switches section.
 if "%~2" == "/a" (
@@ -95,8 +81,12 @@ if "%~2" == "/f" (
 
 :
 if "%~2" == "/p" (
+  echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Nov-24-2023_10_55_PM
   call :open-python-file %*
+rem qq
+  echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Nov-24-2023_10_56_PM
   if errorlevel 1 exit/b
+  echo. & echo * Error Level: %errorlevel% - qjq - cbf- : %cbf-% - Nov-24-2023_10_57_PM
   goto main
 )
 
@@ -136,6 +126,22 @@ if "%cbf-fn%"=="" (
   exit/b
 )
 goto main
+
+
+
+:_
+:use-current-folder-filename
+
+call fe "%~1" || exit/b 5
+
+echo. & echo * Use current folder filename.
+
+set cbf-fn=%~1
+
+echo.
+call set cbf-fn
+
+exit/b
 
 
 

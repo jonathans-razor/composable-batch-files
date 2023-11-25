@@ -21,8 +21,9 @@ folder or via alias, with extension or not, with spaces or not.
 
 echo. & echo   Usage: %0 [space separated parameter(s)]
 
-echo. & echo * Parameter 1: Application alias.
+rem qq
 
+echo. & echo * Parameter 1: Application alias.
 echo. & echo * Parameter 2: Filename, filename alias or batch file prefix for a batch file that lives in either the CBF or another folder.
 
 echo. & echo * Parameter 3 or greater (Optional): 
