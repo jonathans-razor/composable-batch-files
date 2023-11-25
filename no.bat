@@ -24,8 +24,7 @@ echo   %~n0
 
 exit/b
 
-
-rem creation date: Jul-3-2023
+creation date: Jul-3-2023
 
 
 
