@@ -1,2 +1,2 @@
-title %0
+title CBF: %0
 cls
