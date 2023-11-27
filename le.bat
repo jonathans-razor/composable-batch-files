@@ -1418,6 +1418,35 @@ exit/b
 
 
 :_
+:Nov-27-2023
+
+cls
+
+@echo on
+
+python 405-convert-a-number-to-hexadecimal.py -1
+python 405-convert-a-number-to-hexadecimal.py 1
+python 405-convert-a-number-to-hexadecimal.py 2
+python 405-convert-a-number-to-hexadecimal.py 3
+python 405-convert-a-number-to-hexadecimal.py 26
+python 405-convert-a-number-to-hexadecimal.py 27
+python 405-convert-a-number-to-hexadecimal.py 28
+python 405-convert-a-number-to-hexadecimal.py 29
+python 405-convert-a-number-to-hexadecimal.py 30
+python 405-convert-a-number-to-hexadecimal.py 31
+python 405-convert-a-number-to-hexadecimal.py 32
+python 405-convert-a-number-to-hexadecimal.py 33
+python 405-convert-a-number-to-hexadecimal.py 51
+python 405-convert-a-number-to-hexadecimal.py 52
+python 405-convert-a-number-to-hexadecimal.py 53
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1447,21 +1476,7 @@ cls
 
 @echo on
 
-python 405-convert-a-number-to-hexadecimal.py -1
-python 405-convert-a-number-to-hexadecimal.py 1
-python 405-convert-a-number-to-hexadecimal.py 2
-python 405-convert-a-number-to-hexadecimal.py 3
-python 405-convert-a-number-to-hexadecimal.py 26
-python 405-convert-a-number-to-hexadecimal.py 27
-python 405-convert-a-number-to-hexadecimal.py 28
-python 405-convert-a-number-to-hexadecimal.py 29
-python 405-convert-a-number-to-hexadecimal.py 30
-python 405-convert-a-number-to-hexadecimal.py 31
-python 405-convert-a-number-to-hexadecimal.py 32
-python 405-convert-a-number-to-hexadecimal.py 33
-python 405-convert-a-number-to-hexadecimal.py 51
-python 405-convert-a-number-to-hexadecimal.py 52
-python 405-convert-a-number-to-hexadecimal.py 53
+python 
 
 @echo off
 

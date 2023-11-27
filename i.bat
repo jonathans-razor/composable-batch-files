@@ -434,6 +434,11 @@ rem TD Parent
 set cbf-tdp=
 
 :
+rem Title
+set cbf-title=CBF: %0
+title %cbf-title%
+
+:
 rem T. website
 set cbf-tr=
 
