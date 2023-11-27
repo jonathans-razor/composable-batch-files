@@ -1396,6 +1396,28 @@ exit/b
 
 
 :_
+:Nov-24-2023
+
+cls
+
+@echo on
+
+python is-football-score-palindrome.py 31 13
+python is-football-score-palindrome.py 31 14
+python is-football-score-palindrome.py 21 21
+python is-football-score-palindrome.py 11 11
+python is-football-score-palindrome.py 11 10
+python is-football-score-palindrome.py 9 19
+python is-football-score-palindrome.py 21 7
+python is-football-score-palindrome.py 21 28
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1419,20 +1441,27 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-24-2023
+:Nov-27-2023
 
 cls
 
 @echo on
 
-python is-football-score-palindrome.py 31 13
-python is-football-score-palindrome.py 31 14
-python is-football-score-palindrome.py 21 21
-python is-football-score-palindrome.py 11 11
-python is-football-score-palindrome.py 11 10
-python is-football-score-palindrome.py 9 19
-python is-football-score-palindrome.py 21 7
-python is-football-score-palindrome.py 21 28
+python 405-convert-a-number-to-hexadecimal.py -1
+python 405-convert-a-number-to-hexadecimal.py 1
+python 405-convert-a-number-to-hexadecimal.py 2
+python 405-convert-a-number-to-hexadecimal.py 3
+python 405-convert-a-number-to-hexadecimal.py 26
+python 405-convert-a-number-to-hexadecimal.py 27
+python 405-convert-a-number-to-hexadecimal.py 28
+python 405-convert-a-number-to-hexadecimal.py 29
+python 405-convert-a-number-to-hexadecimal.py 30
+python 405-convert-a-number-to-hexadecimal.py 31
+python 405-convert-a-number-to-hexadecimal.py 32
+python 405-convert-a-number-to-hexadecimal.py 33
+python 405-convert-a-number-to-hexadecimal.py 51
+python 405-convert-a-number-to-hexadecimal.py 52
+python 405-convert-a-number-to-hexadecimal.py 53
 
 @echo off
 
