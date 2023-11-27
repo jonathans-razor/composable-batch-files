@@ -2,6 +2,9 @@
 
 @echo off
 
+set cbf-title=%0 - %cbf-title%
+title %cbf-title%
+
 call m cel
 
 if "%~1" == "?" goto help

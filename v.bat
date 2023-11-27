@@ -2,7 +2,9 @@
 
 @echo off
 
-title %0
+set cbf-title=%0 - %cbf-title%
+title %cbf-title%
+
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
