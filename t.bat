@@ -2,19 +2,13 @@
 
 @echo off
 
-call m cel
+set cbf-title=%0 - %cbf-title%
+title %cbf-title%
 
-title %0.bat
 if "%~1" == "?" goto help
 if "%~1" == "" goto ta
 
-echo %1 | find "..">nul
-
-if %errorlevel% == 0 (
-  goto back_magic
-) else (
-  goto preprocess
-)
+goto preprocess
 
 
 
@@ -48,67 +42,6 @@ echo. & echo * Ta.
 
 call %0 a
 cls
-
-exit/b
-
-
-
-:_
-
-:back_magic
-
-echo. & echo * Back magic
-
-cd..
-
-if "%~1" == "..." (
-  cd..
-)
-
-if "%~1" == "...." (
-  cd..
-  cd..
-)
-
-if "%~1" == "....." (
-  cd..
-  cd..
-  cd..
-)
-
-if "%~1" == "......" (
-  cd..
-  cd..
-  cd..
-  cd..
-)
-
-if "%~1" == "......." (
-  cd..
-  cd..
-  cd..
-  cd..
-  cd..
-)
-
-if "%~1" == "........" (
-  cd..
-  cd..
-  cd..
-  cd..
-  cd..
-  cd..
-)
-
-if "%~1" == "........." (
-  cd..
-  cd..
-  cd..
-  cd..
-  cd..
-  cd..
-  cd..
-)
 
 exit/b
 

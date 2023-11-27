@@ -2,7 +2,8 @@
 
 @echo off
 
-title %0
+call m cel
+
 if "%~1" == "?" goto help
 if "%~1" == "" goto help
 

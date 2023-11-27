@@ -2,7 +2,9 @@
 
 @echo off
 
-title CBF: %0
+set cbf-title=%0 - %cbf-title%
+title %cbf-title%
+
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
@@ -2772,28 +2774,25 @@ exit/b 1
 ::_ (!clea) (skw clear_error_level)
 
 :cel
-
 :el_cs
-
 :clear-errorlevel
-
 :clear_errorlevel_silently
-
 :sel
 
 rem echo. & echo * Clear/reset errorLevel silently.
 
 rem reset_errorlevel: skw
 
-rem lu: Nov-12-2019
-
 rem This was not working on Jul-21-2021, so I commented it.
 ver>nul
 
-rem You shouldn't set errorlevel directly. Jan-28-2022
+rem You shouldn't set errorlevel directly like the below line. Jan-28-2022
 rem set errorlevel=0
 
 exit/b
+
+lu:
+Nov-12-2019
 
 
 
