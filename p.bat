@@ -2,6 +2,9 @@
 
 @echo off
 
+set cbf-title=%0 %cbf-title%
+title %cbf-title%
+
 if "%~1" == "" goto push-predetermined-repositories
 if "%~1" == "?" goto help
 
