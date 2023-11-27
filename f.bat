@@ -2,6 +2,9 @@
 
 @echo off
 
+set cbf-title=%0 %cbf-title%
+title %cbf-title%
+
 if "%~1" == "" goto help
 if "%~2" == "" goto help
 if "%~1" == "?" goto help
@@ -91,6 +94,8 @@ goto main
 :open-current-folder-file
 
 echo. & echo * Open current folder file.
+
+call fe "%~1" || exit/b 5
 
 rem @echo on
 start "title" "%cbf-app%" "%cd%\%~2"
