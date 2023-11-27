@@ -478,6 +478,7 @@ echo. & echo * Show CBF variables.
 call el
 echo.
 set cbf
+
 exit/b
 
 
