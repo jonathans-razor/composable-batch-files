@@ -69,7 +69,7 @@ exit/b
 
 :preprocess
 
-call m cel
+call el /c>nul
 call i /c>nul
 
 rem Override switches section.

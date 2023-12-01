@@ -33,7 +33,8 @@ echo   -d Delete file before opening it.
 
 echo. & echo * Examples:
 echo   %0 no j1
-echo   %0 sm j2
+rem qq
+echo   %0 npp j1
 echo   f np .gitignore
 echo   f .gitignore
 echo   f np jenkinsfile -e
@@ -52,7 +53,6 @@ echo   %0 kr j1
 echo   %0 kr j1.txt
 echo   %0 br j1.txt
 
-rem qjq Get these to work.
 echo   %0 br te /p
 echo   %0 me j1.txt /d
 
@@ -72,7 +72,7 @@ exit/b
 
 :validate-input
 
-call sfn "%~2" "%~3" "%~4" "%~5" "%~6"
+call sfn %~2 %~3 %~4 %~5 %~6
 
 if errorlevel 1 (
   exit/b
@@ -96,9 +96,6 @@ goto main
 
 echo. & echo * Open current folder file.
 
-call fe "%~1" || exit/b 5
-
-rem @echo on
 start "title" "%cbf-app%" "%cd%\%~2"
 
 exit/b
@@ -106,9 +103,9 @@ exit/b
 
 
 :_
-
 :main
 
+rem set cbf-fn=c:\a\j1.txt
 set cbf-parameter=%cbf-fn%
 
 call r
@@ -117,4 +114,4 @@ exit/b
 
 
 
-:_ (!rfsp) (mov-7)
+:_ (!eff)
