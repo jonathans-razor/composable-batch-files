@@ -23,12 +23,10 @@ folder or via alias, with extension or not, with spaces or not.
 
 echo. & echo   Usage: %0 [space separated parameter(s)]
 
-rem qq
-
 echo. & echo * Parameter 1: Application alias.
-echo. & echo * Parameter 2: Filename, filename alias or batch file prefix for a batch file that lives in either the CBF or another folder.
+echo. & echo   Parameter 2: Inherited from sfn.bat.
 
-echo. & echo * Parameter 3 or greater (Optional): 
+echo. & echo   Parameter 3 or greater (Optional): 
 echo   -e Filename without extension, e.g. Jenkinsfile. 
 echo   -v Create file using clipboad contents. 
 echo   -d Delete file before opening it.
@@ -53,6 +51,10 @@ echo   %0 ie ma
 echo   %0 kr j1
 echo   %0 kr j1.txt
 echo   %0 br j1.txt
+
+rem qjq Get these to work.
+echo   %0 br te /p
+echo   %0 me j1.txt /d
 
 exit/b
 

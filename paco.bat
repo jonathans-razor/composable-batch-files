@@ -2,7 +2,7 @@
 
 @echo off
 
-if "%~1" == "" goto help
+if "%~1" == "" exit/b 1
 if "%~1" == "?" goto help
 
 goto main

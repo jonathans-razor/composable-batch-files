@@ -202,7 +202,7 @@ example-  Prefix for files written by other authors for learning and comparison 
     senc  Sencha.
      sep  Show separator graphic.
       sf  Surf to websites. A DCV is optional.
-     sfn  Set cbf-fn based on an evaluated filename parameter
+     sfn  Set cbf-fn based on an algorithm.
     sfn3  Using advanced routing, set the cbf filename.
      sln  Open a Visual Studio solution, with td parameter.
       sm  Use Sublime and sfn to edit a file.
