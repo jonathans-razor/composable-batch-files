@@ -46,8 +46,6 @@ call n %1>nul
 
 call fe %cbf-fn% || exit/b
 
-rem qq
-
 del %cbf-fn%
 echo. & echo * File "%cbf-fn%" was deleted.
 

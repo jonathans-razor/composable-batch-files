@@ -4,6 +4,7 @@
 
 title CBF: %0
 
+
 if "%~1" == "?" goto help
 
 goto preprocess
@@ -51,6 +52,16 @@ call i /c>nul
 
 rem Override switches section.
 
+rem qq
+
+:
+if "%~2" == "/c" (
+  call :open-current-folder-file %*
+  if errorlevel 1 exit/b  
+  goto main
+)
+
+:
 if "%~2" == "/a" (
   call :open-aliased-file %*
   if errorlevel 1 exit/b  
@@ -122,9 +133,10 @@ exit/b
 :_
 :open-current-folder-file
 echo. & echo * Open current folder file.
-call fe "%~1" || exit/b 5
+
+call fe %* || exit/b 5
 set cbf-fn=%~1
-goto main
+goto main %*
 
 
 
@@ -248,7 +260,21 @@ if "%cbf-fn%" == "" (
   exit/b
 )
 
-call fe %cbf-fn% || exit/b 5
+echo. & echo * Dec-1-2023_6_36_PM
+echo   Error Level: %errorlevel%
+echo   p1: %1
+echo   p2: %2 
+echo   cbf-fn: %cbf-fn%
+echo   qjq
+
+call fe %cbf-fn% %* || exit/b 5
+
+echo. & echo * Dec-1-2023_6_37_PM
+echo   Error Level: %errorlevel%
+echo   p1: %1
+echo   p2: %2 
+echo   cbf-fn: %cbf-fn%
+echo   qjq
 
 echo. & echo * cbf-fn VERIFIED: %cbf-fn%
 

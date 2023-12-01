@@ -26,11 +26,11 @@ echo. & echo   Usage: %0 [space separated parameter(s)]
 echo. & echo * Parameter 1: Application alias.
 echo. & echo   Parameter 2: Inherited from sfn.bat.
 
-rem qq
 echo. & echo * Examples:
 echo   %0 no j1
 echo   %0 npp j1
 echo   f npp .gitignore
+rem qq
 echo   f no jenkinsfile /c
 echo   f np "the rain in spain"
 echo   f no "the rain in spain.txt"
