@@ -1447,6 +1447,23 @@ exit/b
 
 
 :_
+:Dec-1-2023
+
+cls
+
+@echo on
+
+python return-leftmost-number-of-characters-of-a-string.py hello 2
+python return-leftmost-number-of-characters-of-a-string.py "12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8" 60
+python return-leftmost-number-of-characters-of-a-string.py "Happy Jello Day" 5
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1476,7 +1493,15 @@ cls
 
 @echo on
 
-python return-leftmost-number-of-characters-of-a-string.py hello 2
+python 5-longest-palindromic-substring.py babad
+python 5-longest-palindromic-substring.py cbbd
+python 5-longest-palindromic-substring.py babyyouremine
+python 5-longest-palindromic-substring.py abyyouremine
+python 5-longest-palindromic-substring.py copperheadsnakesarecool
+python 5-longest-palindromic-substring.py raininspain
+python 5-longest-palindromic-substring.py 1
+python 5-longest-palindromic-substring.py 12
+python 5-longest-palindromic-substring.py 22
 
 @echo off
 
