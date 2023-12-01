@@ -24,7 +24,7 @@ echo   Editor alias to use.
 
 echo. & echo * Parameter 1 (Optional):
 echo   Blank: open current folder.
-echo   Not blank: use routing intelligence, which checks DBF.bat files then falls back to an aliased file.
+echo   Not blank: uses routing intelligence.
 echo   If contains ".": open current folder file, which may or may not exist. This assumes that no alias ever contains a period in it.
 
 echo. & echo * Parameter 2 (Optional):
