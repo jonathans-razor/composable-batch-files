@@ -4080,4 +4080,20 @@ Nov-22-2023
 
 
 
+:_
+
+:winz
+:wizi
+
+echo. & echo * Winzip.
+
+set cbf-app=c:\program files\winzip\winzip64.exe
+
+exit/b
+
+lu: 
+Apr-27-2020
+
+
+
 :_ (!efn)

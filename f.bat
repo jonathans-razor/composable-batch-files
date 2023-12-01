@@ -48,7 +48,7 @@ echo   f no j7.txt
 echo   f np jenkinsfile
 echo   f np jenkinsfile -e
 echo   %0 np j55.txt -d
-echo   %0 winz cart-rest-client-0.0.3-RELEASE.jar
+echo   %0 winz riverstone-rest-client-0.0.3-RELEASE.jar
 echo   %0 ie ma
 echo   %0 kr j1
 echo   %0 kr j1.txt
