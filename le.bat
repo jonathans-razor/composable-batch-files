@@ -71,7 +71,7 @@ exit/b 0
 
 
 
-:_look-up-leetcode-number
+:_
 :Oct-11-2023-1
 
 cls
@@ -1470,13 +1470,13 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Nov-27-2023
+:Dec-1-2023
 
 cls
 
 @echo on
 
-python 
+python return-leftmost-number-of-characters-of-a-string.py hello 2
 
 @echo off
 
