@@ -41,7 +41,7 @@ echo   /p: Python file.
 echo. & echo * Parameter 3 (Optional):
 echo   /e: Override default editor.
 
-echo. & echo * Batch file style: Custom
+echo. & echo   Batch file style: Custom
 
 
 echo. & echo * Examples:

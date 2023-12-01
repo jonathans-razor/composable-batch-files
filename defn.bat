@@ -42,21 +42,20 @@ exit/b
 :main
 echo. & echo * Delete aliased file.
 
-call n %1
+call n %1>nul
 
-call fe %cbf-fn%>nul
+call fe %cbf-fn% || exit/b
 
-if errorlevel 1 (
-  call err No file to delete because "%cbf-fn%" doesn't exist.
-  exit/b
-)
+rem qq
 
-echo. & echo * Deleted file: "%cbf-fn".
 del %cbf-fn%
+echo. & echo * File "%cbf-fn%" was deleted.
 
 exit/b
 
-rem Apr-13-2023
+lu:
+Dec-1-2023
+Apr-13-2023
 
 
 

@@ -21,7 +21,7 @@ echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo  * Parameter 1:
 echo    If period, use current folder filename.
-echo    If /d, use DCV.
+echo    Else, use algorithm same as e.bat.
 
 echo. & echo    Batch file style: Multipurpose
 

@@ -14,9 +14,9 @@ goto %1
 :help
 
 echo. & echo * Delete functions.
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo   Usage: %0 [space separated parameter(s)]
 echo. & echo * Parameter 1: Function to run.
-echo. & echo * Batch file style: Multipurpose.
+echo. & echo   Batch file style: Multipurpose.
 
 exit/b
 
