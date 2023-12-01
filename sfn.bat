@@ -52,12 +52,9 @@ Nov-15-2023
 
 echo. & echo * Use current folder filename.
 
-call fe "%~1" || exit/b 5
-
 set cbf-fn=%~1
 
 goto main
-
 
 
 
@@ -71,7 +68,9 @@ if "%cbf-fn%" == "" (
   exit/b
 )
 
-echo. & echo * cbf-fn: %cbf-fn%
+call fe "%~1" || exit/b 5
+
+echo. & echo * cbf-fn VERIFIED: %cbf-fn%
 
 exit/b
 
