@@ -54,15 +54,14 @@ Sep-26-2019
 
 :process-alias
 echo. & echo * Process alias. Dec-1-2023_6_06_PM
-call n %1>nul
-if errorlevel 1 exit/b
+call n %1 || exit/b
 goto main
 
 
 
 :set-filename
-echo. & echo * Set filename. Dec-1-2023_6_51_PM
-set cbf-fn=%1
+echo. & echo * Set filename. Dec-1-2023_7_01_PM
+set cbf-fn=%cd%\%1
 rem echo. & echo cbf-fn: %cbf-fn%
 goto main
 
@@ -71,7 +70,7 @@ goto main
 :main
 
 if exist "%cbf-fn%" (
-  rem echo. & echo * File "%cbf-fn%" exists. Jun-28-2023_10_26_PM
+  echo. & echo * File "%cbf-fn%" exists. Jun-28-2023_10_26_PM
   exit/b 0
 ) else (
   call err * File or folder "%cbf-fn%" DOES NOT exist. Jun-28-2023_10_04_PM
