@@ -52,8 +52,6 @@ call i /c>nul
 
 rem Override switches section.
 
-rem qq
-
 :
 if "%~2" == "/c" (
   call :open-current-folder-file %* || exit/b
@@ -257,13 +255,6 @@ if "%cbf-fn%" == "" (
   call err Cbf-fn should not be blank.
   exit/b
 )
-
-echo. & echo * Dec-1-2023_6_36_PM
-echo   Error Level: %errorlevel%
-echo   p1: %1
-echo   p2: %2 
-echo   cbf-fn: %cbf-fn%
-echo   qjq
 
 echo. & echo * cbf-fn VERIFIED: %cbf-fn%
 
