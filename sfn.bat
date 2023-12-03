@@ -50,6 +50,9 @@ Dec-1-2023
 call el /c>nul
 call i /c>nul
 
+
+
+:_
 rem Override switches section.
 
 :
@@ -66,7 +69,13 @@ if "%~2" == "/a" (
 )
 
 :
-if "%~2" == "/n" (
+if "%~2" == "/d" (
+  call :open-dbf-batch-file %*
+  goto main
+)
+
+:
+if "%~2" == "/np" (
   call :open-np-file %*
   goto main
 )
@@ -91,6 +100,9 @@ if "%~2" == "/p" (
   goto main
 )
 
+
+
+:_
 :
 rem Begin routing intelligence section.
 

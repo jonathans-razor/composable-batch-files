@@ -19,26 +19,26 @@ echo. & echo * Edit a file based on a file choice algorithm.
 
 echo. & echo * Usage: %0 [space separated parameter(s)]
 
-echo. & echo * Parameter 0:
+echo. & echo   Parameter 0:
 echo   Editor alias to use.
 
-echo. & echo * Parameter 1 (Optional):
+echo. & echo   Parameter 1 (Optional):
 echo   Blank: open current folder.
 echo   Not blank: uses routing intelligence.
 echo   If contains ".": open current folder file, which may or may not exist. This assumes that no alias ever contains a period in it.
 
-echo. & echo * Parameter 2 (Optional):
+echo. & echo   Parameter 2 (Optional):
 echo   /a: aliased file. Since this is the default, it's only necessary for overriding purposes.
 echo   /af: aliased folder.
 echo   /c: current folder file (used for creating new extenionless files)
 echo   /d: DBF batch file.
 echo   /e: override default editor.
 echo   /f: FF bash file.
-echo   /n: np file.
+echo   /np: np file.
 echo   /o: CBF batch file.
 echo   /p: Python file.
 
-echo. & echo * Parameter 3 (Optional):
+echo. & echo   Parameter 3 (Optional):
 echo   /e: Override default editor.
 
 echo. & echo   Batch file style: Custom
@@ -72,6 +72,9 @@ exit/b
 call el /c>nul
 call i /c>nul
 
+
+
+:_
 rem Override switches section.
 
 :
@@ -91,13 +94,19 @@ if "%~2" == "/a" (
 if "%~2" == "/af" goto open-aliased-folder
 
 :
+if "%2" == "/d" (
+  call :open-dbf-batch-file %*
+  goto main
+)
+
+:
 if "%~2" == "/n" (
   call :open-np-file %*
   goto main
 )
 
 :
-if "%~2" == "/o" (
+if "%2" == "/o" (
   call :open-cbf-batch-file %*
   goto main
 )
@@ -116,7 +125,9 @@ if "%~2" == "/p" (
   goto main
 )
 
-:
+
+
+:_
 rem Begin routing intelligence section.
 
 set cbf-fn=
