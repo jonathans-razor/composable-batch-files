@@ -1464,6 +1464,29 @@ exit/b
 
 
 :_
+:Dec-1-2023
+
+cls
+
+@echo on
+
+python 5-longest-palindromic-substring.py babad
+python 5-longest-palindromic-substring.py cbbd
+python 5-longest-palindromic-substring.py babyyouremine
+python 5-longest-palindromic-substring.py abyyouremine
+python 5-longest-palindromic-substring.py copperheadsnakesarecool
+python 5-longest-palindromic-substring.py raininspain
+python 5-longest-palindromic-substring.py 1
+python 5-longest-palindromic-substring.py 12
+python 5-longest-palindromic-substring.py 22
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1487,21 +1510,15 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Dec-1-2023
+:Dec-2-2023
 
 cls
 
 @echo on
 
-python 5-longest-palindromic-substring.py babad
-python 5-longest-palindromic-substring.py cbbd
-python 5-longest-palindromic-substring.py babyyouremine
-python 5-longest-palindromic-substring.py abyyouremine
-python 5-longest-palindromic-substring.py copperheadsnakesarecool
-python 5-longest-palindromic-substring.py raininspain
-python 5-longest-palindromic-substring.py 1
-python 5-longest-palindromic-substring.py 12
-python 5-longest-palindromic-substring.py 22
+python 8-string-to-integer.py "42"
+python 8-string-to-integer.py "      -42"
+python 8-string-to-integer.py "4193 with words"
 
 @echo off
 
