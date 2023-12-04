@@ -151,8 +151,9 @@ if not "%cbf-gd%" == "" (
 :
 
 if not "%cbf-gs%" == "" (
-  echo. & echo * cbf-gs is non-blank. Aug-23-2023_1_53_PM
-  call fxw gs %1 %2 %3
+  rem echo. & echo * cbf-gs is non-blank. Aug-23-2023_1_53_PM
+  set cbf-parameter=%cbf-gs%
+  call r
   exit/b
 )
 
