@@ -4,6 +4,8 @@
 
 title CBF: %0
 
+echo. & echo  * Override j1.txt with clipboard contents and open the file.
+
 if "%~1" == "?" goto help
 
 goto main
@@ -14,8 +16,6 @@ goto main
 :help
 
 cls
-
-echo. & echo  * Override j1.txt with clipboard contents and open the file.
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
@@ -30,7 +30,7 @@ echo    %~n0
 exit/b
 
 lu: 
-Dec-2-2023
+Dec-4-2023
 
 
 
@@ -43,9 +43,9 @@ Dec-2-2023
 
 :_
 :main
-call t dsa
+call t dsa>nul
 python clip.py
-call e j1
+call e j1>nul
 exit/b
 
 
