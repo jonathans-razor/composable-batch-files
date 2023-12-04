@@ -1839,6 +1839,8 @@ creation date: Jul-3-2023
 
 
 ::_
+:question
+
 :ffex
 :fiex
 echo. & echo * Test for the exisitence of a file or folder.

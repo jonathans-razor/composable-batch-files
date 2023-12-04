@@ -75,6 +75,7 @@ exit/b
 
 :_
 :main
+call an br
 set cbf-parameter=https://www.google.com/search?q=%*?
 call r
 exit/b
