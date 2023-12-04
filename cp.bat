@@ -1200,3 +1200,16 @@ Nov-7-2023
 
 
 :_
+:r
+
+echo. & echo * Copy resume.
+
+call t dn>nul
+
+call mv cp jon*ume.docx r
+
+exit/b
+
+
+
+:_

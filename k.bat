@@ -45,6 +45,18 @@ Dec-2-2023
 
 :_
 
+echo. & echo * Play with the clip command.
+
+rem echo clip | c:\a\j1.txt
+rem call e j1
+type clip
+
+exit/b
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -63,13 +75,13 @@ rem echo. & echo * Code below here runs. Permanent QQ8 **********************
 
 :_
 
-echo. & echo * Play with the clip command.
+echo. & echo * Rename resume.
 
-rem echo clip | c:\a\j1.txt
-rem call e j1
-type clip
+ren jona*me.docx "Jonathan Jones' Resume - Dec-4-2023.docx"
 
 exit/b
+
+Dec-4-2023
 
 
 
