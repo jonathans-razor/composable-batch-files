@@ -35,7 +35,6 @@ Composable Batch Files (CBF) - Table of Contents
   cbf-sg  CBF Style Guide.
   cbf-tc  This table of contents of CBF batch files.
      cdc  Current directory contains.
-      ce  Create clean slate j1 and j2 files.
       cf  Surf to Confluence.
       cm  CMAC operations.
      clc  Simple calculator.
@@ -131,6 +130,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       jv  Java. (skw language-functions-series-jj)
       kl  Kill a process.
       kr  Open Chrome.
+qq
        l  Load path onto clipboard.
       ld  Use a DCV to load a cbf variable onto the clipboard.
       le  Leet code tester.
@@ -138,6 +138,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      lfb  Batch that supports language functions.
       lf  Load file name or contents onto clipboard.
       lh  Execute the localhost DCV for the passed in alias.
+      lj  Override j1.txt with clipboard contents and open the file.
       ll  Wrapper around dir command to help with Linux compatibility.
       lm  Load clipboard multipurpose.
    lower  Convert the passed in parameter to lower case.

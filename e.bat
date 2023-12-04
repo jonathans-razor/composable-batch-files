@@ -40,9 +40,9 @@ echo   /p: Python file.
 
 echo. & echo   Parameter 3 (Optional):
 echo   /e: Override default editor.
+echo   /l: Override file contents with clipboard contents.
 
 echo. & echo   Batch file style: Custom
-
 
 echo. & echo * Examples:
 echo   %0 j1
@@ -180,7 +180,7 @@ exit/b
 :open-current-folder-file
 echo. & echo * Open current folder file.
 
-call fe "%~1" %~2 || exit/b 5
+call fe %~1 %~2 || exit/b 5
 set cbf-fn=%~1
 goto main
 

@@ -3501,125 +3501,6 @@ lu: Oct-25-2023
 
 
 
-:_+ Podcast and ClipJam Folders
-
-
-
-::_
-
-:cldr
-:clip
-:clp
-
-echo. & echo * Clip drive.
-
-set cbf-pt=
-
-if exist "g:\" (
-  rem echo. & echo * G exists.
-  set cbf-pt=g:\
-  exit/b
-)
-
-if exist "h:\" (
-  rem echo. & echo * H exists.
-  set cbf-pt=h:\
-  exit/b
-)
-
-if "%cbf-pt%" == "" (
-  call err "cbf-pt" is undefined. Is the MP3 player plugged in? Oct-30-2023_11_10_AM - %0.bat
-  exit/b 1
-)
-
-exit/b 3
-
-rem lu: Feb-9-2022
-
-
-
-::_
-
-:audi
-:cja
-
-call pn clp || exit/b
-
-echo. & echo * Audiobooks.
-
-set cbf-pt=%cbf-pt%audiobooks
-
-exit/b
-
-rem lu: 
-Oct-30-2023
-Oct-18-2021
-
-
-
-::_
-
-:cj
-:cl
-:cjp
-:clip
-:clja
-:clipjam_podcasts
-
-call pn clp || exit/b
-
-echo. & echo * Podcasts.
-
-set cbf-pt=%cbf-pt%podcasts
-
-exit/b
-
-rem lu: 
-Oct-30-2023
-Jul-15-2018
-
-
-
-::_
-
-:pc
-
-:podcast_folder
-
-echo. & echo * Podcaster.
-
-rem lu: Jun-24-2020
-
-set cbf-pt=%my documents%\gpodder\downloads
-
-set cbf-app=C:\Program Files (x86)\gPodder\bin\gpodder.exe
-
-exit/b
-
-     
-
-::_
-:sa
-:stag
-:staging-area
-echo. & echo * Staging area.
-set cbf-pt=%my documents%\mp3 staging area
-exit/b
-rem lu: Aug-20-2022
-
-
-
-::_
-:ec
-:exco
-:mec
-echo. & echo * Extra content - MP3.
-set cbf-pt=%my documents%\mp3 extra content
-exit/b
-rem lu: Jan-26-2022
-
-
-
 :_+ Language Functions Family (!fylfn) (skw language-functions-series-jj)
 
 
@@ -4093,6 +3974,124 @@ exit/b
 
 lu: 
 Apr-27-2020
+
+
+
+:_+ Podcast and ClipJam Folders
+
+
+
+::_
+
+:cldr
+:clip
+:clp
+
+echo. & echo * Clip drive.
+
+set cbf-pt=
+
+if exist "g:\" (
+  rem echo. & echo * G exists.
+  set cbf-pt=g:\
+  exit/b
+)
+
+if exist "h:\" (
+  rem echo. & echo * H exists.
+  set cbf-pt=h:\
+  exit/b
+)
+
+if "%cbf-pt%" == "" (
+  call err "cbf-pt" is undefined. Is the MP3 player plugged in? Oct-30-2023_11_10_AM - %0.bat
+  exit/b 1
+)
+
+exit/b 3
+
+rem lu: Feb-9-2022
+
+
+
+::_
+
+:cj
+:cl
+:cjp
+:clja
+:clipjam_podcasts
+
+call pn clp || exit/b
+
+echo. & echo * Podcasts.
+
+set cbf-pt=%cbf-pt%podcasts
+
+exit/b
+
+lu: 
+Oct-30-2023
+Jul-15-2018
+
+
+
+::_
+
+:audi
+:cja
+
+call pn clp || exit/b
+
+echo. & echo * Audiobooks.
+
+set cbf-pt=%cbf-pt%audiobooks
+
+exit/b
+
+rem lu: 
+Oct-30-2023
+Oct-18-2021
+
+
+
+::_
+
+:pc
+
+:podcast_folder
+
+echo. & echo * Podcaster.
+
+rem lu: Jun-24-2020
+
+set cbf-pt=%my documents%\gpodder\downloads
+
+set cbf-app=C:\Program Files (x86)\gPodder\bin\gpodder.exe
+
+exit/b
+
+     
+
+::_
+:sa
+:stag
+:staging-area
+echo. & echo * Staging area.
+set cbf-pt=%my documents%\mp3 staging area
+exit/b
+rem lu: Aug-20-2022
+
+
+
+::_
+:ec
+:exco
+:mec
+echo. & echo * Extra content - MP3.
+set cbf-pt=%my documents%\mp3 extra content
+exit/b
+rem lu: Jan-26-2022
 
 
 

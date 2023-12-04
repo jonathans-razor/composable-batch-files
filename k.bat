@@ -63,9 +63,11 @@ rem echo. & echo * Code below here runs. Permanent QQ8 **********************
 
 :_
 
-echo. & echo * New k.
+echo. & echo * Play with the clip command.
 
-
+rem echo clip | c:\a\j1.txt
+rem call e j1
+type clip
 
 exit/b
 
