@@ -1487,6 +1487,23 @@ exit/b
 
 
 :_
+:Dec-2-2023
+
+cls
+
+@echo on
+
+python 8-string-to-integer.py "42"
+python 8-string-to-integer.py "      -42"
+python 8-string-to-integer.py "4193 with words"
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1510,17 +1527,33 @@ rem echo. & echo * Code below here runs. Permanent QQ9 **********************
 
 
 :_
-:Dec-2-2023
+:Dec-3-2023
 
 cls
 
-@echo on
+echo. & echo * LeetCode Problem 10.
 
-python 8-string-to-integer.py "42"
-python 8-string-to-integer.py "      -42"
-python 8-string-to-integer.py "4193 with words"
+echo. & echo * Expecting 
+echo False
+python 10-regular-expression-matching.py aa a
 
-@echo off
+echo. & echo * Expecting
+echo True
+python 10-regular-expression-matching.py aa a*
+
+echo. & echo * Expecting
+echo True
+python 10-regular-expression-matching.py ab .*
+
+:
+echo. & echo * Expecting
+echo True
+python 10-regular-expression-matching.py aaa a*a
+
+:
+echo. & echo * Expecting
+echo False
+python 10-regular-expression-matching.py aaaaaaaaaaaaaaaaaaa a*a*a*a*a*a*a*a*a*b
 
 exit/b
 
