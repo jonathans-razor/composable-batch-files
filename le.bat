@@ -1555,8 +1555,6 @@ exit/b
 
 :code-execution-area
 
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
 
 
 :_

@@ -60,7 +60,7 @@ Composable Batch Files (CBF) - Table of Contents
       dn  Dot Net Core (skw dotnet).
       dk  Docker.
       dr  Create and delete directories. (skw mcd, folder)
-      dt  Date.
+      dt  Current date copied to clipboard.
      drt  Dir, with td parameter.
       dw  Run NG UI from a dedicated command line window.
        e  Edit a file based on a file choice algorithm.

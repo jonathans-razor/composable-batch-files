@@ -108,7 +108,7 @@ set cbf-current-directory=
 
 :
 rem Date
-set cbf-date
+set cbf-date=
 
 :
 rem Default Browser
