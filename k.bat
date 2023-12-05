@@ -69,15 +69,22 @@ exit/b
 
 :code-execution-area
 
-rem echo. & echo * Code below here runs. Permanent QQ8 **********************
-
 
 
 :_
 
 echo. & echo * Rename resume.
 
-ren jona*me.docx "Jonathan Jones' Resume - Dec-4-2023.docx"
+call t d
+
+python date.py>current-date.txt
+set /p cbf-date=<current-date.txt
+rem qq
+set cbf-fn=Jonathan Jones' Resume - %cbf-date%.docx
+
+echo. & echo cbf-fn: %cbf-fn%
+
+copy jona*me.docx "%cbf-fn%"
 
 exit/b
 

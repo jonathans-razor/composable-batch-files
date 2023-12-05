@@ -107,6 +107,10 @@ rem Current Directory
 set cbf-current-directory=
 
 :
+rem Date
+set cbf-date
+
+:
 rem Default Browser
 rem I commented this because normally I don't want to see this.
 rem set cbf-default-browser=

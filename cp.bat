@@ -1202,11 +1202,28 @@ Nov-7-2023
 :_
 :r
 
-echo. & echo * Copy resume.
+cls
+
+echo. & echo * Copy and rename resume.
 
 call t dn>nul
 
 call mv cp jon*ume.docx r
+
+rem qq
+
+call t d>nul
+
+python date.py>current-date.txt
+set /p cbf-date=<current-date.txt
+rem qq
+set cbf-fn=Jonathan Jones' Resume - %cbf-date%.docx
+
+rem echo. & echo cbf-fn: %cbf-fn%
+
+call t r>nul
+
+copy "Jonathan Jones' Resume.docx" "%cbf-fn%"
 
 exit/b
 

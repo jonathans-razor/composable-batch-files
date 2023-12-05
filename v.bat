@@ -1746,82 +1746,6 @@ exit/b
 
 
 
-:_+ Populating an environment variable from a file and Choice.
-
-:skw: setting an environment variable from a file
-
-
-
-
-::_
-:
-echo. & echo * Can you put a call message into an environment variable?
-rem set environment variable from file
-call s>%tmp%\git_status_message.txt
-set /p git_status_message=<%tmp%\git_status_message.txt
-exit/b
-rem lu: Apr-1-2019
-
-
-
-::_
-
-:pev
-
-echo. & echo * How to populate an environment variable from a file.
-
-rem lu: Oct-24-2019
-
-rem populating an environment variable from a file: skw
-
-rem The problem with this command is that it only does the first line of the file.
-
-echo.
-set /p test=<c:\a\j1.txt
-
-echo.
-echo %test%
-
-exit/b
-
-how do you set an environment variable from file: skw
-
-
-
-::_
-
-:user_choice
-
-echo. & echo * Ask the user a question and proceed accordingly.
-
-rem option, choose, choice
-
-echo.
-set /P user_option=Would you like to run "npm install"? (y/n): 
-
-if not "%user_option%"=="y" call nm inst
-
-exit/b
-
-
-
-::_
-
-:where
-
-echo. & echo * Go to the where location.
-
-rem lu: Jun-20-2019
-
-echo.
-where>c:\a\j1.txt
-set /p test=<where
-echo 'test:' %test%
-
-exit/b
-
-
-
 :_
 :pfem
 echo. & echo * Proper formatting of error messages.
@@ -2556,6 +2480,87 @@ exit/b
 
 Lu:
 Dec-1-2023
+
+
+
+:_+ Populating an environment variable from a file and Choice.
+
+:skw: setting an environment variable from a file
+
+
+
+
+::_
+
+:pev
+
+echo. & echo * How to populate an environment variable from a file. (!setp)
+
+echo.
+set /p test=<c:\a\j1.txt
+
+echo. & echo %test%
+
+exit/b
+
+lu:
+
+Oct-24-2019
+
+skw: 
+
+setting environment variables
+
+populating an environment variable from a file
+
+The problem with this command is that it only does the first line of the file.
+
+how do you set an environment variable from file
+
+
+
+::_
+:
+echo. & echo * Can you put a call message into an environment variable?
+rem set environment variable from file
+call s>%tmp%\git_status_message.txt
+set /p git_status_message=<%tmp%\git_status_message.txt
+exit/b
+rem lu: Apr-1-2019
+
+
+
+::_
+
+:user_choice
+
+echo. & echo * Ask the user a question and proceed accordingly.
+
+rem option, choose, choice
+
+echo.
+set /P user_option=Would you like to run "npm install"? (y/n): 
+
+if not "%user_option%"=="y" call nm inst
+
+exit/b
+
+
+
+::_
+
+:where
+
+echo. & echo * Go to the where location.
+
+rem lu: Jun-20-2019
+
+echo.
+where>c:\a\j1.txt
+set /p test=<where
+echo 'test:' %test%
+
+exit/b
 
 
 
