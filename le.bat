@@ -524,20 +524,6 @@ exit/b
 
 
 :_
-:Oct-25-2023-1
-
-cls
-
-call t d>nul
-
-@echo on
-call ph 14-longest-common-prefix.py flower flow flight
-
-exit/b
-
-
-
-:_
 :Oct-25-2023
 
 cls
@@ -1537,6 +1523,23 @@ exit/b
 
 
 :_
+:Dec-4-2023
+
+cls
+
+@echo on
+
+python 12-integer-to-roman.py 3
+python 12-integer-to-roman.py 58
+python 12-integer-to-roman.py 1994
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1558,17 +1561,17 @@ exit/b
 
 
 :_
-:Dec-4-2023
+:Oct-25-2023-1
 
 cls
 
+call t d>nul
+
 @echo on
-
-python 12-integer-to-roman.py 3
-python 12-integer-to-roman.py 58
-python 12-integer-to-roman.py 1994
-
-@echo off
+call ph 14-longest-common-prefix.py flower flow flight
+call ph 14-longest-common-prefix.py part ways path pantry hello apart
+call ph 14-longest-common-prefix.py dog racecar car
+call ph 14-longest-common-prefix.py dog doggy dogfish
 
 exit/b
 
