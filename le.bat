@@ -1504,29 +1504,6 @@ exit/b
 
 
 :_
-:
-
-cls
-
-@echo on
-
-python 
-
-@echo off
-
-exit/b
-
-
-
-:_
-
-:code-execution-area
-
-rem echo. & echo * Code below here runs. Permanent QQ9 **********************
-
-
-
-:_
 :Dec-3-2023
 
 cls
@@ -1554,6 +1531,46 @@ python 10-regular-expression-matching.py aaa a*a
 echo. & echo * Expecting
 echo False
 python 10-regular-expression-matching.py aaaaaaaaaaaaaaaaaaa a*a*a*a*a*a*a*a*a*b
+
+exit/b
+
+
+
+:_
+:
+
+cls
+
+@echo on
+
+python 
+
+@echo off
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+rem echo. & echo * Code below here runs. Permanent QQ9 **********************
+
+
+
+:_
+:Dec-4-2023
+
+cls
+
+@echo on
+
+python 12-integer-to-roman.py 3
+python 12-integer-to-roman.py 58
+python 12-integer-to-roman.py 1994
+
+@echo off
 
 exit/b
 
