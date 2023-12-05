@@ -4095,4 +4095,16 @@ rem lu: Jan-26-2022
 
 
 
+:_
+:dec-6-2023
+echo. & echo * %1.
+call pn fj>nul
+set cbf-jd=%cbf-pt%\%1.png
+exit/b
+
+lu: 
+Dec-5-2023
+
+
+
 :_ (!efn)

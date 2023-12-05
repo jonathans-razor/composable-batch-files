@@ -37,6 +37,7 @@ echo   %0 kanb
 rem This opens the now playing's jav2 file. Oct-25-2022
 echo   %0 np jav2
 echo   %0 acc ghmy
+echo   %0 dec-6-2023 jd
 
 exit/b
 
