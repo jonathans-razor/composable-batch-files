@@ -1557,6 +1557,38 @@ exit/b
 
 
 :_
+:Dec-5-2023
+
+cls
+
+@echo on
+
+python 17-letter-combinations-of-a-phone-number.py 23
+python 17-letter-combinations-of-a-phone-number.py ""
+python 17-letter-combinations-of-a-phone-number.py 2
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Dec-5-2023
+
+cls
+
+@echo on
+
+python test-factorialize.py
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1584,9 +1616,12 @@ cls
 
 @echo on
 
-python 17-letter-combinations-of-a-phone-number.py 23
-python 17-letter-combinations-of-a-phone-number.py ""
-python 17-letter-combinations-of-a-phone-number.py 2
+python factorialize.py 1
+python factorialize.py 2
+python factorialize.py 3
+python factorialize.py -3
+python factorialize.py 4
+python factorialize.py 5
 
 @echo off
 
