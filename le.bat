@@ -1540,6 +1540,23 @@ exit/b
 
 
 :_
+:Oct-25-2023-1
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 14-longest-common-prefix.py flower flow flight
+call ph 14-longest-common-prefix.py part ways path pantry hello apart
+call ph 14-longest-common-prefix.py dog racecar car
+call ph 14-longest-common-prefix.py dog doggy dogfish
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1561,17 +1578,17 @@ exit/b
 
 
 :_
-:Oct-25-2023-1
+:Dec-5-2023
 
 cls
 
-call t d>nul
-
 @echo on
-call ph 14-longest-common-prefix.py flower flow flight
-call ph 14-longest-common-prefix.py part ways path pantry hello apart
-call ph 14-longest-common-prefix.py dog racecar car
-call ph 14-longest-common-prefix.py dog doggy dogfish
+
+python 17-letter-combinations-of-a-phone-number.py 23
+python 17-letter-combinations-of-a-phone-number.py ""
+python 17-letter-combinations-of-a-phone-number.py 2
+
+@echo off
 
 exit/b
 
