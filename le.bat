@@ -580,22 +580,6 @@ cls
 call t d>nul
 
 @echo on
-call ph 21-merge-two-sorted-lists.py "1 3 5" "2 4 6 7"
-
-echo.
-
-exit/b
-
-
-
-:_
-:Oct-31-2023
-
-cls
-
-call t d>nul
-
-@echo on
 call ph 26-remove-duplicates-from-sorted-array.py 1 2 3 4 4 6 7
 
 echo.
@@ -1589,6 +1573,52 @@ exit/b
 
 
 :_
+:Dec-5-2023
+
+cls
+
+@echo on
+
+python factorialize.py 1
+python factorialize.py 2
+python factorialize.py 3
+python factorialize.py -3
+python factorialize.py 4
+python factorialize.py 5
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Oct-31-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 21-merge-two-sorted-lists.py 1 2 4 1 3 4
+
+echo.
+
+@echo on
+call ph 21-merge-two-sorted-lists.py 9 3 5 2 4 7
+
+echo.
+
+@echo on
+call ph 21-merge-two-sorted-lists.py 18 2 4 3 4 8
+
+echo.
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1610,18 +1640,14 @@ exit/b
 
 
 :_
-:Dec-5-2023
+:Dec-7-2023
 
 cls
 
 @echo on
 
-python factorialize.py 1
-python factorialize.py 2
-python factorialize.py 3
-python factorialize.py -3
-python factorialize.py 4
-python factorialize.py 5
+python 29-divide-two-integers.py 10 3
+python 29-divide-two-integers.py 7 -3
 
 @echo off
 

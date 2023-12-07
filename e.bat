@@ -181,7 +181,6 @@ exit/b
 echo. & echo * Open current folder file.
 
 call fe %~1 %~2 || exit/b 5
-rem qq
 set cbf-fn=%cd%\%~1
 goto main
 
