@@ -1536,9 +1536,7 @@ lu: Jan-25-2021
 
 
 ::_
-
 :bel
-
 :belf
 
 echo. & echo * Belfry.
@@ -1552,16 +1550,16 @@ exit/b
 
 
 ::_
-
 :ldbelf
 
 echo. & echo * Local drive Belfy.
 
-rem lu: Mar-1-2020
-
-set cbf-pt=%dropbox%\savannah\belfry
+set cbf-pt=%savannah%\belfry
 
 exit/b
+
+lu: 
+Mar-1-2020
 
 
 
