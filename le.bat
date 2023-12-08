@@ -373,32 +373,6 @@ exit/b
 
 
 :_
-:Oct-20-2023-4
-
-cls
-
-call t dsa>nul
-
-call ph fizz.py
-
-exit/b
-
-
-
-:_
-:Oct-20-2023
-
-cls
-
-call t dsa>nul
-
-call ph fizz-parameterized.py 1 2 3 4
-
-exit/b
-
-
-
-:_
 :Oct-23-2023
 
 cls
@@ -1285,25 +1259,6 @@ exit/b
 
 
 :_
-:Nov-22-2023
-
-cls
-
-@echo on
-
-python 412-fizz-buzz.py 3
-
-python 412-fizz-buzz.py 5
-
-python 412-fizz-buzz.py 15
-
-@echo off
-
-exit/b
-
-
-
-:_
 :Nov-24-2023
 
 cls
@@ -1635,9 +1590,79 @@ exit/b
 
 
 :_
+:Dec-8-2023
+
+cls
+
+@echo on
+
+python 31-next-permutation.py 1 2 3
+python 31-next-permutation.py 3 2 1
+python 31-next-permutation.py 1 1 5
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Oct-20-2023-4
+
+cls
+
+echo. & echo * %1. Does 1-100.
+
+call t dsa>nul
+
+call ph fizz.py
+
+exit/b
+
+
+
+:_
+:Dec-8-2023-2
+
+cls
+
+echo. & echo * %1.
+
+call t dsa>nul
+
+call ph fizz-parameterized.py 1 2 3 4
+
+exit/b
+
+
+
+:_
+:Dec-8-2023-3
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 412-fizz-buzz.py 3
+
+python 412-fizz-buzz.py 5
+
+python 412-fizz-buzz.py 15
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
+
+echo. & ech * %1.
 
 @echo on
 
@@ -1656,15 +1681,25 @@ exit/b
 
 
 :_
-:Dec-8-2023
+:Dec-8-2023-4
 
 cls
 
+echo. & echo * Weird. %1
+
 @echo on
 
-python 31-next-permutation.py 1 2 3
-python 31-next-permutation.py 3 2 1
-python 31-next-permutation.py 1 1 5
+python weird-not-weird.py 2
+python weird-not-weird.py 4
+python weird-not-weird.py 6
+python weird-not-weird.py 7
+python weird-not-weird.py 12
+python weird-not-weird.py 19
+python weird-not-weird.py 20
+python weird-not-weird.py 22
+python weird-not-weird.py 24
+python weird-not-weird.py 97
+python weird-not-weird.py 98
 
 @echo off
 
