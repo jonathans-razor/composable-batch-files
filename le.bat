@@ -1619,6 +1619,22 @@ exit/b
 
 
 :_
+:Dec-7-2023
+
+cls
+
+@echo on
+
+python 29-divide-two-integers.py 10 3
+python 29-divide-two-integers.py 7 -3
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1640,14 +1656,15 @@ exit/b
 
 
 :_
-:Dec-7-2023
+:Dec-8-2023
 
 cls
 
 @echo on
 
-python 29-divide-two-integers.py 10 3
-python 29-divide-two-integers.py 7 -3
+python 31-next-permutation.py 1 2 3
+python 31-next-permutation.py 3 2 1
+python 31-next-permutation.py 1 1 5
 
 @echo off
 
@@ -1655,4 +1672,4 @@ exit/b
 
 
 
-:_ (!efle, !rfsp) (mov-7)
+:_ (!efle, !rfsp) (mov-7) qq-8
