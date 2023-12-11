@@ -1658,29 +1658,6 @@ exit/b
 
 
 :_
-:
-
-cls
-
-echo. & ech * %1.
-
-@echo on
-
-python 
-
-@echo off
-
-exit/b
-
-
-
-:_
-
-:code-execution-area
-
-
-
-:_
 :Dec-8-2023-4
 
 cls
@@ -1700,6 +1677,48 @@ python weird-not-weird.py 22
 python weird-not-weird.py 24
 python weird-not-weird.py 97
 python weird-not-weird.py 98
+
+@echo off
+
+exit/b
+
+
+
+:_
+:
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 
+
+@echo off
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+
+
+:_
+:Dec-10-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 34-find-first-and-last-position-of-element-in-sorted-array.py 5,7,7,8,8,10 8
+python 34-find-first-and-last-position-of-element-in-sorted-array.py 5,7,7,8,8,10 6
+python 34-find-first-and-last-position-of-element-in-sorted-array.py "" 0
 
 @echo off
 
