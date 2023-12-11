@@ -485,10 +485,9 @@ python --version
 
 exit/b
 
-rem qq
- Dec-11-2023_4_45_PM: 
+On XPS, Dec-11-2023_4_45_PM: Python 3.12.1
 
-Dec-11-2023_4_44_PM: Python 3.11.5
+On XPS, Dec-11-2023_4_44_PM: Python 3.11.5
 
 Sep-21-2023_12_05_PM: Python 3.11.5
 
