@@ -4769,6 +4769,26 @@ exit/b
 
 
 
+::_
+
+:fj
+
+echo. & echo * Open latest FJ folder item.
+
+call t fj || exit/b
+
+dir /b /o-d>%tmp%\folder-results.txt
+
+set /p cbf-latest-folder-result=<%tmp%\folder-results.txt
+
+echo. & echo * cbf-latest-folder-result: %cbf-latest-folder-result%
+
+"%cbf-latest-folder-result%"
+
+exit/b
+
+
+
 :_
 
 :atn
