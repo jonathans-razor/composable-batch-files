@@ -626,28 +626,6 @@ exit/b
 
 
 :_
-:Nov-3-2023
-
-cls
-
-call t d>nul
-
-@echo on
-call ph 35-search-insert-position.py 1 3 5 6 5
-
-@echo on
-call ph 35-search-insert-position.py 1 3 5 6 2
-
-@echo on
-call ph 35-search-insert-position.py 1 3 5 6 7
-
-echo.
-
-exit/b
-
-
-
-:_
 :Nov-5-2023
 
 cls
@@ -1685,6 +1663,47 @@ exit/b
 
 
 :_
+:Dec-10-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 34-find-first-and-last-position-of-element-in-sorted-array.py 5,7,7,8,8,10 8
+python 34-find-first-and-last-position-of-element-in-sorted-array.py 5,7,7,8,8,10 6
+python 34-find-first-and-last-position-of-element-in-sorted-array.py "" 0
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Nov-3-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 35-search-insert-position.py 1 3 5 6 5
+
+@echo on
+call ph 35-search-insert-position.py 1 3 5 6 2
+
+@echo on
+call ph 35-search-insert-position.py 1 3 5 6 7
+
+echo.
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1708,7 +1727,7 @@ exit/b
 
 
 :_
-:Dec-10-2023
+:Dec-12-2023
 
 cls
 
@@ -1716,9 +1735,9 @@ echo. & echo * %1.
 
 @echo on
 
-python 34-find-first-and-last-position-of-element-in-sorted-array.py 5,7,7,8,8,10 8
-python 34-find-first-and-last-position-of-element-in-sorted-array.py 5,7,7,8,8,10 6
-python 34-find-first-and-last-position-of-element-in-sorted-array.py "" 0
+python 41-first-missing-positive.py 1,2,0
+python 41-first-missing-positive.py 3,4,-1,1
+python 41-first-missing-positive.py 7,8,9,11,12
 
 @echo off
 
