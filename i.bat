@@ -143,6 +143,10 @@ set cbf-distilled_filename=
 set cbf-distilled_path=
 
 :
+rem Editor Parameter
+set cbf-editor-parameter=
+
+:
 rem Error Graphic
 set cbf-error-graphic=
 
@@ -312,6 +316,10 @@ set cbf-json=
 set cbf-json2=
 
 :
+rem Latest Folder
+set cbf-latest-folder-result=
+
+:
 rem Local Host
 set cbf-lh=
 
@@ -391,6 +399,10 @@ rem Pipe to File
 set cbf_parameter_total=
 
 :
+rem Python Results
+set cbf-python-results=
+
+:
 rem Parameter Total
 set cbf_pipe_to_file=
 
@@ -438,8 +450,11 @@ set cbf-tdp=
 
 :
 rem Title
-set cbf-title=CBF: %0
-title %cbf-title%
+set cbf-title=
+
+:
+rem Transfer Item
+set cbf-transfer-item=
 
 :
 rem T. website

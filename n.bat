@@ -544,10 +544,11 @@ rem lu: Mar-28-2023
 :ckcs
 :ckjv
 echo. & echo * %1 code keepers.
-call pn dbf>nul
-set cbf-pt=%cbf-pt%\code keepers
+call pn it>nul
+set cbf-pt=%cbf-pt%\code-keepers
 set cbf-fn=%cbf-pt%\%1.asc
 exit/b
+
 rem lu: May-12-2022
 rem Ansible, Bash, C#, Java Code Keepers
 
@@ -560,7 +561,7 @@ rem Ansible, Bash, C#, Java Code Keepers
 :jf
 echo. & echo * Groovy/Jenkinsfile code keepers.
 call pn vdi>nul
-set cbf-pt=%cbf-pt%\code keepers
+set cbf-pt=%cbf-pt%\code-keepers
 set cbf-pt=%cbf-pt%\Jenkinsfiles
 set cbf-fn=%cbf-pt%\%cbf-pd%\ckjf.asc
 exit/b

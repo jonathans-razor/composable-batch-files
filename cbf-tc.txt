@@ -130,7 +130,6 @@ example-  Prefix for files written by other authors for learning and comparison 
       jv  Java. (skw language-functions-series-jj)
       kl  Kill a process.
       kr  Open Chrome.
-qq
        l  Load path onto clipboard.
       ld  Use a DCV to load a cbf variable onto the clipboard.
       le  Leet code tester.
@@ -245,7 +244,6 @@ qq
        x  Bing shortcut.
      xac  Execute an application alias with a filename in the current folder.
      xaf  Execute an application alias with a filename alias.
-     xfn  Filename-centric way to run an alias.
      xml  Edit an XML DCV file in VSC.
        y  Using advanced routing, open text files for viewing or editing.
      yml  Edit DCV file in NotePad++ for file type yml.

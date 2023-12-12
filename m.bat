@@ -2437,7 +2437,7 @@ exit/b
 :_
 
 :dc
-
+:double-click
 :double_click
 
 :set_cbf-app_equal_to_cbf-fn

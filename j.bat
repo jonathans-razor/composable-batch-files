@@ -69,7 +69,7 @@ call n %1
 
 if errorlevel 1 exit/b
 
-if not "%~2" == "" goto compose_dcv
+if not "%~2" == "" goto compose-dcv
 
 goto main
 
@@ -77,7 +77,7 @@ goto main
 
 :_
 
-:compose_dcv
+:compose-dcv
 
 call m compose_variable %2
 
@@ -93,7 +93,7 @@ exit/b
 
 
 :_
-:create_new_excel_file
+:create-new-excel-file
 echo. & echo * Create new Excel file.
 call m distill_filename "%cbf-ex%"
 call m distill_path "%cbf-ex%"
@@ -105,7 +105,7 @@ exit/b
 
 
 :_
-:create_new_word_file
+:create-new-word-file
 echo. & echo * Create new Word file.
 call m distill_filename "%cbf-wo%"
 call m distill_path "%cbf-wo%"
@@ -178,7 +178,7 @@ if not "%cbf-wo%" == "" (
   ) else (
     echo.
     echo * Could not find the file "%cbf-wo%" so create it.
-    goto create_new_word_file
+    goto create-new-word-file
     exit/b
   )
 )
@@ -196,7 +196,7 @@ if not "%cbf-ex%" == "" (
   ) else (
     echo.
     echo * Could not find the file "%cbf-ex%" so create it.
-    goto create_new_excel_file
+    goto create-new-excel-file
     exit/b
   )
 )
@@ -219,8 +219,8 @@ if not "%cbf-pptx%" == "" (
 if not "%cbf-fn%" == "" (
   if exist "%cbf-fn%" (
     rem echo.
-    rem echo * File exists cbf-fn: %cbf-fn%.
-    call xfn %1>nul
+    rem echo * File exists cbf-fn: %cbf-fn%. Dec-12-2023_5_02_PM
+    call dc "%cbf-fn%"
     exit/b
   ) else (
     echo.

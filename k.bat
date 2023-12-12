@@ -57,6 +57,27 @@ exit/b
 
 :_
 
+echo. & echo * Rename resume.
+
+call t d
+
+python date.py>current-date.txt
+set /p cbf-date=<current-date.txt
+
+set cbf-fn=Jonathan Jones' Resume - %cbf-date%.docx
+
+echo. & echo cbf-fn: %cbf-fn%
+
+copy jona*me.docx "%cbf-fn%"
+
+exit/b
+
+Dec-4-2023
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -72,23 +93,15 @@ exit/b
 
 
 :_
+:
 
-echo. & echo * Rename resume.
+echo. & echo *
 
-call t d
+rem call dc c:\a\j1.txt
 
-python date.py>current-date.txt
-set /p cbf-date=<current-date.txt
-rem qq
-set cbf-fn=Jonathan Jones' Resume - %cbf-date%.docx
-
-echo. & echo cbf-fn: %cbf-fn%
-
-copy jona*me.docx "%cbf-fn%"
+call dc "d:\dropbox\it\discreet-batch-files\code keepers\ckcs.asc"
 
 exit/b
-
-Dec-4-2023
 
 
 
