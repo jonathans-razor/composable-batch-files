@@ -1704,6 +1704,25 @@ exit/b
 
 
 :_
+:Dec-12-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 41-first-missing-positive.py 1,2,0
+python 41-first-missing-positive.py 3,4,-1,1
+python 41-first-missing-positive.py 7,8,9,11,12
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1727,7 +1746,7 @@ exit/b
 
 
 :_
-:Dec-12-2023
+:Dec-13-2023
 
 cls
 
@@ -1735,9 +1754,9 @@ echo. & echo * %1.
 
 @echo on
 
-python 41-first-missing-positive.py 1,2,0
-python 41-first-missing-positive.py 3,4,-1,1
-python 41-first-missing-positive.py 7,8,9,11,12
+python 42-trapping-rain-water.py 0,1,0,2,1,0,1,3,2,1,2,1
+python 42-trapping-rain-water.py 4,2,0,3,2,5
+python 42-trapping-rain-water.py 1,0,1
 
 @echo off
 
