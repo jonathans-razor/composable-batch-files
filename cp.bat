@@ -1210,8 +1210,6 @@ call t dn>nul
 
 call mv cp jon*ume.docx r
 
-rem qq
-
 call t d>nul
 
 python date.py>current-date.txt
@@ -1224,6 +1222,8 @@ rem echo. & echo cbf-fn: %cbf-fn%
 call t r>nul
 
 copy "Jonathan Jones' Resume.docx" "%cbf-fn%"
+
+call d
 
 exit/b
 

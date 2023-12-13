@@ -73,6 +73,7 @@ call el /c>nul
 call i /c>nul
 
 
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Dec-13-2023_11_28_AM
 
 :_
 rem Override switches section.
@@ -100,7 +101,7 @@ if "%2" == "/d" (
 )
 
 :
-if "%~2" == "/n" (
+if "%~2" == "/np" (
   call :open-np-file %*
   goto main
 )
