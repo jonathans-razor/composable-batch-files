@@ -4091,4 +4091,20 @@ Dec-5-2023
 
 
 
+:_+ Visual Studio Code Settings. json
+
+
+
+::_
+:seja
+echo. & echo * Visual Studio Code user settings file.
+call pn apda>nul
+set cbf-fn=%cbf-pt%\code\user\settings.json
+exit/b
+
+lu: 
+Dec-14-2023
+
+
+
 :_ (!efn)
