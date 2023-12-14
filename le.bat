@@ -1723,6 +1723,25 @@ exit/b
 
 
 :_
+:Dec-13-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 42-trapping-rain-water.py 0,1,0,2,1,0,1,3,2,1,2,1
+python 42-trapping-rain-water.py 4,2,0,3,2,5
+python 42-trapping-rain-water.py 1,0,1
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1746,7 +1765,7 @@ exit/b
 
 
 :_
-:Dec-13-2023
+:Dec-14-2023
 
 cls
 
@@ -1754,9 +1773,9 @@ echo. & echo * %1.
 
 @echo on
 
-python 42-trapping-rain-water.py 0,1,0,2,1,0,1,3,2,1,2,1
-python 42-trapping-rain-water.py 4,2,0,3,2,5
-python 42-trapping-rain-water.py 1,0,1
+python 43-multiply-strings.py "2" "3"
+python 43-multiply-strings.py "123" "456"
+python 43-multiply-strings.py "22" "10"
 
 @echo off
 
