@@ -1214,7 +1214,6 @@ call t d>nul
 
 python date.py>current-date.txt
 set /p cbf-date=<current-date.txt
-rem qq
 set cbf-fn=Jonathan Jones' Resume - %cbf-date%.docx
 
 rem echo. & echo cbf-fn: %cbf-fn%

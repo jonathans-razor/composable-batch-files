@@ -1742,6 +1742,25 @@ exit/b
 
 
 :_
+:Dec-14-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 43-multiply-strings.py "2" "3"
+python 43-multiply-strings.py "123" "456"
+python 43-multiply-strings.py "22" "10"
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1765,7 +1784,7 @@ exit/b
 
 
 :_
-:Dec-14-2023
+:
 
 cls
 
@@ -1773,9 +1792,7 @@ echo. & echo * %1.
 
 @echo on
 
-python 43-multiply-strings.py "2" "3"
-python 43-multiply-strings.py "123" "456"
-python 43-multiply-strings.py "22" "10"
+python 
 
 @echo off
 
