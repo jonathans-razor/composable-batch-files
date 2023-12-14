@@ -30,10 +30,10 @@ echo   If contains ".": open current folder file, which may or may not exist. Th
 echo. & echo   Parameter 2 (Optional):
 echo   /a: aliased file. Since this is the default, it's only necessary for overriding purposes.
 echo   /af: aliased folder.
+echo   /ba: FF bash file.
 echo   /c: current folder file (used for creating new extenionless files)
 echo   /d: DBF batch file.
 echo   /e: override default editor.
-echo   /f: FF bash file.
 echo   /np: np file.
 echo   /o: CBF batch file.
 echo   /p: Python file.
@@ -95,6 +95,13 @@ if "%~2" == "/a" (
 if "%~2" == "/af" goto open-aliased-folder
 
 :
+if "%~2" == "/ba" (
+  call :open-ff-bash-file %*
+  if errorlevel 1 exit/b
+  goto main
+)
+
+:
 if "%2" == "/d" (
   call :open-dbf-batch-file %*
   goto main
@@ -109,13 +116,6 @@ if "%~2" == "/np" (
 :
 if "%2" == "/o" (
   call :open-cbf-batch-file %*
-  goto main
-)
-
-:
-if "%~2" == "/f" (
-  call :open-ff-bash-file %*
-  if errorlevel 1 exit/b
   goto main
 )
 
