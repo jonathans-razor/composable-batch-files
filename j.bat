@@ -126,7 +126,7 @@ rem echo. & echo * Execute a function based on the following order of operations
 
 if not "%cbf-lnk%" == "" (
   if exist "%cbf-lnk%" (
-    echo. & echo * cbf-lnk is non-blank. Nov-13-2023_12_32_PM
+    rem echo. & echo * cbf-lnk is non-blank. Nov-13-2023_12_32_PM
     call dc "%cbf-lnk%"
     exit/b
   )
