@@ -4119,4 +4119,15 @@ exit/b
 
 
 
+:_
+:cola
+
+echo. & echo * Colaboratory.
+
+set cbf-url=https://colab.research.google.com
+
+exit/b
+
+
+
 :_ (!efn)
