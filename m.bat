@@ -3284,9 +3284,9 @@ exit/b
 
 
 ::_
+:demo
 :pres
 echo. & echo * Open presentation files.
-rem qq
 
 set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CC.asc"
@@ -3545,32 +3545,6 @@ rem lu: Aug-11-2021
 call xac np "%share-zone%\Miscellany\z.asc"
 call xac np "%composable-batch-files%\n.bat"
 call xac np "%share-zone%\ni.bat"
-
-exit/b
-
-
-
-::_
-
-:demo
-
-:pres
-
-echo. & echo * Open presentation files.
-
-rem lu: Nov-11-2020
-
-set cbf-fn-list="%dropbox%\savannah\reach out\WK.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CC.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CM.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\IT.asc"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
-
-start mew32 %cbf-fn-list%
-
 
 exit/b
 
