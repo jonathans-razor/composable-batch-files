@@ -3284,21 +3284,23 @@ exit/b
 
 
 ::_
-:a
-rem echo. & echo * Open Affinity files router.
-rem skw open files
-echo %computername% | find /i "keld">nul
-if not errorlevel 1 (
-   goto keld
-   exit/b
-)
-call :aff
+:pres
+echo. & echo * Open presentation files.
+rem qq
+
+set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CC.asc"
+
+start mew32 %cbf-fn-list%
+
 exit/b
-rem lu: Oct-19-2022
+
+rem lu: Dec-15-2023
 
 
 
 ::_
+:a
 :aff
 :aff-xps
 
