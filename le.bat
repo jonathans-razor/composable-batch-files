@@ -1784,7 +1784,7 @@ exit/b
 
 
 :_
-:
+:Dec-15-2023
 
 cls
 
@@ -1792,7 +1792,9 @@ echo. & echo * %1.
 
 @echo on
 
-python 
+python 44-wildcard-matching.py aa a
+python 44-wildcard-matching.py aa *
+python 44-wildcard-matching.py cb ?a
 
 @echo off
 
