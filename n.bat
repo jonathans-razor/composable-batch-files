@@ -4057,7 +4057,7 @@ exit/b
 
      
 
-::_
+::
 :sa
 :stag
 :staging-area
@@ -4068,7 +4068,7 @@ rem lu: Aug-20-2022
 
 
 
-::_
+::
 :ec
 :exco
 :mec
@@ -4079,7 +4079,7 @@ rem lu: Jan-26-2022
 
 
 
-:_
+:
 :dec-6-2023
 echo. & echo * %1.
 call pn fj>nul
@@ -4091,11 +4091,7 @@ Dec-5-2023
 
 
 
-:_+ Visual Studio Code Settings. json
-
-
-
-::_
+:_
 :seja
 echo. & echo * Visual Studio Code user settings file.
 call pn apda>nul
@@ -4104,6 +4100,8 @@ exit/b
 
 lu: 
 Dec-14-2023
+
+
 
 
 
