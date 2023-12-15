@@ -77,6 +77,19 @@ Dec-4-2023
 
 
 :_
+:
+
+echo. & echo *
+
+rem call dc c:\a\j1.txt
+
+call dc "d:\dropbox\it\discreet-batch-files\code keepers\ckcs.asc"
+
+exit/b
+
+
+
+:_
 
 echo. & echo * 
 
@@ -93,15 +106,14 @@ exit/b
 
 
 :_
-:
 
-echo. & echo *
+echo. & echo * Bing URL test.
 
-rem call dc c:\a\j1.txt
-
-call dc "d:\dropbox\it\discreet-batch-files\code keepers\ckcs.asc"
+bing.url
 
 exit/b
+
+Dec-15-2023
 
 
 
