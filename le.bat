@@ -1795,6 +1795,16 @@ echo. & echo * %1.
 python 44-wildcard-matching.py aa a
 python 44-wildcard-matching.py aa *
 python 44-wildcard-matching.py cb ?a
+python 44-wildcard-matching.py z z
+python 44-wildcard-matching.py bbc bb
+python 44-wildcard-matching.py zzz *
+python 44-wildcard-matching.py 82 8?
+python 44-wildcard-matching.py 822 8?
+python 44-wildcard-matching.py "" "*"
+
+echo.
+rem * This is expected to be true.
+python 44-wildcard-matching.py "" "******"
 
 @echo off
 
