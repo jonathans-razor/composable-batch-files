@@ -22,13 +22,15 @@ echo. & echo Usage: %0 [Parameter 1] (where parameter 1 is the atomic function y
 echo. & echo Batch file style: Multipurpose
 
 echo.          
-echo     Parameter  Description
-echo -------------  ------------------------------------------------------------------------
-echo            cp  Move file in the current directory to nickname-specified path.
-echo           cp2  Move file in the current directory to nickname-specified path (newer version).
-echo           cps  Move file in the current directory to nickname-specified path and stay in current folder.
-echo           cpa  Move all files in the current directory to nickname-specified 
-echo            pc  Overarching podcast mover.
+echo    Parameter  Description
+echo ------------  --------------------------------------------------------------
+echo           cp  Move file in the current directory to nickname-specified path.
+echo          cp2  Move file in the current directory to nickname-specified path ^
+                   (newer version).
+echo          cps  Move file in the current directory to nickname-specified path ^
+                   and stay in current folder.
+echo          cpa  Move all files in the current directory to nickname-specified 
+echo           pc  Overarching podcast mover.
 
 exit/b
 

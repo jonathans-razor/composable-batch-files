@@ -4105,4 +4105,18 @@ Dec-14-2023
 
 
 
+:_
+:acli
+:apcl
+
+echo. & echo * %1.
+
+call pn it>nul
+
+set cbf-pt=%cbf-pt%\ai-powered-command-line
+
+exit/b
+
+
+
 :_ (!efn)

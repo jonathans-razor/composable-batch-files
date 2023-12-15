@@ -152,7 +152,7 @@ rem lu: Oct-30-2018
 
 echo.
 echo.
-terraform plan -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\Cart_Test.pem" -no-color
+terraform plan -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\riverstone_Test.pem" -no-color
 
 exit/b
 
@@ -168,7 +168,7 @@ rem lu: Oct-30-2018
 
 echo.
 echo.
-terraform apply -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\Cart_Test.pem" -no-color -auto-approve
+terraform apply -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\riverstone_Test.pem" -no-color -auto-approve
 
 exit/b
 
@@ -184,7 +184,7 @@ rem lu: Oct-30-2018
 
 echo.
 echo.
-terraform destroy -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\Cart_Test.pem" -no-color -auto-approve
+terraform destroy -var-file="%tfkeys%\terraform12.tfvars" -var "private_key_path=%tfkeys%\riverstone_Test.pem" -no-color -auto-approve
 
 exit/b
 
@@ -466,7 +466,7 @@ if %errorlevel% == 1 (
 call n pems
 
 @echo on
-terraform plan -var "private_key_path=%cbf-pt%\cart-np-key.pem" -no-color
+terraform plan -var "private_key_path=%cbf-pt%\riverstone-np-key.pem" -no-color
 @echo off
 
 exit/b
@@ -493,7 +493,8 @@ echo. & echo * Apply.
 
 rem lu: Jan-16-2020
 
-echo.
+rem qq
+echo.                                             
 call m specific_file_presence main.tf
 
 if %errorlevel% == 1 (
@@ -503,7 +504,7 @@ if %errorlevel% == 1 (
 call n pems
 
 @echo on
-terraform apply -var "private_key_path=%cbf-pt%\cart-np-key.pem" -no-color
+terraform apply -var "private_key_path=%cbf-pt%\riverstone-np-key.pem" -no-color
 @echo off
 
 exit/b
