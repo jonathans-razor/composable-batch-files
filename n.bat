@@ -1749,7 +1749,7 @@ exit/b
 
 :bu
 echo. & echo * Backups.
-call pn v
+call pn dr
 set cbf-pt=%cbf-pt%\Backups
 if exist %dropbox%\backups set cbf-pt=%dropbox%\backups
 exit/b
