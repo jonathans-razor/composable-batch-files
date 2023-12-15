@@ -73,8 +73,6 @@ call el /c>nul
 call i /c>nul
 
 
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Dec-13-2023_11_28_AM
-
 :_
 rem Override switches section.
 
