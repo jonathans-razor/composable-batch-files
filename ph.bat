@@ -475,6 +475,10 @@ exit/b
 
 
 
+:_+ Versions Family (!fyvers)
+
+
+
 ::_
 :vers
 
@@ -502,6 +506,76 @@ echo. & echo * Pip version from %0.bat.
 
 echo.
 pip --version
+
+exit/b
+
+
+
+::_
+:versw
+
+echo. & echo * Versions history according to Wikipedia.
+
+set cbf-parameter=https://en.wikipedia.org/wiki/History_of_Python#Table_of_versions
+
+call an br
+
+call r
+
+exit/b
+
+
+
+:_+ Virtual Environment Setup
+
+
+
+::_
+:sve
+
+echo. & echo * Set up a OpenAI virtual environment.
+
+call t oa
+
+python -m venv openai-env
+
+exit/b
+
+
+
+::_
+:acti
+
+echo. & echo * Activate OpenAI virtual environment.
+
+call t oa
+
+openai-env\Scripts\activate
+
+exit/b
+
+
+
+::_
+:deac
+
+echo. & echo * Deactivate OpenAI virtual environment.
+
+call t oa>nul
+
+echo.
+openai-env\Scripts\deactivate
+
+exit/b
+
+
+
+:_
+:iopl
+
+echo. & echo * Install OpenAI Python library.
+
+pip install --upgrade openai
 
 exit/b
 

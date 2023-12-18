@@ -4130,4 +4130,17 @@ exit/b
 
 
 
+:_
+:oa
+
+echo. & echo * Open AI virtual environment.
+
+call pn it>nul
+
+set cbf-pt=%cbf-pt%\open-ai-virtual-environment
+
+exit/b
+
+
+
 :_ (!efn)
