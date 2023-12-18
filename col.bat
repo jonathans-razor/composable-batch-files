@@ -28,28 +28,16 @@ echo.
 echo  File  Description
 echo  ----  ------------------------------------------------------------------
 echo     s  Show color values.
+echo  sail  white on blue
 
 exit/b
 
 
 
 :_
-  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ______  ____
- (______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(____
- ____(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(______)(
-
-
-
-:_
-
-:main
-
-echo. & echo * Reset color to original value.
-
-echo.
-color
-
-exit/b
+   .--.      .--.      .--.      .--.      .--.                 
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+        `--'      `--'      `--'      `--'      `--'     
 
 
 
@@ -63,6 +51,31 @@ rem lu: Jan-22-2019
 
 echo.
 color 0e
+
+exit/b
+
+
+
+:_
+
+:velv
+
+echo. & echo * Red velvet. Red on charcoal.
+
+color fc
+
+exit/b
+
+
+
+:_
+
+:sail
+
+echo. & echo * White on blue.
+
+echo.
+color fc
 
 exit/b
 
@@ -95,6 +108,19 @@ rem lu: Sep-7-2022
 
 rem Yellow on black.
 color fc
+
+exit/b
+
+
+
+:_
+
+:main
+
+echo. & echo * Reset color to original value.
+
+echo.
+color
 
 exit/b
 
