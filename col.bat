@@ -62,7 +62,7 @@ exit/b
 
 echo. & echo * Red velvet. Red on charcoal.
 
-color fc
+color 4f
 
 exit/b
 

@@ -197,7 +197,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       rl  Execute the releases DCV for the passed in alias.
       ro  Read-only.
      rzr  Multi-Edit abstraction layer for running CBF files.
-    rzrp  Multi-Edit abstraction layer for running CBF files, with a pause.
+    rzrp  Multi-Edit abstraction layer for running CBF files, with a pause, for debugging.
        s  Check updated git status, with td parameter.
     senc  Sencha.
      sep  Show separator graphic.

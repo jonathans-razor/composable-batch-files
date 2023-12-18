@@ -4148,7 +4148,7 @@ exit/b
 
 echo. & echo * Google Docs spell checker.
 
-call an br>nul
+call an br
 
 set cbf-gd=https://docs.google.com/document/d/1Nn2yT-QO6Pefuk5g2qDZfVox_VF0dHDiLGNjaimMWOE/edit
 
