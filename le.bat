@@ -1790,6 +1790,26 @@ exit/b
 
 
 :_
+:Dec-17-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 46-permutations.py 1,2,3
+python 46-permutations.py 0,1
+python 46-permutations.py 1
+python 46-permutations.py 2,3,4,5
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1813,7 +1833,7 @@ exit/b
 
 
 :_
-:Dec-17-2023
+:Dec-18-2023
 
 cls
 
@@ -1821,10 +1841,8 @@ echo. & echo * %1.
 
 @echo on
 
-python 46-permutations.py 1,2,3
-python 46-permutations.py 0,1
-python 46-permutations.py 1
-python 46-permutations.py 2,3,4,5
+python 47-permutations-ii.py 1,1,2
+python 47-permutations-ii.py 1,2,3
 
 @echo off
 
