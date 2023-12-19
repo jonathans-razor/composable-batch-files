@@ -108,12 +108,13 @@ exit/b
 
 echo. & echo * Version.
 
-rem lu: Apr-2-2020
-
 echo.
 docker version
 
 exit/b
+
+lu:
+Apr-2-2020
 
 
 

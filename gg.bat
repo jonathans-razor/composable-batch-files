@@ -209,7 +209,7 @@ exit/b
 
 :vers
 
-echo. & echo * Version from %0.
+echo. & echo * Installed version from %0.
 
 echo.
 go version

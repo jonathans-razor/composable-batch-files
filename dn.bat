@@ -184,7 +184,7 @@ exit/b
 
 :vers
 
-echo. & echo * Get version from %0.
+echo. & echo * Installed version from %0.
 
 echo.
 dotnet --version

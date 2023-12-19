@@ -364,8 +364,11 @@ rem lu: Sep-29-2023
 
 :_
 :vers
-echo. & echo * Version.
+
+echo. & echo * Installed version from %0.bat.
+
 ng version
+
 exit/b
 
 lu:

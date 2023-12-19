@@ -808,15 +808,17 @@ rem Creation Date: Jan-30-2017
 
 
 ::_
-:/ver
-:ver
 :vers
-:version
+
 echo. & echo * Get the git version number.
+
 echo.
 git version
+
 exit/b
-rem lu: Jun-7-2018
+
+lu:
+Jun-7-2018
 
 
 

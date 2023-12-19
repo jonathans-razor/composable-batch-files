@@ -91,13 +91,14 @@ Outcome: This worked! Dev slave returned "pong".
 
 echo. & echo * Version info.
 
-rem lu: Jul-31-2020
-
 echo.
 echo.
 ansible --version
 
 exit/b
+
+lu:
+Jul-31-2020
 
 
 

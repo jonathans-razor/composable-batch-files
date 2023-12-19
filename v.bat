@@ -2161,11 +2161,30 @@ Level 1 Program: Is the program even installed.
 
 ::_
 :vers
-echo. & echo * Version from %0.bat.
+
+echo. & echo * Installed version from %0.bat.
+
 echo.
 [executable name] --version
+
 exit/b
+
 Level 1 Program: Is the program even installed.
+
+
+
+::_
+:verso
+
+echo. & echo * Online versions information.
+
+set cbf-parameter=
+
+call an br
+
+call r
+
+exit/b
 
 
 

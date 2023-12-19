@@ -59,14 +59,15 @@ exit/b
 
 :vers
 
-echo. & echo * Version.
-
-rem lu: Jan-8-2019
+echo. & echo * Installed version from %0.bat.
 
 echo.
 gradle -version
 
 exit/b
+
+lu:
+Jan-8-2019
 
 
 
