@@ -10,6 +10,7 @@ call an kr>nul
 
 if "%~1" == "/dfw" goto download-for-windows
 if "%~1" == "/b" goto use-bing
+if "%~1" == "/kr" goto kr
 
 goto main
 
@@ -26,8 +27,9 @@ echo. & echo * Query Google.
 echo. & echo * Usage: %0
 
 echo. & echo * Parameter 1: 
-echo   If equal to "/b", Bing is used.
-echo   If equal to "/dfw", the phrase " download for Windows" will be appended to your search query.
+echo   "/kr", Chrome is used.
+echo   "/b", Bing is used.
+echo   "/dfw", the phrase " download for Windows" will be appended to your search query.
 
 echo. & echo * Parameter 2 and greater: search keyword(s)
 
@@ -65,7 +67,6 @@ exit/b
 
 :_
 :use-bing
-echo. & echo p2: %2
 set cbf-parameter=https://www.bing.com/search?q=%2 %3 %4 %5 %6 %7 %8 %9?
 call an edge
 call r
@@ -74,9 +75,28 @@ exit/b
 
 
 :_
+:kr
+echo. & echo * Use Chrome.
+set cbf-parameter=https://www.bing.com/search?q=%2 %3 %4 %5 %6 %7 %8 %9?
+call an kr
+call r
+exit/b
+
+
+
+:_
+:kr2
+set cbf-parameter=https://www.bing.com/search?q=%2 %3 %4 %5 %6 %7 %8 %9?
+call an kr
+call r
+exit/b
+
+
+
+:_
 :main
-call an br
 set cbf-parameter=https://www.google.com/search?q=%*?
+call an br
 call r
 exit/b
 
