@@ -573,7 +573,6 @@ call fe "%~1" || exit/b 5
 call paco "%~1" .py || exit/b
 
 echo.
-rem qq
 python %*
 
 exit/b

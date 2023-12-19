@@ -1810,6 +1810,43 @@ exit/b
 
 
 :_
+:Dec-18-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 47-permutations-ii.py 1,1,2
+python 47-permutations-ii.py 1,2,3
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Dec-19-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python raise-to-the-power.py 2 3
+python raise-to-the-power.py 3 2
+python raise-to-the-power.py 2 4
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1833,7 +1870,7 @@ exit/b
 
 
 :_
-:Dec-18-2023
+:Dec-19-2023
 
 cls
 
@@ -1841,8 +1878,9 @@ echo. & echo * %1.
 
 @echo on
 
-python 47-permutations-ii.py 1,1,2
-python 47-permutations-ii.py 1,2,3
+python 50-pow-x-n.py 2.00000 10
+python 50-pow-x-n.py 2.10000 3
+python 50-pow-x-n.py 2.00000 -4
 
 @echo off
 

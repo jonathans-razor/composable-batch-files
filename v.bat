@@ -2142,20 +2142,21 @@ Universal adoption by all supported languages.
 
 
 ::_
+:run
+
+::_
 
 :run
 
 rem echo. & echo * Run a [language name] program from %0.bat.
 
-call fe "%~1" || exit/b
-call paco "%~1" .[language extension] || exit/b
+call fe "%~1" || exit/b 5
+call paco "%~1" .py || exit/b
 
-shift
 echo.
 [language executable name] %*
 
 exit/b
-Level 1 Program: Is the program even installed.
 
 
 

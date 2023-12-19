@@ -441,10 +441,8 @@ exit/b
 
 
 ::_
-
 :run
-
-:run_api
+:run-api
 
 echo. & echo * Run the API using Matt's gradle command.
 
