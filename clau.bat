@@ -1,1 +1,1 @@
-sf tol clau
+sf tol edge

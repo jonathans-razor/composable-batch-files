@@ -934,11 +934,15 @@ creation date: May-24-2023
 ::_
 :br
 :brav
-:clau
+
 echo. & echo * Brave.
+
 set cbf-app=C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe
+
 exit/b
-rem lu: Nov-3-2021
+
+lu:
+Nov-3-2021
 
 
 
@@ -969,7 +973,6 @@ exit/b
 
 ::_
 
-:adam
 :fx
 
 echo. & echo * Firefox.
