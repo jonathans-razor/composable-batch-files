@@ -52,7 +52,7 @@ Sep-26-2023
 :_
 :is-leetcode-number
 cls
-echo. & echo * Is LeetCode number.
+echo. & echo * This is a LeetCode number.
 python is-natural-number-less-than-5000.py %1 > %tmp%\cbf-is-leetcode-number.txt
 set /p cbf-is-leetcode-number=<%tmp%\cbf-is-leetcode-number.txt
 rem Zero equals true, in this case.
@@ -1847,6 +1847,25 @@ exit/b
 
 
 :_
+:Dec-19-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 50-pow-x-n.py 2.00000 10
+python 50-pow-x-n.py 2.10000 3
+python 50-pow-x-n.py 2.00000 -4
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1870,7 +1889,7 @@ exit/b
 
 
 :_
-:Dec-19-2023
+:Dec-20-2023
 
 cls
 
@@ -1878,9 +1897,8 @@ echo. & echo * %1.
 
 @echo on
 
-python 50-pow-x-n.py 2.00000 10
-python 50-pow-x-n.py 2.10000 3
-python 50-pow-x-n.py 2.00000 -4
+python 51-n-queens.py 4
+python 51-n-queens.py 1
 
 @echo off
 
