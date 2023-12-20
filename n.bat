@@ -1780,7 +1780,7 @@ exit/b
 :emdo
 :r
 :res
-:mcres
+:mcr
 :resmc
 :s
 :v
