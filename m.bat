@@ -4687,7 +4687,7 @@ dir /b /o-d>c:\a\python-results.txt
 
 set /p cbf-python-results=<c:\a\python-results.txt
 
-echo %cbf-python-results%| clip
+echo %cbf-python-results%|clip
 
 echo. & echo * Python filename "%cbf-python-results%" has been copied to the clipboard.
 
