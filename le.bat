@@ -1866,6 +1866,24 @@ exit/b
 
 
 :_
+:Dec-20-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 51-n-queens.py 4
+python 51-n-queens.py 1
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1889,7 +1907,7 @@ exit/b
 
 
 :_
-:Dec-20-2023
+:Dec-21-2023
 
 cls
 
@@ -1897,8 +1915,8 @@ echo. & echo * %1.
 
 @echo on
 
-python 51-n-queens.py 4
-python 51-n-queens.py 1
+python 52-n-queens-ii.py 4
+python 52-n-queens-ii.py 1
 
 @echo off
 
