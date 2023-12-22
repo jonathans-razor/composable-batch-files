@@ -345,7 +345,6 @@ releases: 4
 
 
 ::_
-:ba
 :f
 :ffb
 :ffbs
@@ -3048,65 +3047,6 @@ creation date: Sep-20-2023
 
 
 
-:_+ Bash
-
-
-
-::_
-:bash
-echo. & echo * Git bash.
-set cbf-app=C:\Program Files\Git\git-bash.exe
-rem if exist C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe set cbf-app=C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe
-exit/b
-
-
-
-::_
-:brc
-echo. & echo * Bash run commands.
-call pn home>nul
-set cbf-fn=%cbf-pt%\.bashrc
-exit/b
-
-rem Note: This points to the %HOME% folder. If that is not defined, it defaults to the
-rem user profile folder.
-
-
-
-::_
-:kbrc
-echo. & echo * Keld Bash rc.
-call pn d>nul
-set cbf-fn=.bashrc-keld-backup
-exit/b
-rem lu: Sep-01-2022
-
-
-
-::_
-:gc
-:ggc
-:ggcf
-echo. & echo. * Git global configuration file.
-call pn home>nul
-set cbf-fn=%cbf-pt%\.gitconfig
-exit/b
-
-rem lu: Jan-27-2022
-I don't know where the Git system configuration file is located.
-
-
-
-::_
-:obrc
-echo. & echo * Old Bash rc.
-call pn 1d>nul
-set cbf-fn=%cbf-pt%\Backups\Minishift\.bashrc
-exit/b
-rem lu: Sep-01-2022
-
-
-
 :_+ CBF Testing (skw test-cbf, test cbf, cbf-testing, Batch File Meta Rubric)
 
 
@@ -4159,6 +4099,68 @@ call an br
 set cbf-gd=https://docs.google.com/document/d/1Nn2yT-QO6Pefuk5g2qDZfVox_VF0dHDiLGNjaimMWOE/edit
 
 exit/b
+
+
+
+:_+ Bash
+
+
+
+::_
+:ba
+:bash
+echo. & echo * Git bash.
+set cbf-pt=C:\Program Files\Git
+set cbf-app=C:\Program Files\Git\git-bash.exe
+rem if exist C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe set cbf-app=C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe
+exit/b
+
+
+
+::_
+:brc
+echo. & echo * Bash run commands.
+call pn home>nul
+set cbf-fn=%cbf-pt%\.bashrc
+exit/b
+
+rem Note: This points to the %HOME% folder. If that is not defined, it defaults to the
+rem user profile folder.
+
+
+
+::_
+:kbrc
+echo. & echo * Keld Bash rc.
+call pn dbf>nul
+rem qq
+set cbf-fn=%cbf-pt%\.bashrc-keld-backup
+exit/b
+rem lu: Sep-01-2022
+
+
+
+::_
+:gc
+:ggc
+:ggcf
+echo. & echo. * Git global configuration file.
+call pn home>nul
+set cbf-fn=%cbf-pt%\.gitconfig
+exit/b
+
+rem lu: Jan-27-2022
+I don't know where the Git system configuration file is located.
+
+
+
+::_
+:obrc
+echo. & echo * Old Bash rc.
+call pn 1d>nul
+set cbf-fn=%cbf-pt%\Backups\Minishift\.bashrc
+exit/b
+rem lu: Sep-01-2022
 
 
 
