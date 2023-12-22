@@ -4699,69 +4699,29 @@ Nov-14-2023
 
 
 ::_
-
-:scsh
+:fj
 :ss
+:tran
 
-echo. & echo * Open latest screenshot.
+echo. & echo * Open latest item.
 
 rem (file contents, get file contents into an environment variable: skw)
 
-rem lu: Jul-8-2021
+call t %1 || exit/b
 
-call t scsh
+dir /b /o-d>c:\a\latest-item-results.txt
 
-if errorlevel 1 exit/b
+set /p cbf-latest-item=<c:\a\latest-item-results.txt
 
-dir /b /o-d>c:\a\screen-shot-results.txt
+echo. & echo * cbf-latest-item: %cbf-latest-item%
 
-set /p cbf-screen-shot=<c:\a\screen-shot-results.txt
-
-echo. & echo * cbf-screen-shot: %cbf-screen-shot%
-
-"%cbf-screen-shot%"
+"%cbf-latest-item%"
 
 exit/b
 
-
-
-::_
-
-:tran
-
-echo. & echo * Open latest transfer folder item.
-
-call t tran || exit/b
-
-dir /b /o-d>%tmp%\transfer-folder-results.txt
-
-set /p cbf-transfer-item=<%tmp%\transfer-folder-results.txt
-
-echo. & echo * cbf-transfer-item: %cbf-transfer-item%
-
-"%cbf-transfer-item%"
-
-exit/b
-
-
-
-::_
-
-:fj
-
-echo. & echo * Open latest FJ folder item.
-
-call t fj || exit/b
-
-dir /b /o-d>%tmp%\folder-results.txt
-
-set /p cbf-latest-folder-result=<%tmp%\folder-results.txt
-
-echo. & echo * cbf-latest-folder-result: %cbf-latest-folder-result%
-
-"%cbf-latest-folder-result%"
-
-exit/b
+lu:
+Dec-22-2023
+Jul-8-2021
 
 
 
