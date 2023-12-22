@@ -4133,7 +4133,6 @@ rem user profile folder.
 :kbrc
 echo. & echo * Keld Bash rc.
 call pn dbf>nul
-rem qq
 set cbf-fn=%cbf-pt%\.bashrc-keld-backup
 exit/b
 rem lu: Sep-01-2022
