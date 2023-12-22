@@ -3847,13 +3847,16 @@ table-of-contents-series: skw
 
 
 ::_
+:tcba
 :tcf
 :tcffb
 echo. & echo * FFB table of contents.
 call pn f>nul
 set cbf-fn=%cbf-pt%\ffb-tc.txt
 exit/b
-rem lu: May-17-2022
+
+lu:
+May-17-2022
 table-of-contents-series: skw
 
 
