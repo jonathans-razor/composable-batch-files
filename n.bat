@@ -4107,17 +4107,6 @@ exit/b
 
 
 ::_
-:ba
-:bash
-echo. & echo * Git bash.
-set cbf-pt=C:\Program Files\Git
-set cbf-app=C:\Program Files\Git\git-bash.exe
-rem if exist C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe set cbf-app=C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe
-exit/b
-
-
-
-::_
 :brc
 echo. & echo * Bash run commands.
 call pn home>nul
@@ -4126,6 +4115,26 @@ exit/b
 
 rem Note: This points to the %HOME% folder. If that is not defined, it defaults to the
 rem user profile folder.
+
+
+
+::_
+:xbrc
+echo. & echo * XPS Bash run commands backup.
+call pn f>nul
+set cbf-fn=%cbf-pt%\.bashrc-xps-backup
+exit/b
+
+
+
+::_
+:ba
+:bash
+echo. & echo * Git bash.
+set cbf-pt=C:\Program Files\Git
+set cbf-app=C:\Program Files\Git\git-bash.exe
+rem if exist C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe set cbf-app=C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe
+exit/b
 
 
 

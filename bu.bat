@@ -342,6 +342,7 @@ call t home>nul
 
 if errorlevel 1 exit/b
 
+rem qq
 call m cona
 
 if errorlevel 1 exit/b
