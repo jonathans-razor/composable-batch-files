@@ -73,6 +73,10 @@ call t ql
 call g dirt
 
 :
+call sep
+call t f & call g dirt
+
+:
 rem echo. & echo * Exiting here ***************************************.
 call rf>nul
 echo.
@@ -87,10 +91,6 @@ call g dirt
 :
 call sep
 call t prat & call g dirt
-
-:
-call sep
-call t f & call g dirt
 
 :Necessary Edge Case Spacer - Please do not delete.
 
