@@ -4172,4 +4172,17 @@ rem lu: Sep-01-2022
 
 
 
+:_
+:hivg
+
+echo. & echo * My History of Video Games.
+
+call an br>nul
+
+set cbf-gs=https://docs.google.com/spreadsheets/d/1jmjGD4AsLCaAiJKZ-TNdKbYzPgqVHpvGX2jDsw25NcM/edit#gid=2046626056
+
+exit/b
+
+
+
 :_ (!efn)
