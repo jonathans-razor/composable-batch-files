@@ -1884,6 +1884,24 @@ exit/b
 
 
 :_
+:Dec-21-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 52-n-queens-ii.py 4
+python 52-n-queens-ii.py 1
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1907,7 +1925,7 @@ exit/b
 
 
 :_
-:Dec-21-2023
+:Dec-28-2023
 
 cls
 
@@ -1915,8 +1933,9 @@ echo. & echo * %1.
 
 @echo on
 
-python 52-n-queens-ii.py 4
-python 52-n-queens-ii.py 1
+python 58-length-of-last-word.py "Hello World"
+python 58-length-of-last-word.py "   fly me   to   the moon  "
+python 58-length-of-last-word.py "luffy is still joyboy"
 
 @echo off
 

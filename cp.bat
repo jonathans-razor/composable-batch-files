@@ -1178,7 +1178,7 @@ if "%~2" == "" goto help
 call t d>nul
 
 echo.
-copy te.py %2.py
+copy /-y te.py %2.py
 
 call touc %2.py
 
