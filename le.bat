@@ -630,15 +630,11 @@ exit/b
 
 cls
 
-call t d>nul
+echo. & echo * %1.
 
 @echo on
 call ph 58-length-of-last-word.py "hello world"
-
-@echo on
 call ph 58-length-of-last-word.py "fly me to the moon"
-
-@echo on
 call ph 58-length-of-last-word.py "luffy is still joyboy"
 
 echo.
@@ -1933,9 +1929,9 @@ echo. & echo * %1.
 
 @echo on
 
-python 58-length-of-last-word.py "Hello World"
-python 58-length-of-last-word.py "   fly me   to   the moon  "
-python 58-length-of-last-word.py "luffy is still joyboy"
+python 60-permutation-sequence.py 3 3
+python 60-permutation-sequence.py 4 9
+python 60-permutation-sequence.py 3 1
 
 @echo off
 
