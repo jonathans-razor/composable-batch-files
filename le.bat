@@ -1897,6 +1897,28 @@ exit/b
 
 
 :_
+:Dec-5-2023
+
+cls
+
+echo. & echo * Factorialize.
+
+@echo on
+
+python factorialize.py -3
+python factorialize.py 1
+python factorialize.py 2
+python factorialize.py 3
+python factorialize.py 4
+python factorialize.py 5
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1920,20 +1942,18 @@ exit/b
 
 
 :_
-:Dec-5-2023
+:Dec-28-2023
 
 cls
 
-echo. & echo * Factorialize.
+echo. & echo * %1.
 
 @echo on
 
-python factorialize.py -3
-python factorialize.py 1
-python factorialize.py 2
-python factorialize.py 3
-python factorialize.py 4
-python factorialize.py 5
+python factorialize-2.py 1
+python factorialize-2.py 2
+python factorialize-2.py 3
+python factorialize-2.py 4
 
 @echo off
 
