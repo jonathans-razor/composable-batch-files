@@ -1502,26 +1502,6 @@ exit/b
 
 
 :_
-:Dec-5-2023
-
-cls
-
-@echo on
-
-python factorialize.py 1
-python factorialize.py 2
-python factorialize.py 3
-python factorialize.py -3
-python factorialize.py 4
-python factorialize.py 5
-
-@echo off
-
-exit/b
-
-
-
-:_
 :Oct-31-2023
 
 cls
@@ -1898,6 +1878,25 @@ exit/b
 
 
 :_
+:Dec-28-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 60-permutation-sequence.py 3 3
+python 60-permutation-sequence.py 4 9
+python 60-permutation-sequence.py 3 1
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1921,17 +1920,20 @@ exit/b
 
 
 :_
-:Dec-28-2023
+:Dec-5-2023
 
 cls
 
-echo. & echo * %1.
+echo. & echo * Factorialize.
 
 @echo on
 
-python 60-permutation-sequence.py 3 3
-python 60-permutation-sequence.py 4 9
-python 60-permutation-sequence.py 3 1
+python factorialize.py -3
+python factorialize.py 1
+python factorialize.py 2
+python factorialize.py 3
+python factorialize.py 4
+python factorialize.py 5
 
 @echo off
 
