@@ -87,6 +87,17 @@ rem lu: Sep-22-2022
 
 
 ::_
+:ascii-art-notice
+echo. & echo * ASCII Art - %1.
+call n cbf
+set cbf-notice-graphic=%cbf-pt%\ascii-art-notice.txt
+exit/b
+lu:
+Dec-29-2023
+
+
+
+::_
 
 :ascii_art_sailboat
 
@@ -4191,6 +4202,17 @@ echo. & echo * My History of Video Games.
 call an br>nul
 
 set cbf-gs=https://docs.google.com/spreadsheets/d/1jmjGD4AsLCaAiJKZ-TNdKbYzPgqVHpvGX2jDsw25NcM/edit#gid=2046626056
+
+exit/b
+
+
+
+:_
+:htyc
+echo. & echo * html-tags-youtube-course.
+
+call pn it>nul
+set cbf-pt=%cbf-pt%\html-tags-youtube-course
 
 exit/b
 
