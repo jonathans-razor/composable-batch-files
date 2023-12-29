@@ -3387,6 +3387,16 @@ exit/b
 
 
 ::_
+:educ
+set cbf-pd=Educational
+echo. & echo * %cbf-pd%.
+call pn pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+exit/b
+
+
+
+::_
 :fun
 :funn
 :humo
