@@ -2438,8 +2438,8 @@ Oct-31-2023
 :_
 :rt
 echo. & echo * Root.
-set cbf-gd=https://docs.google.com/document/u/3/
-set cbf-gs=https://docs.google.com/spreadsheets/u/3/
+set cbf-gd=https://docs.google.com/document/u/0/
+set cbf-gs=https://docs.google.com/spreadsheets/u/2/
 exit/b
 creation date: Jul-14-2023
 
@@ -2758,9 +2758,9 @@ rem lu: Feb-3-2020
 :hifj
 :hires
 echo. & echo * Job Search History.
-call pn jona
+call pn jona>nul
 set cbf-pt=%cbf-pt%\Find a Job
-call an br
+call an br>nul
 set cbf-gs=https://docs.google.com/spreadsheets/d/1MtAgqCRRMNliiAw6nNLj1a0IsIw7nM6n_AcsBm9bvVI/edit#gid=1499309585
 exit/b
 creation date: Aug-31-2023
