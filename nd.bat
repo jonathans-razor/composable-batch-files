@@ -118,10 +118,16 @@ exit/b
 
 ::_
 :vers
-echo. & echo * Node version from %0.
+echo. & echo * Node version from %0.bat.
 echo.
 node --version
 exit/b
+
+* Node version from nd on XPS Dec-29-2023:
+v18.18.0
+
+lu:
+Dec-29-2023
 
 
 

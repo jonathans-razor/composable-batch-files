@@ -2162,13 +2162,18 @@ exit/b
 
 ::_
 :vers
-
-echo. & echo * Installed version from %0.bat.
-
+echo. & echo * [Application Name] version from %0.bat.
 echo.
-[executable name] --version
+[Application Name] --version
+exit/b
+
+* [Application Name] version from %0.bat on XPS Dec-29-2023:
+[version here]
 
 exit/b
+
+lu:
+Dec-29-2023
 
 Level 1 Program: Is the program even installed.
 

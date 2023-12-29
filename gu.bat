@@ -364,14 +364,38 @@ rem lu: Sep-29-2023
 
 :_
 :vers
-
-echo. & echo * Installed version from %0.bat.
+echo. & echo * Angular CLI version from %0.bat.
 
 ng version
 
 exit/b
 
+* Angular CLI version from gu.bat on XPS on Dec-29-2023.
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / ? \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+
+
+Angular CLI: 16.2.3
+Node: 18.18.0
+Package Manager: npm 10.1.0
+OS: win32 x64
+
+Angular:
+...
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1602.3 (cli-only)
+@angular-devkit/core         16.2.3 (cli-only)
+@angular-devkit/schematics   16.2.3 (cli-only)
+@schematics/angular          16.2.3 (cli-only)
+
 lu:
+Dec-29-2023
 Sep-25-2023
 
 

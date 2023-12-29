@@ -313,19 +313,17 @@ exit/b
 
 
 ::_
-
-:ver
 :vers
-:version
-
-echo. & echo * NPM version.
-
+echo. & echo * NPM version from %0.bat.
 echo.
 npm --version
-
 exit/b
 
-rem lu: Sep-12-2018
+* NPM version from nm.bat on XPS Dec-29-2023:
+10.1.0
+
+lu:
+Sep-12-2018
 
 
 
