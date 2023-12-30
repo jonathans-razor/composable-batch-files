@@ -4219,4 +4219,13 @@ exit/b
 
 
 
+:_
+:so
+echo. & echo * Learning software.
+call an br>nul
+set cbf-gs=https://docs.google.com/spreadsheets/d/1d5iDDqNyaVCXBxER40YEzaYimNM4x2YgDgkOneC6q6I/edit#gid=0
+exit/b
+
+
+
 :_ (!efn)
