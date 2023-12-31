@@ -1,3 +1,5 @@
+:_
+
 @echo off
 
 if "%~1" == "?" goto help
@@ -7,6 +9,8 @@ if "%~1" == "t" goto copy-time-to-clipboard
 goto copy-date-and-time-to-clipboard
 
 
+
+:_
 
 :help
 cls
@@ -28,7 +32,7 @@ echo   %~n0 t
 
 exit/b
 
-rem creation date: 
+skw: format date and time, formatting date and time, format time, formatting time
 
 
 
@@ -129,3 +133,7 @@ echo %cbf-date-and-time%>%cbf-fn%
 clip < "%cbf-fn%"
 echo. & echo * Copy current date and time to clipboard. (%cbf-date-and-time%)
 exit/b
+
+
+
+:_
