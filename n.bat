@@ -3332,6 +3332,19 @@ lu: Oct-17-2023
 
 
 ::_
+:b
+:brea
+:nppi
+set cbf-pd=Breakaway
+echo. & echo * %cbf-pd%.
+call pn pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+exit/b
+
+
+
+::_
+:fv
 :fvpi
 :fvpict
 :hura
@@ -3378,18 +3391,6 @@ exit/b
 ::_
 :wosa
 set cbf-pd=Work Safe
-echo. & echo * %cbf-pd%.
-call pn pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-exit/b
-
-
-
-::_
-:b
-:brea
-:nppi
-set cbf-pd=Breakaway
 echo. & echo * %cbf-pd%.
 call pn pict
 set cbf-pt=%cbf-pt%\%cbf-pd%

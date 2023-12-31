@@ -1,7 +1,9 @@
 @echo off
+
 if "%~1" == "?" goto help
 if "%~1" == "d" goto copy-date-to-clipboard
 if "%~1" == "t" goto copy-time-to-clipboard
+
 goto copy-date-and-time-to-clipboard
 
 
@@ -14,8 +16,8 @@ echo. & echo * Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1 (Optional):
 echo   If left blank, copy date and time to clipboard.
-echo   d: Copy date tp clipboard.
-echo   t: Copy time tp clipboard.
+echo   d: Copy date to clipboard.
+echo   t: Copy time to clipboard.
 
 echo. & echo * Batch file style: Multipurpose
 
@@ -39,6 +41,7 @@ rem creation date:
 
 :_
 :copy-time-to-clipboard
+
 echo.
 set cbf-hours=%time:~0,2%
 
@@ -76,10 +79,8 @@ if "%cbf-month%"=="11" set cbf-month=Nov
 if "%cbf-month%"=="12" set cbf-month=Dec
 rem echo. & echo %cbf-month%
 
-
 set cbf-day=%date:~7,2%
 rem echo. & echo %cbf-day%
-
 
 set cbf-year=%date:~10,4%
 rem echo. & echo %cbf-year%
@@ -97,6 +98,7 @@ exit/b
 
 :_
 :copy-date-and-time-to-clipboard
+
 call :copy-date-to-clipboard>nul
 call :copy-time-to-clipboard>nul
 call n dtt>nul
