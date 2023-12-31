@@ -4227,4 +4227,15 @@ exit/b
 
 
 
+:_
+:ny
+
+echo. & echo * NFL highlights.
+
+set cbf-yt=https://www.youtube.com/playlist?list=PLa3OmXFd7fC60N9KvCrn-bLdcwJv6SnOV
+
+exit/b
+
+
+
 :_ (!efn)
