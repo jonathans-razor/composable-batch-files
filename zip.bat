@@ -62,8 +62,7 @@ exit/b
 
 echo. & echo * Zip all files.
 
-call dt
-rem qq
+call dt>nul
 pkzipc -add %cbf-date-and-time% *.*
 
 exit/b
