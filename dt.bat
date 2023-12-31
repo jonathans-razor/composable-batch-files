@@ -80,8 +80,6 @@ echo. & echo * cbf-time: %cbf-time%
 
 clip < "time.txt"
 
-rem qq
-
 exit/b
 
 
