@@ -91,6 +91,18 @@ exit/b
 
 :_
 
+echo. & echo * Bing URL test.
+
+bing.url
+
+exit/b
+
+Dec-15-2023
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -107,13 +119,35 @@ exit/b
 
 :_
 
-echo. & echo * Bing URL test.
+echo. & echo * Formatting time in dos batch files.
 
-bing.url
+set mydate=%date:/=%
+set mytime=%time::=%
+set mytimestamp=%mydate: =_%_%mytime:.=_%
+
+echo. & echo * mts: %mytimestamp%
+
+IF "%time:~0,1%" LSS "1" (
+   SET DATETIME=%date:~6,4%-%date:~3,2%-%date:~0,2%-0%time:~1,1%-%time:~3,2%-%time:~6,2%
+) ELSE (
+   SET DATETIME=%date:~6,4%-%date:~3,2%-%date:~0,2%-%time:~0,2%-%time:~3,2%-%time:~6,2%
+)
+
+ECHO %DATETIME%
+
+echo. & echo %time%
+
+time /t
+
+FOR /F %%t IN ('powershell -NoProfile -Command "Get-Date -UFormat '%I:%M %p'"') DO (
+    SET "mytime=%%t"
+)
+
+ECHO %mytime%
 
 exit/b
 
-Dec-15-2023
+Dec-31-2023
 
 
 

@@ -40,7 +40,7 @@ rem creation date:
 
 
 :_
-:copy-time-to-clipboard
+:copy-time-to-clipboard-old
 
 echo.
 set cbf-hours=%time:~0,2%
@@ -51,11 +51,33 @@ rem echo cbf-hours: %cbf-hours%
 
 set cbf-minutes=%time:~3,2%
 set cbf-time=%cbf-hours%-%time:~3,2%
-echo cbf-time: %cbf-time%
+
+echo * cbf-time: %cbf-time%
+
 call n time>nul
 echo %cbf-time%>%cbf-fn%
 clip < "%cbf-fn%"
 echo. & echo * Copy current time to clipboard. (%cbf-time%)
+exit/b
+
+
+
+:_
+:copy-time-to-clipboard
+
+echo. & echo * Copy time to clipboard.
+
+call pn d>nul
+
+python %cbf-pt%\time.py>time.txt
+set /p cbf-time=<time.txt
+
+echo. & echo * cbf-time: %cbf-time%
+
+clip < "time.txt"
+
+rem qq
+
 exit/b
 
 
