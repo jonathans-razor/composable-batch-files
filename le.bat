@@ -1939,6 +1939,24 @@ exit/b
 
 
 :_
+:Dec-29-2023
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 61-rotate-list.py --list 1 2 3 4 5 --k 2
+python 61-rotate-list.py --list 0 1 2 --k 4
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1962,16 +1980,16 @@ exit/b
 
 
 :_
-:Dec-29-2023
+:Jan-1-2024
 
 cls
 
-echo. & echo * %1.
+echo. & echo * Expected output: 28 and 3.
 
 @echo on
 
-python 61-rotate-list.py --list 1 2 3 4 5 --k 2
-python 61-rotate-list.py --list 0 1 2 --k 4
+python 62-unique-paths.py 3 7
+python 62-unique-paths.py 3 2
 
 @echo off
 
