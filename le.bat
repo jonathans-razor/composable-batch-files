@@ -1997,4 +1997,4 @@ exit/b
 
 
 
-:_ (!efle, !rfsp) (mov-7) qq
+:_ (!efle, !rfsp) (mov-7) PERMANENT QQ
