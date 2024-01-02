@@ -213,23 +213,18 @@ cls
 echo. & echo * Versions from supported languages from %0.bat.
 
 :
-call sep
 call dn vers
 
 :
-call sep
 call gg vers
 
 :
-call sep
 call jv vers
 
 :
-call sep
 call nd vers
 
 :
-call sep
 call ph vers
 
 :corner-case

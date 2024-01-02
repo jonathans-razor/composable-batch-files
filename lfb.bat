@@ -58,7 +58,7 @@ exit/b
 ::_
 :hw
 
-echo. & echo * Echo hellow world from batch file %0.bat.
+echo. & echo * Hello world from batch file %0.bat.
 
 exit/b
 
