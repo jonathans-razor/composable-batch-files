@@ -1957,6 +1957,24 @@ exit/b
 
 
 :_
+:Jan-1-2024
+
+cls
+
+echo. & echo * Expected output: 28 and 3.
+
+@echo on
+
+python 62-unique-paths.py 3 7
+python 62-unique-paths.py 3 2
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1980,16 +1998,16 @@ exit/b
 
 
 :_
-:Jan-1-2024
+:Jan-2-2024
 
 cls
 
-echo. & echo * Expected output: 28 and 3.
+echo. & echo * %1.
 
 @echo on
 
-python 62-unique-paths.py 3 7
-python 62-unique-paths.py 3 2
+python 64-minimum-path-sum.py "[[1,3,1],[1,5,1],[4,2,1]]"
+python 64-minimum-path-sum.py "[[1,2,3],[4,5,6]]"
 
 @echo off
 
