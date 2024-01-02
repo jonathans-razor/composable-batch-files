@@ -57,7 +57,7 @@ Composable Batch Files (CBF) - Table of Contents
     depn  Delete folder corresponding to CBF path alias parameter.
     devu  Demo file for Dev University event on Jan-9-2020.
      dif  Are 2 files the same?
-      dn  Dot Net Core (skw dotnet). (skw language-functions-series-jj)
+      dn  Dot Net Core (skw dotnet). (skw supported-languages-series-jj)
       dk  Docker.
       dr  Create and delete directories. (skw mcd, folder)
       dt  Current date copied to clipboard.
@@ -90,7 +90,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      fxw  A wrapper around fx.bat.
        g  Git. One of the earliest CBFs.
       gd  Surf to Google Docs website.
-      gg  Go. (skw language-functions-series-jj)
+      gg  Go. (skw supported-languages-series-jj)
       gh  Execute the GitHub DCV for the passed in alias.
      gh2  Execute the GitHub DCV for the passed in alias.
 	   ghh  Surf to GitHub Historical record website.
@@ -127,13 +127,13 @@ example-  Prefix for files written by other authors for learning and comparison 
       jr  Use jar to inspect EAR files.
       js  Edit DCV file in NotePad++ for file type js.
     json  Edit DCV file in NotePad++ for file type json.
-      jv  Java. (skw language-functions-series-jj)
+      jv  Java. (skw supported-languages-series-jj)
       kl  Kill a process.
       kr  Open Chrome.
        l  Load path onto clipboard.
       ld  Use a DCV to load a cbf variable onto the clipboard.
       le  Leet code tester.
-     lfa  Language functions aggregate runner. (skw language-functions-series-jj)
+     lfa  Language functions aggregate runner. (skw supported-languages-series-jj)
      lfb  Batch that supports language functions.
       lf  Load file name or contents onto clipboard.
       lh  Execute the localhost DCV for the passed in alias.
@@ -150,7 +150,7 @@ example-  Prefix for files written by other authors for learning and comparison 
   mirror  Attempts to demonstrate how is easy it is to see what commands are running.
       mv  Move files using function routing.
        n  Nicknames path dictionary, a. k. a. the data layer.
-      nd  Use Node to compile and run JavaScript files. (skw language-functions-series-jj)
+      nd  Use Node to compile and run JavaScript files. (skw supported-languages-series-jj)
      net  A wrapper around the netstat command.
      ney  An empty nicknames dictionary, useful for starting over.
       nm  NPM.
@@ -175,7 +175,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       pc  Run Podcaster.
      pdf  PDF DCV.
       pg  Ping leveraging nicknames dictionary.
-      ph  Python. (skw language-functions-series-jj)
+      ph  Python. (skw supported-languages-series-jj)
       pi  Pipe a command line statement to a file.
       pj  Edit package.json file DCV for the passed in alias.
       pl  Git pull, with td parameter.

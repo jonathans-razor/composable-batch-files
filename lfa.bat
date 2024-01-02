@@ -99,7 +99,7 @@ exit/b
 
 
 
-:_+ Language Functions Template Code Family (!fylg) (skw language-functions-series-jj)
+:_+ Language Functions Template Code Family (!fylg) (skw supported-languages-series-jj)
 
 
 
@@ -170,30 +170,28 @@ exit/b
 
 cls
 
-echo. & echo * Hello world from language-functions-series-jj supported languages.
+echo. & echo * Hello world from supported-languages-series-jj.
 
 :
-echo.
-call gg hw
+call dn %1
 
 :
-echo.
-call jv hw
+call gg %1
 
 :
-echo.
-call lf hw
+call jv %1
 
 :
-echo.
-call ph hw
+call lfb %1
 
 :
-echo.
-call nd hw
+call nd %1
 
 :
-echo.
+call ph %1
+
+:corner-case
+
 exit/b
 
 

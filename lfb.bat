@@ -39,7 +39,7 @@ Sep-26-2023
 
 
 
-:_+ Language Functions Template Code Family (!lfs, !fylg) (skw language-functions-series-jj)
+:_+ Language Functions Template Code Family (!lfs, !fylg) (skw supported-languages-series-jj)
 
 
 
@@ -53,7 +53,9 @@ exit/b
 
 ::_
 :hw
-echo. & echo * Echo hellow world from %0.bat.
+
+echo. & echo * Echo hellow world from batch file %0.bat.
+
 exit/b
 
 

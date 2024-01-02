@@ -30,7 +30,7 @@ exit/b
 lu:
 Jan-2-2024
 
-a-language-i-am-trying-to-stay-current-with-series-jj
+supported-languages-series-jj
 
 
 
@@ -340,7 +340,7 @@ exit/b
 
 
 
-:_+ Language Feature Family (!fylgphy) (skw language-functions-series-jj)
+:_+ Language Feature Family (!fylgphy) (skw supported-languages-series-jj)
 
 
 
@@ -420,9 +420,11 @@ exit/b
 ::_
 :hw
 
-echo. & echo * Hello world from %0.bat.
+rem echo. & echo * Hello world from %0.bat.
+
 call t dsa>nul
 call ph hello-world.py
+
 exit/b
 
 

@@ -3461,7 +3461,7 @@ lu: Oct-25-2023
 
 
 
-:_+ Language Functions Family (!fylfn) (skw language-functions-series-jj)
+:_+ Language Functions Family (!fylfn) (skw supported-languages-series-jj)
 
 
 

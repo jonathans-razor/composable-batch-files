@@ -2030,7 +2030,7 @@ lu: Oct-13-2023
 
 
 
-:_+ Language Functions Template Code Family (!lfs, !fylg) (skw language-functions-series-jj)
+:_+ Language Functions Template Code Family (!lfs, !fylg) (skw supported-languages-series-jj)
 
 
 

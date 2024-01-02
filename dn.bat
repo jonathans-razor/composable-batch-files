@@ -25,7 +25,7 @@ exit/b
 lu:
 Jan-2-2024
 
-a-language-i-am-trying-to-stay-current-with-series-jj
+supported-languages-series-jj
 
 
 
@@ -111,7 +111,7 @@ exit/b
 
 
 
-:_+ Language Functions Template Code Family (!lfs, !fylg) (skw language-functions-series-jj)
+:_+ Language Functions Template Code Family (!lfs, !fylg) (skw supported-languages-series-jj)
 
 
 
