@@ -78,20 +78,30 @@ rem lu: Sep-20-2023
 
 ::_
 :ascii-art-error
+
 echo. & echo * ASCII Art - %1.
+
 call n cbf
+
 set cbf-error-graphic=%cbf-pt%\ascii-art-error-box.txt
+
 exit/b
+
 rem lu: Sep-22-2022
 
 
 
 ::_
 :ascii-art-notice
+
 echo. & echo * ASCII Art - %1.
+
 call n cbf
+
 set cbf-notice-graphic=%cbf-pt%\ascii-art-notice.txt
+
 exit/b
+
 lu:
 Dec-29-2023
 

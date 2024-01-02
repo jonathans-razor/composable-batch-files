@@ -314,12 +314,10 @@ npm --version
 
 exit/b
 
-* NPM version from nm.bat on XPS Dec-29-2023:
-10.1.0
-
-lu:
-Sep-12-2018
-
+Date        Version  Machine
+----------  -------  -------
+Jan-2-2024  10.2.5   XPS
+Jan-1-2024  10.1.0   XPS
 
 
 
@@ -464,103 +462,6 @@ call %0 inst jquery
 call %0 inst jquery-validation
 call %0 inst jquery-validation-unobtrusive
 call %0 inst font-awesome
-
-exit/b
-
-
-
-:_+ Updating NPM. (skw upgrading, upgrade)
-
-
-
-::_
-:up_npm_1
-
-echo. & echo * Install latest stable version of NPM. Be sure to run as ADMINISTRATOR.
-
-rem lu: Apr-24-2018
-
-echo.
-echo.
-npm i npm@latest -g
-
-exit/b
-
-
-
-::_
-:up-npm
-
-echo. & echo * Update NPM itself.
-
-echo.
-echo * Before the update version number.
-
-call %0 ver
-
-echo.
-call npm install -g npm
-
-echo.
-echo * After the update version number.
-
-call %0 ver
-
-echo.
-echo * If the version numbers are the same, no update was actually done right?
-
-exit/b
-rem lu: Sep-12-2018
-
-
-
-::_
-:upda
-
-:update
-
-echo. & echo * Update all dependencies to the latest version.
-
-rem lu: Aug-12-2019
-
-echo.
-
-if not exist "package.json" (
-  echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
-  exit/b
-)
-
-npm update
-
-exit/b
-
-
-
-::_
-:update_s
-
-echo. & echo * Update all dependencies to the latest version.
-
-rem lu: Apr-24-2018
-
-echo.
-echo.
-npm update --save
-
-exit/b
-
-
-
-::_
-:update_sp
-
-echo. & echo * Update a single package dependency, in this case "%2".
-
-rem lu: Apr-24-2018
-
-echo.
-echo.
-npm update %2
 
 exit/b
 
@@ -718,7 +619,7 @@ Ran all test suites.
 :rubi
 echo. & echo * Bundles the app into static files for production into a subfolder called "build".
 
-call fe package.json & if errorlevel 1 exit/b
+call fe package.json || exit/b
 
 echo.
 npm run build
@@ -756,8 +657,6 @@ ownload Windows embedda
 
 echo. & echo * Install AWS Amplify.
 
-rem lu: Sep-5-2021
-
 echo.
 call m specific_file_presence package.json 
 
@@ -766,6 +665,9 @@ if errorlevel 1 exit/b
 npm install -g @aws-amplify/cli
 
 exit/b
+
+lu:
+Sep-5-2021
 
 
 
@@ -974,29 +876,6 @@ Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
 
 
 
-:_
-:fix
-
-echo. & echo * Fix npm installation in the current folder.
-
-call fe package.json & if errorlevel 1 exit/b
-
-cls
-
-call dr d node_modules
-
-del package-lock.json
-
-call nm inst
-
-exit/b
-
-lu:
-Sep-29-2023
-Sep-2-2021
-
-
-
 :_+ Local JSON Server
 
 
@@ -1006,7 +885,7 @@ Sep-2-2021
 
 echo. & echo * Install JSON server.
 
-call fe package.json & if errorlevel 1 exit/b
+call fe package.json || exit/b
 
 npm i json-server
 
@@ -1023,7 +902,7 @@ Oct-15-2021
 
 echo. & echo * Run JSON local database server.
 
-call fe package.json & if errorlevel 1 exit/b
+call fe package.json || exit/b
 
 start "JSON" cmd /k npm run server
 
@@ -1067,7 +946,7 @@ rem If you have an issue with install or update, try deleting the node_modules s
 :inst-e
 echo. & echo * Install Express.
 
-call fe package.json & if errorlevel 1 exit/b
+call fe package.json || exit/b
 
 echo.
 
@@ -1082,7 +961,7 @@ rem lu: Sep-21-2023
 :inst-t
 echo. & echo * Install TypeScript.
 
-call fe package.json & if errorlevel 1 exit/b
+call fe package.json || exit/b
 
 echo.
 
@@ -1100,7 +979,7 @@ If you don't install it globally, the tsc command doesn't seem to work. Oct-26-2
 :inst-tn
 echo. & echo * Install Types for Node.
 
-call fe package.json & if errorlevel 1 exit/b
+call fe package.json || exit/b
 
 echo.
 npm install i -D @types/node
@@ -1387,10 +1266,153 @@ Sep-26-2023
 
 
 :_
-:
+:fix
+
+cls
+
+echo. & echo * Fix npm installation in the current folder.
+
+call fe package.json || exit/b
+rem qq
+
+call dr d node_modules
+
+del package-lock.json
+
+call npm install
+
+exit/b
+
+lu:
+Sep-29-2023
+Sep-2-2021
+
+
+
+:_
+:svel
 
 rem qq
-echo. & echo *
+echo. & echo * Create Svelte sample application.
+
+npm create svelte@latest svelte-example
+
+exit/b
+
+
+
+:_+ Updating NPM. (skw upgrading, upgrade)
+
+
+
+::_
+:upda
+
+cls
+
+echo. & echo * Update NPM itself to the latest version.
+
+echo.
+echo * Before the update version number.
+
+call %0 vers
+
+echo.
+call npm install -g npm
+
+echo.
+echo * After the update version number.
+
+call %0 vers
+
+echo.
+echo * Expectation: the version numbers should have changed.
+
+exit/b
+
+lu:
+Jan-2-2024
+Sep-12-2018
+
+
+
+::_
+:updaa
+
+echo. & echo * Install latest stable version of NPM. Be sure to run as ADMINISTRATOR.
+
+echo.
+npm i npm@latest -g
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:updas
+
+echo. & echo * Run global update to specific version.
+
+rem qq
+
+echo.
+npm install -g npm@10.2.5
+
+exit/b
+
+lu:
+Jan-2-2024
+Aug-12-2019
+
+
+
+::_
+:updaf
+
+echo. & echo * Update current folder's dependencies to the latest version.
+
+call fe package.json || exit/b
+
+echo.
+
+npm update
+
+exit/b
+
+lu:
+Jan-2-2024
+Aug-12-2019
+
+
+
+::_
+:update_s
+
+echo. & echo * Update all dependencies to the latest version.
+
+rem lu: Apr-24-2018
+
+echo.
+echo.
+npm update --save
+
+exit/b
+
+
+
+::_
+:update_sp
+
+echo. & echo * Update a single package dependency, in this case "%2".
+
+rem lu: Apr-24-2018
+
+echo.
+echo.
+npm update %2
 
 exit/b
 
