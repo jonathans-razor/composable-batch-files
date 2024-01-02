@@ -30,10 +30,14 @@ echo. & echo * Parameter 1: Function to execute.
 
 exit/b
 
+lu:
+Jan-2-2024
+
+a-language-i-am-trying-to-stay-current-with-series-jj
+
 
 
 :_
-
    .--.      .--.      .--.      .--.      .--.                 
  :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::
         `--'      `--'      `--'      `--'      `--'     
@@ -41,7 +45,6 @@ exit/b
 
 
 :_
-
 :iji
 
 echo. & echo * Investigate Java installation.
@@ -74,7 +77,6 @@ exit/b
 
 
 :_
-
 :rjz
 
 echo. & echo * Rename Jar file to zip file in order to examine its contents.
@@ -90,7 +92,6 @@ exit/b
 
 
 :_
-
 :je
 
 echo. & echo * Run Jenkins.
@@ -116,7 +117,6 @@ exit/b
 
 
 :_
-
 :get_java_version
 
 echo. & echo * Get Java version.
@@ -140,7 +140,6 @@ exit/b
 
 
 :_
-
 :all
 
 echo. & echo * Build all the jars in the libs folder?
@@ -169,6 +168,7 @@ exit/b
 
 :_
 :hw
+
 rem echo. & echo * Hello world from %0.
 
 call t dsa>nul
@@ -180,6 +180,7 @@ exit/b
 
 :_
 :rs
+
 echo. & echo * Reverse string from %0.
 call t dsa>nul
 call jv c ReverseString.java>nul
@@ -190,7 +191,6 @@ exit/b
 
 
 :_
-
 :cr
 
 echo. & echo * Never used notional prototype. Compile, interpret and run the file you just compiled.
@@ -206,7 +206,6 @@ exit/b
 
 
 :_
-
 :rj
 
 echo. & echo * Run jar.
@@ -232,7 +231,6 @@ echo. & echo Parameter 2: Jar file name.
 
 
 ::_
-
 :c
 :comp
 
@@ -260,7 +258,6 @@ nut when you merely run it.
 
 
 ::_
-
 :run
 
 rem echo. & echo * Interpret and run a java file.
@@ -282,9 +279,11 @@ exit/b
 ::_
 :echo-parameters
 :ep
+
 echo. & echo * Echo parameters from %0.bat.
 call t dsa>nul
 call %0 EchoParameters.java %*
+
 exit/b
 
 

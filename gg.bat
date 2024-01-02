@@ -31,12 +31,16 @@ echo   gol gs
 echo   gol vers
 
 exit/b
-rem lu: Sep-22-2023
+
+lu:
+Jan-2-2024
+Sep-22-2023
+
+a-language-i-am-trying-to-stay-current-with-series-jj
 
 
 
 :_
-
    .--.      .--.      .--.      .--.      .--.
  :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::
         `--'      `--'      `--'      `--'      `--' 
@@ -44,7 +48,6 @@ rem lu: Sep-22-2023
 
 
 :_
-
 :runm
 
 echo. & echo * Run a go program.
@@ -61,7 +64,6 @@ exit/b
 
 
 :_
-
 :crbi
 
 :inst
@@ -75,7 +77,6 @@ exit/b
 
 
 :_
-
 :test
 
 echo. & echo * Test.
@@ -87,7 +88,6 @@ exit/b
 
 
 :_
-
 :igopls
 
 echo. & echo *
@@ -100,7 +100,6 @@ exit/b
 
 
 :_
-
 :buil-se
 
 echo. & echo * Build secret.
@@ -116,7 +115,6 @@ exit/b
 
 
 :_
-
 :buil
 
 echo. & echo * Build.
@@ -145,7 +143,6 @@ exit/b
 
 
 :_
-
 :tidy
 
 echo. & echo * Tidy.
@@ -167,6 +164,7 @@ I got this command from Phil K. He says it will help me get our go code to compi
 ::_
 :echo-parameters
 :ep
+
 echo. & echo * Echo parameters from %0.bat.
 call t dsa>nul
 call %0 echo-parameters.go %*
@@ -176,6 +174,7 @@ exit/b
 
 ::_
 :hw
+
 rem echo. & echo * Hello world from %0.
 call t dsa>nul
 call %0 hello-world.go

@@ -27,6 +27,11 @@ echo   %~n0 hello-world.py
 
 exit/b
 
+lu:
+Jan-2-2024
+
+a-language-i-am-trying-to-stay-current-with-series-jj
+
 
 
 :_
@@ -50,10 +55,7 @@ exit/b
 :_
 :list
 :pass in an array of numbers
-
 :pass in an array of strings
-
-
 
 echo. & echo * Show installed modules.
 
@@ -213,7 +215,6 @@ Nov-1-2023
 
 
 :_
-
 :star
 
 echo. & echo * Start a Flask application.
@@ -366,6 +367,7 @@ exit/b
 
 ::_
 :docs
+
 call fx ph docs
 exit/b
 
@@ -373,6 +375,7 @@ exit/b
 
 ::_
 :dt
+
 echo. & echo * Date time from %0.
 call t d>nul
 echo.
@@ -384,6 +387,7 @@ exit/b
 ::_
 :dtt
 :rf-dtt
+
 rem echo. & echo * Date time from %0. NOTE: This is an official timestamp so whitespace is allowed.
 rem echo.
 call pn c>nul
@@ -394,6 +398,7 @@ exit/b
 
 ::_
 :ep
+
 echo. & echo * Echo parameters from %0.bat.
 call t dsa>nul
 call %0 echo-parameters.py %*
@@ -403,6 +408,7 @@ exit/b
 
 ::_
 :fz
+
 echo. & echo * Fizz from %0.
 call t d>nul
 echo.
@@ -413,6 +419,7 @@ exit/b
 
 ::_
 :hw
+
 echo. & echo * Hello world from %0.bat.
 call t dsa>nul
 call ph hello-world.py
@@ -422,6 +429,7 @@ exit/b
 
 ::_
 :rs
+
 echo. & echo * Reverse string from %0.
 call t d>nul
 echo.

@@ -10,7 +10,6 @@ goto %1
 
 
 :_
-
 :help
 
 echo. & echo * Perform .NET Core functions.
@@ -23,35 +22,21 @@ echo. & echo dn r
 
 exit/b
 
+lu:
+Jan-2-2024
 
-
-:_
-
-Currently installed version on XPS on Jan-10-2022 AFTER download: 3.1.416
-
-Currently installed version on XPS on Jan-10-2022 BEFORE download: 2.1.4
-
-The installation was successful.
-
-The following were installed at: 'C:\Program Files\dotnet\'
-    .NET Core SDK 3.1.416
-    .NET Core Runtime 3.1.22
-    ASP.NET Core Runtime 3.1.22
-    .NET Core Windows Desktop Runtime 3.1.22
-
-
-
-:
-  _______   _______   _______   _______   _______
- |  ___  | |  ___  | |  ___  | |  ___  | |  ___  |
- | |  _| | | |  _| | | |  _| | | |  _| | | |  _| |
- | | |___| | | |___| | | |___| | | |___| | | |___|
- | |_______| |_______| |_______| |_______| |______
+a-language-i-am-trying-to-stay-current-with-series-jj
 
 
 
 :_
+   .--.      .--.      .--.      .--.      .--.                 
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+        `--'      `--'      `--'      `--'      `--'     
 
+
+
+:_
 :rest
 
 echo. & echo * Restore Nuget packages.
@@ -66,7 +51,6 @@ exit/b
 
 
 :_
-
 :db_up
 
 :up_db
@@ -84,7 +68,6 @@ exit/b
 
 
 :_
-
 :ef_mig
 
 echo. & echo * Use EF migragions
@@ -100,7 +83,6 @@ exit/b
 
 
 :_
-
 :se_mig
 
 echo. & echo * Seed migration.
@@ -116,7 +98,6 @@ exit/b
 
 
 :_
-
 :dev
 
 echo. & echo * Set environment to development. This is helpful to see debugging messages when running at the command line.
@@ -135,7 +116,6 @@ exit/b
 
 
 ::_
-
 :hw
 
 echo. & echo * Hello world from %0.
@@ -149,7 +129,6 @@ exit/b
 
 
 ::_
-
 :fz
 
 cls
@@ -165,7 +144,6 @@ exit/b
 
 
 ::_
-
 :rs
 
 cls
@@ -181,7 +159,6 @@ exit/b
 
 
 ::_
-
 :vers
 
 echo. & echo * Installed version from %0.
@@ -191,10 +168,20 @@ dotnet --version
 
 exit/b
 
+Date         Version  Machine
+-----------  -------  -------
+Jan-10-2022  3.1.416  XPS
+Jan-9-2022     2.1.4  XPS
+
+The following were installed at: 'C:\Program Files\dotnet\'
+    .NET Core SDK 3.1.416
+    .NET Core Runtime 3.1.22
+    ASP.NET Core Runtime 3.1.22
+    .NET Core Windows Desktop Runtime 3.1.22
+
 
 
 :_
-
 :neco-not-working
 
 echo. & echo * New conosle app.
@@ -228,6 +215,7 @@ rem lu: Sep-15-2023
 
 ::_
 :create-hello-world-c-sharp
+
 echo. & echo * Create hello world c sharp program.
 call dr hello-world-c-sharp
 call :neco
@@ -239,6 +227,7 @@ creation date: Sep-18-2023
 
 ::_
 :neco-no-parameter
+
 echo. & echo * Create a new Dotnet console app.
 echo.
 dotnet new console --force
@@ -249,6 +238,7 @@ rem lu: Sep-15-2023
 
 ::_
 :neco
+
 echo. & echo * Create a new Dotnet console app.
 if "%2" == "" (
   call err Parameter 2, app name, is required.

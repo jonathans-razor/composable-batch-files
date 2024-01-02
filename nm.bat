@@ -41,7 +41,12 @@ echo        update  Update all dependencies to the latest version.
 echo          vers  Check NPM's version.
 
 exit/b
-rem lu: Sep-21-2023
+
+lu:
+Jan-2-2024
+Sep-21-2023
+
+a-language-i-am-trying-to-stay-current-with-series-jj
 
 
 
