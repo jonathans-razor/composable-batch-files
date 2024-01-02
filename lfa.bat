@@ -104,63 +104,42 @@ exit/b
 
 
 ::_
-:dt
-
-cls
-
-echo. & echo * Date time from %0.bat.
-
-:
-call sep
-rem call gg ep 44 hat cat 1 2 3 4 5 6 7
-
-:
-call sep
-rem call jv ep Oct-22-2023 1 2 3
-
-:
-call sep
-rem call nd ep Oct-22-2023
-
-:
-call sep
-call ph dt
-
-:
-echo.
-exit/b
-
-
-
-::_
 :ep
 
 cls
 
-echo. & echo * Echo parameters from %0.bat.
+echo. & echo * Echo parameters from %0.bat. **** Under construction. Jan-2-2024
+
+if "%~2" == "" err Parameter 2: The parameters to are required.
 
 :
 call sep
-call gg ep 44 hat cat 1 2 3 4 5 6 7
+call dn ep %2
 
 :
 call sep
-call jv ep Oct-22-2023 1 2 3
+call gg ep %2
 
 :
 call sep
-call lfb ep hat cat 1 2 3 Oct-22-2023
+call jv ep %2
 
 :
 call sep
-call nd ep Oct-22-2023
+call lfb ep %2
 
 :
 call sep
-call ph ep
+call nd ep %2
 
 :
+call sep
+call ph %2
+
+:corner-case
+
 echo.
+
 exit/b
 
 
@@ -231,7 +210,7 @@ exit/b
 
 cls
 
-echo. & echo * Versions from supported languages from %0.bat
+echo. & echo * Versions from supported languages from %0.bat.
 
 :
 call sep
@@ -253,8 +232,9 @@ call nd vers
 call sep
 call ph vers
 
-echo.
 :corner-case
+
+echo.
 
 exit/b
 

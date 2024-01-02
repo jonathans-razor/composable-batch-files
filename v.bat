@@ -2047,8 +2047,6 @@ exit/b
 
 Level 2 Program: Simplest possible program that does something.
 
-universal-adoption-by-all-supported-languages-series-jj
-
 
 
 ::_
@@ -2062,8 +2060,6 @@ call t d>nul
 call %0 fizz.[file extension]
 
 exit/b
-
-universal-adoption-by-all-supported-languages-series-jj
 
 
 
@@ -2080,8 +2076,6 @@ exit/b
 
 Level 2 Program: Simplest possible program that does something.
 
-universal-adoption-by-all-supported-languages-series-jj
-
 
 
 ::_
@@ -2095,8 +2089,6 @@ echo.
 [] reverse-string.[] %2
 
 exit/b
-
-universal-adoption-by-all-supported-languages-series-jj
 
 
 
@@ -2115,8 +2107,6 @@ exit/b
 
 lu:
 Dec-29-2023
-
-universal-adoption-by-all-supported-languages-series-jj
 
 
 

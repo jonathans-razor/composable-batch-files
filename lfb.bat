@@ -1,6 +1,7 @@
 :_
 
 @echo off
+
 if "%~1" == "?" goto help
 if "%~1" == "" goto help
 
@@ -45,8 +46,11 @@ Sep-26-2023
 
 ::_
 :ep
+
 echo. & echo * Echo parameters from %0.bat.
+
 echo. & echo %*
+
 exit/b
 
 
