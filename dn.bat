@@ -165,7 +165,7 @@ exit/b
 ::_
 :vers
 
-echo. & echo * Installed version from %0.
+echo. & echo * Version from %0.bat.
 
 echo.
 dotnet --version

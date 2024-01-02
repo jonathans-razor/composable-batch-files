@@ -98,7 +98,7 @@ exit/b
 ::_
 :vers
 
-echo. & echo * Node version from %0.bat.
+echo. & echo * Version from %0.bat.
 
 echo.
 node --version

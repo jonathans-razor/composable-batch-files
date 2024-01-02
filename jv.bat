@@ -155,42 +155,6 @@ exit/b
 
 
 :_
-:vers
-
-echo. & echo * Version from %0.
-
-echo.
-java -version
-
-exit/b
-
-
-
-:_
-:hw
-
-rem echo. & echo * Hello world from %0.
-
-call t dsa>nul
-call jv HelloWorld.java
-
-exit/b
-
-
-
-:_
-:rs
-
-echo. & echo * Reverse string from %0.
-call t dsa>nul
-call jv c ReverseString.java>nul
-echo.
-java ReverseString.java %2
-exit/b
-
-
-
-:_
 :cr
 
 echo. & echo * Never used notional prototype. Compile, interpret and run the file you just compiled.
@@ -288,4 +252,44 @@ exit/b
 
 
 
-_ (!rfsp) (mov-6)
+:_+ Language Functions Template Code Family (!lfs, !fylg) (skw supported-languages-series-jj)
+
+
+
+::_
+:hw
+
+rem echo. & echo * Hello world from %0.
+
+call t dsa>nul
+call jv HelloWorld.java
+
+exit/b
+
+
+
+::_
+:rs
+
+echo. & echo * Reverse string from %0.bat.
+call t dsa>nul
+call jv c ReverseString.java>nul
+echo.
+java ReverseString.java %2
+exit/b
+
+
+
+::_
+:vers
+
+echo. & echo * Version from %0.bat.
+
+echo.
+java -version
+
+exit/b
+
+
+
+:_ (!rfsp) (mov-6)

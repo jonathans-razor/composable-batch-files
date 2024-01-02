@@ -199,28 +199,29 @@ exit/b
 ::_
 :rs
 
-echo. & echo * Reverse string from %0.
-
 cls
 
-:
-call sep
-call gg rs Oct-22-2023-6
+echo. & echo * Reverse string from supported-languages-series-jj.
+
+if "%~2" == "" err Parameter 2: The string to reverse is required.
 
 :
-call sep
-call jv rs Oct-22-2023-7
+call dn %1 %2
 
 :
-call sep
-call nd rs Oct-22-2023-2
+call gg %1 %2
 
 :
-call sep
-call ph rs Oct-22-2023-8
+call jv %1 %2
 
 :
-echo.
+call nd %1 %2
+
+:
+call ph %1 %2
+
+:corner-case
+
 exit/b
 
 
@@ -230,7 +231,11 @@ exit/b
 
 cls
 
-echo. & echo * Version from %0.
+echo. & echo * Versions from supported languages from %0.bat
+
+:
+call sep
+call dn vers
 
 :
 call sep
@@ -247,6 +252,9 @@ call nd vers
 :
 call sep
 call ph vers
+
+echo.
+:corner-case
 
 exit/b
 

@@ -241,7 +241,7 @@ Nov-1-2023
 ::_
 :vers
 
-echo. & echo * Installed version from %0.bat.
+echo. & echo * Version from %0.bat.
 
 echo.
 python --version

@@ -195,11 +195,16 @@ exit/b
 
 ::_
 :rs
+
 call n ggrs>nul || exit/b
-echo. & echo * %cbf-fn% from %0.bat.
+
+echo. & echo * Reverse string from  %0.bat.
+
 call t d>nul
-@echo on
-go run %cbf-fn% heynow
+
+echo.
+go run %cbf-fn% %2
+
 exit/b
 
 
@@ -208,7 +213,7 @@ exit/b
 
 :vers
 
-echo. & echo * Installed version from %0.
+echo. & echo * Version from %0.bat.
 
 echo.
 go version
