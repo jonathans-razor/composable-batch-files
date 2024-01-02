@@ -118,11 +118,30 @@ exit/b
 ::_
 :hw
 
-echo. & echo * Hello world from %0.
+rem echo. & echo * Hello world from %0..bat
 
 call t d>nul
-cd hello-world-c-sharp
-call dn run
+
+cd hello-world-csharp
+
+call %0 run
+
+exit/b
+
+
+
+::_
+:rs
+
+cls
+
+echo. & echo * Reverse string from %0.
+
+call t d>nul
+
+cd reverse-string-csharp
+
+call %0 run %2
 
 exit/b
 
@@ -138,21 +157,6 @@ echo. & echo * Fizz from %0.
 call t d>nul
 cd fizz-csharp
 call %0 run
-
-exit/b
-
-
-
-::_
-:rs
-
-cls
-
-echo. & echo * Reverse string from %0.
-
-call t d>nul
-cd reverse-string-csharp
-call %0 run hello
 
 exit/b
 

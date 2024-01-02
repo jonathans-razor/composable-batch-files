@@ -430,10 +430,12 @@ exit/b
 ::_
 :rs
 
-echo. & echo * Reverse string from %0.
+echo. & echo * Reverse string from %0.bat.
+
 call t d>nul
-echo.
+
 %0 reverse-string.py %2
+
 exit/b
 
 
