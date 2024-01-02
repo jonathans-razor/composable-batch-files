@@ -2035,11 +2035,101 @@ lu: Oct-13-2023
 
 
 ::_
+:ep
+
+echo. & echo * Echo parameters from %0.bat.
+
+call t dsa>nul
+
+call %0 echo-parameters.[filename extension] cat hat 1 2 3
+
+exit/b
+
+Level 2 Program: Simplest possible program that does something.
+
+universal-adoption-by-all-supported-languages-series-jj
+
+
+
+::_
+:fz
+
+echo. & echo * Fizzbuzz from %0.bat.
+
+call t d>nul
+
+call t d>nul
+call %0 fizz.[file extension]
+
+exit/b
+
+universal-adoption-by-all-supported-languages-series-jj
+
+
+
+::_
+:hw
+
+rem echo. & echo * Hello world from %0.bat.
+
+call t dsa>nul
+
+[] hello-world.[filename extension]
+
+exit/b
+
+Level 2 Program: Simplest possible program that does something.
+
+universal-adoption-by-all-supported-languages-series-jj
+
+
+
+::_
+:rs
+
+echo. & echo * Reverse string from %0.
+
+call t d>nul
+
+echo.
+[] reverse-string.[] %2
+
+exit/b
+
+universal-adoption-by-all-supported-languages-series-jj
+
+
+
+::_
+:vers
+
+echo. & echo * [Application Name] version from %0.bat.
+
+echo.
+[Application Name] --version
+
+exit/b
+
+* [Application Name] version from %0.bat on XPS Dec-29-2023:
+[version here]
+
+lu:
+Dec-29-2023
+
+universal-adoption-by-all-supported-languages-series-jj
+
+
+
+::_
 :a2n
+
 cls
+
 echo. & echo * Add 2 numbers.
+
 @echo on
 call %0 add-2-numbers.py 55 102
+
 exit/b
 
 
@@ -2096,90 +2186,6 @@ Limited adoption.
 
 
 ::_
-:echo-parameters
-:ep
-echo. & echo * Echo parameters from %0.bat.
-call t dsa>nul
-call %0 echo-parameters.[filename extension] cat hat 1 2 3
-exit/b
-Level 2 Program: Simplest possible program that does something.
-Universal adoption by all supported languages.
-
-
-
-::_
-:fz
-call n gg%1>nul || exit/b
-echo. & echo * %cbf-fn% from %0.bat.
-call t d>nul
-@echo on
-go run %cbf-fn%
-exit/b
-1-Nov-2023-series-jj
-
-
-
-::_
-:hw
-rem echo. & echo * Hello world from %0.bat.
-call t dsa>nul
-[] hello-world.[filename extension]
-exit/b
-Level 2 Program: Simplest possible program that does something.
-Universal adoption by all supported languages.
-
-
-
-::_
-:rs
-echo. & echo * Reverse string from %0.
-call t d>nul
-echo.
-[] reverse-string.[] %2
-exit/b
-Universal adoption by all supported languages.
-
-
-
-::_
-:run
-
-::_
-
-:run
-
-rem echo. & echo * Run a [language name] program from %0.bat.
-
-call fe "%~1" || exit/b 5
-call paco "%~1" .py || exit/b
-
-echo.
-[language executable name] %*
-
-exit/b
-
-
-
-::_
-:vers
-echo. & echo * [Application Name] version from %0.bat.
-echo.
-[Application Name] --version
-exit/b
-
-* [Application Name] version from %0.bat on XPS Dec-29-2023:
-[version here]
-
-exit/b
-
-lu:
-Dec-29-2023
-
-Level 1 Program: Is the program even installed.
-
-
-
-::_
 :verso
 
 echo. & echo * Online versions information.
@@ -2194,13 +2200,28 @@ exit/b
 
 
 
-::_
+:_
 :star
 rem echo. & echo * Start the server from %0.bat.
 call t nwe>nul
 start "[Server Title]" cmd /k [executable name start syntax] .
 exit/b
 Level 1 Program: Is the program even installed?
+
+
+
+:_
+:run
+
+rem echo. & echo * Run a [language name] program from %0.bat.
+
+call fe "%~1" || exit/b 5
+call paco "%~1" .py || exit/b
+
+echo.
+[language executable name] %*
+
+exit/b
 
 
 

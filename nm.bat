@@ -1,8 +1,10 @@
 :_
 
 @echo off
+
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
+
 goto %1
 
 
@@ -55,7 +57,6 @@ rem lu: Sep-21-2023
 
 
 ::_
-
 :nhn
 
 echo. & echo * Involved help.
@@ -70,7 +71,6 @@ exit/b
 
 
 ::_
-
 :nhs
 
 echo. & echo * NPM help for a specific command.
@@ -86,7 +86,6 @@ exit/b
 
 
 ::_
-
 :nhss
 
 echo. & echo * NPM help-search for a specific command.
@@ -107,16 +106,20 @@ exit/b
 
 ::_
 :init
+
 echo. & echo * Uses defaults.
+
 echo.
 npm init -y
+
 exit/b
-rem lu: Oct-18-2023
+
+lu:
+Oct-18-2023
 
 
 
 ::_
-
 :init-n
 
 echo. & echo * No defaults. Automated wizard that walks you through creating a package.json file.
@@ -133,7 +136,6 @@ exit/b
 
 
 ::_
-
 :set_lic
 
 echo. & echo * Set default license to MIT.
@@ -148,7 +150,6 @@ exit/b
 
 
 ::_
-
 :get_lic
 
 echo. & echo * Get default license setting.
@@ -168,7 +169,6 @@ exit/b
 
 
 ::_
-
 :list-g
 
 echo. & echo * Verbose list of my globally installed packages.
@@ -183,7 +183,6 @@ exit/b
 
 
 ::_
-
 :list
 
 echo. & echo * List of installed packages.
@@ -199,7 +198,6 @@ exit/b
 
 
 ::_
-
 :list_my
 
 echo. & echo * List of installed packages that only I have installed. As opposed to the hierarchy of what those packages have installed.
@@ -215,7 +213,6 @@ exit/b
 
 
 ::_
-
 :list_all
 
 echo. & echo * List of globally installed packages.
@@ -230,7 +227,6 @@ exit/b
 
 
 ::_
-
 :my_g_json_list
 
 echo. & echo * Verbose list of my globally installed packages in JSON format.
@@ -246,7 +242,6 @@ exit/b
 
 
 ::_
-
 :my_g_json_dlist
 
 echo. & echo * Verbose list of my globally installed packages in JSON format for dev dependencies only.
@@ -262,7 +257,6 @@ exit/b
 
 
 :_
-
 :prun
 
 echo. & echo * Prune extraneous packages, that is, those that are not in the package.json file.
@@ -278,7 +272,6 @@ exit/b
 
 
 :_
-
 :repo
 
 echo. & echo * Go to the GitHub repository for a given package.
@@ -293,7 +286,6 @@ exit/b
 
 
 :_
-
 :add
 
 echo. & echo * Add user which is similar to Git's author stuff.
@@ -314,9 +306,12 @@ exit/b
 
 ::_
 :vers
+
 echo. & echo * NPM version from %0.bat.
+
 echo.
 npm --version
+
 exit/b
 
 * NPM version from nm.bat on XPS Dec-29-2023:
@@ -329,83 +324,63 @@ Sep-12-2018
 
 
 ::_
-
-:nvers
-
-echo. & echo * Get the Node version number.
-
-rem lu: Sep-3-2021
-
-echo.
-echo.
-node -v
-
-exit/b
-
-
-
-::_
-
 :lver
-
 :lvers
-
-:lovg_ver
 
 echo. & echo * Check NPM's long version.
 
-rem lu: Sep-12-2018
-
-echo.
 echo.
 npm version
 
 exit/b
 
-
-
-::_
-
-:patch
-
-echo. & echo * Automatically increment the patch version number.
-
-rem lu: Apr-25-2018
-
-echo.
-npm version patch
-
-exit/b
+lu:
+Sep-12-2018
 
 
 
 ::_
-
 :minor
 
 echo. & echo * Automatically increment the minor version number.
-
-rem lu: Apr-25-2018
 
 echo.
 npm version minor
 
 exit/b
 
+lu:
+Apr-25-2018
 
 
 ::_
-
 :major
 
 echo. & echo * Automatically increment the major version number.
-
-rem lu: Apr-25-2018
 
 echo.
 npm version major
 
 exit/b
+
+lu:
+Apr-25-2018
+
+
+
+:_
+:patch
+
+echo. & echo * Automatically increment the patch version number.
+
+
+echo.
+npm version patch
+
+exit/b
+
+lu:
+Apr-25-2018
 
 
 
@@ -414,7 +389,6 @@ exit/b
 
 
 ::_
-
 :pub
 
 echo. & echo * Publish project to NPM.
@@ -430,7 +404,6 @@ exit/b
 
 
 ::_
-
 :pub_beta
 
 echo. & echo * Publish project to NPM in a beta release.
@@ -450,22 +423,21 @@ exit/b
 
 
 ::_
-
 :info
 
 echo. & echo * Information about the current repository.
-
-rem lu: Apr-25-2018
 
 echo.
 npm info
 
 exit/b
 
+lu:
+Apr-25-2018
+
 
 
 ::_
-
 :info_n
 
 echo. & echo * Information about a named repository.
@@ -480,7 +452,6 @@ exit/b
 
 
 :_
-
 :bi
 
 echo. & echo * Batch install DutchTreat packages.
@@ -503,7 +474,6 @@ exit/b
 
 
 ::_
-
 :up_npm_1
 
 echo. & echo * Install latest stable version of NPM. Be sure to run as ADMINISTRATOR.
@@ -519,7 +489,6 @@ exit/b
 
 
 ::_
-
 :up-npm
 
 echo. & echo * Update NPM itself.
@@ -546,7 +515,6 @@ rem lu: Sep-12-2018
 
 
 ::_
-
 :upda
 
 :update
@@ -569,7 +537,6 @@ exit/b
 
 
 ::_
-
 :update_s
 
 echo. & echo * Update all dependencies to the latest version.
@@ -585,7 +552,6 @@ exit/b
 
 
 ::_
-
 :update_sp
 
 echo. & echo * Update a single package dependency, in this case "%2".
@@ -601,7 +567,6 @@ exit/b
 
 
 :_
-
 :inse
 
 :insls
@@ -631,13 +596,9 @@ Is this command folder-specific?
 
 
 :_
-
 :int
-
 :inte
-
 :rit
-
 :rtit
 
 echo. & echo * Run the integration tests.
@@ -661,7 +622,6 @@ REPLAY=record npm run test:int
 
 
 :_
-
 :rt
 
 echo. & echo * Run test like Joshua does in Visual Studio Code.
@@ -678,7 +638,6 @@ Footnote
 
 
 :_
-
 :icog
 
 echo. & echo * Install cognito. (I actually ran this in bash, not cmd.)
@@ -693,7 +652,6 @@ exit/b
 
 
 :_
-
 :re
 
 :ruej
@@ -722,7 +680,6 @@ What does npm run eject do?
 
 
 :_
-
 :run_tests
 
 :test
@@ -772,7 +729,6 @@ rem lu: Aug-29-2023
 
 
 :_
-
 :pyth
 
 echo. & echo * Set Python configuration path.
@@ -796,7 +752,6 @@ ownload Windows embedda
 
 
 :_
-
 :iaa
 
 echo. & echo * Install AWS Amplify.
@@ -815,7 +770,6 @@ exit/b
 
 
 :_
-
 :iri
 
 echo. & echo * Install react icons.
@@ -830,7 +784,6 @@ exit/b
 
 
 :_
-
 :dist
 
 :in
@@ -854,7 +807,6 @@ exit/b
 
 
 :_
-
 :baps
 
 :ibaps
@@ -874,7 +826,6 @@ exit/b
 
 
 :_
-
 :baps2
 
 echo. & echo * Install Dev dependency Nodemon.
@@ -890,7 +841,6 @@ rem lu: Nov-1-2021
 
 
 :_
-
 :rdev
 
 echo. & echo * Run server on http://localhost:5000.
@@ -906,7 +856,6 @@ exit/b
 
 
 :_
-
 :baps3
 
 echo. & echo * Install rate limit.
@@ -924,7 +873,6 @@ exit/b
 
 
 :_
-
 :fito
 
 echo. & echo * Install Firebase Tools.
@@ -939,7 +887,6 @@ exit/b
 
 
 :_
-
 :ipd
 
 echo. & echo * Install Poolside dependencies.
@@ -958,7 +905,6 @@ exit/b
 
 
 ::_
-
 :unin-g
 
 echo. & echo * Uninstall "%2" global package and remove dependency section in the package.json file.
@@ -974,7 +920,6 @@ exit/b
 
 
 ::_
-
 :unin_s
 
 echo. & echo * Uninstall "%2" local package and remove dependency section in the package.json file.
@@ -990,7 +935,6 @@ exit/b
 
 
 ::_
-
 :unin_g
 
 echo. & echo * Uninstall "%2" global package.
@@ -1006,7 +950,6 @@ exit/b
 
 
 :_
-
 :run
 :serv
 :star
@@ -1032,7 +975,6 @@ Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
 
 
 :_
-
 :fix
 
 echo. & echo * Fix npm installation in the current folder.
@@ -1060,7 +1002,6 @@ Sep-2-2021
 
 
 ::_
-
 :ijs
 
 echo. & echo * Install JSON server.
@@ -1078,7 +1019,6 @@ Oct-15-2021
 
 
 ::_
-
 :json
 
 echo. & echo * Run JSON local database server.
@@ -1171,7 +1111,6 @@ rem lu: Aug-29-2023
 
 
 ::_
-
 :inst_s
 
 echo. & echo * Install third party package and save setting in the package.json file.
@@ -1193,7 +1132,6 @@ exit/b
 
 
 ::_
-
 :inst_g
 
 echo. & echo * Globally install a package so that it works everywhere on the command line.
@@ -1220,7 +1158,6 @@ exit/b
 
 
 ::_
-
 :inst_sd
 
 echo. & echo * Install package and save setting in the development section of the package.json file.
@@ -1236,7 +1173,6 @@ exit/b
 
 
 ::_
-
 :inst_gh
 
 echo. & echo * Install a package using its GitHub URL.
@@ -1254,7 +1190,6 @@ exit/b
 
 
 ::_
-
 :inst_svh
 
 echo. & echo * Install a specific version of a package and HOLD at this version.
@@ -1272,7 +1207,6 @@ exit/b
 
 
 ::_
-
 :inst_sv
 
 echo. & echo * Install a specific version of a package.
@@ -1293,7 +1227,6 @@ exit/b
 
 
 ::_
-
 :npmh
 
 echo. & echo * NPM install command for Sencha on Windows.
@@ -1310,7 +1243,6 @@ exit/b
 
 
 ::_
-
 :npmc
 
 echo. & echo * NPM install command for Sencha on Windows.
@@ -1325,7 +1257,6 @@ exit/b
 
 
 ::_
-
 :iac
 
 echo. & echo * Install Angular client.
@@ -1346,7 +1277,6 @@ Feb-11-2019
 
 
 ::_
-
 :fswi
 
 echo. & echo * Fix service worker issue.
@@ -1376,7 +1306,6 @@ exit/b
 
 
 ::_
-
 :npk
 
 echo. & echo * NPKill, find all node modules that can be removed and allows you to delete them.
@@ -1395,7 +1324,6 @@ exit/b
 
 
 ::_
-
 :crar
 
 echo. & echo * Create a React app at root.
@@ -1410,7 +1338,6 @@ exit/b
 
 
 ::_
-
 :cra
 
 echo. & echo * Create a React app.
@@ -1431,22 +1358,21 @@ exit/b
 
 
 ::_
-
 :crart
 
 echo. & echo * Create a React app at root that has TypeScript enabled.
-
-rem lu: Oct-26-2021
 
 echo.
 npx create-react-app . --template typescript
 
 exit/b
 
+lu:
+Oct-26-2021
+
 
 
 ::_
-
 :cra-gp
 
 echo. & echo * Create a React app per ChatGPT.
@@ -1457,6 +1383,16 @@ exit/b
 
 lu:
 Sep-26-2023
+
+
+
+:_
+:
+
+rem qq
+echo. & echo *
+
+exit/b
 
 
 

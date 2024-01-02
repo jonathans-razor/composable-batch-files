@@ -45,53 +45,72 @@ rem creation date:
 
 ::_
 :ep
+
 echo. & echo * Echo parameters from %0.bat.
+
 call t dsa>nul
 call %0 echo-parameters.js 1 2 3
+
 exit/b
 
 
 
 ::_
 :fz
-call n ndfz>nul || exit/b
-echo. & echo * %cbf-fn% from %0.bat.
+
+echo. & echo * Fizzbuzz from %0.bat.
+
 call t d>nul
-call %0 %cbf-fn%
+call %0 fizz.js
+
 exit/b
 
 
 
 ::_
 :hw
+
 rem echo. & echo * Hello world from %0.bat.
+
 call t d>nul
 call %0 hello-world.js
+
 exit/b
 
 
 
 ::_
 :rs
+
 echo. & echo * Reverse string from %0.bat.
+
 call t d>nul
 echo.
 node reverse-string.js %2
+
 exit/b
 
 
 
 ::_
-:rs
-call n ndrs>nul || exit/b
-echo. & echo * %cbf-fn% from %0.bat.
-call t d>nul
-call %0 %cbf-fn%
+:vers
+
+echo. & echo * Node version from %0.bat.
+
+echo.
+node --version
+
 exit/b
 
+* Node version from nd on XPS Dec-29-2023:
+v18.18.0
+
+lu:
+Dec-29-2023
 
 
-::_
+
+:_
 
 :run
 
@@ -107,27 +126,15 @@ exit/b
 
 
 
-::_
+:_
 :star
+
 rem echo. & echo * Start the Node server.
+
 call t nwe>nul
 start "Node Server" cmd /k node .
+
 exit/b
-
-
-
-::_
-:vers
-echo. & echo * Node version from %0.bat.
-echo.
-node --version
-exit/b
-
-* Node version from nd on XPS Dec-29-2023:
-v18.18.0
-
-lu:
-Dec-29-2023
 
 
 
