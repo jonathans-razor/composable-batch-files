@@ -1273,7 +1273,6 @@ cls
 echo. & echo * Fix npm installation in the current folder.
 
 call fe package.json || exit/b
-rem qq
 
 call dr d node_modules
 
@@ -1286,18 +1285,6 @@ exit/b
 lu:
 Sep-29-2023
 Sep-2-2021
-
-
-
-:_
-:svel
-
-rem qq
-echo. & echo * Create Svelte sample application.
-
-npm create svelte@latest svelte-example
-
-exit/b
 
 
 
@@ -1356,8 +1343,6 @@ Apr-24-2018
 
 echo. & echo * Run global update to specific version.
 
-rem qq
-
 echo.
 npm install -g npm@10.2.5
 
@@ -1375,6 +1360,23 @@ Aug-12-2019
 echo. & echo * Update current folder's dependencies to the latest version.
 
 call fe package.json || exit/b
+
+echo.
+
+npm update
+
+exit/b
+
+lu:
+Jan-2-2024
+Aug-12-2019
+
+
+
+::_
+:updapj
+
+echo. & echo * Update current folder's dependencies and create a package.json file.
 
 echo.
 
@@ -1415,6 +1417,56 @@ echo.
 npm update %2
 
 exit/b
+
+
+
+:_
+:svel
+
+echo. & echo * Create Svelte sample application.
+
+npm create svelte@latest svelte-example
+
+exit/b
+
+lu:
+Jan-2-2024
+
+create-svelte version 6.0.5
+
+T  Welcome to SvelteKit!
+node:internal/errors:496
+    ErrorCaptureStackTrace(err);
+    ^
+
+SystemError [ERR_TTY_INIT_FAILED]: TTY initialization failed: uv_tty_init returned EBADF (bad file descriptor)
+    at new SystemError (node:internal/errors:256:5)
+    at new NodeError (node:internal/errors:367:7)
+    at new WriteStream (node:tty:93:11)
+    at ED.prompt (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/core/dist/index.mjs:9:693)
+    at Module.ie (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/prompts/dist/index.mjs:28:8)
+    at template (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/create-svelte/bin.js:48:6)
+    at Module.he (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/prompts/dist/index.mjs:77:632)
+    at file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/create-svelte/bin.js:45:25
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'ERR_TTY_INIT_FAILED',
+  info: {
+    errno: -4083,
+    code: 'EBADF',
+    message: 'bad file descriptor',
+    syscall: 'uv_tty_init'
+  },
+  errno: [Getter/Setter],
+  syscall: [Getter/Setter]
+}
+
+Node.js v18.18.0
+npm ERR! code 1
+npm ERR! path C:\a
+npm ERR! command failed
+npm ERR! command C:\WINDOWS\system32\cmd.exe /d /s /c create-svelte svelte-example
+
+npm ERR! A complete log of this run can be found in: C:\Users\jonat\AppData\Local\npm-cache\_logs\2024-01-02T21_19_40_474Z-debug-0.log
 
 
 
