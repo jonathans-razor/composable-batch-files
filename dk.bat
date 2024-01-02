@@ -1,13 +1,14 @@
 @echo off
+
 if "%~1" == "" goto up
 if "%~1" == "?" goto help
-goto main
+
+goto %1
 
 
 
 :_
 :help
-
 cls
 
 echo. & echo  * Docker.
@@ -38,7 +39,6 @@ Nov-8-2023
 
 
 :_
-
 :up
 
 echo. & echo * Start and run an entire app on a standalone host that contains multiple service.
@@ -51,7 +51,6 @@ exit/b
 
 
 :_
-
 :down
 
 echo. & echo * Down.
@@ -64,12 +63,9 @@ exit/b
 
 
 :_
-
 :coup
 
-echo. & echo * Compose up.
-
-rem lu: Feb-27-2020
+echo. & echo * Compose up with configuration.
 
 cls
 
@@ -81,15 +77,15 @@ docker-compose -f src/main/docker/app.yml up
 
 exit/b
 
+lu:
+Feb-27-2020
+
 
 
 :_
-
 :codo
 
-echo. & echo * Compose down.
-
-rem lu: Mar-27-2020
+echo. & echo * Compose down with configuration.
 
 cls
 
@@ -100,6 +96,9 @@ docker-compose -f src/main/docker/app.yml down
 @echo off
 
 exit/b
+
+lu:
+Mar-27-2020
 
 
 
@@ -119,56 +118,40 @@ Apr-2-2020
 
 
 :_
-
 :i
-
 :info
 
 echo. & echo * Info.
-
-rem lu: Apr-2-2020
 
 echo.
 docker info
 
 exit/b
 
+lu:
+Apr-2-2020
+
 
 
 :_
-
 :lc
 :ps
 
 echo. & echo * List containers. Kurt used this a lot.
-
-rem lu: Apr-2-2020
 
 echo.
 docker ps
 
 exit/b
 
+lu:
+Apr-2-2020
 
 
 :_
-:li
-:list
-echo. & echo * List images.
-echo.
-docker images
-exit/b
-rem lu: Mar-27-2020
-
-
-
-:_
-
 :lic
 
 echo. & echo * List images and containers.
-
-rem lu: Apr-2-2020
 
 echo.
 
@@ -178,6 +161,25 @@ call %0 lc
 
 exit/b
 
+lu:
+Apr-2-2020
+
+
+
+:_
+:li
+:list
+
+echo. & echo * List images.
+echo.
+
+docker images
+
+exit/b
+
+lu:
+Mar-27-2020
+
 
 
 :_
@@ -185,46 +187,46 @@ exit/b
 
 echo. & echo * Hello world.
 
-rem lu: Apr-2-2020
-
 echo.
 docker run hello-world
 
 exit/b
 
+lu:
+Apr-2-2020
+
 
 
 :_
-
 :rwsc
 
 echo. & echo * Run a Windows Server container.
-
-rem lu: Apr-2-2020
 
 echo.
 docker run -it mcr.microsoft.com/windows/servercore powershell
 
 exit/b
 
+lu:
+Apr-2-2020
+
 
 
 :_
-
 :kill
 
 echo. & echo * Kill.
-
-rem lu: Mar-28-2022
 
 docker kill [put images ids to kill here]
 
 exit/b
 
+lu:
+Mar-28-2022
+
 
 
 :_
-
 :load
 
 echo. & echo * Load.
@@ -236,7 +238,6 @@ exit/b
 
 
 :_
-
 :ps
 
 echo. & echo * Ps.
@@ -259,9 +260,7 @@ exit/b
 
 
 :_
-
 :gn
-
 :go
 
 echo. & echo * View the currently running Go Node in Docker.
@@ -274,36 +273,52 @@ exit/b
 
 :_
 :lico
+
 echo. & echo * List container.
+
 docker container ls
+
 exit/b
-rem lu: Aug-18-2022
+
+lu:
+Aug-18-2022
 
 
 
 :_
 :stop
+
 echo. & echo * Stop container.
+
 if "%~2" == "" (
   err Docker ID is required.
   exit/b
 )
+
 docker container stop %2
+
 exit/b
-rem lu: Apr-12-2023
+
+lu: Apr-12-2023
 
 
 
 :_
-:stop
+:rc
+
 echo. & echo * Remove container.
+
 if "%~2" == "" (
   err Docker ID is required.
   exit/b
 )
+
 docker container rm %2
+
 exit/b
-rem lu: Apr-12-2023
+
+lu:
+Apr-12-2023
 
 
 
