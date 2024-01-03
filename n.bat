@@ -4254,4 +4254,56 @@ exit/b
 
 
 
+:_
+:rsdn
+:rsgg
+:rsjv
+:rsjs
+:rsph
+
+echo. & echo * Reverse string for a language file.
+
+call pn d>nul
+
+set cbf-parser=%1
+set cbf-parser=%cbf-parser:~2,2%
+
+if "%cbf-parser%" == "gg" set cbf-parser=go
+if "%cbf-parser%" == "ph" set cbf-parser=py
+if "%cbf-parser%" == "jv" (
+  set cbf-fn=ReverseString.java
+  exit/b
+)
+if "%cbf-parser%" == "dn" (
+  set cbf-fn=%cbf-pt%\reverse-string-csharp\Program.cs
+  exit/b
+)
+
+set cbf-fn=%cbf-pt%\reverse-string.%cbf-parser%
+
+exit/b
+
+
+
+:_
+:fzgg
+:fzjs
+:fzph
+
+echo. & echo * Fizz buzz for a language file.
+
+call pn d>nul
+
+set cbf-parser=%1
+set cbf-parser=%cbf-parser:~2,2%
+
+if "%cbf-parser%" == "gg" set cbf-parser=go
+if "%cbf-parser%" == "ph" set cbf-parser=py
+
+set cbf-fn=%cbf-pt%\fizz.%cbf-parser%
+
+exit/b
+
+
+
 :_ (!efn)

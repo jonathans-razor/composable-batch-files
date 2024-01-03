@@ -189,7 +189,6 @@ if "%~2" == "" (
 )
 
 :
-rem qq
 echo.
 call dn %1 %cbf-string-to-reverse%
 

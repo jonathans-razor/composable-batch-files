@@ -47,6 +47,7 @@ skw: format date and time, formatting date and time, format time, formatting tim
 :copy-time-to-clipboard-old
 
 echo.
+rem qq
 set cbf-hours=%time:~0,2%
 
 rem echo cbf-hours: %cbf-hours%
