@@ -334,6 +334,10 @@ set cbf-msg=
 : Separator (!midwi, !half, !midw): Halfway point. (skw midway) ****************************************
 
 :
+rem Notice Graphic.
+set cbf-notice-graphic=
+
+:
 rem Nexus
 set cbf-nx=
 
@@ -341,6 +345,10 @@ set cbf-nx=
 rem Parameter
 rem Ugh. I am seeing parameter wars now. May-23-2022 In order for j.bat to work, it seems that cbf-parameter needs to be cleared.
 set cbf-parameter=
+
+:
+rem Parser
+set cbf-parser=
 
 :
 rem Project Designator

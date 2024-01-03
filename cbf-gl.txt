@@ -23,7 +23,7 @@ Composable Batch Files (CBF) - Glossary
     atomic function  A single, self-contained batch file function, which usually
                      performs a single task and is called by invoking its batch file 
                      label. It also contains "exit/b', which is the end of the function.
-                 -c  As a batch file parameter, means force file creation
+                 /c  As a batch file parameter, means "clear" or force file creation.
                   c  Current folder filename, when used in a batch file name
                 cbf  Composable batch files
      cbf definition  The function in n.bat where an alias' defintion is located.
