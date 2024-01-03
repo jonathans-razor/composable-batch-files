@@ -44,6 +44,15 @@ Dec-2-2023
 
 
 
+:_ Metadata: Track Size (!tsk)
+
+     Date       Lines      Bytes   Rubrics  Notes
+ -----------  -------  ----------  -------  --------------------------------------------------
+
+: Jan-3-2024     199      2,642       13
+
+
+
 :_
 
 echo. & echo * Play with the clip command.

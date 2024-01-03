@@ -45,6 +45,8 @@ Metadata: Track Size (!tsn)
      Date      Lines      Bytes  Functions  Notes
  -----------  ------  ---------  ---------  ----------------------------------------------
 
+: Jan-3-2024   4,309     59,898      320
+
 : Nov-3-2023   4,134     55,731        296
 
 :Jul-10-2023   2,443     30,655        168
@@ -3146,7 +3148,8 @@ rem created: Nov-01-2022
 :bog
 :bogu
 :bogus
-:k
+:et
+
 echo. & echo * Bogus CBF for error testing.
 
 set cbf-app=xx
