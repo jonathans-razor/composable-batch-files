@@ -432,7 +432,7 @@ exit/b
 ::_
 :rs
 
-echo. & echo * Reverse string from %0.bat.
+echo. & echo * Reverse string (%2) from %0.bat.
 
 call t d>nul
 

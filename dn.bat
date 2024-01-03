@@ -133,9 +133,7 @@ exit/b
 ::_
 :rs
 
-cls
-
-echo. & echo * Reverse string from %0.
+echo. & echo * Reverse string (%2) from %0.
 
 call t d>nul
 

@@ -198,12 +198,12 @@ exit/b
 
 call n ggrs>nul || exit/b
 
-echo. & echo * Reverse string from  %0.bat.
+echo. & echo * Reverse string (%2) from %0.bat.
 
 call t d>nul
 
 echo.
-go run %cbf-fn% %2
+go run reverse-string.go %2
 
 exit/b
 

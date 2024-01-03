@@ -133,8 +133,8 @@ example-  Prefix for files written by other authors for learning and comparison 
        l  Load path onto clipboard.
       ld  Use a DCV to load a cbf variable onto the clipboard.
       le  Leet code tester.
-     lfa  Language functions aggregate runner. (skw supported-languages-series-jj)
-     lfb  Batch that supports language functions.
+      sl  Language functions aggregate runner. (skw supported-languages-series-jj)
+     slf  Batch that supports language functions.
       lf  Load file name or contents onto clipboard.
       lh  Execute the localhost DCV for the passed in alias.
       lj  Override j1.txt with clipboard contents and open the file.

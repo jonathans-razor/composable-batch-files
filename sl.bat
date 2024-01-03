@@ -12,7 +12,7 @@ goto %1
 
 cls
 
-echo. & echo  * Language functions aggregrate runner tester batch file.
+echo. & echo  * Supported Languages functions aggregrate runner tester batch file.
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
@@ -182,24 +182,36 @@ cls
 
 echo. & echo * Reverse string from supported-languages-series-jj.
 
-if "%~2" == "" err Parameter 2: The string to reverse is required.
+if "%~2" == "" (
+  set cbf-string-to-reverse=Desserts
+) else (
+  set cbf-string-to-reverse=%2
+)
 
 :
-call dn %1 %2
+rem qq
+echo.
+call dn %1 %cbf-string-to-reverse%
 
 :
-call gg %1 %2
+echo.
+call gg %1 %cbf-string-to-reverse%
 
 :
-call jv %1 %2
+echo.
+call jv %1 %cbf-string-to-reverse%
 
 :
-call nd %1 %2
+echo.
+call nd %1 %cbf-string-to-reverse%
 
 :
-call ph %1 %2
+echo.
+call ph %1 %cbf-string-to-reverse%
 
 :corner-case
+
+echo.
 
 exit/b
 
@@ -213,18 +225,23 @@ cls
 echo. & echo * Versions from supported languages from %0.bat.
 
 :
+echo.
 call dn vers
 
 :
+echo.
 call gg vers
 
 :
+echo.
 call jv vers
 
 :
+echo.
 call nd vers
 
 :
+echo.
 call ph vers
 
 :corner-case

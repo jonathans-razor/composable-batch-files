@@ -14,7 +14,7 @@ goto %1
 
 cls
 
-echo. & echo  * Batch that supports language functions.
+echo. & echo  * Supoorted language batch file that demonstrates language functions.
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 

@@ -271,11 +271,15 @@ exit/b
 ::_
 :rs
 
-echo. & echo * Reverse string from %0.bat.
+echo. & echo * Reverse string (%2) from %0.bat.
+
 call t dsa>nul
+
 call jv c ReverseString.java>nul
 echo.
+
 java ReverseString.java %2
+
 exit/b
 
 
