@@ -8,7 +8,8 @@ if "%~1" == "?" goto help
 
 rem goto code-execution-area
 if "%~1" == "" (
-  goto code-execution-area
+  call :code-execution-area
+  exit/b
 ) else (
   goto %1
 )
@@ -103,22 +104,6 @@ Dec-15-2023
 
 :_
 
-echo. & echo * 
-
-
-
-exit/b
-
-
-
-:_
-
-:code-execution-area
-
-
-
-:_
-
 echo. & echo * Formatting time in dos batch files.
 
 set mydate=%date:/=%
@@ -152,3 +137,56 @@ Dec-31-2023
 
 
 :_
+
+:label
+
+cls
+
+echo. & echo * Is there a way in a batch file to reference the current batch label?
+
+echo.
+
+echo %0
+echo %~f0
+echo %~nx0
+
+rem echo %0     :code-execution-area
+rem echo %~f0   k.bat
+rem echo %~nx0  d:\Dropbox\IT\Composable-Batch-Files\k.bat
+
+exit/b
+
+Jan-3-2024
+
+
+
+:_
+
+echo. & echo * 
+
+
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+
+
+:_
+
+echo. & echo * 
+
+rem qq
+
+
+exit/b
+
+Jan-3-2024
+
+
+
+:_ (!efk)

@@ -1975,6 +1975,24 @@ exit/b
 
 
 :_
+:Jan-2-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 64-minimum-path-sum.py "[[1,3,1],[1,5,1],[4,2,1]]"
+python 64-minimum-path-sum.py "[[1,2,3],[4,5,6]]"
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -1998,7 +2016,7 @@ exit/b
 
 
 :_
-:Jan-2-2024
+:Jan-3-2024
 
 cls
 
@@ -2006,8 +2024,10 @@ echo. & echo * %1.
 
 @echo on
 
-python 64-minimum-path-sum.py "[[1,3,1],[1,5,1],[4,2,1]]"
-python 64-minimum-path-sum.py "[[1,2,3],[4,5,6]]"
+python 65-valid-number.py 0
+python 65-valid-number.py e
+python 65-valid-number.py .
+python 65-valid-number.py inf
 
 @echo off
 

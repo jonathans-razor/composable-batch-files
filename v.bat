@@ -2235,6 +2235,12 @@ rem lu: Dec-30-2018
 
 exit/b
 
+rem call :code-execution-area
+rem echo %0     :code-execution-area
+rem echo %~f0   k.bat
+rem echo %~nx0  d:\Dropbox\IT\Composable-Batch-Files\k.bat
+
+
 %~1         - expands %1 removing any surrounding quotes (")
 %~f1        - expands %1 to a fully qualified path name
 %~d1        - expands %1 to a drive letter only
