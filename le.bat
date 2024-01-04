@@ -644,28 +644,6 @@ exit/b
 
 
 :_
-:Nov-5-2023-2
-
-cls
-
-call t d>nul
-
-@echo on
-call ph 66-plus-one.py 1 2 3
-
-@echo on
-call ph 66-plus-one.py 4 3 2 1
-
-@echo on
-call ph 66-plus-one.py 9
-
-echo.
-
-exit/b
-
-
-
-:_
 :Oct-30-2023
 
 cls
@@ -697,44 +675,6 @@ call ph solution-class.py 1 1
 
 @echo on
 call ph solution-class.py 2 27
-
-exit/b
-
-
-
-:_
-:Nov-6-2023
-
-cls
-
-call t d>nul
-
-@echo on
-call ph 67-add-binary.py 11 1
-
-@echo on
-call ph 67-add-binary.py 1010 1011
-
-exit/b
-
-
-
-:_
-:Nov-6-2023-3
-
-cls
-
-call t d>nul
-
-@echo on
-call ph 69-sqrt-x.py 4
-
-@echo on
-call ph 69-sqrt-x.py 8
-
-rem I predict the answer will be 8. Nov-6-2023
-@echo on
-call ph 69-sqrt-x.py 69
 
 exit/b
 
@@ -2010,12 +1950,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-
-
-:_
 :Jan-3-2024
 
 cls
@@ -2030,6 +1964,76 @@ python 65-valid-number.py .
 python 65-valid-number.py inf
 
 @echo off
+
+exit/b
+
+
+
+:_
+:Nov-5-2023-2
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 66-plus-one.py 1 2 3
+
+@echo on
+call ph 66-plus-one.py 4 3 2 1
+
+@echo on
+call ph 66-plus-one.py 9
+
+echo.
+
+exit/b
+
+
+
+:_
+:Nov-6-2023
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 67-add-binary.py 11 1
+
+@echo on
+call ph 67-add-binary.py 1010 1011
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+
+
+:_
+:Nov-6-2023-3
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 69-sqrt-x.py 4
+
+@echo on
+call ph 69-sqrt-x.py 8
+
+rem I predict the answer will be 8. Nov-6-2023
+@echo on
+call ph 69-sqrt-x.py 69
+
+rem I predict the answer will be 10. Jan-4-2024
+@echo on
+call ph 69-sqrt-x.py 101
 
 exit/b
 
