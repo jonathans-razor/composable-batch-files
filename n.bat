@@ -4323,12 +4323,13 @@ exit/b
 
 
 :_
-:
+:fsd
+:fvski
 
-echo. & echo *
+echo. & echo * Favorite ski days.
 
-rem qq
-
+call an br>nul
+set cbf-gs=https://docs.google.com/spreadsheets/d/1Q6YUJzTG_cHhKTBjBeawmoRMo-rYLXTo3ukRFzn1_IQ/edit#gid=0
 
 exit/b
 
