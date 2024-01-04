@@ -4311,4 +4311,27 @@ exit/b
 
 
 
+:_
+:nort
+
+echo. & echo * Norton browser.
+
+set cbf-app=C:\Users\jonat\AppData\Local\Norton\Browser\Application\NortonBrowser.exe
+
+exit/b
+
+
+
+:_
+:
+
+echo. & echo *
+
+rem qq
+
+
+exit/b
+
+
+
 :_ (!efn)
