@@ -114,8 +114,10 @@ echo           wiz_stag  Run wizard that builds a WAR file for staging.
 
 Metadata: Track Size (!tsm)
 
-     Date      Lines      Bytes  Functions  Notes
- -----------  ------  ---------  ---------  -------------------------------------------------
+     Date      Lines      Bytes   Functs  Notes
+ -----------  ------  ---------  -------  -------------------------------------------------
+
+: Jan-4-2024   5,370     91,844      241
 
 : Jan-3-2024   5,368     91,800      241
 
