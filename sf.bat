@@ -57,9 +57,10 @@ call i /c>nul
 
 rem echo. & echo * Evaluate the parameter list.
 
-call n %1
-         
-if errorlevel 1 exit/b
+call n %1 || exit/b
+rem qq
+
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Jan-5-2024_6_15_PM
 
 if "%cbf-app%" == "" (
   call :use_default_browser
