@@ -135,7 +135,7 @@ if not "%cbf-lnk%" == "" (
 :
 
 if not "%cbf-url%" == "" (
-  echo. & echo * Execute URL. Sep-19-2023_2_44_PM
+  rem echo. & echo * Execute URL. Sep-19-2023_2_44_PM
   call sf %1>nul
   exit/b
 )
