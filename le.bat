@@ -747,27 +747,6 @@ exit/b
 
 
 :_
-:Nov-7-2023-3
-
-cls
-
-:
-@echo on
-call ph 83-remove-duplicates-from-sorted-list.py "1 1 2"
-
-exit/b
-
-:
-@echo on
-call ph 83-remove-duplicates-from-sorted-list.py "1 1 2 3 3"
-
-:Necessary Edge Case Spacer - Please do not delete.
-
-exit/b
-
-
-
-:_
 :Nov-7-2023-4
 
 cls
@@ -2009,12 +1988,6 @@ exit/b
 
 
 :_
-
-:code-execution-area
-
-
-
-:_
 :Nov-6-2023-3
 
 cls
@@ -2034,6 +2007,35 @@ call ph 69-sqrt-x.py 69
 rem I predict the answer will be 10. Jan-4-2024
 @echo on
 call ph 69-sqrt-x.py 101
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+
+
+:_
+:Nov-7-2023-3
+
+cls
+
+:
+@echo on
+call ph 83-remove-duplicates-from-sorted-list.py "1 1 2"
+
+:
+@echo on
+call ph 83-remove-duplicates-from-sorted-list.py "1 1 2 3 3"
+
+:
+@echo on
+call ph 83-remove-duplicates-from-sorted-list.py "1 1 2 3 3 4 6"
+
+:Necessary Edge Case Spacer - Please do not delete.
 
 exit/b
 
