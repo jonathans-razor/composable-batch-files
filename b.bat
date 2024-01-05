@@ -14,9 +14,9 @@ if "%~1" == "r" goto restart-computer
 
 echo. & echo * Shutdown (and restart?) the computer.
 
-echo. & echo Usage: %0 [parameter]
+echo. & echo   Usage: %0 [parameter]
 
-echo. & echo Parameter 1 (Optional): If "r" is supplied, restart the computer. If left blank, then shutdown the computer.
+echo. & echo * Parameter 1 (Optional): If "r" is supplied, restart the computer. If left blank, then shutdown the computer.
 
 exit/b
 
