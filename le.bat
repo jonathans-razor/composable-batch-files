@@ -2023,19 +2023,16 @@ exit/b
 
 cls
 
-:
 @echo on
-call ph 83-remove-duplicates-from-sorted-list.py "1 1 2"
-
-:
+call ph 83-remove-duplicates-from-sorted-list.py 1 1 2
 @echo on
-call ph 83-remove-duplicates-from-sorted-list.py "1 1 2 3 3"
-
-:
+call ph 83-remove-duplicates-from-sorted-list.py 1 1 2 3 3
 @echo on
-call ph 83-remove-duplicates-from-sorted-list.py "1 1 2 3 3 4 6"
+call ph 83-remove-duplicates-from-sorted-list.py 1 1 2 3 3 4 6
 
-:Necessary Edge Case Spacer - Please do not delete.
+@echo off
+
+echo.
 
 exit/b
 
