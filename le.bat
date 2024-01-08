@@ -1912,23 +1912,6 @@ exit/b
 
 
 :_
-:
-
-cls
-
-echo. & echo * %1.
-
-@echo on
-
-python 
-
-@echo off
-
-exit/b
-
-
-
-:_
 :Jan-3-2024
 
 cls
@@ -1988,6 +1971,26 @@ exit/b
 
 
 :_
+:Nov-7-2023-3
+
+cls
+
+@echo on
+call ph 83-remove-duplicates-from-sorted-list.py 1 1 2
+@echo on
+call ph 83-remove-duplicates-from-sorted-list.py 1 1 2 3 3
+@echo on
+call ph 83-remove-duplicates-from-sorted-list.py 1 1 2 3 3 4 6
+
+@echo off
+
+echo.
+
+exit/b
+
+
+
+:_
 :Nov-6-2023-3
 
 cls
@@ -2013,26 +2016,102 @@ exit/b
 
 
 :_
+:Nov-6-2023-3
+
+cls
+
+call t d>nul
+
+@echo on
+call ph 69-sqrt-x.py 4
+
+@echo on
+call ph 69-sqrt-x.py 8
+
+rem I predict the answer will be 8. Nov-6-2023
+@echo on
+call ph 69-sqrt-x.py 69
+
+rem I predict the answer will be 10. Jan-4-2024
+@echo on
+call ph 69-sqrt-x.py 101
+
+exit/b
+
+
+
+:_
+:Jan-8-2024
+
+cls
+
+call t d>nul
+
+@echo on
+
+call ph sort-string.py test
+
+exit/b
+
+
+
+:_
+:Jan-8-2024-2
+
+cls
+
+call t d>nul
+
+@echo on
+call ph sort-string-2.py test
+
+@echo on
+call ph sort-string-2.py estt
+
+exit/b
+
+
+
+:_
+:
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 
+
+@echo off
+
+exit/b
+
+
+
+:_
 
 :code-execution-area
 
 
 
 :_
-:Nov-7-2023-3
+:Jan-8-2024
 
 cls
 
+echo. & echo * %1.
+
 @echo on
-call ph 83-remove-duplicates-from-sorted-list.py 1 1 2
+python 90-subsets-ii.py 1 2 2
+
 @echo on
-call ph 83-remove-duplicates-from-sorted-list.py 1 1 2 3 3
+python 90-subsets-ii.py 0
+
 @echo on
-call ph 83-remove-duplicates-from-sorted-list.py 1 1 2 3 3 4 6
+python 90-subsets-ii.py 1 2 3
 
 @echo off
-
-echo.
 
 exit/b
 
