@@ -31,8 +31,6 @@ exit/b
 lu: 
 Jan-2-2024
 
-a-language-i-am-trying-to-stay-current-with-series-jj
-
 
 
 :_
@@ -111,6 +109,21 @@ v18.18.0
 
 lu:
 Dec-29-2023
+
+
+
+::_
+:vershi
+
+echo. & echo * Version history.
+
+call an nort>nul
+
+set cbf-parameter=https://nodejs.org/en/about/previous-releases
+
+call r
+
+exit/b
 
 
 
