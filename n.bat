@@ -2749,23 +2749,43 @@ Sep-5-2023
 :mste
 :team
 :teams
+
 echo. & echo * Microsoft Teams.
+
 set cbf-pt=%AppData%\Microsoft\Windows\Start Menu\Programs
-set cbf-app=%cbf-pt%\Microsoft Teams.lnk
+set cbf-app=%cbf-pt%\Microsoft Teams classic.lnk
+rem set cbf-app=C:\Users\jonat\AppData\Local\Microsoft\Teams\Update.exe --processStart "Teams.exe"
+rem set cbf-app=C:\Users\jonat\AppData\Local\Microsoft\Teams\Update.exe --processStart Teams.exe
+rem set cbf-app=C:\Users\jonat\AppData\Local\Microsoft\Teams\Update.exe
 rem Top 8 Ways to Fix Cannot Record Meeting in Microsoft Teams
 set cbf-url=https://www.guidingtech.com/top-ways-to-fix-cant-record-meeting-in-microsoft-teams/
 set cbf-url2=https://teams.microsoft.com
+
 exit/b
-rem lu: Jan-27-2022
+
+lu:
+Jan-8-2024
+Jan-27-2022
 
 
 
 ::_
 :zoom
+
 echo. & echo * Zoom.
+
 set cbf-app=%AppData%\Zoom\bin\zoom.exe
+
+rem This is where recorded meetings are saved.
+set cbf-pt=C:\Users\jonat\Documents\Zoom
+
 exit/b
-rem lu: Oct-12-2020
+
+On XPS I have version 5.16.1 on Jan-8-2024.
+
+lu: 
+Jan-8-2024
+Oct-12-2020
 
 
 
