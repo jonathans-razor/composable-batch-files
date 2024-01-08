@@ -362,8 +362,13 @@ rem lu: Sep-29-2023
 
 
 
-:_
+:_+ Version (!fyvers)
+
+
+
+::_
 :vers
+
 echo. & echo * Angular CLI version from %0.bat.
 
 ng version
@@ -397,6 +402,21 @@ Package                      Version
 lu:
 Dec-29-2023
 Sep-25-2023
+
+
+
+::_
+:vershi
+
+echo. & echo * Version history.
+
+call an nort>nul
+
+set cbf-parameter=https://en.wikipedia.org/wiki/Angular_(web_framework)
+
+call r
+
+exit/b
 
 
 

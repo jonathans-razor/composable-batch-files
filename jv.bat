@@ -296,4 +296,19 @@ exit/b
 
 
 
+::_
+:vershi
+
+echo. & echo * Version history.
+
+call an nort>nul
+
+set cbf-parameter=https://en.wikipedia.org/wiki/Java_version_history
+
+call r
+
+exit/b
+
+
+
 :_ (!rfsp) (mov-6)

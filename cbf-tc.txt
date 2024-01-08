@@ -133,8 +133,6 @@ example-  Prefix for files written by other authors for learning and comparison 
        l  Load path onto clipboard.
       ld  Use a DCV to load a cbf variable onto the clipboard.
       le  Leet code tester.
-      sl  Language functions aggregate runner. (skw supported-languages-series-jj)
-     slf  Batch that supports language functions.
       lf  Load file name or contents onto clipboard.
       lh  Execute the localhost DCV for the passed in alias.
       lj  Override j1.txt with clipboard contents and open the file.
@@ -204,6 +202,8 @@ example-  Prefix for files written by other authors for learning and comparison 
       sf  Surf to websites. A DCV is optional.
      sfn  Set cbf-fn based on an algorithm.
     sfn3  Using advanced routing, set the cbf filename.
+      sl  Language functions aggregate runner. (skw supported-languages-series-jj)
+     slf  Batch that supports language functions.
      sln  Open a Visual Studio solution, with td parameter.
       sm  Use Sublime and sfn to edit a file.
      smd  Use Sublime to edit DCV files.

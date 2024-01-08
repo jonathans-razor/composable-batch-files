@@ -183,6 +183,21 @@ The following were installed at: 'C:\Program Files\dotnet\'
 
 
 
+::_
+:vershi
+
+echo. & echo * Version history.
+
+call an nort>nul
+
+set cbf-parameter=https://en.wikipedia.org/wiki/.NET_Framework_version_history
+
+call r
+
+exit/b
+
+
+
 :_
 :neco-not-working
 
