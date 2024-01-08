@@ -3734,13 +3734,17 @@ Nov-10-2023
 
 :_
 :cska
+
 set cbf-pd=css-kata
 echo. & echo * %cbf-pd%. 
+
 call pn it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=Z4pCqK-V_Wo
+
 exit/b
+
 lu: 
 Nov-13-2023
 
@@ -3748,10 +3752,13 @@ Nov-13-2023
 
 :_
 :cid
-set cbf-pd=Comodo Ice Dragon.
-echo. & echo * %cbf-pd%. 
+
+echo. & echo * Comodo Ice Dragon.
+
 set cbf-app=C:\Program Files\Comodo\IceDragon\icedragon.exe
+
 exit/b
+
 lu: 
 Nov-13-2023
 
