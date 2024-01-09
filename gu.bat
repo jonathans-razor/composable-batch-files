@@ -515,6 +515,7 @@ Oct-12-2023
 :acc
 :eco
 
+rem qq
 echo. & echo * Start Angular Crash course and ecosystem.
 
 call t acc
@@ -526,7 +527,6 @@ call yt acc
 
 exit/b
 
-rem qq
 lu:
 Oct-12-2023
 
