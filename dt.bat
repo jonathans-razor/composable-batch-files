@@ -47,7 +47,7 @@ skw: format date and time, formatting date and time, format time, formatting tim
 :copy-time-to-clipboard-old
 
 echo.
-rem qq
+
 set cbf-hours=%time:~0,2%
 
 rem echo cbf-hours: %cbf-hours%
@@ -87,6 +87,24 @@ exit/b
 
 :_
 :copy-date-to-clipboard
+
+echo. & echo * Copy date to clipboard.
+
+call pn d>nul
+
+python %cbf-pt%\date.py>date.txt
+set /p cbf-date=<date.txt
+
+echo. & echo * cbf-date: %cbf-date%
+
+clip < "date.txt"
+
+exit/b
+
+
+
+:_
+:copy-date-to-clipboard-old
 
 set cbf-month=%date:~4,2%
 
