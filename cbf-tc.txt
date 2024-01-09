@@ -1,4 +1,3 @@
-
 Composable Batch Files (CBF) - Table of Contents
 
  .--.      .--.      .--.      .--.      .--.
