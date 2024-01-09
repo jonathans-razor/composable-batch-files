@@ -4290,6 +4290,7 @@ exit/b 0
 
 echo. & echo * Commit all files with Python timestamp message.
 
+rem qq
 call ph dtt>%tmp%\python-timestamp.txt
 
 set /p commit-description=<%tmp%\python-timestamp.txt
