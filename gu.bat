@@ -513,7 +513,9 @@ Oct-12-2023
 
 ::_
 :acc
-echo. & echo * Start Angular Crash course and open all aspects.
+:eco
+
+echo. & echo * Start Angular Crash course and ecosystem.
 
 call t acc
 call vc .
@@ -521,8 +523,10 @@ call nm json
 call gu star
 call sf 4200
 call yt acc
+
 exit/b
 
+rem qq
 lu:
 Oct-12-2023
 
