@@ -1471,7 +1471,7 @@ npm ERR! path C:\a
 npm ERR! command failed
 npm ERR! command C:\WINDOWS\system32\cmd.exe /d /s /c create-svelte svelte-example
 
-npm ERR! A complete log of this run can be found in: C:\Users\jonat\AppData\Local\npm-cache\_logs\2024-01-02T21_19_40_474Z-debug-0.log
+npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_logs\2024-01-02T21_19_40_474Z-debug-0.log
 
 
 

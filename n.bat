@@ -1698,11 +1698,11 @@ echo. & echo * Visual Studio Code.
 
 rem lu: Feb-23-2022
 
-set cbf-app=C:\Users\jonat\AppData\Local\Programs\Microsoft VS Code\Code.exe
+set cbf-app=%localappdata%\Programs\Microsoft VS Code\Code.exe
 
 if exist "C:\Users\JJones2\AppData\Local\Programs\Microsoft VS Code\Code.exe" set cbf-app=C:\Users\JJones2\AppData\Local\Programs\Microsoft VS Code\Code.exe
 
-if exist "C:\Users\jonat\AppData\Local\Programs\Microsoft VS Code\Code.exe" set cbf-app=C:\Users\jonat\AppData\Local\Programs\Microsoft VS Code\Code.exe
+if exist "%localappdata%\Programs\Microsoft VS Code\Code.exe" set cbf-app=%localappdata%\Programs\Microsoft VS Code\Code.exe
 
 if exist "C:\Program Files\Microsoft VS Code\Code.exe" set cbf-app=C:\Program Files\Microsoft VS Code\Code.exe
 
@@ -2578,16 +2578,12 @@ exit/b
 
 
 ::_
-
+:ad
 :apda
-
 :appd
-
 :appdata
 
 echo. & echo * App data.
-
-rem lu: Dec-4-2018
 
 set cbf-pt=%appdata%
 
@@ -2625,7 +2621,7 @@ exit/b
 
 ::C:\%appdata%
 
-::C:\Users\jonat\AppData\Local\Microsoft\Windows\Themes\RoamedThemeFiles\DesktopBackground
+::%localappdata%\Microsoft\Windows\Themes\RoamedThemeFiles\DesktopBackground
 
 ::C:\Users\      jonat\AppData\Local\Microsoft\Windows\Themes\RoamedThemeFiles\DesktopBackground
 
@@ -2754,12 +2750,7 @@ echo. & echo * Microsoft Teams.
 
 set cbf-pt=%AppData%\Microsoft\Windows\Start Menu\Programs
 set cbf-app=%cbf-pt%\Microsoft Teams classic.lnk
-rem set cbf-app=C:\Users\jonat\AppData\Local\Microsoft\Teams\Update.exe --processStart "Teams.exe"
-rem set cbf-app=C:\Users\jonat\AppData\Local\Microsoft\Teams\Update.exe --processStart Teams.exe
-rem set cbf-app=C:\Users\jonat\AppData\Local\Microsoft\Teams\Update.exe
-rem Top 8 Ways to Fix Cannot Record Meeting in Microsoft Teams
-set cbf-url=https://www.guidingtech.com/top-ways-to-fix-cant-record-meeting-in-microsoft-teams/
-set cbf-url2=https://teams.microsoft.com
+set cbf-url=https://teams.microsoft.com
 
 exit/b
 
@@ -2777,7 +2768,7 @@ echo. & echo * Zoom.
 set cbf-app=%AppData%\Zoom\bin\zoom.exe
 
 rem This is where recorded meetings are saved.
-set cbf-pt=C:\Users\jonat\Documents\Zoom
+set cbf-pt=%userprofile%\Documents\Zoom
 
 exit/b
 
@@ -3276,11 +3267,16 @@ creation date: Jun-24-2023
 
 ::_
 :icoco
+
 echo. & echo * Install Code Compare.
-set cbf-app=C:\Users\jonat\Dropbox\Software\Code Compare\codecomparepro40.exe
+
+set cbf-app=%userprofile%\Dropbox\Software\Code Compare\codecomparepro40.exe
 set cbf-fn=%cbf-app%
+
 exit/b
-rem lu: Feb-27-2020
+
+lu:
+Feb-27-2020
 
 
 
@@ -3591,15 +3587,13 @@ lu: Oct-31-2023
 
 echo. & echo * Postman.
 
-rem lu: Jun-14-2018
-
-rem set cbf-app=C:\Users\jonat\AppData\Local\Postman\Update.exe --processStart "Postman.exe"
-set cbf-app=C:\Users\jonat\AppData\Local\Postman\Postman.exe
-
+set cbf-app=%localappdata%\Postman\Postman.exe
 set cbf-url=https://web.postman.com
 
 exit/b
 
+lu: 
+Jun-14-2018
 
 
 :_
@@ -4342,7 +4336,7 @@ exit/b
 
 echo. & echo * Norton browser.
 
-set cbf-app=C:\Users\jonat\AppData\Local\Norton\Browser\Application\NortonBrowser.exe
+set cbf-app=%localappdata%\Norton\Browser\Application\NortonBrowser.exe
 
 exit/b
 
