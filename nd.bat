@@ -111,7 +111,6 @@ exit/b
 
  Dec-29-2023  v18.18.0      XPS
 
-rem qq
 
 
 lu:

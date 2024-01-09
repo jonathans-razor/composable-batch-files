@@ -394,7 +394,6 @@ rem echo. & echo * Date time from %0. NOTE: This is an official timestamp so whi
 rem echo.
 call pn c>nul
 python %cbf-pt%\date-time.py
-rem qq
 
 exit/b
 
