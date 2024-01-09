@@ -2106,8 +2106,10 @@ echo.
 
 exit/b
 
-* [Application Name] version from %0.bat on XPS Dec-29-2023:
-[version here]
+ Date          Version  Machine
+ -----------  --------  -------
+
+                            XPS
 
 lu:
 Dec-29-2023

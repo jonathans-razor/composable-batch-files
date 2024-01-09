@@ -248,13 +248,14 @@ python --version
 
 exit/b
 
-On XPS, Dec-11-2023_4_45_PM: Python 3.12.1
+ Date          Version  Machine
+ -----------  --------  -------
 
-On XPS, Dec-11-2023_4_44_PM: Python 3.11.5
+  Jan-9-2024    3.12.1      XPS
 
-Sep-21-2023_12_05_PM: Python 3.11.5
+ Dec-11-2023    3.11.5      XPS
 
-Sep-21-2023_11_54_AM: Python 3.10.0
+ Sep-21-2023    3.10.0      XPS
 
 
 

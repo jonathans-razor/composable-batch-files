@@ -104,8 +104,15 @@ node --version
 
 exit/b
 
-* Node version from nd on XPS Dec-29-2023:
-v18.18.0
+ Date          Version  Machine
+ -----------  --------  -------
+
+  Jan-9-2024  v20.10.0      XPS
+
+ Dec-29-2023  v18.18.0      XPS
+
+rem qq
+
 
 lu:
 Dec-29-2023
@@ -166,7 +173,6 @@ call vc .
 
 exit/b
 
-rem qq
 lu:
 Jan-9-2024
 

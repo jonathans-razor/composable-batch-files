@@ -473,35 +473,6 @@ exit/b
 
 
 :_
-:inse
-
-:insls
-
-echo. & echo * Install serverless.
-
-rem lu: Jul-15-2021
-
-echo.
-npm install serverless -g
-
-exit/b
-
-
-Footnote
->< >< ><
-
-I'm not sure I needed to run this command because when I ran the "npm install" command, I got
-a message that said:
-
- �   Serverless Framework successfully installed!    �
- �                                                   �
- �   To start your first project run 'serverless'.   �
-
-Is this command folder-specific?
-
-
-
-:_
 :int
 :inte
 :rit
@@ -586,40 +557,6 @@ What does npm run eject do?
 
 
 :_
-:run_tests
-
-:test
-
-echo. & echo * Starts the test runner.
-
-rem skw: Run tests. (skw run unit tests)
-
-echo.
-if not exist "package.json" (
-  echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
-  exit/b
-)
-
-npm test
-
-exit/b
-
-
->< >< Footnote:
-
-Here is the result of my first unit test run in deli on Mar-6-2020.
-
- PASS  src/test/javascript/spec/app/... *.ts
-
-Test Suites: 40 passed, 40 total
-Tests:       132 passed, 132 total
-Snapshots:   0 total
-Time:        128.601s
-Ran all test suites.
-
-
-
-:_
 :rb
 :rubi
 echo. & echo * Bundles the app into static files for production into a subfolder called "build".
@@ -654,25 +591,6 @@ C:\Users\[put--name-of-user-of-interest-here]\AppData\Local\Programs\Python\Pyth
 
 :Python 3.8.8rc1 - Feb. p16, 2021
 ownload Windows embedda
-
-
-
-:_
-:iaa
-
-echo. & echo * Install AWS Amplify.
-
-echo.
-call m specific_file_presence package.json 
-
-if errorlevel 1 exit/b
-
-npm install -g @aws-amplify/cli
-
-exit/b
-
-lu:
-Sep-5-2021
 
 
 
@@ -856,31 +774,6 @@ exit/b
 
 
 
-:_
-:run
-:serv
-:star
-:start
-
-echo. & echo * Run React UI. Starts the development server.
-
-call fe package.json || exit/b
-
-echo.
-start "NPM" cmd /k npm start
-rem npm run start
-
-exit/b
-
-rem lu:
-Oct-12-2023
-Sep-26-2023
-Aug-27-2021
-
-Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
-
-
-
 :_+ Local JSON Server
 
 
@@ -923,236 +816,6 @@ Footnote
 When I was doing the React Crash Course, before running the react, first you need to run this 
 JSON server command in order to start your local database so that data is available for the 
 "to do" app that we created.
-
-
-
-:_+ Installing (!fyinst)
-
-
-
-::_
-:inst
-
-echo. & echo * Install any dependencies listed in package.json.
-
-call fe package.json || exit/b
-
-echo.
-npm install
-
-exit/b
-rem lu: Aug-29-2023
-rem It's a good idea to run npm install before doing your build in case npm needs to update. - Sean
-rem If you have an issue with install or update, try deleting the node_modules subfolder.
-
-
-
-::_
-:inst-e
-echo. & echo * Install Express.
-
-call fe package.json || exit/b
-
-echo.
-
-npm install express
-
-exit/b
-rem lu: Sep-21-2023
-
-
-
-::_
-:inst-t
-echo. & echo * Install TypeScript.
-
-call fe package.json || exit/b
-
-echo.
-
-npm install typescript --save-dev
-rem npm i -g typescript
-
-exit/b
-rem lu: Aug-29-2023
-
-If you don't install it globally, the tsc command doesn't seem to work. Oct-26-2021
-
-
-
-::_
-:inst-tn
-echo. & echo * Install Types for Node.
-
-call fe package.json || exit/b
-
-echo.
-npm install i -D @types/node
-
-exit/b
-rem lu: Aug-29-2023
-
-
-
-::_
-:inst_s
-
-echo. & echo * Install third party package and save setting in the package.json file.
-
-rem lu: Sep-12-2018
-
-echo.
-if not exist package.json (
-  echo.
-  echo * Error: The file package.json does not exist in the current folder.
-  exit/b
-)
-
-echo.
-npm install %2
-
-exit/b
-
-
-
-::_
-:inst_g
-
-echo. & echo * Globally install a package so that it works everywhere on the command line.
-
-rem lu: Apr-24-2018
-
-echo.
-echo.
-npm i %2 -g
-
-rem npm install -g %2
-
-rem Examples:
-rem npm install -g cordova
-rem npm install -g ionic
-rem npm install -g jspm
-rem npm install -g taco-cli
-rem npm install -g typings
-
-rem The equivalent command for Mac would be: sudo npm -install -g %2
-
-exit/b
-
-
-
-::_
-:inst_sd
-
-echo. & echo * Install package and save setting in the development section of the package.json file.
-
-rem lu: Apr-24-2018
-
-echo.
-echo.
-npm install %2 --save--dev
-
-exit/b
-
-
-
-::_
-:inst_gh
-
-echo. & echo * Install a package using its GitHub URL.
-
-rem lu: Apr-24-2018
-
-echo.
-call n %2
-
-echo.
-npm i %cbf-url%
-
-exit/b
-
-
-
-::_
-:inst_svh
-
-echo. & echo * Install a specific version of a package and HOLD at this version.
-
-set fp=%fp% NPM will not upgrade automically in this case.
-
-rem lu: Apr-24-2018
-
-echo.
-echo.
-npm i underscore@1.8.2 --save --save-exact
-
-exit/b
-
-
-
-::_
-:inst_sv
-
-echo. & echo * Install a specific version of a package.
-
-set fp=%fp% Given this example, this will install the latest 1.8 version.
-
-rem lu: Apr-24-2018
-
-echo.
-echo.
-
-rem For example: npm i underscore@1.7 --save
-
-npm i %2 --save
-
-exit/b
-
-
-
-::_
-:npmh
-
-echo. & echo * NPM install command for Sencha on Windows.
-
-rem lu: Mar-1-2018
-
-
-echo.
-
-npm install -g sencha
-
-exit/b
-
-
-
-::_
-:npmc
-
-echo. & echo * NPM install command for Sencha on Windows.
-
-rem lu: Mar-1-2018
-
-echo.
-npm install -g sencha-cmd
-
-exit/b
-
-
-
-::_
-:iac
-
-echo. & echo * Install Angular client.
-
-echo.
-npm install -g @angular/cli
-
-exit/b
-
-rem lu: 
-Sep-22-2023
-Feb-11-2019
 
 
 
@@ -1472,6 +1135,341 @@ npm ERR! command failed
 npm ERR! command C:\WINDOWS\system32\cmd.exe /d /s /c create-svelte svelte-example
 
 npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_logs\2024-01-02T21_19_40_474Z-debug-0.log
+
+
+
+:_
+:run
+:serv
+:star
+:start
+
+echo. & echo * Run React UI. Starts the development server.
+
+call fe package.json || exit/b
+
+echo.
+start "NPM" cmd /k npm start
+rem npm run start
+
+exit/b
+
+rem lu:
+Oct-12-2023
+Sep-26-2023
+Aug-27-2021
+
+Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
+
+
+
+:_
+:run_tests
+:test
+
+echo. & echo * Starts the test runner.
+
+rem skw: Run tests. (skw run unit tests)
+
+echo.
+if not exist "package.json" (
+  echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
+  exit/b
+)
+
+npm test
+
+exit/b
+
+
+>< >< Footnote:
+
+Here is the result of my first unit test run in deli on Mar-6-2020.
+
+ PASS  src/test/javascript/spec/app/... *.ts
+
+Test Suites: 40 passed, 40 total
+Tests:       132 passed, 132 total
+Snapshots:   0 total
+Time:        128.601s
+Ran all test suites.
+
+
+
+:_+ Installing (!fyinst)
+
+
+
+::_
+:inst
+
+echo. & echo * Install any dependencies listed in package.json. Install the required dependencies of the app.
+
+call fe package.json || exit/b
+
+echo.
+npm install
+
+exit/b
+rem lu: Aug-29-2023
+rem It's a good idea to run npm install before doing your build in case npm needs to update. - Sean
+rem If you have an issue with install or update, try deleting the node_modules subfolder.
+
+
+
+::_
+:inst-e
+echo. & echo * Install Express.
+
+call fe package.json || exit/b
+
+echo.
+
+npm install express
+
+exit/b
+rem lu: Sep-21-2023
+
+
+
+::_
+:inst-t
+echo. & echo * Install TypeScript.
+
+call fe package.json || exit/b
+
+echo.
+
+npm install typescript --save-dev
+rem npm i -g typescript
+
+exit/b
+rem lu: Aug-29-2023
+
+If you don't install it globally, the tsc command doesn't seem to work. Oct-26-2021
+
+
+
+::_
+:inst-tn
+echo. & echo * Install Types for Node.
+
+call fe package.json || exit/b
+
+echo.
+npm install i -D @types/node
+
+exit/b
+rem lu: Aug-29-2023
+
+
+
+::_
+:inst_s
+
+echo. & echo * Install third party package and save setting in the package.json file.
+
+rem lu: Sep-12-2018
+
+echo.
+if not exist package.json (
+  echo.
+  echo * Error: The file package.json does not exist in the current folder.
+  exit/b
+)
+
+echo.
+npm install %2
+
+exit/b
+
+
+
+::_
+:inst_g
+
+echo. & echo * Globally install a package so that it works everywhere on the command line.
+
+rem lu: Apr-24-2018
+
+echo.
+echo.
+npm i %2 -g
+
+rem npm install -g %2
+
+rem Examples:
+rem npm install -g cordova
+rem npm install -g ionic
+rem npm install -g jspm
+rem npm install -g taco-cli
+rem npm install -g typings
+
+rem The equivalent command for Mac would be: sudo npm -install -g %2
+
+exit/b
+
+
+
+::_
+:inst_sd
+
+echo. & echo * Install package and save setting in the development section of the package.json file.
+
+rem lu: Apr-24-2018
+
+echo.
+echo.
+npm install %2 --save--dev
+
+exit/b
+
+
+
+::_
+:inst_gh
+
+echo. & echo * Install a package using its GitHub URL.
+
+rem lu: Apr-24-2018
+
+echo.
+call n %2
+
+echo.
+npm i %cbf-url%
+
+exit/b
+
+
+
+::_
+:inst_svh
+
+echo. & echo * Install a specific version of a package and HOLD at this version.
+
+set fp=%fp% NPM will not upgrade automically in this case.
+
+rem lu: Apr-24-2018
+
+echo.
+echo.
+npm i underscore@1.8.2 --save --save-exact
+
+exit/b
+
+
+
+::_
+:inst_sv
+
+echo. & echo * Install a specific version of a package.
+
+set fp=%fp% Given this example, this will install the latest 1.8 version.
+
+rem lu: Apr-24-2018
+
+echo.
+echo.
+
+rem For example: npm i underscore@1.7 --save
+
+npm i %2 --save
+
+exit/b
+
+
+
+::_
+:npmh
+
+echo. & echo * NPM install command for Sencha on Windows.
+
+rem lu: Mar-1-2018
+
+
+echo.
+
+npm install -g sencha
+
+exit/b
+
+
+
+::_
+:npmc
+
+echo. & echo * NPM install command for Sencha on Windows.
+
+rem lu: Mar-1-2018
+
+echo.
+npm install -g sencha-cmd
+
+exit/b
+
+
+
+::_
+:iac
+
+echo. & echo * Install Angular client.
+
+echo.
+npm install -g @angular/cli
+
+exit/b
+
+rem lu: 
+Sep-22-2023
+Feb-11-2019
+
+
+
+::_
+:inse
+:insls
+
+echo. & echo * Install serverless.
+
+rem lu: Jul-15-2021
+
+echo.
+npm install serverless -g
+
+exit/b
+
+
+Footnote
+>< >< ><
+
+I'm not sure I needed to run this command because when I ran the "npm install" command, I got
+a message that said:
+
+ �   Serverless Framework successfully installed!    �
+ �                                                   �
+ �   To start your first project run 'serverless'.   �
+
+Is this command folder-specific?
+
+
+
+::_
+:iaa
+
+echo. & echo * Install AWS Amplify.
+
+echo.
+call m specific_file_presence package.json 
+
+if errorlevel 1 exit/b
+
+npm install -g @aws-amplify/cli
+
+exit/b
+
+lu:
+Sep-5-2021
 
 
 
