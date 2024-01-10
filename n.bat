@@ -2364,16 +2364,18 @@ exit/b
 
 
 :_
-
+:gead
 :gett
 
-echo. & echo * Gettysburg Address.
+echo. & echo * The Gettysburg Address.
 
-rem lu: Aug-13-2018
-
+set cbf-skw=The Gettysburg Address
 set cbf-fn=%composable-batch-files%\Gettysburg_Address.txt
 
 exit/b
+
+lu:
+Aug-13-2018
 
 
 
