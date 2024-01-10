@@ -4367,7 +4367,10 @@ exit/b
 echo. & echo * IP Address.
 
 set cbf-skw=What's my ip address?
-set cbf-url=https://whatismyipaddress.com/
+set cbf-url=https://whatismyipaddress.com
+
+rem This site has some other cool tools as well as IP address.
+set cbf-url2=https://www.whatsmyip.org
 
 exit/b
 

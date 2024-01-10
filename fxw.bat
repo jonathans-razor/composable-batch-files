@@ -139,7 +139,6 @@ exit/b
 
 
 :_
-
 :rl
 
 echo. & echo * Art Playbook releases webpage.
@@ -152,7 +151,6 @@ exit/b
 
 
 :_
-
 :va
 
 echo. & echo * Vault home page.
