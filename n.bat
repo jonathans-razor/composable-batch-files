@@ -905,36 +905,29 @@ exit/b
 
 
 ::_
-
 :mtx
-
 :mtxps
 
 echo. & echo * Message to XPS.
 
-rem lu: Jan-31-2022
+call pn ro>nul
 
-call pn vdi>nul
-
-set cbf-fn=%cbf-pt%\Miscellany\message-to-xps.txt
+set cbf-fn=%cbf-pt%\message-to-xps.txt
 
 exit/b
+
+lu: 
+Jan-31-2022
 
 
 
 ::_
-
 :mtg
-
 :meet
 
 echo. & echo * Meeting.txt.
 
-rem lu: Feb-28-2022
-
-call pn vdi>nul
-
-set cbf-pt=%cbf-pt%\Miscellany
+call pn ro>nul
 
 set cbf-fn=%cbf-pt%\meeting.txt
 
@@ -1462,9 +1455,7 @@ exit/b
 
 
 ::_
-
 :gh
-
 :git
 
 echo. & echo * Git.
@@ -4361,6 +4352,45 @@ exit/b
 echo. & echo * Google image search - upload an image.
 
 set cbf-url=https://images.google.com/imghp?hl=en^^^&gws_rd=ssl
+
+exit/b
+
+
+
+:_ IP Address family (!fyip)
+
+
+
+::_
+:ip
+
+echo. & echo * IP Address.
+
+set cbf-skw=What's my ip address?
+set cbf-url=https://whatismyipaddress.com/
+
+exit/b
+
+
+
+::_
+:ipc
+
+echo. & echo * IP Address config/all.
+
+set cbf-app-quoteless=ipconfig/all
+
+exit/b
+
+
+
+:_
+:geh
+:gehe
+
+echo. & echo * German helmets.
+
+set cbf-skw=german helmets
 
 exit/b
 

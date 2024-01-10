@@ -54,6 +54,10 @@ rem Application
 set cbf-app=
 
 :
+rem Application - Quoteless
+set cbf-app-quoteless=
+
+:
 rem Application Location
 set cbf-app-location=
 
@@ -434,6 +438,10 @@ set cbf-shar=
 :
 rem Screenshot
 set cbf-ss=
+
+:
+rem Search Keyword(s)
+set cbf-skw=
 
 :
 rem S. website

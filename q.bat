@@ -11,6 +11,7 @@ call an kr>nul
 if "%~1" == "/dfw" goto download-for-windows
 if "%~1" == "/b" goto use-bing
 if "%~1" == "/kr" goto kr
+if "%~1" == "/s" goto use-skw
 
 goto main
 
@@ -24,12 +25,13 @@ cls
 
 echo. & echo * Query Google.
 
-echo. & echo * Usage: %0
+echo. & echo   Usage: %0
 
 echo. & echo * Parameter 1: 
 echo   "/kr", Chrome is used.
 echo   "/b", Bing is used.
 echo   "/dfw", the phrase " download for Windows" will be appended to your search query.
+echo   "/s", use cbf-skw as the search phrase.
 
 echo. & echo * Parameter 2 and greater: search keyword(s)
 
@@ -39,6 +41,10 @@ echo. & echo * Example(s):
 echo   %0 /b What is the meaning of life?
 echo   %0 What is the capital of Florida?
 echo   %0 /dfw Oracle VirtualBox
+echo   %0 /s ip
+
+rem I love this one. Jan-9-2024
+echo   %0 /s geh
 
 exit/b
 
@@ -89,6 +95,18 @@ exit/b
 set cbf-parameter=https://www.bing.com/search?q=%2 %3 %4 %5 %6 %7 %8 %9?
 call an kr
 call r
+exit/b
+
+
+
+:_
+:use-skw
+
+call n %2
+
+set cbf-parameter=https://www.bing.com/search?q=%cbf-skw%
+call r
+
 exit/b
 
 

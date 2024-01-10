@@ -175,6 +175,19 @@ Jan-3-2024
 
 :_
 
+echo. & echo * Testing ipconfig/all.
+
+rem ipconfig/all
+"c:\windows\system32\notepad.exe"
+
+exit/b
+
+Jan-3-2024
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -191,13 +204,16 @@ exit/b
 
 :_
 
-echo. & echo * 
+echo. & echo * Test passing parameters to q.bat from cbf-skw.
 
+call n ip
 
+@echo on
+call q %cbf-skw%
 
 exit/b
 
-Jan-3-2024
+Jan-9-2024
 
 
 

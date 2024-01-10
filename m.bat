@@ -4664,16 +4664,6 @@ Apr-11-2022
 
 
 
-:_
-:ipco
-cls
-echo. & echo * Ipconfig.
-ipconfig/all
-exit/b
-lu: Oct-10-2023
-
-
-
 :_+ Automated Openers
 
 

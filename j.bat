@@ -160,6 +160,14 @@ if not "%cbf-gs%" == "" (
 
 : 
 
+if not "%cbf-app-quoteless%" == "" (
+  rem echo. & echo * Run an application without quotes.
+  call r
+  exit/b
+)
+
+: 
+
 rem Note: This code block needs to be below the URL code block. Sep-19-2023
 if not "%cbf-app%" == "" (
   rem echo. & echo * Run an application. {cbf-app is non-blank. Aug-29-2023_11_59_AM}
