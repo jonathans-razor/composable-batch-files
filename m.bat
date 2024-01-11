@@ -3290,6 +3290,7 @@ exit/b
 ::_
 :demo
 :pres
+
 echo. & echo * Open presentation files.
 
 set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
@@ -3299,7 +3300,9 @@ start mew32 %cbf-fn-list%
 
 exit/b
 
-rem lu: Dec-15-2023
+rem lu:
+Jan-11-2024
+Dec-15-2023
 
 
 
