@@ -922,6 +922,22 @@ Jan-31-2022
 
 
 ::_
+:mt7
+
+echo. & echo * Message to SP7.
+
+call pn ro>nul
+
+set cbf-fn=%cbf-pt%\message-to-sp7.txt
+
+exit/b
+
+lu: 
+Jan-11-2024
+
+
+
+::_
 :mtg
 :meet
 
