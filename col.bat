@@ -84,10 +84,9 @@ exit/b
 :_
 :hellow
 
-echo. & echo * %1.
+echo. & echo * Hellow Orld.
 
-echo.
-color 4f
+color 8f
 
 exit/b
 
