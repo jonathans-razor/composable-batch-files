@@ -5,8 +5,10 @@ if "%~1" == "" goto show-cbf-variables
 if "%~1" == "?" goto help
 if "%~1" == "/c" goto clear-cbf-variables
 
-call :clear-cbf-variables
+rem call :clear-cbf-variables
+
 call n %1 || exit/b
+
 call :show-cbf-variables-2 %1
 
 exit/b
@@ -18,8 +20,11 @@ exit/b
 cls
 
 echo. & echo * Show or clear CBF environment variables.
+
 echo. & echo   Usage: %0 [space separated parameter(s)]
+
 echo. & echo * Parameter 1 (Optional): 
+
 echo   If left blank, current CBF variables are shown.
 echo   If "/c", CBF variables are cleared.
 echo   Else the CBF variables for the passed in alias are shown.
@@ -30,6 +35,7 @@ echo. & echo * Example(s):
 echo   %0 cbf
 
 exit/b
+
 lu:
 Oct-29-2022
 
@@ -502,14 +508,24 @@ exit/b
 
 :_
 :show-cbf-variables-2
-cls
+
+rem cls
+
 echo. & echo * Show CBF variables for "%1".
+
 goto main
+
+
 :show-cbf-variables
-cls
+
+rem cls
 echo. & echo * Show CBF variables.
+
+
 :main
+
 call el
+
 echo.
 set cbf
 

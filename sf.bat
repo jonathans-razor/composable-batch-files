@@ -2,8 +2,6 @@
 
 @echo off
 
-title CBF: %0
-
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
@@ -53,7 +51,7 @@ exit/b
 
 :validate-input
 
-call i /c>nul
+call i /c
 
 rem echo. & echo * Evaluate the parameter list.
 
