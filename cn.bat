@@ -61,13 +61,6 @@ rem creation date:
 
 
 :_
-:Sep-9-2023_7_28_PM
-
-exit/b
-
-
-
-:_
 :github-https
 echo. & echo * GitHub https.
 echo %2 | find /i "https">nul
