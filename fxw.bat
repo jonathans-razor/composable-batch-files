@@ -91,7 +91,7 @@ exit/b
 
 :_
 :gs
-call fx rt %1 br
+call fx rt %1 nt
 exit/b
 
 

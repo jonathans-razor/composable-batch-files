@@ -2804,11 +2804,16 @@ creation date: Aug-31-2023
 :gmai
 :gmail
 :j3
+
 echo. & echo * Gmail.
-call an br
+
+call an kr
 set cbf-url=https://mail.google.com
+
 exit/b
-creation date: Sep-7-2023
+
+creation date:
+Sep-7-2023
 
 
 
@@ -2999,15 +3004,22 @@ creation date: Sep-25-2023
 :bn
 :bing
 :new-bing
+
 echo. & echo * New Bing.
-call pn c>nul
-set cbf-lnk=%cbf-pt%\bing.url
+
+call an ed>nul
+set cbf-url=https://www.bing.com
+
 exit/b
+
+rem call pn c>nul
+rem set cbf-lnk=%cbf-pt%\bing.url
 
 set cbf-url=https://www.bing.com/search?q=Bing+AI
 https://www.bing.com/search?q=Bing+AI&showconv=1
 
 lu:
+Jan-10-2024
 Oct-9-2023
 
 Uses up-to-date data.
@@ -3331,12 +3343,19 @@ lu: Oct-16-2023
 ::_
 :le
 :leet
+
 echo. & echo * LeetCode.
-call an edge>nul
+
+call an nt>nul
+
 set cbf-gs=https://docs.google.com/spreadsheets/d/1cPViBct-hqOPcmxnw7awCmwNFFOqwpmbzbJaNhzwyPE/edit#gid=0
 set cbf-url=https://leetcode.com/problemset/all/
+
 exit/b
-lu: Oct-13-2023
+
+lu:
+Jan-10-2024
+Oct-13-2023
 
 
 
@@ -4326,6 +4345,7 @@ exit/b
 
 :_
 :nort
+:nt
 
 echo. & echo * Norton browser.
 
