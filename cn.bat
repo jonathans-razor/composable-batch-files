@@ -17,7 +17,7 @@ cls
 echo. & echo * Clone a repository.
 
 echo. & echo * Usage: %0 [space separated parameter(s)]
-echo. & echo If parameter 2 is left blank, GitHub https stored value is used.
+echo. & echo   If parameter 2 is left blank, GitHub https stored value is used.
 
 echo. & echo * Examples:
 echo   GitHub https, e.g: %0 /ghh https://github.com/jonathans-razor/For-Git-Testing.git
