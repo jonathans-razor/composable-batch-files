@@ -4841,6 +4841,8 @@ The convention of calling these "lnk" methods is very similar to having a .bashr
 ::_
 :lnk-sp7
 
+call col hellow
+
 echo. & echo * Initialize environment fpr %1.
 
 call %0 set-default-browser br

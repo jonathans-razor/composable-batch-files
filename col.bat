@@ -82,6 +82,18 @@ exit/b
 
 
 :_
+:hellow
+
+echo. & echo * %1.
+
+echo.
+color 4f
+
+exit/b
+
+
+
+:_
 
 :s
 
