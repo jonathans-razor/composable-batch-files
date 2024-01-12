@@ -3288,6 +3288,7 @@ exit/b
 
 
 ::_
+:do
 :demo
 :pres
 
