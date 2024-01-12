@@ -3293,8 +3293,9 @@ exit/b
 
 echo. & echo * Open presentation files.
 
-set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CC.asc"
+set cbf-fn-list="%dropbox%\savannah\reach out\j-sp7.asc"
+attrib +r "%dropbox%\savannah\reach out\cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\cc.asc"
 
 start mew32 %cbf-fn-list%
 
@@ -4851,7 +4852,7 @@ call %0 set-default-repository-folder c-aa-repos
 
 call %0 set-default-text-editor me
 
-call t a
+call t demo
 
 exit/b
 

@@ -188,6 +188,21 @@ Jan-3-2024
 
 :_
 
+echo. & echo * Test passing parameters to q.bat from cbf-skw.
+
+call n ip
+
+@echo on
+call q %cbf-skw%
+
+exit/b
+
+Jan-9-2024
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -204,16 +219,14 @@ exit/b
 
 :_
 
-echo. & echo * Test passing parameters to q.bat from cbf-skw.
+echo. & echo * 
 
-call n ip
+rem qq
 
-@echo on
-call q %cbf-skw%
 
 exit/b
 
-Jan-9-2024
+Jan-12-2024
 
 
 

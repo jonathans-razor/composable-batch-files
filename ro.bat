@@ -42,6 +42,8 @@ echo    %~n0 j1.txt /n
 
 exit/b
 
+skw: readonly
+
 lu: 
 Nov-15-2023
 

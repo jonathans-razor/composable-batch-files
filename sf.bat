@@ -51,7 +51,7 @@ exit/b
 
 :validate-input
 
-call i /c
+call i /c>nul
 
 rem echo. & echo * Evaluate the parameter list.
 
