@@ -4447,7 +4447,6 @@ exit/b
 
 echo. & echo * HarckerRank.
 
-rem qq
 set cbf-url=https://wwww.hackerrank.com
 
 exit/b
