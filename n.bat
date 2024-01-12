@@ -566,6 +566,7 @@ rem lu: Mar-28-2023
 ::_
 :ck
 :ckan
+rem
 :ckba
 :ckcs
 :ckjv
@@ -2644,42 +2645,24 @@ exit/b
 
 
 ::_
-
-:earl
-
-echo. & echo * Earl.
-
-rem lu: Jun-30-2019
-
-set cbf-fn=%dropbox%\savannah\reach out\earl.asc
-
-exit/b
-
-
-
-::_
-
 :sp7
 
-echo. & echo * SP7.
+echo. & echo * j-sp7.asc.
 
-rem lu: Feb-25-2020
-
-set cbf-fn=%dropbox%\savannah\reach out\sp7.asc
+call pn ro>nul
+set cbf-fn=%cbf-pt%\j-sp7.asc
 
 exit/b
 
 
 
 ::_
-
 :ipad
 
 echo. & echo * iPad.
 
-rem lu: Oct-12-2020
-
-set cbf-fn=%dropbox%\savannah\reach out\ipad.txt
+call pn ro>nul
+set cbf-fn=%cbf-pt%\ipad.txt
 
 exit/b
 
@@ -2836,10 +2819,14 @@ Sep-7-2023
 ::_
 :j7
 echo. & echo * Gmail.
+
 call an edge
 set cbf-url=https://mail.google.com
+
 exit/b
-creation date: Sep-21-2023
+
+creation date:
+Sep-21-2023
 
 
 
