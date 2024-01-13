@@ -211,6 +211,8 @@ cls
 
 echo. & echo * Reverse string from supported-languages-series-jj.
 
+call sep 2024
+
 if "%~2" == "" (
   set cbf-string-to-reverse=Desserts
 ) else (
@@ -240,6 +242,7 @@ call ph %1 %cbf-string-to-reverse%
 :corner-case
 
 echo.
+call sep 2024
 
 exit/b
 
@@ -251,6 +254,7 @@ exit/b
 cls
 
 echo. & echo * Versions from supported languages from %0.bat.
+call sep 2024
 
 :
 echo.
@@ -275,6 +279,7 @@ call ph vers
 :corner-case
 
 echo.
+call sep 2024
 
 exit/b
 
