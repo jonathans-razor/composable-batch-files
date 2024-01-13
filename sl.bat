@@ -177,6 +177,10 @@ rem JavaScript
 call nd %1
 
 :
+rem JavaScript - Browser Version
+echo. & echo * Hello world from JavaScript Brower version at "nd hwb".
+
+:
 :rem Perl
 echo. & echo * Hello world from Perl is available at "perl hello-world.pl".
 
@@ -185,21 +189,16 @@ rem Python
 call ph %1
 
 :
-re React
+rem React
+echo. & echo * Hello world from React is available at "nm hw".
 
-echo. & echo * React hello-world from %0.
+:
+rem TypeScript
+call ts hw
 
-call t dsa>nul
-cd hello-world-react
-call nm star>nul
-
-
-
-rem qq
 :corner-case
 echo.
 call sep 2024
-
 
 exit/b
 

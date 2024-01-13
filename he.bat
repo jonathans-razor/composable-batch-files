@@ -92,7 +92,6 @@ exit/b
 
 :perl
 
-rem qq
 perl hello-world.pl
 
 exit/b
@@ -109,7 +108,6 @@ exit/b
 
 
 
-rem qq
 :_  React
 
 :re
@@ -127,6 +125,7 @@ exit/b
 :_
 
 :ts
+rem qq
 
 call ts hw
 

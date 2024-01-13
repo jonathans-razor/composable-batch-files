@@ -498,13 +498,14 @@ Oct-7-2023
 
 ::_
 :hw
+:hwb
 
 echo. & echo * Start Angular Hello world.
 
 call t d>nul
 cd hello-world-angular
-call vc .
 call gu star
+call vc .
 call sf 4200
 
 exit/b
@@ -564,7 +565,6 @@ Sep-29-2023
 
 echo. & echo * Compile and start Angular.
 
-rem qq
 call fe package.json || exit/b
 
 echo.
