@@ -40,26 +40,6 @@ Oct-15-2019
 
 :_
 
-:build_fqt
-
-:ngf
-
-:build_for_fqt
-
-echo. & echo * Build for FQT.
-
-rem lu: Sep-17-2019
-
-echo.
-echo.
-ng build --configuration=fqt
-
-exit/b
-
-
-
-:_
-
 :ngp_old
 
 echo. & echo * Complie and start Angular for production - old. Not sure this works..
@@ -85,6 +65,26 @@ rem lu: Mar-19-2019
 echo.
 echo.
 ng build
+
+exit/b
+
+
+
+:_
+
+:build_fqt
+
+:ngf
+
+:build_for_fqt
+
+echo. & echo * Build for FQT.
+
+rem lu: Sep-17-2019
+
+echo.
+echo.
+ng build --configuration=fqt
 
 exit/b
 
@@ -474,6 +474,7 @@ Oct-6-2023
 
 :_
 :geco
+
 echo. & echo * Generate component.
 
 if "%~2" == "" (
@@ -497,13 +498,15 @@ Oct-7-2023
 
 ::_
 :hw
-:start-hello-world
+
 echo. & echo * Start Angular Hello world.
+
 call t d>nul
 cd hello-world-angular
 call vc .
 call gu star
 call sf 4200
+
 exit/b
 
 lu:
@@ -561,7 +564,8 @@ Sep-29-2023
 
 echo. & echo * Compile and start Angular.
 
-rem call fe package.json & if errorlevel 1 exit/b
+rem qq
+call fe package.json || exit/b
 
 echo.
 start "Angular" cmd /k ng serve
@@ -570,6 +574,8 @@ exit/b
 
 lu: 
 Oct-12-2023
+
+You could also use npm start here I think. Jan-12-2024
 
 
 

@@ -41,7 +41,6 @@ Oct-12-2023
 
 
 :_
-
 :cs
 
 call dn hw
@@ -61,7 +60,16 @@ exit/b
 
 
 :_
+:gu
 
+echo. & echo * Anuglar "hello world" is available at "gu hw".
+call gu hw
+
+exit/b
+
+
+
+:_
 :js
 
 call nd hw
@@ -82,18 +90,9 @@ exit/b
 
 :_
 
-:gu
-
-call gu hw
-
-exit/b
-
-
-
-:_
-
 :perl
 
+rem qq
 perl hello-world.pl
 
 exit/b
@@ -110,6 +109,7 @@ exit/b
 
 
 
+rem qq
 :_  React
 
 :re

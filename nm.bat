@@ -1138,64 +1138,6 @@ npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_l
 
 
 
-:_
-:run
-:serv
-:star
-:start
-
-echo. & echo * Run React UI. Starts the development server.
-
-call fe package.json || exit/b
-
-echo.
-start "NPM" cmd /k npm start
-rem npm run start
-
-exit/b
-
-rem lu:
-Oct-12-2023
-Sep-26-2023
-Aug-27-2021
-
-Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
-
-
-
-:_
-:run_tests
-:test
-
-echo. & echo * Starts the test runner.
-
-rem skw: Run tests. (skw run unit tests)
-
-echo.
-if not exist "package.json" (
-  echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
-  exit/b
-)
-
-npm test
-
-exit/b
-
-
->< >< Footnote:
-
-Here is the result of my first unit test run in deli on Mar-6-2020.
-
- PASS  src/test/javascript/spec/app/... *.ts
-
-Test Suites: 40 passed, 40 total
-Tests:       132 passed, 132 total
-Snapshots:   0 total
-Time:        128.601s
-Ran all test suites.
-
-
-
 :_+ Installing (!fyinst)
 
 
@@ -1211,9 +1153,13 @@ echo.
 npm install
 
 exit/b
-rem lu: Aug-29-2023
-rem It's a good idea to run npm install before doing your build in case npm needs to update. - Sean
-rem If you have an issue with install or update, try deleting the node_modules subfolder.
+
+lu:
+Aug-29-2023
+
+It's a good idea to run npm install before doing your build in case npm needs to update. - Sean
+
+If you have an issue with install or update, try deleting the node_modules subfolder.
 
 
 
@@ -1470,6 +1416,57 @@ exit/b
 
 lu:
 Sep-5-2021
+
+
+
+:_
+:run
+:serv
+:star
+:start
+
+echo. & echo * Run React UI. Starts the development server.
+
+call fe package.json || exit/b
+
+echo.
+start "Start NPM" cmd /k npm start
+
+exit/b
+
+rem lu:
+Oct-12-2023
+Sep-26-2023
+Aug-27-2021
+
+Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
+
+
+
+:_
+:run_tests
+:test
+
+echo. & echo * Starts the test runner.
+
+call fe package.json || exit/b
+
+echo.
+start "Start NPM" cmd /k npm test
+
+exit/b
+
+rem skw: Run tests. (skw run unit tests)
+
+Here is the result of my first unit test run in deli on Mar-6-2020.
+
+ PASS  src/test/javascript/spec/app/... *.ts
+
+Test Suites: 40 passed, 40 total
+Tests:       132 passed, 132 total
+Snapshots:   0 total
+Time:        128.601s
+Ran all test suites.
 
 
 

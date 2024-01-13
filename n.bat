@@ -71,12 +71,30 @@ Metadata: Track Size (!tsn)
 
 
 ::_
+:ascii-art-separator-2024
+
+echo. & echo * ASCII Art - %1.
+call n cbf
+set cbf-graphic=%cbf-pt%\ascii-art-separator-2024.txt
+
+exit/b
+
+lu:
+Sep-20-2023
+
+
+
+::_
 :ascii-art-2023-separator
+
 echo. & echo * ASCII Art - %1.
 call n cbf
 set cbf-graphic=%cbf-pt%\ascii-art-2023-separator.txt
+
 exit/b
-rem lu: Sep-20-2023
+
+lu:
+Sep-20-2023
 
 
 
@@ -1432,21 +1450,13 @@ exit/b
 
 
 ::_
-
 :git_bin
-
 :git_user_bin
-
 :gu
-
 :gub
-
 :sg
-
 :sugi
-
 :super_bin
-
 :super_git
 
 echo. & echo * Git power user bin. Loaded with utilities.
@@ -4434,6 +4444,8 @@ exit/b
 
 echo. & echo * HarckerRank.
 
+call pn it>nul
+set cbf-pt=%cbf-pt%\HackerRank
 set cbf-url=https://wwww.hackerrank.com
 
 exit/b

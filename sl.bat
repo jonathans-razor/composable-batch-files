@@ -150,26 +150,56 @@ exit/b
 cls
 
 echo. & echo * Hello world from supported-languages-series-jj.
+call sep 2024
 
 :
-call dn %1
+rem Angular
+echo. & echo * Hello world from Angular is available at "gu hw".
 
 :
-call gg %1
-
-:
-call jv %1
-
-:
+rem Batch
 call slf %1
 
 :
+rem C#/.NET
+call dn %1
+
+:
+rem Golang
+call gg %1
+
+:
+rem Java
+call jv %1
+
+:
+rem JavaScript
 call nd %1
 
 :
+:rem Perl
+echo. & echo * Hello world from Perl is available at "perl hello-world.pl".
+
+:
+rem Python
 call ph %1
 
+:
+re React
+
+echo. & echo * React hello-world from %0.
+
+call t dsa>nul
+cd hello-world-react
+call nm star>nul
+
+
+
+rem qq
 :corner-case
+echo.
+call sep 2024
+
 
 exit/b
 

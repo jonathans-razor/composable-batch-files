@@ -1,18 +1,28 @@
 :_
 
 @echo off
+
+if "%~1" == "" goto main
 if "%~1" == "?" goto help
-goto main
+
+goto %1
 
 
 
 :_
-
 :help
-echo. & echo * Draws an error graphic with an error message.
-echo. & echo * Usage: %0
+
+echo. & echo * Draws a separator.
+
+echo. & echo   Usage: %0 [Option parameters]
+
+echo. & echo * Parameter 1:
+echo   The name of your preferred separator.
+
 exit/b
-rem lu: Sep-22-2022
+
+lu:
+Sep-22-2022
 
 
 
@@ -26,9 +36,22 @@ rem lu: Sep-22-2022
 
 :_
 :main
+
 rem echo. & echo * Show Ascii art separator.
 call n ascii-art-2023-separator>nul
 type %cbf-graphic%
+
+exit/b
+
+
+
+:_
+:2024
+
+rem echo. & echo * Show Ascii art separator - 2024.
+call n ascii-art-separator-2024>nul
+type %cbf-graphic%
+
 exit/b
 
 
