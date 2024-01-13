@@ -1103,7 +1103,6 @@ exit/b
 
 
 ::_
-
 :te
 
 echo. & echo * Turn the template file into a new batch file.
@@ -1130,6 +1129,36 @@ exit/b
 
 lu:
 Feb-18-2022
+
+
+
+::_
+:sp
+
+echo. & echo * Turn the template file into a new batch file.
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+call t cbf
+
+echo.
+copy sparse.bat %2.bat
+
+call e %2.bat
+
+exit/b
+
+:help
+
+cls
+echo. & echo * Parameter Descriptions:
+echo   Parameter 2: Targeted batch file, without extension, to copy the template to.
+
+exit/b
+
+lu:
+Jan-12-2024
 
 
 

@@ -2993,7 +2993,7 @@ creation date: Sep-22-2023
 :bl
 :blr
 echo. & echo * Better life registry.
-call an br
+call an nt>nul
 set cbf-gs=https://docs.google.com/spreadsheets/d/10q6Lde4zafkKnqeSZq8uhgMI4c82DynKiL3dKAcpqGY/edit#gid=101239705
 exit/b
 creation date: Sep-25-2023
@@ -4444,7 +4444,9 @@ exit/b
 
 echo. & echo * HarckerRank.
 
+call an nt>nul
 call pn it>nul
+set cbf-gs=https://docs.google.com/spreadsheets/d/1GEYx1kiMVIUhrzTK50fKF8mqK45Sl2vW4znU9cf1XDc/edit#gid=0
 set cbf-pt=%cbf-pt%\HackerRank
 set cbf-url=https://wwww.hackerrank.com
 

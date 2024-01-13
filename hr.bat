@@ -1,2 +1,2 @@
 @echo off
- %0
+gs %0
