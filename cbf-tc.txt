@@ -103,9 +103,9 @@ example-  Prefix for files written by other authors for learning and comparison 
       gu  Angular.
 	   gub  Run a utility from the Git User Bin.
        h  Show the help file of a function routed parameter.
-      he  Hello world everyone. Runs all hello world programs separately or together.
     herk  Heroku.
     hist  Doskey /history. Display the previous 50 commands.
+      hw  Hello world everyone. Runs all hello world programs together.
      hw1  Hello world. The simplest possible batch file.
      hw2  Echo off, pause and exit.
      hw3  Teaches parameters for accessing help or none, exit/b and displaying help.
