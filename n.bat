@@ -4454,4 +4454,15 @@ exit/b
 
 
 
+:_
+:g
+
+echo. & echo * Grammarly.
+
+set cbf-app=%appdata%\Microsoft\Windows\Start Menu\Programs\Grammarly.lnk
+
+exit/b
+
+
+
 :_ (!efn)
