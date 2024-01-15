@@ -2095,6 +2095,24 @@ exit/b
 
 
 :_
+:Jan-10-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python 98-validate-binary-search-tree.py "[2,1,3]"
+python 98-validate-binary-search-tree.py "[5,1,4,null,null,3,6]"
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2118,16 +2136,18 @@ exit/b
 
 
 :_
-:Jan-10-2024
+:Jan-14-2024
 
 cls
 
 echo. & echo * %1.
 
 @echo on
-
-python 98-validate-binary-search-tree.py "[2,1,3]"
-python 98-validate-binary-search-tree.py "[5,1,4,null,null,3,6]"
+node email-regex-validation.js raybass17@gmail.com
+node email-regex-validation.js raybass17gmail.com
+node email-regex-validation.js raybass17@hotmail.com
+node email-regex-validation.js ray@aolcom
+node email-regex-validation.js ray@aol.com
 
 @echo off
 

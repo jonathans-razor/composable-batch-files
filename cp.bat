@@ -1199,7 +1199,7 @@ Jul-6-2022
 :le
 :py
 
-echo. & echo * Turn the Python template file into a new Python file.
+echo. & echo * Turn the Python template file into a new code file.
 
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
@@ -1207,11 +1207,11 @@ if "%~2" == "" goto help
 call t d>nul
 
 echo.
-copy /-y te.py %2.py
+copy /-y te.py %2
 
-call touc %2.py
+call touc %2
 
-call vc %2.py
+call vc %2
 
 exit/b
 
