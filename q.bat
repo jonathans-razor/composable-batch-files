@@ -113,8 +113,11 @@ exit/b
 
 :_
 :main
+
+echo. & echo * Google whatever you just typed.
+
 set cbf-parameter=https://www.google.com/search?q=%*?
-call an br
+call an br>nul
 call r
 exit/b
 
