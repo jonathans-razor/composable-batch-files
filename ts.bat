@@ -81,17 +81,6 @@ exit/b
 
 
 :_
-:hw
-rem echo. & echo * Hello world from %0.
-call t dsa>nul
-rem If I uncomment the transpile statement, the program won't run. Hmm. Oct-12-2023
-rem tsc hello-world-transpile-target.ts
-call nd hello-world-transpile-target.js
-exit/b
-
-
-
-:_
 :run
 
 echo. & echo * Transpile a TypeScipt file into JavaScript file.
@@ -123,6 +112,20 @@ if errorlevel 1 (
 )
 
 tsc -watch "%~2"
+
+exit/b
+
+
+
+:_
+:hw
+
+echo. & echo * Hello world from %0.
+
+call t dsa>nul
+rem If I uncomment the transpile statement, the program won't run. Hmm. Oct-12-2023
+rem tsc hello-world-transpile-target.ts
+call nd hello-world-transpile-target.js
 
 exit/b
 
