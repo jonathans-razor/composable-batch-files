@@ -91,53 +91,6 @@ Mar-27-2020
 
 
 :_
-:vers
-
-echo. & echo * Version.
-
-echo.
-docker version
-
-exit/b
-
-lu:
-Apr-2-2020
-
-
-
-:_
-:i
-:info
-
-echo. & echo * Info.
-
-echo.
-docker info
-
-exit/b
-
-lu:
-Apr-2-2020
-
-
-
-:_
-:lc
-:ps
-
-echo. & echo * List containers. Kurt used this a lot.
-
-echo.
-docker ps
-
-exit/b
-
-lu:
-Apr-2-2020
-
-
-
-:_
 :lic
 
 echo. & echo * List images and containers.
@@ -168,21 +121,6 @@ exit/b
 
 lu:
 Mar-27-2020
-
-
-
-:_
-:hw
-
-echo. & echo * Hello world.
-
-echo.
-docker run hello-world
-
-exit/b
-
-lu:
-Apr-2-2020
 
 
 
@@ -221,17 +159,6 @@ Mar-28-2022
 echo. & echo * Load.
 
 docker load -i golang.tar
-
-exit/b
-
-
-
-:_
-:ps
-
-echo. & echo * Ps.
-
-docker ps -a | grep go-node-image
 
 exit/b
 
@@ -288,7 +215,8 @@ docker container stop %2
 
 exit/b
 
-lu: Apr-12-2023
+lu:
+Apr-12-2023
 
 
 
@@ -323,4 +251,201 @@ exit/b
 
 
 
-:_ (!efdok)
+:_+ Deleting Images
+
+
+
+::_
+:de
+:rmi
+
+echo. & echo * Delete image.
+
+echo.
+docker rmi [Image Name]
+
+exit/b
+
+
+
+::_
+:des
+
+echo. & echo * Delete a specific node.
+
+rem for example.
+docker rm $(sleep_swanson)
+
+exit/b
+
+rem I think this deletes all nodes.
+docker rm $(docker ps -a | grep go-node)
+
+lu:
+Jul-18-2022
+
+
+
+::_
+
+:deu
+
+echo. & echo * Stop and remove user specified image.
+
+if "%~2" == "" (
+  call err The target instance ID is required. Jan-16-2024
+  exit/b
+)
+
+@echo on
+rem docker stop %2
+rem docker rm %2
+@echo off
+
+exit/b
+
+rem lu: Jan-16-2024
+
+
+
+:_
+:vers
+
+echo. & echo * Version.
+
+echo.
+docker version
+
+exit/b
+
+lu:
+Apr-2-2020
+
+
+
+:_
+:i
+:info
+
+echo. & echo * Info.
+
+echo.
+docker info
+
+exit/b
+
+lu:
+Apr-2-2020
+
+
+
+:_
+
+:kps
+
+set fp=* K.'s docker-compose commands. I'm not sure what they all do.
+
+
+echo.
+echo %fp%
+
+echo.
+docker-compose -f src/main/docker/app.yml up -d
+rem docker-compose up -d genlibrary-postgresql
+rem docker-compose -f src/main/docker/app.yml logs genlibrary-app
+rem docker-compose -f src/main/docker/app.yml up -d genlibrary-app
+rem docker-compose -f src/main/docker/app.yml logs -f genlibrary-app
+
+exit/b
+
+lu:
+Mar-6-2020
+
+
+
+:_
+:hw
+
+echo. & echo * Hello world.
+
+echo.
+docker run hello-world
+
+exit/b
+
+lu:
+Apr-2-2020
+
+
+
+:_
+:build
+
+echo. & echo * Build.
+
+docker build --progress=plain -t generic/go-node-image:latest . -f Dockerfile
+
+exit/b
+
+lu:
+Mar-28-2022
+
+
+
+:_
+:buildu
+
+echo. & echo * Build Ubuntu.
+
+docker build --progress=plain -t generic/go-node-image:latest . -f Dockerfile-ubuntu
+
+exit/b
+
+lu:
+Mar-28-2022
+
+
+
+:_
+:psg
+
+echo. & echo * Ps with Grep.
+
+docker ps -a | grep go-node-image
+
+exit/b
+
+
+
+:_
+:lc
+:ps
+
+echo. & echo * List containers. K. used this a lot.
+
+echo.
+docker ps
+
+exit/b
+
+lu:
+Apr-2-2020
+
+
+
+:_
+
+:run
+
+echo. & echo * Run.
+
+docker run -d generic/go-node-image:latest
+
+exit/b
+
+lu:
+Mar-28-2022
+
+
+
+:_ (!efdk)
