@@ -18,7 +18,7 @@ echo. & echo    Usage: %~n0 [space separated parameter(s)]
 echo. & echo  * Parameter 1:
 echo    Name of the function you wish to run.
 
-echo. & echo  * Batch file style: Multipurpose
+echo. & echo    Batch file style: Multipurpose
 
 echo. & echo  * Samples:
 echo    %~n0
@@ -35,18 +35,6 @@ Nov-8-2023
    .--.      .--.      .--.      .--.      .--.                 
  :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
         `--'      `--'      `--'      `--'      `--'     
-
-
-
-:_
-:up
-
-echo. & echo * Start and run an entire app on a standalone host that contains multiple service.
-
-echo.
-docker-compose up
-
-exit/b
 
 
 
@@ -146,6 +134,7 @@ exit/b
 
 lu:
 Apr-2-2020
+
 
 
 :_
@@ -274,7 +263,7 @@ exit/b
 :_
 :lico
 
-echo. & echo * List container.
+echo. & echo * List containers.
 
 docker container ls
 
@@ -319,6 +308,18 @@ exit/b
 
 lu:
 Apr-12-2023
+
+
+
+:_
+:up
+
+echo. & echo * Start and run an entire app on a standalone host that contains multiple service.
+
+echo.
+docker-compose up
+
+exit/b
 
 
 
