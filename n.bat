@@ -4465,4 +4465,15 @@ exit/b
 
 
 
+:_
+:licr
+
+echo. & echo * LinkedIn connection request.
+
+set cbf-url=https://www.linkedin.com/mynetwork
+
+exit/b
+
+
+
 :_ (!efn)

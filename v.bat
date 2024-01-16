@@ -108,7 +108,7 @@ echo. & echo * How do you escape a percent sign in a batch file?
 
 rem Answer: 2 '%' signs equals one.
 
-rem percent percent, double percent sign: skw
+rem skw: percent percent, double percent sign
 
 rem percent 20 issue in environment variables. skw
 
