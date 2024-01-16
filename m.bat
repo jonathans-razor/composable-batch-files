@@ -4790,30 +4790,6 @@ exit/b
 
 
 ::_
-
-:startup-lnk-xps
-
-call %0 lnk-xps
-
-call m a
-
-exit/b
-
-
-
-::_
-
-:startup-lnk-sp7
-
-call %0 lnk-sp7
-
-call m a
-
-exit/b
-
-
-
-::_
 :lnk-xps
 
 echo. & echo * Initialize environment fpr %1.
@@ -4853,7 +4829,7 @@ call %0 set-default-repository-folder c-aa-repos
 
 call %0 set-default-text-editor me
 
-call t demo
+call m demo
 
 exit/b
 
