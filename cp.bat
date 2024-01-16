@@ -1196,10 +1196,10 @@ Jul-6-2022
 
 
 :_
-:le
+:js
 :py
 
-echo. & echo * Turn the Python template file into a new code file.
+echo. & echo * Turn the code template file into a new code file.
 
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
@@ -1207,11 +1207,11 @@ if "%~2" == "" goto help
 call t d>nul
 
 echo.
-copy /-y te.py %2
+copy /-y te.%1 %2.%1
 
-call touc %2
+call touc %2.%1
 
-call vc %2
+call vc %2.%1
 
 exit/b
 
@@ -1219,7 +1219,7 @@ exit/b
 :help
 
 echo. & echo Parameter Descriptions:
-echo. & echo Parameter 2: Targeted new Python file, without extension, to copy the template to.
+echo. & echo Parameter 2: Targeted new code file, without extension, to copy the template to.
 
 exit/b
 
