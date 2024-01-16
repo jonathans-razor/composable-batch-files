@@ -132,3 +132,28 @@ exit/b
 
 
 :_
+:rs
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+call tsc reverse-string-3.ts
+
+set cbf-string=%2
+if "%~2" == "" set cbf-string=desserts
+
+echo.
+node reverse-string-3.js %cbf-string%
+
+@echo off
+
+exit/b
+
+Jan-15-2024
+
+
+
+:_

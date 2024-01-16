@@ -87,8 +87,11 @@ echo. & echo * Reverse string (%2) from %0.bat.
 
 call t d>nul
 
+set cbf-string=%2
+if "%~2" == "" set cbf-string=desserts
+
 echo.
-node reverse-string.js %2
+node reverse-string.js %cbf-string%
 
 exit/b
 

@@ -1489,4 +1489,17 @@ Is this folder based on a Brad Traversy tutorial? If so, we should've added a Yo
 
 
 
+:_
+:type
+
+echo. & echo * Install types.
+
+npm i --save-dev @types/node
+
+exit/b
+
+Jan-15-2024
+
+
+
 :_ (!efnm)
