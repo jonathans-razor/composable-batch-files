@@ -2113,6 +2113,26 @@ exit/b
 
 
 :_
+:Jan-14-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+node email-regex-validation.js raybass17@gmail.com
+node email-regex-validation.js raybass17gmail.com
+node email-regex-validation.js raybass17@hotmail.com
+node email-regex-validation.js ray@aolcom
+node email-regex-validation.js ray@aol.com
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2136,18 +2156,17 @@ exit/b
 
 
 :_
-:Jan-14-2024
+:Jan-16-2024
 
 cls
 
 echo. & echo * %1.
 
 @echo on
-node email-regex-validation.js raybass17@gmail.com
-node email-regex-validation.js raybass17gmail.com
-node email-regex-validation.js raybass17@hotmail.com
-node email-regex-validation.js ray@aolcom
-node email-regex-validation.js ray@aol.com
+
+node 1012-numbers-with-repeated-digits.js 20
+node 1012-numbers-with-repeated-digits.js 40
+node 1012-numbers-with-repeated-digits.js 100
 
 @echo off
 
