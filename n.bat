@@ -558,16 +558,6 @@ rem lu: Mar-08-2023
 
 
 :_
-:sz
-echo. & echo * Share-zone
-call pn dr
-set cbf-pt=%cbf-pt%\it\share-zone
-exit/b
-creation date: Mar-22-2023
-
-
-
-:_
 :ssh
 echo. & echo * SSH folder.
 call pn h>nul
@@ -1824,7 +1814,7 @@ exit/b
 :res
 :mcr
 :resmc
-:s
+:sz
 :v
 :pete
 :psc
