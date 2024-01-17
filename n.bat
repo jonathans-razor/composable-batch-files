@@ -1102,9 +1102,6 @@ Nov-3-2021
 
 rem echo. & echo * Chrome.
 
-lu:
-Jan-24-2018
-
 set cbf-app=
 
 if exist "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" set cbf-app=C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
@@ -1118,6 +1115,9 @@ if "%cbf-app%" == "" (
 )
 
 exit/b
+
+lu:
+Jan-24-2018
 
 
 
