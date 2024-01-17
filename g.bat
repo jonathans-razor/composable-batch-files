@@ -1765,9 +1765,7 @@ Feb-6-2020
 echo. & echo * Delete branch, remote.
 
 if "%~2" == "" (
-  echo.
-  echo * Percent 2 is a required field.
-  exit/b
+  err * Percent 2, branch name, is a required field.
 )
 
 echo.
