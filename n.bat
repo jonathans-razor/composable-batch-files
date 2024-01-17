@@ -4085,7 +4085,7 @@ exit/b
      
 
 ::
-:sa
+:s
 :stag
 :staging-area
 echo. & echo * Staging area.
