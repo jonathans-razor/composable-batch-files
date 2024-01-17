@@ -259,6 +259,7 @@ exit/b
 :_
 :repl
 :sr
+
 echo. & echo * String replacement is cool.
 
 rem skw dos search and replace
@@ -269,10 +270,15 @@ echo. &
 cls
 
 :
+
 echo. & echo * Example 24: Replace "/e:" with nothing.
+
 set cbf-test=/e:no
+
 echo. & echo cbf-test (before replacement): %cbf-test%
+
 set cbf-test=%cbf-test:/e:=%
+
 echo. & echo  cbf-test (after replacement): %cbf-test%
 
 exit/b
@@ -286,14 +292,18 @@ echo %str:8445=%443
 
 :
 echo.
+
 echo Example 18: Remove the https, part 3.
 set str=https://www.fox.com
+
 echo.%str%
 echo %str:https://=%
 
 :
 echo.
+
 echo Example 17: Remove the https, part 2.
+
 set str=https://www.fox.com
 echo.%str%
 set str=https://www.fox.com 
@@ -308,7 +318,9 @@ set str=%ridiculous*:syncing%
 echo.%str%
 
 echo.
+
 echo Example 15: 
+
 set str='Authorization': 'Bearer eyJhb
 echo %str%
 set str=%bearer*:syncing%
@@ -329,7 +341,9 @@ set str=%str:'Bearer.*=new string%
 echo.%str%
 
 echo.
+
 echo Example 12: 'Authorization': 'Bearer eyJhb
+
 set str='Authorization': 'Bearer eyJhb
 echo %str%
 set str=%str:'Bearer=new string%
@@ -344,8 +358,7 @@ echo %str%
 set str=%str:dog=cat%
 echo.%str%
 
-echo.
-echo Example 10: Replace bearer and more text with syncing using a wildcard.
+echo. & echo * Example 10: Replace bearer and more text with syncing using a wildcard.
 set /p str=<c:\a\j1.txt
 echo %str%
 set str=%ridiculous*:syncing%
@@ -1896,6 +1909,7 @@ surrounded it with single, instead of double quotes.
 
 ::Notice that putting a space BEFORE the equals sign causes the variable to not be set.
 set horse2 = shit
+
 echo %horse2%
 
 if "%computer_alias%"=="LapTop" echo Improperly cased variable.
@@ -2091,11 +2105,14 @@ exit/b
 ::_
 :c4f
 cls
+
 echo. & echo * Call 4 functions.
+
 call %0 function-1
 call %0 function-2
 call %0 function-3
 call hw5 function-1
+
 exit/b
 
 
@@ -2321,6 +2338,7 @@ echo. & echo * Go to the where location.
 echo.
 where>c:\a\j1.txt
 set /p test=<where
+
 echo 'test:' %test%
 
 exit/b
@@ -2489,6 +2507,7 @@ Jul-18-2018
 echo %1| find /i ".">nul
 if errorlevel 0 goto
 if errorlevel 1 goto
+
 exit/b
 
 
@@ -2502,8 +2521,11 @@ exit/b
 echo. & echo * Find example.
 
 call m cel
+
 echo. & echo EL: %errorlevel%
+
 call g is-git-folder && echo true
+
 echo %1| find /i ".">nul
 echo %*| find /i "/s">nul
 

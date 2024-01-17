@@ -1416,6 +1416,7 @@ if "%~2" == "" (
 call pn sugi>nul
 
 @echo on
+
 echo.
 git branch -a | %cbf-pt%\grep %2
 @echo off
@@ -1798,7 +1799,9 @@ git branch -d branch name
 ::_
 :db
 :debr
+
 echo. & echo * Delete branch, local and remote.
+
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 set cbf-branch-to-delete=%2
@@ -1825,10 +1828,13 @@ set cbf-branch=
 call %0 debrlo %cbf-branch-to-delete%
 call %0 debrro %cbf-branch-to-delete%
 call git remote update
+
 exit/b
 
 :help
+
 echo. & echo * Parameter 2, the name of the branch to delete is required.
+
 exit/b
 
 
@@ -1840,6 +1846,7 @@ exit/b
 ::_
 :merg
 :merge
+
 echo. & echo * Straight merge of other branch into current branch favoring the other branch content.
 
 if "%~2" == "" (
@@ -2374,11 +2381,13 @@ git checkout %cbf-branch%
 if errorlevel 1 exit/b
 call pl
 call s
+
 exit/b
 
 :help
 
 echo. & echo * Parameter 2, branch to swtich to, descriptions
+
 echo   blank, m, ms or mast: master
 echo   mn: main
 echo   np: Now playing
@@ -2406,8 +2415,11 @@ exit/b
 
 ::_
 :sbr
+
 echo. & echo * Set branch to release.
+
 call %0 sb r
+
 exit/b
 
 
@@ -3338,7 +3350,9 @@ Mar-10-2020
 
 ::_
 :cbr
+
 echo. & echo * Create a new branch based on the releaseNew branch.
+
 if "%~2" == "" (
   echo.
   echo * Percent 2, destination branch, is a required field.
@@ -3358,13 +3372,16 @@ git checkout -b %cbf-branch%
 git push --set-upstream origin %cbf-branch%
 echo.
 @echo off
+
 exit/b
 
 
 
 ::_
 :cbm
+
 echo. & echo * Create a new branch based on the master branch.
+
 if "%~2" == "" (
   echo.
   echo * Percent 2, destination branch, is a required field.
@@ -3394,6 +3411,7 @@ exit/b
 :help
 
 echo. & echo * Parameter 2, branch to swtich to, descriptions
+
 echo   np: now playing
 echo   t: jrj-test
 
@@ -3407,11 +3425,15 @@ May-4-2021
 
 ::_
 :cb
+
 echo. & echo * Create a new branch based on specified source branch.
+
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 if "%~3" == "" goto help
+
 echo. & git checkout -b %3 %2
+
 if errorlevel 1 exit/b
 git push --set-upstream origin %3
 exit/b
@@ -3634,12 +3656,15 @@ cat ~/.gitconfig
 
 ::_
 :h-a
+
 echo. & echo * Show all configuration settings.
+
 rem show configuration, git-config
 cls
 call :g-s
 call :g-g
 call :g-l
+
 exit/b
 
 
@@ -4082,8 +4107,10 @@ lu:
 Feb-17-2023
 
 :help
+
 echo. & echo * Parameter Description(s):
 echo. & echo * Parameter 2: Name of the file you wish to check out.
+
 exit/b
 
 
@@ -4256,7 +4283,9 @@ exit/b
 ::_
 :cacm
 :commit-all
+
 echo. & echo * Commit all files with custom message.
+
 echo.
 
 if "%~2" == "" (

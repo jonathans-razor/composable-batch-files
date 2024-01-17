@@ -413,7 +413,6 @@ dir/b>%temp%\environment_variable_temporary_storage.txt
 rem echo Sep-19-2017.6
 
 set /p dynamic_server_location_part_1=<%temp%\environment_variable_temporary_storage.txt
-echo Sep-19-2017.7
 
 if exist "%dynamic_server_location_part_1%" rd /q /s "%dynamic_server_location_part_1%"
 
@@ -699,7 +698,6 @@ echo. & echo * Start WildFly. Refresh the environment.
 
 echo Sep-19-2017.1
 call :delete_wildfly_dynamic_folder
-echo Sep-19-2017.2
 
 rem Apr-18-2017: I commented out the below line because perhaps 25% of the time
 rem I kept having to restart WildFly.
@@ -805,6 +803,7 @@ if not "%user_option%"=="y" echo.
 if not "%user_option%"=="y" goto skip_version
 
 call :generate_version_number
+
 echo.
 
 pause
@@ -2238,6 +2237,7 @@ if exist %tmp%\certutil_output.txt del %tmp%\certutil_output.txt
 certutil -encode %tmp%\certutil_input.txt %tmp%\certutil_output.txt
 
 if exist %tmp%\certutil_input.txt del %tmp%\certutil_input.txt
+
 echo.
 
 exit/b
@@ -2250,9 +2250,12 @@ Jul-17-2017
 :_
 :update-java-timestamp
 :update_java_timestamp
+
 echo. & echo * Update Java timestamp.
+
 set classpath=%cbf-repo%\composable-batch-files
 call java Get_Timestamp_With_No_Spaces>%tmp%\java_timestamp.txt
+
 exit/b
 
 
@@ -2889,6 +2892,7 @@ rem echo %time_10%
 
 rem set combined_12=%2 - %computername% - %date_9%%time_10%
 set combined_12=%date_9%%time_10% - %computername%
+
 echo.>>%share-zone%\last_updated_log.txt
 echo %combined_12%>>%share-zone%\last_updated_log.txt
 
@@ -4314,7 +4318,6 @@ exit/b
 Footnote
 >< >< ><
 
-rem qq
 skw: specific folder
 
 
@@ -4850,6 +4853,7 @@ exit/b
 
 ::_
 :initialize-default-text-editor
+
 echo. & echo * Initialize default text editor.
 
 if /i "%computername%" == "asus" call m set-default-text-editor no

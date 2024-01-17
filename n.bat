@@ -32,6 +32,7 @@ echo. & echo   Parameter 1: Alias to run assignment for.
 
 echo. & echo * Example(s):
 echo   %0 cbf
+
 exit/b
 
 
@@ -344,7 +345,9 @@ Jul-17-2018
 ::_
 :c
 :cbf
+
 echo. & echo * Composable batch files.
+
 set cbf-branch=main
 set cbf-cn=git@github.com:jonathans-razor/Composable-Batch-Files.git
 
@@ -400,7 +403,9 @@ Sep-9-2023
 :jj
 :jjgh
 :jjgit
+
 echo. & echo * Jonathan's Github page.
+
 set cbf-gh=https://github.com/jonathans-razor
 set cbf-gh2=https://github.com/jonathans-razor?tab=repositories
 set cbf-gh3=https://github.com/settings/profile
@@ -444,7 +449,9 @@ Jan-24-2018
 
 ::_
 :obx
+
 echo. & echo *  OBX.
+
 call n r>nul
 set cbf-pt=%cbf-pt%\obx
 set cbf-ex=%dropbox%\savannah\Excels\obx.xls
@@ -504,6 +511,7 @@ Sep-25-2023
 
 :_
 :miss
+
 echo. & echo * Mission.
 
 call an br
@@ -1306,7 +1314,9 @@ exit/b
 
 ::_
 :j1j
+
 echo. & echo * j1.json.
+
 set cbf-pt=c:\a
 set cbf-fn=%cbf-pt%\%1.json
 
@@ -1352,6 +1362,7 @@ exit/b
 
 ::_
 :np2t
+
 echo. & echo * NP2 text.
 
 call pn 1m>nul
@@ -2003,10 +2014,15 @@ exit/b
 
 ::_
 :magn
+
 echo. & echo * Start Windows Magnifier.
+
 set cbf-app=%windir%\system32\magnify.exe
+
 exit/b
-lu: Oct-6-2023
+
+lu:
+Oct-6-2023
 
 
 
@@ -3477,6 +3493,7 @@ Mar-31-2022
 
 ::_
 :obf
+
 echo. & echo * An overcomplicated(?) way to call a batch file.
 
 call pn cbf>nul
@@ -3735,6 +3752,7 @@ Oct-17-2023
 :nppi
 
 set cbf-pd=Breakaway
+
 echo. & echo * %cbf-pd%.
 
 call pn pict
@@ -3805,6 +3823,7 @@ exit/b
 :wosa
 
 set cbf-pd=Work Safe
+
 echo. & echo * %cbf-pd%.
 
 call pn pict
@@ -3962,6 +3981,7 @@ Nov-1-2023
 :dnrs
 
 set cbf-pd=reverse-string
+
 echo. & echo * %cbf-pd%.
 
 call pn d>nul
@@ -3978,6 +3998,7 @@ Oct-31-2023
 :ndfz
 
 set cbf-pd=fizz
+
 echo. & echo * %cbf-pd%.
 
 call pn d>nul
@@ -4135,6 +4156,7 @@ Sep-29-2023
 :d3
 
 set cbf-pd=d3-js-data-visualization-full-course
+
 echo. & echo * %cbf-pd%.
 
 call pn it>nul
@@ -4200,6 +4222,7 @@ Nov-10-2023
 :cska
 
 set cbf-pd=css-kata
+
 echo. & echo * %cbf-pd%. 
 
 call pn it>nul
@@ -4230,11 +4253,16 @@ Nov-13-2023
 
 :_
 :mah
+
 set cbf-pd=Mission at Home
+
 echo. & echo * %cbf-pd%. 
+
 set cbf-gs=https://docs.google.com/spreadsheets/d/1MonEhCyxbEwQ^
 QZFsG6g-DD7gcO6DeyW3awwHUmyMVvM/edit#gid=506097238
+
 call an br>nul
+
 exit/b
 
 Note: I used a line continuation character above to circumvent a double q conflict.
@@ -4250,15 +4278,20 @@ Nov-14-2023
 
 ::_
 :gcc
+
 set cbf-pd=graphql-crash-course
+
 echo. & echo * %cbf-pd%. 
+
 call pn it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=xMCnDesBggM
 set cbf-gh=https://github.com/jonathans-razor/%cbf-pd%
 rem The original repo.
 set cbf-gh2=https://github.com/iamshaunjp/%cbf-pd%
+
 exit/b
+
 lu: 
 Nov-14-2023
 
@@ -4266,13 +4299,18 @@ Nov-14-2023
 
 ::_
 :apsa
+
 set cbf-pd=apollo-sandbox
+
 echo. & echo * %cbf-pd%. 
+
 call pn it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-url=https://studio.apollographql.com/sandbox/explorer/
 call an kr
+
 exit/b
+
 lu: 
 Nov-15-2023
 
@@ -4281,11 +4319,14 @@ Nov-15-2023
 :_
 :k9s
 set cbf-pd=k9s
+
 echo. & echo * %cbf-pd%. 
+
 call pn it>nul
 set cbf-gh=https://github.com/derailed/k9s/releases
 set cbf-yt=https://www.youtube.com/watch?v=q^
 qR0c-qcILI
+
 exit/b
 
 lu: 
@@ -4466,10 +4507,12 @@ Jun-06-2022
 
 :_
 :tr
+
 echo. & echo * Travel.
 
 call pn dr>nul
 set cbf-pt=%cbf-pt%\travel
+
 exit/b
 
 lu: 
@@ -4621,6 +4664,7 @@ Jan-26-2022
 echo. & echo * %1.
 call pn fj>nul
 set cbf-jd=%cbf-pt%\%1.png
+
 exit/b
 
 lu: 
@@ -4630,9 +4674,12 @@ Dec-5-2023
 
 :_
 :seja
+
 echo. & echo * Visual Studio Code user settings file.
+
 call pn apda>nul
 set cbf-fn=%cbf-pt%\code\user\settings.json
+
 exit/b
 
 lu: 
@@ -4697,9 +4744,12 @@ exit/b
 
 ::_
 :brc
+
 echo. & echo * Bash run commands.
+
 call pn home>nul
 set cbf-fn=%cbf-pt%\.bashrc
+
 exit/b
 
 rem Note: This points to the %HOME% folder. If that is not defined, it defaults to the
@@ -4709,9 +4759,12 @@ rem user profile folder.
 
 ::_
 :xbrc
+
 echo. & echo * XPS Bash run commands backup.
+
 call pn f>nul
 set cbf-fn=%cbf-pt%\.bashrc-xps-backup
+
 exit/b
 
 
@@ -4719,10 +4772,13 @@ exit/b
 ::_
 :ba
 :bash
+
 echo. & echo * Git bash.
+
 set cbf-pt=C:\Program Files\Git
 set cbf-app=C:\Program Files\Git\git-bash.exe
 rem if exist C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe set cbf-app=C:\Users\JJ\AppData\Local\Programs\Git\git-bash.exe
+
 exit/b
 
 
@@ -4792,6 +4848,7 @@ exit/b
 :_
 :hc
 :htyc
+
 echo. & echo * html-tags-youtube-course.
 
 call pn it>nul
@@ -4803,9 +4860,12 @@ exit/b
 
 :_
 :so
+
 echo. & echo * Learning software.
+
 call an br>nul
 set cbf-gs=https://docs.google.com/spreadsheets/d/1d5iDDqNyaVCXBxER40YEzaYimNM4x2YgDgkOneC6q6I/edit#gid=0
+
 exit/b
 
 

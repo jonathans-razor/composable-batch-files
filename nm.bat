@@ -66,12 +66,13 @@ a-language-i-am-trying-to-stay-current-with-series-jj
 
 echo. & echo * Involved help.
 
-rem lu: Apr-24-2018
-
 echo.
 npm help npm
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -80,13 +81,14 @@ exit/b
 
 echo. & echo * NPM help for a specific command.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm help %2
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -95,13 +97,14 @@ exit/b
 
 echo. & echo * NPM help-search for a specific command.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm help-search %2
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -145,12 +148,13 @@ exit/b
 
 echo. & echo * Set default license to MIT.
 
-rem lu: Apr-24-2018
-
 echo.
 npm set init-license 'MIT'
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -159,13 +163,14 @@ exit/b
 
 echo. & echo * Get default license setting.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm get init-license
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -178,12 +183,13 @@ exit/b
 
 echo. & echo * Verbose list of my globally installed packages.
 
-rem lu: Apr-24-2018
-
 echo.
 npm list -g --depth 0 --long true
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -192,13 +198,14 @@ exit/b
 
 echo. & echo * List of installed packages.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm list --long true
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -207,13 +214,14 @@ exit/b
 
 echo. & echo * List of installed packages that only I have installed. As opposed to the hierarchy of what those packages have installed.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm list --depth 0
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -222,12 +230,13 @@ exit/b
 
 echo. & echo * List of globally installed packages.
 
-rem lu: Apr-24-2018
-
 echo.
 npm list --global true
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -236,13 +245,14 @@ exit/b
 
 echo. & echo * Verbose list of my globally installed packages in JSON format.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm list --global true --depth 0 --long true --json true
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -251,13 +261,14 @@ exit/b
 
 echo. & echo * Verbose list of my globally installed packages in JSON format for dev dependencies only.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm list --global true --depth 0 --long true --dev true
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -266,13 +277,14 @@ exit/b
 
 echo. & echo * Prune extraneous packages, that is, those that are not in the package.json file.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm prune
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -281,12 +293,13 @@ exit/b
 
 echo. & echo * Go to the GitHub repository for a given package.
 
-rem lu: Apr-24-2018
-
 echo.
 npm repo %2
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -295,13 +308,14 @@ exit/b
 
 echo. & echo * Add user which is similar to Git's author stuff.
 
-rem lu: Apr-25-2018
-
 echo.
 echo.
 npm adduser
 
 exit/b
+
+lu:
+Apr-25-2018
 
 
 
@@ -396,13 +410,14 @@ Apr-25-2018
 
 echo. & echo * Publish project to NPM.
 
-rem lu: Apr-25-2018
-
 echo.
 echo.
 npm publish
 
 exit/b
+
+lu:
+Apr-25-2018
 
 
 
@@ -411,13 +426,14 @@ exit/b
 
 echo. & echo * Publish project to NPM in a beta release.
 
-rem lu: Apr-25-2018
-
 echo.
 echo.
 npm publish --tag beta
 
 exit/b
+
+lu:
+Apr-25-2018
 
 
 
@@ -445,12 +461,13 @@ Apr-25-2018
 
 echo. & echo * Information about a named repository.
 
-rem lu: Apr-25-2018
-
 echo.
 npm info %2
 
 exit/b
+
+lu:
+Apr-25-2018
 
 
 
@@ -458,8 +475,6 @@ exit/b
 :bi
 
 echo. & echo * Batch install DutchTreat packages.
-
-rem lu: Sep-18-2018
 
 echo.
 call %0 inst bootstrap
@@ -469,6 +484,9 @@ call %0 inst jquery-validation-unobtrusive
 call %0 inst font-awesome
 
 exit/b
+
+lu:
+Sep-18-2018
 
 
 
@@ -508,7 +526,6 @@ npm run test
 
 exit/b
 
-
 Footnote
 >< >< ><
 
@@ -519,12 +536,13 @@ Footnote
 
 echo. & echo * Install cognito. (I actually ran this in bash, not cmd.)
 
-rem lu: Aug-26-2021
-
 echo.
 npm i amazon-cognito-identity-js
 
 exit/b
+
+lu:
+Aug-26-2021
 
 
 
@@ -535,8 +553,6 @@ exit/b
 
 echo. & echo * Removes this tool and copies build dependencies, configuration files and scripts &
 into the app directory. If you do this, you can�t go back!
-
-rem lu: Sep-2-2021
 
 echo.
 if not exist "package.json" (
@@ -549,6 +565,9 @@ npm run eject
 
 exit/b
 
+lu:
+Sep-2-2021
+
 Footnote
 >< >< ><
 
@@ -559,6 +578,7 @@ What does npm run eject do?
 :_
 :rb
 :rubi
+
 echo. & echo * Bundles the app into static files for production into a subfolder called "build".
 
 call fe package.json || exit/b
@@ -567,7 +587,9 @@ echo.
 npm run build
 
 exit/b
-rem lu: Aug-29-2023
+
+lu:
+Aug-29-2023
 
 
 
@@ -576,13 +598,13 @@ rem lu: Aug-29-2023
 
 echo. & echo * Set Python configuration path.
 
-rem lu: Sep-2-2021
-
 echo.
 npm config set python "C:\Users\J[put--name-of-user-of-interest-here]\AppData\Local\Programs\Python\Python38\python.exe"
 
 exit/b
 
+lu:
+Sep-2-2021
 
 Footnote
 >< >< ><
@@ -599,12 +621,13 @@ ownload Windows embedda
 
 echo. & echo * Install react icons.
 
-rem lu: Oct-12-2021
-
 echo.
 npm i react-icons
 
 exit/b
+
+lu:
+Oct-12-2021
 
 
 
@@ -617,8 +640,6 @@ exit/b
 
 echo. & echo * Run node in the dist folder.
 
-rem lu: Oct-26-2021
-
 echo.
 call m within_a_specific_folder dist & if errorlevel 1 exit/b
 
@@ -629,6 +650,9 @@ call col
 
 exit/b
 
+lu:
+Oct-26-2021
+
 
 
 :_
@@ -638,8 +662,6 @@ exit/b
 
 echo. & echo * Install dependencies from my BAPS project.
 
-rem lu: Oct-29-2021
-
 echo.
 call m specific_file_presence package.json & if errorlevel 1 exit/b
 
@@ -647,6 +669,9 @@ echo.
 npm i express dotenv cors needle
 
 exit/b
+
+lu:
+Oct-29-2021
 
 
 
@@ -661,7 +686,9 @@ echo.
 npm i -D nodemon
 
 exit/b
-rem lu: Nov-1-2021
+
+lu:
+Nov-1-2021
 
 
 
@@ -670,13 +697,14 @@ rem lu: Nov-1-2021
 
 echo. & echo * Run server on http://localhost:5000.
 
-rem lu: Oct-27-2021
-
 echo.
 echo.
 npm run dev
 
 exit/b
+
+lu:
+Oct-27-2021
 
 
 
@@ -684,8 +712,6 @@ exit/b
 :baps3
 
 echo. & echo * Install rate limit.
-
-rem lu: Nov-1-2021
 
 echo.
 call m specific_file_presence package.json & if errorlevel 1 exit/b
@@ -695,6 +721,9 @@ npm i express-rate-limit apicache
 
 exit/b
 
+lu:
+Nov-1-2021
+
 
 
 :_
@@ -702,12 +731,13 @@ exit/b
 
 echo. & echo * Install Firebase Tools.
 
-rem lu: Feb-14-2022
-
 echo.
 npm install -g firebase-tools
 
 exit/b
+
+lu:
+Feb-14-2022
 
 
 
@@ -716,12 +746,13 @@ exit/b
 
 echo. & echo * Install Poolside dependencies.
 
-rem lu: Feb-14-2022
-
 echo.
 npm i openai puppeteer @alpacahq/alpaca-trade-api
 
 exit/b
+
+lu:
+Feb-14-2022
 
 
 
@@ -734,13 +765,14 @@ exit/b
 
 echo. & echo * Uninstall "%2" global package and remove dependency section in the package.json file.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm uninstall %2 -g --save
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -749,13 +781,14 @@ exit/b
 
 echo. & echo * Uninstall "%2" local package and remove dependency section in the package.json file.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm uninstall %2 --save
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -764,13 +797,14 @@ exit/b
 
 echo. & echo * Uninstall "%2" global package.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm uninstall %2 -g
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -828,8 +862,6 @@ JSON server command in order to start your local database so that data is availa
 
 echo. & echo * Fix service worker issue.
 
-rem lu: Aug-27-2021
-
 echo.
 if not exist "package.json" (
   echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
@@ -838,6 +870,10 @@ if not exist "package.json" (
 
 npx msw init public/ --save
 
+exit/b
+
+lu:
+Aug-27-2021
 
 Footnote
 >< >< ><
@@ -848,8 +884,6 @@ rem Service Worker successfully created!
 
 I see your MSW is not running. - Thuy Sep-3-2021
 
-exit/b
-
 
 
 ::_
@@ -857,12 +891,13 @@ exit/b
 
 echo. & echo * NPKill, find all node modules that can be removed and allows you to delete them.
 
-rem lu: Aug-15-2022
-
 echo.
 npx npkill
 
 exit/b
+
+lu:
+Aug-15-2022
 
 
 
@@ -875,12 +910,13 @@ exit/b
 
 echo. & echo * Create a React app at root.
 
-rem lu: Aug-26-2021
-
 echo.
 npx create-react-app .
 
 exit/b
+
+lu:
+Aug-26-2021
 
 
 
@@ -888,8 +924,6 @@ exit/b
 :cra
 
 echo. & echo * Create a React app.
-
-rem lu: Aug-30-2021
 
 echo.
 if "%~2" == "" (
@@ -901,6 +935,9 @@ if "%~2" == "" (
 npx create-react-app %2
 
 exit/b
+
+lu:
+Aug-30-2021
 
 
 
@@ -1063,13 +1100,14 @@ Aug-12-2019
 
 echo. & echo * Update all dependencies to the latest version.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm update --save
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -1078,13 +1116,14 @@ exit/b
 
 echo. & echo * Update a single package dependency, in this case "%2".
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm update %2
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -1165,6 +1204,7 @@ If you have an issue with install or update, try deleting the node_modules subfo
 
 ::_
 :inst-e
+
 echo. & echo * Install Express.
 
 call fe package.json || exit/b
@@ -1174,12 +1214,15 @@ echo.
 npm install express
 
 exit/b
-rem lu: Sep-21-2023
+
+lu:
+Sep-21-2023
 
 
 
 ::_
 :inst-t
+
 echo. & echo * Install TypeScript.
 
 call fe package.json || exit/b
@@ -1190,7 +1233,9 @@ npm install typescript --save-dev
 rem npm i -g typescript
 
 exit/b
-rem lu: Aug-29-2023
+
+lu:
+Aug-29-2023
 
 If you don't install it globally, the tsc command doesn't seem to work. Oct-26-2021
 
@@ -1198,6 +1243,7 @@ If you don't install it globally, the tsc command doesn't seem to work. Oct-26-2
 
 ::_
 :inst-tn
+
 echo. & echo * Install Types for Node.
 
 call fe package.json || exit/b
@@ -1206,7 +1252,9 @@ echo.
 npm install i -D @types/node
 
 exit/b
-rem lu: Aug-29-2023
+
+lu:
+Aug-29-2023
 
 
 
@@ -1214,8 +1262,6 @@ rem lu: Aug-29-2023
 :inst_s
 
 echo. & echo * Install third party package and save setting in the package.json file.
-
-rem lu: Sep-12-2018
 
 echo.
 if not exist package.json (
@@ -1229,14 +1275,15 @@ npm install %2
 
 exit/b
 
+lu:
+Sep-12-2018
+
 
 
 ::_
 :inst_g
 
 echo. & echo * Globally install a package so that it works everywhere on the command line.
-
-rem lu: Apr-24-2018
 
 echo.
 echo.
@@ -1255,6 +1302,9 @@ rem The equivalent command for Mac would be: sudo npm -install -g %2
 
 exit/b
 
+lu:
+Apr-24-2018
+
 
 
 ::_
@@ -1262,13 +1312,14 @@ exit/b
 
 echo. & echo * Install package and save setting in the development section of the package.json file.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm install %2 --save--dev
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -1277,8 +1328,6 @@ exit/b
 
 echo. & echo * Install a package using its GitHub URL.
 
-rem lu: Apr-24-2018
-
 echo.
 call n %2
 
@@ -1286,6 +1335,9 @@ echo.
 npm i %cbf-url%
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -1296,13 +1348,14 @@ echo. & echo * Install a specific version of a package and HOLD at this version.
 
 set fp=%fp% NPM will not upgrade automically in this case.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 npm i underscore@1.8.2 --save --save-exact
 
 exit/b
+
+lu:
+Apr-24-2018
 
 
 
@@ -1313,8 +1366,6 @@ echo. & echo * Install a specific version of a package.
 
 set fp=%fp% Given this example, this will install the latest 1.8 version.
 
-rem lu: Apr-24-2018
-
 echo.
 echo.
 
@@ -1324,6 +1375,9 @@ npm i %2 --save
 
 exit/b
 
+lu:
+Apr-24-2018
+
 
 
 ::_
@@ -1331,14 +1385,14 @@ exit/b
 
 echo. & echo * NPM install command for Sencha on Windows.
 
-rem lu: Mar-1-2018
-
-
 echo.
 
 npm install -g sencha
 
 exit/b
+
+lu:
+Mar-1-2018
 
 
 
@@ -1347,12 +1401,13 @@ exit/b
 
 echo. & echo * NPM install command for Sencha on Windows.
 
-rem lu: Mar-1-2018
-
 echo.
 npm install -g sencha-cmd
 
 exit/b
+
+lu:
+Mar-1-2018
 
 
 
@@ -1366,7 +1421,8 @@ npm install -g @angular/cli
 
 exit/b
 
-rem lu: 
+lu:
+
 Sep-22-2023
 Feb-11-2019
 
@@ -1378,13 +1434,13 @@ Feb-11-2019
 
 echo. & echo * Install serverless.
 
-rem lu: Jul-15-2021
-
 echo.
 npm install serverless -g
 
 exit/b
 
+lu:
+Jul-15-2021
 
 Footnote
 >< >< ><
