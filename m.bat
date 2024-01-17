@@ -277,7 +277,6 @@ Feb-17-2017
 
 :_
 :tirem
-
 :run_tirem
 
 echo. & echo * Run Tirem.
@@ -337,7 +336,6 @@ Apr-5-2017
 
 :_
 :delete_target
-
 :delete_target_folder
 
 echo. & echo * Delete target folder so that you know you have a fresh war file.
@@ -371,7 +369,6 @@ exit/b
 
 :_
 :start_wildfly_do_not_delete_hex_folder
-
 :wilddn
 
 echo. & echo * Start WildFly - do not delete hex folder. Deprecated.
@@ -395,11 +392,8 @@ Apr-5-2017
 
 :_
 :del_dyn
-
 :del_hex
-
 :del_dynamic
-
 :delete_wildfly_dynamic_folder
 
 echo. & echo * Delete WildFly Dynamic Folder.
@@ -638,7 +632,6 @@ exit/b
 :_
 :copy
 :copy_for_test
-
 :copy_fresh_ext_js_into_wildfly_dynamic_folder
 
 call :delete_stale_ext_from_wildfly_dynamic_folder
@@ -789,8 +782,6 @@ set is_java_change_only=true
 set target_server=localhost
 
 echo. & echo * Run wizard for deployment to localhost that has Java changes only.
-
-
 
 goto begin_wizard_midway
 
@@ -1939,7 +1930,6 @@ set /P user_option=Would you like to run Sencha App Upgrade? (y/n):
 
 if "%user_option%"=="y" call h au
 
-
 set /P user_option=Would you like to add the MySql security setting? (y/n): 
 
 if "%user_option%"=="n" exit/b
@@ -2514,11 +2504,6 @@ Jul-16-2018
 
 echo. & echo * Delete bin and obj folders for Fresnel.
 
-lu:
-Jun-25-2018
-
-
-
 rem Delete obj folders.
 rd /q /s .\Fresnel\obj
 rd /q /s .\Fresnel.Android\obj
@@ -2530,6 +2515,9 @@ rd /q /s .\Fresnel.Android\bin
 rd /q /s .\Fresnel.iOS\bin
 
 exit/b
+
+lu:
+Jun-25-2018
 
 
 
@@ -4005,7 +3993,6 @@ Aug-16-2019
 
 ::_
 :cmd_start_db
-
 :lnk_db
 
 echo. & echo * Start local database.
@@ -4324,12 +4311,11 @@ echo * "%2" folder exists.
 
 exit/b
 
-
 Footnote
 >< >< ><
 
+rem qq
 skw: specific folder
-
 
 
 
@@ -4744,7 +4730,6 @@ exit/b
 
 ::_
 :lnk-vdi
-
 :vdi-cbf-rc
 
 echo. & echo * Initialize VDI environment.
@@ -5078,7 +5063,6 @@ Aug-13-2021
 
 ::_
 :convert_to_path
-
 :expand_to_path_only
 
 echo. & echo * Expand to path only.

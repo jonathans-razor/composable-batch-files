@@ -152,7 +152,6 @@ git --help>"%temp%\git_help.txt"
 
 "%cbf-default-text-editor%" "%temp%\git_help.txt"
 
-
 exit/b
 
 
@@ -357,7 +356,6 @@ May-3-2017
 
 :_
 :acpdoc
-
 :acp_for_documentation_changes
 
 echo. & echo * Add, commit and push for regression test document changes.
@@ -1750,7 +1748,6 @@ Feb-6-2020
 
 
 ::_ (!delb) (skw delete_branch)
-
 :debrro
 
 echo. & echo * Delete branch, remote.
@@ -1788,7 +1785,6 @@ echo.
 git branch -D %2
 
 exit/b
-
 
 Footnote
 >< >< >< 
@@ -2021,7 +2017,6 @@ Apr-16-2019
 
 
 ::_
-
 :mema
 
 echo. & echo * Merge master.
@@ -2038,7 +2033,6 @@ Dec-10-2019
 
 
 ::_
-
 :master_merge
 
 echo. & echo * Merging strategy.
@@ -2065,9 +2059,7 @@ Dec-11-2019
 
 
 ::_
-
 :mmou
-
 :merge_using_ours
 
 echo. & echo * Merge master into the release branch using the "ours" stategy.
@@ -2086,9 +2078,7 @@ Dec-10-2019
 
 
 ::_
-
 :merge_using_ours
-
 :muo
 
 echo. & echo * Merge the specified branch into the current branch using the "ours" strategy, that is the current branch wins.
@@ -2111,7 +2101,6 @@ Mar-3-2020
 
 
 ::_
-
 :meab
 
 echo. & echo * Merge abort can only be run after the merge has resulted in conflicts.
@@ -2128,7 +2117,6 @@ Dec-10-2019
 
 
 ::_
-
 :meth
 
 echo. & echo * Theirs strategy with Matt.
@@ -2144,7 +2132,6 @@ Mar-4-2020
 
 
 ::_
-
 :meth
 
 :metheirs
@@ -2216,13 +2203,9 @@ Aug-24-2022
 
 
 ::_
-
 :re
-
 :reba
-
 :rebase
-
 :rede
 
 echo. & echo * Rebase from develop branch.
@@ -2241,9 +2224,7 @@ Jan-24-2019
 
 
 ::_
-
 :rebase_m
-
 :rema
 
 echo. & echo * Rebase from master branch. How you get a git branch to update from its source master branch.
@@ -2290,7 +2271,6 @@ Jun-30-2021
 
 
 ::_
-
 :prbr
 
 echo. & echo * Switch to previous branch.
@@ -2306,7 +2286,6 @@ Nov-5-2021
 
 
 ::_
-
 :rebr
 
 echo. & echo * Rename current branch.
@@ -2324,7 +2303,6 @@ Nov-5-2021
 
 
 ::_
-
 :sb
 
 echo. & echo * Switch to an existing branch.
@@ -2398,7 +2376,6 @@ call pl
 call s
 exit/b
 
-
 :help
 
 echo. & echo * Parameter 2, branch to swtich to, descriptions
@@ -2417,7 +2394,6 @@ Oct-27-2022
 
 
 ::_
-
 :sbm
 
 echo. & echo * Set branch to master.
@@ -2437,7 +2413,6 @@ exit/b
 
 
 ::_
-
 :sbt
 
 echo. & echo * Set branch to test.
@@ -2449,7 +2424,6 @@ exit/b
 
 
 ::_
-
 :sbp
 
 echo. & echo * Switch to previous branch. A little trick I learned from Fireship.io.
@@ -2469,7 +2443,6 @@ Jun-21-2022
 
 
 ::_
-
 :sdb
 
 echo. & echo * Switch to default branch.
@@ -2507,9 +2480,7 @@ Jun-15-2022
 
 
 :_
-
 :dolo
-
 :download
 
 echo. & echo * Download Git for windows.
@@ -2528,7 +2499,6 @@ Nov-1-2021
 
 
 ::_
-
 :unst
 
 echo. & echo * Unstage a single file according to Git inline help.
@@ -2549,7 +2519,6 @@ Nov-1-2021
 
 
 ::_
-
 :unst2
 
 echo. & echo * Unstage a single file, version 2 from Traversy Media.
@@ -2570,7 +2539,6 @@ Nov-1-2021
 
 
 ::_
-
 :unst1
 
 echo. & echo * Unstage for commit. If Percent 2 is blank, all files will be unstaged.
@@ -2591,7 +2559,6 @@ This worked for Niroop's presentation on Nov-5-2020.
 
 
 :_
-
 :god
 
 echo. & echo * Graph, online and decorate.
@@ -2606,7 +2573,6 @@ Feb-4-2022
 
 
 :_
-
 :aec
 :ce
 :ec
@@ -2717,7 +2683,6 @@ Jan-16-2023
 
 
 ::_
-
 :rv-under-construction
 :rvfd
 :rvf
@@ -2907,7 +2872,6 @@ rem git checkout clean6.2
 
 
 ::_
-
 :rvallp
 
 echo. & echo * Revert all PERSISTENT changes from m6 and s6.
@@ -2948,7 +2912,6 @@ Aug-31-2017
 
 
 ::_
-
 :clean_report
 
 echo. & echo * Report on untracked files.
@@ -2963,7 +2926,6 @@ Sep-14-2017
 
 
 ::_
-
 :rv_pe
 
 echo. & echo * Revert persistent files. Revert files in need of constant reversion.
@@ -2999,7 +2961,6 @@ Aug-31-2017
 
 
 ::_
-
 :reset_head_2
 
 echo. & echo * Reset head by 2 id number versions. This enabled not to have to merge.
@@ -3035,9 +2996,7 @@ Aug-17-2018
 
 
 ::_
-
 :back
-
 :reset_head_1
 
 echo. & echo * The git equivalent of the back button. Reset head by 1 id number version.
@@ -3059,7 +3018,6 @@ Aug-7-2018
 
 
 ::_
-
 :rvrrm
 
 echo. & echo * Revert back to what's in the remote repo, master branch.
@@ -3077,9 +3035,7 @@ Oct-15-2019
 
 
 ::_
-
 :fix
-
 :fx
 
 echo. & echo * Fix last updated file by reverting and pulling it from repository.
@@ -3122,7 +3078,6 @@ git revert -m 1 c8e8a0252de705c09800700e7c6b17192bf72e02
 
 
 :_
-
 :st
 
 echo. & echo * Git status. Local examination only.
@@ -3137,7 +3092,6 @@ Aug-23-2022
 
 
 :_
-
 :br
 
 echo. & echo * Git branch.
@@ -3157,19 +3111,14 @@ Aug-23-2022
 
 
 ::_
-
 :pl
-
 :pul
-
 :pull
 
 echo. & echo * Pull. Get the latest code from the current branch.
 
 echo.
-
  
-echo. 
 git pull
 
 exit/b
@@ -3181,7 +3130,6 @@ exit/b
 
 
 ::_
-
 :csf
 
 echo. & echo * Commit single file with timestamp description.
@@ -3203,7 +3151,6 @@ exit/b
 
 
 ::_
-
 :psf
 
 echo. & echo * Fully automatic push single file with timestamped message.
@@ -3220,7 +3167,6 @@ exit/b
 
 
 ::_
-
 :ac
 
 echo. & echo * Add and commit all files with message.
@@ -3244,7 +3190,6 @@ Sep-21-2022
 
 
 ::_
-
 :asf
 :add_file
 
@@ -3264,7 +3209,6 @@ exit/b
 
 
 ::_
-
 :csfm
 
 echo. & echo * Commit single file with message.
@@ -3288,7 +3232,6 @@ exit/b
 
 
 ::_
-
 :psfm
 
 echo. & echo * Push single file with custom message.
@@ -3306,11 +3249,8 @@ exit/b
 
 
 ::_
-
 :rsf
-
 :rv_sf
-
 :rvsf
 
 echo. & echo * Revert or check out single file.
@@ -3358,9 +3298,7 @@ git-steps-seriess-jj
 
 
 ::_
-
 :add_dot
-
 :af
 
 echo. & echo * Add files in this folder and its children folders.
@@ -3453,7 +3391,6 @@ echo.
 
 exit/b
 
-
 :help
 
 echo. & echo * Parameter 2, branch to swtich to, descriptions
@@ -3478,7 +3415,6 @@ echo. & git checkout -b %3 %2
 if errorlevel 1 exit/b
 git push --set-upstream origin %3
 exit/b
-
 
 :help
 
@@ -3590,7 +3526,6 @@ Sep-28-2022
 
 
 ::_
-
 :stas-u
 
 echo. & echo * Use a stash based on index number passed in.
@@ -3606,9 +3541,7 @@ Nov-5-2021
 
 
 ::_
-
 :pop
-
 :unstash
 
 echo. & echo * Pop takes stashed changes and reapplies them.
@@ -3625,7 +3558,6 @@ Feb-11-2020
 
 
 ::_
-
 :stas-c
 
 echo. & echo * Clear the stash list.
@@ -3641,7 +3573,6 @@ Sep-28-2022
 
 
 ::_
-
 :sap
 
 echo. & echo * Stash and pop.
@@ -3664,9 +3595,7 @@ Jan-22-2018
 
 
 :_
-
 :ch
-
 :chec
 
 echo. & echo * Git checkout.
@@ -3731,7 +3660,6 @@ rem skw filename too long github
 
 
 ::_
-
 :sg-sslf
 
 echo. & echo * Set global ssl verify to false.
@@ -3763,7 +3691,6 @@ skw filename too long github
 
 
 ::_
-
 :s-cpat
 
 echo. & echo * Cache the personal access token credential.
@@ -3778,7 +3705,6 @@ Apr-7-2022
 
 
 ::_
-
 :s-asr
 
 echo. & echo * Set push.autoSetupRemote to true.
@@ -3790,7 +3716,6 @@ exit/b
 
 
 ::_
-
 :s-sslt
 
 echo. & echo * Set local http.sslverify to true.
@@ -3802,7 +3727,6 @@ exit/b
 
 
 ::_
-
 :s-crlf
 
 echo. & echo * When it comes to line endings, emulate what RestSharper has adopted.
@@ -3827,7 +3751,6 @@ git config --global core.autocrlf true
 
 
 ::_
-
 :coau
 
 echo. & echo * Configure author.
@@ -3966,7 +3889,6 @@ Dec-21-2022 Seemed to work.
 
 
 ::_
-
 :g-sg
 
 echo. & echo * Show system and global configuration settings. Note local settings are not shown.
@@ -3976,7 +3898,6 @@ call :g-s
 call :g-g
 
 exit/b
-
 
 git config --list
 
@@ -4045,7 +3966,6 @@ branch.master.merge=refs/heads/master
 
 
 ::_
-
 :g-s
 
 echo. & echo * Show system configuration settings.
@@ -4058,7 +3978,6 @@ exit/b
 
 
 ::_
-
 :g-g
 
 echo. & echo * Show global configuration settings.
@@ -4071,7 +3990,6 @@ exit/b
 
 
 ::_
-
 :g-l
 
 echo. & echo * Show local configuration settings
@@ -4084,7 +4002,6 @@ exit/b
 
 
 ::_
-
 :authwk
 :g-auwk
 
@@ -4097,7 +4014,6 @@ exit/b
 
 
 ::_
-
 :eg
 
 echo. & echo * Edit the current global configuration.
@@ -4110,7 +4026,6 @@ exit/b
 
 
 ::_
-
 :ug-ue
 
 echo. & echo * Unset global user name.
@@ -4130,7 +4045,6 @@ skw: How to unset a variable.
 
 
 ::_
-
 :sl-c
 :stor
 :s-stor
@@ -4179,7 +4093,6 @@ exit/b
 
 
 ::_
-
 :commit-changes-if-dirty
 :dirt
 
@@ -4202,7 +4115,6 @@ Oct-11-2023
 
 
 ::_
-
 :is_working_tree_clean
 
 echo. & echo * Is working tree clean?
@@ -4225,13 +4137,11 @@ lu: Mar-28-2019
 
 
 ::_
-
 :evaluate_folders_git_status
 
 echo. & echo * Evaluate folder's git status.
 
 rem echo.
-rem 
 
 call t %2>nul
 
@@ -4241,7 +4151,7 @@ call m clear_errorlevel_silently
 
 call s>%tmp%\git_status_message.txt
 
-
+:
 type %tmp%\git_status_message.txt | find /i "diverged">nul
 
 if %errorlevel% == 0 (
@@ -4250,7 +4160,7 @@ if %errorlevel% == 0 (
   exit/b 1
 )
 
-
+:
 type %tmp%\git_status_message.txt | find /i "behind">nul
 
 if %errorlevel% == 0 (
@@ -4259,7 +4169,7 @@ if %errorlevel% == 0 (
   exit/b 1
 )
 
-
+:
 type %tmp%\git_status_message.txt | find /i "modified:">nul
 
 if %errorlevel% == 0 (
@@ -4268,7 +4178,7 @@ if %errorlevel% == 0 (
   exit/b 1
 )
 
-
+:
 type %tmp%\git_status_message.txt | find /i "Untracked files:">nul
 
 if %errorlevel% == 0 (
@@ -4277,7 +4187,7 @@ if %errorlevel% == 0 (
   exit/b 1
 )
 
-
+:
 type %tmp%\git_status_message.txt | find /i "ahead">nul
 
 if %errorlevel% == 0 (
@@ -4319,7 +4229,6 @@ git-steps-seriess-jj
 
 
 ::_
-
 :catm
 :commit-all-with-timestamp-message
 
@@ -4379,7 +4288,6 @@ exit/b
 
 
 ::_
-
 :cbig
 
 echo. & echo * Commit with big description.
@@ -4396,7 +4304,6 @@ exit/b
 
 
 ::_
-
 :pullm
 
 echo. & echo * Pull master
@@ -4424,7 +4331,6 @@ git-steps-seriess-jj
 
 
 ::_
-
 :fixbranch
 
 echo. & echo * 14. Fix branch.
@@ -4437,7 +4343,6 @@ exit/b
 
 
 ::_
-
 :reor
 
 echo. & echo * Revove origin.
@@ -4459,7 +4364,6 @@ Dec-17-2019
 
 
 :_
-
 :is-git-folder
 
 rem echo. & echo * Is current folder a Git folder?

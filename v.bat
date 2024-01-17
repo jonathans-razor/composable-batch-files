@@ -26,7 +26,6 @@ echo. & echo   Batch file style: Multipurpose
 
 exit/b
 
-
 Note: The place of honor in this file is the very bottom. This where the latest functions are 
 placed. Jun-29-2023
 
@@ -112,8 +111,6 @@ rem percent 20 issue in environment variables. skw
 
 lu:
 Aug-2-2017
-
-
 
 set cbf-url='https://cyber-balance.visualstudio.com/SPDR%%20LOB/_git/Mobile'
 
@@ -525,7 +522,6 @@ exit/b
 lu:
 Jun-8-2018
 
-
 :help
 
 echo. & echo Parameter Descriptions
@@ -603,7 +599,6 @@ Jun-8-2018
 
 :_
 :ml
-
 :multiline
 
 echo. & echo * Ho to do multiline echo statements.
@@ -827,7 +822,6 @@ if "%current_iteration_number%" gtr "%x%" exit/b
 
 goto :iterate
 
-
 :loop
 
 echo. & echo * An endless loop that pauses for 3 seconds.
@@ -1041,11 +1035,9 @@ command >nul
 
 ^ This says to pipe the standard-output stream to null.
 
-
 command 2>nul
 
 ^ This says to pipe the standard-error stream to null.
-
 
 command 2>&1
 
@@ -1189,7 +1181,6 @@ Sep-1-2021
 
 :_+ CBF Template Library (!lbr)
 
-
 rem skw succinct (!succ)
 
 
@@ -1294,7 +1285,7 @@ Mar-1-2022
 
 Footnote:
 
-:https://stackoverflow.com/questions/4367930/errorlevel-inside-if
+https://stackoverflow.com/questions/4367930/errorlevel-inside-if
 
 
 
@@ -1725,7 +1716,6 @@ Jul-3-2023
 
 ::_
 :question
-
 :ffex
 :fiex
 
@@ -1878,7 +1868,7 @@ operator.
 
 if /i '%computer_alias%' == 'Laptop' echo Spaces around the '==' DON'T matter.
 
-:Notice also that set statement employ single "=" sign, whereas comparison employ 2 "=" signs.
+Notice also that set statement employ single "=" sign, whereas comparison employ 2 "=" signs.
 
 if /i '%computer_alias%'=='Laptop' echo Single quotes work, but NOT with ALL constructs so 
 should be avoided.
@@ -1915,7 +1905,7 @@ if '%computer_alias%_2' == 'Laptop' echo Percent signs within the environment va
 
 goto _xit
 
-:del "file identifier report.txt"
+del "file identifier report.txt"
 
 exit/b
 
@@ -2198,7 +2188,6 @@ exit/b
 
 
 
-
 :_
 :squi
 
@@ -2260,8 +2249,7 @@ Dec-1-2023
 
 :_+ Populating an environment variable from a file and Choice.
 
-:skw: setting an environment variable from a file
-
+rem skw: setting an environment variable from a file
 
 
 
@@ -2569,10 +2557,10 @@ exit/b
 lu:
 Oct-12-2023
 
-:command1 && command2 will run command1 and then command2, only if command1 succeeded (error 
+command1 && command2 will run command1 and then command2, only if command1 succeeded (error 
 level 0).
 
-::command1 || command2 will run command1 and then command2, only if command1 failed (error 
+command1 || command2 will run command1 and then command2, only if command1 failed (error 
 level not 0
 
 

@@ -27,7 +27,6 @@ echo. & echo In the function block corresponding to the label, you can set any o
 of the CBF environment variables. Typically this batch file would be called ^
 by a different batch file looking to set a particular CBF environment variable.
 
-
 echo. & echo   Usage: %0 [single parameter]
 echo. & echo   Parameter 1: Alias to run assignment for.
 
@@ -2281,19 +2280,18 @@ java version "1.8.0_341"
 Java(TM) SE Runtime Environment (build 1.8.0_341-b10)
 Java HotSpot(TM) Client VM (build 25.341-b10, mixed mode)
 
-
 Java Home on XPS on Nov-19-2021 is:             C:\Program Files\Eclipse Adoptium\jdk-17.0.1.12-hotspot
 Java Home on XPS on Nov-18-2021 is:             C:\Program Files\Java\jdk1.8.0_241
 Java Runtime Path on Nov-18-2021 (JRE_HOME) is: C:\Program Files\Java\jdk1.8.0_241\jre
 
 Java Home on ATOI on Dec-18-2020. I removed the first 1.
 
-:C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe
 C:\Program Files\Java\jdk1.8.0_241\bin\java.exe
 
 Java Home on XPS Nov-24-2020. I removed the first 2.
 
-:C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe
 C:\ProgramData\Oracle\Java\javapath\java.exe
 C:\Program Files\Java\jdk1.8.0_241\bin\java.exe
 
@@ -2346,7 +2344,6 @@ Apr-7-2021
 
 ::_
 :dh
-
 :docker-home
 
 echo. & echo * Docker home.
@@ -2834,7 +2831,6 @@ Feb-24-2020
 ::C:\Users\      jonat\AppData\Local\Microsoft\Windows\Themes\RoamedThemeFiles\DesktopBackground
 
 ::C:\Users\jrj.GCITECH\AppData\Local\Microsoft\Windows\Themes\Snowy Nig\DesktopBackground
-
 
 
 
@@ -4641,8 +4637,6 @@ exit/b
 
 lu: 
 Dec-14-2023
-
-
 
 
 
