@@ -86,7 +86,6 @@ Nov-2-2018
 
 
 ::_
-
 :caret
 :cubed-caret
 :hat-trick
@@ -101,7 +100,6 @@ exit/b
 
 
 ::_
-
 :percent_20
 
 echo. & echo * How do you escape a percent sign in a batch file?
@@ -112,7 +110,8 @@ rem skw: percent percent, double percent sign
 
 rem percent 20 issue in environment variables. skw
 
-rem fcd: Aug-2-2017
+lu:
+Aug-2-2017
 
 
 
@@ -126,7 +125,6 @@ exit/b
 
 
 ::_
-
 :ampe
 
 echo. & echo * The ampersand character allows you to multiple commands on single line.
@@ -140,12 +138,9 @@ exit/b
 
 
 ::_
-
 :
 
 echo. & echo * Test line continuation character in environment variables.
-
-rem lu: Jun-17-2019
 
 echo.
 set test=asdflasdff asdfasjklasdf asdflkasdfl  asdfasdfjklasdf asdfl asdf asdflasdfjklasdfl^
@@ -156,10 +151,12 @@ echo %test%
 
 exit/b
 
+lu:
+Jun-17-2019
+
 
 
 ::_
-
 :debug
 
 echo. & echo * Debugging statement.
@@ -171,7 +168,6 @@ exit/b
 
 
 ::_
-
 :pare
 
 echo. & echo * Escape character for a parenthesis.
@@ -180,8 +176,6 @@ rem skw what's the escape character for a batch file?
 
 rem Escaping Specific Characters: ^esch
 
-rem lu: Nov-20-2018
-
 echo.
 echo * Error: No "*.%2" file exist(s^) in the current folder.
 
@@ -189,16 +183,16 @@ rem echo The rain in Spain(s) is great.
 
 exit/b
 
+lu:
+Nov-20-2018
+
 
 
 ::_
-
 :at_sign
 
 echo. & echo * Use of the at sign "@" before rem. Even with echo on, the statement "Hello 2" will ^
 not be disploayed.
-
-rem lu: Jan-31-2019
 
 echo.
 
@@ -212,10 +206,12 @@ rem Hello 1.
 
 exit/b
 
+lu:
+Jan-31-2019
+
 
 
 :_
-
 :
 
 echo. & echo * Sample function that has help module. (!help)
@@ -234,7 +230,6 @@ exit/b
 
 
 :_
-
 :hlp
 
 echo. & echo *  help piped to a file.
@@ -434,7 +429,6 @@ exit/b
 
 
 :_
-
 :else
 
 echo. & echo * The else statement.
@@ -462,12 +456,9 @@ exit/b
 
 
 ::_
-
 :percent_2
 
 echo. & echo * Percent 2 is a required field.
-
-
 
 if "%~2" == "" (
   echo.
@@ -480,12 +471,9 @@ exit/b
 
 
 ::_
-
 :percent
 
 echo. & echo * Testing percent 2 and not equals.
-
-rem Function Creation Date: Jun-8-2018
 
 set test_var=Rain in Spain.
 
@@ -534,6 +522,9 @@ echo. & echo Good input.
 
 exit/b
 
+lu:
+Jun-8-2018
+
 
 :help
 
@@ -566,15 +557,9 @@ exit/b
 
 
 :_
-
 :var_com
 
 echo. & echo * Variable comparisons.
-
-rem lu: Jun-8-2018
-
-
-
 
 set variable_1=
 set variable_2=
@@ -611,19 +596,17 @@ rem https://stackoverflow.com/questions/9102422/windows-batch-set-inside-if-not-
 
 exit/b
 
+lu:
+Jun-8-2018
+
 
 
 :_
-
 :ml
 
 :multiline
 
 echo. & echo * Ho to do multiline echo statements.
-
-rem lu: Jun-7-2018 (!multiline)
-
-
 
 set cbf-filep=* Chicken Blah blah blahblah Blah blah blahblahBlah blah blahblahBlah blah
 set cbf-filep=%cbf-filep% 2 222 22 22 22 22 2 2 2 22  22 blah 222 22 2 to boldly go where
@@ -635,17 +618,19 @@ echo %cbf-filep%
 
 exit/b
 
+lu:
+Jun-7-2018
+
+(!multiline)
+
 
 
 :_
-
 :not
 
 echo. & echo * Testing inequality using the not statement.
 
 rem Imprimatur (!not, !notba)
-
-
 
 set message=hello
 
@@ -660,18 +645,13 @@ exit/b
 
 
 :_
-
 :math
-
-rem skw addition (!vmath)
 
 echo. & echo * Set math!
 
-rem lu: Jul-6-2018
+rem skw addition (!vmath)
 
 rem skw addition
-
-
 
 set /a addition=15+12
 
@@ -695,6 +675,9 @@ echo %division%
 
 exit/b
 
+lu:
+Jul-6-2018
+
 
 
 :_+ Guard Clause
@@ -702,14 +685,9 @@ exit/b
 
 
 ::_
-
 :guard_clause_caller
 
 echo. & echo * Guard clause caller.
-
-rem lu: Nov-1-2018
-
-
 
 call %0 guard_clause
 
@@ -726,17 +704,15 @@ echo * Guard claused passed.
 
 exit/b
 
+lu:
+Nov-1-2018
+
 
 
 ::_
-
 :guard_clause
 
 echo. & echo * Guard clause.
-
-rem lu: Nov-1-2018
-
-
 
 if not exist "%~2" (
   echo. & echo * Error: File "%~2" doesn't exist.
@@ -745,15 +721,15 @@ if not exist "%~2" (
 
 exit/b 0
 
+lu:
+Nov-1-2018
+
 
 
 :_
-
 :
 
 echo. & echo * Set statements aren't allowed inside if blocks so here is the workaround.
-
-rem lu: Feb-4-2019
 
 rem set statements inside if blocks: skw
 
@@ -764,30 +740,30 @@ if "%~2" == "" (
 
 exit/b
 
+lu:
+Feb-4-2019
+
 
 
 :_
-
 :
 
 echo. & echo * How to sort a file.
-
-rem lu: Feb-5-2019
 
 echo.
 sort j3.txt>j4.txt
 
 exit/b
 
+lu:
+Feb-5-2019
+
 
 
 :_
-
 :where
 
 echo. & echo * How to tell from where a command is being run.
-
-rem lu: Feb-5-2019
 
 goto Feb-5-2019
 
@@ -808,20 +784,23 @@ where j.bat
 
 exit/b
 
+lu:
+Feb-5-2019
+
 
 
 :_
-
 :locl
 
 echo. & echo * Load clipboard. How to put something onto the clipboard!
-
-rem lu: Feb-7-2019
 
 echo "This text is on the clipboard. Cool." | clip
 rem echo "%cbf-pt%" | clip
 
 exit/b
+
+lu:
+Feb-7-2019
 
 
 
@@ -830,12 +809,9 @@ exit/b
 
 
 ::_
-
 :do_while
 
 echo. & echo * A loop that iterates x amount of times.
-
-rem lu: Mar-30-2020
 
 set current_iteration_number=1
 set x=4
@@ -852,14 +828,9 @@ if "%current_iteration_number%" gtr "%x%" exit/b
 goto :iterate
 
 
-
-::_
-
 :loop
 
 echo. & echo * An endless loop that pauses for 3 seconds.
-
-rem lu: Mar-30-2020
 
 timeout /t 3
 
@@ -872,13 +843,14 @@ goto loop
 
 
 ::_
-
 :cowsay
 
 if "%~1" == "" cowsay Wait. What?
 
 exit/b
-rem lu: Sep-9-2023
+
+lu:
+Sep-9-2023
 
 
 
@@ -888,8 +860,6 @@ echo. & echo * Call t versus call %0 versus call label, parameter passing.
 
 rem Result: Stangely, when calling with a colon, parameter doesn't seem to work. Mar-31-2019
 
-rem lu: Mar-21-2019
-
 call %0 hw2 "Percent Zero!"
 
 call t hw2 "Called with t."
@@ -898,15 +868,15 @@ call :hw2 "Called with colon."
 
 exit/b
 
+lu:
+Mar-21-2019
+
 
 
 ::_
-
 :passing_spaces
 
 echo. & echo * Passing spaces in parameters.
-
-rem lu: Sep-9-2018
 
 echo.
 echo Percent 2: %2
@@ -916,17 +886,15 @@ echo Percent Squiggle 2: %~2
 
 exit/b
 
+lu:
+Sep-9-2018
+
 
 
 ::_
-
 :pass_spaces
 
 echo. & echo * The lesson learned is that you should put double quotes around parameters that may contain spaces.
-
-rem lu: Sep-9-2018
-
-
 
 call n sa
 
@@ -934,15 +902,15 @@ call %0 passing_spaces "%cbf-pt%"
 
 exit/b
 
+lu:
+Sep-9-2018
+
 
 
 ::_
-
 :
 
 echo. & echo * Checking the command line parameters.
-
-rem lu: Nov-27-2019
 
 echo.
 rem This equals the entire parameter list!
@@ -953,6 +921,9 @@ echo %2
 
 exit/b
 
+lu:
+Nov-27-2019
+
 
 
 :_+ Reflextion via Dynamic Variable Naming
@@ -960,12 +931,9 @@ exit/b
 
 
 ::_
-
 :ref3
 
 echo. & echo * Reflection version 3. Dynamic variable naming.
-
-rem lu: Mar-30-2020
 
 if "%~2" == "" (
   echo.
@@ -984,15 +952,15 @@ echo * Expanded variable: %cbf-expanded-variable%
 
 exit/b
 
+lu:
+Mar-30-2020
+
 
 
 ::_
-
 :ref4
 
 echo. & echo * Reflection version 4. Dynamic variable naming.
-
-rem lu: Mar-30-2020
 
 if "%~3" == "" (
   echo.
@@ -1011,15 +979,15 @@ echo * Expanded variable: %cbf-expanded-variable%
 
 exit/b
 
+lu:
+Mar-30-2020
+
 
 
 :_
-
 :
 
 echo. & echo * Test if folder exists. Test folder existence.
-
-rem lu: Apr-21-2020
 
 cd /d %dropbox%\Backups\Savannah
 
@@ -1035,6 +1003,9 @@ if %errorlevel% == 1 (
 
 exit/b
 
+lu:
+Apr-21-2020
+
 
 
 :_+ Suppressing Error Messages
@@ -1042,18 +1013,17 @@ exit/b
 
 
 ::_
-
 :htse
 
 echo. & echo * How to suppress error messages in batch files.
-
-rem lu: Nov-24-2020
 
 rem For example, this would suppress the standard cannot find label error message.
 goto %1 2>nul
 
 exit/b
 
+lu:
+Nov-24-2020
 
 Footnote
 >< >< >< 
@@ -1084,12 +1054,9 @@ command 2>&1
 
 
 ::_
-
 :
 
 echo. & echo * Interesting Java code snippet that I'm not sure what it does.
-
-rem lu: Jan-31-2019
 
 rem From gradlew.bat
 
@@ -1103,19 +1070,17 @@ if "%ERRORLEVEL%" == "0" echo Is zero.
 
 exit/b
 
+lu:
+Jan-31-2019
+
 
 
 ::_
-
 :tgw
 
 echo. & echo * Test goto with no label found.
 
 rem Is there a way to test if a label exists in a batch file before calling the goto statemnt?
-
-rem lu: Jul-9-2018
-
-
 
 rem goto nonexistinglabel
 
@@ -1134,15 +1099,15 @@ echo * Errorlevel: %errorlevel%
 
 exit/b
 
+lu:
+Jul-9-2018
+
 
 
 :_
-
 :
 
 echo. & echo * If not defined.
-
-rem lu: Nov-1-2019
 
 echo.
 set cbf-test=
@@ -1152,10 +1117,12 @@ if not defined cbf-test echo * cbf-test is not defined.
 
 exit/b
 
+lu:
+Nov-1-2019
+
 
 
 :_
-
 :old-help
 
 cls
@@ -1164,8 +1131,6 @@ echo.
 echo %cbf-filep%
 
 rem skw:
-
-rem lu: 
 
 echo.
 echo Batch file style: Single purpose
@@ -1205,8 +1170,6 @@ exit/b
 
 echo. & echo * Inheritance and global variables.
 
-rem lu: Sep-1-2021
-
 call pn tickl>nul
 
 set cbf-pd=1488
@@ -1219,6 +1182,9 @@ set cbf-jpg2=%cbf-pt%\%cbf-pd%\The difference between the riverstone and ETD fol
 
 exit/b
 
+lu:
+Sep-1-2021
+
 
 
 :_+ CBF Template Library (!lbr)
@@ -1229,12 +1195,9 @@ rem skw succinct (!succ)
 
 
 ::_
-
 :
 
 set cbf-pd=
-
-rem lu: 
 
 echo.
 echo * %cbf-pd%.
@@ -1252,7 +1215,6 @@ exit/b
 
 
 :_
-
 :hlp-old
 
 echo. & echo * Command line help.
@@ -1274,12 +1236,9 @@ exit/b
 
 
 :_
-
 :equa
 
 echo. & echo * Equality checking.
-
-rem lu: Feb-9-2022
 
 rem (!bfequa, !equa)
 
@@ -1292,8 +1251,10 @@ if "%1" == "" goto help
 
 if "%1" == "?" goto help
 
-
 exit/b
+
+lu:
+Feb-9-2022
 
 
 
@@ -1302,12 +1263,9 @@ exit/b
 
 
 ::_
-
 :el3
 
 echo. & echo =* Test error level inside an if block.
-
-rem lu: Mar-1-2022
 
 ::sets errorlevel to 0
 (call )
@@ -1331,6 +1289,9 @@ if errorlevel 9 echo equals 9 - this will not be printed
 
 exit/b
 
+lu:
+Mar-1-2022
+
 Footnote:
 
 :https://stackoverflow.com/questions/4367930/errorlevel-inside-if
@@ -1338,12 +1299,9 @@ Footnote:
 
 
 ::_
-
 :el2
 
 echo. & echo * Test error level when looking for folders.
-
-rem lu: Nov-1-2019
 
 rem This works.
 
@@ -1359,10 +1317,12 @@ if errorlevel 1 (
 
 exit/b
 
+lu:
+Nov-1-2019
+
 
 
 ::_
-
 :style_old
 
 echo. & echo * The errorlevel statement.
@@ -1399,12 +1359,9 @@ exit/b
 
 
 ::_
-
 :style_2
 
 echo. & echo * Test error level when looking for folders. %1
-
-rem lu: Nov-1-2019
 
 rem This works.
 
@@ -1420,15 +1377,15 @@ if %errorlevel% equ 0 (
 
 exit/b
 
+lu:
+Nov-1-2019
+
 
 
 ::_
-
 :style_10
 
 echo. & echo * Test error level when looking for folders. %1
-
-rem lu: Nov-1-2019
 
 rem This works.
 
@@ -1454,10 +1411,12 @@ if %errorlevel% == 0 (
 
 exit/b
 
+lu:
+Nov-1-2019
+
 
 
 :_
-
 :help-template (!hete)
 
 if "%2" == "?" goto help
@@ -1479,12 +1438,9 @@ exit/b
 
 
 ::_
-
 :
 
 echo. & echo * Testing computer name.
-
-rem lu: Apr-7-2022
 
 if %computername%==xps echo 1
 if %computername%==XPS echo 2
@@ -1492,15 +1448,15 @@ if /i %computername%==xps echo 3
 
 exit/b
 
+lu:
+Apr-7-2022
+
 
 
 ::_
-
 :teco
 
 echo. & echo * Testing computer name 2.
-
-rem lu: Apr-11-2022
 
 echo %computername% | find /i "xps">nul
 
@@ -1510,10 +1466,12 @@ if errorlevel 0 echo zero - Don't use this.
 
 exit/b
 
+lu:
+Apr-11-2022
+
 
 
 :_
-
 :or-operator-do-not-use
 
 echo. & echo * Or operator. THIS DOESN'T WORK. Apr-18-2023
@@ -1535,12 +1493,9 @@ exit/b
 
 
 ::_
-
 :epl2
 
 echo. & echo * Evaluate the parameter list, less capable version.
-
-rem lu: Nov-27-2019
 
 set d_switch=0
 set e_switch=0
@@ -1566,6 +1521,9 @@ echo %v_switch%
 
 exit/b
 
+lu:
+Nov-27-2019
+
 
 
 ::_
@@ -1589,7 +1547,6 @@ lu: Oct-19-2023
 
 
 ::_
-
 :ap
 :whli
 
@@ -1606,14 +1563,11 @@ lu: Oct-19-2023
 
 
 ::_
-
 :cla
 
 echo. & echo * How to save command line arguments. This works.
 
 rem Test percent star command.
-
-rem lu: Jan-31-2019
 
 rem set cmd_line_args=%*
 
@@ -1625,10 +1579,12 @@ echo Commanmd line Arguments: %*
 
 exit/b
 
+lu:
+Jan-31-2019
+
 
 
 ::_
-
 :acp
 :aclp
 :allp
@@ -1658,7 +1614,6 @@ exit/b
 
 
 ::_
-
 :aclp-test
 
 echo. & echo * 0: %0.
@@ -1671,12 +1626,9 @@ echo. & echo * 5: %5.
 
 
 ::_
-
 :telp2
 
 echo. & echo * Testing errorlevel part 2.
-
-rem lu: Jan-28-2022
 
 echo. & echo EL Begin: %errorlevel%
 
@@ -1698,10 +1650,12 @@ echo. & echo EL End: %errorlevel%
 
 exit/b
 
+lu:
+Jan-28-2022
+
 
 
 ::_
-
 :tfc
 
 echo. & echo * Test find command.
@@ -1725,7 +1679,6 @@ exit/b
 
 
 ::_
-
 :which_environment_is_currently_set
 
 echo. & echo * Which environment is the kiosk pointing to? (skw finding text in file)
@@ -1752,13 +1705,17 @@ exit/b
 
 :_
 :pfem
+
 echo. & echo * Proper formatting of error messages.
+
 echo.
+
 call err blah blah. Jul-11-2023_3_50_PM - %0.bat
+
 exit/b
 
-
-creation date: Jul-3-2023
+lu:
+Jul-3-2023
 
 
 
@@ -1771,7 +1728,9 @@ creation date: Jul-3-2023
 
 :ffex
 :fiex
+
 echo. & echo * Test for the exisitence of a file or folder.
+
 rem skw filename existence, Test if file exists. (!fe)
 call fe package.json & if errorlevel 1 exit/b
 
@@ -1783,19 +1742,18 @@ if errorlevel 1 (
 )
 
 exit/b
-rem lu: Aug-29-2023
+
+lu:
+Aug-29-2023
 
 
 
 ::_
-
 :old-fiex
 
 echo. & echo * File existence.
 
 rem See also specific_file_presence in m.bat.
-
-rem lu: Dec-27-2018
 
 echo.
 
@@ -1814,15 +1772,15 @@ if exist "mx.bat" (
 
 exit/b
 
+lu:
+Dec-27-2018
+
 
 
 ::_
-
 :th_specific_folder_presence
 
 echo. & echo * Test harness for specific_folder_presence.
-
-rem lu: Nov-11-2019
 
 call %0 specific_folder_presence .chef
 
@@ -1835,30 +1793,30 @@ echo * Run commands. Nov-11-2019 6:21 PM
 
 exit/b
 
+lu:
+Nov-11-2019
+
 
 
 ::_
-
 :hie
 
 echo. & echo * To get help on the "if exist" command, use this code block.
-
-rem lu: Dec-27-2018
 
 echo.
 if exist/?
 
 exit/b
 
+lu:
+Dec-27-2018
+
 
 
 ::_
-
 :finex
 
 echo. & echo * Test if a File does not exist.
-
-rem lu: Dec-27-2018
 
 if not exist "amx.bat" (
   echo.
@@ -1867,17 +1825,15 @@ if not exist "amx.bat" (
 
 exit/b
 
+lu:
+Dec-27-2018
+
 
 
 ::_
-
 :folder_exists_2
 
 echo. & echo * Testing whether a folder exists 2.
-
-rem lu: May-23-2018
-
-
 
 if exist "%1" (
   echo.
@@ -1888,10 +1844,12 @@ if not exist "%1" echo It does NOT exist.
 
 exit/b
 
+lu:
+May-23-2018
+
 
 
 ::_
-
 :section_1
 
 echo.
@@ -1932,7 +1890,6 @@ exit/b
 
 
 ::_
-
 :section_2
 
 echo.
@@ -1981,31 +1938,42 @@ exit/b
 
 ::_
 :
+
 echo. & echo * Test presence of a file type.
+
 echo dir *.cs| find /i ".cs">nul
+
 if errorlevel 0 echo el0
 if errorlevel 1 echo el1
 if errorlevel 2 echo el2
 
 exit/b
-creation date: Sep-25-2023
+
+lu:
+Sep-25-2023
 
 
 
 :_
 :shift
+
 rem This makes "no" for Notepad = %0, where it was %1.
+
 rem (!shift)
+
 shift/1
+
 echo. & echo * p0: %0
 echo. & echo * p1: %1
 echo. & echo * p2: %2
+
 exit/b
 
 
 
 :_
 :mclp
+
 echo. & echo * Testing maximum number of command line parameters.
 
 echo.
@@ -2232,14 +2200,14 @@ exit/b
 
 
 :_
-
 :squi
 
 echo. & echo * Squiggle help.
 
-rem lu: Dec-30-2018
-
 exit/b
+
+lu:
+Dec-30-2018
 
 rem call :code-execution-area
 rem echo %0     :code-execution-area
@@ -2298,7 +2266,6 @@ Dec-1-2023
 
 
 ::_
-
 :pev
 
 echo. & echo * How to populate an environment variable from a file. (!setp)
@@ -2328,17 +2295,21 @@ how do you set an environment variable from file
 
 ::_
 :
+
 echo. & echo * Can you put a call message into an environment variable?
+
 rem set environment variable from file
 call s>%tmp%\git_status_message.txt
 set /p git_status_message=<%tmp%\git_status_message.txt
+
 exit/b
-rem lu: Apr-1-2019
+
+lu:
+Apr-1-2019
 
 
 
 ::_
-
 :user_choice
 
 echo. & echo * Ask the user a question and proceed accordingly.
@@ -2355,12 +2326,9 @@ exit/b
 
 
 ::_
-
 :where
 
 echo. & echo * Go to the where location.
-
-rem lu: Jun-20-2019
 
 echo.
 where>c:\a\j1.txt
@@ -2369,6 +2337,9 @@ echo 'test:' %test%
 
 exit/b
 
+lu:
+Jun-20-2019
+
 
 
 :_+ Validation Family (!fyva) error-level-educational-series
@@ -2376,7 +2347,6 @@ exit/b
 
 
 ::_
-
 :old-style
 
 if errorlevel 1 exit/b (!el1, !ec, !gtr, !err, !erro, !el, !erle)
@@ -2409,12 +2379,9 @@ if not exist "%cbf-pt%" (
 
 
 ::_
-
 :elt1
 
 echo. & echo * Error level test 1. If this returns 1, it means error level is working!
-
-rem lu: Feb-17-2022
 
 rem canary in a coal mine, error level testing
 
@@ -2424,10 +2391,12 @@ call el
 
 exit/b
 
+lu:
+Feb-17-2022
+
 
 
 ::_
-
 :validate_filename
 
 call fnv %1
@@ -2456,7 +2425,6 @@ if not exist "%cbf-fn%" (
 
 
 ::_
-
 :validate_url
 
 call un %1
@@ -2477,7 +2445,6 @@ if "%cbf-url%" == "" (
 
 
 ::_
-
 :validate_application
 
 call an %1
@@ -2504,14 +2471,9 @@ if not exist "%cbf-app%" (
 
 
 ::_
-
 :reset-error-level
 
 echo. & echo * Test return codes for "n" calls. How do you reset errorlevel?
-
-rem lu: Jul-18-2018
-
-
 
 call n bullshit
 
@@ -2527,10 +2489,12 @@ echo * Errorlevel: %errorlevel%
 
 exit/b
 
+lu:
+Jul-18-2018
+
 
 
 ::_
-
 :
 
 (skw contains period, contains a period)
@@ -2573,7 +2537,7 @@ if %errorlevel% == 0 (
 
 exit/b
 
-rem lu:
+lu:
 Oct-11-2023
 Jul-5-2023
 
@@ -2592,7 +2556,6 @@ call s | find /i "working tree clean">nul
 
 
 ::_
-
 :new-style
 
 echo. & echo * New style error handling (!peri, !paco, !ampe)

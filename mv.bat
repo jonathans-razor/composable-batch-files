@@ -12,7 +12,6 @@ goto %1
 
 
 :_
-
 :help
 
 echo. & echo * Move files using function routing.
@@ -45,7 +44,6 @@ exit/b
 
 
 :_
-
 :to_path
 
 :move_files_in_current_folder_to_cbf-pt
@@ -73,7 +71,6 @@ exit/b
 
 
 :_
-
 :cpa
 
 echo. & echo * Move all files in the current directory to nickname-specified path.
@@ -105,7 +102,6 @@ exit/b
 
 
 ::_
-
 :pc2cj
 
 echo. & echo * Move podcasts from my PC computer's hard drive to ClipJam.
@@ -143,20 +139,18 @@ call :sa_2_cj
 
 exit/b
 
-rem lu: Nov-1-2022
+lu:
+Nov-1-2022
 
 
 
 ::_
-
 :2sa
 :pc-2-sa
 
 echo. & echo * Move podcasts to the staging folder.
 
-rem FCD: Aug-20-2022
-
-call pn sa>nul
+call pn s>nul
 
 set mp3_staging_area=%cbf-pt%
 
@@ -175,17 +169,17 @@ for /r %%j in (*.m4a) do move "%%j" "%mp3_staging_area%"
 
 exit/b
 
+lu:
+Aug-20-2022
+
 
 
 ::_
-
 :cj_2_old_cj
 
 rem echo. & echo * Move old ClipJam files from the Podcasts to Audiobooks folder.
 
 rem This ensures that the podcasts folder has the newest content.
-
-rem lu: Aug-20-2022
 
 call t clipjam_podcasts>nul
 
@@ -201,15 +195,15 @@ call :move_files_in_current_folder_to_cbf-pt
 
 exit/b
 
+lu:
+Aug-20-2022
+
 
 
 ::_
-
 :sa_2_cj
 
 rem echo. & echo * Move staging area podcasts to the Clipjam folder.
-
-rem lu: Aug-20-2022
 
 call t staging-area>nul
 
@@ -222,6 +216,9 @@ if %errorlevel% == 1 (
 call :move_files_in_current_folder_to_cbf-pt
 
 exit/b
+
+lu:
+Aug-20-2022
 
 
 
@@ -263,7 +260,6 @@ exit/b
 
 
 :_
-
 :cp
 :cps
 
@@ -307,7 +303,6 @@ exit/b
 
 
 :_
-
 :cp2
 
 echo. & echo * Move file in the current directory to nickname-specified path.

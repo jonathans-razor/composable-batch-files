@@ -15,6 +15,7 @@ goto %1
 
 :_
 :help
+
 echo. & echo * Git functions.
 
 echo. & echo * Usage: g [parameter(s)]
@@ -45,7 +46,9 @@ echo     spl  Super pull, i.e. pull all prewritten repositories.
 echo      ss  Super status, that is status for all selected repositories.
 
 exit/b
-rem lu: Sep-27-2022
+
+lu:
+Sep-27-2022
 
 
 
@@ -57,9 +60,7 @@ rem lu: Sep-27-2022
 
 
 :_
-
 :pushb
-
 :pushd
 
 echo. & echo * 3a. Push changes into development branch.
@@ -77,7 +78,6 @@ exit/b
 
 
 :_
-
 :aro3
 
 echo. & echo * 5a. Add remote origin for testing. This is a one-time action. (!arot)
@@ -91,7 +91,6 @@ exit/b
 
 
 :_
-
 :arot
 
 echo. & echo * 5a. Add remote origin for testing. This is a one-time action. (!arot)
@@ -105,7 +104,6 @@ exit/b
 
 
 :_
-
 :arot2
 
 echo. & echo * 5b. Add remote origin for testing. This is a one-time action.
@@ -119,7 +117,6 @@ exit/b
 
 
 :_
-
 :aroq
 
 echo. & echo * 5d. Add remote origin for Quickla. This is a one-time action.
@@ -133,7 +130,6 @@ exit/b
 
 
 :_
-
 :arob
 
 echo. & echo * 5e. Add remote origin for Batch Files. This is a one-time action.
@@ -147,7 +143,6 @@ exit/b
 
 
 :_
-
 :git_help
 
 echo. & echo * 8. Read help.
@@ -163,7 +158,6 @@ exit/b
 
 
 :_
-
 :pushnv1_refer
 
 echo. & echo * 3a. Push changes into Nov-1 development branch.
@@ -177,11 +171,8 @@ exit/b
 
 
 :_
-
 :push_nv
-
 :pushnv
-
 :pushnv_refer
 
 echo. & echo * pushnv
@@ -195,13 +186,11 @@ exit/b
 
 
 :_
-
 :pull62
 
 echo. & echo * Pull Clean 62.
 
 echo.
-
   
 echo.
 git pull clean6.2
@@ -211,14 +200,10 @@ exit/b
 
 
 :_
-
 :fetch
-
 :fetch_branch
 
 echo. & echo * Fetch branch.
-
-rem Creation Date: Jan-23-2017
 
 echo.
 rem Didn't work on Dec-20-2016.
@@ -231,10 +216,12 @@ git fetch
 
 exit/b
 
+lu:
+Jan-23-2017
+
 
 
 :_
-
 :pullo
 
 echo. & echo * 9b. Pull original branch.
@@ -249,28 +236,17 @@ exit/b
 
 
 :_
-
 :rpf
 
 echo. & echo * Remove an individual file.
-
-rem fcd: Feb-16-2017
 
 echo.
 git rm -f %2
 
 exit/b
 
-
-
-:_
-
-echo. & echo * This code block was added from my machine named Buzz.
-
-rem fcd: Feb-28-2017
-
-echo.
-exit/b
+lu:
+Feb-16-2017
 
 
 
@@ -279,7 +255,6 @@ exit/b
 
 
 ::_
-
 :p
 :psh
 :pus
@@ -296,9 +271,7 @@ exit/b
 
 
 ::_
-
 :pushm
-
 :rf_pushm
 
 echo. & echo * Push changes into master.
@@ -312,12 +285,9 @@ exit/b
 
 
 :_
-
 :commit_poms
 
 echo. & echo * Add and commit a Pom file.
-
-rem fcd: Apr-11-2017
 
 echo.
 call %0 csf pom.xml "Update version number."
@@ -327,15 +297,15 @@ call %0 csf Mercury-web/pom.xml "Update version number."
 
 exit/b
 
+lu:
+Apr-11-2017
+
 
 
 :_
-
 :acpmob
 
 echo. & echo * Add, commit and push for batch file changes for mobility.
-
-rem fcd: Oct-24-2017
 
 echo.
 cd c:\mercury\mobility
@@ -343,6 +313,9 @@ cd c:\mercury\mobility
 call %0 acp
 
 exit/b
+
+lu:
+Oct-24-2017
 
 
 
@@ -362,12 +335,9 @@ Metadata: Track Size (!tsg)
 
 
 :_
-
 :add_poms
 
 echo. & echo * Add POM files for version labelling.
-
-rem fcd: May-3-2017
 
 echo.
 call %0 asf Mercury-ear/pom.xml
@@ -380,17 +350,17 @@ call %0 asf pom.xml
 
 exit/b
 
+lu:
+May-3-2017
+
 
 
 :_
-
 :acpdoc
 
 :acp_for_documentation_changes
 
 echo. & echo * Add, commit and push for regression test document changes.
-
-rem fcd: May-30-2017
 
 echo.
 cd c:\mercury\documentation
@@ -399,17 +369,16 @@ call %0 acp
 
 exit/b
 
+lu:
+May-30-2017
+
 
 
 :_
-
 :myst
-
 :del_myst
 
 echo. & echo * Delete mysteriously added png image files.
-
-rem fcd: Apr-28-2017
 
 echo.
 cd c:\projects\netbeans\mercury6
@@ -421,17 +390,17 @@ del Mercury-web\src\main\webapp\resources\WorldWind\images\pushpins\4-Null-Trans
 
 exit/b
 
+lu:
+Apr-28-2017
+
 
 
 :_
-
 :delete_pngs
 
 echo. & echo * Delete pngs copied over by David. I don't understand this.
 
 rem specific folder: skw
-
-rem Creation Date: Jun-20-2017
 
 echo.
 call t m6
@@ -444,15 +413,15 @@ del font-awesome*.png
 
 exit/b
 
+lu:
+Jun-20-2017
+
 
 
 :_
-
 :delete_pngs_2
 
 echo. & echo * Delete pngs 2.
-
-rem Creation Date: Aug-3-2017
 
 echo.
 call t m6
@@ -482,10 +451,12 @@ del Dish_Generic_TR.png
 
 exit/b
 
+lu:
+Aug-3-2017
+
 
 
 :_
-
 :sr
 
 echo. & echo * Check remote status.
@@ -499,12 +470,9 @@ exit/b
 
 
 :_
-
 :pull_ba
 
 echo. & echo * Pull batch files.
-
-rem lu: Nov-17-2017
 
 echo.
 call t ba
@@ -513,15 +481,15 @@ call g pull
 
 exit/b
 
+lu:
+Nov-17-2017
+
 
 
 :_
-
 :sss
 
 echo. & echo * Check 4 statuses.
-
-rem lu: Dec-5-2017
 
 echo.
 call cls
@@ -534,6 +502,9 @@ call %0 s
 
 exit/b
 
+lu:
+Dec-5-2017
+
 
 
 :_+ New Repo
@@ -541,12 +512,9 @@ exit/b
 
 
 ::_
-
 :add_bowling
 
 echo. & echo * Add bowling folder to git.
-
-rem lu: Jan-12-2018
 
 echo.
 echo "# bowling" >> README.md
@@ -558,10 +526,12 @@ git push -u origin master
 
 exit/b
 
+lu:
+Jan-12-2018
+
 
 
 ::_
-
 :new_repo
 
 echo. & echo * Create a new repository on the command line.
@@ -580,7 +550,6 @@ exit/b
 
 
 ::_
-
 :new_repo_2
 
 echo. & echo * Create a new repository on the command line.
@@ -598,14 +567,10 @@ exit/b
 
 
 :_
-
 :acpba_from_multiedit
-
 :acp_for_batch_file_changes
 
 echo. & echo * Add, commit and push for batch file changes.
-
-rem fcd: Apr-13-2017
 
 echo.
 call t cbf
@@ -613,6 +578,9 @@ call t cbf
 call %0 acp
 
 exit/b
+
+lu:
+Apr-13-2017
 
 
 
@@ -685,43 +653,38 @@ git-steps-seriess-jj
 
 
 :_
-
 :sfgit
 
 echo. & echo * Surf to this repository in Git.
-
-rem lu: Jan-5-2018
 
 echo.
 start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://github.com/jonathan-r-jones/composable-batch-files
 
 exit/b
 
+lu:
+Jan-5-2018
+
 
 
 :_
-
 :delete_git_folder
-
 :delg
-
 :dgit
 
 echo. & echo * Delete the hidden git folder and start over.
-
-rem Creation Date: Jan-23-2017
-
-rem remove: skw
 
 echo.
 rd /q /s .git
 
 exit/b
 
+lu:
+Jan-23-2017
+
 
 
 :_
-
 :idb
 
 echo. & echo * 9b. Identify branch.
@@ -745,27 +708,24 @@ exit/b
 
 
 ::_
-
 :set_tag
 
 echo. & echo * Set the tag version number.
-
-rem lu: Apr-25-2018
 
 echo.
 git tag %2
 
 exit/b
 
+lu:
+Apr-25-2018
+
 
 
 ::_
-
 :get_tag
 
 echo. & echo * Get the tag version numbers.
-
-rem lu: Apr-25-2018
 
 echo.
 echo.
@@ -773,21 +733,24 @@ git tag
 
 exit/b
 
+lu:
+Apr-25-2018
+
 
 
 ::_
-
 :puta
 
 echo. & echo * Push tags.
-
-rem lu: Apr-25-2018
 
 echo.
 echo.
 git push --tags
 
 exit/b
+
+lu:
+Apr-25-2018
 
 
 
@@ -799,11 +762,16 @@ exit/b
 :bv
 :label
 :num
+
 echo. & echo * Get build version number.
+
 echo.
 git describe --all --long
+
 exit/b
-rem Creation Date: Jan-30-2017
+
+lu:
+Jan-30-2017
 
 
 
@@ -823,17 +791,17 @@ Jun-7-2018
 
 
 ::_
-
 :upda
 
 echo. & echo * Update Git version.
-
-rem lu: Sep-12-2022
 
 echo.
 git update-git-for-windows
 
 exit/b
+
+lu:
+Sep-12-2022
 
 Sep-12-2022: Current Version on XPS After picture: git version 2.37.3.windows.1
 Sep-12-2022: Current Version on XPS Before picture: git version 2.34.1.windows.1
@@ -841,37 +809,34 @@ Sep-12-2022: Current Version on XPS Before picture: git version 2.34.1.windows.1
 
 
 ::_
-
 :upda2
 
 echo. & echo * Update Git via Git.
-
-rem lu: Sep-12-2022
 
 echo.
 git clone https://github.com/git/git
 
 exit/b
 
+lu:
+Sep-12-2022
+
 
 
 :_
-
 :track_info
 
 echo. & echo * Set tracking information for this branch.
 
 rem This didn't work properly.
 
-rem Creation Date: Jan-31-2017
-
-echo.
-
-  
 echo.
 git branch --set-upstream-to=master
 
 exit/b
+
+lu:
+Jan-31-2017
 
 
 
@@ -880,26 +845,23 @@ exit/b
 
 
 ::_
-
 :a_ig
 
 echo. & echo * Add particular file.
-
-rem fcd: Feb-16-2017
 
 git add .gitignore
 
 exit/b
 
+lu:
+Feb-16-2017
+
 
 
 ::_
-
 :c_ig
 
 echo. & echo * Create a gitinore file to the current directory.
-
-rem lu: Jan-19-2018
 
 if exist .gitignore echo.
 if exist .gitignore echo * Error: File already there.
@@ -911,17 +873,16 @@ call npp .gitignore
 
 exit/b
 
+lu:
+Jan-19-2018
+
 
 
 ::_
-
 :ig
-
 :vs_ig
 
 echo. & echo * Make sure your master Gitignore is up-to-date, then copy it to the current location.
-
-rem lu: Sep-11-2018
 
 echo.
 echo.
@@ -943,6 +904,9 @@ ren VisualStudio.gitignore .gitignore
 
 exit/b
 
+lu:
+Sep-11-2018
+
 
 
 :_+ Common GitHub Commands
@@ -950,9 +914,7 @@ exit/b
 
 
 ::_
-
 :pn
-
 :pulln
 
 echo. & echo * Pull with a nickname location provider.
@@ -970,7 +932,6 @@ exit/b
 
 
 ::_
-
 :acp
 
 rem Add, commit and push.
@@ -1011,19 +972,17 @@ if errorlevel 1 exit/b
 git push
 
 exit/b
-rem fcd: Sep-27-2022
+
+lu:
+Sep-27-2022
 
 
 
 ::_
-
 :acpb
-
 :acpg
 
 echo. & echo * Add, commit and push for big laptop.
-
-rem fcd: Dec-4-2018
 
 call %0 add_files_generic_action
 
@@ -1035,10 +994,12 @@ call %0 rf_status
 
 exit/b
 
+lu:
+Dec-4-2018
+
 
 
 ::_
-
 :mac
 
 echo. & echo * ACP commands for the mac.
@@ -1054,14 +1015,10 @@ exit/b
 
 
 :_
-
 :ss_old
-
 :super_status_old
 
 echo. & echo * Do super status, that is status, including remote information, for all repositories.
-
-rem fcd: Nov-30-2018
 
 rem This function is because it uses recursive calls into its own file but DOESN'T use
 rem a single goto statement, which is an anti-pattern.
@@ -1072,6 +1029,9 @@ call s s
 
 exit/b
 
+lu:
+Nov-30-2018
+
 
 
 :_+ Custom Clones
@@ -1079,7 +1039,6 @@ exit/b
 
 
 ::_
-
 :cn
 
 echo. & echo * Clone a custom repository using a different code style.
@@ -1152,12 +1111,9 @@ exit/b
 
 
 ::_
-
 :cn_xu
 
 echo. & echo * Clone all Xamarin University repos.
-
-rem lu: Jun-5-2018
 
 call t xu_r
 
@@ -1171,6 +1127,9 @@ git submodule update
 
 exit/b
 
+lu:
+Jun-5-2018
+
 
 
 :_+ Metadata
@@ -1178,11 +1137,8 @@ exit/b
 
 
 ::_
-
 :rf_status
-
 :s
-
 :status
 
 echo. & echo * Show git status including remote update for folder: "%cd%"
@@ -1201,7 +1157,6 @@ call col>nul
 
 
 ::_
-
 :ls
 :sd
 :hl
@@ -1218,9 +1173,7 @@ What local status means is merely that you haven't changed any files on your loc
 
 
 ::_
-
 :l
-
 :log
 
 echo. & echo * Read the log. Among other things, you can use this to see when a GitHub repo was last updated.
@@ -1240,12 +1193,9 @@ Why does this command work in git bash? Because of the set command, I would thin
 
 
 ::_
-
 :logp
 
 echo. & echo * Prettify and read the log.
-
-rem lu: Jun-21-2022
 
 set cbf-parameter=%temp%\git-log.txt
 
@@ -1257,15 +1207,15 @@ call r
 
 exit/b
 
+lu:
+Jun-21-2022
+
 
 
 ::_
-
 :logo
 
 echo. & echo * One line version.
-
-rem lu: Sep-27-2022
 
 set cbf-parameter=%temp%\git-log.txt
 
@@ -1277,27 +1227,26 @@ call r
 
 exit/b
 
+lu:
+Sep-27-2022
 
 
 
 ::_
-
 :src
-
 :info
-
 :sour
-
 :source
 
 echo. & echo * Identify source repository information of your current folder.
-
-rem lu: May-9-2018
 
 echo.
 git remote -v
 
 exit/b
+
+lu:
+May-9-2018
 
 
 
@@ -1306,56 +1255,53 @@ exit/b
 
 
 ::_
-
 :fo
 
 echo. & echo * Fetch origin. I think this may be roughly the same as "git remote update".
-
-rem lu: May-9-2019
 
 git fetch origin
 
 exit/b
 
+lu:
+May-9-2019
+
 
 
 ::_
-
 :cosma
 
 echo. & echo * Check out sma branch.
-
-rem lu: May-9-2019
 
 echo.
 git checkout -b sm_another_jenkins origin/sm_another_jenkins
 
 exit/b
 
+lu:
+May-9-2019
+
 
 
 :_
-
 :pod
 
 echo. & echo * Push origin develop.
-
-rem lu: May-9-2019
 
 echo.
 git push origin develop
 
 exit/b
 
+lu:
+May-9-2019
+
 
 
 :_
-
 :dlt
 
 echo. & echo * Delete a local tag.
-
-rem lu: Oct-7-2019
 
 rem how to delete a local tag: skw
 
@@ -1364,6 +1310,9 @@ git tag -d
 
 exit/b
 
+lu:
+Oct-7-2019
+
 
 
 :_+ Git Help
@@ -1371,12 +1320,9 @@ exit/b
 
 
 ::_
-
 :hs
 
 echo. & echo * Git help for a specific git command.
-
-rem lu: Dec-10-2019
 
 if "%~2" == "" (
   call err Percent 2, the name of the specific git command you want help on, is a required field. - %0.bat
@@ -1389,26 +1335,27 @@ call sf
 
 exit/b
 
+lu:
+Dec-10-2019
+
 
 
 ::_
-
 :hb
 
 echo. & echo * Help displayed in the browser pointing to a local help file.
-
-rem lu: Apr-24-2018
 
 git help git
 
 exit/b
 
+lu:
+Apr-24-2018
+
 
 
 ::_
-
 :hc
-
 :hlp
 
 echo. & echo * Help overview displayed on the command line.
@@ -1426,7 +1373,6 @@ exit/b
 
 
 ::_
-
 :lb
 :lba
 
@@ -1438,51 +1384,31 @@ call g lbr
 
 exit/b
 
-rem lu: Dec-13-2019
+lu:
+Dec-13-2019
 
 
 
 ::_
-
 :b
-
 :shcu
 
 echo. & echo * Show current branch.
-
-rem lu: Dec-12-2019
 
 echo.
 git branch --show-current
 
 exit/b
 
-
-
-::_
-
-:lb_old
-
-echo. & echo * List all branches, that is local and remote. (skw list branches) Not working.
-
-exit/b
-
-rem lu: Oct-7-2019
-
-echo.
-git branch -a
-
-exit/b
+lu:
+Dec-12-2019
 
 
 
 ::_
-
 :lbg
 
 echo. & echo * List grepped branches.
-
-rem lu: Oct-23-2020
 
 if "%~2" == "" (
   echo. & echo * Percent 2, grep search string, is required.
@@ -1498,10 +1424,12 @@ git branch -a | %cbf-pt%\grep %2
 
 exit/b
 
+lu:
+Oct-23-2020
+
 
 
 ::_
-
 :lbl
 
 echo. & echo * List branches, local.
@@ -1513,12 +1441,12 @@ git branch
 
 exit/b
 
-rem lu: Oct-7-2019
+lu:
+Oct-7-2019
 
 
 
 ::_
-
 :lbr
 
 echo. & echo * List branches, remote.
@@ -1532,24 +1460,25 @@ git branch -r
 
 exit/b
 
-rem lu: Dec-22-2022
-rem lu: Dec-13-2019
+lu:
+Dec-22-2022
+Dec-13-2019
 
 
 
 ::_
-
 :lbjj
 
 echo. & echo * List jj branches.
-
-rem lu: Dec-12-2019
 
 call n %1
 
 call sf
 
 exit/b
+
+lu:
+Dec-12-2019
 
 
 
@@ -1559,12 +1488,9 @@ from tag, create tag from branch, create a branch from a tag, create branch from
 
 
 ::_
-
 :cbft
 
 echo. & echo * Create branch from tag.
-
-rem lu: Oct-14-2020
 
 if "%2" == "" (
   echo.
@@ -1587,10 +1513,12 @@ git push --set-upstream origin release-1-%cbf-git_version%
 
 exit/b
 
+lu:
+Oct-14-2020
+
 
 
 ::_
-
 :cbft_final
 
 echo. & echo * Create branch from tag, final.
@@ -1608,17 +1536,15 @@ git push --set-upstream origin jrj-test
 
 exit/b
 
-rem lu: Dec-19-2022
+lu:
+Dec-19-2022
 
 
 
 ::_
-
 :cbft_181
 
 echo. & echo * Create branch from tag, version 1.18.1.
-
-rem lu: Feb-12-2021
 
 call t ma
 
@@ -1633,15 +1559,15 @@ git push --set-upstream origin release-1-18-1
 
 exit/b
 
+lu:
+Feb-12-2021
+
 
 
 ::_
-
 :cbft_old
 
 echo. & echo * Create branch from tag.
-
-rem lu: Oct-14-2020
 
 set cbf-git_version=17
 
@@ -1658,15 +1584,15 @@ git push --set-upstream origin release-1-%cbf-git_version%-0
 
 exit/b
 
+lu:
+Oct-14-2020
+
 
 
 ::_
-
 :cbft-s
 
 echo. & echo * Create a branch based on a tag, special edition.
-
-rem lu: Aug-20-2020
 
 set cbf-git_version=14
 
@@ -1683,15 +1609,15 @@ git push --set-upstream origin release_v_1_%cbf-git_version%_0_c
 
 exit/b
 
+lu:
+Aug-20-2020
+
 
 
 ::_
-
 :cbbt_1_11
 
 echo. & echo * Create a branch based on a tag.
-
-rem lu: May-14-2020
 
 echo.
 git checkout -b release_v_1_11_0 tags/v1.11.0
@@ -1700,6 +1626,9 @@ git push --set-upstream origin release_v_1_11_0
 
 exit/b
 
+lu:
+May-14-2020
+
 
 
 :_+ Tag Operations (!fytag)
@@ -1707,50 +1636,43 @@ exit/b
 
 
 ::_
-
 :add_tag
-
 :taga
 
 echo. & echo * Add tag.
-
-rem lu: Jun-11-2019
 
 rem git tag -a v1.4 -m "my version 1.4"
 git tag -a version_api_0.0.1-20190618.233310-466__ui_0.0.1-20190618.233316-112 -m "version message"
 
 exit/b
 
+lu:
+Jun-11-2019
+
 
 
 ::_
-
 :lt
-
 :lita
-
 :ltag
-
 :tags
 
 echo. & echo * List tags.
-
-rem lu: Jun-11-2019
 
 echo.
 git tag
 
 exit/b
 
+lu:
+Jun-11-2019
+
 
 
 ::_
-
 :ft
 
 echo. & echo * Fetch tags.
-
-rem lu: 
 
 echo.
 git fetch --tags
@@ -1760,31 +1682,26 @@ exit/b
 
 
 ::_
-
 :puor
-
 :push_tag
-
 :tagp
 
 echo. & echo * Push origin.
-
-rem lu: Jun-11-2019
 
 echo.
 git push origin
 
 exit/b
 
+lu:
+Jun-11-2019
+
 
 
 ::_
-
 :detalo
 
 echo. & echo * Delete tag, local.
-
-rem lu: Oct-15-2019
 
 rem delete a tag: skw
 
@@ -1801,15 +1718,15 @@ rem This also works I think: git tag --delete v1.3.0
 
 exit/b
 
+lu:
+Oct-15-2019
+
 
 
 ::_
-
 :deta
 
 echo. & echo * Delete tag, local and remote.
-
-rem lu: Feb-6-2020
 
 if "%~2" == "" (
   echo.
@@ -1822,6 +1739,9 @@ call %0 detalo %2
 git push origin :refs/tags/%2
 
 exit/b
+
+lu:
+Feb-6-2020
 
 
 
@@ -1854,7 +1774,6 @@ exit/b
 
 
 ::_
-
 :debrlo
 
 echo. & echo * Delete branch, local.
@@ -1937,7 +1856,8 @@ git merge %2
 
 exit/b
 
-rem lu: Mar-3-2020
+lu:
+Mar-3-2020
 
 >< >< >< Footnote:
 
@@ -1953,12 +1873,9 @@ to merge it. It must have a local version of Branch3. Mar-3-2020
 
 
 ::_
-
 :merg2
 
 echo. & echo * Original merging sample code from GitHub.
-
-rem lu: Dec-10-2019
 
 echo.
 
@@ -1976,16 +1893,16 @@ git push origin master
 
 exit/b
 
+lu:
+Dec-10-2019
+
 
 
 ::_
-
 :merg_sq
 
 echo. & echo * Merge from the feature branch and squash all of the commits of the feature branch into ^
 a single commit.
-
-rem lu: Jul-27-2020
 
 if "%~2" == "" (
   echo.
@@ -1998,6 +1915,8 @@ git merge --squash %2
 
 exit/b
 
+lu:
+Jul-27-2020
 
 >< >< >< Footnote:
 
@@ -2006,27 +1925,24 @@ Learned about this from a YouTube video.
 
 
 ::_
-
 :mede
 
 echo. & echo * Merge develop. Merge the develop branch into your current branch, thereby updating your branch with the latest changes from develop.
-
-rem lu: May-9-2019
 
 echo.
 git merge develop
 
 exit/b
 
+lu:
+May-9-2019
+
 
 
 ::_
-
 :mth
 
 echo. & echo * Merge tool help.
-
-rem lu: Jan-22-2018
 
 echo.
 
@@ -2034,15 +1950,15 @@ git mergetool --tool-help
 
 exit/b
 
+lu:
+Jan-22-2018
+
 
 
 ::_
-
 :mts
 
 echo. & echo * Set default merge tool to use.
-
-rem lu: Jan-22-2018
 
 echo.
 
@@ -2051,13 +1967,14 @@ rem git mergetool --tool=vimdiff3
 
 exit/b
 
+lu:
+Jan-22-2018
+
 
 
 ::_
 
 echo. & echo * Sean's aliases.
-
-rem lu: Apr-16-2019
 
 echo.
 
@@ -2098,6 +2015,9 @@ alias gp="git push"
 
 exit/b
 
+lu:
+Apr-16-2019
+
 
 
 ::_
@@ -2106,13 +2026,14 @@ exit/b
 
 echo. & echo * Merge master.
 
-rem lu: Dec-10-2019
-
 echo.
 
 git merge master
 
 exit/b
+
+lu:
+Dec-10-2019
 
 
 
@@ -2121,8 +2042,6 @@ exit/b
 :master_merge
 
 echo. & echo * Merging strategy.
-
-rem lu: Dec-11-2019
 
 echo.
 
@@ -2140,6 +2059,9 @@ git push origin master
 
 exit/b
 
+lu:
+Dec-11-2019
+
 
 
 ::_
@@ -2150,8 +2072,6 @@ exit/b
 
 echo. & echo * Merge master into the release branch using the "ours" stategy.
 
-rem lu: Dec-10-2019
-
 echo.
 
 call sb release/v140
@@ -2159,6 +2079,9 @@ call sb release/v140
 call meours
 
 exit/b
+
+lu:
+Dec-10-2019
 
 
 
@@ -2169,8 +2092,6 @@ exit/b
 :muo
 
 echo. & echo * Merge the specified branch into the current branch using the "ours" strategy, that is the current branch wins.
-
-rem lu: Mar-3-2020
 
 if "%~2" == "" (
   echo.
@@ -2184,6 +2105,9 @@ git merge -s ours %2
 
 exit/b
 
+lu:
+Mar-3-2020
+
 
 
 ::_
@@ -2192,13 +2116,14 @@ exit/b
 
 echo. & echo * Merge abort can only be run after the merge has resulted in conflicts.
 
-rem lu: Dec-10-2019
-
 echo.
 
 git merge --abort
 
 exit/b
+
+lu:
+Dec-10-2019
 
 
 
@@ -2208,12 +2133,13 @@ exit/b
 
 echo. & echo * Theirs strategy with Matt.
 
-rem lu: Mar-4-2020
-
 echo.
 git merge --strategy-option theirs release/v171
 
 exit/b
+
+lu:
+Mar-4-2020
 
 
 
@@ -2225,9 +2151,10 @@ exit/b
 
 echo. & echo * Merge using the "theirs" strategy.
 
-rem lu: Dec-10-2019
-
 exit/b
+
+lu:
+Dec-10-2019
 
 
 
@@ -2239,7 +2166,9 @@ exit/b
 :df
 :dif
 :diff
+
 echo. & echo * Difference between 2 branches.
+
 if "%~3" == "" (
   echo.
   echo * Percent 3, second branch to compare, is a required field.
@@ -2249,7 +2178,9 @@ if "%~3" == "" (
 git diff %2..%3
 
 exit/b
-rem lu: Nov-5-2020
+
+lu:
+Nov-5-2020
 
 
 
@@ -2268,10 +2199,15 @@ exit/b
 
 ::_
 :diff2
+
 echo. & echo * Diff.
+
 git diff
+
 exit/b
-rem lu: Aug-24-2022
+
+lu:
+Aug-24-2022
 
 
 
@@ -2291,8 +2227,6 @@ rem lu: Aug-24-2022
 
 echo. & echo * Rebase from develop branch.
 
-rem lu: Jan-24-2019
-
 rem I had some pain with this code so I am not too happy with it.
 
 echo.
@@ -2300,6 +2234,9 @@ git fetch
 git rebase origin/develop
 
 exit/b
+
+lu:
+Jan-24-2019
 
 
 
@@ -2311,17 +2248,17 @@ exit/b
 
 echo. & echo * Rebase from master branch. How you get a git branch to update from its source master branch.
 
-rem lu: Jan-24-2019
-
 echo.
 git fetch
 git rebase origin/master
 
 exit/b
 
-
 Footnote
 >< >< >< 
+
+lu:
+Jan-24-2019
 
 Use "git rebase master" ONLY if master is local only! - Niroop, Nov-5-2020
 
@@ -2330,8 +2267,6 @@ Use "git rebase master" ONLY if master is local only! - Niroop, Nov-5-2020
 ::_
 
 echo. & echo * Rebase test that Ben B. and Thuy were doing. - Untested: for reference only
-
-rem lu: Jun-30-2021
 
 git pull origin dashboard --rebase
 [9:32 AM] Bergeron, Benjamin D (CTR)
@@ -2345,6 +2280,9 @@ git pull origin dashboard --rebase
 
 exit/b
 
+lu:
+Jun-30-2021
+
 
 
 :_+ Switch Branch Operations
@@ -2357,13 +2295,13 @@ exit/b
 
 echo. & echo * Switch to previous branch.
 
-rem lu: Nov-5-2021
-
 echo.
 git checkout -
 
 exit/b
 
+lu:
+Nov-5-2021
 
 
 
@@ -2373,14 +2311,15 @@ exit/b
 
 echo. & echo * Rename current branch.
 
-rem lu: Nov-5-2021
-
 if "%~2" == "" echo. & echo * Error: Parameter 2 is required. _,.-'~'-.,_(`~ & exit/b
 
 echo.
 git branch -M %2
 
 exit/b
+
+lu:
+Nov-5-2021
 
 
 
@@ -2472,7 +2411,8 @@ echo   t: jrj-test
 
 exit/b
 
-rem lu: Oct-27-2022
+lu:
+Oct-27-2022
 
 
 
@@ -2514,8 +2454,6 @@ exit/b
 
 echo. & echo * Switch to previous branch. A little trick I learned from Fireship.io.
 
-rem lu: Jun-21-2022
-
 echo.
 git checkout -
 
@@ -2525,6 +2463,9 @@ call s
 
 exit/b
 
+lu:
+Jun-21-2022
+
 
 
 ::_
@@ -2532,8 +2473,6 @@ exit/b
 :sdb
 
 echo. & echo * Switch to default branch.
-
-rem lu: Jun-15-2022
 
 if "%~2" == "" goto help
 
@@ -2562,6 +2501,9 @@ echo. & echo Parameter 2: Alias.
 
 exit/b
 
+lu:
+Jun-15-2022
+
 
 
 :_
@@ -2572,11 +2514,12 @@ exit/b
 
 echo. & echo * Download Git for windows.
 
-rem lu: Nov-1-2021
-
 call sf download_git>nul
 
 exit/b
+
+lu:
+Nov-1-2021
 
 
 
@@ -2590,9 +2533,6 @@ exit/b
 
 echo. & echo * Unstage a single file according to Git inline help.
 
-rem lu: Nov-1-2021
-
-
 if /i "%~2" == "" (
   echo.
   echo * Parameter 2 is required.
@@ -2603,6 +2543,9 @@ git restore --staged %2
 
 exit/b
 
+lu:
+Nov-1-2021
+
 
 
 ::_
@@ -2610,9 +2553,6 @@ exit/b
 :unst2
 
 echo. & echo * Unstage a single file, version 2 from Traversy Media.
-
-rem lu: Nov-1-2021
-
 
 if /i "%~2" == "" (
   echo.
@@ -2624,6 +2564,9 @@ git rm --cached %2
 
 exit/b
 
+lu:
+Nov-1-2021
+
 
 
 ::_
@@ -2632,14 +2575,15 @@ exit/b
 
 echo. & echo * Unstage for commit. If Percent 2 is blank, all files will be unstaged.
 
-rem lu: Nov-27-2017
-
 git reset HEAD %2
 
 exit/b
 
 Footnote
 >< >< >< 
+
+lu:
+Nov-27-2017
 
 This worked for Niroop's presentation on Nov-5-2020.
 
@@ -2652,11 +2596,12 @@ This worked for Niroop's presentation on Nov-5-2020.
 
 echo. & echo * Graph, online and decorate.
 
-rem lu: Feb-4-2022
-
 git log --graph --decorate
 
 exit/b
+
+lu:
+Feb-4-2022
 
 
 
@@ -2670,8 +2615,6 @@ exit/b
 :teb
 
 echo. & echo * Trigger an empty build on the develop branch.
-
-rem lu: Jun-4-2020
 
 rem skw Allow empty commit.
 
@@ -2688,6 +2631,9 @@ call p
 
 exit/b
 
+lu:
+Jun-4-2020
+
 
 
 :_+ Reversion Family (!fycrv)
@@ -2696,10 +2642,15 @@ exit/b
 
 ::_
 :rv
+
 echo. & echo * Revert local changes by David F.
+
 git reset --hard -q HEAD
+
 exit/b
-rem lu: Mar-01-2023
+
+lu:
+Mar-01-2023
 
 
 
@@ -2707,29 +2658,42 @@ rem lu: Mar-01-2023
 :rv1
 :rv-lo
 :rv_local
+
 echo. & echo * Revert local changes.
+
 echo.
 git reset --hard HEAD
 git clean -f
 git pull
+
 exit/b
+
+lu:
+Aug-7-2018
+
 rem revert-series
-rem lu: Aug-7-2018
+
 rem If you don't care about any local changes and just want a copy from the repository.
 rem Revert all changes from this folder. Revert all local changes.
 rem blow away local changes, specific folder: skw
 rem This didn't seem to work on Jan-31-2017.
-rem Function Creation Date: Jan-30-2017
 
 
 
 ::_
 :rvfdco
+
 echo. & echo * Revert folder by checking out all.
+
 echo.
+
 git checkout *.*
+
 exit/b
-rem lu: Jul-19-2021
+
+lu:
+Jul-19-2021
+
 rem Last Updated: May-30-2018
 rem Last successful run date: May-30-2018
 Did not work on Sep-30-2022.
@@ -2738,12 +2702,17 @@ Did not work on Sep-30-2022.
 
 ::_
 :rv-old
+
 echo. & echo * Googled "What's the easiest way to blow away all local changes in git?"
+
 echo.
 git reset --hard
 git clean -fxd
+
 exit/b
-rem lu: Jan-16-2023
+
+lu:
+Jan-16-2023
 
 
 
@@ -2753,15 +2722,22 @@ rem lu: Jan-16-2023
 :rvfd
 :rvf
 :rv2
+
 echo. & echo * Under construction. Try using checkout. Revert local according to Fireship.io video. Local changes will be lost.
+
 echo.
+
 git fetch origin
 git reset --hard origin/master
 git clean -df
+
 exit/b
+
+lu:
+Sep-27-2022
+
 This worked on Feb-13-2023.
 This worked on Dec-13-2022.
-rem lu: Sep-27-2022
 
 
 
@@ -2771,24 +2747,25 @@ rem lu: Sep-27-2022
 :rollback
 :unco
 :uncommit
+
 echo. & echo * Rollback to previous commit used by Matt A. and me on Mar-26-2021 and earlier.
 git revert -m 1 HEAD
+
 exit/b
-rem lu: Sep-27-2022
+
+lu:
+Sep-27-2022
+
 Worked on Mar-06-2023.
 Didn't work on Dec-21-2022.
 
 
 
 ::_
-
 :roll_back_repo
-
 :roll_back_server
 
 echo. & echo * Roll back the server repository to your what's on your local version. Use with CAUTION.
-
-rem lu: Jul-19-2018
 
 rem How do you roll back in git?
 
@@ -2799,21 +2776,24 @@ git push -f
 
 exit/b
 
+lu:
+Jul-19-2018
+
 
 
 ::_
-
 :roll_back_repo_1_commit
 
 echo. & echo * Move the whole repo back a single check-in version.
-
-rem lu: Sep-3-2020
 
 call :reset_head_1
 
 call :roll_back_repo
 
 exit/b
+
+lu:
+Sep-3-2020
 
 Outcome:
 
@@ -2842,9 +2822,7 @@ rollback to far.
 
 
 ::_
-
 :rvsv
-
 :sv
 
 echo. & echo * Roll back to a specific version. Detached head means you are no longer on a branch, you have checked out a single commit in the history.
@@ -2853,10 +2831,11 @@ git checkout 6df905288039e634118b63719b77bff4a5566e1b
 
 exit/b
 
+lu:
+Jun-10-2020
+
 rem Aug-31-2022
 rem git checkout 9eb11def09c363b1524ad97e8d9c7dea58633f15
-
-rem lu: Jun-10-2020
 
 rem fud (!rb): Aug-15-2017 (skw label, tag, roll back to a particular version)
 
@@ -2890,7 +2869,6 @@ rem git checkout 045821e9f8028af5a0619f90ad79b0f245f06321
 
 
 ::_
-
 :dhsc
 
 echo. & echo * After detaching head, you can create a new branch at the detached head state.
@@ -2909,11 +2887,8 @@ exit/b
 
 
 ::_
-
 :reat
-
 :reattach
-
 :reattach_head
 
 echo. & echo * Reattach a detached head.
@@ -2922,9 +2897,13 @@ git checkout master
 
 exit/b
 
-rem fcd: May-2-2017 (skw how to reattach head)
+lu:
+May-2-2017
+
+skw how to reattach head
 
 rem git checkout clean6.2
+
 
 
 ::_
@@ -2933,10 +2912,7 @@ rem git checkout clean6.2
 
 echo. & echo * Revert all PERSISTENT changes from m6 and s6.
 
-rem Creation Date: Aug-30-2017
-
 echo.
-
   
 call %0 delete_pngs
 
@@ -2946,15 +2922,15 @@ call %0 rvp
 
 exit/b
 
+lu:
+Aug-30-2017
+
 
 
 ::_
-
 :base
 
 echo. & echo * Return to baseline configuration after a build. Exercise caution as this will destroy some local changes.
-
-rem lu: Aug-31-2017
 
 call %0 rvall
 
@@ -2966,6 +2942,9 @@ call %0 ss
 
 exit/b
 
+lu:
+Aug-31-2017
+
 
 
 ::_
@@ -2974,11 +2953,12 @@ exit/b
 
 echo. & echo * Report on untracked files.
 
-rem lu: Sep-14-2017
-
 git clean -n
 
 exit/b
+
+lu:
+Sep-14-2017
 
 
 
@@ -2988,11 +2968,8 @@ exit/b
 
 echo. & echo * Revert persistent files. Revert files in need of constant reversion.
 
-rem lu: Aug-31-2017
-
 echo.
 
-  
 cd \projects\netbeans\sencha\html5application\public_html
 
 git checkout bootstrap.css
@@ -3016,6 +2993,9 @@ git checkout HTML5Application/public_html/classic/src/utils/NetConfig.js
 
 exit/b
 
+lu:
+Aug-31-2017
+
 
 
 ::_
@@ -3023,8 +3003,6 @@ exit/b
 :reset_head_2
 
 echo. & echo * Reset head by 2 id number versions. This enabled not to have to merge.
-
-rem lu: Aug-7-2018
 
 rem Step back 2 versions.
 
@@ -3035,22 +3013,24 @@ git reset --hard "HEAD~2"
 
 exit/b
 
+lu:
+Aug-7-2018
+
 
 
 ::_
-
 :ruf
-
 :clean
 
 echo. & echo * Remove untracked folders and files. Use with caution.
-
-rem lu: Aug-17-2018
 
 echo.
 git clean -d -f
 
 exit/b
+
+lu:
+Aug-17-2018
 
 
 
@@ -3062,8 +3042,6 @@ exit/b
 
 echo. & echo * The git equivalent of the back button. Reset head by 1 id number version.
 
-rem lu: Aug-7-2018
-
 rem Step back 1 version.
 
 rem Test on FGT.
@@ -3072,6 +3050,9 @@ echo.
 git reset --hard "HEAD~1"
 
 exit/b
+
+lu:
+Aug-7-2018
 
 * * * Outcome: This worked on Aug-6-2020.
 
@@ -3083,14 +3064,15 @@ exit/b
 
 echo. & echo * Revert back to what's in the remote repo, master branch.
 
-rem lu: Oct-15-2019
-
 rem I was getting this message: Your branch is ahead of 'origin/master' by 5 commits.
 
 echo.
 git reset --hard origin/master
 
 exit/b
+
+lu:
+Oct-15-2019
 
 
 
@@ -3102,8 +3084,6 @@ exit/b
 
 echo. & echo * Fix last updated file by reverting and pulling it from repository.
 
-rem lu: Mar-4-2019
-
 call t s
 
 call %0 rvsf last_updated_log.txt
@@ -3112,18 +3092,28 @@ call g pl
 
 exit/b
 
+lu:
+Mar-4-2019
+
 
 
 ::_
 :lere
+
 echo. & echo * Leah's revert command. A benefit of using revert versus reset is that revert keeps the history.
+
 echo.
 git revert -m 1 e5314f8c7bfdb6076fe0e980c0721cee16f2bd53
+
 exit/b
+
+lu:
+Feb-13-2023
+Mar-6-2020
+Nov-6-2019
+
 Does this command do only local changes?
-rem lu: Feb-13-2023
-rem lu: Mar-6-2020
-rem lu: Nov-6-2019
+
 Revert a merge. This worked on Mar-6-2020.
 rem Where the hash is the hash of the commit you want to revert.
 git revert -m 1 66482d22af00ff9ed368e2dea821133fff5f7f35
@@ -3137,11 +3127,12 @@ git revert -m 1 c8e8a0252de705c09800700e7c6b17192bf72e02
 
 echo. & echo * Git status. Local examination only.
 
-rem lu: Aug-23-2022
-
 git status
 
 exit/b
+
+lu:
+Aug-23-2022
 
 
 
@@ -3151,12 +3142,13 @@ exit/b
 
 echo. & echo * Git branch.
 
-rem lu: Aug-23-2022
-
 echo.
 git branch
 
 exit/b
+
+lu:
+Aug-23-2022
 
 
 
@@ -3233,8 +3225,6 @@ exit/b
 
 echo. & echo * Add and commit all files with message.
 
-rem lu: Sep-21-2022
-
 if "%~2" == "" (
   call err A commit message is required. Jul-11-2023_3_52_PM - %0.bat
   exit/b
@@ -3247,6 +3237,9 @@ call %0 commit %2
 rem You could also do: git commit -am "easy"
 
 exit/b
+
+lu:
+Sep-21-2022
 
 
 
@@ -3322,7 +3315,6 @@ exit/b
 
 echo. & echo * Revert or check out single file.
 
-rem lu: Feb-18-2022
 rem This worked on CBF files. Mar-22-2019
 
 if "%~2" == "?" goto help
@@ -3339,6 +3331,9 @@ echo. & echo Parameter Descriptions
 echo. & echo Parameter 2: File to revert.
 
 exit/b
+
+lu:
+Feb-18-2022
 
 
 
@@ -3382,6 +3377,7 @@ exit/b
 
 ::_
 :cbc
+
 echo. & echo * Create a local branch based on your current branch.
 
 if "%~2" == "" (
@@ -3396,7 +3392,9 @@ git checkout -b %2
 git push --set-upstream origin %2
 
 exit/b
-rem lu: Mar-10-2020
+
+lu:
+Mar-10-2020
 
 
 
@@ -3464,8 +3462,9 @@ echo   t: jrj-test
 
 exit/b
 
-rem lu: Feb-21-2023
-rem lu: May-4-2021
+lu:
+Feb-21-2023
+May-4-2021
 
 
 
@@ -3482,12 +3481,15 @@ exit/b
 
 
 :help
+
 echo. & echo * Parameter Description(s):
 echo. & echo * Parameter 2: Source branch.
 echo. & echo * Parameter 3: Destination branch. If equals "/np", that branch is specified.
+
 exit/b
 
-rem lu: Mar-31-2022
+lu:
+Mar-31-2022
 
 Footnote
 >< >< ><
@@ -3499,12 +3501,8 @@ I changed the label from cb to crbr because cb is too easily confused with "chan
 
 
 :_
-
 :po
-
 :push_origin
-
-:lu: Oct-18-2019
 
 echo. & echo * Push origin.
 
@@ -3515,15 +3513,15 @@ git push --set-upstream origin %2
 
 exit/b
 
+lu:
+Oct-18-2019
+
 
 
 :_
-
 :co_sf
 
 echo. & echo * Check out single file based on file's alias.
-
-rem lu: Mar-7-2019
 
 echo.
   
@@ -3533,6 +3531,9 @@ git checkout %cbf-fn%
 
 exit/b
 
+lu:
+Mar-7-2019
+
 
 
 :_+ Stash and Pop
@@ -3540,14 +3541,10 @@ exit/b
 
 
 ::_
-
 :stas
-
 :stash
 
 echo. & echo * Stashing changes allows you to do a get-latest (or bring in someone's else's code) without losing your local changes.
-
-rem lu: Jan-22-2018
 
 echo.
 
@@ -3555,15 +3552,15 @@ git stash
 
 exit/b
 
+lu:
+Jan-22-2018
+
 
 
 ::_
-
 :stas-l
 
 echo. & echo * List your stashes.
-
-rem lu: Nov-5-2021
 
 echo.
 
@@ -3571,21 +3568,24 @@ git stash list
 
 exit/b
 
+lu:
+Nov-5-2021
+
 
 
 ::_
-
 :stas-a
 
 echo. & echo * Apply leaves the stash in place whereas pop "pops" it off the stack.
-
-rem lu: Sep-28-2022
 
 echo.
 
 git stash apply
 
 exit/b
+
+lu:
+Sep-28-2022
 
 
 
@@ -3595,13 +3595,13 @@ exit/b
 
 echo. & echo * Use a stash based on index number passed in.
 
-rem lu: Nov-5-2021
-
 echo.
-
 git stash apply 0
 
 exit/b
+
+lu:
+Nov-5-2021
 
 
 
@@ -3613,13 +3613,14 @@ exit/b
 
 echo. & echo * Pop takes stashed changes and reapplies them.
 
-rem lu: Feb-11-2020
-
 echo.
 
 git stash pop
 
 exit/b
+
+lu:
+Feb-11-2020
 
 
 
@@ -3629,13 +3630,13 @@ exit/b
 
 echo. & echo * Clear the stash list.
 
-rem lu: Sep-28-2022
-
 echo.
-
 git stash clear
 
 exit/b
+
+lu:
+Sep-28-2022
 
 
 
@@ -3644,8 +3645,6 @@ exit/b
 :sap
 
 echo. & echo * Stash and pop.
-
-rem lu: Jan-22-2018
 
 echo.
 
@@ -3658,6 +3657,9 @@ call :pop
 rem The next step would be to fix the merge conflict and then run "g acp".
 
 exit/b
+
+lu:
+Jan-22-2018
 
 
 
@@ -3715,12 +3717,17 @@ exit/b
 
 ::_
 :sg-lofi
-echo. & echo * Fix long filenames issue.
-git config --global core.longpaths true
-exit/b
-rem skw filename too long github
-rem lu: Nov-22-2022
 
+echo. & echo * Fix long filenames issue.
+
+git config --global core.longpaths true
+
+exit/b
+
+lu:
+Nov-22-2022
+
+rem skw filename too long github
 
 
 ::_
@@ -3729,22 +3736,29 @@ rem lu: Nov-22-2022
 
 echo. & echo * Set global ssl verify to false.
 
-rem lu: Jan-26-2022
-
 echo.
 git config --global http.sslVerify false
 
 exit/b
 
+lu:
+Jan-26-2022
+
 
 
 ::_
 :sl-lofi
+
 echo. & echo * Set lofi for local.
+
 git config core.longpaths true
+
 exit/b
-rem Creation Date: Dec-9-2016
-rem skw filename too long github
+
+lu:
+Dec-9-2016
+
+skw filename too long github
 
 
 
@@ -3754,11 +3768,12 @@ rem skw filename too long github
 
 echo. & echo * Cache the personal access token credential.
 
-rem lu: Apr-7-2022
-
 git config --global credential.helper cache
 
 exit/b
+
+lu:
+Apr-7-2022
 
 
 
@@ -3794,12 +3809,12 @@ echo. & echo * When it comes to line endings, emulate what RestSharper has adopt
 
 rem See: https://github.com/restsharp/RestSharp/blob/develop/CONTRIBUTING.md
 
-rem lu: May-31-2018
-
 git config --global core.autocrlf true
 
 exit/b
 
+lu:
+May-31-2018
 
 Footnote
 >< >< ><
@@ -3824,12 +3839,9 @@ exit/b
 
 
 ::_
-
 :s-aust
 
 echo. & echo * Run author and store.
-
-rem lu: Dec-5-2018
 
 call %0 au
 
@@ -3837,10 +3849,12 @@ call %0 stor
 
 exit/b
 
+lu:
+Dec-5-2018
+
 
 
 ::_
-
 :s-g
 
 echo. & echo * Add global setting.
@@ -3852,7 +3866,6 @@ exit/b
 
 
 ::_
-
 :au
 :auth
 :author
@@ -3868,11 +3881,8 @@ exit/b
 
 
 ::_
-
 :au-bit
-
 :author_bit
-
 :s-aubit
 
 echo. & echo * Configure BitBucket author and email. Note: Please don't confuse this with the GitHub author signature.
@@ -3887,7 +3897,6 @@ exit/b
 
 
 ::_
-
 :author_devops
 :s-author-devops
 
@@ -3904,7 +3913,6 @@ exit/b
 
 
 ::_
-
 :heop
 
 echo. & echo * Credential helper options.
@@ -3916,7 +3924,6 @@ exit/b
 
 
 ::_
-
 :s-uncach
 :uncach
 :unstor
@@ -3927,13 +3934,13 @@ git config --global --unset credential.helper
 
 exit/b
 
-rem lu: Dec-21-2022 Seemed to work.
-rem lu: Jan-20-2022
+lu:
+Dec-21-2022 Seemed to work.
+Jan-20-2022
 
 
 
 ::_
-
 :unstor-g2
 
 echo. & echo * Uncache/unstore global credential.
@@ -3945,7 +3952,6 @@ exit/b
 
 
 ::_
-
 :unstor-s
 
 echo. & echo * Uncache/unstore system credential.
@@ -3954,7 +3960,8 @@ git config --system --unset credential.helper
 
 exit/b
 
-rem lu: Dec-21-2022 Seemed to work.
+lu:
+Dec-21-2022 Seemed to work.
 
 
 
@@ -4114,8 +4121,9 @@ git config --global --unset user.email
 
 exit/b
 
-rem lu: Dec-21-2022
-rem lu: Jan-27-2022
+lu:
+Dec-21-2022
+Jan-27-2022
 
 skw: How to unset a variable.
 
@@ -4142,15 +4150,22 @@ I used this on my VDI on Jan-20-2022 to store my Personal Access Token so I woul
 
 :_
 :co
+
 echo. & echo * Git checkout.
+
 if "%~2" == "" goto help
+
 if not exist "%~2" (
   call err %2 doesn't exit. Feb-17-2023-13-37 - %0.bat
   exit/b
 )
+
 git checkout %2
+
 exit/b
-rem lu: Feb-17-2023
+
+lu:
+Feb-17-2023
 
 :help
 echo. & echo * Parameter Description(s):
@@ -4215,8 +4230,6 @@ lu: Mar-28-2019
 
 echo. & echo * Evaluate folder's git status.
 
-rem lu: Apr-1-2019
-
 rem echo.
 rem 
 
@@ -4273,8 +4286,10 @@ if %errorlevel% == 0 (
   exit/b 1
 )
 
-
 exit/b 0
+
+lu:
+Apr-1-2019
 
 
 
@@ -4290,7 +4305,6 @@ exit/b 0
 
 echo. & echo * Commit all files with Python timestamp message.
 
-rem qq
 call ph dtt>%tmp%\python-timestamp.txt
 
 set /p commit-description=<%tmp%\python-timestamp.txt
@@ -4387,12 +4401,12 @@ exit/b
 
 echo. & echo * Pull master
 
-rem lu: Jan-17-2018
-
 git pull origin master
 
 exit/b
 
+lu:
+Jan-17-2018
 
 
 ::_
