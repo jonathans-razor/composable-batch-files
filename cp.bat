@@ -1,5 +1,6 @@
 :_
 @echo off
+
 if "%~1" == "?" goto help
 if "%~1" == "" goto help
 
@@ -11,10 +12,13 @@ goto %1
 
 :_
 :help
+
 echo. & echo * Copy files using function routing.
+
 echo. & echo   Usage: %0 [Parameter 1]
 echo. & echo   Parameter 1: Label method to run.
 echo. & echo   Batch file style: Multipurpose
+
 echo.          
 echo     Parameter  Description
 echo     ---------  -------------------------------------------------------------------------
@@ -56,7 +60,6 @@ exit/b
 
 
 :_
-
 :cb
 
 echo. & echo * Copy background image for testing purposes.
@@ -82,12 +85,9 @@ exit/b
 
 
 :_
-
 :md
 
 echo. & echo * Copy settings.xml file into the Maven Dependencies path.
-
-rem lu: Nov-21-2017
 
 call t m2
 
@@ -95,10 +95,12 @@ xcopy c:\mercury\batch_files\settings.xml
 
 exit/b
 
+lu:
+Nov-21-2017
+
 
 
 :_
-
 :mc
 
 echo. & echo * Copy Mobility resources to the Cordova folder.
@@ -126,12 +128,9 @@ exit/b
 
 
 :_
-
 :aj
 
 echo. & echo * Copy over App.json for mobile build.
-
-rem lu: Sep-6-2017
 
 echo.
 call t pu
@@ -140,15 +139,15 @@ xcopy /y "c:\mercury\mobility\androidspecific\app.json" "app.json"
 
 exit/b
 
+lu:
+Sep-6-2017
+
 
 
 :_
-
 :t1
 
 echo. & echo * Copy over Testing 1 NetConfig.
-
-rem lu: Dec-6-2017
 
 echo.
 call t util
@@ -157,15 +156,15 @@ xcopy /y "c:\mercury\mobility\NetConfig - for Testing1.js" "NetConfig.js"
 
 exit/b
 
+lu:
+Dec-6-2017
+
 
 
 :_
-
 :bu
 
 echo. & echo * Copy file to code backup folder.
-
-rem lu: Nov-9-2017
 
 rem skw: slash replace
 
@@ -181,17 +180,15 @@ echo "%reformatted_string%"
 
 exit/b
 
+lu:
+Nov-9-2017
+
 
 
 :_
-
 :cbf
 
 echo. & echo * CBF.png file to cbf folder.
-
-rem lu: Apr-24-2018
-
-
 
 call t cbf
 
@@ -200,17 +197,16 @@ xcopy /y c:\a\cbf.png
 
 exit/b
 
+lu:
+Apr-24-2018
+
 
 
 :_
-
 :fr_r
-
 :res
 
 echo. & echo * Copy Fresnel images to their respective Android and iOS folders.
-
-rem lu: Jul-13-2018
 
 echo.
 
@@ -228,10 +224,12 @@ xcopy /d /h /r /y "%cbf-pt%\*.png"
 
 exit/b
 
+lu:
+Jul-13-2018
+
 
 
 :_
-
 :test3
 
 echo. & echo * Move test3 files to test1.
@@ -247,12 +245,9 @@ exit/b
 
 
 :_
-
 :copy_cart_cs_files_to_a_temp_folder
 
 echo. & echo * Copy cart cs files to a temp folder.
-
-rem lu: Oct-17-2018
 
 echo.
 
@@ -260,10 +255,12 @@ xcopy *.cs %temp%\cart_cs /s
 
 exit/b
 
+lu:
+Oct-17-2018
+
 
 
 :_
-
 :cc
 
 echo. & echo * Make a copy of CC.asc.
@@ -277,7 +274,6 @@ exit/b
 
 
 :_
-
 :apn
 
 echo. & echo * Copy all files in the current folder to an alias specified path.
@@ -309,12 +305,9 @@ exit/b
 
 
 :_
-
 :jfds
 
 echo. & echo * Copy jj_devops Jenkinsfile to share-zone Jenkinsfile.
-
-rem lu: May-16-2019
 
 echo.
 
@@ -331,10 +324,12 @@ xcopy /y %source_filename% %destination_filename%
 
 exit/b
 
+lu:
+May-16-2019
+
 
 
 :_
-
 :jfsd
 
 echo. & echo * Copy share-zone Jenkinsfile to jj_devops Jenkinsfile.
@@ -359,7 +354,6 @@ exit/b
 
 
 :_
-
 :sv_dr_to_local
 
 echo. & echo * Copy newer Savannah files from dropbox to local drive.
@@ -372,12 +366,9 @@ exit/b
 
 
 :_
-
 :ldd
 
 echo. & echo * Copy LDD from H drive to Share-zone.
-
-rem lu: Jul-1-2019
 
 echo.
 
@@ -385,12 +376,13 @@ call cyff hldd ldd
 
 exit/b
 
+lu:
+Jul-1-2019
+
 
 
 :_
-
 :emax
-
 :max
 
 echo. & echo * Copy empty max on top of max.
@@ -410,12 +402,9 @@ exit/b
 
 
 :_
-
 :fis
 
 echo. & echo * Copy folder including subfolders.
-
-rem lu: Aug-12-2021
 
 echo.
 
@@ -423,10 +412,12 @@ xcopy /r /s %2 %3
 
 exit/b
 
+lu:
+Aug-12-2021
+
 
 
 :_
-
 :nv
 
 echo. & echo * New vdi pass-through batch file.
@@ -447,7 +438,6 @@ exit/b
 
 
 :_
-
 :fp
 
 echo. & echo * Copy an aliased file to an aliased folder.
@@ -483,7 +473,6 @@ exit/b
 
 
 :_
-
 :cf
 
 echo. & echo * Use current folder file to "save as" a filename alias.
@@ -520,7 +509,6 @@ exit/b
 
 
 :_
-
 :dd
 
 echo. & echo * Copy a file to another file using 2 DCVs.
@@ -598,7 +586,6 @@ exit/b
 
 
 :_
-
 :fc
 
 echo. & echo * Use filename alias to "save as" a file in the current folder.
@@ -628,7 +615,6 @@ exit/b
 
 
 :_
-
 :ff
 
 echo. & echo * Use filename alias 1 to "save as" filename alias 2.
@@ -671,7 +657,6 @@ exit/b
 
 
 :_
-
 :pc
 
 echo. & echo * Copy folder aliased files to current folder.
@@ -703,7 +688,6 @@ exit/b
 
 
 ::_
-
 :cv
 
 echo. & echo * Copy CBF file to VDI file.
@@ -738,7 +722,6 @@ exit/b
 
 
 ::_
-
 :vc
 
 echo. & echo * Copy a vdi file to the cbf folder.
@@ -773,7 +756,6 @@ exit/b
 
 
 :_
-
 :tpt
 
 echo. & echo * Copy CBF file template.
@@ -804,7 +786,6 @@ exit/b
 
 
 :_
-
 :pp
 
 echo. & echo * Copy all files from alias path param 1 to alias path param 2.
@@ -812,8 +793,6 @@ echo. & echo * Copy all files from alias path param 1 to alias path param 2.
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 if "%~3" == "" goto help
-
-rem lu: Mar-03-2022
 
 call pn %2
 
@@ -837,6 +816,9 @@ echo. & echo Parameter 3: Destination folder.
 
 exit/b
 
+lu:
+Mar-03-2022
+
 
 
 :_+ Multi-Edit Config
@@ -844,7 +826,6 @@ exit/b
 
 
 ::_
-
 :mecfg
 
 echo. & echo * The Multi-Edit config files seem to be corrupt, so copy mecfg files from dropbox to local.
@@ -871,13 +852,10 @@ exit/b
 
 
 ::_
-
 :copy_from_me_sz
 
 echo. & echo * Copy Multi-Edit config files from share-zone.
 
-rem lu: Dec-27-2018
-
 echo.
 
 call t mecfg
@@ -887,16 +865,16 @@ xcopy /d /h /r /s /y %share-zone%\Multi-Edit_2008_Config_Files
 
 exit/b
 
+lu:
+Dec-27-2018
+
 
 
 ::_
-
 :copy_to_sz
 
 echo. & echo * Copy Multi-Edit config files to share-zone.
 
-rem lu: Dec-27-2018
-
 echo.
 
 call t mecfg
@@ -906,10 +884,12 @@ xcopy /d /h /r /s /y %share-zone%\Multi-Edit_2008_Config_Files
 
 exit/b
 
+lu:
+Dec-27-2018
+
 
 
 ::_
-
 :cfg_dr_to_local
 
 echo. & echo * Copy Multi-Edit configuration files from dropbox to my local drive.
@@ -924,7 +904,6 @@ exit/b
 
 
 :_
-
 :cp
 :cps
 
@@ -974,7 +953,9 @@ exit/b
 ::_
 :all
 :ca
+
 echo. & echo * Copy all current folder files to a alias-specified path.
+
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 call pn %2
@@ -990,6 +971,7 @@ if errorlevel 1 (
 )
 cd /d "%cbf-pt%"
 dir
+
 exit/b
 
 :help
@@ -1001,7 +983,9 @@ exit/b
 
 ::_
 :fall
+
 echo. & echo * Copy all alias-specified files to current folder.
+
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 call pn %2
@@ -1016,6 +1000,7 @@ if errorlevel 1 (
   exit/b
 )
 dir
+
 exit/b
 
 :help
@@ -1028,7 +1013,9 @@ exit/b
 :_
 :mmf
 :rms
+
 echo. & echo * Turn on or off RMS processing.
+
 if "%~2" == "?" goto help
 call t rms>nul
 if "%2"=="" goto turn-on-processing
@@ -1042,6 +1029,7 @@ echo.
 if errorlevel 1 (
   call err Copy problem. Mar-01-2023-13-20
 )
+
 exit/b
 
 :turn-off-processing
@@ -1052,7 +1040,9 @@ echo.
 if errorlevel 1 (
   call err Copy problem. Mar-01-2023-13-25
 )
+
 exit/b
+
 :help
 echo. & echo * Parameter Description(s):
 echo. & echo * Parameter 2: Either "on" or "off".
@@ -1062,7 +1052,6 @@ exit/b
 
 
 :_
-
 :cp2
 
 echo. & echo * Copy file in the current directory to nickname-specified path. (Nov-5-2023 version)
@@ -1163,7 +1152,6 @@ Jan-12-2024
 
 
 ::_
-
 :tef
 
 echo. & echo * Turn the FF template file into a new bash file.

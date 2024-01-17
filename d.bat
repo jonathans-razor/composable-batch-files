@@ -12,6 +12,7 @@ goto %1
 
 :_
 :help
+
 echo. & echo * Dir for current folder.
 
 echo. & echo * Usage: %~n0 [space separated parameter(s)]
@@ -63,18 +64,21 @@ exit/b
 
 :_
 :h
+
 echo. & echo * Look for the hidden files and folders.
+
 echo.
 dir /ah
+
 exit/b
-rem Creation Date: Feb-7-2017
+
+lu:
+Feb-7-2017
 
 
 
 :_
-
 :f
-
 :fo
 
 echo. & echo * Folders only.
@@ -89,17 +93,17 @@ exit/b
 
 
 :_
-
 :concop
 
 echo. & echo * Conflicted copy.
-
-rem lu: Feb-15-2019
 
 echo.
 del "*conflicted copy*.*"
 
 exit/b
+
+lu:
+Feb-15-2019
 
 
 
@@ -110,20 +114,30 @@ exit/b
 ::_
 :-d
 :d-
+
 echo. & echo * Date, newest first.
+
 dir /o-d
+
 exit/b
-rem lu: Apr-23-2019
+
+lu:
+Apr-23-2019
 
 
 
 ::_
 :d
+
 echo. & echo * Date, oldest first.
+
 echo.
 dir /od
+
 exit/b
-rem lu: Apr-23-2019
+
+lu:
+Apr-23-2019
 
 
 
@@ -134,28 +148,31 @@ rem lu: Apr-23-2019
 ::_
 :s
 :size
+
 echo. & echo * Size, biggest first.
 dir /o-s %2
+
 exit/b
-rem lu: Jan-12-2023
+
+lu:
+Jan-12-2023
 
 
 
 ::_
-
 :-s
-
 :s-
 
 echo. & echo * Size, smallest first.
-
-rem lu: Feb-1-2018
 
 echo.
 
 dir /os %2
 
 exit/b
+
+lu:
+Feb-1-2018
 
 
 
@@ -164,7 +181,6 @@ exit/b
 
 
 ::_
-
 :rm
 
 echo. & echo * Recently modified.
@@ -181,9 +197,7 @@ locale specific. Thus, allows to find most recently modified files.
 
 
 ::_
-
 :toda
-
 :today
 
 echo. & echo * Files changed today.
@@ -211,24 +225,22 @@ exit/b
 
 
 ::_
-
 :to
-
 :todff
 
 echo. & echo * Files and folders changed today.
-
-rem lu: Feb-1-2018
 
 echo.
 forfiles /d +0 /c "cmd /c echo @file @ftime @fsize"
 
 exit/b
 
+lu:
+Feb-1-2018
+
 
 
 :_
-
 :e
 
 echo. & echo * Group by extension.
@@ -247,16 +259,21 @@ exit/b
 
 :_
 :hlp
+
 echo. & echo * Related help.
+
 echo.
 dir /?
+
 exit/b
 
 
 
 :_
 :evaluate-the-parameter-list
+
 rem echo. & echo * Evaluate the parameter list.
+
 set cbf_pipe_to_file=0
 set cbf-search-subfolders=0
 call m cel
@@ -275,14 +292,19 @@ if %errorlevel% == 0 (
   rem echo. & echo Parameter list does NOT contain a "/s".
 )
 set /a cbf_parameter_total=%cbf_pipe_to_file%+%cbf-search-subfolders%
+
 exit/b
-rem lu: Aug-30-2022
+
+lu:
+Aug-30-2022
 
 
 
 :_
 :x-old
+
 rem echo. & echo Search by extension.
+
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 if %cbf_parameter_total%==3 (
@@ -326,8 +348,6 @@ exit/b
 
 rem echo. & echo * Tree view.
 
-rem lu: Jan-8-2019
-
 if "%~2" == "?" goto help
 
 echo.
@@ -354,6 +374,9 @@ start "Test Title" "%cbf-app%" "%temp%\tree_results_cs.txt"
 
 exit/b
 
+lu:
+Jan-8-2019
+
 :help
 
 echo. & echo Parameter Descriptions
@@ -363,11 +386,8 @@ echo. & echo Parameter 3: If not blank, application to use to view piped file.
 
 
 :_
-
 :t
-
 :tr
-
 :tree
 
 rem echo. & echo Tree view.
@@ -387,7 +407,6 @@ exit/b
 
 
 :_
-
 :b
 :big
 
@@ -425,7 +444,6 @@ rem fcd: Nov-16-2022
 
 
 ::_
-
 :a
 
 echo. & echo * Alphabetical, folders first.
@@ -458,24 +476,22 @@ exit/b
 
 
 ::_
-
 :-a
-
 :a-
 
 echo. & echo * Reverse Alphabetical, folders first.
-
-rem lu: Jun-24-2021
 
 echo.
 dir /og-n
 
 exit/b
 
+lu:
+Jun-24-2021
+
 
 
 :_
-
 :concop
 
 echo. & echo * Dir concop.
@@ -488,7 +504,6 @@ exit/b
 
 
 :_
-
 :renamed
 
 echo. & echo * Dir renamed.
@@ -501,7 +516,6 @@ exit/b
 
 
 :_
-
 :fno
 
 echo. & echo * Filenames only.
@@ -535,50 +549,68 @@ exit/b
 
 :_
 :imf
+
 echo. & echo * Inegration Marker File.
+
 dir integrationMarkerFile*
+
 exit/b
-rem lu: Feb-21-2023
+
+lu:
+Feb-21-2023
 
 
 
 :_
 :ba
+
 echo. & echo * Bare bones.
+
 set cbf-dir-command=dir/b
 goto process-arguments
+
 exit/b
 
 
 
 :_
 :el
+
 echo. & echo * Extensionless.
+
 set cbf-dir-command=dir *.
 goto process-arguments
+
 exit/b
 
 
 
 :_
 :els
+
 echo. & echo * Extensionless by size.
+
 set cbf-dir-command=dir /o-s *.
 goto process-arguments
+
 exit/b
 
 
 
 :_
 :x
+
 echo. & echo * Extension.
+
 set cbf-dir-command=dir *.%2*
 goto process-arguments
+
 exit/b
 
 
 :_
 :process-arguments
+
 echo. & echo * Process arguments.
 
 if %cbf_parameter_total%==3 (
@@ -609,9 +641,12 @@ exit/b
 
 :_
 :r
+
 echo. & echo * Look for the read-only files and folders.
+
 echo.
 dir /ar
+
 exit/b
 
 lu:
