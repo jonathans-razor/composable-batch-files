@@ -74,27 +74,14 @@ the Union armies defeated those of the ...
 
 exit/b
 
-skw: How do you continue a batch file line onto a second line?
-
 Note: The caret only works with the "echo" statement and not the "rem" statement.
 
 lu:
 Nov-14-2023
 Nov-2-2018
 
-
-
-::_
-:caret
-:cubed-caret
-:hat-trick
-
-echo. & echo * The triple hat/caret seems to work for URLS!
-
-rem This works! Oct-10-2023 (skw triple hat works, triple caret)
-set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
-
-exit/b
+skw:
+How do you continue a batch file line onto a second line?
 
 
 
@@ -105,19 +92,20 @@ echo. & echo * How do you escape a percent sign in a batch file?
 
 rem Answer: 2 '%' signs equals one.
 
-rem skw: percent percent, double percent sign
-
-rem percent 20 issue in environment variables. skw
-
-lu:
-Aug-2-2017
-
 set cbf-url='https://cyber-balance.visualstudio.com/SPDR%%20LOB/_git/Mobile'
 
 echo.
 echo cbf-url: %cbf-url%
 
 exit/b
+
+lu:
+Aug-2-2017
+
+skw:
+double percent sign
+percent 20 issue in environment variables
+percent percent
 
 
 
@@ -169,10 +157,6 @@ exit/b
 
 echo. & echo * Escape character for a parenthesis.
 
-rem skw what's the escape character for a batch file?
-
-rem Escaping Specific Characters: ^esch
-
 echo.
 echo * Error: No "*.%2" file exist(s^) in the current folder.
 
@@ -182,6 +166,10 @@ exit/b
 
 lu:
 Nov-20-2018
+
+skw:
+escaping specific characters: ^esch
+what's the escape character for a batch file?
 
 
 
@@ -262,7 +250,6 @@ exit/b
 
 echo. & echo * String replacement is cool.
 
-rem skw dos search and replace
 rem echo(%text:%search%=%replace%%)
 
 echo. & 
@@ -435,6 +422,9 @@ set database_name=%database_name:_=-%
 echo %database_name%
 
 exit/b
+
+skw:
+dos search and replace
 
 
 
@@ -657,10 +647,6 @@ exit/b
 
 echo. & echo * Set math!
 
-rem skw addition (!vmath)
-
-rem skw addition
-
 set /a addition=15+12
 
 echo.
@@ -685,6 +671,9 @@ exit/b
 
 lu:
 Jul-6-2018
+
+skw
+addition (!vmath)
 
 
 
@@ -739,8 +728,6 @@ Nov-1-2018
 
 echo. & echo * Set statements aren't allowed inside if blocks so here is the workaround.
 
-rem set statements inside if blocks: skw
-
 echo.
 if "%~2" == "" (
   call m set_cbf-app_to_dte
@@ -750,6 +737,9 @@ exit/b
 
 lu:
 Feb-4-2019
+
+skw:
+set statements inside if blocks
 
 
 
@@ -1135,8 +1125,6 @@ cls
 echo.
 echo %cbf-filep%
 
-rem skw:
-
 echo.
 echo Batch file style: Single purpose
 
@@ -1193,8 +1181,6 @@ Sep-1-2021
 
 
 :_+ CBF Template Library (!lbr)
-
-rem skw succinct (!succ)
 
 
 
@@ -1262,7 +1248,7 @@ Feb-9-2022
 
 
 
-:_+ Testing Error Level. (!tel) (skw test error level, test errorlevel)
+:_+ Testing Error Level. (!tel)
 
 
 
@@ -1295,6 +1281,10 @@ exit/b
 
 lu:
 Mar-1-2022
+
+skw: 
+test errorlevel
+test error level
 
 Footnote:
 
@@ -1598,9 +1588,6 @@ echo. & echo * %1.
 
 if "%5" == "?" goto help
 
-rem skw: all parameters, command line parameters, all command line parameters, whole command line
-rem all_parameters, all_command_line_parameters, all_command_line, all arguments, all command line arguments
-
 call :aclp-test %*
 
 exit/b
@@ -1614,6 +1601,17 @@ echo. & echo Parameter 4: parameter 4 is required.
 echo. & echo Parameter 5: parameter 5 is required.
 
 exit/b
+
+skw:
+all arguments
+all command line parameters
+all parameters
+all command line arguments
+all_command_line
+all_command_line_parameters
+all_parameters
+command line parameters
+whole command line
 
 
 
@@ -1685,7 +1683,7 @@ exit/b
 ::_
 :which_environment_is_currently_set
 
-echo. & echo * Which environment is the kiosk pointing to? (skw finding text in file)
+echo. & echo * Which environment is the kiosk pointing to?
 
 type %config_1_destination% | find /i "fqt">nul
 
@@ -1704,6 +1702,9 @@ echo.
 pause
 
 exit/b
+
+skw:
+finding text in file
 
 
 
@@ -1734,10 +1735,9 @@ Jul-3-2023
 
 echo. & echo * Test for the exisitence of a file or folder.
 
-rem skw filename existence, Test if file exists. (!fe)
 call fe package.json & if errorlevel 1 exit/b
 
-rem Expected type of file. (skw file extension)
+rem Expected type of file.
 echo %2| find /i ".ts">nul
 if errorlevel 1 (
   call err Expected a TypeScipt file.
@@ -1748,6 +1748,11 @@ exit/b
 
 lu:
 Aug-29-2023
+
+skw:
+file extension
+filename existence
+Test if file exists. (!fe)
 
 
 
@@ -2266,8 +2271,6 @@ Dec-1-2023
 
 :_+ Populating an environment variable from a file and Choice.
 
-rem skw: setting an environment variable from a file
-
 
 
 ::_
@@ -2283,18 +2286,14 @@ echo. & echo %test%
 exit/b
 
 lu:
-
 Oct-24-2019
 
 skw: 
-
-setting environment variables
-
-populating an environment variable from a file
-
-The problem with this command is that it only does the first line of the file.
-
 how do you set an environment variable from file
+setting an environment variable from a file
+setting environment variables
+populating an environment variable from a file
+The problem with this command is that it only does the first line of the file.
 
 
 
@@ -2457,7 +2456,7 @@ call an %1
 
 if %errorlevel% == 1 (
   echo.
-  echo * Error: Label not found. - skw
+  echo * Error: Label not found.
   call m clear_errorlevel_silently 
   exit/b
 )
@@ -2503,12 +2502,15 @@ Jul-18-2018
 ::_
 :
 
-(skw contains period, contains a period)
 echo %1| find /i ".">nul
 if errorlevel 0 goto
 if errorlevel 1 goto
 
 exit/b
+
+skw:
+contains period
+contains a period
 
 
 
@@ -2547,17 +2549,29 @@ if %errorlevel% == 0 (
 
 exit/b
 
+lc:
+(!find, !cont, !contains, !pipe, !echo) 
+
 lu:
 Oct-11-2023
 Jul-5-2023
 
-(!find, !cont, !contains, !pipe, !echo) 
-skw: contains, find period in filename, all command line variables, all parameters, 
-entire command line, command line arguments, parameter passing, passing parameters, 
-how to process parameters, parameter processing, process parameters
-
-Does the parameter list contain "/test"?, command line options, how to detect command line 
-options, how to detect command line parameters
+skw:
+all command line variables
+all parameters
+command line arguments
+command line options
+contains
+Does the parameter list contain "/test"?
+entire command line
+find period in filename
+how to detect command line options
+how to detect command line parameters
+how to process parameters
+parameter passing
+parameter processing
+passing parameters
+process parameters
 
 This is akin to turning a message into an error code.
 

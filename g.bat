@@ -398,8 +398,6 @@ Apr-28-2017
 
 echo. & echo * Delete pngs copied over by David. I don't understand this.
 
-rem specific folder: skw
-
 echo.
 call t m6
  
@@ -413,6 +411,9 @@ exit/b
 
 lu:
 Jun-20-2017
+
+skw: 
+specific folder
 
 
 
@@ -687,8 +688,6 @@ Jan-23-2017
 
 echo. & echo * 9b. Identify branch.
 
-rem skw: identify_branch
-
 echo.
 
 rem These didn't work. Jan-30-2017
@@ -698,6 +697,9 @@ rem git branch Branch2
 git branch clean6.2
 
 exit/b
+
+skw:
+identify-branch
 
 
 
@@ -1301,8 +1303,6 @@ May-9-2019
 
 echo. & echo * Delete a local tag.
 
-rem how to delete a local tag: skw
-
 echo.
 git tag -d
 
@@ -1310,6 +1310,9 @@ exit/b
 
 lu:
 Oct-7-2019
+
+skw: 
+how to delete a local tag
 
 
 
@@ -1481,8 +1484,7 @@ Dec-12-2019
 
 
 
-:_+ Branch from Tag (skw create branch from release, create branch from tag, create release 
-from tag, create tag from branch, create a branch from a tag, create branch from a tag)
+:_+ Branch from Tag
 
 
 
@@ -1514,6 +1516,14 @@ exit/b
 
 lu:
 Oct-14-2020
+
+skw:
+create a branch from a tag
+create branch from release
+create branch from tag
+create branch from a tag
+create release from tag
+create tag from branch
 
 
 
@@ -1702,8 +1712,6 @@ Jun-11-2019
 
 echo. & echo * Delete tag, local.
 
-rem delete a tag: skw
-
 if "%~2" == "" (
   echo.
   echo * Error: Parameter 2 needs to be the tag you wish to delete.
@@ -1719,6 +1727,9 @@ exit/b
 
 lu:
 Oct-15-2019
+
+skw:
+delete a tag
 
 
 
@@ -1748,15 +1759,10 @@ Feb-6-2020
 
 
 
-::_ (!delb) (skw delete_branch)
+::_
 :debrro
 
 echo. & echo * Delete branch, remote.
-
-rem This worked! Oct-13-2016
-rem This worked! Mar-8-2019
-
-rem Note: You must have already initialized the repository.
 
 if "%~2" == "" (
   echo.
@@ -1768,6 +1774,17 @@ echo.
 git push origin --delete %2
 
 exit/b
+
+lc:
+(!delb)
+
+rem:
+This worked! - Mar-8-2019
+The below is is the oldest date I can find in my batch files.
+This worked! - Oct-13-2016
+
+skw:
+delete_branch
 
 
 
@@ -2594,8 +2611,6 @@ Feb-4-2022
 
 echo. & echo * Trigger an empty build on the develop branch.
 
-rem skw Allow empty commit.
-
 call t ma
 
 call :sb develop
@@ -2611,6 +2626,9 @@ exit/b
 
 lu:
 Jun-4-2020
+
+skw:
+Allow empty commit.
 
 
 
@@ -2649,12 +2667,16 @@ exit/b
 lu:
 Aug-7-2018
 
-rem revert-series
+rem:
+If you don't care about any local changes and just want a copy from the repository.
+This didn't seem to work on Jan-31-2017.
 
-rem If you don't care about any local changes and just want a copy from the repository.
-rem Revert all changes from this folder. Revert all local changes.
-rem blow away local changes, specific folder: skw
-rem This didn't seem to work on Jan-31-2017.
+skw: 
+Blow away local changes.
+Revert all changes from this folder.
+Revert all local changes.
+revert-series
+specific folder
 
 
 
@@ -2671,9 +2693,10 @@ exit/b
 
 lu:
 Jul-19-2021
+May-30-2018
 
-rem Last Updated: May-30-2018
-rem Last successful run date: May-30-2018
+rem
+Last successful run date: May-30-2018
 Did not work on Sep-30-2022.
 
 
@@ -2808,40 +2831,48 @@ git checkout 6df905288039e634118b63719b77bff4a5566e1b
 
 exit/b
 
+lc:
+(!rb)
+
 lu:
 Jun-10-2020
+Aug-15-2017
 
-rem Aug-31-2022
-rem git checkout 9eb11def09c363b1524ad97e8d9c7dea58633f15
+rem:
+Aug-31-2022
+git checkout 9eb11def09c363b1524ad97e8d9c7dea58633f15
 
-rem fud (!rb): Aug-15-2017 (skw label, tag, roll back to a particular version)
-
-rem Note: Running this will detach your head. To reattach head, run reattach_head.
+Running this will detach your head. To reattach head, run reattach_head.
 
 rem I validated that this works on ForGitTesting on Aug-17-2017.
 
-rem git checkout a18e821
-rem git checkout 2691f3b
-rem git checkout a703855
-rem git checkout a18e821
+git checkout a18e821
+git checkout 2691f3b
+git checkout a703855
+git checkout a18e821
 
-rem S6 @ Jul-10-2017
-rem git checkout 959308e 
+S6 @ Jul-10-2017
+git checkout 959308e 
 
-rem S6 @ Aug-28-2017 (Fresnel from c. Jun-26-2018)
-rem git checkout b3444ed
+S6 @ Aug-28-2017 (Fresnel from c. Jun-26-2018)
+git checkout b3444ed
 
-rem BusterFromFresnel @ Jul-27-2018
-rem git checkout c1ceb68e87e438a79f2455b7b6f7860b94e01683
+BusterFromFresnel @ Jul-27-2018
+git checkout c1ceb68e87e438a79f2455b7b6f7860b94e01683
 
-rem Jun-10-2020 - Cart
-rem git checkout 5ca5b80a69f23fbaf0bbaea57a501b614206e75f
-rem git checkout 5ca5b80a69f23fbaf0bbaea57a501b614206e75f
+Jun-10-2020 - Cart
+git checkout 5ca5b80a69f23fbaf0bbaea57a501b614206e75f
+git checkout 5ca5b80a69f23fbaf0bbaea57a501b614206e75f
 
-rem git checkout b65b32d883e6b5d3caf410c1bbd7791013f2edda
-rem git checkout 271bf2ee276ba309252f462fb24a15167b6ac827
-rem git checkout 18822b0b58d8abc8b9ab9340998d1018568ee3cb
-rem git checkout 045821e9f8028af5a0619f90ad79b0f245f06321
+git checkout b65b32d883e6b5d3caf410c1bbd7791013f2edda
+git checkout 271bf2ee276ba309252f462fb24a15167b6ac827
+git checkout 18822b0b58d8abc8b9ab9340998d1018568ee3cb
+git checkout 045821e9f8028af5a0619f90ad79b0f245f06321
+
+skw:
+label
+roll back to a particular version
+tag
 
 
 
@@ -2877,9 +2908,11 @@ exit/b
 lu:
 May-2-2017
 
-skw how to reattach head
+rem:
+git checkout clean6.2
 
-rem git checkout clean6.2
+skw:
+how to reattach head
 
 
 
@@ -2979,8 +3012,6 @@ echo. & echo * Reset head by 2 id number versions. This enabled not to have to m
 
 rem Step back 2 versions.
 
-rem reverse 2: skw
-
 echo.
 git reset --hard "HEAD~2"
 
@@ -2988,6 +3019,9 @@ exit/b
 
 lu:
 Aug-7-2018
+
+skw:
+reverse 2
 
 
 
@@ -3635,7 +3669,7 @@ exit/b
 
 
 
-:_+ Configuration and Author Settings (!fyc, !fyconfig) (skw git settings)
+:_+ Configuration and Author Settings (!fyc, !fyconfig)
 
 Verb Prefixes
 e = Edit
@@ -3655,6 +3689,40 @@ cat ~/.gitconfig
 
 
 ::_
+:sg-lofi
+
+echo. & echo * Fix long filenames issue for global configuration.
+
+git config --global core.longpaths true
+
+exit/b
+
+lu:
+Nov-22-2022
+
+skw:
+filename too long github
+
+
+
+::_
+:sl-lofi
+
+echo. & echo * Fix long filenames issue for local configuration.
+
+git config core.longpaths true
+
+exit/b
+
+lu:
+Dec-9-2016
+
+skw:
+filename too long github
+
+
+
+::_
 :h-a
 
 echo. & echo * Show all configuration settings.
@@ -3667,21 +3735,9 @@ call :g-l
 
 exit/b
 
+skw:
+git settings
 
-
-::_
-:sg-lofi
-
-echo. & echo * Fix long filenames issue.
-
-git config --global core.longpaths true
-
-exit/b
-
-lu:
-Nov-22-2022
-
-rem skw filename too long github
 
 
 ::_
@@ -3696,22 +3752,6 @@ exit/b
 
 lu:
 Jan-26-2022
-
-
-
-::_
-:sl-lofi
-
-echo. & echo * Set lofi for local.
-
-git config core.longpaths true
-
-exit/b
-
-lu:
-Dec-9-2016
-
-skw filename too long github
 
 
 
@@ -4065,7 +4105,8 @@ lu:
 Dec-21-2022
 Jan-27-2022
 
-skw: How to unset a variable.
+skw:
+How to unset a variable.
 
 
 

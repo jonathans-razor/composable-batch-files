@@ -2337,86 +2337,6 @@ Feb-1-2018
 
 
 
-:_+ CBF Variables
-
-
-
-::_
-:cev
-:clea
-:clear
-:env_c
-:rcv
-:rese
-:reset
-:reset_cbf-variables
-
-echo. & echo * Reset CBF variables. Deprecated: Going forward, please use cv.bat.
-
-rem skw clear environment variables, clear_cbf-variables
-
-rem echo.
-rem 
-
-set cbf-appended_words=
-
-set cbf-app=
-
-set cbf-back=
-
-set cbf-cn=
-
-set cbf-cf=
-
-rem set cbf-default-browser=
-
-rem set cbf-default-text-editor=
-
-set cbf-wo=
-
-set cbf-expanded-variable=
-
-set cbf-ex=
-
-set cbf-fc_path=
-
-set cbf-fn=
-
-set cbf-gh=
-
-set cbf-host=
-
-set cbf-instance-id=
-
-set cbf-ip=
-
-set cbf-java=
-
-set cbf-jf=
-
-set cbf-je=
-
-set cbf-jpg=
-
-set cbf-parameter=
-
-set cbf-pt=
-
-set cbf-pem=
-
-set cbf-png=
-
-rem When this is uncommented, it causes issues. Dec-20-2019
-rem set cbf-repo=
-
-set cbf-url=
-
-set cbf-xml=
-
-exit/b
-
-
-
 :_
 :set_cbf-app_to_dte
 
@@ -2622,7 +2542,7 @@ Aug-16-2018
 
 
 
-::_ (!clea) (skw clear_error_level)
+::_
 :cel
 :el_cs
 :clear-errorlevel
@@ -2630,8 +2550,6 @@ Aug-16-2018
 :sel
 
 rem echo. & echo * Clear/reset errorLevel silently.
-
-rem reset_errorlevel: skw
 
 rem This was not working on Jul-21-2021, so I commented it.
 ver>nul
@@ -2641,8 +2559,15 @@ rem set errorlevel=0
 
 exit/b
 
+lc:
+(!clea)
+
 lu:
 Nov-12-2019
+
+skw:
+clear_error_level
+reset_errorlevel
 
 
 
@@ -3507,7 +3432,7 @@ s ma
 rem You may or may not want to do a get-latest.
 pl
 
-rem Get Postgres running on local by clicking on the lnk_db shortcut. (skw start the database)
+rem Get Postgres running on local by clicking on the lnk_db shortcut.
 
 rem liqu
 
@@ -3551,6 +3476,9 @@ exit/b
 
 lu:
 Mar-30-2020
+
+skw:
+start the database
 
 
 
@@ -4318,7 +4246,8 @@ exit/b
 Footnote
 >< >< ><
 
-skw: specific folder
+skw: 
+specific folder
 
 
 
@@ -4506,8 +4435,6 @@ Nov-14-2023
 
 echo. & echo * Open latest item.
 
-rem (file contents, get file contents into an environment variable: skw)
-
 call t %1 || exit/b
 
 dir /b /o-d>c:\a\latest-item-results.txt
@@ -4524,6 +4451,10 @@ lu:
 Dec-22-2023
 Jul-8-2021
 
+skw:
+file contents
+get file contents into an environment variable
+
 
 
 :_
@@ -4533,8 +4464,6 @@ Jul-8-2021
 :gdaf
 
 echo. & echo * Create timestamped file.
-
-rem skw: add timestamped file, Create New File, Generate a timestamped name file, create file, make test file
 
 rem The below class name is case sensitive.
 java -classpath %composable-batch-files% Get_timestamp_for_use_as_filename>date_as_filename.txt
@@ -4551,6 +4480,14 @@ This works.
 
 lu:
 Jun-12-2020
+
+skw:
+add timestamped file
+create file
+create new file
+Generate a timestamped name file.
+make test file
+
 
 
 
@@ -4972,13 +4909,15 @@ exit/b
 lu:
 Nov-8-2023
 
+skw: 
+file path only
+full filename
+
 Sample call to get current folder name:
 call m distill-file-folder %cd%
 
 Then this variable "cbf-distilled-file-folder" will have the value for the current folder or 
 filename.
-
-skw: full filename, file path only
 
 
 

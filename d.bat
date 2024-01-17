@@ -245,15 +245,17 @@ Feb-1-2018
 
 echo. & echo * Group by extension.
 
-rem skw: by file type
-
-rem lu: Jun-24-2021
-
 echo.
 echo.
 dir /oe
 
 exit/b
+
+lu:
+Jun-24-2021
+
+skw: 
+by file type
 
 
 

@@ -166,8 +166,6 @@ Dec-6-2017
 
 echo. & echo * Copy file to code backup folder.
 
-rem skw: slash replace
-
 echo.
 
 set reformatted_string=%2
@@ -182,6 +180,9 @@ exit/b
 
 lu:
 Nov-9-2017
+
+skw:
+slash replace
 
 
 

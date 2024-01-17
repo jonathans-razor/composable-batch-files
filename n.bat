@@ -657,7 +657,8 @@ exit/b
 lu:
 Feb-25-2023
 
-skw Groovy Code Keepers
+skw:
+groovy code keepers
 
 
 
@@ -1425,7 +1426,9 @@ exit/b
 lu:
 Mar-22-2020
 
-skw blank Excel document, blank excel file
+skw:
+blank excel document
+blank excel file
 
 
 
@@ -1604,10 +1607,6 @@ Jan-24-2019
 
 echo. & echo * Git power user bin. Loaded with utilities.
 
-rem skw: git utilities, git user bin, super path, super git
-
-rem skw git super location, git super path, super git, GitHub super
-
 call pn cbf>nul
 
 set cbf-fn=%cbf-pt%\gub.asc
@@ -1622,6 +1621,15 @@ exit/b
 
 lu:
 Oct-23-2020
+
+skw:
+git super location
+git super path
+git utilities
+git user bin
+github super
+super git
+super path
 
 
 
@@ -1796,7 +1804,7 @@ Jun-30-2023
 
 
 
-:_+ Multi-Edit Configuration Files (skw Multi-Edit Config Files)
+:_+ Multi-Edit Configuration Files
 
 
 
@@ -1811,6 +1819,9 @@ exit/b
 
 lu:
 Dec-7-2018
+
+skw:
+Multi-Edit Config Files
 
 
 
@@ -2048,14 +2059,16 @@ May-06-2022
 
 echo. & echo * Snipping tool.
 
-rem clip, screen shot: skw
-
 set cbf-app=%windir%\system32\SnippingTool.exe
 
 exit/b
 
 lu:
 Feb-4-2019
+
+skw:
+clip
+screen shot
 
 
 
@@ -2123,7 +2136,6 @@ Dec-14-2018
 
 echo. & echo * Environment variables information.
 
-rem System Properties, Advanced System Settings, edit path, edit you path, edit env, set env: skw
 set cbf-app=%systemroot%\system32\SystemPropertiesAdvanced.exe
 rem call pn exs>nul
 set cbf-ex=%cbf-pt%\My Official Inter-Computer Environment Variables.xlsx
@@ -2136,6 +2148,14 @@ rem set cbf-fn3=%cbf-pt%\Environment Variables from XAM on Aug-5-2021.txt
 
 lu:
 Apr-29-2019
+
+skw:
+advanced system settings
+edit path
+edit you path
+edit env
+set env
+system properties
 
 
 
@@ -2772,7 +2792,8 @@ exit/b
 lu:
 Jan-9-2020
 
-base icons: skw
+skw:
+base icons
 
 
 
@@ -3385,7 +3406,25 @@ Sep-20-2023
 
 
 
-:_+ CBF Testing (skw test-cbf, test cbf, cbf-testing, Batch File Meta Rubric)
+:_+ CBF Testing
+
+
+
+::_
+:caret
+:cubed-caret
+:hat-trick
+
+echo. & echo * The triple hat/caret seems to work for URLS!
+
+rem This works! Oct-10-2023
+set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
+
+exit/b
+
+skw:
+triple caret
+triple hat works
 
 
 
@@ -3397,7 +3436,7 @@ Sep-20-2023
 
 echo. & echo * Get ampersands to work in cbf-urls. For example, get "sf wlcbf" to work. It has an ampersand in the cbf-url string.
 
-rem This works! Oct-10-2023 (skw triple hat works, triple caret)
+rem This works! Oct-10-2023
 set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
 
 echo.
@@ -3407,6 +3446,14 @@ exit/b
 
 lu:
 Sep-5-2021
+
+skw:
+hat trick
+cbf-testing
+triple caret
+test-cbf
+test cbf
+triple hat works
 
 Double quoates didn't work.
 set cbf-url=https://www.bing.com/search?q=Bing+AI"&"showconv=1
@@ -3654,7 +3701,9 @@ set cbf-url=https://text-compare.com/
 
 exit/b
 
-skw Online comparison tool, code compare
+skw:
+code compare
+online comparison tool
 
 
 
@@ -4352,7 +4401,8 @@ exit/b
 lu:
 May-17-2022
 
-table-of-contents-series: skw
+skw:
+table-of-contents-series
 
 
 
@@ -4369,7 +4419,8 @@ exit/b
 lu:
 May-17-2022
 
-table-of-contents-series: skw
+skw:
+table-of-contents-series
 
 
 
@@ -4388,7 +4439,9 @@ exit/b
 
 lu:
 May-17-2022
-table-of-contents-series: skw
+
+skw:
+table-of-contents-series
 
 
 
@@ -4404,7 +4457,8 @@ set cbf-fn=%cbf-pt%\dbf-tc.txt
 
 exit/b
 
-table-of-contents-series: skw
+skw:
+table-of-contents-series
 
 
 
@@ -4420,7 +4474,9 @@ exit/b
 
 lu:
 Jun-26-2023
-table-of-contents-series: skw
+
+skw:
+table-of-contents-series
 
 
 
@@ -4437,7 +4493,8 @@ exit/b
 lu:
 May-17-2022
 
-table-of-contents-series: skw
+skw:
+table-of-contents-series
 
 
 
