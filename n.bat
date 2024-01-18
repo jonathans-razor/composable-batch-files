@@ -5116,4 +5116,17 @@ exit/b
 
 
 
+:_
+:vue
+:vuejs-hw
+
+echo. & echo * Vue.js hello world.
+
+call pn d>nul
+set cbf-fn=%cbf-pt%\hello-world-vuejs\index.html
+
+exit/b
+
+
+
 :_ (!efn)

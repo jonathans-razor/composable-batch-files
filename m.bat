@@ -5002,7 +5002,7 @@ Deprecated
 ::_
 :expand-to-path-only
 
-echo. & echo * Expand to path only. Version 2.
+rem echo. & echo * Expand to path only. Version 2.
 
 set cbf-expand-to-path-only-pt=%~d2%~p2
 

@@ -196,6 +196,10 @@ echo. & echo * Hello world from React is available at "nm hw".
 rem TypeScript
 call ts hw
 
+:
+rem Vue.js
+call fx vue fn br
+
 :corner-case
 echo.
 call sep 2024
