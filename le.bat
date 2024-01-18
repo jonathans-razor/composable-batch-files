@@ -63,10 +63,27 @@ exit/b 1
 
 :_
 :look-up-leetcode-number
+
 echo. & echo * Look up LeetCode number %1.
+
 call an br>nul
-set cbf-parameter=https://www.google.com/search?q=site:leetcode.com+LeetCode+problem+number+%*
+rem qq
+set cbf-parameter=https://leetcode.com/problemset/?page=1^^^&search=%*
 call r
+
+exit/b 0
+
+
+
+:_
+:look-up-leetcode-number-old
+
+echo. & echo * Look up LeetCode number %1.
+
+call an br>nul
+set cbf-parameter=https://www.google.com/search?q=site:leetcode.com+LeetCode+problem+number+%*.
+call r
+
 exit/b 0
 
 

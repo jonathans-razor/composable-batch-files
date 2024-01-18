@@ -24,7 +24,7 @@ echo   Parameter 2 (Optional): The alias of the browser application you wish to 
 
 echo. & echo   Entangled variable: cbf-url
 
-echo. & echo   Pit of Success Strategy: If cb_url is not found, the algorithm will look for cbf-cf or cbf-gh.
+echo. & echo   Pit of Success Strategy: If cb-url is not found, the algorithm will look for cbf-cf, cbf-gh, etc.
 
 echo. & echo * Examples:
 echo   %0 gas
