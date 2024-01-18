@@ -5120,7 +5120,7 @@ exit/b
 :vue
 :vuejs-hw
 
-echo. & echo * Vue.js hello world.
+echo. & echo * Hello world from Vue.js.
 
 call pn d>nul
 set cbf-fn=%cbf-pt%\hello-world-vuejs\index.html

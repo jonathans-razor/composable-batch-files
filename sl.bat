@@ -39,37 +39,6 @@ Sep-26-2023
 
 
 :_
-:hw3
-
-cls
-
-echo. & echo * Call the 3 different versions of hello world.
-
-call t d>nul
-
-:
-call sep
-echo. & echo * Version 1.
-echo.
-python hello-world.py
-
-:
-call sep
-echo. & echo * Version 2.
-call ph hello-world.py
-
-:
-call sep
-echo. & echo * Version 3.
-call ph hw
-
-:
-echo.
-exit/b
-
-
-
-:_
 :rs3
 
 cls
@@ -150,57 +119,48 @@ exit/b
 cls
 
 echo. & echo * Hello world from supported-languages-series-jj.
+
+echo.
 call sep 2024
 
-:
-rem Angular
+:- Angular
 echo. & echo * Hello world from Angular is available at "gu hw".
 
-:
-rem Batch
+:- Batch
 call slf %1
 
-:
-rem C#/.NET
+:- C#/.NET
 call dn %1
 
-:
-rem Golang
+:- Golang
 call gg %1
 
-:
-rem Java
+:- Java
 call jv %1
 
-:
-rem JavaScript
+:- JavaScript
 call nd %1
 
-:
-rem JavaScript - Browser Version
+:- JavaScript - Browser Version
 echo. & echo * Hello world from JavaScript Brower version at "nd hwb".
 
-:
-:rem Perl
+:- Perl
 echo. & echo * Hello world from Perl is available at "perl hello-world.pl".
 
-:
-rem Python
+:- Python
 call ph %1
 
-:
-rem React
+:- React
 echo. & echo * Hello world from React is available at "nm hw".
 
-:
-rem TypeScript
+:- TypeScript
 call ts hw
 
-:
-rem Vue.js
+:- Vue.js
 call fx vue fn br
 
 :corner-case
+
 echo.
 call sep 2024
 

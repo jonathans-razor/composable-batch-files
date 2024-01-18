@@ -120,7 +120,7 @@ exit/b
 :_
 :hw
 
-echo. & echo * Hello world from %0.
+rem echo. & echo * Hello world from TypeScript.
 
 call t dsa>nul
 rem If I uncomment the transpile statement, the program won't run. Hmm. Oct-12-2023

@@ -69,7 +69,6 @@ exit/b
 
 
 :_
-
 :validate_user_input
 
 if "%~2" == "" (
@@ -87,7 +86,6 @@ goto main
 
 
 :_
-
 :main
 
 echo.>%tmp%\cs-search-results.txt
@@ -95,8 +93,8 @@ echo.>%tmp%\cs-search-results.txt
 echo. & echo * Contents Search.
 echo. & echo * Contents Search>>%tmp%\cs-search-results.txt
 
-echo * Search Criterion: %~1
-echo * Search Criterion: %~1>>%tmp%\cs-search-results.txt
+echo * Search Criterion: %1
+echo * Search Criterion: %1>>%tmp%\cs-search-results.txt
 
 echo   * Current folder: %cd%>>%tmp%\cs-search-results.txt
 
