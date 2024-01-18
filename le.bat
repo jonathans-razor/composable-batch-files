@@ -72,6 +72,9 @@ call r
 
 exit/b 0
 
+rem:
+3009 is the highest LeetCode number I was able to find. Jan-18-2024
+
 
 
 :_
@@ -2149,6 +2152,25 @@ exit/b
 
 
 :_
+:Jan-16-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 1012-numbers-with-repeated-digits.js 20
+node 1012-numbers-with-repeated-digits.js 40
+node 1012-numbers-with-repeated-digits.js 100
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2172,7 +2194,7 @@ exit/b
 
 
 :_
-:Jan-16-2024
+:Jan-18-2024
 
 cls
 
@@ -2180,9 +2202,9 @@ echo. & echo * %1.
 
 @echo on
 
-node 1012-numbers-with-repeated-digits.js 20
-node 1012-numbers-with-repeated-digits.js 40
-node 1012-numbers-with-repeated-digits.js 100
+node 122-best-time-to-buy-and-sell-stock-ii.js 7 1 5 3 6 4
+node 122-best-time-to-buy-and-sell-stock-ii.js 1 2 3 4 5
+node 122-best-time-to-buy-and-sell-stock-ii.js 7 6 4 3 1
 
 @echo off
 

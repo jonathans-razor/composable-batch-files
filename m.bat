@@ -4409,7 +4409,7 @@ Apr-11-2022
 :le
 :py
 
-rem echo. & echo * Copy latest Python filename to clipboard.
+rem echo. & echo * Copy latest filename to clipboard.
 
 call t d>nul || exit/b
 
@@ -4419,7 +4419,7 @@ set /p cbf-python-results=<c:\a\python-results.txt
 
 echo %cbf-python-results%|clip
 
-echo. & echo * Python filename "%cbf-python-results%" has been copied to the clipboard.
+echo. & echo * Code filename "%cbf-python-results%" has been copied to the clipboard.
 
 exit/b
 
