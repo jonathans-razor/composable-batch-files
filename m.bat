@@ -4519,11 +4519,24 @@ Mar-4-2019
 
 
 ::_
-:augment-path
+:start-xps
 
-echo. & echo * Augment path.
+echo. & echo * Start XPS.
 
-set path=%dropbox%\savannah\belfry;%path%
+call %0 lnk-xps
+call m a
+
+exit/b
+
+
+
+::_
+:start-sp7
+
+echo. & echo * Start SP7.
+
+call %0 lnk-xps
+call m do
 
 exit/b
 
@@ -4532,49 +4545,27 @@ exit/b
 ::_
 :lnk-xps
 
-echo. & echo * Initialize environment fpr %1.
+echo. & echo * Initialize environment for %1.
 
 call %0 set-default-browser br
-
-call %0 set-default-repository-folder d-aa-repos
-
-call %0 set-default-text-editor me
-
-call %0 augment-path
-
-call t a
-
-exit/b
-
-fcd:
-Apr-8-2022
-
-Footnote
->< >< ><
-
-The convention of calling these "lnk" methods is very similar to having a .bashrc file.
-
-
-
-::_
-:lnk-sp7
-
-echo. & echo * Initialize environment fpr %1.
-
-call col hellow
-
-call %0 set-default-browser br
-
 call %0 set-default-repository-folder c-aa-repos
-
 call %0 set-default-text-editor me
-
-call m demo
 
 exit/b
 
 fcd:
 Nov-9-2023
+
+
+
+::_
+:augment-path
+
+echo. & echo * Augment path.
+
+set path=%dropbox%\savannah\belfry;%path%
+
+exit/b
 
 
 
