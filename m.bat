@@ -4535,11 +4535,28 @@ exit/b
 
 echo. & echo * Start SP7.
 
-call %0 lnk-xps
+call %0 lnk-sp7
 call m do
-call col 1
 
 exit/b
+
+
+
+::_
+:lnk-sp7
+
+echo. & echo * Initialize environment for %1.
+
+call %0 set-default-browser br
+call %0 set-default-repository-folder c-aa-repos
+call %0 set-default-text-editor me
+
+col 1
+
+exit/b
+
+fcd:
+Jan-18-2024
 
 
 
