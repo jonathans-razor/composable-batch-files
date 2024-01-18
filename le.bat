@@ -67,7 +67,6 @@ exit/b 1
 echo. & echo * Look up LeetCode number %1.
 
 call an br>nul
-rem qq
 set cbf-parameter=https://leetcode.com/problemset/?page=1^^^&search=%*
 call r
 

@@ -5110,7 +5110,6 @@ exit/b
 
 echo. & echo * Google advanced search.
 
-rem   qq
 set cbf-url=http://www.google.com/advanced_search?hl=en
 
 exit/b
