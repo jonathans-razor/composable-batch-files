@@ -1,5 +1,4 @@
 :_
-
 @echo off
 
 if "%~1" == "" goto main
@@ -10,25 +9,13 @@ goto %1
 
 
 :_
-
 :help
 
 echo. & echo * Performs shell color-related operations.
 
-set parameter_1=Parameter 1 (Optional): Function to execute.
-set parameter_1=%parameter_1% 
+echo. & echo   Parameter 1 (Optional)
 
-echo.
-echo %parameter_1%
-
-echo.
-echo Menu of Available Functions
-
-echo.
-echo  File  Description
-echo  ----  ------------------------------------------------------------------
-echo     s  Show color values.
-echo  sail  white on blue
+echo. & echo   Alias for the color you would like.
 
 exit/b
 
@@ -42,14 +29,23 @@ exit/b
 
 
 :_
+:s
+:show
 
+echo. & echo * Show values.
+
+color /?
+
+exit/b
+
+
+
+:_
+:1
 :flash
 
 echo. & echo * Yellow on black.
 
-rem lu: Jan-22-2019
-
-echo.
 color 0e
 
 exit/b
@@ -57,7 +53,7 @@ exit/b
 
 
 :_
-
+:2
 :velv
 
 echo. & echo * Red velvet. Red on charcoal.
@@ -69,7 +65,7 @@ exit/b
 
 
 :_
-
+:3
 :sail
 
 echo. & echo * White on blue.
@@ -82,6 +78,7 @@ exit/b
 
 
 :_
+:4
 :hellow
 
 echo. & echo * Hellow Orld.
@@ -93,32 +90,14 @@ exit/b
 
 
 :_
+:14
+:24
+:40
+:f4
 
-:s
+echo. & echo * %1.
 
-:show
-
-echo. & echo * Show values.
-
-rem lu: Jan-22-2019
-
-echo.
-color /?
-
-exit/b
-
-
-
-:_
-
-:error
-
-rem echo. & echo * Error!
-
-rem lu: Sep-7-2022
-
-rem Yellow on black.
-color fc
+color %1
 
 exit/b
 
@@ -130,11 +109,10 @@ exit/b
 
 echo. & echo * Reset color to original value.
 
-echo.
 color
 
 exit/b
 
 
 
-:_ (!rfsp) (mov-6)
+:_

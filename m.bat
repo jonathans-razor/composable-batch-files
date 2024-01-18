@@ -4537,6 +4537,7 @@ echo. & echo * Start SP7.
 
 call %0 lnk-xps
 call m do
+call col 1
 
 exit/b
 
