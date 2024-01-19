@@ -48,9 +48,7 @@ Jan-18-2024
 rem echo. & echo * When the two are equal, the variable or parameter is numeric.
 
 set /a numeric_checker=%~1
-
 rem echo. & echo nc: %numeric_checker%
-
 if %numeric_checker% neq %~1 exit/b 1
 
 exit/b 0
