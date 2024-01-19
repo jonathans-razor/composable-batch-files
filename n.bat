@@ -3125,105 +3125,6 @@ Sep-12-2023
 
 
 
-:_+ Localhost
-
-
-
-::_
-:nd
-:3000
-
-echo. & echo * Localhost port 3000. Used by Node.
-
-set cbf-lh=http://localhost:3000
-
-exit/b
-
-lu:
-Oct-18-2023
-
-
-
-::_
-:3000h
-
-echo. & echo * Localhost port %1.
-
-set cbf-lh=http://localhost:%1/hello
-
-exit/b
-
-lu:
-Sep-21-2023
-
-
-
-::_
-:gu
-:4200
-
-echo. & echo * Default localhost port for Angular.
-
-set cbf-lh=http://localhost:4200
-
-exit/b
-
-lu:
-Sep-27-2023
-Jul-06-2022
-
-
-
-::_
-:5000
-
-echo. & echo * Show JSON Server.
-
-set cbf-lh=http://localhost:5000
-rem set cbf-lh=http://localhost:5000/tasks
-
-exit/b
-
-lu:
-Sep-29-2023
-
-
-
-::_
-:8000
-:8080
-:8800
-:9000
-
-echo. & echo * Localhost port %1.
-
-set cbf-lh=http://localhost:%1
-
-exit/b
-
-lu:
-Sep-27-2023
-Jul-06-2022
-
-
-
-::_
-:gsg
-:psg
-
-echo. & echo * Pipeline script generator.
-
-call an kr
-
-set cbf-url=http://localhost:8080/job/PipelineTest2/pipeline-syntax/
-
-exit/b
-
-lu:
-Jan-11-2019
-
-
-
 :_
 :sail
 
@@ -4139,7 +4040,8 @@ call pn it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
-set cbf-url=
+set cbf-gh2=https://github.com/bradtraversy/vue-expense-tracker
+set cbf-lh=http://localhost:5173
 
 exit/b
 
@@ -5145,6 +5047,105 @@ echo. & echo * Google advanced search.
 set cbf-url=http://www.google.com/advanced_search?hl=en
 
 exit/b
+
+
+
+:_+ Localhost
+
+
+
+::_
+:nd
+:3000
+
+echo. & echo * Localhost port 3000. Used by Node.
+
+set cbf-lh=http://localhost:3000
+
+exit/b
+
+lu:
+Oct-18-2023
+
+
+
+::_
+:3000h
+
+echo. & echo * Localhost port %1.
+
+set cbf-lh=http://localhost:%1/hello
+
+exit/b
+
+lu:
+Sep-21-2023
+
+
+
+::_
+:gu
+:4200
+
+echo. & echo * Default localhost port for Angular.
+
+set cbf-lh=http://localhost:4200
+
+exit/b
+
+lu:
+Sep-27-2023
+Jul-06-2022
+
+
+
+::_
+:5000
+
+echo. & echo * Show JSON Server.
+
+set cbf-lh=http://localhost:5000
+rem set cbf-lh=http://localhost:5000/tasks
+
+exit/b
+
+lu:
+Sep-29-2023
+
+
+
+::_
+:8000
+:8080
+:8800
+:9000
+
+echo. & echo * Localhost port %1.
+
+set cbf-lh=http://localhost:%1
+
+exit/b
+
+lu:
+Sep-27-2023
+Jul-06-2022
+
+
+
+::_
+:gsg
+:psg
+
+echo. & echo * Pipeline script generator.
+
+call an kr
+
+set cbf-url=http://localhost:8080/job/PipelineTest2/pipeline-syntax/
+
+exit/b
+
+lu:
+Jan-11-2019
 
 
 

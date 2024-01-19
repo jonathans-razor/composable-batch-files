@@ -156,7 +156,6 @@ set mp3_staging_area=%cbf-pt%
 
 call t pc>nul
 
-echo.
 rem On Jul-29-2023 I discovered that m4a files can also be played on my MP3 player, so I edited
 rem the line below to include all files, not just mp3 type files.
 rem On Aug-8-2023 I want to move the m4a and mp3 separately.

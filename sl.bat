@@ -123,40 +123,40 @@ echo. & echo * Hello world from supported-languages-series-jj.
 echo.
 call sep 2024
 
-:- Angular
+:Angular
 echo. & echo * Hello world from Angular is available at "gu hw".
 
-:- Batch
+:Batch
 call slf %1
 
-:- C#/.NET
+:C#/.NET
 call dn %1
 
-:- Golang
+:Golang
 call gg %1
 
-:- Java
+:Java
 call jv %1
 
-:- JavaScript
+:JavaScript
 call nd %1
 
-:- JavaScript - Browser Version
+:JavaScript - Browser Version
 echo. & echo * Hello world from JavaScript Brower version at "nd hwb".
 
-:- Perl
+:Perl
 echo. & echo * Hello world from Perl is available at "perl hello-world.pl".
 
-:- Python
+:Python
 call ph %1
 
-:- React
+:React
 echo. & echo * Hello world from React is available at "nm hw".
 
-:- TypeScript
+:TypeScript
 call ts hw
 
-:- Vue.js
+:Vue.js
 call fx vue fn br
 
 :corner-case

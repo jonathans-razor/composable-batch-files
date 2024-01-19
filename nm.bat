@@ -1,4 +1,4 @@
-:_
+:_ (!nm)
 
 @echo off
 
@@ -591,6 +591,9 @@ exit/b
 lu:
 Aug-29-2023
 
+rem:
+Compile and minify for production.
+
 
 
 :_
@@ -689,22 +692,6 @@ exit/b
 
 lu:
 Nov-1-2021
-
-
-
-:_
-:rdev
-
-echo. & echo * Run server on http://localhost:5000.
-
-echo.
-echo.
-npm run dev
-
-exit/b
-
-lu:
-Oct-27-2021
 
 
 
@@ -1182,6 +1169,7 @@ npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_l
 
 
 ::_
+:i
 :inst
 
 echo. & echo * Install any dependencies listed in package.json. Install the required dependencies of the app.
@@ -1195,6 +1183,10 @@ exit/b
 
 lu:
 Aug-29-2023
+
+rem:
+
+Set up project.
 
 It's a good idea to run npm install before doing your build in case npm needs to update. - Sean
 
@@ -1476,30 +1468,6 @@ Sep-5-2021
 
 
 :_
-:run
-:serv
-:star
-:start
-
-echo. & echo * Run React UI. Starts the development server.
-
-call fe package.json || exit/b
-
-echo.
-start "Start NPM" cmd /k npm start
-
-exit/b
-
-rem lu:
-Oct-12-2023
-Sep-26-2023
-Aug-27-2021
-
-Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
-
-
-
-:_
 :run_tests
 :test
 
@@ -1527,6 +1495,100 @@ Ran all test suites.
 
 
 :_
+:type
+
+echo. & echo * Install types.
+
+npm i --save-dev @types/node
+
+exit/b
+
+Jan-15-2024
+
+
+
+:_+ Dev and Start
+
+
+
+::_
+:dev
+:rdev
+
+echo. & echo * Run VUE UI. Starts the development server.
+
+call fe package.json || exit/b
+
+echo.
+start "npm run dev" cmd /k npm run dev
+
+exit/b
+
+lu:
+Oct-27-2021
+
+rem:
+Compile and hot-reload for development.
+
+
+
+::_
+:run
+:serv
+:star
+:start
+
+echo. & echo * Run React UI. Starts the development server.
+
+call fe package.json || exit/b
+
+echo.
+start "npm start" cmd /k npm start
+
+exit/b
+
+rem lu:
+Oct-12-2023
+Sep-26-2023
+Aug-27-2021
+
+Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
+
+
+
+:_+ Vue
+
+
+
+::_
+:cvue
+
+echo. & echo * Create a new Vue project.
+
+npx create-vue@latest .
+
+exit/b
+
+lu:
+Jan-19-2024
+
+
+
+::_
+:vue
+
+echo. & echo * Run project vue-3-and-composition-api-tutorial.
+
+call t vue>nul
+call :dev>nul
+call vc .
+call fx vue lh br
+
+exit/b
+
+
+
+:_
 :hw
 :hwb
 :hwrx
@@ -1540,21 +1602,6 @@ call vc .
 rem call sf 3000 Unnecessary
 
 exit/b
-
-Is this folder based on a Brad Traversy tutorial? If so, we should've added a YouTube link.
-
-
-
-:_
-:type
-
-echo. & echo * Install types.
-
-npm i --save-dev @types/node
-
-exit/b
-
-Jan-15-2024
 
 
 
