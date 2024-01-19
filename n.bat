@@ -4129,6 +4129,39 @@ Jul-12-2023
 
 
 ::_
+:vue
+
+set cbf-pd=vue-3-and-composition-api-tutorial
+
+echo. & echo * %cbf-pd%.
+
+call pn it>nul
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-gh=%cbf-gh%/%cbf-pd%
+rem qq
+set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
+set cbf-url=
+
+exit/b
+
+lu:
+Jan-18-2024
+
+
+
+::_
+:vuejs-hw
+
+echo. & echo * Hello world from Vue.js.
+
+call pn d>nul
+set cbf-fn=%cbf-pt%\hello-world-vuejs\index.html
+
+exit/b
+
+
+
+::_
 :prat
 
 set cbf-pd=python-rest-api-tutorial
@@ -5111,19 +5144,6 @@ exit/b
 echo. & echo * Google advanced search.
 
 set cbf-url=http://www.google.com/advanced_search?hl=en
-
-exit/b
-
-
-
-:_
-:vue
-:vuejs-hw
-
-echo. & echo * Hello world from Vue.js.
-
-call pn d>nul
-set cbf-fn=%cbf-pt%\hello-world-vuejs\index.html
 
 exit/b
 
