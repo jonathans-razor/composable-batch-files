@@ -4051,6 +4051,26 @@ Jan-18-2024
 
 
 ::_
+:vue-src
+
+set cbf-pd=vue-expense-tracker
+
+echo. & echo * %cbf-pd% source project.
+
+call pn repo>nul
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-gh=https://github.com/bradtraversy/vue-expense-tracker
+set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
+set cbf-lh=http://localhost:5173
+
+exit/b
+
+lu:
+Jan-18-2024
+
+
+
+::_
 :vuejs-hw
 
 echo. & echo * Hello world from Vue.js.
