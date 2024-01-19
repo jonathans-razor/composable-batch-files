@@ -4138,7 +4138,6 @@ echo. & echo * %cbf-pd%.
 call pn it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=%cbf-gh%/%cbf-pd%
-rem qq
 set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
 set cbf-url=
 
