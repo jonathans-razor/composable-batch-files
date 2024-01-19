@@ -30,7 +30,7 @@ rem echo. & echo * Show Ascii art error.
 call n ascii-art-error>nul
 type %cbf-error-graphic%
 echo       Error: %*
-exit/b
+exit/b 1
 
 
 

@@ -6,7 +6,7 @@ title CBF: %0
 
 if "%~1" == "?" goto help
 
-rem goto code-execution-area
+goto code-execution-area
 if "%~1" == "" (
   call :code-execution-area
   exit/b
@@ -203,6 +203,31 @@ Jan-9-2024
 
 :_
 
+echo. & echo * Is there a way in a batch file to tell whether a parameter is a number?
+
+set /a numeric-checker=%~1; 
+
+if %numeric-checker% NEQ %~1 goto ABORT. 
+
+rem When the two are equal - The variable or parameter is-numeric.
+
+exit/b
+
+Jan-12-2024
+
+
+
+:_
+:use-port-number
+
+echo. & echo * Numeric **********************
+
+exit/b
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -219,14 +244,14 @@ exit/b
 
 :_
 
-echo. & echo * 
+echo. & echo * Is there a way in a batch file to tell whether a parameter is a number?
 
-rem qq
+call is-numeric "%~1" && goto use-port-number
+rem call is-numeric "%~1"
 
+echo. & echo * Not numeric.
 
 exit/b
-
-Jan-12-2024
 
 
 
