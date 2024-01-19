@@ -115,10 +115,11 @@ exit/b
 
 ::_
 :hw
+:hws
 
 cls
 
-echo. & echo * Hello world from supported-languages-series-jj.
+echo. & echo * Hello worlds from supported-languages-series-jj.
 
 echo.
 call sep 2024
@@ -158,6 +159,9 @@ call ts hw
 
 :Vue.js
 call fx vue fn br
+
+:Vue.js tutorial.
+rem call nm vue
 
 :corner-case
 
