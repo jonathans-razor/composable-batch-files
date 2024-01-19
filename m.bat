@@ -4551,6 +4551,8 @@ call %0 set-default-browser br
 call %0 set-default-repository-folder c-aa-repos
 call %0 set-default-text-editor me
 
+set path=%dropbox%\savannah\belfry;%path%
+
 col 1
 
 exit/b
@@ -4569,21 +4571,12 @@ call %0 set-default-browser br
 call %0 set-default-repository-folder c-aa-repos
 call %0 set-default-text-editor me
 
+set path=%dropbox%\savannah\belfry;%path%
+
 exit/b
 
 fcd:
 Nov-9-2023
-
-
-
-::_
-:augment-path
-
-echo. & echo * Augment path.
-
-set path=%dropbox%\savannah\belfry;%path%
-
-exit/b
 
 
 
