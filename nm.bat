@@ -1605,4 +1605,17 @@ exit/b
 
 
 
+:_
+:toas
+
+echo. & echo * Add toastification.
+
+call fe package.json || exit/b
+
+npm i vue-toastification@next
+
+exit/b
+
+
+
 :_ (!efnm)
