@@ -966,15 +966,14 @@ echo. & echo * Fix npm installation in the current folder.
 
 call fe package.json || exit/b
 
-call dr d node_modules
-
+call dr /d node_modules
 del package-lock.json
-
-call npm install
+npm install
 
 exit/b
 
 lu:
+Jan-19-2024
 Sep-29-2023
 Sep-2-2021
 
@@ -1556,6 +1555,23 @@ Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
 
 
 
+:_
+:hw
+:hwb
+:hwrx
+
+echo. & echo * Hello world from React.
+
+call t dsa>nul
+cd hello-world-react
+call :star>nul
+call vc .
+rem call sf 3000 Unnecessary
+
+exit/b
+
+
+
 :_+ Vue
 
 
@@ -1583,23 +1599,6 @@ call t vue>nul
 call :dev>nul
 call vc .
 call fx vue lh br
-
-exit/b
-
-
-
-:_
-:hw
-:hwb
-:hwrx
-
-echo. & echo * Hello world from React.
-
-call t dsa>nul
-cd hello-world-react
-call :star>nul
-call vc .
-rem call sf 3000 Unnecessary
 
 exit/b
 
