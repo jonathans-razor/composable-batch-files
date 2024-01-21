@@ -3041,7 +3041,7 @@ May-31-2019
 
 echo. & echo * Open presentation files.
 
-set cbf-fn-list="%dropbox%\savannah\reach out\j-sp7.asc"
+set cbf-fn-list="%dropbox%\savannah\reach out\sp7.asc"
 attrib +r "%dropbox%\savannah\reach out\cc.asc"
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\cc.asc"
 
