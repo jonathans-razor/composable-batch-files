@@ -77,10 +77,6 @@ call sep
 call t f & call g dirt
 
 :
-call sep
-call t vue & call g dirt
-
-:
 rem echo. & echo * Exiting here ***************************************.
 call rf>nul
 echo.
