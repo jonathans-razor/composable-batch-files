@@ -25,7 +25,7 @@ echo   File type to search. For example, "txt" (without quotes) would search onl
 echo   If left blank, then the default, which is batch files (*.bat), will be searched. You can add up to 8 file types to search. 
 echo   If "/f" is used, file type of parameter 3 alias is used.
 
-echo. & echo Parameter 3 (Optional):
+echo. & echo   Parameter 3 (Optional):
 echo   Alias to use for the group of file types to search.
 
 echo. & echo * Examples:
@@ -54,6 +54,9 @@ echo %0 "><" java
 echo. & echo %0 jibx -f pom.xml
 
 echo. & echo %0 jks -g rx
+
+echo. & echo A regex search. This will find 'testing' as well as 'tag'.
+echo %0 t*g
 
 exit/b
 
