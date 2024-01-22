@@ -105,9 +105,7 @@ echo     * File Type(s): %cbf-file-type%>>%tmp%\cs-search-results.txt
 echo ---------------------------------------------------------------------------------------------- >>%temp%\cs-search-results.txt
 echo.>>%tmp%\cs-search-results.txt
 
-rem "findstr" seems to be more powerful the "find".
-
-findstr /i /n /o /off /s /c:%1 %cbf-file-type%>>%tmp%\cs-search-results.txt
+findstr /i /n /off /o /r /s /c:%1 %cbf-file-type%>>%tmp%\cs-search-results.txt
 
 if errorlevel 1 (
   echo. &  echo * No results found. 
@@ -119,6 +117,9 @@ call an npp>nul
 start "Test Title" "%cbf-app%" "%tmp%\cs-search-results.txt"
 
 exit/b
+
+:rem:
+"findstr" seems to be more powerful the "find".
 
 
 

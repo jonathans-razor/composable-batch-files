@@ -2878,10 +2878,10 @@ Feb-24-2020
 ::_
 :sp7
 
-echo. & echo * j-sp7.asc.
+echo. & echo * sp7.asc.
 
 call pn ro>nul
-set cbf-fn=%cbf-pt%\j-sp7.asc
+set cbf-fn=%cbf-pt%\sp7.asc
 
 exit/b
 
