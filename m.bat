@@ -2316,9 +2316,6 @@ Apr-9-2018
 
 echo. & echo * Simulate a remote double click. Deprecated. Going forward, use dc.bat. **************
 
-rem echo.
-rem 
-
 rem Strangely, this also works. Feb-1-2018
 rem set cbf-app="%cbf-fn% - Shortcut.lnk"
 

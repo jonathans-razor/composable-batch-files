@@ -3737,7 +3737,6 @@ exit/b
 echo. & echo * Pictures.
 
 set cbf-pt=%dropbox%\pictures
-set cbf-ex=%cbf-pt%\pictures.xlsx
 
 exit/b
 
@@ -5168,6 +5167,29 @@ exit/b
 
 lu:
 Jan-11-2019
+
+
+
+:_
+:revo
+
+echo. & echo * Revo. news.
+
+set cbf-url=https://www.revolver.news
+
+exit/b
+
+
+
+:_
+:map
+
+echo. & echo * map-of-the-united-states.
+
+call pn educ>nul
+set cbf-fn=%cbf-pt%\map-of-the-united-states.webp
+
+exit/b
 
 
 

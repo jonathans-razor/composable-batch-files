@@ -52,7 +52,9 @@ exit/b
 
 :_
 :validate-input
+
 rem echo. & echo * Validate input.
+
 echo %1 | c:\windows\system32\find.exe /i ".">nul
 if %errorlevel% == 0 (
   echo.
@@ -76,7 +78,6 @@ goto main
 
 
 :_
-
 :compose-dcv
 
 call m compose_variable %2
@@ -94,36 +95,40 @@ exit/b
 
 :_
 :create-new-excel-file
+
 echo. & echo * Create new Excel file.
+
 call m distill_filename "%cbf-ex%"
 call m distill_path "%cbf-ex%"
 cd /d "%cbf-distilled_path%"
 call cp fc bed "%cbf-distilled_filename%"
 "%cbf-distilled_filename%"
+
 exit/b
 
 
 
 :_
 :create-new-word-file
+
 echo. & echo * Create new Word file.
+
 call m distill_filename "%cbf-wo%"
 call m distill_path "%cbf-wo%"
 cd /d "%cbf-distilled_path%"
 call cp fc bwd "%cbf-distilled_filename%"
 "%cbf-distilled_filename%"
+
 exit/b
 
 
 
 :_
-
 :main
 
 rem echo. & echo * Execute a function based on the following order of operations. Nov-10-2023_12_18_PM
 
 :
-
 if not "%cbf-lnk%" == "" (
   if exist "%cbf-lnk%" (
     rem echo. & echo * cbf-lnk is non-blank. Nov-13-2023_12_32_PM
@@ -133,7 +138,6 @@ if not "%cbf-lnk%" == "" (
 )
 
 :
-
 if not "%cbf-url%" == "" (
   rem echo. & echo * Execute URL. Sep-19-2023_2_44_PM
   call sf %1>nul
@@ -141,7 +145,6 @@ if not "%cbf-url%" == "" (
 )
 
 :
-
 if not "%cbf-gd%" == "" (
   rem call fxw gd %1 %2 %3
   set cbf-parameter=%cbf-gd%
@@ -150,7 +153,6 @@ if not "%cbf-gd%" == "" (
 )
 
 :
-
 if not "%cbf-gs%" == "" (
   rem echo. & echo * cbf-gs is non-blank. Aug-23-2023_1_53_PM
   set cbf-parameter=%cbf-gs%
@@ -158,16 +160,14 @@ if not "%cbf-gs%" == "" (
   exit/b
 )
 
-: 
-
+:
 if not "%cbf-app-quoteless%" == "" (
   rem echo. & echo * Run an application without quotes.
   call r
   exit/b
 )
 
-: 
-
+:
 rem Note: This code block needs to be below the URL code block. Sep-19-2023
 if not "%cbf-app%" == "" (
   rem echo. & echo * Run an application. {cbf-app is non-blank. Aug-29-2023_11_59_AM}
@@ -176,7 +176,6 @@ if not "%cbf-app%" == "" (
 )
 
 :
-
 if not "%cbf-wo%" == "" (
   if exist "%cbf-wo%" (
     set cbf-fn=%cbf-wo%
@@ -192,14 +191,12 @@ if not "%cbf-wo%" == "" (
 )
 
 :
-
 if not "%cbf-ex%" == "" (
   if exist "%cbf-ex%" (
     rem echo.
     rem echo * Double click Excel file "%cbf-ex%".
     set cbf-fn=%cbf-ex%
-    call m double_click
-    call r
+    call dc %cbf-fn%
     exit/b
   ) else (
     echo.
@@ -210,7 +207,6 @@ if not "%cbf-ex%" == "" (
 )
 
 :
-
 if not "%cbf-pptx%" == "" (
   if exist "%cbf-pptx%" (
     rem echo.
@@ -223,7 +219,6 @@ if not "%cbf-pptx%" == "" (
 )
 
 :
-
 if not "%cbf-fn%" == "" (
   if exist "%cbf-fn%" (
     rem echo.
@@ -238,7 +233,6 @@ if not "%cbf-fn%" == "" (
 )
 
 :
-
 if not "%cbf-png%" == "" (
   if exist "%cbf-png%" (
     call dc "%cbf-png%"
@@ -247,7 +241,6 @@ if not "%cbf-png%" == "" (
 )
 
 :
-
 if not "%cbf-pt%" == "" (
   if exist "%cbf-pt%" (
     echo. & echo * Go to path. Aug-15-2021_8_41_PM
@@ -256,34 +249,30 @@ if not "%cbf-pt%" == "" (
 )
 
 :
-
 if not "%cbf-gh%" == "" (
   call sf %1>nul
   exit/b
 )
 
 :
-
 if not "%cbf-cf%" == "" (
   call sf %1>nul
   exit/b
 )
 
 :
-
 if not "%cbf-demo%" == "" (
   call demo %1>nul
   exit/b
 )
 
 :
-
 if not "%cbf-ji%" == "" (
   call ji %1>nul
   exit/b
 )
 
-:
+:edge-case
 
 echo.
 echo * Error: Could not find an executable CBF parameter.
