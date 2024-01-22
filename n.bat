@@ -1894,6 +1894,8 @@ rem set cbf-app=C:\Program Files\Microsoft VS Code\Code.exe
 rem set cbf-fn=C:\Users\JJones2\AppData\Local\Programs\Microsoft VS Code\Code.exe
 rem C:\Users\JJones2\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk
 
+set cbf-gh=https://github.com/Microsoft/vscode/issues?q=is%%3Aopen+is%%3Aissue+label%%3Afeature-request+sort%%3Areactions-%%2B1-desc
+
 exit/b
 
 Footnote

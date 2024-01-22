@@ -61,9 +61,20 @@ echo. & echo * Version.
 
 exit/b
 
+rem:
+
+On XPS on Jan-22-2024:
+Version: 1.85.2 (user setup)
+Commit: 8b3775030ed1a69b13e4f4c628c612102e30a681
+Date: 2024-01-18T06:40:10.514Z
+Electron: 25.9.7
+ElectronBuildId: 26354273
+Chromium: 114.0.5735.289
+Node.js: 18.15.0
+V8: 11.4.183.29-electron.0
+OS: Windows_NT x64 10.0.19045
 
 On XPS on Dec-14-2023:
-
 Version: 1.85.1 (user setup)
 Commit: 0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2
 Date: 2023-12-13T09:49:37.021Z
