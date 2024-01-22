@@ -1,5 +1,4 @@
 :_
-
 @echo off
 
 if "%~1" == "" exit/b 1
@@ -10,7 +9,6 @@ goto main
 
 
 :_
-
 :help
 
 cls
@@ -31,7 +29,8 @@ echo. & echo   call paco "%cd%" b || exit/b
 
 exit/b
 
-lu: Sep-21-2023
+lu:
+Sep-21-2023
 
 
 

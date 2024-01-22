@@ -8,7 +8,8 @@ if "%~1" == "?" goto help
 call el /c>nul
 
 if "%2" == "/c" goto set-filename %*
-call paco "%~1" . && goto set-filename %*
+
+call paco "%~1" . && goto set-filename %~1
 
 goto process-alias %*
 
@@ -53,7 +54,7 @@ Sep-26-2019
 :_
 :process-alias
 
-rem echo. & echo * Process alias. Dec-1-2023_6_06_PM
+echo. & echo * Process alias. Dec-1-2023_6_06_PM
 call n %1 || exit/b
 
 goto main
@@ -62,11 +63,9 @@ goto main
 
 :set-filename
 
-echo. & echo * Set filename. Dec-1-2023_7_01_PM
+rem echo. & echo * Set filename. Jan-22-2024-0-50-AM
 
 set cbf-fn=%cd%\%1
-
-echo. & echo cbf-fn: %cbf-fn%
 
 goto main
 

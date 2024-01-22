@@ -184,9 +184,9 @@ exit/b
 :_
 :open-current-folder-file
 
-echo. & echo * Open current folder file Jan-22-2024-0-14-AM.
+rem echo. & echo * Open current folder file Jan-22-2024-0-14-AM.
 
-call fe %~1 || exit/b 5
+call fe "%~1" || exit/b 5
 
 set cbf-fn=%cd%\%~1
 
