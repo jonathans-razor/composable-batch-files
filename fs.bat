@@ -67,7 +67,7 @@ rem @echo off
 
 echo.
 rem For some reason the sub folder does not work in Dropbox! But does work on the c: drive.
-dir /a /b /s /o-d "*%~1*">>%temp%\search_results_fs.txt
+dir /a /b /o-d /s "*%~1*">>%temp%\search_results_fs.txt
 
 if errorlevel 1 exit/b
 
