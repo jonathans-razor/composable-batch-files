@@ -1,5 +1,4 @@
 :_
-
 @echo off
 
 if "%~1" == "?" goto help
@@ -57,6 +56,9 @@ echo. & echo %0 jibx -f pom.xml
 echo. & echo %0 jks -g rx
 
 exit/b
+
+:lu
+Jan-21-2024
 
 
 
@@ -118,7 +120,7 @@ start "Test Title" "%cbf-app%" "%tmp%\cs-search-results.txt"
 
 exit/b
 
-:rem:
+:rem
 "findstr" seems to be more powerful the "find".
 
 
