@@ -45,8 +45,14 @@ lu: Sep-21-2023
 :_
 
 :main
+
 call el /c>nul
-echo %1| find /i "%2">nul
+
+echo %~1| find /i "%2">nul
+
+rem echo P1: %1
+rem echo P2: %2
+
 if errorlevel 1 (
   rem We don't want to see an error message for a missing periond because that is not necessarily an error. Oct-20-2023
   if "%2" == "." exit/b 1
@@ -55,6 +61,9 @@ if errorlevel 1 (
 )
 
 exit/b
+
+:rem
+Using a comma in parameter 2 doesn't work. Jan-22-2024
 
 
 

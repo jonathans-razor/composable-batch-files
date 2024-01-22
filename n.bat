@@ -2936,7 +2936,7 @@ Aug-28-2023
 
 
 ::_
-:bksnip
+:busnip
 
 echo. & echo * Snippets backup folder.
 

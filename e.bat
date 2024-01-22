@@ -73,6 +73,7 @@ call el /c>nul
 call i /c>nul
 
 
+
 :_
 rem Override switches section.
 
@@ -160,33 +161,40 @@ goto main
 
 :_
 :open-aliased-folder
+
 echo. & echo * Open aliased folder.
+
 call t %1
 code .
+
 exit/b
 
 
 
 :_
 :open-current-folder
+
 echo. & echo * Open current folder.
 code .
+
 exit/b
 
 
 
 :_
 :open-current-folder-file
-echo. & echo * Open current folder file.
 
-call fe %~1 %~2 || exit/b 5
+echo. & echo * Open current folder file Jan-22-2024-0-14-AM.
+
+call fe %~1 || exit/b 5
+
 set cbf-fn=%cd%\%~1
+
 goto main
 
 
 
 :_
-
 :open-cbf-batch-file
 
 call pn cbf>nul
@@ -208,6 +216,7 @@ exit/b
 
 :_
 :open-ff-bash-file
+
 call pn f>nul
 if exist "%cbf-pt%\%1.sh" (
   echo. & echo * Open FF bash file.
@@ -223,6 +232,7 @@ exit/b
 
 :_
 :open-python-file
+
 call pn d>nul
 rem echo. & echo * Open Python file. Nov-24-2023_11_37_PM
 if exist "%cbf-pt%\%1.py" (
@@ -239,6 +249,7 @@ exit/b
 
 :_
 :open-dbf-bash-file
+
 call pn dbf>nul
 if exist "%cbf-pt%\%1" (
   echo. & echo * Open DBF bash file.
@@ -270,39 +281,50 @@ exit/b
 
 :_
 :open-aliased-file
+
 echo. & echo * Open aliased file.
+
 call fe %1
+
 exit/b
 
 
 
 :_
 :open-np-file
+
 echo. & echo * Open NP file.
+
 call pn m
 set cbf-fn=%cbf-pt%\np%1.txt
+
 exit/b
 
 
 
 :_
-
 :start-visual-studio-code
+
 code "%cbf-fn%"
+
 exit/b
 
 
 
 :_
 :run-application-without-parameter
+
 echo. & echo * Run application without parameter.
+
 start "title" "%cbf-app%"
+
 exit/b
 
 
 
 :_
 :main
+
 set cbf-app=%cbf-default-text-editor%
 
 set cbf-editor-parameter=%*

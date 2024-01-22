@@ -51,18 +51,23 @@ Sep-26-2019
 
 
 :_
-
 :process-alias
+
 rem echo. & echo * Process alias. Dec-1-2023_6_06_PM
 call n %1 || exit/b
+
 goto main
 
 
 
 :set-filename
-rem echo. & echo * Set filename. Dec-1-2023_7_01_PM
+
+echo. & echo * Set filename. Dec-1-2023_7_01_PM
+
 set cbf-fn=%cd%\%1
-rem echo. & echo cbf-fn: %cbf-fn%
+
+echo. & echo cbf-fn: %cbf-fn%
+
 goto main
 
 

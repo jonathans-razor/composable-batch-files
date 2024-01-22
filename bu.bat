@@ -249,14 +249,6 @@ exit/b
 
 
 :_
-:snip
-echo. & echo * Snippets.
-call cp pp vsnip rsnip
-exit/b
-
-
-
-:_
 :exs
 echo. & echo * Excel files.
 call t exs
@@ -342,7 +334,6 @@ call t home>nul
 
 if errorlevel 1 exit/b
 
-rem qq
 call m cona
 
 if errorlevel 1 exit/b
@@ -384,6 +375,17 @@ exit/b
 
 echo. & echo Parameter Descriptions:
 echo. & echo Parameter 2: If equal to "/r", restore instead of back up the brc file.
+
+exit/b
+
+
+
+:_
+:snip
+
+echo. & echo * Snippets.
+
+call cp pp snip busnip
 
 exit/b
 
