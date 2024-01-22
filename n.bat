@@ -5191,6 +5191,9 @@ set cbf-fn=%cbf-pt%\map-of-the-united-states.webp
 
 exit/b
 
+:skw
+map of the united states
+
 
 
 :_ (!efn)
