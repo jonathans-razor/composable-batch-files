@@ -75,7 +75,6 @@ exit/b
 :_
 :use-vue-site
 
-rem qq
 set cbf-parameter=https://www.google.com/search?q=site:vuejs.org+%2 %3 %4 %5 %6 %7 %8 %9
 call r
 

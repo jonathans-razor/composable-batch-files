@@ -2174,6 +2174,25 @@ exit/b
 
 
 :_
+:Jan-18-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 122-best-time-to-buy-and-sell-stock-ii.js 7 1 5 3 6 4
+node 122-best-time-to-buy-and-sell-stock-ii.js 1 2 3 4 5
+node 122-best-time-to-buy-and-sell-stock-ii.js 7 6 4 3 1
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2197,7 +2216,7 @@ exit/b
 
 
 :_
-:Jan-18-2024
+:Jan-23-2024
 
 cls
 
@@ -2205,9 +2224,7 @@ echo. & echo * %1.
 
 @echo on
 
-node 122-best-time-to-buy-and-sell-stock-ii.js 7 1 5 3 6 4
-node 122-best-time-to-buy-and-sell-stock-ii.js 1 2 3 4 5
-node 122-best-time-to-buy-and-sell-stock-ii.js 7 6 4 3 1
+node optional-chaining.js
 
 @echo off
 
