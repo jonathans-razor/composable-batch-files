@@ -5200,4 +5200,17 @@ map of the united states
 
 
 
+:_
+:bci
+
+echo. & echo * Better code imagery.
+
+rem   qq
+call pn pict>nul
+set cbf-pt=%cbf-pt%\Better Code Imagery
+
+exit/b
+
+
+
 :_ (!efn)

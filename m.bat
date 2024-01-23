@@ -4398,62 +4398,6 @@ Apr-11-2022
 
 
 
-:_+ Automated Openers
-
-
-
-::_
-:le
-:py
-
-rem echo. & echo * Copy latest filename to clipboard.
-
-call t d>nul || exit/b
-
-dir /b /o-d>c:\a\python-results.txt
-
-set /p cbf-python-results=<c:\a\python-results.txt
-
-echo %cbf-python-results%|clip
-
-echo. & echo * Code filename "%cbf-python-results%" has been copied to the clipboard.
-
-exit/b
-
-lu:
-Nov-14-2023
-
-
-
-::_
-:fj
-:ss
-:tran
-
-echo. & echo * Open latest item.
-
-call t %1 || exit/b
-
-dir /b /o-d>c:\a\latest-item-results.txt
-
-set /p cbf-latest-item=<c:\a\latest-item-results.txt
-
-echo. & echo * cbf-latest-item: %cbf-latest-item%
-
-"%cbf-latest-item%"
-
-exit/b
-
-lu:
-Dec-22-2023
-Jul-8-2021
-
-skw:
-file contents
-get file contents into an environment variable
-
-
-
 :_
 :atn
 :ctf
@@ -5071,6 +5015,70 @@ exit/b
 
 lu:
 May-26-2020
+
+
+
+:_+ Automated Openers
+
+
+
+::_
+:le
+:py
+
+rem echo. & echo * Copy latest filename to clipboard.
+
+call t d>nul || exit/b
+
+dir /b /o-d>c:\a\python-results.txt
+
+set /p cbf-python-results=<c:\a\python-results.txt
+
+echo %cbf-python-results%|clip
+
+echo. & echo * Code filename "%cbf-python-results%" has been copied to the clipboard.
+
+exit/b
+
+lu:
+Nov-14-2023
+
+
+
+::_
+:l
+
+echo. & echo * Open latest item.
+
+if "%~2" == "" (
+  err Parameter 2, folder alias, is required.
+)
+
+call t %2 || exit/b
+
+dir /b /o-d>c:\a\latest-item-results.txt
+
+set /p cbf-latest-item=<c:\a\latest-item-results.txt
+
+echo. & echo * cbf-latest-item: %cbf-latest-item%
+
+"%cbf-latest-item%"
+
+exit/b
+
+ex:
+%0 %1 bci
+%0 %1 fl
+%0 %1 ss
+%0 %1 tran
+
+lu:
+Dec-22-2023
+Jul-8-2021
+
+skw:
+file contents
+get file contents into an environment variable
 
 
 
