@@ -49,15 +49,17 @@ Sep-26-2023
 
 
 
-rem qq
 :_
 :is-leetcode-number
 cls
+
 echo. & echo * This is a LeetCode number.
+
 python is-natural-number-less-than-5000.py %1 > %tmp%\cbf-is-leetcode-number.txt
 set /p cbf-is-leetcode-number=<%tmp%\cbf-is-leetcode-number.txt
 rem Zero equals true, in this case.
 if "%cbf-is-leetcode-number%" == "0" goto look-up-leetcode-number
+
 exit/b 1
 
 

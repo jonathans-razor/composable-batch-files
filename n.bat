@@ -4038,6 +4038,7 @@ set cbf-pd=vue-3-and-composition-api-tutorial
 echo. & echo * %cbf-pd%.
 
 call pn it>nul
+set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
