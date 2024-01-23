@@ -5048,7 +5048,7 @@ Nov-14-2023
 ::_
 :l
 
-echo. & echo * Open latest item.
+echo. & echo * Double click on latest item.
 
 if "%~2" == "" (
   err Parameter 2, folder alias, is required.
@@ -5073,6 +5073,7 @@ ex:
 %0 %1 tran
 
 lu:
+Jan-23-2024
 Dec-22-2023
 Jul-8-2021
 
