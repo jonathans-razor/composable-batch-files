@@ -5205,7 +5205,6 @@ map of the united states
 
 echo. & echo * Better code imagery.
 
-rem   qq
 call pn pict>nul
 set cbf-pt=%cbf-pt%\Better Code Imagery
 
