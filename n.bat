@@ -3494,6 +3494,7 @@ Jan-31-2022
 
 
 ::_
+:cyd
 :doj
 :dtg
 :gci
@@ -3512,18 +3513,20 @@ set cbf-fn=%cbf-pt%\%1.asc
 exit/b
 
 lu:
+Jan-24-2024
 Oct-3-2023
 
 
 
 ::_
 :sai
+:saic
 
 echo. & echo * %1.
 
 call pn emdo
 
-set cbf-fn=%cbf-pt%\%1.bul
+set cbf-fn=%cbf-pt%\sai.bul
 
 exit/b
 
