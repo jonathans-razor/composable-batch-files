@@ -1978,6 +1978,10 @@ exit/b
 :2021
 :2022
 :23
+:adp
+:cce
+:dbf
+:disc
 :jona
 :port
 :papo
@@ -1990,8 +1994,6 @@ exit/b
 :po
 :fn
 :idv
-:cce
-:disc
 :emdo
 :r
 :res
@@ -2001,7 +2003,6 @@ exit/b
 :v
 :pete
 :psc
-:dbf
 :vesp
 :sth
 :tax21
