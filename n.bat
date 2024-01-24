@@ -1977,6 +1977,7 @@ exit/b
 
 :2021
 :2022
+:23
 :jona
 :port
 :papo
@@ -2010,7 +2011,6 @@ exit/b
 :tax
 :taxe
 :taxes
-rem qq
 :tx
 :tx23
 
