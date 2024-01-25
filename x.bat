@@ -1,3 +1,3 @@
 @echo off
-echo. & echo * Bing shortcut.
+rem echo. & echo * Bing shortcut.
 j bn
