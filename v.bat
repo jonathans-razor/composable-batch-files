@@ -2583,6 +2583,7 @@ call s | find /i "working tree clean">nul
 :new-style
 
 echo. & echo * New style error handling (!peri, !paco, !ampe)
+call paco "%~1" .>nul && echo hey
 call paco "%~1" .>nul && goto 
 call paco "%~2" /n && goto 
 

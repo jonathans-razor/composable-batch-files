@@ -4508,7 +4508,6 @@ Jan-18-2024
 
 echo. & echo * Initialize environment for %1.
 
-rem qq
 call %0 set-default-browser kr
 call %0 set-default-repository-folder c-aa-repos
 call %0 set-default-text-editor vc

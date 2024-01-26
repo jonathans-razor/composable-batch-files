@@ -354,8 +354,7 @@ set cbf-cn=git@github.com:jonathans-razor/Composable-Batch-Files.git
 set cbf-gh=https://github.com/jonathans-razor/Composable-Batch-Files
 
 set cbf-pt=%dropbox%\it\composable-batch-files
-rem The following line is unnecessary but is left as a hook for the future. Jun-21-2023
-if /i %computername%==xps set cbf-pt=d:\dropbox\it\composable-batch-files
+rem call paco %computername% one && set cbf-pt=c:\aa\repositories\composable-batch-files
 
 set cbf-rl=https://github.com/jonathans-razor/Composable-Batch-Files/releases
 

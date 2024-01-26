@@ -228,6 +228,19 @@ exit/b
 
 :_
 
+echo. & echo * Is there a way in a batch file to tell whether a parameter is a number?
+
+call is-numeric "%~1" && goto use-port-number
+rem call is-numeric "%~1"
+
+echo. & echo * Not numeric.
+
+exit/b
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -244,14 +257,14 @@ exit/b
 
 :_
 
-echo. & echo * Is there a way in a batch file to tell whether a parameter is a number?
+echo. & echo * Computer name contains "one".
 
-call is-numeric "%~1" && goto use-port-number
-rem call is-numeric "%~1"
-
-echo. & echo * Not numeric.
+rem qq
+call paco %computername% xpsz && echo xps
 
 exit/b
+
+Jan-26-2024
 
 
 
