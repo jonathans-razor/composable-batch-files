@@ -41,6 +41,7 @@ exit/b
 echo. & echo * Ta.
 
 call %0 a
+
 cls
 
 exit/b

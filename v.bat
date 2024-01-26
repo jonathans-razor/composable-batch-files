@@ -2582,7 +2582,7 @@ call s | find /i "working tree clean">nul
 ::_
 :new-style
 
-echo. & echo * New style error handling (!peri, !paco, !ampe)
+echo. & echo * New style error handling
 call paco "%~1" .>nul && echo hey
 call paco "%~1" .>nul && goto 
 call paco "%~2" /n && goto 
@@ -2591,8 +2591,14 @@ echo made it here.
 
 exit/b
 
+lc:
+(!ns, !peri, !paco, !ampe)
+
 lu:
 Oct-12-2023
+
+skw:
+new command style
 
 command1 && command2 will run command1 and then command2, only if command1 succeeded (error 
 level 0).

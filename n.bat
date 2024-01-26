@@ -350,17 +350,21 @@ echo. & echo * Composable batch files.
 
 set cbf-branch=main
 set cbf-cn=git@github.com:jonathans-razor/Composable-Batch-Files.git
-
 set cbf-gh=https://github.com/jonathans-razor/Composable-Batch-Files
 
-set cbf-pt=%dropbox%\it\composable-batch-files
-rem call paco %computername% one && set cbf-pt=c:\aa\repositories\composable-batch-files
+echo %computername%| find /i "one"
 
-set cbf-rl=https://github.com/jonathans-razor/Composable-Batch-Files/releases
+if %errorlevel% == 0 (
+  set cbf-pt=c:\aa\repositories\composable-batch-files
+) else (
+  set cbf-pt=%dropbox%\it\composable-batch-files
+  call el /c>nul
+)
 
 exit/b
 
 lu:
+Jan-26-2024
 Jul-18-2023
 
 Footnote
@@ -368,16 +372,6 @@ Footnote
 
 about: Windows Batch Scripting files that are function-based, modularized and easy to use and 
 understand.
-
-branches: 1
-
-contributors: 1
-
-languages: Batchfile, Java
-
-last commit: Jun-18-2021
-
-releases: 4
 
 
 
@@ -3400,8 +3394,7 @@ set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8&list=WL&index=10&t=831s
 
 echo. & echo * Test folder.
 
-call pn aa>nul
-set cbf-pt=%cbf-pt%\test-folder
+set cbf-pt=d:\aa
 
 exit/b
 
@@ -3409,11 +3402,26 @@ exit/b
 
 ::_
 :t2
+
 echo. & echo * Test 2.
+
+set cbf-pt=%dropbox%\it\composable-batch-files
+
 exit/b
 
 lu:
-Nov-01-2022
+Jan-26-2024
+
+
+
+::_
+:test
+
+echo. & echo *
+
+set cbf-
+
+exit/b
 
 
 
