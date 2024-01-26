@@ -5225,4 +5225,15 @@ exit/b
 
 
 
+:_
+:colo
+
+echo. & echo * Colorado.
+
+set cbf-pt=c:\aa\colorado
+
+exit/b
+
+
+
 :_ (!efn)

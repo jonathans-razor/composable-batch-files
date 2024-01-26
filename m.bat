@@ -3091,6 +3091,25 @@ Apr-8-2022
 
 
 ::_
+:icj
+
+echo. & echo * Open ICJ affinity files.
+
+set cbf-fn-list="c:\aa\colorado\notes.txt"
+
+set cbf-fn-list=%cbf-fn-list% "c:\aa\colorado\tasks.txt"
+
+start code %cbf-fn-list%
+
+exit/b
+
+lu:
+Oct-4-2023
+Apr-8-2022
+
+
+
+::_
 :pete
 
 echo. & echo * Open Pete files.
