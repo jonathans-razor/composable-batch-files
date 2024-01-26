@@ -4504,6 +4504,27 @@ Jan-18-2024
 
 
 ::_
+:lnk-icj
+
+echo. & echo * Initialize environment for %1.
+
+rem qq
+call %0 set-default-browser kr
+call %0 set-default-repository-folder c-aa-repos
+call %0 set-default-text-editor vc
+
+set path=c:\aa\repositories\composable-batch-files;%path%
+
+col 1
+
+exit/b
+
+fcd:
+Jan-26-2024
+
+
+
+::_
 :lnk-xps
 
 echo. & echo * Initialize environment for %1.
