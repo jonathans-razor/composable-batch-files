@@ -3095,8 +3095,10 @@ Apr-8-2022
 
 echo. & echo * Open ICJ affinity files.
 
-call e c:\aa\colorado\notes.txt
-call ec:\aa\colorado\tasks.txt
+call t colo>nul
+
+call e notes.txt
+call e tasks.txt
 
 exit/b
 
