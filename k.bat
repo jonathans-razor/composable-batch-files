@@ -259,9 +259,8 @@ exit/b
 
 echo. & echo * Computer name contains "one".
 
-rem call paco %computername% xpsz && echo xps
-rem echo %computername%| find /i "one">nul && set cbf-pt=c:\aa\repositories\composable-batch-files
-echo %computername%| find /i "xps">nul && echo found
+echo %computername%>nul
+rem echo %computername%| find /i "one"
 
 exit/b
 

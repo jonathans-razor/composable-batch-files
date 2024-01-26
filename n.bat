@@ -352,7 +352,7 @@ set cbf-branch=main
 set cbf-cn=git@github.com:jonathans-razor/Composable-Batch-Files.git
 set cbf-gh=https://github.com/jonathans-razor/Composable-Batch-Files
 
-echo %computername%| find /i "one"
+echo %computername%| find /i "one">nul
 
 if %errorlevel% == 0 (
   set cbf-pt=c:\aa\repositories\composable-batch-files
