@@ -83,17 +83,23 @@ exit/b
 
 :_
 :use_default_browser
+
 rem echo. & echo * Use default browser.
+
 set cbf-app=%cbf-default-browser%
+
 exit/b
 
 
 
 :_
 :override-default-browser
+
 echo. & echo * Override default browser.
+
 call an %1
 if errorlevel 1 exit/b
+
 exit/b
 
 

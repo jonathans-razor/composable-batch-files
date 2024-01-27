@@ -73,10 +73,13 @@ exit/b
 
 :_
 :run-application-in-raw-format
+
 echo. & echo * cbf-app contains a double dash. Run it raw.
+
 rem This also works so why is this function here?
 rem start "my title" "%cbf-app%" 
 "%cbf-app%"
+
 exit/b
 
 

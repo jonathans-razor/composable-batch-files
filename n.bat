@@ -1870,6 +1870,17 @@ Feb-13-2019
 
 
 ::_
+:vcw
+
+echo. & echo * Visual Studio Code in the Cloud, on the Web.
+
+set cbf-url=https://vscode.dev
+
+exit/b
+
+
+
+::_
 :code
 :lnk-vsc
 :vc
@@ -2017,7 +2028,7 @@ call pn bel>nul
 if exist "%cbf-pt%\pv.bat" (
   call %cbf-pt%\pv.bat %1
 ) else (
-  echo. & echo * Hmm. Looks like a Gordian Knot. - Jan-26-2024-11-55-PM
+  err * Hmm. Looks like a Gordian Knot. - Jan-26-2024-11-55-PM
 )
 
 exit/b
