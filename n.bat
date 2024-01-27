@@ -445,7 +445,7 @@ Jan-24-2018
 
 echo. & echo *  OBX.
 
-call n r>nul
+call pn repo>nul
 set cbf-pt=%cbf-pt%\obx
 set cbf-ex=%dropbox%\savannah\Excels\obx.xls
 set cbf-fn=%cbf-pt%\index.md

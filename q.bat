@@ -134,7 +134,7 @@ exit/b
 echo. & echo * Google whatever you just typed.
 
 set cbf-parameter=https://www.google.com/search?q=%*?
-call an br>nul
+call an kr>nul
 call r
 
 exit/b

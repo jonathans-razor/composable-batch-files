@@ -37,6 +37,7 @@ Composable Batch Files (CBF) - Table of Contents
       cf  Surf to Confluence.
       cm  CMAC operations.
      clc  Simple calculator.
+qq
     cmpf  Are 2 files the same?
     coco  Code Compare.
    cocod  Run Code Compare using 2 DCVs.
@@ -55,6 +56,7 @@ Composable Batch Files (CBF) - Table of Contents
     depc  Delete the path contents of the passed in alias.
     depn  Delete folder corresponding to CBF path alias parameter.
     devu  Demo file for Dev University event on Jan-9-2020.
+qq
      dif  Are 2 files the same?
       dn  Dot Net Core (skw dotnet). (skw supported-languages-series-jj)
       dk  Docker.
@@ -69,6 +71,7 @@ Composable Batch Files (CBF) - Table of Contents
      edx  Edit file - back office operation.
       el  Show or clear errorl level.
      err  Show error graphic.
+qq
       es  Edit settings file of an alias.
       ex  Run Excel with or without a filename alias parameter.
 example-  Prefix for files written by other authors for learning and comparison purposes.
