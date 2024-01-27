@@ -2014,7 +2014,11 @@ exit/b
 rem Priv pass-through.
 
 call pn bel>nul
-if exist "%cbf-pt%\pv.bat" call %cbf-pt%\pv.bat %1
+if exist "%cbf-pt%\pv.bat" (
+  call %cbf-pt%\pv.bat %1
+) else (
+  echo. & echo * Hmm. Looks like a Gordian Knot. - Jan-26-2024-11-55-PM
+)
 
 exit/b
 
