@@ -5243,6 +5243,7 @@ exit/b
 
 
 :_
+:doc
 :docs
 :docu
 
