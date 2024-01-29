@@ -5243,12 +5243,12 @@ exit/b
 
 
 :_
-:co
-:colo
+:docs
+:docu
 
-echo. & echo * Colorado.
+echo. & echo * Documents.
 
-set cbf-pt=c:\aa\colorado
+set cbf-pt=%userprofile%\documents
 
 exit/b
 
