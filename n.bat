@@ -5244,6 +5244,7 @@ exit/b
 
 
 :_
+:co
 :colo
 
 echo. & echo * Colorado.
