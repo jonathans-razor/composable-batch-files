@@ -5243,8 +5243,6 @@ exit/b
 
 
 :_
-:doc
-:docs
 :docu
 
 echo. & echo * Documents.
