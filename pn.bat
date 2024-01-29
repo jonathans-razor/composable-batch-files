@@ -39,7 +39,14 @@ exit/b
 
 set cbf-pt=
 
-call n %1
+echo %1| find /i "jj">nul
+
+if %errorlevel% == 1 (
+  call el /c>nul
+  call n %1
+) else (
+  call jjn %1
+)
 
 if errorlevel 1 exit/b
 
