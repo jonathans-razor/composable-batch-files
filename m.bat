@@ -2546,7 +2546,7 @@ Aug-16-2018
 :clear_errorlevel_silently
 :sel
 
-rem echo. & echo * Clear/reset errorLevel silently.
+rem echo. & echo * Clear/reset errorLevel silently. Deprecated. Use "el /c" going forward.
 
 rem This was not working on Jul-21-2021, so I commented it.
 ver>nul
@@ -2555,9 +2555,6 @@ rem You shouldn't set errorlevel directly like the below line. Jan-28-2022
 rem set errorlevel=0
 
 exit/b
-
-lc:
-(!clea)
 
 lu:
 Nov-12-2019

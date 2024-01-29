@@ -119,7 +119,6 @@ example-  Prefix for files written by other authors for learning and comparison 
      jfd  Surf to Jenkins folder wepbage.
       jg  Get a je, jn or jfd variable, in that order.
       ji  Jira DCV operations.
-      jj  Surf to Jenkins Build Console Output website.
      jmb  Surf to the Jenkins Multibranch website for the passed in alias.
       jp  Surf to Jenkins Pipeline.
       jr  Use jar to inspect EAR files.
