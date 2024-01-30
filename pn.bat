@@ -39,15 +39,7 @@ exit/b
 
 set cbf-pt=
 
-rem qq
-
-echo %computername%| find /i "ones">nul
-if %errorlevel% == 0 (
-  call nicj %1
-) else (
-  call el /c>nul
-  call n %1
-)
+call n %1
 
 if errorlevel 1 exit/b
 
@@ -62,10 +54,6 @@ if not exist "%cbf-pt%" (
 )
 
 exit/b
-
-skw:
-ones-series-jj
-
 
 
 
