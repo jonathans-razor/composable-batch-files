@@ -3092,7 +3092,7 @@ Apr-8-2022
 
 echo. & echo * Open ICJ affinity files.
 
-call t colo>nul
+call tj colo>nul
 
 call e notes.txt
 call e tasks.txt
