@@ -5256,4 +5256,19 @@ exit/b
 
 
 
+:_+ Vue (!fyvue)
+
+
+
+:_
+:vupl
+
+echo. & echo * Playground.
+
+set cbf-url=https://play.vuejs.org
+
+exit/b
+
+
+
 :_ (!efn)
