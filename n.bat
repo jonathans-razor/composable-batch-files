@@ -5260,12 +5260,67 @@ exit/b
 
 
 
-:_
+::_
 :vupl
 
 echo. & echo * Playground.
 
 set cbf-url=https://play.vuejs.org
+
+exit/b
+
+
+
+::_
+:vuin
+
+echo. & echo * Introduction.
+
+set cbf-url=https://vuejs.org/guide/introduction.html
+
+exit/b
+
+
+
+::_
+:vuqs
+
+echo. & echo * Quick start.
+
+set cbf-url=https://vuejs.org/guide/quick-start.html
+
+exit/b
+
+
+
+::_
+:vuvqs
+
+echo. & echo * Vuetify Quick start.
+
+set cbf-url=https://vuetifyjs.com/vuetify/quick-start.html
+
+exit/b
+
+
+
+::_
+:vuapi
+
+echo. & echo * Vue API tutorial.
+
+set cbf-url=https://metricloop.com/blog/how-to-make-api-calls-with-vuex
+
+exit/b
+
+
+
+::_
+:vutd
+
+echo. & echo * Todo app.
+
+set cbf-url=https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2
 
 exit/b
 
