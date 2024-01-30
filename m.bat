@@ -5125,7 +5125,6 @@ get file contents into an environment variable
 echo. & echo * Vue button.
 
 call t vubu>nul
-rem   qq
 br index.html
 
 exit/b
