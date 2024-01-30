@@ -4064,18 +4064,15 @@ Jul-12-2023
 
 
 ::_
-:vue
+:vue-src
 
-set cbf-pd=vue-3-and-composition-api-tutorial
+set cbf-pd=vue-expense-tracker
 
-echo. & echo * %cbf-pd%.
+echo. & echo * %cbf-pd% source project.
 
-call pn it>nul
-set cbf-docs=https://vuejs.org/guide/introduction.html
+call pn repo>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-gh=%cbf-gh%/%cbf-pd%
-set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
-set cbf-gh2=https://github.com/bradtraversy/vue-expense-tracker
+set cbf-gh=https://github.com/bradtraversy/vue-expense-tracker
 set cbf-lh=http://localhost:5173
 
 exit/b
@@ -4086,17 +4083,18 @@ Jan-18-2024
 
 
 ::_
-:vue-src
+:vue
 
-set cbf-pd=vue-expense-tracker
+set cbf-pd=vue-3-and-composition-api-tutorial
 
-echo. & echo * %cbf-pd% source project.
+echo. & echo * %cbf-pd%. Builds an expense tracker.
 
-call pn repo>nul
+call pn it>nul
+set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-gh=https://github.com/bradtraversy/vue-expense-tracker
-set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
+set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-lh=http://localhost:5173
+set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
 
 exit/b
 
@@ -5276,6 +5274,7 @@ exit/b
 
 echo. & echo * Introduction.
 
+call an kr>nul
 set cbf-url=https://vuejs.org/guide/introduction.html
 
 exit/b

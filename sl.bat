@@ -157,8 +157,8 @@ echo. & echo * Hello world from React is available at "nm hw".
 :TypeScript
 call ts hw
 
-:Vue.js
-call fx vue fn br
+:Vue.js - Simple Hello World
+call fx vuejs-hw fn br
 
 :Vue.js tutorial.
 rem call nm vue
