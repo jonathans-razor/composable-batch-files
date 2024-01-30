@@ -5119,16 +5119,4 @@ get file contents into an environment variable
 
 
 
-:_
-:vubu
-
-echo. & echo * Vue button.
-
-call t vubu>nul
-br index.html
-
-exit/b
-
-
-
 :_ (!efm, !rfsp) (mov-9)

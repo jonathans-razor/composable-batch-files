@@ -1604,7 +1604,7 @@ exit/b
 
 
 
-:_
+::_
 :toas
 
 echo. & echo * Add toastification.
@@ -1612,6 +1612,42 @@ echo. & echo * Add toastification.
 call fe package.json || exit/b
 
 npm i vue-toastification@next
+
+exit/b
+
+
+
+::_
+:invu
+
+echo. & echo * Install vue.
+
+npm install -g @vue/cli
+
+exit/b
+
+
+
+::_
+:cvu
+
+echo. & echo * Create Vue project.
+
+vue create my-project
+
+exit/b
+
+
+
+:_
+:ruse
+
+echo. & echo * Run serve.
+
+rem   qq
+call fe package.json || exit/b
+
+start "Run Serve" cmd /k npm run serve
 
 exit/b
 
