@@ -1644,9 +1644,7 @@ exit/b
 
 echo. & echo * Run serve.
 
-rem   qq
 call fe package.json || exit/b
-
 start "Run Serve" cmd /k npm run serve
 
 exit/b

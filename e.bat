@@ -80,7 +80,7 @@ rem Override switches section.
 :
 if "%~2" == "/c" (
   rem Note that this code block must appear BEFORE the code block for "open-aliased-file". Dec-1-2023
-  call :open-current-folder-file %*
+  call :open-new-current-folder-file %*
   goto main
 )
 
@@ -186,7 +186,18 @@ exit/b
 
 rem echo. & echo * Open current folder file Jan-22-2024-0-14-AM.
 
-call fe "%~1" || exit/b 5
+call fe %~1 || exit/b 5
+
+set cbf-fn=%cd%\%~1
+
+goto main
+
+
+
+:_
+:open-new-current-folder-file
+
+rem echo. & echo * Open current folder file Jan-22-2024-0-14-AM.
 
 set cbf-fn=%cd%\%~1
 

@@ -56,9 +56,10 @@ exit/b
 :_
 :bu2
 
-call t vubu>nul
-br index-2.html
-rem qq
+call t d>nul
+cd vue-button-2\my-project
+call nm ruse
+call lh 8080
 
 exit/b
 
