@@ -352,8 +352,7 @@ set cbf-branch=main
 set cbf-cn=git@github.com:jonathans-razor/Composable-Batch-Files.git
 set cbf-gh=https://github.com/jonathans-razor/Composable-Batch-Files
 
-echo %computername%| find /i "one">nul
-
+echo %computername%| find /i "ones">nul
 if %errorlevel% == 0 (
   set cbf-pt=c:\aa\repositories\composable-batch-files
 ) else (
@@ -363,15 +362,19 @@ if %errorlevel% == 0 (
 
 exit/b
 
+lc:
+(!ones)
+
 lu:
 Jan-26-2024
 Jul-18-2023
 
-Footnote
->< >< ><
-
+rem:
 about: Windows Batch Scripting files that are function-based, modularized and easy to use and 
 understand.
+
+skw:
+ones-series-jj
 
 
 
