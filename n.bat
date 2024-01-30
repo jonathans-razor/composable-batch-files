@@ -4064,58 +4064,6 @@ Jul-12-2023
 
 
 ::_
-:vue-src
-
-set cbf-pd=vue-expense-tracker
-
-echo. & echo * %cbf-pd% source project.
-
-call pn repo>nul
-set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-gh=https://github.com/bradtraversy/vue-expense-tracker
-set cbf-lh=http://localhost:5173
-
-exit/b
-
-lu:
-Jan-18-2024
-
-
-
-::_
-:vue
-
-set cbf-pd=vue-3-and-composition-api-tutorial
-
-echo. & echo * %cbf-pd%. Builds an expense tracker.
-
-call pn it>nul
-set cbf-docs=https://vuejs.org/guide/introduction.html
-set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-gh=%cbf-gh%/%cbf-pd%
-set cbf-lh=http://localhost:5173
-set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
-
-exit/b
-
-lu:
-Jan-18-2024
-
-
-
-::_
-:vuejs-hw
-
-echo. & echo * Hello world from Vue.js.
-
-call pn d>nul
-set cbf-fn=%cbf-pt%\hello-world-vuejs\index.html
-
-exit/b
-
-
-
-::_
 :prat
 
 set cbf-pd=python-rest-api-tutorial
@@ -5259,6 +5207,58 @@ exit/b
 
 
 ::_
+:vue-src
+
+set cbf-pd=vue-expense-tracker
+
+echo. & echo * %cbf-pd% source project.
+
+call pn repo>nul
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-gh=https://github.com/bradtraversy/vue-expense-tracker
+set cbf-lh=http://localhost:5173
+
+exit/b
+
+lu:
+Jan-18-2024
+
+
+
+::_
+:vue
+
+set cbf-pd=vue-3-and-composition-api-tutorial
+
+echo. & echo * %cbf-pd%. Builds an expense tracker.
+
+call pn it>nul
+set cbf-docs=https://vuejs.org/guide/introduction.html
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-gh=%cbf-gh%/%cbf-pd%
+set cbf-lh=http://localhost:5173
+set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
+
+exit/b
+
+lu:
+Jan-18-2024
+
+
+
+::_
+:vuejs-hw
+
+echo. & echo * Hello world from Vue.js.
+
+call pn d>nul
+set cbf-fn=%cbf-pt%\hello-world-vuejs\index.html
+
+exit/b
+
+
+
+::_
 :vupl
 
 echo. & echo * Playground.
@@ -5320,6 +5320,18 @@ exit/b
 echo. & echo * Todo app.
 
 set cbf-url=https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2
+
+exit/b
+
+
+
+::_
+:vubu
+
+echo. & echo * Vue button.
+
+call pn d>nul
+set cbf-pt=%cbf-pt%\vue-button
 
 exit/b
 
