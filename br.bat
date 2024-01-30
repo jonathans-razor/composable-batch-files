@@ -1,8 +1,10 @@
 :_
 
 @echo off
+
 if "%~1" == "" goto run-application-without-parameter
 if "%~1" == "?" goto help
+
 goto main
 
 
@@ -10,6 +12,7 @@ goto main
 :_
 :help
 cls
+
 echo. & echo * Run Brave while leveraging the e.bat decision algorithm.
 
 echo. & echo * Usage: %~n0 [space separated parameter(s)]
@@ -52,4 +55,4 @@ exit/b
 
 
 
-:_ (!efno)
+:_
