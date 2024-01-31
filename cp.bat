@@ -1247,28 +1247,27 @@ exit/b
 
 
 :_
-:1-
-:2-
-:3-
-:4-
-:5-
-:6-
-:7-
-:8-
-:9-
-:10-
-:11-
-:12-
-:13-
-:14-
-:14-
+:1
+:2
+:3
+:4
+:5
+:6
+:7
+:8
+:9
+:10
+:11
+:12
+:13
+:14
 
 echo. & echo * Use Vue app %.
 
 call fe App.vue & if errorlevel 1 exit/b
 
-rem qq
-copy %1* App.vue
+echo.
+xcopy /y %1* App.vue
 
 exit/b
 
