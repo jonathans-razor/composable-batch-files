@@ -201,7 +201,7 @@ rem echo. & echo * Open current folder file Jan-22-2024-0-14-AM.
 
 set cbf-fn=%cd%\%~1
 
-goto main
+exit/b
 
 
 
@@ -342,7 +342,9 @@ set cbf-editor-parameter=%*
 rem echo. & echo * all parameters: %*
 
 echo %*| find /i "/e">nul
+
 if not errorlevel 1 goto first
+
 goto next
 
 
