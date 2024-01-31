@@ -5286,6 +5286,18 @@ exit/b
 
 
 ::_
+:vutu
+
+echo. & echo * Tutorial.
+
+call an kr>nul
+set cbf-url=https://vuejs.org/tutorial/#step-1
+
+exit/b
+
+
+
+::_
 :vuqs
 
 echo. & echo * Quick start.
