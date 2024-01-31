@@ -343,6 +343,25 @@ Jul-17-2018
 
 
 ::_
+:jj
+:jjgh
+:jjgit
+
+echo. & echo * Jonathan's Github page.
+
+set cbf-gh=https://github.com/jonathans-razor
+set cbf-gh2=https://github.com/jonathans-razor?tab=repositories
+set cbf-gh3=https://github.com/settings/profile
+set cbf-rl=%cbf-gh%\Composable-Batch-Files\releases
+
+exit/b
+
+lu:
+Jun-27-2023
+
+
+
+::_
 :c
 :cbf
 
@@ -392,25 +411,6 @@ exit/b
 
 lu:
 Sep-9-2023
-
-
-
-::_
-:jj
-:jjgh
-:jjgit
-
-echo. & echo * Jonathan's Github page.
-
-set cbf-gh=https://github.com/jonathans-razor
-set cbf-gh2=https://github.com/jonathans-razor?tab=repositories
-set cbf-gh3=https://github.com/settings/profile
-set cbf-rl=%cbf-gh%\Composable-Batch-Files\releases
-
-exit/b
-
-lu:
-Jun-27-2023
 
 
 
@@ -5334,6 +5334,22 @@ call pn d>nul
 set cbf-pt=%cbf-pt%\vue-button
 
 exit/b
+
+
+
+:_
+:vu
+
+echo. & echo * Vue testing
+
+call pn it>nul
+set cbf-pt=%cbf-pt%\vue-testing
+set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
+
+exit/b
+
+lu:
+Jan-30-2024
 
 
 

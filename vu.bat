@@ -46,7 +46,7 @@ Jan-18-2024
 
 
 ::_
-:a1
+:app1
 
 echo. & echo * Run Vue application %1.
 
@@ -59,7 +59,7 @@ exit/b
 
 
 ::_
-:a2
+:app2
 
 echo. & echo * Vue button.
 
@@ -71,7 +71,7 @@ exit/b
 
 
 ::_
-:a3
+:app3
 :vue
 
 echo. & echo * Run project vue-3-and-composition-api-tutorial. Vue tuturial by Traversy Media.
@@ -86,14 +86,45 @@ exit/b
 
 
 ::_
-:a4
+:app4
 :bu2
 
-echo. & echo * Button 2. This works.
+echo. & echo * Button 2. This works. An example of Single-File Components.
 
-rem qq
 call t d>nul
 cd vue-button-2\my-project
+call nm ruse
+call lh 8080
+
+exit/b
+
+rem:
+I replaced the App.vue code with the SFC code from https://vuejs.org/guide/introduction.html which looks like:
+
+<script setup>
+import { ref } from 'vue'
+const count = ref(0)
+</script>
+
+<template>
+  <button @click="count++">Count is: {{ count }}</button>
+</template>
+
+<style scoped>
+button {
+  font-weight: bold;
+}
+</style>
+
+
+
+:_
+:app5
+
+echo. & echo * Vue application "%1". A vanilla/unedited Vue 3 starter project built on Jan-30-2024.
+
+call t vu>nul
+cd %1
 call nm ruse
 call lh 8080
 
@@ -102,12 +133,16 @@ exit/b
 
 
 :_
-:a5
+:app6
 
-echo. & echo *
+echo. & echo * Vue application "%1". 
+
+call t vu>nul
+cd %1
+call nm ruse
+call lh 8080
 
 rem   qq
-set cbf-
 
 exit/b
 

@@ -1630,10 +1630,18 @@ exit/b
 
 ::_
 :cvu
+:cvup
 
-echo. & echo * Create Vue project.
+echo. & echo * Create Vue project call %2.
 
-vue create my-project
+rem qq
+
+if "%~2" == "" (
+  err Percent 2, the name you wish to call the new project, cannot be [blank].
+)
+
+rem qq
+vue create %2
 
 exit/b
 
@@ -1645,6 +1653,7 @@ exit/b
 echo. & echo * Run serve.
 
 call fe package.json || exit/b
+
 start "Run Serve" cmd /k npm run serve
 
 exit/b
