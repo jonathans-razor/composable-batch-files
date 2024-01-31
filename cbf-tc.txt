@@ -232,6 +232,7 @@ example-  Prefix for files written by other authors for learning and comparison 
        v  Vetted (Useful for copying-and-pasting).
       va  Surf to a Vault webpage.
       vc  Visual Studio Code, with td parameter.
+      vu  Vue runner.
       wi  Open the Wikipedia page for the passed in alias.
       wl  Run WebLogic startup commands.
       wo  Run Word with or without a filename alias parameter.

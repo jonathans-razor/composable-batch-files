@@ -41,8 +41,25 @@ Jan-18-2024
 
 
 
-:_
-:bu
+:_+ Vue Applications Family (!fyvu)
+
+
+
+::_
+:a1
+
+echo. & echo * Run Vue application %1.
+
+call t d>nul
+cd hello-world-vuejs
+br index.html
+
+exit/b
+
+
+
+::_
+:a2
 
 echo. & echo * Vue button.
 
@@ -53,13 +70,44 @@ exit/b
 
 
 
-:_
+::_
+:a3
+:vue
+
+echo. & echo * Run project vue-3-and-composition-api-tutorial. Vue tuturial by Traversy Media.
+
+call t vue>nul
+call nm dev>nul
+call vc .
+call fx vue lh br
+
+exit/b
+
+
+
+::_
+:a4
 :bu2
 
+echo. & echo * Button 2. This works.
+
+rem qq
 call t d>nul
 cd vue-button-2\my-project
 call nm ruse
 call lh 8080
+
+exit/b
+
+
+
+:_
+:a5
+
+echo. & echo *
+
+rem   qq
+set cbf-
 
 exit/b
 
