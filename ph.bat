@@ -348,10 +348,13 @@ exit/b
 ::_
 :a2n
 cls
+
 echo. & echo * Add 2 numbers.
+
 rem python add-2-numbers.py 55 102
 @echo on
 call %0 add-2-numbers.py 55 102
+
 exit/b
 
 
@@ -362,6 +365,7 @@ cls
 echo. & echo * Call 4 functions.
 echo.
 python call-4-functions.py
+
 exit/b
 
 
@@ -369,7 +373,10 @@ exit/b
 ::_
 :docs
 
-call fx ph docs
+echo. & echo * Online doucmentation.
+
+call fx %0 docs
+
 exit/b
 
 
@@ -381,6 +388,7 @@ echo. & echo * Date time from %0.
 call t d>nul
 echo.
 python date.py
+
 exit/b
 
 
@@ -405,6 +413,7 @@ exit/b
 echo. & echo * Echo parameters from %0.bat.
 call t dsa>nul
 call %0 echo-parameters.py %*
+
 exit/b
 
 
@@ -416,6 +425,7 @@ echo. & echo * Fizz from %0.
 call t d>nul
 echo.
 %0 fizz.py
+
 exit/b
 
 

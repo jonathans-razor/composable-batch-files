@@ -174,4 +174,15 @@ exit/b
 
 
 
+:_
+:docs
+
+echo. & echo * Online doucmentation.
+
+call fx %0 docs
+
+exit/b
+
+
+
 :_ (!efvu)

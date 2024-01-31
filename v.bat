@@ -2124,38 +2124,49 @@ exit/b
 
 ::_
 :docs
+
 call sf [docs URL alias]
+
 exit/b
 
 
 
 ::_
 :function-1
+
 echo. & echo * %1 in %0.bat.
+
 exit/b
 
 
 
 ::_
 :function-2
+
 echo. & echo * %1 in %0.bat.
+
 exit/b
 
 
 
 ::_
 :function-3
+
 echo. & echo * %1 in %0.bat.
+
 exit/b
 
 
 
 ::_
 :dtt
+
 rem echo. & echo * Return a date plus time string from %0.bat.
 call t d>nul
 [] date-time.[filename extension]
+
 exit/b
+
 Level 2 Program: Simplest possible program that does something.
 Limited adoption.
 
@@ -2178,10 +2189,13 @@ exit/b
 
 :_
 :star
+
 rem echo. & echo * Start the server from %0.bat.
 call t nwe>nul
 start "[Server Title]" cmd /k [executable name start syntax] .
+
 exit/b
+
 Level 1 Program: Is the program even installed?
 
 

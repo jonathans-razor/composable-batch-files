@@ -3877,20 +3877,6 @@ exit/b
 
 
 
-:_
-:ph
-
-echo. & echo * Python docs.
-
-set cbf-docs=https://docs.python.org/3/
-
-exit/b
-
-lu:
-Oct-25-2023
-
-
-
 :_+ Language Functions Family (!fylfn) (skw supported-languages-series-jj)
 
 
@@ -5207,6 +5193,23 @@ exit/b
 
 
 ::_
+:vu
+
+echo. & echo * Vue testing
+
+call pn it>nul
+set cbf-docs=https://vuejs.org/guide/introduction.html
+set cbf-pt=%cbf-pt%\vue-testing
+set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
+
+exit/b
+
+lu:
+Jan-30-2024
+
+
+
+::_
 :vue-src
 
 set cbf-pd=vue-expense-tracker
@@ -5270,6 +5273,7 @@ exit/b
 
 
 ::_
+:vudocs
 :vuin
 
 echo. & echo * Introduction.
@@ -5338,22 +5342,6 @@ exit/b
 
 
 :_
-:vu
-
-echo. & echo * Vue testing
-
-call pn it>nul
-set cbf-pt=%cbf-pt%\vue-testing
-set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
-
-exit/b
-
-lu:
-Jan-30-2024
-
-
-
-:_
 :app5
 :app6
 
@@ -5384,6 +5372,20 @@ How do you convert a pdf document to a word document?
 How do you sign a pdf form?
 Sign document.
 signing documents
+
+
+
+:_
+:ph
+
+echo. & echo * Python docs.
+
+set cbf-docs=https://docs.python.org/3/
+
+exit/b
+
+lu:
+Oct-25-2023
 
 
 
