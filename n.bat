@@ -5353,4 +5353,38 @@ Jan-30-2024
 
 
 
+:_
+:app5
+:app6
+
+echo. & echo * Vue application folders.
+
+call pn vu>nul
+set cbf-pt=%cbf-pt%\%1
+
+exit/b
+
+
+
+:_
+:sido
+
+echo. & echo * Adobe Fill and Sign documents.
+
+set cbf-url=https://www.adobe.com/acrobat/online/sign-pdf.html
+
+exit/b
+
+lc:
+(!sido)
+
+skw:
+document signing
+How do you convert a pdf document to a word document?
+How do you sign a pdf form?
+Sign document.
+signing documents
+
+
+
 :_ (!efn)

@@ -1628,22 +1628,6 @@ exit/b
 
 
 
-::_
-:cvu
-:cvup
-
-echo. & echo * Create Vue project call %2.
-
-if "%~2" == "" (
-  err Percent 2, the name you wish to call the new project, cannot be [blank].
-)
-
-vue create %2
-
-exit/b
-
-
-
 :_
 :ruse
 

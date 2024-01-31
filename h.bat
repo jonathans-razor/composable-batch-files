@@ -8,7 +8,7 @@ if "%~1" == "?" goto help
 call el /c>nul
 
 if "%~1" == "grep" goto linux-help
-if "%~2" == "-l" goto linux-help
+if "%~2" == "/l" goto linux-help
 
 if "%STOMP_USERNAME%" == "" goto windows-help
 
@@ -23,7 +23,7 @@ echo. & echo * Show the help file of a function routed parameter.
 
 echo. & echo * Usage: %0 [space separated parameter(s)]
 echo.  Parameter 1: Application name.
-echo.  Parameter 2: If equals "-l", go to Linux style help.
+echo.  Parameter 2: If equals "/l", go to Linux style help.
 
 echo. & echo * Batch file style: Multipurpose.
 

@@ -15,7 +15,7 @@ goto %1
 
 cls
 
-echo. & echo  * Vue runner.
+echo. & echo  * Vue.
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
@@ -118,10 +118,10 @@ button {
 
 
 
-:_
+::_
 :app5
 
-echo. & echo * Vue application "%1". A vanilla/unedited Vue 3 starter project built on Jan-30-2024.
+echo. & echo * Vue application "%1". A vanilla/unedited Vue 3 starter project built on Jan-30-2024 created using "vue create".
 
 call t vu>nul
 cd %1
@@ -132,10 +132,10 @@ exit/b
 
 
 
-:_
+::_
 :app6
 
-echo. & echo * Vue application "%1". 
+echo. & echo * Vue application "%1". The simplest possible application created using "vue create".
 
 call t vu>nul
 cd %1
@@ -147,3 +147,31 @@ exit/b
 
 
 :_
+:vers
+
+echo. & echo * Version.
+
+echo.
+vue --version
+
+exit/b
+
+
+
+:_
+:cvu
+:cvup
+
+echo. & echo * Create Vue project call %2.
+
+if "%~2" == "" (
+  err Percent 2, the name you wish to call the new project, cannot be [blank].
+)
+
+vue create %2
+
+exit/b
+
+
+
+:_ (!efvu)
