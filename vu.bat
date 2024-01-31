@@ -142,8 +142,6 @@ cd %1
 call nm ruse
 call lh 8080
 
-rem   qq
-
 exit/b
 
 

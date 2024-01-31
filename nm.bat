@@ -1634,13 +1634,10 @@ exit/b
 
 echo. & echo * Create Vue project call %2.
 
-rem qq
-
 if "%~2" == "" (
   err Percent 2, the name you wish to call the new project, cannot be [blank].
 )
 
-rem qq
 vue create %2
 
 exit/b
