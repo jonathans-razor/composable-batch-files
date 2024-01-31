@@ -18,7 +18,7 @@ echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1: 
 echo   Alias to process.
-echo   Or date function to run. Should conatin the string "-20".
+echo   Or date function to run. Should contain the string "-20".
 
 echo. & echo   Batch file style: Single purpose nd.
 
@@ -41,42 +41,6 @@ Nov-15-2023
 
 
 :_
-:main
-
-set cbf-cu=
-set cbf-url=
-set cbf-cu-target=
-
-call n %1
-
-if errorlevel 1 exit/b
-
-if not "%cbf-url%" == "" (
-  set cbf-cu-target=%cbf-url%
-)
-
-if not "%cbf-cu%" == "" (
-  set cbf-cu-target=%cbf-cu%
-)
-
-if "%cbf-cu-target%" == "" (
-  call err Could not find a suitable curl target for "%1".
-  exit/b
-)
-
-@echo on
-curl %cbf-cu-target%>%tmp%\curl-%1.txt
-@echo off
-
-call an kr
-set cbf-parameter=%tmp%\curl-%1.txt
-call r
-
-exit/b
-
-
-
-:_
 :Nov-15-2023
 cls
 
@@ -94,8 +58,8 @@ Nov-15-2023
 cls
 
 echo. & echo * Download Kubernetes CLI tool K9s.
-rem Provenance: Jul-16-2021_11_43_AM qq1
 curl -O -sLO https://github.com/derailed/k9s/releases/download/v0.28.2/k9s_Windows_amd64.zip
+
 exit/b
 
 lu: 
@@ -108,12 +72,66 @@ Nov-15-2023
 cls
 
 echo. & echo * Download Kubernetes CLI tool K9s.
-rem Provenance: Jul-16-2021_11_43_AM qq1
+
 curl -O -sLO https://github.com/derailed/k9s/releases/download/v0.28.2/k9s_Windows_arm64.zip
+
 exit/b
 
 lu: 
 Nov-15-2023
+
+
+
+:_
+:main
+
+set cbf-cu=
+set cbf-lh=
+set cbf-url=
+set cbf-cu-target=
+
+call n %1
+
+if errorlevel 1 exit/b
+
+if not "%cbf-url%" == "" (
+  set cbf-cu-target=%cbf-url%
+  goto next
+)
+
+if not "%cbf-lh%" == "" (
+  set cbf-cu-target=%cbf-lh%
+  goto next
+)
+
+if not "%cbf-cu%" == "" (
+  set cbf-cu-target=%cbf-cu%
+  goto next
+)
+
+if "%cbf-cu-target%" == "" (
+  call err Could not find a suitable curl target for "%1".
+  exit/b
+)
+
+
+
+:_
+:next
+
+echo.
+@echo on
+curl -v %cbf-cu-target%>%tmp%\curl-%1.txt
+@echo off
+echo.
+
+set cbf-parameter=%tmp%\curl-%1.txt
+
+call an kr
+
+call r
+
+exit/b
 
 
 

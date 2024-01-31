@@ -4209,6 +4209,7 @@ Nov-13-2023
 
 :_
 :cid
+:como
 
 echo. & echo * Comodo Ice Dragon.
 
@@ -5110,7 +5111,7 @@ Sep-29-2023
 :8800
 :9000
 
-echo. & echo * Localhost port %1.
+echo. & echo * Localhost using port %1.
 
 set cbf-lh=http://localhost:%1
 
@@ -5144,7 +5145,7 @@ Jan-11-2019
 
 echo. & echo * Revo. news.
 
-set cbf-url=https://www.revolver.news
+set cbf-url=https://revolver.news
 
 exit/b
 

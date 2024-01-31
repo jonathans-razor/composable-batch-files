@@ -38,16 +38,28 @@ if errorlevel 1 exit/b
 
 if not "%cbf-url%" == "" (
   set cbf-pg-target=%cbf-url%
+  goto next
 )
 
 if not "%cbf-pg%" == "" (
   set cbf-pg-target=%cbf-pg%
+  goto next
+)
+
+if not "%cbf-lh%" == "" (
+  set cbf-pg-target=%cbf-lh%
+  goto next
 )
 
 if "%cbf-pg-target%" == "" (
   call err Could not find a suitable ping target for "%1".
   exit/b
 )
+
+
+
+:_
+:next
 
 set cbf-pg-target=%cbf-pg-target:http://=%
 set cbf-pg-target=%cbf-pg-target:https://=%
@@ -57,6 +69,7 @@ echo.
 @echo on
 ping %2 %cbf-pg-target%
 @echo off
+echo.
 
 exit/b
 

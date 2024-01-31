@@ -1264,6 +1264,10 @@ exit/b
 
 echo. & echo * Use Vue app %.
 
+call t app6>nul
+
+cd %cbf-pt%\src
+
 call fe App.vue & if errorlevel 1 exit/b
 
 echo.
