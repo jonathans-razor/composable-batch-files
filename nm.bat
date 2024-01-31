@@ -1641,4 +1641,15 @@ exit/b
 
 
 
+:_
+:rv
+
+echo. & echo * Run validate.
+
+npm run validate
+
+exit/b
+
+
+
 :_ (!efnm)

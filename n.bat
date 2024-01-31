@@ -5286,6 +5286,17 @@ exit/b
 
 
 ::_
+:vuld
+
+echo. & echo * Lifecycle diagram.
+
+set cbf-url=https://vuejs.org/guide/essentials/lifecycle
+
+exit/b
+
+
+
+::_
 :vutu
 
 echo. & echo * Tutorial.
