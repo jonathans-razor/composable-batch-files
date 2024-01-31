@@ -1216,14 +1216,18 @@ echo. & echo * Install third party package and save setting in the package.json 
 
 if "%~2" == "" err Parameter 2, the package to install, is required.
 
-rem qq
 echo.
 npm install %2 --save
 
 exit/b
 
 lu:
+Jan-31-2024
 Sep-12-2018
+
+rem:
+This worked on Jan-31-2024: 
+nm inst-s js-confetti
 
 
 
@@ -1407,7 +1411,6 @@ Is this command folder-specific?
 :iaa
 
 echo. & echo * Install AWS Amplify.
-rem qq
 
 npm install -g @aws-amplify/cli
 
