@@ -5,6 +5,8 @@
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
+call fe package.json || exit/b
+
 goto %1
 
 
@@ -555,12 +557,6 @@ echo. & echo * Removes this tool and copies build dependencies, configuration fi
 into the app directory. If you do this, you can�t go back!
 
 echo.
-if not exist "package.json" (
-  echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
-  exit/b
-)
-
-echo.
 npm run eject
 
 exit/b
@@ -580,8 +576,6 @@ What does npm run eject do?
 :rubi
 
 echo. & echo * Bundles the app into static files for production into a subfolder called "build".
-
-call fe package.json || exit/b
 
 echo.
 npm run build
@@ -666,9 +660,6 @@ Oct-26-2021
 echo. & echo * Install dependencies from my BAPS project.
 
 echo.
-call m specific_file_presence package.json & if errorlevel 1 exit/b
-
-echo.
 npm i express dotenv cors needle
 
 exit/b
@@ -682,8 +673,6 @@ Oct-29-2021
 :baps2
 
 echo. & echo * Install Dev dependency Nodemon.
-
-call m specific_file_presence package.json & if errorlevel 1 exit/b
 
 echo.
 npm i -D nodemon
@@ -699,9 +688,6 @@ Nov-1-2021
 :baps3
 
 echo. & echo * Install rate limit.
-
-echo.
-call m specific_file_presence package.json & if errorlevel 1 exit/b
 
 echo.
 npm i express-rate-limit apicache
@@ -753,7 +739,6 @@ Feb-14-2022
 echo. & echo * Uninstall "%2" global package and remove dependency section in the package.json file.
 
 echo.
-echo.
 npm uninstall %2 -g --save
 
 exit/b
@@ -804,8 +789,6 @@ Apr-24-2018
 
 echo. & echo * Install JSON server.
 
-call fe package.json || exit/b
-
 npm i json-server
 
 exit/b
@@ -820,8 +803,6 @@ Oct-15-2021
 :json
 
 echo. & echo * Run JSON local database server.
-
-call fe package.json || exit/b
 
 start "JSON" cmd /k npm run server
 
@@ -848,12 +829,6 @@ JSON server command in order to start your local database so that data is availa
 :fswi
 
 echo. & echo * Fix service worker issue.
-
-echo.
-if not exist "package.json" (
-  echo. & echo * Error: The file "package.json" must exist in the current folder in order for you to run this command.
-  exit/b
-)
 
 npx msw init public/ --save
 
@@ -964,8 +939,6 @@ cls
 
 echo. & echo * Fix npm installation in the current folder.
 
-call fe package.json || exit/b
-
 call dr /d node_modules
 del package-lock.json
 npm install
@@ -1050,10 +1023,7 @@ Aug-12-2019
 
 echo. & echo * Update current folder's dependencies to the latest version.
 
-call fe package.json || exit/b
-
 echo.
-
 npm update
 
 exit/b
@@ -1173,8 +1143,6 @@ npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_l
 
 echo. & echo * Install any dependencies listed in package.json. Install the required dependencies of the app.
 
-call fe package.json || exit/b
-
 echo.
 npm install
 
@@ -1198,10 +1166,7 @@ If you have an issue with install or update, try deleting the node_modules subfo
 
 echo. & echo * Install Express.
 
-call fe package.json || exit/b
-
 echo.
-
 npm install express
 
 exit/b
@@ -1216,10 +1181,7 @@ Sep-21-2023
 
 echo. & echo * Install TypeScript.
 
-call fe package.json || exit/b
-
 echo.
-
 npm install typescript --save-dev
 rem npm i -g typescript
 
@@ -1237,8 +1199,6 @@ If you don't install it globally, the tsc command doesn't seem to work. Oct-26-2
 
 echo. & echo * Install Types for Node.
 
-call fe package.json || exit/b
-
 echo.
 npm install i -D @types/node
 
@@ -1250,19 +1210,15 @@ Aug-29-2023
 
 
 ::_
-:inst_s
+:inst-s
 
 echo. & echo * Install third party package and save setting in the package.json file.
 
-echo.
-if not exist package.json (
-  echo.
-  echo * Error: The file package.json does not exist in the current folder.
-  exit/b
-)
+if "%~2" == "" err Parameter 2, the package to install, is required.
 
+rem qq
 echo.
-npm install %2
+npm install %2 --save
 
 exit/b
 
@@ -1451,11 +1407,7 @@ Is this command folder-specific?
 :iaa
 
 echo. & echo * Install AWS Amplify.
-
-echo.
-call m specific_file_presence package.json 
-
-if errorlevel 1 exit/b
+rem qq
 
 npm install -g @aws-amplify/cli
 
@@ -1471,8 +1423,6 @@ Sep-5-2021
 :test
 
 echo. & echo * Starts the test runner.
-
-call fe package.json || exit/b
 
 echo.
 start "Start NPM" cmd /k npm test
@@ -1516,8 +1466,6 @@ Jan-15-2024
 
 echo. & echo * Run VUE UI. Starts the development server.
 
-call fe package.json || exit/b
-
 echo.
 start "npm run dev" cmd /k npm run dev
 
@@ -1538,8 +1486,6 @@ Compile and hot-reload for development.
 :start
 
 echo. & echo * Run React UI. Starts the development server.
-
-call fe package.json || exit/b
 
 echo.
 start "npm start" cmd /k npm start
@@ -1609,8 +1555,6 @@ exit/b
 
 echo. & echo * Add toastification.
 
-call fe package.json || exit/b
-
 npm i vue-toastification@next
 
 exit/b
@@ -1632,8 +1576,6 @@ exit/b
 :ruse
 
 echo. & echo * Run serve.
-
-call fe package.json || exit/b
 
 start "Run Serve" cmd /k npm run serve
 
