@@ -1873,9 +1873,10 @@ Feb-13-2019
 
 
 ::_
+:vco
 :vcw
 
-echo. & echo * Visual Studio Code in the Cloud, on the Web.
+echo. & echo * Visual Studio Code in the Cloud, on the Web, online.
 
 set cbf-url=https://vscode.dev
 
@@ -1921,7 +1922,7 @@ To run Visual Studio Code in a particular folder type: "code ."
 ::_
 :vsc_ws
 
-echo. & echo * Visual Studio Code workspace..
+echo. & echo * Visual Studio Code workspace.
 
 call tdp ma>nul
 
@@ -5190,7 +5191,41 @@ exit/b
 
 
 
-:_+ Vue (!fyvue)
+:_+ Vue Family (!fcvu)
+
+
+
+::_
+:stbl
+
+echo. & echo * StackBlitz.
+
+rem   qq
+set cbf-url=https://vite.new/vue
+
+exit/b
+
+
+
+::_
+:jsf
+
+echo. & echo * JSFiddle.
+
+set cbf-url=https://jsfiddle.net/yyx990803/2ke1ab0z/
+
+exit/b
+
+
+
+::_
+:vupl
+
+echo. & echo * Playground.
+
+set cbf-url=https://play.vuejs.org
+
+exit/b
 
 
 
@@ -5258,17 +5293,6 @@ echo. & echo * Hello world from Vue.js.
 
 call pn d>nul
 set cbf-fn=%cbf-pt%\hello-world-vuejs\index.html
-
-exit/b
-
-
-
-::_
-:vupl
-
-echo. & echo * Playground.
-
-set cbf-url=https://play.vuejs.org
 
 exit/b
 
