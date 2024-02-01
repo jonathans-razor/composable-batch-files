@@ -186,6 +186,37 @@ Done. Now run:
 
 
 
+::_
+:app8
+
+echo. & echo * Run Vue application %1. This app was build from example code on the Vue quickstart webpage.
+
+call t %1>nul
+br index.html
+
+exit/b
+
+rem:
+https://vuejs.org/guide/quick-start.html
+
+
+
+::_
+:app9
+
+echo. & echo * Run Vue application %1. This app was build from the ES Module Build section of the Vue quickstart webpage.
+
+call t %1>nul
+rem qq
+br index.html
+
+exit/b
+
+rem:
+https://vuejs.org/guide/quick-start.html
+
+
+
 :_
 :vers
 

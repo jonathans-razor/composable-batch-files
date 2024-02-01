@@ -5409,7 +5409,6 @@ exit/b
 
 echo. & echo * Vue %1.
 
-rem qq
 call pn d>nul
 set cbf-pt=%cbf-pt%\hello-world-vuejs
 set cbf-fn=%cbf-pt%\index.html
@@ -5422,11 +5421,14 @@ exit/b
 :app5
 :app6
 :app7
+:app8
+:app9
 
 echo. & echo * Vue application folders.
 
 call pn vu>nul
 set cbf-pt=%cbf-pt%\%1
+set cbf-fn=%cbf-pt%\index.html
 
 exit/b
 
