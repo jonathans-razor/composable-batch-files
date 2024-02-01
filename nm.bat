@@ -1,4 +1,4 @@
-:_ (!nm)
+:_ (!nm, !bfnm)
 
 @echo off
 
@@ -824,48 +824,6 @@ JSON server command in order to start your local database so that data is availa
 
 
 
-:_+ NPX (!fcnpx)
-
-
-
-::_
-:fswi
-
-echo. & echo * Fix service worker issue.
-
-npx msw init public/ --save
-
-exit/b
-
-lu:
-Aug-27-2021
-
-Footnote
->< >< ><
-
-Thuy had me run this on Aug-27-2021 agains SUUI to fix an issue with Service Worker.
-
-rem Service Worker successfully created!
-
-I see your MSW is not running. - Thuy Sep-3-2021
-
-
-
-::_
-:npk
-
-echo. & echo * NPKill, find all node modules that can be removed and allows you to delete them.
-
-echo.
-npx npkill
-
-exit/b
-
-lu:
-Aug-15-2022
-
-
-
 :_
 :fix
 
@@ -1428,74 +1386,6 @@ exit/b
 
 
 
-:_+ Create a React App
-
-
-
-::_
-:crearr
-
-echo. & echo * Create a React app at root.
-
-echo.
-npx create-react-app .
-
-exit/b
-
-lu:
-Aug-26-2021
-
-
-
-::_
-:crear
-
-echo. & echo * Create a React app.
-
-if "%~2" == "" (
-  echo.
-  err Parameter 2, the application/folder name, is required.
-)
-
-echo.
-npx create-react-app %2
-
-exit/b
-
-lu:
-Aug-30-2021
-
-
-
-::_
-:crearj
-
-echo. & echo * Create a React app at root that has TypeScript enabled.
-
-echo.
-npx create-react-app . --template typescript
-
-exit/b
-
-lu:
-Oct-26-2021
-
-
-
-::_
-:creagp
-
-echo. & echo * Create a React app per ChatGPT.
-
-npx create-react-app hello-world-react
-
-exit/b
-
-lu:
-Sep-26-2023
-
-
-
 :_+ Vue Family (!fcvu)
 
 
@@ -1612,10 +1502,6 @@ SystemError [ERR_TTY_INIT_FAILED]: TTY initialization failed: uv_tty_init return
     at new SystemError (node:internal/errors:256:5)
     at new NodeError (node:internal/errors:367:7)
     at new WriteStream (node:tty:93:11)
-    at ED.prompt (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/core/dist/index.mjs:9:693)
-    at Module.ie (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/prompts/dist/index.mjs:28:8)
-    at template (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/create-svelte/bin.js:48:6)
-    at Module.he (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/prompts/dist/index.mjs:77:632)
     at file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/create-svelte/bin.js:45:25
     at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
   code: 'ERR_TTY_INIT_FAILED',

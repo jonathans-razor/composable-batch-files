@@ -51,7 +51,6 @@ Jan-18-2024
 echo. & echo * Run Vue application %1.
 
 call t app1>nul
-rem qq
 br index.html
 
 exit/b
@@ -207,7 +206,6 @@ https://vuejs.org/guide/quick-start.html
 echo. & echo * Run Vue application %1. This app was build from the ES Module Build section of the Vue quickstart webpage.
 
 call t %1>nul
-rem qq
 br index.html
 
 exit/b
