@@ -149,6 +149,43 @@ Contains 15 substitutable App.vue files. For example, use cp app6-0 to start fro
 
 
 
+::_
+:app7
+
+echo. & echo * Vue application "%1". Created using all yes values from "vue create vue@latest".
+
+call t vu>nul
+cd %1
+call nm rude
+call lh 5173
+
+exit/b
+
+rem:
+This project was created with all yeses to the following questions:
+
+ue.js - The Progressive JavaScript Framework
+
+v Add TypeScript? ... No / Yes
+v Add JSX Support? ... No / Yes
+v Add Vue Router for Single Page Application development? ... No / Yes
+v Add Pinia for state management? ... No / Yes
+v Add Vitest for Unit Testing? ... No / Yes
+v Add an End-to-End Testing Solution? » Playwright
+v Add ESLint for code quality? ... No / Yes
+v Add Prettier for code formatting? ... No / Yes
+
+Scaffolding project in d:\Dropbox\IT\vue-testing\app7...
+
+Done. Now run:
+
+  cd app7
+  npm install
+  npm run format
+  npm run dev
+
+
+
 :_
 :vers
 

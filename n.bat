@@ -5231,7 +5231,7 @@ exit/b
 ::_
 :vu
 
-echo. & echo * Vue testing
+echo. & echo * Vue testing.
 
 call pn it>nul
 set cbf-docs=https://vuejs.org/guide/introduction.html
@@ -5392,6 +5392,7 @@ exit/b
 :_
 :app5
 :app6
+:app7
 
 echo. & echo * Vue application folders.
 

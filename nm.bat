@@ -1036,7 +1036,6 @@ lu:
 Aug-29-2023
 
 rem:
-
 Set up project.
 
 It's a good idea to run npm install before doing your build in case npm needs to update. - Sean
@@ -1349,8 +1348,11 @@ Jan-15-2024
 
 ::_
 :dev
+:rd
 :rdev
+:rude
 
+rem qq
 echo. & echo * Run VUE UI. Starts the development server.
 
 echo.
@@ -1363,6 +1365,18 @@ Oct-27-2021
 
 rem:
 Compile and hot-reload for development.
+
+
+
+::_
+:ruse
+
+echo. & echo * Run serve.
+
+rem qq
+start "npm run serve" cmd /k npm run serve
+
+exit/b
 
 
 
@@ -1400,17 +1414,6 @@ cd hello-world-react
 call :star>nul
 call vc .
 rem call sf 3000 Unnecessary
-
-exit/b
-
-
-
-:_
-:ruse
-
-echo. & echo * Run serve.
-
-start "Run Serve" cmd /k npm run serve
 
 exit/b
 
@@ -1506,12 +1509,18 @@ cls
 
 echo. & echo * Create a new Vue project.
 
-npx create vue@latest .
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+npm create vue@latest %2
 
 exit/b
 
 lu:
 Feb-1-2024
+
+rem:
+rem the "." creates the project in the current folder I believe. Feb-1-2024
+npm create vue@latest .
 
 
 
@@ -1629,6 +1638,17 @@ npm ERR! command failed
 npm ERR! command C:\WINDOWS\system32\cmd.exe /d /s /c create-svelte svelte-example
 
 npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_logs\2024-01-02T21_19_40_474Z-debug-0.log
+
+
+
+:_
+:rf
+
+echo. & echo * Run format.
+
+npm run format
+
+exit/b
 
 
 
