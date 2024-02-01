@@ -2011,7 +2011,7 @@ lu: Oct-13-2023
 
 
 
-:_+ Language Functions Template Code Family (!lfs, !fylg) (skw supported-languages-series-jj)
+:_+ Language Functions Template Code Family (!lfs, !fclg) (skw supported-languages-series-jj)
 
 
 
@@ -2361,7 +2361,7 @@ Jun-20-2019
 
 
 
-:_+ Validation Family (!fyva) error-level-educational-series
+:_+ Validation Family (!fcva) error-level-educational-series
 
 
 

@@ -823,7 +823,7 @@ JSON server command in order to start your local database so that data is availa
 
 
 
-:_+ NPX (!fynpx)
+:_+ NPX (!fcnpx)
 
 
 
@@ -1135,7 +1135,7 @@ npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_l
 
 
 
-:_+ Installing (!fyinst)
+:_+ Installing (!fcinst)
 
 
 

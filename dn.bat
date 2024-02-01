@@ -111,7 +111,7 @@ exit/b
 
 
 
-:_+ Language Functions Template Code Family (!lfs, !fylg) (skw supported-languages-series-jj)
+:_+ Language Functions Template Code Family (!lfs, !fclg) (skw supported-languages-series-jj)
 
 
 

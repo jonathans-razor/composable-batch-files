@@ -157,7 +157,7 @@ I got this command from Phil K. He says it will help me get our go code to compi
 
 
 
-:_+ Language Features Family (!fylggo) (skw language-functions-series-jj)
+:_+ Language Features Family (!fclggo) (skw language-functions-series-jj)
 
 
 

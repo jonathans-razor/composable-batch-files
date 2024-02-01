@@ -1640,7 +1640,7 @@ May-14-2020
 
 
 
-:_+ Tag Operations (!fytag)
+:_+ Tag Operations (!fctag)
 
 
 
@@ -2167,7 +2167,7 @@ Dec-10-2019
 
 
 
-:_+ Diff (!fydiff)
+:_+ Diff (!fcdiff)
 
 
 
@@ -2630,7 +2630,7 @@ Allow empty commit.
 
 
 
-:_+ Reversion Family (!fycrv)
+:_+ Reversion Family (!fccrv)
 
 
 
@@ -3353,7 +3353,7 @@ exit/b
 
 
 
-:_+ Create Branch Family (!fyccb)
+:_+ Create Branch Family (!fcccb)
 
 
 
@@ -3667,7 +3667,7 @@ exit/b
 
 
 
-:_+ Configuration and Author Settings (!fyc, !fyconfig)
+:_+ Configuration and Author Settings (!fcc, !fcconfig)
 
 Verb Prefixes
 e = Edit

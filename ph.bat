@@ -234,7 +234,7 @@ Nov-1-2023
 
 
 
-:_+ Versions Family (!fyvers)
+:_+ Versions Family (!fcvers)
 
 
 
@@ -341,7 +341,7 @@ exit/b
 
 
 
-:_+ Language Feature Family (!fylgphy) (skw supported-languages-series-jj)
+:_+ Language Feature Family (!fclgphy) (skw supported-languages-series-jj)
 
 
 

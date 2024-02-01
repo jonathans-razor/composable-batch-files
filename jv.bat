@@ -236,7 +236,7 @@ exit/b
 
 
 
-::_+ Language Features Family (!fylfjv) (skw language-functions-series-jj)
+::_+ Language Features Family (!fclfjv) (skw language-functions-series-jj)
 
 
 
@@ -252,7 +252,7 @@ exit/b
 
 
 
-:_+ Language Functions Template Code Family (!lfs, !fylg) (skw supported-languages-series-jj)
+:_+ Language Functions Template Code Family (!lfs, !fclg) (skw supported-languages-series-jj)
 
 
 

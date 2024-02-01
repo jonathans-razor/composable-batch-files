@@ -65,7 +65,7 @@ Metadata: Track Size (!tsn)
 
 
 
-:_+ ASCII Art Family (!fyaa)
+:_+ ASCII Art Family (!fcaa)
 
 
 
@@ -558,7 +558,7 @@ Nov-7-2022
 
 
 
-:_+ Base64 Family (!fycb64)
+:_+ Base64 Family (!fccb64)
 
 
 
@@ -608,7 +608,7 @@ Mar-28-2023
 
 
 
-;+ Code Keepers Family (!fyck)
+;+ Code Keepers Family (!fcck)
 
 
 
@@ -830,7 +830,7 @@ Dec-12-2017
 
 
 
-:_+ Windows Folders Family (!fywin)
+:_+ Windows Folders Family (!fcwin)
 
 
 
@@ -1294,7 +1294,7 @@ Nov-2-2018
 
 
 
-:_+ J Files (!fycj)
+:_+ J Files (!fccj)
 
 
 
@@ -2039,7 +2039,7 @@ exit/b
 
 
 
-:_+ Windows Application Family (!fywin)
+:_+ Windows Application Family (!fcwin)
 
 
 
@@ -2918,7 +2918,7 @@ exit/b
 
 
 
-:_+ VSC Snippets Family (!fysnip)
+:_+ VSC Snippets Family (!fcsnip)
 
 
 
@@ -3078,7 +3078,7 @@ lu:
 
 
 
-:_+ Family Gmail (!fygmai)
+:_+ Family Gmail (!fcgmai)
 
 
 
@@ -3675,7 +3675,7 @@ Oct-13-2023
 
 
 
-:_+ LeetCode (!fyle)
+:_+ LeetCode (!fcle)
 
 
 
@@ -3729,7 +3729,7 @@ Oct-17-2023
 
 
 
-:_+ Pictures (!fypict)
+:_+ Pictures (!fcpict)
 
 
 
@@ -3879,7 +3879,7 @@ exit/b
 
 
 
-:_+ Language Functions Family (!fylfn) (skw supported-languages-series-jj)
+:_+ Language Functions Family (!fclfn) (skw supported-languages-series-jj)
 
 
 
@@ -4047,7 +4047,7 @@ Jul-12-2023
 
 
 
-:_+ Find a Job Family (!fycfj)
+:_+ Find a Job Family (!fccfj)
 
 
 
@@ -4245,7 +4245,7 @@ Nov-14-2023
 
 
 
-:_+ GraphQL Family (!fygcc)
+:_+ GraphQL Family (!fcgcc)
 
 
 
@@ -4953,7 +4953,7 @@ exit/b
 
 
 
-:_ IP Address family (!fyip)
+:_ IP Address family (!fcip)
 
 
 
@@ -5200,7 +5200,6 @@ exit/b
 
 echo. & echo * StackBlitz.
 
-rem   qq
 set cbf-url=https://vite.new/vue
 
 exit/b

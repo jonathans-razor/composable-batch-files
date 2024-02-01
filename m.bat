@@ -2535,7 +2535,7 @@ Aug-16-2018
 
 
 
-:_+ Error Level Family in M.bat (!fyel) error-level-educational-series
+:_+ Error Level Family in M.bat (!fcel) error-level-educational-series
 
 
 
@@ -3024,7 +3024,7 @@ May-31-2019
 
 
 
-:_+ Open Files Family (!fyof)
+:_+ Open Files Family (!fcof)
 
 
 
@@ -3424,7 +3424,7 @@ Dec-19-2018
 
 
 
-:_+ How To Family (!fyht)
+:_+ How To Family (!fcht)
 
 
 
@@ -3951,7 +3951,7 @@ Aug-16-2019
 
 
 
-:_+ ASCII Art Family (!fyaa)
+:_+ ASCII Art Family (!fcaa)
 
 
 
@@ -4469,7 +4469,7 @@ Mar-4-2019
 
 
 
-:_+ Initialization Family (!fyinit, !fylnk)
+:_+ Initialization Family (!fcinit, !fclnk)
 
 
 
@@ -4872,7 +4872,7 @@ exit/b
 
 
 
-:_+ Expand and Compose Family (!fyexpa)
+:_+ Expand and Compose Family (!fcexpa)
 
 
 
