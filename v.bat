@@ -1735,14 +1735,14 @@ Jul-3-2023
 
 echo. & echo * Test for the exisitence of a file or folder.
 
-call fe package.json & if errorlevel 1 exit/b
-
 rem Expected type of file.
 echo %2| find /i ".ts">nul
 if errorlevel 1 (
   call err Expected a TypeScipt file.
   exit/b
 )
+
+call fe package.json & if errorlevel 1 exit/b
 
 exit/b
 

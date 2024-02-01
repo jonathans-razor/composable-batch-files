@@ -1352,7 +1352,6 @@ Jan-15-2024
 :rdev
 :rude
 
-rem qq
 echo. & echo * Run VUE UI. Starts the development server.
 
 echo.
