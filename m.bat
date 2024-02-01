@@ -3094,8 +3094,8 @@ echo. & echo * Open ICJ affinity files.
 
 call tj colo>nul
 
-call e notes.txt
 call e tasks.txt
+call e notes.txt
 
 exit/b
 
