@@ -5389,6 +5389,17 @@ exit/b
 
 
 
+::_
+:volar
+
+echo. & echo * Vue language features. (Volar)
+
+set cbf-url=https://marketplace.visualstudio.com/items?itemName=Vue.volar
+
+exit/b
+
+
+
 :_
 :app5
 :app6
