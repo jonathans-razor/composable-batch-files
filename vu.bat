@@ -1,4 +1,4 @@
-:_
+:_ (!bfvu)
 @echo off
 
 title CBF: %0
@@ -50,8 +50,8 @@ Jan-18-2024
 
 echo. & echo * Run Vue application %1.
 
-call t d>nul
-cd hello-world-vuejs
+call t app1>nul
+rem qq
 br index.html
 
 exit/b

@@ -576,7 +576,7 @@ What does npm run eject do?
 
 :_
 :rb
-:rubi
+:rubu
 
 echo. & echo * Bundles the app into static files for production into a subfolder called "build".
 
@@ -1372,7 +1372,6 @@ Compile and hot-reload for development.
 
 echo. & echo * Run serve.
 
-rem qq
 start "npm run serve" cmd /k npm run serve
 
 exit/b

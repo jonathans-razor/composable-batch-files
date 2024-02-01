@@ -5400,7 +5400,25 @@ exit/b
 
 
 
-:_
+:_+ Vue Applications Family (!fcvuapp)
+
+
+
+::_
+:app1
+
+echo. & echo * Vue %1.
+
+rem qq
+call pn d>nul
+set cbf-pt=%cbf-pt%\hello-world-vuejs
+set cbf-fn=%cbf-pt%\index.html
+
+exit/b
+
+
+
+::_
 :app5
 :app6
 :app7
@@ -5446,6 +5464,17 @@ exit/b
 
 lu:
 Oct-25-2023
+
+
+
+:_
+:vitedocs
+
+echo. & echo * Vite docs.
+
+set cbf-url=https://vitejs.dev/guide/
+
+exit/b
 
 
 
