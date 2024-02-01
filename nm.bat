@@ -1500,11 +1500,29 @@ Sep-26-2023
 
 
 ::_
-:creavue
+:creavu
+
+cls
 
 echo. & echo * Create a new Vue project.
 
-npx create-vue@latest .
+npx create vue@latest .
+
+exit/b
+
+lu:
+Feb-1-2024
+
+
+
+::_
+:creavux
+
+cls
+
+echo. & echo * Create a new Vue project.
+
+npx create vue@latest .
 
 exit/b
 
