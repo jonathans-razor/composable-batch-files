@@ -5,6 +5,8 @@
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
+call paco "%~1" crea>nul && goto %1
+
 call fe package.json || exit/b
 
 goto %1
@@ -868,7 +870,7 @@ Aug-15-2022
 
 
 ::_
-:crar
+:crearr
 
 echo. & echo * Create a React app at root.
 
@@ -883,7 +885,7 @@ Aug-26-2021
 
 
 ::_
-:cra
+:crear
 
 echo. & echo * Create a React app.
 
@@ -904,7 +906,7 @@ Aug-30-2021
 
 
 ::_
-:crart
+:crearj
 
 echo. & echo * Create a React app at root that has TypeScript enabled.
 
@@ -919,7 +921,7 @@ Oct-26-2021
 
 
 ::_
-:cra-gp
+:creagp
 
 echo. & echo * Create a React app per ChatGPT.
 
@@ -1084,7 +1086,7 @@ Apr-24-2018
 
 
 :_
-:svel
+:creasvel
 
 echo. & echo * Create Svelte sample application.
 
@@ -1526,7 +1528,7 @@ exit/b
 
 
 ::_
-:cvue
+:creavue
 
 echo. & echo * Create a new Vue project.
 
