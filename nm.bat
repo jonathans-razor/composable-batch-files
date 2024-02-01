@@ -6,6 +6,7 @@ if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
 call paco "%~1" crea>nul && goto %1
+call paco "%~1" init>nul && goto %1
 
 call fe package.json || exit/b
 
@@ -865,75 +866,6 @@ Aug-15-2022
 
 
 
-:_+ Create a React App
-
-
-
-::_
-:crearr
-
-echo. & echo * Create a React app at root.
-
-echo.
-npx create-react-app .
-
-exit/b
-
-lu:
-Aug-26-2021
-
-
-
-::_
-:crear
-
-echo. & echo * Create a React app.
-
-echo.
-if "%~2" == "" (
-  echo.
-  echo * Error: Parameter 2, the application/folder name, is required.
-  exit/b
-)
-
-npx create-react-app %2
-
-exit/b
-
-lu:
-Aug-30-2021
-
-
-
-::_
-:crearj
-
-echo. & echo * Create a React app at root that has TypeScript enabled.
-
-echo.
-npx create-react-app . --template typescript
-
-exit/b
-
-lu:
-Oct-26-2021
-
-
-
-::_
-:creagp
-
-echo. & echo * Create a React app per ChatGPT.
-
-npx create-react-app hello-world-react
-
-exit/b
-
-lu:
-Sep-26-2023
-
-
-
 :_
 :fix
 
@@ -1082,56 +1014,6 @@ exit/b
 
 lu:
 Apr-24-2018
-
-
-
-:_
-:creasvel
-
-echo. & echo * Create Svelte sample application.
-
-npm create svelte@latest svelte-example
-
-exit/b
-
-lu:
-Jan-2-2024
-
-create-svelte version 6.0.5
-
-T  Welcome to SvelteKit!
-node:internal/errors:496
-    ErrorCaptureStackTrace(err);
-    ^
-
-SystemError [ERR_TTY_INIT_FAILED]: TTY initialization failed: uv_tty_init returned EBADF (bad file descriptor)
-    at new SystemError (node:internal/errors:256:5)
-    at new NodeError (node:internal/errors:367:7)
-    at new WriteStream (node:tty:93:11)
-    at ED.prompt (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/core/dist/index.mjs:9:693)
-    at Module.ie (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/prompts/dist/index.mjs:28:8)
-    at template (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/create-svelte/bin.js:48:6)
-    at Module.he (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/prompts/dist/index.mjs:77:632)
-    at file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/create-svelte/bin.js:45:25
-    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
-  code: 'ERR_TTY_INIT_FAILED',
-  info: {
-    errno: -4083,
-    code: 'EBADF',
-    message: 'bad file descriptor',
-    syscall: 'uv_tty_init'
-  },
-  errno: [Getter/Setter],
-  syscall: [Getter/Setter]
-}
-
-Node.js v18.18.0
-npm ERR! code 1
-npm ERR! path C:\a
-npm ERR! command failed
-npm ERR! command C:\WINDOWS\system32\cmd.exe /d /s /c create-svelte svelte-example
-
-npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_logs\2024-01-02T21_19_40_474Z-debug-0.log
 
 
 
@@ -1523,7 +1405,97 @@ exit/b
 
 
 
-:_+ Vue
+:_
+:ruse
+
+echo. & echo * Run serve.
+
+start "Run Serve" cmd /k npm run serve
+
+exit/b
+
+
+
+:_
+:rv
+
+echo. & echo * Run validate.
+
+npm run validate
+
+exit/b
+
+
+
+:_+ Create a React App
+
+
+
+::_
+:crearr
+
+echo. & echo * Create a React app at root.
+
+echo.
+npx create-react-app .
+
+exit/b
+
+lu:
+Aug-26-2021
+
+
+
+::_
+:crear
+
+echo. & echo * Create a React app.
+
+if "%~2" == "" (
+  echo.
+  err Parameter 2, the application/folder name, is required.
+)
+
+echo.
+npx create-react-app %2
+
+exit/b
+
+lu:
+Aug-30-2021
+
+
+
+::_
+:crearj
+
+echo. & echo * Create a React app at root that has TypeScript enabled.
+
+echo.
+npx create-react-app . --template typescript
+
+exit/b
+
+lu:
+Oct-26-2021
+
+
+
+::_
+:creagp
+
+echo. & echo * Create a React app per ChatGPT.
+
+npx create-react-app hello-world-react
+
+exit/b
+
+lu:
+Sep-26-2023
+
+
+
+:_+ Vue Family (!fcvu)
 
 
 
@@ -1577,25 +1549,68 @@ exit/b
 
 
 
-:_
-:ruse
+:_+ Create Family (!fccrea)
 
-echo. & echo * Run serve.
 
-start "Run Serve" cmd /k npm run serve
+
+::_
+:creavite
+
+echo. & echo * Create Vite.
+
+npm create vite@latest
+
+exit/b
+
+
+
+::_
+:creasvel
+
+echo. & echo * Create Svelte sample application.
+
+npm create svelte@latest svelte-example
 
 exit/b
 
+lu:
+Jan-2-2024
 
+create-svelte version 6.0.5
 
-:_
-:rv
+T  Welcome to SvelteKit!
+node:internal/errors:496
+    ErrorCaptureStackTrace(err);
+    ^
 
-echo. & echo * Run validate.
+SystemError [ERR_TTY_INIT_FAILED]: TTY initialization failed: uv_tty_init returned EBADF (bad file descriptor)
+    at new SystemError (node:internal/errors:256:5)
+    at new NodeError (node:internal/errors:367:7)
+    at new WriteStream (node:tty:93:11)
+    at ED.prompt (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/core/dist/index.mjs:9:693)
+    at Module.ie (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/prompts/dist/index.mjs:28:8)
+    at template (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/create-svelte/bin.js:48:6)
+    at Module.he (file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/@clack/prompts/dist/index.mjs:77:632)
+    at file:///C:/Users/jonat/AppData/Local/npm-cache/_npx/50a6160ffc29bafc/node_modules/create-svelte/bin.js:45:25
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'ERR_TTY_INIT_FAILED',
+  info: {
+    errno: -4083,
+    code: 'EBADF',
+    message: 'bad file descriptor',
+    syscall: 'uv_tty_init'
+  },
+  errno: [Getter/Setter],
+  syscall: [Getter/Setter]
+}
 
-npm run validate
+Node.js v18.18.0
+npm ERR! code 1
+npm ERR! path C:\a
+npm ERR! command failed
+npm ERR! command C:\WINDOWS\system32\cmd.exe /d /s /c create-svelte svelte-example
 
-exit/b
+npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_logs\2024-01-02T21_19_40_474Z-debug-0.log
 
 
 
