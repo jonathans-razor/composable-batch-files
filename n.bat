@@ -3215,14 +3215,15 @@ Sep-25-2023
 echo. & echo * New Bing.
 
 call an ed>nul
-set cbf-url=https://www.bing.com
+set cbf-url=https://www.bing.com/search?toncp=0^^^&FORM=hpcodx^^^&q=Bing+AI^^^&showconv=1
 
 exit/b
 
 rem call pn c>nul
 rem set cbf-lnk=%cbf-pt%\bing.url
 
-set cbf-url=https://www.bing.com/search?q=Bing+AI
+https://www.bing.com/search?toncp=0&FORM=hpcodx&q=Bing+AI&showconv=1
+https://www.bing.com/search?q=Bing+AI
 https://www.bing.com/search?q=Bing+AI&showconv=1
 
 lu:

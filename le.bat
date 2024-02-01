@@ -2193,6 +2193,40 @@ exit/b
 
 
 :_
+:Jan-23-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node optional-chaining.js
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Feb-1-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 278-first-bad-version.js 5 4
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2201,7 +2235,7 @@ echo. & echo * %1.
 
 @echo on
 
-python 
+node 
 
 @echo off
 
@@ -2216,7 +2250,7 @@ exit/b
 
 
 :_
-:Jan-23-2024
+:Feb-1-2024
 
 cls
 
@@ -2224,7 +2258,10 @@ echo. & echo * %1.
 
 @echo on
 
-node optional-chaining.js
+node 349-intersection-of-two-arrays.js 1,2,2,1 2,2
+node 349-intersection-of-two-arrays.js 4,9,5 9,4,9,8,4
+node 349-intersection-of-two-arrays.js 1,2,3 4,5,6
+node 349-intersection-of-two-arrays.js 1,2,3,4 4,5,6
 
 @echo off
 
