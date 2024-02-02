@@ -193,10 +193,9 @@ goto main
 :_
 :open-new-current-folder-file
 
-rem echo. & echo * Open current folder file Jan-22-2024-0-14-AM.
+echo. & echo * Create a new file in the current folder. Feb-2-2024-3-22-PM
 
 set cbf-fn=%cd%\%~1
-
 type nul>%cbf-fn%
 
 exit/b
