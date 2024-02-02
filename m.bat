@@ -4491,7 +4491,7 @@ exit/b
 echo. & echo * Start ICJ.
 
 call %0 lnk-icj
-call m a
+call m icj
 
 exit/b
 
