@@ -197,6 +197,8 @@ rem echo. & echo * Open current folder file Jan-22-2024-0-14-AM.
 
 set cbf-fn=%cd%\%~1
 
+type nul>%cbf-fn%
+
 exit/b
 
 
