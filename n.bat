@@ -5454,10 +5454,10 @@ set cbf-pt=%cbf-pt%\%1
 set cbf-fn=%cbf-pt%\index.html
 
 rem For problems roughly numbered 15 or less.
-set cbf-url=https://vuejs.org/examples/#form-bindings
+set cbf-url=https://vuejs.org/tutorial/#step-1
 
-rem For problems numbered 15 or more.
-set cbf-url=https://vuejs.org/examples
+rem For problems numbered 16 to 37.
+set cbf-url2=https://vuejs.org/examples
 
 exit/b
 
