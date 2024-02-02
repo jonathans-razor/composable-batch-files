@@ -5201,7 +5201,6 @@ exit/b
 echo. & echo * Vue.
 
 set cbf-gh=https://github.com/vuejs
-rem qq
 set cbf-lh=http://localhost:8080
 
 exit/b
@@ -5433,7 +5432,6 @@ exit/b
 
 echo. & echo * Simple Marddown editor.
 
-rem qq
 set cbf-url=https://vuejs.org/examples/#markdown
 
 exit/b
