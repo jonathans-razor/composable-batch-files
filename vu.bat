@@ -144,7 +144,7 @@ call lh 8080
 exit/b
 
 rem:
-Contains 15 substitutable App.vue files. For example, use cp app6-0 to start from the beginning.
+Contains more than 15 substitutable App.vue files. For example, use cp app6-0 to start from the beginning.
 
 
 
