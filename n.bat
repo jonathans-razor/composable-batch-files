@@ -5400,6 +5400,17 @@ exit/b
 
 
 
+::_
+:vuex
+
+echo. & echo * Examples.
+
+set cbf-url=https://vuejs.org/examples/#hello-world
+
+exit/b
+
+
+
 :_+ Vue Applications Family (!fcvuapp)
 
 

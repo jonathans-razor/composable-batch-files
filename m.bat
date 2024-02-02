@@ -4486,6 +4486,18 @@ exit/b
 
 
 ::_
+:start-icj
+
+echo. & echo * Start ICJ.
+
+call %0 lnk-icj
+call m a
+
+exit/b
+
+
+
+::_
 :start-sp7
 
 echo. & echo * Start SP7.
@@ -4527,7 +4539,6 @@ set path=c:\aa\repositories\composable-batch-files;%path%
 call %0 set-default-browser kr
 call %0 set-default-repository-folder c-aa-repos
 call %0 set-default-text-editor vc
-
 
 col 1
 
