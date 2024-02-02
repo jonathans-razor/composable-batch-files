@@ -80,7 +80,7 @@ rem Override switches section.
 :
 if "%~2" == "/c" (
   rem Note that this code block must appear BEFORE the code block for "open-aliased-file". Dec-1-2023
-  call :open-new-current-folder-file %*
+  call :create-new-file %*
   goto main
 )
 
@@ -191,7 +191,7 @@ goto main
 
 
 :_
-:open-new-current-folder-file
+:create-new-file
 
 echo. & echo * Create a new file in the current folder. Feb-2-2024-3-22-PM
 
