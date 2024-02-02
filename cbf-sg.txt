@@ -5,6 +5,8 @@ Composable Batch Files (CBF) - Style Guide
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
        `--'      `--'      `--'      `--'      `--' 
 
+:Feb-2-2024: It is assumed that no alias should contain a period.
+
 :Nov-13-2023: Assumption: All CBF variables are prefixed with "cbf-".
 
 :Nov-6-2023: It's not so much that "goto" statements are the problem. Rather there is not a 

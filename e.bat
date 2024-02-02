@@ -134,10 +134,6 @@ set cbf-fn=
 
 call paco "%~1" .>nul && goto open-current-folder-file
 
-rem Notice that this if clause appears AFTER checking for existence of the file This assumes 
-rem that no alias would ever contain a period. (skw contains period)
-echo %1| find /i ".">nul && goto open-current-folder-file
-
 call :open-cbf-batch-file %*
 
 if "%cbf-fn%"=="" (
