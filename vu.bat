@@ -381,4 +381,46 @@ exit/b
 
 
 
+::_
+:vt8
+
+echo. & echo * Run %1.
+
+call t vt1>nul
+call cp 8-
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
+::_
+:vt9
+
+echo. & echo * Run %1.
+
+call t vt1>nul
+call cp 9-
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
+::_
+:vt10
+
+echo. & echo * Run %1.
+
+call t vt1>nul
+call cp 10-
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
 :_ (!efvu) qq

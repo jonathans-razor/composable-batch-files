@@ -5647,4 +5647,43 @@ exit/b
 
 
 
+::_
+:vt8
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-8
+
+exit/b
+
+
+
+::_
+:vt9
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-9
+
+exit/b
+
+
+
+::_
+:vt10
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-10
+
+exit/b
+
+
+
 :_ (!efn) qq
