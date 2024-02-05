@@ -241,6 +241,19 @@ exit/b
 
 :_
 
+echo. & echo * Computer name contains "one".
+
+echo %computername%>nul
+rem echo %computername%| find /i "one"
+
+exit/b
+
+Jan-26-2024
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -257,14 +270,15 @@ exit/b
 
 :_
 
-echo. & echo * Computer name contains "one".
+echo. & echo * File exists errorlevel test.
 
-echo %computername%>nul
-rem echo %computername%| find /i "one"
+call fe aj7.txt || exit/b
+
+echo. & echo Hi.
 
 exit/b
 
-Jan-26-2024
+Feb-5-2024
 
 
 

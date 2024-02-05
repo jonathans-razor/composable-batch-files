@@ -1742,9 +1742,12 @@ if errorlevel 1 (
   exit/b
 )
 
-call fe package.json & if errorlevel 1 exit/b
+call fe package.json || 1 exit/b
 
 exit/b
+
+lc:
+(!fe)
 
 lu:
 Aug-29-2023
@@ -1752,7 +1755,7 @@ Aug-29-2023
 skw:
 file extension
 filename existence
-Test if file exists. (!fe)
+Test if file exists.
 
 
 

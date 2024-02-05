@@ -1211,6 +1211,38 @@ exit/b
 
 
 :_
+:cp2
+
+echo. & echo * Copy file in the current directory to nickname-specified path. (Nov-5-2023 version)
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+call fe "%~1" || exit/b 5
+
+call pn %2 || exit/b 1
+
+@echo on
+copy "%~1" "%cbf-pt%" || exit/b 1
+@echo off
+
+call t %2
+dir "%~1"
+
+exit/b
+
+
+:help
+
+echo. & echo * Parameter Description(s):
+echo. & echo   Parameter 1: Current folder filename.
+echo   Parameter 2: Target folder alias.
+
+exit/b
+
+
+
+:_
 :1-
 :2-
 :3-
@@ -1243,50 +1275,19 @@ exit/b
 :30
 :31
 
-echo. & echo * Use Vue app %.
+echo. & echo * Use Vue project %.
 
-call t app6>nul
-
+call t vt1>nul
 cd %cbf-pt%\src
 
-call fe App.vue & if errorlevel 1 exit/b
+call fe App.vue || exit/b
 
 echo.
 xcopy /y %1* App.vue
 
 exit/b
 
-
-
-:_
-:cp2
-
-echo. & echo * Copy file in the current directory to nickname-specified path. (Nov-5-2023 version)
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-
-call fe "%~1" || exit/b 5
-
-call pn %2 || exit/b 1
-
-@echo on
-copy "%~1" "%cbf-pt%" || exit/b 1
-@echo off
-
-call t %2
-dir "%~1"
-
-exit/b
-
-
-:help
-
-echo. & echo * Parameter Description(s):
-echo. & echo   Parameter 1: Current folder filename.
-echo   Parameter 2: Target folder alias.
-
-exit/b
+:rem
 
 
 

@@ -228,10 +228,26 @@ exit/b
 
 
 :_
+:docs
+
+echo. & echo * Online doucmentation.
+
+call fx %0 docs
+
+exit/b
+
+
+
+:_+ Create Projects
+
+
+
+::_
+:cps
 :cvu
 :cvup
 
-echo. & echo * Create Vue project call %2.
+echo. & echo * Create standard Vue project.
 
 if "%~2" == "" (
   err Percent 2, the name you wish to call the new project, cannot be [blank].
@@ -243,13 +259,83 @@ exit/b
 
 
 
-:_
-:docs
+::_
+:cp
+:cvu
+:cvup
 
-echo. & echo * Online doucmentation.
+echo. & echo * Create latest Vue project.
 
-call fx %0 docs
+if "%~3" == "" (
+  err Percent 3, the name you wish to call the new project, cannot be [blank].
+)
 
+vue create vue@latest %3
+
+exit/b
+
+
+
+:_+ Run VT Family (!fcrvt)
+
+
+
+::_
+:vt1
+
+echo. & echo * Run %1.
+
+call t vt1>nul
+call cp 1-
+call nm ruse
+call lh 8080
+
+exit/b
+
+rem:
+Created using "Vue create" (not latest).
+
+
+
+::_
+:vt2
+
+echo. & echo * Run %1.
+
+call t vt1>nul
+call cp 2-
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
+::_
+:vt3
+
+echo. & echo * Run %1.
+
+call t vt1>nul
+call cp 3-
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
+::_
+:vt4
+
+echo. & echo * Run %1.
+
+call t vt1>nul
+call cp 4-
+call nm ruse
+call lh 8080
+
+rem qq
 exit/b
 
 
