@@ -11,7 +11,7 @@ goto recall
 
 cls
 
-echo. & echo  * Recall previous folder.
+echo. & echo  * Remember or recall previous folder.
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 

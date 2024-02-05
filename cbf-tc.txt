@@ -187,7 +187,7 @@ example-  Prefix for files written by other authors for learning and comparison 
 	  purl  Using a DCV, surf to a PIV URL webpage.
        q  Query Google.
        r  Run application using CBF variables, mostly used in back office operations.
-      rf  Recall previous folder.
+      rf  Remember or recall previous folder.
     reme  Execute the demo DCV for the passed in alias.
       rl  Execute the releases DCV for the passed in alias.
       ro  Read-only.
@@ -205,9 +205,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       sm  Use Sublime and sfn to edit a file.
      smd  Use Sublime to edit DCV files.
     splu  Splunk DCV.
-	   src  Hello from the CBF folder.
-      sx  Use Sublime to edit a batch file in the CBF folder.
-      sy  Synchronize Share-zone and CBF folders.
+     src  Says hello from the CBF folder.
        t  Transform directory.
       td  Call t.bat then d.bat.
      tdb  Back button for transform directory.
