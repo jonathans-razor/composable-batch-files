@@ -465,4 +465,49 @@ exit/b
 
 
 
+::_
+:vt13
+
+echo. & echo * Run %1.
+
+call t vt11>nul
+call cp 13
+call t vt11>nul
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
+::_
+:vt14a
+
+echo. & echo * Run %1.
+
+call t vt11>nul
+call cp 14a
+call t vt11>nul
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
+::_
+:vt14
+
+echo. & echo * Run %1.
+
+call t vt11>nul
+call cp 14
+call t vt11>nul
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
 :_ (!efvu) qq

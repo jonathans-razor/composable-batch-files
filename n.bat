@@ -5705,8 +5705,34 @@ exit/b
 echo. & echo * %1.
 
 call pn vute>nul
-set cbf-pt=%cbf-pt%\vt12
+set cbf-pt=%cbf-pt%\vt11
 set cbf-url=https://vuejs.org/tutorial/#step-12
+
+exit/b
+
+
+
+::_
+:vt13
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\vt11
+set cbf-url=https://vuejs.org/tutorial/#step-13
+
+exit/b
+
+
+
+::_
+:vt14
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\vt11
+set cbf-url=https://vuejs.org/tutorial/#step-14
 
 exit/b
 

@@ -1326,4 +1326,51 @@ exit/b
 
 
 
+::_
+:14a
+
+echo. & echo * Use Vue project %.
+
+call t vt11>nul
+cd %cbf-pt%\src
+
+call fe App.vue || exit/b
+
+echo.
+xcopy /y 14a-slots.vue App.vue
+
+exit/b
+
+rem: 
+
+This code in package.json allowed me to compile without the "unused variable" warning.
+
+  "parserOptions": {
+    "parser": "@babel/eslint-parser"
+  },
+  "rules": {
+    "no-unused-vars": "off"
+  }
+
+
+
+::_
+:14
+:14b
+
+echo. & echo * Use Vue project %.
+
+call t vt11>nul
+cd %cbf-pt%\src
+
+call fe App.vue || exit/b
+
+echo.
+xcopy /y 14-slots.vue App.vue
+xcopy /y 14-childcomp.vue ChildComp.vue
+
+exit/b
+
+
+
 :_ (!efcp)
