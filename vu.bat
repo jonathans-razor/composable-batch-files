@@ -423,4 +423,18 @@ exit/b
 
 
 
+::_
+:vt11
+
+echo. & echo * Run %1.
+
+call t vt1>nul
+call cp 11-
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
 :_ (!efvu) qq
