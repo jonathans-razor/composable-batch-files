@@ -5536,4 +5536,15 @@ exit/b
 
 
 
+:_
+:telog
+
+echo. & echo * Tennis log.
+
+set cbf-gs=https://docs.google.com/spreadsheets/d/1rnoBNQugS6OKo26lPwY2ppc7_DIRwaYx2lZPQFmMeMA/edit#gid=0
+
+exit/b
+
+
+
 :_ (!efn)
