@@ -1242,7 +1242,11 @@ exit/b
 
 
 
-:_
+:_+ Copy Vue Tutorials Family
+
+
+
+::_
 :1-
 :2-
 :3-
@@ -1268,7 +1272,7 @@ exit/b
 
 
 
-:_
+::_
 :11
 
 echo. & echo * Use Vue project %.
@@ -1286,7 +1290,7 @@ exit/b
 
 
 
-:_
+::_
 :12
 
 echo. & echo * Use Vue project %.
@@ -1299,6 +1303,24 @@ call fe App.vue || exit/b
 echo.
 xcopy /y 12-props.vue App.vue
 xcopy /y 12-childcomp.vue ChildComp.vue
+
+exit/b
+
+
+
+::_
+:13
+
+echo. & echo * Use Vue project %.
+
+call t vt11>nul
+cd %cbf-pt%\src
+
+call fe App.vue || exit/b
+
+echo.
+xcopy /y 13-emits.vue App.vue
+xcopy /y 13-childcomp.vue ChildComp.vue
 
 exit/b
 
