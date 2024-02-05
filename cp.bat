@@ -1253,27 +1253,6 @@ exit/b
 :8-
 :9-
 :10
-:11
-:12
-:13
-:14
-:15
-:16
-:17
-:18
-:19
-:20
-:21
-:22
-:23
-:24
-:25
-:26
-:27
-:28
-:29
-:30
-:31
 
 echo. & echo * Use Vue project %.
 
@@ -1287,7 +1266,41 @@ xcopy /y %1* App.vue
 
 exit/b
 
-:rem
+
+
+:_
+:11
+
+echo. & echo * Use Vue project %.
+
+call t vt11>nul
+cd %cbf-pt%\src
+
+call fe App.vue || exit/b
+
+echo.
+xcopy /y 11-components.vue App.vue
+xcopy /y 11-childcomp.vue ChildComp.vue
+
+exit/b
+
+
+
+:_
+:12
+
+echo. & echo * Use Vue project %.
+
+call t vt11>nul
+cd %cbf-pt%\src
+
+call fe App.vue || exit/b
+
+echo.
+xcopy /y 12-props.vue App.vue
+xcopy /y 12-childcomp.vue ChildComp.vue
+
+exit/b
 
 
 

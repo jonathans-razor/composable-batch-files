@@ -244,6 +244,7 @@ exit/b
 
 ::_
 :cps
+:crprs
 :cvu
 :cvup
 
@@ -261,16 +262,17 @@ exit/b
 
 ::_
 :cp
+:crpr
 :cvu
 :cvup
 
 echo. & echo * Create latest Vue project.
 
-if "%~3" == "" (
+if "%~2" == "" (
   err Percent 3, the name you wish to call the new project, cannot be [blank].
 )
 
-vue create vue@latest %3
+vue create %2 vue@latest
 
 exit/b
 
@@ -287,6 +289,7 @@ echo. & echo * Run %1.
 
 call t vt1>nul
 call cp 1-
+call t vt1>nul
 call nm ruse
 call lh 8080
 
@@ -304,6 +307,7 @@ echo. & echo * Run %1.
 
 call t vt1>nul
 call cp 2-
+call t vt1>nul
 call nm ruse
 call lh 8080
 
@@ -318,6 +322,7 @@ echo. & echo * Run %1.
 
 call t vt1>nul
 call cp 3-
+call t vt1>nul
 call nm ruse
 call lh 8080
 
@@ -332,6 +337,7 @@ echo. & echo * Run %1.
 
 call t vt1>nul
 call cp 4-
+call t vt1>nul
 call nm ruse
 call lh 8080
 
@@ -346,6 +352,7 @@ echo. & echo * Run %1.
 
 call t vt1>nul
 call cp 5-
+call t vt1>nul
 call nm ruse
 call lh 8080
 
@@ -360,6 +367,7 @@ echo. & echo * Run %1.
 
 call t vt1>nul
 call cp 6-
+call t vt1>nul
 call nm ruse
 call lh 8080
 
@@ -374,6 +382,7 @@ echo. & echo * Run %1.
 
 call t vt1>nul
 call cp 7-
+call t vt1>nul
 call nm ruse
 call lh 8080
 
@@ -388,6 +397,7 @@ echo. & echo * Run %1.
 
 call t vt1>nul
 call cp 8-
+call t vt1>nul
 call nm ruse
 call lh 8080
 
@@ -402,6 +412,7 @@ echo. & echo * Run %1.
 
 call t vt1>nul
 call cp 9-
+call t vt1>nul
 call nm ruse
 call lh 8080
 
@@ -416,6 +427,7 @@ echo. & echo * Run %1.
 
 call t vt1>nul
 call cp 10-
+call t vt1>nul
 call nm ruse
 call lh 8080
 
@@ -428,8 +440,24 @@ exit/b
 
 echo. & echo * Run %1.
 
-call t vt1>nul
-call cp 11-
+call t vt11>nul
+call cp 11
+call t vt11>nul
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
+::_
+:vt12
+
+echo. & echo * Run %1.
+
+call t vt11>nul
+call cp 12
+call t vt11>nul
 call nm ruse
 call lh 8080
 
