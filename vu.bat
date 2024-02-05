@@ -335,9 +335,50 @@ call cp 4-
 call nm ruse
 call lh 8080
 
-rem qq
 exit/b
 
 
 
-:_ (!efvu)
+::_
+:vt5
+
+echo. & echo * Run %1.
+
+call t vt1>nul
+call cp 5-
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
+::_
+:vt6
+
+echo. & echo * Run %1.
+
+call t vt1>nul
+call cp 6-
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
+::_
+:vt7
+
+echo. & echo * Run %1.
+
+call t vt1>nul
+call cp 7-
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
+:_ (!efvu) qq

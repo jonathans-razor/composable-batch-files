@@ -5482,7 +5482,7 @@ set cbf-pt=%cbf-pt%\%1
 set cbf-fn=%cbf-pt%\index.html
 
 rem For problems roughly numbered 15 or less.
-rem qq
+rem qjq
 set cbf-url=https://vuejs.org/tutorial/#step-1
 
 rem For problems numbered 16 to 37.
@@ -5608,4 +5608,43 @@ exit/b
 
 
 
-:_ (!efn)
+::_
+:vt5
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-5
+
+exit/b
+
+
+
+::_
+:vt6
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-6
+
+exit/b
+
+
+
+::_
+:vt7
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-7
+
+exit/b
+
+
+
+:_ (!efn) qq
