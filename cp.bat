@@ -1052,42 +1052,6 @@ exit/b
 
 
 
-:_
-:cp2
-
-echo. & echo * Copy file in the current directory to nickname-specified path. (Nov-5-2023 version)
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-
-call fe "%~1" || exit/b 5
-
-call rf r>nul
-
-call pn %2 || exit/b
-
-@echo on
-copy "%~1" "%cbf-pt%"
-@echo off
-
-if errorlevel 1 exit/b
-
-call t %2
-dir "%~1"
-
-exit/b
-
-
-:help
-
-echo. & echo * Parameter Description(s):
-echo. & echo   Parameter 1: Current folder filename.
-echo   Parameter 2: Target folder alias.
-
-exit/b
-
-
-
 :_ + TE Family (!fcte)
 
 
@@ -1289,6 +1253,44 @@ call fe App.vue & if errorlevel 1 exit/b
 
 echo.
 xcopy /y %1* App.vue
+
+exit/b
+
+
+
+:_
+:cp2
+
+echo. & echo * Copy file in the current directory to nickname-specified path. (Nov-5-2023 version)
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+call fe "%~1" || exit/b 5
+
+rem qq
+rem Feb-5-2024-10-16-AM
+rem call rf r>nul
+
+call pn %2 || exit/b
+
+@echo on
+copy "%~1" "%cbf-pt%"
+@echo off
+
+if errorlevel 1 exit/b
+
+call t %2
+dir "%~1"
+
+exit/b
+
+
+:help
+
+echo. & echo * Parameter Description(s):
+echo. & echo   Parameter 1: Current folder filename.
+echo   Parameter 2: Target folder alias.
 
 exit/b
 
