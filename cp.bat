@@ -1268,17 +1268,11 @@ if "%~2" == "" goto help
 
 call fe "%~1" || exit/b 5
 
-rem qq
-rem Feb-5-2024-10-16-AM
-rem call rf r>nul
-
-call pn %2 || exit/b
+call pn %2 || exit/b 1
 
 @echo on
-copy "%~1" "%cbf-pt%"
+copy "%~1" "%cbf-pt%" || exit/b 1
 @echo off
-
-if errorlevel 1 exit/b
 
 call t %2
 dir "%~1"
