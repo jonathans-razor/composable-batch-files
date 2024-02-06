@@ -5,10 +5,8 @@
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
-call paco "%~1" crea>nul && goto %1
-call paco "%~1" init>nul && goto %1
-
-rem call fe package.json || exit/b
+rem call paco "%~1" crea>nul && goto %1
+rem call paco "%~1" init>nul && goto %1
 
 goto %1
 
@@ -120,7 +118,7 @@ Apr-24-2018
 ::_
 :init
 
-echo. & echo * Create a package.json file. Use default settings.
+echo. & echo * Create a package.json file with default settings.
 
 echo.
 npm init -y
@@ -572,25 +570,6 @@ Footnote
 >< >< ><
 
 What does npm run eject do?
-
-
-
-:_
-:rb
-:rubu
-
-echo. & echo * Bundles the app into static files for production into a subfolder called "build".
-
-echo.
-npm run build
-
-exit/b
-
-lu:
-Aug-29-2023
-
-rem:
-Compile and minify for production.
 
 
 
@@ -1074,14 +1053,36 @@ nm inst-s js-confetti
 
 
 ::_
-:inst-loda
+:i-loda
 
 echo. & echo * Install lodash, world's most depended on JavaScript library.
+
+call fe package.json || exit/b
 
 echo.
 npm install lodash --save
 
 exit/b
+
+lu:
+Feb-6-2024
+
+
+
+::_
+:i-webp
+
+echo. & echo * Install WebPack.
+
+call fe package.json || exit/b
+
+echo.
+npm install --save-dev webpack webpack-cli
+
+exit/b
+
+lu:
+Feb-6-2024
 
 
 
@@ -1094,7 +1095,6 @@ echo.
 echo.
 npm i %2 -g
 
-rem qq
 rem npm install -g %2
 
 rem Examples:
@@ -1324,7 +1324,7 @@ Jan-15-2024
 :rdev
 :rude
 
-echo. & echo * Run VUE UI. Starts the development server.
+echo. & echo * Starts the development server.
 
 echo.
 start "npm run dev" cmd /k npm run dev
@@ -1335,6 +1335,7 @@ lu:
 Oct-27-2021
 
 rem:
+Run VUE UI.
 Compile and hot-reload for development.
 
 
@@ -1498,4 +1499,94 @@ exit/b
 
 
 
+:_
+:rb
+:rubu
+
+echo. & echo * Bundles the app into static files for production into a subfolder called "dist".
+
+call fe package.json || exit/b
+
+echo.
+npm run build
+
+exit/b
+
+lu:
+Feb-6-2024
+Aug-29-2023
+
+rem:
+Compile and minify for production.
+
+
+
+:_+ Particular Package Installers Family (!fcppi)
+
+
+
+::_
+:i-load
+
+echo. & echo * Install loaders.
+
+call fe package.json || exit/b
+
+echo.
+npm install --save-dev css-loader style-loader sass-loader
+
+exit/b
+
+lu:
+Feb-6-2024
+Aug-29-2023
+
+rem:
+Compile and minify for production.
+
+
+
+::_
+:i-sass
+
+echo. & echo * Install Sass.
+
+call fe package.json || exit/b
+
+echo.
+npm install --save-dev sass
+
+exit/b
+
+
+
+::_
+:i-wba
+
+echo. & echo * Install Webpack bundle analyzer.
+
+call fe package.json || exit/b
+
+echo.
+npm install --save-dev webpack-bundle-analyzer
+
+exit/b
+
+
+
+::_
+:i-wds
+
+echo. & echo * Install Webpack dev server.
+
+call fe package.json || exit/b
+
+echo.
+npm install --save-dev webpack-dev-server
+
+exit/b
+
+
+
 :_ (!efnm)
+call fe package.json || exit/b
