@@ -1393,17 +1393,18 @@ exit/b
 
 ::_
 :ve1
+:ve2
 
 echo. & echo * Use Vue project %.
 
-call t %1>nul
+call t ve1>nul
 
 cd %cbf-pt%\src
 
 call fe App.vue || exit/b
 
 echo.
-xcopy /y %1.vue App.vue
+xcopy /y %1*.vue App.vue
 
 exit/b
 

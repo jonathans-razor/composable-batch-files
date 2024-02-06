@@ -5782,4 +5782,17 @@ exit/b
 
 
 
+::_
+:ve2
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#handling-input
+
+exit/b
+
+
+
 :_ (!efn) qq

@@ -595,11 +595,12 @@ exit/b
 
 ::_
 :ve1
+:ve2
 
 echo. & echo * Run %1.
 
-call cp ve1
-call t %1>nul
+call cp %1
+call t ve1>nul
 call nm rude
 call lh 5173
 
