@@ -5795,4 +5795,30 @@ exit/b
 
 
 
+::_
+:ve3
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#attribute-bindings
+
+exit/b
+
+
+
+::_
+:ve4
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#conditionals-and-loops
+
+exit/b
+
+
+
 :_ (!efn) qq
