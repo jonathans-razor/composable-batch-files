@@ -172,7 +172,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       pg  Ping leveraging nicknames dictionary.
       ph  Python. (skw supported-languages-series-jj)
       pi  Pipe a command line statement to a file.
-      pj  Edit package.json file DCV for the passed in alias.
+      pj  Edit package.json.
       pl  Git pull, with td parameter.
       pn  Validate a pathname value. Using pn instead of n helps the reader with clarity of intent.
      png  Run cbf-png as a DCV double-click filename.
