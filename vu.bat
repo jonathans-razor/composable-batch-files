@@ -272,7 +272,7 @@ if "%~2" == "" (
   err Percent 3, the name you wish to call the new project, cannot be [blank].
 )
 
-vue create %2 vue@latest
+vue create %2
 
 exit/b
 
@@ -280,6 +280,7 @@ exit/b
 
 ::_
 :cp2
+:cpf
 
 cls
 
@@ -292,10 +293,26 @@ npm create vue@latest %2
 exit/b
 
 lu:
+Feb-6-2024
 Feb-1-2024
 
 rem:
-rem the "." creates the project in the current folder I believe. Feb-1-2024
+This creates a project with these questions:
+
+ue.js - The Progressive JavaScript Framework
+
+v Add TypeScript? ... No / Yes
+v Add JSX Support? ... No / Yes
+v Add Vue Router for Single Page Application development? ... No / Yes
+v Add Pinia for state management? ... No / Yes
+v Add Vitest for Unit Testing? ... No / Yes
+v Add an End-to-End Testing Solution? » Playwright
+v Add ESLint for code quality? ... No / Yes
+v Add Prettier for code formatting? ... No / Yes
+
+Scaffolding project in d:\Dropbox\IT\vue-testing\ve1...
+
+The "." creates the project in the current folder I believe. Feb-1-2024
 npm create vue@latest .
 
 
@@ -567,11 +584,24 @@ exit/b
 
 echo. & echo * Run %1.
 
-call t vt11>nul
 call cp 15
 call t vt11>nul
 call nm ruse
 call lh 8080
+
+exit/b
+
+
+
+::_
+:ve1
+
+echo. & echo * Run %1.
+
+call cp ve1
+call t %1>nul
+call nm rude
+call lh 5173
 
 exit/b
 

@@ -5563,7 +5563,7 @@ Nov-10-2023
 
 
 
-:_+ Vue Tutorial Family (!fcvt)
+:_;Vue Tutorial Family (!fcvt)
 
 
 
@@ -5760,6 +5760,23 @@ echo. & echo * %1.
 call pn vute>nul
 set cbf-pt=%cbf-pt%\vt11
 set cbf-url=https://vuejs.org/tutorial/#step-15
+
+exit/b
+
+
+
+:_+ Vue Example Family (!fcve)
+
+
+
+::_
+:ve1
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\%1
+set cbf-url=https://vuejs.org/examples/#hello-world
 
 exit/b
 

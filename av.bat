@@ -44,16 +44,16 @@ Jan-18-2024
 
 call t %1
 
+cd src
+
 
 
 :_
 :main
 
-cd src
-
 call fe App.vue || exit/b
 
-vc app.vue
+vc App.vue
 
 exit/b
 

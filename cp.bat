@@ -1385,11 +1385,28 @@ cd %cbf-pt%\src
 call fe App.vue || exit/b
 
 echo.
-rem qq
 xcopy /y 15-confetti.vue App.vue
 
 exit/b
 
 
 
-:_ (!efcp)
+::_
+:ve1
+
+echo. & echo * Use Vue project %.
+
+call t %1>nul
+
+cd %cbf-pt%\src
+
+call fe App.vue || exit/b
+
+echo.
+xcopy /y %1.vue App.vue
+
+exit/b
+
+
+
+:_ (!efcp) qq

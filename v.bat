@@ -1742,7 +1742,7 @@ if errorlevel 1 (
   exit/b
 )
 
-call fe package.json || 1 exit/b
+call fe package.json || exit/b
 
 exit/b
 

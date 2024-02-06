@@ -5,9 +5,6 @@
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
-rem call paco "%~1" crea>nul && goto %1
-rem call paco "%~1" init>nul && goto %1
-
 goto %1
 
 
@@ -1467,17 +1464,6 @@ npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_l
 
 
 :_
-:rf
-
-echo. & echo * Run format.
-
-npm run format
-
-exit/b
-
-
-
-:_
 :rb
 :rubu
 
@@ -1591,5 +1577,17 @@ nm inst-s js-confetti
 
 
 
-:_ (!efnm)
+
+:_
+:rf
+
+echo. & echo * Run format.
+
 call fe package.json || exit/b
+
+npm run format
+
+exit/b
+
+
+:_ (!efnm)
