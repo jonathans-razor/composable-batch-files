@@ -1031,28 +1031,6 @@ Aug-29-2023
 
 
 ::_
-:inst-s
-
-echo. & echo * Install third party package and save setting in the package.json file.
-
-if "%~2" == "" err Parameter 2, the package to install, is required.
-
-echo.
-npm install %2 --save
-
-exit/b
-
-lu:
-Jan-31-2024
-Sep-12-2018
-
-rem:
-This worked on Jan-31-2024: 
-nm inst-s js-confetti
-
-
-
-::_
 :i-loda
 
 echo. & echo * Install lodash, world's most depended on JavaScript library.
@@ -1585,6 +1563,31 @@ echo.
 npm install --save-dev webpack-dev-server
 
 exit/b
+
+
+
+::_
+:i-t
+:it
+
+echo. & echo * Install third party package and save setting in the package.json file.
+
+call fe package.json || exit/b
+
+if "%~2" == "" err Parameter 2, the package to install, is required.
+
+echo.
+npm install %2 --save
+
+exit/b
+
+lu:
+Jan-31-2024
+Sep-12-2018
+
+rem:
+This worked on Jan-31-2024: 
+nm inst-s js-confetti
 
 
 

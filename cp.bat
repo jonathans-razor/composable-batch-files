@@ -1373,4 +1373,23 @@ exit/b
 
 
 
+::_
+:15
+:vt15
+
+echo. & echo * Use Vue project %.
+
+call t vt11>nul
+cd %cbf-pt%\src
+
+call fe App.vue || exit/b
+
+echo.
+rem qq
+xcopy /y 15-confetti.vue App.vue
+
+exit/b
+
+
+
 :_ (!efcp)

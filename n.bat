@@ -5397,6 +5397,172 @@ exit/b
 
 
 
+:_
+:mbe
+
+echo. & echo * module-bundlers-explained.
+
+call pn dsa>nul
+set cbf-pt=%cbf-pt%\module-bundlers-explained
+set cbf-gh=https://github.com/jonathans-razor/module-bundlers-explained
+set cbf-yt=https://www.youtube.com/playlist?list=PLV-KEAAMgUZB3pnXE0ShgSg1C73aDcw7P
+
+exit/b
+
+
+
+:_+ CBF-related links.
+
+
+
+::_
+:jj
+:jjgh
+:jjgit
+
+echo. & echo * Jonathan's Github page.
+
+set cbf-gh=https://github.com/jonathans-razor
+set cbf-ghr=https://github.com/jonathans-razor?tab=repositories
+set cbf-gh3=https://github.com/settings/profile
+set cbf-rl=%cbf-gh%\Composable-Batch-Files\releases
+
+exit/b
+
+lu:
+Jun-27-2023
+
+
+
+::_
+:c
+:cbf
+
+echo. & echo * Composable batch files.
+
+set cbf-branch=main
+set cbf-cn=git@github.com:jonathans-razor/Composable-Batch-Files.git
+set cbf-gh=https://github.com/jonathans-razor/Composable-Batch-Files
+
+echo %computername%| find /i "ones">nul
+if %errorlevel% == 0 (
+  set cbf-pt=c:\aa\repositories\composable-batch-files
+) else (
+  set cbf-pt=%dropbox%\it\composable-batch-files
+  call el /c>nul
+)
+
+exit/b
+
+lc:
+(!ones)
+
+lu:
+Jan-26-2024
+Jul-18-2023
+
+rem:
+about: Windows Batch Scripting files that are function-based, modularized and easy to use and 
+understand.
+
+skw:
+ones-series-jj
+
+
+
+::_
+:f
+:ffb
+:ffbs
+
+echo. & echo * Function first bash scripts.
+
+set cbf-gh=https://github.com/jonathans-razor/function-first-bash-scripts
+set cbf-pt=%dropbox%\it\function-first-bash-scripts
+
+exit/b
+
+lu:
+Sep-9-2023
+
+
+
+::_
+:cbfgp
+:ghp
+
+echo. & echo * CBF on GitHub Pages.
+
+set cbf-url=https://jonathan-r-jones.github.io/Composable-Batch-Files/
+
+exit/b
+
+lu:
+Jan-31-2018
+
+
+
+::_
+:cbf-p
+
+echo. & echo * CBF Pulse on GitHub.
+
+set cbf-url=https://github.com/jonathan-r-jones/Composable-Batch-Files/pulse
+
+exit/b
+
+lu:
+Jan-24-2018
+
+
+
+::_
+:obx
+
+echo. & echo *  OBX.
+
+call pn repo>nul
+set cbf-pt=%cbf-pt%\obx
+set cbf-ex=%dropbox%\savannah\Excels\obx.xls
+set cbf-fn=%cbf-pt%\index.md
+set cbf-gh=https://github.com/jonathans-razor/OBX.git
+set cbf-mtp=%reach out%\obx.mtp
+set cbf-url=https://jonathans-razor.github.io/Outer-Banks-2021/
+
+exit/b
+
+lu:
+Jun-27-2023
+Jan-24-2018
+
+
+
+::_
+:pat
+
+echo. & echo * Personal Access Token.
+
+call n up>nul
+set cbf-fn=%cbf-pt%\.git-credentials
+
+exit/b
+
+
+
+::_
+:hp
+
+echo. & echo * Github home page.
+
+set cbf-gh=https://github.com
+
+exit/b
+
+lu: 
+Nov-10-2023
+
+
+
 :_+ Vue Tutorial Family (!fcvt)
 
 
@@ -5586,170 +5752,17 @@ exit/b
 
 
 
-:_
-:mbe
-
-echo. & echo * module-bundlers-explained.
-
-call pn dsa>nul
-set cbf-pt=%cbf-pt%\module-bundlers-explained
-set cbf-gh=https://github.com/jonathans-razor/module-bundlers-explained
-set cbf-yt=https://www.youtube.com/playlist?list=PLV-KEAAMgUZB3pnXE0ShgSg1C73aDcw7P
-
-exit/b
-
-
-
-:_+ CBF-related links.
-
-
-
 ::_
-:jj
-:jjgh
-:jjgit
+:vt15
 
-echo. & echo * Jonathan's Github page.
+echo. & echo * %1.
 
-set cbf-gh=https://github.com/jonathans-razor
-set cbf-ghr=https://github.com/jonathans-razor?tab=repositories
-set cbf-gh3=https://github.com/settings/profile
-set cbf-rl=%cbf-gh%\Composable-Batch-Files\releases
-
-exit/b
-
-lu:
-Jun-27-2023
-
-
-
-::_
-:c
-:cbf
-
-echo. & echo * Composable batch files.
-
-set cbf-branch=main
-set cbf-cn=git@github.com:jonathans-razor/Composable-Batch-Files.git
-set cbf-gh=https://github.com/jonathans-razor/Composable-Batch-Files
-
-echo %computername%| find /i "ones">nul
-if %errorlevel% == 0 (
-  set cbf-pt=c:\aa\repositories\composable-batch-files
-) else (
-  set cbf-pt=%dropbox%\it\composable-batch-files
-  call el /c>nul
-)
-
-exit/b
-
-lc:
-(!ones)
-
-lu:
-Jan-26-2024
-Jul-18-2023
-
-rem:
-about: Windows Batch Scripting files that are function-based, modularized and easy to use and 
-understand.
-
-skw:
-ones-series-jj
-
-
-
-::_
-:f
-:ffb
-:ffbs
-
-echo. & echo * Function first bash scripts.
-
-set cbf-gh=https://github.com/jonathans-razor/function-first-bash-scripts
-set cbf-pt=%dropbox%\it\function-first-bash-scripts
-
-exit/b
-
-lu:
-Sep-9-2023
-
-
-
-::_
-:cbfgp
-:ghp
-
-echo. & echo * CBF on GitHub Pages.
-
-set cbf-url=https://jonathan-r-jones.github.io/Composable-Batch-Files/
-
-exit/b
-
-lu:
-Jan-31-2018
-
-
-
-::_
-:cbf-p
-
-echo. & echo * CBF Pulse on GitHub.
-
-set cbf-url=https://github.com/jonathan-r-jones/Composable-Batch-Files/pulse
-
-exit/b
-
-lu:
-Jan-24-2018
-
-
-
-::_
-:obx
-
-echo. & echo *  OBX.
-
-call pn repo>nul
-set cbf-pt=%cbf-pt%\obx
-set cbf-ex=%dropbox%\savannah\Excels\obx.xls
-set cbf-fn=%cbf-pt%\index.md
-set cbf-gh=https://github.com/jonathans-razor/OBX.git
-set cbf-mtp=%reach out%\obx.mtp
-set cbf-url=https://jonathans-razor.github.io/Outer-Banks-2021/
-
-exit/b
-
-lu:
-Jun-27-2023
-Jan-24-2018
-
-
-
-::_
-:pat
-
-echo. & echo * Personal Access Token.
-
-call n up>nul
-set cbf-fn=%cbf-pt%\.git-credentials
+call pn vute>nul
+set cbf-pt=%cbf-pt%\vt11
+set cbf-url=https://vuejs.org/tutorial/#step-15
 
 exit/b
 
 
 
-::_
-:hp
-
-echo. & echo * Github home page.
-
-set cbf-gh=https://github.com
-
-exit/b
-
-lu: 
-Nov-10-2023
-
-
-
-:_ (!efn) qjq
+:_ (!efn) qq
