@@ -8,7 +8,7 @@ if "%~1" == "?" goto help
 call paco "%~1" crea>nul && goto %1
 call paco "%~1" init>nul && goto %1
 
-call fe package.json || exit/b
+rem call fe package.json || exit/b
 
 goto %1
 
@@ -120,7 +120,7 @@ Apr-24-2018
 ::_
 :init
 
-echo. & echo * Uses defaults.
+echo. & echo * Create a package.json file. Use default settings.
 
 echo.
 npm init -y
@@ -128,6 +128,7 @@ npm init -y
 exit/b
 
 lu:
+Feb-6-2024
 Oct-18-2023
 
 
@@ -1073,6 +1074,18 @@ nm inst-s js-confetti
 
 
 ::_
+:inst-loda
+
+echo. & echo * Install lodash, world's most depended on JavaScript library.
+
+echo.
+npm install lodash --save
+
+exit/b
+
+
+
+::_
 :inst_g
 
 echo. & echo * Globally install a package so that it works everywhere on the command line.
@@ -1081,6 +1094,7 @@ echo.
 echo.
 npm i %2 -g
 
+rem qq
 rem npm install -g %2
 
 rem Examples:
@@ -1387,58 +1401,6 @@ exit/b
 
 
 :_+ Vue Family (!fcvu)
-
-
-
-::_
-:creavu
-
-cls
-
-echo. & echo * Create a new Vue project.
-
-if "%~2" == "" err Parameter 2, the project name, is required.
-
-npm create vue@latest %2
-
-exit/b
-
-lu:
-Feb-1-2024
-
-rem:
-rem the "." creates the project in the current folder I believe. Feb-1-2024
-npm create vue@latest .
-
-
-
-::_
-:creavux
-
-cls
-
-echo. & echo * Create a new Vue project.
-
-npx create vue@latest .
-
-exit/b
-
-lu:
-Jan-19-2024
-
-
-
-::_
-:vue
-
-echo. & echo * Run project vue-3-and-composition-api-tutorial.
-
-call t vue>nul
-call :dev>nul
-call vc .
-call fx vue lh br
-
-exit/b
 
 
 

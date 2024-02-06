@@ -26,9 +26,9 @@ echo. & echo * Batch file style: Single task.
 
 echo. & echo * Examples:
 echo   %0 sr66 hostname
-echo   %0 jjgh url
 echo   %0 fqma ip
 echo   %0 ma cron
+echo   %0 jj gh
 
 
 exit/b

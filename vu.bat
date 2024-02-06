@@ -278,6 +278,58 @@ exit/b
 
 
 
+::_
+:cp2
+
+cls
+
+echo. & echo * Create a new Vue project. This is the one that gives a lot of the fancy features.
+
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+npm create vue@latest %2
+
+exit/b
+
+lu:
+Feb-1-2024
+
+rem:
+rem the "." creates the project in the current folder I believe. Feb-1-2024
+npm create vue@latest .
+
+
+
+::_
+:cp2x
+
+cls
+
+echo. & echo * Create a new Vue project using NPX.
+
+npx create vue@latest .
+
+exit/b
+
+lu:
+Jan-19-2024
+
+
+
+:_
+:rpcat
+
+echo. & echo * Run project vue-3-and-composition-api-tutorial.
+
+call t vue>nul
+call :dev>nul
+call vc .
+call fx vue lh br
+
+exit/b
+
+
+
 :_+ Run VT Family (!fcrvt)
 
 

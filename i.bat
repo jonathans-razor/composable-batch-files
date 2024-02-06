@@ -1,4 +1,4 @@
-:_
+:_ (!i)
 @echo off
 
 if "%~1" == "" goto show-cbf-variables
@@ -219,6 +219,10 @@ set cbf-gho=
 :
 rem GitHub Historical record
 set cbf-ghh=
+
+:
+rem GitHub Repository
+set cbf-ghr=
 
 :
 rem GitLab
