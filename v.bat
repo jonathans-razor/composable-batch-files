@@ -2625,4 +2625,20 @@ level not 0
 
 
 
+:_
+
+cls
+
+echo. & echo * Sidecar dictionary test. This "2> null" suppresses the default error message!
+
+call zzzz 2>null || exit/b
+
+call el
+
+exit/b
+
+Feb-7-2024
+
+
+
 :_ (!efv)

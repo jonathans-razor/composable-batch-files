@@ -288,7 +288,7 @@ cls
 
 echo. & echo * Sidecar dictionary test.
 
-n %1>nul
+call n a 2>null || exit/b
 
 call el
 
