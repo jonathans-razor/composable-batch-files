@@ -1629,4 +1629,17 @@ Sep-2-2021
 
 
 
+:_
+:fl
+
+echo. & echo * Fix lint
+
+call fe package.json || exit/b
+
+npm run lint -- --fix
+
+exit/b
+
+
+
 :_ (!efnm)

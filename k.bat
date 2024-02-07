@@ -284,15 +284,13 @@ exit/b
 
 :_
 
+cls
+
 echo. & echo * Sidecar dictionary test.
 
-call n %1>nul
+n %1>nul
 
-if errorlevel 1 (
-  call sidecar.bat %1
-)
-
-call i
+call el
 
 exit/b
 
