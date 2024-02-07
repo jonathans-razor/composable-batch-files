@@ -3096,6 +3096,7 @@ call tj colo>nul
 
 call e tasks.txt
 call e notes.txt
+call e nj
 
 exit/b
 

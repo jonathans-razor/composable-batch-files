@@ -5858,6 +5858,13 @@ set cbf-url=https://vuejs.org/examples/#markdown
 
 exit/b
 
+rem:
+What do you notice about this code? 
+
+It's amazing how little code it takes to do a markdown editor. What is the trick or library 
+that allows the markdown to display correctly?
+
+rem qq
 
 
 :_ (!efn) qjq
