@@ -1,0 +1,79 @@
+{
+  "Q plus Q": {
+    "prefix": "qq",
+    "body": [
+      "",
+      "rem qq"
+    ],
+    "description": ""
+  },
+  "Seagull Separator": {
+    "prefix": "se",
+    "body": [
+    "",
+      ":_",
+      "",
+      "   .--.      .--.      .--.      .--.      .--.",
+      " :::::.\\::::::::.\\::::::::.\\::::::::.\\::::::::.\\::::::::",
+      "        `--'      `--'      `--'      `--'      `--' ",
+      "",
+      "",
+      ""
+    ],
+    "description": ""
+  },
+  "Echo Statement": {
+    "prefix": "ec",
+    "body": [
+      "",
+      "echo. & echo "
+    ],
+    "description": ""
+  },
+  "Function - New": {
+    "prefix": "af",
+    "body": [
+      "",
+      ":_",
+      ":",
+      "echo. & echo * $1",
+      "call pn >nul",
+      "set cbf-pt=%cbf-pt%\\",
+      "set cbf-=$2",
+      "exit/b",
+      "rem lu: $CURRENT_MONTH_NAME_SHORT-$CURRENT_DATE-$CURRENT_YEAR",
+      "",
+      "",
+      ""
+    ],
+    "description": "Function - New"
+  },
+  "Debug Statement": {
+        "prefix": "db",
+        "body": [
+      "",
+            "echo. & echo * qq cbf-$1: %cbf-% - $CURRENT_MONTH_NAME_SHORT-$CURRENT_DATE-${CURRENT_YEAR}-$CURRENT_HOUR-$CURRENT_MINUTE"
+        ],
+        "description": ""
+    },
+  "Error Level Statement": {
+        "prefix": "el",
+        "body": [
+            "",
+            "if errorlevel 1 exit/b",
+            ""
+        ],
+        "description": ""
+    },
+  "Add Rubric Above": {
+        "prefix": "ara",
+        "body": [
+      ":_+ $1",
+      "",
+      "",
+      "",
+      ""
+        ],
+        "description": ""
+    }
+}
