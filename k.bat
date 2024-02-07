@@ -254,6 +254,20 @@ Jan-26-2024
 
 :_
 
+echo. & echo * File exists errorlevel test.
+
+call fe aj7.txt || exit/b
+
+echo. & echo Hi.
+
+exit/b
+
+Feb-5-2024
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -270,15 +284,19 @@ exit/b
 
 :_
 
-echo. & echo * File exists errorlevel test.
+echo. & echo * Sidecar dictionary test.
 
-call fe aj7.txt || exit/b
+call n %1>nul
 
-echo. & echo Hi.
+if errorlevel 1 (
+  call sidecar.bat %1
+)
+
+call i
 
 exit/b
 
-Feb-5-2024
+Feb-7-2024
 
 
 

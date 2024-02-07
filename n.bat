@@ -5885,7 +5885,6 @@ exit/b
 rem:
 What do you notice about this code? 
 
-rem qq
 
 
 :_ (!efn) qjq
