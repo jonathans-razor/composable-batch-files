@@ -41,7 +41,7 @@ set cbf-pt=
 
 call n %1
 
-if errorlevel 1 exit/b
+if errorlevel 1 err Dictionary reference issue. Feb-7-2024-4-07-PM
 
 if "%cbf-pt%" == "" (
   call err For parameter 1 "%1", the cbf-pt is not defined. Nov-12-2021_7_00_PM
