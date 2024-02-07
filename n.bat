@@ -5397,20 +5397,6 @@ exit/b
 
 
 
-:_
-:mbe
-
-echo. & echo * module-bundlers-explained.
-
-call pn dsa>nul
-set cbf-pt=%cbf-pt%\module-bundlers-explained
-set cbf-gh=https://github.com/jonathans-razor/module-bundlers-explained
-set cbf-yt=https://www.youtube.com/playlist?list=PLV-KEAAMgUZB3pnXE0ShgSg1C73aDcw7P
-
-exit/b
-
-
-
 :_+ CBF-related links.
 
 
@@ -5760,6 +5746,20 @@ echo. & echo * %1.
 call pn vute>nul
 set cbf-pt=%cbf-pt%\vt11
 set cbf-url=https://vuejs.org/tutorial/#step-15
+
+exit/b
+
+
+
+:_
+:mbe
+
+echo. & echo * module-bundlers-explained.
+
+call pn it>nul
+set cbf-pt=%cbf-pt%\module-bundlers-explained
+set cbf-gh=https://github.com/jonathans-razor/module-bundlers-explained
+set cbf-yt=https://www.youtube.com/playlist?list=PLV-KEAAMgUZB3pnXE0ShgSg1C73aDcw7P
 
 exit/b
 
