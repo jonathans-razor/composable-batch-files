@@ -3944,7 +3944,7 @@ Oct-17-2023
 echo. & echo * Data structures and algorithms.
 
 call pn it>nul
-set cbf-pt=%cbf-pt%\dsa
+set cbf-pt=%cbf-pt%\dsaqq
 set cbf-gh=https://github.com/jonathans-razor/data-structures-and-algorithms
 
 exit/b
