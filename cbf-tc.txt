@@ -12,6 +12,7 @@ Composable Batch Files (CBF) - Table of Contents
       ap  Application-centric way of running an application with an optional filename parameter
   ascii-
      art  ASCII art file for displaying more visual content.
+      av  Edit App.vue.
       ax  Copy the ax DCV to the clipboard.
        b  Shutdown windows.
      b64  Base 64 encoding and decoding.
