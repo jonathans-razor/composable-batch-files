@@ -1396,6 +1396,9 @@ exit/b
 :ve2
 :ve3
 :ve4
+:ve5
+:ve6
+:ve7
 
 echo. & echo * Use Vue project %.
 

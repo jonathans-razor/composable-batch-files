@@ -5821,4 +5821,43 @@ exit/b
 
 
 
+::_
+:ve5
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#form-bindings
+
+exit/b
+
+
+
+::_
+:ve6
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#simple-component
+
+exit/b
+
+
+
+::_
+:ve7
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#markdown
+
+exit/b
+
+
+
 :_ (!efn) qq

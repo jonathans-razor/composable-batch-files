@@ -801,26 +801,6 @@ JSON server command in order to start your local database so that data is availa
 
 
 
-:_
-:fix
-
-cls
-
-echo. & echo * Fix npm installation in the current folder.
-
-call dr /d node_modules
-del package-lock.json
-npm install
-
-exit/b
-
-lu:
-Jan-19-2024
-Sep-29-2023
-Sep-2-2021
-
-
-
 :_+ Updating NPM. (skw upgrading, upgrade)
 
 
@@ -1029,6 +1009,23 @@ Aug-29-2023
 
 ::_
 :i-loda
+
+echo. & echo * Install lodash.
+
+call fe package.json || exit/b
+
+echo.
+npm install lodash-es --save
+
+exit/b
+
+lu:
+Feb-6-2024
+
+
+
+::_
+:i-loda2
 
 echo. & echo * Install lodash, world's most depended on JavaScript library.
 
@@ -1578,6 +1575,23 @@ nm inst-s js-confetti
 
 
 
+::_
+:i-mark
+
+echo. & echo * Install Markdown.
+
+call fe package.json || exit/b
+
+echo.
+npm install --save-dev marked
+
+exit/b
+
+lu:
+
+
+
+
 :_
 :rf
 
@@ -1588,6 +1602,31 @@ call fe package.json || exit/b
 npm run format
 
 exit/b
+
+
+:_
+:fix
+
+cls
+
+echo. & echo * Fix npm installation in the current folder.
+
+call fe package.json || exit/b
+
+call dr /d node_modules
+
+echo.
+del package-lock.json
+
+npm install
+
+exit/b
+
+lu:
+Jan-19-2024
+Sep-29-2023
+Sep-2-2021
+
 
 
 :_ (!efnm)
