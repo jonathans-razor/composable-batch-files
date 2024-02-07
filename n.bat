@@ -5864,6 +5864,27 @@ What do you notice about this code?
 It's amazing how little code it takes to do a markdown editor. What is the trick or library 
 that allows the markdown to display correctly?
 
+For one thing, the "marked" import.
+
+All output is being "computed" using the marked library.
+const output = computed(() => marked(input.value))
+
+
+
+::_
+:ve8
+
+echo. & echo * %1.
+
+call pn vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#markdown
+
+exit/b
+
+rem:
+What do you notice about this code? 
+
 rem qq
 
 
