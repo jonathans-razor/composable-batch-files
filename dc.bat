@@ -49,7 +49,7 @@ exit/b
 
 :main
 
-set cbf-app=%1
+set cbf-app=%~1
 
 set cbf-parameter=
 
