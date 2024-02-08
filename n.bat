@@ -3303,16 +3303,8 @@ exit/b
 
 echo. & echo * Bogus CBF for error testing.
 
-set cbf-app=xx
-set cbf-ex=c:\a\test4.xlsx
-set cbf-fn=c:\b\j5.txt
-set cbf-pt=d:\Dropbox\IT\share-zone\Relaxing Reading Room\Playbooks-4
-set cbf-pd=bogus-test
-set cbf-wo=c:\a\test3.docx
-set cbf-yt=https://www.youtube.com/watch?v=8WZmIdXZe3Q
-set cbf-url=xxx
-call n vft
-set cbf-pdf=%cbf-pt%\Access Google's Web Service.pdf
+call n a
+set cbf-fn=%cbf-pt%\j 5.txt
 
 exit/b
 
