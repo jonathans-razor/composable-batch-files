@@ -389,7 +389,6 @@ cls
 
 echo. & echo * Expanding filename.
 
-rem qq
 echo.
 echo %0
 
