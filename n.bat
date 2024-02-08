@@ -5974,7 +5974,7 @@ rem:
 
 What do you notice about this code?
 
-I don't remember seeing the teleport HTML tag before.
+I like the use of the random insert of new list items.
 
 
 
