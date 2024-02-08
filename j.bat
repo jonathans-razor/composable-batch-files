@@ -67,10 +67,7 @@ rem call m reset_cbf-variables
 call i /c>nul
 ver>nul
 
-rem qq
-call sdv %1
-
-if errorlevel 1 exit/b
+call sdv %1 || exit/b
 
 if not "%~2" == "" goto compose-dcv
 
@@ -197,7 +194,7 @@ if not "%cbf-ex%" == "" (
     rem echo.
     rem echo * Double click Excel file "%cbf-ex%".
     set cbf-fn=%cbf-ex%
-    call dc %cbf-fn%
+    call dc "%cbf-fn%"
     exit/b
   ) else (
     echo.
