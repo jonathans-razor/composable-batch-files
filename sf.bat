@@ -55,7 +55,7 @@ call i /c>nul
 
 rem echo. & echo * Evaluate the parameter list.
 
-call n %1 || exit/b
+call sdv %1 || exit/b
 
 if "%cbf-app%" == "" (
   call :use_default_browser
