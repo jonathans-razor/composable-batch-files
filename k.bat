@@ -350,6 +350,25 @@ exit/b
 
 :_
 
+cls
+
+echo. & echo * 
+
+call n %1 2>nul
+
+rem The alias is found in the primary dictionary, so exit.
+if not errorlevel 1 exit/b
+
+if not exist "%cbf-default-sd%" exit/b
+
+call "%cbf-default-sd%" %1
+
+exit/b
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -368,18 +387,24 @@ exit/b
 
 cls
 
-echo. & echo * 
+echo. & echo * Expanding filename.
 
-call n %1 2>nul
+rem qq
+echo.
+echo %0
 
-rem The alias is found in the primary dictionary, so exit.
-if not errorlevel 1 exit/b
+echo.
+echo %~0
 
-if not exist "%cbf-default-sd%" exit/b
+echo.
+echo %~f0
 
-call "%cbf-default-sd%" %1
+echo.
+echo %~nx0
 
 exit/b
+
+Feb-8-2024
 
 
 

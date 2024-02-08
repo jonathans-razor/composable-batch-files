@@ -2255,8 +2255,8 @@ Dec-30-2018
 
 rem call :code-execution-area
 rem echo %0     :code-execution-area
-rem echo %~f0   k.bat
-rem echo %~nx0  d:\Dropbox\IT\Composable-Batch-Files\k.bat
+rem echo %~f0   d:\Dropbox\IT\Composable-Batch-Files\k.bat
+rem echo %~nx0  k.bat
 
 
 %~1         - expands %1 removing any surrounding quotes (")
@@ -2381,38 +2381,6 @@ Jun-20-2019
 
 
 :_+ Validation Family (!fcva) error-level-educational-series
-
-
-
-::_
-:old-style
-
-if errorlevel 1 exit/b (!el1, !ec, !gtr, !err, !erro, !el, !erle)
-
-Inside an if loop: if %errorlevel% == 5 Jun-28-2023
-
-if %errorlevel-old% gtr 0 exit/b
-
-if %errorlevel-old% gtr 0 exit/b %errorlevel%
-
-if %errorlevel-old% gtr 0 (
-  echo.
-  echo * Error: Label not found.
-  call m clear_errorlevel_silently 
-  exit/b
-)
-
-if "%cbf-pt%" == "" (
-  echo.
-  echo * The cbf-pt is not defined for "%1".
-  exit/b
-)
-
-if not exist "%cbf-pt%" (
-  echo.
-  echo * Error: The cbf-pt "%cbf-pt%" could not be found.
-  exit/b
-)
 
 
 
@@ -2613,19 +2581,54 @@ call s | find /i "working tree clean">nul
 
 
 ::_
+:old-style
+
+if errorlevel 1 exit/b
+
+Inside an if loop: if %errorlevel% == 5 Jun-28-2023
+
+if %errorlevel-old% gtr 0 exit/b
+
+if %errorlevel-old% gtr 0 exit/b %errorlevel%
+
+if %errorlevel-old% gtr 0 (
+  echo.
+  echo * Error: Label not found.
+  call m clear_errorlevel_silently 
+  exit/b
+)
+
+if "%cbf-pt%" == "" (
+  echo.
+  echo * The cbf-pt is not defined for "%1".
+  exit/b
+)
+
+if not exist "%cbf-pt%" (
+  echo.
+  echo * Error: The cbf-pt "%cbf-pt%" could not be found.
+  exit/b
+)
+
+
+
+::_
 :new-style
 
 echo. & echo * New style error handling
+
+call fe package.json || exit/b
+call err %~nx0: 
+call paco "%~1" .>nul && goto open-current-folder-file
 call paco "%~1" .>nul && echo hey
 call paco "%~1" .>nul && goto 
 call paco "%~2" /n && goto 
-
-echo made it here.
+dir /ah | find /i ".git">nul && exit/b 0
 
 exit/b
 
 lc:
-(!ns, !peri, !paco, !ampe)
+(!ns, !peri, !paco, !ampe, !el1, !ec, !gtr, !err, !erro, !el, !erle)
 
 lu:
 Oct-12-2023
