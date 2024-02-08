@@ -5959,4 +5959,23 @@ I don't remember seeing the teleport HTML tag before.
 
 
 
+::_
+:ve13
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#list-transition
+
+exit/b
+
+rem:
+
+What do you notice about this code?
+
+I don't remember seeing the teleport HTML tag before.
+
+
+
 :_ (!efn) qq

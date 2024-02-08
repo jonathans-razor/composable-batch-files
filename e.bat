@@ -195,7 +195,11 @@ goto main
 
 echo. & echo * Create a new file in the current folder. Feb-2-2024-3-22-PM
 
+call fe %~1 
+
+rem qq
 set cbf-fn=%cd%\%~1
+if not errorlevel 1 err %~nx0: You've specified a new file but this file already exists. So, because of this ambiguity of intent, will not delete the file.
 type nul>%cbf-fn%
 
 exit/b

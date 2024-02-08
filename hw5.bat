@@ -41,7 +41,7 @@ exit/b
 
 cls
 
-echo. & echo * Function 2. Set environment variable.
+echo. & echo * Function 2. An example of how to set an environment variable.
 
 set cbf-hello=
 

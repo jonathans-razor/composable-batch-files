@@ -2618,6 +2618,7 @@ if not exist "%cbf-pt%" (
 echo. & echo * New style error handling
 
 call fe package.json || exit/b
+err %~nx0: 
 call err %~nx0: 
 call paco "%~1" .>nul && goto open-current-folder-file
 call paco "%~1" .>nul && echo hey
