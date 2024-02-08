@@ -5993,6 +5993,7 @@ rem:
 
 What do you notice about this code?
 
+It's cool that it uses local storage.
 
 
 
