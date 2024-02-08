@@ -54,7 +54,6 @@ if not errorlevel 1 exit/b
 call el /c>nul
 
 call n %1 2>nul
-rem qq
 
 if errorlevel 1 err %0.bat: A dictionary entry for "%1" was not found. Feb-7-2024-7-00-PM
 
