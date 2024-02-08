@@ -74,10 +74,10 @@ goto main
 :main
 
 if exist "%cbf-fn%" (
-  rem echo. & echo * File "%cbf-fn%" exists. Jun-28-2023_10_26_PM
+  rem echo. & echo %~nx0: * File "%cbf-fn%" exists. Feb-8-2024-4-43-PM
   exit/b 0
 ) else (
-  call notice * File or folder "%cbf-fn%" DOES NOT exist. Jun-28-2023_10_04_PM
+  call notice %~nx0: File or folder "%cbf-fn%" DOES NOT exist. Feb-8-2024-4-42-PM
   exit/b 5
 )
 

@@ -5978,4 +5978,22 @@ I like the use of the random insert of new list items.
 
 
 
+::_
+:ve14
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#todomvc
+
+exit/b
+
+rem:
+
+What do you notice about this code?
+
+
+
+
 :_ (!efn) qq
