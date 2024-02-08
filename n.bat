@@ -5929,4 +5929,23 @@ Cool Treeview. The data doesn't seemed to be saved, for example, to local storag
 
 
 
+::_
+:ve11
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#svg
+
+exit/b
+
+rem:
+
+What do you notice about this code?
+
+I put the word "export" in front of the word "function" in util.js and it started working.
+
+
+
 :_ (!efn) qq
