@@ -5899,7 +5899,9 @@ set cbf-url=https://vuejs.org/examples/#grid
 exit/b
 
 rem:
-What do you notice about this code? 
+What do you notice about this code?
+
+Very nice type ahead search and sorting features.
 
 
 
