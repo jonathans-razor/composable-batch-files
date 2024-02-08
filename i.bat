@@ -132,6 +132,10 @@ rem Default Text Editor
 rem set cbf-default-text-editor=
 
 :
+rem Default Secondary Dictionary
+rem set cbf-default-sd=
+
+:
 rem Demo
 set cbf-demo=
 set cbf-demo2=
@@ -152,6 +156,10 @@ set cbf-distilled-file-folder=
 rem Distilled
 set cbf-distilled_filename=
 set cbf-distilled_path=
+
+:
+rem Docs
+set cbf-docs=
 
 :
 rem Editor Parameter
@@ -245,6 +253,10 @@ set cbf-graphic=
 :
 rem Google Sheets
 set cbf-gs=
+
+:
+rem Hello
+set cbf-hello=
 
 :
 rem Hostname
@@ -428,6 +440,10 @@ set cbf-python-results=
 :
 rem Parameter Total
 set cbf_pipe_to_file=
+
+:
+rem Repository
+rem set cbf-repo=
 
 :
 rem Releases
