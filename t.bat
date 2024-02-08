@@ -56,7 +56,7 @@ rem echo. & echo * Analyze environment and decide upon the proper course of acti
 
 set cbf-previous-pt=%cbf-pt%
 
-call el /c
+call el /c>nul
 
 set cbf-app=
 set cbf-pt=

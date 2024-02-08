@@ -5118,7 +5118,7 @@ exit/b
 
 echo. & echo * Vue testing.
 
-call pn it>nul
+call n it>nul
 set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-pt=%cbf-pt%\vue-testing
 set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
