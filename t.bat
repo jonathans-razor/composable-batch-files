@@ -56,14 +56,12 @@ rem echo. & echo * Analyze environment and decide upon the proper course of acti
 
 set cbf-previous-pt=%cbf-pt%
 
-call m cel
+call el /c
 
 set cbf-app=
 set cbf-pt=
 
-call pn %1
-
-if errorlevel 1 exit/b
+call pn %1 || exit/b
 
 goto main
 

@@ -3943,7 +3943,7 @@ Oct-17-2023
 
 echo. & echo * Data structures and algorithms.
 
-call pn it>nul
+call n it
 set cbf-pt=%cbf-pt%\dsa
 set cbf-gh=https://github.com/jonathans-razor/data-structures-and-algorithms
 
@@ -5330,7 +5330,6 @@ set cbf-pt=%cbf-pt%\%1
 set cbf-fn=%cbf-pt%\index.html
 
 rem For problems roughly numbered 15 or less.
-rem qjq
 set cbf-url=https://vuejs.org/tutorial/#step-1
 
 rem For problems numbered 16 to 37.
@@ -5887,4 +5886,4 @@ What do you notice about this code?
 
 
 
-:_ (!efn) qjq
+:_ (!efn)

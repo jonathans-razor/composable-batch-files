@@ -279,8 +279,6 @@ call el
 if errorlevel 1 (
   call pn bel
   
-  echo. & echo * Error Level: %errorlevel% - qjq - cbf-pt: %cbf-pt% - Feb-7-2024-9-50-PM
-
   if exist "%cbf-pt%\pv.bat" (
     call %cbf-pt%\pv.bat %1
   ) else (
@@ -314,12 +312,9 @@ err * Hmm. Looks like a Gordian Knot. - Feb-7-2024-9-46-PM
 
 :next
   
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-pt: %cbf-pt% - Feb-7-2024-9-50-PM
-
 call pn bel
 if not exist "%cbf-pt%\pv.bat" (
   call %cbf-pt%\pv.bat %1
-  echo. & echo * Error Level: %errorlevel% - qjq - cbf-pt: %cbf-pt% - Feb-7-2024-9-51-PM
   cd /d "%cbf-pt%"
   echo hey
 )
