@@ -1447,7 +1447,6 @@ Jan-24-2019
 :git_user_bin
 :gu
 :gub
-:sg
 :sugi
 :super_bin
 :super_git
@@ -4312,12 +4311,13 @@ Aug-28-2023
 
 ::_
 :cbf-sgd
+:sg
 :sgdcbf
 
 echo. & echo * CBF style guide.
 
 call n cbf>nul
-set cbf-fn=%cbf-pt%\cbf-sgd.txt
+set cbf-fn=%cbf-pt%\cbf-sg.txt
 
 exit/b
 

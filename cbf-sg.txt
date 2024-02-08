@@ -5,6 +5,9 @@ Composable Batch Files (CBF) - Style Guide
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
        `--'      `--'      `--'      `--'      `--' 
 
+:Feb-8-2024: When passing values, that contain spaces, to other batch files, be sure to 
+enclose the value in double quotes.
+
 :Feb-2-2024: It is assumed that no alias should contain a period.
 
 :Nov-13-2023: Assumption: All CBF variables are prefixed with "cbf-".
