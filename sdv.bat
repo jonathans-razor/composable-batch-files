@@ -12,7 +12,6 @@ goto main
 
 cls
 
-rem qq
 echo. & echo  * Set dictionary value.
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
@@ -42,7 +41,7 @@ Feb-7-2024
 :_
 :main
 
-rem Feb-7-2024: new double dictionary code.
+rem echo. & echo * New double dictionary code. The local dictionary overwites the primary dictionary.
 
 if not exist "%cbf-default-sd%" exit/b
 
