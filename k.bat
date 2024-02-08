@@ -272,7 +272,7 @@ cls
 
 echo. & echo * Sidecar dictionary test.
 
-call n %1 2>null
+call n %1 2>nul
 
 call el
 
@@ -301,7 +301,7 @@ cls
 echo. & echo * Double dictionary call.
 
 
-call n %1 2>null
+call n %1 2>nul
 
 call el
 
@@ -329,7 +329,7 @@ Feb-7-2024
 
 echo. & echo * 
 
-call n %1 2>null
+call n %1 2>nul
 
 rem The alias is not found in the primary dictionary, so search the secondary dictionar
 if errorlevel 1 goto next
@@ -370,7 +370,7 @@ cls
 
 echo. & echo * 
 
-call n %1 2>null
+call n %1 2>nul
 
 rem The alias is found in the primary dictionary, so exit.
 if not errorlevel 1 exit/b

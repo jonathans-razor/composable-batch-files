@@ -28,8 +28,31 @@ exit/b
 
 :_
 :function-1
+
 echo. & echo * Function 1 in %0.bat.
 rem Put some code here.
+
+exit/b
+
+
+
+:_
+:f2
+
+cls
+
+echo. & echo * Function 2. Set environment variable.
+
+set cbf-hello=
+
+echo. & echo cbf-hello: %cbf-hello%
+
+@echo on
+set cbf-hello=Hello world.
+@echo off
+
+echo. & echo cbf-hello: %cbf-hello%
+
 exit/b
 
 

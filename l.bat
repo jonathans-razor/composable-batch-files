@@ -46,7 +46,7 @@ exit/b
 
 rem echo. & echo * Preprocess.
 
-call n %1
+call sdv %1
 
 if errorlevel 1 exit/b
 
