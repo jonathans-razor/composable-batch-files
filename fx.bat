@@ -78,12 +78,9 @@ exit/b
 
 :_
 :main
-call m clear_errorlevel_silently>nul
+
 call i /c>nul
-call n %1
-rem echo. & echo * Debug-me cbf-: %cbf-% EL: %errorlevel% - Oct-24-2022-12-25
-if errorlevel 1 exit/b
-rem echo. & echo * Debug-me cbf-: %cbf-% EL: %errorlevel% - Oct-24-2022-12-26
+call sdv %1 || exit/b
 
 call m compose_variable %2
 
@@ -94,7 +91,6 @@ if "%cbf-expanded-variable%" == "" (
 
 if not "%3" == "" call an %3>nul
 
-rem echo. & echo * Error Level: %errorlevel% - cbf-app: %cbf-app% - Aug-23-2023_4_31_PM
 if "%cbf-app%" == "" call an kr>nul
 
 if errorlevel 1 exit/b
