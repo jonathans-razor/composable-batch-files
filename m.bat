@@ -4540,6 +4540,7 @@ set path=c:\aa\repositories\composable-batch-files;%path%
 call %0 set-default-browser kr
 call %0 set-default-repository-folder c-aa-repos
 call %0 set-default-text-editor vc
+call set-default-secondary-dictionary.bat
 
 col 1
 
