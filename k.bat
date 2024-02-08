@@ -268,6 +268,93 @@ Feb-5-2024
 
 :_
 
+cls
+
+echo. & echo * Sidecar dictionary test.
+
+call n %1 2>null
+
+call el
+
+if errorlevel 1 (
+  call pn bel
+  
+  echo. & echo * Error Level: %errorlevel% - qjq - cbf-pt: %cbf-pt% - Feb-7-2024-9-50-PM
+
+  if exist "%cbf-pt%\pv.bat" (
+    call %cbf-pt%\pv.bat %1
+  ) else (
+    err * Hmm. Looks like a Gordian Knot. - Feb-7-2024-9-46-PM
+  )
+)
+
+call el
+
+exit/b
+
+Feb-7-2024
+
+
+
+:_
+
+cls
+
+echo. & echo * Double dictionary call.
+
+
+call n %1 2>null
+
+call el
+
+if errorlevel 1 goto next
+
+err * Hmm. Looks like a Gordian Knot. - Feb-7-2024-9-46-PM
+
+
+:next
+  
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-pt: %cbf-pt% - Feb-7-2024-9-50-PM
+
+call pn bel
+if not exist "%cbf-pt%\pv.bat" (
+  call %cbf-pt%\pv.bat %1
+  echo. & echo * Error Level: %errorlevel% - qjq - cbf-pt: %cbf-pt% - Feb-7-2024-9-51-PM
+  cd /d "%cbf-pt%"
+  echo hey
+)
+
+exit/b
+
+Feb-7-2024
+
+
+
+:_
+
+echo. & echo * 
+
+call n %1 2>null
+
+rem The alias is not found in the primary dictionary, so search the secondary dictionar
+if errorlevel 1 goto next
+
+exit/b
+
+:next
+
+call pn bel
+
+if not exist "%cbf-pt%\pv.bat" exit/b
+
+call %cbf-pt%\pv.bat %1
+
+exit/b
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -286,15 +373,18 @@ exit/b
 
 cls
 
-echo. & echo * Sidecar dictionary test.
+echo. & echo * 
 
-call n a 2>null || exit/b
+call n %1 2>null
 
-call el
+rem The alias is found in the primary dictionary, so exit.
+if not errorlevel 1 exit/b
+
+if not exist "%cbf-default-sd%" exit/b
+
+call "%cbf-default-sd%" %1
 
 exit/b
-
-Feb-7-2024
 
 
 

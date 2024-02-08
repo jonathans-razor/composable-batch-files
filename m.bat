@@ -4560,7 +4560,7 @@ set path=%dropbox%\savannah\belfry;%path%
 call %0 set-default-browser br
 call %0 set-default-repository-folder c-aa-repos
 call %0 set-default-text-editor me
-
+call set-default-secondary-dictionary.bat
 
 exit/b
 
