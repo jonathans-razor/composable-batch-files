@@ -39,19 +39,7 @@ exit/b
 
 set cbf-pt=
 
-rem Feb-7-2024: new double dictionary code.
-call n %1 2>null
-
-rem The alias is found in the primary dictionary, so exit.
-if not errorlevel 1 exit/b
-
-if not exist "%cbf-default-sd%" exit/b
-
-call el /c>nul
-
-call "%cbf-default-sd%" %1 2>null
-
-if errorlevel 1 err A dictionary entry for "%1" was not found. Feb-7-2024-7-00-PM
+call sdv %1
 
 if "%cbf-pt%" == "" (
   call err For parameter 1 "%1", the cbf-pt is not defined. Nov-12-2021_7_00_PM

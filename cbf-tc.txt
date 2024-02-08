@@ -195,6 +195,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      rzr  Multi-Edit abstraction layer for running CBF files.
     rzrp  Multi-Edit abstraction layer for running CBF files, with a pause, for debugging.
        s  Check updated git status, with td parameter.
+     sdv  Set dictionary value.
     senc  Sencha.
      sep  Show separator graphic.
       sf  Surf to websites. A DCV is optional.

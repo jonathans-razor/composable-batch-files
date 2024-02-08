@@ -53,7 +53,7 @@ Sep-26-2019
 :process-alias
 
 rem echo. & echo * Process alias. Dec-1-2023_6_06_PM
-call n %1 || exit/b
+call sdv %1 || exit/b
 
 goto main
 
