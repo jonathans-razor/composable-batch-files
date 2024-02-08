@@ -13,13 +13,13 @@ goto main
 :help
 cls
 
-echo. & echo * Run Brave while leveraging the e.bat decision algorithm.
+echo. & echo * Run Norton while leveraging the e.bat decision algorithm.
 
 echo. & echo * Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1:
 echo  Filename you wish to open in the browser.
-echo  If left blank, Brave is opened.
+echo  If left blank, Norton is opened.
 
 echo. & echo * Batch file style: Multipurpose
 

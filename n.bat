@@ -5564,7 +5564,8 @@ set cbf-url=https://vuejs.org/tutorial/#step-1
 exit/b
 
 rem:
-Created using "Vue create" (not latest).
+
+This app was created using "Vue create" (not latest). Bare bones features.
 
 
 
@@ -5779,6 +5780,10 @@ set cbf-url=https://vuejs.org/examples/#hello-world
 
 exit/b
 
+rem:
+
+This app was built using "npm create vue@latest %2" which contains fancy features.
+
 
 
 ::_
@@ -5902,6 +5907,25 @@ rem:
 What do you notice about this code?
 
 Very nice type ahead search and sorting features.
+
+
+
+::_
+:ve10
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#tree
+
+exit/b
+
+rem:
+
+What do you notice about this code?
+
+Cool Treeview. The data doesn't seemed to be saved, for example, to local storage.
 
 
 
