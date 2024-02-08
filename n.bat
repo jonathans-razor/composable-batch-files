@@ -373,7 +373,7 @@ Sep-25-2023
 
 echo. & echo * Dating apps.
 
-call pn exs
+call n exs
 
 set cbf-ex=%cbf-pt%\dating apps.xlsx
 call ap br>nul
@@ -395,7 +395,7 @@ Jan-25-2023
 
 echo. & echo * Email accounts registrar.
 
-call pn exs>nul
+call n exs>nul
 set cbf-ex=%cbf-pt%\email accounts register.xlsx
 set cbf-gs=https://docs.google.com/spreadsheets/d/1SKXiQZX4zrFkllI3hQAcWsNuJ5ULXkmiazmkcz9MDm0/edit#gid=1544547210
 
@@ -445,7 +445,7 @@ Mar-08-2023
 
 echo. & echo * SSH folder.
 
-call pn h>nul
+call n h>nul
 
 set cbf-pt=%cbf-pt%\.ssh
 
@@ -469,7 +469,7 @@ Mar-28-2023
 
 echo. & echo * %1 code keepers.
 
-call pn it>nul
+call n it>nul
 set cbf-pt=%cbf-pt%\code-keepers
 set cbf-fn=%cbf-pt%\%1.asc
 
@@ -490,7 +490,7 @@ Ansible, Bash, C#, Java Code Keepers
 
 echo. & echo * Groovy/Jenkinsfile code keepers.
 
-call pn vdi>nul
+call n vdi>nul
 
 set cbf-pt=%cbf-pt%\code-keepers
 set cbf-pt=%cbf-pt%\Jenkinsfiles
@@ -527,7 +527,7 @@ Mar-01-2023
 
 echo. & echo * Summer trip 2023.
 
-call pn tran
+call n tran
 set cbf-pt=%cbf-pt%\summer-trip-2023
 
 exit/b
@@ -542,7 +542,7 @@ Apr-2-2023
 
 echo. & echo * Gettysburg Address.
 
-call pn cbf>nul
+call n cbf>nul
 set cbf-fn=%cbf-pt%\gettysburg-address.txt
 
 exit/b
@@ -568,7 +568,7 @@ exit/b
 
 echo. & echo * Prepare.
 
-call pn exs>nul
+call n exs>nul
 set cbf-ex=%cbf-pt%\prepare.xlsx
 
 exit/b
@@ -585,7 +585,7 @@ May-30-2023
 
 echo. & echo * Shoe Weights.
 
-call pn exs>nul
+call n exs>nul
 set cbf-ex=%cbf-pt%\Shoe Weights.xlsx
 call an br
 
@@ -603,7 +603,7 @@ Jun-6-2023
 
 echo. & echo * my-presidential-voting-history.
 
-call pn exs>nul
+call n exs>nul
 set cbf-ex=%cbf-pt%\my-presidential-voting-history.xlsx
 
 exit/b
@@ -636,7 +636,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn dbf
+call n dbf
 set cbf-fn=%cbf-pt%\pete.asc
 
 exit/b
@@ -764,7 +764,7 @@ echo. & echo * Windows desktop.
 
 set cbf-pt=%userprofile%\desktop
 
-call pn 1d
+call n 1d
 if exist Desktop set cbf-pt=%cbf-pt%\Desktop
 
 exit/b
@@ -780,7 +780,7 @@ Dec-27-2018
 
 echo. & echo * Windows system 32.
 
-call pn cbf>nul
+call n cbf>nul
 
 set cbf-fn=%cbf-pt%\32.asc
 
@@ -828,7 +828,7 @@ Jul-10-2023
 
 echo. & echo * 8.
 
-call pn bel>nul
+call n bel>nul
 
 set cbf-fn=%cbf-pt%\8.bat
 
@@ -844,7 +844,7 @@ Jun-1-2022
 
 echo. & echo * Savannah summary.
 
-call pn ro>nul
+call n ro>nul
 
 set cbf-fn=%cbf-pt%\%cbf-pd%\savannah summary.txt
 
@@ -865,7 +865,7 @@ Jun-9-2022
 
 echo. & echo * Message to XPS.
 
-call pn ro>nul
+call n ro>nul
 
 set cbf-fn=%cbf-pt%\message-to-xps.txt
 
@@ -881,7 +881,7 @@ Jan-31-2022
 
 echo. & echo * Message to SP7.
 
-call pn ro>nul
+call n ro>nul
 
 set cbf-fn=%cbf-pt%\message-to-sp7.txt
 
@@ -898,7 +898,7 @@ Jan-11-2024
 
 echo. & echo * Meeting.txt.
 
-call pn ro>nul
+call n ro>nul
 
 set cbf-fn=%cbf-pt%\meeting.txt
 
@@ -911,7 +911,7 @@ exit/b
 
 echo. & echo * PV CBFs.
 
-call pn bel
+call n bel
 
 set cbf-fn=%cbf-pt%\pv.bat
 
@@ -1177,7 +1177,7 @@ exit/b
 
 echo. & echo * j1.xml.
 
-call pn a>nul
+call n a>nul
 set cbf-fn=%cbf-pt%\j1.xml
 
 exit/b
@@ -1189,7 +1189,7 @@ exit/b
 :j6
 
 echo. & echo * %1.txt. A more permanent recyclable file.
-call pn pm>nul
+call n pm>nul
 set cbf-fn=%cbf-pt%\%1.txt
 
 exit/b
@@ -1201,7 +1201,7 @@ exit/b
 
 echo. & echo * NP text.
 
-call pn 1m>nul
+call n 1m>nul
 set cbf-fn=%cbf-pt%\%1.txt
 
 exit/b
@@ -1213,7 +1213,7 @@ exit/b
 
 echo. & echo * NP2 text.
 
-call pn 1m>nul
+call n 1m>nul
 set cbf-fn=%cbf-pt%\%1.txt
 
 exit/b
@@ -1225,7 +1225,7 @@ exit/b
 
 echo. & echo * Time.
 
-call pn tmp>nul
+call n tmp>nul
 set cbf-fn=%cbf-pt%\%1.txt
 
 exit/b
@@ -1237,7 +1237,7 @@ exit/b
 
 echo. & echo * Date.
 
-call pn tmp>nul
+call n tmp>nul
 set cbf-fn=%cbf-pt%\%1.txt
 
 exit/b
@@ -1249,7 +1249,7 @@ exit/b
 
 echo. & echo * Date and time.
 
-call pn tmp>nul
+call n tmp>nul
 set cbf-fn=%cbf-pt%\%1.txt
 
 exit/b
@@ -1265,7 +1265,7 @@ exit/b
 
 echo. & echo * Blank Excel document.
 
-call pn c>nul
+call n c>nul
 set cbf-ex=%cbf-pt%\blank.xlsx
 
 exit/b
@@ -1284,7 +1284,7 @@ blank excel file
 
 echo. & echo * Blank PowerPoint document.
 
-call pn c>nul
+call n c>nul
 set cbf-ppt=%cbf-pt%\blank.pptx
 
 exit/b
@@ -1299,7 +1299,7 @@ Oct-25-2020
 
 echo. & echo * Blank txt document.
 
-call pn c>nul
+call n c>nul
 set cbf-fn=%cbf-pt%\blank.txt
 
 exit/b
@@ -1314,7 +1314,7 @@ May-4-2022
 
 echo. & echo * Blank Word document.
 
-call pn c>nul
+call n c>nul
 set cbf-wo=%cbf-pt%\blank.docx
 
 exit/b
@@ -1454,7 +1454,7 @@ Jan-24-2019
 
 echo. & echo * Git power user bin. Loaded with utilities.
 
-call pn cbf>nul
+call n cbf>nul
 
 set cbf-fn=%cbf-pt%\gub.asc
 
@@ -1536,7 +1536,7 @@ Aug-1-2018
 
 echo. & echo * Excel files.
 
-call pn sv
+call n sv
 
 set cbf-pt=%cbf-pt%\excels
 
@@ -1823,7 +1823,7 @@ Jan-8-2020
 
 echo. & echo * Backups.
 
-call pn dr
+call n dr
 
 set cbf-pt=%cbf-pt%\Backups
 if exist %dropbox%\backups set cbf-pt=%dropbox%\backups
@@ -1876,7 +1876,7 @@ exit/b
 
 rem Priv pass-through.
 
-call pn bel>nul
+call n bel>nul
 if exist "%cbf-pt%\pv.bat" (
   call %cbf-pt%\pv.bat %1
 ) else (
@@ -2004,7 +2004,7 @@ Dec-14-2018
 echo. & echo * Environment variables information.
 
 set cbf-app=%systemroot%\system32\SystemPropertiesAdvanced.exe
-rem call pn exs>nul
+rem call n exs>nul
 set cbf-ex=%cbf-pt%\My Official Inter-Computer Environment Variables.xlsx
 set cbf-fn=%cbf-app%
 
@@ -2251,7 +2251,7 @@ Apr-7-2021
 
 echo. & echo * Docker home.
 
-call pn home>nul
+call n home>nul
 set cbf-pt=%cbf-pt%\.docker
 set cbf-fn=%cbf-pt%\config.json
 
@@ -2495,7 +2495,7 @@ May-10-2022
 
 echo. & echo * IT.
 
-call pn pm>nul
+call n pm>nul
 set cbf-fn=%cbf-pt%\it2.asc
 
 set cbf-pt=%dropbox%\it\
@@ -2559,7 +2559,7 @@ Jul-14-2023
 
 echo. & echo * Interview code.
 
-call pn dr>nul
+call n dr>nul
 set cbf-pt=%cbf-pt%\it\interview-code
 set cbf-gh=https://github.com/jonathans-razor/interview-code
 set cbf-url=https://www.youtube.com/playlist?list=PLV-KEAAMgUZB0reX0lqWdun75FrvRmG4O
@@ -2669,7 +2669,7 @@ base icons
 
 echo. & echo * Big shortcuts.
 
-call pn s>nul
+call n s>nul
 
 set cbf-pd=big shortcuts
 
@@ -2747,7 +2747,7 @@ Feb-24-2020
 
 echo. & echo * sp7.asc.
 
-call pn ro>nul
+call n ro>nul
 set cbf-fn=%cbf-pt%\sp7.asc
 
 exit/b
@@ -2759,7 +2759,7 @@ exit/b
 
 echo. & echo * iPad.
 
-call pn ro>nul
+call n ro>nul
 set cbf-fn=%cbf-pt%\ipad.txt
 
 exit/b
@@ -2775,7 +2775,7 @@ exit/b
 
 echo. & echo * VSC Snippet folder and Snippet Generator.
 
-call pn up>nul
+call n up>nul
 set cbf-pt=%cbf-pt%\AppData\Roaming\Code\User\snippets
 set cbf-fn=%cbf-pt%\Jonathan's Global Snippets File.code-snippets
 set cbf-url=https://snippet-generator.app/
@@ -2792,7 +2792,7 @@ Aug-28-2023
 
 echo. & echo * Batch snippets.
 
-call pn snip>nul
+call n snip>nul
 set cbf-fn=%cbf-pt%\bat.json
 
 exit/b
@@ -2807,7 +2807,7 @@ Aug-28-2023
 
 echo. & echo * Snippets backup folder.
 
-call pn it>nul
+call n it>nul
 set cbf-pt=%cbf-pt%\visual-studio-code-snippets
 set cbf-fn=%cbf-pt%\bat.json
 
@@ -2913,7 +2913,7 @@ Feb-3-2020
 
 echo. & echo * Job Search History.
 
-call pn jona>nul
+call n jona>nul
 set cbf-pt=%cbf-pt%\Find a Job
 call an br>nul
 
@@ -2997,7 +2997,7 @@ Sep-12-2023
 
 echo. & echo * Sailing.
 
-call pn dr
+call n dr
 set cbf-pt=%cbf-pt%\Sailing
 
 exit/b
@@ -3012,7 +3012,7 @@ Sep-22-2023
 
 echo. & echo * Browsers.
 
-call pn jona
+call n jona
 set cbf-gs=https://docs.google.com/spreadsheets/d/10tSDycsuYNkc2ACvw9YeclwAwKIiHNpX7YN7PzpcV9Y/edit#gid=2066608253
 
 exit/b
@@ -3068,7 +3068,7 @@ set cbf-url=https://www.bing.com/search?toncp=0^^^&FORM=hpcodx^^^&q=Bing+AI^^^&s
 
 exit/b
 
-rem call pn c>nul
+rem call n c>nul
 rem set cbf-lnk=%cbf-pt%\bing.url
 
 https://www.bing.com/search?toncp=0&FORM=hpcodx&q=Bing+AI&showconv=1
@@ -3311,7 +3311,7 @@ set cbf-pd=bogus-test
 set cbf-wo=c:\a\test3.docx
 set cbf-yt=https://www.youtube.com/watch?v=8WZmIdXZe3Q
 set cbf-url=xxx
-call pn vft
+call n vft
 set cbf-pdf=%cbf-pt%\Access Google's Web Service.pdf
 
 exit/b
@@ -3326,7 +3326,7 @@ Mar-31-2022
 
 echo. & echo * An overcomplicated(?) way to call a batch file.
 
-call pn cbf>nul
+call n cbf>nul
 
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-app=%cbf-pt%\t.bat
@@ -3383,7 +3383,7 @@ Jan-31-2022
 
 echo. & echo * %1.
 
-call pn emdo
+call n emdo
 
 set cbf-fn=%cbf-pt%\%1.asc
 
@@ -3401,7 +3401,7 @@ Oct-3-2023
 
 echo. & echo * %1.
 
-call pn emdo
+call n emdo
 
 set cbf-fn=%cbf-pt%\sai.bul
 
@@ -3417,7 +3417,7 @@ Oct-3-2023
 
 echo. & echo * Interview preparation code.
 
-call pn it>nul
+call n it>nul
 
 set cbf-pt=%cbf-pt%\interview-code
 
@@ -3434,7 +3434,7 @@ set cbf-pd=%1.asc
 
 echo. & echo * %cbf-pd%.
 
-call pn ro
+call n ro
 set cbf-fn=%cbf-pt%\%cbf-pd%
 
 exit/b
@@ -3498,7 +3498,7 @@ online comparison tool
 
 echo. & echo * Jonathan
 
-call pn dr>nul
+call n dr>nul
 set cbf-pt=%cbf-pt%\jonathan
 
 exit/b
@@ -3513,7 +3513,7 @@ lu:
 
 echo. & echo * Miscellany
 
-call pn jo>nul
+call n jo>nul
 set cbf-pt=%cbf-pt%\miscellany
 
 exit/b
@@ -3567,7 +3567,7 @@ Oct-13-2023
 
 echo. & echo * TheIncLab.
 
-call pn aa>nul
+call n aa>nul
 set cbf-pt=%cbf-pt%\theinclab
 
 exit/b
@@ -3590,7 +3590,7 @@ set cbf-pd=Breakaway
 
 echo. & echo * %cbf-pd%.
 
-call pn pict
+call n pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
 
 exit/b
@@ -3607,7 +3607,7 @@ set cbf-pd=Favorites
 
 echo. & echo * %cbf-pd%. All time favorite pictures.
 
-call pn pict
+call n pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
 
 exit/b
@@ -3633,7 +3633,7 @@ Sep-25-2020
 :nx
 
 echo. & echo * New and exciting.
-call pn dr
+call n dr
 set cbf-pt=%cbf-pt%\pictures\new and exciting
 
 exit/b
@@ -3645,7 +3645,7 @@ exit/b
 
 echo. & echo * Bahamian art.
 
-call pn pict
+call n pict
 set cbf-pd=bahamian art
 set cbf-pt=%cbf-pt%\%cbf-pd%
 
@@ -3660,7 +3660,7 @@ set cbf-pd=Work Safe
 
 echo. & echo * %cbf-pd%.
 
-call pn pict
+call n pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
 
 exit/b
@@ -3674,7 +3674,7 @@ set cbf-pd=Educational
 
 echo. & echo * %cbf-pd%.
 
-call pn pict
+call n pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
 
 exit/b
@@ -3690,7 +3690,7 @@ set cbf-pd=humor
 
 echo. & echo * %cbf-pd%.
 
-call pn pict
+call n pict
 set cbf-pt=%cbf-pt%\humor
 
 exit/b
@@ -3737,7 +3737,7 @@ set cbf-pd=hello-world
 
 echo. & echo * %cbf-pd%.
 
-call pn d>nul
+call n d>nul
 
 set cbf-fn=%cbf-pt%\%cbf-pd%.cs
 
@@ -3755,7 +3755,7 @@ set cbf-pd=fizz
 
 echo. & echo * %cbf-pd%.
 
-call pn d>nul
+call n d>nul
 set cbf-fn=%cbf-pt%\fizz-csharp\Program.cs
 
 exit/b
@@ -3771,7 +3771,7 @@ set cbf-pd=fizz
 
 echo. & echo * %cbf-pd%.
 
-call pn d>nul
+call n d>nul
 set cbf-fn=%cbf-pt%\%cbf-pd%.go
 
 exit/b
@@ -3787,7 +3787,7 @@ set cbf-pd=reverse-string
 
 echo. & echo * %cbf-pd%.
 
-call pn d>nul
+call n d>nul
 set cbf-fn=%cbf-pt%\%cbf-pd%.go
 
 exit/b
@@ -3804,7 +3804,7 @@ set cbf-pd=reverse-string
 
 echo. & echo * %cbf-pd%.
 
-call pn d>nul
+call n d>nul
 set cbf-fn=%cbf-pt%\reverse-string-csharp\Program.cs
 
 exit/b
@@ -3821,7 +3821,7 @@ set cbf-pd=fizz
 
 echo. & echo * %cbf-pd%.
 
-call pn d>nul
+call n d>nul
 set cbf-fn=%cbf-pt%\%cbf-pd%.js
 
 exit/b
@@ -3838,7 +3838,7 @@ set cbf-pd=reverse-string
 
 echo. & echo * %cbf-pd%. Reverses a string the manual way, without using a built-in function.
 
-call pn d>nul
+call n d>nul
 set cbf-fn=%cbf-pt%\%cbf-pd%.js
 
 exit/b
@@ -3855,7 +3855,7 @@ set cbf-pd=fizz
 
 echo. & echo * %cbf-pd%.
 
-call pn d>nul
+call n d>nul
 set cbf-fn=%cbf-pt%\%cbf-pd%.py
 
 exit/b
@@ -3885,7 +3885,7 @@ Jun-14-2018
 
 echo. & echo * Screenshots folder.
 
-call pn up>nul
+call n up>nul
 set cbf-pt=%cbf-pt%\pictures\screenshots
 
 exit/b
@@ -3906,7 +3906,7 @@ set cbf-pd=python-rest-api-tutorial
 
 echo. & echo * %cbf-pd%.
 
-call pn it>nul
+call n it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=qbLc5a9jdXo
@@ -3924,7 +3924,7 @@ Oct-31-2023
 
 echo. & echo * node-with-express-fireship-tutorial. Node.js Quickstart
 
-call pn it>nul
+call n it>nul
 set cbf-pt=%cbf-pt%\node-with-express-fireship-tutorial
 set cbf-gh=https://github.com/jonathans-razor/node-with-express-fireship-tutorial
 set cbf-url=https://fireship.io/courses/javascript/node-basics
@@ -3959,7 +3959,7 @@ Oct-10-2023
 
 echo. & echo * Angular Crash Course.
 
-call pn it>nul
+call n it>nul
 set cbf-pt=%cbf-pt%\angular-crash-course-by-traversy-media
 set cbf-gho=https://github.com/bradtraversy/angular-crash-2021
 set cbf-gh=https://github.com/jonathans-razor/angular-crash-course-by-traversy-media
@@ -3979,7 +3979,7 @@ set cbf-pd=d3-js-data-visualization-full-course
 
 echo. & echo * %cbf-pd%.
 
-call pn it>nul
+call n it>nul
 
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=https://github.com/jonathans-razor/%cbf-pd%
@@ -4045,7 +4045,7 @@ set cbf-pd=css-kata
 
 echo. & echo * %cbf-pd%. 
 
-call pn it>nul
+call n it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=Z4pCqK-V_Wo
@@ -4104,7 +4104,7 @@ set cbf-pd=graphql-crash-course
 
 echo. & echo * %cbf-pd%. 
 
-call pn it>nul
+call n it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=xMCnDesBggM
 set cbf-gh=https://github.com/jonathans-razor/%cbf-pd%
@@ -4125,7 +4125,7 @@ set cbf-pd=apollo-sandbox
 
 echo. & echo * %cbf-pd%. 
 
-call pn it>nul
+call n it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-url=https://studio.apollographql.com/sandbox/explorer/
 call an kr
@@ -4143,7 +4143,7 @@ set cbf-pd=k9s
 
 echo. & echo * %cbf-pd%. 
 
-call pn it>nul
+call n it>nul
 set cbf-gh=https://github.com/derailed/k9s/releases
 set cbf-yt=https://www.youtube.com/watch?v=q^
 qR0c-qcILI
@@ -4165,7 +4165,7 @@ Nov-15-2023
 
 echo. & echo * CBF table of contents.
 
-call pn cbf>nul
+call n cbf>nul
 set cbf-fn=%cbf-pt%\cbf-tc.txt
 
 exit/b
@@ -4183,7 +4183,7 @@ table-of-contents-series
 
 echo. & echo * Python table of contents.
 
-call pn d>nul
+call n d>nul
 set cbf-fn=%cbf-pt%\ph-tc.txt
 
 exit/b
@@ -4203,7 +4203,7 @@ table-of-contents-series
 
 echo. & echo * FFB table of contents.
 
-call pn f>nul
+call n f>nul
 
 set cbf-fn=%cbf-pt%\ffb-tc.txt
 
@@ -4223,7 +4223,7 @@ table-of-contents-series
 
 echo. & echo * DBF table of contents.
 
-call pn dbf>nul
+call n dbf>nul
 
 set cbf-fn=%cbf-pt%\dbf-tc.txt
 
@@ -4239,7 +4239,7 @@ table-of-contents-series
 
 echo. & echo * KCR table of contents. (Key Crusher)
 
-call pn dbf>nul
+call n dbf>nul
 set cbf-fn=%cbf-pt%\kc-tc.txt
 
 exit/b
@@ -4257,7 +4257,7 @@ table-of-contents-series
 
 echo. & echo * Share-zone table of contents.
 
-call pn s>nul
+call n s>nul
 set cbf-fn=%cbf-pt%\s-tc.txt
 
 exit/b
@@ -4276,7 +4276,7 @@ table-of-contents-series
 
 echo. & echo * CBF error levels/codes.
 
-call pn cbf>nul
+call n cbf>nul
 set cbf-fn=%cbf-pt%\cbf-el.txt
 
 exit/b
@@ -4292,7 +4292,7 @@ Jun-06-2022
 
 echo. & echo * CBF glossary
 
-call pn cbf>nul
+call n cbf>nul
 set cbf-fn=%cbf-pt%\cbf-gl.txt
 
 exit/b
@@ -4308,7 +4308,7 @@ Jun-06-2022
 
 echo. & echo * CBF Overview.
 
-call pn cbf>nul
+call n cbf>nul
 set cbf-fn=%cbf-pt%\cbf-ov.txt
 
 exit/b
@@ -4324,7 +4324,7 @@ Aug-28-2023
 
 echo. & echo * CBF style guide.
 
-call pn cbf>nul
+call n cbf>nul
 set cbf-fn=%cbf-pt%\cbf-sgd.txt
 
 exit/b
@@ -4339,7 +4339,7 @@ Jun-06-2022
 
 echo. & echo * Travel.
 
-call pn dr>nul
+call n dr>nul
 set cbf-pt=%cbf-pt%\travel
 
 exit/b
@@ -4408,7 +4408,7 @@ Feb-9-2022
 :clja
 :clipjam_podcasts
 
-call pn clp || exit/b
+call n clp || exit/b
 
 echo. & echo * Podcasts.
 
@@ -4426,7 +4426,7 @@ Jul-15-2018
 :audi
 :cja
 
-call pn clp || exit/b
+call n clp || exit/b
 
 echo. & echo * Audiobooks.
 
@@ -4491,7 +4491,7 @@ Jan-26-2022
 :
 :dec-6-2023
 echo. & echo * %1.
-call pn fj>nul
+call n fj>nul
 set cbf-jd=%cbf-pt%\%1.png
 
 exit/b
@@ -4506,7 +4506,7 @@ Dec-5-2023
 
 echo. & echo * Visual Studio Code user settings file.
 
-call pn apda>nul
+call n apda>nul
 set cbf-fn=%cbf-pt%\code\user\settings.json
 
 exit/b
@@ -4522,7 +4522,7 @@ Dec-14-2023
 
 echo. & echo * %1.
 
-call pn it>nul
+call n it>nul
 
 set cbf-pt=%cbf-pt%\ai-powered-command-line
 
@@ -4546,7 +4546,7 @@ exit/b
 
 echo. & echo * Open AI virtual environment.
 
-call pn it>nul
+call n it>nul
 
 set cbf-pt=%cbf-pt%\open-ai-virtual-environment
 
@@ -4576,7 +4576,7 @@ exit/b
 
 echo. & echo * Bash run commands.
 
-call pn home>nul
+call n home>nul
 set cbf-fn=%cbf-pt%\.bashrc
 
 exit/b
@@ -4591,7 +4591,7 @@ rem user profile folder.
 
 echo. & echo * XPS Bash run commands backup.
 
-call pn f>nul
+call n f>nul
 set cbf-fn=%cbf-pt%\.bashrc-xps-backup
 
 exit/b
@@ -4617,7 +4617,7 @@ exit/b
 
 echo. & echo * Keld Bash rc.
 
-call pn dbf>nul
+call n dbf>nul
 set cbf-fn=%cbf-pt%\.bashrc-keld-backup
 
 exit/b
@@ -4634,7 +4634,7 @@ Sep-01-2022
 
 echo. & echo. * Git global configuration file.
 
-call pn home>nul
+call n home>nul
 set cbf-fn=%cbf-pt%\.gitconfig
 
 exit/b
@@ -4651,7 +4651,7 @@ I don't know where the Git system configuration file is located.
 
 echo. & echo * Old Bash rc.
 
-call pn 1d>nul
+call n 1d>nul
 set cbf-fn=%cbf-pt%\Backups\Minishift\.bashrc
 
 exit/b
@@ -4680,7 +4680,7 @@ exit/b
 
 echo. & echo * html-tags-youtube-course.
 
-call pn it>nul
+call n it>nul
 set cbf-pt=%cbf-pt%\html-tags-youtube-course
 
 exit/b
@@ -4719,7 +4719,7 @@ exit/b
 
 echo. & echo * Reverse string for a language file.
 
-call pn d>nul
+call n d>nul
 
 set cbf-parser=%1
 set cbf-parser=%cbf-parser:~2,2%
@@ -4748,7 +4748,7 @@ exit/b
 
 echo. & echo * Fizz buzz for a language file.
 
-call pn d>nul
+call n d>nul
 
 set cbf-parser=%1
 set cbf-parser=%cbf-parser:~2,2%
@@ -4849,7 +4849,7 @@ exit/b
 echo. & echo * HarckerRank.
 
 call an nt>nul
-call pn it>nul
+call n it>nul
 set cbf-gs=https://docs.google.com/spreadsheets/d/1GEYx1kiMVIUhrzTK50fKF8mqK45Sl2vW4znU9cf1XDc/edit#gid=0
 set cbf-pt=%cbf-pt%\HackerRank
 set cbf-url=https://wwww.hackerrank.com
@@ -5006,7 +5006,7 @@ exit/b
 
 echo. & echo * map-of-the-united-states.
 
-call pn educ>nul
+call n educ>nul
 set cbf-fn=%cbf-pt%\map-of-the-united-states.webp
 
 exit/b
@@ -5021,7 +5021,7 @@ map of the united states
 
 echo. & echo * Better code imagery.
 
-call pn pict>nul
+call n pict>nul
 set cbf-pt=%cbf-pt%\Better Code Imagery
 
 exit/b
@@ -5065,7 +5065,7 @@ set cbf-pd=vue-3-and-composition-api-tutorial
 
 echo. & echo * %cbf-pd%. Builds an expense tracker followed tutorial by Traversy Media.
 
-call pn it>nul
+call n it>nul
 set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=%cbf-gh%/%cbf-pd%
@@ -5137,7 +5137,7 @@ set cbf-pd=vue-expense-tracker
 
 echo. & echo * %cbf-pd% source project.
 
-call pn repo>nul
+call n repo>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-gh=https://github.com/bradtraversy/vue-expense-tracker
 set cbf-lh=http://localhost:5173
@@ -5154,7 +5154,7 @@ Jan-18-2024
 
 echo. & echo * Hello world from Vue.js.
 
-call pn d>nul
+call n d>nul
 set cbf-fn=%cbf-pt%\hello-world-vuejs\index.html
 
 exit/b
@@ -5246,7 +5246,7 @@ exit/b
 
 echo. & echo * Vue button.
 
-call pn d>nul
+call n d>nul
 set cbf-pt=%cbf-pt%\vue-button
 
 exit/b
@@ -5296,7 +5296,7 @@ exit/b
 
 echo. & echo * Vue %1.
 
-call pn d>nul
+call n d>nul
 set cbf-pt=%cbf-pt%\hello-world-vuejs
 set cbf-fn=%cbf-pt%\index.html
 
@@ -5312,7 +5312,7 @@ exit/b
 
 echo. & echo * Vue application folders.
 
-call pn vu>nul
+call n vu>nul
 set cbf-pt=%cbf-pt%\%1
 set cbf-fn=%cbf-pt%\index.html
 
@@ -5325,7 +5325,7 @@ exit/b
 
 echo. & echo * Vue application application 6.
 
-call pn vu>nul
+call n vu>nul
 set cbf-pt=%cbf-pt%\%1
 set cbf-fn=%cbf-pt%\index.html
 
@@ -5506,7 +5506,7 @@ Jan-24-2018
 
 echo. & echo *  OBX.
 
-call pn repo>nul
+call n repo>nul
 set cbf-pt=%cbf-pt%\obx
 set cbf-ex=%dropbox%\savannah\Excels\obx.xls
 set cbf-fn=%cbf-pt%\index.md
@@ -5557,7 +5557,7 @@ Nov-10-2023
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\%1
 set cbf-url=https://vuejs.org/tutorial/#step-1
 
@@ -5573,7 +5573,7 @@ Created using "Vue create" (not latest).
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-2
 
@@ -5586,7 +5586,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-3
 
@@ -5599,7 +5599,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-4
 
@@ -5612,7 +5612,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-5
 
@@ -5625,7 +5625,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-6
 
@@ -5638,7 +5638,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-7
 
@@ -5651,7 +5651,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-8
 
@@ -5664,7 +5664,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-9
 
@@ -5677,7 +5677,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-10
 
@@ -5690,7 +5690,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt11
 set cbf-url=https://vuejs.org/tutorial/#step-11
 
@@ -5703,7 +5703,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt11
 set cbf-url=https://vuejs.org/tutorial/#step-12
 
@@ -5716,7 +5716,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt11
 set cbf-url=https://vuejs.org/tutorial/#step-13
 
@@ -5729,7 +5729,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt11
 set cbf-url=https://vuejs.org/tutorial/#step-14
 
@@ -5742,7 +5742,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\vt11
 set cbf-url=https://vuejs.org/tutorial/#step-15
 
@@ -5755,7 +5755,7 @@ exit/b
 
 echo. & echo * module-bundlers-explained.
 
-call pn it>nul
+call n it>nul
 set cbf-pt=%cbf-pt%\module-bundlers-explained
 set cbf-gh=https://github.com/jonathans-razor/module-bundlers-explained
 set cbf-yt=https://www.youtube.com/playlist?list=PLV-KEAAMgUZB3pnXE0ShgSg1C73aDcw7P
@@ -5773,7 +5773,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\%1
 set cbf-url=https://vuejs.org/examples/#hello-world
 
@@ -5786,7 +5786,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
 set cbf-url=https://vuejs.org/examples/#handling-input
 
@@ -5799,7 +5799,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
 set cbf-url=https://vuejs.org/examples/#attribute-bindings
 
@@ -5812,7 +5812,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
 set cbf-url=https://vuejs.org/examples/#conditionals-and-loops
 
@@ -5825,7 +5825,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
 set cbf-url=https://vuejs.org/examples/#form-bindings
 
@@ -5838,7 +5838,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
 set cbf-url=https://vuejs.org/examples/#simple-component
 
@@ -5851,7 +5851,7 @@ exit/b
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
 set cbf-url=https://vuejs.org/examples/#markdown
 
@@ -5875,7 +5875,7 @@ const output = computed(() => marked(input.value))
 
 echo. & echo * %1.
 
-call pn vute>nul
+call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
 set cbf-url=https://vuejs.org/examples/#markdown
 
