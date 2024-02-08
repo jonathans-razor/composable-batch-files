@@ -5883,7 +5883,24 @@ exit/b
 
 rem:
 What do you notice about this code? 
+watchEffect(async () => {
 
 
 
-:_ (!efn)
+::_
+:ve9
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#grid
+
+exit/b
+
+rem:
+What do you notice about this code? 
+
+
+
+:_ (!efn) qq

@@ -602,6 +602,7 @@ exit/b
 :ve6
 :ve7
 :ve8
+:ve9
 
 echo. & echo * Run %1.
 
