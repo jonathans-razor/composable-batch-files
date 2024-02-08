@@ -5940,4 +5940,23 @@ I put the word "export" in front of the word "function" in util.js and it starte
 
 
 
+::_
+:ve12
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#modal
+
+exit/b
+
+rem:
+
+What do you notice about this code?
+
+I don't remember seeing the teleport HTML tag before.
+
+
+
 :_ (!efn) qq
