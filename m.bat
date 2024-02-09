@@ -4983,11 +4983,9 @@ Nov-14-2023
 
 echo. & echo * Double click on latest item.
 
-if "%~2" == "" (
-  err Parameter 2, folder alias, is required.
+if not "%~2" == "" (
+  call t %2 || exit/b
 )
-
-call t %2 || exit/b
 
 dir /b /o-d>c:\a\latest-item-results.txt
 
