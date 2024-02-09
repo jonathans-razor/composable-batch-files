@@ -5997,4 +5997,25 @@ It's cool that it uses local storage.
 
 
 
-:_ (!efn) qjq
+::_
+:ve15
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#counter
+
+exit/b
+
+rem:
+
+What do you notice about this code?
+
+ref(0) is a reactive reference, which means that the value can be used in a reactive context, 
+such as in the template of a Vue component, and Vue will automatically track changes to the 
+value and update the DOM when the value changes.
+
+
+
+:_ (!efn) qq
