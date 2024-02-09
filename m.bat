@@ -4502,39 +4502,6 @@ Jan-18-2024
 
 
 ::_
-:start-icj
-
-echo. & echo * Start ICJ.
-
-call %0 lnk-icj
-call mj icj
-
-exit/b
-
-
-
-::_
-:lnk-icj
-
-echo. & echo * Initialize environment for %1.
-
-set path=c:\aa\repositories\composable-batch-files;%path%
-
-call %0 set-default-browser kr
-call %0 set-default-repository-folder c-aa-repos
-call %0 set-default-text-editor vc
-call set-default-secondary-dictionary.bat
-
-col 1
-
-exit/b
-
-fcd:
-Jan-26-2024
-
-
-
-::_
 :lnk-xps
 
 echo. & echo * Initialize environment for %1.
