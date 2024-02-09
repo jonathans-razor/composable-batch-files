@@ -3088,25 +3088,6 @@ Apr-8-2022
 
 
 ::_
-:icj
-
-echo. & echo * Open ICJ affinity files.
-
-call t colo>nul
-
-call e tasks.txt
-call e notes.txt
-call e nj
-
-exit/b
-
-lu:
-Feb-9-2024
-Jan-26-2024
-
-
-
-::_
 :pete
 
 echo. & echo * Open Pete files.
