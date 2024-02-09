@@ -6071,6 +6071,9 @@ rem:
 
 What do you notice about this code?
 
+The selected code `onUnmounted` is a function from Vue.js's Composition API. This function is 
+used to run some code when a Vue component is unmounted from the DOM, which is similar to the 
+`destroyed` lifecycle hook in Vue 2.
 
 
 

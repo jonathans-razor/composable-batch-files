@@ -1414,7 +1414,6 @@ exit/b
 echo. & echo * Use Vue project %.
 
 call t ve1>nul
-
 cd %cbf-pt%\src
 
 call fe App.vue || exit/b
