@@ -5757,6 +5757,18 @@ exit/b
 
 
 
+:_
+:aip
+
+echo. & echo * aip.
+
+call pn it>nul
+set cbf-fn=%cbf-pt%\Miscellany\aip.png
+
+exit/b
+
+
+
 :_+ Vue Example Family (!fcve)
 
 
@@ -6074,6 +6086,23 @@ What do you notice about this code?
 The selected code `onUnmounted` is a function from Vue.js's Composition API. This function is 
 used to run some code when a Vue component is unmounted from the DOM, which is similar to the 
 `destroyed` lifecycle hook in Vue 2.
+
+
+
+::_
+:ve19
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#crud
+
+exit/b
+
+rem:
+What do you notice about this code?
+
 
 
 
