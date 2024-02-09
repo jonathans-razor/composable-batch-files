@@ -23,21 +23,19 @@ echo. & echo  * Load file name or contents onto clipboard.
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo  * Parameter 1:
-echo      If contains period, operates on the current folder filename.
-echo      If alias, operates on alias' filename.
+echo    If contains period, operates on the current folder filename. Loads the filename with no path onto the clipboard.
+echo    If alias, operates on alias' filename.
 
 echo. & echo  * Parameter 2 (Optional):
-echo      If /n, loads the filename with no path onto the clipboard.
-echo      If /c, loads the filename's contents onto the clipboard.
+echo    If /c, loads the filename's contents onto the clipboard.
 
 echo. & echo    Batch file style: Multipurpose
 
 echo. & echo  * Samples:
-echo      %~n0 ga
-echo      %~n0 ga /n
-echo      %~n0 ga /c
-echo      %~n0 j1.txt
-echo      %~n0 j1.txt /c
+echo    %~n0 ga
+echo    %~n0 ga /c
+echo    %~n0 j1.txt
+echo    %~n0 j1.txt /c
 
 exit/b
 
