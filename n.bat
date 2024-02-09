@@ -6037,4 +6037,23 @@ Cool code. It does a cool thing in very few lines of code!
 
 
 
+::_
+:ve17
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#flight-booker
+
+exit/b
+
+rem:
+
+What do you notice about this code?
+
+Cool code. I used ctrl+e a lot to explain things.
+
+
+
 :_ (!efn) qq
