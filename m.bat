@@ -3096,11 +3096,12 @@ call t colo>nul
 
 call e tasks.txt
 call e notes.txt
-call vj nj
+call e nj
 
 exit/b
 
 lu:
+Feb-9-2024
 Jan-26-2024
 
 
