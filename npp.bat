@@ -12,12 +12,13 @@ goto main
 cls
 echo. & echo * Run Notepad++ while leveraging the e.bat decision algorithm.
 
-echo. & echo * Usage: %~n0 [space separated parameter(s)]
+echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1:
-echo  
+echo  Alias of file you wish to edit.
+echo   If left blank, Notepad is opened.
 
-echo. & echo * Batch file style: Multipurpose
+echo. & echo   Batch file style: Multipurpose
 
 echo. & echo * Samples:
 echo   %~n0 
