@@ -6102,7 +6102,43 @@ exit/b
 
 rem:
 What do you notice about this code?
+I added an alert box for when the user clicks create and there is not valid first and last name.
 
+
+
+::_
+:ve20
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#crud
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+The argument passed to shallowReactive is [[]], which is an array containing an empty array. 
+This means that history is initialized as a reactive object that contains a single element, 
+which is an empty array.
+
+
+
+::_
+:ve21
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#crud
+
+exit/b
+
+rem:
+What do you notice about this code?
 
 
 
