@@ -6056,4 +6056,22 @@ Cool code. I used ctrl+e a lot to explain things.
 
 
 
+::_
+:ve18
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#timer
+
+exit/b
+
+rem:
+
+What do you notice about this code?
+
+
+
+
 :_ (!efn) qq
