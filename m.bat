@@ -4469,18 +4469,6 @@ exit/b
 
 
 ::_
-:start-icj
-
-echo. & echo * Start ICJ.
-
-call %0 lnk-icj
-call m icj
-
-exit/b
-
-
-
-::_
 :start-sp7
 
 echo. & echo * Start SP7.
@@ -4510,6 +4498,18 @@ exit/b
 
 fcd:
 Jan-18-2024
+
+
+
+::_
+:start-icj
+
+echo. & echo * Start ICJ.
+
+call %0 lnk-icj
+call mj icj
+
+exit/b
 
 
 
@@ -4599,72 +4599,6 @@ if "%~2" == "" call n no
 if not "%~2" == "" call n %2
 
 set cbf-default-text-editor=%cbf-app%
-
-exit/b
-
-
-
-::_
-:startup-lnk-keld
-
-call %0 lnk-keld
-
-call m a
-
-exit/b
-
-
-
-::_
-:lnk-keld
-
-echo. & echo * Initialize Keld environment.
-
-set JAVA_TOOL_OPTIONS=
-
-rem Order matters. Mar-2-2022
-set cbf-repo=c:\repos
-
-rem set path=%path%;c:\repositories\composable-batch-files
-rem set path=%path%;C:\Program Files (x86)\Java\jre1.8.0_321\bin
-
-call an no>nul
-set cbf-default-text-editor=%cbf-app%
-
-call an edge>nul
-set cbf-default-browser=%cbf-app%
-
-rem Created here as a reminder that this is set in your
-rem local environment variable.
-rem This may be incorrect.
-set HOME=%userprofile%
-
-exit/b
-
-
-
-::_
-:lnk-vdi
-:vdi-cbf-rc
-
-echo. & echo * Initialize VDI environment.
-
-rem Order matters. Mar-2-2022
-set cbf-repo=w:\git-repos
-
-set path=%path%;w:\git-repos\vdi-batch-files
-set path=%path%;w:\git-repos\Composable-Batch-Files
-set path=%path%;C:\Program Files\Java\jdk1.8.0_301\bin
-
-call an no>nul
-set cbf-default-text-editor=%cbf-app%
-
-call an edge
-set cbf-default-browser=%cbf-app%
-
-rem Created here as a reminder that this is set in your
-rem local environment variable.
-set HOME=W:\CYGWIN\home\[put--name-of-user-of-interest-here]
 
 exit/b
 
