@@ -6018,4 +6018,23 @@ value and update the DOM when the value changes.
 
 
 
+::_
+:ve16
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#temperature-converter
+
+exit/b
+
+rem:
+
+What do you notice about this code?
+
+Cool code. It does a cool thing in very few lines of code!
+
+
+
 :_ (!efn) qq
