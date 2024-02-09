@@ -5853,6 +5853,10 @@ set cbf-url=https://vuejs.org/examples/#simple-component
 
 exit/b
 
+rem:
+What do you notice about this code? 
+rem qjq
+
 
 
 ::_
@@ -5910,7 +5914,7 @@ exit/b
 rem:
 What do you notice about this code?
 
-Very nice type ahead search and sorting features.
+Very nice type ahead filter/search and sorting features.
 
 
 
@@ -5926,7 +5930,6 @@ set cbf-url=https://vuejs.org/examples/#tree
 exit/b
 
 rem:
-
 What do you notice about this code?
 
 Cool Treeview. The data doesn't seemed to be saved, for example, to local storage.
@@ -5945,7 +5948,6 @@ set cbf-url=https://vuejs.org/examples/#svg
 exit/b
 
 rem:
-
 What do you notice about this code?
 
 I put the word "export" in front of the word "function" in util.js and it started working.
@@ -5964,7 +5966,6 @@ set cbf-url=https://vuejs.org/examples/#modal
 exit/b
 
 rem:
-
 What do you notice about this code?
 
 I don't remember seeing the teleport HTML tag before.
@@ -5983,7 +5984,6 @@ set cbf-url=https://vuejs.org/examples/#list-transition
 exit/b
 
 rem:
-
 What do you notice about this code?
 
 I like the use of the random insert of new list items.
@@ -6004,7 +6004,6 @@ exit/b
 rem:
 
 What do you notice about this code?
-
 It's cool that it uses local storage.
 
 
@@ -6021,7 +6020,6 @@ set cbf-url=https://vuejs.org/examples/#counter
 exit/b
 
 rem:
-
 What do you notice about this code?
 
 ref(0) is a reactive reference, which means that the value can be used in a reactive context, 
@@ -6042,7 +6040,6 @@ set cbf-url=https://vuejs.org/examples/#temperature-converter
 exit/b
 
 rem:
-
 What do you notice about this code?
 
 Cool code. It does a cool thing in very few lines of code!
@@ -6061,7 +6058,6 @@ set cbf-url=https://vuejs.org/examples/#flight-booker
 exit/b
 
 rem:
-
 What do you notice about this code?
 
 Cool code. I used ctrl+e a lot to explain things.
@@ -6080,7 +6076,6 @@ set cbf-url=https://vuejs.org/examples/#timer
 exit/b
 
 rem:
-
 What do you notice about this code?
 
 The selected code `onUnmounted` is a function from Vue.js's Composition API. This function is 
@@ -6102,6 +6097,7 @@ exit/b
 
 rem:
 What do you notice about this code?
+
 I added an alert box for when the user clicks create and there is not valid first and last name.
 
 
@@ -6133,12 +6129,14 @@ echo. & echo * %1.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#crud
+set cbf-url=
 
 exit/b
 
 rem:
 What do you notice about this code?
+
+Spreadsheet making code.
 
 
 
