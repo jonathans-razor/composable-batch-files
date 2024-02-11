@@ -4502,6 +4502,7 @@ Jan-18-2024
 
 
 ::_
+:init-xps
 :lnk-xps
 
 echo. & echo * Initialize environment for %1.

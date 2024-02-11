@@ -68,6 +68,7 @@ Composable Batch Files (CBF) - Table of Contents
      edr  Edit a relative path constructed filename
      edx  Edit file - back office operation.
       el  Show or clear errorl level.
+     env  Open environment dialogue.
      err  Show error graphic.
       ex  Run Excel with or without a filename alias parameter.
 example-  Prefix for files written by other authors for learning and comparison purposes.

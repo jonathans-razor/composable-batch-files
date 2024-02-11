@@ -1,16 +1,22 @@
 @echo off
+
 if "%~1" == "?"goto help
 if "%~1" == "" goto help
+
 goto main
 
 
 
 :_
 :help
+
 echo. & echo * Use jar to inspect EAR files.
+
 echo. & echo * Usage: %0 [space separated parameter(s)]
-echo. & echo Parameter 1: Name of EAR file in the current folder.
-echo. & echo Batch file style: Single purpose
+echo. & echo   Parameter 1: Name of EAR file in the current folder.
+
+echo. & echo   Batch file style: Single purpose
+
 exit/b
 
 
