@@ -1853,7 +1853,6 @@ exit/b
 :fn
 :idv
 :emdo
-:r
 :res
 :mcr
 :resmc
