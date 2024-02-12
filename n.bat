@@ -5486,7 +5486,7 @@ Nov-10-2023
 
 
 
-:_;Vue Tutorial Family (!fcvt)
+:_+ Vue Tutorial Family (!fcvt) - There are 15 official Vue tutorials.
 
 
 
@@ -5502,6 +5502,9 @@ set cbf-url=https://vuejs.org/tutorial/#step-1
 exit/b
 
 rem:
+What do you notice about this code? 
+
+Simple app.
 
 This app was created using "Vue create" (not latest). Bare bones features.
 
@@ -5510,7 +5513,7 @@ This app was created using "Vue create" (not latest). Bare bones features.
 ::_
 :vt2
 
-echo. & echo * %1.
+echo. & echo * %1. Make dynamic.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -5518,12 +5521,17 @@ set cbf-url=https://vuejs.org/tutorial/#step-2
 
 exit/b
 
+rem:
+What do you notice about this code? 
+
+Made dynamic.
+
 
 
 ::_
 :vt3
 
-echo. & echo * %1.
+echo. & echo * %1. Make red.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -5531,18 +5539,27 @@ set cbf-url=https://vuejs.org/tutorial/#step-3
 
 exit/b
 
+rem:
+What do you notice about this code? 
+Add the title class to the h1 tag.
+
 
 
 ::_
 :vt4
 
-echo. & echo * %1.
+echo. & echo * %1. Event listener.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-4
 
 exit/b
+
+rem:
+What do you notice about this code? 
+ref(0) assigned to count variable.
+
 
 
 
@@ -5557,6 +5574,10 @@ set cbf-url=https://vuejs.org/tutorial/#step-5
 
 exit/b
 
+rem:
+What do you notice about this code? 
+Simplified form binding.
+
 
 
 ::_
@@ -5569,6 +5590,10 @@ set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-6
 
 exit/b
+
+rem:
+What do you notice about this code? 
+Cool toggle value.
 
 
 
@@ -5583,6 +5608,10 @@ set cbf-url=https://vuejs.org/tutorial/#step-7
 
 exit/b
 
+rem:
+What do you notice about this code? 
+List buildihg.
+
 
 
 ::_
@@ -5595,6 +5624,10 @@ set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-8
 
 exit/b
+
+rem:
+What do you notice about this code? 
+rem qq
 
 
 
@@ -5609,6 +5642,9 @@ set cbf-url=https://vuejs.org/tutorial/#step-9
 
 exit/b
 
+rem:
+What do you notice about this code? 
+
 
 
 ::_
@@ -5621,6 +5657,9 @@ set cbf-pt=%cbf-pt%\vt1
 set cbf-url=https://vuejs.org/tutorial/#step-10
 
 exit/b
+
+rem:
+What do you notice about this code? 
 
 
 
@@ -5635,6 +5674,9 @@ set cbf-url=https://vuejs.org/tutorial/#step-11
 
 exit/b
 
+rem:
+What do you notice about this code? 
+
 
 
 ::_
@@ -5647,6 +5689,9 @@ set cbf-pt=%cbf-pt%\vt11
 set cbf-url=https://vuejs.org/tutorial/#step-12
 
 exit/b
+
+rem:
+What do you notice about this code? 
 
 
 
@@ -5661,6 +5706,9 @@ set cbf-url=https://vuejs.org/tutorial/#step-13
 
 exit/b
 
+rem:
+What do you notice about this code? 
+
 
 
 ::_
@@ -5674,6 +5722,9 @@ set cbf-url=https://vuejs.org/tutorial/#step-14
 
 exit/b
 
+rem:
+What do you notice about this code? 
+
 
 
 ::_
@@ -5686,6 +5737,9 @@ set cbf-pt=%cbf-pt%\vt11
 set cbf-url=https://vuejs.org/tutorial/#step-15
 
 exit/b
+
+rem:
+What do you notice about this code? 
 
 
 
@@ -5728,7 +5782,7 @@ exit/b
 
 
 
-:_+ Vue Example Family (!fcve)
+:_+ Vue Example Family (!fcve) - There are 21 official Vue examples.
 
 
 
@@ -5785,7 +5839,6 @@ rem:
 What do you notice about this code? 
 
 Toggling text color.
-rem qq
 
 
 
@@ -5847,7 +5900,7 @@ This code is a very plain list that doesn't do anything.
 ::_
 :ve7
 
-echo. & echo * %1.
+echo. & echo * %1. Markdown Editor.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -6128,7 +6181,7 @@ Spreadsheet making code.
 ::_
 :ve22
 
-echo. & echo * %1. Ve item from here and beyond are custom items created by me.
+echo. & echo * %1. Ve items from here and beyond are custom items created by me. Feb-12-2024
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1

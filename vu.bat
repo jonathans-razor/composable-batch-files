@@ -357,7 +357,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt1>nul
-call cp 1-
+call cp vt1-
 call t vt1>nul
 call nm ruse
 call lh 8080
@@ -375,7 +375,7 @@ Created using "Vue create" (not latest).
 echo. & echo * Run %1.
 
 call t vt1>nul
-call cp 2-
+call cp vt2
 call t vt1>nul
 call nm ruse
 call lh 8080
@@ -390,7 +390,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt1>nul
-call cp 3-
+call cp vt3
 call t vt1>nul
 call nm ruse
 call lh 8080
@@ -405,7 +405,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt1>nul
-call cp 4-
+call cp vt4
 call t vt1>nul
 call nm ruse
 call lh 8080
@@ -420,7 +420,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt1>nul
-call cp 5-
+call cp vt5
 call t vt1>nul
 call nm ruse
 call lh 8080
@@ -435,7 +435,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt1>nul
-call cp 6-
+call cp vt6
 call t vt1>nul
 call nm ruse
 call lh 8080
@@ -450,7 +450,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt1>nul
-call cp 7-
+call cp vt7
 call t vt1>nul
 call nm ruse
 call lh 8080
@@ -465,7 +465,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt1>nul
-call cp 8-
+call cp vt8
 call t vt1>nul
 call nm ruse
 call lh 8080
@@ -480,7 +480,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt1>nul
-call cp 9-
+call cp vt9
 call t vt1>nul
 call nm ruse
 call lh 8080
@@ -495,7 +495,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt1>nul
-call cp 10-
+call cp vt10-
 call t vt1>nul
 call nm ruse
 call lh 8080
@@ -510,7 +510,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt11>nul
-call cp 11
+call cp vt11
 call t vt11>nul
 call nm ruse
 call lh 8080
@@ -525,7 +525,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt11>nul
-call cp 12
+call cp vt12
 call t vt11>nul
 call nm ruse
 call lh 8080
@@ -540,7 +540,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt11>nul
-call cp 13
+call cp vt13
 call t vt11>nul
 call nm ruse
 call lh 8080
@@ -555,7 +555,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt11>nul
-call cp 14a
+call cp vt14a
 call t vt11>nul
 call nm ruse
 call lh 8080
@@ -570,7 +570,7 @@ exit/b
 echo. & echo * Run %1.
 
 call t vt11>nul
-call cp 14
+call cp vt14
 call t vt11>nul
 call nm ruse
 call lh 8080
@@ -584,12 +584,16 @@ exit/b
 
 echo. & echo * Run %1.
 
-call cp 15
+call cp vt15
 call t vt11>nul
 call nm ruse
 call lh 8080
 
 exit/b
+
+
+
+:_+ Run VE Family (!fcrve)
 
 
 

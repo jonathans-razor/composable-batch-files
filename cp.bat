@@ -1242,21 +1242,21 @@ exit/b
 
 
 
-:_+ Copy Vue Tutorials Family
+:_+ Copy Vue Tutorials Family (!fccpvt)
 
 
 
 ::_
-:1-
-:2-
-:3-
-:4-
-:5-
-:6-
-:7-
-:8-
-:9-
-:10
+:vt1
+:vt2
+:vt3
+:vt4
+:vt5
+:vt6
+:vt7
+:vt8
+:vt9
+:vt10
 
 echo. & echo * Use Vue project %.
 
@@ -1266,14 +1266,15 @@ cd %cbf-pt%\src
 call fe App.vue || exit/b
 
 echo.
-xcopy /y %1* App.vue
+
+xcopy /y %1-* App.vue
 
 exit/b
 
 
 
 ::_
-:11
+:vt11
 
 echo. & echo * Use Vue project %.
 
@@ -1283,15 +1284,15 @@ cd %cbf-pt%\src
 call fe App.vue || exit/b
 
 echo.
-xcopy /y 11-components.vue App.vue
-xcopy /y 11-childcomp.vue ChildComp.vue
+xcopy /y vt11-components.vue App.vue
+xcopy /y vt11-childcomp.vue ChildComp.vue
 
 exit/b
 
 
 
 ::_
-:12
+:vt12
 
 echo. & echo * Use Vue project %.
 
@@ -1301,15 +1302,15 @@ cd %cbf-pt%\src
 call fe App.vue || exit/b
 
 echo.
-xcopy /y 12-props.vue App.vue
-xcopy /y 12-childcomp.vue ChildComp.vue
+xcopy /y vt12-props.vue App.vue
+xcopy /y vt12-childcomp.vue ChildComp.vue
 
 exit/b
 
 
 
 ::_
-:13
+:vt13
 
 echo. & echo * Use Vue project %.
 
@@ -1319,15 +1320,15 @@ cd %cbf-pt%\src
 call fe App.vue || exit/b
 
 echo.
-xcopy /y 13-emits.vue App.vue
-xcopy /y 13-childcomp.vue ChildComp.vue
+xcopy /y vt13-emits.vue App.vue
+xcopy /y vt13-childcomp.vue ChildComp.vue
 
 exit/b
 
 
 
 ::_
-:14a
+:vt14a
 
 echo. & echo * Use Vue project %.
 
@@ -1337,7 +1338,7 @@ cd %cbf-pt%\src
 call fe App.vue || exit/b
 
 echo.
-xcopy /y 14a-slots.vue App.vue
+xcopy /y vt14a-slots.vue App.vue
 
 exit/b
 
@@ -1355,8 +1356,8 @@ This code in package.json allowed me to compile without the "unused variable" wa
 
 
 ::_
-:14
-:14b
+:vt14
+:vt14b
 
 echo. & echo * Use Vue project %.
 
@@ -1366,15 +1367,14 @@ cd %cbf-pt%\src
 call fe App.vue || exit/b
 
 echo.
-xcopy /y 14-slots.vue App.vue
-xcopy /y 14-childcomp.vue ChildComp.vue
+xcopy /y vt14-slots.vue App.vue
+xcopy /y 1vt4-childcomp.vue ChildComp.vue
 
 exit/b
 
 
 
 ::_
-:15
 :vt15
 
 echo. & echo * Use Vue project %.
@@ -1385,9 +1385,13 @@ cd %cbf-pt%\src
 call fe App.vue || exit/b
 
 echo.
-xcopy /y 15-confetti.vue App.vue
+xcopy /y vt15-confetti.vue App.vue
 
 exit/b
+
+
+
+:_+  Copy Vue Examples Family (!fccpve)
 
 
 
@@ -1424,7 +1428,7 @@ cd %cbf-pt%\src
 call fe App.vue || exit/b
 
 echo.
-xcopy /y %1*.vue App.vue
+xcopy /y %1-*.vue App.vue
 
 exit/b
 
