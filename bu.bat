@@ -318,6 +318,17 @@ exit/b
 
 
 :_
+:snip
+
+echo. & echo * Snippets.
+
+call cp pp snip busnip
+
+exit/b
+
+
+
+:_
 
 :brc
 
@@ -326,7 +337,7 @@ if -%2-==-/r- goto restore-brc
 
 cls
 
-call el /c
+call el /c>nul
 
 echo. & echo * Back up .brc.
 
@@ -337,20 +348,6 @@ if errorlevel 1 exit/b
 call m cona
 
 if errorlevel 1 exit/b
-
-if "%cbf-cona%" == "vdi" (
-  echo. & echo Create VDI brc backup.
-  echo.
-  xcopy /d /y .bashrc w:\git-repos\composable-batch-files\.bashrc-vdi-backup
-  exit/b
-) else if "%cbf-cona%" == "keld" (
-  echo. & echo * Create Keld brc backup.
-  echo.
-  @echo on
-  xcopy /d /y .bashrc %cbf-repo%\composable-batch-files\.bashrc-keld-backup
-  @echo off
-  exit/b
-)
 
 echo. & echo * Create XPS brc backup.
 echo.
@@ -375,17 +372,6 @@ exit/b
 
 echo. & echo Parameter Descriptions:
 echo. & echo Parameter 2: If equal to "/r", restore instead of back up the brc file.
-
-exit/b
-
-
-
-:_
-:snip
-
-echo. & echo * Snippets.
-
-call cp pp snip busnip
 
 exit/b
 
