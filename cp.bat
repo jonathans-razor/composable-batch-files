@@ -1339,6 +1339,7 @@ call fe App.vue || exit/b
 
 echo.
 xcopy /y vt14a-slots.vue App.vue
+xcopy /y vt14-childcomp.vue ChildComp.vue
 
 exit/b
 

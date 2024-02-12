@@ -5627,7 +5627,7 @@ exit/b
 
 rem:
 What do you notice about this code? 
-rem qq
+Computed values are complicated.
 
 
 
@@ -5645,12 +5645,14 @@ exit/b
 rem:
 What do you notice about this code? 
 
+Lifecycle refs need more of my attention.
+
 
 
 ::_
 :vt10
 
-echo. & echo * %1.
+echo. & echo * %1. Watchers.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -5660,6 +5662,7 @@ exit/b
 
 rem:
 What do you notice about this code? 
+Watchers are difficult to understand.
 
 
 
@@ -5676,6 +5679,7 @@ exit/b
 
 rem:
 What do you notice about this code? 
+How to load a child component.
 
 
 
@@ -5692,6 +5696,7 @@ exit/b
 
 rem:
 What do you notice about this code? 
+Hmm. Properties passing between child and parent.
 
 
 
@@ -5708,6 +5713,7 @@ exit/b
 
 rem:
 What do you notice about this code? 
+Emitting from child component.
 
 
 
@@ -5724,6 +5730,7 @@ exit/b
 
 rem:
 What do you notice about this code? 
+Fallback code is interesting.
 
 
 
@@ -5740,6 +5747,7 @@ exit/b
 
 rem:
 What do you notice about this code? 
+Confetti is fun.
 
 
 
