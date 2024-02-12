@@ -5057,6 +5057,7 @@ echo. & echo * Vue testing.
 
 call n it>nul
 set cbf-docs=https://vuejs.org/guide/introduction.html
+set cbf-lh=http://localhost:5173
 set cbf-pt=%cbf-pt%\vue-testing
 set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
 
@@ -5714,6 +5715,19 @@ exit/b
 
 
 
+:_
+:arc
+:arch
+
+echo. & echo * Batch file code archive.
+
+call n bel>nul
+set cbf-fn=%cbf-pt%\archive.bat
+
+exit/b
+
+
+
 :_+ Vue Example Family (!fcve)
 
 
@@ -5730,6 +5744,9 @@ set cbf-url=https://vuejs.org/examples/#hello-world
 exit/b
 
 rem:
+What do you notice about this code? 
+
+Simple hello world.
 
 This app was built using "npm create vue@latest %2" which contains fancy features.
 
@@ -5746,6 +5763,11 @@ set cbf-url=https://vuejs.org/examples/#handling-input
 
 exit/b
 
+rem:
+What do you notice about this code? 
+
+Preventing navigation is cool.
+
 
 
 ::_
@@ -5758,6 +5780,12 @@ set cbf-pt=%cbf-pt%\ve1
 set cbf-url=https://vuejs.org/examples/#attribute-bindings
 
 exit/b
+
+rem:
+What do you notice about this code? 
+
+Toggling text color.
+rem qq
 
 
 
@@ -5772,6 +5800,11 @@ set cbf-url=https://vuejs.org/examples/#conditionals-and-loops
 
 exit/b
 
+rem:
+What do you notice about this code? 
+
+Some cool functionality.
+
 
 
 ::_
@@ -5783,6 +5816,11 @@ call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
 set cbf-url=https://vuejs.org/examples/#form-bindings
 
+rem:
+What do you notice about this code? 
+
+The formatting looks bad in Chrome but good in Brave.
+
 exit/b
 
 
@@ -5793,6 +5831,7 @@ exit/b
 echo. & echo * %1.
 
 call n vute>nul
+set cbf-fn=TodoItem.vue
 set cbf-pt=%cbf-pt%\ve1
 set cbf-url=https://vuejs.org/examples/#simple-component
 
@@ -5800,7 +5839,8 @@ exit/b
 
 rem:
 What do you notice about this code? 
-rem qjq
+
+This code is a very plain list that doesn't do anything.
 
 
 
@@ -6085,14 +6125,37 @@ Spreadsheet making code.
 
 
 
-:_
-:arc
-:arch
+::_
+:ve22
 
-echo. & echo * Batch file code archive.
+echo. & echo * %1. Ve item from here and beyond are custom items created by me.
 
-call n bel>nul
-set cbf-fn=%cbf-pt%\archive.bat
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#form-bindings
+
+rem:
+What do you notice about this code? 
+
+Simplest bound checkbox.
+
+exit/b
+
+
+
+::_
+:ve23
+
+echo. & echo * %1. Reverse list.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#form-bindings
+
+rem:
+What do you notice about this code? 
+
+Simplified reverse list.
 
 exit/b
 

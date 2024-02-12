@@ -58,6 +58,8 @@ exit/b
 :_
 :main
 
+echo. & echo * Main.
+
 fxw %0 %1 %2 %3
 
 exit/b
