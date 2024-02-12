@@ -12,10 +12,14 @@ goto main
 :_
 
 :help
+
 echo. & echo * Show path in a browser window.
 echo. & echo * Usage: %0
+
 exit/b
-rem lu: May-15-2023
+
+rem lu:
+May-15-2023
 
 
 
