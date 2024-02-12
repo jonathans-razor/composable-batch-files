@@ -352,7 +352,6 @@ if errorlevel 1 exit/b
 echo. & echo * Create XPS brc backup.
 echo.
 call pn ffbs>nul
-rem qq
 xcopy /d /y .bashrc %cbf-pt%\.bashrc-xps-backup
 
 exit/b

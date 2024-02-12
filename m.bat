@@ -4980,7 +4980,28 @@ Nov-14-2023
 
 
 ::_
+:fn
 :l
+
+rem echo. & echo * Copy latest filename to clipboard.
+
+dir /b /o-d>c:\a\python-results.txt
+
+set /p cbf-python-results=<c:\a\python-results.txt
+
+echo %cbf-python-results%|clip
+
+echo. & echo * Code filename "%cbf-python-results%" has been copied to the clipboard.
+
+exit/b
+
+lu:
+Nov-14-2023
+
+
+
+::_
+:v
 
 echo. & echo * Double click on latest item.
 

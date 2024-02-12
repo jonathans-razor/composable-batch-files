@@ -1831,60 +1831,6 @@ exit/b
 
 
 
-:_ Priv Pass-through.
-
-:2021
-:2022
-:23
-:adp
-:cce
-:dbf
-:disc
-:jona
-:port
-:papo
-:pass
-:pom
-:pome
-:st (!qh)
-:fina
-:hc2
-:po
-:fn
-:idv
-:emdo
-:res
-:mcr
-:resmc
-:sz
-:v
-:pete
-:psc
-:vesp
-:sth
-:tax21
-:tax22
-:tx21
-:tx22
-:tax
-:taxe
-:taxes
-:tx
-:tx23
-
-rem Priv pass-through.
-
-call n bel>nul
-if exist "%cbf-pt%\pv.bat" (
-  call %cbf-pt%\pv.bat %1
-) else (
-  err * Hmm. Looks like a Gordian Knot. - Jan-26-2024-11-55-PM
-)
-
-exit/b
-
-
-
 :_+ Windows Application Family (!fcwin)
 
 
@@ -6136,6 +6082,19 @@ rem:
 What do you notice about this code?
 
 Spreadsheet making code.
+
+
+
+:_
+:arc
+:arch
+
+echo. & echo * Batch file code archive.
+
+call n bel>nul
+set cbf-fn=%cbf-pt%\archive.bat
+
+exit/b
 
 
 
