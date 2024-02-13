@@ -160,4 +160,18 @@ exit/b
 
 
 
+:_
+:
+
+echo. & echo * Use Nuxt 3.
+
+call fe index.html || exit/b
+
+echo.
+start "npx serve" cmd /k npx serve
+
+exit/b
+
+
+
 :_ (!efnx)

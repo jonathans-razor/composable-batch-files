@@ -633,4 +633,18 @@ exit/b
 
 
 
+:_
+:tify
+
+echo. & echo * Run %1.
+
+call t vute>nul
+cd vuetify-project
+call nm rude
+call lh 3000
+
+exit/b
+
+
+
 :_ (!efvu)

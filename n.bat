@@ -6243,4 +6243,15 @@ exit/b
 
 
 
+:_
+:tify
+
+echo. & echo * Vuetify.
+
+set cbf-url=https://vuetifyjs.com/en/introduction/why-vuetify/#what-is-vuetify3f
+
+exit/b
+
+
+
 :_ (!efn)
