@@ -238,101 +238,6 @@ exit/b
 
 
 
-:_+ Create Projects
-
-
-
-::_
-:cps
-:crprs
-:cvu
-:cvup
-
-echo. & echo * Create standard Vue project.
-
-if "%~2" == "" (
-  err Percent 2, the name you wish to call the new project, cannot be [blank].
-)
-
-vue create %2
-
-exit/b
-
-
-
-::_
-:cp
-:crpr
-:cvu
-:cvup
-
-echo. & echo * Create latest Vue project.
-
-if "%~2" == "" (
-  err Percent 3, the name you wish to call the new project, cannot be [blank].
-)
-
-vue create %2
-
-exit/b
-
-
-
-::_
-:cp2
-:cpf
-
-cls
-
-echo. & echo * Create a new Vue project. This is the one that gives a lot of the fancy features.
-
-if "%~2" == "" err Parameter 2, the project name, is required.
-
-npm create vue@latest %2
-
-exit/b
-
-lu:
-Feb-6-2024
-Feb-1-2024
-
-rem:
-This creates a project with these questions:
-
-ue.js - The Progressive JavaScript Framework
-
-v Add TypeScript? ... No / Yes
-v Add JSX Support? ... No / Yes
-v Add Vue Router for Single Page Application development? ... No / Yes
-v Add Pinia for state management? ... No / Yes
-v Add Vitest for Unit Testing? ... No / Yes
-v Add an End-to-End Testing Solution? » Playwright
-v Add ESLint for code quality? ... No / Yes
-v Add Prettier for code formatting? ... No / Yes
-
-Scaffolding project in d:\Dropbox\IT\vue-testing\ve1...
-
-The "." creates the project in the current folder I believe. Feb-1-2024
-npm create vue@latest .
-
-
-
-::_
-:cp2x
-
-cls
-
-echo. & echo * Create a new Vue project using NPX.
-
-npx create vue@latest .
-
-exit/b
-
-lu:
-Jan-19-2024
-
-
-
 :_
 :rpcat
 
@@ -642,6 +547,106 @@ call t vute>nul
 cd vuetify-project
 call nm rude
 call lh 3000
+
+exit/b
+
+
+
+:_+ Create Projects
+
+
+
+::_
+:cps
+:crpr
+:crprs
+:cvu
+:cvup
+
+echo. & echo * Create standard Vue project.
+
+if "%~2" == "" (
+  err Percent 2, the name you wish to call the new project, cannot be [blank].
+)
+
+vue create %2
+
+exit/b
+
+
+
+::_
+:cp2
+:cpf
+
+cls
+
+echo. & echo * Create a new Vue project. This is the one that gives a lot of the fancy features.
+
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+npm create vue@latest %2
+
+exit/b
+
+lu:
+Feb-6-2024
+Feb-1-2024
+
+rem:
+This creates a project with these questions:
+
+ue.js - The Progressive JavaScript Framework
+
+v Add TypeScript? ... No / Yes
+v Add JSX Support? ... No / Yes
+v Add Vue Router for Single Page Application development? ... No / Yes
+v Add Pinia for state management? ... No / Yes
+v Add Vitest for Unit Testing? ... No / Yes
+v Add an End-to-End Testing Solution? » Playwright
+v Add ESLint for code quality? ... No / Yes
+v Add Prettier for code formatting? ... No / Yes
+
+Scaffolding project in d:\Dropbox\IT\vue-testing\ve1...
+
+The "." creates the project in the current folder I believe. Feb-1-2024
+npm create vue@latest .
+
+
+
+::_
+:ui
+
+echo. & echo * Create standard Vue project - UI version.
+
+vue ui
+
+exit/b
+
+
+
+::_
+:cp2x
+
+cls
+
+echo. & echo * Create a new Vue project using NPX.
+
+npx create vue@latest .
+
+exit/b
+
+lu:
+Jan-19-2024
+
+
+
+:_
+:advu
+
+echo. & echo * Add Vuetify.
+
+vue add vuetify
 
 exit/b
 

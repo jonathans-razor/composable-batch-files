@@ -6254,4 +6254,17 @@ exit/b
 
 
 
+:_
+:imap
+:v3t
+
+echo. & echo * Vuetify 3 Tutorial by Laith Academy.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\imageapp
+
+exit/b
+
+
+
 :_ (!efn)
