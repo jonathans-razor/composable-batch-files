@@ -3144,6 +3144,18 @@ exit/b
 
 
 ::_
+:aat
+
+echo. & echo * aa test.
+
+call n aa>nul
+set cbf-pt=%cbf-pt%\test
+
+exit/b
+
+
+
+::_
 :caret
 :cubed-caret
 :hat-trick
