@@ -6237,6 +6237,7 @@ echo. & echo * Vuetify 3 Tutorial by Laith Academy.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\imageapp
+set cbf-yt=https://www.youtube.com/watch?v=PzXaFXgsp60&t=1443s
 
 exit/b
 
