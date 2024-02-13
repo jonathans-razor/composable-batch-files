@@ -3124,6 +3124,26 @@ Sep-20-2023
 
 
 ::_
+:lu
+
+echo. & echo * Last updated: Feb-13-2024-10-42-AM
+
+exit/b
+
+
+
+::_
+:test
+
+echo. & echo *
+
+set cbf-
+
+exit/b
+
+
+
+::_
 :caret
 :cubed-caret
 :hat-trick
@@ -3225,17 +3245,6 @@ exit/b
 
 lu:
 Jan-26-2024
-
-
-
-::_
-:test
-
-echo. & echo *
-
-set cbf-
-
-exit/b
 
 
 
