@@ -5320,20 +5320,6 @@ signing documents
 
 
 :_
-:ph
-
-echo. & echo * Python docs.
-
-set cbf-docs=https://docs.python.org/3/
-
-exit/b
-
-lu:
-Oct-25-2023
-
-
-
-:_
 :vitedocs
 
 echo. & echo * Vite docs.
@@ -6244,17 +6230,6 @@ exit/b
 
 
 :_
-:tify
-
-echo. & echo * Vuetify.
-
-set cbf-url=https://vuetifyjs.com/en/introduction/why-vuetify/#what-is-vuetify3f
-
-exit/b
-
-
-
-:_
 :imap
 :v3t
 
@@ -6264,6 +6239,34 @@ call n vute>nul
 set cbf-pt=%cbf-pt%\imageapp
 
 exit/b
+
+
+
+:_
+:ph
+
+echo. & echo * Python docs.
+
+set cbf-docs=https://docs.python.org/3/
+
+exit/b
+
+lu:
+Oct-25-2023
+
+
+
+:_
+:tify
+
+echo. & echo * Vuetify.
+
+set cbf-docs=https://vuetifyjs.com/en/introduction/why-vuetify/#what-is-vuetify3f
+
+exit/b
+
+lu:
+Feb-13-2024
 
 
 

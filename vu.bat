@@ -652,4 +652,17 @@ exit/b
 
 
 
+:_
+:imap
+
+echo. & echo * Run image app.
+
+call t %1>nul
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
 :_ (!efvu)

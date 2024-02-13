@@ -189,6 +189,7 @@ if "%cbf-parameter%" == "" (
   )
 )
 
+:
 if "%cbf-parameter%" == "" (
   if not "%cbf-shar%" == "" (
     echo. & echo * Sharepoint website.
@@ -196,6 +197,15 @@ if "%cbf-parameter%" == "" (
   )
 )
 
+:
+if "%cbf-parameter%" == "" (
+  if not "%cbf-docs%" == "" (
+    echo. & echo * Docs website.
+    set cbf-parameter=%cbf-docs%
+  )
+)
+
+:
 if "%cbf-parameter%" == "" (
   call err Could not find a suitable CBF parameter for sf.bat to use. Nov-17-2020_7_03_PM
   exit/b

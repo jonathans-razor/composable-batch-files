@@ -942,6 +942,8 @@ Apr-24-2018
 
 echo. & echo * Install any dependencies listed in package.json. Install the required dependencies of the app.
 
+call fe package.json || exit/b
+
 echo.
 npm install
 
