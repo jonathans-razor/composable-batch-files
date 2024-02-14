@@ -1328,6 +1328,24 @@ exit/b
 
 
 ::_
+:vt13a
+
+echo. & echo * Use Vue project %.
+
+call t vt11>nul
+cd %cbf-pt%\src
+
+call fe App.vue || exit/b
+
+echo.
+xcopy /y vt13a-emits.vue App.vue
+xcopy /y vt13-childcomp.vue ChildComp.vue
+
+exit/b
+
+
+
+::_
 :vt14a
 
 echo. & echo * Use Vue project %.
