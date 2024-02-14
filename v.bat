@@ -2659,6 +2659,8 @@ exit/b
 
 :_
 :paja
+:pajs
+:pj
 
 echo. & echo * Package.json is required.
 

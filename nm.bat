@@ -1298,10 +1298,15 @@ Jan-15-2024
 :rdev
 :rude
 
+rem qq
 echo. & echo * Starts the development server.
+
+call fe package.json || exit/b
 
 echo.
 start "npm run dev" cmd /k npm run dev
+
+call lh 5173
 
 exit/b
 
@@ -1318,6 +1323,8 @@ Compile and hot-reload for development.
 :ruse
 
 echo. & echo * Run serve.
+
+call fe package.json || exit/b
 
 start "npm run serve" cmd /k npm run serve
 
