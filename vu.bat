@@ -558,6 +558,7 @@ exit/b
 
 ::_
 :cps
+:cr
 :crpr
 :crprs
 :cvu
@@ -565,9 +566,7 @@ exit/b
 
 echo. & echo * Create standard Vue project.
 
-if "%~2" == "" (
-  err Percent 2, the name you wish to call the new project, cannot be [blank].
-)
+if "%~2" == "" err Parameter 2, the project name, is required.
 
 vue create %2
 
@@ -645,6 +644,8 @@ Jan-19-2024
 :advu
 
 echo. & echo * Add Vuetify.
+
+call fe package.json || exit/b
 
 vue add vuetify
 

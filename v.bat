@@ -2646,4 +2646,26 @@ level not 0
 
 
 
+:_
+:isre
+
+echo. & echo * Parameter 2 is required.
+
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+exit/b
+
+
+
+:_
+:paja
+
+echo. & echo * Package.json is required.
+
+call fe package.json || exit/b
+
+exit/b
+
+
+
 :_ (!efv)

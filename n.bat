@@ -6272,4 +6272,20 @@ Feb-13-2024
 
 
 
+:_
+:mawd
+
+echo. & echo * Make apps with Danny.
+
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+rem   qq
+call n vute>nul
+set cbf-pt=%cbf-pt%\make-apps-with-danny
+set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY&list=WL&index=1
+
+exit/b
+
+
+
 :_ (!efn)
