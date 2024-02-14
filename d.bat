@@ -663,7 +663,6 @@ cls
 
 echo. & echo * Look for mz.
 
-rem   qq
 call t ro>nul
 echo.
 dir mz*
