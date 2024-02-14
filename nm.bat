@@ -1328,6 +1328,8 @@ call fe package.json || exit/b
 
 start "npm run serve" cmd /k npm run serve
 
+call lh 8080
+
 exit/b
 
 
@@ -1339,6 +1341,8 @@ exit/b
 :start
 
 echo. & echo * Run React UI. Starts the development server.
+
+call fe package.json || exit/b
 
 echo.
 start "npm start" cmd /k npm start
