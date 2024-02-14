@@ -1298,7 +1298,6 @@ Jan-15-2024
 :rdev
 :rude
 
-rem qq
 echo. & echo * Starts the development server.
 
 call fe package.json || exit/b
@@ -1320,7 +1319,9 @@ Compile and hot-reload for development.
 
 
 ::_
+:run
 :ruse
+:serv
 
 echo. & echo * Run serve.
 
@@ -1335,8 +1336,6 @@ exit/b
 
 
 ::_
-:run
-:serv
 :star
 :start
 
