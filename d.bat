@@ -657,3 +657,23 @@ Nov-16-2023
 
 
 :_
+:mz
+
+cls
+
+echo. & echo * Look for mz.
+
+rem   qq
+call t ro>nul
+echo.
+dir mz*
+
+call t ldro>nul
+echo.
+dir mz*
+
+exit/b
+
+
+
+:_ (!efd)
