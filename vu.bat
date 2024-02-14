@@ -558,6 +558,7 @@ exit/b
 
 ::_
 :cps
+:cp
 :cr
 :crpr
 :crprs

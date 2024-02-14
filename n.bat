@@ -6285,6 +6285,9 @@ set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY&list=WL&index=1
 
 exit/b
 
+rem:
+I think the video was too old. I couldn't get his code to work as presented. Feb-14-2024
+
 
 
 :_
@@ -6293,6 +6296,19 @@ exit/b
 echo. & echo * Vue wireframe browser test.
 
 set cbf-url=https://vuetifyjs.com/en/wireframes/baseline/
+
+exit/b
+
+
+
+:_
+:rout
+
+echo. & echo * Vue router by Vue Mastery.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\rbm
+set cbf-yt=https://www.youtube.com/watch?v=nKg_p89Hzos&t=133s
 
 exit/b
 
