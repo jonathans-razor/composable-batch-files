@@ -5082,6 +5082,7 @@ set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-lh=http://localhost:5173
 set cbf-pt=%cbf-pt%\vue-testing
 set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
+set cbf-url=https://discord.com/invite/HBherRA
 
 exit/b
 
