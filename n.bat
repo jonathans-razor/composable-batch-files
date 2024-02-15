@@ -6376,8 +6376,8 @@ I think the video was too old. I couldn't get his code to work as presented. Feb
 echo. & echo * Vuex tutorial by Make Apps With Danny.
 
 rem   qq
-rem call n >nul
-rem set cbf-pt=%cbf-pt%\
+call n vute>nul
+set cbf-pt=%cbf-pt%\vuex-tutorial
 set cbf-yt=https://youtu.be/nFh7-HfODYY?si=I91hCuFHEaiBRNcH
 
 exit/b

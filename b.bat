@@ -5,6 +5,7 @@
 if "%~1" == "" goto main
 if "%~1" == "?" goto help
 if "%~1" == "r" goto restart-computer
+if "%~1" == "/r" goto restart-computer
 
 
 
