@@ -5235,9 +5235,9 @@ exit/b
 
 
 ::_
-:vuex
+:vuve
 
-echo. & echo * Examples.
+echo. & echo * Vue Examples.
 
 set cbf-url=https://vuejs.org/examples/#hello-world
 
@@ -6283,24 +6283,6 @@ Feb-13-2024
 
 
 :_
-:mawd
-
-echo. & echo * Make apps with Danny.
-
-if "%~2" == "" err Parameter 2, the project name, is required.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\make-apps-with-danny
-set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY&list=WL&index=1
-
-exit/b
-
-rem:
-I think the video was too old. I couldn't get his code to work as presented. Feb-14-2024
-
-
-
-:_
 :wire
 
 echo. & echo * Vue wireframe browser test.
@@ -6360,6 +6342,43 @@ echo. & echo * Vite and Vite tutorial.
 call n vute>nul
 set cbf-pt=%cbf-pt%\learn-vite-with-evan-you
 set cbf-yt=https://www.youtube.com/watch?v=DkGV5F4XnfQ
+
+exit/b
+
+
+
+:_+ Make Apps With Danny
+
+
+
+::_
+:mawd
+
+echo. & echo * Make apps with Danny.
+
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\make-apps-with-danny
+set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY&list=WL&index=1
+
+exit/b
+
+rem:
+I think the video was too old. I couldn't get his code to work as presented. Feb-14-2024
+
+
+
+::_
+:tuvx
+:vuex
+
+echo. & echo * Vuex tutorial by Make Apps With Danny.
+
+rem   qq
+rem call n >nul
+rem set cbf-pt=%cbf-pt%\
+set cbf-yt=https://youtu.be/nFh7-HfODYY?si=I91hCuFHEaiBRNcH
 
 exit/b
 
