@@ -1288,7 +1288,7 @@ Jan-15-2024
 
 
 
-:_+ Dev and Start
+:_+ Script Family, e.g. Dev, Start etc.
 
 
 
@@ -1354,6 +1354,48 @@ Sep-26-2023
 Aug-27-2021
 
 Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
+
+
+
+::_
+:buil
+:rb
+:rubu
+
+echo. & echo * Bundles the app into static files for production into a subfolder called "dist".
+
+call fe package.json || exit/b
+
+echo.
+npm run build
+
+exit/b
+
+lu:
+Feb-6-2024
+Aug-29-2023
+
+rem:
+Compile and minify for production.
+
+
+
+::_
+:prev
+
+echo. & echo * Preview.
+
+call fe package.json || exit/b
+
+echo.
+start "npm run preview" cmd /k npm run preview
+
+call lh 5173
+
+exit/b
+
+lu:
+Feb-15-2024
 
 
 
@@ -1469,28 +1511,6 @@ npm ERR! command failed
 npm ERR! command C:\WINDOWS\system32\cmd.exe /d /s /c create-svelte svelte-example
 
 npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_logs\2024-01-02T21_19_40_474Z-debug-0.log
-
-
-
-:_
-:rb
-:rubu
-
-echo. & echo * Bundles the app into static files for production into a subfolder called "dist".
-
-call fe package.json || exit/b
-
-echo.
-npm run build
-
-exit/b
-
-lu:
-Feb-6-2024
-Aug-29-2023
-
-rem:
-Compile and minify for production.
 
 
 
@@ -1660,6 +1680,19 @@ exit/b
 echo. & echo * Create Veutify.
 
 npm create vuetify
+
+exit/b
+
+
+
+:_
+:crvi
+
+echo. & echo * Create Vite app.
+
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+npm create vite@latest %2
 
 exit/b
 

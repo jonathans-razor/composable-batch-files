@@ -514,7 +514,7 @@ if "%~1" == "" (
   echo Percent 1 is something.
 )
 
-echo. & echo 7. (!p3, !p1, !para, !perc2, !p2, !perc)
+echo. & echo 7. (!p3, !p1, !para, !perc)
 if "%2" == "?" goto help
 if "%2" == "" goto help
 
@@ -2648,6 +2648,8 @@ level not 0
 
 :_
 :isre
+:p2
+:p2r
 
 echo. & echo * Parameter 2 is required.
 

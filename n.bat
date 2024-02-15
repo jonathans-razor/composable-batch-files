@@ -5073,16 +5073,25 @@ exit/b
 
 ::_
 :vu
+
+echo. & echo * Vue.
+
+set cbf-docs=https://vuejs.org/guide/introduction.html
+set cbf-lh=http://localhost:5173
+set cbf-url=https://discord.com/invite/HBherRA
+
+exit/b
+
+
+
+::_
 :vute
 
 echo. & echo * Vue testing.
 
 call n it>nul
-set cbf-docs=https://vuejs.org/guide/introduction.html
-set cbf-lh=http://localhost:5173
 set cbf-pt=%cbf-pt%\vue-testing
 set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
-set cbf-url=https://discord.com/invite/HBherRA
 
 exit/b
 
@@ -6310,6 +6319,47 @@ echo. & echo * Vue router by Vue Mastery.
 call n vute>nul
 set cbf-pt=%cbf-pt%\rout
 set cbf-yt=https://www.youtube.com/watch?v=nKg_p89Hzos^^^&t=133s
+
+exit/b
+
+
+
+:_
+:jett
+
+echo. & echo * Ron's music.
+
+call an kr>nul
+set cbf-url=https://soundcloud.com/ron-jett-39617536
+
+exit/b
+
+
+
+:_+ Vite (!fyvite, !fyvi)
+
+
+
+::_
+:vi
+:vite
+
+echo. & echo * Vite.
+
+set cbf-docs=https://vitejs.dev
+
+exit/b
+
+
+
+::_
+:tuvi
+
+echo. & echo * Vite and Vite tutorial.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\learn-vite-with-evan-you
+set cbf-yt=https://www.youtube.com/watch?v=DkGV5F4XnfQ
 
 exit/b
 
