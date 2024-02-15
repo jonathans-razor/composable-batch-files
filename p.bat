@@ -78,7 +78,7 @@ call t f & call g dirt
 
 :
 call sep
-call t vu & call g dirt
+call t vute & call g dirt
 
 :
 rem echo. & echo * Exiting here ***************************************.
