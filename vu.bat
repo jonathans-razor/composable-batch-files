@@ -667,4 +667,17 @@ exit/b
 
 
 
+:_
+:rout
+
+echo. & echo * Run %1.
+
+call t %1>nul
+call nm ruse
+call lh 8080
+
+exit/b
+
+
+
 :_ (!efvu)

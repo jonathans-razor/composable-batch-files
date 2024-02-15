@@ -6308,8 +6308,8 @@ exit/b
 echo. & echo * Vue router by Vue Mastery.
 
 call n vute>nul
-set cbf-pt=%cbf-pt%\rbm
-set cbf-yt=https://www.youtube.com/watch?v=nKg_p89Hzos&t=133s
+set cbf-pt=%cbf-pt%\rout
+set cbf-yt=https://www.youtube.com/watch?v=nKg_p89Hzos^^^&t=133s
 
 exit/b
 
