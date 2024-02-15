@@ -6381,6 +6381,9 @@ set cbf-yt=https://youtu.be/nFh7-HfODYY?si=I91hCuFHEaiBRNcH
 
 exit/b
 
+yt:
+how to make api call with vuex
+
 
 
 :_ (!efn)
