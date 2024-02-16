@@ -1,9 +1,11 @@
 :_
-
 @echo off
+
 if "%~1" == "?" goto help
 if "%~1" == "" goto run-application-without-parameter
+if "%~1" == "/v" goto vers
 if "%~1" == "." goto open-current-folder
+
 goto main
 
 
@@ -11,11 +13,16 @@ goto main
 :_
 :help
 cls
+
 echo. & echo * Run Visual Studio Code while leveraging the e.bat decision algorithm.
 
 echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo * Parameter 1:
+echo. & echo * Parameter 1 (Optional):
+echo   If blank, open VS code.
+echo   If not blank, process command in e.bat.
+echo   If ".", open folder.
+echo   If "/v", check version.
 
 echo. & echo   Batch file style: Multipurpose
 
@@ -59,9 +66,16 @@ exit/b
 
 echo. & echo * Version.
 
+code --version
+
 exit/b
 
 rem:
+
+On XPS on Feb-16-2024:
+1.86.2
+903b1e9d8990623e3d7da1df3d33db3e42d80eda
+x64
 
 On XPS on Jan-22-2024:
 Version: 1.85.2 (user setup)
