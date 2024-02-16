@@ -3134,11 +3134,10 @@ exit/b
 
 
 ::_
+:k
 :test
 
-echo. & echo *
-
-set cbf-
+echo. & echo * Test kangaroo. Jump. Jump around.
 
 exit/b
 
