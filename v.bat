@@ -1740,215 +1740,6 @@ Jul-3-2023
 
 
 
-:_+ If Exist (!ifex, !exis)
-
-
-
-::_
-:question
-:ffex
-:fiex
-
-echo. & echo * Test for the exisitence of a file or folder.
-
-rem Expected type of file.
-echo %2| find /i ".ts">nul
-if errorlevel 1 (
-  call err Expected a TypeScipt file.
-  exit/b
-)
-
-call fe package.json || exit/b
-
-exit/b
-
-lc:
-(!fe)
-
-lu:
-Aug-29-2023
-
-skw:
-file extension
-filename existence
-Test if file exists.
-
-
-
-::_
-:old-fiex
-
-echo. & echo * File existence.
-
-rem See also specific_file_presence in m.bat.
-
-echo.
-
-if not exist "package.json" (
-  echo. & echo * Error: The file "package.json" must exist in order for you to run this command.
-  exit/b
-)
-
-rem The "/i" doesn't seem to be necessary for filenames.
-
-if exist "mx.bat" (
-  echo File exists.
-) else (
-  echo File does not exist.
-)
-
-exit/b
-
-lu:
-Dec-27-2018
-
-
-
-::_
-:th_specific_folder_presence
-
-echo. & echo * Test harness for specific_folder_presence.
-
-call %0 specific_folder_presence .chef
-
-if %errorlevel% == 1 (
-  exit/b 1
-)
-
-echo.
-echo * Run commands. Nov-11-2019 6:21 PM
-
-exit/b
-
-lu:
-Nov-11-2019
-
-
-
-::_
-:hie
-
-echo. & echo * To get help on the "if exist" command, use this code block.
-
-echo.
-if exist/?
-
-exit/b
-
-lu:
-Dec-27-2018
-
-
-
-::_
-:finex
-
-echo. & echo * Test if a File does not exist.
-
-if not exist "amx.bat" (
-  echo.
-  echo * File does not exist.
-)
-
-exit/b
-
-lu:
-Dec-27-2018
-
-
-
-::_
-:folder_exists_2
-
-echo. & echo * Testing whether a folder exists 2.
-
-if exist "%1" (
-  echo.
-  echo Folder exists.
-)
-
-if not exist "%1" echo It does NOT exist.
-
-exit/b
-
-lu:
-May-23-2018
-
-
-
-::_
-:section_1
-
-echo.
-echo Section_1: Ifs and Sets: Every line in section 1 prints and every line in section 2 
-doesn't. echo 
-
-if /i exist "c:\!affinity" echo I used to think that "if exist" works only on filenames, not 
-folders.
-
-set horse=Notice no space after the equals sign and no quotes around this string.
-echo %horse%
-
-set horse= Notice the space at the beginning of this string.
-echo %horse%
-
-if /i "%computer_alias%"=="Laptop" echo Double quotes work and are preferred to single quotes.
-
-if /i '%computer_alias%' == 'laptop' echo This is how you employ case-insensitivity.
-
-if /i not exist '%dropbox%\savannah\worthwhile.some' echo Here's how you use "NOT EXIST".
-
-if /i exist "%dropbox%\savannah\worthwhile.now" echo Case doesn't matter.
-
-if /i NOT '%computer_alias%' == 'Laptopxxxx' echo This is how you use The NOT EQAUL TO 
-operator.
-
-if /i '%computer_alias%' == 'Laptop' echo Spaces around the '==' DON'T matter.
-
-Notice also that set statement employ single "=" sign, whereas comparison employ 2 "=" signs.
-
-if /i '%computer_alias%'=='Laptop' echo Single quotes work, but NOT with ALL constructs so 
-should be avoided.
-
-if /i '%computer_alias%'=='Laptop' echo This is case sensitive.
-
-exit/b
-
-
-
-::_
-:section_2
-
-echo.
-echo Section 2: Items below here DON'T PRINT. If you don't believe me, try running 
-echo this to see for yourself. What follows the echo statement is the reason the 
-echo syntax is incorrect.
-echo ------------------------------------------------------------------------------
-
-if /i not exist "c:\!affinity" echo I used to think that "if exist" works only on filenames, 
-not folders.
-
-if /i exist '%dropbox%\savannah\Worthwhile.now' echo The file "worthwhile.asc" actually exists but you 
-surrounded it with single, instead of double quotes.
-
-::Notice that putting a space BEFORE the equals sign causes the variable to not be set.
-set horse2 = shit
-
-echo %horse2%
-
-if "%computer_alias%"=="LapTop" echo Improperly cased variable.
-if %computer_alias%=="Laptop" echo No quotes around the environment variable.
-set computer_alias_2="Laptop"
-if '%computer_alias%_2' == 'Laptop' echo Percent signs within the environment variable.
-
-goto _xit
-
-del "file identifier report.txt"
-
-exit/b
-
-
-
 :_
 :
 
@@ -2667,6 +2458,214 @@ exit/b
 echo. & echo * Package.json is required.
 
 call fe package.json || exit/b
+
+exit/b
+
+
+
+:_+ If Exist (!ifex, !exis)
+
+
+
+::_
+:fe
+:ffex
+:fiex
+:question
+
+echo. & echo * Test for the exisitence of a file or folder.
+
+rem Expected type of file.
+echo %2| find /i ".ts">nul
+if errorlevel 1 (
+  call err Expected a TypeScipt file.
+  exit/b
+)
+
+call fe package.json || exit/b
+call fe "%~1" || exit/b 5
+
+exit/b
+
+lu:
+Aug-29-2023
+
+skw:
+file extension
+filename existence
+Test if file exists.
+
+
+
+::_
+:old-fiex
+
+echo. & echo * File existence.
+
+rem See also specific_file_presence in m.bat.
+
+echo.
+
+if not exist "package.json" (
+  echo. & echo * Error: The file "package.json" must exist in order for you to run this command.
+  exit/b
+)
+
+rem The "/i" doesn't seem to be necessary for filenames.
+
+if exist "mx.bat" (
+  echo File exists.
+) else (
+  echo File does not exist.
+)
+
+exit/b
+
+lu:
+Dec-27-2018
+
+
+
+::_
+:th_specific_folder_presence
+
+echo. & echo * Test harness for specific_folder_presence.
+
+call %0 specific_folder_presence .chef
+
+if %errorlevel% == 1 (
+  exit/b 1
+)
+
+echo.
+echo * Run commands. Nov-11-2019 6:21 PM
+
+exit/b
+
+lu:
+Nov-11-2019
+
+
+
+::_
+:hie
+
+echo. & echo * To get help on the "if exist" command, use this code block.
+
+echo.
+if exist/?
+
+exit/b
+
+lu:
+Dec-27-2018
+
+
+
+::_
+:finex
+
+echo. & echo * Test if a File does not exist.
+
+if not exist "amx.bat" (
+  echo.
+  echo * File does not exist.
+)
+
+exit/b
+
+lu:
+Dec-27-2018
+
+
+
+::_
+:folder_exists_2
+
+echo. & echo * Testing whether a folder exists 2.
+
+if exist "%1" (
+  echo.
+  echo Folder exists.
+)
+
+if not exist "%1" echo It does NOT exist.
+
+exit/b
+
+lu:
+May-23-2018
+
+
+
+::_
+:section_1
+
+echo.
+echo Section_1: Ifs and Sets: Every line in section 1 prints and every line in section 2 
+doesn't. echo 
+
+if /i exist "c:\!affinity" echo I used to think that "if exist" works only on filenames, not 
+folders.
+
+set horse=Notice no space after the equals sign and no quotes around this string.
+echo %horse%
+
+set horse= Notice the space at the beginning of this string.
+echo %horse%
+
+if /i "%computer_alias%"=="Laptop" echo Double quotes work and are preferred to single quotes.
+
+if /i '%computer_alias%' == 'laptop' echo This is how you employ case-insensitivity.
+
+if /i not exist '%dropbox%\savannah\worthwhile.some' echo Here's how you use "NOT EXIST".
+
+if /i exist "%dropbox%\savannah\worthwhile.now" echo Case doesn't matter.
+
+if /i NOT '%computer_alias%' == 'Laptopxxxx' echo This is how you use The NOT EQAUL TO 
+operator.
+
+if /i '%computer_alias%' == 'Laptop' echo Spaces around the '==' DON'T matter.
+
+Notice also that set statement employ single "=" sign, whereas comparison employ 2 "=" signs.
+
+if /i '%computer_alias%'=='Laptop' echo Single quotes work, but NOT with ALL constructs so 
+should be avoided.
+
+if /i '%computer_alias%'=='Laptop' echo This is case sensitive.
+
+exit/b
+
+
+
+::_
+:section_2
+
+echo.
+echo Section 2: Items below here DON'T PRINT. If you don't believe me, try running 
+echo this to see for yourself. What follows the echo statement is the reason the 
+echo syntax is incorrect.
+echo ------------------------------------------------------------------------------
+
+if /i not exist "c:\!affinity" echo I used to think that "if exist" works only on filenames, 
+not folders.
+
+if /i exist '%dropbox%\savannah\Worthwhile.now' echo The file "worthwhile.asc" actually exists but you 
+surrounded it with single, instead of double quotes.
+
+::Notice that putting a space BEFORE the equals sign causes the variable to not be set.
+set horse2 = shit
+
+echo %horse2%
+
+if "%computer_alias%"=="LapTop" echo Improperly cased variable.
+if %computer_alias%=="Laptop" echo No quotes around the environment variable.
+set computer_alias_2="Laptop"
+if '%computer_alias%_2' == 'Laptop' echo Percent signs within the environment variable.
+
+goto _xit
+
+del "file identifier report.txt"
 
 exit/b
 

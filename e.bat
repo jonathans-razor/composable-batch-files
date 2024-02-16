@@ -136,6 +136,7 @@ rem Begin routing intelligence section.
 
 set cbf-fn=
 
+echo. & echo * Error Level: %errorlevel% - qjq - p1: %1 - p2: %2 cbf-: %cbf-% - Feb-16-2024-12-14-PM
 call paco "%~1" .>nul && goto open-current-folder-file
 
 call :open-cbf-batch-file %*
@@ -155,6 +156,7 @@ if "%cbf-fn%"=="" (
 if "%cbf-fn%"=="" (
   exit/b
 )
+
 goto main
 
 
@@ -186,7 +188,8 @@ exit/b
 
 rem echo. & echo * Open current folder file Jan-22-2024-0-14-AM.
 
-call fe %~1 || exit/b 5
+call fe "%~1" || exit/b 5
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Feb-16-2024-12-22-PM
 
 set cbf-fn=%cd%\%~1
 
