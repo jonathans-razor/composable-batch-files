@@ -313,7 +313,7 @@ exit/b
 
 echo. & echo * Open NP file.
 
-call pn m
+call pn m>nul
 set cbf-fn=%cbf-pt%\np%1.txt
 
 exit/b

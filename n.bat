@@ -3137,7 +3137,7 @@ exit/b
 :k
 :test
 
-echo. & echo * Test kangaroo. Jump. Jump around.
+echo. & echo * Test kangaroo. Jump. Jump around. Kangaroo Koke machine.
 
 call n aa>nul
 set cbf-pt=%cbf-pt%\k
