@@ -64,7 +64,7 @@ goto main
 
 rem echo. & echo * Set filename. Jan-22-2024-0-50-AM
 
-set cbf-fn=%cd%\%1
+set cbf-fn=%1
 
 goto main
 
@@ -73,11 +73,11 @@ goto main
 :_
 :main
 
-if exist "%cbf-fn%" (
-  rem echo. & echo %~nx0: * File "%cbf-fn%" exists. Feb-8-2024-4-43-PM
+if exist %cbf-fn% (
+  rem echo. & echo %~nx0: * File %cbf-fn% exists. Feb-8-2024-4-43-PM
   exit/b 0
 ) else (
-  call notice %~nx0: File or folder "%cbf-fn%" DOES NOT exist. Feb-8-2024-4-42-PM
+  call notice From %~nx0: File or folder %cbf-fn% DOES NOT exist. Feb-8-2024-4-42-PM
   exit/b 5
 )
 

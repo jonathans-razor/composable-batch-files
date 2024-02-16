@@ -3139,6 +3139,9 @@ exit/b
 
 echo. & echo * Test kangaroo. Jump. Jump around.
 
+call n aa>nul
+set cbf-pt=%cbf-pt%\k
+
 exit/b
 
 

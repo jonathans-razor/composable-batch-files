@@ -136,7 +136,6 @@ rem Begin routing intelligence section.
 
 set cbf-fn=
 
-echo. & echo * Error Level: %errorlevel% - qjq - p1: %1 - p2: %2 cbf-: %cbf-% - Feb-16-2024-12-14-PM
 call paco "%~1" .>nul && goto open-current-folder-file
 
 call :open-cbf-batch-file %*
@@ -189,7 +188,6 @@ exit/b
 rem echo. & echo * Open current folder file Jan-22-2024-0-14-AM.
 
 call fe "%~1" || exit/b 5
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Feb-16-2024-12-22-PM
 
 set cbf-fn=%cd%\%~1
 
@@ -202,11 +200,13 @@ goto main
 
 echo. & echo * Create a new file in the current folder. Feb-2-2024-3-22-PM
 
-call fe %~1>nul
+call fe "%~1">nul
 
 set cbf-fn=%cd%\%~1
-if not errorlevel 1 err %~nx0: You've specified a new file but this file already exists. So, because of this ambiguity of intent, will not delete the file.
-type nul>%cbf-fn%
+
+if not errorlevel 1 err %~nx0: You've specified a new file but this file already exists. So, because of this ambiguity of intent, will not delete the file. Feb-16-2024-12-40-PM
+
+type nul>"%cbf-fn%"
 
 exit/b
 
