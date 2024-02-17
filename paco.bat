@@ -14,6 +14,7 @@ goto main
 cls
 
 echo. & echo * Parameter contains. Check for characters in a passed in parameter.
+
 echo. & echo   Usage: %0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1: Path, filename, etc. in current folder

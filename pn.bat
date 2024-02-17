@@ -19,7 +19,9 @@ echo. & echo   Usage: %0 [Parameter 1]
 
 echo. & echo * Parameter 1: Alias.
 
-echo. & echo * Batch file style: Single purpose.
+echo. & echo   Batch file style: Single purpose.
+
+echo. & echo * Entangled CBF variable: cbf-pt
 
 exit/b
 
@@ -39,7 +41,7 @@ exit/b
 
 set cbf-pt=
 
-call sdv %1
+call sdv %1 || exit/b
 
 if "%cbf-pt%" == "" (
   call err From %~nx0: For parameter 1 "%1", the cbf-pt is not defined. Feb-8-2024-1-22-PM

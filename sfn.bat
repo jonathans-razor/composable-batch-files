@@ -18,15 +18,15 @@ cls
 
 echo. & echo * Set cbf-fn based on an algorithm.
 
-echo. & echo    Usage: %~n0 [space separated parameter(s)]
+echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo  * Parameter 1:
+echo. & echo * Parameter 1:
 echo    If period, use current folder filename.
 echo    Else, use algorithm same as e.bat.
 
 echo. & echo    Batch file style: Multipurpose
 
-echo. & echo  * Samples:
+echo. & echo * Samples:
 echo    %~n0 j1.txt
 
 exit/b

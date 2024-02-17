@@ -1,49 +1,37 @@
 :_
 
 @echo off
+
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
-goto validate-input
+
+goto main
 
 
 
 :_
+
 :help
-cls
-echo. & echo * Edit file in Multi-edit or Notepad.
-echo. & echo Usage: %0 [space separated parameter(s)]
-echo. & echo Batch file style: Single purpose
-echo. & echo Entangled variable: cbf-%0
-echo. & echo Pit of Success Strategy: For example, if cbf-cf is not found, the algorithm will look for cbf-url.
-echo. & echo * Parameter 1: Alias of the file you wish to edit.
-echo. & echo Example(s):
-echo. & echo %0 k
+
+echo. & echo * Validate a path value.
+
+echo. & echo   Usage: %0 [Parameter 1]
+
+echo. & echo * Parameter 1: Alias.
+
+echo. & echo   Batch file style: Single purpose.
+
+echo. & echo * Entangled CBF variable: cbf-fn
+
 exit/b
-rem lu: Oct-6-2022
 
 
 
 :_
 
-   .--.      .--.      .--.      .--.      .--.                 
- :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
-        `--'      `--'      `--'      `--'      `--'     
-
-
-
-:_
-
-:validate-input
-call fnv2 %1
-if errorlevel 1 exit/b
-call an me>nul
-if errorlevel 1 (
-  call an vc
-)
-if errorlevel 1 (
-  call an no
-)
-if errorlevel 1 exit/b 1
+   .--.      .--.      .--.      .--.      .--.
+ :::::.\::::::::.\::::::::.\::::::::.\::::::::.\:::::::
+        `--'      `--'      `--'      `--'      `--' 
 
 
 
@@ -51,12 +39,30 @@ if errorlevel 1 exit/b 1
 
 :main
 
-set cbf-parameter=%cbf-fn%
+set cbf-fn=
 
-call r
+call paco "%~1" . && goto set-cbf-fn "%~1"
+
+call sdv %1 || exit/b
+
+goto validate-fn
+
+:set-cbf-fn
+
+set cbf-fn=%1
+
+:validate-fn
+
+if %cbf-fn% == "" (
+  call err From %~nx0: For parameter 1 %1, cbf-fn is not defined. Feb-16-2024-11-12-PM
+  exit/b 4
+)
+
+if not exist %cbf-fn% (
+  call err From %~nx0: For parameter 1 %1, cbf-fn %cbf-fn% does not exist. Feb-16-2024-11-13-PM
+  exit/b 3
+)
 
 exit/b
 
 
-
-:_ (!rfsp) (mov-7)

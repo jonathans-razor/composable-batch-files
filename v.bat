@@ -2405,6 +2405,7 @@ if not exist "%cbf-pt%" (
 
 ::_
 :new-style
+:paco
 
 echo. & echo * New style error handling
 
@@ -2421,7 +2422,7 @@ dir /ah | find /i ".git">nul && exit/b 0
 exit/b
 
 lc:
-(!ns, !peri, !paco, !ampe, !el1, !ec, !gtr, !err, !erro, !el, !erle)
+(!ns, !peri, !ampe, !el1, !ec, !gtr, !err, !erro, !el, !erle)
 
 lu:
 Oct-12-2023
