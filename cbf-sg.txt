@@ -5,6 +5,9 @@ Composable Batch Files (CBF) - Style Guide
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
        `--'      `--'      `--'      `--'      `--' 
 
+:Feb-18-2024: Because I want to be able to look credentials up on my phone, z references 
+should not be placed in files other than ch.asc.
+
 :Feb-14-2024: In n.bat, do not make calls to pn.bat.
 
 :Feb-8-2024: When passing values, that contain spaces, to other batch files, be sure to 
