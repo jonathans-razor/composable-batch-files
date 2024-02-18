@@ -116,7 +116,7 @@ if "%~2" == "/np" (
 if "%2" == "/o" (
   call :open-cbf-batch-file %*
   if errorlevel 1 (
-    echo. & echo * CBF batch file: "%cbf-pt%\%1.bat" NOT found. Feb-9-2024-9-53-AM
+    echo. & echo * CBF batch file NOT found. Feb-9-2024-9-53-AM
     exit/b
   )
   goto main
