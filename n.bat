@@ -3143,7 +3143,7 @@ call n aa>nul
 set cbf-pt=%cbf-pt%\k\te st
 
 set cbf-app=%cbf-pt%\j1.txt
-set cbf-ex=%cbf-pt%\j1.xlsxe
+set cbf-ex=%cbf-pt%\j1.xlsx
 rem set cbf-fn=%cbf-pt%\j1.txt
 set cbf-jpg=%cbf-pt%\j1.jpg
 set cbf-png=%cbf-pt%\j1.png
