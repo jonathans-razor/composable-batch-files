@@ -646,7 +646,7 @@ Jan-19-2024
 
 echo. & echo * Add Vuetify.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 vue add vuetify
 

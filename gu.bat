@@ -482,7 +482,7 @@ if "%~2" == "" (
   exit/b
 )
 
-call fe package.json & if errorlevel 1 exit/b
+call fn package.json & if errorlevel 1 exit/b
 
 ng generate component components/%2
 exit/b
@@ -565,7 +565,7 @@ Sep-29-2023
 
 echo. & echo * Compile and start Angular.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 start "Angular" cmd /k ng serve

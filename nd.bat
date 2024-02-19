@@ -142,7 +142,7 @@ exit/b
 
 rem echo. & echo * Run JavaScript file.
 
-call fe "%~1" || exit/b
+call fn "%~1" || exit/b
 call paco "%~1" .js || exit/b
 
 echo.

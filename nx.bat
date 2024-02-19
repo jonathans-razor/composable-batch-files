@@ -151,7 +151,7 @@ Aug-15-2022
 
 echo. & echo * NPX serve.
 
-call fe index.html || exit/b
+call fn index.html || exit/b
 
 echo.
 start "npx serve" cmd /k npx serve
@@ -165,7 +165,7 @@ exit/b
 
 echo. & echo * Use Nuxt 3.
 
-call fe index.html || exit/b
+call fn index.html || exit/b
 
 echo.
 start "npx serve" cmd /k npx serve

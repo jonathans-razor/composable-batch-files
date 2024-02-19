@@ -1218,7 +1218,7 @@ echo. & echo * Copy file in the current directory to nickname-specified path. (N
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 
-call fe "%~1" || exit/b 5
+call fn "%~1" || exit/b 5
 
 call pn %2 || exit/b 1
 
@@ -1263,7 +1263,7 @@ echo. & echo * Use Vue project %.
 call t vt1>nul
 cd %cbf-pt%\src
 
-call fe App.vue || exit/b
+call fn App.vue || exit/b
 
 echo.
 
@@ -1281,7 +1281,7 @@ echo. & echo * Use Vue project %.
 call t vt11>nul
 cd %cbf-pt%\src
 
-call fe App.vue || exit/b
+call fn App.vue || exit/b
 
 echo.
 xcopy /y vt11-components.vue App.vue
@@ -1299,7 +1299,7 @@ echo. & echo * Use Vue project %.
 call t vt11>nul
 cd %cbf-pt%\src
 
-call fe App.vue || exit/b
+call fn App.vue || exit/b
 
 echo.
 xcopy /y vt12-props.vue App.vue
@@ -1317,7 +1317,7 @@ echo. & echo * Use Vue project %.
 call t vt11>nul
 cd %cbf-pt%\src
 
-call fe App.vue || exit/b
+call fn App.vue || exit/b
 
 echo.
 xcopy /y vt13-emits.vue App.vue
@@ -1335,7 +1335,7 @@ echo. & echo * Use Vue project %.
 call t vt11>nul
 cd %cbf-pt%\src
 
-call fe App.vue || exit/b
+call fn App.vue || exit/b
 
 echo.
 xcopy /y vt13a-emits.vue App.vue
@@ -1353,7 +1353,7 @@ echo. & echo * Use Vue project %.
 call t vt11>nul
 cd %cbf-pt%\src
 
-call fe App.vue || exit/b
+call fn App.vue || exit/b
 
 echo.
 xcopy /y vt14a-slots.vue App.vue
@@ -1383,7 +1383,7 @@ echo. & echo * Use Vue project %.
 call t vt11>nul
 cd %cbf-pt%\src
 
-call fe App.vue || exit/b
+call fn App.vue || exit/b
 
 echo.
 xcopy /y vt14-slots.vue App.vue
@@ -1401,7 +1401,7 @@ echo. & echo * Use Vue project %.
 call t vt11>nul
 cd %cbf-pt%\src
 
-call fe App.vue || exit/b
+call fn App.vue || exit/b
 
 echo.
 xcopy /y vt15-confetti.vue App.vue
@@ -1444,7 +1444,7 @@ echo. & echo * Use Vue project %.
 call t ve1>nul
 cd %cbf-pt%\src
 
-call fe App.vue || exit/b
+call fn App.vue || exit/b
 
 echo.
 xcopy /y %1-*.vue App.vue

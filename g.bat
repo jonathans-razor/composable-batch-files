@@ -936,7 +936,7 @@ exit/b
 
 rem Add, commit and push.
 
-call fe .git || exit/b
+call fn .git || exit/b
 
 call %0 add-all-files || exit/b
 
@@ -4164,7 +4164,7 @@ exit/b
 
 rem echo. & echo * Commit changes if dirty.
 
-call fe .git || exit/b
+call fn .git || exit/b
 
 call s | find /i "working tree clean">nul
 

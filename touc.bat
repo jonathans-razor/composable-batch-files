@@ -34,7 +34,7 @@ exit/b
 :_
 :update-single-file
 echo. & echo * Update a single file to the current date.
-call fe "%~1" || exit/b 5
+call fn "%~1" || exit/b 5
 "%cbf-pt%\touch.exe" "%~1"
 exit/b
 

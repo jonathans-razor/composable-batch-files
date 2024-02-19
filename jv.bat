@@ -226,7 +226,7 @@ nut when you merely run it.
 
 rem echo. & echo * Interpret and run a java file.
 
-call fe "%~1" || exit/b
+call fn "%~1" || exit/b
 call paco "%~1" .java || exit/b
 
 echo.

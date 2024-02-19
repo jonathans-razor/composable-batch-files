@@ -41,9 +41,9 @@ echo. & echo * List archived file content.
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 
-call fe %2 & if errorlevel 1 exit/b
-call fe *.tar & if errorlevel 0 goto file-found
-call fe *.tgz & if errorlevel 0 goto file-found
+call fn %2 & if errorlevel 1 exit/b
+call fn *.tar & if errorlevel 0 goto file-found
+call fn *.tgz & if errorlevel 0 goto file-found
 exit/b
 
 :file-found
@@ -75,9 +75,9 @@ echo. & echo * Extract archived file content.
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 
-call fe %2 & if errorlevel 1 exit/b
-call fe *.tar & if errorlevel 0 goto file-found
-call fe *.tgz & if errorlevel 0 goto file-found
+call fn %2 & if errorlevel 1 exit/b
+call fn *.tar & if errorlevel 0 goto file-found
+call fn *.tgz & if errorlevel 0 goto file-found
 exit/b
 
 :file-found

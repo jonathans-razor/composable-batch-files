@@ -309,7 +309,7 @@ echo. & echo * Move file in the current directory to nickname-specified path.
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 
-call fe "%~1" || exit/b 5
+call fn "%~1" || exit/b 5
 
 call rf r>nul
 

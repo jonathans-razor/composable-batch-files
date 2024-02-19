@@ -942,7 +942,7 @@ Apr-24-2018
 
 echo. & echo * Install any dependencies listed in package.json. Install the required dependencies of the app.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 npm install
@@ -1014,7 +1014,7 @@ Aug-29-2023
 
 echo. & echo * Install lodash.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 npm install lodash-es --save
@@ -1031,7 +1031,7 @@ Feb-6-2024
 
 echo. & echo * Install lodash, world's most depended on JavaScript library.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 npm install lodash --save
@@ -1048,7 +1048,7 @@ Feb-6-2024
 
 echo. & echo * Install WebPack.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 npm install --save-dev webpack webpack-cli
@@ -1300,7 +1300,7 @@ Jan-15-2024
 
 echo. & echo * Starts the development server.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 start "npm run dev" cmd /k npm run dev
@@ -1325,7 +1325,7 @@ Compile and hot-reload for development.
 
 echo. & echo * Run serve.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 start "npm run serve" cmd /k npm run serve
 
@@ -1341,7 +1341,7 @@ exit/b
 
 echo. & echo * Run React UI. Starts the development server.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 start "npm start" cmd /k npm start
@@ -1364,7 +1364,7 @@ Run start script. Rith used this on Dec-5-2019 instead of "ng serve".
 
 echo. & echo * Bundles the app into static files for production into a subfolder called "dist".
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 npm run build
@@ -1385,7 +1385,7 @@ Compile and minify for production.
 
 echo. & echo * Preview.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 start "npm run preview" cmd /k npm run preview
@@ -1523,7 +1523,7 @@ npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_l
 
 echo. & echo * Install loaders.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 npm install --save-dev css-loader style-loader sass-loader
@@ -1544,7 +1544,7 @@ Compile and minify for production.
 
 echo. & echo * Install Sass.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 npm install --save-dev sass
@@ -1558,7 +1558,7 @@ exit/b
 
 echo. & echo * Install Webpack bundle analyzer.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 npm install --save-dev webpack-bundle-analyzer
@@ -1572,7 +1572,7 @@ exit/b
 
 echo. & echo * Install Webpack dev server.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 npm install --save-dev webpack-dev-server
@@ -1587,7 +1587,7 @@ exit/b
 
 echo. & echo * Install third party package and save setting in the package.json file.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 if "%~2" == "" err Parameter 2, the package to install, is required.
 
@@ -1612,7 +1612,7 @@ nm inst-s js-confetti
 
 echo. & echo * Install Markdown.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 echo.
 npm install --save-dev marked
@@ -1629,7 +1629,7 @@ lu:
 
 echo. & echo * Run format.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 npm run format
 
@@ -1643,7 +1643,7 @@ cls
 
 echo. & echo * Fix npm installation in the current folder.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 call dr /d node_modules
 
@@ -1666,7 +1666,7 @@ Sep-2-2021
 
 echo. & echo * Fix lint
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 npm run lint -- --fix
 

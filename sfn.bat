@@ -143,7 +143,7 @@ exit/b
 :open-current-folder-file
 echo. & echo * Open current folder file.
 
-call fe %* || exit/b 5
+call fn %* || exit/b 5
 exit/b
 
 
@@ -233,7 +233,7 @@ exit/b
 :_
 :open-aliased-file
 echo. & echo * Open aliased file.
-call fe %1
+call fn %1
 exit/b
 
 

@@ -44,7 +44,7 @@ Nov-15-2023
 
 echo. & echo * Unzip zip file's contents to current folder.
 
-call fe "%~1" || exit/b 5
+call fn "%~1" || exit/b 5
 call paco "%~1" .zip || exit/b
 
 pkzipc -extract -overwrite %1

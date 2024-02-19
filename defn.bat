@@ -44,7 +44,7 @@ echo. & echo * Delete aliased file.
 
 call n %1>nul
 
-call fe %cbf-fn% || exit/b
+call fn %cbf-fn% || exit/b
 
 del %cbf-fn%
 echo. & echo * File "%cbf-fn%" was deleted.

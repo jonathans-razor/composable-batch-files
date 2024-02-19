@@ -51,7 +51,7 @@ cd src
 :_
 :main
 
-call fe App.vue || exit/b
+call fn App.vue || exit/b
 
 vc App.vue
 

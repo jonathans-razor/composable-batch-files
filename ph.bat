@@ -136,7 +136,7 @@ Nov-1-2023
 
 echo. & echo * Activate virtual environment.
 
-call fe .venv || exit/b
+call fn .venv || exit/b
 
 echo.
 .venv/Scripts/activate
@@ -152,7 +152,7 @@ Nov-1-2023
 
 echo. & echo * Dectivate virtual environment.
 
-call fe .venv || exit/b
+call fn .venv || exit/b
 
 echo.
 .venv/Scripts/deactivate
@@ -219,7 +219,7 @@ Nov-1-2023
 
 echo. & echo * Start a Flask application.
 
-call fe .venv || exit/b
+call fn .venv || exit/b
 
 set FLASK_APP=application.py
 set FLASK_ENV=development
@@ -562,7 +562,7 @@ exit/b
 
 echo. & echo * Internal run Python file from %0.bat.
 
-rem call fe "%~1" || exit/b
+rem call fn "%~1" || exit/b
 rem call paco "%~1" .py || exit/b
 
 echo. & echo p0: %0
@@ -594,7 +594,7 @@ exit/b
 
 rem echo. & echo * Run Python file from %0.bat.
 
-call fe "%~1" || exit/b 5
+call fn "%~1" || exit/b 5
 call paco "%~1" .py || exit/b
 
 echo.

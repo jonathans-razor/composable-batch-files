@@ -187,7 +187,7 @@ exit/b
 
 rem echo. & echo * Open current folder file Jan-22-2024-0-14-AM.
 
-call fe "%~1" || exit/b 5
+call fn "%~1" || exit/b 5
 
 set cbf-fn=%cd%\%~1
 
@@ -200,7 +200,7 @@ goto main
 
 echo. & echo * Create a new file in the current folder. Feb-2-2024-3-22-PM
 
-call fe "%~1">nul
+call fn "%~1">nul
 
 set cbf-fn=%cd%\%~1
 
@@ -302,7 +302,7 @@ exit/b
 
 echo. & echo * Open aliased file.
 
-call fe %1
+call fn %1
 
 exit/b
 

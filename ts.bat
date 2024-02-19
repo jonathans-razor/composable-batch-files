@@ -85,7 +85,7 @@ exit/b
 
 echo. & echo * Transpile a TypeScipt file into JavaScript file.
 
-call fe "%~2" & if errorlevel 1 exit/b
+call fn "%~2" & if errorlevel 1 exit/b
 
 echo %2| find /i ".ts">nul
 if errorlevel 1 (
@@ -103,7 +103,7 @@ exit/b
 
 echo. & echo * Watch a particular TypeScript file.
 
-call fe "%~2" & if errorlevel 1 exit/b
+call fn "%~2" & if errorlevel 1 exit/b
 
 echo %2| find /i ".ts">nul
 if errorlevel 1 (

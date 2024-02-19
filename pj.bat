@@ -50,7 +50,7 @@ call t %1>nul || exit/b
 :_
 :main
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 vc package.json
 

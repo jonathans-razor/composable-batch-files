@@ -2015,7 +2015,7 @@ Level 1 Program: Is the program even installed?
 
 rem echo. & echo * Run a [language name] program from %0.bat.
 
-call fe "%~1" || exit/b 5
+call fn "%~1" || exit/b 5
 call paco "%~1" .py || exit/b
 
 echo.
@@ -2029,7 +2029,7 @@ exit/b
 :Nov-5-2023
 rem File exists checking.
 rem Cool code. (!feex)
-call fe "%~1" || exit/b 5
+call fn "%~1" || exit/b 5
 exit/b
 
 
@@ -2409,7 +2409,7 @@ if not exist "%cbf-pt%" (
 
 echo. & echo * New style error handling
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 err %~nx0: 
 %~nx0: 
 call err %~nx0: 
@@ -2458,7 +2458,7 @@ exit/b
 
 echo. & echo * Package.json is required.
 
-call fe package.json || exit/b
+call fn package.json || exit/b
 
 exit/b
 
@@ -2483,8 +2483,8 @@ if errorlevel 1 (
   exit/b
 )
 
-call fe package.json || exit/b
-call fe "%~1" || exit/b 5
+call fn package.json || exit/b
+call fn "%~1" || exit/b 5
 
 exit/b
 

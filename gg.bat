@@ -241,7 +241,7 @@ exit/b
 
 rem echo. & echo * Run a Go program.
 
-call fe "%~1" || exit/b
+call fn "%~1" || exit/b
 call paco "%~1" .go || exit/b
 
 echo.

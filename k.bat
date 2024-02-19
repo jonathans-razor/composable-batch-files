@@ -256,7 +256,7 @@ Jan-26-2024
 
 echo. & echo * File exists errorlevel test.
 
-call fe aj7.txt || exit/b
+call fn aj7.txt || exit/b
 
 echo. & echo Hi.
 
