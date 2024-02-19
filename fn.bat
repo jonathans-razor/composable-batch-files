@@ -71,7 +71,7 @@ goto main
 :main
 
 if "%cbf-fn%" == "" (
-  call err From %~nx0: For parameter 1 "%~1", cbf-fn "%cbf-fn%" is not defined. Feb-16-2024-11-12-PM
+  call err From %~nx0: For parameter 1 "%~1", cbf-fn is not defined. Feb-16-2024-11-12-PM
   exit/b 4
 )
 
