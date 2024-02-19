@@ -116,7 +116,7 @@ if not exist "%cbf-built_path%" (
 
 set cbf-fn_without_path=
 
-call fnv %2
+call fn %2
 
 if %errorlevel% == 1 (
   echo.

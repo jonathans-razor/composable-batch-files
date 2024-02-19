@@ -75,7 +75,7 @@ if %errorlevel% == 0 (
   echo If called.
   set cbf-fn=%~1
 ) else (
-  call fnv %1
+  call fn %1
 )
 
 if "%~2" == "" (

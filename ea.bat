@@ -44,7 +44,7 @@ exit/b
 
 set cbf-jf=
 
-call fnv %1
+call fn %1
 
 if errorlevel 1 exit/b
 

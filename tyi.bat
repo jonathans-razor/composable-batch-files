@@ -104,7 +104,7 @@ echo. & echo * Use alias to find filename.
 rem echo.
 rem 
 
-call fnv %~1
+call fn %~1
 
 if %errorlevel% gtr 1 (
   exit/b 1

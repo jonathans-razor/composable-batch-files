@@ -79,8 +79,7 @@ example-  Prefix for files written by other authors for learning and comparison 
     file  New line at end of file tester.
       fl  For loops using function routing.
       fn  Validate a filename value.
-     fnv  Validate a filename value. Using fnv instead of n helps the reader with clarity of 
-          intent. Deprecated. Going forward, use fn.bat.
+qq
     fnv2  Validate a filename version 2. Deprecated (Going forward, use fe.bat.)
           Deprecated. Going forward, use fn.bat.
       fq  Open file using its fully qualified filename.

@@ -73,7 +73,7 @@ if errorlevel 1 (
   exit/b
 )
 
-call fnv %2
+call fn %2
 
 if errorlevel 1 (
   exit/b

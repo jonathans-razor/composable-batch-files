@@ -120,7 +120,7 @@ exit/b
 
 :main
 
-call fnv %1
+call fn %1
 
 if errorlevel 1 (
   call m clear_errorlevel_silently 
@@ -129,7 +129,7 @@ if errorlevel 1 (
 
 set file_1=%cbf-fn%
 
-call fnv %2
+call fn %2
 
 if errorlevel 1 (
   call m clear_errorlevel_silently 

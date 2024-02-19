@@ -2196,7 +2196,7 @@ Feb-17-2022
 ::_
 :validate_filename
 
-call fnv %1
+call fn %1
 
 if errorlevel 1 (
   echo.

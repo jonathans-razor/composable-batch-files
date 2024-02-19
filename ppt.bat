@@ -112,7 +112,7 @@ goto main
 
 :try_using_cbf-fn
 
-call fnv %1>nul
+call fn %1>nul
 
 if errorlevel 1 exit/b
 
@@ -132,7 +132,7 @@ goto main
 
 :use_blank_document
 
-call fnv bpd
+call fn bpd
 
 if errorlevel 1 exit/b
 

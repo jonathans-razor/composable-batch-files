@@ -624,7 +624,7 @@ if "%~2" == "?" goto help
 if "%~2" == "" goto help
 if "%~3" == "" goto help
 
-call fnv %2
+call fn %2
 
 if errorlevel 1 (
   exit/b

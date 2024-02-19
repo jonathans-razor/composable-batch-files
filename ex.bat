@@ -117,7 +117,7 @@ goto main
 
 :open-blank-document
 
-call fnv bed
+call fn bed
 
 if errorlevel 1 exit/b
 

@@ -66,7 +66,7 @@ exit/b
 
 :load-alias-filename-onto-the-clipboard
 
-call fnv %1>nul || exit/b
+call fn %1>nul || exit/b
 
 echo. & echo * Load filename "%cbf-fn%" to the clipboard.
 
@@ -80,7 +80,7 @@ exit/b
 
 :loads-the-filename-with-no-path-onto-the-clipboard
 
-call fnv %1>nul || exit/b
+call fn %1>nul || exit/b
 
 call m distill-file-folder %cbf-fn%
 
@@ -98,7 +98,7 @@ exit/b
 
 call paco "%~1" .>nul && goto current-folder-filename "%~1"
 
-call fnv %1 || exit/b
+call fn %1 || exit/b
 
 echo. & echo * Load contents of file "%cbf-fn%" to the clipboard.
 

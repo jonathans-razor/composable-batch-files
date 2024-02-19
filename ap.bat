@@ -69,7 +69,7 @@ if %errorlevel% == 1 (
 
 if "%~2" == "" goto percent_2_is_blank
 
-call fnv %2
+call fn %2
 
 if %errorlevel% == 1 (
   exit/b

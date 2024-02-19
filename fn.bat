@@ -51,8 +51,7 @@ verify existence
 
 rem echo. & echo * Process alias. Dec-1-2023_6_06_PM
 
-call sdv %1 || exit/b
-
+call sdv %~1 || exit/b
 goto main
 
 
@@ -62,7 +61,7 @@ goto main
 
 rem echo. & echo * Set filename. Jan-22-2024-0-50-AM
 
-set cbf-fn=%1
+set cbf-fn=%~1
 
 goto main
 
@@ -71,13 +70,13 @@ goto main
 :_
 :main
 
-if %cbf-fn% == "" (
-  call err From %~nx0: For parameter 1 %1, cbf-fn is not defined. Feb-16-2024-11-12-PM
+if "%cbf-fn%" == "" (
+  call err From %~nx0: For parameter 1 "%~1", cbf-fn "%cbf-fn%" is not defined. Feb-16-2024-11-12-PM
   exit/b 4
 )
 
-if not exist %cbf-fn% (
-  call err From %~nx0: For parameter 1 [%1], cbf-fn [%cbf-fn%] does not exist. Feb-16-2024-11-13-PM
+if not exist "%cbf-fn%" (
+  call err From %~nx0: For parameter 1 "%~1", cbf-fn "%cbf-fn%" does not exist. Feb-16-2024-11-13-PM
   exit/b 3
 )
 

@@ -3325,11 +3325,11 @@ Jan-9-2019
 
 echo. & echo * Open "waiting" files.
 
-call fnv machine-specific-file
+call fn machine-specific-file
 
 set first_filename=%cbf-fn%
 
-call fnv ccf
+call fn ccf
 
 set second_filename=%cbf-fn%
 
