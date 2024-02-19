@@ -20,11 +20,22 @@ echo. & echo * Validate the existence of a file and set cbf-fn.
 
 echo. & echo   Usage: %0 [space separated parameter(s)]
 
-echo. & echo   Parameter 1: Fliename in current folder or filename alias to check the existence of.
+echo. & echo   Parameter 1: 
+echo   Filename in current folder or filename alias to check the existence of.
 
-echo. & echo   Parameter 2: If equal to "/c", the filename has no period.
+echo. & echo   Parameter 2 (Optional):
+echo   If equal to "/c", the filename has no period.
+echo   If equal to "/d", use the DCV specified in parameter 3.
+
+echo. & echo   Parameter 3 (Optional): 
+echo   DCV.
 
 echo. & echo * Return Code: If equal to 0, you know that cbf-fn is a valid file.
+
+echo. & echo * Samples:
+echo   %~n0 k
+echo   %~n0 j1.txt
+echo   %~n0 k /e app
 
 exit/b
 
@@ -52,6 +63,22 @@ verify existence
 rem echo. & echo * Process alias. Dec-1-2023_6_06_PM
 
 call sdv %~1 || exit/b
+
+if "%2" == "/d" goto set-dcv-filename %*
+
+goto main
+
+
+
+:_
+:set-dcv-filename
+
+rem echo. & echo * Set DCV filename. Feb-19-2024-4-43-PM
+
+call m compose-variable %3
+
+set cbf-fn=%cbf-expanded-variable%
+
 goto main
 
 

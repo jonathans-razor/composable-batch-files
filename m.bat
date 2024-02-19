@@ -4898,6 +4898,7 @@ Mar-14-2018
 
 ::_
 :compose_variable
+:compose-variable
 
 rem echo. & echo * Compose variable.
 
