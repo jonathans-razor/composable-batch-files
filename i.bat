@@ -5,9 +5,8 @@ if "%~1" == "" goto show-cbf-variables
 if "%~1" == "?" goto help
 if "%~1" == "/c" goto clear-cbf-variables
 
-rem call :clear-cbf-variables
+call paco "%~1" .>nul && err Aliases cannot have periods.
 
-rem qq
 call sdv %1 || exit/b
 
 call :show-cbf-variables-2 %1
