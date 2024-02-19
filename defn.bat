@@ -31,7 +31,7 @@ exit/b
 
 :_
 :main-old
-call fnv2 %1
+call fn %1
 if errorlevel 1 exit/b
 del "%cbf-fn%"
 exit/b

@@ -3141,7 +3141,6 @@ echo. & echo * Test kangaroo. Jump. Jump. Jump around. Kangaroo Koke machine.
 
 call n aa>nul
 set cbf-pt=%cbf-pt%\k\te st
-rem qq
 rem set cbf-fn=%cbf-pt%\j1.txt
 set cbf-fn=%cbf-pt%\hard file (5).txt
 

@@ -489,7 +489,7 @@ if not exist "%2" (
   exit/b 5
 )
 
-call fnv2 %3
+call fn %3
 
 if errorlevel 1 exit/b
 
@@ -596,7 +596,7 @@ if "%~2" == "?" goto help
 
 echo. & echo p2: %2
 
-call fnv2 %2
+call fn %2
 
 if errorlevel 1 exit/b
  

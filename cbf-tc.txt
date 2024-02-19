@@ -78,10 +78,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       fe  Check for the existence of a file based on the passed in filename alias.
     file  New line at end of file tester.
       fl  For loops using function routing.
-      fn  Validate a filename value.
-qq
-    fnv2  Validate a filename version 2. Deprecated (Going forward, use fe.bat.)
-          Deprecated. Going forward, use fn.bat.
+      fn  Validate and set a filename value.
       fq  Open file using its fully qualified filename.
       fs  Filenames search.
      fsp  Perennial filenames search.
@@ -201,10 +198,6 @@ qq
     senc  Sencha.
      sep  Show separator graphic.
       sf  Surf to websites. A DCV is optional.
-     sfn  Set cbf-fn based on an algorithm.
-          Deprecated. Going forward, use fn.bat.
-    sfn3  Using advanced routing, set the cbf filename.
-          Deprecated. Going forward, use fn.bat.
       sl  Language functions aggregate runner. (skw supported-languages-series-jj)
      slf  Batch that supports language functions.
      sln  Open a Visual Studio solution, with td parameter.
