@@ -4,11 +4,10 @@
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
-call el /c>nul
+set cbf-fn=
 
 if "%2" == "/c" goto set-filename %*
-
-call paco "%~1" . && goto set-filename %~1
+call paco "%~1" . && goto set-filename %*
 
 goto process-alias %*
 
@@ -29,16 +28,13 @@ echo. & echo * Return Code: If equal to 0, you know that cbf-fn is a valid file.
 
 exit/b
 
-rem Same line error checking.
-rem Caller Code: 
-call fe %2 & if errorlevel 1 exit/b
-
-rem skw is_present, if exists, existence check, check_existence, check existence, file_existence, verify existence, single file)
-
-lu:
-Dec-1-2023
-Apr-28-2023
-Sep-26-2019
+skw:
+check_existence
+existence check
+file_existence
+if exists
+is_present
+verify existence
 
 
 
@@ -53,6 +49,7 @@ Sep-26-2019
 :process-alias
 
 rem echo. & echo * Process alias. Dec-1-2023_6_06_PM
+
 call sdv %1 || exit/b
 
 goto main

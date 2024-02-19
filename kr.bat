@@ -18,12 +18,13 @@ echo. & echo * Run Chrome while leveraging the e.bat decision algorithm.
 echo. & echo * Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1:
-echo  
+echo  Filename you wish to open in the browser.
+echo  If left blank, Chrome is opened.
 
 echo. & echo * Batch file style: Multipurpose
 
 echo. & echo * Samples:
-echo   %~n0 
+echo   %~n0 template-tag-example.html
 
 exit/b
 
