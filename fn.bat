@@ -35,6 +35,8 @@ echo. & echo * Return Code: If equal to 0, you know that cbf-fn is a valid file.
 echo. & echo * Samples:
 echo   %~n0 k
 echo   %~n0 j1.txt
+
+rem What the following line of code says is "Is there a cbf-app variable associated with alias 'k'"?
 echo   %~n0 k /e app
 
 exit/b
