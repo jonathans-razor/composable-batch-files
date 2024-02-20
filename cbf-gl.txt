@@ -37,6 +37,7 @@ code execution area  Batch file style (bfs) where the router routes execution to
                      By convention, files are suffixed with a "_c".
              custom  Batch file style (bfs) where the structure does not fall into one  
                      of the other batch file styles.
+     double percent  Percent signs %% placed before percent signs to get CBF URLs to work.
   dynamically cons-  DCV. An environment variable that can be dynamically created at runtime.
   tructed variable   For example, java is the dcv of the expression cbf-java. CBFs that
                      use DCVs should have an "x" in their name.
@@ -49,6 +50,8 @@ code execution area  Batch file style (bfs) where the router routes execution to
                  fn  Filename in the general sense. For example, j1.txt is a filename as 
                      is poker.xlsx.
                  fp  Function purpose.
+          hat trick  Triple hat characters ^^^ placed before an ampersand to make CBF URLs
+                     work.
        multipurpose  Batch file style (bfs) where the batch file contains any number of
                      disparate, atomic functions which are called via a function alias, 
                      a.k.a. function routing. Example(s): g.bat, m.bat.
@@ -68,3 +71,5 @@ code execution area  Batch file style (bfs) where the router routes execution to
                      which is assigned in the nicknames dictionary (n.bat), 
                      before running the batch file p.bat. Also known as a path walker alias.
                  th  Test Harness
+     triple percent  Double percent signs placed before percent signs of environment 
+                     variables to allow for DCVs to work.
