@@ -24,7 +24,7 @@ folder or via alias, with extension or not, with spaces or not.
 echo. & echo   Usage: %0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1: Application alias.
-echo. & echo   Parameter 2: Inherited from sfn.bat.
+echo. & echo   Parameter 2: Alias or filename.
 
 echo. & echo * Examples:
 echo   %0 no j1
@@ -41,8 +41,7 @@ echo   %0 ie ma
 echo   %0 kr j1
 echo   %0 kr j1.txt
 echo   %0 br j1.txt
-
-echo   %0 br te /p
+echo   %0 ed ard file (5).txt
 
 exit/b
 
