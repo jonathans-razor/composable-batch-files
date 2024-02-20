@@ -6397,34 +6397,25 @@ how to make api call with vuex
 
 
 :_
+:quas
 :tuqu
 
-echo. & echo * Quasar tutorial.
+echo. & echo * Quasar and Quasar tutorial.
 
-call n >nul
-set cbf-pt=%cbf-pt%\
-set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA&list=PLV-KEAAMgUZDt5kjYWsO4WAN5ARJyIs69&index=1
-set cbf-gho=https://github.com/codingwithjustin/quasar-note-app
-
-exit/b
-
-
-
-:_
-:quas
-
-echo. & echo * Quasar.
-
-call n >nul
-set cbf-pt=%cbf-pt%\
+call n vute>nul
+set cbf-pt=%cbf-pt%\quasar-note-app
 
 set cbf-docs=https://quasar.dev/docs
 
 rem Video Tutorials
 set cbf-url=https://quasar.dev/video-tutorials
 
+set cbf-gho=https://github.com/codingwithjustin/quasar-note-app
+
 rem Layout Builder
 set cbf-url2=https://quasar.dev/layout-builder
+
+set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA&list=PLV-KEAAMgUZDt5kjYWsO4WAN5ARJyIs69&index=1
 
 exit/b
 
