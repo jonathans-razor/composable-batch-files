@@ -6423,6 +6423,9 @@ set cbf-docs=https://quasar.dev/docs
 rem Video Tutorials
 set cbf-url=https://quasar.dev/video-tutorials
 
+rem Layout Builder
+set cbf-url2=https://quasar.dev/layout-builder
+
 exit/b
 
 
