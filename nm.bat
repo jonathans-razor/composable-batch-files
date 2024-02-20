@@ -932,324 +932,6 @@ Apr-24-2018
 
 
 
-:_+ Installing (!fcinst)
-
-
-
-::_
-:i
-:inst
-
-echo. & echo * Install any dependencies listed in package.json. Install the required dependencies of the app.
-
-call fn package.json || exit/b
-
-echo.
-npm install
-
-exit/b
-
-lu:
-Aug-29-2023
-
-rem:
-Set up project.
-
-It's a good idea to run npm install before doing your build in case npm needs to update. - Sean
-
-If you have an issue with install or update, try deleting the node_modules subfolder.
-
-
-
-::_
-:inst-e
-
-echo. & echo * Install Express.
-
-echo.
-npm install express
-
-exit/b
-
-lu:
-Sep-21-2023
-
-
-
-::_
-:inst-t
-
-echo. & echo * Install TypeScript.
-
-echo.
-npm install typescript --save-dev
-rem npm i -g typescript
-
-exit/b
-
-lu:
-Aug-29-2023
-
-If you don't install it globally, the tsc command doesn't seem to work. Oct-26-2021
-
-
-
-::_
-:inst-tn
-
-echo. & echo * Install Types for Node.
-
-echo.
-npm install i -D @types/node
-
-exit/b
-
-lu:
-Aug-29-2023
-
-
-
-::_
-:i-loda
-
-echo. & echo * Install lodash.
-
-call fn package.json || exit/b
-
-echo.
-npm install lodash-es --save
-
-exit/b
-
-lu:
-Feb-6-2024
-
-
-
-::_
-:i-loda2
-
-echo. & echo * Install lodash, world's most depended on JavaScript library.
-
-call fn package.json || exit/b
-
-echo.
-npm install lodash --save
-
-exit/b
-
-lu:
-Feb-6-2024
-
-
-
-::_
-:i-webp
-
-echo. & echo * Install WebPack.
-
-call fn package.json || exit/b
-
-echo.
-npm install --save-dev webpack webpack-cli
-
-exit/b
-
-lu:
-Feb-6-2024
-
-
-
-::_
-:inst_g
-
-echo. & echo * Globally install a package so that it works everywhere on the command line.
-
-echo.
-echo.
-npm i %2 -g
-
-rem npm install -g %2
-
-rem Examples:
-rem npm install -g cordova
-rem npm install -g ionic
-rem npm install -g jspm
-rem npm install -g taco-cli
-rem npm install -g typings
-
-rem The equivalent command for Mac would be: sudo npm -install -g %2
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:inst_sd
-
-echo. & echo * Install package and save setting in the development section of the package.json file.
-
-echo.
-echo.
-npm install %2 --save--dev
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:inst_gh
-
-echo. & echo * Install a package using its GitHub URL.
-
-echo.
-call n %2
-
-echo.
-npm i %cbf-url%
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:inst_svh
-
-echo. & echo * Install a specific version of a package and HOLD at this version.
-
-set fp=%fp% NPM will not upgrade automically in this case.
-
-echo.
-echo.
-npm i underscore@1.8.2 --save --save-exact
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:inst_sv
-
-echo. & echo * Install a specific version of a package.
-
-set fp=%fp% Given this example, this will install the latest 1.8 version.
-
-echo.
-echo.
-
-rem For example: npm i underscore@1.7 --save
-
-npm i %2 --save
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:npmh
-
-echo. & echo * NPM install command for Sencha on Windows.
-
-echo.
-
-npm install -g sencha
-
-exit/b
-
-lu:
-Mar-1-2018
-
-
-
-::_
-:npmc
-
-echo. & echo * NPM install command for Sencha on Windows.
-
-echo.
-npm install -g sencha-cmd
-
-exit/b
-
-lu:
-Mar-1-2018
-
-
-
-::_
-:iac
-
-echo. & echo * Install Angular client.
-
-echo.
-npm install -g @angular/cli
-
-exit/b
-
-lu:
-
-Sep-22-2023
-Feb-11-2019
-
-
-
-::_
-:inse
-:insls
-
-echo. & echo * Install serverless.
-
-echo.
-npm install serverless -g
-
-exit/b
-
-lu:
-Jul-15-2021
-
-Footnote
->< >< ><
-
-I'm not sure I needed to run this command because when I ran the "npm install" command, I got
-a message that said:
-
- �   Serverless Framework successfully installed!    �
- �                                                   �
- �   To start your first project run 'serverless'.   �
-
-Is this command folder-specific?
-
-
-
-::_
-:iaa
-
-echo. & echo * Install AWS Amplify.
-
-npm install -g @aws-amplify/cli
-
-exit/b
-
-lu:
-Sep-5-2021
-
-
-
 :_
 :run_tests
 :test
@@ -1693,6 +1375,335 @@ echo. & echo * Create Vite app.
 if "%~2" == "" err Parameter 2, the project name, is required.
 
 npm create vite@latest %2
+
+exit/b
+
+
+
+:_+ Installing (!fcinst)
+
+
+
+::_
+:i
+:inst
+
+echo. & echo * Install any dependencies listed in package.json. Install the required dependencies of the app.
+
+call fn package.json || exit/b
+
+echo.
+npm install
+
+exit/b
+
+lu:
+Aug-29-2023
+
+rem:
+Set up project.
+
+It's a good idea to run npm install before doing your build in case npm needs to update. - Sean
+
+If you have an issue with install or update, try deleting the node_modules subfolder.
+
+
+
+::_
+:inst-e
+
+echo. & echo * Install Express.
+
+echo.
+npm install express
+
+exit/b
+
+lu:
+Sep-21-2023
+
+
+
+::_
+:inst-t
+
+echo. & echo * Install TypeScript.
+
+echo.
+npm install typescript --save-dev
+rem npm i -g typescript
+
+exit/b
+
+lu:
+Aug-29-2023
+
+If you don't install it globally, the tsc command doesn't seem to work. Oct-26-2021
+
+
+
+::_
+:inst-tn
+
+echo. & echo * Install Types for Node.
+
+echo.
+npm install i -D @types/node
+
+exit/b
+
+lu:
+Aug-29-2023
+
+
+
+::_
+:i-loda
+
+echo. & echo * Install lodash.
+
+call fn package.json || exit/b
+
+echo.
+npm install lodash-es --save
+
+exit/b
+
+lu:
+Feb-6-2024
+
+
+
+::_
+:i-loda2
+
+echo. & echo * Install lodash, world's most depended on JavaScript library.
+
+call fn package.json || exit/b
+
+echo.
+npm install lodash --save
+
+exit/b
+
+lu:
+Feb-6-2024
+
+
+
+::_
+:i-webp
+
+echo. & echo * Install WebPack.
+
+call fn package.json || exit/b
+
+echo.
+npm install --save-dev webpack webpack-cli
+
+exit/b
+
+lu:
+Feb-6-2024
+
+
+
+::_
+:inst_g
+
+echo. & echo * Globally install a package so that it works everywhere on the command line.
+
+echo.
+echo.
+npm i %2 -g
+
+rem npm install -g %2
+
+rem Examples:
+rem npm install -g cordova
+rem npm install -g ionic
+rem npm install -g jspm
+rem npm install -g taco-cli
+rem npm install -g typings
+
+rem The equivalent command for Mac would be: sudo npm -install -g %2
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:inst_sd
+
+echo. & echo * Install package and save setting in the development section of the package.json file.
+
+echo.
+echo.
+npm install %2 --save--dev
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:inst_gh
+
+echo. & echo * Install a package using its GitHub URL.
+
+echo.
+call n %2
+
+echo.
+npm i %cbf-url%
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:inst_svh
+
+echo. & echo * Install a specific version of a package and HOLD at this version.
+
+set fp=%fp% NPM will not upgrade automically in this case.
+
+echo.
+echo.
+npm i underscore@1.8.2 --save --save-exact
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:inst_sv
+
+echo. & echo * Install a specific version of a package.
+
+set fp=%fp% Given this example, this will install the latest 1.8 version.
+
+echo.
+echo.
+
+rem For example: npm i underscore@1.7 --save
+
+npm i %2 --save
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:npmh
+
+echo. & echo * NPM install command for Sencha on Windows.
+
+echo.
+
+npm install -g sencha
+
+exit/b
+
+lu:
+Mar-1-2018
+
+
+
+::_
+:npmc
+
+echo. & echo * NPM install command for Sencha on Windows.
+
+echo.
+npm install -g sencha-cmd
+
+exit/b
+
+lu:
+Mar-1-2018
+
+
+
+::_
+:iac
+
+echo. & echo * Install Angular client.
+
+echo.
+npm install -g @angular/cli
+
+exit/b
+
+lu:
+
+Sep-22-2023
+Feb-11-2019
+
+
+
+::_
+:inse
+:insls
+
+echo. & echo * Install serverless.
+
+echo.
+npm install serverless -g
+
+exit/b
+
+lu:
+Jul-15-2021
+
+Footnote
+>< >< ><
+
+I'm not sure I needed to run this command because when I ran the "npm install" command, I got
+a message that said:
+
+ �   Serverless Framework successfully installed!    �
+ �                                                   �
+ �   To start your first project run 'serverless'.   �
+
+Is this command folder-specific?
+
+
+
+::_
+:iaa
+
+echo. & echo * Install AWS Amplify.
+
+npm install -g @aws-amplify/cli
+
+exit/b
+
+lu:
+Sep-5-2021
+
+
+
+::_
+:i-quas
+
+echo. & echo * Install the global CLI.
+
+npm i -g @quasar/cli
 
 exit/b
 

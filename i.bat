@@ -221,7 +221,7 @@ rem GitHub - My Implementation of Another GitHub Repository
 set cbf-ghmy=
 
 :
-rem GitHub Original Content
+rem GitHub Original Content (skw github source material)
 set cbf-gho=
 
 :
