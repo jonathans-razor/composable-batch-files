@@ -66,13 +66,18 @@ rem creation date:
 echo. & echo * GitHub https.
 
 echo %2 | find /i "https">nul
+
 if errorlevel 1 (
   call err "https" was not found in the second parameter. Mar-01-2023-23-24
   exit/b
 )
 
 echo.
+
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Feb-20-2024-5-16-PM
+@echo on
 git clone %2 -b %cbf-branch%
+@echo off
 
 exit/b
 
