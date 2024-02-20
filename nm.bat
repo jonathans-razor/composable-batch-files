@@ -975,6 +975,30 @@ Jan-15-2024
 
 
 ::_
+:qd
+
+rem qq
+echo. & echo * Quasar dev.
+
+call fn package.json || exit/b
+
+echo.
+start "quasar dev" cmd /k quasar dev
+
+call lh 5173
+
+exit/b
+
+lu:
+Oct-27-2021
+
+rem:
+Run VUE UI.
+Compile and hot-reload for development.
+
+
+
+::_
 :dev
 :rd
 :rdev
@@ -1706,6 +1730,21 @@ echo. & echo * Install the global CLI.
 npm i -g @quasar/cli
 
 exit/b
+
+
+
+:_
+:quascr
+
+echo. & echo * Create Quasar app.
+
+npm init quasar
+
+exit/b
+
+rem:
+Apparently this is outdated.
+quasar create quasar-note-app --branch next
 
 
 
