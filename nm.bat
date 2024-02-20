@@ -984,8 +984,6 @@ call fn package.json || exit/b
 echo.
 start "quasar dev" cmd /k quasar dev
 
-call lh 5173
-
 exit/b
 
 
