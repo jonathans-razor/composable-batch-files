@@ -6422,7 +6422,6 @@ set cbf-docs=https://quasar.dev/docs
 
 rem Video Tutorials
 set cbf-url=https://quasar.dev/video-tutorials
-rem   qq
 
 exit/b
 
