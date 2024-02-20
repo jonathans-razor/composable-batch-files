@@ -6401,7 +6401,6 @@ how to make api call with vuex
 
 echo. & echo * Quasar tutorial.
 
-rem   qq
 call n >nul
 set cbf-pt=%cbf-pt%\
 set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA&list=PLV-KEAAMgUZDt5kjYWsO4WAN5ARJyIs69&index=1
