@@ -53,12 +53,13 @@ exit/b
 
 call i /c>nul
 
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Feb-20-2024-10-02-AM
-rem echo. & echo * Evaluate the parameter list.
+rem echo. & echo * Validate input.
+
+call paco "%~1" .>nul && err Aliases cannot contain a period.
+call paco "%~2" .>nul && err Aliases cannot contain a period.
 
 call sdv %1 || exit/b
 
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Feb-20-2024-10-03-AM
 if "%cbf-app%" == "" (
   call :use_default_browser
 )
