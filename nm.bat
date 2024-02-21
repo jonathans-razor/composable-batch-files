@@ -936,7 +936,7 @@ Apr-24-2018
 :run_tests
 :test
 
-echo. & echo * Starts the test runner.
+echo. & echo * Start the test runner.
 
 echo.
 start "Start NPM" cmd /k npm test
@@ -994,7 +994,7 @@ exit/b
 :rdev
 :rude
 
-echo. & echo * Starts the development server.
+echo. & echo * Start the development server.
 
 call fn package.json || exit/b
 
@@ -1035,7 +1035,7 @@ exit/b
 :star
 :start
 
-echo. & echo * Run React UI. Starts the development server.
+echo. & echo * Run React UI. Start the development server.
 
 call fn package.json || exit/b
 
