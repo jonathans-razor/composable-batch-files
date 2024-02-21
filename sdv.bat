@@ -45,7 +45,7 @@ rem echo. & echo * New double dictionary code. The local dictionary overwites th
 
 if not exist "%cbf-default-sd%" exit/b
 
-call n %1 2>nul
+call n %1 2>nul || exit/b
 
 call "%cbf-default-sd%" %1 2>nul
 
