@@ -74,27 +74,30 @@ call g dirt
 
 :
 call sep
-call t f & call g dirt
-
-:
-call sep
-call t vute & call g dirt
+call t vute
+call g dirt
 
 :
 rem echo. & echo * Exiting here ***************************************.
 call rf>nul
 echo.
 echo.
-goto exit
+exit/b
 
 :
 call sep
-call t gcc
+call t f 
 call g dirt
 
 :
 call sep
-call t prat & call g dirt
+call t gcc 
+call g dirt
+
+:
+call sep
+call t prat 
+call g dirt
 
 :Necessary Edge Case Spacer - Please do not delete.
 
@@ -103,12 +106,6 @@ call t prat & call g dirt
 :_
 :commit-current-folder
 call g dirt
-exit/b
-
-
-
-:_
-:exit
 exit/b
 
 
