@@ -23,7 +23,7 @@ exit/b
 
 :_
 
-:main
+:old-main
 
 set cbf-is-home-machine=
 
@@ -48,8 +48,18 @@ call ss %0
 
 exit/b
 
+lu:
+Apr-10-2019
 
-rem lu: Apr-10-2019
+
+
+:_
+
+:main
+
+call pl c
+
+exit/b
 
 
 
