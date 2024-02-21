@@ -5646,7 +5646,7 @@ List buildihg.
 ::_
 :vt8
 
-echo. & echo * %1.
+echo. & echo * %1. Computed properties.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -5654,10 +5654,15 @@ set cbf-url=https://vuejs.org/tutorial/#step-8
 
 exit/b
 
+lc:
+(!copr)
+
 rem:
 What do you notice about this code? 
 Computed values are complicated.
 
+skw:
+computed property
 
 
 ::_
@@ -6468,7 +6473,6 @@ exit/b
 
 echo. & echo * Debugging Vue in VS Code.
 
-rem   qq
 call n >nul
 set cbf-pt=%cbf-pt%\
 set cbf-url=
@@ -6483,7 +6487,6 @@ exit/b
 
 echo. & echo * Vue DevTools.
 
-rem   qq
 set cbf-url=https://devtools.vuejs.org/guide/installation.html
 set cbf-yt=https://www.youtube.com/watch?v=iKck6xEnIhc
 
