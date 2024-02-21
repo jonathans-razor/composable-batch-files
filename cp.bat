@@ -1454,4 +1454,23 @@ exit/b
 
 
 
+::_
+:reco
+
+echo. & echo * Reverse copy/use Vue project %.
+
+call t ve1>nul
+cd %cbf-pt%\src
+
+call fn App.vue || exit/b
+
+call fn %2
+
+echo.
+xcopy /y App.vue %cbf-fn%
+
+exit/b
+
+
+
 :_ (!efcp)

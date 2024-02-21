@@ -1,7 +1,7 @@
 :_
 @echo off
 
-echo. & echo  * Edit App.vue file.
+echo. & echo * Edit App.vue file.
 
 if "%~1" == "" goto main
 if "%~1" == "?" goto help
