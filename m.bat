@@ -110,11 +110,12 @@ echo           wiz_stag  Run wizard that builds a WAR file for staging.
 
 
 :_
-
-Metadata: Track Size (!tsm)
+;Metadata: Track Size (!tsm)
 
      Date      Lines      Bytes   Functs  Notes
  -----------  ------  ---------  -------  -------------------------------------------------
+
+:Feb-21-2024   5,041     88,847      235  m.bat
 
 : Jan-4-2024   5,370     91,844      241
 
