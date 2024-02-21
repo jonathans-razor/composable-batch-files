@@ -6463,4 +6463,32 @@ exit/b
 
 
 
+:_
+:db
+
+echo. & echo * Debugging Vue in VS Code.
+
+rem   qq
+call n >nul
+set cbf-pt=%cbf-pt%\
+set cbf-url=
+set cbf-
+
+exit/b
+
+
+
+:_
+:vdt
+
+echo. & echo * Vue DevTools.
+
+rem   qq
+set cbf-url=https://devtools.vuejs.org/guide/installation.html
+set cbf-yt=https://www.youtube.com/watch?v=iKck6xEnIhc
+
+exit/b
+
+
+
 :_ (!efn)
