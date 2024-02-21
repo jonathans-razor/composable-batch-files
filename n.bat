@@ -6260,7 +6260,7 @@ exit/b
 echo. & echo * %1. 
 
 call n vute>nul
-set cbf-fn=%cbf-pt%\ve1\ve24-fireship-reactive-data-changes.vue
+set cbf-fn=%cbf-pt%\ve1\src\ve24-fireship-reactive-data-changes.vue
 set cbf-pt=%cbf-pt%\ve1
 set cbf-yt=https://www.youtube.com/watch?v=nhBVL41-_Cw
 

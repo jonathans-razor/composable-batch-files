@@ -1440,7 +1440,7 @@ exit/b
 :ve23
 :ve24
 
-echo. & echo * Use Vue project %.
+echo. & echo * Copy/use Vue project %.
 
 call t ve1>nul
 cd %cbf-pt%\src

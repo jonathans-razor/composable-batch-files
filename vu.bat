@@ -528,7 +528,7 @@ exit/b
 :ve23
 :ve24
 
-echo. & echo * Run %1.
+echo. & echo * Run Vue project %1.
 
 call cp %1
 call t ve1>nul
