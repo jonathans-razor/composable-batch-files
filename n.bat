@@ -5833,8 +5833,7 @@ echo. & echo * %1.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\%1
-rem qq
-set cbf-fn=%cbf-pt%\src\%2-*.vue
+set cbf-fn=%cbf-pt%\src\%1-*.vue
 
 set cbf-url=https://vuejs.org/examples/#hello-world
 
@@ -6261,7 +6260,7 @@ exit/b
 ::_
 :ve24
 
-echo. & echo * %1. 
+echo. & echo * %1. Fireship 100 seconds on Vue.
 
 call n vute>nul
 set cbf-fn=%cbf-pt%\ve1\src\ve24-fireship-reactive-data-changes.vue
@@ -6282,7 +6281,7 @@ Good demo of reactive mechanics.
 echo. & echo * %1. Debugger testing.
 
 call n vute>nul
-set cbf-fn=%cbf-pt%\ve1\src\ve25-*.vue
+set cbf-fn=%cbf-pt%\ve1\src\ve25-debug-testing.vue
 set cbf-pt=%cbf-pt%\ve1
 
 exit/b

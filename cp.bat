@@ -1468,7 +1468,9 @@ call fn App.vue || exit/b
 call fn %2
 
 echo.
+@echo on
 xcopy /y App.vue %cbf-fn%
+@echo off
 
 exit/b
 
