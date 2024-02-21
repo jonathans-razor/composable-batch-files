@@ -5833,6 +5833,9 @@ echo. & echo * %1.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\%1
+rem qq
+set cbf-fn=%cbf-pt%\src\%2-*.vue
+
 set cbf-url=https://vuejs.org/examples/#hello-world
 
 exit/b
@@ -6242,7 +6245,8 @@ exit/b
 echo. & echo * %1. Reverse list.
 
 call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
+set cbf-pt=%cbf-pt%\ve1\src
+set cbf-fn=%cbf-pt%\%2-*.vue
 set cbf-url=https://vuejs.org/examples/#form-bindings
 
 rem:
@@ -6264,10 +6268,28 @@ set cbf-fn=%cbf-pt%\ve1\src\ve24-fireship-reactive-data-changes.vue
 set cbf-pt=%cbf-pt%\ve1
 set cbf-yt=https://www.youtube.com/watch?v=nhBVL41-_Cw
 
+exit/b
+
 rem:
 Good demo of reactive mechanics.
 
+
+
+
+::_
+:ve25
+
+echo. & echo * %1. Debugger testing.
+
+call n vute>nul
+set cbf-fn=%cbf-pt%\ve1\src\ve25-*.vue
+set cbf-pt=%cbf-pt%\ve1
+
 exit/b
+
+rem:
+I need to know this.
+
 
 
 

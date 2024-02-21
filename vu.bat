@@ -527,6 +527,7 @@ exit/b
 :ve22
 :ve23
 :ve24
+:ve25
 
 echo. & echo * Run Vue project %1.
 
