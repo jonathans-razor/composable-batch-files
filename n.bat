@@ -6521,4 +6521,18 @@ Jan-31-2022
 
 
 
+:_
+:todo
+
+echo. & echo * Todo app by Tyler Potts.
+
+rem   qq
+call n vute>nul
+set cbf-pt=%cbf-pt%\todo-app
+set cbf-yt=https://www.youtube.com/watch?v=qhjxAP1hFuI
+
+exit/b
+
+
+
 :_ (!efn)
