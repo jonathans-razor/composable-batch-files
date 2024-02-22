@@ -175,104 +175,6 @@ Apr-24-2018
 
 
 
-:_+ Listing
-
-
-
-::_
-:list-g
-
-echo. & echo * Verbose list of my globally installed packages.
-
-echo.
-npm list -g --depth 0 --long true
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:list
-
-echo. & echo * List of installed packages.
-
-echo.
-echo.
-npm list --long true
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:list_my
-
-echo. & echo * List of installed packages that only I have installed. As opposed to the hierarchy of what those packages have installed.
-
-echo.
-echo.
-npm list --depth 0
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:list_all
-
-echo. & echo * List of globally installed packages.
-
-echo.
-npm list --global true
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:my_g_json_list
-
-echo. & echo * Verbose list of my globally installed packages in JSON format.
-
-echo.
-echo.
-npm list --global true --depth 0 --long true --json true
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:my_g_json_dlist
-
-echo. & echo * Verbose list of my globally installed packages in JSON format for dev dependencies only.
-
-echo.
-echo.
-npm list --global true --depth 0 --long true --dev true
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
 :_
 :prun
 
@@ -1735,6 +1637,104 @@ exit/b
 rem:
 Apparently this is outdated.
 quasar create quasar-note-app --branch next
+
+
+
+:_+ Listing
+
+
+
+::_
+:list
+
+echo. & echo * Verbose list of my globally installed packages.
+
+echo.
+npm list -g --depth 0 --long true
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:list-j
+
+echo. & echo * Verbose list of my globally installed packages in JSON format.
+
+echo.
+echo.
+npm list --global true --depth 0 --long true --json true
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:list-d
+
+echo. & echo * Verbose list of my globally installed packages in JSON format for dev dependencies only.
+
+echo.
+echo.
+npm list --global true --depth 0 --long true --dev true
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:list-l
+
+echo. & echo * List of installed packages.
+
+echo.
+echo.
+npm list --long true
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:list-all
+
+echo. & echo * List of globally installed packages.
+
+echo.
+npm list --global true
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:list-my
+
+echo. & echo * List of installed packages that only I have installed. As opposed to the hierarchy of what those packages have installed.
+
+echo.
+echo.
+npm list --depth 0
+
+exit/b
+
+lu:
+Apr-24-2018
 
 
 
