@@ -58,12 +58,11 @@ cls
 call rf r>nul
 
 :
-call sep 2024
+call sep
 call t cbf
 call g dirt
 
 :
-rem qq
 call sep
 call t ql
 call g dirt

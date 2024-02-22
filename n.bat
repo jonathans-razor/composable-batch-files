@@ -80,7 +80,21 @@ set cbf-graphic=%cbf-pt%\ascii-art-separator-feb-2024.txt
 exit/b
 
 lu:
-Sep-20-2023
+Feb-22-2024
+
+
+
+::_
+:ascii-art-separator-2024
+
+echo. & echo * ASCII Art - %1.
+call n cbf>nul
+set cbf-graphic=%cbf-pt%\ascii-art-separator-2024.txt
+
+exit/b
+
+lu:
+Feb-22-2024
 
 
 
