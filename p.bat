@@ -64,12 +64,12 @@ call g dirt
 
 :
 call sep
-call t dsa
+call t ql
 call g dirt
 
 :
 call sep
-call t ql
+call t dsa
 call g dirt
 
 :
