@@ -6541,7 +6541,6 @@ exit/b
 
 echo. & echo * Tech pictures.
 
-rem   qq
 call n it>nul
 set cbf-pt=%cbf-pt%\pictures
 
