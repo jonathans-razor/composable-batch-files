@@ -71,11 +71,11 @@ exit/b
 
 
 ::_
-:ascii-art-separator-2024
+:ascii-art-separator-feb-2024
 
 echo. & echo * ASCII Art - %1.
 call n cbf
-set cbf-graphic=%cbf-pt%\ascii-art-separator-2024.txt
+set cbf-graphic=%cbf-pt%\ascii-art-separator-feb-2024.txt
 
 exit/b
 
@@ -85,11 +85,25 @@ Sep-20-2023
 
 
 ::_
-:ascii-art-2023-separator
+:ascii-art-separator-2023
 
 echo. & echo * ASCII Art - %1.
-call n cbf
-set cbf-graphic=%cbf-pt%\ascii-art-2023-separator.txt
+call n cbf>nul
+set cbf-graphic=%cbf-pt%\ascii-art-separator-2023.txt
+
+exit/b
+
+lu:
+Sep-20-2023
+
+
+
+::_
+:ascii-art-separator-2022
+
+echo. & echo * ASCII Art - %1.
+call n cbf>nul
+set cbf-graphic=%cbf-pt%\ascii-art-separator-2022.txt
 
 exit/b
 
