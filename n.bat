@@ -3148,221 +3148,6 @@ Sep-20-2023
 
 
 
-:_+ CBF Testing
-
-
-
-::_
-:lu
-
-echo. & echo * Last updated: Feb-14-2024-11-43-AM
-echo. & echo * Last updated: Feb-13-2024-10-42-AM
-
-exit/b
-
-
-
-::_
-:k
-:test
-
-echo. & echo * Test kangaroo. Jump. Jump. Jump around. Kangaroo Koke machine.
-
-call n aa>nul
-set cbf-pt=%cbf-pt%\k\te st
-
-set cbf-app=%cbf-pt%\j1.txt
-set cbf-ex=%cbf-pt%\j1.xlsx
-rem set cbf-fn=%cbf-pt%\j1.txt
-set cbf-jpg=%cbf-pt%\j1.jpg
-set cbf-png=%cbf-pt%\j1.png
-rem set cbf-png=%cbf-pt%\hard file (77).png
-set cbf-fn=%cbf-pt%\hard file (5).txt
-
-exit/b
-
-
-
-::_
-:aat
-
-echo. & echo * aa test.
-
-call n aa>nul
-set cbf-pt=%cbf-pt%\test
-
-exit/b
-
-
-
-::_
-:caret
-:cubed-caret
-:hat-trick
-
-echo. & echo * The triple hat/caret seems to work for URLS!
-
-rem This works! Oct-10-2023
-set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
-
-exit/b
-
-skw:
-triple caret
-triple hat works
-
-
-
-::_
-:amp
-:ambu
-:ampe-bug
-:wlcbf
-
-echo. & echo * Get ampersands to work in cbf-urls. For example, get "sf wlcbf" to work. It has an ampersand in the cbf-url string.
-
-rem This works! Oct-10-2023
-set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
-
-echo.
-echo * cbf-url: %cbf-url%%cbf-url2%%cbf-url3%
-
-exit/b
-
-lu:
-Sep-5-2021
-
-skw:
-hat trick
-cbf-testing
-triple caret
-test-cbf
-test cbf
-triple hat works
-
-Double quoates didn't work.
-set cbf-url=https://www.bing.com/search?q=Bing+AI"&"showconv=1
-
-set cbf-url1=https://www.bing.com/search?q=Bing+AI
-set cbf-url2=%%&
-set cbf-url3=showconv=1
-
-set cbf-url=https://www.bing.com/search?q=Bing+AI%%38showconv=1
-
-Double backslash doesn't work.
-set cbf-url=https://www.bing.com/search?q=Bing+AI\\&showconv=1
-
-Slash doesn't work.
-set cbf-url=https://www.bing.com/search?q=Bing+AI/&showconv=1
-
-Backslash doesn't work.
-set cbf-url=https://www.bing.com/search?q=Bing+AI\&showconv=1
-
-Original Oct-9-2023 - Doesn't work.
-set cbf-url=https://www.bing.com/search?q=Bing+AI&showconv=1
-
-rem This is a copy of the original, listed at the bottom.
-set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8&list=WL&index=10&t=831s
-
-set cbf-url=https://www.youtube.com
-
-rem This is the original minus everything to the right of the first ampersand.
-rem Result? Same friggin link.
-set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8
-
-rem This is the original.
-set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8&list=WL&index=10&t=831s
-
-
-
-::_
-:t1
-
-echo. & echo * Test folder.
-
-set cbf-pt=d:\aa
-
-exit/b
-
-
-
-::_
-:t2
-
-echo. & echo * Test 2.
-
-set cbf-pt=%dropbox%\it\composable-batch-files
-
-exit/b
-
-lu:
-Jan-26-2024
-
-
-
-::_
-:bog
-:bogu
-:bogus
-:et
-
-echo. & echo * Bogus CBF for error testing.
-
-call n a
-set cbf-fn=%cbf-pt%\j 5.txt
-
-exit/b
-
-lu:
-Mar-31-2022
-
-
-
-::_
-:obf
-
-echo. & echo * An overcomplicated(?) way to call a batch file.
-
-call n cbf>nul
-
-set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-app=%cbf-pt%\t.bat
-
-exit/b
-
-lu:
-Aug-18-2021
-
-
-
-::_
-:repa
-
-echo. & echo * Relative path.
-
-set cbf-pt=\test\integration
-
-exit/b
-
-lu:
-Mar-31-2022
-
-
-
-::_
-:el-test
-
-echo. & echo * Test where error level 4 is coming from.
-rem call n vdi>nul
-set cbf-fn=%cbf-pt%\Miscellany\message-to-xps.txt
-
-exit/b
-
-lu:
-Jan-31-2022
-
-
-
 :_+ EMDO Family (!emdo)
 
 
@@ -6519,6 +6304,220 @@ set cbf-url=https://devtools.vuejs.org/guide/installation.html
 set cbf-yt=https://www.youtube.com/watch?v=iKck6xEnIhc
 
 exit/b
+
+
+
+:_+ CBF Testing
+
+
+
+::_
+:lu
+
+echo. & echo * From %0: last updated: Feb-14-2024-11-43-AM
+
+exit/b
+
+
+
+::_
+:k
+:test
+
+echo. & echo * Test kangaroo. Jump. Jump. Jump around. Kangaroo Koke machine.
+
+call n aa>nul
+set cbf-pt=%cbf-pt%\k\te st
+
+set cbf-app=%cbf-pt%\j1.txt
+set cbf-ex=%cbf-pt%\j1.xlsx
+rem set cbf-fn=%cbf-pt%\j1.txt
+set cbf-jpg=%cbf-pt%\j1.jpg
+set cbf-png=%cbf-pt%\j1.png
+rem set cbf-png=%cbf-pt%\hard file (77).png
+set cbf-fn=%cbf-pt%\hard file (5).txt
+
+exit/b
+
+
+
+::_
+:aat
+
+echo. & echo * aa test.
+
+call n aa>nul
+set cbf-pt=%cbf-pt%\test
+
+exit/b
+
+
+
+::_
+:caret
+:cubed-caret
+:hat-trick
+
+echo. & echo * The triple hat/caret seems to work for URLS!
+
+rem This works! Oct-10-2023
+set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
+
+exit/b
+
+skw:
+triple caret
+triple hat works
+
+
+
+::_
+:amp
+:ambu
+:ampe-bug
+:wlcbf
+
+echo. & echo * Get ampersands to work in cbf-urls. For example, get "sf wlcbf" to work. It has an ampersand in the cbf-url string.
+
+rem This works! Oct-10-2023
+set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
+
+echo.
+echo * cbf-url: %cbf-url%%cbf-url2%%cbf-url3%
+
+exit/b
+
+lu:
+Sep-5-2021
+
+skw:
+hat trick
+cbf-testing
+triple caret
+test-cbf
+test cbf
+triple hat works
+
+Double quoates didn't work.
+set cbf-url=https://www.bing.com/search?q=Bing+AI"&"showconv=1
+
+set cbf-url1=https://www.bing.com/search?q=Bing+AI
+set cbf-url2=%%&
+set cbf-url3=showconv=1
+
+set cbf-url=https://www.bing.com/search?q=Bing+AI%%38showconv=1
+
+Double backslash doesn't work.
+set cbf-url=https://www.bing.com/search?q=Bing+AI\\&showconv=1
+
+Slash doesn't work.
+set cbf-url=https://www.bing.com/search?q=Bing+AI/&showconv=1
+
+Backslash doesn't work.
+set cbf-url=https://www.bing.com/search?q=Bing+AI\&showconv=1
+
+Original Oct-9-2023 - Doesn't work.
+set cbf-url=https://www.bing.com/search?q=Bing+AI&showconv=1
+
+rem This is a copy of the original, listed at the bottom.
+set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8&list=WL&index=10&t=831s
+
+set cbf-url=https://www.youtube.com
+
+rem This is the original minus everything to the right of the first ampersand.
+rem Result? Same friggin link.
+set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8
+
+rem This is the original.
+set cbf-url=https://www.youtube.com/watch?v=w7ejDZ8SWv8&list=WL&index=10&t=831s
+
+
+
+::_
+:t1
+
+echo. & echo * Test folder.
+
+set cbf-pt=d:\aa
+
+exit/b
+
+
+
+::_
+:t2
+
+echo. & echo * Test 2.
+
+set cbf-pt=%dropbox%\it\composable-batch-files
+
+exit/b
+
+lu:
+Jan-26-2024
+
+
+
+::_
+:bog
+:bogu
+:bogus
+:et
+
+echo. & echo * Bogus CBF for error testing.
+
+call n a
+set cbf-fn=%cbf-pt%\j 5.txt
+
+exit/b
+
+lu:
+Mar-31-2022
+
+
+
+::_
+:obf
+
+echo. & echo * An overcomplicated(?) way to call a batch file.
+
+call n cbf>nul
+
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-app=%cbf-pt%\t.bat
+
+exit/b
+
+lu:
+Aug-18-2021
+
+
+
+::_
+:repa
+
+echo. & echo * Relative path.
+
+set cbf-pt=\test\integration
+
+exit/b
+
+lu:
+Mar-31-2022
+
+
+
+::_
+:el-test
+
+echo. & echo * Test where error level 4 is coming from.
+rem call n vdi>nul
+set cbf-fn=%cbf-pt%\Miscellany\message-to-xps.txt
+
+exit/b
+
+lu:
+Jan-31-2022
 
 
 
