@@ -35,18 +35,6 @@ Feb-22-2024
 
 
 :_
-:main
-
-rem qq
-rem echo. & echo * Show Ascii art separator.
-call n ascii-art-separator-feb-2024>nul
-type %cbf-graphic%
-
-exit/b
-
-
-
-:_
 :2022
 
 rem echo. & echo * Show Ascii art separator.
@@ -83,6 +71,17 @@ exit/b
 :feb-2024
 
 rem echo. & echo * Show Ascii art separator - 2024.
+call n ascii-art-separator-feb-2024>nul
+type %cbf-graphic%
+
+exit/b
+
+
+
+:_
+:main
+
+rem echo. & echo * Show Ascii art separator.
 call n ascii-art-separator-feb-2024>nul
 type %cbf-graphic%
 
