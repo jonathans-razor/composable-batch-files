@@ -2286,6 +2286,23 @@ exit/b
 
 
 :_
+:Feb-15-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node deployment-tracker.js Package109 Package7 Package7 Package7 Package7 Package1 Package2 Package3 Package44 Package44 Package44 Package3 Package3 Package3 Package9 Package17 Package18 Package18 Package26 Package109
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2309,15 +2326,17 @@ exit/b
 
 
 :_
-:Feb-15-2024
+:Feb-22-2024
 
 cls
 
-echo. & echo * %1.
+rem echo. & echo * %1.
 
 @echo on
 
-node deployment-tracker.js Package109 Package7 Package7 Package7 Package7 Package1 Package2 Package3 Package44 Package44 Package44 Package3 Package3 Package3 Package9 Package17 Package18 Package18 Package26 Package109
+node 704-binary-search.js -1 0 3 5 9 12 9
+node 704-binary-search.js -1 0 3 5 9 12 2
+node 704-binary-search.js -1 0 3 5 9 12 15 22 23 23
 
 @echo off
 
