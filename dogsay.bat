@@ -2,7 +2,7 @@
 
 @echo off
 if "%~1" == "?" goto help
-if "%~1" == "" cowsay Wait. What?
+if "%~1" == "" dogsay Wait. What?
 goto main
 
 
@@ -10,7 +10,7 @@ goto main
 :_
 :help
 cls
-echo. & echo * Talking cow.
+echo. & echo * Talking dog.
 
 echo. & echo * Usage: %~n0 [space separated parameter(s)]
 
@@ -35,8 +35,6 @@ rem creation date:
 
 :_
 :main
-
-cls
 
 echo.
 echo.

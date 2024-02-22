@@ -42,7 +42,6 @@ Composable Batch Files (CBF) - Table of Contents
    cocod  Run Code Compare using 2 DCVs.
      col  Shell window colors operations.
   concop  Create a conflict copy report.
-  cowsay  Talking cow.
       cp  Copy files.
      cpr  Surf to Create Pull Request page.
       cs  File contents search.
@@ -56,8 +55,9 @@ Composable Batch Files (CBF) - Table of Contents
     depn  Delete folder corresponding to CBF path alias parameter.
     devu  Demo file for Dev University event on Jan-9-2020.
      dif  Are 2 files the same?
-      dn  Dot Net Core (skw dotnet). (skw supported-languages-series-jj)
       dk  Docker.
+      dn  Dot Net Core (skw dotnet). (skw supported-languages-series-jj)
+  dogsay  Talking dog.
       dr  Create and delete directories. (skw mcd, folder)
       dt  Current date copied to clipboard.
      drt  Dir, with td parameter.
