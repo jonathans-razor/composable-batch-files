@@ -137,6 +137,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       lm  Load clipboard multipurpose.
    lower  Convert the passed in parameter to lower case.
       ls  Wrapper around dir command to help with Linux compatibility.
+      lu  Display last updated information.
        m  Perform simple miscellaneous tasks using a function routing style.
      mav  Maven.
   mav-eg  Maven example.
