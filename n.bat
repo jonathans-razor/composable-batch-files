@@ -6529,6 +6529,7 @@ echo. & echo * Todo app by Tyler Potts.
 rem   qq
 call n vute>nul
 set cbf-pt=%cbf-pt%\todo-app
+set cbf-gho=https://github.com/TylerPottsDev/yt-vue-todo-2022
 set cbf-yt=https://www.youtube.com/watch?v=qhjxAP1hFuI
 
 exit/b
