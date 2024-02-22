@@ -611,57 +611,6 @@ Feb-14-2022
 
 
 
-:_+ Uninstalling
-
-
-
-::_
-:unin-g
-
-echo. & echo * Uninstall "%2" global package and remove dependency section in the package.json file.
-
-echo.
-npm uninstall %2 -g --save
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:unin_s
-
-echo. & echo * Uninstall "%2" local package and remove dependency section in the package.json file.
-
-echo.
-echo.
-npm uninstall %2 --save
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:unin_g
-
-echo. & echo * Uninstall "%2" global package.
-
-echo.
-echo.
-npm uninstall %2 -g
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
 :_+ Local JSON Server
 
 
@@ -1645,6 +1594,7 @@ quasar create quasar-note-app --branch next
 
 
 ::_
+:l
 :list
 
 echo. & echo * Verbose list of my globally installed packages.
@@ -1730,6 +1680,60 @@ echo. & echo * List of installed packages that only I have installed. As opposed
 echo.
 echo.
 npm list --depth 0
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+:_+ Uninstalling
+
+
+
+::_
+:u
+:unin
+
+echo. & echo * Uninstall "%2" global package and remove dependency section in the package.json file.
+
+if "%~2" == "" err Package name is required.
+
+echo.
+npm uninstall %2 -g --save
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:unin_s
+
+echo. & echo * Uninstall "%2" local package and remove dependency section in the package.json file.
+
+echo.
+echo.
+npm uninstall %2 --save
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:unin_g
+
+echo. & echo * Uninstall "%2" global package.
+
+echo.
+echo.
+npm uninstall %2 -g
 
 exit/b
 
