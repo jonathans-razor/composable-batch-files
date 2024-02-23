@@ -90,10 +90,13 @@ exit/b
 
 
 :_
-:1
+:ascii-art-1
+:ascii-art-2
+:ascii-art-3
+:ascii-art-4
 
 rem echo. & echo * Show Ascii art '%1'.
-call n ascii-art-1>nul
+call n %1>nul
 type %cbf-graphic%
 
 exit/b

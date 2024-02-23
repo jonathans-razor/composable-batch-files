@@ -66,21 +66,24 @@ exit/b
 
 
 
-:_+ ASCII Art Family (!fcaa)
+:_+ ASCII Art Family (!fcasar)
 
 
 
 ::_
 :ascii-art-1
+:ascii-art-2
+:ascii-art-3
+:ascii-art-4
 
 echo. & echo * ASCII Art - %1.
 call n cbf
-set cbf-graphic=%cbf-pt%\ascii-art-1.txt
+set cbf-graphic=%cbf-pt%\%1.txt
 
 exit/b
 
 lu:
-Feb-22-2024
+Feb-23-2024
 
 
 

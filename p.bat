@@ -58,22 +58,22 @@ cls
 call rf r>nul
 
 :
-call sep 1
+call sep ascii-art-1
 call t cbf
 call g dirt
 
 :
-call sep
+call sep ascii-art-2
 call t ql
 call g dirt
 
 :
-call sep
+call sep ascii-art-3
 call t dsa
 call g dirt
 
 :
-call sep
+call sep ascii-art-4
 call t vute
 call g dirt
 
