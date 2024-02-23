@@ -58,7 +58,7 @@ cls
 call rf r>nul
 
 :
-call sep
+call sep 1
 call t cbf
 call g dirt
 
