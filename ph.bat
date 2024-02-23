@@ -239,6 +239,7 @@ Nov-1-2023
 
 
 ::_
+:v
 :vers
 
 echo. & echo * Version from %0.bat.

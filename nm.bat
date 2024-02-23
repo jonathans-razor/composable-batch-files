@@ -1704,6 +1704,7 @@ npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_l
 
 
 ::_
+:c-qs
 :c-quas
 
 echo. & echo * Create Quasar app.

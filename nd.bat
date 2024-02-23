@@ -98,6 +98,7 @@ exit/b
 
 
 ::_
+:v
 :vers
 
 echo. & echo * Version from %0.bat.
