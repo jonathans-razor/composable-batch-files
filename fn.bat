@@ -105,7 +105,8 @@ if "%cbf-fn%" == "" (
 )
 
 if not exist "%cbf-fn%" (
-  call err From %~nx0: For parameter 1 "%~1", cbf-fn "%cbf-fn%" does not exist. Feb-16-2024-11-13-PM
+rem qq
+  call not From %~nx0: For parameter 1 "%~1", cbf-fn "%cbf-fn%" does not exist. Feb-16-2024-11-13-PM
   exit/b 3
 )
 

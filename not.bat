@@ -10,7 +10,7 @@ goto main
 :_
 :help
 
-echo. & echo * Draws an error graphic with an error message.
+echo. & echo * Draws a notice graphic with a message.
 
 echo. & echo * Usage: %0
 
@@ -31,10 +31,10 @@ rem lu: Sep-22-2022
 :_
 :main
 
-rem echo. & echo * Show Ascii art error.
-call n ascii-art-error>nul
+rem echo. & echo * Show Ascii art notice.
+call n ascii-art-notice>nul
 type %cbf-message-graphic%
-echo       Error: %*
+echo       Notice: %*
 
 exit/b 1
 

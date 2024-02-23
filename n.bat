@@ -133,7 +133,7 @@ echo. & echo * ASCII Art - %1.
 
 call n cbf
 
-set cbf-error-graphic=%cbf-pt%\ascii-art-error-box.txt
+set cbf-message-graphic=%cbf-pt%\ascii-art-error.txt
 
 exit/b
 
@@ -147,8 +147,7 @@ lu: Sep-22-2022
 echo. & echo * ASCII Art - %1.
 
 call n cbf
-
-set cbf-notice-graphic=%cbf-pt%\ascii-art-notice.txt
+set cbf-message-graphic=%cbf-pt%\ascii-art-notice.txt
 
 exit/b
 
