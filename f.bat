@@ -23,8 +23,8 @@ folder or via alias, with extension or not, with spaces or not.
 
 echo. & echo   Usage: %0 [space separated parameter(s)]
 
-echo. & echo * Parameter 1: Application alias.
-echo. & echo   Parameter 2: Alias or filename.
+echo. & echo   Parameter 1: Application alias.
+echo. & echo   Parameter 2: Filename or filename alias.
 
 echo. & echo * Examples:
 echo   %0 no j1

@@ -18,8 +18,8 @@ echo. & echo * Open any file with any application using a DCV.
 
 echo. & echo * Usage: %0 [space separated parameter(s)]
 
-echo. & echo   Parameter 1: Alias you wish to process.
-        echo   Parameter 2: DCV
+echo. & echo   Parameter 1: General dictionary alias.
+        echo   Parameter 2: DCV.
         echo   Parameter 3: Application alias.
 
 echo. & echo * Batch file style: Custom.
