@@ -6569,4 +6569,20 @@ it pictures
 
 
 
+:_
+:vdt
+
+echo. & echo * Vuetify data table tutorial.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vuetify-data-table
+set cbf-yt=https://www.youtube.com/watch?v=wbQmalKFDOo
+
+exit/b
+
+lu:
+Feb-23-2024
+
+
+
 :_ (!efn)

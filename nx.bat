@@ -174,4 +174,19 @@ exit/b
 
 
 
+:_
+:vnt
+
+echo. & echo * Vuetify with Nuxt
+
+npx giget@latest gh:pinegrow/pg-nuxt/pg-nuxt-vuetify#blank vuetify-with-nuxt-tutorial
+rem npx giget@latest gh:pinegrow/pg-nuxt/pg-nuxt-vuetify#blank .
+
+exit/b
+
+lu:
+Feb-23-2024
+
+
+
 :_ (!efnx)
