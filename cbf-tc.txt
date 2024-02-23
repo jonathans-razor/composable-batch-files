@@ -121,6 +121,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       ji  Jira DCV operations.
      jmb  Surf to the Jenkins Multibranch website for the passed in alias.
       jp  Surf to Jenkins Pipeline.
+     jpg  Leverage DCV.
       jr  Use jar to inspect EAR files.
       js  Edit DCV file in NotePad++ for file type js.
     json  Edit DCV file in NotePad++ for file type json.

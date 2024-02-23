@@ -125,6 +125,22 @@ exit/b
 
 
 :_
+:jpg
+:png
+
+echo. & echo * Default.
+
+if "%~2" == "" err Default behavior is undefined for "%1" DCV. Feb-23-2024-4-29-PM
+
+exit/b
+
+rem:
+This is CBF is used for those DCV Leverage batch files that don't have a default behavior.
+This makes the error message more understandable. Feb-23-2024
+
+
+
+:_
 :lh
 rem echo. & echo * Default Localhost.
 

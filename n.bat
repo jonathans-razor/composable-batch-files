@@ -6553,7 +6553,9 @@ exit/b
 
 :_
 :itpi
+:tech
 :tepi
+:tp
 
 echo. & echo * Tech pictures.
 
@@ -6561,6 +6563,9 @@ call n it>nul
 set cbf-pt=%cbf-pt%\pictures
 
 exit/b
+
+skw:
+it pictures
 
 
 
