@@ -71,6 +71,20 @@ exit/b
 
 
 ::_
+:ascii-art-1
+
+echo. & echo * ASCII Art - %1.
+call n cbf
+set cbf-graphic=%cbf-pt%\ascii-art-1.txt
+
+exit/b
+
+lu:
+Feb-22-2024
+
+
+
+::_
 :ascii-art-separator-feb-2024
 
 echo. & echo * ASCII Art - %1.
