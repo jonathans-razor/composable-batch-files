@@ -108,7 +108,7 @@ exit/b
 
 rem echo. & echo * Show Ascii art '%1'.
 
-call n cbf
+call n cbf>nul
 set cbf-graphic=%cbf-pt%\%1.txt
 type %cbf-graphic%
 rem qq
