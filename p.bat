@@ -58,7 +58,7 @@ cls
 call rf r>nul
 
 :
-call sep ascii-art-1
+call sep ascii-art-dynamite
 call t cbf
 call g dirt
 

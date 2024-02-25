@@ -75,6 +75,7 @@ exit/b
 :ascii-art-2
 :ascii-art-3
 :ascii-art-4
+:ascii-art-dynamite
 
 echo. & echo * ASCII Art - %1.
 call n cbf
