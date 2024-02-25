@@ -659,18 +659,15 @@ Jun-11-2023
 
 
 :_
-:rp
 :repo
-:repos
-:repository_folder
-
-echo. & echo * Repository folder.
 
 set cbf-pt=c:\repos
 if exist "c:\GitHub Repositories" set cbf-pt=c:\GitHub Repositories
 if exist "d:\aa\repositories" set cbf-pt=d:\aa\repositories
 if exist "c:\aa\repositories" set cbf-pt=c:\aa\repositories
 if exist "c:\repositories" set cbf-pt=c:\repositories
+
+echo. & echo * Set repository folder to "%cbf-pt%".
 
 exit/b
 

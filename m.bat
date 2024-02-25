@@ -4457,7 +4457,7 @@ exit/b
 echo. & echo * Initialize environment for %1.
 
 call %0 set-default-browser br
-call %0 set-default-repository-folder c-aa-repos
+call n repo
 call %0 set-default-text-editor me
 call set-default-secondary-dictionary-sp7.bat
 
@@ -4481,7 +4481,7 @@ echo. & echo * Initialize environment for %1.
 set path=%dropbox%\savannah\belfry;%path%
 
 call %0 set-default-browser br
-call %0 set-default-repository-folder c-aa-repos
+call n repo
 call %0 set-default-text-editor me
 call set-default-secondary-dictionary.bat
 
@@ -4508,23 +4508,6 @@ exit/b
 lu:
 Nov-9-2023
 Aug-8-2018
-
-
-
-::_
-:set-default-repository-folder
-
-echo. & echo * Set default repository folder.
-
-if "%~2" == "" call n c-aa-repos
-if not "%~2" == "" call n %2
-set cbf-repo=%cbf-pt%
-
-exit/b
-
-lu:
-Nov-9-2023
-Jul-10-2018
 
 
 
