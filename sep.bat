@@ -104,3 +104,17 @@ exit/b
 
 
 :_
+:ascii-art-dynamite
+
+rem echo. & echo * Show Ascii art '%1'.
+
+call n cbf
+set cbf-graphic=%cbf-pt%\%1.txt
+type %cbf-graphic%
+rem qq
+
+exit/b
+
+
+
+:_
