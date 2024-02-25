@@ -63,17 +63,17 @@ call t cbf
 call g dirt
 
 :
-call sep ascii-art-2
+call sep ascii-art-dynamite
 call t ql
 call g dirt
 
 :
-call sep ascii-art-3
+call sep ascii-art-dynamite
 call t dsa
 call g dirt
 
 :
-call sep ascii-art-4
+call sep ascii-art-dynamite
 call t vute
 call g dirt
 
