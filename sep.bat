@@ -110,7 +110,6 @@ rem echo. & echo * Show Ascii art '%1'.
 
 call n cbf>nul
 type %cbf-pt%\%1.txt
-rem qq
 
 exit/b
 
