@@ -869,6 +869,7 @@ Compile and hot-reload for development.
 :run
 :ruse
 :serv
+:srv
 
 echo. & echo * Run serve.
 

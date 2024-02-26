@@ -6230,45 +6230,6 @@ exit/b
 
 
 
-:_+ Make Apps With Danny
-
-
-
-::_
-:mawd
-
-echo. & echo * Make apps with Danny.
-
-if "%~2" == "" err Parameter 2, the project name, is required.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\make-apps-with-danny
-set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY&list=WL&index=1
-
-exit/b
-
-rem:
-I think the video was too old. I couldn't get his code to work as presented. Feb-14-2024
-
-
-
-::_
-:tuvx
-:vuex
-
-echo. & echo * Vuex tutorial by Make Apps With Danny.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vuex-tutorial
-set cbf-yt=https://youtu.be/nFh7-HfODYY?si=I91hCuFHEaiBRNcH
-
-exit/b
-
-yt:
-how to make api call with vuex
-
-
-
 :_
 :quas
 :tuqu
@@ -6579,6 +6540,46 @@ exit/b
 
 lu:
 Feb-23-2024
+
+
+
+:_+ Make Apps With Danny
+
+
+
+::_
+:mawd
+
+echo. & echo * Make apps with Danny.
+
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\make-apps-with-danny
+set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY&list=WL&index=1
+
+exit/b
+
+rem:
+I think the video was too old. I couldn't get his code to work as presented. Feb-14-2024
+
+
+
+::_
+:tuvx
+:vuex
+
+echo. & echo * Vuex tutorial by Make Apps With Danny.
+
+call n vute>nul
+rem qq
+set cbf-pt=%cbf-pt%\vuex-tutorial
+set cbf-yt=https://youtu.be/nFh7-HfODYY?si=I91hCuFHEaiBRNcH
+
+exit/b
+
+yt:
+how to make api call with vuex
 
 
 
