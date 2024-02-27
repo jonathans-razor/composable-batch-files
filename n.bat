@@ -3372,126 +3372,6 @@ Oct-17-2023
 
 
 
-:_+ Pictures (!fcpict)
-
-
-
-::_
-:b
-:brea
-:nppi
-
-set cbf-pd=Breakaway
-
-echo. & echo * %cbf-pd%.
-
-call n pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:fv
-:fvpi
-:fvpict
-:hura
-
-set cbf-pd=Favorites
-
-echo. & echo * %cbf-pd%. All time favorite pictures.
-
-call n pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:pict
-
-echo. & echo * Pictures.
-
-set cbf-pt=%dropbox%\pictures
-
-exit/b
-
-lu:
-Sep-25-2020
-
-
-
-::_
-:nex
-:nx
-
-echo. & echo * New and exciting.
-call n dr
-set cbf-pt=%cbf-pt%\pictures\new and exciting
-
-exit/b
-
-
-
-::_
-:baar
-
-echo. & echo * Bahamian art.
-
-call n pict
-set cbf-pd=bahamian art
-set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:wosa
-
-set cbf-pd=Work Safe
-
-echo. & echo * %cbf-pd%.
-
-call n pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:educ
-
-set cbf-pd=Educational
-
-echo. & echo * %cbf-pd%.
-
-call n pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:fun
-:funn
-:humo
-
-set cbf-pd=humor
-
-echo. & echo * %cbf-pd%.
-
-call n pict
-set cbf-pt=%cbf-pt%\humor
-
-exit/b
-
-
-
 :_+ Temporary Folders
 
 
@@ -6599,6 +6479,149 @@ finished-successfully-series-jj
 
 yt:
 how to make api call with vuex
+
+
+
+:_+ Pictures (!fcpict)
+
+
+
+::_
+:pict
+
+echo. & echo * Pictures.
+
+set cbf-pt=%dropbox%\pictures
+
+exit/b
+
+lu:
+Sep-25-2020
+
+
+
+::_
+:b
+:brea
+:nppi
+
+set cbf-pd=Breakaway
+
+echo. & echo * %cbf-pd%.
+
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+
+exit/b
+
+
+
+::_
+:fv
+:fvpi
+:fvpict
+:hura
+
+set cbf-pd=Favorites
+
+echo. & echo * %cbf-pd%. All time favorite pictures.
+
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+
+exit/b
+
+
+
+::_
+:nex
+:nx
+
+echo. & echo * New and exciting.
+call n dr
+set cbf-pt=%cbf-pt%\pictures\new and exciting
+
+exit/b
+
+
+
+::_
+:baar
+
+echo. & echo * Bahamian art.
+
+call n pict
+set cbf-pd=bahamian art
+set cbf-pt=%cbf-pt%\%cbf-pd%
+
+exit/b
+
+
+
+::_
+:wosa
+
+set cbf-pd=Work Safe
+
+echo. & echo * %cbf-pd%.
+
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+
+exit/b
+
+
+
+::_
+:educ
+
+set cbf-pd=Educational
+
+echo. & echo * %cbf-pd%.
+
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+
+exit/b
+
+
+
+::_
+:fun
+:funn
+:humo
+
+set cbf-pd=humor
+
+echo. & echo * %cbf-pd%.
+
+call n pict
+set cbf-pt=%cbf-pt%\humor
+
+exit/b
+
+
+
+::_
+:mipi
+
+echo. & echo * Miscellaneous pictures.
+
+call n pict
+set cbf-pt=%cbf-pt%\miscellany
+
+exit/b
+
+
+
+:_
+:wlcar
+
+echo. & echo * Car wish list.
+
+set cbf-gs=https://docs.google.com/spreadsheets/d/1oS-Ysco2SL5ptpUoPkW2MLHalOhtehsJrjop15Qlc4s/edit#gid=0
+
+exit/b
 
 
 
