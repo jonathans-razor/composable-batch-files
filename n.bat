@@ -6589,4 +6589,18 @@ how to make api call with vuex
 
 
 
+:_
+:27
+:va27
+
+echo. & echo * vuetify-app-feb-27-2024.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vuetify-app-feb-27-2024
+set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY
+
+exit/b
+
+
+
 :_ (!efn)
