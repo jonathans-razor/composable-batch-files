@@ -6546,20 +6546,33 @@ Feb-23-2024
 
 
 
+:_
+:vy
+
+echo. & echo * Vuetify.
+
+call n >nul
+set cbf-pt=%cbf-pt%\
+set cbf-url=https://vuetifyjs.com/en/
+set cbf-docs=https://vuetifyjs.com/en/
+
+exit/b
+
+
+
 :_+ Make Apps With Danny
 
 
 
 ::_
-:mawd
+:27
+:va27
 
-echo. & echo * Make apps with Danny.
-
-if "%~2" == "" err Parameter 2, the project name, is required.
+echo. & echo * vuetify-app-feb-27-2024.
 
 call n vute>nul
-set cbf-pt=%cbf-pt%\make-apps-with-danny
-set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY&list=WL&index=1
+set cbf-pt=%cbf-pt%\vuetify-app-feb-27-2024
+set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY
 
 exit/b
 
@@ -6586,20 +6599,6 @@ finished-successfully-series-jj
 
 yt:
 how to make api call with vuex
-
-
-
-:_
-:27
-:va27
-
-echo. & echo * vuetify-app-feb-27-2024.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vuetify-app-feb-27-2024
-set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY
-
-exit/b
 
 
 

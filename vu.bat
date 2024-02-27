@@ -682,4 +682,15 @@ exit/b
 
 
 
+:_
+:crvy
+
+echo. & echo * Create Veutify.
+
+npm create vuetify
+
+exit/b
+
+
+
 :_ (!efvu)

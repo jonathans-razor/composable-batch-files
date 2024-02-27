@@ -706,8 +706,6 @@ call fn package.json || exit/b
 echo.
 start "npm run dev" cmd /k npm run dev
 
-call lh 5173
-
 exit/b
 
 lu:
@@ -900,17 +898,6 @@ echo. & echo * Fix lint
 call fn package.json || exit/b
 
 npm run lint -- --fix
-
-exit/b
-
-
-
-:_
-:crvu
-
-echo. & echo * Create Veutify.
-
-npm create vuetify
 
 exit/b
 
