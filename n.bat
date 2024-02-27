@@ -5221,6 +5221,9 @@ echo. & echo * Composable batch files.
 set cbf-branch=main
 set cbf-cn=git@github.com:jonathans-razor/Composable-Batch-Files.git
 set cbf-gh=https://github.com/jonathans-razor/Composable-Batch-Files
+call an nt>nul
+Rem Top Useful Demoable Cbfs Spreadsheet:
+set cbf-gs=https://docs.google.com/spreadsheets/d/1oDL5jPYWqjjmGYEMmHZBykuOuxdha8RFnErpEd64vrY/edit#gid=0
 
 echo %computername%| find /i "ones">nul
 if %errorlevel% == 0 (
@@ -6576,6 +6579,10 @@ set cbf-pt=%cbf-pt%\vuex-tutorial
 set cbf-yt=https://youtu.be/nFh7-HfODYY?si=I91hCuFHEaiBRNcH
 
 exit/b
+
+rem:
+Finished on Feb-26-2024.
+finished-successfully-series-jj
 
 yt:
 how to make api call with vuex
