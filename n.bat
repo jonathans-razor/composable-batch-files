@@ -5621,10 +5621,9 @@ Some cool functionality.
 
 
 ::_
-rem qq
 :ve5
 
-echo. & echo * %1. Reverse list.
+echo. & echo * %1. Form binding.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5642,6 +5641,7 @@ exit/b
 ::_
 :ve6
 
+rem qq
 echo. & echo * %1.
 
 call n vute>nul
