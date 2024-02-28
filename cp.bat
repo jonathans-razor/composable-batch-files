@@ -1440,6 +1440,7 @@ exit/b
 :ve23
 :ve24
 :ve25
+:ve26
 
 echo. & echo * Copy/use Vue project %.
 

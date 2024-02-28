@@ -5684,6 +5684,7 @@ const output = computed(() => marked(input.value))
 ::_
 :ve8
 
+rem qq
 echo. & echo * %1.
 
 call n vute>nul
@@ -6000,6 +6001,23 @@ echo. & echo * %1. Debugger testing.
 
 call n vute>nul
 set cbf-fn=%cbf-pt%\ve1\src\ve25-debug-testing.vue
+set cbf-pt=%cbf-pt%\ve1
+
+exit/b
+
+rem:
+I need to know this.
+
+
+
+
+::_
+:ve26
+
+echo. & echo * %1. GitHub data fetching testing.
+
+call n vute>nul
+set cbf-fn=%cbf-pt%\ve1\src\ve26-github-data-fetching-testing.vue
 set cbf-pt=%cbf-pt%\ve1
 
 exit/b
