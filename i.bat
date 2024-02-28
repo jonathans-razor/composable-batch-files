@@ -228,7 +228,6 @@ set cbf-ghmy=
 rem GitHub - Original Content (skw github source material)
 set cbf-gho=
 
-rem qq
 :
 rem GitHub - Historical record
 set cbf-ghh=
