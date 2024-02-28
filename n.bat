@@ -5720,7 +5720,6 @@ Very nice type ahead filter/search and sorting features.
 
 ::_
 :ve10
-rem qq
 
 echo. & echo * %1. A nested tree component that recursively renders itself. You can double click on an item to turn it into a folder.
 
@@ -5740,7 +5739,7 @@ Cool Treeview. The data doesn't seemed to be saved, for example, to local storag
 ::_
 :ve11
 
-echo. & echo * %1.
+echo. & echo * %1. An SVG graph.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5758,7 +5757,7 @@ I put the word "export" in front of the word "function" in util.js and it starte
 ::_
 :ve12
 
-echo. & echo * %1.
+echo. & echo * %1. Modal component with customizable slots and CSS transitions.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5776,7 +5775,7 @@ I don't remember seeing the teleport HTML tag before.
 ::_
 :ve13
 
-echo. & echo * %1.
+echo. & echo * %1. FLIP list transitions with the built-in <TransitionGroup>.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5793,6 +5792,7 @@ I like the use of the random insert of new list items.
 
 ::_
 :ve14
+rem qq
 
 echo. & echo * %1.
 
