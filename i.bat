@@ -217,16 +217,25 @@ rem GitHub
 set cbf-gh=
 
 :
+rem GitHub - API
+set cbf-gha=
+
+:
 rem GitHub - My Implementation of Another GitHub Repository
 set cbf-ghmy=
 
 :
-rem GitHub Original Content (skw github source material)
+rem GitHub - Original Content (skw github source material)
 set cbf-gho=
 
+rem qq
 :
-rem GitHub Historical record
+rem GitHub - Historical record
 set cbf-ghh=
+
+:
+rem GitHub - Profile
+set cbf-ghp=
 
 :
 rem GitHub Repository

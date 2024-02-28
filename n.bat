@@ -4800,6 +4800,7 @@ echo. & echo * Vue.
 set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-lh=http://localhost:5173
 set cbf-url=https://discord.com/invite/HBherRA
+set cbf-gha=https://api.github.com/repos/vuejs/core/commits?per_page=3
 
 exit/b
 
@@ -5085,8 +5086,9 @@ exit/b
 echo. & echo * Jonathan's Github page.
 
 set cbf-gh=https://github.com/jonathans-razor
+set cbf-gha=https://api.github.com/repos/jonathans-razor/composable-batch-files/commits?per_page=3
+set cbf-ghp=https://github.com/settings/profile
 set cbf-ghr=https://github.com/jonathans-razor?tab=repositories
-set cbf-gh3=https://github.com/settings/profile
 set cbf-rl=%cbf-gh%\Composable-Batch-Files\releases
 
 exit/b
@@ -5684,8 +5686,7 @@ const output = computed(() => marked(input.value))
 ::_
 :ve8
 
-echo. & echo * %1.
-rem qq
+echo. & echo * %1. Fetching GitHub data.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5702,7 +5703,7 @@ watchEffect(async () => {
 ::_
 :ve9
 
-echo. & echo * %1.
+echo. & echo * %1. Grid with search and sort. An example of creating a reusable grid component and using it with external data.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5719,8 +5720,9 @@ Very nice type ahead filter/search and sorting features.
 
 ::_
 :ve10
+rem qq
 
-echo. & echo * %1.
+echo. & echo * %1. A nested tree component that recursively renders itself. You can double click on an item to turn it into a folder.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -6014,7 +6016,7 @@ I need to know this.
 ::_
 :ve26
 
-echo. & echo * %1. GitHub data fetching testing.
+echo. & echo * %1. GitHub data fetching testing. This shows the CBF repo!
 
 call n vute>nul
 set cbf-fn=%cbf-pt%\ve1\src\ve26-github-data-fetching-testing.vue
@@ -6023,7 +6025,7 @@ set cbf-pt=%cbf-pt%\ve1
 exit/b
 
 rem:
-I need to know this.
+This repo began as a copy of ve8.
 
 
 

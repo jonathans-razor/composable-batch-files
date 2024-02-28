@@ -1461,16 +1461,18 @@ exit/b
 
 echo. & echo * Reverse copy/use Vue project %.
 
+if "%~2" == "" err Parameter 2 is required.
+
 call t ve1>nul
 cd %cbf-pt%\src
 
 call fn App.vue || exit/b
 
-call fn %2
+call fn %2-*.vue || exit/b
 
 echo.
 @echo on
-xcopy /y App.vue %cbf-fn%
+xcopy /y App.vue %2-*.vue
 @echo off
 
 exit/b

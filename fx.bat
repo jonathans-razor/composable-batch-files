@@ -41,6 +41,8 @@ echo   %0 wl app vsc
 echo   %0 ear gs br
 echo   %0 nd fz vc
 echo   %0 jj gh2 br
+echo   %0 vu gha
+echo   %0 vu gha br
 
 exit/b
 
