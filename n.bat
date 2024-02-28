@@ -5547,7 +5547,7 @@ exit/b
 ::_
 :ve1
 
-echo. & echo * %1.
+echo. & echo * %1. Hello world.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\%1
@@ -5569,7 +5569,7 @@ This app was built using "npm create vue@latest %2" which contains fancy feature
 ::_
 :ve2
 
-echo. & echo * %1.
+echo. & echo * %1. Reverse message. Prevent click. Add exclamations.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5587,7 +5587,7 @@ Preventing navigation is cool.
 ::_
 :ve3
 
-echo. & echo * %1.
+echo. & echo * %1. Hover world.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5605,7 +5605,7 @@ Toggling text color.
 ::_
 :ve4
 
-echo. & echo * %1.
+echo. & echo * %1. Reverse list. Pop and push list.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5621,9 +5621,10 @@ Some cool functionality.
 
 
 ::_
+rem qq
 :ve5
 
-echo. & echo * %1.
+echo. & echo * %1. Reverse list.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
