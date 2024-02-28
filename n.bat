@@ -5641,8 +5641,7 @@ exit/b
 ::_
 :ve6
 
-rem qq
-echo. & echo * %1.
+echo. & echo * %1. The simplest possible component which accepts a prop and renders it.
 
 call n vute>nul
 set cbf-fn=TodoItem.vue
