@@ -2634,6 +2634,8 @@ Apr-17-2019
 :bashs
 :sh
 :shor
+:taba
+:taskbar
 
 echo. & echo * Base shortcuts.
 
@@ -2643,9 +2645,11 @@ if exist w: set cbf-pt=w:\shortcuts
 exit/b
 
 lu:
+Feb-28-2024
 Jan-9-2020
 
 skw:
+taskbar
 base icons
 
 
@@ -6473,9 +6477,11 @@ set cbf-yt=https://youtu.be/nFh7-HfODYY?si=I91hCuFHEaiBRNcH
 
 exit/b
 
+lu:
+Feb-26-2024
+
 rem:
-Finished on Feb-26-2024.
-finished-successfully-series-jj
+working-tutorial-series-jj
 
 yt:
 how to make api call with vuex
