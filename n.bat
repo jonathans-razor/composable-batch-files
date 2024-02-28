@@ -5684,8 +5684,8 @@ const output = computed(() => marked(input.value))
 ::_
 :ve8
 
-rem qq
 echo. & echo * %1.
+rem qq
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
