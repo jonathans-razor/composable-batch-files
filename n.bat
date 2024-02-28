@@ -5792,7 +5792,6 @@ I like the use of the random insert of new list items.
 
 ::_
 :ve14
-rem qq
 
 echo. & echo * %1. A fully spec-compliant TodoMVC implementation: https://todomvc.com/
 
@@ -5814,6 +5813,7 @@ It's cool that it uses local storage.
 :ve15
 
 echo. & echo * %1.
+rem qjq
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
