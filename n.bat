@@ -5532,502 +5532,6 @@ exit/b
 
 
 
-:_+ Vue Example Family (!fcve) - There are 21 official Vue examples.
-
-
-
-::_
-:ve1
-
-echo. & echo * %1. Hello world.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\%1
-set cbf-fn=%cbf-pt%\src\%1-*.vue
-
-set cbf-url=https://vuejs.org/examples/#hello-world
-
-exit/b
-
-rem:
-What do you notice about this code? 
-
-Simple hello world.
-
-This app was built using "npm create vue@latest %2" which contains fancy features.
-
-
-
-::_
-:ve2
-
-echo. & echo * %1. Reverse message. Prevent click. Add exclamations.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#handling-input
-
-exit/b
-
-rem:
-What do you notice about this code? 
-
-Preventing navigation is cool.
-
-
-
-::_
-:ve3
-
-echo. & echo * %1. Hover world.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#attribute-bindings
-
-exit/b
-
-rem:
-What do you notice about this code? 
-
-Toggling text color.
-
-
-
-::_
-:ve4
-
-echo. & echo * %1. Reverse list. Pop and push list.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#conditionals-and-loops
-
-exit/b
-
-rem:
-What do you notice about this code? 
-
-Some cool functionality.
-
-
-
-::_
-:ve5
-
-echo. & echo * %1. Form binding.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#form-bindings
-
-rem:
-What do you notice about this code? 
-
-The formatting looks bad in Chrome but good in Brave.
-
-exit/b
-
-
-
-::_
-:ve6
-
-echo. & echo * %1. The simplest possible component which accepts a prop and renders it.
-
-call n vute>nul
-set cbf-fn=TodoItem.vue
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#simple-component
-
-exit/b
-
-rem:
-What do you notice about this code? 
-
-This code is a very plain list that doesn't do anything.
-
-
-
-::_
-:ve7
-
-echo. & echo * %1. Markdown Editor.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#markdown
-
-exit/b
-
-rem:
-What do you notice about this code? 
-
-It's amazing how little code it takes to do a markdown editor. What is the trick or library 
-that allows the markdown to display correctly?
-
-For one thing, the "marked" import.
-
-All output is being "computed" using the marked library.
-const output = computed(() => marked(input.value))
-
-
-
-::_
-:ve8
-
-echo. & echo * %1. Fetching GitHub data.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#markdown
-
-exit/b
-
-rem:
-What do you notice about this code? 
-watchEffect(async () => {
-
-
-
-::_
-:ve9
-
-echo. & echo * %1. Grid with search and sort. An example of creating a reusable grid component and using it with external data.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#grid
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-Very nice type ahead filter/search and sorting features.
-
-
-
-::_
-:ve10
-
-echo. & echo * %1. A nested tree component that recursively renders itself. You can double click on an item to turn it into a folder.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#tree
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-Cool Treeview. The data doesn't seemed to be saved, for example, to local storage.
-
-
-
-::_
-:ve11
-
-echo. & echo * %1. An SVG graph.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#svg
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-I put the word "export" in front of the word "function" in util.js and it started working.
-
-
-
-::_
-:ve12
-
-echo. & echo * %1. Modal component with customizable slots and CSS transitions.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#modal
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-I don't remember seeing the teleport HTML tag before.
-
-
-
-::_
-:ve13
-
-echo. & echo * %1. FLIP list transitions with the built-in <TransitionGroup>.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#list-transition
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-I like the use of the random insert of new list items.
-
-
-
-::_
-:ve14
-
-echo. & echo * %1. A fully spec-compliant TodoMVC implementation: https://todomvc.com/
-
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#todomvc
-
-exit/b
-
-rem:
-
-What do you notice about this code?
-It's cool that it uses local storage.
-
-
-
-::_
-:ve15
-
-echo. & echo * %1. Basic counter.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#counter
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-ref(0) is a reactive reference, which means that the value can be used in a reactive context, 
-such as in the template of a Vue component, and Vue will automatically track changes to the 
-value and update the DOM when the value changes.
-
-
-
-::_
-:ve16
-
-echo. & echo * %1. Temperature converter.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#temperature-converter
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-Cool code. It does a cool thing in very few lines of code!
-
-
-
-::_
-:ve17
-
-echo. & echo * %1. Flight booker.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#flight-booker
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-Cool code. I used ctrl+e a lot to explain things.
-
-
-
-::_
-:ve18
-
-echo. & echo * %1. Timer.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#timer
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-The selected code `onUnmounted` is a function from Vue.js's Composition API. This function is 
-used to run some code when a Vue component is unmounted from the DOM, which is similar to the 
-`destroyed` lifecycle hook in Vue 2.
-
-
-
-::_
-:ve19
-
-echo. & echo * %1. Crud
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#crud
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-I added an alert box for when the user clicks create and there is not valid first and last name.
-
-
-
-::_
-:ve20
-
-echo. & echo * %1. Circle drawer.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#crud
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-The argument passed to shallowReactive is [[]], which is an array containing an empty array. 
-This means that history is initialized as a reactive object that contains a single element, 
-which is an empty array.
-
-
-
-::_
-:ve21
-
-echo. & echo * %1. Spreadsheet.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=
-
-exit/b
-
-rem:
-What do you notice about this code?
-
-Spreadsheet making code.
-
-
-
-::_
-rem qq
-
-
-
-::_
-:ve22
-
-echo. & echo * %1. 2-way bound checkbox.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1
-set cbf-url=https://vuejs.org/examples/#form-bindings
-
-rem:
-What do you notice about this code? 
-
-Simplest bound checkbox.
-
-exit/b
-
-
-
-::_
-:ve23
-
-echo. & echo * %1. Reverse list.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\ve1\src
-set cbf-fn=%cbf-pt%\%2-*.vue
-set cbf-url=https://vuejs.org/examples/#form-bindings
-
-rem:
-What do you notice about this code? 
-
-Simplified reverse list.
-
-exit/b
-
-rem:
-Ve items from here and beyond are custom items created by me. Feb-12-2024
-
-
-
-::_
-:ve24
-
-echo. & echo * %1. Fireship 100 seconds on Vue.
-
-call n vute>nul
-set cbf-fn=%cbf-pt%\ve1\src\ve24-fireship-reactive-data-changes.vue
-set cbf-pt=%cbf-pt%\ve1
-set cbf-yt=https://www.youtube.com/watch?v=nhBVL41-_Cw
-
-exit/b
-
-rem:
-Good demo of reactive mechanics.
-
-
-
-
-::_
-:ve25
-
-echo. & echo * %1. Debugger testing.
-
-call n vute>nul
-set cbf-fn=%cbf-pt%\ve1\src\ve25-debug-testing.vue
-set cbf-pt=%cbf-pt%\ve1
-
-exit/b
-
-rem:
-I need to know this.
-
-
-
-
-::_
-:ve26
-
-echo. & echo * %1. GitHub data fetching testing. This shows the CBF repo!
-
-call n vute>nul
-set cbf-fn=%cbf-pt%\ve1\src\ve26-github-data-fetching-testing.vue
-set cbf-pt=%cbf-pt%\ve1
-
-exit/b
-
-rem:
-This repo began as a copy of ve8.
-
-
-
-
 :_
 :imap
 :v3t
@@ -6679,6 +6183,527 @@ exit/b
 lu:
 Feb-29-2024
 
+
+
+:_+ Vue Example Family (!fcve) - There are 21 official Vue examples.
+
+
+
+::_
+:ve
+:ve1
+
+echo. & echo * %1. Hello world.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\%1
+set cbf-fn=%cbf-pt%\src\%1-*.vue
+
+set cbf-url=https://vuejs.org/examples/#hello-world
+
+exit/b
+
+rem:
+What do you notice about this code? 
+
+Simple hello world.
+
+This app was built using "npm create vue@latest %2" which contains fancy features.
+
+
+
+::_
+:ve2
+
+echo. & echo * %1. Reverse message. Prevent click. Add exclamations.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#handling-input
+
+exit/b
+
+rem:
+What do you notice about this code? 
+
+Preventing navigation is cool.
+
+
+
+::_
+:ve3
+
+echo. & echo * %1. Hover world.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#attribute-bindings
+
+exit/b
+
+rem:
+What do you notice about this code? 
+
+Toggling text color.
+
+
+
+::_
+:ve4
+
+echo. & echo * %1. Reverse list. Pop and push list.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#conditionals-and-loops
+
+exit/b
+
+rem:
+What do you notice about this code? 
+
+Some cool functionality.
+
+
+
+::_
+:ve5
+
+echo. & echo * %1. Form binding.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#form-bindings
+
+rem:
+What do you notice about this code? 
+
+The formatting looks bad in Chrome but good in Brave.
+
+exit/b
+
+
+
+::_
+:ve6
+
+echo. & echo * %1. The simplest possible component which accepts a prop and renders it.
+
+call n vute>nul
+set cbf-fn=TodoItem.vue
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#simple-component
+
+exit/b
+
+rem:
+What do you notice about this code? 
+
+This code is a very plain list that doesn't do anything.
+
+
+
+::_
+:ve7
+
+echo. & echo * %1. Markdown Editor.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#markdown
+
+exit/b
+
+rem:
+What do you notice about this code? 
+
+It's amazing how little code it takes to do a markdown editor. What is the trick or library 
+that allows the markdown to display correctly?
+
+For one thing, the "marked" import.
+
+All output is being "computed" using the marked library.
+const output = computed(() => marked(input.value))
+
+
+
+::_
+:ve8
+
+echo. & echo * %1. Fetching GitHub data.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#markdown
+
+exit/b
+
+rem:
+What do you notice about this code? 
+watchEffect(async () => {
+
+
+
+::_
+:ve9
+
+echo. & echo * %1. Grid with search and sort. An example of creating a reusable grid component and using it with external data.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#grid
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+Very nice type ahead filter/search and sorting features.
+
+
+
+::_
+:ve10
+
+echo. & echo * %1. A nested tree component that recursively renders itself. You can double click on an item to turn it into a folder.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#tree
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+Cool Treeview. The data doesn't seemed to be saved, for example, to local storage.
+
+
+
+::_
+:ve11
+
+echo. & echo * %1. An SVG graph.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#svg
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+I put the word "export" in front of the word "function" in util.js and it started working.
+
+
+
+::_
+:ve12
+
+echo. & echo * %1. Modal component with customizable slots and CSS transitions.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#modal
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+I don't remember seeing the teleport HTML tag before.
+
+
+
+::_
+:ve13
+
+echo. & echo * %1. FLIP list transitions with the built-in <TransitionGroup>.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#list-transition
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+I like the use of the random insert of new list items.
+
+
+
+::_
+:ve14
+
+echo. & echo * %1. A fully spec-compliant TodoMVC implementation: https://todomvc.com/
+
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#todomvc
+
+exit/b
+
+rem:
+
+What do you notice about this code?
+It's cool that it uses local storage.
+
+
+
+::_
+:ve15
+
+echo. & echo * %1. Basic counter.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#counter
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+ref(0) is a reactive reference, which means that the value can be used in a reactive context, 
+such as in the template of a Vue component, and Vue will automatically track changes to the 
+value and update the DOM when the value changes.
+
+
+
+::_
+:ve16
+
+echo. & echo * %1. Temperature converter.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#temperature-converter
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+Cool code. It does a cool thing in very few lines of code!
+
+
+
+::_
+:ve17
+
+echo. & echo * %1. Flight booker.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#flight-booker
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+Cool code. I used ctrl+e a lot to explain things.
+
+
+
+::_
+:ve18
+
+echo. & echo * %1. Timer.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#timer
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+The selected code `onUnmounted` is a function from Vue.js's Composition API. This function is 
+used to run some code when a Vue component is unmounted from the DOM, which is similar to the 
+`destroyed` lifecycle hook in Vue 2.
+
+
+
+::_
+:ve19
+
+echo. & echo * %1. Crud
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#crud
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+I added an alert box for when the user clicks create and there is not valid first and last name.
+
+
+
+::_
+:ve20
+
+echo. & echo * %1. Circle drawer.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#crud
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+The argument passed to shallowReactive is [[]], which is an array containing an empty array. 
+This means that history is initialized as a reactive object that contains a single element, 
+which is an empty array.
+
+
+
+::_
+:ve21
+
+echo. & echo * %1. Spreadsheet.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=
+
+exit/b
+
+rem:
+What do you notice about this code?
+
+Spreadsheet making code.
+
+
+
+::_
+:ve22
+
+echo. & echo * %1. 2-way bound checkbox.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1
+set cbf-url=https://vuejs.org/examples/#form-bindings
+
+rem:
+What do you notice about this code? 
+
+Simplest bound checkbox.
+
+exit/b
+
+
+
+::_
+:ve23
+
+echo. & echo * %1. Reverse list.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\ve1\src
+set cbf-fn=%cbf-pt%\%2-*.vue
+set cbf-url=https://vuejs.org/examples/#form-bindings
+
+rem:
+What do you notice about this code? 
+
+Simplified reverse list.
+
+exit/b
+
+rem:
+Ve items from here and beyond are custom items created by me. Feb-12-2024
+
+
+
+::_
+:ve24
+
+echo. & echo * %1. Fireship 100 seconds on Vue.
+
+call n vute>nul
+set cbf-fn=%cbf-pt%\ve1\src\ve24-fireship-reactive-data-changes.vue
+set cbf-pt=%cbf-pt%\ve1
+set cbf-yt=https://www.youtube.com/watch?v=nhBVL41-_Cw
+
+exit/b
+
+rem:
+Good demo of reactive mechanics.
+
+
+
+
+::_
+:ve25
+
+echo. & echo * %1. Debugger testing.
+
+call n vute>nul
+set cbf-fn=%cbf-pt%\ve1\src\ve25-debug-testing.vue
+set cbf-pt=%cbf-pt%\ve1
+
+exit/b
+
+rem:
+I need to know this.
+
+
+
+
+::_
+:ve26
+
+echo. & echo * %1. GitHub data fetching testing. This shows the CBF repo!
+
+call n vute>nul
+set cbf-fn=%cbf-pt%\ve1\src\ve26-github-data-fetching-testing.vue
+set cbf-pt=%cbf-pt%\ve1
+
+exit/b
+
+rem:
+This repo began as a copy of ve8.
+
+
+
+::_
+:bve
+:vub
+
+  This is the boundary for Vue experiments.
+
+          _____                   _____                   _____          
+         /\    \                 /\    \                 /\    \         
+        /::\____\               /::\____\               /::\    \        
+       /:::/    /              /:::/    /              /::::\    \       
+      /:::/    /              /:::/    /              /::::::\    \      
+     /:::/    /              /:::/    /              /:::/\:::\    \     
+    /:::/____/              /:::/    /              /:::/__\:::\    \    
+    |::|    |              /:::/    /              /::::\   \:::\    \   
+    |::|    |     _____   /:::/    /      _____   /::::::\   \:::\    \  
+    |::|    |    /\    \ /:::/____/      /\    \ /:::/\:::\   \:::\    \ 
+    |::|    |   /::\____|:::|    /      /::\____/:::/__\:::\   \:::\____\
+    |::|    |  /:::/    |:::|____\     /:::/    \:::\   \:::\   \::/    /
+    |::|    | /:::/    / \:::\    \   /:::/    / \:::\   \:::\   \/____/ 
+    |::|____|/:::/    /   \:::\    \ /:::/    /   \:::\   \:::\    \     
+    |:::::::::::/    /     \:::\    /:::/    /     \:::\   \:::\____\    
+    \::::::::::/____/       \:::\__/:::/    /       \:::\   \::/    /    
+     ~~~~~~~~~~              \::::::::/    /         \:::\   \/____/     
+                              \::::::/    /           \:::\    \         
+                               \::::/    /             \:::\____\        
+                                \::/____/               \::/    /        
+                                 ~~                      \/____/         
+                                                                         
 
 
 :_ (!efn)
