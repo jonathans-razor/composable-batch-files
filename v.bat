@@ -2477,6 +2477,8 @@ exit/b
 
 echo. & echo * Test for the exisitence of a file or folder.
 
+call fn package.json || exit/b
+
 rem Expected type of file.
 echo %2| find /i ".ts">nul
 if errorlevel 1 (
@@ -2484,7 +2486,6 @@ if errorlevel 1 (
   exit/b
 )
 
-call fn package.json || exit/b
 call fn "%~1" || exit/b 5
 
 exit/b

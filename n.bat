@@ -5896,22 +5896,6 @@ exit/b
 
 
 
-:_
-:pini
-
-echo. & echo * Learn Pinia.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\learn-pinia
-set cbf-yt=https://www.youtube.com/watch?v=JGC7aAC-3y8
-
-exit/b
-
-lu:
-Feb-29-2024
-
-
-
 :_+ Vue Example Family (!fcve) - There are 21 official Vue examples.
 
 
@@ -6691,10 +6675,6 @@ fallback content
 
 
 
-::_ qq
-
-
-
 ::_
 :vt15
 
@@ -6709,6 +6689,24 @@ exit/b
 rem:
 What do you notice about this code? 
 Confetti is fun.
+
+
+
+:_
+:pina
+:pini
+:pinia
+
+echo. & echo * Learn Pinia.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\learn-pinia
+set cbf-yt=https://www.youtube.com/watch?v=JGC7aAC-3y8
+
+exit/b
+
+lu:
+Feb-29-2024
 
 
 
