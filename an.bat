@@ -3,9 +3,12 @@
 @echo off
 
 rem * In order to promote freshness, clear the environment variable.
+
 set cbf-app=
+
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
+
 goto validate-input
 
 
