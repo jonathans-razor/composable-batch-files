@@ -729,8 +729,6 @@ call fn package.json || exit/b
 
 start "npm run serve" cmd /k npm run serve
 
-call lh 8080
-
 exit/b
 
 
@@ -789,8 +787,6 @@ call fn package.json || exit/b
 
 echo.
 start "npm run preview" cmd /k npm run preview
-
-call lh 5173
 
 exit/b
 

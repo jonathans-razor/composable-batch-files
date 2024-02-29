@@ -251,11 +251,20 @@ exit/b
 
 ::_
 :vt1
+:vt2
+:vt3
+:vt4
+:vt5
+:vt6
+:vt7
+:vt8
+:vt9
+:vt10
 
 echo. & echo * Run %1.
 
 call t vt1>nul
-call cp vt1-
+call cp %1
 call t vt1>nul
 call nm ruse
 call lh 8080
@@ -268,221 +277,18 @@ Created using "Vue create" (not latest).
 
 
 ::_
-:vt2
-
-echo. & echo * Run %1.
-
-call t vt1>nul
-call cp vt2
-call t vt1>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt3
-
-echo. & echo * Run %1.
-
-call t vt1>nul
-call cp vt3
-call t vt1>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt4
-
-echo. & echo * Run %1.
-
-call t vt1>nul
-call cp vt4
-call t vt1>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt5
-
-echo. & echo * Run %1.
-
-call t vt1>nul
-call cp vt5
-call t vt1>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt6
-
-echo. & echo * Run %1.
-
-call t vt1>nul
-call cp vt6
-call t vt1>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt7
-
-echo. & echo * Run %1.
-
-call t vt1>nul
-call cp vt7
-call t vt1>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt8
-
-echo. & echo * Run %1.
-
-call t vt1>nul
-call cp vt8
-call t vt1>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt9
-
-echo. & echo * Run %1.
-
-call t vt1>nul
-call cp vt9
-call t vt1>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt10
-
-echo. & echo * Run %1.
-
-call t vt1>nul
-call cp vt10-
-call t vt1>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
 :vt11
+:vt12
+:vt13
+:vt14
+:vt14a
+:vt15
+:vt1
 
 echo. & echo * Run %1.
 
 call t vt11>nul
 call cp vt11
-call t vt11>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt12
-
-echo. & echo * Run %1.
-
-call t vt11>nul
-call cp vt12
-call t vt11>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt13
-
-echo. & echo * Run %1.
-
-call t vt11>nul
-call cp vt13
-call t vt11>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt14a
-
-echo. & echo * Run %1.
-
-call t vt11>nul
-call cp vt14a
-call t vt11>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt14
-
-echo. & echo * Run %1.
-
-call t vt11>nul
-call cp vt14
-call t vt11>nul
-call nm ruse
-call lh 8080
-
-exit/b
-
-
-
-::_
-:vt15
-
-echo. & echo * Run %1.
-
-call cp vt15
 call t vt11>nul
 call nm ruse
 call lh 8080

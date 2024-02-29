@@ -5220,279 +5220,6 @@ Nov-10-2023
 
 
 
-:_+ Vue Tutorial Family (!fcvt) - There are 15 official Vue tutorials.
-
-
-
-::_
-:vt1
-
-echo. & echo * %1.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\%1
-set cbf-url=https://vuejs.org/tutorial/#step-1
-
-exit/b
-
-rem:
-What do you notice about this code? 
-
-Simple app.
-
-This app was created using "Vue create" (not latest). Bare bones features.
-
-
-
-::_
-:vt2
-
-echo. & echo * %1. Make dynamic.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt1
-set cbf-url=https://vuejs.org/tutorial/#step-2
-
-exit/b
-
-rem:
-What do you notice about this code? 
-
-Made dynamic.
-
-
-
-::_
-:vt3
-
-echo. & echo * %1. Make red.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt1
-set cbf-url=https://vuejs.org/tutorial/#step-3
-
-exit/b
-
-rem:
-What do you notice about this code? 
-Add the title class to the h1 tag.
-
-
-
-::_
-:vt4
-
-echo. & echo * %1. Event listener.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt1
-set cbf-url=https://vuejs.org/tutorial/#step-4
-
-exit/b
-
-rem:
-What do you notice about this code? 
-ref(0) assigned to count variable.
-
-
-
-
-::_
-:vt5
-
-echo. & echo * %1.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt1
-set cbf-url=https://vuejs.org/tutorial/#step-5
-
-exit/b
-
-rem:
-What do you notice about this code? 
-Simplified form binding.
-
-
-
-::_
-:vt6
-
-echo. & echo * %1.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt1
-set cbf-url=https://vuejs.org/tutorial/#step-6
-
-exit/b
-
-rem:
-What do you notice about this code? 
-Cool toggle value.
-
-
-
-::_
-:vt7
-
-echo. & echo * %1.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt1
-set cbf-url=https://vuejs.org/tutorial/#step-7
-
-exit/b
-
-rem:
-What do you notice about this code? 
-List buildihg.
-
-
-
-::_
-:vt8
-
-echo. & echo * %1. Computed properties.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt1
-set cbf-url=https://vuejs.org/tutorial/#step-8
-
-exit/b
-
-lc:
-(!copr)
-
-rem:
-What do you notice about this code? 
-Computed values are complicated.
-
-skw:
-computed property
-
-
-::_
-:vt9
-
-echo. & echo * %1.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt1
-set cbf-url=https://vuejs.org/tutorial/#step-9
-
-exit/b
-
-rem:
-What do you notice about this code? 
-
-Lifecycle refs need more of my attention.
-
-
-
-::_
-:vt10
-
-echo. & echo * %1. Watchers.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt1
-set cbf-url=https://vuejs.org/tutorial/#step-10
-
-exit/b
-
-rem:
-What do you notice about this code? 
-Watchers are difficult to understand.
-
-
-
-::_
-:vt11
-
-echo. & echo * %1.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt11
-set cbf-url=https://vuejs.org/tutorial/#step-11
-
-exit/b
-
-rem:
-What do you notice about this code? 
-How to load a child component.
-
-
-
-::_
-:vt12
-
-echo. & echo * %1.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt11
-set cbf-url=https://vuejs.org/tutorial/#step-12
-
-exit/b
-
-rem:
-What do you notice about this code? 
-Hmm. Properties passing between child and parent.
-
-
-
-::_
-:vt13
-
-echo. & echo * %1.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt11
-set cbf-url=https://vuejs.org/tutorial/#step-13
-
-exit/b
-
-rem:
-What do you notice about this code? 
-Emitting from child component.
-
-
-
-::_
-:vt14
-
-echo. & echo * %1.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt11
-set cbf-url=https://vuejs.org/tutorial/#step-14
-
-exit/b
-
-rem:
-What do you notice about this code? 
-Fallback code is interesting.
-
-skw:
-fallback content
-
-
-
-::_
-:vt15
-
-echo. & echo * %1.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\vt11
-set cbf-url=https://vuejs.org/tutorial/#step-15
-
-exit/b
-
-rem:
-What do you notice about this code? 
-Confetti is fun.
-
-
-
 :_
 :mbe
 
@@ -6704,6 +6431,280 @@ This repo began as a copy of ve8.
                                 \::/____/               \::/    /        
                                  ~~                      \/____/         
                                                                          
+
+
+:_+ Vue Tutorial Family (!fcvt) - There are 15 official Vue tutorials.
+
+
+
+::_
+:vt
+:vt1
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\%1
+set cbf-url=https://vuejs.org/tutorial/#step-1
+
+exit/b
+
+rem:
+What do you notice about this code? 
+
+Simple app.
+
+This app was created using "Vue create" (not latest). Bare bones features.
+
+
+
+::_
+:vt2
+
+echo. & echo * %1. Make dynamic.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-2
+
+exit/b
+
+rem:
+What do you notice about this code? 
+
+Made dynamic.
+
+
+
+::_
+:vt3
+
+echo. & echo * %1. Make red.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-3
+
+exit/b
+
+rem:
+What do you notice about this code? 
+Add the title class to the h1 tag.
+
+
+
+::_
+:vt4
+
+echo. & echo * %1. Event listener.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-4
+
+exit/b
+
+rem:
+What do you notice about this code? 
+ref(0) assigned to count variable.
+
+
+
+
+::_
+:vt5
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-5
+
+exit/b
+
+rem:
+What do you notice about this code? 
+Simplified form binding.
+
+
+
+::_
+:vt6
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-6
+
+exit/b
+
+rem:
+What do you notice about this code? 
+Cool toggle value.
+
+
+
+::_
+:vt7
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-7
+
+exit/b
+
+rem:
+What do you notice about this code? 
+List buildihg.
+
+
+
+::_
+:vt8
+
+echo. & echo * %1. Computed properties.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-8
+
+exit/b
+
+lc:
+(!copr)
+
+rem:
+What do you notice about this code? 
+Computed values are complicated.
+
+skw:
+computed property
+
+
+::_
+:vt9
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-9
+
+exit/b
+
+rem:
+What do you notice about this code? 
+
+Lifecycle refs need more of my attention.
+
+
+
+::_
+:vt10
+
+echo. & echo * %1. Watchers.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt1
+set cbf-url=https://vuejs.org/tutorial/#step-10
+
+exit/b
+
+rem:
+What do you notice about this code? 
+Watchers are difficult to understand.
+
+
+
+::_
+:vt11
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt11
+set cbf-url=https://vuejs.org/tutorial/#step-11
+
+exit/b
+
+rem:
+What do you notice about this code? 
+How to load a child component.
+
+
+
+::_
+:vt12
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt11
+set cbf-url=https://vuejs.org/tutorial/#step-12
+
+exit/b
+
+rem:
+What do you notice about this code? 
+Hmm. Properties passing between child and parent.
+
+
+
+::_
+:vt13
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt11
+set cbf-url=https://vuejs.org/tutorial/#step-13
+
+exit/b
+
+rem:
+What do you notice about this code? 
+Emitting from child component.
+
+
+
+::_
+:vt14
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt11
+set cbf-url=https://vuejs.org/tutorial/#step-14
+
+exit/b
+
+rem:
+What do you notice about this code? 
+Fallback code is interesting.
+
+skw:
+fallback content
+
+
+
+::_
+:vt15
+
+echo. & echo * %1.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vt11
+set cbf-url=https://vuejs.org/tutorial/#step-15
+
+exit/b
+
+rem:
+What do you notice about this code? 
+Confetti is fun.
+
 
 
 :_ (!efn)
