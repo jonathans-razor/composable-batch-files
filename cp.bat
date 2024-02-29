@@ -1256,6 +1256,7 @@ exit/b
 :vt7
 :vt8
 :vt9
+:vt9a
 :vt10
 
 echo. & echo * Use Vue project %.

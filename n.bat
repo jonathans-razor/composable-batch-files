@@ -6562,10 +6562,6 @@ List buildihg.
 
 
 
-::_ qq
-
-
-
 ::_
 :vt8
 
@@ -6588,10 +6584,11 @@ skw:
 computed property
 
 
+
 ::_
 :vt9
 
-echo. & echo * %1.
+echo. & echo * %1. Lifecycle mounted.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -6609,7 +6606,7 @@ Lifecycle refs need more of my attention.
 ::_
 :vt10
 
-echo. & echo * %1. Watchers.
+echo. & echo * %1. Watchers. Fetching online data!
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -6620,6 +6617,10 @@ exit/b
 rem:
 What do you notice about this code? 
 Watchers are difficult to understand.
+
+
+
+::_ qq
 
 
 
