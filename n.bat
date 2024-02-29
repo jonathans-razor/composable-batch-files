@@ -5802,8 +5802,7 @@ It's cool that it uses local storage.
 ::_
 :ve15
 
-echo. & echo * %1.
-rem qjq
+echo. & echo * %1. Basic counter.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5823,7 +5822,7 @@ value and update the DOM when the value changes.
 ::_
 :ve16
 
-echo. & echo * %1.
+echo. & echo * %1. Temperature converter.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5841,7 +5840,7 @@ Cool code. It does a cool thing in very few lines of code!
 ::_
 :ve17
 
-echo. & echo * %1.
+echo. & echo * %1. Flight booker.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5859,7 +5858,7 @@ Cool code. I used ctrl+e a lot to explain things.
 ::_
 :ve18
 
-echo. & echo * %1.
+echo. & echo * %1. Timer.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5879,7 +5878,7 @@ used to run some code when a Vue component is unmounted from the DOM, which is s
 ::_
 :ve19
 
-echo. & echo * %1.
+echo. & echo * %1. Crud
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5897,7 +5896,7 @@ I added an alert box for when the user clicks create and there is not valid firs
 ::_
 :ve20
 
-echo. & echo * %1.
+echo. & echo * %1. Circle drawer.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5917,7 +5916,7 @@ which is an empty array.
 ::_
 :ve21
 
-echo. & echo * %1.
+echo. & echo * %1. Spreadsheet.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5933,9 +5932,14 @@ Spreadsheet making code.
 
 
 ::_
+rem qq
+
+
+
+::_
 :ve22
 
-echo. & echo * %1. Ve items from here and beyond are custom items created by me. Feb-12-2024
+echo. & echo * %1. 2-way bound checkbox.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\ve1
@@ -5966,6 +5970,9 @@ What do you notice about this code?
 Simplified reverse list.
 
 exit/b
+
+rem:
+Ve items from here and beyond are custom items created by me. Feb-12-2024
 
 
 
