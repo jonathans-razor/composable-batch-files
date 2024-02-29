@@ -52,14 +52,14 @@ if errorlevel 1 (
 )
 
 if not defined cbf-app (
-  call err The cbf-app is not defined for "%1". Jun-28-2021_2_53_PM
+  call err The cbf-app is not defined for "%1". Feb-29-2024-12-56-PM
   exit/b 1
 )
 
 if "%cbf-app%" == "microsoft-edge" exit/b 0
 
 if not exist "%cbf-app%" (
-  call err The cbf-app "%cbf-app%" could not be found. Jun-28-2021_2_54_PM
+  call err The cbf-app "%cbf-app%" could not be found. Feb-29-2024-12-57-PM
   exit/b 1
 )
 

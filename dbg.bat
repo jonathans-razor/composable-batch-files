@@ -44,7 +44,7 @@ Feb-22-2024
 :_
 :main
 
-echo. & echo * Source: %1.bat. Debugger - Feb-29-2024-12-44-PM
+rem echo. & echo * Source: %1.bat. Debugger - Feb-29-2024-12-44-PM
 
 exit/b
 
