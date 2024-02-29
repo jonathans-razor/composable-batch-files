@@ -6658,4 +6658,20 @@ exit/b
 
 
 
+:_
+:pini
+
+echo. & echo * Learn Pinia.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\learn-pinia
+set cbf-yt=https://www.youtube.com/watch?v=JGC7aAC-3y8
+
+exit/b
+
+lu:
+Feb-29-2024
+
+
+
 :_ (!efn)

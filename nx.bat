@@ -189,4 +189,20 @@ Feb-23-2024
 
 
 
+:_
+:cp2x
+
+cls
+
+echo. & echo * Create a new Vue project using NPX.
+
+npx create vue@latest .
+
+exit/b
+
+lu:
+Jan-19-2024
+
+
+
 :_ (!efnx)

@@ -47,6 +47,7 @@ Composable Batch Files (CBF) - Table of Contents
       cs  File contents search.
       cu  Curl leveraging the nicknames dictionary.
        d  Dir.
+     dbg  Debugger.
       dc  Double-click a filename, back office operation.
      dcv  Given an alias and a DCV, returns the set DCV value.
       de  Multipurpose delete batch file.

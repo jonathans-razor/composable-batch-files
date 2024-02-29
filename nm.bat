@@ -1763,4 +1763,65 @@ exit/b
 
 
 
+:_
+:crvy
+
+echo. & echo * Create Veutify.
+
+npm create vuetify
+
+exit/b
+
+
+
+:_
+:cp2
+:cpf
+
+cls
+
+echo. & echo * Create a new Vue project. This is the one that gives a lot of the fancy features.
+
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+npm create vue@latest %2
+
+exit/b
+
+lu:
+Feb-6-2024
+Feb-1-2024
+
+rem:
+This creates a project with these questions:
+
+ue.js - The Progressive JavaScript Framework
+
+v Add TypeScript? ... No / Yes
+v Add JSX Support? ... No / Yes
+v Add Vue Router for Single Page Application development? ... No / Yes
+v Add Pinia for state management? ... No / Yes
+v Add Vitest for Unit Testing? ... No / Yes
+v Add an End-to-End Testing Solution? » Playwright
+v Add ESLint for code quality? ... No / Yes
+v Add Prettier for code formatting? ... No / Yes
+
+Scaffolding project in d:\Dropbox\IT\vue-testing\ve1...
+
+The "." creates the project in the current folder I believe. Feb-1-2024
+npm create vue@latest .
+
+
+
+:_
+:ivl
+
+echo. & echo * Initialize a Vue project using the latest code.
+
+npm init vue@latest
+
+exit/b
+
+
+
 :_ (!efnm)
