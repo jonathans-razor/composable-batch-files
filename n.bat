@@ -6633,6 +6633,7 @@ exit/b
 
 echo. & echo * Car wish list.
 
+call an nt
 set cbf-gs=https://docs.google.com/spreadsheets/d/1oS-Ysco2SL5ptpUoPkW2MLHalOhtehsJrjop15Qlc4s/edit#gid=0
 
 exit/b
