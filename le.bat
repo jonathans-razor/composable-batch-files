@@ -2303,6 +2303,25 @@ exit/b
 
 
 :_
+:Feb-22-2024
+
+cls
+
+rem echo. & echo * %1.
+
+@echo on
+
+node 704-binary-search.js -1 0 3 5 9 12 9
+node 704-binary-search.js -1 0 3 5 9 12 2
+node 704-binary-search.js -1 0 3 5 9 12 15 22 23 23
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2326,17 +2345,17 @@ exit/b
 
 
 :_
-:Feb-22-2024
+:Feb-29-2024
 
 cls
 
-rem echo. & echo * %1.
+echo. & echo * Prime numbers.
 
-@echo on
+echo.
+node prime-numbers.js 100
 
-node 704-binary-search.js -1 0 3 5 9 12 9
-node 704-binary-search.js -1 0 3 5 9 12 2
-node 704-binary-search.js -1 0 3 5 9 12 15 22 23 23
+echo.
+node prime-numbers.js 200
 
 @echo off
 
