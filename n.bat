@@ -6620,14 +6620,10 @@ Watchers are difficult to understand.
 
 
 
-::_ qq
-
-
-
 ::_
 :vt11
 
-echo. & echo * %1.
+echo. & echo * %1. A child component.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt11
@@ -6644,7 +6640,7 @@ How to load a child component.
 ::_
 :vt12
 
-echo. & echo * %1.
+echo. & echo * %1. Hello from parent component.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt11
@@ -6661,7 +6657,7 @@ Hmm. Properties passing between child and parent.
 ::_
 :vt13
 
-echo. & echo * %1.
+echo. & echo * %1. Emits example.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt11
@@ -6678,7 +6674,7 @@ Emitting from child component.
 ::_
 :vt14
 
-echo. & echo * %1.
+echo. & echo * %1. Fallback content.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt11
@@ -6692,6 +6688,10 @@ Fallback code is interesting.
 
 skw:
 fallback content
+
+
+
+::_ qq
 
 
 
