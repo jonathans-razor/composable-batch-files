@@ -923,14 +923,19 @@ Apr-24-2018
 :list-l
 :ll
 
+cls
+
 echo. & echo * List of locally installed packages.
 
 call fn package.json || exit/b
 
 echo.
-npm list --long true
+npm list
 
 exit/b
+
+rem:
+npm list --long true
 
 lu:
 Apr-24-2018
@@ -992,60 +997,6 @@ echo. & echo * List of installed packages that only I have installed. As opposed
 echo.
 echo.
 npm list --depth 0
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-:_+ Uninstalling
-
-
-
-::_
-:u
-:unin
-
-echo. & echo * Uninstall "%2" global package and remove dependency section in the package.json file.
-
-if "%~2" == "" err Package name is required.
-
-echo.
-npm uninstall %2 -g --save
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:unin_s
-
-echo. & echo * Uninstall "%2" local package and remove dependency section in the package.json file.
-
-echo.
-echo.
-npm uninstall %2 --save
-
-exit/b
-
-lu:
-Apr-24-2018
-
-
-
-::_
-:unin_g
-
-echo. & echo * Uninstall "%2" global package.
-
-echo.
-echo.
-npm uninstall %2 -g
 
 exit/b
 
@@ -1817,6 +1768,64 @@ echo. & echo * Initialize a Vue project using the latest code.
 npm init vue@latest
 
 exit/b
+
+
+
+:_+ Uninstalling
+
+
+
+::_
+:u
+:unin
+
+echo. & echo * Uninstall "%2" global package and remove dependency section in the package.json file.
+
+if "%~2" == "" err Package name is required.
+
+echo.
+npm uninstall %2 -g --save
+
+exit/b
+
+lu:
+Apr-24-2018
+
+
+
+::_
+:ul
+
+echo. & echo * Uninstall "%2" local package and remove dependency section in the package.json file.
+
+if "%~2" == "" err Package name is required.
+
+echo.
+echo.
+npm uninstall %2 --save
+
+exit/b
+
+lu:
+rem qq
+Feb-29-2024
+Apr-24-2018
+
+
+
+::_
+:unin_g
+
+echo. & echo * Uninstall "%2" global package.
+
+echo.
+echo.
+npm uninstall %2 -g
+
+exit/b
+
+lu:
+Apr-24-2018
 
 
 

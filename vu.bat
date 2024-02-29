@@ -283,7 +283,6 @@ Created using "Vue create" (not latest).
 :vt14
 :vt14a
 :vt15
-:vt1
 
 echo. & echo * Run %1.
 

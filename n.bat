@@ -5923,7 +5923,7 @@ Feb-29-2024
 echo. & echo * %1. Hello world.
 
 call n vute>nul
-set cbf-pt=%cbf-pt%\%1
+set cbf-pt=%cbf-pt%\ve1
 set cbf-fn=%cbf-pt%\src\%1-*.vue
 
 set cbf-url=https://vuejs.org/examples/#hello-world
@@ -6103,7 +6103,7 @@ exit/b
 rem:
 What do you notice about this code?
 
-Cool Treeview. The data doesn't seemed to be saved, for example, to local storage.
+Cool Treeview. The data doesn't seemed to be saved.
 
 
 
@@ -6441,7 +6441,7 @@ This repo began as a copy of ve8.
 :vt
 :vt1
 
-echo. & echo * %1.
+echo. & echo * %1. Hello world. Simplest possible Vue app.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\%1
@@ -6461,7 +6461,7 @@ This app was created using "Vue create" (not latest). Bare bones features.
 ::_
 :vt2
 
-echo. & echo * %1. Make dynamic.
+echo. & echo * %1. Make dynamic. Hello world with non-working counter.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -6479,7 +6479,7 @@ Made dynamic.
 ::_
 :vt3
 
-echo. & echo * %1. Make red.
+echo. & echo * %1. Make red and green text.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -6496,7 +6496,7 @@ Add the title class to the h1 tag.
 ::_
 :vt4
 
-echo. & echo * %1. Event listener.
+echo. & echo * %1. Event listener. Basic counter.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -6514,7 +6514,7 @@ ref(0) assigned to count variable.
 ::_
 :vt5
 
-echo. & echo * %1.
+echo. & echo * %1. Bound textbox.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -6531,7 +6531,7 @@ Simplified form binding.
 ::_
 :vt6
 
-echo. & echo * %1.
+echo. & echo * %1. Toggle text.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -6548,7 +6548,7 @@ Cool toggle value.
 ::_
 :vt7
 
-echo. & echo * %1.
+echo. & echo * %1. Todo list. Data not saved.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
@@ -6562,10 +6562,14 @@ List buildihg.
 
 
 
+::_ qq
+
+
+
 ::_
 :vt8
 
-echo. & echo * %1. Computed properties.
+echo. & echo * %1. Computed properties. Hide completed todos.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vt1
