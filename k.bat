@@ -369,22 +369,6 @@ exit/b
 
 :_
 
-echo. & echo * 
-
-
-
-exit/b
-
-
-
-:_
-
-:code-execution-area
-
-
-
-:_
-
 cls
 
 echo. & echo * Expanding filename.
@@ -404,6 +388,35 @@ echo %~nx0
 exit/b
 
 Feb-8-2024
+
+
+
+:_
+
+echo. & echo * 
+
+
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+
+
+:_
+
+echo. & echo * 
+
+rem qq
+dbg %0
+
+exit/b
+
+Feb-29-2024
 
 
 

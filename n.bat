@@ -4,6 +4,8 @@
 
 title CBF: %0
 
+call dbg %0
+
 if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
