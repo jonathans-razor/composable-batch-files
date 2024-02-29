@@ -36,17 +36,14 @@ echo. & echo * Samples:
 echo   %~n0 k
 echo   %~n0 j1.txt
 
-echo. & echo   What the following line of code says is "Is there a cbf-app variable associated with alias 'k'"?
-echo   %~n0 k /e app
-
 exit/b
 
 skw:
-check_existence
+check existence
 existence check
-file_existence
+file existence
 if exists
-is_present
+is present
 verify existence
 
 
@@ -64,22 +61,7 @@ verify existence
 
 rem echo. & echo * Process alias. Dec-1-2023_6_06_PM
 
-call sdv %~1 || exit/b
-
-if "%2" == "/d" goto set-dcv-filename %*
-
-goto main
-
-
-
-:_
-:set-dcv-filename
-
-rem echo. & echo * Set DCV filename. Feb-19-2024-4-43-PM
-
-call m compose-variable %3
-
-set cbf-fn=%cbf-expanded-variable%
+call sdv %1 || exit/b
 
 goto main
 
@@ -105,7 +87,6 @@ if "%cbf-fn%" == "" (
 )
 
 if not exist "%cbf-fn%" (
-rem qq
   call not From %~nx0: For parameter 1 "%~1", cbf-fn "%cbf-fn%" does not exist. Feb-16-2024-11-13-PM
   exit/b 3
 )
@@ -114,4 +95,4 @@ exit/b
 
 
 
-:_
+:_ (!effn)

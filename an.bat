@@ -16,9 +16,11 @@ goto validate-input
 :_ (!rfsp) (mov-6)
 
 :help
+
 echo. & echo * Validate application alias.
 echo. & echo * Notes: This file and 3 others, viz. fn.bat, pn.bat and un.bat are not strictly necessary in that they could all be replaced be calls to nn.bat, nicknames source. However, they are useful in the sense that by calling these, the code is more readable and has more clarity of intent.
 echo. & echo * Usage: %0 [single parameter]
+
 exit/b
 
 
@@ -63,4 +65,4 @@ if not exist "%cbf-app%" (
 
 
 
-:_
+:_ (!efan)

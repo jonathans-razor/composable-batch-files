@@ -659,21 +659,6 @@ Jun-11-2023
 
 
 :_
-:repo
-
-set cbf-pt=c:\repos
-if exist "c:\GitHub Repositories" set cbf-pt=c:\GitHub Repositories
-if exist "d:\aa\repositories" set cbf-pt=d:\aa\repositories
-if exist "c:\aa\repositories" set cbf-pt=c:\aa\repositories
-if exist "c:\repositories" set cbf-pt=c:\repositories
-
-echo. & echo * Set repository folder to "%cbf-pt%".
-
-exit/b
-
-
-
-:_
 :pete0
 
 echo. & echo * %1.
@@ -6213,13 +6198,13 @@ echo. & echo * Test kangaroo. Jump. Jump. Jump around. Kangaroo Koke machine.
 call n aa>nul
 set cbf-pt=%cbf-pt%\k\te st
 
-set cbf-app=%cbf-pt%\j1.txt
+set cbf-app=%cbf-pt%\j1.txta
 set cbf-ex=%cbf-pt%\j1.xlsx
 rem set cbf-fn=%cbf-pt%\j1.txt
+set cbf-fn=%cbf-pt%\hard file (5).txt
 set cbf-jpg=%cbf-pt%\j1.jpg
 set cbf-png=%cbf-pt%\j1.png
 rem set cbf-png=%cbf-pt%\hard file (77).png
-set cbf-fn=%cbf-pt%\hard file (5).txt
 
 exit/b
 
@@ -6649,6 +6634,21 @@ exit/b
 echo. & echo * Car wish list.
 
 set cbf-gs=https://docs.google.com/spreadsheets/d/1oS-Ysco2SL5ptpUoPkW2MLHalOhtehsJrjop15Qlc4s/edit#gid=0
+
+exit/b
+
+
+
+:_
+:repo
+
+set cbf-pt=c:\repos
+if exist "c:\GitHub Repositories" set cbf-pt=c:\GitHub Repositories
+if exist "d:\aa\repositories" set cbf-pt=d:\aa\repositories
+if exist "c:\aa\repositories" set cbf-pt=c:\aa\repositories
+if exist "c:\repositories" set cbf-pt=c:\repositories
+
+echo. & echo * Set repository folder to "%cbf-pt%".
 
 exit/b
 
