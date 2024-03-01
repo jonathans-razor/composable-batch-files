@@ -4802,6 +4802,7 @@ echo. & echo * Vue testing.
 call n it>nul
 set cbf-pt=%cbf-pt%\vue-testing
 set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
+set cbf-gs=https://docs.google.com/spreadsheets/d/1lIemanX4_nF5fwrOCYH0ZJBJuKZP9u3i0GJXg87Jmcw/edit#gid=0
 
 exit/b
 
@@ -5095,8 +5096,6 @@ echo. & echo * Composable batch files.
 set cbf-branch=main
 set cbf-cn=git@github.com:jonathans-razor/Composable-Batch-Files.git
 set cbf-gh=https://github.com/jonathans-razor/Composable-Batch-Files
-
-call n nt>nul
 
 rem Top Useful Demoable Cbfs Spreadsheet:
 set cbf-gs=https://docs.google.com/spreadsheets/d/1oDL5jPYWqjjmGYEMmHZBykuOuxdha8RFnErpEd64vrY/edit#gid=0
@@ -5715,6 +5714,7 @@ I think the video was too old. I couldn't get his code to work as presented. Feb
 
 
 ::_
+:rfvuex
 :tuvx
 :vuex
 
@@ -5729,7 +5729,7 @@ exit/b
 lu:
 Feb-26-2024
 
-rem:
+skw:
 working-tutorial-series-jj
 
 yt:
@@ -5901,6 +5901,7 @@ exit/b
 
 
 ::_
+:rrve1
 :ve
 :ve1
 
@@ -5920,6 +5921,9 @@ What do you notice about this code?
 Simple hello world.
 
 This app was built using "npm create vue@latest %2" which contains fancy features.
+
+skw:
+working-tutorial-series-jj
 
 
 
@@ -6422,6 +6426,7 @@ This repo began as a copy of ve8.
 
 
 ::_
+:rfvt1
 :vt
 :vt1
 
@@ -6439,6 +6444,9 @@ What do you notice about this code?
 Simple app.
 
 This app was created using "Vue create" (not latest). Bare bones features.
+
+skw:
+working-tutorial-series-jj
 
 
 
@@ -6711,6 +6719,7 @@ Feb-29-2024
 :pina
 :pini
 :pinia
+:rfpina
 
 echo. & echo * Learn Pinia.
 
@@ -6722,6 +6731,9 @@ exit/b
 
 lu:
 Feb-29-2024
+
+skw:
+working-tutorial-series-jj
 
 
 

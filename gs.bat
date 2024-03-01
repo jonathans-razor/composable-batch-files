@@ -1,4 +1,4 @@
 @echo off
 echo.
 echo * Surf to Google Sheets website.
-fxw %0 %1 %2 %3
+fxw %0 %1 nt
