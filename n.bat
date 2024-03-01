@@ -390,7 +390,6 @@ Jul-17-2018
 
 echo. & echo * Greek Alphabet.
 
-call an br
 set cbf-gs=https://docs.google.com/spreadsheets/d/1tbV5cVzO5_5zTt4d4pLmohx1DeacuzFB3U5cb19Pcm0/edit#gid=1236387935
 
 exit/b
@@ -405,7 +404,6 @@ Sep-25-2023
 
 echo. & echo * Mission.
 
-call an br
 set cbf-gs=https://docs.google.com/spreadsheets/d/1d1vwKHe2RjbkqmVt8trayVu7YKTzpeutBk2aXa2nxAg/edit#gid=847203255
 
 exit/b
@@ -423,7 +421,6 @@ echo. & echo * Dating apps.
 call n exs
 
 set cbf-ex=%cbf-pt%\dating apps.xlsx
-call ap br>nul
 set cbf-gs=https://docs.google.com/spreadsheets/d/1y4CQHUdMAQrZu_qYtKcGUm-qtD93-QNAs8upLvcr-eM/edit#gid=0
 
 exit/b
@@ -634,8 +631,6 @@ echo. & echo * Shoe Weights.
 
 call n exs>nul
 set cbf-ex=%cbf-pt%\Shoe Weights.xlsx
-call an br
-
 set cbf-gs=https://docs.google.com/spreadsheets/d/1_F2hoEwMmbB9B8Oqt4cV1O-4T_6gAyDaJdoX4-OORYU/edit#gid=523644252           
 
 exit/b
@@ -2800,7 +2795,6 @@ Aug-28-2023
 
 echo. & echo * Golf History.
 
-call an br
 set cbf-gs=https://docs.google.com/spreadsheets/d/1Jd8ZEPJsjwozonWeRni0Fe3hTEOiTifWW42R_yMjNL0/edit#gid=233212548
 
 exit/b
@@ -2892,8 +2886,6 @@ echo. & echo * Job Search History.
 
 call n jona>nul
 set cbf-pt=%cbf-pt%\Find a Job
-call an br>nul
-
 set cbf-gs=https://docs.google.com/spreadsheets/d/1MtAgqCRRMNliiAw6nNLj1a0IsIw7nM6n_AcsBm9bvVI/edit#gid=1499309585
 
 exit/b
@@ -2989,13 +2981,12 @@ Sep-22-2023
 
 echo. & echo * Browsers.
 
-call n jona
 set cbf-gs=https://docs.google.com/spreadsheets/d/10tSDycsuYNkc2ACvw9YeclwAwKIiHNpX7YN7PzpcV9Y/edit#gid=2066608253
 
 exit/b
 
 lu:
- Sep-22-2023
+Sep-22-2023
 
 
 
@@ -3005,7 +2996,6 @@ lu:
 
 echo. & echo * Better life registry.
 
-call an nt>nul
 set cbf-gs=https://docs.google.com/spreadsheets/d/10q6Lde4zafkKnqeSZq8uhgMI4c82DynKiL3dKAcpqGY/edit#gid=101239705
 
 exit/b
@@ -3334,8 +3324,6 @@ Oct-16-2023
 :leet
 
 echo. & echo * LeetCode.
-
-call an nt>nul
 
 set cbf-gs=https://docs.google.com/spreadsheets/d/1cPViBct-hqOPcmxnw7awCmwNFFOqwpmbzbJaNhzwyPE/edit#gid=0
 set cbf-url=https://leetcode.com/problemset/all/
@@ -4334,8 +4322,6 @@ Sep-01-2022
 
 echo. & echo * My History of Video Games.
 
-call an br>nul
-
 set cbf-gs=https://docs.google.com/spreadsheets/d/1jmjGD4AsLCaAiJKZ-TNdKbYzPgqVHpvGX2jDsw25NcM/edit#gid=2046626056
 
 exit/b
@@ -4360,7 +4346,6 @@ exit/b
 
 echo. & echo * Learning software.
 
-call an br>nul
 set cbf-gs=https://docs.google.com/spreadsheets/d/1d5iDDqNyaVCXBxER40YEzaYimNM4x2YgDgkOneC6q6I/edit#gid=0
 
 exit/b
@@ -4451,7 +4436,6 @@ Has nice PDF edeiting capability. Jan-22-2024
 
 echo. & echo * Favorite ski days.
 
-call an br>nul
 set cbf-gs=https://docs.google.com/spreadsheets/d/1Q6YUJzTG_cHhKTBjBeawmoRMo-rYLXTo3ukRFzn1_IQ/edit#gid=0
 
 exit/b
@@ -4516,7 +4500,6 @@ exit/b
 
 echo. & echo * HarckerRank.
 
-call an nt>nul
 call n it>nul
 set cbf-gs=https://docs.google.com/spreadsheets/d/1GEYx1kiMVIUhrzTK50fKF8mqK45Sl2vW4znU9cf1XDc/edit#gid=0
 set cbf-pt=%cbf-pt%\HackerRank
@@ -5874,7 +5857,6 @@ exit/b
 
 echo. & echo * Car wish list.
 
-call an nt
 set cbf-gs=https://docs.google.com/spreadsheets/d/1oS-Ysco2SL5ptpUoPkW2MLHalOhtehsJrjop15Qlc4s/edit#gid=0
 
 exit/b

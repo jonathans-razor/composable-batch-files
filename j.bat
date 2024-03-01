@@ -154,6 +154,7 @@ if not "%cbf-gd%" == "" (
 if not "%cbf-gs%" == "" (
   rem echo. & echo * cbf-gs is non-blank. Aug-23-2023_1_53_PM
   set cbf-parameter=%cbf-gs%
+  call an nt>nul
   call r
   exit/b
 )
