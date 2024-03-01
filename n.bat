@@ -6610,6 +6610,9 @@ rem:
 What do you notice about this code? 
 How to load a child component.
 
+skw:
+working-tutorial-series-jj
+
 
 
 ::_
@@ -6717,6 +6720,20 @@ Feb-29-2024
 
 skw:
 working-tutorial-series-jj
+
+
+
+:_
+:
+
+echo. & echo * Vue.js With TypeScript by Program with Eric.
+
+call n vute>nul
+rem   qq
+set cbf-pt=%cbf-pt%\vue-js-with-typescript
+set cbf-yt=https://www.youtube.com/watch?v=CQAQkHuulTU
+
+exit/b
 
 
 
