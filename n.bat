@@ -6729,7 +6729,7 @@ working-tutorial-series-jj
 echo. & echo * Vue.js With TypeScript by Program with Eric.
 
 call n vute>nul
-rem   qq
+rem   qjq
 set cbf-pt=%cbf-pt%\vue-js-with-typescript
 set cbf-yt=https://www.youtube.com/watch?v=CQAQkHuulTU
 
