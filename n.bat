@@ -6595,6 +6595,7 @@ Watchers are difficult to understand.
 
 
 ::_
+:rfvt11
 :vt11
 
 echo. & echo * %1. A child component.
