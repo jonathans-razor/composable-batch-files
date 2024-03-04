@@ -4722,6 +4722,7 @@ exit/b
 echo. & echo * Vue.
 
 set cbf-gh=https://github.com/vuejs
+set cbf-gh2=https://github.com/vuejs/vue-class-component
 set cbf-lh=http://localhost:8080
 
 exit/b
@@ -6719,21 +6720,6 @@ working-tutorial-series-jj
 
 
 :_
-:rfvuts
-:vuts
-
-echo. & echo * Vue.js With TypeScript by Program with Eric.
-
-call n vute>nul
-rem   qjq
-set cbf-pt=%cbf-pt%\vue-js-with-typescript
-set cbf-yt=https://www.youtube.com/watch?v=CQAQkHuulTU
-
-exit/b
-
-
-
-:_
 :vypr
 :rfvypr
 
@@ -6777,6 +6763,21 @@ echo. & echo * quasar-vite.
 
 call n v>nul
 set cbf-pt=%cbf-pt%\quasar-vite
+
+exit/b
+
+
+
+:_
+:rfvuts
+:vuts
+
+echo. & echo * Vue.js With TypeScript by Program with Eric.
+
+call n vute>nul
+rem   qq
+set cbf-pt=%cbf-pt%\vue-js-with-typescript
+set cbf-yt=https://www.youtube.com/watch?v=CQAQkHuulTU
 
 exit/b
 

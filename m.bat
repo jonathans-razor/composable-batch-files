@@ -4729,10 +4729,11 @@ exit/b
 
 
 ::_
+:fw
 :fwp
 :distill-file-folder
 
-echo. & echo * Distill to filename or current folder without path.
+rem echo. & echo * Distill to filename or current folder without path.
 
 set cbf-distilled-file-folder=%~nx2
 
