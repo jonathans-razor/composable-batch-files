@@ -6772,11 +6772,29 @@ exit/b
 :rfvuts
 :vuts
 
-echo. & echo * Vue.js With TypeScript by Program with Eric.
+echo. & echo * Vue.js With TypeScript by Program With Erik.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vue-js-with-typescript
+set cbf-yt=https://www.youtube.com/watch?v=CQAQkHuulTU
+
+exit/b
+
+skw:
+
+working-tutorial-series-jj
+
+
+
+:_
+:rfvuts2
+:vuts2
+
+echo. & echo * Vue.js With TypeScript by Program With Erik - Part 2. Did not choose the component option during creation.
 
 call n vute>nul
 rem   qq
-set cbf-pt=%cbf-pt%\vue-js-with-typescript
+set cbf-pt=%cbf-pt%\vue-js-with-typescript-2
 set cbf-yt=https://www.youtube.com/watch?v=CQAQkHuulTU
 
 exit/b
