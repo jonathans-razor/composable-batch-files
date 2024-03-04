@@ -34,19 +34,38 @@ rem creation date: Apr-19-2023
 
 :_
 :ga
+
 echo. & echo * Gettysburg address.
 call pn cbf>nul
 clip < %cbf-pt%\gettysburg-address.txt
+
 exit/b
 
 
 
 :_
 :dtt
+
 echo. & echo * Date and time.
+
 call ujt
 clip < %tmp%\java_timestamp.txt
+
 exit/b
 
 
 
+:_
+:fw
+:fwp
+
+echo. & echo * Folder wiothout path.
+call m fwp %cd%
+rem qq
+clip < %tmp%\fwp.txt
+
+exit/b
+
+
+
+:_

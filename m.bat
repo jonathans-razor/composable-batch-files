@@ -4729,11 +4729,14 @@ exit/b
 
 
 ::_
+:fwp
 :distill-file-folder
 
 echo. & echo * Distill to filename or current folder without path.
 
 set cbf-distilled-file-folder=%~nx2
+
+echo %cbf-distilled-file-folder%>%tmp%\fwp.txt
 
 exit/b
 
@@ -4742,6 +4745,8 @@ Nov-8-2023
 
 skw: 
 file path only
+folder without path
+folder-without-path
 full filename
 
 Sample call to get current folder name:
@@ -4753,6 +4758,7 @@ filename.
 
 
 ::_
+:sfwop
 :scdff
 
 echo. & echo * Sample call to distill-file-folder. Current folder version.

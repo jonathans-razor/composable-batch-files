@@ -4706,6 +4706,18 @@ exit/b
 
 
 ::_
+:vutd
+
+echo. & echo * Todo app.
+
+rem qq
+set cbf-url=https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2
+
+exit/b
+
+
+
+::_
 :vue
 
 echo. & echo * Vue.
@@ -4775,6 +4787,7 @@ exit/b
 
 
 ::_
+:v
 :vu
 :vute
 
@@ -4893,17 +4906,6 @@ exit/b
 echo. & echo * Vue API tutorial.
 
 set cbf-url=https://metricloop.com/blog/how-to-make-api-calls-with-vuex
-
-exit/b
-
-
-
-::_
-:vutd
-
-echo. & echo * Todo app.
-
-set cbf-url=https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2
 
 exit/b
 
@@ -5618,20 +5620,6 @@ Jan-31-2022
 
 
 :_
-:todo
-
-echo. & echo * Todo app by Tyler Potts.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\todo-app
-set cbf-gho=https://github.com/TylerPottsDev/yt-vue-todo-2022
-set cbf-yt=https://www.youtube.com/watch?v=qhjxAP1hFuI
-
-exit/b
-
-
-
-:_
 :itpi
 :tech
 :tepi
@@ -5684,8 +5672,7 @@ exit/b
 
 
 ::_
-:27
-:va27
+:rfvy27
 
 echo. & echo * vuetify-app-feb-27-2024.
 
@@ -6742,6 +6729,55 @@ call n vute>nul
 rem   qjq
 set cbf-pt=%cbf-pt%\vue-js-with-typescript
 set cbf-yt=https://www.youtube.com/watch?v=CQAQkHuulTU
+
+exit/b
+
+
+
+:_
+:vypr
+:rfvypr
+
+echo. & echo * vuetify-project.
+
+call n vu>nul
+set cbf-pt=%cbf-pt%\vuetify-project
+
+exit/b
+
+skw:
+working-tutorial-series-jj
+
+
+
+:_
+:todo
+
+echo. & echo * Todo app by Tyler Potts.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\todo-app
+set cbf-gho=https://github.com/TylerPottsDev/yt-vue-todo-2022
+set cbf-yt=https://www.youtube.com/watch?v=qhjxAP1hFuI
+
+exit/b
+
+rem:
+working local storage
+
+skw:
+
+
+
+
+
+:_
+:qv
+
+echo. & echo * quasar-vite.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\quasar-vite
 
 exit/b
 
