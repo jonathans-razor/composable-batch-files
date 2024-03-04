@@ -42,7 +42,7 @@ Jan-18-2024
 :_
 :preprocess
 
-call t %1
+call t %11>nul || exit/b
 
 cd src
 

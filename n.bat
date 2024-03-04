@@ -4559,6 +4559,11 @@ exit/b
 lu:
 Oct-18-2023
 
+rem:
+Standard port used by Vuetify apps.
+
+skw:
+standard-port-usage-series-jj
 
 
 ::_
@@ -4621,6 +4626,12 @@ exit/b
 lu:
 Sep-27-2023
 Jul-06-2022
+
+rem:
+Standard port used by Vue apps.
+
+skw:
+standard-port-usage-series-jj
 
 
 
@@ -4765,31 +4776,24 @@ exit/b
 
 ::_
 :vu
-
-echo. & echo * Vue.
-
-set cbf-docs=https://vuejs.org/guide/introduction.html
-set cbf-lh=http://localhost:5173
-set cbf-url=https://discord.com/invite/HBherRA
-set cbf-gha=https://api.github.com/repos/vuejs/core/commits?per_page=3
-
-exit/b
-
-
-
-::_
 :vute
 
-echo. & echo * Vue testing.
+echo. & echo * Vue and Vue testing.
 
 call n it>nul
 set cbf-pt=%cbf-pt%\vue-testing
+
+set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
+set cbf-gha=https://api.github.com/repos/vuejs/core/commits?per_page=3
 set cbf-gs=https://docs.google.com/spreadsheets/d/1lIemanX4_nF5fwrOCYH0ZJBJuKZP9u3i0GJXg87Jmcw/edit#gid=0
+set cbf-lh=http://localhost:5173
+set cbf-url=https://discord.com/invite/HBherRA
 
 exit/b
 
 lu:
+Mar-4-2024
 Jan-30-2024
 
 
@@ -6709,6 +6713,27 @@ working-tutorial-series-jj
 
 
 :_
+:rfvsa
+:vsa
+
+echo. & echo * Vue starter app.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\vue-starter-app
+
+exit/b
+
+rem: 
+a vite app
+good for copying and pasting
+
+skw:
+working-tutorial-series-jj
+
+
+
+:_
+:rfvuts
 :vuts
 
 echo. & echo * Vue.js With TypeScript by Program with Eric.

@@ -19,9 +19,9 @@ echo. & echo * Batch file style: Multipurpose
 
 echo.
 echo     Parameter  Description
-echo -------------  -----------------------------------------------------
-echo          init  Wizard that creates a package.json file.
-echo        init-y  Wizard that creates package.json file with defaults.
+echo -------------  ---------------------------------------------------------
+echo          init  Wizard that creates package.json file with defaults.
+echo        init-n  Wizard that creates a package.json file with no defaults.
 echo       get_lic  Get default license setting.
 echo          inst  Install a package and save it to package.json.
 echo        inst-e  Install Express.
@@ -140,12 +140,39 @@ exit/b
 
 
 
+::_
+:init-vu
+:init-vul
+
+echo. & echo * Initialize a Vue project using the latest code.
+
+npm init vue@latest
+
+exit/b
+
+
+
+::_
+:init-quas
+
+echo. & echo * Create Quasar app.
+
+npm init quasar
+
+exit/b
+
+rem:
+Apparently this is outdated.
+quasar create quasar-note-app --branch next
+
+
+
 :_+ Settings
 
 
 
 ::_
-:set_lic
+:set-lic
 
 echo. & echo * Set default license to MIT.
 
@@ -160,7 +187,7 @@ Apr-24-2018
 
 
 ::_
-:get_lic
+:get-lic
 
 echo. & echo * Get default license setting.
 
@@ -1005,7 +1032,96 @@ Apr-24-2018
 
 
 
-:_+ Create Family (!fccrea)
+:_+ Create Family (!fccrea, !crea)
+
+
+
+::_
+:c-vul
+
+cls
+
+echo. & echo * Create a new Vue project. This is the one that gives a lot of the fancy features.
+
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+npm create vue@latest %2
+
+exit/b
+
+lu:
+Feb-6-2024
+Feb-1-2024
+
+rem:
+npm create vue@latest seems to be the same as npm init vue@latest
+
+This creates a project with these questions:
+
+ue.js - The Progressive JavaScript Framework
+
+v Add TypeScript? ... No / Yes
+v Add JSX Support? ... No / Yes
+v Add Vue Router for Single Page Application development? ... No / Yes
+v Add Pinia for state management? ... No / Yes
+v Add Vitest for Unit Testing? ... No / Yes
+v Add an End-to-End Testing Solution? » Playwright
+v Add ESLint for code quality? ... No / Yes
+v Add Prettier for code formatting? ... No / Yes
+
+Scaffolding project in d:\Dropbox\IT\vue-testing\ve1...
+
+The "." creates the project in the current folder I believe. Feb-1-2024
+npm create vue@latest .
+
+
+
+::_
+:c-vite
+
+echo. & echo * Create Vite app.
+
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+npm create vite@latest %2
+
+exit/b
+
+
+
+::_
+:c-vite2
+
+echo. & echo * Create Vite app, version 2.
+
+npm create vite@latest
+
+exit/b
+
+
+
+::_
+:c-vite3
+
+echo. & echo * Create Vite app, version 3.
+
+npm create vite@latest . --  --template vue
+
+exit/b
+
+
+
+::_
+:c-vy
+
+echo. & echo * Create Veutify.
+
+rem The following line is unnecessary.
+rem if "%~2" == "" err Parameter 2, project name, is required.
+
+npm create vuetify
+
+exit/b
 
 
 
@@ -1052,57 +1168,6 @@ npm ERR! command failed
 npm ERR! command C:\WINDOWS\system32\cmd.exe /d /s /c create-svelte svelte-example
 
 npm ERR! A complete log of this run can be found in: %localappdata%\npm-cache\_logs\2024-01-02T21_19_40_474Z-debug-0.log
-
-
-
-::_
-:c-qs
-:c-quas
-
-echo. & echo * Create Quasar app.
-
-npm init quasar
-
-exit/b
-
-rem:
-Apparently this is outdated.
-quasar create quasar-note-app --branch next
-
-
-
-::_
-:c-vite
-
-echo. & echo * Create Vite app.
-
-if "%~2" == "" err Parameter 2, the project name, is required.
-
-npm create vite@latest %2
-
-exit/b
-
-
-
-::_
-:c-vite2
-
-echo. & echo * Create Vite app, version 2.
-
-npm create vite@latest
-
-exit/b
-
-
-
-::_
-:c-vite3
-
-echo. & echo * Create Vite app, version 3.
-
-npm create vite@latest . --  --template vue
-
-exit/b
 
 
 
@@ -1216,24 +1281,7 @@ lu:
 
 
 
-:_+ Updating NPM. (skw upgrading, upgrade)
-
-
-
-::_
-:i-npms
-:updas
-
-echo. & echo * Run global update to specific version.
-
-echo.
-npm install -g npm@10.2.5
-
-exit/b
-
-lu:
-Jan-2-2024
-Aug-12-2019
+:_+ Updating NPM. (!upda) (skw upgrading, upgrade)
 
 
 
@@ -1266,6 +1314,23 @@ exit/b
 lu:
 Jan-2-2024
 Sep-12-2018
+
+
+
+::_
+:i-npms
+:updas
+
+echo. & echo * Run global update to specific version.
+
+echo.
+npm install -g npm@10.2.5
+
+exit/b
+
+lu:
+Jan-2-2024
+Aug-12-2019
 
 
 
@@ -1318,7 +1383,7 @@ Aug-12-2019
 
 
 ::_
-:update_s
+:update-s
 
 echo. & echo * Update all dependencies to the latest version.
 
@@ -1334,7 +1399,7 @@ Apr-24-2018
 
 
 ::_
-:update_sp
+:update-sp
 
 echo. & echo * Update a single package dependency, in this case "%2".
 
@@ -1705,67 +1770,6 @@ Sep-5-2021
 echo. & echo * Install the global CLI.
 
 npm i -g @quasar/cli
-
-exit/b
-
-
-
-:_
-:crvy
-
-echo. & echo * Create Veutify.
-
-npm create vuetify
-
-exit/b
-
-
-
-:_
-:cp2
-:cpf
-
-cls
-
-echo. & echo * Create a new Vue project. This is the one that gives a lot of the fancy features.
-
-if "%~2" == "" err Parameter 2, the project name, is required.
-
-npm create vue@latest %2
-
-exit/b
-
-lu:
-Feb-6-2024
-Feb-1-2024
-
-rem:
-This creates a project with these questions:
-
-ue.js - The Progressive JavaScript Framework
-
-v Add TypeScript? ... No / Yes
-v Add JSX Support? ... No / Yes
-v Add Vue Router for Single Page Application development? ... No / Yes
-v Add Pinia for state management? ... No / Yes
-v Add Vitest for Unit Testing? ... No / Yes
-v Add an End-to-End Testing Solution? » Playwright
-v Add ESLint for code quality? ... No / Yes
-v Add Prettier for code formatting? ... No / Yes
-
-Scaffolding project in d:\Dropbox\IT\vue-testing\ve1...
-
-The "." creates the project in the current folder I believe. Feb-1-2024
-npm create vue@latest .
-
-
-
-:_
-:ivl
-
-echo. & echo * Initialize a Vue project using the latest code.
-
-npm init vue@latest
 
 exit/b
 

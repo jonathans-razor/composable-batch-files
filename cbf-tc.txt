@@ -12,7 +12,7 @@ Composable Batch Files (CBF) - Table of Contents
       ap  Application-centric way of running an application with an optional filename parameter
   ascii-
      art  ASCII art file for displaying more visual content.
-      av  Edit App.vue.
+      av  Edit App.vue. Has TD parameter.
       ax  Copy the ax DCV to the clipboard.
        b  Shutdown windows.
      b64  Base 64 encoding and decoding.
@@ -175,7 +175,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       pg  Ping leveraging nicknames dictionary.
       ph  Python. (skw supported-languages-series-jj)
       pi  Pipe a command line statement to a file.
-      pj  Edit package.json.
+      pj  Edit package.json. Has TD parameter.
       pl  Git pull, with td parameter.
       pn  Validate a pathname value. Using pn instead of n helps the reader with clarity of intent.
      png  Run cbf-png as a DCV double-click filename.

@@ -2445,8 +2445,8 @@ level not 0
 
 echo. & echo * Parameter 2 is required.
 
+if "%~2" == "" err Parameter 2, project name, is required.
 if "%~2" == "" err Parameter 2 is required.
-if "%~2" == "" err Parameter 2, the project name, is required.
 
 exit/b
 

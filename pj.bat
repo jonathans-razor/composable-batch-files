@@ -3,7 +3,6 @@
 
 echo. & echo  * Edit package.json.
 
-rem qq
 if "%~1" == "" goto main
 if "%~1" == "?" goto help
 
@@ -24,6 +23,7 @@ echo. & echo    Batch file style: Single purpose
 
 echo. & echo  * Samples:
 echo    %~n0 
+echo    %~n0 ve1
 
 exit/b
 
