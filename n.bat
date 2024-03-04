@@ -4710,7 +4710,6 @@ exit/b
 
 echo. & echo * Todo app.
 
-rem qq
 set cbf-url=https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2
 
 exit/b

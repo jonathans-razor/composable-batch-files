@@ -61,7 +61,6 @@ exit/b
 
 echo. & echo * Folder wiothout path.
 call m fwp %cd%
-rem qq
 clip < %tmp%\fwp.txt
 
 exit/b
