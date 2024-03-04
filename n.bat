@@ -6687,21 +6687,6 @@ Confetti is fun.
 
 
 :_
-:vsa
-
-echo. & echo * Vue starter app.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\learn-pinia
-
-exit/b
-
-lu:
-Feb-29-2024
-
-
-
-:_
 :pina
 :pini
 :pinia

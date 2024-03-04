@@ -44,9 +44,21 @@ Feb-22-2024
 :_
 :main
 
-call fn run.bat || exit/b
+call fn run.bat || goto use-cbf-configuration
 
 run
+
+exit/b
+
+
+
+:use-cbf-configuration
+
+echo. & echo * Use CBF configuration.
+
+rem call n
+rem cbf-port
+rem cbf-server-word
 
 exit/b
 
