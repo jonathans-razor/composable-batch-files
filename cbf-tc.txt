@@ -194,7 +194,7 @@ example-  Prefix for files written by other authors for learning and comparison 
     reme  Execute the demo DCV for the passed in alias.
       rf  Remember or recall previous folder.
       rl  Execute the releases DCV for the passed in alias.
-      rn  Run localhost application. Uses td parameter.
+      rn  Run localhost application. Uses td parameter and location awareness.
       ro  Read-only.
      run  Run with td parameter. Also, a batch file that resides in the pacgage.json folder 
           that runs the project.

@@ -15,7 +15,7 @@ goto process-td-parameter
 
 cls
 
-echo. & echo * Run localhost application. Uses td parameter.
+echo. & echo * Run localhost application. Uses td parameter and location awareness.
 
 echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
