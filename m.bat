@@ -2310,32 +2310,6 @@ Apr-9-2018
 
 
 :_
-:dc
-:double-click
-:double_click
-:set_cbf-app_equal_to_cbf-fn
-
-echo. & echo * Simulate a remote double click. Deprecated. Going forward, use dc.bat. **************
-
-rem Strangely, this also works. Feb-1-2018
-rem set cbf-app="%cbf-fn% - Shortcut.lnk"
-
-if "%cbf-fn%"=="" (
-  exit/b
-)
-
-set cbf-app=%cbf-fn%
-
-set cbf-parameter=
-
-exit/b
-
-lu:
-Feb-1-2018
-
-
-
-:_
 :set_cbf-app_to_dte
 
 echo. & echo * Set cbf-app.
@@ -4914,6 +4888,36 @@ May-26-2020
 
 
 
+:_
+:lu
+:ulul
+:update_lu
+
+echo. & echo * Update the last_updated_log.txt.
+
+rem echo 9.
+date /t>%temp%\date_9.txt
+set /p date_9=<%temp%\date_9.txt
+rem echo %date_9%
+
+rem echo 10.
+time /t>%temp%\time_10.txt
+set /p time_10=<%temp%\time_10.txt
+rem echo %time_10%
+
+rem set combined_12=%2 - %computername% - %date_9%%time_10%
+set combined_12=%date_9%%time_10% - %computername%
+
+echo.>>%share-zone%\last_updated_log.txt
+echo %combined_12%>>%share-zone%\last_updated_log.txt
+
+exit/b
+
+lu:
+Feb-8-2019
+
+
+
 :_+ Automated Openers
 
 
@@ -4964,6 +4968,9 @@ Nov-14-2023
 
 
 ::_
+:dc
+:dcl
+:double-click
 :v
 
 echo. & echo * Double click on latest item.
@@ -4996,36 +5003,6 @@ Jul-8-2021
 skw:
 file contents
 get file contents into an environment variable
-
-
-
-:_
-:lu
-:ulul
-:update_lu
-
-echo. & echo * Update the last_updated_log.txt.
-
-rem echo 9.
-date /t>%temp%\date_9.txt
-set /p date_9=<%temp%\date_9.txt
-rem echo %date_9%
-
-rem echo 10.
-time /t>%temp%\time_10.txt
-set /p time_10=<%temp%\time_10.txt
-rem echo %time_10%
-
-rem set combined_12=%2 - %computername% - %date_9%%time_10%
-set combined_12=%date_9%%time_10% - %computername%
-
-echo.>>%share-zone%\last_updated_log.txt
-echo %combined_12%>>%share-zone%\last_updated_log.txt
-
-exit/b
-
-lu:
-Feb-8-2019
 
 
 

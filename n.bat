@@ -6793,7 +6793,6 @@ working-tutorial-series-jj
 echo. & echo * Vue.js With TypeScript by Program With Erik - Part 2. Did not choose the component option during creation.
 
 call n vute>nul
-rem   qq
 set cbf-pt=%cbf-pt%\vue-js-with-typescript-2
 set cbf-yt=https://www.youtube.com/watch?v=CQAQkHuulTU
 

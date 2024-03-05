@@ -11,6 +11,7 @@ Composable Batch Files (CBF) - Table of Contents
      ans  Ansible.
       ap  Application-centric way of running an application with an optional filename parameter
   ascii-
+     arc  Archive for old batch file functions.
      art  ASCII art file for displaying more visual content.
       av  Edit App.vue. Has TD parameter.
       ax  Copy the ax DCV to the clipboard.
