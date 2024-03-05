@@ -3,7 +3,7 @@
 
 title CBF: %0
 
-if "%~1" == "" goto prepocess
+if "%~1" == "" goto preprocess
 if "%~1" == "?" goto help
 
 goto process-td-parameter
