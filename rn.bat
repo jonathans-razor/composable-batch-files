@@ -1,7 +1,7 @@
 :_
 @echo off
 
-title CBF: %0
+echo. & echo * Run localhost application. Uses td parameter and location awareness.
 
 if "%~1" == "" goto preprocess
 if "%~1" == "?" goto help
@@ -12,10 +12,6 @@ goto process-td-parameter
 
 :_
 :help
-
-cls
-
-echo. & echo * Run localhost application. Uses td parameter and location awareness.
 
 echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
@@ -70,7 +66,7 @@ goto main
 
 call nm %cbf-srv% || exit/b
 
-if not "%cbf-lh%" == "" call lh %cbf-lh%
+if not "%cbf-lh%" == "" call lh %cbf-lh%>nul
 
 exit/b
 

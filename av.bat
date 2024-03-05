@@ -53,7 +53,7 @@ cd src
 
 call fn App.vue || exit/b
 
-vc App.vue
+vc App.vue>nul
 
 exit/b
 

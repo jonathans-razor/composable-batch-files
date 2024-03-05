@@ -52,7 +52,7 @@ call t %1>nul || exit/b
 
 call fn package.json || exit/b
 
-vc package.json
+vc package.json>nul
 
 exit/b
 
