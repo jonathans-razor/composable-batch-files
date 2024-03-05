@@ -6,7 +6,7 @@ echo. & echo  * Edit package.json.
 if "%~1" == "" goto main
 if "%~1" == "?" goto help
 
-goto preprocess
+goto process-td-parameter
 
 
 
@@ -41,7 +41,7 @@ Jan-18-2024
 
 
 :_
-:preprocess
+:process-td-parameter
 
 call t %1>nul || exit/b
 

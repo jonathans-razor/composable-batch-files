@@ -4566,6 +4566,7 @@ skw:
 standard-port-usage-series-jj
 
 
+
 ::_
 :3000h
 
@@ -6750,22 +6751,6 @@ exit/b
 rem:
 working local storage
 
-skw:
-
-
-
-
-
-:_
-:qv
-
-echo. & echo * quasar-vite.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\quasar-vite
-
-exit/b
-
 
 
 :_
@@ -6797,6 +6782,24 @@ set cbf-pt=%cbf-pt%\vue-js-with-typescript-2
 set cbf-yt=https://www.youtube.com/watch?v=CQAQkHuulTU
 
 exit/b
+
+
+
+:_
+:quasar-vite
+:qv
+:rfqv
+
+echo. & echo * quasar-vite.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\quasar-vite
+set cbf-srv=dev
+
+exit/b
+
+skw:
+working-tutorial-series-jj
 
 
 

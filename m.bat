@@ -4698,6 +4698,124 @@ exit/b
 
 
 
+:_
+:lu
+:ulul
+:update_lu
+
+echo. & echo * Update the last_updated_log.txt.
+
+rem echo 9.
+date /t>%temp%\date_9.txt
+set /p date_9=<%temp%\date_9.txt
+rem echo %date_9%
+
+rem echo 10.
+time /t>%temp%\time_10.txt
+set /p time_10=<%temp%\time_10.txt
+rem echo %time_10%
+
+rem set combined_12=%2 - %computername% - %date_9%%time_10%
+set combined_12=%date_9%%time_10% - %computername%
+
+echo.>>%share-zone%\last_updated_log.txt
+echo %combined_12%>>%share-zone%\last_updated_log.txt
+
+exit/b
+
+lu:
+Feb-8-2019
+
+
+
+:_+ Automated Openers
+
+
+
+::_
+:le
+:py
+
+rem echo. & echo * Copy latest filename to clipboard.
+
+call t d>nul || exit/b
+
+dir /b /o-d>c:\a\python-results.txt
+
+set /p cbf-python-results=<c:\a\python-results.txt
+
+echo %cbf-python-results%|clip
+
+echo. & echo * Code filename "%cbf-python-results%" has been copied to the clipboard.
+
+exit/b
+
+lu:
+Nov-14-2023
+
+
+
+::_
+:f
+:fn
+:l
+
+rem echo. & echo * Copy latest filename to clipboard.
+
+dir /b /o-d>c:\a\python-results.txt
+
+set /p cbf-python-results=<c:\a\python-results.txt
+
+echo %cbf-python-results%|clip
+
+echo. & echo * Code filename "%cbf-python-results%" has been copied to the clipboard.
+
+exit/b
+
+lu:
+Nov-14-2023
+
+
+
+::_
+:dc
+:dcl
+:double-click
+:v
+
+echo. & echo * Double click on latest item.
+
+if not "%~2" == "" (
+  call t %2 || exit/b
+)
+
+dir /b /o-d>c:\a\latest-item-results.txt
+
+set /p cbf-latest-item=<c:\a\latest-item-results.txt
+
+echo. & echo * cbf-latest-item: %cbf-latest-item%
+
+"%cbf-latest-item%"
+
+exit/b
+
+ex:
+%0 %1 bci
+%0 %1 fl
+%0 %1 ss
+%0 %1 tran
+
+lu:
+Jan-23-2024
+Dec-22-2023
+Jul-8-2021
+
+skw:
+file contents
+get file contents into an environment variable
+
+
+
 :_+ Expand and Compose Family (!fcexpa)
 
 
@@ -4885,124 +5003,6 @@ exit/b
 
 lu:
 May-26-2020
-
-
-
-:_
-:lu
-:ulul
-:update_lu
-
-echo. & echo * Update the last_updated_log.txt.
-
-rem echo 9.
-date /t>%temp%\date_9.txt
-set /p date_9=<%temp%\date_9.txt
-rem echo %date_9%
-
-rem echo 10.
-time /t>%temp%\time_10.txt
-set /p time_10=<%temp%\time_10.txt
-rem echo %time_10%
-
-rem set combined_12=%2 - %computername% - %date_9%%time_10%
-set combined_12=%date_9%%time_10% - %computername%
-
-echo.>>%share-zone%\last_updated_log.txt
-echo %combined_12%>>%share-zone%\last_updated_log.txt
-
-exit/b
-
-lu:
-Feb-8-2019
-
-
-
-:_+ Automated Openers
-
-
-
-::_
-:le
-:py
-
-rem echo. & echo * Copy latest filename to clipboard.
-
-call t d>nul || exit/b
-
-dir /b /o-d>c:\a\python-results.txt
-
-set /p cbf-python-results=<c:\a\python-results.txt
-
-echo %cbf-python-results%|clip
-
-echo. & echo * Code filename "%cbf-python-results%" has been copied to the clipboard.
-
-exit/b
-
-lu:
-Nov-14-2023
-
-
-
-::_
-:f
-:fn
-:l
-
-rem echo. & echo * Copy latest filename to clipboard.
-
-dir /b /o-d>c:\a\python-results.txt
-
-set /p cbf-python-results=<c:\a\python-results.txt
-
-echo %cbf-python-results%|clip
-
-echo. & echo * Code filename "%cbf-python-results%" has been copied to the clipboard.
-
-exit/b
-
-lu:
-Nov-14-2023
-
-
-
-::_
-:dc
-:dcl
-:double-click
-:v
-
-echo. & echo * Double click on latest item.
-
-if not "%~2" == "" (
-  call t %2 || exit/b
-)
-
-dir /b /o-d>c:\a\latest-item-results.txt
-
-set /p cbf-latest-item=<c:\a\latest-item-results.txt
-
-echo. & echo * cbf-latest-item: %cbf-latest-item%
-
-"%cbf-latest-item%"
-
-exit/b
-
-ex:
-%0 %1 bci
-%0 %1 fl
-%0 %1 ss
-%0 %1 tran
-
-lu:
-Jan-23-2024
-Dec-22-2023
-Jul-8-2021
-
-skw:
-file contents
-get file contents into an environment variable
 
 
 

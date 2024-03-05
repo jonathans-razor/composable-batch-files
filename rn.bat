@@ -3,11 +3,10 @@
 
 title CBF: %0
 
+if "%~1" == "" goto main
 if "%~1" == "?" goto help
 
-goto %1
-goto main
-goto preprocess
+goto process-td-parameter
 
 
 
@@ -16,8 +15,7 @@ goto preprocess
 
 cls
 
-rem          qq
-echo. & echo * 
+echo. & echo * Run localhost application. Uses td parameter.
 
 echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
@@ -45,18 +43,30 @@ Feb-22-2024
 
 
 :_
-:preprocess
+:process-td-parameter
 
-
-
-exit/b
+call t %1>nul || exit/b
 
 
 
 :_
 :main
 
+rem echo cd: %cd%
+
+rem @echo on
+call m fw %cd%
+
+rem echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Mar-5-2024-2-41-PM
+rem echo %cbf-distilled-file-folder%
+
+rem echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Mar-5-2024-2-42-PM
+call n %cbf-distilled-file-folder%>nul
 rem qq
+
+rem echo %cbf-srv%
+
+call nm %cbf-srv%
 
 exit/b
 
