@@ -62,11 +62,13 @@ rem echo %cbf-distilled-file-folder%
 
 rem echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Mar-5-2024-2-42-PM
 call n %cbf-distilled-file-folder%>nul
-rem qq
 
 rem echo %cbf-srv%
 
 call nm %cbf-srv%
+
+rem qq
+if not "%cbf-lh%" == "" call lh %cbf-lh%
 
 exit/b
 
