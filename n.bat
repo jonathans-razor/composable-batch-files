@@ -6849,7 +6849,6 @@ working-tutorial-series-jj
 
 echo. & echo * Vitest by David Nwadiogbu.
 
-rem   qq
 call n v>nul
 set cbf-pt=%cbf-pt%\vitest-by-david-nwadiogbu
 
