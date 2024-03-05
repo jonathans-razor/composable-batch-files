@@ -5679,6 +5679,9 @@ echo. & echo * vuetify-app-feb-27-2024.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vuetify-app-feb-27-2024
+rem qq
+set cbf-srv=dev
+set cbf-lh=3000
 set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY
 
 exit/b
