@@ -4985,7 +4985,10 @@ echo. & echo * Vue application folders.
 
 call n vu>nul
 set cbf-pt=%cbf-pt%\%1
+
 set cbf-fn=%cbf-pt%\index.html
+set cbf-lh=5173
+set cbf-srv=dev
 
 exit/b
 
@@ -5258,10 +5261,8 @@ echo. & echo * Vuetify 3 Tutorial by Laith Academy.
 call n vute>nul
 set cbf-pt=%cbf-pt%\imageapp
 
-rem qq
-set cbf-srv=serve
 set cbf-lh=8080
-
+set cbf-srv=serve
 set cbf-yt=https://www.youtube.com/watch?v=PzXaFXgsp60&t=1443s
 
 exit/b
@@ -5314,11 +5315,11 @@ exit/b
 echo. & echo * Vue router by Vue Mastery.
 
 call n vute>nul
-rem qq
-set cbf-srv=serve
-set cbf-lh=8080
 set cbf-pt=%cbf-pt%\rout
-set cbf-yt=https://www.youtube.com/watch?v=nKg_p89Hzos^^^&t=133s
+
+set cbf-lh=8080
+set cbf-srv=serve
+set cbf-yt=https://www.youtube.com/watch?v=nKg_p89Hzos
 
 exit/b
 
