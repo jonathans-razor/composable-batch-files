@@ -403,7 +403,23 @@ Sep-18-2018
 
 
 
-:_
+:_+ Running Unit Tests
+
+
+
+::_
+:rt
+
+echo. & echo * Run test like Joshua does in Visual Studio Code.
+
+echo.
+npm run test
+
+exit/b
+
+
+
+::_
 :int
 :inte
 :rit
@@ -416,31 +432,11 @@ npm run test:int
 
 exit/b
 
-
-Footnote
->< >< ><
-
-You might need to be in a particular folder for this command to work.
-
+rem:
 If you get a connection typ error, you may need to run the following command in the proper 
 folder in a Bash window, Ben B. on c. Jul-8-2021:
 
 REPLAY=record npm run test:int
-
-
-
-:_
-:rt
-
-echo. & echo * Run test like Joshua does in Visual Studio Code.
-
-echo.
-npm run test
-
-exit/b
-
-Footnote
->< >< ><
 
 
 
