@@ -6735,11 +6735,15 @@ working-tutorial-series-jj
 :_
 :rfvsa
 :vsa
+:vue-starter-app
 
 echo. & echo * Vue starter app.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vue-starter-app
+
+set cbf-lh=5173
+set cbf-srv=dev
 
 exit/b
 

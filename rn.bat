@@ -3,7 +3,7 @@
 
 title CBF: %0
 
-if "%~1" == "" goto main
+if "%~1" == "" goto prepocess
 if "%~1" == "?" goto help
 
 goto process-td-parameter
@@ -36,9 +36,9 @@ Feb-22-2024
 
 
 :_
-        .-.-.   .-.-.   .-.-.   .-.-.   .-.-.   .-.-.   .-.-.   
-       / / \ \ / / \ \ / / \ \ / / \ \ / / \ \ / / \ \ / / \ \ / / 
-            `-`-'   `-`-'   `-`-'   `-`-'   `-`-'   `-`-'   `-`-'
+      .-.-.   .-.-.   .-.-.   .-.-.   .-.-.   .-.-.   .-.-.   
+     / / \ \ / / \ \ / / \ \ / / \ \ / / \ \ / / \ \ / / \ \ / / 
+          `-`-'   `-`-'   `-`-'   `-`-'   `-`-'   `-`-'   `-`-'
 
 
 
@@ -47,16 +47,26 @@ Feb-22-2024
 
 call t %1>nul || exit/b
 
+call fn package.json || exit/b
+
+goto main
+
 
 
 :_
-:main
+:preprocess
 
 call fn package.json || exit/b
 
 call m fw %cd%
 
 call n %cbf-distilled-file-folder%>nul
+
+goto main
+
+
+
+:main
 
 call nm %cbf-srv% || exit/b
 
