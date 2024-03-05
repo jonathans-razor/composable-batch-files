@@ -487,6 +487,10 @@ set cbf-splu=
 set cbf-splu2=
 
 :
+rem NPM server variable
+set cbf-srv=
+
+:
 rem S. website
 set cbf-st=
 

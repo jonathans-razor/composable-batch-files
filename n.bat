@@ -6842,4 +6842,22 @@ working-tutorial-series-jj
 
 
 
+:_
+:danw
+:rfdanw
+:vitest-by-david-nwadiogbu
+
+echo. & echo * Vitest by David Nwadiogbu.
+
+rem   qq
+call n v>nul
+set cbf-pt=%cbf-pt%\vitest-by-david-nwadiogbu
+
+set cbf-lh=5173
+set cbf-srv=dev
+
+exit/b
+
+
+
 :_ (!efn)

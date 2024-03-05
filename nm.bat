@@ -13,39 +13,22 @@ goto %1
 :help
 
 echo. & echo * NPM.
-echo. & echo * Usage: %0 [Parameter 1]
+echo. & echo   Usage: %0 [Parameter 1]
 echo. & echo * Parameter 1: Nickname of command you wish to execute.
-echo. & echo * Batch file style: Multipurpose
+echo. & echo   Batch file style: Multipurpose
 
 echo.
 echo     Parameter  Description
 echo -------------  ---------------------------------------------------------
-echo          init  Wizard that creates package.json file with defaults.
-echo        init-n  Wizard that creates a package.json file with no defaults.
-echo       get_lic  Get default license setting.
-echo          inst  Install a package and save it to package.json.
-echo        inst-e  Install Express.
-echo        inst-t  Install TypeScript.
-echo       inst-tn  Install Types for Node.
-echo        list-g  Verbose list of my globally installed packages.
-echo           nhn  npm help npm. Involved help.
-echo           nhs  NPM help for a specific command.
-echo          nhss  NPM help-search for a specific command.
-echo          prun  Prune extraneous packages.
-echo          repo  Go to the GitHub repository for a given package.
-echo       set_lic  Set default license to MIT.
-echo       unin_gd  Uninstall global package and remove dependency note.
-echo      up_npm_1  Install latest stable version of NPM. Run as ADMIN.
-echo        up-npm  Update NPM.
-echo        update  Update all dependencies to the latest version.
-echo          vers  Check NPM's version.
+echo             i  Install any dependencies listed in package.json.
 
 exit/b
 
 lu:
-Jan-2-2024
+Mar-5-2024
 Sep-21-2023
 
+skw:
 a-language-i-am-trying-to-stay-current-with-series-jj
 
 
@@ -1078,6 +1061,24 @@ npm create vue@latest .
 
 
 ::_
+:c-vu
+
+cls
+
+echo. & echo * Create a new Vue project.
+
+if "%~2" == "" err Parameter 2, the project name, is required.
+
+npm create vue %2
+
+exit/b
+
+lu:
+Mar-5-2024
+
+
+
+::_
 :c-vite
 
 echo. & echo * Create Vite app.
@@ -1438,7 +1439,7 @@ Feb-14-2022
 :i
 :inst
 
-echo. & echo * Install any dependencies listed in package.json. Install the required dependencies of the app.
+echo. & echo * Install any dependencies listed in package.json.
 
 call fn package.json || exit/b
 
@@ -1451,6 +1452,8 @@ lu:
 Aug-29-2023
 
 rem:
+ Install the required dependencies of the app.
+
 Set up project.
 
 It's a good idea to run npm install before doing your build in case npm needs to update. - Sean
