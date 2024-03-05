@@ -52,20 +52,13 @@ call t %1>nul || exit/b
 :_
 :main
 
-rem echo cd: %cd%
+call fn package.json || exit/b
 
-rem @echo on
 call m fw %cd%
 
-rem echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Mar-5-2024-2-41-PM
-rem echo %cbf-distilled-file-folder%
-
-rem echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Mar-5-2024-2-42-PM
 call n %cbf-distilled-file-folder%>nul
 
-rem echo %cbf-srv%
-
-call nm %cbf-srv%
+call nm %cbf-srv% || exit/b
 
 if not "%cbf-lh%" == "" call lh %cbf-lh%
 

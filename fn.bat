@@ -87,7 +87,7 @@ if "%cbf-fn%" == "" (
 )
 
 if not exist "%cbf-fn%" (
-  call not From %~nx0: For parameter 1 "%~1", cbf-fn "%cbf-fn%" does not exist. Feb-16-2024-11-13-PM
+  call not From %~nx0: The file "%cbf-fn%" does not exist. Feb-16-2024-11-13-PM
   exit/b 3
 )
 

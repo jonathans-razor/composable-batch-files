@@ -34,7 +34,7 @@ rem lu: Sep-22-2022
 rem echo. & echo * Show Ascii art notice.
 call n ascii-art-notice>nul
 type %cbf-message-graphic%
-echo       Notice: %*
+echo    %*
 
 exit/b 1
 
