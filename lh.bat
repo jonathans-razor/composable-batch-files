@@ -7,6 +7,8 @@ if "%~1" == "?" goto help
 
 call is-numeric "%~1" && goto use-port-number
 
+goto process-td-parameter
+
 goto main
 
 

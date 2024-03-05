@@ -4734,6 +4734,8 @@ Feb-2-2024
 
 
 ::_
+:rfvuet
+:vue-3-and-composition-api-tutorial
 :vuet
 
 set cbf-pd=vue-3-and-composition-api-tutorial
@@ -4741,16 +4743,21 @@ set cbf-pd=vue-3-and-composition-api-tutorial
 echo. & echo * %cbf-pd%. Builds an expense tracker followed tutorial by Traversy Media.
 
 call n it>nul
-set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-pt=%cbf-pt%\%cbf-pd%
+
+set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-gh=%cbf-gh%/%cbf-pd%
-set cbf-lh=http://localhost:5173
+set cbf-lh=5173
+set cbf-srv=dev
 set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
 
 exit/b
 
 lu:
 Jan-18-2024
+
+skw:
+working-tutorial-series-jj
 
 
 
