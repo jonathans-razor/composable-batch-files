@@ -67,7 +67,6 @@ rem echo %cbf-srv%
 
 call nm %cbf-srv%
 
-rem qq
 if not "%cbf-lh%" == "" call lh %cbf-lh%
 
 exit/b

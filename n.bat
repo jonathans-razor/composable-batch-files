@@ -5249,6 +5249,7 @@ exit/b
 
 
 :_
+:imageapp
 :imap
 :v3t
 
@@ -5256,6 +5257,11 @@ echo. & echo * Vuetify 3 Tutorial by Laith Academy.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\imageapp
+
+rem qq
+set cbf-srv=serve
+set cbf-lh=8080
+
 set cbf-yt=https://www.youtube.com/watch?v=PzXaFXgsp60&t=1443s
 
 exit/b
@@ -5302,11 +5308,15 @@ exit/b
 
 
 :_
+:rfrout
 :rout
 
 echo. & echo * Vue router by Vue Mastery.
 
 call n vute>nul
+rem qq
+set cbf-srv=serve
+set cbf-lh=8080
 set cbf-pt=%cbf-pt%\rout
 set cbf-yt=https://www.youtube.com/watch?v=nKg_p89Hzos^^^&t=133s
 
@@ -5343,12 +5353,16 @@ exit/b
 
 
 ::_
+:learn-vite-with-evan-you
 :tuvi
 
 echo. & echo * Vite and Vite tutorial.
 
 call n vute>nul
+
+set cbf-lh=5173
 set cbf-pt=%cbf-pt%\learn-vite-with-evan-you
+set cbf-srv=dev
 set cbf-yt=https://www.youtube.com/watch?v=DkGV5F4XnfQ
 
 exit/b
@@ -5357,6 +5371,8 @@ exit/b
 
 :_
 :quas
+:quasar-note-app
+:rfquas
 :tuqu
 
 echo. & echo * Quasar and Quasar tutorial.
@@ -5369,14 +5385,20 @@ set cbf-docs=https://quasar.dev/docs
 rem Video Tutorials
 set cbf-url=https://quasar.dev/video-tutorials
 
+set cbf-srv=dev
+set cbf-lh=
+
 set cbf-gho=https://github.com/codingwithjustin/quasar-note-app
 
 rem Layout Builder
 set cbf-url2=https://quasar.dev/layout-builder
 
-set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA&list=PLV-KEAAMgUZDt5kjYWsO4WAN5ARJyIs69&index=1
+set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA
 
 exit/b
+
+skw:
+working-tutorial-series-jj
 
 
 
@@ -5679,7 +5701,6 @@ echo. & echo * vuetify-app-feb-27-2024.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vuetify-app-feb-27-2024
-rem qq
 set cbf-srv=dev
 set cbf-lh=3000
 set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY
