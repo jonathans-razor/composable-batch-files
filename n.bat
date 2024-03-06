@@ -5324,14 +5324,15 @@ exit/b
 
 ::_
 :learn-vite-with-evan-you
-:tuvi
+:rfvey
+:vey
 
 echo. & echo * Vite and Vite tutorial.
 
 call n vute>nul
+set cbf-pt=%cbf-pt%\learn-vite-with-evan-you
 
 set cbf-lh=5173
-set cbf-pt=%cbf-pt%\learn-vite-with-evan-you
 set cbf-srv=dev
 set cbf-yt=https://www.youtube.com/watch?v=DkGV5F4XnfQ
 
@@ -5638,8 +5639,9 @@ echo. & echo * vuetify-app-feb-27-2024.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vuetify-app-feb-27-2024
-set cbf-srv=dev
+
 set cbf-lh=3000
+set cbf-srv=dev
 set cbf-yt=https://www.youtube.com/watch?v=CjXgoYo86yY
 
 exit/b
