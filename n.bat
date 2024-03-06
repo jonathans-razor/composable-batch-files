@@ -5340,39 +5340,6 @@ exit/b
 
 
 :_
-:quas
-:quasar-note-app
-:rfquas
-:tuqu
-
-echo. & echo * Quasar tutorial.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\quasar-note-app
-
-set cbf-docs=https://quasar.dev/docs
-
-rem Video Tutorials
-set cbf-url=https://quasar.dev/video-tutorials
-
-set cbf-srv=dev
-set cbf-lh=
-
-set cbf-gho=https://github.com/codingwithjustin/quasar-note-app
-
-rem Layout Builder
-set cbf-url2=https://quasar.dev/layout-builder
-
-set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA
-
-exit/b
-
-skw:
-working-tutorial-series-jj
-
-
-
-:_
 :db
 
 echo. & echo * Debugging Vue in VS Code.
@@ -6821,6 +6788,39 @@ set cbf-pt=%cbf-pt%\vitest-by-david-nwadiogbu
 
 set cbf-lh=5173
 set cbf-srv=dev
+
+exit/b
+
+skw:
+working-tutorial-series-jj
+
+
+
+:_
+:quas
+:quasar-note-app
+:rfquas
+:tuqu
+
+echo. & echo * Quasar tutorial.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\quasar-note-app
+
+set cbf-docs=https://quasar.dev/docs
+
+rem Video Tutorials
+set cbf-url=https://quasar.dev/video-tutorials
+
+set cbf-srv=dev
+set cbf-lh=
+
+set cbf-gho=https://github.com/codingwithjustin/quasar-note-app
+
+rem Layout Builder
+set cbf-url2=https://quasar.dev/layout-builder
+
+set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA
 
 exit/b
 
