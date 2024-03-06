@@ -41,7 +41,7 @@ Feb-22-2024
 :_
 :process-td-parameter
 
-call t %1>nul || exit/b
+call t %1 || exit/b
 
 call fn package.json || exit/b
 

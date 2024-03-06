@@ -4984,23 +4984,10 @@ exit/b
 
 
 ::_
-:app1
-
-echo. & echo * Vue %1.
-
-call n d>nul
-set cbf-pt=%cbf-pt%\hello-world-vuejs
-set cbf-fn=%cbf-pt%\index.html
-
-exit/b
-
-
-
-::_
-:app7
 :app8
 :app9
 
+rem qq
 echo. & echo * Vue application folders.
 
 call n v>nul
@@ -5317,7 +5304,7 @@ exit/b
 echo. & echo * Vue router by Vue Mastery.
 
 call n vute>nul
-set cbf-pt=%cbf-pt%\rout
+set cbf-pt=%cbf-pt%\vue-router
 
 set cbf-lh=8080
 set cbf-srv=serve
