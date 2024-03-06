@@ -4851,8 +4851,10 @@ filename.
 
 
 ::_
-:sfwop
+:fwp-test
+:sfwp
 :scdff
+:tfwp
 
 echo. & echo * Sample call to distill-file-folder. Current folder version.
 

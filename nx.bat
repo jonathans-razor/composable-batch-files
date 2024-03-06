@@ -205,4 +205,15 @@ Jan-19-2024
 
 
 
+:_
+:init-nuxt
+
+echo. & echo * Initialize Nuxt.
+
+npx nuxt init
+
+exit/b
+
+
+
 :_ (!efnx)

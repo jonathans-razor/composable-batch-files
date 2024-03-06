@@ -4796,7 +4796,6 @@ exit/b
 
 ::_
 :v
-:vu
 :vute
 
 echo. & echo * Vue and Vue testing.
