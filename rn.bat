@@ -6,6 +6,9 @@ echo. & echo * Run localhost application. Uses td parameter and fwp awareness.
 if "%~1" == "" goto preprocess
 if "%~1" == "?" goto help
 
+set cbf-lh=
+set cbf-srv=
+
 goto process-td-parameter
 
 
@@ -66,7 +69,7 @@ goto main
 
 call nm %cbf-srv% || exit/b
 
-if not "%cbf-lh%" == "" call lh %cbf-lh%>nul
+if not "%cbf-lh%" == "" call lh %cbf-lh%
 
 exit/b
 

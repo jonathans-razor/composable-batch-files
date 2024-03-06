@@ -4715,7 +4715,6 @@ echo. & echo * Hello world.
 call n v>nul
 set cbf-pt=%cbf-pt%\hello-world
 
-rem qq
 exit/b
 
 
@@ -4759,7 +4758,6 @@ echo. & echo * %cbf-pd%. Build  an expense tracker followed tutorial by Traversy
 call n v>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 
-rem qq
 set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-lh=5173
@@ -4822,7 +4820,6 @@ set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
 set cbf-gha=https://api.github.com/repos/vuejs/core/commits?per_page=3
 set cbf-gs=https://docs.google.com/spreadsheets/d/1lIemanX4_nF5fwrOCYH0ZJBJuKZP9u3i0GJXg87Jmcw/edit#gid=0
-set cbf-lh=http://localhost:5173
 set cbf-url=https://discord.com/invite/HBherRA
 
 exit/b
@@ -4830,6 +4827,9 @@ exit/b
 lu:
 Mar-4-2024
 Jan-30-2024
+
+rem:
+set cbf-lh=http://localhost:5173
 
 
 
@@ -4974,28 +4974,6 @@ exit/b
 echo. & echo * Simple Marddown editor.
 
 set cbf-url=https://vuejs.org/examples/#markdown
-
-exit/b
-
-
-
-:_+ Vue Applications Family (!fcvuapp)
-
-
-
-::_
-:app8
-:app9
-
-rem qq
-echo. & echo * Vue application folders.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\%1
-
-set cbf-fn=%cbf-pt%\index.html
-set cbf-lh=5173
-set cbf-srv=dev
 
 exit/b
 
@@ -6821,6 +6799,7 @@ echo. & echo * quasar-vite.
 
 call n v>nul
 set cbf-pt=%cbf-pt%\quasar-vite
+
 set cbf-srv=dev
 
 exit/b
