@@ -6822,8 +6822,11 @@ working-tutorial-series-jj
 
 echo. & echo * vuetify-project.
 
-call n vu>nul
+call n v>nul
 set cbf-pt=%cbf-pt%\vuetify-project
+
+set cbf-lh=3000
+set cbf-srv=dev
 
 exit/b
 
