@@ -4799,7 +4799,7 @@ exit/b
 ::_
 :vupl
 
-echo. & echo * Playground.
+echo. & echo * Vue Playground.
 
 set cbf-url=https://play.vuejs.org
 
@@ -5138,9 +5138,11 @@ echo. & echo *  OBX.
 
 call n repo>nul
 set cbf-pt=%cbf-pt%\obx
+
 set cbf-ex=%dropbox%\savannah\Excels\obx.xls
 set cbf-fn=%cbf-pt%\index.md
 set cbf-gh=https://github.com/jonathans-razor/OBX.git
+set cbf-gh2=https://github.com/jonathans-razor/OBX/blob/main/index.md
 set cbf-mtp=%reach out%\obx.mtp
 set cbf-url=https://jonathans-razor.github.io/Outer-Banks-2021/
 
@@ -6787,8 +6789,7 @@ set cbf-pt=%cbf-pt%\vitest-by-david-nwadiogbu
 set cbf-lh=5173
 set cbf-srv=dev
 
-rem qq
-set yt=
+set yt=https://www.youtube.com/watch?v=k2wi03hw2ek
 
 exit/b
 
@@ -6810,16 +6811,16 @@ set cbf-pt=%cbf-pt%\quasar-note-app
 
 set cbf-docs=https://quasar.dev/docs
 
-rem Video Tutorials
-set cbf-url=https://quasar.dev/video-tutorials
-
 set cbf-srv=dev
 set cbf-lh=
 
 set cbf-gho=https://github.com/codingwithjustin/quasar-note-app
 
 rem Layout Builder
-set cbf-url2=https://quasar.dev/layout-builder
+set cbf-url=https://quasar.dev/layout-builder
+
+rem Video Tutorials
+set cbf-url2=https://quasar.dev/video-tutorials
 
 set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA
 
