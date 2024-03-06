@@ -6717,12 +6717,16 @@ working local storage
 
 :_
 :rfvuts
+:vue-js-with-typescript
 :vuts
 
 echo. & echo * Vue.js With TypeScript by Program With Erik.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vue-js-with-typescript
+
+set cbf-lh=8080
+set cbf-srv=srv
 set cbf-yt=https://www.youtube.com/watch?v=CQAQkHuulTU
 
 exit/b
@@ -6735,12 +6739,16 @@ working-tutorial-series-jj
 
 :_
 :rfvuts2
+:vue-js-with-typescript-2
 :vuts2
 
 echo. & echo * Vue.js With TypeScript by Program With Erik - Part 2. Did not choose the component option during creation.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vue-js-with-typescript-2
+
+set cbf-lh=8080
+set cbf-srv=srv
 set cbf-yt=https://www.youtube.com/watch?v=CQAQkHuulTU
 
 exit/b
@@ -6778,6 +6786,9 @@ set cbf-pt=%cbf-pt%\vitest-by-david-nwadiogbu
 
 set cbf-lh=5173
 set cbf-srv=dev
+
+rem qq
+set yt=
 
 exit/b
 
