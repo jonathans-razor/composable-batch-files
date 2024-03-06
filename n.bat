@@ -4707,6 +4707,19 @@ exit/b
 
 
 ::_
+:hw
+
+echo. & echo * Hello world.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\hello-world
+
+rem qq
+exit/b
+
+
+
+::_
 :vutd
 
 echo. & echo * Todo app.
