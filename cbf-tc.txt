@@ -13,7 +13,7 @@ Composable Batch Files (CBF) - Table of Contents
   ascii-
      arc  Archive for old batch file functions.
      art  ASCII art file for displaying more visual content.
-      av  Edit App.vue. Has TD parameter.
+      av  Edit App.vue. Has td parameter.
       ax  Copy the ax DCV to the clipboard.
        b  Shutdown windows.
      b64  Base 64 encoding and decoding.
@@ -62,7 +62,7 @@ Composable Batch Files (CBF) - Table of Contents
   dogsay  Talking dog.
       dr  Create and delete directories. (skw mcd, folder)
       dt  Current date copied to clipboard.
-     drt  Dir, with td parameter.
+     drt  Dir. Has td parameter.
       dw  Run NG UI from a dedicated command line window.
        e  Edit a file based on a file choice algorithm.
       ea  Use Mutli-Edit to edit the Ansible Playbook of an alias.
@@ -161,7 +161,7 @@ example-  Prefix for files written by other authors for learning and comparison 
     nppd  Use Notepad++ to edit DCV files.
       ns  Nslookup.
       nx  NPX.
-      of  Open Folder, with td parameter.
+      of  Open Folder. Has td parameter.
    ofdcv  Open folder using a DCV.
     offn  Open folder where only the filename is known.
      ofp  Transform directory to parent folder.
@@ -169,15 +169,15 @@ example-  Prefix for files written by other authors for learning and comparison 
     opat  Oracle patching.
      orr  Status of officially registered repos.
        p  Synchronize 2 folders, CBF and VDI.
-      pa  Fully automatic Git push of a single repository, with td parameter.
+      pa  Fully automatic Git push of a single repository. Has td parameter.
     paco  Parameter contains.
       pc  Run Podcaster.
      pdf  PDF DCV.
       pg  Ping leveraging nicknames dictionary.
       ph  Python. (skw supported-languages-series-jj)
       pi  Pipe a command line statement to a file.
-      pj  Edit package.json. Has TD parameter.
-      pl  Git pull, with td parameter.
+      pj  Edit package.json. Has td parameter.
+      pl  Git pull. Has td parameter. For list of git commands, use "g ?".
       pn  Validate a pathname value. Using pn instead of n helps the reader with clarity of intent.
      png  Run cbf-png as a DCV double-click filename.
      ppt  Run PowerPoint.
@@ -194,20 +194,21 @@ example-  Prefix for files written by other authors for learning and comparison 
     reme  Execute the demo DCV for the passed in alias.
       rf  Remember or recall previous folder.
       rl  Execute the releases DCV for the passed in alias.
-      rn  Run localhost application. Uses td parameter and location awareness.
+      rn  Run localhost application. Has td parameter and location awareness.
       ro  Read-only.
-     run  Run with td parameter. Also, a batch file that resides in the pacgage.json folder 
+qq
+     run  Run localhost application. Has td parameter.
           that runs the project.
      rzr  Multi-Edit abstraction layer for running CBF files.
     rzrp  Multi-Edit abstraction layer for running CBF files, with a pause, for debugging.
-       s  Check updated git status, with td parameter.
+       s  Check updated git status. Has td parameter.
      sdv  Set dictionary value.
     senc  Sencha.
      sep  Show separator graphic.
       sf  Surf to websites. A DCV is optional.
       sl  Language functions aggregate runner. (skw supported-languages-series-jj)
      slf  Batch that supports language functions.
-     sln  Open a Visual Studio solution, with td parameter.
+     sln  Open a Visual Studio solution. Has td parameter.
       sm  Use Sublime and sfn to edit a file.
      smd  Use Sublime to edit DCV files.
     splu  Splunk DCV.
@@ -235,7 +236,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      utc  Convert UTC to EST.
        v  Vetted (Useful for copying-and-pasting).
       va  Surf to a Vault webpage.
-      vc  Visual Studio Code, with td parameter.
+      vc  Visual Studio Code. Has td parameter.
       vu  Vue.
       wi  Open the Wikipedia page for the passed in alias.
       wl  Run WebLogic startup commands.

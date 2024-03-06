@@ -52,6 +52,9 @@ code execution area  Batch file style (bfs) where the router routes execution to
                  fp  Function purpose.
           hat trick  Triple hat characters ^^^ placed before an ampersand to make CBF URLs
                      work.
+ location awareness  Using the function "m fw", the batch file is able to know where it is 
+                     located if the exact folder without path name is ALSO the same as n.bat 
+                     alias. Implemented on Mar-5-2024.
        multipurpose  Batch file style (bfs) where the batch file contains any number of
                      disparate, atomic functions which are called via a function alias, 
                      a.k.a. function routing. Example(s): g.bat, m.bat.
@@ -65,11 +68,11 @@ code execution area  Batch file style (bfs) where the router routes execution to
                      objective, e. g. td.bat, scpx.bat and usually calls a main.
   single purpose nd  Batch file style which leverages the  nicknames dictionary.
                 skw  Search Keyword. Useful for finding things.
-       td parameter  Transform Directory passed in as a parameter, meaning to 
-                     change folders before running the batch file. For example,
-                     running "p cbf" switches to the CBF folder, the alias for 
-                     which is assigned in the nicknames dictionary (n.bat), 
-                     before running the batch file p.bat. Also known as a path walker alias.
+       td parameter  Transform Directory passed in as a parameter. Intent is to change folders 
+                     before running the batch file. For example, running "p cbf" switches to 
+                     the CBF folder, the alias for which is assigned in the nicknames 
+                     dictionary (n.bat), before running the batch file p.bat. Also known as a 
+                     path walker alias.
                  th  Test Harness
      triple percent  Double percent signs placed before percent signs of environment 
                      variables to allow for DCVs to work.
