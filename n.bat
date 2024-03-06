@@ -6692,22 +6692,6 @@ working-tutorial-series-jj
 
 
 :_
-:vypr
-:rfvypr
-
-echo. & echo * vuetify-project.
-
-call n vu>nul
-set cbf-pt=%cbf-pt%\vuetify-project
-
-exit/b
-
-skw:
-working-tutorial-series-jj
-
-
-
-:_
 :todo
 :todo-app
 
@@ -6823,6 +6807,23 @@ rem Layout Builder
 set cbf-url2=https://quasar.dev/layout-builder
 
 set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA
+
+exit/b
+
+skw:
+working-tutorial-series-jj
+
+
+
+:_
+:vypr
+:rfvypr
+:vuetify-project
+
+echo. & echo * vuetify-project.
+
+call n vu>nul
+set cbf-pt=%cbf-pt%\vuetify-project
 
 exit/b
 
