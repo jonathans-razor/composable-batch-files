@@ -4982,38 +4982,18 @@ exit/b
 
 
 ::_
-:app5
 :app7
 :app8
 :app9
 
 echo. & echo * Vue application folders.
 
-call n vu>nul
+call n v>nul
 set cbf-pt=%cbf-pt%\%1
 
 set cbf-fn=%cbf-pt%\index.html
 set cbf-lh=5173
 set cbf-srv=dev
-
-exit/b
-
-
-
-::_
-:app6
-
-echo. & echo * Vue application application 6.
-
-call n vu>nul
-set cbf-pt=%cbf-pt%\%1
-set cbf-fn=%cbf-pt%\index.html
-
-rem For problems roughly numbered 15 or less.
-set cbf-url=https://vuejs.org/tutorial/#step-1
-
-rem For problems numbered 16 to 37.
-set cbf-url2=https://vuejs.org/examples
 
 exit/b
 

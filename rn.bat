@@ -1,7 +1,7 @@
 :_
 @echo off
 
-echo. & echo * Run localhost application. Uses td parameter and location awareness.
+echo. & echo * Run localhost application. Uses td parameter and fwp awareness.
 
 if "%~1" == "" goto preprocess
 if "%~1" == "?" goto help
