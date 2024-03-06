@@ -4820,7 +4820,10 @@ set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
 set cbf-gha=https://api.github.com/repos/vuejs/core/commits?per_page=3
 set cbf-gs=https://docs.google.com/spreadsheets/d/1lIemanX4_nF5fwrOCYH0ZJBJuKZP9u3i0GJXg87Jmcw/edit#gid=0
-set cbf-url=https://discord.com/invite/HBherRA
+
+rem Learn Vue:
+set cbf-url=https://raw.githack.com/jonathans-razor/vue-testing/main/learn-vue.html
+set cbf-url2=https://discord.com/invite/HBherRA
 
 exit/b
 
