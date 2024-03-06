@@ -6646,6 +6646,7 @@ Confetti is fun.
 
 
 :_
+:learn-pinia
 :pina
 :pini
 :pinia
@@ -6655,6 +6656,9 @@ echo. & echo * Learn Pinia.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\learn-pinia
+
+set cbf-lh=5173
+set cbf-srv=dev
 set cbf-yt=https://www.youtube.com/watch?v=JGC7aAC-3y8
 
 exit/b
