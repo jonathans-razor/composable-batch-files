@@ -5242,16 +5242,18 @@ exit/b
 :_
 :imageapp
 :imap
+:rfv3t
 :v3t
+:vuetify-3-tutorial
 
 echo. & echo * Vuetify 3 Tutorial by Laith Academy.
 
 call n vute>nul
-set cbf-pt=%cbf-pt%\imageapp
+set cbf-pt=%cbf-pt%\vuetify-3-tutorial
 
 set cbf-lh=8080
 set cbf-srv=serve
-set cbf-yt=https://www.youtube.com/watch?v=PzXaFXgsp60&t=1443s
+set cbf-yt=https://www.youtube.com/watch?v=PzXaFXgsp60
 
 exit/b
 
@@ -5365,7 +5367,7 @@ exit/b
 :rfquas
 :tuqu
 
-echo. & echo * Quasar and Quasar tutorial.
+echo. & echo * Quasar tutorial.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\quasar-note-app
