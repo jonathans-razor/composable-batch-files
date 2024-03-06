@@ -26,7 +26,6 @@ Composable Batch Files (CBF) - Table of Contents
      buq  Quickly back up and restore any registered file.
        c  Clear without modifying the path.
       ca  Go to a folder and clear the screen.
-     cat  Wrapper around type command.
      ccm  Compile CMAC macros.
       cf  Execute the Confluence DCV for the passed in alias.
    cbf-2  Shows more CBF files.
@@ -46,6 +45,7 @@ Composable Batch Files (CBF) - Table of Contents
       cp  Copy files.
      cpr  Surf to Create Pull Request page.
       cs  File contents search.
+      ct  Wrapper around type command.
       cu  Curl leveraging the nicknames dictionary.
        d  Dir.
      dbg  Debugger.
