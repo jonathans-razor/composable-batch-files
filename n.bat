@@ -4708,6 +4708,7 @@ exit/b
 
 ::_
 :hw
+:rfhw
 
 echo. & echo * Hello world.
 
@@ -4753,11 +4754,12 @@ Feb-2-2024
 
 set cbf-pd=vue-3-and-composition-api-tutorial
 
-echo. & echo * %cbf-pd%. Builds an expense tracker followed tutorial by Traversy Media.
+echo. & echo * %cbf-pd%. Build  an expense tracker followed tutorial by Traversy Media.
 
-call n it>nul
+call n v>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 
+rem qq
 set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-lh=5173
@@ -5310,6 +5312,7 @@ exit/b
 :_
 :rfrout
 :rout
+:vue-router
 
 echo. & echo * Vue router by Vue Mastery.
 
@@ -5716,11 +5719,15 @@ I think the video was too old. I couldn't get his code to work as presented. Feb
 :rfvuex
 :tuvx
 :vuex
+:vuex-tutorial
 
 echo. & echo * Vuex tutorial by Make Apps With Danny.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\vuex-tutorial
+
+set cbf-lh=8080
+set cbf-srv=srv
 set cbf-yt=https://youtu.be/nFh7-HfODYY?si=I91hCuFHEaiBRNcH
 
 exit/b
