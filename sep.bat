@@ -116,3 +116,18 @@ exit/b
 
 
 :_
+:ascii-art-poolside-1
+:ascii-art-poolside-2
+:ascii-art-poolside-3
+:ascii-art-poolside-4
+
+rem echo. & echo * Show Ascii art '%1'.
+
+call n cbf>nul
+type %cbf-pt%\%1.txt
+
+exit/b
+
+
+
+:_

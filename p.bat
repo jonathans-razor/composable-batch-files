@@ -58,24 +58,24 @@ cls
 call rf r>nul
 
 :
-call sep ascii-art-dynamite
-call t cbf
-call g dirt
+call sep ascii-art-poolside-1
+call t ql || exit/b
+call g dirt || exit/b
 
 :
 call sep ascii-art-dynamite
-call t ql
-call g dirt
+call t cbf || exit/b
+call g dirt || exit/b
 
 :
 call sep ascii-art-dynamite
-call t dsa
-call g dirt
+call t dsa || exit/b
+call g dirt || exit/b
 
 :
 call sep ascii-art-dynamite
-call t vute
-call g dirt
+call t vute || exit/b
+call g dirt || exit/b
 
 :
 rem echo. & echo * Exiting here ***************************************.
