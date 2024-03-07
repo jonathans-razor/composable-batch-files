@@ -125,6 +125,7 @@ exit/b
 :aa-sail-2
 :aa-sail-3
 :aa-sail-4
+:aa-test
 
 rem echo. & echo * Show Ascii art '%1'.
 

@@ -58,7 +58,7 @@ cls
 call rf r>nul
 
 :
-call sep aa-sail-1
+call sep aa-test
 call t ql || exit/b
 call g dirt || exit/b
 
