@@ -58,7 +58,6 @@ cls
 call rf r>nul
 
 :
-rem qq
 call sep aa-sail-1
 call t ql || exit/b
 call g dirt || exit/b
