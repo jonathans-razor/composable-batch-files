@@ -58,22 +58,22 @@ cls
 call rf r>nul
 
 :
-call sep ascii-art-vaya
+call sep aa-sail-1
 call t ql || exit/b
 call g dirt || exit/b
 
 :
-call sep ascii-art-vaya
+call sep aa-sail-2
 call t cbf || exit/b
 call g dirt || exit/b
 
 :
-call sep ascii-art-vaya
+call sep aa-sail-3
 call t dsa || exit/b
 call g dirt || exit/b
 
 :
-call sep ascii-art-vaya
+call sep aa-sail-4
 call t vute || exit/b
 call g dirt || exit/b
 

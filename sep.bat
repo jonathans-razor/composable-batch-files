@@ -121,6 +121,10 @@ exit/b
 :ascii-art-poolside-3
 :ascii-art-poolside-4
 :ascii-art-vaya
+:aa-sail-1
+:aa-sail-2
+:aa-sail-3
+:aa-sail-4
 
 rem echo. & echo * Show Ascii art '%1'.
 
