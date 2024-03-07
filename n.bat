@@ -6851,4 +6851,16 @@ working-tutorial-series-jj
 
 
 
+:_
+:e1
+
+echo. & echo * Separator 1.
+
+call n c>nul
+set cbf-fn=%cbf-pt%\aa-sail-1.txt
+
+exit/b
+
+
+
 :_ (!efn)
