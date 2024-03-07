@@ -73,90 +73,18 @@ exit/b
 
 
 ::_
-:ascii-art-1
-:ascii-art-2
-:ascii-art-3
-:ascii-art-4
-
-echo. & echo * ASCII Art - %1.
-call n cbf
-set cbf-graphic=%cbf-pt%\%1.txt
-
-exit/b
-
-lu:
-Feb-23-2024
-
-
-
-::_
-:ascii-art-separator-feb-2024
-
-echo. & echo * ASCII Art - %1.
-call n cbf
-set cbf-graphic=%cbf-pt%\ascii-art-separator-feb-2024.txt
-
-exit/b
-
-lu:
-Feb-22-2024
-
-
-
-::_
-:ascii-art-separator-2024
-
-echo. & echo * ASCII Art - %1.
-call n cbf>nul
-set cbf-graphic=%cbf-pt%\ascii-art-separator-2024.txt
-
-exit/b
-
-lu:
-Feb-22-2024
-
-
-
-::_
-:ascii-art-separator-2023
-
-echo. & echo * ASCII Art - %1.
-call n cbf>nul
-set cbf-graphic=%cbf-pt%\ascii-art-separator-2023.txt
-
-exit/b
-
-lu:
-Sep-20-2023
-
-
-
-::_
-:ascii-art-separator-2022
-
-echo. & echo * ASCII Art - %1.
-call n cbf>nul
-set cbf-graphic=%cbf-pt%\ascii-art-separator-2022.txt
-
-exit/b
-
-lu:
-Sep-20-2023
-
-
-
-::_
 :ascii-art-error
 
 echo. & echo * ASCII Art - %1.
 
 call n cbf
 
-set cbf-message-graphic=%cbf-pt%\ascii-art-error.txt
+set cbf-message-graphic=%cbf-pt%\aa-error.txt
 
 exit/b
 
-lu: Sep-22-2022
+lu:
+Mar-7-2024
 
 
 
@@ -166,7 +94,7 @@ lu: Sep-22-2022
 echo. & echo * ASCII Art - %1.
 
 call n cbf
-set cbf-message-graphic=%cbf-pt%\ascii-art-notice.txt
+set cbf-message-graphic=%cbf-pt%\aa-notice.txt
 
 exit/b
 
@@ -176,19 +104,20 @@ Dec-29-2023
 
 
 ::_
-:ascii_art_sailboat
+:ascii-art-sailboat
 :aass
 
+rem qq
 echo. & echo * ASCII Art - %1.
 
 call n cbf
 
-set cbf-fn=%cbf-pt%\ascii_art_sailboat.txt
+set cbf-message-graphic=%cbf-pt%\aa-sailboat.txt
 
 exit/b
 
 lu:
-Nov-25-2019
+Mar-7-2024
 
 
 ::_

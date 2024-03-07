@@ -3879,58 +3879,6 @@ Aug-16-2019
 
 
 
-:_+ ASCII Art Family (!fcaa)
-
-
-
-::_
-:show_ascii_art
-
-echo. & echo * Show Ascii art.
-
-call n ascii_art
-
-type %cbf-fn%
-
-exit/b
-
-lu:
-Apr-1-2019
-
-
-
-::_
-:show_ascii_art_2
-
-echo. & echo * Show Ascii art 2.
-
-call n ascii_art_2
-
-type %cbf-fn%
-
-exit/b
-
-lu:
-Jul-26-2019
-
-
-
-::_
-:show_ascii_art_sans_souci
-
-echo. & echo * Show Ascii art.
-
-call n ascii_art_sailboat>nul
-
-type %cbf-fn%
-
-exit/b
-
-lu:
-Nov-25-2019
-
-
-
 :_
 :validate_server_alias
 
