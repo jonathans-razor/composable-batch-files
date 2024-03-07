@@ -63,17 +63,17 @@ call t ql || exit/b
 call g dirt || exit/b
 
 :
-call sep ascii-art-dynamite
+call sep ascii-art-vaya
 call t cbf || exit/b
 call g dirt || exit/b
 
 :
-call sep ascii-art-dynamite
+call sep ascii-art-vaya
 call t dsa || exit/b
 call g dirt || exit/b
 
 :
-call sep ascii-art-dynamite
+call sep ascii-art-vaya
 call t vute || exit/b
 call g dirt || exit/b
 
