@@ -59,22 +59,22 @@ call rf r>nul
 
 :
 rem qq
-call sep aa-test
+call sep aa-sail-1
 call t ql || exit/b
 call g dirt || exit/b
 
 :
-call sep aa-sail-2
+call sep aa-sail-1
 call t cbf || exit/b
 call g dirt || exit/b
 
 :
-call sep aa-sail-3
+call sep aa-sail-1
 call t dsa || exit/b
 call g dirt || exit/b
 
 :
-call sep aa-sail-4
+call sep aa-sail-1
 call t vute || exit/b
 call g dirt || exit/b
 
