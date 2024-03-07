@@ -107,7 +107,6 @@ Dec-29-2023
 :ascii-art-sailboat
 :aass
 
-rem qq
 echo. & echo * ASCII Art - %1.
 
 call n cbf

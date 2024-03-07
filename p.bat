@@ -58,22 +58,22 @@ cls
 call rf r>nul
 
 :
-call sep aa-sail-1
+call sep aa-diamond-bridge
 call t ql || exit/b
 call g dirt || exit/b
 
 :
-call sep aa-sail-1
+call sep aa-diamond-bridge
 call t cbf || exit/b
 call g dirt || exit/b
 
 :
-call sep aa-sail-1
+call sep aa-diamond-bridge
 call t dsa || exit/b
 call g dirt || exit/b
 
 :
-call sep aa-sail-1
+call sep aa-diamond-bridge
 call t vute || exit/b
 call g dirt || exit/b
 
