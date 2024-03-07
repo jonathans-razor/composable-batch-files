@@ -1,8 +1,6 @@
 :_
 @echo off
 
-title CBF: %0
-
 if "%~1" == "?" goto help
 
 goto %1

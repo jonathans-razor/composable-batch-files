@@ -1,13 +1,12 @@
 :_
 @echo off
 
-title CBF: %0
-
+if "%~1" == "" goto help
 if "%~1" == "?" goto help
 
 call is-numeric "%~1" && goto use-port-number
 
-exit/b
+goto main
 
 
 
@@ -57,8 +56,6 @@ exit/b
 
 :_
 :main
-
-echo. & echo * Main.
 
 fxw %0 %1 %2 %3
 

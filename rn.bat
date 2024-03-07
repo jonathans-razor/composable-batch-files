@@ -69,7 +69,7 @@ goto main
 
 call nm %cbf-srv% || exit/b
 
-if not "%cbf-lh%" == "" call lh %cbf-lh%
+call is-numeric "%cbf-lh%" && call lh %cbf-lh%
 
 exit/b
 
