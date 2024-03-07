@@ -120,6 +120,7 @@ exit/b
 :ascii-art-poolside-2
 :ascii-art-poolside-3
 :ascii-art-poolside-4
+:ascii-art-vaya
 
 rem echo. & echo * Show Ascii art '%1'.
 

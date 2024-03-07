@@ -58,7 +58,7 @@ cls
 call rf r>nul
 
 :
-call sep ascii-art-poolside-1
+call sep ascii-art-vaya
 call t ql || exit/b
 call g dirt || exit/b
 
