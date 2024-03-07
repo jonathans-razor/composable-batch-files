@@ -58,6 +58,7 @@ cls
 call rf r>nul
 
 :
+rem qq
 call sep aa-test
 call t ql || exit/b
 call g dirt || exit/b
