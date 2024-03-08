@@ -22,7 +22,7 @@ fs.readFile(filePath, "utf8", (err, data) => {
   try {
     const jsonData = JSON.parse(data);
     const value = jsonData.value; // Assuming the property name is "value"
-    console.log(value);
+    console.log('  ' + value);
   } catch (parseError) {
     console.error("Error parsing JSON:", parseError);
   }

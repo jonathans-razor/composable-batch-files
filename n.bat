@@ -4751,7 +4751,8 @@ set cbf-gs=https://docs.google.com/spreadsheets/d/1lIemanX4_nF5fwrOCYH0ZJBJuKZP9
 
 rem Learn Vue:
 set cbf-url=https://raw.githack.com/jonathans-razor/vue-testing/main/learn-vue.html
-set cbf-url2=https://discord.com/invite/HBherRA
+set cbf-url2=https://github.com/vuejs/core/discussions/categories/help-questions
+set cbf-url3=https://discord.com/invite/HBherRA
 
 exit/b
 
@@ -6804,6 +6805,18 @@ exit/b
 
 rem:
 rem set cbf-cu-target=https://api.chucknorris.io/jokes/random?category=history
+
+
+
+:_
+:vex
+
+echo. & echo * Great Current Collection of Examples.
+
+set cbf-url=https://vuejsexamples.com
+
+exit/b
+
 
 
 :_ (!efn)

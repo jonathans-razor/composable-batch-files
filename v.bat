@@ -1009,51 +1009,6 @@ Apr-21-2020
 
 
 ::_
-
-cls
-
-echo. & echo * Sidecar dictionary test. This "2> null" suppresses the default error message!
-
-call zzzz 2>nul || exit/b
-
-call el
-
-exit/b
-
-Feb-7-2024
-
-
-
-::_
-:tgw
-
-echo. & echo * Test goto with no label found.
-
-rem Is there a way to test if a label exists in a batch file before calling the goto statemnt?
-
-rem goto nonexistinglabel
-
-rem set "label=sub"
-REM next line to reset errorlevel to zero:
-call
-rem call :test7x7 2>nul
-
-rem This strange syntax in the following line of code "eats" the error message, although 
-rem I don't know why you'd want to do so.
-goto nonexistinglabel 2>nul
-
-echo hey
-
-echo * Errorlevel: %errorlevel%
-
-exit/b
-
-lu:
-Jul-9-2018
-
-
-
-::_
 :htse
 
 echo. & echo * How to suppress error messages in batch files.
@@ -1089,6 +1044,56 @@ command 2>nul
 command 2>&1
 
 ^ This says to pipe the standard-error stream to the same place as the standard-output stream.
+
+
+
+::_
+:2nul
+
+cls
+
+echo. & echo * Suppressing error messages. This " 2>nul" suppresses the default error message!
+
+call zzzz 2>nul || exit/b
+
+call el
+
+exit/b
+
+lu:
+Feb-7-2024
+
+skw:
+(!2nul)
+
+
+
+::_
+:tgw
+
+echo. & echo * Test goto with no label found.
+
+rem Is there a way to test if a label exists in a batch file before calling the goto statemnt?
+
+rem goto nonexistinglabel
+
+rem set "label=sub"
+REM next line to reset errorlevel to zero:
+call
+rem call :test7x7 2>nul
+
+rem This strange syntax in the following line of code "eats" the error message, although 
+rem I don't know why you'd want to do so.
+goto nonexistinglabel 2>nul
+
+echo hey
+
+echo * Errorlevel: %errorlevel%
+
+exit/b
+
+lu:
+Jul-9-2018
 
 
 
