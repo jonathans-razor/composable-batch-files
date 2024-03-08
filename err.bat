@@ -44,7 +44,7 @@ Sep-22-2022
 rem echo. & echo * Show Ascii art error.
 call n ascii-art-error>nul
 type %cbf-message-graphic%
-echo       Error: %*
+echo     Error: %*
 
 exit/b 1
 
