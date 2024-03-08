@@ -41,7 +41,7 @@ echo.
 echo     -----------------
 echo      %*  
 echo     -----------------
-echo                    \       C  C
+echo                    \       D  D
 echo                     \      ----
 echo                      \    (O O)\________________
 echo                           (   )\                )\/\
