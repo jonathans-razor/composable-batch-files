@@ -10,9 +10,8 @@ Composable Batch Files (CBF) - Table of Contents
       an  Validate application name.
      ans  Ansible.
       ap  Application-centric way of running an application with an optional filename parameter
-  ascii-
+     api  Calling APIs.
      arc  Archive for old batch file functions.
-     art  ASCII art file for displaying more visual content.
       av  Edit App.vue. Has td parameter.
       ax  Copy the ax DCV to the clipboard.
        b  Shutdown windows.
@@ -38,6 +37,7 @@ Composable Batch Files (CBF) - Table of Contents
       cf  Surf to Confluence.
       cm  CMAC operations.
      clc  Simple calculator.
+   chuck  Tell a random Chuck Norris joke.
     coco  Code Compare.
    cocod  Run Code Compare using 2 DCVs.
      col  Shell window colors operations.
@@ -71,7 +71,7 @@ Composable Batch Files (CBF) - Table of Contents
      edx  Edit file - back office operation.
       el  Show or clear errorl level.
      env  Open environment dialogue.
-     err  Show error graphic.
+     err  Show error graphic with passed in message.
       ex  Run Excel with or without a filename alias parameter.
 example-  Prefix for files written by other authors for learning and comparison purposes.
      exi  Exit.
@@ -155,6 +155,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       nm  NPM.
       no  Use Notepad to edit a file chosen based on a decision algorithm.
      nod  Use Notepad++ to edit a file chosen based on a decision algorithm.
+     not  Show notice graphic with passed in message.
      nox  Use Notepad to edit a batch file in the CBF folder.
       np  Copy the np %cbf-pd% to the clipboard.
      npp  Use Notepad++ and sfn to edit, or view without saving, a file.
@@ -201,6 +202,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      rzr  Multi-Edit abstraction layer for running CBF files.
     rzrp  Multi-Edit abstraction layer for running CBF files, with a pause, for debugging.
        s  Check updated git status. Has td parameter.
+    sail  Display the success sailor.
      sdv  Set dictionary value.
     senc  Sencha.
      sep  Show separator graphic.

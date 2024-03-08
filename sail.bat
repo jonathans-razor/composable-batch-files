@@ -10,7 +10,7 @@ goto main
 :_
 :help
 
-echo. & echo * Draws a notice graphic with a message.
+echo. & echo * Show the success sailor with a passed in message.
 
 echo. & echo * Usage: %0
 
