@@ -12,7 +12,15 @@ goto main
 
 echo. & echo * Show the success sailor with a passed in message.
 
-echo. & echo * Usage: %0
+echo. & echo   Usage: %~n0 [space separated parameter(s)]
+
+echo. & echo * Parameter 1 (Optional):
+echo   Message to display. 
+
+echo. & echo   Batch file style: Single purpose
+
+echo. & echo * Samples:
+echo   %~n0 You made it!
 
 exit/b
 
