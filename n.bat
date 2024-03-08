@@ -6793,8 +6793,9 @@ exit/b
 
 :_
 :chuck
+:chno
 
-echo. & echo * Random Chuck Norris jokes.
+echo. & echo * Random Chuck Norris joke.
 
 set cbf-cu=https://api.chucknorris.io/jokes/random
 set cbf-url=https://api.chucknorris.io

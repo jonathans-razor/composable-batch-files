@@ -78,19 +78,15 @@ if "%cbf-cu-target%" == "" (
 :_
 :next
 
-cls
+curl -o %tmp%\api.json %cbf-cu-target% 2>nul
+
+call t c>nul
 echo.
+node read-value-property.js
 
-rem qq              call "%cbf-default-sd%" %1 2>nul
-
-curl -o %tmp%\curl-%1.json %cbf-cu-target% 2>nul
-echo.
-
-set cbf-parameter=%tmp%\curl-%1.json
-
-call an kr
-
-call r
+rem set cbf-parameter=%tmp%\api.json
+rem call an kr
+rem call r
 
 exit/b
 
