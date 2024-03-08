@@ -45,7 +45,9 @@ Nov-15-2023
 cls
 
 echo. & echo * Download Kubernetes CLI tool K9s.
+
 curl -o c:\a\k9s.tar.gz -sLO https://github.com/derailed/k9s/releases/download/v0.27.4/k9s_Linux_amd64.tar.gz
+
 exit/b
 
 lu: 
@@ -58,6 +60,7 @@ Nov-15-2023
 cls
 
 echo. & echo * Download Kubernetes CLI tool K9s.
+
 curl -O -sLO https://github.com/derailed/k9s/releases/download/v0.28.2/k9s_Windows_amd64.zip
 
 exit/b
@@ -113,6 +116,8 @@ if "%cbf-cu-target%" == "" (
   call err Could not find a suitable curl target for "%1".
   exit/b
 )
+
+goto next
 
 
 

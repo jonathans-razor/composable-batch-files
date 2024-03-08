@@ -6791,4 +6791,18 @@ exit/b
 
 
 
+:_
+:chuck
+
+echo. & echo * Random Chuck Norris jokes.
+
+set cbf-cu=https://api.chucknorris.io/jokes/random
+set cbf-url=https://api.chucknorris.io
+
+exit/b
+
+rem:
+rem set cbf-cu-target=https://api.chucknorris.io/jokes/random?category=history
+
+
 :_ (!efn)
