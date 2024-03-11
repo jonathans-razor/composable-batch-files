@@ -6825,4 +6825,15 @@ exit/b
 
 
 
+:_
+:mum
+
+echo. & echo * Meetup messages.
+
+set cbf-url=https://www.meetup.com/messages
+
+exit/b
+
+
+
 :_ (!efn)
