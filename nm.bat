@@ -644,7 +644,8 @@ JSON server command in order to start your local database so that data is availa
 
 
 :_
-:run_tests
+:run-tests
+:rute
 :test
 
 echo. & echo * Start the test runner.

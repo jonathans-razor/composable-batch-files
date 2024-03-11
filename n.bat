@@ -6724,7 +6724,7 @@ set cbf-pt=%cbf-pt%\vitest-by-david-nwadiogbu
 set cbf-lh=5173
 set cbf-srv=dev
 
-set yt=https://www.youtube.com/watch?v=k2wi03hw2ek
+set cbf-yt=https://www.youtube.com/watch?v=k2wi03hw2ek
 
 exit/b
 

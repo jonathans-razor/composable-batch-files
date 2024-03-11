@@ -21,15 +21,16 @@ echo. & echo   Usage: %~n0 [space separated parameter(s)]
 echo. & echo * Parameter 1:
 echo   x
 
-echo. & echo   Batch file style: Multipurpose
 echo. & echo   Batch file style: Single purpose
 
 echo. & echo * Samples:
 echo   %~n0 
+echo   %~n0 vuet
 
 exit/b
 
 lu: 
+Mar-11-2024
 Feb-22-2024
 
 
@@ -68,11 +69,14 @@ goto main
 :main
 
 if "%cbf-srv%" == "" err cbf-srv is not defined. Mar-11-2024-4-39-PM
-if "%cbf-lh%" == "" err cbf-lh is not defined. Mar-11-2024-4-40-PM
+rem Quasar localhost seems to start automatically, so the following line is not needed.
+rem if "%cbf-lh%" == "" err cbf-lh is not defined. Mar-11-2024-4-40-PM
 
 call nm %cbf-srv% || exit/b
 
-call is-numeric "%cbf-lh%" && call lh %cbf-lh%
+if not "%cbf-lh%" == "" (
+  call is-numeric "%cbf-lh%" && call lh %cbf-lh%
+)
 
 exit/b
 
