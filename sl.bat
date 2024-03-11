@@ -121,9 +121,6 @@ cls
 
 echo. & echo * Hello worlds from supported-languages-series-jj.
 
-echo.
-call sep 2024
-
 :Angular
 echo. & echo * Hello world from Angular is available at "gu hw".
 
@@ -164,9 +161,6 @@ call fx vuejs-hw fn br
 rem call nm vue
 
 :corner-case
-
-echo.
-call sep 2024
 
 exit/b
 
