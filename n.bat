@@ -4641,8 +4641,11 @@ exit/b
 
 echo. & echo * Hello world.
 
+rem qq
 call n v>nul
 set cbf-pt=%cbf-pt%\hello-world
+
+set cbf-gh=https://github.com/jonathans-razor/vue-testing/tree/main/hello-world
 
 exit/b
 

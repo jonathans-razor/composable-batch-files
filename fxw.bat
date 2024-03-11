@@ -213,6 +213,8 @@ exit/b
 :main
 
 rem echo. & echo * FXW main.
+@echo on
 fx %2 %1 %3
+@echo off
 
 exit/b
