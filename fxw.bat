@@ -35,6 +35,17 @@ exit/b
 
 
 :_
+:bm
+
+echo. & echo * Open the Bookmarks Default page.
+
+call fx v %1 kr>nul
+
+exit/b
+
+
+
+:_
 :cf
 
 echo. & echo * Open the Confluence Homepage.

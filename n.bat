@@ -4745,7 +4745,7 @@ call n it>nul
 set cbf-pt=%cbf-pt%\vue-testing
 
 rem Bookmark
-set cbf-bm=https://vuejs.org/guide/essentials/application.html
+set cbf-bm=https://vuejs.org/guide/essentials/template-syntax.html#using-javascript-expressions
 set cbf-docs=https://vuejs.org/guide/introduction.html
 set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
 set cbf-gha=https://api.github.com/repos/vuejs/core/commits?per_page=3
