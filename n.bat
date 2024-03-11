@@ -4350,6 +4350,7 @@ exit/b
 echo. & echo * Norton browser.
 
 set cbf-app=%localappdata%\Norton\Browser\Application\NortonBrowser.exe
+set cbf-gs=https://docs.google.com/spreadsheets/u/0/
 
 exit/b
 
