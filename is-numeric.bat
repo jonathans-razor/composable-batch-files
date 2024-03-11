@@ -3,7 +3,7 @@
 
 title CBF: %0
 
-if "%~1" == "" not Parameter 1 is required.
+if "%~1" == "" err Parameter 1, port number, is required. Mar-11-2024-4-32-PM
 if "%~1" == "?" goto help
 
 goto main

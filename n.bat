@@ -4641,7 +4641,6 @@ exit/b
 
 echo. & echo * Hello world.
 
-rem qq
 call n v>nul
 set cbf-pt=%cbf-pt%\hello-world
 
@@ -5269,7 +5268,7 @@ echo. & echo * Vite and Vite tutorial.
 call n vute>nul
 set cbf-pt=%cbf-pt%\learn-vite-with-evan-you
 
-set cbf-lh=5173
+set cbf-lh=5174
 set cbf-srv=dev
 set cbf-yt=https://www.youtube.com/watch?v=DkGV5F4XnfQ
 

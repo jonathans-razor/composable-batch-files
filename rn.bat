@@ -67,6 +67,9 @@ goto main
 
 :main
 
+if "%cbf-srv%" == "" err cbf-srv is not defined. Mar-11-2024-4-39-PM
+if "%cbf-lh%" == "" err cbf-lh is not defined. Mar-11-2024-4-40-PM
+
 call nm %cbf-srv% || exit/b
 
 call is-numeric "%cbf-lh%" && call lh %cbf-lh%
