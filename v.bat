@@ -2679,4 +2679,23 @@ exit/b
 
 
 
+:_
+
+echo. & echo * Experiment with set local.
+
+echo cbf-test: %cbf-test%
+
+setlocal
+
+set cbf-test=hello
+echo cbf-test: %cbf-test%
+endlocal
+echo cbf-test: %cbf-test%
+
+exit/b
+
+Feb-29-2024
+
+
+
 :_ (!efv)

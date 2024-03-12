@@ -78,6 +78,7 @@ example-  Prefix for files written by other authors for learning and comparison 
        f  Filename sapien. Use any application to open any file.
       fa  Windows file associations.
       fe  Check for the existence of a file based on the passed in filename alias.
+     fib  Show Fibonacci numbers.
     file  New line at end of file tester.
       fl  For loops using function routing.
       fn  Validate and set a filename value.

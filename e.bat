@@ -37,6 +37,7 @@ echo   /e: override default editor.
 echo   /np: np file.
 echo   /o: CBF batch file.
 echo   /p: Python file.
+echo   /w: CBF wildcard file.
 
 echo. & echo   Parameter 3 (Optional):
 echo   /e: Override default editor.
@@ -129,6 +130,13 @@ if "%~2" == "/p" (
   goto main
 )
 
+:
+if "%~2" == "/w" (
+  call :open-cbf-wildcard-file %*
+  if errorlevel 1 exit/b
+  goto main
+)
+
 
 
 :_
@@ -146,6 +154,10 @@ if "%cbf-fn%"=="" (
 
 if "%cbf-fn%"=="" (
   call :open-dbf-bash-file %*
+)
+
+if "%cbf-fn%"=="" (
+  call :open-cbf-wildcard-file %*
 )
 
 if "%cbf-fn%"=="" (
@@ -207,6 +219,26 @@ set cbf-fn=%cd%\%~1
 if not errorlevel 1 err %~nx0: You've specified a new file but this file already exists. So, because of this ambiguity of intent, will not delete the file. Feb-16-2024-12-40-PM
 
 type nul>"%cbf-fn%"
+
+exit/b
+
+
+
+:_
+:open-cbf-wildcard-file
+
+call pn cbf>nul
+
+if exist "%cbf-pt%\*%1*" (
+  echo. & echo * Open CBF wildcard file.
+  rem echo. & echo * OBF: "%cbf-pt%\%1"
+) else (
+  rem echo. & echo * CBF wildcard file: "%cbf-pt%\%1" NOT found. Mar-12-2024-11-04-AM
+  exit/b 5
+)
+
+set cbf-fn=%cbf-pt%\*%1*
+rem echo. & echo * CBF: %cbf-fn%
 
 exit/b
 

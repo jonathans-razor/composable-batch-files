@@ -407,17 +407,4 @@ exit/b
 
 
 
-:_
-
-echo. & echo * 
-
-rem qq
-dbg %0
-
-exit/b
-
-Feb-29-2024
-
-
-
 :_ (!efk)
