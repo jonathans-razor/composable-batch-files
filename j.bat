@@ -271,6 +271,12 @@ if not "%cbf-ji%" == "" (
   exit/b
 )
 
+:
+if not "%cbf-yt%" == "" (
+  call yt %1>nul
+  exit/b
+)
+
 :edge-case
 
 echo.
