@@ -6766,22 +6766,6 @@ exit/b
 
 
 :_
-:chuck
-:chno
-
-echo. & echo * Random Chuck Norris joke.
-
-set cbf-cu=https://api.chucknorris.io/jokes/random
-set cbf-url=https://api.chucknorris.io
-
-exit/b
-
-rem:
-rem set cbf-cu-target=https://api.chucknorris.io/jokes/random?category=history
-
-
-
-:_
 :vex
 
 echo. & echo * Great Current Collection of Examples.
@@ -6879,6 +6863,39 @@ exit/b
 echo. & echo * Vue Playground.
 
 set cbf-url=https://play.vuejs.org
+
+exit/b
+
+
+
+:_+ API Calls
+
+
+
+::_
+:chuck
+:chno
+
+echo. & echo * Random Chuck Norris joke.
+
+set cbf-cu=https://api.chucknorris.io/jokes/random
+set cbf-url=https://api.chucknorris.io
+
+exit/b
+
+rem:
+rem set cbf-cu-target=https://api.chucknorris.io/jokes/random?category=history
+
+
+
+::_
+:jsonp
+
+echo. & echo * Json placeholder.
+
+set cbf-cu=https://jsonplaceholder.typicode.com/users/2
+set cbf-key=name
+set cbf-url=https://jsonplaceholder.typicode.com
 
 exit/b
 

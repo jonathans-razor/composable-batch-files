@@ -83,6 +83,7 @@ curl -o %tmp%\api.json %cbf-cu-target% 2>nul
 call t c>nul
 echo.
 node read-value-property.js
+rem node read-name-property.js
 
 rem set cbf-parameter=%tmp%\api.json
 rem call an kr
