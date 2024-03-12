@@ -21,7 +21,7 @@ echo. & echo   Usage: %~n0 [space separated parameter(s)]
 echo. & echo * Parameter 1 (Optional):
 echo   If blank, open VS code.
 echo   If not blank, process command in e.bat.
-echo   If ".", open folder.
+echo   If ".", open current folder.
 echo   If "/v", check version.
 
 echo. & echo   Batch file style: Multipurpose

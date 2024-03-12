@@ -25,7 +25,7 @@ echo   Editor alias to use.
 echo. & echo   Parameter 1 (Optional):
 echo   Blank: open current folder.
 echo   Not blank: uses routing intelligence.
-echo   If contains ".": open current folder file, which may or may not exist. This assumes that no alias ever contains a period in it.
+echo   If contains ".": open current folder file, which may or may not exist.
 
 echo. & echo   Parameter 2 (Optional):
 echo   /a: aliased file. Since this is the default, it's only necessary for overriding purposes.
