@@ -14,7 +14,6 @@ goto main
 
 cls
 
-rem qq
 echo. & echo * Display last updated information.
 
 echo. & echo   Usage: %~n0
@@ -41,8 +40,9 @@ Feb-22-2024-12-21-PM
 :_
 :main
 
-echo. & echo * From %0: last updated: Feb-22-2024-12-19-PM
-rem qq
+cls
+
+echo. & echo * From %0: last updated: Mar-12-2024-11-31-AM
 call sdv lu
 call n lu
 
