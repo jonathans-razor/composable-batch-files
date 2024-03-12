@@ -6847,4 +6847,27 @@ exit/b
 
 
 
+:_
+:jsf
+
+echo. & echo * JS Fiddle.
+
+set cbf-url=https://jsfiddle.net/yyx990803/2ke1ab0z/
+
+exit/b
+
+
+
+:_
+:quok
+
+echo. & echo * Quokka.
+
+rem  qq
+set cbf-yt=https://www.youtube.com/watch?v=f_sEWa5hA0Q
+
+exit/b
+
+
+
 :_ (!efn)
