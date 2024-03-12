@@ -6836,4 +6836,15 @@ exit/b
 
 
 
+:_
+:wmi
+
+echo. & echo * What's My IP?
+
+set cbf-url=https://www.whatismyip.com/
+
+exit/b
+
+
+
 :_ (!efn)
