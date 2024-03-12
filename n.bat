@@ -4706,39 +4706,6 @@ working-tutorial-series-jj
 
 
 ::_
-:stbl
-
-echo. & echo * StackBlitz.
-
-set cbf-url=https://vite.new/vue
-
-exit/b
-
-
-
-::_
-:jsf
-
-echo. & echo * JSFiddle.
-
-set cbf-url=https://jsfiddle.net/yyx990803/2ke1ab0z/
-
-exit/b
-
-
-
-::_
-:vupl
-
-echo. & echo * Vue Playground.
-
-set cbf-url=https://play.vuejs.org
-
-exit/b
-
-
-
-::_
 :v
 :vute
 
@@ -6848,9 +6815,46 @@ exit/b
 
 
 :_
+:quok
+
+echo. & echo * Quokka.
+
+set cbf-yt=https://www.youtube.com/watch?v=f_sEWa5hA0Q
+
+exit/b
+
+
+
+:_
+:qust
+
+echo. & echo * Vue Quickstart.
+
+set cbf-url=https://vuejs.org/guide/quick-start.html
+
+exit/b
+
+
+
+:_+ Online Hands-On Learning Tools
+
+
+
+::_
+:cope
+
+echo. & echo * CodePen.
+
+set cbf-url=https://codepen.io/vuejs-examples/pen/eYQpQEG
+
+exit/b
+
+
+
+::_
 :jsf
 
-echo. & echo * JS Fiddle.
+echo. & echo * JSFiddle.
 
 set cbf-url=https://jsfiddle.net/yyx990803/2ke1ab0z/
 
@@ -6858,13 +6862,23 @@ exit/b
 
 
 
-:_
-:quok
+::_
+:stbl
 
-echo. & echo * Quokka.
+echo. & echo * Stackblitz.
 
-rem  qq
-set cbf-yt=https://www.youtube.com/watch?v=f_sEWa5hA0Q
+set cbf-url=https://stackblitz.com/edit/vitejs-vite-phxaaz?file=index.html&terminal=dev
+
+exit/b
+
+
+
+::_
+:vupl
+
+echo. & echo * Vue Playground.
+
+set cbf-url=https://play.vuejs.org
 
 exit/b
 
