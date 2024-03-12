@@ -6803,6 +6803,10 @@ exit/b
 
 echo. & echo * Quokka.
 
+call n v>nul
+set cbf-pt=%cbf-pt%\quokka
+
+set cbf-docs=https://quokkajs.com/docs/
 set cbf-yt=https://www.youtube.com/watch?v=f_sEWa5hA0Q
 
 exit/b
