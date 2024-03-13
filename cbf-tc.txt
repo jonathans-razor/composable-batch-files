@@ -235,6 +235,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      tyi  Use type command to view calculus file in Internet Explorer.
      ujt  Update java timestamp.
       un  Communicates that the intent is only to change the URL for a passed in alias.
+     unz  Unzip.
      utc  Convert UTC to EST.
        v  Vetted (Useful for copying-and-pasting).
       va  Surf to a Vault webpage.
@@ -254,4 +255,3 @@ example-  Prefix for files written by other authors for learning and comparison 
      yml  Edit DCV file in NotePad++ for file type yml.
       yt  Execute the YouTube DCV for the passed in alias.
      zip  Zip.
-   unzip  Unzip.
