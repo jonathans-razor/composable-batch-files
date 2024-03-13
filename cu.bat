@@ -97,6 +97,11 @@ call n %1
 
 if errorlevel 1 exit/b
 
+if not "%cbf-cu%" == "" (
+  set cbf-cu-target=%cbf-cu%
+  goto next
+)
+
 if not "%cbf-url%" == "" (
   set cbf-cu-target=%cbf-url%
   goto next
@@ -104,11 +109,6 @@ if not "%cbf-url%" == "" (
 
 if not "%cbf-lh%" == "" (
   set cbf-cu-target=%cbf-lh%
-  goto next
-)
-
-if not "%cbf-cu%" == "" (
-  set cbf-cu-target=%cbf-cu%
   goto next
 )
 
