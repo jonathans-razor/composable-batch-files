@@ -5264,6 +5264,7 @@ exit/b
 echo. & echo * Vue DevTools.
 
 set cbf-url=https://devtools.vuejs.org/guide/installation.html
+rem qq
 set cbf-yt=https://www.youtube.com/watch?v=iKck6xEnIhc
 
 exit/b
@@ -6825,6 +6826,40 @@ exit/b
 
 
 
+:_+ API Calls
+
+
+
+::_
+:chuc
+:chuck
+:chno
+
+echo. & echo * Random Chuck Norris joke.
+
+set cbf-cu=https://api.chucknorris.io/jokes/random
+set cbf-url=https://api.chucknorris.io
+
+exit/b
+
+rem:
+rem set cbf-cu-target=https://api.chucknorris.io/jokes/random?category=history
+
+
+
+::_
+:jsonp
+
+echo. & echo * Json placeholder.
+
+set cbf-cu=https://jsonplaceholder.typicode.com/users/2
+set cbf-key=name
+set cbf-url=https://jsonplaceholder.typicode.com
+
+exit/b
+
+
+
 :_+ Online Hands-On Learning Tools
 
 
@@ -6868,40 +6903,6 @@ exit/b
 echo. & echo * Vue Playground.
 
 set cbf-url=https://play.vuejs.org
-
-exit/b
-
-
-
-:_+ API Calls
-
-
-
-::_
-:chuc
-:chuck
-:chno
-
-echo. & echo * Random Chuck Norris joke.
-
-set cbf-cu=https://api.chucknorris.io/jokes/random
-set cbf-url=https://api.chucknorris.io
-
-exit/b
-
-rem:
-rem set cbf-cu-target=https://api.chucknorris.io/jokes/random?category=history
-
-
-
-::_
-:jsonp
-
-echo. & echo * Json placeholder.
-
-set cbf-cu=https://jsonplaceholder.typicode.com/users/2
-set cbf-key=name
-set cbf-url=https://jsonplaceholder.typicode.com
 
 exit/b
 
