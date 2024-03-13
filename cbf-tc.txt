@@ -19,7 +19,7 @@ Composable Batch Files (CBF) - Table of Contents
       ba  Execute a bash file in Windows command prompt.
 	    bb  Building block code.
       bi  Execute the Bitbucket DCV for the passed in alias.
-      br  Run Brave while leveraging the e.bat decision algorithm.
+      br  Brave browser.
 browser-  Defines the behavior of calling browsers.
    actor
       bu  Back up.
@@ -68,6 +68,7 @@ browser-  Defines the behavior of calling browsers.
       dw  Run NG UI from a dedicated command line window.
        e  Edit a file based on a file choice algorithm.
       ea  Use Mutli-Edit to edit the Ansible Playbook of an alias.
+      ed  Edge browser.
     edcv  Use Multi-Edit to edit DCV ASCII files.
      edr  Edit a relative path constructed filename
      edx  Edit file - back office operation.
@@ -80,6 +81,7 @@ example-  Prefix for files written by other authors for learning and comparison 
        f  Filename sapien. Use any application to open any file.
       fa  Windows file associations.
       fe  Check for the existence of a file based on the passed in filename alias.
+     ffx  Firefox browser.
      fib  Show Fibonacci numbers.
     file  New line at end of file tester.
       fl  For loops using function routing.
@@ -132,7 +134,7 @@ example-  Prefix for files written by other authors for learning and comparison 
     json  Edit DCV file in NotePad++ for file type json.
       jv  Java. (skw supported-languages-series-jj)
       kl  Kill a process.
-      kr  Open Chrome.
+      kr  Chrome browser.
        l  Load path onto clipboard.
       ld  Use a DCV to load a cbf variable onto the clipboard.
       le  Leet code tester.
@@ -164,6 +166,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      npp  Use Notepad++ and sfn to edit, or view without saving, a file.
     nppd  Use Notepad++ to edit DCV files.
       ns  Nslookup.
+      nt  Norton browser.
       nx  NPX.
       of  Open Folder. Has td parameter.
    ofdcv  Open folder using a DCV.
