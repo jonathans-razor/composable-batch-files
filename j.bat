@@ -277,6 +277,12 @@ if not "%cbf-yt%" == "" (
   exit/b
 )
 
+:
+if not "%cbf-pdf%" == "" (
+  call pdf %1>nul
+  exit/b
+)
+
 :edge-case
 
 echo.
