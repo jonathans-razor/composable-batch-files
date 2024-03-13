@@ -20,6 +20,8 @@ Composable Batch Files (CBF) - Table of Contents
 	    bb  Building block code.
       bi  Execute the Bitbucket DCV for the passed in alias.
       br  Run Brave while leveraging the e.bat decision algorithm.
+browser-  Defines the behavior of calling browsers.
+   actor
       bu  Back up.
      buc  Back up a file in the current folder to the code quick backup folder.
      buq  Quickly back up and restore any registered file.

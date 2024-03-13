@@ -2418,11 +2418,11 @@ err %~nx0:
 %~nx0: 
 call err %~nx0: 
 call paco "%~1" .>nul && err Aliases cannot cannot contain a period.
-call paco "%~1" .>nul && goto open-current-folder-file
 call paco "%~1" .>nul && echo hey
 call paco "%~1" .>nul && goto 
 call paco "%~2" /n && goto 
 dir /ah | find /i ".git">nul && exit/b 0
+call paco "%~1" .>nul && goto open-current-folder-file
 
 exit/b
 
