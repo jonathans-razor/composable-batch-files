@@ -2441,6 +2441,7 @@ echo. & echo * Root.
 
 set cbf-gd=https://docs.google.com/document/u/0/
 set cbf-gs=https://docs.google.com/spreadsheets/u/0/
+set cbf-yt=https://www.youtube.com
 
 exit/b
 
@@ -5258,19 +5259,6 @@ exit/b
 
 
 
-:_
-:vdt
-
-echo. & echo * Vue DevTools.
-
-set cbf-url=https://devtools.vuejs.org/guide/installation.html
-rem qq
-set cbf-yt=https://www.youtube.com/watch?v=iKck6xEnIhc
-
-exit/b
-
-
-
 :_+ CBF Testing
 
 
@@ -5505,7 +5493,7 @@ it pictures
 
 
 :_
-:vdt
+:
 
 echo. & echo * Vuetify data table tutorial.
 
@@ -6801,21 +6789,6 @@ exit/b
 
 
 :_
-:quok
-
-echo. & echo * Quokka.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\quokka
-
-set cbf-docs=https://quokkajs.com/docs/
-set cbf-yt=https://www.youtube.com/watch?v=f_sEWa5hA0Q
-
-exit/b
-
-
-
-:_
 :qust
 
 echo. & echo * Vue Quickstart.
@@ -6903,6 +6876,44 @@ exit/b
 echo. & echo * Vue Playground.
 
 set cbf-url=https://play.vuejs.org
+
+exit/b
+
+
+
+:_
+:quok
+
+echo. & echo * Quokka.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\quokka
+
+set cbf-docs=https://quokkajs.com/docs/
+set cbf-yt=https://www.youtube.com/watch?v=f_sEWa5hA0Q
+
+exit/b
+
+
+
+:_
+:yt
+
+echo. & echo * YouTube.
+
+set cbf-yt=https://www.youtube.com
+
+exit/b
+
+
+
+:_
+:vdt
+
+echo. & echo * Vue DevTools.
+
+set cbf-url=https://devtools.vuejs.org/guide/installation.html
+set cbf-yt=https://www.youtube.com/watch?v=iKck6xEnIhc
 
 exit/b
 

@@ -1,3 +1,4 @@
+:_
 @echo off
 
 if "%~1" == "" goto help
@@ -204,6 +205,17 @@ exit/b
 echo. & echo * Wikipedia home page.
 
 call fx wi %1 kr>nul
+
+exit/b
+
+
+
+:_
+:yt
+
+echo. & echo * YouTube home page. This is never called because I want to use Firefox.
+
+call fx yt yt ffx>nul
 
 exit/b
 
