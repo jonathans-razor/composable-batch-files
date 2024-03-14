@@ -74,7 +74,7 @@ call g dirt || exit/b
 
 :
 call sep aa-diamond-bridge
-call t vute || exit/b
+call t sk || exit/b
 call g dirt || exit/b
 
 :
