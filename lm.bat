@@ -44,6 +44,7 @@ exit/b
 
 
 :_
+:dtm
 :dtt
 
 echo. & echo * Date and time.

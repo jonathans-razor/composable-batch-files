@@ -1852,7 +1852,6 @@ Jan-31-2019
 
 
 ::_
-:sk
 :skyp
 :skype
 
@@ -6914,6 +6913,22 @@ echo. & echo * Vue DevTools.
 
 set cbf-url=https://devtools.vuejs.org/guide/installation.html
 set cbf-yt=https://www.youtube.com/watch?v=iKck6xEnIhc
+
+exit/b
+
+
+
+:_
+:sk
+:skpu
+
+echo. & echo * Sky pulse weather application.
+
+rem  qq
+call n it>nul
+set cbf-pt=%cbf-pt%\sky-pulse
+
+set cbf-gh=https://github.com/jonathans-razor/sky-pulse.git
 
 exit/b
 
