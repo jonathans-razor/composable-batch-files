@@ -6924,7 +6924,6 @@ exit/b
 
 echo. & echo * Sky pulse weather application.
 
-rem  qq
 call n it>nul
 set cbf-pt=%cbf-pt%\sky-pulse
 
