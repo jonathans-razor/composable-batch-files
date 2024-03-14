@@ -6921,6 +6921,7 @@ exit/b
 :_
 :sk
 :skpu
+:sky-pulse
 
 echo. & echo * Sky pulse weather application.
 
@@ -6928,6 +6929,9 @@ call n it>nul
 set cbf-pt=%cbf-pt%\sky-pulse
 
 set cbf-gh=https://github.com/jonathans-razor/sky-pulse.git
+set cbf-lh=8080
+set cbf-srv=serve
+
 
 exit/b
 
