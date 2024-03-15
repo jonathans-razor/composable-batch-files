@@ -6,6 +6,7 @@ set cbf-title=CBF: %0
 title %cbf-title%
 
 if "%~1" == "?" goto help
+if "%~1" == "/b" goto back
 if "%~1" == "" goto ta
 
 goto preprocess
@@ -68,7 +69,18 @@ exit/b
 
 
 :_
+:back 
+
+cd /d "%cbf-previous-pt%"
+
+exit/b
+
+
+
+:_
 :main
+
+set cbf-previous-path=%cd%
 
 cd /d "%cbf-pt%"
 
