@@ -22,7 +22,7 @@ echo. & echo * Load path onto clipboard.
 echo. & echo * Usage: %0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1 (Optional):
-echo   If blank, load current folder path ontol clipboard.
+echo   If blank, load current folder path onto clipboard.
 echo   If alias, load alias' path to clipboard.
 echo   If equals /dp, load DCV path only to clipboard.
 

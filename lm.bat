@@ -70,3 +70,38 @@ exit/b
 
 
 :_
+:fn
+
+rem echo. & echo * Copy latest filename to clipboard.
+
+dir /b /o-d>c:\a\python-results.txt
+
+set /p cbf-python-results=<c:\a\python-results.txt
+
+echo %cbf-python-results%|clip
+
+echo. & echo * Code filename "%cbf-python-results%" has been copied to the clipboard.
+
+exit/b
+
+lu:
+Nov-14-2023
+
+
+
+:_
+:le
+:py
+
+rem qq
+rem echo. & echo * Copy latest DSA filename to clipboard.
+
+call t d>nul || exit/b
+
+call %0 fn
+
+exit/b
+
+
+
+:_

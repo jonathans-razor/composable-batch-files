@@ -2698,4 +2698,20 @@ Feb-29-2024
 
 
 
+:_
+:tdp
+
+if "%~1" == "?" goto help
+if not "%~1" == "" call t %1 || exit/b
+
+goto main
+
+rem:
+This is how you do td parameter.
+
+lu:
+Mar-15-2024
+
+
+
 :_ (!efv)

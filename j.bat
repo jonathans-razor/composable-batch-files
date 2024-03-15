@@ -85,7 +85,7 @@ if "%cbf-expanded-variable%" == "" (
   exit/b
 )
 
-call dc "%cbf-expanded-variable%"
+"%cbf-expanded-variable%"
 
 exit/b
 
@@ -130,7 +130,7 @@ rem echo. & echo * Execute a function based on the following order of operations
 if not "%cbf-lnk%" == "" (
   if exist "%cbf-lnk%" (
     rem echo. & echo * cbf-lnk is non-blank. Nov-13-2023_12_32_PM
-    call dc "%cbf-lnk%"
+    "%cbf-lnk%"
     exit/b
   )
 )
@@ -195,7 +195,7 @@ if not "%cbf-ex%" == "" (
     rem echo.
     rem echo * Double click Excel file "%cbf-ex%".
     set cbf-fn=%cbf-ex%
-    call dc "%cbf-fn%"
+    "%cbf-fn%"
     exit/b
   ) else (
     echo.
@@ -222,7 +222,7 @@ if not "%cbf-fn%" == "" (
   if exist "%cbf-fn%" (
     rem echo.
     rem echo * File exists cbf-fn: %cbf-fn%. Dec-12-2023_5_02_PM
-    call dc "%cbf-fn%"
+    "%cbf-fn%"
     exit/b
   ) else (
     echo.
@@ -234,7 +234,7 @@ if not "%cbf-fn%" == "" (
 :
 if not "%cbf-png%" == "" (
   if exist "%cbf-png%" (
-    call dc "%cbf-png%"
+    "%cbf-png%"
     exit/b
   )
 )

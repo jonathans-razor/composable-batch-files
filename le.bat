@@ -2322,6 +2322,25 @@ exit/b
 
 
 :_
+:Feb-29-2024
+
+cls
+
+echo. & echo * Prime numbers.
+
+echo.
+node prime-numbers.js 100
+
+echo.
+node prime-numbers.js 200
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2345,17 +2364,17 @@ exit/b
 
 
 :_
-:Feb-29-2024
+:Mar-15-2024
 
 cls
 
-echo. & echo * Prime numbers.
+echo. & echo * %1.
 
-echo.
-node prime-numbers.js 100
+@echo on
 
-echo.
-node prime-numbers.js 200
+node 100-same-tree.js "1,2,3" "1,2,3"
+node 100-same-tree.js "1,2" "1,null,3"
+node 100-same-tree.js "1,2,1" "1,1,2"
 
 @echo off
 
