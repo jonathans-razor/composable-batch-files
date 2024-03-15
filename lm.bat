@@ -93,7 +93,6 @@ Nov-14-2023
 :le
 :py
 
-rem qq
 rem echo. & echo * Copy latest DSA filename to clipboard.
 
 call t d>nul || exit/b
