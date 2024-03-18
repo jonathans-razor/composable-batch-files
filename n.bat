@@ -6946,6 +6946,7 @@ echo. & echo * FeatureGallery.
 call n it>nul
 set cbf-pt=%cbf-pt%\feature-gallery
 
+set cbf-fn=%cbf-pt%\fg.asc
 set cbf-gh=https://github.com/jonathans-razor/feature-gallery.git
 set cbf-lh=8080
 set cbf-srv=serve
