@@ -220,6 +220,25 @@ exit/b
 
 
 
+::_
+:vershi
+
+echo. & echo * Version history.
+
+set cbf-parameter=https://vuejs.org/about/releases
+
+call r
+
+exit/b
+
+rem:
+Mar-18-2024-2-44-PM: The current latest stable version of Vue is v3.4.21.
+
+skw:
+Vue Version HIstory ,,go
+
+
+
 :_
 :docs
 

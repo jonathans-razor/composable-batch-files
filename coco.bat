@@ -29,6 +29,7 @@ echo   If /f is specified, filenames only are used. If left blank, aliases only 
 echo. & echo * Example(s):
 echo   %0 /d j1 fn des ixm
 echo   %0 John-L-isFINIncluded.dmn John-L-2-isFINIncluded.dmn /f
+echo   %0 /d ku pj fg pj
 
 exit/b
 

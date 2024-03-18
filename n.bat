@@ -6946,6 +6946,7 @@ echo. & echo * FeatureGallery.
 call n it>nul
 set cbf-pt=%cbf-pt%\feature-gallery
 
+set cbf-pj=%cbf-pt%\package.json
 set cbf-fn=%cbf-pt%\fg.asc
 set cbf-gh=https://github.com/jonathans-razor/feature-gallery.git
 set cbf-lh=8080
@@ -6969,6 +6970,7 @@ echo. & echo * Kumar.
 call n repo>nul
 set cbf-pt=%cbf-pt%\vue-topics\vue-leaflet
 
+set cbf-pj=%cbf-pt%\package.json
 set cbf-lh=5173
 set cbf-srv=dev
 set cbf-gh=https://github.com/mohitkumartoshniwal/vue-topics
