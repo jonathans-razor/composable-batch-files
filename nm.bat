@@ -1511,6 +1511,22 @@ Aug-29-2023
 
 If you don't install it globally, the tsc command doesn't seem to work. Oct-26-2021
 
+npm install --save-dev typescript ts-loader vue-loader vue-template-compiler
+
+
+::_
+:i-t2
+
+echo. & echo * Install TypeScript and Vue Loader.
+
+echo.
+npm install --save-dev typescript ts-loader vue-loader vue-template-compiler
+
+exit/b
+
+lu:
+Mar-18-2024
+
 
 
 ::_
