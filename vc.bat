@@ -1,10 +1,17 @@
 :_
 @echo off
 
+if "%~1" == "" goto open-current-folder
 if "%~1" == "?" goto help
-if "%~1" == "" goto run-application-without-parameter
+if "%~1" == "/a" goto run-application-without-parameter
 if "%~1" == "/v" goto vers
-if "%~1" == "." goto open-current-folder
+
+call paco "%~1" .>nul && goto main
+
+if not "%~1" == "" (
+  call t %1 || exit/b
+  goto open-current-folder
+)
 
 goto main
 
@@ -19,9 +26,9 @@ echo. & echo * Run Visual Studio Code while leveraging the e.bat decision algori
 echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1 (Optional):
-echo   If blank, open VS code.
+echo   If blank, open current folder.
 echo   If not blank, process command in e.bat.
-echo   If ".", open current folder.
+echo   If "/a", run application without parameter.
 echo   If "/v", check version.
 
 echo. & echo   Batch file style: Multipurpose

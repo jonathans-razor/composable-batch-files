@@ -5716,6 +5716,7 @@ exit/b
 
 
 :_
+:r
 :repo
 
 set cbf-pt=c:\repos
@@ -6938,6 +6939,7 @@ exit/b
 
 
 :_
+:demo
 :fg
 :feature-gallery
 

@@ -2702,6 +2702,7 @@ Feb-29-2024
 :tdp
 
 if "%~1" == "?" goto help
+rem Placement note: The following line should be placed at the bottom of the initiating calls so that those other calls will continue to work.
 if not "%~1" == "" call t %1 || exit/b
 
 goto main
