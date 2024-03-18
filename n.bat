@@ -6962,12 +6962,15 @@ link color: 3686a8
 :_
 :ku
 :kumar
+:vue-leaflet
 
 echo. & echo * Kumar.
 
 call n repo>nul
 set cbf-pt=%cbf-pt%\vue-topics\vue-leaflet
 
+set cbf-lh=5173
+set cbf-srv=dev
 set cbf-gh=https://github.com/mohitkumartoshniwal/vue-topics
 
 exit/b

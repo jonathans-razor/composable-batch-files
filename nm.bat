@@ -870,31 +870,6 @@ exit/b
 
 
 :_
-:fix
-
-cls
-
-echo. & echo * Fix npm installation in the current folder.
-
-call fn package.json || exit/b
-
-call dr /d node_modules
-
-echo.
-del package-lock.json
-
-npm install
-
-exit/b
-
-lu:
-Jan-19-2024
-Sep-29-2023
-Sep-2-2021
-
-
-
-:_
 :fl
 
 echo. & echo * Fix lint
@@ -1830,6 +1805,55 @@ exit/b
 
 lu:
 Apr-24-2018
+
+
+
+:_+ Fixing NPM (!fix)
+
+
+
+::_
+:fix
+
+cls
+
+echo. & echo * Fix npm installation in the current folder.
+
+call fn package.json || exit/b
+
+call dr /d node_modules
+
+echo.
+del package-lock.json
+
+npm install
+
+exit/b
+
+lu:
+Jan-19-2024
+Sep-29-2023
+Sep-2-2021
+
+
+
+:_
+:af
+
+cls
+
+echo. & echo * Audit fix.
+
+call fn package.json || exit/b
+
+npm audit fix
+
+exit/b
+
+lu:
+Jan-19-2024
+Sep-29-2023
+Sep-2-2021
 
 
 

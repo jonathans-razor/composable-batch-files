@@ -58,9 +58,9 @@ goto main
 
 call fn package.json || exit/b
 
-call m fw %cd%
+call m fw %cd% || exit/b
 
-call n %cbf-distilled-file-folder%>nul
+call n %cbf-distilled-file-folder% || exit/b
 
 goto main
 
