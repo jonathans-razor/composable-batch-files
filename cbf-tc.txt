@@ -220,6 +220,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      smd  Use Sublime to edit DCV files.
     splu  Splunk DCV.
      src  Says hello from the CBF folder.
+      st  Stock checker.
        t  Transform directory.
       td  Call t.bat then d.bat.
      tdb  Back button for transform directory.
