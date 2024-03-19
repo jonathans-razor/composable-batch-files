@@ -30,6 +30,7 @@ echo. & echo * Example(s):
 echo   %0 /d j1 fn des ixm
 echo   %0 John-L-isFINIncluded.dmn John-L-2-isFINIncluded.dmn /f
 echo   %0 /d ku pj fg pj
+echo   %0 /d va pj fg pj
 
 exit/b
 

@@ -6962,7 +6962,11 @@ link color: 3686a8
 
 
 
-:_
+:_+ Kumar
+
+
+
+::_
 :ku
 :kumar
 :vue-leaflet
@@ -6971,6 +6975,25 @@ echo. & echo * Kumar.
 
 call n repo>nul
 set cbf-pt=%cbf-pt%\vue-topics\vue-leaflet
+
+set cbf-pj=%cbf-pt%\package.json
+set cbf-lh=5173
+set cbf-srv=dev
+set cbf-gh=https://github.com/mohitkumartoshniwal/vue-topics
+
+exit/b
+
+
+
+::_
+:va
+:vali
+:form-with-veevalidate-zod
+
+echo. & echo * Validate.
+
+call n repo>nul
+set cbf-pt=%cbf-pt%\vue-topics\form-with-veevalidate-zod
 
 set cbf-pj=%cbf-pt%\package.json
 set cbf-lh=5173
