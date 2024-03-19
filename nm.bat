@@ -1837,7 +1837,7 @@ echo. & echo * Fix npm installation in the current folder.
 
 call fn package.json || exit/b
 
-call dr /d node_modules
+call dr /d node_modules || exit/b
 
 echo.
 del package-lock.json
