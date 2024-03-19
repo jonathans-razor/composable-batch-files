@@ -2974,6 +2974,25 @@ May-31-2019
 
 
 ::_
+:sp7
+
+echo. & echo * Open SP7 files.
+
+set cbf-fn-list="%dropbox%\savannah\reach out\sp7.asc"
+attrib +r "%dropbox%\savannah\reach out\cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
+
+start mew32 %cbf-fn-list%
+
+exit/b
+
+lu:
+Mar-19-2024
+
+
+
+::_
 :do
 :demo
 :pres
@@ -3004,6 +3023,7 @@ echo. & echo * Open XPS affinity files.
 
 set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
 
+attrib -r "%dropbox%\savannah\reach out\cc.asc"
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CC.asc"
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CM.asc"
 
@@ -4368,7 +4388,7 @@ exit/b
 echo. & echo * Start SP7.
 
 call %0 lnk-sp7
-call m do
+call m sp7 
 
 exit/b
 
