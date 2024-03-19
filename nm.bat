@@ -1728,8 +1728,7 @@ exit/b
 lu:
 Jul-15-2021
 
-Footnote
->< >< ><
+rem:
 
 I'm not sure I needed to run this command because when I ran the "npm install" command, I got
 a message that said:
@@ -1854,7 +1853,7 @@ Sep-2-2021
 
 
 
-:_
+::_
 :af
 
 cls
@@ -1871,6 +1870,20 @@ lu:
 Jan-19-2024
 Sep-29-2023
 Sep-2-2021
+
+
+
+:_
+:i-m
+
+echo. & echo * Install miscellaneous.
+
+npm install vee-validate@"<3.0.0" --save
+
+exit/b
+
+previous installation commands:
+npm install --save-dev vue-loader@next @vue/compiler-sfc
 
 
 

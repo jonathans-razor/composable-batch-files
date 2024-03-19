@@ -66,7 +66,6 @@ exit/b
 
 echo. & echo * Use default behavior, viz. compare j files.
 
-rem qq
 call %0 j1 j2
 
 exit/b
