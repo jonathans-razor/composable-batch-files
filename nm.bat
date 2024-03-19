@@ -710,7 +710,6 @@ echo. & echo * Start the development server.
 
 call fn package.json || exit/b
 
-echo.
 start "npm run dev" cmd /k npm run dev
 
 exit/b

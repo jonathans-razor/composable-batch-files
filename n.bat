@@ -6938,30 +6938,6 @@ exit/b
 
 
 
-:_
-:demo
-:fg
-:feature-gallery
-
-echo. & echo * FeatureGallery.
-
-call n it>nul
-set cbf-pt=%cbf-pt%\feature-gallery
-
-set cbf-pj=%cbf-pt%\package.json
-set cbf-fn=%cbf-pt%\fg.asc
-set cbf-gh=https://github.com/jonathans-razor/feature-gallery.git
-set cbf-lh=8080
-set cbf-srv=serve
-
-
-exit/b
-
-rem:
-link color: 3686a8
-
-
-
 :_+ Kumar
 
 
@@ -7020,6 +6996,55 @@ set cbf-srv=dev
 set cbf-gh=https://github.com/mohitkumartoshniwal/vue-topics
 
 exit/b
+
+
+
+:_+ Apr-10-2024 Demo
+
+
+
+::_
+:demo
+:fg
+:feature-gallery
+
+echo. & echo * FeatureGallery.
+
+call n it>nul
+set cbf-pt=%cbf-pt%\feature-gallery
+
+set cbf-pj=%cbf-pt%\package.json
+set cbf-fn=%cbf-pt%\fg.asc
+set cbf-gh=https://github.com/jonathans-razor/feature-gallery.git
+set cbf-lh=8080
+set cbf-srv=serve
+
+
+exit/b
+
+rem:
+link color: 3686a8
+
+
+
+::_
+:el
+:eltz
+
+echo. & echo * Eltz.
+
+call n it>nul
+set cbf-pt=%cbf-pt%\eltz
+
+set cbf-pj=%cbf-pt%\package.json
+set cbf-gh=https://github.com/jonathans-razor/eltz.git
+set cbf-lh=5173
+set cbf-srv=dev
+
+exit/b
+
+rem:
+link color: 3686a8
 
 
 
