@@ -1878,11 +1878,12 @@ Sep-2-2021
 
 echo. & echo * Install miscellaneous.
 
-npm install vite @vitejs/plugin-vue --save-dev
+npm install install leaflet --save-dev
 
 exit/b
 
 previous installation commands:
+npm install vite @vitejs/plugin-vue --save-dev
 npm install vee-validate@"<3.0.0" --save
 npm install --save-dev vue-loader@next @vue/compiler-sfc
 
