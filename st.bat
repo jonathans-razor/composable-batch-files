@@ -1,6 +1,7 @@
 :_
 @echo off
 
+if "%~1" == "" goto help
 if "%~1" == "?" goto help
 if "%~1" == "/a" goto all
 
@@ -24,6 +25,8 @@ echo. & echo   Batch file style: Single purpose
 
 echo. & echo * Samples:
 echo   %~n0 
+echo   %~n0 /a
+echo   %~n0 aapl
 
 exit/b
 
