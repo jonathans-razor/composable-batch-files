@@ -1,2 +1,3 @@
 if not "%~1" == "" call t %1 || exit/b
-nm dev
+call dev
+lh 5173
