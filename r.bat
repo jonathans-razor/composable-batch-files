@@ -124,7 +124,7 @@ if %errorlevel% == 0 (
   goto run-snowflake-application
 )
 
-rem @echo on
+@echo on
 start "Start Process 4" "%cbf-app%" "%cbf-parameter%"
 
 exit/b

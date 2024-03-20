@@ -6952,6 +6952,7 @@ echo. & echo * Benixal.
 call n repo>nul
 set cbf-pt=%cbf-pt%\xa
 
+set cbf-gh=https://github.com/jonathans-razor/xa
 set cbf-pj=%cbf-pt%\package.json
 set cbf-lh=5173
 set cbf-srv=dev
@@ -7040,6 +7041,7 @@ set cbf-pj=%cbf-pt%\package.json
 set cbf-gh=https://github.com/jonathans-razor/eltz.git
 set cbf-lh=5173
 set cbf-srv=dev
+set cbf-yt=https://www.youtube.com/watch?v=_c4z1GeKi_4
 
 exit/b
 

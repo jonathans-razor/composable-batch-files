@@ -411,7 +411,9 @@ exit/b
 
 echo. & echo * 
 
-sf https://www.foxnews.com
+rem sf https://www.foxnews.com
+@echo on
+sf https://github.com/jonathans-razor?tab=repositories
 
 exit/b
 
