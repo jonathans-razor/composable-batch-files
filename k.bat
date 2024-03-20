@@ -407,4 +407,14 @@ exit/b
 
 
 
+:_
+
+echo. & echo * 
+
+sf https://www.foxnews.com
+
+exit/b
+
+
+
 :_ (!efk)

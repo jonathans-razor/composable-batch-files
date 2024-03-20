@@ -85,6 +85,8 @@ if "%cbf-expanded-variable%" == "" (
   exit/b
 )
 
+call paco "%cbf-expanded-variable%" http>nul && sf %cbf-expanded-variable%
+
 "%cbf-expanded-variable%"
 
 exit/b
@@ -249,6 +251,12 @@ if not "%cbf-pt%" == "" (
 
 :
 if not "%cbf-gh%" == "" (
+  call sf %1>nul
+  exit/b
+)
+
+:
+if not "%cbf-ghr%" == "" (
   call sf %1>nul
   exit/b
 )

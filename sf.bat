@@ -17,16 +17,24 @@ cls
 
 echo. & echo * Surf the internet.
 
-echo. & echo   Usage: %0 [space separated parameter(s)]
+echo. & echo   Usage: 
+echo   %0 [space separated parameter(s)]
 
-echo. & echo   Parameter 1: URL alias.
-echo   Parameter 2 (Optional): The alias of the browser application you wish to use.
+echo. & echo   Parameter 1:
+echo   URL alias.
+echo   Or http string.
 
-echo. & echo   Entangled variable: cbf-url
+echo. 
+echo   Parameter 2 (Optional):
+echo   The alias of the browser application you wish to use.
 
-echo. & echo   Pit of Success Strategy: If cb-url is not found, the algorithm will look for cbf-cf, cbf-gh, etc.
+echo. & echo   Entangled variable: 
+echo   cbf-url
 
-echo. & echo * Examples:
+echo. & echo   Pit of Success Strategy: 
+echo   If cb-url is not found, the algorithm will look for cbf-cf, cbf-gh, etc.
+
+echo. & echo   Examples:
 echo   %0 gas
 echo   %0 wsj
 echo   %0 gas ie
@@ -55,6 +63,7 @@ call i /c>nul
 
 rem echo. & echo * Validate input.
 
+call paco "%~1" https>nul && goto execute-http
 call paco "%~1" .>nul && err Aliases cannot contain a period.
 call paco "%~2" .>nul && err Aliases cannot contain a period.
 
@@ -215,6 +224,22 @@ if "%cbf-parameter%" == "" (
 )
 
 goto main
+
+
+
+:_
+
+:execute-http
+
+echo. & echo * Execute https.
+
+set cbf-parameter=%1
+
+set cbf-app=%cbf-default-browser%
+
+call r
+
+exit/b
 
 
 

@@ -17,15 +17,19 @@ cls
 rem          qq
 echo. & echo * 
 
-echo. & echo   Usage: %~n0 [space separated parameter(s)]
+echo. & echo   Usage: 
+echo   %~n0 [space separated parameter(s)]
 
-echo. & echo * Parameter 1:
+echo. & echo   Parameter 1:
 echo   x
 
-echo. & echo   Batch file style: Multipurpose
-echo. & echo   Batch file style: Single purpose
+echo. & echo   Batch file style: 
+echo   Multipurpose
 
-echo. & echo * Samples:
+echo. & echo   Batch file style: 
+echo   Single purpose
+
+echo. & echo   Samples:
 echo   %~n0 
 
 exit/b

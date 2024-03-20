@@ -6950,7 +6950,7 @@ exit/b
 echo. & echo * Benixal.
 
 call n repo>nul
-set cbf-pt=%cbf-pt%\benixal
+set cbf-pt=%cbf-pt%\xa
 
 set cbf-pj=%cbf-pt%\package.json
 set cbf-lh=5173
@@ -7048,4 +7048,4 @@ link color: 3686a8
 
 
 
-:_ (!efn)
+:_ (!ef, !efn)
