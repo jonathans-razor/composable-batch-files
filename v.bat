@@ -1233,7 +1233,7 @@ set help_filename=%temp%\help_contents.txt
 
 curl --help>%help_filename%
 
-if errorlevel 1 exit/b
+if errorlevel 1 echo * Mar-21-2024-2-42-PM && exit/b
 
 set cbf-parameter=%help_filename%
 
@@ -2378,7 +2378,7 @@ call s | find /i "working tree clean">nul
 ::_
 :old-style
 
-if errorlevel 1 exit/b
+if errorlevel 1 echo * Mar-21-2024-2-43-PM && exit/b
 
 Inside an if loop: if %errorlevel% == 5 Jun-28-2023
 

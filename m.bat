@@ -4166,7 +4166,7 @@ echo. & echo * Test harness for specific-file-presence.
 
 call m specific-file-presence main.tf
 
-if errorlevel 1 exit/b
+if errorlevel 1 echo * Mar-21-2024-2-44-PM && exit/b
 
 echo. & echo * Run commands.
 

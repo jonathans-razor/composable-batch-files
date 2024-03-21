@@ -88,7 +88,7 @@ if "%~2" == "/c" (
 :
 if "%~2" == "/a" (
   call :open-aliased-file %*
-  if errorlevel 1 exit/b  
+  if errorlevel 1 echo * Mar-21-2024-2-45-PM && exit/b
   goto main
 )
 
@@ -97,7 +97,7 @@ if "%~2" == "/af" goto open-aliased-folder
 :
 if "%~2" == "/ba" (
   call :open-ff-bash-file %*
-  if errorlevel 1 exit/b
+  if errorlevel 1 echo * Mar-21-2024-2-46-PM && exit/b
   goto main
 )
 
@@ -126,14 +126,14 @@ if "%2" == "/o" (
 :
 if "%~2" == "/p" (
   call :open-python-file %*
-  if errorlevel 1 exit/b
+  if errorlevel 1 echo * Mar-21-2024-2-47-PM && exit/b
   goto main
 )
 
 :
 if "%~2" == "/w" (
   call :open-cbf-wildcard-file %*
-  if errorlevel 1 exit/b
+  if errorlevel 1 echo * Mar-21-2024-2-41-PM && exit/b
   goto main
 )
 
