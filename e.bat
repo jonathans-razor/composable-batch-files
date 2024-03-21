@@ -88,7 +88,7 @@ if "%~2" == "/c" (
 :
 if "%~2" == "/a" (
   call :open-aliased-file %*
-  if errorlevel 1 echo * Mar-21-2024-2-45-PM && exit/b
+  if errorlevel 1 err Mar-21-2024-2-45-PM
   goto main
 )
 
@@ -97,7 +97,7 @@ if "%~2" == "/af" goto open-aliased-folder
 :
 if "%~2" == "/ba" (
   call :open-ff-bash-file %*
-  if errorlevel 1 echo * Mar-21-2024-2-46-PM && exit/b
+  if errorlevel 1 err Mar-21-2024-2-46-PM
   goto main
 )
 
@@ -116,24 +116,21 @@ if "%~2" == "/np" (
 :
 if "%2" == "/o" (
   call :open-cbf-batch-file %*
-  if errorlevel 1 (
-    echo. & echo * CBF batch file NOT found. Feb-9-2024-9-53-AM
-    exit/b
-  )
+  if errorlevel 1 err CBF batch file NOT found. Feb-9-2024-9-53-AM
   goto main
 )
 
 :
 if "%~2" == "/p" (
   call :open-python-file %*
-  if errorlevel 1 echo * Mar-21-2024-2-47-PM && exit/b
+  if errorlevel 1 err Mar-21-2024-2-47-PM
   goto main
 )
 
 :
 if "%~2" == "/w" (
   call :open-cbf-wildcard-file %*
-  if errorlevel 1 echo * Mar-21-2024-2-41-PM && exit/b
+  if errorlevel 1 err Mar-21-2024-2-41-PM
   goto main
 )
 

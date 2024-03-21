@@ -3915,11 +3915,7 @@ set cbf-ip=
 
 call n %2
 
-if errorlevel 1 (
-  echo.
-  echo * Error: Label not found. Oct-30-2020_2_02_PM
-  exit/b 1
-)
+if errorlevel 1 err Label not found. Oct-30-2020_2_02_PM
 
 if "%cbf-host%" == "" (
   echo.
@@ -4017,11 +4013,7 @@ set cbf-instance-id=
 
 call n %2>nul
 
-if errorlevel 1 (
-  echo.
-  echo * Error: Label not found. Oct-30-2020_2_03_PM
-  exit/b 1
-)
+if errorlevel 1 err Label not found. Oct-30-2020_2_03_PM
 
 if "%cbf-instance-id%" == "" (
   echo.
@@ -4166,7 +4158,7 @@ echo. & echo * Test harness for specific-file-presence.
 
 call m specific-file-presence main.tf
 
-if errorlevel 1 echo * Mar-21-2024-2-44-PM && exit/b
+if errorlevel 1 err Mar-21-2024-2-44-PM
 
 echo. & echo * Run commands.
 
@@ -4237,10 +4229,7 @@ call t log4>nul
 
 call m specific-file-presence *.jar>nul
 
-if errorlevel 1 (
-  echo. & echo * The log4j*.jar file does not exist, so you WON'T piss Marvin off.
-  exit/b
-)
+if errorlevel 1 err The log4j*.jar file does not exist, so you WON'T piss Marvin off.
        
 err Log4j*.jar file found.
 

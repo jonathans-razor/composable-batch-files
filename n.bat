@@ -3583,10 +3583,7 @@ echo. & echo * Go to the current folder's GitHub repository.
 
 call g is-git-folder>nul
 
-if errorlevel 1 (
-  call err Not a git folder.
-  exit/b 1
-)
+if errorlevel 1 err Not a git folder.
 
 call m distill-file-folder %cd%>nul
 
@@ -3606,10 +3603,7 @@ echo. & echo * Go to the setting page of the current folder's GitHub repository.
 
 call g is-git-folder>nul
 
-if errorlevel 1 (
-  call err Not a git folder.
-  exit/b 1
-)
+if errorlevel 1 err Not a git folder.
 
 call m distill-file-folder %cd%>nul
 

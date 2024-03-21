@@ -1233,7 +1233,7 @@ set help_filename=%temp%\help_contents.txt
 
 curl --help>%help_filename%
 
-if errorlevel 1 echo * Mar-21-2024-2-42-PM && exit/b
+if errorlevel 1 err Mar-21-2024-2-42-PM
 
 set cbf-parameter=%help_filename%
 
@@ -1750,10 +1750,7 @@ Jul-3-2023
 echo. & echo * If filename.
 
 echo %1| find /i ".">nul
-if errorlevel 1 (
-  call err Period not present.
-  exit/b
-)
+if errorlevel 1 err Period not present.
 
 exit/b
 
@@ -2378,7 +2375,7 @@ call s | find /i "working tree clean">nul
 ::_
 :old-style
 
-if errorlevel 1 echo * Mar-21-2024-2-43-PM && exit/b
+if errorlevel 1 err Mar-21-2024-2-43-PM
 
 Inside an if loop: if %errorlevel% == 5 Jun-28-2023
 
@@ -2486,10 +2483,7 @@ call fn package.json || exit/b
 
 rem Expected type of file.
 echo %2| find /i ".ts">nul
-if errorlevel 1 (
-  call err Expected a TypeScipt file.
-  exit/b
-)
+if errorlevel 1 err Expected a TypeScipt file.
 
 call fn "%~1" || exit/b 5
 

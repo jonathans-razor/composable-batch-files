@@ -282,7 +282,7 @@ if errorlevel 1 (
   if exist "%cbf-pt%\pv.bat" (
     call %cbf-pt%\pv.bat %1
   ) else (
-    err * Hmm. Looks like a Gordian Knot. - Feb-7-2024-9-46-PM
+    err Hmm. Looks like a Gordian Knot. Feb-7-2024-9-46-PM
   )
 )
 
@@ -307,7 +307,7 @@ call el
 
 if errorlevel 1 goto next
 
-err * Hmm. Looks like a Gordian Knot. - Feb-7-2024-9-46-PM
+err Hmm. Looks like a Gordian Knot. - Feb-7-2024-9-46-PM
 
 
 :next
@@ -409,11 +409,28 @@ exit/b
 
 :_
 
-echo. & echo * 
+cls
 
-rem sf https://www.foxnews.com
-@echo on
-sf https://github.com/jonathans-razor?tab=repositories
+echo. & echo * Error level messages.
+
+call n c
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Mar-21-2024-4-01
+
+call n cq
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Mar-21-2024-4-02
+
+rem qq
+rem if errorlevel 1 echo * Mar-21-2024-2-42-PM && exit/b
+rem if errorlevel 1 echo. & echo * Mar-21-2024-2-42-PM && exit/b
+
+if errorlevel 1 err Mar-21-2024-4-14-PM
+
+rem if error llevel 1 exit/b
+rem if %errorllevel% 1 exit/b
+rem if errorllevel 1 exit/b
+rem if %errorllevel% 1 exit/b
+rem if %errorllevel% 1 goto eof
+rem if %errorllevel% 1 goto eoferr Mar-21-2024-4-08-PM
 
 exit/b
 
