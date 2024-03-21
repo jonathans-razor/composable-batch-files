@@ -67,9 +67,13 @@ rem call m reset_cbf-variables
 call i /c>nul
 ver>nul
 
+rem This fixes the "fx and j" issue. Saves 1 keystroke. :) Mar-21-2024
+if not "%~2" == "" fx %1 %2
+
 call sdv %1 || exit/b
 
-if not "%~2" == "" goto compose-dcv
+rem This is the old way before Mar-21-2024.
+rem if not "%~2" == "" goto compose-dcv
 
 goto main
 
@@ -85,7 +89,8 @@ if "%cbf-expanded-variable%" == "" (
   exit/b
 )
 
-call paco "%cbf-expanded-variable%" http>nul && sf %cbf-expanded-variable%
+rem call paco "%cbf-expanded-variable%" http>nul && sf %cbf-expanded-variable%
+call paco "%cbf-expanded-variable%" http>nul && call fx %1 %2
 
 "%cbf-expanded-variable%"
 
