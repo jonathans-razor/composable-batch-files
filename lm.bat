@@ -44,13 +44,13 @@ exit/b
 
 
 :_
+:d
 :dtm
 :dtt
 
-echo. & echo * Date and time.
+rem echo. & echo * Date and time. It is easier just to call "dt".
 
-call ujt
-clip < %tmp%\java_timestamp.txt
+dt
 
 exit/b
 
