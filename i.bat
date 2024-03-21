@@ -72,6 +72,10 @@ rem Ax Clipboard Loader
 set cbf-ax=
 
 :
+rem ?
+set cbf-bm=
+
+:
 rem Bitbucket
 set cbf-bi=
 set cbf-bi2=
@@ -119,6 +123,7 @@ set cbf-current-directory=
 :
 rem Date
 set cbf-date=
+set cbf-date-and-time=
 
 :
 rem Default Browser
@@ -362,6 +367,10 @@ rem Link files.
 set cbf-lnk=
 
 :
+rem Message Graphic
+set cbf-message-graphic=
+
+:
 rem Message
 set cbf-msg=
 
@@ -445,6 +454,10 @@ rem Python Results
 set cbf-python-results=
 
 :
+rem Previous Path
+set cbf-previous-path=
+
+:
 rem Parameter Total
 set cbf_pipe_to_file=
 
@@ -503,6 +516,10 @@ rem TD Parent
 set cbf-tdp=
 
 :
+rem Time
+set cbf-time=
+
+:
 rem Title
 set cbf-title=
 
@@ -518,6 +535,7 @@ set cbf-tr=
 rem URL
 set cbf-url=
 set cbf-url2=
+set cbf-url3=
 
 :
 rem VPN
