@@ -7055,7 +7055,7 @@ set cbf-pt=%cbf-pt%\caro
 
 set cbf-lh=5173
 set cbf-srv=dev
-set cbf-yt=https://www.youtube.com/watch?v=_c4z1GeKi_4
+set cbf-yt=https://youtu.be/_c4z1GeKi_4?t=872
 
 exit/b
 
