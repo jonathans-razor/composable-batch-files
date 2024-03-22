@@ -1472,7 +1472,6 @@ echo. & echo * Locally install a package.
 call fn package.json || exit/b
 if "%~2" == "" err Parameter 2 is required.
 
-echo.
 npm i %2
 
 exit/b
