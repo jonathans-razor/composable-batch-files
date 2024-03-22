@@ -67,8 +67,8 @@ rem call m reset_cbf-variables
 call i /c>nul
 ver>nul
 
-rem This fixes the "fx and j" issue. Saves 1 keystroke. :) Mar-21-2024
-if not "%~2" == "" fx %1 %2
+rem This fixes the "fx and j" issue. Saves 1 keystroke by allowing me to type j [blank] 
+rem instead of fx [blank] . :) Mar-21-2024 if not "%~2" == "" fx %1 %2
 
 call sdv %1 || exit/b
 

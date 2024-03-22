@@ -2974,25 +2974,6 @@ May-31-2019
 
 
 ::_
-:sp7
-
-echo. & echo * Open SP7 files.
-
-set cbf-fn-list="%dropbox%\savannah\reach out\sp7.asc"
-attrib +r "%dropbox%\savannah\reach out\cc.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\cc.asc"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
-
-start mew32 %cbf-fn-list%
-
-exit/b
-
-lu:
-Mar-19-2024
-
-
-
-::_
 :do
 :demo
 :pres
@@ -4355,19 +4336,7 @@ Mar-4-2019
 
 
 
-:_+ Initialization Family (!fcinit, !fclnk)
-
-
-
-::_
-:start-xps
-
-echo. & echo * Start XPS.
-
-call %0 lnk-xps
-call m a
-
-exit/b
+:_+ SP7
 
 
 
@@ -4386,7 +4355,7 @@ exit/b
 ::_
 :lnk-sp7
 
-echo. & echo * Initialize environment for %1.
+echo. & echo * Initialize environment for %1. - Mar-22-2024-12-38-PM
 
 call %0 set-default-browser br
 call n repo
@@ -4398,9 +4367,45 @@ set path=%dropbox%\savannah\belfry;%path%
 col 1
 
 exit/b
+rem qq
 
 fcd:
 Jan-18-2024
+
+
+
+::_
+:sp7
+
+echo. & echo * Open SP7 files.
+
+set cbf-fn-list="%dropbox%\savannah\reach out\sp7.asc"
+attrib +r "%dropbox%\savannah\reach out\cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
+
+start mew32 %cbf-fn-list%
+
+exit/b
+
+lu:
+Mar-19-2024
+
+
+
+:_+ Initialization Family (!fcinit, !fclnk)
+
+
+
+::_
+:start-xps
+
+echo. & echo * Start XPS.
+
+call %0 lnk-xps
+call m a
+
+exit/b
 
 
 
