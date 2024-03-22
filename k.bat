@@ -393,22 +393,6 @@ Feb-8-2024
 
 :_
 
-echo. & echo * 
-
-
-
-exit/b
-
-
-
-:_
-
-:code-execution-area
-
-
-
-:_
-
 cls
 
 echo. & echo * Error level messages.
@@ -433,6 +417,46 @@ rem if %errorllevel% 1 goto eof
 rem if %errorllevel% 1 goto eoferr Mar-21-2024-4-08-PM
 
 exit/b
+
+
+
+:_
+
+echo. & echo * Call t rold.
+
+call t rold
+
+exit/b
+
+Mar-22-2024
+
+
+
+:_
+
+echo. & echo * 
+
+
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+
+
+:_
+
+echo. & echo * Exit and pause.
+
+
+
+exit/p
+
+Mar-22-2024
 
 
 

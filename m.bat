@@ -4367,7 +4367,6 @@ set path=%dropbox%\savannah\belfry;%path%
 col 1
 
 exit/b
-rem qq
 
 fcd:
 Jan-18-2024
