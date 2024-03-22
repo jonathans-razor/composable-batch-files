@@ -23,19 +23,13 @@ echo   %~n0 [space separated parameter(s)]
 echo. & echo   Parameter 1:
 echo   x
 
-echo. & echo   Batch file style: 
-echo   Multipurpose
-
-echo. & echo   Batch file style: 
-echo   Single purpose
+echo. & echo   Creation Date:
+echo    Mar-22-2024
 
 echo. & echo   Samples:
 echo   %~n0 
 
 exit/b
-
-lu: 
-Mar-13-2024
 
 
 

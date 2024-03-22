@@ -2341,6 +2341,25 @@ exit/b
 
 
 :_
+:Mar-15-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 100-same-tree.js "1,2,3" "1,2,3"
+node 100-same-tree.js "1,2" "1,null,3"
+node 100-same-tree.js "1,2,1" "1,1,2"
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2364,7 +2383,7 @@ exit/b
 
 
 :_
-:Mar-15-2024
+:Mar-22-2024
 
 cls
 
@@ -2372,9 +2391,11 @@ echo. & echo * %1.
 
 @echo on
 
-node 100-same-tree.js "1,2,3" "1,2,3"
-node 100-same-tree.js "1,2" "1,null,3"
-node 100-same-tree.js "1,2,1" "1,1,2"
+node 112-path-sum.js 22 "5,4,8,11,null,13,4"
+node 112-path-sum.js 22 "5,4,8,11,null,13,4,7,2,null,null,null,1"
+node 112-path-sum.js 5 "1,2,3"
+node 112-path-sum.js 3 "1,2,3"
+node 112-path-sum.js 0 ""
 
 @echo off
 
