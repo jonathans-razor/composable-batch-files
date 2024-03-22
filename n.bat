@@ -7044,4 +7044,27 @@ link color: 3686a8
 
 
 
+:_
+:caro
+
+echo. & echo * Carolina map.
+
+rem  qq
+call n v>nul
+set cbf-pt=%cbf-pt%\caro
+
+set cbf-lh=5173
+set cbf-srv=dev
+set cbf-yt=https://www.youtube.com/watch?v=_c4z1GeKi_4
+
+exit/b
+
+npm:
+npm create vite@latest
+
+rem:
+Note that the video said to use JavaScript. I chose TypeScript instead.
+
+
+
 :_ (!ef, !efn)
