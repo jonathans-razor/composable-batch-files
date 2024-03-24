@@ -7049,7 +7049,6 @@ link color: 3686a8
 
 echo. & echo * Carolina map.
 
-rem  qq
 call n v>nul
 set cbf-pt=%cbf-pt%\caro
 
