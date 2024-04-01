@@ -3071,52 +3071,6 @@ Sep-20-2023
 
 
 
-:_+ EMDO Family (!emdo)
-
-
-
-::_
-:cyd
-:doj
-:dtg
-:gci
-:atoi
-:lbm
-:msl
-:nes
-:nes2
-
-echo. & echo * %1.
-
-call n emdo
-
-set cbf-fn=%cbf-pt%\%1.asc
-
-exit/b
-
-lu:
-Jan-24-2024
-Oct-3-2023
-
-
-
-::_
-:sai
-:saic
-
-echo. & echo * %1.
-
-call n emdo
-
-set cbf-fn=%cbf-pt%\sai.bul
-
-exit/b
-
-lu:
-Oct-3-2023
-
-
-
 :_
 :iw
 
