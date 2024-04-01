@@ -7068,4 +7068,16 @@ Note that the video said to use JavaScript. I chose TypeScript instead.
 
 
 
+:_
+:leaf
+
+echo. & echo * Leaflet.
+
+set cbf-docs=https://leafletjs.com/reference.html
+set cbf-url=https://leafletjs.com/examples/quick-start
+
+exit/b
+
+
+
 :_ (!ef, !efn)
