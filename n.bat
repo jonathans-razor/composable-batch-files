@@ -7095,4 +7095,21 @@ exit/b
 
 
 
+:_
+:dapi
+
+echo. & echo * Date picker.
+
+call n v>nul
+rem qq
+set cbf-pt=%cbf-pt%\
+
+set cbf-pj=%cbf-pt%\package.json
+set cbf-lh=5173
+set cbf-srv=dev
+
+exit/b
+
+
+
 :_ (!ef, !efn)
