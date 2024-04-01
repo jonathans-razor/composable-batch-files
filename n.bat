@@ -7000,7 +7000,6 @@ exit/b
 echo. & echo * Validate.
 
 call n v>nul
-rem qq
 set cbf-pt=%cbf-pt%\form-with-veevalidate-zod
 
 set cbf-pj=%cbf-pt%\package.json
