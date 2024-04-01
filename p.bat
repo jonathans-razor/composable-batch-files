@@ -78,6 +78,11 @@ call t fg || exit/b
 call g dirt || exit/b
 
 :
+call sep aa-diamond-bridge
+call t va || exit/b
+call g dirt || exit/b
+
+:
 rem echo. & echo * Exiting here ***************************************.
 call rf>nul
 echo.
