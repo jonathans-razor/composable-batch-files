@@ -7051,7 +7051,6 @@ echo. & echo * Carolina map.
 
 call n v>nul
 set cbf-pt=%cbf-pt%\caro
-rem qq
 
 set cbf-lh=5173
 set cbf-pj=%cbf-pt%\package.json
