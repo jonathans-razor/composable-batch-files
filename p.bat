@@ -73,26 +73,16 @@ call t v || exit/b
 call g dirt || exit/b
 
 :
+call sep aa-diamond-bridge
+call t fg || exit/b
+call g dirt || exit/b
+
+:
 rem echo. & echo * Exiting here ***************************************.
 call rf>nul
 echo.
 echo.
 exit/b
-
-:
-call sep
-call t f 
-call g dirt
-
-:
-call sep
-call t gcc 
-call g dirt
-
-:
-call sep
-call t prat 
-call g dirt
 
 :Necessary Edge Case Spacer - Please do not delete.
 
