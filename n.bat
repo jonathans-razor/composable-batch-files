@@ -7097,15 +7097,16 @@ exit/b
 
 :_
 :dapi
+:date-picker
 
-echo. & echo * Date picker.
+echo. & echo * Vuetify date picker.
 
 call n v>nul
-rem qq
-set cbf-pt=%cbf-pt%\
+set cbf-pt=%cbf-pt%\date-picker
 
-set cbf-pj=%cbf-pt%\package.json
+set cbf-gh=https://github.com/igorexa34314/vuetify-birthdaypicker.git
 set cbf-lh=5173
+set cbf-pj=%cbf-pt%\package.json
 set cbf-srv=dev
 
 exit/b

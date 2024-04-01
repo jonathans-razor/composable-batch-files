@@ -16,12 +16,12 @@ goto github-https-stored-value
 cls
 echo. & echo * Clone a repository.
 
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo   Usage: %0 [space separated parameter(s)]
 echo. & echo   If parameter 2 is left blank, GitHub https stored value is used.
 
-echo. & echo * Examples:
-echo   GitHub https, e.g: %0 /ghh https://github.com/jonathans-razor/For-Git-Testing.git
+echo. & echo   Examples:
 echo   GitHub https stored value, e.g: %0 /ghv fgt
+echo   GitHub https, e.g: %0 /ghh https://github.com/jonathans-razor/For-Git-Testing.git
 echo   GitHub ssh, e.g: %0 /ghs git@github.com:jonathans-razor/For-Git-Testing.git
 
 echo.
