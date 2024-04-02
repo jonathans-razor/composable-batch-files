@@ -16,15 +16,15 @@ cls
 
 echo. & echo * Open any file with any application using a DCV.
 
-echo. & echo * Usage: %0 [space separated parameter(s)]
+echo. & echo   Usage: %0 [space separated parameter(s)]
 
 echo. & echo   Parameter 1: General dictionary alias.
         echo   Parameter 2: DCV.
         echo   Parameter 3: Application alias.
 
-echo. & echo * Batch file style: Custom.
+echo. & echo   Batch file style: Custom.
 
-echo. & echo * Sample(s):
+echo. & echo   Sample(s):
 echo   %0 2154 java3 ij
 
 echo. & echo   This is a webpage!

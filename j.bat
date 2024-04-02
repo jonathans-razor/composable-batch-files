@@ -255,13 +255,13 @@ if not "%cbf-pt%" == "" (
 )
 
 :
-if not "%cbf-gh%" == "" (
+if not "%cbf-gi%" == "" (
   call sf %1>nul
   exit/b
 )
 
 :
-if not "%cbf-ghr%" == "" (
+if not "%cbf-gir%" == "" (
   call sf %1>nul
   exit/b
 )

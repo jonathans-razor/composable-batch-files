@@ -219,31 +219,31 @@ set cbf-gd=
 
 :
 rem GitHub
-set cbf-gh=
+set cbf-gi=
 
 :
 rem GitHub - API
-set cbf-gha=
+set cbf-gia=
 
 :
 rem GitHub - My Implementation of Another GitHub Repository
-set cbf-ghmy=
+set cbf-gimy=
 
 :
 rem GitHub - Original Content (skw github source material)
-set cbf-gho=
+set cbf-gio=
 
 :
 rem GitHub - Historical record
-set cbf-ghh=
+set cbf-gih=
 
 :
 rem GitHub - Profile
-set cbf-ghp=
+set cbf-gip=
 
 :
 rem GitHub Repository
-set cbf-ghr=
+set cbf-gir=
 
 :
 rem GitLab

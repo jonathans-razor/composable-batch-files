@@ -32,7 +32,7 @@ echo. & echo   Entangled variable:
 echo   cbf-url
 
 echo. & echo   Pit of Success Strategy: 
-echo   If cb-url is not found, the algorithm will look for cbf-cf, cbf-gh, etc.
+echo   If cb-url is not found, the algorithm will look for cbf-cf, cbf-gi, etc.
 
 echo. & echo   Examples:
 echo   %0 gas
@@ -146,9 +146,9 @@ if "%cbf-parameter%" == "" (
 )
 
 if "%cbf-parameter%" == "" (
-  if not "%cbf-gh%" == "" (
+  if not "%cbf-gi%" == "" (
     echo. & echo * GitHub.
-    set cbf-parameter=%cbf-gh%
+    set cbf-parameter=%cbf-gi%
   )
 )
 

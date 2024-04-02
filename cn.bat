@@ -102,7 +102,7 @@ exit/b
 
 echo. & echo * GitHub https stored value.
 
-set cbf-gh=
+set cbf-gi=
 
 if "%~2" == "" (
   call n %1
@@ -110,13 +110,13 @@ if "%~2" == "" (
   call n %2
 )
 
-if "%cbf-gh%" == "" (
-  call err "cbf-gh" is not defined for alias "%2". Mar-06-2023-14-26
+if "%cbf-gi%" == "" (
+  call err "cbf-gi" is not defined for alias "%2". Mar-06-2023-14-26
   exit/b
 )
 echo.
 @echo on
-git clone %cbf-gh%
+git clone %cbf-gi%
 @echo off
 exit/b
 
