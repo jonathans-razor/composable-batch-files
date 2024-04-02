@@ -2709,4 +2709,16 @@ Mar-15-2024
 
 
 
+:_
+:or
+
+echo. & echo * The proper way to call an or statement.
+
+rem (!or)
+call n sai || err Apr-2-2024-12-33-PM
+
+exit/b
+
+
+
 :_ (!efv)
