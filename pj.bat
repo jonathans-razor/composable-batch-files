@@ -15,13 +15,13 @@ goto process-td-parameter
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo  * Parameter 1:
+echo. & echo    Parameter 1:
 echo    Alias of the folder where package.json is located.
 echo    If left blank, package.json is assumed to be in the current folder.
 
 echo. & echo    Batch file style: Single purpose
 
-echo. & echo  * Samples:
+echo. & echo    Samples:
 echo    %~n0 
 echo    %~n0 ve1
 
