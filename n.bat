@@ -6606,7 +6606,7 @@ echo. & echo * quasar-vite.
 
 call n v>nul
 set cbf-pt=%cbf-pt%\quasar-vite
-
+set cbf-lh=
 set cbf-srv=dev
 
 exit/b
