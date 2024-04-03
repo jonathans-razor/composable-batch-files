@@ -17,12 +17,12 @@ echo. & echo * Double click latest file in current folder.
 
 echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo * Parameter 1 (Optional):
+echo. & echo   Parameter 1 (Optional):
 echo   td parameter
 
 echo. & echo   Batch file style: Single purpose
 
-echo. & echo * Samples:
+echo. & echo   Samples:
 echo   %~n0 
 echo   %0 bci
 echo   %0 fl

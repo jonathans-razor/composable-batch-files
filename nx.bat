@@ -216,4 +216,18 @@ exit/b
 
 
 
+:_
+:im
+:i-m
+
+echo. & echo * Install miscellaneous.
+
+npx shadcn-ui@latest add button
+
+exit/b
+
+previous installation commands:
+
+
+
 :_ (!efnx)

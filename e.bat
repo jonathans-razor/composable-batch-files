@@ -145,22 +145,27 @@ call paco "%~1" .>nul && goto open-current-folder-file
 
 call :open-cbf-batch-file %*
 
+:
 if "%cbf-fn%"=="" (
   call :open-dbf-batch-file %*
 )
 
+:
 if "%cbf-fn%"=="" (
   call :open-dbf-bash-file %*
 )
 
-if "%cbf-fn%"=="" (
-  call :open-cbf-wildcard-file %*
-)
-
+:
 if "%cbf-fn%"=="" (
   call :open-aliased-file %*
 )
 
+:
+if "%cbf-fn%"=="" (
+  call :open-cbf-wildcard-file %*
+)
+
+:
 if "%cbf-fn%"=="" (
   exit/b
 )

@@ -225,7 +225,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       td  Call t.bat then d.bat.
      tdb  Back button for transform directory.
      tdc  Transform directory to favorite child folder of alias.
-     tdd  Open a folder using a DCV.
+     tdd  Transform to a folder using a DCV.
 	   tdh  Transform directory to home folder.
      tdp  Transform directory to parent folder.
      tdr  Transform directory by appending a relative path onto a base path.
