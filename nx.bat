@@ -223,9 +223,9 @@ exit/b
 echo. & echo * Install miscellaneous.
 
 rem qq
-npx tailwindcss@latest init
-exit/b
 npx shadcn-ui@latest init
+exit/b
+npx tailwindcss@latest init
 npx create-remix@latest
 npx shadcn-ui@latest add button
 
