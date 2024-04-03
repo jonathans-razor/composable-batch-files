@@ -2,7 +2,7 @@
 
 @echo off
 
-if "%~1" == "" goto help
+if "%~1" == "" goto im
 if "%~1" == "?" goto help
 
 goto %1
@@ -1881,8 +1881,6 @@ rem qq
 npm init shadcn-ui@latest
 
 exit/b
-
-previous installation commands:
 npm install --save-dev vue-loader@next @vue/compiler-sfc
 npm install --global @githubnext/github-copilot-cli
 npm install install leaflet --save-dev

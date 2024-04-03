@@ -3,6 +3,7 @@
 
 title CBF: %0
 
+if "%~1" == "" goto im
 if "%~1" == "?" goto help
 
 goto %1
@@ -222,9 +223,9 @@ exit/b
 echo. & echo * Install miscellaneous.
 
 rem qq
-npx shadcn-ui@latest init
-exit/b
 npx tailwindcss@latest init
+exit/b
+npx shadcn-ui@latest init
 npx create-remix@latest
 npx shadcn-ui@latest add button
 
