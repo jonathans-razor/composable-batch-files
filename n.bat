@@ -7067,4 +7067,30 @@ exit/b
 
 
 
+:_+ Component Libraries
+
+
+
+::_
+:shad
+
+echo. & echo * Shad/cn UI.
+
+set cbf-url=https://ui.shadcn.com/docs
+
+exit/b
+
+
+
+::_
+:ace
+
+echo. & echo * Aceternity
+
+set cbf-url=https://www.aceternity.com
+
+exit/b
+
+
+
 :_ (!ef, !efn)
