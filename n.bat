@@ -7017,6 +7017,7 @@ exit/b
 
 echo. & echo * Shad/cn UI.
 
+set cbf-docs=https://ui.shadcn.com/docs
 set cbf-url=https://ui.shadcn.com/docs
 
 exit/b
@@ -7103,6 +7104,8 @@ set cbf-pt=%cbf-pt%\shap
 
 set cbf-lh=5173
 set cbf-srv=dev
+set cbf-url=https://ui.shadcn.com/docs/installation/vite
+set cbf-yt=https://www.youtube.com/watch?v=H-1JnM4lReU
 
 exit/b
 
