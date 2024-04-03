@@ -2747,65 +2747,6 @@ Sep-5-2023
 
 
 
-:_+ Zoom and Microsoft Teams
-
-
-
-::_
-:mite
-:mste
-:mt
-:team
-:teams
-
-echo. & echo * Microsoft Teams.
-
-set cbf-pt=%AppData%\Microsoft\Windows\Start Menu\Programs
-set cbf-app=%cbf-pt%\Microsoft Teams classic.lnk
-set cbf-url=https://teams.microsoft.com
-
-exit/b
-
-lu:
-Jan-8-2024
-Jan-27-2022
-
-
-
-::_
-:zoom
-
-echo. & echo * Zoom.
-
-set cbf-app=%AppData%\Zoom\bin\zoom.exe
-
-rem This is where recorded meetings are saved.
-set cbf-pt=%userprofile%\Documents\Zoom
-
-exit/b
-
-On XPS I have version 5.16.1 on Jan-8-2024.
-
-lu: 
-Jan-8-2024
-Oct-12-2020
-
-
-
-::_
-:mtdd
-
-echo. & echo * Microsoft Teams down detector.
-
-set cbf-url=https://downdetector.com/status/teams/
-
-exit/b
-
-lu:
-Feb-3-2020
-
-
-
 :_
 :fj
 :hifj
@@ -6971,7 +6912,6 @@ exit/b
 
 
 ::_
-:demo
 :fg
 :feature-gallery
 
@@ -7091,6 +7031,65 @@ echo. & echo * Aceternity
 set cbf-url=https://www.aceternity.com
 
 exit/b
+
+
+
+:_+ Zoom and Microsoft Teams
+
+
+
+::_
+:mite
+:mste
+:mt
+:team
+:teams
+
+echo. & echo * Microsoft Teams.
+
+set cbf-pt=%AppData%\Microsoft\Windows\Start Menu\Programs
+set cbf-app=%cbf-pt%\Microsoft Teams classic.lnk
+set cbf-url=https://teams.microsoft.com
+
+exit/b
+
+lu:
+Jan-8-2024
+Jan-27-2022
+
+
+
+::_
+:zoom
+
+echo. & echo * Zoom.
+
+set cbf-app=%AppData%\Zoom\bin\zoom.exe
+
+rem This is where recorded meetings are saved.
+set cbf-pt=%userprofile%\Documents\Zoom
+
+exit/b
+
+On XPS I have version 5.16.1 on Jan-8-2024.
+
+lu: 
+Jan-8-2024
+Oct-12-2020
+
+
+
+::_
+:mtdd
+
+echo. & echo * Microsoft Teams down detector.
+
+set cbf-url=https://downdetector.com/status/teams/
+
+exit/b
+
+lu:
+Feb-3-2020
 
 
 

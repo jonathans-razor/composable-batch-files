@@ -222,11 +222,12 @@ exit/b
 
 echo. & echo * Install miscellaneous.
 
-npx shadcn-ui@latest add button
-
+rem qq
+npx shadcn-ui init
 exit/b
-
-previous installation commands:
+npx tailwindcss init
+npx init shadcn-ui@latest
+npx shadcn-ui@latest add button
 
 
 
