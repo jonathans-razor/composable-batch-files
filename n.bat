@@ -7093,4 +7093,31 @@ Feb-3-2020
 
 
 
+:_
+:shap
+
+echo. & echo * Shad App.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\shap
+
+set cbf-lh=5173
+set cbf-srv=dev
+
+exit/b
+
+
+
+:_
+:demo
+
+echo. & echo * Demo file.
+
+call n c>nul
+set cbf-fn=%cbf-pt%\demo.asc
+
+exit/b
+
+
+
 :_ (!ef, !efn)
