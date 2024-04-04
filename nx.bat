@@ -226,10 +226,10 @@ echo. & echo * Install miscellaneous.
 rem qq
 npx shadcn-ui@latest init
 exit/b
+npx tailwindcss init -p
 npx create-remix@latest
 npx shadcn-ui@latest add accordion
 npx shadcn-ui@latest add button
-npx tailwindcss init -p
 npx create-vite@latest
 npx shadcn-ui@latest init
 npx tailwindcss@latest init
