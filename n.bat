@@ -7123,4 +7123,15 @@ exit/b
 
 
 
+:_
+:gg
+
+echo. & echo * Github globe.
+
+set cbf-url=https://ui.aceternity.com/components/github-globe
+
+exit/b
+
+
+
 :_ (!ef, !efn)

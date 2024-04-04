@@ -1878,7 +1878,6 @@ Sep-2-2021
 echo. & echo * Install miscellaneous.
 
 npm add -D tailwindcss@latest autoprefixer@latest
-rem qq
 exit/b
 npm install --save-dev vue-loader@next @vue/compiler-sfc
 npm install --global @githubnext/github-copilot-cli
