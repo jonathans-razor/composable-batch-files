@@ -222,8 +222,11 @@ exit/b
 
 echo. & echo * Install miscellaneous.
 
-npx create-vite@latest
+@echo on
+npx shadcn-ui@latest init
 exit/b
+npx tailwindcss init -p
+npx create-vite@latest
 npx shadcn-ui@latest init
 npx tailwindcss@latest init
 npx create-remix@latest
