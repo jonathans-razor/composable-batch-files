@@ -2360,6 +2360,27 @@ exit/b
 
 
 :_
+:Mar-22-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 112-path-sum.js 22 "5,4,8,11,null,13,4"
+node 112-path-sum.js 22 "5,4,8,11,null,13,4,7,2,null,null,null,1"
+node 112-path-sum.js 5 "1,2,3"
+node 112-path-sum.js 3 "1,2,3"
+node 112-path-sum.js 0 ""
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2383,7 +2404,7 @@ exit/b
 
 
 :_
-:Mar-22-2024
+:Apr-4-2024
 
 cls
 
@@ -2391,11 +2412,7 @@ echo. & echo * %1.
 
 @echo on
 
-node 112-path-sum.js 22 "5,4,8,11,null,13,4"
-node 112-path-sum.js 22 "5,4,8,11,null,13,4,7,2,null,null,null,1"
-node 112-path-sum.js 5 "1,2,3"
-node 112-path-sum.js 3 "1,2,3"
-node 112-path-sum.js 0 ""
+node 181-employees-earning-more-than-their-managers.js 1 Joe 70000 3 2 Henry 80000 4 3 Sam 60000 Null 4 Max 90000 Null 5 Billy 70000 3 
 
 @echo off
 
