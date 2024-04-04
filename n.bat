@@ -7116,6 +7116,26 @@ npx create-vite@latest
 
 
 :_
+:shar
+
+echo. & echo * Shad App in Remix.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\shar
+
+set cbf-lh=5173
+set cbf-srv=dev
+set cbf-url=https://ui.shadcn.com/docs/installation/remix
+set cbf-yt=https://www.youtube.com/watch?v=H-1JnM4lReU
+
+exit/b
+
+rem:
+Created with:
+
+
+
+:_
 :demo
 
 echo. & echo * Demo file.

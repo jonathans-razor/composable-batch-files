@@ -223,15 +223,15 @@ exit/b
 echo. & echo * Install miscellaneous.
 
 @echo on
-npx shadcn-ui@latest add accordion
+npx create-remix@latest
 exit/b
-npx shadcn-ui@latest add button
 npx shadcn-ui@latest init
+npx shadcn-ui@latest add accordion
+npx shadcn-ui@latest add button
 npx tailwindcss init -p
 npx create-vite@latest
 npx shadcn-ui@latest init
 npx tailwindcss@latest init
-npx create-remix@latest
 npx shadcn-ui@latest add button
 
 
