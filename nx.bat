@@ -222,7 +222,6 @@ exit/b
 
 echo. & echo * Install miscellaneous.
 
-rem qq
 npx create-vite@latest
 exit/b
 npx shadcn-ui@latest init

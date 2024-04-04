@@ -7109,6 +7109,10 @@ set cbf-yt=https://www.youtube.com/watch?v=H-1JnM4lReU
 
 exit/b
 
+rem:
+Created with:
+npx create-vite@latest
+
 
 
 :_
