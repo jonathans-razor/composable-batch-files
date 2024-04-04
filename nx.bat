@@ -223,6 +223,7 @@ exit/b
 echo. & echo * Install miscellaneous.
 
 @echo on
+rem qq
 npx shadcn-ui@latest init
 exit/b
 npx create-remix@latest
