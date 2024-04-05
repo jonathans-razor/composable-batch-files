@@ -7183,4 +7183,23 @@ Created with:
 
 
 
+::_
+:sha3
+
+echo. & echo * Shad App with follow Vite/vue-shadcn instructions.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\%1
+
+set cbf-lh=5173
+set cbf-srv=dev
+set cbf-url=https://www.shadcn-vue.com/docs/installation/vite.html
+
+exit/b
+
+rem:
+Created with:
+
+
+
 :_ (!ef, !efn)
