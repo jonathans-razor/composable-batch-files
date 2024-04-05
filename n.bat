@@ -7018,7 +7018,8 @@ exit/b
 echo. & echo * Shad/cn UI.
 
 set cbf-docs=https://ui.shadcn.com/docs
-set cbf-url=https://ui.shadcn.com/docs
+set cbf-url=https://shadcn-vue.com/docs/installation.html
+set cbf-url2=https://ui.shadcn.com/docs
 
 exit/b
 
@@ -7095,47 +7096,6 @@ Feb-3-2020
 
 
 :_
-:shap
-
-echo. & echo * Shad App.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\shap
-
-set cbf-lh=5173
-set cbf-srv=dev
-set cbf-url=https://ui.shadcn.com/docs/installation/vite
-set cbf-yt=https://www.youtube.com/watch?v=H-1JnM4lReU
-
-exit/b
-
-rem:
-Created with:
-npx create-vite@latest
-
-
-
-:_
-:shar
-
-echo. & echo * Shad App in Remix.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\shar
-
-set cbf-lh=5173
-set cbf-srv=dev
-set cbf-url=https://ui.shadcn.com/docs/installation/remix
-set cbf-yt=https://www.youtube.com/watch?v=H-1JnM4lReU
-
-exit/b
-
-rem:
-Created with:
-
-
-
-:_
 :demo
 
 echo. & echo * Demo file.
@@ -7155,6 +7115,71 @@ echo. & echo * Github globe.
 set cbf-url=https://ui.aceternity.com/components/github-globe
 
 exit/b
+
+
+
+:_+ Shadcn Projects
+
+
+
+::_
+:shap
+
+echo. & echo * Shad App in Vue and Vite.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\shap
+
+set cbf-lh=5173
+set cbf-srv=dev
+set cbf-url=https://ui.shadcn.com/docs/installation/vite
+set cbf-yt=https://www.youtube.com/watch?v=H-1JnM4lReU
+
+exit/b
+
+rem:
+Created with:
+npx create-vite@latest
+
+
+
+::_
+:shar
+
+echo. & echo * Shad App in Remix.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\shar
+
+set cbf-lh=5173
+set cbf-srv=dev
+set cbf-url=https://ui.shadcn.com/docs/installation/remix
+set cbf-yt=https://www.youtube.com/watch?v=H-1JnM4lReU
+
+exit/b
+
+rem:
+Created with:
+
+
+
+::_
+:sha2
+
+echo. & echo * Shad App with Radix.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\sha2
+
+set cbf-lh=5173
+set cbf-srv=dev
+set cbf-url=
+set cbf-yt=https://www.youtube.com/watch?v=vs-vfc9nt0k
+
+exit/b
+
+rem:
+Created with:
 
 
 

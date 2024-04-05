@@ -52,11 +52,16 @@ rem lu: Mar-20-2023
 
 :_
 :delete-directory
+
 echo. & echo * Delete directory "%2".
+
 if "%~2" == "" err Percent 2, directory name, cannot be blank.
 rd /q /s %2
+
 exit/b
-rem lu: Jun-1-2018
+
+rem lu:
+Jun-1-2018
 
 
 
