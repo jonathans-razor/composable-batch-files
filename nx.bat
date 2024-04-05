@@ -224,8 +224,9 @@ echo. & echo * Install miscellaneous.
 
 @echo on
 rem qq
-npx shadcn-vue@latest init
+npx shadcn-vue@latest add button
 exit/b
+npx shadcn-vue@latest init
 npx shadcn-ui@latest add button
 npx tailwindcss init -p
 npx shadcn-ui@latest add card
