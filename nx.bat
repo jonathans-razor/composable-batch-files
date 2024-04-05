@@ -224,8 +224,9 @@ echo. & echo * Install miscellaneous.
 
 @echo on
 rem qq
-npx shadcn-vue@latest add tooltip
+npx shadcn-vue@latest add table
 exit/b
+npx shadcn-vue@latest add tooltip
 npx shadcn-vue@latest add label
 npx shadcn-vue@latest add checkbox
 npx shadcn-vue@latest add button
