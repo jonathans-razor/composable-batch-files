@@ -7233,7 +7233,7 @@ set cbf-gio=https://github.com/codingwithjustin/quasar-note-app
 
 rem Layout Builder
 rem qq
-set cbf-url=https://quasar.dev/layout-builder
+set cbf-url=https://quasar.dev/vue-components/card#example--card-with-parallax
 
 rem Video Tutorials
 set cbf-url2=https://quasar.dev/video-tutorials
