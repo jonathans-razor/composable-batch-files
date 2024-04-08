@@ -51,7 +51,6 @@ cd src
 :_
 :main
 
-rem qq
 call fn App.vue || err Apr-8-2024-4-45-PM
 
 vc App.vue>nul
