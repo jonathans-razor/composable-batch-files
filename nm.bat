@@ -1878,8 +1878,9 @@ echo. & echo * Install miscellaneous.
 
 @echo on
 rem qq
-npm install -D tailwindcss autoprefixer postcss
+npm init quasar
 exit/b
+npm install -D tailwindcss autoprefixer postcss
 npm install -D tailwindcss autoprefixer
 npm create vite@latest setp -- --template vue-ts
 npm install radix-vue

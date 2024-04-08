@@ -6539,25 +6539,6 @@ exit/b
 
 
 :_
-:quasar-vite
-:qv
-:rfqv
-
-echo. & echo * quasar-vite.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\quasar-vite
-set cbf-lh=
-set cbf-srv=dev
-
-exit/b
-
-skw:
-working-tutorial-series-jj
-
-
-
-:_
 :danw
 :rfdanw
 :vitest-by-david-nwadiogbu
@@ -6571,39 +6552,6 @@ set cbf-lh=5173
 set cbf-srv=dev
 
 set cbf-yt=https://www.youtube.com/watch?v=k2wi03hw2ek
-
-exit/b
-
-skw:
-working-tutorial-series-jj
-
-
-
-:_
-:quas
-:quasar-note-app
-:rfquas
-:tuqu
-
-echo. & echo * Quasar tutorial.
-
-call n vute>nul
-set cbf-pt=%cbf-pt%\quasar-note-app
-
-set cbf-docs=https://quasar.dev/docs
-
-set cbf-srv=dev
-set cbf-lh=
-
-set cbf-gio=https://github.com/codingwithjustin/quasar-note-app
-
-rem Layout Builder
-set cbf-url=https://quasar.dev/layout-builder
-
-rem Video Tutorials
-set cbf-url2=https://quasar.dev/video-tutorials
-
-set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA
 
 exit/b
 
@@ -7204,7 +7152,7 @@ Created with:
 ::_
 :setp
 
-echo. & echo * Shad enabled template project.
+echo. & echo * Shadcn enabled template project.
 
 call n v>nul
 set cbf-pt=%cbf-pt%\%1
@@ -7227,8 +7175,7 @@ npm create vite@latest setp -- --template vue-ts
 ::_
 :seqr
 
-rem qq
-echo. & echo * Shad enabled with Quasar routing.
+echo. & echo * Shadcn enabled with Quasar routing.
 
 call n v>nul
 set cbf-pt=%cbf-pt%\%1
@@ -7244,6 +7191,59 @@ Apr-8-2024
 rem:
 Created with:
 Copied setp.
+
+
+
+:_
+:quasar-vite
+:qv
+:rfqv
+
+echo. & echo * quasar-vite.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\quasar-vite
+set cbf-lh=
+set cbf-srv=dev
+
+exit/b
+
+skw:
+working-tutorial-series-jj
+
+
+
+:_
+:quas
+:quasar-note-app
+:rfquas
+:tuqu
+
+echo. & echo * Quasar tutorial.
+
+call n vute>nul
+set cbf-pt=%cbf-pt%\quasar-note-app
+
+set cbf-docs=https://quasar.dev/docs
+
+set cbf-srv=dev
+set cbf-lh=
+
+set cbf-gio=https://github.com/codingwithjustin/quasar-note-app
+
+rem Layout Builder
+rem qq
+set cbf-url=https://quasar.dev/layout-builder
+
+rem Video Tutorials
+set cbf-url2=https://quasar.dev/video-tutorials
+
+set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA
+
+exit/b
+
+skw:
+working-tutorial-series-jj
 
 
 
