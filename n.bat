@@ -7137,6 +7137,8 @@ echo. & echo * Shad App with follow Vite/vue-shadcn instructions.
 
 call n v>nul
 set cbf-pt=%cbf-pt%\%1
+rem qq
+rem set cbf-av=%cbf-pt%\%1\App.vue
 
 set cbf-lh=5173
 set cbf-srv=dev
@@ -7231,12 +7233,14 @@ set cbf-lh=
 
 set cbf-gio=https://github.com/codingwithjustin/quasar-note-app
 
-rem Layout Builder
 rem qq
 set cbf-url=https://quasar.dev/vue-components/card#example--card-with-parallax
 
+rem Layout Builder
+set cbf-url2=https://quasar.dev/layout-builder
+
 rem Video Tutorials
-set cbf-url2=https://quasar.dev/video-tutorials
+set cbf-url3=https://quasar.dev/video-tutorials
 
 set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA
 

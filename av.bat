@@ -42,7 +42,7 @@ Jan-18-2024
 :_
 :process-td-parameter
 
-call t %11>nul || exit/b
+call t %1>nul || err Apr-8-2024-4-46-PM
 
 cd src
 
@@ -51,7 +51,8 @@ cd src
 :_
 :main
 
-call fn App.vue || exit/b
+rem qq
+call fn App.vue || err Apr-8-2024-4-45-PM
 
 vc App.vue>nul
 
