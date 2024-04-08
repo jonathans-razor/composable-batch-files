@@ -223,7 +223,6 @@ exit/b
 echo. & echo * Install miscellaneous.
 
 @echo on
-rem qq
 npx shadcn-vue@latest add dropdown-menu
 exit/b
 npx shadcn-vue@latest add calendar

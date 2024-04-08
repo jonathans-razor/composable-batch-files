@@ -17,7 +17,9 @@ echo. & echo * Zip.
 
 echo. & echo * Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo * Parameter 1: File(s) you wish to zip or zip function you wish to run.
+echo. & echo * Parameter 1: 
+
+echo   File(s) you wish to zip OR zip function you wish to run.
 
 echo. & echo * Batch file style: Multipurpose
 
