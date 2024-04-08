@@ -1878,8 +1878,10 @@ echo. & echo * Install miscellaneous.
 
 @echo on
 rem qq
-npm create vite@latest setp -- --template vue-ts
+npm install -D tailwindcss autoprefixer postcss
 exit/b
+npm install -D tailwindcss autoprefixer
+npm create vite@latest setp -- --template vue-ts
 npm install radix-vue
 npm install -D @iconify/vue @iconify-json/radix-icons
 npm install @vueuse/core

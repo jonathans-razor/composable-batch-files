@@ -7201,4 +7201,27 @@ Created with:
 
 
 
+::_
+:setp
+
+echo. & echo * Shad enabled template project.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\%1
+
+set cbf-lh=5173
+set cbf-srv=dev
+set cbf-url=https://www.shadcn-vue.com/docs/installation/vite.html
+
+exit/b
+
+creation date:
+Apr-8-2024
+
+rem:
+Created with:
+npm create vite@latest setp -- --template vue-ts
+
+
+
 :_ (!ef, !efn)

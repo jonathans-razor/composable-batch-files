@@ -1,4 +1,4 @@
-:_ (!bfnx, !nx)
+(!bfnx, !nx)
 @echo off
 
 title CBF: %0
@@ -223,8 +223,9 @@ exit/b
 echo. & echo * Install miscellaneous.
 
 @echo on
-npx shadcn-vue@latest add dropdown-menu
+npx shadcn-vue@latest init
 exit/b
+npx shadcn-vue@latest add dropdown-menu
 npx shadcn-vue@latest add calendar
 npx shadcn-vue@latest add popover
 npx shadcn-vue@latest add sonner
@@ -237,7 +238,6 @@ npx shadcn-vue@latest add tooltip
 npx shadcn-vue@latest add label
 npx shadcn-vue@latest add checkbox
 npx shadcn-vue@latest add button
-npx shadcn-vue@latest init
 npx shadcn-ui@latest add button
 npx tailwindcss init -p
 npx shadcn-ui@latest add card
