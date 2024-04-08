@@ -1878,8 +1878,9 @@ echo. & echo * Install miscellaneous.
 
 @echo on
 rem qq
-npm install -D @iconify/vue @iconify-json/radix-icons
+npm install radix-vue
 exit/b
+npm install -D @iconify/vue @iconify-json/radix-icons
 npm install @vueuse/core
 npm install -D tailwindcss autoprefixer postcss
 npm install -D tailwindcss autoprefixer
