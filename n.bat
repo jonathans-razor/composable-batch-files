@@ -7224,4 +7224,27 @@ npm create vite@latest setp -- --template vue-ts
 
 
 
+::_
+:seqr
+
+rem qq
+echo. & echo * Shad enabled with Quasar routing.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\%1
+
+set cbf-lh=5173
+set cbf-srv=dev
+
+exit/b
+
+creation date:
+Apr-8-2024
+
+rem:
+Created with:
+Copied setp.
+
+
+
 :_ (!ef, !efn)
