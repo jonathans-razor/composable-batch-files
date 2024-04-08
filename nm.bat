@@ -1877,8 +1877,11 @@ Sep-2-2021
 echo. & echo * Install miscellaneous.
 
 @echo on
-npm install -D tailwindcss autoprefixer postcss
+rem qq
+npm install -D @iconify/vue @iconify-json/radix-icons
 exit/b
+npm install @vueuse/core
+npm install -D tailwindcss autoprefixer postcss
 npm install -D tailwindcss autoprefixer
 npm create vite@latest sha3
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
