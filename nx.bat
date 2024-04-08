@@ -224,10 +224,10 @@ echo. & echo * Install miscellaneous.
 
 @echo on
 rem qq
-npx shadcn-vue@latest add calendar
-exit/b
-npx shadcn-vue@latest add popover
 npx shadcn-vue@latest add dropdown-menu
+exit/b
+npx shadcn-vue@latest add calendar
+npx shadcn-vue@latest add popover
 npx shadcn-vue@latest add sonner
 npx shadcn-vue@latest add input
 npx shadcn-vue@latest add alert-dialog
