@@ -76,7 +76,7 @@ echo.
 
 echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Feb-20-2024-5-16-PM
 @echo on
-git clone %2 -b %cbf-branch%
+git clone %2 -b master
 @echo off
 
 exit/b
