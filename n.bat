@@ -7014,7 +7014,7 @@ exit/b
 ::_
 :shad
 
-echo. & echo * Shad/cn UI.
+echo. & echo * Shad/cn UI specifically for Vue.
 
 set cbf-docs=https://ui.shadcn.com/docs
 set cbf-url=https://shadcn-vue.com/docs/installation.html
