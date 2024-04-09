@@ -52,7 +52,6 @@ browser-  Defines the behavior of calling browsers.
        d  Dir.
      dbg  Debugger.
       dc  Double-click a filename, back office operation.
-     dcv  Given an alias and a DCV, returns the set DCV value.
       de  Multipurpose delete batch file.
     defn  Delete a file based on passed in filename alias.
     depc  Delete the path contents of the passed in alias.
