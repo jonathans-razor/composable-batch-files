@@ -42,9 +42,9 @@ Feb-22-2024-12-21-PM
 
 cls
 
-echo. & echo * From %0: last updated: Mar-22-2024-12-39-PM
-call sdv lu
-call n lu
+echo. & echo * From %0: last updated: Apr-9-2024-11-46-AM
+rem call sdv lu
+rem call n lu
 
 exit/b
 

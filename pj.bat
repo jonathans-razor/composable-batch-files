@@ -43,14 +43,14 @@ Jan-18-2024
 :_
 :process-td-parameter
 
-call t %1>nul || exit/b
+call t %1>nul || err Apr-9-2024-11-41-AM
 
 
 
 :_
 :main
 
-call fn package.json || exit/b
+call fn package.json || err Apr-9-2024-11-42-AM
 
 vc package.json>nul
 
