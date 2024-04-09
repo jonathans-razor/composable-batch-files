@@ -14,7 +14,6 @@ goto %1
 
 cls
 
-rem qq
 echo. & echo * Quasar.
 
 echo. & echo   Usage: %~n0 [space separated parameter(s)]
@@ -48,9 +47,11 @@ Feb-22-2024
 
 echo.
 quasar -v
-rem qq
 
 exit/b
+
+Apr-9-2024 @quasar/cli v2.4.0
+Apr-9-2024 @quasar/cli v2.3.0
 
 
 

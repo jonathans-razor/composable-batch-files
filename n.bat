@@ -3761,6 +3761,7 @@ Jun-06-2022
 
 ::_
 :cbf-gl
+:gl
 :glcbf
 
 echo. & echo * CBF glossary
@@ -7195,26 +7196,11 @@ Copied setp.
 
 
 
-:_
-:quasar-vite
-:qv
-:rfqv
-
-echo. & echo * quasar-vite.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\quasar-vite
-set cbf-lh=
-set cbf-srv=dev
-
-exit/b
-
-skw:
-working-tutorial-series-jj
+:_+ Quasar Apps (!appsquas)
 
 
 
-:_
+::_
 :quas
 :quasar-note-app
 :rfquas
@@ -7246,6 +7232,45 @@ exit/b
 
 skw:
 working-tutorial-series-jj
+
+
+
+::_
+:quasar-vite
+:qv
+:rfqv
+
+echo. & echo * quasar-vite.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\quasar-vite
+set cbf-lh=
+set cbf-srv=dev
+
+exit/b
+
+skw:
+working-tutorial-series-jj
+
+Quasar version:
+v2.14.5
+
+
+
+::_
+:qt
+
+echo. & echo * quasar-test.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\qt
+set cbf-lh=
+set cbf-srv=dev
+
+exit/b
+
+Quasar version:
+v2.15.2
 
 
 

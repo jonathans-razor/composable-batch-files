@@ -98,7 +98,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      gh2  Execute the GitHub DCV for the passed in alias.
 	   ghh  Surf to GitHub Historical record website.
      ghf  Execute the GitHub historical file DCV for the passed in alias.
-      gl  Execute the GitLab DCV for the passed in alias.
+     glb  Execute the GitLab DCV for the passed in alias.
      god  Edit Go DCV file in VSC.
   google  Google using Brave from the command line. Automatically passes in your command line parameters.
       gr  Grep.

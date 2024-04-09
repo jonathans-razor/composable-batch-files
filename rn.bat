@@ -1,4 +1,4 @@
-:_
+:_ (!bfrn)
 @echo off
 
 echo. & echo * Run localhost application. Uses td parameter and fwp awareness.
@@ -69,10 +69,8 @@ goto main
 :main
 
 if "%cbf-srv%" == "" err cbf-srv is not defined. Mar-11-2024-4-39-PM
-rem Quasar localhost seems to start automatically, so the following line is not needed.
-rem if "%cbf-lh%" == "" err cbf-lh is not defined. Mar-11-2024-4-40-PM
 
-call nm %cbf-srv% || exit/b
+call nm %cbf-srv% || err Apr-9-2024-2-54-PM
 
 if not "%cbf-lh%" == "" (
   call is-numeric "%cbf-lh%" && call lh %cbf-lh%
@@ -82,4 +80,4 @@ exit/b
 
 
 
-:_
+:_ (!efrn)

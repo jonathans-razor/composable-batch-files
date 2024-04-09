@@ -135,21 +135,6 @@ exit/b
 
 
 
-::_
-:init-quas
-
-echo. & echo * Create Quasar app.
-
-npm init quasar
-
-exit/b
-
-rem:
-Apparently this is outdated.
-quasar create quasar-note-app --branch next
-
-
-
 :_+ Settings
 
 
@@ -683,20 +668,6 @@ Jan-15-2024
 
 
 :_+ Script Family, e.g. Dev, Start etc.
-
-
-
-::_
-:qd
-
-echo. & echo * Quasar dev.
-
-call fn package.json || exit/b
-
-echo.
-start "quasar dev" cmd /k quasar dev
-
-exit/b
 
 
 
@@ -1753,17 +1724,6 @@ Sep-5-2021
 
 
 
-::_
-:i-quas
-
-echo. & echo * Install the global CLI.
-
-npm i -g @quasar/cli
-
-exit/b
-
-
-
 :_+ Uninstalling
 
 
@@ -1875,10 +1835,9 @@ Sep-2-2021
 :im
 
 echo. & echo * Install miscellaneous.
+rem qq
 
 @echo on
-rem qq
-npm init quasar
 exit/b
 npm install -D tailwindcss autoprefixer postcss
 npm install -D tailwindcss autoprefixer
@@ -1899,6 +1858,51 @@ npm install install leaflet --save-dev
 npm install vite @vitejs/plugin-vue --save-dev
 npm install vee-validate@"<3.0.0" --save
 npm install --save-dev vue-loader@next @vue/compiler-sfc
+
+
+
+:_+ Quasar (!fycquas)
+
+
+
+::_                   
+:init-quas
+
+echo. & echo * Create Quasar app.
+
+npm init quasar
+
+exit/b
+
+rem:
+Apparently this is outdated.
+quasar create quasar-note-app --branch next
+
+
+
+::_
+:qd
+
+echo. & echo * Quasar dev.
+
+call fn package.json || exit/b
+
+echo.
+start "quasar dev" cmd /k quasar dev
+
+exit/b
+
+
+
+::_
+:i-quas
+:up-quas
+
+echo. & echo * Install the global CLI. This is the same command for updating.
+
+npm i -g @quasar/cli
+
+exit/b
 
 
 
