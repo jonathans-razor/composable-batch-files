@@ -2937,7 +2937,6 @@ Best code generator.
 
 ::_
 :chat
-:gp
 :gpt
 
 echo. & echo * ChatGPT.
