@@ -200,7 +200,7 @@ if not "%cbf-wo%" == "" (
 if not "%cbf-ex%" == "" (
   if exist "%cbf-ex%" (
     rem echo * Double click Excel file "%cbf-ex%".
-    %cbf-ex%
+    "%cbf-ex%"
     exit/b
   ) else (
     echo.
