@@ -2381,6 +2381,23 @@ exit/b
 
 
 :_
+:Apr-4-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 181-employees-earning-more-than-their-managers.js 1 Joe 70000 3 2 Henry 80000 4 3 Sam 60000 Null 4 Max 90000 Null 5 Billy 70000 3 
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2404,15 +2421,16 @@ exit/b
 
 
 :_
-:Apr-4-2024
+:Apr-11-2024
 
 cls
 
 echo. & echo * %1.
 
-@echo on
 
-node 181-employees-earning-more-than-their-managers.js 1 Joe 70000 3 2 Henry 80000 4 3 Sam 60000 Null 4 Max 90000 Null 5 Billy 70000 3 
+set path=%path%;c:\Program Files\Git\usr\bin
+@echo on
+193-valid-phone-numbers.bat
 
 @echo off
 

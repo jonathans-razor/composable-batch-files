@@ -434,6 +434,31 @@ Mar-22-2024
 
 :_
 
+echo. & echo * Exit and pause.
+
+
+
+exit/p
+
+Mar-22-2024
+
+
+
+:_
+:endless-loop
+
+echo. & echo * Endless loop.
+
+goto endless-loop
+
+exit/b
+
+Apr-11-2024
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -450,13 +475,15 @@ exit/b
 
 :_
 
-echo. & echo * Exit and pause.
+echo. & echo * Grep.
 
+rem qq
+set path=%path%;c:\Program Files\Git\usr\bin
+grep
 
+exit/b
 
-exit/p
-
-Mar-22-2024
+Apr-11-2024
 
 
 
