@@ -403,7 +403,6 @@ echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Mar-21-2024-4-01
 call n cq
 echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Mar-21-2024-4-02
 
-rem qq
 rem if errorlevel 1 echo * Mar-21-2024-2-42-PM && exit/b
 rem if errorlevel 1 echo. & echo * Mar-21-2024-2-42-PM && exit/b
 
@@ -477,7 +476,6 @@ exit/b
 
 echo. & echo * Grep.
 
-rem qq
 set path=%path%;c:\Program Files\Git\usr\bin
 grep
 

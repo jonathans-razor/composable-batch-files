@@ -147,6 +147,7 @@ call :copy-time-to-clipboard>nul
 call n dtt>nul
 set cbf-date-and-time=%cbf-date%-%cbf-time%
 echo %cbf-date-and-time%>%cbf-fn%
+rem qq
 clip < "%cbf-fn%"
 echo. & echo * Copy current date and time to clipboard. (%cbf-date-and-time%)
 exit/b
