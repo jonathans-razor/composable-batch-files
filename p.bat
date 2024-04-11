@@ -74,7 +74,7 @@ call g dirt || exit/b
 
 :
 call sep aa-diamond-bridge
-call t fg || exit/b
+call t d || exit/b
 call g dirt || exit/b
 
 :
@@ -83,6 +83,11 @@ call rf>nul
 echo.
 echo.
 exit/b
+
+:
+call sep aa-diamond-bridge
+call t fg || exit/b
+call g dirt || exit/b
 
 :Necessary Edge Case Spacer - Please do not delete.
 
