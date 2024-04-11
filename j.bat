@@ -199,10 +199,8 @@ if not "%cbf-wo%" == "" (
 :
 if not "%cbf-ex%" == "" (
   if exist "%cbf-ex%" (
-    rem echo.
     rem echo * Double click Excel file "%cbf-ex%".
-    set cbf-fn=%cbf-ex%
-    "%cbf-fn%"
+    %cbf-fn%
     exit/b
   ) else (
     echo.
