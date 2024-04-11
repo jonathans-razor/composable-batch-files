@@ -184,9 +184,7 @@ if not "%cbf-app%" == "" (
 :
 if not "%cbf-wo%" == "" (
   if exist "%cbf-wo%" (
-    set cbf-fn=%cbf-wo%
-    call m double_click
-    call r
+    "%cbf-wo%"
     exit/b
   ) else (
     echo.
@@ -199,12 +197,10 @@ if not "%cbf-wo%" == "" (
 :
 if not "%cbf-ex%" == "" (
   if exist "%cbf-ex%" (
-    rem echo * Double click Excel file "%cbf-ex%".
     "%cbf-ex%"
     exit/b
   ) else (
-    echo.
-    echo * Could not find the file "%cbf-ex%" so create it.
+    echo. & echo * Could not find the file "%cbf-ex%" so create it.
     goto create-new-excel-file
     exit/b
   )
@@ -213,11 +209,7 @@ if not "%cbf-ex%" == "" (
 :
 if not "%cbf-pptx%" == "" (
   if exist "%cbf-pptx%" (
-    rem echo.
-    rem echo * Double click Powerpoint file "%cbf-pptx%".
-    set cbf-fn=%cbf-pptx%
-    call m double_click
-    call r
+    "%cbf-pptx%"
     exit/b
   )
 )
@@ -225,8 +217,6 @@ if not "%cbf-pptx%" == "" (
 :
 if not "%cbf-fn%" == "" (
   if exist "%cbf-fn%" (
-    rem echo.
-    rem echo * File exists cbf-fn: %cbf-fn%. Dec-12-2023_5_02_PM
     "%cbf-fn%"
     exit/b
   ) else (
