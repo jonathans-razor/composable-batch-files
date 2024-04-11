@@ -7282,8 +7282,8 @@ call n v>nul
 set cbf-pt=%cbf-pt%\fova
 set cbf-lh=
 set cbf-srv=dev
-rem qq
-set cbf-yt=
+set cbf-yt=https://www.youtube.com/watch?v=2BR6Vvjw3wQ&t=102s
+set cbf-yt2=https://www.youtube.com/watch?v=7alh1KowAEI&t=8s
 
 exit/b
 
