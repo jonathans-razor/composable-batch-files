@@ -1256,8 +1256,11 @@ echo * Expectation: the version numbers should have changed.
 exit/b
 
 lu:
-Jan-2-2024
-Sep-12-2018
+
+Date         Version
+-----------  -------
+Apr-11-2024  10.5.2
+Apr-11-2024  10.5.1
 
 
 
@@ -1831,36 +1834,6 @@ Sep-2-2021
 
 
 
-:_
-:im
-
-echo. & echo * Install miscellaneous.
-rem qq
-
-@echo on
-exit/b
-npm install -D tailwindcss autoprefixer postcss
-npm install -D tailwindcss autoprefixer
-npm create vite@latest setp -- --template vue-ts
-npm install radix-vue
-npm install -D @iconify/vue @iconify-json/radix-icons
-npm install @vueuse/core
-npm install -D tailwindcss autoprefixer postcss
-npm install -D tailwindcss autoprefixer
-npm create vite@latest sha3
-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
-npm create vue@latest
-npm install -D tailwindcss postcss autoprefixer
-npm i -D @types/node
-npm install --save-dev vue-loader@next @vue/compiler-sfc
-npm install --global @githubnext/github-copilot-cli
-npm install install leaflet --save-dev
-npm install vite @vitejs/plugin-vue --save-dev
-npm install vee-validate@"<3.0.0" --save
-npm install --save-dev vue-loader@next @vue/compiler-sfc
-
-
-
 :_+ Quasar (!fycquas)
 
 
@@ -1868,7 +1841,7 @@ npm install --save-dev vue-loader@next @vue/compiler-sfc
 ::_                   
 :init-quas
 
-echo. & echo * Create Quasar app.
+echo. & echo * Create a Quasar app.
 
 npm init quasar
 
@@ -1903,6 +1876,36 @@ echo. & echo * Install the global CLI. This is the same command for updating.
 npm i -g @quasar/cli
 
 exit/b
+
+
+
+:_
+:im
+
+echo. & echo * Install miscellaneous.
+rem qq
+npm install @vuelidate/core @vuelidate/validators
+@echo on
+exit/b
+npm install -D tailwindcss autoprefixer postcss
+npm install -D tailwindcss autoprefixer
+npm create vite@latest setp -- --template vue-ts
+npm install radix-vue
+npm install -D @iconify/vue @iconify-json/radix-icons
+npm install @vueuse/core
+npm install -D tailwindcss autoprefixer postcss
+npm install -D tailwindcss autoprefixer
+npm create vite@latest sha3
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npm create vue@latest
+npm install -D tailwindcss postcss autoprefixer
+npm i -D @types/node
+npm install --save-dev vue-loader@next @vue/compiler-sfc
+npm install --global @githubnext/github-copilot-cli
+npm install install leaflet --save-dev
+npm install vite @vitejs/plugin-vue --save-dev
+npm install vee-validate@"<3.0.0" --save
+npm install --save-dev vue-loader@next @vue/compiler-sfc
 
 
 

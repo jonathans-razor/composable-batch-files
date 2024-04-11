@@ -7273,4 +7273,21 @@ v2.15.2
 
 
 
+::_
+:fova
+
+echo. & echo * Form validation.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\fova
+set cbf-lh=
+set cbf-srv=dev
+
+exit/b
+
+Quasar version:
+v2.15.2
+
+
+
 :_ (!ef, !efn)
