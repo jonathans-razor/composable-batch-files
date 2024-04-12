@@ -7298,7 +7298,6 @@ v2.15.2
 
 echo. & echo * Tanstack Query.
 
-rem  qq
 call n r>nul
 set cbf-docs=https://tanstack.com/query/latest/docs/framework/vue/overview
 set cbf-pt=%cbf-pt%\vue-query-paging-infinite-ionic
