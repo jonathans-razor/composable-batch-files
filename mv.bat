@@ -5,7 +5,7 @@
 if "%~1" == "" goto pc2cj
 if "%~1" == "?" goto help
 
-call paco "%~1" . && goto cp2
+call paco "%~1" . && goto m2nsp
 
 goto %1
 
@@ -107,9 +107,7 @@ exit/b
 echo. & echo * Move podcasts from my PC computer's hard drive to ClipJam.
 
 rem Make sure mp3 is plugged in and detected.
-call t clja
-
-if errorlevel 1 exit/b
+call t clja || err Apr-12-2024-12-33-PM
 
 rem Delete old files from the the Audiobook folder.
 call de old-mp3-files
@@ -117,12 +115,7 @@ call de old-mp3-files
 call :pc-2-sa
 
 rem Run the tag program.
-call j tag
-
-if errorlevel 1 (
-  call err Error at Jun-29-2023_1_04_PM.
-  exit/b
-)
+call j tag || err Apr-12-2024-12-34-PM
 
 echo.
 pause
@@ -132,15 +125,31 @@ if "%~2" == "n" (
   echo * Do NOT move old content to the audiobooks folder.
 ) else (
   rem Old content is transferred by default.
-  call :cj_2_old_cj
+  call :cj-2-old-cj
 )
 
-call :sa_2_cj
+call :sa-2-cj
 
 exit/b
 
 lu:
 Nov-1-2022
+
+
+
+::_
+:2h
+:second-half
+
+echo. & echo * Perform second half of move podcasts from my PC computer's hard drive to ClipJam.
+
+call :cj-2-old-cj
+call :sa-2-cj
+
+exit/b
+
+lu:
+Apr-12-2024
 
 
 
@@ -174,7 +183,7 @@ Aug-20-2022
 
 
 ::_
-:cj_2_old_cj
+:cj-2-old-cj
 
 rem echo. & echo * Move old ClipJam files from the Podcasts to Audiobooks folder.
 
@@ -200,7 +209,7 @@ Aug-20-2022
 
 
 ::_
-:sa_2_cj
+:sa-2-cj
 
 rem echo. & echo * Move staging area podcasts to the Clipjam folder.
 
@@ -302,7 +311,7 @@ exit/b
 
 
 :_
-:cp2
+:m2nsp
 
 echo. & echo * Move file in the current directory to nickname-specified path.
 
