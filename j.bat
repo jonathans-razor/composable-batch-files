@@ -284,10 +284,16 @@ if not "%cbf-pdf%" == "" (
   exit/b
 )
 
+:
+if not "%cbf-pt%" == "" (
+  explorer "%cbf-pt%"
+  exit/b
+)
+
 :edge-case
 
 echo.
-echo * Error: Could not find an executable CBF parameter.
+echo * Error: Could not find an executable CBF parameter. Apr-12-2024-1-55-PM
 exit/b
 
 

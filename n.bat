@@ -7292,4 +7292,24 @@ v2.15.2
 
 
 
+:_
+:taqu
+:vue-query-paging-infinite-ionic
+
+echo. & echo * Tanstack Query.
+
+rem  qq
+call n r>nul
+set cbf-docs=https://tanstack.com/query/latest/docs/framework/vue/overview
+set cbf-pt=%cbf-pt%\vue-query-paging-infinite-ionic
+set cbf-srv=dev
+set cbf-lh=3000
+set cbf-gi=https://github.com/aaronksaunders/vue-query-paging-infinite-ionic
+
+set cbf-yt=https://www.youtube.com/watch?v=0Njxq9UcL9s
+
+exit/b
+
+
+
 :_ (!ef, !efn)
