@@ -7338,4 +7338,36 @@ exit/b
 
 
 
+:_
+:colo
+:mcd
+
+echo. & echo * My color dictionary.
+
+rem  qq
+call n exs>nul
+set cbf-pt=%cbf-pt%\
+set cbf-gs=https://docs.google.com/spreadsheets/d/1oSxkClSCrWu1HviF4T5wjaEac5K0nv4A5xJbqrYKnDA/edit#gid=433079327
+
+exit/b
+
+
+
+:_
+
+:pain
+
+set fp=* Paint.Net.
+
+rem lu: May-20-2019
+
+echo.
+echo %fp%
+
+set cbf-app=c:\program files\paint.net\paintdotnet.exe
+
+exit/b
+
+
+
 :_ (!ef, !efn)
