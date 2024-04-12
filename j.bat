@@ -286,7 +286,7 @@ if not "%cbf-pdf%" == "" (
 
 :
 if not "%cbf-pt%" == "" (
-  explorer "%cbf-pt%"
+  explorer %cbf-pt% 
   exit/b
 )
 

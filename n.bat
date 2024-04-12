@@ -7312,4 +7312,31 @@ exit/b
 
 
 
+:_+ Program Files
+
+
+
+::_
+:pf
+
+echo. & echo * Program files.
+
+set cbf-pt=c:\program files
+
+exit/b
+
+
+
+::_
+:86
+:pf86
+
+echo. & echo * Program files x86.
+
+set cbf-pt=c:\program files (x86)
+
+exit/b
+
+
+
 :_ (!ef, !efn)
