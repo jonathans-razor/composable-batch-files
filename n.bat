@@ -7376,7 +7376,6 @@ exit/b
 
 echo. & echo * Open layers mapping tool.
 
-rem  qq
 call n v>nul
 set cbf-pt=%cbf-pt%\open-layers-app
 
@@ -7385,6 +7384,25 @@ set cbf-lh=5173
 set cbf-yt=https://www.youtube.com/watch?v=DqzJ6pwSwWk
 rem Open Layers Quick Start
 set cbf-url=https://openlayers.org/doc/quickstart.html
+
+exit/b
+
+
+
+:_
+:ola
+:open-layers-app-arc
+
+echo. & echo * ArcGIS REST Feature Service.
+
+rem  qq
+call n v>nul
+set cbf-pt=%cbf-pt%\open-layers-app-arc
+
+set cbf-srv=str
+set cbf-lh=5173
+rem Open Layers Quick Start
+set cbf-url=https://openlayers.org/en/latest/examples/bing-maps.html
 
 exit/b
 

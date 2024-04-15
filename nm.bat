@@ -1884,7 +1884,6 @@ exit/b
 :im
 
 echo. & echo * Install miscellaneous.
-rem qq
 npm create ol-app open-layers-app
 @echo on
 exit/b
