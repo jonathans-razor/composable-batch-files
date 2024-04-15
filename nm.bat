@@ -713,6 +713,7 @@ exit/b
 
 ::_
 :star
+:str
 :start
 
 echo. & echo * Run React UI. Start the development server.
@@ -1884,9 +1885,10 @@ exit/b
 
 echo. & echo * Install miscellaneous.
 rem qq
-npm install @vuelidate/core @vuelidate/validators
+npm create ol-app open-layers-app
 @echo on
 exit/b
+npm install @vuelidate/core @vuelidate/validators
 npm install -D tailwindcss autoprefixer postcss
 npm install -D tailwindcss autoprefixer
 npm create vite@latest setp -- --template vue-ts

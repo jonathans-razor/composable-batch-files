@@ -7369,4 +7369,25 @@ exit/b
 
 
 
+:_
+:ol
+:opla
+:open-layers-app
+
+echo. & echo * Open layers mapping tool.
+
+rem  qq
+call n v>nul
+set cbf-pt=%cbf-pt%\open-layers-app
+
+set cbf-srv=str
+set cbf-lh=5173
+set cbf-yt=https://www.youtube.com/watch?v=DqzJ6pwSwWk
+rem Open Layers Quick Start
+set cbf-url=https://openlayers.org/doc/quickstart.html
+
+exit/b
+
+
+
 :_ (!ef, !efn)
