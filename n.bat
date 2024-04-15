@@ -7299,8 +7299,8 @@ v2.15.2
 echo. & echo * Tanstack Query.
 
 call n r>nul
-set cbf-docs=https://tanstack.com/query/latest/docs/framework/vue/overview
 set cbf-pt=%cbf-pt%\vue-query-paging-infinite-ionic
+set cbf-docs=https://tanstack.com/query/latest/docs/framework/vue/overview
 set cbf-srv=dev
 set cbf-lh=3000
 set cbf-gi=https://github.com/aaronksaunders/vue-query-paging-infinite-ionic
@@ -7411,6 +7411,25 @@ set cbf-srv=str
 set cbf-lh=5173
 rem Open Layers Quick Start
 set cbf-url=https://openlayers.org/en/latest/examples/bing-maps.html
+
+exit/b
+
+
+
+:_
+:vat
+:vue-axios-tutorial
+
+echo. & echo * Vue Axios Tutorial.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\vue-axios-tutorial
+
+set cbf-lh=
+set cbf-srv=
+set cbf-
+set cbf-
+set cbf-url=
 
 exit/b
 
