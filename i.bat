@@ -359,6 +359,10 @@ rem Latest Folder
 set cbf-latest-folder-result=
 
 :
+rem Latest Item
+set cbf-latest-item=
+
+:
 rem Local Host
 set cbf-lh=
 
@@ -506,6 +510,10 @@ set cbf-srv=
 :
 rem S. website
 set cbf-st=
+
+:
+rem S. website
+set cbf-stock=
 
 :
 rem TD Child

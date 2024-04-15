@@ -56,11 +56,11 @@ goto main
 :_
 :preprocess
 
-call fn package.json || exit/b
+call fn package.json || err Apr-15-2024-5-18-PM
 
-call m fw %cd% || exit/b
+call m fw %cd% || err Apr-15-2024-5-19-PM
 
-call n %cbf-distilled-file-folder% || exit/b
+call n %cbf-distilled-file-folder% || err Apr-15-2024-5-20-PM
 
 goto main
 

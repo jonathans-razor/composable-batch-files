@@ -2,7 +2,7 @@
 
 @echo off
 
-if "%~1" == "" goto help
+if "%~1" == "" goto fwp-awareness-surf
 if "%~1" == "?" goto help
 
 goto validate-input
@@ -228,7 +228,6 @@ goto main
 
 
 :_
-
 :execute-http
 
 echo. & echo * Execute https.
@@ -244,12 +243,26 @@ exit/b
 
 
 :_
+:fwp-awareness-surf
 
+echo. & echo * FWP awareness surf.
+
+call el /c>nul
+
+call m fw %cd%>nul || err Apr-15-2024-5-21-PM
+
+call sdv %cbf-distilled-file-folder%>nul || err Apr-15-2024-5-22-PM
+
+call :execute-http %cbf-url%>nul
+
+exit/b
+
+
+
+:_
 :main
 
 echo. & echo * Surf the internet.
-
-rem lu: Jan-31-2018
 
 call r
 
@@ -259,6 +272,8 @@ set cbf-specific_browser=
 
 exit/b
 
+lu:
+Apr-15-2024
 
 
 :_
