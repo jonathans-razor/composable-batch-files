@@ -48,7 +48,7 @@ rem lu: Mar-31-2022
 
 :main
 
-call n %1>nul
+call sdv %1>nul
 
 if errorlevel 1 exit/b
 
