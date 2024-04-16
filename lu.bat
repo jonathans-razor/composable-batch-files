@@ -19,11 +19,11 @@ echo. & echo * Display last updated information.
 
 echo. & echo   Parameter 1
 echo   If blank, read last-updated.txt.
-echo   else, write last-updated.txt with the current date and time.
+echo   Else, write last-updated.txt with the current date and time.
 
 echo. & echo   Batch file style: Single purpose
 
-echo. & echo * Samples:
+echo. & echo   Samples:
 echo   %~n0 
 echo   %~n0 w
 
