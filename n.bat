@@ -7427,8 +7427,8 @@ set cbf-pt=%cbf-pt%\vue-axios-tutorial
 
 set cbf-lh=
 set cbf-srv=
-set cbf-
-set cbf-
+set cbf-=
+set cbf-yt=https://www.youtube.com/watch?v=MHgWNd0iKso
 set cbf-url=
 
 exit/b
