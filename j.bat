@@ -87,9 +87,10 @@ echo. & echo * FWPA.
 call i /c>nul
 call el /c>nul
 
-call m fw %cd%>nul || err Apr-15-2024-5-21-PM
-
 rem qq
+@echo on
+call m fw %cd% || err Apr-15-2024-5-21-PM
+
 call sdv %cbf-distilled-file-folder% || err Apr-15-2024-5-22-PM
 
 goto main
