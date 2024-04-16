@@ -4702,6 +4702,7 @@ Feb-8-2019
 
 rem echo. & echo * Distill to filename or current folder without path.
 
+rem qq
 set cbf-distilled-file-folder=%~nx2
 
 echo %cbf-distilled-file-folder%>%tmp%\fwp.txt
