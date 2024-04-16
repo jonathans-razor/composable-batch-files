@@ -2,7 +2,7 @@
 
 @echo off
 
-if "%~1" == "" goto fwp-awareness-surf
+if "%~1" == "" goto fwpa
 if "%~1" == "?" goto help
 
 goto validate-input
@@ -70,11 +70,11 @@ call paco "%~2" .>nul && err Aliases cannot contain a period.
 call sdv %1 || exit/b
 
 if "%cbf-app%" == "" (
-  call :use_default_browser
+  call :use-default-browser
 )
 
 if "%~2" == "" (
-  rem call :use_default_browser
+  rem call :use-default-browser
   call :set-precedence
   exit/b
 )
@@ -94,7 +94,7 @@ exit/b
 
 
 :_
-:use_default_browser
+:use-default-browser
 
 rem echo. & echo * Use default browser.
 
@@ -117,7 +117,25 @@ exit/b
 
 
 :_
+:fwpa
 
+echo. & echo * FWPA.
+
+call i /c>nul
+call el /c>nul
+
+call m fw %cd%>nul || err Apr-15-2024-5-21-PM
+
+call sdv %cbf-distilled-file-folder%>nul || err Apr-15-2024-5-22-PM
+
+call :use-default-browser
+
+rem qq
+goto set-precedence
+
+
+
+:_
 :set-precedence
 
 rem echo. & echo * Set precedence.
@@ -237,23 +255,6 @@ set cbf-parameter=%1
 set cbf-app=%cbf-default-browser%
 
 call r
-
-exit/b
-
-
-
-:_
-:fwp-awareness-surf
-
-echo. & echo * FWP awareness surf.
-
-call el /c>nul
-
-call m fw %cd%>nul || err Apr-15-2024-5-21-PM
-
-call sdv %cbf-distilled-file-folder%>nul || err Apr-15-2024-5-22-PM
-
-call :execute-http %cbf-url%>nul
 
 exit/b
 

@@ -50,9 +50,9 @@ code execution area  Batch file style (bfs) where the router routes execution to
                  fn  Filename in the general sense. For example, j1.txt is a filename as 
                      is poker.xlsx.
                  fp  Function purpose.
-      fwp awareness  Using the function "m fw", the batch file is able to know where it is 
-                     located if the exact folder without path name is ALSO the same as n.bat 
-                     alias. Implemented on Mar-5-2024.
+               fwpa  Folder without path awareness. Using the function "m fw", the batch file 
+                     is able to know where it is located if the exact folder without path name 
+                     is ALSO the same as n.bat alias. Implemented on Mar-5-2024.
           hat trick  Triple hat characters ^^^ placed before an ampersand to make CBF URLs
                      work.
        multipurpose  Batch file style (bfs) where the batch file contains any number of

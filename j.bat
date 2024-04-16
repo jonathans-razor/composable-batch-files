@@ -1,8 +1,8 @@
 :_
 @echo off
 
+if "%~1" == "" goto fwpa
 if "%~1" == "?" goto help
-if "%~1" == "" goto help
 
 goto validate-input
 
@@ -75,6 +75,23 @@ call sdv %1 || exit/b
 rem This is the old way before Mar-21-2024.
 rem if not "%~2" == "" goto compose-dcv
 
+goto main
+
+
+
+:_
+:fwpa
+
+echo. & echo * FWPA.
+
+call i /c>nul
+call el /c>nul
+
+call m fw %cd%>nul || err Apr-15-2024-5-21-PM
+
+call sdv %cbf-distilled-file-folder%>nul || err Apr-15-2024-5-22-PM
+
+rem qq
 goto main
 
 
