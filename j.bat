@@ -250,13 +250,13 @@ if not "%cbf-png%" == "" (
   )
 )
 
-:
-if not "%cbf-pt%" == "" (
-  if exist "%cbf-pt%" (
-    echo. & echo * Go to path. Aug-15-2021_8_41_PM
-    call t %1
-  )
-)
+:I commented this out because I am not sure this is desired behavior.
+rem if not "%cbf-pt%" == "" (
+  rem if exist "%cbf-pt%" (
+    rem echo. & echo * Go to path. Aug-15-2021_8_41_PM
+    rem call t %1
+rem  )
+rem )
 
 :
 if not "%cbf-gi%" == "" (
@@ -299,7 +299,7 @@ if not "%cbf-pdf%" == "" (
   call pdf %1>nul
   exit/b
 )
-
+ 
 :
 if not "%cbf-pt%" == "" (
   explorer %cbf-pt% 
