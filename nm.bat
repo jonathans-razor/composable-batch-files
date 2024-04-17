@@ -672,6 +672,23 @@ Jan-15-2024
 
 
 ::_
+:deli
+:devl
+
+echo. & echo * Start the development server in perfomant lite mode.
+
+call fn package.json || exit/b
+
+start "npm run dev:lite" cmd /k npm run dev:lite
+
+exit/b
+
+lu:
+Apr-17-2024
+
+
+
+::_
 :dev
 :rd
 :rdev
