@@ -1,12 +1,13 @@
 :_
-
 @echo off
+
 if "%~1" == "?" goto help
 
 if "%~1" == "/ghh" goto github-https
 if "%~1" == "/ghv" goto github-https-stored-value
 if "%~1" == "/ghs" goto github-ssh
 if "%~1" == "/test" goto %2
+
 goto github-https-stored-value
 
 
@@ -109,11 +110,13 @@ if "%~2" == "" (
 ) else (
   call n %2
 )
+rem qq
 
 if "%cbf-gi%" == "" (
-  call err "cbf-gi" is not defined for alias "%2". Mar-06-2023-14-26
+  call err "cbf-gi" is not defined for alias "%1". Mar-06-2023-14-26
   exit/b
 )
+
 echo.
 @echo on
 git clone %cbf-gi%

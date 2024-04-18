@@ -4574,7 +4574,7 @@ Feb-2-2024
 
 set cbf-pd=vue-3-and-composition-api-tutorial
 
-echo. & echo * %cbf-pd%. Build  an expense tracker followed tutorial by Traversy Media.
+echo. & echo * %cbf-pd%. Build an expense tracker followed tutorial by Traversy Media.
 
 call n v>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
@@ -5045,20 +5045,6 @@ Oct-25-2023
 
 
 :_
-:tify
-
-echo. & echo * Vuetify.
-
-set cbf-docs=https://vuetifyjs.com/en/introduction/why-vuetify/#what-is-vuetify3f
-
-exit/b
-
-lu:
-Feb-13-2024
-
-
-
-:_
 :wire
 
 echo. & echo * Vue wireframe browser test.
@@ -5393,20 +5379,6 @@ exit/b
 
 lu:
 Feb-23-2024
-
-
-
-:_
-:vy
-
-echo. & echo * Vuetify.
-
-call n >nul
-set cbf-pt=%cbf-pt%\
-set cbf-url=https://vuetifyjs.com/en/
-set cbf-docs=https://vuetifyjs.com/en/
-
-exit/b
 
 
 
@@ -7430,6 +7402,48 @@ set cbf-srv=
 set cbf-=
 set cbf-yt=https://www.youtube.com/watch?v=MHgWNd0iKso
 set cbf-url=
+
+exit/b
+
+
+
+:_
+:t3g
+
+echo. & echo * Theo Browne.
+
+call n r>nul
+set cbf-pt=%cbf-pt%\t3gallery
+
+set cbf-lh=
+set cbf-srv=
+set cbf-gi=https://github.com/t3dotgg/t3gallery.git
+set cbf-yt=https://www.youtube.com/watch?v=d5x0JCZbAJs
+
+exit/b
+
+
+
+:_
+:vy
+
+echo. & echo * Vuetify.
+
+call n >nul
+set cbf-pt=%cbf-pt%\
+set cbf-url=https://vuetifyjs.com/en/
+set cbf-docs=https://vuetifyjs.com/en/
+
+exit/b
+
+
+
+:_
+:v2
+
+echo. & echo * Vue 2.
+
+set cbf-docs=https://v2.vuejs.org/v2/guide
 
 exit/b
 

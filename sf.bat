@@ -2,6 +2,8 @@
 
 @echo off
 
+call i /c>nul
+
 if "%~1" == "" goto fwpa
 if "%~1" == "?" goto help
 
@@ -59,11 +61,12 @@ exit/b
 
 :validate-input
 
-call i /c>nul
-
 rem echo. & echo * Validate input.
 
-call paco "%~1" https>nul && goto execute-http
+rem qq
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-gs: %cbf-gs% - Apr-18-2024-2-1
+call paco "%~1" https && goto execute-http
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-gs: %cbf-gs% - Apr-18-2024-2-2
 call paco "%~1" .>nul && err Aliases cannot contain a period.
 call paco "%~2" .>nul && err Aliases cannot contain a period.
 
@@ -130,7 +133,6 @@ call sdv %cbf-distilled-file-folder%>nul || err Apr-15-2024-5-22-PM
 
 call :use-default-browser
 
-rem qq
 goto set-precedence
 
 
