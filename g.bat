@@ -940,6 +940,7 @@ call fn .git || exit/b
 
 call %0 add-all-files || exit/b
 
+rem qq
 call %0 commit-all-with-python-timestamp-message
 
 rem  || exit/b
@@ -4286,6 +4287,8 @@ call ph dtt>%tmp%\python-timestamp.txt
 set /p commit-description=<%tmp%\python-timestamp.txt
 
 echo.
+rem qq
+@echo on
 call git commit -a -m %commit-description%
 
 exit/b

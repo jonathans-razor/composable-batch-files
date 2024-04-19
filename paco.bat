@@ -54,7 +54,7 @@ rem echo P1: %1
 rem echo P2: %2
 
 if errorlevel 1 (
-  rem We don't want to see an error message for a missing periond because that is not necessarily an error. Oct-20-2023
+  rem echo. & echo We don't want to see an error message for a missing periond because that is not necessarily an error. Oct-20-2023
   if "%2" == "." exit/b 1
   call err Expected "%2" in parameter 1.
   exit/b 1

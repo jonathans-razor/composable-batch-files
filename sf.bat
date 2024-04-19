@@ -61,12 +61,10 @@ exit/b
 
 :validate-input
 
-rem echo. & echo * Validate input.
+echo. & echo * Validate input (p1: %~1).
 
-rem qq
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-gs: %cbf-gs% - Apr-18-2024-2-1
 call paco "%~1" https && goto execute-http
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-gs: %cbf-gs% - Apr-18-2024-2-2
+
 call paco "%~1" .>nul && err Aliases cannot contain a period.
 call paco "%~2" .>nul && err Aliases cannot contain a period.
 
