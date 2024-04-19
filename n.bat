@@ -7461,13 +7461,14 @@ set cbf-pt=%cbf-pt%\http-axios
 
 set cbf-lh=8080
 set cbf-srv=srv
-set cbf-yt=https://www.youtube.com/watch?v=MHgWNd0iKso
 
 rem Environment Setup
 set cbf-url2=https://youtu.be/nkrIBM7piq Q
 
 rem Written Code Examples
 set cbf-url=https://www.koderhq.com/tutorial/vue/http-axios/#post
+
+set cbf-yt=https://www.youtube.com/watch?v=MHgWNd0iKso
 
 exit/b
 
