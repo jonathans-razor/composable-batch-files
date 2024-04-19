@@ -256,7 +256,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      xac  Execute an application alias with a filename in the current folder.
      xaf  Execute an application alias with a filename alias.
      xml  Edit an XML DCV file in VSC.
-       y  Using advanced routing, open text files for viewing or editing.
+      ya  Yarn.
      yml  Edit DCV file in NotePad++ for file type yml.
       yt  Execute the YouTube DCV for the passed in alias.
      zip  Zip.

@@ -7450,6 +7450,49 @@ exit/b
 
 
 :_
+:tabu
+
+echo. & echo * Tabulator.
+
+rem  qq
+call n >nul
+set cbf-pt=%cbf-pt%\
+
+set cbf-lh=
+set cbf-srv=
+set cbf-docs=https://tabulator.info/docs/6.2/vue
+set cbf-=
+set cbf-url=
+
+exit/b
+
+
+
+:_+ KoderHQ Family (!fychq)
+
+
+
+::_
+:hq
+:khq
+
+echo. & echo * KoderHQ.
+
+rem  qq
+call n >nul
+set cbf-pt=%cbf-pt%\
+
+set cbf-lh=
+set cbf-srv=
+set cbf-=
+set cbf-yt=https://youtu.be/JvrPzwzCdyI
+set cbf-url=https://www.koderhq.com/tutorial/vue
+
+exit/b
+
+
+
+::_
 :http-axios
 :vat
 :vue-axios-tutorial

@@ -3,9 +3,9 @@
 
 if "%~1" == "?" goto help
 
-if "%~1" == "/ghh" goto github-https
-if "%~1" == "/ghv" goto github-https-stored-value
-if "%~1" == "/ghs" goto github-ssh
+if "%~1" == "/h" goto github-https
+if "%~1" == "/v" goto github-https-stored-value
+if "%~1" == "/s" goto github-ssh
 if "%~1" == "/test" goto %2
 
 goto github-https-stored-value
@@ -21,9 +21,9 @@ echo. & echo   Usage: %0 [space separated parameter(s)]
 echo. & echo   If parameter 2 is left blank, GitHub https stored value is used.
 
 echo. & echo   Examples:
-echo   GitHub https stored value, e.g: %0 /ghv fgt
-echo   GitHub https, e.g: %0 /ghh https://github.com/jonathans-razor/For-Git-Testing.git
-echo   GitHub ssh, e.g: %0 /ghs git@github.com:jonathans-razor/For-Git-Testing.git
+echo   GitHub https stored value, e.g: %0 /v fgt
+echo   GitHub https, e.g: %0 /h https://github.com/jonathans-razor/For-Git-Testing.git
+echo   GitHub ssh, e.g: %0 /s git@github.com:jonathans-razor/For-Git-Testing.git
 
 echo.
 echo   Testing Purposes clone, e.g: %0 /test Sep-9-2023_7_28_PM
@@ -58,29 +58,6 @@ rem creation date:
    .--.      .--.      .--.      .--.      .--.                 
  :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
         `--'      `--'      `--'      `--'      `--'     
-
-
-
-:_
-:github-https
-
-echo. & echo * GitHub https.
-
-echo %2 | find /i "https">nul
-
-if errorlevel 1 (
-  call err "https" was not found in the second parameter. Mar-01-2023-23-24
-  exit/b
-)
-
-echo.
-
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Feb-20-2024-5-16-PM
-@echo on
-git clone %2 -b master
-@echo off
-
-exit/b
 
 
 
@@ -121,6 +98,28 @@ echo.
 @echo on
 git clone %cbf-gi%
 @echo off
+exit/b
+
+
+
+:_
+:github-https
+
+echo. & echo * GitHub https.
+
+echo %2 | find /i "https">nul
+
+if errorlevel 1 (
+  call err "https" was not found in the second parameter. Mar-01-2023-23-24
+  exit/b
+)
+
+echo.
+
+@echo on
+git clone %2
+@echo off
+
 exit/b
 
 

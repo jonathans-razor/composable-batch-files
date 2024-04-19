@@ -1901,9 +1901,10 @@ exit/b
 :im
 
 echo. & echo * Install miscellaneous.
-@echo on
-npm install axios
+rem qq
+npm install --global yarn
 exit/b
+npm install axios
 npm create vue@latest
 npm create ol-app open-layers-app
 npm install @vuelidate/core @vuelidate/validators
