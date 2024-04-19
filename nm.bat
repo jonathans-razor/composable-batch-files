@@ -1901,9 +1901,11 @@ exit/b
 :im
 
 echo. & echo * Install miscellaneous.
-npm create ol-app open-layers-app
 @echo on
+npm install axios
 exit/b
+npm create vue@latest
+npm create ol-app open-layers-app
 npm install @vuelidate/core @vuelidate/validators
 npm install -D tailwindcss autoprefixer postcss
 npm install -D tailwindcss autoprefixer
@@ -1915,7 +1917,6 @@ npm install -D tailwindcss autoprefixer postcss
 npm install -D tailwindcss autoprefixer
 npm create vite@latest sha3
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
-npm create vue@latest
 npm install -D tailwindcss postcss autoprefixer
 npm i -D @types/node
 npm install --save-dev vue-loader@next @vue/compiler-sfc

@@ -61,9 +61,9 @@ exit/b
 
 :validate-input
 
-echo. & echo * Validate input (p1: %~1).
+rem echo. & echo * Validate input (p1: %~1).
 
-call paco "%~1" https && goto execute-http
+call paco "%~1">nul https && goto execute-http
 
 call paco "%~1" .>nul && err Aliases cannot contain a period.
 call paco "%~2" .>nul && err Aliases cannot contain a period.
@@ -142,6 +142,7 @@ rem echo. & echo * Set precedence.
 
 set cbf-parameter=%cbf-url%
 
+:
 if "%cbf-parameter%" == "" (
   if not "%cbf-cf%" == "" (
     echo. & echo * Confluence.
@@ -205,17 +206,11 @@ if "%cbf-parameter%" == "" (
   )
 )
 
+:
 if "%cbf-parameter%" == "" (
   if not "%cbf-lh%" == "" (
     echo. & echo * Cbf-lh.
     set cbf-parameter=%cbf-lh%
-  )
-)
-
-if "%cbf-parameter%" == "" (
-  if not "%cbf-purl%" == "" (
-    echo. & echo * Cbf-purl.
-    set cbf-parameter=%cbf-purl%
   )
 )
 
@@ -232,6 +227,14 @@ if "%cbf-parameter%" == "" (
   if not "%cbf-docs%" == "" (
     echo. & echo * Docs website.
     set cbf-parameter=%cbf-docs%
+  )
+)
+
+:
+if "%cbf-parameter%" == "" (
+  if not "%cbf-purl%" == "" (
+    echo. & echo * Cbf-purl.
+    set cbf-parameter=%cbf-purl%
   )
 )
 

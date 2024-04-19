@@ -7389,25 +7389,6 @@ exit/b
 
 
 :_
-:vat
-:vue-axios-tutorial
-
-echo. & echo * Vue Axios Tutorial.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\vue-axios-tutorial
-
-set cbf-lh=
-set cbf-srv=
-set cbf-=
-set cbf-yt=https://www.youtube.com/watch?v=MHgWNd0iKso
-set cbf-url=
-
-exit/b
-
-
-
-:_
 :t3g
 
 echo. & echo * Theo Browne.
@@ -7450,21 +7431,45 @@ exit/b
 
 
 :_
+:vuex-playlist
 :vxpl
 
 echo. & echo * Vuex Playlist.
 
-rem  qq
 call n >nul
-set cbf-pt=%cbf-pt%\
+set cbf-pt=%cbf-pt%\vuex-playlist
 
 set cbf-lh=
-set cbf-srv=
+set cbf-srv=dev
 set cbf-gi=https://github.com/iamshaunjp/vuex-playlist
 set cbf-yt=https://www.youtube.com/watch?v=arhCOcxIUo4
 set cbf-url=
 
 exit/b
+
+
+
+:_
+:http-axios
+:vat
+:vue-axios-tutorial
+
+echo. & echo * Vue Axios Tutorial.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\http-axios
+
+set cbf-lh=8080
+set cbf-srv=srv
+set cbf-yt=https://www.youtube.com/watch?v=MHgWNd0iKso
+
+rem Environment Setup
+set cbf-url=https://youtu.be/nkrIBM7piq Q
+
+exit/b
+
+lu:
+Apr-19-2024
 
 
 

@@ -3,7 +3,7 @@
 
 title CBF: %0
 
-if "%~1" == "" goto help
+if "%~1" == "" goto im
 if "%~1" == "?" goto help
 
 goto %1
@@ -19,12 +19,12 @@ echo. & echo  * Vue.
 
 echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo  * Parameter 1:
+echo. & echo    Parameter 1:
 echo    Alias of the function you wish to run.
 
 echo. & echo    Batch file style: Multipurpose
 
-echo. & echo  * Samples:
+echo. & echo    Samples:
 echo    %~n0 
 
 exit/b
@@ -440,6 +440,15 @@ call t %1>nul
 call nm ruse
 call lh 8080
 
+exit/b
+
+
+
+:_
+:im
+
+echo. & echo * Install miscellaneous.
+vue create http-axios
 exit/b
 
 
