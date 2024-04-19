@@ -7449,4 +7449,23 @@ exit/b
 
 
 
+:_
+:vxpl
+
+echo. & echo * Vuex Playlist.
+
+rem  qq
+call n >nul
+set cbf-pt=%cbf-pt%\
+
+set cbf-lh=
+set cbf-srv=
+set cbf-gi=https://github.com/iamshaunjp/vuex-playlist
+set cbf-yt=https://www.youtube.com/watch?v=arhCOcxIUo4
+set cbf-url=
+
+exit/b
+
+
+
 :_ (!ef, !efn)
