@@ -7454,7 +7454,6 @@ exit/b
 
 echo. & echo * Tabulator.
 
-rem  qq
 call n >nul
 set cbf-pt=%cbf-pt%\
 
@@ -7478,7 +7477,6 @@ exit/b
 
 echo. & echo * KoderHQ.
 
-rem  qq
 call n >nul
 set cbf-pt=%cbf-pt%\
 
