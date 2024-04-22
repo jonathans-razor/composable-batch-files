@@ -1902,8 +1902,9 @@ exit/b
 
 echo. & echo * Install miscellaneous.
 rem qq
-npm install --global yarn
+npm create vite@latest
 exit/b
+npm install --global yarn
 npm install axios
 npm create vue@latest
 npm create ol-app open-layers-app
