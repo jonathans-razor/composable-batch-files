@@ -7467,6 +7467,22 @@ exit/b
 
 
 
+:_
+:ansc
+
+echo. & echo * Let's create a filter table component in Vue.
+
+call n >nul
+set cbf-pt=%cbf-pt%\ansc
+
+set cbf-lh=5173
+set cbf-srv=dev
+set cbf-yt=https://www.youtube.com/watch?v=au27CwIFHzs
+
+exit/b
+
+
+
 :_+ KoderHQ Family (!fychq)
 
 
@@ -7535,6 +7551,7 @@ set cbf-srv=srv
 rem Written Code Examples
 set cbf-url=https://www.koderhq.com/tutorial/vue/app-instance
 
+set cbf-yt7=https://youtu.be/o41UaWgkf_4
 set cbf-yt6=https://youtu.be/zWF8e4w37hA
 set cbf-yt5=https://youtu.be/JvrPzwzCdyI
 set cbf-yt4=https://youtu.be/ZA3bMKgroP4
@@ -7543,22 +7560,6 @@ exit/b
 
 lu:
 Apr-19-2024
-
-
-
-:_
-:ansc
-
-echo. & echo * Let's create a filter table component in Vue.
-
-call n >nul
-set cbf-pt=%cbf-pt%\ansc
-
-set cbf-lh=5173
-set cbf-srv=dev
-set cbf-yt=https://www.youtube.com/watch?v=au27CwIFHzs
-
-exit/b
 
 
 
