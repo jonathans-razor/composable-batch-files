@@ -448,8 +448,9 @@ exit/b
 :im
 
 echo. & echo * Install miscellaneous.
-vue create http-axios
+vue create vai
 exit/b
+vue create http-axios
 
 
 

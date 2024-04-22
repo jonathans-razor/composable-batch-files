@@ -7518,4 +7518,30 @@ Apr-19-2024
 
 
 
+::_
+:vai
+
+echo. & echo * Vue Application Instance Tutorial.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\vai
+
+rem Environment Setup
+set cbf-ense=vue create vai
+
+set cbf-lh=8080
+set cbf-srv=srv
+
+rem Written Code Examples
+set cbf-url=https://www.koderhq.com/tutorial/vue/app-instance
+
+set cbf-yt=https://youtu.be/ZA3bMKgroP4
+
+exit/b
+
+lu:
+Apr-19-2024
+
+
+
 :_ (!ef, !efn)
