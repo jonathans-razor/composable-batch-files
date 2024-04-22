@@ -7554,7 +7554,6 @@ echo. & echo * Let's create a filter table component in Vue.
 call n >nul
 set cbf-pt=%cbf-pt%\ansc
 
-rem  qq
 set cbf-lh=5173
 set cbf-srv=dev
 set cbf-yt=https://www.youtube.com/watch?v=au27CwIFHzs

@@ -1901,7 +1901,6 @@ exit/b
 :im
 
 echo. & echo * Install miscellaneous.
-rem qq
 npm create vite@latest
 exit/b
 npm install --global yarn
