@@ -3,9 +3,7 @@
 
 if "%~1" == "?" goto help
 
-goto %1
 goto main
-goto preprocess
 
 
 
@@ -14,14 +12,13 @@ goto preprocess
 
 cls
 
-rem          qq
-echo. & echo * 
+echo. & echo * Copy app.vue to [blank].
 
 echo. & echo   Usage: 
 echo   %~n0 [space separated parameter(s)]
 
 echo. & echo   Parameter 1:
-echo   x
+echo   New filename (without extension, Vue is assumed.)
 
 echo. & echo   Creation Date:
 echo    Apr-22-2024
@@ -42,16 +39,13 @@ exit/b
 
 
 :_
-:preprocess
-
-
-
-exit/b
-
-
-
-:_
 :main
+
+call fn app.vue || exit/b
+
+if "%~1" == "" err Destination filename is required.
+
+copy app.vue %2.vue
 
 exit/b
 

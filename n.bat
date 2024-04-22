@@ -7551,7 +7551,7 @@ set cbf-srv=srv
 rem Written Code Examples
 set cbf-url=https://www.koderhq.com/tutorial/vue/app-instance
 
-set cbf-yt7=https://youtu.be/o41UaWgkf_4
+set cbf-yt7=https://youtu.be/o41UaWgkf_4?t=668
 set cbf-yt6=https://youtu.be/zWF8e4w37hA
 set cbf-yt5=https://youtu.be/JvrPzwzCdyI
 set cbf-yt4=https://youtu.be/ZA3bMKgroP4
