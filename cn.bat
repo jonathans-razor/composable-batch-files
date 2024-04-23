@@ -87,7 +87,6 @@ if "%~2" == "" (
 ) else (
   call n %2
 )
-rem qq
 
 if "%cbf-gi%" == "" (
   call err "cbf-gi" is not defined for alias "%1". Mar-06-2023-14-26

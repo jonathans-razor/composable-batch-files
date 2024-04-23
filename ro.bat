@@ -8,7 +8,6 @@ if "%~1" == "?" goto help
 if "%~1" == "/n" goto all-not-read-only
 if "%~2" == "/n" goto file-not-read-only
 
-rem qq
 call paco "%~1" .>nul && goto file-read-only
 
 goto %1

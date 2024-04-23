@@ -493,7 +493,6 @@ echo. & echo * Apply.
 
 rem lu: Jan-16-2020
 
-rem qq
 echo.                                             
 call m specific_file_presence main.tf
 

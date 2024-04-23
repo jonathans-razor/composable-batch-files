@@ -398,10 +398,8 @@ cls
 echo. & echo * Error level messages.
 
 call n c
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Mar-21-2024-4-01
 
 call n cq
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Mar-21-2024-4-02
 
 rem if errorlevel 1 echo * Mar-21-2024-2-42-PM && exit/b
 rem if errorlevel 1 echo. & echo * Mar-21-2024-2-42-PM && exit/b
