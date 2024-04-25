@@ -72,7 +72,7 @@ exit/b
 
 echo. & echo * Copy time to clipboard.
 
-call pn d>nul
+call n d>nul
 
 python %cbf-pt%\time.py>time.txt
 set /p cbf-time=<time.txt
@@ -142,8 +142,9 @@ exit/b
 :_
 :copy-date-and-time-to-clipboard
 
-call :copy-date-to-clipboard>nul
-call :copy-time-to-clipboard>nul
+call :copy-date-to-clipboard
+call :copy-time-to-clipboard
+rem qq
 call n dtt>nul
 set cbf-date-and-time=%cbf-date%-%cbf-time%
 echo %cbf-date-and-time%>%cbf-fn%

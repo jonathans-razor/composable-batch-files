@@ -249,14 +249,26 @@ python --version
 
 exit/b
 
- Date          Version  Machine
- -----------  --------  -------
 
-  Jan-9-2024    3.12.1      XPS
+XPS location information:
 
- Dec-11-2023    3.11.5      XPS
+:C:\Users\jonat\AppData\Local\Python\Python312
 
- Sep-21-2023    3.10.0      XPS
+:C:\Users\jonat\AppData\Local\Microsoft\WindowsApps\python.exe
+
+
+version information:
+
+ Date         Version  Machine
+ -----------  -------  -------
+
+ Apr-25-2024   3.12.2  XPS
+
+  Jan-9-2024   3.12.1  XPS
+
+ Dec-11-2023   3.11.5  XPS
+
+ Sep-21-2023   3.10.0  XPS
 
 
 
