@@ -109,6 +109,7 @@ exit/b
 
 :_
 :Oct-11-2023-5
+:p217
 
 cls
 
@@ -116,12 +117,23 @@ call t dsa>nul
 
 @echo on
 call ph 217-contains-duplicate.py 1 2 3 
+@echo off
+echo.
+
 @echo on
 call ph 217-contains-duplicate.py 1 2 3 3
+@echo off
+echo.
+
 @echo on
 call ph 217-contains-duplicate.py 5 1 2 3 3
+@echo off
+echo.
+
 @echo on
-call ph 217-contains-duplicate.py 62 7 88 62
+call ph 217-contains-duplicate.py 62 7 88 65
+@echo off
+echo.
 
 exit/b
 
@@ -1111,25 +1123,65 @@ exit/b
 
 
 :_
-:
+:p271
 
 cls
 
+:
 @echo on
-
 python 231-power-of-two.py 1
-
-python 231-power-of-two.py 2
-
-python 231-power-of-two.py 4
-
-python 231-power-of-two.py 5
-
-python 231-power-of-two.py 82
-
-python 231-power-of-two.py 128
-
 @echo off
+echo.
+
+:
+@echo on
+python 231-power-of-two.py 2
+@echo off
+echo.
+
+:
+@echo on
+python 231-power-of-two.py 4
+@echo off
+echo.
+
+:
+@echo on
+python 231-power-of-two.py 5
+@echo off
+echo.
+
+:
+@echo on
+python 231-power-of-two.py 82
+@echo off
+echo.
+
+:
+@echo on
+python 231-power-of-two.py 56
+@echo off
+echo.
+
+:
+@echo on
+python 231-power-of-two.py 57
+@echo off
+echo.
+
+:
+@echo on
+python 231-power-of-two.py 64
+@echo off
+echo.
+
+:
+@echo on
+python 231-power-of-two.py 128
+@echo off
+echo.
+
+:helper colon
 
 exit/b
 
@@ -2398,6 +2450,24 @@ exit/b
 
 
 :_
+:Apr-11-2024
+
+cls
+
+echo. & echo * %1.
+
+
+set path=%path%;c:\Program Files\Git\usr\bin
+@echo on
+193-valid-phone-numbers.bat
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2421,18 +2491,43 @@ exit/b
 
 
 :_
-:Apr-11-2024
+:Apr-26-2024
 
 cls
 
 echo. & echo * %1.
 
-
-set path=%path%;c:\Program Files\Git\usr\bin
+:
 @echo on
-193-valid-phone-numbers.bat
-
+node 258-add-digits.js 38
 @echo off
+echo.
+
+:
+@echo on
+node 258-add-digits.js 381
+@echo off
+echo.
+
+:
+@echo on
+node 258-add-digits.js 199
+@echo off
+echo.
+
+:
+@echo on
+node 258-add-digits.js 19
+@echo off
+echo.
+
+:
+@echo on
+node 258-add-digits.js 44
+@echo off
+echo.
+
+:
 
 exit/b
 

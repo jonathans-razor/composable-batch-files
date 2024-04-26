@@ -18,6 +18,7 @@ echo. & echo * Batch file style: Multipurpose
 
 echo. & echo * Sample(s):
 echo   %~n0 ga
+echo   %~n0 fn
 
 exit/b
 

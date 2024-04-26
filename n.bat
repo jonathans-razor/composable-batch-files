@@ -7565,4 +7565,16 @@ Apr-19-2024
 
 
 
+:_
+:tabu
+
+echo. & echo * Tabulator.
+
+set cbf-docs=https://tabulator.info/docs/6.2
+set cbf-url=https://tabulator.info/docs/6.2
+
+exit/b
+
+
+
 :_ (!ef, !efn)
