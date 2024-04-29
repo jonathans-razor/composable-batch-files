@@ -106,12 +106,6 @@ exit/b
 
 echo. & echo * Move podcasts from my PC computer's hard drive to ClipJam.
 
-rem Make sure mp3 is plugged in and detected.
-call t clja || err Apr-12-2024-12-33-PM
-
-rem Delete old files from the the Audiobook folder.
-call de old-mp3-files
-
 call :pc-2-sa
 
 rem Run the tag program.
@@ -119,6 +113,12 @@ call j tag || err Apr-12-2024-12-34-PM
 
 echo.
 pause
+
+rem Make sure mp3 is plugged in and detected.
+call t clja || err Apr-12-2024-12-33-PM
+
+rem Delete old files from the the Audiobook folder.
+call de old-mp3-files
 
 if "%~2" == "n" (
   echo.
