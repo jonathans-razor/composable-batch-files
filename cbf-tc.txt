@@ -175,7 +175,7 @@ example-  Prefix for files written by other authors for learning and comparison 
     opat  Oracle patching.
      orr  Status of officially registered repos.
        p  Synchronize 2 folders, CBF and VDI.
-      pa  Fully automatic Git push of a single repository. Has td parameter.
+      pa  Push all preselected repositories.
     paco  Parameter contains.
       pc  Run Podcaster.
      pdf  PDF DCV.
@@ -189,7 +189,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      ppt  Run PowerPoint.
       pq  Execute the pull requests DCV for the passed in alias.
 	    pr  Pull requests DCV.
-      ps  PowerShell.
+      ps  Time stamp push, same as "g acp", with also a TD parameter.
       pt  Show path in a browser window.
 	   ptf  Pipe to file.
      ptm  Sets the path using a monogamous CBF variable that sets the path only.

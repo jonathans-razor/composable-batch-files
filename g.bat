@@ -28,7 +28,6 @@ echo.
 echo     Cmd  Description
 echo  ------  ------------------------------------------------------------------
 echo  g acpm  Add, commit and push all files with custom message.
-echo     g p  Git push, a savings of 5 keystrokes.
 echo  g roll  Rollback to previous commit.
 echo    g rv  Revert all changes in a folder.
 echo    g sd  Status while disconnected.
@@ -36,10 +35,10 @@ echo   g psf  Push single file with timestamp message.
 echo  g psfm  Push single file with custom message.
 echo   g rsf  Revert single file.
 echo       p  Push predetermined repositories and more.
-echo      pa  Fully automatic push, same as "g acp", but with also a TD parameter.
+echo      pa  Push of all preselected repositories.
 echo      pl  Git pull, with TD parameter. Sibling of ps.
 echo      pp  Pull then push, with TD parameter.
-echo      ps  Fully automatic pull and push of selected repositories.
+echo      ps  Time stamp push, same as "g acp", with also a TD parameter.
 echo       s  Status while connected.
 echo      sp  Super push, i.e. push all prewritten repositories.
 echo     spl  Super pull, i.e. pull all prewritten repositories.
@@ -1820,7 +1819,7 @@ echo. & echo * Delete branch, local and remote.
 if "%~2" == "?" goto help
 if "%~2" == "" goto help
 set cbf-branch-to-delete=%2
-call g sb master
+call g sb develop
 
 if errorlevel 1 (
   call err Can't find master branch. Mar-21-2023-14-57 - %0.bat
@@ -2418,6 +2417,40 @@ Oct-27-2022
 
 
 ::_
+:sbd
+
+echo. & echo * Set branch to develop.
+
+call %0 sb develop
+
+exit/b
+
+
+
+::_
+:cbj
+
+echo. & echo * Create branch jrj-test.
+
+rem qq
+call %0 cbc jrj-test
+
+exit/b
+
+
+
+::_
+:sbj
+
+echo. & echo * Set branch to jrj-test.
+
+call %0 sb jrj-test
+
+exit/b
+
+
+
+::_
 :sbm
 
 echo. & echo * Set branch to master.
@@ -2434,17 +2467,6 @@ exit/b
 echo. & echo * Set branch to release.
 
 call %0 sb r
-
-exit/b
-
-
-
-::_
-:sbt
-
-echo. & echo * Set branch to test.
-
-call %0 sb jrj-test
 
 exit/b
 
@@ -3350,143 +3372,6 @@ echo. & echo * Add files in this folder and its children folders.
 git add .
 
 exit/b
-
-
-
-:_+ Create Branch Family (!fcccb)
-
-
-
-::_
-:cbc
-
-echo. & echo * Create a local branch based on your current branch.
-
-if "%~2" == "" (
-  echo.
-  echo * Error: You must enter the name of the branch you wish to create.
-  exit/b
-)
-
-echo.
-git checkout -b %2
-
-git push --set-upstream origin %2
-
-exit/b
-
-lu:
-Mar-10-2020
-
-
-
-::_
-:cbr
-
-echo. & echo * Create a new branch based on the releaseNew branch.
-
-if "%~2" == "" (
-  echo.
-  echo * Percent 2, destination branch, is a required field.
-  exit/b
-)
-set cbf-branch=%2
-if "%~2" == "/np" (
-  call n np
-)
-
-:checkout
-@echo on
-echo.
-git checkout releaseNew
-git pull
-git checkout -b %cbf-branch%
-git push --set-upstream origin %cbf-branch%
-echo.
-@echo off
-
-exit/b
-
-
-
-::_
-:cbm
-
-echo. & echo * Create a new branch based on the master branch.
-
-if "%~2" == "" (
-  echo.
-  echo * Percent 2, destination branch, is a required field.
-  exit/b
-)
-set cbf-branch=%2
-
-if "%~2" == "np" (
-  call n np
-)
-
-if "%~2" == "t" (
-  set cbf-branch=jrj-test
-)
-
-:checkout
-@echo on
-echo.
-git checkout master
-git pull
-git checkout -b %cbf-branch%
-git push --set-upstream origin %cbf-branch%
-echo.
-
-exit/b
-
-:help
-
-echo. & echo * Parameter 2, branch to swtich to, descriptions
-
-echo   np: now playing
-echo   t: jrj-test
-
-exit/b
-
-lu:
-Feb-21-2023
-May-4-2021
-
-
-
-::_
-:cb
-
-echo. & echo * Create a new branch based on specified source branch.
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-if "%~3" == "" goto help
-
-echo. & git checkout -b %3 %2
-
-if errorlevel 1 exit/b
-git push --set-upstream origin %3
-exit/b
-
-:help
-
-echo. & echo * Parameter Description(s):
-echo. & echo * Parameter 2: Source branch.
-echo. & echo * Parameter 3: Destination branch. If equals "/np", that branch is specified.
-
-exit/b
-
-lu:
-Mar-31-2022
-
-Footnote
->< >< ><
-
-I don't think you can create a branch based on source branch unless you have first switched to that source branch locally at least once.
-
-I changed the label from cb to crbr because cb is too easily confused with "change branch" instead of "create branch".
 
 
 
@@ -4439,6 +4324,143 @@ rem echo. & echo * Is current folder a Git folder?
 dir /ah | find /i ".git">nul && exit/b 0
 
 exit/b 1
+
+
+
+:_+ Create Branch Family (!fcccb)
+
+
+
+::_
+:cbc
+
+echo. & echo * Create a local branch based on your current branch.
+
+if "%~2" == "" (
+  echo.
+  echo * Error: You must enter the name of the branch you wish to create.
+  exit/b
+)
+
+echo.
+git checkout -b %2
+
+git push --set-upstream origin %2
+
+exit/b
+
+lu:
+Mar-10-2020
+
+
+
+::_
+:cbr
+
+echo. & echo * Create a new branch based on the releaseNew branch.
+
+if "%~2" == "" (
+  echo.
+  echo * Percent 2, destination branch, is a required field.
+  exit/b
+)
+set cbf-branch=%2
+if "%~2" == "/np" (
+  call n np
+)
+
+:checkout
+@echo on
+echo.
+git checkout releaseNew
+git pull
+git checkout -b %cbf-branch%
+git push --set-upstream origin %cbf-branch%
+echo.
+@echo off
+
+exit/b
+
+
+
+::_
+:cbm
+
+echo. & echo * Create a new branch based on the master branch.
+
+if "%~2" == "" (
+  echo.
+  echo * Percent 2, destination branch, is a required field.
+  exit/b
+)
+set cbf-branch=%2
+
+if "%~2" == "np" (
+  call n np
+)
+
+if "%~2" == "t" (
+  set cbf-branch=jrj-test
+)
+
+:checkout
+@echo on
+echo.
+git checkout master
+git pull
+git checkout -b %cbf-branch%
+git push --set-upstream origin %cbf-branch%
+echo.
+
+exit/b
+
+:help
+
+echo. & echo * Parameter 2, branch to swtich to, descriptions
+
+echo   np: now playing
+echo   t: jrj-test
+
+exit/b
+
+lu:
+Feb-21-2023
+May-4-2021
+
+
+
+::_
+:cb
+
+echo. & echo * Create a new branch based on specified source branch.
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+if "%~3" == "" goto help
+
+echo. & git checkout -b %3 %2
+
+if errorlevel 1 exit/b
+git push --set-upstream origin %3
+exit/b
+
+:help
+
+echo. & echo * Parameter Description(s):
+echo. & echo * Parameter 2: Source branch.
+echo. & echo * Parameter 3: Destination branch. If equals "/np", that branch is specified.
+
+exit/b
+
+lu:
+Mar-31-2022
+
+Footnote
+>< >< ><
+
+I don't think you can create a branch based on source branch unless you have first switched to that source branch locally at least once.
+
+I changed the label from cb to crbr because cb is too easily confused with "change branch" instead of "create branch".
 
 
 
