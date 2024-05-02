@@ -2468,29 +2468,6 @@ exit/b
 
 
 :_
-:
-
-cls
-
-echo. & echo * %1.
-
-@echo on
-
-node 
-
-@echo off
-
-exit/b
-
-
-
-:_
-
-:code-execution-area
-
-
-
-:_
 :Apr-26-2024
 
 cls
@@ -2528,6 +2505,52 @@ node 258-add-digits.js 44
 echo.
 
 :
+
+exit/b
+
+
+
+:_
+:
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 
+
+@echo off
+
+exit/b
+
+
+
+:_
+
+:code-execution-area
+
+
+
+:_
+:May-2-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 326-power-of-three.js 27
+node 326-power-of-three.js 0
+node 326-power-of-three.js 1
+node 326-power-of-three.js -1
+node 326-power-of-three.js 124
+node 326-power-of-three.js 125
+node 326-power-of-three.js 81
+
+@echo off
 
 exit/b
 
