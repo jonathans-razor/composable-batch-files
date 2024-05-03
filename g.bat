@@ -955,7 +955,7 @@ Oct-11-2023
 ::_
 :acpm
 
-echo. & echo * Add, commit and push with custom message.
+echo. & echo * Add, commit and push all files with custom message.
 
 if "%~2" == "" (
   call err A custom commit description is required. Jul-11-2023_3_51_PM  - %0.bat
@@ -2432,7 +2432,6 @@ exit/b
 
 echo. & echo * Create branch jrj-test.
 
-rem qq
 call %0 cbc jrj-test
 
 exit/b
