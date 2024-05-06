@@ -7590,4 +7590,17 @@ exit/b
 
 
 
+:_
+:mc
+:mp3
+
+echo. & echo * Mp3.
+
+call n dr>nul
+set cbf-pt=%cbf-pt%\mp3\May-5-2024
+
+exit/b
+
+
+
 :_ (!ef, !efn)

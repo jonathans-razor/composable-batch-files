@@ -35,7 +35,7 @@ echo   g psf  Push single file with timestamp message.
 echo  g psfm  Push single file with custom message.
 echo   g rsf  Revert single file.
 echo       p  Push predetermined repositories and more.
-echo      pa  Push of all preselected repositories.
+echo      pa  Push all preselected repositories.
 echo      pl  Git pull, with TD parameter. Sibling of ps.
 echo      pp  Pull then push, with TD parameter.
 echo      ps  Time stamp push, same as "g acp", with also a TD parameter.
@@ -1373,7 +1373,6 @@ exit/b
 
 
 ::_
-:lb
 :lba
 
 echo. & echo * List all branches.
@@ -1431,7 +1430,7 @@ Oct-23-2020
 
 
 ::_
-:lbl
+:lb
 
 echo. & echo * List branches, local.
 
