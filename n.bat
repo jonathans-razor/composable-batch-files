@@ -7239,6 +7239,8 @@ call n v>nul
 set cbf-pt=%cbf-pt%\qt
 set cbf-lh=
 set cbf-srv=dev
+rem q-tooltip video
+set cbf-yt=https://www.youtube.com/watch?v=5ZgTKyk8KA4
 
 exit/b
 
