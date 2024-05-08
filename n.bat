@@ -7189,15 +7189,14 @@ set cbf-lh=
 
 set cbf-gio=https://github.com/codingwithjustin/quasar-note-app
 
-rem qq
 set cbf-url=https://quasar.dev/vue-components/tooltip#qtooltip-api
 set cbf-url2=https://quasar.dev/components
 
 rem Layout Builder
-set cbf-url2=https://quasar.dev/layout-builder
+set cbf-url3=https://quasar.dev/layout-builder
 
 rem Video Tutorials
-set cbf-url3=https://quasar.dev/video-tutorials
+set cbf-url4=https://quasar.dev/video-tutorials
 
 set cbf-yt=https://www.youtube.com/watch?v=qPkSwo8QyoA
 

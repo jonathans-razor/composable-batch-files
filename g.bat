@@ -1840,7 +1840,7 @@ if "%cbf-branch-to-delete%" == "main" (
 set cbf-branch=
 call %0 debrlo %cbf-branch-to-delete%
 call %0 debrro %cbf-branch-to-delete%
-call git remote update
+git remote update
 
 exit/b
 
