@@ -1004,121 +1004,6 @@ Apr-21-2020
 
 
 
-:_+ Suppressing Error Messages
-
-
-
-::_
-:htse
-
-echo. & echo * How to suppress error messages in batch files.
-
-rem For example, this would suppress the standard cannot find label error message.
-goto %1 2>nul
-
-exit/b
-
-lu:
-Nov-24-2020
-
-Footnote
->< >< >< 
-
-All programs have three streams:
-
-Standard Input (the input from the console)
-
-Standard Output (general logging/UI output to the console)
-
-Standard Error (logging/UI output to the console meant for error messages or other exceptional 
-behavior)
-
-command >nul
-
-^ This says to pipe the standard-output stream to null.
-
-command 2>nul
-
-^ This says to pipe the standard-error stream to null.
-
-command 2>&1
-
-^ This says to pipe the standard-error stream to the same place as the standard-output stream.
-
-
-
-::_
-:2nul
-
-cls
-
-echo. & echo * Suppressing error messages. This " 2>nul" suppresses the default error message!
-
-call zzzz 2>nul || exit/b
-
-call el
-
-exit/b
-
-lu:
-Feb-7-2024
-
-skw:
-(!2nul)
-
-
-
-::_
-:tgw
-
-echo. & echo * Test goto with no label found.
-
-rem Is there a way to test if a label exists in a batch file before calling the goto statemnt?
-
-rem goto nonexistinglabel
-
-rem set "label=sub"
-REM next line to reset errorlevel to zero:
-call
-rem call :test7x7 2>nul
-
-rem This strange syntax in the following line of code "eats" the error message, although 
-rem I don't know why you'd want to do so.
-goto nonexistinglabel 2>nul
-
-echo hey
-
-echo * Errorlevel: %errorlevel%
-
-exit/b
-
-lu:
-Jul-9-2018
-
-
-
-::_
-:
-
-echo. & echo * Interesting Java code snippet that I'm not sure what it does.
-
-rem From gradlew.bat
-
-echo.
-rem set JAVA_EXE=java.exe
-rem %JAVA_EXE% -version >NUL 2>&1
-
-java -version 2>&1
-
-if "%ERRORLEVEL%" == "0" echo Is zero.
-
-exit/b
-
-lu:
-Jan-31-2019
-
-
-
 :_
 :
 
@@ -2172,274 +2057,6 @@ Jun-20-2019
 
 
 
-:_+ Validation Family (!fcva) error-level-educational-series
-
-
-
-::_
-:elt1
-
-echo. & echo * Error level test 1. If this returns 1, it means error level is working!
-
-rem canary in a coal mine, error level testing
-
-echo %1 | find "not-present">nul
-
-call el
-
-exit/b
-
-lu:
-Feb-17-2022
-
-
-
-::_
-:validate_filename
-
-call fn %1
-
-if errorlevel 1 (
-  echo.
-  echo * Error: Label not found.
-  call m clear_errorlevel_silently 
-  exit/b
-)
-
-if "%cbf-fn%" == "" (
-  echo.
-  echo * The cbf-fn is not defined for "%1".
-  exit/b
-)
-
-rem (!noex)
-
-if not exist "%cbf-fn%" (
-  echo.
-  echo * Error: The cbf-fn "%cbf-fn%" could not be found.
-  exit/b
-)
-
-
-
-::_
-:validate_url
-
-call un %1
-
-if errorlevel 1 (
-  echo.
-  echo * Error: Label not found.
-  call m clear_errorlevel_silently 
-  exit/b
-)
-
-if "%cbf-url%" == "" (
-  echo.
-  echo * The cbf-url is not defined for "%1".
-  exit/b
-)
-
-
-
-::_
-:validate_application
-
-call an %1
-
-if %errorlevel% == 1 (
-  echo.
-  echo * Error: Label not found.
-  call m clear_errorlevel_silently 
-  exit/b
-)
-
-if "%cbf-app%" == "" (
-  echo.
-  echo * The cbf-app is not definied for "%1".
-  exit/b
-)
-
-if not exist "%cbf-app%" (
-  echo.
-  echo * Error: The cbf-app "%cbf-app%" could not be found.
-  exit/b
-)
-
-
-
-::_
-:reset-error-level
-
-echo. & echo * Test return codes for "n" calls. How do you reset errorlevel?
-
-call n bullshit
-
-echo.
-echo * Errorlevel: %errorlevel%
-
-ver>nul
-
-call n cnn
-
-echo.
-echo * Errorlevel: %errorlevel%
-
-exit/b
-
-lu:
-Jul-18-2018
-
-
-
-::_
-:
-
-echo %1| find /i ".">nul
-if errorlevel 0 goto
-if errorlevel 1 goto
-
-exit/b
-
-skw:
-contains period
-contains a period
-
-
-
-::_
-:epl
-:epl1
-:evaluate-the-parameter-list
-:find
-
-echo. & echo * Find example.
-
-call m cel
-
-echo. & echo EL: %errorlevel%
-
-call g is-git-folder && echo true
-
-echo %1| find /i ".">nul
-echo %*| find /i "/s">nul
-
-if %errorlevel% == 0 (
-  echo. & echo Parameter list contains "/s".
-  set cbf-search-subfolders=1
-) else (
-  echo. & echo Parameter list does NOT contain a "/s".
-)
-
-echo %*| find /i "/p">nul
-
-if %errorlevel% == 0 (
-  echo. & echo Entire parameter list contains "/p".
-  set cbf-pipe-to-file=1
-) else (
-  echo. & echo Parameter list does NOT contain a "/p".
-)
-
-exit/b
-
-lc:
-(!find, !cont, !contains, !pipe, !echo) 
-
-lu:
-Oct-11-2023
-Jul-5-2023
-
-skw:
-all command line variables
-all parameters
-command line arguments
-command line options
-contains
-Does the parameter list contain "/test"?
-entire command line
-find period in filename
-how to detect command line options
-how to detect command line parameters
-how to process parameters
-parameter passing
-parameter processing
-passing parameters
-process parameters
-
-This is akin to turning a message into an error code.
-
-call s | find /i "working tree clean">nul
-
-
-
-::_
-:old-style
-
-if errorlevel 1 err Mar-21-2024-2-43-PM
-
-Inside an if loop: if %errorlevel% == 5 Jun-28-2023
-
-if %errorlevel-old% gtr 0 exit/b
-
-if %errorlevel-old% gtr 0 exit/b %errorlevel%
-
-if %errorlevel-old% gtr 0 (
-  echo.
-  echo * Error: Label not found.
-  call m clear_errorlevel_silently 
-  exit/b
-)
-
-if "%cbf-pt%" == "" (
-  echo.
-  echo * The cbf-pt is not defined for "%1".
-  exit/b
-)
-
-if not exist "%cbf-pt%" (
-  echo.
-  echo * Error: The cbf-pt "%cbf-pt%" could not be found.
-  exit/b
-)
-
-
-
-::_
-:new-style
-:paco
-
-echo. & echo * New style error handling
-
-call fn package.json || exit/b
-err %~nx0: 
-%~nx0: 
-call err %~nx0: 
-call paco "%~1" .>nul && err Aliases cannot cannot contain a period.
-call paco "%~1" .>nul && echo hey
-call paco "%~1" .>nul && goto 
-call paco "%~2" /n && goto 
-dir /ah | find /i ".git">nul && exit/b 0
-call paco "%~1" .>nul && goto open-current-folder-file
-
-exit/b
-
-lc:
-(!ns, !peri, !ampe, !el1, !ec, !gtr, !err, !erro, !el, !erle)
-
-lu:
-Oct-12-2023
-
-skw:
-new command style
-
-command1 && command2 will run command1 and then command2, only if command1 succeeded (error 
-level 0).
-
-command1 || command2 will run command1 and then command2, only if command1 failed (error 
-level not 0
-
-
-
 :_
 :isre
 :p2
@@ -2709,7 +2326,391 @@ Mar-15-2024
 
 
 
-:_
+:_+ Suppressing Error Messages
+
+
+
+::_
+:htse
+
+echo. & echo * How to suppress error messages in batch files. (!supp)
+
+rem For example, this would suppress the standard cannot find label error message.
+goto %1 2>nul
+
+exit/b
+
+lu:
+Nov-24-2020
+
+Footnote
+>< >< >< 
+
+All programs have three streams:
+
+Standard Input (the input from the console)
+
+Standard Output (general logging/UI output to the console)
+
+Standard Error (logging/UI output to the console meant for error messages or other exceptional 
+behavior)
+
+command >nul
+
+^ This says to pipe the standard-output stream to null.
+
+command 2>nul
+
+^ This says to pipe the standard-error stream to null.
+
+command 2>&1
+
+^ This says to pipe the standard-error stream to the same place as the standard-output stream.
+
+
+
+::_
+:2nul
+
+cls
+
+echo. & echo * Suppressing error messages. This " 2>nul" suppresses the default error message!
+
+call zzzz 2>nul || exit/b
+
+call el
+
+exit/b
+
+lu:
+Feb-7-2024
+
+skw:
+(!2nul)
+
+
+
+::_
+:tgw
+
+echo. & echo * Test goto with no label found.
+
+rem Is there a way to test if a label exists in a batch file before calling the goto statemnt?
+
+rem goto nonexistinglabel
+
+rem set "label=sub"
+REM next line to reset errorlevel to zero:
+call
+rem call :test7x7 2>nul
+
+rem This strange syntax in the following line of code "eats" the error message, although 
+rem I don't know why you'd want to do so.
+goto nonexistinglabel 2>nul
+
+echo hey
+
+echo * Errorlevel: %errorlevel%
+
+exit/b
+
+lu:
+Jul-9-2018
+
+
+
+::_
+:
+
+echo. & echo * Interesting Java code snippet that I'm not sure what it does.
+
+rem From gradlew.bat
+
+echo.
+rem set JAVA_EXE=java.exe
+rem %JAVA_EXE% -version >NUL 2>&1
+
+java -version 2>&1
+
+if "%ERRORLEVEL%" == "0" echo Is zero.
+
+exit/b
+
+lu:
+Jan-31-2019
+
+
+
+:_+ Validation Family (!fcva) error-level-educational-series
+
+
+
+::_
+:elt1
+
+echo. & echo * Error level test 1. If this returns 1, it means error level is working!
+
+rem canary in a coal mine, error level testing
+
+echo %1 | find "not-present">nul
+
+call el
+
+exit/b
+
+lu:
+Feb-17-2022
+
+
+
+::_
+:validate_filename
+
+call fn %1
+
+if errorlevel 1 (
+  echo.
+  echo * Error: Label not found.
+  call m clear_errorlevel_silently 
+  exit/b
+)
+
+if "%cbf-fn%" == "" (
+  echo.
+  echo * The cbf-fn is not defined for "%1".
+  exit/b
+)
+
+rem (!noex)
+
+if not exist "%cbf-fn%" (
+  echo.
+  echo * Error: The cbf-fn "%cbf-fn%" could not be found.
+  exit/b
+)
+
+
+
+::_
+:validate_url
+
+call un %1
+
+if errorlevel 1 (
+  echo.
+  echo * Error: Label not found.
+  call m clear_errorlevel_silently 
+  exit/b
+)
+
+if "%cbf-url%" == "" (
+  echo.
+  echo * The cbf-url is not defined for "%1".
+  exit/b
+)
+
+
+
+::_
+:validate_application
+
+call an %1
+
+if %errorlevel% == 1 (
+  echo.
+  echo * Error: Label not found.
+  call m clear_errorlevel_silently 
+  exit/b
+)
+
+if "%cbf-app%" == "" (
+  echo.
+  echo * The cbf-app is not definied for "%1".
+  exit/b
+)
+
+if not exist "%cbf-app%" (
+  echo.
+  echo * Error: The cbf-app "%cbf-app%" could not be found.
+  exit/b
+)
+
+
+
+::_
+:reset-error-level
+
+echo. & echo * Test return codes for "n" calls. How do you reset errorlevel?
+
+call n bullshit
+
+echo.
+echo * Errorlevel: %errorlevel%
+
+ver>nul
+
+call n cnn
+
+echo.
+echo * Errorlevel: %errorlevel%
+
+exit/b
+
+lu:
+Jul-18-2018
+
+
+
+::_
+:
+
+echo %1| find /i ".">nul
+if errorlevel 0 goto
+if errorlevel 1 goto
+
+exit/b
+
+skw:
+contains period
+contains a period
+
+
+
+::_
+:epl
+:epl1
+:evaluate-the-parameter-list
+:find
+
+echo. & echo * Find example.
+
+call m cel
+
+echo. & echo EL: %errorlevel%
+
+call g is-git-folder && echo true
+
+echo %1| find /i ".">nul
+echo %*| find /i "/s">nul
+
+if %errorlevel% == 0 (
+  echo. & echo Parameter list contains "/s".
+  set cbf-search-subfolders=1
+) else (
+  echo. & echo Parameter list does NOT contain a "/s".
+)
+
+echo %*| find /i "/p">nul
+
+if %errorlevel% == 0 (
+  echo. & echo Entire parameter list contains "/p".
+  set cbf-pipe-to-file=1
+) else (
+  echo. & echo Parameter list does NOT contain a "/p".
+)
+
+exit/b
+
+lc:
+(!find, !cont, !contains, !pipe, !echo) 
+
+lu:
+Oct-11-2023
+Jul-5-2023
+
+skw:
+all command line variables
+all parameters
+command line arguments
+command line options
+contains
+Does the parameter list contain "/test"?
+entire command line
+find period in filename
+how to detect command line options
+how to detect command line parameters
+how to process parameters
+parameter passing
+parameter processing
+passing parameters
+process parameters
+
+This is akin to turning a message into an error code.
+
+call s | find /i "working tree clean">nul
+
+
+
+::_
+:old-style
+
+if errorlevel 1 err Mar-21-2024-2-43-PM
+
+Inside an if loop: if %errorlevel% == 5 Jun-28-2023
+
+if %errorlevel-old% gtr 0 exit/b
+
+if %errorlevel-old% gtr 0 exit/b %errorlevel%
+
+if %errorlevel-old% gtr 0 (
+  echo.
+  echo * Error: Label not found.
+  call m clear_errorlevel_silently 
+  exit/b
+)
+
+if "%cbf-pt%" == "" (
+  echo.
+  echo * The cbf-pt is not defined for "%1".
+  exit/b
+)
+
+if not exist "%cbf-pt%" (
+  echo.
+  echo * Error: The cbf-pt "%cbf-pt%" could not be found.
+  exit/b
+)
+
+
+
+::_
+:new-style
+:paco
+
+echo. & echo * New style error handling
+
+call fn package.json || exit/b
+err %~nx0: 
+%~nx0: 
+call err %~nx0: 
+call paco "%~1" .>nul && err Aliases cannot cannot contain a period.
+call paco "%~1" .>nul && echo hey
+call paco "%~1" .>nul && goto 
+call paco "%~2" /n && goto 
+dir /ah | find /i ".git">nul && exit/b 0
+call paco "%~1" .>nul && goto open-current-folder-file
+
+exit/b
+
+lc:
+(!ns, !peri, !ampe, !el1, !ec, !gtr, !err, !erro, !el, !erle)
+
+lu:
+Oct-12-2023
+
+skw:
+new command style, new error handling
+
+
+command1 && command2 will run command1 and then command2, only if command1 succeeded (error 
+level 0).
+
+command1 || command2 will run command1 and then command2, only if command1 failed (error 
+level not 0
+
+
+
+::_
 :or
 
 echo. & echo * The proper way to call an or statement.

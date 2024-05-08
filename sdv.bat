@@ -49,12 +49,10 @@ call el /c>nul
 
 call "%cbf-default-sd%" %1 2>nul
 
-rem The alias is found in the secondary dictionary, so exit.
+rem The alias is found in the secondary dictionary, so exit. We are half-expecting an error.
 if not errorlevel 1 exit/b
 
-call n %1 2>nul
-
-if errorlevel 1 err %0.bat: A dictionary entry for "%1" was not found. Feb-7-2024-7-00-PM
+call n %1 || err %0.bat: May-8-2024-3-19-PM
 
 exit/b
 

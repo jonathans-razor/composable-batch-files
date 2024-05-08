@@ -7576,7 +7576,6 @@ set cbf-url11=https://www.koderhq.com/tutorial/vue/conditional-rendering/
 set cbf-url4=https://www.koderhq.com/tutorial/vue/app-instance
 set cbf-url=https://www.koderhq.com/tutorial/vue
 
-rem qq
 set cbf-yt11=https://youtu.be/fZzrm1iCfyk
 set cbf-yt10=https://www.youtube.com/watch?v=5Z-4M4lhkWA
 set cbf-yt9=https://www.youtube.com/watch?v=hAu521o4FRg
