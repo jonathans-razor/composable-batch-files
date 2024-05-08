@@ -7486,6 +7486,44 @@ exit/b
 
 
 
+:_
+:tabu
+
+echo. & echo * Tabulator.
+
+set cbf-docs=https://tabulator.info/docs/6.2
+set cbf-url=https://tabulator.info/docs/6.2
+
+exit/b
+
+
+
+:_
+:fgt
+
+echo. & echo * For Git Testing.
+
+call n r>nul
+set cbf-pt=%cbf-pt%\for-git-testing
+set cbf-gh=https://github.com/jonathans-razor/for-git-testing.git
+
+exit/b
+
+
+
+:_
+:mc
+:mp3
+
+echo. & echo * Mp3.
+
+call n dr>nul
+set cbf-pt=%cbf-pt%\mp3\May-5-2024
+
+exit/b
+
+
+
 :_+ KoderHQ Family (!fychq)
 
 
@@ -7554,7 +7592,8 @@ set cbf-srv=srv
 rem Written Code Examples
 set cbf-url=https://www.koderhq.com/tutorial/vue/app-instance
 
-set cbf-yt=https://youtu.be/-iKFuyxRiCA?t=283
+set cbf-yt=https://www.youtube.com/watch?v=hAu521o4FRg
+set cbf-yt9=
 set cbf-yt8=https://youtu.be/-iKFuyxRiCA
 set cbf-yt7=https://youtu.be/o41UaWgkf_4?t=668
 set cbf-yt6=https://youtu.be/zWF8e4w37hA
@@ -7565,44 +7604,6 @@ exit/b
 
 lu:
 Apr-19-2024
-
-
-
-:_
-:tabu
-
-echo. & echo * Tabulator.
-
-set cbf-docs=https://tabulator.info/docs/6.2
-set cbf-url=https://tabulator.info/docs/6.2
-
-exit/b
-
-
-
-:_
-:fgt
-
-echo. & echo * For Git Testing.
-
-call n r>nul
-set cbf-pt=%cbf-pt%\for-git-testing
-set cbf-gh=https://github.com/jonathans-razor/for-git-testing.git
-
-exit/b
-
-
-
-:_
-:mc
-:mp3
-
-echo. & echo * Mp3.
-
-call n dr>nul
-set cbf-pt=%cbf-pt%\mp3\May-5-2024
-
-exit/b
 
 
 

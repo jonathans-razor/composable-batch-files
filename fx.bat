@@ -91,9 +91,11 @@ if "%cbf-expanded-variable%" == "" (
 
 if not "%3" == "" call an %3>nul
 
+if errorlevel 1 err Error during application assignment. Mar-21-2024-2-40-PM
+
 if "%cbf-app%" == "" call an kr>nul
 
-if errorlevel 1 err Error during application assignment. Mar-21-2024-2-40-PM
+if errorlevel 1 err Error during application assignment 2. May-8-2024-12-41-PM
 
 rem echo. & echo * Expanded variable: "%cbf-expanded-variable%"
 

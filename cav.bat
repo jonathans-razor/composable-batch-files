@@ -45,7 +45,7 @@ call fn app.vue || exit/b
 
 if "%~1" == "" err Destination filename is required.
 
-copy app.vue %2.vue
+copy app.vue %1.vue
 
 exit/b
 
