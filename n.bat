@@ -7529,25 +7529,6 @@ exit/b
 
 
 ::_
-:hq
-:khq
-
-echo. & echo * KoderHQ Vue tutorial.
-
-call n >nul
-set cbf-pt=%cbf-pt%\
-
-set cbf-lh=
-set cbf-srv=
-set cbf-=
-set cbf-yt=https://youtu.be/JvrPzwzCdyI
-set cbf-url=https://www.koderhq.com/tutorial/vue
-
-exit/b
-
-
-
-::_
 :http-axios
 :vat
 :vue-axios-tutorial
@@ -7576,12 +7557,13 @@ Apr-19-2024
 
 
 ::_
-:vai
+:hq
+:khq
 
-echo. & echo * Vue Application Instance Tutorial.
+echo. & echo * KoderHQ Vue tutorial.
 
 call n v>nul
-set cbf-pt=%cbf-pt%\vai
+set cbf-pt=%cbf-pt%\koderhq-vue-tutorial
 
 rem Environment Setup
 set cbf-ense=vue create vai
@@ -7590,9 +7572,12 @@ set cbf-lh=8080
 set cbf-srv=srv
 
 rem Written Code Examples
-set cbf-url=https://www.koderhq.com/tutorial/vue/app-instance
+set cbf-url11=https://www.koderhq.com/tutorial/vue/conditional-rendering/
+set cbf-url4=https://www.koderhq.com/tutorial/vue/app-instance
+set cbf-url=https://www.koderhq.com/tutorial/vue
 
 rem qq
+set cbf-yt11=https://youtu.be/fZzrm1iCfyk
 set cbf-yt10=https://www.youtube.com/watch?v=5Z-4M4lhkWA
 set cbf-yt9=https://www.youtube.com/watch?v=hAu521o4FRg
 set cbf-yt8=https://youtu.be/-iKFuyxRiCA
@@ -7600,6 +7585,7 @@ set cbf-yt7=https://youtu.be/o41UaWgkf_4?t=668
 set cbf-yt6=https://youtu.be/zWF8e4w37hA
 set cbf-yt5=https://youtu.be/JvrPzwzCdyI
 set cbf-yt4=https://youtu.be/ZA3bMKgroP4
+set cbf-yt1=https://youtu.be/ZA3bMKgroP4
 
 exit/b
 

@@ -40,7 +40,7 @@ echo   %0 wl app vsc
 echo   %0 nd fz vc
 echo   %0 vu gha
 echo   %0 vu gha br
-echo   %0 vai yt4 ffx
+echo   %0 hq yt11 ffx
 
 exit/b
 
