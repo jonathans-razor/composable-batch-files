@@ -7532,7 +7532,7 @@ exit/b
 :hq
 :khq
 
-echo. & echo * KoderHQ.
+echo. & echo * KoderHQ Vue tutorial.
 
 call n >nul
 set cbf-pt=%cbf-pt%\
@@ -7592,8 +7592,9 @@ set cbf-srv=srv
 rem Written Code Examples
 set cbf-url=https://www.koderhq.com/tutorial/vue/app-instance
 
-set cbf-yt=https://www.youtube.com/watch?v=hAu521o4FRg
-set cbf-yt9=
+rem qq
+set cbf-yt10=https://www.youtube.com/watch?v=5Z-4M4lhkWA
+set cbf-yt9=https://www.youtube.com/watch?v=hAu521o4FRg
 set cbf-yt8=https://youtu.be/-iKFuyxRiCA
 set cbf-yt7=https://youtu.be/o41UaWgkf_4?t=668
 set cbf-yt6=https://youtu.be/zWF8e4w37hA
