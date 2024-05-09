@@ -456,6 +456,19 @@ Apr-11-2024
 
 :_
 
+echo. & echo * Grep.
+
+set path=%path%;c:\Program Files\Git\usr\bin
+grep
+
+exit/b
+
+Apr-11-2024
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -472,14 +485,14 @@ exit/b
 
 :_
 
-echo. & echo * Grep.
+echo. & echo * Executing parameters.
 
-set path=%path%;c:\Program Files\Git\usr\bin
-grep
+echo %1
+%1
 
 exit/b
 
-Apr-11-2024
+May-9-2024
 
 
 
