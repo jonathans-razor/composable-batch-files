@@ -2511,6 +2511,29 @@ exit/b
 
 
 :_
+:May-2-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 326-power-of-three.js 27
+node 326-power-of-three.js 0
+node 326-power-of-three.js 1
+node 326-power-of-three.js -1
+node 326-power-of-three.js 124
+node 326-power-of-three.js 125
+node 326-power-of-three.js 81
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2534,7 +2557,7 @@ exit/b
 
 
 :_
-:May-2-2024
+:May-9-2024
 
 cls
 
@@ -2542,13 +2565,10 @@ echo. & echo * %1.
 
 @echo on
 
-node 326-power-of-three.js 27
-node 326-power-of-three.js 0
-node 326-power-of-three.js 1
-node 326-power-of-three.js -1
-node 326-power-of-three.js 124
-node 326-power-of-three.js 125
-node 326-power-of-three.js 81
+node 367-valid-perfect-square.js 15
+node 367-valid-perfect-square.js 16
+node 367-valid-perfect-square.js 25
+node 367-valid-perfect-square.js 125
 
 @echo off
 
