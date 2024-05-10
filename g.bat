@@ -1872,11 +1872,11 @@ git merge %2
 
 exit/b
 
+
 lu:
 Mar-3-2020
 
->< >< >< Footnote:
-
+rem:
 If you get a message something like the following:
 
 merge: Branch3 - not something we can merge
@@ -4453,9 +4453,7 @@ exit/b
 lu:
 Mar-31-2022
 
-Footnote
->< >< ><
-
+rem:
 I don't think you can create a branch based on source branch unless you have first switched to that source branch locally at least once.
 
 I changed the label from cb to crbr because cb is too easily confused with "change branch" instead of "create branch".
