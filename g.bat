@@ -4049,13 +4049,15 @@ rem echo. & echo * Commit changes if dirty.
 
 call fn .git || exit/b
 
-call s | find /i "working tree clean">nul
+rem I commented the following line because my local repo was ahead by 1 commit and working tree
+rem was clean. May-13-2024
+rem call s | find /i "working tree clean">nul
 
-if errorlevel 1 (
-  goto :acp
-) else (
-  echo. & echo * No changes.
-)
+rem if errorlevel 1 (
+goto :acp
+rem ) else (
+  rem echo. & echo * No changes.
+rem )
 
 exit/b
 
