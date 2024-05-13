@@ -79,7 +79,7 @@ call g dirt || exit/b
 
 :
 call sep aa-diamond-bridge
-call f d || exit/b
+call t f || exit/b
 call g dirt || exit/b
 
 :
