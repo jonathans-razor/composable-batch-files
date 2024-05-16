@@ -70,8 +70,6 @@ exit/b
 
 :preprocess
 
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-1
-
 call el /c>nul
 call i /c>nul
 
@@ -145,7 +143,6 @@ set cbf-fn=
 
 call paco "%~1" .>nul && goto open-current-folder-file
 
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-2
 call :open-cbf-batch-file %*
 
 :
@@ -158,7 +155,6 @@ if "%cbf-fn%"=="" (
   call :open-dbf-bash-file %*
 )
 
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-3
 :
 if "%cbf-fn%"=="" (
   call :open-aliased-file %*
@@ -322,7 +318,6 @@ exit/b
 :_
 :open-dbf-batch-file
 
-rem qq
 call n dbf 2>nul
 if exist "%cbf-pt%\%1.bat" (
   echo. & echo * Open DBF batch file.
