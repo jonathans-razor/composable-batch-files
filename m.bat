@@ -2969,355 +2969,6 @@ May-31-2019
 
 
 
-:_+ Open Files Family (!fcof)
-
-
-
-::_
-:do
-:demo
-:pres
-
-echo. & echo * Open presentation files.
-
-set cbf-fn-list="%composable-batch-files%\demo.asc"
-attrib +r "%dropbox%\savannah\reach out\cc.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\cc.asc"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
-
-start mew32 %cbf-fn-list%
-
-exit/b
-
-lu:
-Jan-11-2024
-Dec-15-2023
-
-
-
-::_
-:a
-:aff
-:aff-xps
-
-echo. & echo * Open XPS affinity files.
-
-set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
-
-attrib -r "%dropbox%\savannah\reach out\cc.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CC.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CM.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\it\Miscellany\it3.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\DI.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\JD.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CH.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\RB.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\TJ.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CI.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\TR.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
-call pn bel>nul
-set cbf-fn-list=%cbf-fn-list% "%cbf-pt%\pv.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\Employer Documents\cyd.asc"
-
-start mew32 %cbf-fn-list%
-
-exit/b
-
-lu:
-Oct-4-2023
-Apr-8-2022
-
-
-
-::_
-:pete
-
-echo. & echo * Open Pete files.
-
-call pn d>nul
-set cbf-fn-list="%cbf-pt%\nold.bat"
-set cbf-fn-list=%cbf-fn-list% "%cbf-pt%\nv.bat"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
-
-start mew32 %cbf-fn-list%
-
-exit/b
-
-lu:
-Oct-4-2023
-
-
-
-::_
-:msl
-
-echo. & echo * Open MSL Affinity files.
-
-set cbf-fn-list="%share-zone%\Miscellany\j.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\msl.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\lbm\miscellany\lbm.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\atoi.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\copy of cc.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\it.asc"
-rem I put ni.bat before n.bat and m.bat because I want ni.bat to be the first file that is searched!
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\g.bat"
-
-attrib +r "%share-zone%\copy of cc.asc"
-
-start mew32 %cbf-fn-list%
-
-exit/b
-
-lu:
-Dec-8-2021
-
-
-
-::_
-:meet
-
-echo. & echo * Open Meeting affinity files.
-
-set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\msl.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CC.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CM.asc"
-rem set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\IT.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\it2.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\OC.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
-
-rem attrib +r "%share-zone%\it2.asc"
-
-start mew32 %cbf-fn-list%
-
-exit/b
-
-lu:
-Mar-8-2020
-
-
-
-::_
-:cbf
-:ofc
-:ocbf
-:ocm
-
-echo. & echo * Open files to make CBFs.
-
-set cbf-fn-list="%share-zone%\ni.bat"
-
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
-
-start mew32 %cbf-fn-list%
-
-exit/b
-
-lu:
-Aug-9-2021
-
-
-
-::_
-:xam
-
-echo. & echo * Open XAM Affinity files.
-
-set cbf-fn-list="%share-zone%\Miscellany\z.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\lbm\miscellany\lbm.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\atoi.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\copy of cc.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\it2.asc"
-rem I put ni.bat before n.bat and m.bat because I want ni.bat to be the first file that is searched!
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\g.bat"
-
-attrib +r "%share-zone%\copy of cc.asc"
-
-start mew32 %cbf-fn-list%
-
-exit/b
-
-lu:
-Aug-11-2021
-
-
-
-::_
-:vdi
-
-echo. & echo * Open VDI Affinity files.
-
-call e vdit /a>nul
-call e nv /v>nul
-call e n /o>nul
-
-exit/b
-
-lu:
-Mar-1-2022
-
-
-
-::_
-:keld
-
-echo. & echo * Open Keld Affinity files.
-
-call e task
-call e vdit /a>nul
-rem call e i2>nul
-call e nv /v>nul
-call e n /o>nul
-
-exit/b
-
-lu:
-Apr-8-2022
-
-
-
-::_
-:atoi
-
-echo. & echo * Open ATOI Affinity files.
-
-set cbf-fn-list="%share-zone%\Miscellany\J.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\lbm\miscellany\lbm.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\atoi.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\copy of cc.asc"
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\it2.asc"
-rem I put ni.bat before n.bat and m.bat because I want ni.bat to be the first file that is searched!
-set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
-set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\g.bat"
-
-attrib +r "%share-zone%\copy of cc.asc"
-
-start mew32 %cbf-fn-list%
-
-exit/b
-
-lu:
-Aug-11-2021
-
-
-
-::_
-:xam-first
-
-echo. & echo * Open XAM Affinity files in Notepad.
-
-call xac np "%share-zone%\Miscellany\z.asc"
-call xac np "%composable-batch-files%\n.bat"
-call xac np "%share-zone%\ni.bat"
-
-exit/b
-
-lu:
-Aug-11-2021
-
-
-
-::_
-:aff_old
-:affi_old
-:inot_old
-
-echo. & echo * Open affinity files - old.
-
-start Mew32.exe "%reach out%\WK.asc" "%reach out%\CC.asc" "%reach out%\CM.asc" "%reach out%\IT.asc" 
-"%reach out%\DI.asc" 
-"%reach out%\JD.asc" "%reach out%\CH.asc" "%reach out%\RB.asc" "%reach out%\TJ.asc" "%reach out%\CI.asc" 
-"%reach out%\TR.asc" "%dropbox%\savannah\reach out\OC.asc" "%composable-batch-files%\n.bat"
-
-exit/b
-
-lu:
-Jan-9-2019
-
-
-
-::_
-:w
-:wait
-
-echo. & echo * Open "waiting" files.
-
-call fn machine-specific-file
-
-set first_filename=%cbf-fn%
-
-call fn ccf
-
-set second_filename=%cbf-fn%
-
-start mew32 "%first_filename%" "%second_filename%"
-
-exit/b
-
-lu:
-Feb-27-2019
-
-
-
-::_
-:affc
-
-echo. & echo * Open affinity files and close the DOS window.
-
-call :aff
-
-exit
-
-lu:
-Jan-23-2019
-
-
-
-::_
-:waitc
-
-echo. & echo * Wait and close.
-
-call %0 wait
-
-exit
-
-lu:
-Mar-18-2019
-
-
-
 :_+ CBF Associations
 
 
@@ -4880,6 +4531,355 @@ exit/b
 
 lu:
 May-26-2020
+
+
+
+:_+ Open Files Family (!fycoi)
+
+
+
+::_
+:do
+:demo
+:pres
+
+echo. & echo * Open presentation files.
+
+set cbf-fn-list="%composable-batch-files%\demo.asc"
+attrib +r "%dropbox%\savannah\reach out\cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
+
+start mew32 %cbf-fn-list%
+
+exit/b
+
+lu:
+Jan-11-2024
+Dec-15-2023
+
+
+
+::_
+:a
+:aff
+:aff-xps
+
+echo. & echo * Open XPS affinity files.
+
+set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
+
+attrib -r "%dropbox%\savannah\reach out\cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CC.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CM.asc"
+
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\it\Miscellany\it3.asc"
+
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\DI.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\JD.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CH.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\RB.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\TJ.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CI.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\TR.asc"
+
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
+call pn bel>nul
+set cbf-fn-list=%cbf-fn-list% "%cbf-pt%\pv.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\Employer Documents\cyd.asc"
+
+start mew32 %cbf-fn-list%
+
+exit/b
+
+lu:
+Oct-4-2023
+Apr-8-2022
+
+
+
+::_
+:pete
+
+echo. & echo * Open Pete files.
+
+call pn d>nul
+set cbf-fn-list="%cbf-pt%\nold.bat"
+set cbf-fn-list=%cbf-fn-list% "%cbf-pt%\nv.bat"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
+
+start mew32 %cbf-fn-list%
+
+exit/b
+
+lu:
+Oct-4-2023
+
+
+
+::_
+:msl
+
+echo. & echo * Open MSL Affinity files.
+
+set cbf-fn-list="%share-zone%\Miscellany\j.asc"
+
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\msl.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\lbm\miscellany\lbm.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\atoi.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\copy of cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\it.asc"
+rem I put ni.bat before n.bat and m.bat because I want ni.bat to be the first file that is searched!
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\g.bat"
+
+attrib +r "%share-zone%\copy of cc.asc"
+
+start mew32 %cbf-fn-list%
+
+exit/b
+
+lu:
+Dec-8-2021
+
+
+
+::_
+:meet
+
+echo. & echo * Open Meeting affinity files.
+
+set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\msl.asc"
+
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CC.asc"
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CM.asc"
+rem set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\IT.asc"
+
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\it2.asc"
+
+set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\OC.asc"
+
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
+
+rem attrib +r "%share-zone%\it2.asc"
+
+start mew32 %cbf-fn-list%
+
+exit/b
+
+lu:
+Mar-8-2020
+
+
+
+::_
+:cbf
+:ofc
+:ocbf
+:ocm
+
+echo. & echo * Open files to make CBFs.
+
+set cbf-fn-list="%share-zone%\ni.bat"
+
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
+
+start mew32 %cbf-fn-list%
+
+exit/b
+
+lu:
+Aug-9-2021
+
+
+
+::_
+:xam
+
+echo. & echo * Open XAM Affinity files.
+
+set cbf-fn-list="%share-zone%\Miscellany\z.asc"
+
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\lbm\miscellany\lbm.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\atoi.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\copy of cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\it2.asc"
+rem I put ni.bat before n.bat and m.bat because I want ni.bat to be the first file that is searched!
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\g.bat"
+
+attrib +r "%share-zone%\copy of cc.asc"
+
+start mew32 %cbf-fn-list%
+
+exit/b
+
+lu:
+Aug-11-2021
+
+
+
+::_
+:vdi
+
+echo. & echo * Open VDI Affinity files.
+
+call e vdit /a>nul
+call e nv /v>nul
+call e n /o>nul
+
+exit/b
+
+lu:
+Mar-1-2022
+
+
+
+::_
+:keld
+
+echo. & echo * Open Keld Affinity files.
+
+call e task
+call e vdit /a>nul
+rem call e i2>nul
+call e nv /v>nul
+call e n /o>nul
+
+exit/b
+
+lu:
+Apr-8-2022
+
+
+
+::_
+:atoi
+
+echo. & echo * Open ATOI Affinity files.
+
+set cbf-fn-list="%share-zone%\Miscellany\J.asc"
+
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\lbm\miscellany\lbm.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\atoi.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\copy of cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\it2.asc"
+rem I put ni.bat before n.bat and m.bat because I want ni.bat to be the first file that is searched!
+set cbf-fn-list=%cbf-fn-list% "%share-zone%\ni.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
+set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\g.bat"
+
+attrib +r "%share-zone%\copy of cc.asc"
+
+start mew32 %cbf-fn-list%
+
+exit/b
+
+lu:
+Aug-11-2021
+
+
+
+::_
+:xam-first
+
+echo. & echo * Open XAM Affinity files in Notepad.
+
+call xac np "%share-zone%\Miscellany\z.asc"
+call xac np "%composable-batch-files%\n.bat"
+call xac np "%share-zone%\ni.bat"
+
+exit/b
+
+lu:
+Aug-11-2021
+
+
+
+::_
+:aff_old
+:affi_old
+:inot_old
+
+echo. & echo * Open affinity files - old.
+
+start Mew32.exe "%reach out%\WK.asc" "%reach out%\CC.asc" "%reach out%\CM.asc" "%reach out%\IT.asc" 
+"%reach out%\DI.asc" 
+"%reach out%\JD.asc" "%reach out%\CH.asc" "%reach out%\RB.asc" "%reach out%\TJ.asc" "%reach out%\CI.asc" 
+"%reach out%\TR.asc" "%dropbox%\savannah\reach out\OC.asc" "%composable-batch-files%\n.bat"
+
+exit/b
+
+lu:
+Jan-9-2019
+
+
+
+::_
+:w
+:wait
+
+echo. & echo * Open "waiting" files.
+
+call fn machine-specific-file
+
+set first_filename=%cbf-fn%
+
+call fn ccf
+
+set second_filename=%cbf-fn%
+
+start mew32 "%first_filename%" "%second_filename%"
+
+exit/b
+
+lu:
+Feb-27-2019
+
+
+
+::_
+:affc
+
+echo. & echo * Open affinity files and close the DOS window.
+
+call :aff
+
+exit
+
+lu:
+Jan-23-2019
+
+
+
+::_
+:waitc
+
+echo. & echo * Wait and close.
+
+call %0 wait
+
+exit
+
+lu:
+Mar-18-2019
 
 
 
