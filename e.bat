@@ -145,6 +145,7 @@ set cbf-fn=
 
 call paco "%~1" .>nul && goto open-current-folder-file
 
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-2
 call :open-cbf-batch-file %*
 
 :
@@ -167,11 +168,11 @@ if "%cbf-fn%"=="" (
   call :open-cbf-wildcard-file %*
 )
 
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-3
 :
 if "%cbf-fn%"=="" (
   exit/b
 )
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-2
 
 goto main
 
@@ -379,8 +380,6 @@ exit/b
 
 :_
 :main
-
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-15-PM-3
 
 set cbf-app=%cbf-default-text-editor%
 
