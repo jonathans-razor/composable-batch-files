@@ -43,12 +43,12 @@ Feb-7-2024
 
 rem echo. & echo * New double dictionary code. The local dictionary overwites the primary dictionary.
 
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-5
 if not exist "%cbf-default-sd%" exit/b
 
 call el /c>nul
 
 call "%cbf-default-sd%" %1 2>nul
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-6
 
 rem The alias is found in the secondary dictionary, so exit. We are half-expecting an error.
 if not errorlevel 1 exit/b
