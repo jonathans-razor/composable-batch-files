@@ -306,7 +306,7 @@ exit/b
 :_
 :open-dbf-bash-file
 
-call pn dbf 2>nul
+call n dbf 2>nul
 if exist "%cbf-pt%\%1" (
   echo. & echo * Open DBF bash file.
   rem echo. & echo * "%1" exists.
@@ -323,7 +323,7 @@ exit/b
 :open-dbf-batch-file
 
 rem qq
-call pn dbf 2>nul
+call n dbf 2>nul
 if exist "%cbf-pt%\%1.bat" (
   echo. & echo * Open DBF batch file.
   echo. & echo * "%1.bat" exists.
