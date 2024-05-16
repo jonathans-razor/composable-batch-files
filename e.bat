@@ -70,6 +70,8 @@ exit/b
 
 :preprocess
 
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-1
+
 call el /c>nul
 call i /c>nul
 
@@ -169,6 +171,7 @@ if "%cbf-fn%"=="" (
 if "%cbf-fn%"=="" (
   exit/b
 )
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-2
 
 goto main
 
@@ -376,6 +379,8 @@ exit/b
 
 :_
 :main
+
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-15-PM-3
 
 set cbf-app=%cbf-default-text-editor%
 
