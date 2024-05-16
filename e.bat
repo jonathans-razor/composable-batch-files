@@ -158,6 +158,7 @@ if "%cbf-fn%"=="" (
   call :open-dbf-bash-file %*
 )
 
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-3
 :
 if "%cbf-fn%"=="" (
   call :open-aliased-file %*
@@ -168,7 +169,6 @@ if "%cbf-fn%"=="" (
   call :open-cbf-wildcard-file %*
 )
 
-echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - May-16-2024-1-06-PM-3
 :
 if "%cbf-fn%"=="" (
   exit/b
@@ -306,7 +306,7 @@ exit/b
 :_
 :open-dbf-bash-file
 
-call pn dbf>nul
+call pn dbf 2>nul
 if exist "%cbf-pt%\%1" (
   echo. & echo * Open DBF bash file.
   rem echo. & echo * "%1" exists.
@@ -322,7 +322,8 @@ exit/b
 :_
 :open-dbf-batch-file
 
-call pn dbf>nul
+rem qq
+call pn dbf 2>nul
 if exist "%cbf-pt%\%1.bat" (
   echo. & echo * Open DBF batch file.
   echo. & echo * "%1.bat" exists.

@@ -2332,7 +2332,7 @@ Mar-15-2024
 ::_
 :htse
 
-echo. & echo * How to suppress error messages in batch files. (!supp)
+echo. & echo * How to suppress error messages in batch files. (!nul, !supp)
 
 rem For example, this would suppress the standard cannot find label error message.
 goto %1 2>nul
