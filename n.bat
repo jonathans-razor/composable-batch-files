@@ -3148,7 +3148,8 @@ Oct-16-2023
 echo. & echo * LeetCode.
 
 set cbf-gs=https://docs.google.com/spreadsheets/d/1cPViBct-hqOPcmxnw7awCmwNFFOqwpmbzbJaNhzwyPE/edit#gid=0
-set cbf-url=https://leetcode.com/problemset/all/
+set cbf-url=https://leetcode.com/problemset/?difficulty=EASY^^^&page=2
+set cbf-url2=https://leetcode.com/problemset/all/
 
 exit/b
 
@@ -5189,6 +5190,8 @@ echo. & echo * The triple hat/caret seems to work for URLS!
 
 rem This works! Oct-10-2023
 set cbf-url=https://www.bing.com/search?q=Bing+AI^^^&showconv=1
+rem qq
+set cbf-url=https://leetcode.com/problemset/?difficulty=EASY^^^&page=2
 
 exit/b
 

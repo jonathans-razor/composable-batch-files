@@ -2534,6 +2534,26 @@ exit/b
 
 
 :_
+:May-9-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 367-valid-perfect-square.js 15
+node 367-valid-perfect-square.js 16
+node 367-valid-perfect-square.js 25
+node 367-valid-perfect-square.js 125
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2557,7 +2577,7 @@ exit/b
 
 
 :_
-:May-9-2024
+:May-17-2024
 
 cls
 
@@ -2565,10 +2585,7 @@ echo. & echo * %1.
 
 @echo on
 
-node 367-valid-perfect-square.js 15
-node 367-valid-perfect-square.js 16
-node 367-valid-perfect-square.js 25
-node 367-valid-perfect-square.js 125
+node 374-guess-number-higher-or-lower.js 10 6
 
 @echo off
 
