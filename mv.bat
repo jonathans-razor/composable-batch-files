@@ -114,6 +114,8 @@ call j tag || err Apr-12-2024-12-34-PM
 echo.
 pause
 
+rem post pause
+:popa
 rem Make sure mp3 is plugged in and detected.
 call t clja || err Apr-12-2024-12-33-PM
 
