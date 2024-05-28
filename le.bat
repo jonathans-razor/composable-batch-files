@@ -2554,6 +2554,23 @@ exit/b
 
 
 :_
+:May-17-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 374-guess-number-higher-or-lower.js 10 6
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2577,7 +2594,7 @@ exit/b
 
 
 :_
-:May-17-2024
+:May-27-2024
 
 cls
 
@@ -2585,7 +2602,11 @@ echo. & echo * %1.
 
 @echo on
 
-node 374-guess-number-higher-or-lower.js 10 6
+node 383-ranosm-note.js "aabb" "aabbc"
+node 383-ranosm-note.js "a" "b"
+node 383-ranosm-note.js "aa" "bb"
+node 383-ranosm-note.js "aa" "aab"
+node 383-ranosm-note.js "x" "y"
 
 @echo off
 
@@ -2593,4 +2614,4 @@ exit/b
 
 
 
-:_ (!efle, !rfsp) (mov-7) PERMANENT QQ
+:_ (!efle, !rfsp) (mov-7) PERMANENT QQ-9
