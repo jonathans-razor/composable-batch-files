@@ -553,6 +553,7 @@ May-30-2023
 :_
 :shwe
 :shoe
+:snea
 :snwe
 
 echo. & echo * Shoe Weights.
