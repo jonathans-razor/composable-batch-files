@@ -3418,7 +3418,6 @@ Oct-17-2023
 ::_
 :d
 :dsa
-:le
 
 echo. & echo * Data structures and algorithms.
 

@@ -2571,6 +2571,27 @@ exit/b
 
 
 :_
+:May-27-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+node 383-ranosm-note.js "aabb" "aabbc"
+node 383-ranosm-note.js "a" "b"
+node 383-ranosm-note.js "aa" "bb"
+node 383-ranosm-note.js "aa" "aab"
+node 383-ranosm-note.js "x" "y"
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2594,7 +2615,7 @@ exit/b
 
 
 :_
-:May-27-2024
+:May-31-2024
 
 cls
 
@@ -2602,11 +2623,7 @@ echo. & echo * %1.
 
 @echo on
 
-node 383-ranosm-note.js "aabb" "aabbc"
-node 383-ranosm-note.js "a" "b"
-node 383-ranosm-note.js "aa" "bb"
-node 383-ranosm-note.js "aa" "aab"
-node 383-ranosm-note.js "x" "y"
+node 389-find-the-difference.js "abc" "abcd"
 
 @echo off
 

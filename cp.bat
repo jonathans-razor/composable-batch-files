@@ -1494,4 +1494,20 @@ exit/b
 
 
 
+:_
+:le
+
+echo. & echo * Copy Leetcode template and open the file.
+
+if "%~2" == "" err The new filename to create is required.
+
+call t d>nul
+
+copy leetcode-template.js %2.js
+call vc %2.js
+
+exit/b
+
+
+
 :_ (!efcp)
