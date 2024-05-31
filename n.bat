@@ -7597,4 +7597,15 @@ Apr-19-2024
 
 
 
+:slac
+
+echo. & echo * Slack.
+
+set cbf-pt=%appdata%\Microsoft\Windows\Start Menu\Programs\Slack Technologies Inc
+set cbf-app=%cbf-pt%\slack.lnk
+
+exit/b
+
+
+
 :_ (!ef, !efn)

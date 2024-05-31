@@ -16,7 +16,7 @@ goto %1
 echo. & echo * Copy files using function routing.
 
 echo. & echo   Usage: %0 [Parameter 1]
-echo. & echo   Parameter 1: Label method to run.
+echo. & echo   Parameter 1: Function to run.
 echo. & echo   Batch file style: Multipurpose
 
 echo.          
@@ -48,6 +48,7 @@ echo             c  current folder
 echo             d  DCV
 echo             f  filename alias
 echo             p  folder alias (path)
+
 exit/b
 
 
