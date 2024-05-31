@@ -1481,4 +1481,17 @@ exit/b
 
 
 
+:_
+:slac
+
+echo. & echo * Copy the Slack lnk file to the startup folder.
+
+call t slac>nul
+call n star>nul
+copy *.lnk "%cbf-pt%"
+
+exit/b
+
+
+
 :_ (!efcp)
