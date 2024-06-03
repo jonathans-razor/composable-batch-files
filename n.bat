@@ -7507,7 +7507,7 @@ echo. & echo * For Git Testing.
 
 call n r>nul
 set cbf-pt=%cbf-pt%\for-git-testing
-set cbf-gi=https://github.com/jonathans-razor/for-git-testing.git
+set cbf-gi=https://github.com/jonathans-razor/for-git-testing/tree/jrj-test
 
 exit/b
 
