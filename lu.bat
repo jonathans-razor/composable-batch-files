@@ -3,10 +3,10 @@
 
 title CBF: %0
 
-if "%~1" == "" goto read
+if "%~1" == "" goto write
 if "%~1" == "?" goto help
 
-goto write
+goto read
 
 
 
