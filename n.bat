@@ -7608,4 +7608,17 @@ exit/b
 
 
 
+:_
+:ze
+:zero
+:zh
+
+echo. & echo * Zero hedge.
+
+set cbf-url=https://www.zerohedge.com
+
+exit/b
+
+
+
 :_ (!ef, !efn)
