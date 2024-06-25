@@ -7622,4 +7622,15 @@ exit/b
 
 
 
+:_
+:hirb
+
+echo. & echo * History of racquetball.
+
+set cbf-gs=https://docs.google.com/spreadsheets/d/1hGGx7LqIHeosCr_HbvVxa2TrqjwyWyqATP-9u-gQtdQ/edit?gid=313738537#gid=313738537
+
+exit/b
+
+
+
 :_ (!ef, !efn)

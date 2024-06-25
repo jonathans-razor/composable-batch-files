@@ -1373,6 +1373,44 @@ exit/b
 
 
 ::_
+:lbr
+
+echo. & echo * List branches, remote.
+
+git pull --prune
+
+echo.
+@echo on
+git branch -r
+@echo off
+
+exit/b
+
+lu:
+Dec-22-2022
+Dec-13-2019
+
+
+
+::_
+:lb
+
+echo. & echo * List branches, local.
+
+echo.
+rem qq
+@echo on
+git branch
+@echo off
+
+exit/b
+
+lu:
+Oct-7-2019
+
+
+
+::_
 :lba
 
 echo. & echo * List all branches.
@@ -1426,43 +1464,6 @@ exit/b
 
 lu:
 Oct-23-2020
-
-
-
-::_
-:lb
-
-echo. & echo * List branches, local.
-
-echo.
-@echo on
-git branch
-@echo off
-
-exit/b
-
-lu:
-Oct-7-2019
-
-
-
-::_
-:lbr
-
-echo. & echo * List branches, remote.
-
-git pull --prune
-
-echo.
-@echo on
-git branch -r
-@echo off
-
-exit/b
-
-lu:
-Dec-22-2022
-Dec-13-2019
 
 
 
