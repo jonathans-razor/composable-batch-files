@@ -1398,7 +1398,6 @@ Dec-13-2019
 echo. & echo * List branches, local.
 
 echo.
-rem qq
 @echo on
 git branch
 @echo off
