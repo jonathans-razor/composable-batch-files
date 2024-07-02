@@ -479,12 +479,6 @@ exit/b
 
 :_
 
-:code-execution-area
-
-
-
-:_
-
 echo. & echo * Executing parameters.
 
 echo %1
@@ -493,6 +487,37 @@ echo %1
 exit/b
 
 May-9-2024
+
+
+
+:_
+
+:code-execution-area
+
+
+
+:_
+:
+
+echo. & echo * Testing no changes.
+
+rem call s | find /i "Your branch is up to date with"
+
+git status --porcelain=v1
+rem git status --porcelain=v1 2>/dev/nul
+
+rem git status -s
+
+echo. & echo EL: %errorlevel%
+
+rem if errorlevel 1 (
+  rem echo. & echo * Changes!
+  rem goto :acp
+rem ) else (
+  rem echo. & echo * No changes.
+rem )
+
+exit/b
 
 
 

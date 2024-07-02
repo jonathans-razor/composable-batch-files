@@ -4051,15 +4051,15 @@ call fn .git || exit/b
 
 rem I commented the following line because my local repo was ahead by 1 commit and working tree
 rem was clean. May-13-2024
-call s | find /i "Everything up-to-date">nul
+rem call s | find /i "Everything up-to-date">nul
 
-if errorlevel 1 (
-  echo. & echo * Changes!
   goto :acp
-) else (
+rem if errorlevel 1 (
 rem qq
-  echo. & echo * No changes.
-)
+  rem echo. & echo * Changes!
+rem ) else (
+  rem echo. & echo * No changes.
+rem )
 
 exit/b
 
