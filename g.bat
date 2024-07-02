@@ -4054,8 +4054,10 @@ rem was clean. May-13-2024
 call s | find /i "Everything up-to-date">nul
 
 if errorlevel 1 (
+  echo. & echo * Changes!
   goto :acp
 ) else (
+rem qq
   echo. & echo * No changes.
 )
 
