@@ -7638,15 +7638,14 @@ Apr-19-2024
 
 echo. & echo * Vue.js Crash Course July 2024.
 
-rem  qq
-call n >nul
-set cbf-pt=%cbf-pt%\
+call n v>nul
+set cbf-pt=%cbf-pt%\vj2
 
-set cbf-lh=
-set cbf-srv=
-set cbf-=
-set cbf-=
-set cbf-yt=https://www.youtube.com/watch?v=VeNfHj6MhgA&list=WL&index=1
+set cbf-lh=8080
+set cbf-srv=srv
+
+rem qq
+set cbf-yt=https://www.youtube.com/watch?v=VeNfHj6MhgA
 
 exit/b
 
