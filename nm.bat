@@ -1015,9 +1015,6 @@ v Add Prettier for code formatting? ... No / Yes
 
 Scaffolding project in d:\Dropbox\IT\vue-testing\ve1...
 
-The "." creates the project in the current folder I believe. Feb-1-2024
-npm create vue@latest .
-
 
 
 ::_
@@ -1035,6 +1032,25 @@ exit/b
 
 lu:
 Mar-5-2024
+
+
+
+::_
+:c-vud-depr
+
+cls
+
+echo. & echo * Create a new Vue project. Deprecated because it creates an excess folder.
+
+npm create vue .
+
+exit/b
+
+lu:
+Jul-2-2024
+
+The "." creates the project in the current folder I believe. Feb-1-2024
+npm create vue@latest .
 
 
 

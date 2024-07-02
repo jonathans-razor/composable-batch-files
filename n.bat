@@ -4860,6 +4860,8 @@ if %errorlevel% == 0 (
   call el /c>nul
 )
 
+set cbf-docs=%cbf-pt%\cbf-tc.txt
+
 exit/b
 
 lc:
@@ -7641,8 +7643,8 @@ echo. & echo * Vue.js Crash Course July 2024.
 call n v>nul
 set cbf-pt=%cbf-pt%\vj2
 
-set cbf-lh=8080
-set cbf-srv=srv
+set cbf-lh=5173
+set cbf-srv=dev
 
 rem qq
 set cbf-yt=https://www.youtube.com/watch?v=VeNfHj6MhgA
