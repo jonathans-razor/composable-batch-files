@@ -4055,7 +4055,6 @@ rem call s | find /i "Everything up-to-date">nul
 
   goto :acp
 rem if errorlevel 1 (
-rem qq
   rem echo. & echo * Changes!
 rem ) else (
   rem echo. & echo * No changes.

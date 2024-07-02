@@ -7527,6 +7527,42 @@ exit/b
 
 
 
+:_
+:slac
+
+echo. & echo * Slack.
+
+set cbf-pt=%appdata%\Microsoft\Windows\Start Menu\Programs\Slack Technologies Inc
+set cbf-app=%cbf-pt%\slack.lnk
+
+exit/b
+
+
+
+:_
+:ze
+:zero
+:zh
+
+echo. & echo * Zero hedge.
+
+set cbf-url=https://www.zerohedge.com
+
+exit/b
+
+
+
+:_
+:hirb
+
+echo. & echo * History of racquetball.
+
+set cbf-gs=https://docs.google.com/spreadsheets/d/1hGGx7LqIHeosCr_HbvVxa2TrqjwyWyqATP-9u-gQtdQ/edit?gid=313738537#gid=313738537
+
+exit/b
+
+
+
 :_+ KoderHQ Family (!fychq)
 
 
@@ -7598,36 +7634,19 @@ Apr-19-2024
 
 
 :_
-:slac
+:vj2
 
-echo. & echo * Slack.
+echo. & echo * Vue.js Crash Course July 2024.
 
-set cbf-pt=%appdata%\Microsoft\Windows\Start Menu\Programs\Slack Technologies Inc
-set cbf-app=%cbf-pt%\slack.lnk
+rem  qq
+call n >nul
+set cbf-pt=%cbf-pt%\
 
-exit/b
-
-
-
-:_
-:ze
-:zero
-:zh
-
-echo. & echo * Zero hedge.
-
-set cbf-url=https://www.zerohedge.com
-
-exit/b
-
-
-
-:_
-:hirb
-
-echo. & echo * History of racquetball.
-
-set cbf-gs=https://docs.google.com/spreadsheets/d/1hGGx7LqIHeosCr_HbvVxa2TrqjwyWyqATP-9u-gQtdQ/edit?gid=313738537#gid=313738537
+set cbf-lh=
+set cbf-srv=
+set cbf-=
+set cbf-=
+set cbf-yt=https://www.youtube.com/watch?v=VeNfHj6MhgA&list=WL&index=1
 
 exit/b
 
