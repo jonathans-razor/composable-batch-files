@@ -7646,8 +7646,53 @@ set cbf-pt=%cbf-pt%\vj2
 set cbf-lh=5173
 set cbf-srv=dev
 
-rem qq
 set cbf-yt=https://www.youtube.com/watch?v=VeNfHj6MhgA
+
+exit/b
+
+
+
+:_+ Mouse and Keyboard Center
+
+
+
+::_
+
+:imous
+
+set fp=* Install Mouse and Keyboard Center.
+
+rem lu: Feb-26-2020
+
+echo.
+echo %fp%
+
+if exist "%dropbox%\Software\Tools\MouseKeyboardCenter_64bit_ENG_11.1.exe" set cbf-app=%dropbox%\Software\Tools\MouseKeyboardCenter_64bit_ENG_11.1.exe
+if exist "%share-zone%\copied software\MouseKeyboardCenter_64bit_ENG_13.250.exe" set cbf-app=%share-zone%\copied software\MouseKeyboardCenter_64bit_ENG_13.250.exe
+
+if "%cbf-app%" == "" (
+  echo. & echo * Error: Mouse installation software was not found.
+  exit/b
+)
+
+exit/b
+
+
+
+::_
+
+:mous
+
+:mouse
+
+set fp=* Run Mouse and Keyboard Center.
+
+rem lu: Feb-26-2020
+
+echo.
+echo %fp%
+
+set cbf-app=C:\Program Files\Microsoft Mouse and Keyboard Center\MouseKeyboardCenter.exe
 
 exit/b
 
