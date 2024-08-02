@@ -16,20 +16,18 @@ goto %1
 
 echo. & echo * Move files using function routing.
 
-echo. & echo Usage: %0 [Parameter 1] (where parameter 1 is the atomic function you wish to call). If left blank, "pc" is used.
+echo. & echo * Usage: %~n0 [space separated parameter(s)] (where parameter 1 is the atomic function you wish to call). If left blank, "pc" is used.
 
-echo. & echo Batch file style: Multipurpose
+echo. & echo * Batch file style: Multipurpose
 
 echo.          
-echo    Parameter  Description
-echo ------------  --------------------------------------------------------------
-echo           cp  Move file in the current directory to nickname-specified path.
-echo          cp2  Move file in the current directory to nickname-specified path ^
-                   (newer version).
-echo          cps  Move file in the current directory to nickname-specified path ^
-                   and stay in current folder.
-echo          cpa  Move all files in the current directory to nickname-specified 
-echo           pc  Overarching podcast mover.
+echo   Parameter  Description
+echo   ---------  --------------------------------------------------------------
+echo          cp  Move file in the current directory to nickname-specified path.
+echo         cps  Move file in the current directory to nickname-specified path ^
+                  and stay in current folder.
+echo         cpa  Move all files in the current directory to nickname-specified 
+echo          pc  Overarching podcast mover.
 
 exit/b
 
@@ -270,6 +268,42 @@ exit/b
 
 
 :_
+:m2nsp
+
+echo. & echo * Move file in the current directory to nickname-specified path.
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+call fn "%~1" || exit/b 5
+
+call rf r>nul
+
+call pn %2 || exit/b
+
+@echo on
+move "%~1" "%cbf-pt%"
+@echo off
+
+if errorlevel 1 exit/b
+
+call t %2
+dir "%~1"
+
+exit/b
+
+
+:help
+
+echo. & echo * Parameter Description(s):
+echo. & echo   Parameter 1: Current folder filename.
+echo   Parameter 2: Target folder alias.
+
+exit/b
+
+
+
+:_
 :cp
 :cps
 
@@ -307,42 +341,6 @@ exit/b
 echo. & echo * Parameter Description(s):
 echo. & echo   Parameter 2: Current folder filename.
 echo   Parameter 3: Target folder alias.
-
-exit/b
-
-
-
-:_
-:m2nsp
-
-echo. & echo * Move file in the current directory to nickname-specified path.
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-
-call fn "%~1" || exit/b 5
-
-call rf r>nul
-
-call pn %2 || exit/b
-
-@echo on
-move "%~1" "%cbf-pt%"
-@echo off
-
-if errorlevel 1 exit/b
-
-call t %2
-dir "%~1"
-
-exit/b
-
-
-:help
-
-echo. & echo * Parameter Description(s):
-echo. & echo   Parameter 1: Current folder filename.
-echo   Parameter 2: Target folder alias.
 
 exit/b
 

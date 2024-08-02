@@ -87,7 +87,7 @@ exit/b
 
 
 :_
-:gh
+:gb
 
 call sf cfgh
 
