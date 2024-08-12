@@ -5459,8 +5459,25 @@ Sep-25-2020
 
 ::_
 :b
+:b2
 :brea
 :nppi
+
+set cbf-pd=Breakaway 2.
+
+echo. & echo * %cbf-pd%.
+
+call n pict
+set cbf-pt=%cbf-pt%\Breakaway-2
+
+exit/b
+
+inaugurated on Aug-12-2024
+
+
+
+::_
+:b-old
 
 set cbf-pd=Breakaway
 
@@ -7511,7 +7528,7 @@ echo. & echo * For Git Testing.
 
 call n r>nul
 set cbf-pt=%cbf-pt%\for-git-testing
-set cbf-gi=https://github.com/jonathans-razor/for-git-testing/tree/jrj-test
+set cbf-gb=https://github.com/jonathans-razor/for-git-testing
 
 exit/b
 
