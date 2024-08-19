@@ -36,7 +36,6 @@ echo. & echo   Batch file style: Multipurpose
 echo. & echo * Samples:
 echo   %~n0 index.js
 echo   %~n0 te
-echo   %~n0 te /p
 
 exit/b
 

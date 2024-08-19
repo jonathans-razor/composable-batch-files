@@ -63,7 +63,6 @@ exit/b
 
 
 :_
-
 :load-alias-filename-onto-the-clipboard
 
 call fn %1>nul || exit/b
@@ -77,7 +76,6 @@ exit/b
 
 
 :_
-
 :loads-the-filename-with-no-path-onto-the-clipboard
 
 call fn %1>nul || exit/b

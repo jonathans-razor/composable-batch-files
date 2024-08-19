@@ -3124,44 +3124,6 @@ Oct-13-2023
 
 
 
-:_+ LeetCode (!fcle)
-
-
-
-::_
-:ne
-:neet
-
-echo. & echo * Neet.
-
-call an br>nul
-set cbf-url=https://neetcode.io/practice
-
-exit/b
-
-lu:
-Oct-16-2023
-
-
-
-::_
-:le
-:leet
-
-echo. & echo * LeetCode.
-
-set cbf-gs=https://docs.google.com/spreadsheets/d/1cPViBct-hqOPcmxnw7awCmwNFFOqwpmbzbJaNhzwyPE/edit#gid=0
-set cbf-url=https://leetcode.com/problemset/?difficulty=EASY^^^&page=2
-set cbf-url2=https://leetcode.com/problemset/all/
-
-exit/b
-
-lu:
-Jan-10-2024
-Oct-13-2023
-
-
-
 :_
 :til
 
@@ -3635,6 +3597,7 @@ Nov-15-2023
 
 ::_
 :tc
+:toc
 :tcc
 :tccbf
 
@@ -4827,7 +4790,7 @@ exit/b
 
 echo. & echo * Jonathan's Github page.
 
-set cbf-gi=https://github.com/jonathans-razor
+set cbf-gb=https://github.com/jonathans-razor
 set cbf-gia=https://api.github.com/repos/jonathans-razor/composable-batch-files/commits?per_page=3
 set cbf-gip=https://github.com/settings/profile
 set cbf-gir=https://github.com/jonathans-razor?tab=repositories
@@ -7713,6 +7676,44 @@ echo %fp%
 set cbf-app=C:\Program Files\Microsoft Mouse and Keyboard Center\MouseKeyboardCenter.exe
 
 exit/b
+
+
+
+:_+ LeetCode (!fcle)
+
+
+
+::_
+:ne
+:neet
+
+echo. & echo * Neet.
+
+call an br>nul
+set cbf-url=https://neetcode.io/practice
+
+exit/b
+
+lu:
+Oct-16-2023
+
+
+
+::_
+:le
+:leet
+
+echo. & echo * LeetCode.
+
+set cbf-gs=https://docs.google.com/spreadsheets/d/1cPViBct-hqOPcmxnw7awCmwNFFOqwpmbzbJaNhzwyPE/edit#gid=0
+set cbf-url=https://leetcode.com/problemset/?difficulty=EASY^^^&page=2
+set cbf-url2=https://leetcode.com/problemset/all/
+
+exit/b
+
+lu:
+Jan-10-2024
+Oct-13-2023
 
 
 

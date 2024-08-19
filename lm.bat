@@ -1,5 +1,5 @@
 @echo off
-if "%~1" == "" goto help
+if "%~1" == "" goto fn
 if "%~1" == "?" goto help
 goto %1
 
@@ -12,13 +12,13 @@ echo. & echo * Load clipboard multipurpose.
 echo. & echo * Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1:
-echo   Alias of the text you wish to load.
+echo   Alias of the function to run.
 
 echo. & echo * Batch file style: Multipurpose
 
 echo. & echo * Sample(s):
-echo   %~n0 ga
 echo   %~n0 fn
+echo   %~n0 ga
 
 exit/b
 
@@ -72,8 +72,7 @@ exit/b
 
 :_
 :fn
-
-rem echo. & echo * Copy latest filename to clipboard.
+echo. & echo * Copy latest filename to clipboard.
 
 dir /b /o-d>c:\a\python-results.txt
 

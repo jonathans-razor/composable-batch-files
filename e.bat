@@ -31,7 +31,7 @@ echo. & echo   Parameter 2 (Optional):
 echo   /a: aliased file. Since this is the default, it's only necessary for overriding purposes.
 echo   /af: aliased folder.
 echo   /ba: FF bash file.
-echo   /c: current folder file (used for creating new extenionless files)
+echo   /c: create file (used for creating a new file)
 echo   /d: DBF batch file.
 echo   /e: override default editor.
 echo   /np: np file.

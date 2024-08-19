@@ -113,7 +113,7 @@ echo.
 pause
 
 rem post pause
-:popa
+:pp
 rem Make sure mp3 is plugged in and detected.
 call t clja || err Apr-12-2024-12-33-PM
 
