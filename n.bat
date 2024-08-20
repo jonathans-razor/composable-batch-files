@@ -3386,6 +3386,7 @@ Oct-17-2023
 echo. & echo * Data structures and algorithms.
 
 call n it>nul
+set cbf-gb=https://github.com/jonathans-razor/data-structures-and-algorithms
 set cbf-pt=%cbf-pt%\dsa
 set cbf-gi=https://github.com/jonathans-razor/data-structures-and-algorithms
 

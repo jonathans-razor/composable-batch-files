@@ -20,6 +20,9 @@ echo. & echo   Usage: %~n0 [space separated parameter(s)]
 
 echo. & echo * Parameter 1:
 
+echo   If parameter 1 contains a period, then use python to execute that file.
+echo   Else, parameter 1 is an alias and this will run function associated with that alias.
+
 echo. & echo   Batch file style: Multipurpose
 
 echo. & echo * Samples:
@@ -38,17 +41,6 @@ supported-languages-series-jj
    .--.      .--.      .--.      .--.      .--.                 
  :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
         `--'      `--'      `--'      `--'      `--'     
-
-
-
-:_
-:upgr
-
-echo. & echo * Upgrade Python.
-
-python -m pip install --upgrade pip
-
-exit/b
 
 
 
@@ -612,6 +604,72 @@ call paco "%~1" .py || exit/b
 
 echo.
 python %*
+
+exit/b
+
+
+
+:_
+:upgr
+
+echo. & echo * Upgrade Python.
+
+python -m pip install --upgrade pip
+
+exit/b
+
+
+
+:_
+:rdf1
+
+echo. & echo * Install RDF.
+
+pip install rdflib
+
+exit/b
+
+
+
+:_
+:rdf2
+
+echo. & echo * Install RDF 2.
+
+pip install git+https://github.com/rdflib/rdflib@main
+
+exit/b
+
+
+
+:_
+:rdf3
+
+echo. & echo * Install %1.
+
+pip install rdflib-neo4j
+
+exit/b
+
+
+
+:_
+:rdf4
+
+echo. & echo * Install %1.
+
+pip install rdflib-pyld-compat
+
+exit/b
+
+
+
+:_
+:rdf5
+
+echo. & echo * Install %1.
+
+pip install pyld_json_from_rdflib_graph
 
 exit/b
 
