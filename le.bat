@@ -2626,6 +2626,23 @@ exit/b
 
 
 :_
+:Aug-20-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python select-anno.py http://example.org/hand2
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2657,7 +2674,7 @@ echo. & echo * %1.
 
 @echo on
 
-python select-anno.py http://example.org/hand2
+python json-ld-test-2.py
 
 @echo off
 

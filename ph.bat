@@ -675,4 +675,15 @@ exit/b
 
 
 
+:_
+:pyld
+
+echo. & echo * Install %1.
+
+pip install pyld
+
+exit/b
+
+
+
 :_ (!efpyt)
