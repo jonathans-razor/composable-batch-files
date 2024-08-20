@@ -3,6 +3,7 @@
 @echo off
 
 title %0
+if "%~1" == "" goto help
 if "%~1" == "?" goto help
 call paco "%~1" .>nul && goto load-current-folder-filename-onto-clipboard
 call paco "%~2" /c>nul && goto load-contents "%~1"
