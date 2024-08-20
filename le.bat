@@ -2640,7 +2640,7 @@ echo. & echo * %1.
 
 @echo on
 
-python 
+python json-ld-test.py
 
 @echo off
 
