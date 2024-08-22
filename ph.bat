@@ -686,4 +686,26 @@ exit/b
 
 
 
+:_
+:trld
+
+echo. & echo * Install %1.
+
+pip install requests trld
+
+exit/b
+
+
+
+:_
+:requ
+
+echo. & echo * Install %1.
+
+pip install requests
+
+exit/b
+
+
+
 :_ (!efpyt)

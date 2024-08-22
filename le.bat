@@ -2609,7 +2609,25 @@ exit/b
 
 
 :_
+:Aug-20-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python select-anno.py http://example.org/hand2
+
+@echo off
+
+exit/b
+
+
+
+:_
 :Aug-19-2024
+:t1
 
 cls
 
@@ -2634,7 +2652,77 @@ echo. & echo * %1.
 
 @echo on
 
-python select-anno.py http://example.org/hand2
+python json-ld-test-2.py
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Aug-22-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python json-ld-test-3.py https://jsonplaceholder.typicode.com/posts/1
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Aug-22-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python json-ld-test-4.py posts/1
+python json-ld-test-4.py posts/2
+python json-ld-test-4.py posts/3
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Aug-22-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python json-ld-test-5.py 
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Aug-22-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python json-ld-test-6.py 
 
 @echo off
 
@@ -2666,7 +2754,7 @@ exit/b
 
 
 :_
-:Aug-20-2024
+:Aug-22-2024
 
 cls
 
@@ -2674,7 +2762,7 @@ echo. & echo * %1.
 
 @echo on
 
-python json-ld-test-2.py
+python json-ld-test-7.py 
 
 @echo off
 
