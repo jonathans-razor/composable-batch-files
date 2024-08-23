@@ -2731,6 +2731,23 @@ exit/b
 
 
 :_
+:Aug-22-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python json-ld-test-7.py 
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2754,7 +2771,7 @@ exit/b
 
 
 :_
-:Aug-22-2024
+:Aug-23-2024
 
 cls
 
@@ -2762,7 +2779,7 @@ echo. & echo * %1.
 
 @echo on
 
-python json-ld-test-7.py 
+python json-ld-test-8.py 
 
 @echo off
 
