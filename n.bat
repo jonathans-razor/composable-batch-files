@@ -7718,4 +7718,19 @@ Oct-13-2023
 
 
 
+:_
+:jld
+
+echo. & echo * JSON-LD.
+
+call n d>nul
+set cbf-pt=%cbf-pt%\
+
+set cbf-png=%cbf-pt%\code compare between solution 11 and 12.PNG
+set cbf-gs=https://docs.google.com/spreadsheets/d/1OPdyc_D-f8Wbw7CDShXBpX8MO0sLgPPKnzZjqbIAugs/edit?gid=0#gid=0
+
+exit/b
+
+
+
 :_ (!ef, !efn)

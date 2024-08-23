@@ -5,7 +5,8 @@
 if "%~1" == "?" goto help
 
 call t dsa>nul
-call :is-leetcode-number %1 && exit/b
+if "%~1" == "iln" call :is-leetcode-number %1 && exit/b
+rem call :is-leetcode-number %1 && exit/b
 
 if "%~1" == "" (
   goto code-execution-area
@@ -2748,6 +2749,40 @@ exit/b
 
 
 :_
+:Aug-23-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python json-ld-test-8.py 
+
+@echo off
+
+exit/b
+
+
+
+:_
+:Aug-23-2024
+
+cls
+
+echo. & echo * %1.
+
+@echo on
+
+python json-ld-test-9.py 
+
+@echo off
+
+exit/b
+
+
+
+:_
 :
 
 cls
@@ -2771,16 +2806,22 @@ exit/b
 
 
 :_
-:Aug-23-2024
+:11
+:12
+:13
+:14
+:15
+:16
+:17
+:18
+:19
 
 cls
 
-echo. & echo * %1.
+echo. & echo * Run solution %1.
 
 @echo on
-
-python json-ld-test-8.py 
-
+python json-ld-test-%1.py 
 @echo off
 
 exit/b
