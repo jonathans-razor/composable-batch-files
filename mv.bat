@@ -16,9 +16,12 @@ goto %1
 
 echo. & echo * Move files using function routing.
 
-echo. & echo * Usage: %~n0 [space separated parameter(s)] (where parameter 1 is the atomic function you wish to call). If left blank, "pc" is used.
+echo. & echo   Usage: %~n0 [space separated parameter(s)] 
 
-echo. & echo * Batch file style: Multipurpose
+echo. & echo   Parameter 1: Move type (If left blank, "pc" is used.
+echo. & echo   Parameter gt 1: Refer to the individual function help.
+
+echo. & echo   Batch file style: Multipurpose
 
 echo.          
 echo   Parameter  Description
