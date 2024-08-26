@@ -7317,6 +7317,7 @@ exit/b
 
 
 :_
+:colcom
 :colo
 :mcd
 
@@ -7734,7 +7735,11 @@ Oct-13-2023
 
 
 
-:_
+:_ + JSON-LD (!fyjld)
+
+
+
+::_
 :jld
 
 echo. & echo * JSON-LD.
@@ -7762,6 +7767,32 @@ exit/b
 
 ::PyLD JSON-LD Python
 
+
+
+
+::_
+:ldp
+
+echo. & echo * Intro to Linked Data with Python.
+
+call n r>nul
+set cbf-pt=%cbf-pt%\intro-linkeddata-mongo-python
+set cbf-gb=https://github.com/polyneme/intro-linkeddata-mongo-python.git
+
+exit/b
+
+
+
+::_
+:ldpe
+
+echo. & echo * Intro to Linked Data with Python - Exercise.
+
+call n r>nul
+set cbf-pt=%cbf-pt%\intro-linkeddata-mongo-python-exercise
+set cbf-gb=https://github.com/polyneme/intro-linkeddata-mongo-python.git
+
+exit/b
 
 
 

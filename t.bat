@@ -48,7 +48,7 @@ call el /c>nul
 set cbf-app=
 set cbf-pt=
 
-call pn %1 || exit/b
+call n %1 || exit/b
 
 goto main
 
