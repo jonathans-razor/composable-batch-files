@@ -7777,7 +7777,11 @@ echo. & echo * Intro to Linked Data with Python.
 
 call n r>nul
 set cbf-pt=%cbf-pt%\intro-linkeddata-mongo-python
+
 set cbf-gb=https://github.com/polyneme/intro-linkeddata-mongo-python.git
+
+rem Intro to Linked Data with Python:
+set cbf-yt=https://www.youtube.com/watch?v=pKHrAAoEB9w
 
 exit/b
 
@@ -7790,7 +7794,12 @@ echo. & echo * Intro to Linked Data with Python - Exercise.
 
 call n r>nul
 set cbf-pt=%cbf-pt%\intro-linkeddata-mongo-python-exercise
-set cbf-gb=https://github.com/polyneme/intro-linkeddata-mongo-python.git
+set cbf-gb=https://github.com/jonathans-razor/intro-linkeddata-mongo-python-exercise.git
+
+rem JSON-LD format.
+set cbf-url=https://data.nobelprize.org/store/6/metadata/997?recursive=laureate^^^&format=application/ld+json
+set cbf-url2=https://data.nobelprize.org/resource/laureate/72
+
 
 exit/b
 

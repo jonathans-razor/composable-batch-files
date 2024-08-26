@@ -708,4 +708,15 @@ exit/b
 
 
 
+:_
+:toolz
+
+echo. & echo * Install %1.
+
+pip install toolz
+
+exit/b
+
+
+
 :_ (!efpyt)

@@ -227,7 +227,6 @@ set cbf-gba=
 rem GitHub - Historical record
 set cbf-gbh=
 
-rem qq
 ::
 rem GitHub - My Implementation of Another GitHub Repository
 set cbf-gbmy=
