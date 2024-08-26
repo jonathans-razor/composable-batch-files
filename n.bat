@@ -89,6 +89,22 @@ Mar-7-2024
 
 
 ::_
+:ascii-art-missing-parameter
+
+echo. & echo * ASCII Art - %1.
+
+call n cbf
+
+set cbf-message-graphic=%cbf-pt%\aa-missing-parameter.txt
+
+exit/b
+
+lu:
+Aug-26-2024
+
+
+
+::_
 :ascii-art-notice
 
 echo. & echo * ASCII Art - %1.

@@ -2806,31 +2806,16 @@ exit/b
 
 
 :_
-:1
-:2
-:3
-:4
-:5
-:6
-:7
-:8
-:9
-:11
-:12
-:13
-:14
-:15
-:16
-:17
-:18
-:19
+:jld
 
 cls
 
-echo. & echo * Run solution %1.
+if "%~2" == "" errmp Parameter 2 is missing.
+
+echo. & echo * Run JSON-LD solution %2.
 
 @echo on
-python json-ld-test-%1.py 
+python json-ld-test-%2.py 
 @echo off
 
 exit/b
