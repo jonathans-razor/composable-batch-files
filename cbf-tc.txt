@@ -32,6 +32,7 @@ browser-  Defines the behavior of calling browsers.
    cbf-2  Shows more CBF files.
   cbf-el  CBF Error Level Codes.
   cbf-gl  Glossary of terms used in CBF.
+  cbf-gr  CBF Error Graphics.
   cbf-ov  CBF Overview.
   cbf-sg  CBF Style Guide.
   cbf-tc  This table of contents of CBF batch files.

@@ -7740,12 +7740,28 @@ Oct-13-2023
 echo. & echo * JSON-LD.
 
 call n d>nul
-set cbf-pt=%cbf-pt%\
+set cbf-pt=%cbf-pt%\json-ld
 
+rem Difference between JSON and JSON-LD
 set cbf-png=%cbf-pt%\code compare between solution 11 and 12.PNG
+
+set cbf-gb=https://github.com/polyneme/intro-linkeddata-mongo-python
+
 set cbf-gs=https://docs.google.com/spreadsheets/d/1OPdyc_D-f8Wbw7CDShXBpX8MO0sLgPPKnzZjqbIAugs/edit?gid=0#gid=0
 
+rem Fireside Chat
+set cbf-yt=https://www.youtube.com/watch?v=B8N16ZukTx8
+
 exit/b
+
++ Google Searches:
+
+::JSON-LD PyLD
+
+::Python PyLD JSON-LD
+
+::PyLD JSON-LD Python
+
 
 
 

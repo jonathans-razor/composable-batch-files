@@ -1,0 +1,13 @@
+
+Composable Batch Files (CBF) - Error Graphics
+
+  .--.      .--.      .--.      .--.      .--.
+:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+       `--'      `--'      `--'      `--'      `--' 
+:Error categories:
+
+::file doesn't exist
+
+::general
+
+::missing parameter

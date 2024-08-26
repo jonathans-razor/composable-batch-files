@@ -213,37 +213,40 @@ set cbf-fq=
 rem Full Pem
 set cbf-full-pem=
 
+:+ Github
+
+::
+rem GitHub
+set cbf-gb=
+
+::
+rem GitHub - API
+set cbf-gba=
+
+::
+rem GitHub - Historical record
+set cbf-gbh=
+
+rem qq
+::
+rem GitHub - My Implementation of Another GitHub Repository
+set cbf-gbmy=
+
+::
+rem GitHub - Original Content (skw github source material)
+set cbf-gbo=
+
+::
+rem GitHub - Profile
+set cbf-gbp=
+
+::
+rem GitHub Repository
+set cbf-gbr=
+
 :
 rem Google Docs
 set cbf-gd=
-
-:
-rem GitHub
-set cbf-gi=
-
-:
-rem GitHub - API
-set cbf-gia=
-
-:
-rem GitHub - My Implementation of Another GitHub Repository
-set cbf-gimy=
-
-:
-rem GitHub - Original Content (skw github source material)
-set cbf-gio=
-
-:
-rem GitHub - Historical record
-set cbf-gih=
-
-:
-rem GitHub - Profile
-set cbf-gip=
-
-:
-rem GitHub Repository
-set cbf-gir=
 
 :
 rem GitLab
