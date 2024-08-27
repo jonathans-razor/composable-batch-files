@@ -719,4 +719,27 @@ exit/b
 
 
 
+:_
+:gzip
+
+echo. & echo * Install %1.
+
+pip install gzip
+
+exit/b
+
+
+
+:_
+:pkzip
+:rdflib
+
+echo. & echo * Install %1.
+
+pip install %1
+
+exit/b
+
+
+
 :_ (!efpyt)

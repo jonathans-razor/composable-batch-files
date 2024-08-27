@@ -758,6 +758,24 @@ Apr-25-2018
 
 
 ::_
+:upda
+
+echo. & echo * Update Git version.
+
+echo.
+git update-git-for-windows
+
+exit/b
+
+lu:
+Sep-12-2022
+
+Sep-12-2022: Current Version on XPS After picture: git version 2.37.3.windows.1
+Sep-12-2022: Current Version on XPS Before picture: git version 2.34.1.windows.1
+
+
+
+::_
 :bv
 :label
 :num
@@ -786,24 +804,6 @@ exit/b
 
 lu:
 Jun-7-2018
-
-
-
-::_
-:upda
-
-echo. & echo * Update Git version.
-
-echo.
-git update-git-for-windows
-
-exit/b
-
-lu:
-Sep-12-2022
-
-Sep-12-2022: Current Version on XPS After picture: git version 2.37.3.windows.1
-Sep-12-2022: Current Version on XPS Before picture: git version 2.34.1.windows.1
 
 
 
