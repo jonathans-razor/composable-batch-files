@@ -7744,13 +7744,14 @@ Oct-13-2023
 
 echo. & echo * JSON-LD.
 
-call n d>nul
+call n r>nul
 set cbf-pt=%cbf-pt%\json-ld
 
 rem Difference between JSON and JSON-LD
 set cbf-png=%cbf-pt%\code compare between solution 11 and 12.PNG
 
-set cbf-gb=https://github.com/polyneme/intro-linkeddata-mongo-python
+set cbf-gb=https://github.com/jonathans-razor/json-ld
+set cbf-gb2=https://github.com/polyneme/intro-linkeddata-mongo-python
 
 set cbf-gs=https://docs.google.com/spreadsheets/d/1OPdyc_D-f8Wbw7CDShXBpX8MO0sLgPPKnzZjqbIAugs/edit?gid=0#gid=0
 
