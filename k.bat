@@ -468,10 +468,25 @@ Apr-11-2024
 
 
 :_
+:
 
-echo. & echo * 
+echo. & echo * Testing no changes.
 
+rem call s | find /i "Your branch is up to date with"
 
+git status --porcelain=v1
+rem git status --porcelain=v1 2>/dev/nul
+
+rem git status -s
+
+echo. & echo EL: %errorlevel%
+
+rem if errorlevel 1 (
+  rem echo. & echo * Changes!
+  rem goto :acp
+rem ) else (
+  rem echo. & echo * No changes.
+rem )
 
 exit/b
 
@@ -492,30 +507,27 @@ May-9-2024
 
 :_
 
+echo. & echo * 
+
+
+
+exit/b
+
+
+
+:_
+
 :code-execution-area
 
 
 
 :_
-:
 
-echo. & echo * Testing no changes.
+echo. & echo * How to exit after failure.
 
-rem call s | find /i "Your branch is up to date with"
+call t a || exit/b
 
-git status --porcelain=v1
-rem git status --porcelain=v1 2>/dev/nul
-
-rem git status -s
-
-echo. & echo EL: %errorlevel%
-
-rem if errorlevel 1 (
-  rem echo. & echo * Changes!
-  rem goto :acp
-rem ) else (
-  rem echo. & echo * No changes.
-rem )
+echo %errorlevel%
 
 exit/b
 
