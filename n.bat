@@ -1657,7 +1657,24 @@ Dec-7-2018
 
 
 ::_
+:mecfgbui
+
+echo. & echo * Multi-Edit Config Files Backups inside dated backups.
+
+set cbf-pt=%dropbox%\Backups\Savannah
+
+exit/b
+
+lu:
+Oct-1-2024
+
+(sanctioned duplicate entry)
+
+
+
+::_
 :bumecfg
+:mecfgbu
 :mecfg_bu
 
 echo. & echo * Multi-Edit Config Files Backups.
