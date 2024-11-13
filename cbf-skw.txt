@@ -1,0 +1,14 @@
+
+Composable Batch Files (CBF) - Search Keyword Map - Helps to Find Things in CBF
+
+  .--.      .--.      .--.      .--.      .--.
+:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
+       `--'      `--'      `--'      `--'      `--' 
+
+Date          Notes
+------------  --------------------------------------------------------------------------
+
+:Nov-13-2024  This functionality, which used to live in m.bat, has been moved to dc.bat.  
+
+::skw: open latest screenshot, newest item, latest item, latest screen, scsh
+

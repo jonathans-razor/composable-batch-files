@@ -46,7 +46,6 @@ echo               path  Pipe path to file.
 echo                sde  Set default text editor.
 echo               touc  Update all files in the current folder to the current time.
 echo               tran  Open latest transfer.
-echo                 ss  Open latest screenshot.
 
 exit/b
 
@@ -3619,21 +3618,6 @@ Dec-18-2017
 
 
 :_
-:rscsh
-
-echo. & echo * Rename screenshots.
-
-echo.
-ren Screen*.* Mar-12-2020*.*
-
-exit/b
-
-lu:
-Mar-12-2020
-
-
-
-:_
 :validate_instance
 
 echo. & echo * Validate instance.
@@ -4000,7 +3984,7 @@ Mar-4-2019
 echo. & echo * Start SP7.
 
 call %0 lnk-sp7
-call m sp7 
+call m sp7
 
 exit/b
 
@@ -4835,7 +4819,6 @@ Jan-9-2019
 
 
 ::_
-:w
 :wait
 
 echo. & echo * Open "waiting" files.

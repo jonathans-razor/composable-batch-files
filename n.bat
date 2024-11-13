@@ -3354,7 +3354,27 @@ lu:
 Jun-14-2018
 
 
-:_
+
+:_+ Screenshot Family (!fyscsh)
+
+
+
+::_
+:rscsh
+
+echo. & echo * Rename screenshots.
+
+echo.
+ren Screen*.* Mar-12-2020*.*
+
+exit/b
+
+lu:
+Mar-12-2020
+
+
+
+::_
 :scsh
 :ss
 
@@ -3364,6 +3384,8 @@ call n up>nul
 set cbf-pt=%cbf-pt%\pictures\screenshots
 
 exit/b
+
+If you are trying to open the latest screenshot, try "dc scsh" or simply "dc", if you are alreay in the screenshot folder.
 
 lu:
 Jul-12-2023
@@ -4028,19 +4050,6 @@ exit/b
 
 
 
-:_
-:sc
-
-echo. & echo * Google Docs spell checker.
-
-call an br
-
-set cbf-gd=https://docs.google.com/document/d/1Nn2yT-QO6Pefuk5g2qDZfVox_VF0dHDiLGNjaimMWOE/edit
-
-exit/b
-
-
-
 :_+ Bash
 
 
@@ -4329,7 +4338,7 @@ exit/b
 
 
 :_
-:g
+:gram
 
 echo. & echo * Grammarly.
 
@@ -7818,6 +7827,34 @@ rem JSON-LD format.
 set cbf-url=https://data.nobelprize.org/store/6/metadata/997?recursive=laureate^^^&format=application/ld+json
 set cbf-url2=https://data.nobelprize.org/resource/laureate/72
 
+
+exit/b
+
+
+
+:_+ Google Docs
+
+
+
+::_
+:godo
+
+echo. & echo * Google Docs.
+
+set cbf-gd=http://docs.google.com
+
+exit/b
+
+
+
+::_
+:sc
+  
+echo. & echo * Google Docs spell checker.
+
+call an br
+
+set cbf-gd=https://docs.google.com/document/d/1Nn2yT-QO6Pefuk5g2qDZfVox_VF0dHDiLGNjaimMWOE/edit
 
 exit/b
 

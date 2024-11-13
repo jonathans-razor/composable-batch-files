@@ -35,6 +35,7 @@ browser-  Defines the behavior of calling browsers.
   cbf-gr  CBF Error Graphics.
   cbf-ov  CBF Overview.
   cbf-sg  CBF Style Guide.
+ cbf-skw  Search Keyword Map - Helps to Find Things in CBF.
   cbf-tc  This table of contents of CBF batch files.
      cdc  Current directory contains.
       cf  Surf to Confluence.
