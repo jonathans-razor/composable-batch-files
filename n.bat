@@ -45,6 +45,8 @@ exit/b
      Date      Lines      Bytes   Functs  Notes
  -----------  ------  ---------  -------  ----------------------------------------------
 
+: Dec-9-2024   7,869    103,075      509
+
 :Feb-21-2024   6,424     79,638      422
 
 : Jan-4-2024   4,312     59,945      320
@@ -5450,12 +5452,19 @@ how to make api call with vuex
 
 
 ::_
+:we
+echo. & echo * Wines.
+call n pi>nul
+set cbf-pt=%cbf-pt%\wines
+exit/b
+
+
+
+::_
+:pi
 :pict
-
 echo. & echo * Pictures.
-
 set cbf-pt=%dropbox%\pictures
-
 exit/b
 
 lu:
@@ -5471,7 +5480,7 @@ Sep-25-2020
 
 set cbf-pd=Breakaway 2. Girlfriend safe.
 
-echo. & echo * %cbf-pd%.
+echo. & echo * %cbf-pd%
 
 call n pict
 set cbf-pt=%cbf-pt%\Breakaway-2
