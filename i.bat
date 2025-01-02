@@ -217,31 +217,31 @@ set cbf-full-pem=
 
 ::
 rem GitHub
-set cbf-gb=
+set cbf-gh=
 
 ::
 rem GitHub - API
-set cbf-gba=
+set cbf-gha=
 
 ::
 rem GitHub - Historical record
-set cbf-gbh=
+set cbf-ghh=
 
 ::
 rem GitHub - My Implementation of Another GitHub Repository
-set cbf-gbmy=
+set cbf-ghmy=
 
 ::
 rem GitHub - Original Content (skw github source material)
-set cbf-gbo=
+set cbf-gho=
 
 ::
 rem GitHub - Profile
-set cbf-gbp=
+set cbf-ghp=
 
 ::
 rem GitHub Repository
-set cbf-gbr=
+set cbf-ghr=
 
 :
 rem Google Docs

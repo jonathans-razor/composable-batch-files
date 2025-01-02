@@ -2474,7 +2474,7 @@ Oct-31-2023
 
 echo. & echo * Root.
 
-set cbf-gb=https://github.com/jonathans-razor
+set cbf-gh=https://github.com/jonathans-razor
 set cbf-gd=https://docs.google.com/document/u/0/
 set cbf-gs=https://docs.google.com/spreadsheets/u/0/
 set cbf-yt=https://www.youtube.com
@@ -3443,7 +3443,7 @@ Oct-17-2023
 echo. & echo * Data structures and algorithms.
 
 call n it>nul
-set cbf-gb=https://github.com/jonathans-razor/data-structures-and-algorithms
+set cbf-gh=https://github.com/jonathans-razor/data-structures-and-algorithms
 set cbf-pt=%cbf-pt%\dsa
 set cbf-gi=https://github.com/jonathans-razor/data-structures-and-algorithms
 
@@ -4835,7 +4835,7 @@ exit/b
 
 echo. & echo * Jonathan's Github page.
 
-set cbf-gb=https://github.com/jonathans-razor
+set cbf-gh=https://github.com/jonathans-razor
 set cbf-gia=https://api.github.com/repos/jonathans-razor/composable-batch-files/commits?per_page=3
 set cbf-gip=https://github.com/settings/profile
 set cbf-gir=https://github.com/jonathans-razor?tab=repositories
@@ -7544,7 +7544,7 @@ echo. & echo * For Git Testing.
 
 call n r>nul
 set cbf-pt=%cbf-pt%\for-git-testing
-set cbf-gb=https://github.com/jonathans-razor/for-git-testing
+set cbf-gh=https://github.com/jonathans-razor/for-git-testing
 
 exit/b
 
@@ -7785,8 +7785,8 @@ set cbf-pt=%cbf-pt%\json-ld
 rem Difference between JSON and JSON-LD
 set cbf-png=%cbf-pt%\code compare between solution 11 and 12.PNG
 
-set cbf-gb=https://github.com/jonathans-razor/json-ld
-set cbf-gb2=https://github.com/polyneme/intro-linkeddata-mongo-python
+set cbf-gh=https://github.com/jonathans-razor/json-ld
+set cbf-gh2=https://github.com/polyneme/intro-linkeddata-mongo-python
 
 set cbf-gs=https://docs.google.com/spreadsheets/d/1OPdyc_D-f8Wbw7CDShXBpX8MO0sLgPPKnzZjqbIAugs/edit?gid=0#gid=0
 
@@ -7814,7 +7814,7 @@ echo. & echo * Intro to Linked Data with Python.
 call n r>nul
 set cbf-pt=%cbf-pt%\intro-linkeddata-mongo-python
 
-set cbf-gb=https://github.com/polyneme/intro-linkeddata-mongo-python.git
+set cbf-gh=https://github.com/polyneme/intro-linkeddata-mongo-python.git
 
 rem Intro to Linked Data with Python:
 set cbf-yt=https://www.youtube.com/watch?v=pKHrAAoEB9w
@@ -7830,7 +7830,7 @@ echo. & echo * Intro to Linked Data with Python - Exercise.
 
 call n r>nul
 set cbf-pt=%cbf-pt%\intro-linkeddata-mongo-python-exercise
-set cbf-gb=https://github.com/jonathans-razor/intro-linkeddata-mongo-python-exercise.git
+set cbf-gh=https://github.com/jonathans-razor/intro-linkeddata-mongo-python-exercise.git
 
 rem JSON-LD format.
 set cbf-url=https://data.nobelprize.org/store/6/metadata/997?recursive=laureate^^^&format=application/ld+json
