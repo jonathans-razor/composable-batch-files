@@ -44,12 +44,12 @@ set cbf-pt=
 call sdv %1 || exit/b
 
 if "%cbf-pt%" == "" (
-  call err From %~nx0: For parameter 1 "%1", the cbf-pt is not defined. Feb-8-2024-1-22-PM
+  call err From %~nx0: For parameter 1 "%1", the cbf-pt is not defined. Jan-13-2025-2-15-PM
   exit/b 4
 )
 
 if not exist "%cbf-pt%" (
-  call err From %~nx0: For parameter 1 "%1", the cbf-pt "%cbf-pt%" does not exist. Feb-8-2024-1-22-PM
+  call err From %~nx0: For parameter 1 "%1", the cbf-pt "%cbf-pt%" does not exist. Jan-13-2025-2-16-PM
   exit/b 3
 )
 
