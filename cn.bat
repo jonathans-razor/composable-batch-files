@@ -122,8 +122,6 @@ if errorlevel 1 (
   exit/b
 )
 
-echo.
-
 @echo on
 git clone %2
 @echo off
