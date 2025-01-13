@@ -138,7 +138,7 @@ rem set cbf-default-text-editor=
 :
 rem Default Secondary Dictionary. 
 rem This value is set in a batch file called 'set-default-secondary-dictionary*.bat' in 
-rem a local folder on the machine in question.
+rem a local folder on the machine in question. - Jan-13-2025
 rem set cbf-default-sd=
 
 :
