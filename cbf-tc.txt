@@ -39,9 +39,10 @@ browser-  Defines the behavior of calling browsers.
   cbf-tc  This table of contents of CBF batch files.
      cdc  Current directory contains.
       cf  Surf to Confluence.
-      cm  CMAC operations.
      clc  Simple calculator.
    chuck  Tell a random Chuck Norris joke.
+      cm  CMAC operations.
+      cn  Clone operations.
     coco  Code Compare.
    cocod  Run Code Compare using 2 DCVs.
      col  Shell window colors operations.

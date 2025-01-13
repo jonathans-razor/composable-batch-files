@@ -701,6 +701,7 @@ Mar-27-2020
 
 
 ::_
+:fdst
 :star
 :start
 
@@ -4856,7 +4857,7 @@ echo. & echo * Composable batch files.
 
 set cbf-branch=main
 set cbf-cn=git@github.com:jonathans-razor/Composable-Batch-Files.git
-set cbf-gi=https://github.com/jonathans-razor/Composable-Batch-Files
+set cbf-gh=https://github.com/jonathans-razor/Composable-Batch-Files
 
 rem Top Useful Demoable Cbfs Spreadsheet:
 set cbf-gs=https://docs.google.com/spreadsheets/d/1oDL5jPYWqjjmGYEMmHZBykuOuxdha8RFnErpEd64vrY/edit#gid=0

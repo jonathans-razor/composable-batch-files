@@ -248,6 +248,10 @@ rem Google Docs
 set cbf-gd=
 
 :
+rem GitHub
+set cbf-gh=
+
+:
 rem GitLab
 set cbf-gl=
 
