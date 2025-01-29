@@ -43,6 +43,7 @@ Feb-7-2024
 
 rem echo. & echo * New double dictionary code. The local dictionary overwites the primary dictionary.
 
+rem cbf-default-sd should have been set by local batch file. - Jan-13-2025
 if not exist "%cbf-default-sd%" exit/b
 
 call el /c>nul
