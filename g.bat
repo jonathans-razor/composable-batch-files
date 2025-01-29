@@ -2768,6 +2768,9 @@ if "%~2" == "" (
 git checkout %2
 exit/b
 
+Note:
+This will cause the head to become detached. To reattach the head, do something like 'sbd'.
+
 lu:
 Jan-29-2025
 
@@ -2850,19 +2853,6 @@ You feel like your last check-in broke the build. USE WITH CAUTION.
 
 One reason I like this command is that it moves back slowly so will help you be careful not to 
 rollback to far.
-
-
-
-::_
-goto
-echo. & echo * Go to a specific commit version.
-rem qq
-
-git checkout %1
-exit/b
-
-lu:
-Jan-29-2025
 
 
 
