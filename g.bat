@@ -2777,6 +2777,17 @@ Jan-29-2025
 
 
 ::_
+:rehe
+echo. & echo * Reattach head.
+git switch -
+exit/b
+
+lu:
+Jan-29-2025
+
+
+
+::_
 :roll
 :roll_back
 :rollback
