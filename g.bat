@@ -1181,7 +1181,7 @@ git log>%temp%\git-log.txt
 
 set cbf-parameter=%temp%\git-log.txt
 
-call an no
+call an kr
 
 call r
 
@@ -2419,11 +2419,8 @@ Oct-27-2022
 
 ::_
 :sbd
-
 echo. & echo * Set branch to develop.
-
-call %0 sb develop
-
+git checkout develop
 exit/b
 
 
@@ -2762,6 +2759,21 @@ This worked on Dec-13-2022.
 
 
 ::_
+:goto
+echo. & echo * Go to a specific commit version.
+if "%~2" == "" (
+  call err Percent 2, version commit number, is a required field. Jan-29-2025-4-06-PM - %0.bat
+  exit/b
+)
+git checkout %2
+exit/b
+
+lu:
+Jan-29-2025
+
+
+
+::_
 :roll
 :roll_back
 :rollback
@@ -2842,12 +2854,25 @@ rollback to far.
 
 
 ::_
+goto
+echo. & echo * Go to a specific commit version.
+rem qq
+
+git checkout %1
+exit/b
+
+lu:
+Jan-29-2025
+
+
+
+::_
 :rvsv
 :sv
 
 echo. & echo * Roll back to a specific version. Detached head means you are no longer on a branch, you have checked out a single commit in the history.
 
-git checkout 6df905288039e634118b63719b77bff4a5566e1b
+git checkout 88c229c8f7aee81924c78769ef54a112c0928522
 
 exit/b
 
