@@ -3442,19 +3442,37 @@ Mar-7-2019
 
 
 ::_
+:pop
+:unstash
+echo. & echo * Pop takes stashed changes and reapplies them.
+echo.
+git stash pop
+exit/b
+lu:
+Feb-11-2020
+
+
+
+::_
 :stas
 :stash
-
 echo. & echo * Stashing changes allows you to do a get-latest (or bring in someone's else's code) without losing your local changes.
-
 echo.
-
 git stash
-
 exit/b
-
 lu:
 Jan-22-2018
+
+
+
+::_
+:stag
+echo. & echo * Git stage is required in the case of stashing untracked files.
+echo.
+git stage
+exit/b
+lu:
+Feb-3-2025
 
 
 
@@ -3502,23 +3520,6 @@ exit/b
 
 lu:
 Nov-5-2021
-
-
-
-::_
-:pop
-:unstash
-
-echo. & echo * Pop takes stashed changes and reapplies them.
-
-echo.
-
-git stash pop
-
-exit/b
-
-lu:
-Feb-11-2020
 
 
 

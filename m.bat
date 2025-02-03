@@ -1,7 +1,5 @@
 :_ (!m)
 
-:So Florida has no income tax?
-
 @echo off
 
 title CBF: %0
