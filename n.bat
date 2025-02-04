@@ -4833,17 +4833,11 @@ exit/b
 :jj
 :jjgh
 :jjgit
-
 echo. & echo * Jonathan's Github page.
-
 set cbf-gh=https://github.com/jonathans-razor
-set cbf-gia=https://api.github.com/repos/jonathans-razor/composable-batch-files/commits?per_page=3
-set cbf-gip=https://github.com/settings/profile
-set cbf-gir=https://github.com/jonathans-razor?tab=repositories
-set cbf-rl=%cbf-gi%\Composable-Batch-Files\releases
-
+set cbf-ghp=https://github.com/settings/profile
+set cbf-ghr=https://github.com/jonathans-razor?tab=repositories
 exit/b
-
 lu:
 Jun-27-2023
 

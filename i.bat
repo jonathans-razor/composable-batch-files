@@ -215,6 +215,10 @@ set cbf-fq=
 rem Full Pem
 set cbf-full-pem=
 
+:
+rem Google Docs
+set cbf-gd=
+
 :+ Github
 
 ::
@@ -230,12 +234,12 @@ rem GitHub - Historical record
 set cbf-ghh=
 
 ::
-rem GitHub - My Implementation of Another GitHub Repository
-set cbf-ghmy=
-
-::
 rem GitHub - Original Content (skw github source material)
 set cbf-gho=
+
+::
+rem GitHub - My Implementation of Another GitHub Repository
+set cbf-ghmy=
 
 ::
 rem GitHub - Profile
@@ -244,14 +248,6 @@ set cbf-ghp=
 ::
 rem GitHub Repository
 set cbf-ghr=
-
-:
-rem Google Docs
-set cbf-gd=
-
-:
-rem GitHub
-set cbf-gh=
 
 :
 rem GitLab

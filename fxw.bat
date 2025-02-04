@@ -96,6 +96,15 @@ exit/b
 
 
 :_
+:gh
+
+call gh jj
+
+exit/b
+
+
+
+:_
 :gh2
 
 call sf cfgh
