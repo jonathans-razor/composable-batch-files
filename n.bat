@@ -7864,4 +7864,12 @@ exit/b
 
 
 
+:_
+:elch
+echo. & echo * Electric Chargers.
+set cbf-gs=https://docs.google.com/spreadsheets/d/18lKw_HQnXtCqwJbxxp-syNmaaQPyoRtj0SMYlbcEEMc/edit?gid=0#gid=0
+exit/b
+
+
+
 :_ (!ef, !efn)

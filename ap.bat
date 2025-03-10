@@ -1,4 +1,10 @@
 call st ap
 cls
 echo. 
-echo * Last price was $248. - Feb-24-2025
+
+echo * Price log.
+
+echo.
+echo   225 Mar-10-2025
+echo   239 Mar-7-2025
+echo   248 Feb-24-2025
