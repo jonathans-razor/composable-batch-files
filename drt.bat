@@ -1,8 +1,7 @@
 :_
 @echo off
+if "%~1" == "" goto help
 if "%~1" == "?" goto help
-goto %1
-goto main
 goto preprocess
 
 
@@ -10,16 +9,15 @@ goto preprocess
 :_
 :help
 cls
-rem          qq
-echo. & echo * 
+echo. & echo * Dir wit TD parameter.
 echo. & echo   Usage: 
 echo   %~n0 [space separated parameter(s)]
 echo. & echo   Parameter 1:
-echo   x
+echo   Label of the folder you wish to go to.
 echo. & echo   Creation Date:
-echo    Apr-22-2024
+echo    Mar-11-2025
 echo. & echo   Samples:
-echo   %~n0 
+echo   %~n0  ro
 exit/b
 
 
@@ -34,13 +32,13 @@ exit/b
 
 :_
 :preprocess
+call t %1
 
 
 
 :_
 :main
-
-exit/b
+d
 
 
 
