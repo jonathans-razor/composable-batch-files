@@ -66,7 +66,7 @@ browser-  Defines the behavior of calling browsers.
   dogsay  Talking dog.
       dr  Create and delete directories. (skw mcd, folder)
       dt  Current date copied to clipboard.
-     drt  Dir wit TD parameter.
+     dtd  Dir wit TD parameter.
       dw  Run NG UI from a dedicated command line window.
        e  Edit a file based on a file choice algorithm.
       ea  Use Mutli-Edit to edit the Ansible Playbook of an alias.
