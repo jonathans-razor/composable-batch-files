@@ -1,1 +1,1 @@
-call m a
+m a

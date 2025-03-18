@@ -93,24 +93,6 @@ exit/b
 
 
 :_
-
-:temp
-
-:tmp
-
-echo. & echo * Temp folder.
-
-rem lu: Apr-8-2020
-
-td tmp>nul
-
-del *.* /q /s
-
-exit/b
-
-
-
-:_
 :om3
 :old-mp3-files
 echo. & echo * Delete old mp3 files.
@@ -195,3 +177,29 @@ rem lu: Nov-08-2022
 
 
 
+:_
+:temp
+:tmp
+echo. & echo * Temp folder.
+call td tmp>nul
+del *.* /q /s
+exit/b
+
+lu:
+Apr-8-2020
+
+
+
+:_
+:mtmp
+echo. & echo * Multi-Edit temporary files.
+call td ro>nul
+del mew*.tmp
+exit/b
+
+lu:
+Mar-18-2025
+
+
+
+:_

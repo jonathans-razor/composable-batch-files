@@ -7872,4 +7872,17 @@ exit/b
 
 
 
+:_
+:moso
+echo. & echo * Mouse software.
+call n it>nul
+set cbf-pt=%cbf-pt%\mouse-software
+set cbf-lnk=C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Logi\Logitech G HUB.lnk
+exit/b
+
+lu:
+Mar-14-2025
+
+
+
 :_ (!ef, !efn)
