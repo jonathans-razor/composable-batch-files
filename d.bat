@@ -675,4 +675,13 @@ exit/b
 
 
 
+:_
+:mt
+echo. & echo * Look for Mew tmps.
+call t ro>nul
+dir mew*.tmp
+exit/b
+
+
+
 :_ (!efd)

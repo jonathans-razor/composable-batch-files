@@ -13,7 +13,7 @@ goto main
 
 cls
 
-echo. & echo * Double click latest file in current folder.
+echo. & echo * Double click latest file in current folder. (skw most recent)
 
 echo. & echo   Usage: %~n0 [space separated parameter(s)]
 

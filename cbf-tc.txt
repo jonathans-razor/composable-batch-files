@@ -54,7 +54,7 @@ browser-  Defines the behavior of calling browsers.
       cu  Curl leveraging the nicknames dictionary.
        d  Dir.
      dbg  Debugger.
-      dc  Double-click a filename, back office operation.
+      dc  Double click latest file in current folder. (skw most recent)
       de  Multipurpose delete batch file.
     defn  Delete a file based on passed in filename alias.
     depc  Delete the path contents of the passed in alias.
@@ -204,7 +204,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       rf  Remember or recall previous folder.
       rl  Execute the releases DCV for the passed in alias.
       rn  Run localhost application. Has td parameter and fwp awareness.
-      ro  Read-only.
+    reon  Read-only.
      run  Run localhost application. Has td parameter.
           that runs the project.
      rzr  Multi-Edit abstraction layer for running CBF files.

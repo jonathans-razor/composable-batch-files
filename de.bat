@@ -191,7 +191,7 @@ Apr-8-2020
 
 
 :_
-:mtmp
+:mt
 echo. & echo * Multi-Edit temporary files.
 call td ro>nul
 del mew*.tmp
