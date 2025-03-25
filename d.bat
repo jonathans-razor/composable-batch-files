@@ -677,7 +677,8 @@ exit/b
 
 :_
 :mt
-echo. & echo * Look for Mew tmps.
+echo. & echo * Look for Mew tmps in Reach Out folder.
+echo.
 call t ro>nul
 dir mew*.tmp
 exit/b

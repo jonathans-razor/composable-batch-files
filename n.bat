@@ -3943,7 +3943,7 @@ Oct-18-2021
 :pc
 :podcast_folder
 
-echo. & echo * Podcaster.
+echo. & echo * Podcaster. (gPodder)
 
 set cbf-pt=%my documents%\gpodder\downloads
 set cbf-app=C:\Program Files (x86)\gPodder\bin\gpodder.exe
