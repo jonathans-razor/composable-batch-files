@@ -140,7 +140,7 @@ example-  Prefix for files written by other authors for learning and comparison 
        l  Load path onto clipboard.
       ld  Use a DCV to load a cbf variable onto the clipboard.
       le  Leet code tester.
-      lf  Load file name or contents onto clipboard.
+      lf  Load file name or contents onto clipboard. (skw copy to clipboard)
       lh  Execute the localhost DCV for the passed in alias.
       lj  Override j1.txt with clipboard contents and open the file.
       ll  Wrapper around dir command to help with Linux compatibility.
