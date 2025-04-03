@@ -545,6 +545,18 @@ Apr-20-2023
 
 
 :_
+:reas
+echo. & echo * Reason.
+call n cbf>nul
+set cbf-fn=%cbf-pt%\reason.txt
+exit/b
+
+lu:
+Apr-3-2025
+
+
+
+:_
 :cdr
 
 echo. & echo * C: drive.
