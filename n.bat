@@ -2973,6 +2973,17 @@ Uses up-to-date data.
 
 
 ::_
+:t3c
+echo. & echo * T3 Chat.
+set cbf-url=https://t3.chat/chat/welcome
+exit/b
+
+lu:
+Apr-6-2025
+
+
+
+::_
 :bard
 
 echo. & echo * Bard.
@@ -7897,6 +7908,16 @@ exit/b
 
 lu:
 Mar-14-2025
+
+
+
+:_
+:awss
+:ckaws
+echo. & echo * AWS-related tasks. (!ckaws) (skw AWS scripts, function first bash, aws code keepers)
+call pn dbf>nul
+set cbf-fn=%cbf-pt%\aws.bat
+exit/b
 
 
 
