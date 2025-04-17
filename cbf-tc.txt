@@ -80,12 +80,13 @@ browser-  Defines the behavior of calling browsers.
       ex  Run Excel with or without a filename alias parameter.
 example-  Prefix for files written by other authors for learning and comparison purposes.
      exi  Exit.
-       f  Filename sapien. Use any application to open any file.
+       f  Surf to T3 Chat.
       fa  Windows file associations.
       fe  Check for the existence of a file based on the passed in filename alias.
      ffx  Firefox browser.
      fib  Show Fibonacci numbers.
     file  New line at end of file tester.
+    fisa  Filename sapien. Use any application to open any file.
       fl  For loops using function routing.
       fn  Validate and set a filename value.
       fq  Open file using its fully qualified filename.
