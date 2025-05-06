@@ -7513,24 +7513,6 @@ exit/b
 
 
 :_
-:tabu
-
-echo. & echo * Tabulator.
-
-call n >nul
-set cbf-pt=%cbf-pt%\
-
-set cbf-lh=
-set cbf-srv=
-set cbf-docs=https://tabulator.info/docs/6.2/vue
-set cbf-=
-set cbf-url=
-
-exit/b
-
-
-
-:_
 :ansc
 
 echo. & echo * Let's create a filter table component in Vue.
@@ -7541,18 +7523,6 @@ set cbf-pt=%cbf-pt%\ansc
 set cbf-lh=5173
 set cbf-srv=dev
 set cbf-yt=https://www.youtube.com/watch?v=au27CwIFHzs
-
-exit/b
-
-
-
-:_
-:tabu
-
-echo. & echo * Tabulator.
-
-set cbf-docs=https://tabulator.info/docs/6.2
-set cbf-url=https://tabulator.info/docs/6.2
 
 exit/b
 
@@ -7917,6 +7887,15 @@ Mar-14-2025
 echo. & echo * AWS-related tasks. (!ckaws) (skw AWS scripts, function first bash, aws code keepers)
 call pn dbf>nul
 set cbf-fn=%cbf-pt%\aws.bat
+exit/b
+
+
+
+:_
+:tabu
+echo. & echo * Tabulator.
+set cbf-docs=https://tabulator.info/docs/6.3/vue
+set cbf-url=https://tabulator.info/docs/6.3
 exit/b
 
 
