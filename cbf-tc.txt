@@ -55,6 +55,7 @@ browser-  Defines the behavior of calling browsers.
        d  Dir.
      dbg  Debugger.
       dc  Double click latest file in current folder. (skw most recent)
+      dd  Dir wit TD parameter.
       de  Multipurpose delete batch file.
     defn  Delete a file based on passed in filename alias.
     depc  Delete the path contents of the passed in alias.
@@ -66,7 +67,6 @@ browser-  Defines the behavior of calling browsers.
   dogsay  Talking dog.
       dr  Create and delete directories. (skw mcd, folder)
       dt  Current date copied to clipboard.
-     dtd  Dir wit TD parameter.
       dw  Run NG UI from a dedicated command line window.
        e  Edit a file based on a file choice algorithm.
       ea  Use Mutli-Edit to edit the Ansible Playbook of an alias.

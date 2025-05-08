@@ -7900,4 +7900,12 @@ exit/b
 
 
 
+:_
+:ltc
+echo. & echo * Lighted tennis courts.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1_70fENn3RPK_wsZvkdqk7xkjbv5soN9lv9wZlsip2Rc/edit?gid=0#gid=0
+exit/b
+
+
+
 :_ (!ef, !efn)
