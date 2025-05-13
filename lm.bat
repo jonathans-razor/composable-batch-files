@@ -98,7 +98,15 @@ rem echo. & echo * Copy latest DSA filename to clipboard.
 call t d>nul || exit/b
 
 call %0 fn
+exit/b
 
+
+
+:_
+:test
+echo. & echo * Test clipboard.
+rem clip<c:\a\j1.txt
+echo charlie| clip
 exit/b
 
 

@@ -3599,6 +3599,30 @@ cat ~/.gitconfig
 
 
 ::_
+:s-pat
+echo. & echo * Cache the personal access token credential.
+git config --global credential.helper cache
+exit/b
+lu:
+Apr-7-2022
+
+
+
+::_
+:s-cred
+
+echo. & echo * Store credentials.
+
+git config --global credential.helper store
+
+exit/b
+
+lu:
+Dec-3-2024
+
+
+
+::_
 :sg-lofi
 
 echo. & echo * Fix long filenames issue for global configuration.
@@ -3662,34 +3686,6 @@ exit/b
 
 lu:
 Jan-26-2022
-
-
-
-::_
-:s-cpat
-
-echo. & echo * Cache the personal access token credential.
-
-git config --global credential.helper cache
-
-exit/b
-
-lu:
-Apr-7-2022
-
-
-
-::_
-:s-cred
-
-echo. & echo * Store credentials.
-
-git config --global credential.helper store
-
-exit/b
-
-lu:
-Dec-3-2024
 
 
 

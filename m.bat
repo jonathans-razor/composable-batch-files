@@ -4565,7 +4565,7 @@ set cbf-fn-list=%cbf-fn-list% "%dropbox%\it\Miscellany\it3.asc"
 
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\DI.asc"
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\JD.asc"
-set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CH.asc"
+set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CH.asc"
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\RB.asc"
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\TJ.asc"
 set cbf-fn-list=%cbf-fn-list% "%dropbox%\savannah\reach out\CI.asc"
