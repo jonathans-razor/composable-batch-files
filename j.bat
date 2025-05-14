@@ -159,6 +159,18 @@ if not "%cbf-lnk%" == "" (
 )
 
 :
+if not "%cbf-fn%" == "" (
+  if exist "%cbf-fn%" (
+    "%cbf-fn%"
+    exit/b
+  ) else (
+    echo.
+    echo * Error: File "%cbf-fn%" does not exist.
+    exit/b
+  )
+)
+
+:
 if not "%cbf-url%" == "" (
   rem echo. & echo * Execute URL. Sep-19-2023_2_44_PM
   call sf %1>nul
@@ -226,18 +238,6 @@ if not "%cbf-ex%" == "" (
 if not "%cbf-pptx%" == "" (
   if exist "%cbf-pptx%" (
     "%cbf-pptx%"
-    exit/b
-  )
-)
-
-:
-if not "%cbf-fn%" == "" (
-  if exist "%cbf-fn%" (
-    "%cbf-fn%"
-    exit/b
-  ) else (
-    echo.
-    echo * Error: File "%cbf-fn%" does not exist.
     exit/b
   )
 )

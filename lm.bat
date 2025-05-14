@@ -112,3 +112,13 @@ exit/b
 
 
 :_
+:p2
+:p2t
+:p2tc
+echo. & echo * Copy parameter 2 to clipboard.
+echo %2| clip
+exit/b
+
+
+
+:_

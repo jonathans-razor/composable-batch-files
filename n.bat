@@ -2491,7 +2491,7 @@ echo. & echo * Root.
 
 set cbf-gh=https://github.com/jonathans-razor
 set cbf-gd=https://docs.google.com/document/u/0/
-set cbf-gs=https://docs.google.com/spreadsheets/u/0/
+set cbf-gs=https://docs.google.com/spreadsheets/u/1/
 set cbf-yt=https://www.youtube.com
 
 exit/b
@@ -4277,7 +4277,7 @@ exit/b
 echo. & echo * Norton browser.
 
 set cbf-app=%localappdata%\Norton\Browser\Application\NortonBrowser.exe
-set cbf-gs=https://docs.google.com/spreadsheets/u/0/
+set cbf-gs=https://docs.google.com/spreadsheets/u/1/
 
 exit/b
 
@@ -7903,7 +7903,17 @@ exit/b
 :_
 :ltc
 echo. & echo * Lighted tennis courts.
-set cbf-gs=https://docs.google.com/spreadsheets/d/1_70fENn3RPK_wsZvkdqk7xkjbv5soN9lv9wZlsip2Rc/edit?gid=0#gid=0
+set cbf-gs=https://docs.google.com/spreadsheets/d/1ySZiH6QhpaZrfZ_nFQgwhPS4j81WfO94tfPjv-14eBs/edit?gid=0#gid=0
+exit/b
+
+
+
+:_
+:osp
+echo. & echo * Open summerize photo.
+rem  qq
+call pn pavi>nul
+set cbf-fn=%cbf-pt%\summerize configuration 20241016_153245.jpg
 exit/b
 
 
