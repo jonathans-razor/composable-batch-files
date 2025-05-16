@@ -40,7 +40,7 @@ browser-  Defines the behavior of calling browsers.
      cdc  Current directory contains.
       cf  Surf to Confluence.
      clc  Simple calculator.
-   chuck  Tell a random Chuck Norris joke.
+    chuc  Tell a random Chuck Norris joke. (skw API Call)
       cm  CMAC operations.
       cn  Clone operations.
     coco  Code Compare.
