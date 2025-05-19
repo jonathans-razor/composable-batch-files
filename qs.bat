@@ -56,6 +56,14 @@ Apr-9-2024 @quasar/cli v2.3.0
 
 
 :_
+:cr
+echo. & echo * Create Quasar project.
+quasar create expansion-item-demo
+exit/b
+
+
+
+:_
 :main
 
 exit/b

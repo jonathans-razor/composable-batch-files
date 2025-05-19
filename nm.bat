@@ -1872,13 +1872,22 @@ Sep-2-2021
 
 
 
+::_
+:i-quas
+:up-quas
+
+echo. & echo * Install the global CLI. This is the same command for updating.
+
+npm install -g @quasar/cli
+
+exit/b
+
+
+
 ::_                   
 :init-quas
-
 echo. & echo * Create a Quasar app.
-
 npm init quasar
-
 exit/b
 
 rem:
@@ -1901,24 +1910,14 @@ exit/b
 
 
 
-::_
-:i-quas
-:up-quas
-
-echo. & echo * Install the global CLI. This is the same command for updating.
-
-npm i -g @quasar/cli
-
-exit/b
-
-
-
 :_
 :im
 
 echo. & echo * Install miscellaneous.
-npm create vite@latest
+npm install -g npm@11.4.0
 exit/b
+npm install node
+npm create vite@latest
 npm install --global yarn
 npm install axios
 npm create vue@latest

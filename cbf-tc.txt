@@ -200,6 +200,7 @@ example-  Prefix for files written by other authors for learning and comparison 
 	   ptt  Path test for Bash.
 	  purl  Using a DCV, surf to a PIV URL webpage.
        q  Query Google.
+      qs  Quasar.
        r  Run application using CBF variables, mostly used in back office operations.
     reme  Execute the demo DCV for the passed in alias.
       rf  Remember or recall previous folder.
