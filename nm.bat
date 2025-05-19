@@ -667,7 +667,35 @@ Jan-15-2024
 
 
 
-:_+ Script Family, e.g. Dev, Start etc.
+:_+ Start Me Up Family, e.g. Dev, Start etc.
+
+
+
+::_
+:qsrv
+rem qq
+echo. & echo * Quasar serve.
+start "quasar serve" cmd /k quasar serve
+exit/b
+cd:
+May-19-2025
+
+
+
+::_
+:run
+:ruse
+:serv
+:serve
+:srv
+
+echo. & echo * Run serve.
+
+call fn package.json || exit/b
+
+start "npm run serve" cmd /k npm run serve
+
+exit/b
 
 
 
@@ -708,23 +736,6 @@ Oct-27-2021
 rem:
 Run VUE UI.
 Compile and hot-reload for development.
-
-
-
-::_
-:run
-:ruse
-:serv
-:serve
-:srv
-
-echo. & echo * Run serve.
-
-call fn package.json || exit/b
-
-start "npm run serve" cmd /k npm run serve
-
-exit/b
 
 
 

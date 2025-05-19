@@ -4469,6 +4469,7 @@ Sep-29-2023
 
 
 ::_
+:4000
 :5173
 :8000
 :8080
@@ -4478,6 +4479,8 @@ Sep-29-2023
 echo. & echo * Localhost using port %1.
 
 set cbf-lh=http://localhost:%1
+set cbf-lh=http://127.0.0.1:4000
+set cbf-lh=http://172.29.64.1:4000
 
 exit/b
 
@@ -4559,7 +4562,18 @@ exit/b
 
 
 
+rem qq
 :_+ Vue Family (!fcvu)
+
+
+
+::_
+:ei
+:eid
+echo. & echo * Expansion item.
+call n vu>nul
+set cbf-pt=%cbf-pt%\expansion-item-demo
+exit/b
 
 
 
