@@ -64,6 +64,14 @@ exit/b
 
 
 :_
+:srv
+echo. & echo * Quasar serve.
+start "quasar serve" cmd /k quasar serve
+exit/b
+
+
+
+:_
 :main
 
 exit/b

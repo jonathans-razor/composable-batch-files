@@ -10,7 +10,6 @@ goto preprocess
 :_
 :help
 cls
-rem          qq
 echo. & echo * 
 echo. & echo   Usage: 
 echo   %~n0 [space separated parameter(s)]

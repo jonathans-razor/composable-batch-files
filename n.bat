@@ -7684,11 +7684,29 @@ exit/b
 
 
 ::_
+:hw2
+echo. & echo * Hello world 2.
+call n vu>nul
+set cbf-pt=%cbf-pt%\hello-world-2
+exit/b
+
+
+
+::_
 :ei
 :ei2
 echo. & echo * Expansion item 2.
 call n vu>nul
-set cbf-pt=%cbf-pt%\expansion-item-2
+set cbf-pt=%cbf-pt%\quasar-expansion-item-2
+exit/b
+
+
+
+::_
+:eid
+echo. & echo * Expansion item 2 deep link.
+call n ei
+set cbf-pt=%cbf-pt%\ui\dev\src\pages\
 exit/b
 
 
@@ -7823,12 +7841,9 @@ Jan-18-2024
 
 ::_
 :vuejs-hw
-
 echo. & echo * Hello world from Vue.js.
-
 call n d>nul
 set cbf-fn=%cbf-pt%\hello-world-vuejs\index.html
-
 exit/b
 
 

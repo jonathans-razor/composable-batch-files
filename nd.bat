@@ -45,6 +45,35 @@ Jan-2-2024
 
 
 ::_
+:v
+:vers
+
+echo. & echo * Version from %0.bat.
+
+echo.
+node --version
+
+exit/b
+
+ Date          Version  Machine
+ -----------  --------  -------
+ May-21-2025  v22.16.0      XPS
+  Jan-9-2024  v20.10.0      XPS
+ Dec-29-2023  v18.18.0      XPS
+
+The latest version as of May-21-2025:
+20.19.2, last published: 7 days ago
+
+lu:
+Dec-29-2023
+
+download node ,,go
+
+https://nodejs.org/en/download
+
+
+
+::_
 :ep
 
 echo. & echo * Echo parameters from %0.bat.
@@ -94,31 +123,6 @@ echo.
 node reverse-string.js %cbf-string%
 
 exit/b
-
-
-
-::_
-:v
-:vers
-
-echo. & echo * Version from %0.bat.
-
-echo.
-node --version
-
-exit/b
-
- Date          Version  Machine
- -----------  --------  -------
-
-  Jan-9-2024  v20.10.0      XPS
-
- Dec-29-2023  v18.18.0      XPS
-
-
-
-lu:
-Dec-29-2023
 
 
 

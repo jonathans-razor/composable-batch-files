@@ -49,7 +49,10 @@ Jan-18-2024
 echo. & echo * Use port number.
 
 call an kr>nul
-set cbf-parameter=http://localhost:%1
+set cbf-parameter=http://172.23.160.1:%1
+set cbf-parameter=http://192.168.200.162:%1
+set cbf-parameter=http://127.0.0.1:%1/Index.vue
+set cbf-parameter=http://localhost:%1/Index.vue
 call r
 
 exit/b

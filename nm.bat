@@ -231,10 +231,11 @@ npm --version
 
 exit/b
 
-Date        Version  Machine
-----------  -------  -------
-Jan-2-2024  10.2.5   XPS
-Jan-1-2024  10.1.0   XPS
+Date         Version  Machine
+-----------  -------  -------
+May-21-2025  11.4.0   XPS
+Jan-2-2024   10.5.2   XPS
+Jan-1-2024   10.1.0   XPS
 
 
 
@@ -611,7 +612,7 @@ Oct-15-2021
 
 echo. & echo * Run JSON local database server.
 
-start "JSON" cmd /k npm run server
+start "JSON" cmd /k npm run serve
 
 exit/b
 
@@ -673,7 +674,6 @@ Jan-15-2024
 
 ::_
 :qsrv
-rem qq
 echo. & echo * Quasar serve.
 start "quasar serve" cmd /k quasar serve
 exit/b
@@ -846,12 +846,10 @@ exit/b
 
 
 ::_
-:i-vu
-
-echo. & echo * Install vue.
-
+:invu
+rem qq
+echo. & echo * Install the Vue CLI.
 npm install -g @vue/cli
-
 exit/b
 
 
@@ -1275,6 +1273,22 @@ lu:
 
 
 ::_
+:up
+
+echo. & echo * Install latest stable version of NPM. Be sure to run as ADMINISTRATOR.
+
+echo.
+npm i npm@latest -g
+
+exit/b
+
+lu:
+May-21-2025
+Apr-24-2018
+
+
+
+::_
 :i-npm
 :upda
 
@@ -1323,21 +1337,6 @@ exit/b
 lu:
 Jan-2-2024
 Aug-12-2019
-
-
-
-::_
-:updaa
-
-echo. & echo * Install latest stable version of NPM. Be sure to run as ADMINISTRATOR.
-
-echo.
-npm i npm@latest -g
-
-exit/b
-
-lu:
-Apr-24-2018
 
 
 
