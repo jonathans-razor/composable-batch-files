@@ -4562,7 +4562,6 @@ exit/b
 
 
 
-rem qq
 :_+ Vue Family (!fcvu)
 
 
@@ -7927,6 +7926,14 @@ exit/b
 echo. & echo * Open summerize photo.
 call pn pavi>nul
 set cbf-fn=%cbf-pt%\summerize configuration 20241016_153245.jpg
+exit/b
+
+
+
+:_
+:mydo
+echo. & echo * My documents.
+set cbf-pt=%my documents%
 exit/b
 
 

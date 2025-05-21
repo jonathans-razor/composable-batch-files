@@ -4560,9 +4560,7 @@ set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
 attrib -r "%my documents%\savannah\reach out\cc.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CC.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CM.asc"
-
-set cbf-fn-list=%cbf-fn-list% "%my documents%\it\Miscellany\it3.asc"
-
+set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\it3.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\DI.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\JD.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CH.asc"
