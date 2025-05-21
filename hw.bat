@@ -52,6 +52,14 @@ exit/b
 
 
 :_
+:qs
+echo. & echo * Hello world from Quasar.
+rem qq
+exit/b
+
+
+
+:_
 :vu
 echo. & echo * Hello world from Vue.js.
 call t hw2

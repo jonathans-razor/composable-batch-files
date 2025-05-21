@@ -376,14 +376,9 @@ exit/b
 
 
 ::_
-:cps
-:cp
+rem qq
 :cr
-:crpr
-:crprs
-:cvu
-:cvup
-echo. & echo * Create standard Vue project.
+echo. & echo * Create Vue project.
 if "%~2" == "" err Parameter 2, the project name, is required.
 vue create %2
 exit/b

@@ -56,14 +56,6 @@ Apr-9-2024 @quasar/cli v2.3.0
 
 
 :_
-:cr
-echo. & echo * Create Quasar project.
-quasar create expansion-item-2
-exit/b
-
-
-
-:_
 :srv
 echo. & echo * Quasar serve.
 start "quasar serve" cmd /k quasar serve
@@ -72,8 +64,10 @@ exit/b
 
 
 :_
-:main
-
+:cr
+echo. & echo * Create Quasar project.
+if "%~2" == "" err Parameter 2, the project name, is required.
+quasar create %2
 exit/b
 
 

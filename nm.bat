@@ -830,30 +830,6 @@ exit/b
 
 
 
-:_+ Vue Family (!fcvu)
-
-
-
-::_
-:toas
-
-echo. & echo * Add toastification.
-
-npm i vue-toastification@next
-
-exit/b
-
-
-
-::_
-:invu
-rem qq
-echo. & echo * Install the Vue CLI.
-npm install -g @vue/cli
-exit/b
-
-
-
 :_
 :rf
 
@@ -1878,31 +1854,23 @@ Sep-2-2021
 
 
 
-:_+ Quasar (!fycquas)
+:_+ Quasar (!fcqs)
 
 
 
 ::_
-:i-quas
-:up-quas
-
+:inqs
 echo. & echo * Install the global CLI. This is the same command for updating.
-
 npm install -g @quasar/cli
-
 exit/b
 
 
 
 ::_                   
-:init-quas
-echo. & echo * Create a Quasar app.
+:initqs
+echo. & echo * Initialize a Quasar app.
 npm init quasar
 exit/b
-
-rem:
-Apparently this is outdated.
-quasar create quasar-note-app --branch next
 
 
 
@@ -1951,6 +1919,29 @@ npm install install leaflet --save-dev
 npm install vite @vitejs/plugin-vue --save-dev
 npm install vee-validate@"<3.0.0" --save
 npm install --save-dev vue-loader@next @vue/compiler-sfc
+
+
+
+:_+ Vue Family (!fcvu)
+
+
+
+::_
+:invu
+echo. & echo * Install the Vue CLI.
+npm install -g @vue/cli
+exit/b
+
+
+
+::_
+:toas
+
+echo. & echo * Add toastification.
+
+npm i vue-toastification@next
+
+exit/b
 
 
 
