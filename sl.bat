@@ -140,7 +140,7 @@ call jv %1
 call nd %1
 
 :JavaScript - Browser Version
-echo. & echo * Hello world from JavaScript Brower version at "nd hwb".
+echo. & echo * Hello world from JavaScript Browser version at "nd hwb".
 
 :Perl
 echo. & echo * Hello world from Perl is available at "perl hello-world.pl".

@@ -177,7 +177,7 @@ echo. & echo * Open Node hello world - browser edition.
 
 call :star
 call vc .
-call sf 3000
+call lh 3000
 
 exit/b
 

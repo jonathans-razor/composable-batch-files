@@ -4408,7 +4408,7 @@ exit/b
 
 echo. & echo * Localhost port 3000. Used by Node.
 
-set cbf-lh=http://localhost:3000
+set cbf-url=http://localhost:3000
 
 exit/b
 
