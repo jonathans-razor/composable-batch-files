@@ -7963,4 +7963,13 @@ exit/b
 
 
 
+:_
+:qhw
+echo. & echo * Quasar hello world.
+call n vu>nul
+set cbf-pt=%cbf-pt%\quasar-hello-world
+exit/b
+
+
+
 :_ (!ef, !efn)
