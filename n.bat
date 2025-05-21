@@ -4562,265 +4562,6 @@ exit/b
 
 
 
-:_+ Vue Family (!fcvu)
-
-
-
-::_
-:ei
-:eid
-echo. & echo * Expansion item.
-call n vu>nul
-set cbf-pt=%cbf-pt%\expansion-item-demo
-exit/b
-
-
-
-::_
-:hw
-:rfhw
-
-echo. & echo * Hello world.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\hello-world
-
-set cbf-gi=https://github.com/jonathans-razor/vue-testing/tree/main/hello-world
-
-exit/b
-
-
-
-::_
-:vutd
-
-echo. & echo * Todo app.
-
-set cbf-url=https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2
-
-exit/b
-
-
-
-::_
-:vue
-
-echo. & echo * Vue.
-
-set cbf-gi=https://github.com/vuejs
-set cbf-gi2=https://github.com/vuejs/vue-class-component
-set cbf-lh=http://localhost:8080
-
-exit/b
-
-lu:
-Feb-2-2024
-
-
-
-::_
-:rfvuet
-:vue-3-and-composition-api-tutorial
-:vuet
-
-set cbf-pd=vue-3-and-composition-api-tutorial
-
-echo. & echo * %cbf-pd%. Build an expense tracker followed tutorial by Traversy Media.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\%cbf-pd%
-
-set cbf-docs=https://vuejs.org/guide/introduction.html
-set cbf-gi=%cbf-gi%/%cbf-pd%
-set cbf-lh=5173
-set cbf-srv=dev
-set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
-
-exit/b
-
-lu:
-Jan-18-2024
-
-skw:
-working-tutorial-series-jj
-
-
-
-::_
-:vu
-:vute
-
-echo. & echo * Vue and Vue testing.
-
-call n it>nul
-set cbf-pt=%cbf-pt%\vue-testing
-
-rem Bookmark
-set cbf-bm=https://vuejs.org/guide/essentials/template-syntax.html#using-javascript-expressions
-set cbf-docs=https://vuejs.org/guide/introduction.html
-set cbf-gi=https://github.com/jonathans-razor/vue-testing.git
-set cbf-gia=https://api.github.com/repos/vuejs/core/commits?per_page=3
-set cbf-gs=https://docs.google.com/spreadsheets/d/1lIemanX4_nF5fwrOCYH0ZJBJuKZP9u3i0GJXg87Jmcw/edit#gid=0
-
-rem Learn Vue:
-set cbf-url=https://raw.githack.com/jonathans-razor/vue-testing/main/learn-vue.html
-set cbf-url2=https://github.com/vuejs/core/discussions/categories/help-questions
-set cbf-url3=https://discord.com/invite/HBherRA
-
-exit/b
-
-lu:
-Mar-4-2024
-Jan-30-2024
-
-
-
-::_
-:vue-src
-
-set cbf-pd=vue-expense-tracker
-
-echo. & echo * %cbf-pd% source project.
-
-call n repo>nul
-set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-gi=https://github.com/bradtraversy/vue-expense-tracker
-set cbf-lh=http://localhost:5173
-
-exit/b
-
-lu:
-Jan-18-2024
-
-
-
-::_
-:vuejs-hw
-
-echo. & echo * Hello world from Vue.js.
-
-call n d>nul
-set cbf-fn=%cbf-pt%\hello-world-vuejs\index.html
-
-exit/b
-
-
-
-::_
-:vudocs
-:vuin
-
-echo. & echo * Introduction.
-
-call an kr>nul
-set cbf-url=https://vuejs.org/guide/introduction.html
-
-exit/b
-
-
-
-::_
-:vuld
-
-echo. & echo * Lifecycle diagram.
-
-set cbf-url=https://vuejs.org/guide/essentials/lifecycle
-
-exit/b
-
-
-
-::_
-:vutu
-
-echo. & echo * Tutorial.
-
-call an kr>nul
-set cbf-url=https://vuejs.org/tutorial/#step-1
-
-exit/b
-
-
-
-::_
-:vuqs
-
-echo. & echo * Quick start.
-
-set cbf-url=https://vuejs.org/guide/quick-start.html
-
-exit/b
-
-
-
-::_
-:vuvqs
-
-echo. & echo * Vuetify Quick start.
-
-set cbf-url=https://vuetifyjs.com/vuetify/quick-start.html
-
-exit/b
-
-
-
-::_
-:vuapi
-
-echo. & echo * Vue API tutorial.
-
-set cbf-url=https://metricloop.com/blog/how-to-make-api-calls-with-vuex
-
-exit/b
-
-
-
-::_
-:vubu
-
-echo. & echo * Vue button.
-
-call n d>nul
-set cbf-pt=%cbf-pt%\vue-button
-
-exit/b
-
-
-
-::_
-:volar
-
-echo. & echo * Vue language features. (Volar)
-
-set cbf-url=https://marketplace.visualstudio.com/items?itemName=Vue.volar
-
-exit/b
-
-
-
-::_
-:vuve
-
-echo. & echo * Vue Examples.
-
-set cbf-url=https://vuejs.org/examples/#hello-world
-
-exit/b
-
-
-
-::_
-:vu21
-:vumd
-
-echo. & echo * Simple Marddown editor.
-
-set cbf-url=https://vuejs.org/examples/#markdown
-
-exit/b
-
-
-
 :_
 :sido
 
@@ -7934,6 +7675,275 @@ exit/b
 :mydo
 echo. & echo * My documents.
 set cbf-pt=%my documents%
+exit/b
+
+
+
+:_+ Vue Family (!fcvu)
+
+
+
+::_
+:ei
+:ei2
+echo. & echo * Expansion item 2.
+call n vu>nul
+set cbf-pt=%cbf-pt%\expansion-item-2
+exit/b
+
+
+
+::_
+:ei1
+:eid
+echo. & echo * Expansion item.
+call n vu>nul
+set cbf-pt=%cbf-pt%\expansion-item-demo
+exit/b
+
+
+
+::_
+:hw
+:rfhw
+
+echo. & echo * Hello world.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\hello-world
+
+set cbf-gi=https://github.com/jonathans-razor/vue-testing/tree/main/hello-world
+
+exit/b
+
+
+
+::_
+:vutd
+
+echo. & echo * Todo app.
+
+set cbf-url=https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2
+
+exit/b
+
+
+
+::_
+:vue
+
+echo. & echo * Vue.
+
+set cbf-gi=https://github.com/vuejs
+set cbf-gi2=https://github.com/vuejs/vue-class-component
+set cbf-lh=http://localhost:8080
+
+exit/b
+
+lu:
+Feb-2-2024
+
+
+
+::_
+:rfvuet
+:vue-3-and-composition-api-tutorial
+:vuet
+
+set cbf-pd=vue-3-and-composition-api-tutorial
+
+echo. & echo * %cbf-pd%. Build an expense tracker followed tutorial by Traversy Media.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\%cbf-pd%
+
+set cbf-docs=https://vuejs.org/guide/introduction.html
+set cbf-gi=%cbf-gi%/%cbf-pd%
+set cbf-lh=5173
+set cbf-srv=dev
+set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
+
+exit/b
+
+lu:
+Jan-18-2024
+
+skw:
+working-tutorial-series-jj
+
+
+
+::_
+:vu
+:vute
+
+echo. & echo * Vue and Vue testing.
+
+call n it>nul
+set cbf-pt=%cbf-pt%\vue-testing
+
+rem Bookmark
+set cbf-bm=https://vuejs.org/guide/essentials/template-syntax.html#using-javascript-expressions
+set cbf-docs=https://vuejs.org/guide/introduction.html
+set cbf-gi=https://github.com/jonathans-razor/vue-testing.git
+set cbf-gia=https://api.github.com/repos/vuejs/core/commits?per_page=3
+set cbf-gs=https://docs.google.com/spreadsheets/d/1lIemanX4_nF5fwrOCYH0ZJBJuKZP9u3i0GJXg87Jmcw/edit#gid=0
+
+rem Learn Vue:
+set cbf-url=https://raw.githack.com/jonathans-razor/vue-testing/main/learn-vue.html
+set cbf-url2=https://github.com/vuejs/core/discussions/categories/help-questions
+set cbf-url3=https://discord.com/invite/HBherRA
+
+exit/b
+
+lu:
+Mar-4-2024
+Jan-30-2024
+
+
+
+::_
+:vue-src
+
+set cbf-pd=vue-expense-tracker
+
+echo. & echo * %cbf-pd% source project.
+
+call n repo>nul
+set cbf-pt=%cbf-pt%\%cbf-pd%
+set cbf-gi=https://github.com/bradtraversy/vue-expense-tracker
+set cbf-lh=http://localhost:5173
+
+exit/b
+
+lu:
+Jan-18-2024
+
+
+
+::_
+:vuejs-hw
+
+echo. & echo * Hello world from Vue.js.
+
+call n d>nul
+set cbf-fn=%cbf-pt%\hello-world-vuejs\index.html
+
+exit/b
+
+
+
+::_
+:vudocs
+:vuin
+
+echo. & echo * Introduction.
+
+call an kr>nul
+set cbf-url=https://vuejs.org/guide/introduction.html
+
+exit/b
+
+
+
+::_
+:vuld
+
+echo. & echo * Lifecycle diagram.
+
+set cbf-url=https://vuejs.org/guide/essentials/lifecycle
+
+exit/b
+
+
+
+::_
+:vutu
+
+echo. & echo * Tutorial.
+
+call an kr>nul
+set cbf-url=https://vuejs.org/tutorial/#step-1
+
+exit/b
+
+
+
+::_
+:vuqs
+
+echo. & echo * Quick start.
+
+set cbf-url=https://vuejs.org/guide/quick-start.html
+
+exit/b
+
+
+
+::_
+:vuvqs
+
+echo. & echo * Vuetify Quick start.
+
+set cbf-url=https://vuetifyjs.com/vuetify/quick-start.html
+
+exit/b
+
+
+
+::_
+:vuapi
+
+echo. & echo * Vue API tutorial.
+
+set cbf-url=https://metricloop.com/blog/how-to-make-api-calls-with-vuex
+
+exit/b
+
+
+
+::_
+:vubu
+
+echo. & echo * Vue button.
+
+call n d>nul
+set cbf-pt=%cbf-pt%\vue-button
+
+exit/b
+
+
+
+::_
+:volar
+
+echo. & echo * Vue language features. (Volar)
+
+set cbf-url=https://marketplace.visualstudio.com/items?itemName=Vue.volar
+
+exit/b
+
+
+
+::_
+:vuve
+
+echo. & echo * Vue Examples.
+
+set cbf-url=https://vuejs.org/examples/#hello-world
+
+exit/b
+
+
+
+::_
+:vu21
+:vumd
+
+echo. & echo * Simple Marddown editor.
+
+set cbf-url=https://vuejs.org/examples/#markdown
+
 exit/b
 
 
