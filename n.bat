@@ -7684,6 +7684,16 @@ exit/b
 
 
 ::_
+:ei
+:ei3
+echo. & echo * Quasar Expansion item 3.
+call n vu>nul
+set cbf-pt=%cbf-pt%\quasar-expansion-item-3
+exit/b
+
+
+
+::_
 :qhw
 :qhw2
 echo. & echo * Quasar hello world folder.
@@ -7703,7 +7713,6 @@ exit/b
 
 
 ::_
-:ei
 :ei2
 echo. & echo * Expansion item 2.
 call n vu>nul

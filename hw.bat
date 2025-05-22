@@ -37,18 +37,6 @@ exit/b
 
 
 :_
-:qs
-:qs2
-echo. & echo * Hello world 2 from Quasar.
-call t qhw2
-call qs dev
-exit/b
-cd:
-May-22-2025: Created with the Quasar CLI option, not the 'UI' option.
-
-
-
-:_
 :vu
 echo. & echo * Hello world from Vue.js.
 call t hw2
@@ -63,6 +51,18 @@ exit/b
 echo. & echo * Vue.js - simple version.
 call fx vuejs-hw fn br
 exit/b
+
+
+
+:_
+:qs
+:qs2
+echo. & echo * Hello world 2 from Quasar.
+call t qhw2
+call qs dev
+exit/b
+cd:
+May-22-2025: Created with the Quasar CLI option, not the 'UI' option.
 
 
 

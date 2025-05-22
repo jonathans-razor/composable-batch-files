@@ -2,8 +2,6 @@
 @echo off
 if "%~1" == "?" goto help
 goto %1
-goto main
-goto preprocess
 
 
 
@@ -32,14 +30,14 @@ exit/b
 
 
 :_
-:preprocess
-
-
-
-:_
-:main
-
+:ei
+:ei3
+echo. & echo * Quasar Expansion Item 3.
+call t ei3
+call qs dev
 exit/b
+cd:
+May-22-2025: Created with the Quasar CLI option, not the 'UI' option.
 
 
 
