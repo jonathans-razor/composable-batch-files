@@ -53,7 +53,22 @@ exit/b
 
 :_
 :qs
-echo. & echo * Hello world from Quasar.
+:qs2
+echo. & echo * Hello world 2 from Quasar.
+call t qhw2
+start "quasar serve" cmd /k quasar serve
+call lh 4000
+rem qq
+exit/b
+
+
+
+:_
+:qs1
+echo. & echo * Hello world 1 from Quasar.
+call t qhw
+start "quasar serve" cmd /k quasar serve
+call lh 4000
 rem qq
 exit/b
 
@@ -65,7 +80,6 @@ echo. & echo * Hello world from Vue.js.
 call t hw2
 call nm srv
 call lh 8080
-rem qq
 exit/b
 
 

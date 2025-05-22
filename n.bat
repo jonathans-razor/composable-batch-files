@@ -7679,15 +7679,26 @@ exit/b
 
 
 
+rem qq
 :_+ Vue Family (!fcvu)
 
 
 
 ::_
-:hw2
-echo. & echo * Hello world 2.
+:qhw
+:qhw2
+echo. & echo * Quasar hello world folder.
 call n vu>nul
-set cbf-pt=%cbf-pt%\hello-world-2
+set cbf-pt=%cbf-pt%\quasar-hello-world-2
+exit/b
+
+
+
+::_
+:hw1
+echo. & echo * Vue Hello world 1.
+call n vu>nul
+set cbf-pt=%cbf-pt%\hello-world-1
 exit/b
 
 
@@ -7959,15 +7970,6 @@ echo. & echo * Simple Marddown editor.
 
 set cbf-url=https://vuejs.org/examples/#markdown
 
-exit/b
-
-
-
-:_
-:qhw
-echo. & echo * Quasar hello world.
-call n vu>nul
-set cbf-pt=%cbf-pt%\quasar-hello-world
 exit/b
 
 

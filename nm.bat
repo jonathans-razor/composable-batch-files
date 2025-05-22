@@ -688,13 +688,9 @@ May-19-2025
 :serv
 :serve
 :srv
-
 echo. & echo * Run serve.
-
 call fn package.json || exit/b
-
 start "npm run serve" cmd /k npm run serve
-
 exit/b
 
 
