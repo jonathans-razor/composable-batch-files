@@ -4555,8 +4555,7 @@ Dec-15-2023
 
 echo. & echo * Open XPS affinity files.
 
-set cbf-fn-list="%dropbox%\savannah\reach out\J.asc"
-
+set cbf-fn-list="%my documents%\savannah\reach out\J.asc"
 attrib -r "%my documents%\savannah\reach out\cc.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CC.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CM.asc"
