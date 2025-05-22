@@ -52,7 +52,6 @@ call an kr>nul
 set cbf-parameter=http://172.23.160.1:%1
 set cbf-parameter=http://192.168.200.162:%1
 set cbf-parameter=http://127.0.0.1:%1/Index.vue
-rem qq
 set cbf-parameter=http://localhost:%1
 call r
 

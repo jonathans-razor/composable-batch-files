@@ -56,8 +56,7 @@ exit/b
 :qs2
 echo. & echo * Hello world 2 from Quasar.
 call t qhw2
-start "quasar serve" cmd /k quasar serve
-call lh 4000
+call qs dev
 rem qq
 exit/b
 
@@ -69,7 +68,6 @@ echo. & echo * Hello world 1 from Quasar.
 call t qhw
 start "quasar serve" cmd /k quasar serve
 call lh 4000
-rem qq
 exit/b
 
 

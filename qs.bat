@@ -64,6 +64,14 @@ exit/b
 
 
 :_
+:dev
+echo. & echo * Quasar dev.
+start "quasar dev" cmd /k quasar dev
+exit/b
+
+
+
+:_
 :cr
 echo. & echo * Create Quasar project.
 if "%~2" == "" err Parameter 2, the project name, is required.
