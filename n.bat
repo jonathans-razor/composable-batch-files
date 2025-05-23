@@ -7689,6 +7689,7 @@ exit/b
 echo. & echo * Quasar Expansion item 3.
 call n vu>nul
 set cbf-pt=%cbf-pt%\quasar-expansion-item-3
+set cbf-fn=%cbf-pt%\
 exit/b
 
 
