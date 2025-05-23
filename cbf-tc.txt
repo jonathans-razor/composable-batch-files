@@ -196,6 +196,7 @@ example-  Prefix for files written by other authors for learning and comparison 
 	    pr  Pull requests DCV.
       ps  Time stamp push, same as "g acp", with also a TD parameter.
       pt  Show path in a browser window.
+     pt2  Go to a secondary path within a composition block.
 	   ptf  Pipe to file.
      ptm  Sets the path using a monogamous CBF variable that sets the path only.
 	   ptt  Path test for Bash.

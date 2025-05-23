@@ -7689,7 +7689,8 @@ exit/b
 echo. & echo * Quasar Expansion item 3.
 call n vu>nul
 set cbf-pt=%cbf-pt%\quasar-expansion-item-3
-set cbf-fn=%cbf-pt%\
+set cbf-pt2=%cbf-pt%\src\pages
+set cbf-fn=%cbf-pt%\src\pages\IndexPage.vue
 exit/b
 
 
