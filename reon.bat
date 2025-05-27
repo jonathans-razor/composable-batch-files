@@ -56,6 +56,7 @@ Nov-15-2023
 
 
 :_
+:fn
 :file-read-only
 
 echo. & echo * Make a specific file read-only.
@@ -70,6 +71,7 @@ Nov-16-2023
 
 
 :_
+:fnn
 :file-not-read-only
 
 echo. & echo * Make a specific file not read-only.
@@ -84,6 +86,7 @@ Nov-16-2023
 
 
 :_
+:all
 :all-read-only
 
 echo. & echo * Make all files in the current folder read-only.
@@ -98,6 +101,7 @@ Nov-16-2023
 
 
 :_
+:alln
 :all-not-read-only
 
 echo. & echo * Make all files in the current folder not read-only.
