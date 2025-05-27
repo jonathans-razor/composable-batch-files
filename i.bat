@@ -223,6 +223,7 @@ set cbf-gd=
 
 ::
 rem GitHub
+rem Associated batch file: gh.bat
 set cbf-gh=
 
 ::
@@ -268,6 +269,7 @@ set cbf-graphic=
 
 :
 rem Google Sheets
+rem Associated batch file: gs.bat
 set cbf-gs=
 
 :
@@ -437,7 +439,9 @@ set cbf-pptm=
 
 :
 rem Path
+rem Associated batch file: t.bat
 set cbf-pt=
+rem Associated batch file: pt2.bat
 set cbf-pt2=
 set cbf-pt3=
 
@@ -545,6 +549,7 @@ set cbf-tr=
 
 :
 rem URL
+rem Associated batch file: sf.bat
 set cbf-url=
 set cbf-url2=
 set cbf-url3=

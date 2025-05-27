@@ -7691,7 +7691,9 @@ call n vu>nul
 set cbf-pt=%cbf-pt%\quasar-expansion-item-3
 set cbf-pt2=%cbf-pt%\src\pages
 set cbf-fn=%cbf-pt%\src\pages\IndexPage.vue
+set cbf-gh=https://github.com/quasarframework/quasar/blob/dev/docs/src/examples/QExpansionItem/HeaderSlot.vue
 set cbf-gs=https://docs.google.com/spreadsheets/d/1fUVqGkh9IYH_8dCA7S7mYwJNApu1fL3NtMaRkjYOyGg/edit?gid=0#gid=0
+set cbf-url=https://quasar.dev/vue-components/expansion-item
 exit/b
 
 
