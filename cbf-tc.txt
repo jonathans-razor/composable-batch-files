@@ -14,7 +14,6 @@ Composable Batch Files (CBF) - Table of Contents
      arc  Archive for old batch file functions.
       av  Edit App.vue. Has td parameter.
       ax  Copy the ax DCV to the clipboard.
-       b  Shutdown windows.
      b64  Base 64 encoding and decoding.
       ba  Execute a bash file in Windows command prompt.
 	    bb  Building block code.
@@ -219,6 +218,7 @@ example-  Prefix for files written by other authors for learning and comparison 
     senc  Sencha.
      sep  Show separator graphic.
       sf  Surf to websites. A DCV is optional.
+      sh  Shutdown windows.
       sl  Language functions aggregate runner. (skw supported-languages-series-jj)
      slf  Batch that supports language functions.
      sln  Open a Visual Studio solution. Has td parameter.

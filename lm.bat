@@ -71,25 +71,6 @@ exit/b
 
 
 :_
-:fn
-echo. & echo * Copy latest filename to clipboard.
-
-dir /b /o-d>c:\a\python-results.txt
-
-set /p cbf-python-results=<c:\a\python-results.txt
-
-echo %cbf-python-results%|clip
-
-echo. & echo * Code filename "%cbf-python-results%" has been copied to the clipboard.
-
-exit/b
-
-lu:
-Nov-14-2023
-
-
-
-:_
 :le
 :py
 
@@ -112,6 +93,22 @@ exit/b
 
 
 :_
+rem qq
+:lfn
+echo. & echo * Copy latest filename to clipboard.
+dir /b /o-d>c:\a\python-results.txt
+set /p cbf-python-results=<c:\a\python-results.txt
+echo %cbf-python-results%|clip
+echo. & echo * Code filename "%cbf-python-results%" has been copied to the clipboard.
+exit/b
+
+lu:
+Nov-14-2023
+
+
+
+:_
+:fn
 :p2
 :p2t
 :p2tc

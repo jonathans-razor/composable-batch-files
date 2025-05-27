@@ -7686,11 +7686,12 @@ exit/b
 ::_
 :ei
 :ei3
-echo. & echo * Quasar Expansion item 3.
+echo. & echo * Quasar Expansion Item 3.
 call n vu>nul
 set cbf-pt=%cbf-pt%\quasar-expansion-item-3
 set cbf-pt2=%cbf-pt%\src\pages
 set cbf-fn=%cbf-pt%\src\pages\IndexPage.vue
+set cbf-gs=https://docs.google.com/spreadsheets/d/1fUVqGkh9IYH_8dCA7S7mYwJNApu1fL3NtMaRkjYOyGg/edit?gid=0#gid=0
 exit/b
 
 
