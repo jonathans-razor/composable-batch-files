@@ -2829,6 +2829,7 @@ lu:
 echo. & echo * Gmail.
 
 call an kr
+set cbf-ax=https://mail.google.com
 set cbf-url=https://mail.google.com
 
 exit/b
