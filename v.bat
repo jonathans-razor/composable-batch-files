@@ -249,7 +249,7 @@ exit/b
 
 :_
 :repl
-:sr
+:stre
 
 echo. & echo * String replacement is cool.
 
