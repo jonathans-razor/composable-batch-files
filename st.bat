@@ -1,10 +1,7 @@
 :_
 @echo off
 
-if "%~1" == "" (
-  call %0 ap
-  exit/b
-)
+if "%~1" == "" gs st
 if "%~1" == "?" goto help
 if "%~1" == "/a" goto all
 
