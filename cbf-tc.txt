@@ -129,6 +129,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      jfd  Surf to Jenkins folder wepbage.
       jg  Get a je, jn or jfd variable, in that order.
       ji  Jira DCV operations.
+      jj  Shutdown windows.
      jmb  Surf to the Jenkins Multibranch website for the passed in alias.
       jp  Surf to Jenkins Pipeline.
      jpg  Leverage DCV.
@@ -218,7 +219,6 @@ example-  Prefix for files written by other authors for learning and comparison 
     senc  Sencha.
      sep  Show separator graphic.
       sf  Surf to websites. A DCV is optional.
-      sh  Shutdown windows.
       sl  Language functions aggregate runner. (skw supported-languages-series-jj)
      slf  Batch that supports language functions.
      sln  Open a Visual Studio solution. Has td parameter.
