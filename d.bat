@@ -167,7 +167,7 @@ echo. & echo * Size, smallest first.
 
 echo.
 
-dir /os %2
+dir /os *.%2
 
 exit/b
 

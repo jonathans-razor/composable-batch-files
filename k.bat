@@ -5,14 +5,8 @@
 title CBF: %0
 
 if "%~1" == "?" goto help
-
-goto code-execution-area
-if "%~1" == "" (
-  call :code-execution-area
-  exit/b
-) else (
-  goto %1
-)
+if "%~1" == "" goto code-execution-area
+goto %1
   
 
 
@@ -520,6 +514,16 @@ exit/b
 
 
 :_
+:dash-test
+echo. & echo * Dash test.
+
+
+
+exit/b
+
+
+
+:_
 
 echo. & echo * 
 
@@ -537,7 +541,7 @@ exit/b
 
 :_
 
-echo. & echo * hi.
+echo. & echo * ho
 
 
 
