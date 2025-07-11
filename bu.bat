@@ -25,6 +25,71 @@ rem lu: Apr-27-2022
 
 
 
+:_+ Mecfg
+
+
+
+::_
+:mecfg
+echo. & echo * Back up Mutli-edit config files.
+
+Get_JDate>%tmp%\JDate.txt
+set /p JDate=<%tmp%\JDate.txt
+set Current_JDate=%JDate%
+
+echo. & echo * Current JDate = %Current_JDate%
+
+call t bumecfg
+
+if errorlevel 1 (
+  exit/b
+)
+
+echo.
+if /i not exist "%Current_JDate%" md "%Current_JDate%"
+
+cd %Current_JDate%
+
+@echo on
+xcopy /s /y "%appdata%\Multi Edit Software\Multi-Edit\11\Config.04"
+@echo off
+
+pause
+
+exit/b
+
+This worked on Jul-11-2025.
+
+
+
+::_
+:mecfg-r
+
+echo. & echo * Restore Mecfg. The Multi-Edit config files seem to be corrupt, so copy mecfg files from dropbox to local.
+
+rem lu: Aug-29-2020
+
+echo.
+
+call t mecfg
+
+cd..
+
+call dr /d Config.04
+
+call dr Config.04
+
+call pn drmecfg
+
+echo.
+xcopy /e "%cbf-pt%"
+
+exit/b
+
+This worked on Jul-11-2025.
+
+
+
 :_+ Jenkinsfile
 
 
@@ -255,37 +320,6 @@ call t exs
 call pn bu
 set cbf-pt=%cbf-pt%\Excels
 xcopy /d /y *.* %cbf-pt%
-exit/b
-
-
-
-:_
-:mecfg
-echo. & echo * Back up Mutli-edit config files.
-
-Get_JDate>%tmp%\JDate.txt
-set /p JDate=<%tmp%\JDate.txt
-set Current_JDate=%JDate%
-
-echo. & echo * Current JDate = %Current_JDate%
-
-call t bumecfg
-
-if errorlevel 1 (
-  exit/b
-)
-
-echo.
-if /i not exist "%Current_JDate%" md "%Current_JDate%"
-
-cd %Current_JDate%
-
-@echo on
-xcopy /s /y "%appdata%\Multi Edit Software\Multi-Edit\11\Config.04"
-@echo off
-
-pause
-
 exit/b
 
 

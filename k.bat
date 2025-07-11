@@ -49,6 +49,8 @@ Dec-2-2023
      Date      Lines      Bytes   Rubrics  Notes
  -----------  ------  ----------  -------  --------------------------------------------------
 
+:Jul-11-2025     548      6,599       33
+
 : Jan-4-2024     202      2,722       13
 
 : Jan-4-2024     201      2,686       13
@@ -507,6 +509,18 @@ May-9-2024
 
 :_
 
+echo. & echo * How to exit after failure.
+
+call t a || exit/b
+
+echo %errorlevel%
+
+exit/b
+
+
+
+:_
+
 echo. & echo * 
 
 
@@ -523,11 +537,9 @@ exit/b
 
 :_
 
-echo. & echo * How to exit after failure.
+echo. & echo * hi.
 
-call t a || exit/b
 
-echo %errorlevel%
 
 exit/b
 

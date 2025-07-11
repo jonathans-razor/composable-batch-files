@@ -828,32 +828,6 @@ Mar-03-2022
 
 
 ::_
-:mecfg
-
-echo. & echo * The Multi-Edit config files seem to be corrupt, so copy mecfg files from dropbox to local.
-
-rem lu: Aug-29-2020
-
-echo.
-
-call t mecfg
-
-cd..
-
-call m rd Config.04
-
-call mcd Config.04
-
-call pn drmecfg
-
-echo.
-xcopy /e "%cbf-pt%"
-
-exit/b
-
-
-
-::_
 :copy_from_me_sz
 
 echo. & echo * Copy Multi-Edit config files from share-zone.
