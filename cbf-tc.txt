@@ -85,7 +85,6 @@ example-  Prefix for files written by other authors for learning and comparison 
       fe  Check for the existence of a file based on the passed in filename alias.
      ffx  Firefox browser.
      fib  Show Fibonacci numbers.
-    file  New line at end of file tester.
     fisa  Filename sapien. Use any application to open any file.
       fl  For loops using function routing.
       fn  Validate and set a filename value.
@@ -137,6 +136,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       js  Edit DCV file in NotePad++ for file type js.
     json  Edit DCV file in NotePad++ for file type json.
       jv  Java. (skw supported-languages-series-jj)
+       k  Batch file tester.
       kl  Kill a process.
       kr  Chrome browser.
        l  Load path onto clipboard.
