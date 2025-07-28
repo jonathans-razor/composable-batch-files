@@ -7988,4 +7988,12 @@ exit/b
 
 
 
+:_
+:yafi
+echo. & echo * Yahoo finance.
+set cbf-url=https://finance.yahoo.com/portfolio/p_1/view/v1
+exit/b
+
+
+
 :_ (!ef, !efn)
