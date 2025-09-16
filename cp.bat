@@ -21,7 +21,7 @@ echo. & echo   Batch file style: Multipurpose
 
 echo.          
 echo     Parameter  Description
-echo     ---------  -------------------------------------------------------------------------
+echo     ---------  ------------------------------------------------------------
 echo           all  Copy all current folder files to a alias-specified path.
 echo            ca  Copy all current folder files to a nickname-specified path.
 echo            cb  Copy background image for testing purposes.

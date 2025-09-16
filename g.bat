@@ -2668,6 +2668,26 @@ Mar-01-2023
 
 
 ::_
+:roll
+:roll_back
+:rollback
+:unco
+:uncommit
+
+echo. & echo * Rollback to previous commit used by Matt A. and me on Mar-26-2021 and earlier.
+git revert -m 1 HEAD
+
+exit/b
+
+lu:
+Sep-27-2022
+
+Worked on Mar-06-2023.
+Didn't work on Dec-21-2022.
+
+
+
+::_
 :rv1
 :rv-lo
 :rv_local
@@ -2784,26 +2804,6 @@ exit/b
 
 lu:
 Jan-29-2025
-
-
-
-::_
-:roll
-:roll_back
-:rollback
-:unco
-:uncommit
-
-echo. & echo * Rollback to previous commit used by Matt A. and me on Mar-26-2021 and earlier.
-git revert -m 1 HEAD
-
-exit/b
-
-lu:
-Sep-27-2022
-
-Worked on Mar-06-2023.
-Didn't work on Dec-21-2022.
 
 
 
@@ -3217,158 +3217,6 @@ exit/b
 
 
 
-:_+ Single File Operations Family
-
-
-
-::_
-:csf
-
-echo. & echo * Commit single file with timestamp description.
-
-if "%~2" == "" (
-  call err A filename is required. Jul-11-2023_3_52_PM - %0.bat
-  exit/b 6
-)
-
-call ujt
-
-set /p commit_description=<%tmp%\java_timestamp.txt
-
-echo.
-call git commit -m %commit_description%
-
-exit/b
-
-
-
-::_
-:psf
-
-echo. & echo * Fully automatic push single file with timestamped message.
-
-call :asf %1 %2
-if errorlevel 1 exit/b
-call :csf %1 %2
-if errorlevel 1 exit/b
-
-git push
-
-exit/b
-
-
-
-::_
-:ac
-
-echo. & echo * Add and commit all files with message.
-
-if "%~2" == "" (
-  call err A commit message is required. Jul-11-2023_3_52_PM - %0.bat
-  exit/b
-)
-
-call %0 add
-
-call %0 commit %2
-
-rem You could also do: git commit -am "easy"
-
-exit/b
-
-lu:
-Sep-21-2022
-
-
-
-::_
-:asf
-:add_file
-
-echo. & echo * Add single file.
-
-rem add single file, add specific file
-
-if "%~2" == "" (
-  call err A filename is required. Jul-11-2023_3_52_PM - %0.bat
-  exit/b 6
-)
-
-git add %2
-
-exit/b
-
-
-
-::_
-:csfm
-
-echo. & echo * Commit single file with message.
-
-if "%~2" == "" (
-  call err A filename is required. Jul-11-2023_3_52_PM - %0.bat
-  exit/b 6
-) 
-
-if "%~3" == "" (
-  c all err A commit description is required. Jul-11-2023_3_52_PM - %0.bat
-  exit/b 1
-) 
-
-set commit_description=%3
-
-git commit %2 -m %commit_description%
-
-exit/b
-
-
-
-::_
-:psfm
-
-echo. & echo * Push single file with custom message.
-echo.
-
-call :asf %1 %2
-if errorlevel 1 exit/b
-call :csfm %1 %2 %3
-if errorlevel 1 exit/b
-
-git push
-
-exit/b
-
-
-
-::_
-:rsf
-:rv_sf
-:rvsf
-
-echo. & echo * Revert or check out single file.
-
-rem This worked on CBF files. Mar-22-2019
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-
-git reset head %2
-git checkout %2
-
-exit/b
-
-:help
-
-echo. & echo Parameter Descriptions
-echo. & echo Parameter 2: File to revert.
-
-exit/b
-
-lu:
-Feb-18-2022
-
-
-
 :_+ Add Family
 
 
@@ -3443,6 +3291,7 @@ Mar-7-2019
 
 ::_
 :pop
+:stasp
 :unstash
 echo. & echo * Pop takes stashed changes and reapplies them.
 echo.
@@ -4048,34 +3897,6 @@ I used this on my VDI on Jan-20-2022 to store my Personal Access Token so I woul
 
 
 
-:_
-:co
-
-echo. & echo * Git checkout.
-
-if "%~2" == "" goto help
-
-if not exist "%~2" (
-  call err %2 doesn't exit. Feb-17-2023-13-37 - %0.bat
-  exit/b
-)
-
-git checkout %2
-
-exit/b
-
-lu:
-Feb-17-2023
-
-:help
-
-echo. & echo * Parameter Description(s):
-echo. & echo * Parameter 2: Name of the file you wish to check out.
-
-exit/b
-
-
-
 :_+ Git Status Evaluation Family
 
 
@@ -4500,6 +4321,210 @@ rem:
 I don't think you can create a branch based on source branch unless you have first switched to that source branch locally at least once.
 
 I changed the label from cb to crbr because cb is too easily confused with "change branch" instead of "create branch".
+
+
+
+:_+ Single File Operations Family
+
+
+
+::_
+:rosf
+
+echo. & echo * Roll back single file by 1 commit.
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+git reset HEAD~1 %2
+
+exit/b
+
+:help
+
+echo. & echo Parameter Descriptions
+echo. & echo Parameter 2: File to revert.
+
+exit/b
+
+lu:
+Sep-3-2025
+
+
+
+::_
+:rsf
+:rv_sf
+:rvsf
+
+echo. & echo * Revert or check out single file.
+
+rem This worked on CBF files. Mar-22-2019
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+git reset head %2
+git checkout %2
+
+exit/b
+
+:help
+
+echo. & echo Parameter Descriptions
+echo. & echo Parameter 2: File to revert.
+
+exit/b
+
+lu:
+Feb-18-2022
+
+
+
+::_
+:csf
+
+echo. & echo * Commit single file with timestamp description.
+
+if "%~2" == "" (
+  call err A filename is required. Jul-11-2023_3_52_PM - %0.bat
+  exit/b 6
+)
+
+call ujt
+
+set /p commit_description=<%tmp%\java_timestamp.txt
+
+echo.
+call git commit -m %commit_description%
+
+exit/b
+
+
+
+::_
+:psf
+
+echo. & echo * Fully automatic push single file with timestamped message.
+
+call :asf %1 %2
+if errorlevel 1 exit/b
+call :csf %1 %2
+if errorlevel 1 exit/b
+
+git push
+
+exit/b
+
+
+
+::_
+:ac
+
+echo. & echo * Add and commit all files with message.
+
+if "%~2" == "" (
+  call err A commit message is required. Jul-11-2023_3_52_PM - %0.bat
+  exit/b
+)
+
+call %0 add
+
+call %0 commit %2
+
+rem You could also do: git commit -am "easy"
+
+exit/b
+
+lu:
+Sep-21-2022
+
+
+
+::_
+:asf
+:add_file
+
+echo. & echo * Add single file.
+
+rem add single file, add specific file
+
+if "%~2" == "" (
+  call err A filename is required. Jul-11-2023_3_52_PM - %0.bat
+  exit/b 6
+)
+
+git add %2
+
+exit/b
+
+
+
+::_
+:csfm
+
+echo. & echo * Commit single file with message.
+
+if "%~2" == "" (
+  call err A filename is required. Jul-11-2023_3_52_PM - %0.bat
+  exit/b 6
+) 
+
+if "%~3" == "" (
+  c all err A commit description is required. Jul-11-2023_3_52_PM - %0.bat
+  exit/b 1
+) 
+
+set commit_description=%3
+
+git commit %2 -m %commit_description%
+
+exit/b
+
+
+
+::_
+:psfm
+
+echo. & echo * Push single file with custom message.
+echo.
+
+call :asf %1 %2
+if errorlevel 1 exit/b
+call :csfm %1 %2 %3
+if errorlevel 1 exit/b
+
+git push
+
+exit/b
+
+
+
+::_
+:co
+
+echo. & echo * Git checkout.
+
+if "%~2" == "" goto help
+
+if not exist "%~2" (
+  call err %2 doesn't exit. Feb-17-2023-13-37 - %0.bat
+  exit/b
+)
+
+git checkout %2
+
+exit/b
+
+lu:
+Feb-17-2023
+
+:help
+
+echo. & echo * Parameter Description(s):
+echo. & echo * Parameter 2: Name of the file you wish to check out.
+
+exit/b
 
 
 

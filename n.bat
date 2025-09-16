@@ -453,7 +453,6 @@ Mar-28-2023
 
 
 ::_
-:ck
 :ckan
 :ckba
 :ckcs
@@ -471,6 +470,21 @@ lu:
 May-12-2022
 
 Ansible, Bash, C#, Java Code Keepers
+
+skw:
+:ck
+(!-ck)
+:hist
+
+:bash commands
+
+:linux commands
+
+:bash
+
+:bash code keepers
+
+:linux
 
 
 
@@ -5249,21 +5263,25 @@ Sep-25-2020
 
 
 ::_
-:b
 :b2
-:brea
-:nppi
-
 set cbf-pd=Breakaway 2. Girlfriend safe.
-
 echo. & echo * %cbf-pd%
-
 call n pict
 set cbf-pt=%cbf-pt%\Breakaway-2
-
 exit/b
+lu: Aug-12-2024
 
-inaugurated on Aug-12-2024
+
+
+::_
+:b
+:b3
+set cbf-pd=Breakaway 3.
+echo. & echo * %cbf-pd%
+call n pict
+set cbf-pt=%cbf-pt%\Breakaway 3
+exit/b
+lu: Sep-4-2025
 
 
 
@@ -7345,76 +7363,6 @@ exit/b
 
 
 
-:_+ KoderHQ Family (!fychq)
-
-
-
-::_
-:http-axios
-:vat
-:vue-axios-tutorial
-
-echo. & echo * Vue Axios Tutorial.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\http-axios
-
-set cbf-lh=8080
-set cbf-srv=srv
-
-rem Environment Setup
-set cbf-url2=https://youtu.be/nkrIBM7piq Q
-
-rem Written Code Examples
-set cbf-url=https://www.koderhq.com/tutorial/vue/http-axios/#post
-
-set cbf-yt=https://www.youtube.com/watch?v=MHgWNd0iKso
-
-exit/b
-
-lu:
-Apr-19-2024
-
-
-
-::_
-:hq
-:khq
-
-echo. & echo * KoderHQ Vue tutorial.
-
-call n v>nul
-set cbf-pt=%cbf-pt%\koderhq-vue-tutorial
-
-rem Environment Setup
-set cbf-ense=vue create vai
-
-set cbf-lh=8080
-set cbf-srv=srv
-
-rem Written Code Examples
-set cbf-url11=https://www.koderhq.com/tutorial/vue/conditional-rendering/
-set cbf-url4=https://www.koderhq.com/tutorial/vue/app-instance
-set cbf-url=https://www.koderhq.com/tutorial/vue
-
-set cbf-yt12=https://youtu.be/VRPU-2AQkFY
-set cbf-yt11=https://youtu.be/fZzrm1iCfyk
-set cbf-yt10=https://www.youtube.com/watch?v=5Z-4M4lhkWA
-set cbf-yt9=https://www.youtube.com/watch?v=hAu521o4FRg
-set cbf-yt8=https://youtu.be/-iKFuyxRiCA
-set cbf-yt7=https://youtu.be/o41UaWgkf_4?t=668
-set cbf-yt6=https://youtu.be/zWF8e4w37hA
-set cbf-yt5=https://youtu.be/JvrPzwzCdyI
-set cbf-yt4=https://youtu.be/ZA3bMKgroP4
-set cbf-yt1=https://youtu.be/ZA3bMKgroP4
-
-exit/b
-
-lu:
-Apr-19-2024
-
-
-
 :_
 :vj2
 
@@ -7797,7 +7745,7 @@ set cbf-pd=vue-3-and-composition-api-tutorial
 
 echo. & echo * %cbf-pd%. Build an expense tracker followed tutorial by Traversy Media.
 
-call n v>nul
+call n vu>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 
 set cbf-docs=https://vuejs.org/guide/introduction.html
@@ -7988,10 +7936,89 @@ exit/b
 
 
 
+:_+ KoderHQ Family (!fychq)
+
+
+
+::_
+:hq
+:khq
+
+echo. & echo * KoderHQ Vue tutorial.
+
+call n vu>nul
+set cbf-pt=%cbf-pt%\koderhq-vue-tutorial
+
+rem Environment Setup
+set cbf-ense=vue create vai
+
+set cbf-lh=8080
+set cbf-srv=srv
+
+rem Written Code Examples
+set cbf-url11=https://www.koderhq.com/tutorial/vue/conditional-rendering/
+set cbf-url4=https://www.koderhq.com/tutorial/vue/app-instance
+set cbf-url=https://www.koderhq.com/tutorial/vue
+
+set cbf-yt12=https://youtu.be/VRPU-2AQkFY
+set cbf-yt11=https://youtu.be/fZzrm1iCfyk
+set cbf-yt10=https://www.youtube.com/watch?v=5Z-4M4lhkWA
+set cbf-yt9=https://www.youtube.com/watch?v=hAu521o4FRg
+set cbf-yt8=https://youtu.be/-iKFuyxRiCA
+set cbf-yt7=https://youtu.be/o41UaWgkf_4?t=668
+set cbf-yt6=https://youtu.be/zWF8e4w37hA
+set cbf-yt5=https://youtu.be/JvrPzwzCdyI
+set cbf-yt4=https://youtu.be/ZA3bMKgroP4
+set cbf-yt1=https://youtu.be/ZA3bMKgroP4
+
+exit/b
+
+lu:
+Apr-19-2024
+
+
+
+::_
+:http-axios
+:vat
+:vue-axios-tutorial
+
+echo. & echo * Vue Axios Tutorial.
+
+call n v>nul
+set cbf-pt=%cbf-pt%\http-axios
+
+set cbf-lh=8080
+set cbf-srv=srv
+
+rem Environment Setup
+set cbf-url2=https://youtu.be/nkrIBM7piq Q
+
+rem Written Code Examples
+set cbf-url=https://www.koderhq.com/tutorial/vue/http-axios/#post
+
+set cbf-yt=https://www.youtube.com/watch?v=MHgWNd0iKso
+
+exit/b
+
+lu:
+Apr-19-2024
+
+
+
 :_
 :yafi
 echo. & echo * Yahoo finance.
 set cbf-url=https://finance.yahoo.com/portfolio/p_1/view/v1
+exit/b
+
+
+
+:_
+:wlfash
+echo. & echo * Fashion wish list
+call pn jona>nul
+set cbf-pt=%cbf-pt%\fashion wish list
 exit/b
 
 

@@ -4556,17 +4556,16 @@ Dec-15-2023
 echo. & echo * Open XPS affinity files.
 
 set cbf-fn-list="%my documents%\savannah\reach out\J.asc"
+set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CH.asc"
 attrib -r "%my documents%\savannah\reach out\cc.asc"
+set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\DI.asc"
+set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CI.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CC.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CM.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\it3.asc"
-set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\DI.asc"
-set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\JD.asc"
-set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CH.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\RB.asc"
-set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\TJ.asc"
-set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CI.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\TR.asc"
+set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\TJ.asc"
 
 set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\n.bat"
 call pn bel>nul
@@ -4574,6 +4573,7 @@ set cbf-fn-list=%cbf-fn-list% "%cbf-pt%\pv.bat"
 set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\v.bat"
 set cbf-fn-list=%cbf-fn-list% "%composable-batch-files%\m.bat"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\Employer Documents\cyd.asc"
+set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\JD.asc"
 
 start mew32 %cbf-fn-list%
 
