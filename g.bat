@@ -2655,12 +2655,9 @@ Allow empty commit.
 
 ::_
 :rvn
-
 echo. & echo * Revert local changes when new files have been added.
-
 git restore .
 git clean -f
-
 exit/b
 
 lu:
