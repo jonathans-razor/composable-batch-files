@@ -4540,4 +4540,13 @@ exit/b
 
 
 
+:_
+:ps
+echo. & echo * Paginated status.
+git --paginate status
+git status
+exit/b
+
+
+
 :_ (!efg)
