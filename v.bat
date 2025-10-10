@@ -2696,7 +2696,7 @@ call paco "%~1" .>nul && goto open-current-folder-file
 exit/b
 
 lc:
-(!ns, !peri, !ampe, !el1, !ec, !gtr, !err, !erro, !el, !erle)
+(!ns, !peri, !ampe, !el1, !ec, !gtr, !err, !erro, !erle)
 
 lu:
 Oct-12-2023
