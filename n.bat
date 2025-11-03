@@ -2785,6 +2785,7 @@ Aug-28-2023
 
 
 :_
+:golflog
 :higolf
 
 echo. & echo * Golf History.
@@ -2794,6 +2795,7 @@ set cbf-gs=https://docs.google.com/spreadsheets/d/1Jd8ZEPJsjwozonWeRni0Fe3hTEOiT
 exit/b
 
 lu:
+Oct-22-2025
 Aug-29-2023
 
 
