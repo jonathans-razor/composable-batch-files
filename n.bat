@@ -5295,6 +5295,7 @@ call n pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
 exit/b
 lu: Nov-3-2025
+The theme was 'dream house', Amalfi photos and the usual internet downloads.
 
 
 
