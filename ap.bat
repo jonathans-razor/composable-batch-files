@@ -5,6 +5,7 @@ echo.
 echo * Price log.
 
 echo.
+echo   288 Dec-3-2025
 echo   271 Oct-30-2025
 echo   256 Sep-23-2025
 echo   234 Sep-9-2025
