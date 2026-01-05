@@ -7422,7 +7422,9 @@ exit/b
 
 
 ::_
+
 :mous
+
 :mouse
 
 set fp=* Run Mouse and Keyboard Center.
@@ -7432,23 +7434,9 @@ rem lu: Feb-26-2020
 echo.
 echo %fp%
 
-set cbf-app=C:\Program Files\LGHUB\system_tray\lghub_system_tray.exe
-
-exit/b
-
-
-
-::_
-:old-mous
-
-set fp=* Run Mouse and Keyboard Center.
-
-rem lu: Feb-26-2020
-
-echo.
-echo %fp%
-
 set cbf-app=C:\Program Files\Microsoft Mouse and Keyboard Center\MouseKeyboardCenter.exe
+rem qq
+rem "C:\Program Files\LGHUB\system_tray\lghub_system_tray.exe"
 
 exit/b
 
