@@ -118,7 +118,7 @@ example-  Prefix for files written by other authors for learning and comparison 
      hw3  Teaches parameters for accessing help or none, exit/b and displaying help.
      hw4  Hello World batch file that demonstrates the basic function structure behind Composable Batch Files.
      hw5  Demonstrates how to call a function in a different batch file.
-       i  Show or clear CBF environment variables.
+       i  Information. Show or clear CBF environment variables.
        j  Simulate a double-click using default precedence operation or a DCV.
      jav  Edit Java DCV file in VSC.
       jb  Surf to the Jenkins Branch website for the passed in alias.
