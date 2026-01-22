@@ -8051,4 +8051,12 @@ exit/b
 
 
 
+:_
+:skilog
+echo. & echo * Ski log.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1rYa79ujtEGI3T40jkr3FJjAMDgbGpLCey_DkSfGLltU/edit?gid=0#gid=0
+exit/b
+
+
+
 :_ (!ef, !efn)
