@@ -6909,7 +6909,7 @@ npx create-vite@latest
 
 
 ::_
-:shar
+:shap
 
 echo. & echo * Shad App in Remix.
 
