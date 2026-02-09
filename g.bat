@@ -2654,14 +2654,16 @@ Allow empty commit.
 
 
 ::_
-:rvn
-echo. & echo * Revert local changes when new files have been added.
-git restore .
-git clean -f
+:v-step-back
+
+echo. & echo * Revert local when your local develop branch gets ahead of the remote develop branch.
+
+git reset --hard HEAD~1
+
 exit/b
 
 lu:
-Sep-17-2025
+Feb-9-2026
 
 
 
@@ -2676,6 +2678,18 @@ exit/b
 
 lu:
 Mar-01-2023
+
+
+
+::_
+:rvn
+echo. & echo * Revert local changes when new files have been added.
+git restore .
+git clean -f
+exit/b
+
+lu:
+Sep-17-2025
 
 
 
