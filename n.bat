@@ -4317,12 +4317,11 @@ exit/b
 
 :_
 :giu
-
 echo. & echo * Google image search - upload an image.
-
 set cbf-url=https://images.google.com/imghp?hl=en^^^&gws_rd=ssl
-
 exit/b
+
+(!-gis)
 
 
 
@@ -4399,17 +4398,6 @@ exit/b
 echo. & echo * LinkedIn connection request.
 
 set cbf-url=https://www.linkedin.com/mynetwork
-
-exit/b
-
-
-
-:_
-:gas
-
-echo. & echo * Google advanced search.
-
-set cbf-url=http://www.google.com/advanced_search?hl=en
 
 exit/b
 
@@ -6873,7 +6861,7 @@ exit/b
 
 
 :_
-:gg
+:gigl
 
 echo. & echo * Github globe.
 
@@ -8055,6 +8043,36 @@ exit/b
 :skilog
 echo. & echo * Ski log.
 set cbf-gs=https://docs.google.com/spreadsheets/d/1rYa79ujtEGI3T40jkr3FJjAMDgbGpLCey_DkSfGLltU/edit?gid=0#gid=0
+exit/b
+
+
+
+:_+ Google Family (!fycgg)
+
+
+
+::_
+:gas
+echo. & echo * Google advanced search.
+set cbf-url=http://www.google.com/advanced_search?hl=en
+exit/b
+
+
+
+::_
+:gg
+:gghp
+:lens
+echo. & echo * Google home page.
+set cbf-url=http://www.google.com
+exit/b
+
+
+::_
+:gais
+:gi
+echo. & echo * Google advanced image search.
+set cbf-url=http://images.google.com/advanced_image_search
 exit/b
 
 
