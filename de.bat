@@ -203,3 +203,18 @@ Mar-18-2025
 
 
 :_
+:lf
+echo. & echo * Delete latest file.
+if not "%~2" == "" call t %2 || exit/b
+dir /b /o-d>c:\a\latest-item-results.txt
+set /p cbf-latest-item=<c:\a\latest-item-results.txt
+echo. & echo * cbf-latest-item: %cbf-latest-item%
+del "%cbf-latest-item%"
+exit/b
+
+lu:
+Feb-27-2026
+
+
+
+:_
