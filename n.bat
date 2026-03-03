@@ -2062,20 +2062,6 @@ Jul-6-2023
 
 
 
-:_
-:tran
-
-echo. & echo * Transfer folder.
-
-set cbf-pt=%dropbox%\Transfer
-
-exit/b
-
-lu:
-Oct-7-2019
-
-
-
 :_+ Home Folders
 
 
@@ -3872,21 +3858,6 @@ exit/b
 
 lu:
 Jun-06-2022
-
-
-
-:_
-:tr
-
-echo. & echo * Travel.
-
-call n dr>nul
-set cbf-pt=%cbf-pt%\travel
-
-exit/b
-
-lu: 
-Nov-22-2023
 
 
 
@@ -8073,6 +8044,42 @@ exit/b
 :gi
 echo. & echo * Google advanced image search.
 set cbf-url=http://images.google.com/advanced_image_search
+exit/b
+
+
+
+:_+ Travel and Transfer
+
+
+
+::_
+:tr
+echo. & echo * Travel.
+call n dr>nul
+set cbf-pt=%cbf-pt%\travel
+exit/b
+
+lu: 
+Nov-22-2023
+
+
+
+::_
+:tf
+echo. & echo * Transfer folder.
+set cbf-pt=%dropbox%\Transfer
+exit/b
+
+lu:
+Oct-7-2019
+
+
+
+:_
+:rthkg
+:hkgrt
+echo. & echo * Hiking Trail Ratings.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1x8lKI_eGb60S9414byIJi8thCBUtthcrrh5mE90QlJc/edit?gid=0#gid=0
 exit/b
 
 
