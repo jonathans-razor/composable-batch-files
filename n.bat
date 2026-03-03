@@ -1770,7 +1770,7 @@ rem set cbf-app=C:\Program Files\Microsoft VS Code\Code.exe
 rem set cbf-fn=C:\Users\JJones2\AppData\Local\Programs\Microsoft VS Code\Code.exe
 rem C:\Users\JJones2\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk
 
-set cbf-gi=https://github.com/Microsoft/vscode/issues?q=is%%3Aopen+is%%3Aissue+label%%3Afeature-request+sort%%3Areactions-%%2B1-desc
+set cbf-gh=https://github.com/Microsoft/vscode/issues?q=is%%3Aopen+is%%3Aissue+label%%3Afeature-request+sort%%3Areactions-%%2B1-desc
 
 exit/b
 
@@ -2053,7 +2053,7 @@ Jul-6-2023
 
 echo. & echo * GitHub advanced search.
 
-set cbf-gi=https://github.com/search/advanced?
+set cbf-gh=https://github.com/search/advanced?
 
 exit/b
 
@@ -2458,7 +2458,7 @@ May-10-2022
 
 echo. & echo * IT.
 
-set cbf-gi=https://github.com/jonathans-razor
+set cbf-gh=https://github.com/jonathans-razor
 set cbf-pt=%dropbox%\it
 
 exit/b
@@ -2473,7 +2473,7 @@ Jun-20-2023
 
 echo. & echo * IT.
 
-set cbf-gi=https://github.com/jonathans-razor
+set cbf-gh=https://github.com/jonathans-razor
 set cbf-pt=%dropbox%\it
 set cbf-fn=%cbf-pt%\miscellany\it3.asc
 
@@ -2509,7 +2509,7 @@ echo. & echo * Interview code.
 
 call n dr>nul
 set cbf-pt=%cbf-pt%\it\interview-code
-set cbf-gi=https://github.com/jonathans-razor/interview-code
+set cbf-gh=https://github.com/jonathans-razor/interview-code
 set cbf-url=https://www.youtube.com/playlist?list=PLV-KEAAMgUZB0reX0lqWdun75FrvRmG4O
 
 exit/b
@@ -2544,10 +2544,10 @@ Note: I edit Quickla in Dropbox but the official GitHub repository is on local.
 :ql
 :qldr
 
-echo. & echo * Quickla CMAC on Dropbox.
+echo. & echo * Quickla CMAC.
 
 set cbf-pt=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit
-set cbf-gi=https://github.com/jonathans-razor/Quickla-for-Multi-Edit.git
+set cbf-gh=https://github.com/jonathans-razor/Quickla-for-Multi-Edit.git
 
 exit/b
 
@@ -3436,7 +3436,7 @@ echo. & echo * %cbf-pd%.
 
 call n it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-gi=%cbf-gi%/%cbf-pd%
+set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=qbLc5a9jdXo
 set cbf-url=https://api.stackexchange.com
 
@@ -3454,7 +3454,7 @@ echo. & echo * node-with-express-fireship-tutorial. Node.js Quickstart
 
 call n it>nul
 set cbf-pt=%cbf-pt%\node-with-express-fireship-tutorial
-set cbf-gi=https://github.com/jonathans-razor/node-with-express-fireship-tutorial
+set cbf-gh=https://github.com/jonathans-razor/node-with-express-fireship-tutorial
 set cbf-url=https://fireship.io/courses/javascript/node-basics
 set cbf-yt=https://www.youtube.com/watch?v=ENrzD9HAZK4
 
@@ -3474,7 +3474,7 @@ echo. & echo * Data structures and algorithms.
 call n it>nul
 set cbf-gh=https://github.com/jonathans-razor/data-structures-and-algorithms
 set cbf-pt=%cbf-pt%\dsa
-set cbf-gi=https://github.com/jonathans-razor/data-structures-and-algorithms
+set cbf-gh=https://github.com/jonathans-razor/data-structures-and-algorithms
 
 exit/b
 
@@ -3490,8 +3490,8 @@ echo. & echo * Angular Crash Course.
 
 call n it>nul
 set cbf-pt=%cbf-pt%\angular-crash-course-by-traversy-media
-set cbf-gio=https://github.com/bradtraversy/angular-crash-2021
-set cbf-gi=https://github.com/jonathans-razor/angular-crash-course-by-traversy-media
+set cbf-gho=https://github.com/bradtraversy/angular-crash-2021
+set cbf-gh=https://github.com/jonathans-razor/angular-crash-course-by-traversy-media
 set cbf-yt=https://www.youtube.com/watch?v=3dHNOWTI7H8
 
 exit/b
@@ -3511,7 +3511,7 @@ echo. & echo * %cbf-pd%.
 call n it>nul
 
 set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-gi=https://github.com/jonathans-razor/%cbf-pd%
+set cbf-gh=https://github.com/jonathans-razor/%cbf-pd%
 
 exit/b
 
@@ -3570,7 +3570,7 @@ echo. & echo * %cbf-pd%.
 
 call n it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-gi=%cbf-gi%/%cbf-pd%
+set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=Z4pCqK-V_Wo
 
 exit/b
@@ -3630,9 +3630,9 @@ echo. & echo * %cbf-pd%.
 call n it>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 set cbf-yt=https://www.youtube.com/watch?v=xMCnDesBggM
-set cbf-gi=https://github.com/jonathans-razor/%cbf-pd%
+set cbf-gh=https://github.com/jonathans-razor/%cbf-pd%
 rem The original repo.
-set cbf-gi2=https://github.com/iamshaunjp/%cbf-pd%
+set cbf-gh2=https://github.com/iamshaunjp/%cbf-pd%
 
 exit/b
 
@@ -3667,7 +3667,7 @@ set cbf-pd=k9s
 echo. & echo * %cbf-pd%. 
 
 call n it>nul
-set cbf-gi=https://github.com/derailed/k9s/releases
+set cbf-gh=https://github.com/derailed/k9s/releases
 set cbf-yt=https://www.youtube.com/watch?v=q^
 qR0c-qcILI
 
@@ -4647,7 +4647,7 @@ ones-series-jj
 
 echo. & echo * Function first bash scripts.
 
-set cbf-gi=https://github.com/jonathans-razor/function-first-bash-scripts
+set cbf-gh=https://github.com/jonathans-razor/function-first-bash-scripts
 set cbf-pt=%dropbox%\it\function-first-bash-scripts
 
 exit/b
@@ -4696,8 +4696,8 @@ set cbf-pt=%cbf-pt%\obx
 
 set cbf-ex=%dropbox%\savannah\Excels\obx.xls
 set cbf-fn=%cbf-pt%\index.md
-set cbf-gi=https://github.com/jonathans-razor/OBX.git
-set cbf-gi2=https://github.com/jonathans-razor/OBX/blob/main/index.md
+set cbf-gh=https://github.com/jonathans-razor/OBX.git
+set cbf-gh2=https://github.com/jonathans-razor/OBX/blob/main/index.md
 set cbf-mtp=%reach out%\obx.mtp
 set cbf-url=https://jonathans-razor.github.io/Outer-Banks-2021/
 
@@ -4726,7 +4726,7 @@ exit/b
 
 echo. & echo * Github home page.
 
-set cbf-gi=https://github.com
+set cbf-gh=https://github.com
 
 exit/b
 
@@ -4742,7 +4742,7 @@ echo. & echo * module-bundlers-explained.
 
 call n it>nul
 set cbf-pt=%cbf-pt%\module-bundlers-explained
-set cbf-gi=https://github.com/jonathans-razor/module-bundlers-explained
+set cbf-gh=https://github.com/jonathans-razor/module-bundlers-explained
 set cbf-yt=https://www.youtube.com/playlist?list=PLV-KEAAMgUZB3pnXE0ShgSg1C73aDcw7P
 
 exit/b
@@ -6263,7 +6263,7 @@ echo. & echo * Todo app by Tyler Potts.
 
 call n vute>nul
 set cbf-pt=%cbf-pt%\todo-app
-set cbf-gio=https://github.com/TylerPottsDev/yt-vue-todo-2022
+set cbf-gho=https://github.com/TylerPottsDev/yt-vue-todo-2022
 set cbf-lh=5173
 set cbf-srv=dev
 set cbf-yt=https://www.youtube.com/watch?v=qhjxAP1hFuI
@@ -6543,7 +6543,7 @@ echo. & echo * Sky pulse weather application.
 call n it>nul
 set cbf-pt=%cbf-pt%\sky-pulse
 
-set cbf-gi=https://github.com/jonathans-razor/sky-pulse.git
+set cbf-gh=https://github.com/jonathans-razor/sky-pulse.git
 set cbf-lh=8080
 set cbf-srv=serve
 
@@ -6566,7 +6566,7 @@ echo. & echo * Benixal.
 call n repo>nul
 set cbf-pt=%cbf-pt%\xa
 
-set cbf-gi=https://github.com/jonathans-razor/xa
+set cbf-gh=https://github.com/jonathans-razor/xa
 set cbf-pj=%cbf-pt%\package.json
 set cbf-lh=5173
 set cbf-srv=dev
@@ -6589,7 +6589,7 @@ set cbf-pt=%cbf-pt%\vue-topics\vue-leaflet
 set cbf-pj=%cbf-pt%\package.json
 set cbf-lh=5173
 set cbf-srv=dev
-set cbf-gi=https://github.com/mohitkumartoshniwal/vue-topics
+set cbf-gh=https://github.com/mohitkumartoshniwal/vue-topics
 
 exit/b
 
@@ -6606,7 +6606,7 @@ set cbf-pt=%cbf-pt%\vue-topics\form-with-veevalidate-zod
 set cbf-pj=%cbf-pt%\package.json
 set cbf-lh=5173
 set cbf-srv=dev
-set cbf-gi=https://github.com/mohitkumartoshniwal/vue-topics
+set cbf-gh=https://github.com/mohitkumartoshniwal/vue-topics
 
 exit/b
 
@@ -6625,7 +6625,7 @@ set cbf-pt=%cbf-pt%\form-with-veevalidate-zod
 set cbf-pj=%cbf-pt%\package.json
 set cbf-lh=5173
 set cbf-srv=dev
-set cbf-gi=https://github.com/mohitkumartoshniwal/vue-topics
+set cbf-gh=https://github.com/mohitkumartoshniwal/vue-topics
 
 exit/b
 
@@ -6646,7 +6646,7 @@ set cbf-pt=%cbf-pt%\feature-gallery
 
 set cbf-pj=%cbf-pt%\package.json
 set cbf-fn=%cbf-pt%\fg.asc
-set cbf-gi=https://github.com/jonathans-razor/feature-gallery.git
+set cbf-gh=https://github.com/jonathans-razor/feature-gallery.git
 set cbf-lh=8080
 set cbf-srv=serve
 
@@ -6667,7 +6667,7 @@ call n it>nul
 set cbf-pt=%cbf-pt%\eltz
 
 set cbf-pj=%cbf-pt%\package.json
-set cbf-gi=https://github.com/jonathans-razor/eltz.git
+set cbf-gh=https://github.com/jonathans-razor/eltz.git
 set cbf-lh=5173
 set cbf-srv=dev
 set cbf-yt=https://www.youtube.com/watch?v=_c4z1GeKi_4
@@ -6723,7 +6723,7 @@ echo. & echo * Vuetify date picker.
 call n v>nul
 set cbf-pt=%cbf-pt%\date-picker
 
-set cbf-gi=https://github.com/igorexa34314/vuetify-birthdaypicker.git
+set cbf-gh=https://github.com/igorexa34314/vuetify-birthdaypicker.git
 set cbf-lh=5173
 set cbf-pj=%cbf-pt%\package.json
 set cbf-srv=dev
@@ -6992,7 +6992,7 @@ set cbf-docs=https://quasar.dev/docs
 set cbf-srv=dev
 set cbf-lh=
 
-set cbf-gio=https://github.com/codingwithjustin/quasar-note-app
+set cbf-gho=https://github.com/codingwithjustin/quasar-note-app
 
 set cbf-url=https://quasar.dev/vue-components/tooltip#qtooltip-api
 set cbf-url2=https://quasar.dev/components
@@ -7083,7 +7083,7 @@ set cbf-pt=%cbf-pt%\vue-query-paging-infinite-ionic
 set cbf-docs=https://tanstack.com/query/latest/docs/framework/vue/overview
 set cbf-srv=dev
 set cbf-lh=3000
-set cbf-gi=https://github.com/aaronksaunders/vue-query-paging-infinite-ionic
+set cbf-gh=https://github.com/aaronksaunders/vue-query-paging-infinite-ionic
 
 set cbf-yt=https://www.youtube.com/watch?v=0Njxq9UcL9s
 
@@ -7207,7 +7207,7 @@ set cbf-pt=%cbf-pt%\t3gallery
 
 set cbf-lh=
 set cbf-srv=
-set cbf-gi=https://github.com/t3dotgg/t3gallery.git
+set cbf-gh=https://github.com/t3dotgg/t3gallery.git
 set cbf-yt=https://www.youtube.com/watch?v=d5x0JCZbAJs
 
 exit/b
@@ -7250,7 +7250,7 @@ set cbf-pt=%cbf-pt%\vuex-playlist
 
 set cbf-lh=
 set cbf-srv=dev
-set cbf-gi=https://github.com/iamshaunjp/vuex-playlist
+set cbf-gh=https://github.com/iamshaunjp/vuex-playlist
 set cbf-yt=https://www.youtube.com/watch?v=arhCOcxIUo4
 set cbf-url=
 
@@ -7690,7 +7690,7 @@ echo. & echo * Hello world.
 call n v>nul
 set cbf-pt=%cbf-pt%\hello-world
 
-set cbf-gi=https://github.com/jonathans-razor/vue-testing/tree/main/hello-world
+set cbf-gh=https://github.com/jonathans-razor/vue-testing/tree/main/hello-world
 
 exit/b
 
@@ -7712,8 +7712,8 @@ exit/b
 
 echo. & echo * Vue.
 
-set cbf-gi=https://github.com/vuejs
-set cbf-gi2=https://github.com/vuejs/vue-class-component
+set cbf-gh=https://github.com/vuejs
+set cbf-gh2=https://github.com/vuejs/vue-class-component
 set cbf-lh=http://localhost:8080
 
 exit/b
@@ -7736,7 +7736,7 @@ call n vu>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
 
 set cbf-docs=https://vuejs.org/guide/introduction.html
-set cbf-gi=%cbf-gi%/%cbf-pd%
+set cbf-gh=%cbf-gh%/%cbf-pd%
 set cbf-lh=5173
 set cbf-srv=dev
 set cbf-yt=https://www.youtube.com/watch?v=hNPwdOZ3qFU
@@ -7763,8 +7763,8 @@ set cbf-pt=%cbf-pt%\vue-testing
 rem Bookmark
 set cbf-bm=https://vuejs.org/guide/essentials/template-syntax.html#using-javascript-expressions
 set cbf-docs=https://vuejs.org/guide/introduction.html
-set cbf-gi=https://github.com/jonathans-razor/vue-testing.git
-set cbf-gia=https://api.github.com/repos/vuejs/core/commits?per_page=3
+set cbf-gh=https://github.com/jonathans-razor/vue-testing.git
+set cbf-gha=https://api.github.com/repos/vuejs/core/commits?per_page=3
 set cbf-gs=https://docs.google.com/spreadsheets/d/1lIemanX4_nF5fwrOCYH0ZJBJuKZP9u3i0GJXg87Jmcw/edit#gid=0
 
 rem Learn Vue:
@@ -7789,7 +7789,7 @@ echo. & echo * %cbf-pd% source project.
 
 call n repo>nul
 set cbf-pt=%cbf-pt%\%cbf-pd%
-set cbf-gi=https://github.com/bradtraversy/vue-expense-tracker
+set cbf-gh=https://github.com/bradtraversy/vue-expense-tracker
 set cbf-lh=http://localhost:5173
 
 exit/b
