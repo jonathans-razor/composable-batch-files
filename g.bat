@@ -4566,4 +4566,12 @@ exit/b
 
 
 
+:_
+:wl
+echo. & echo * Worktree list.
+git worktree list
+exit/b
+
+
+
 :_ (!efg)
