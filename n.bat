@@ -5204,6 +5204,24 @@ how to make api call with vuex
 
 
 ::_
+:fun
+:funn
+:humo
+
+set cbf-pd=humor
+
+echo. & echo * %cbf-pd%.
+
+call n pict
+set cbf-pt=%cbf-pt%\humor
+
+exit/b
+
+skw: picture/humor, picture\humor, humorous pictures, funny pictures
+
+
+
+::_
 :we
 echo. & echo * Wines.
 call n pi>nul
@@ -5338,22 +5356,6 @@ echo. & echo * %cbf-pd%.
 
 call n pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:fun
-:funn
-:humo
-
-set cbf-pd=humor
-
-echo. & echo * %cbf-pd%.
-
-call n pict
-set cbf-pt=%cbf-pt%\humor
 
 exit/b
 
