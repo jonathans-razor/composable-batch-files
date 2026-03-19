@@ -47,9 +47,9 @@ Mar-13-2024
 :_
 :main
 
-dir /b /o-d>c:\a\latest-item-results.txt
+dir /b /o-d>%tmp%\latest-item-results.txt
 
-set /p cbf-latest-item=<c:\a\latest-item-results.txt
+set /p cbf-latest-item=<%tmp%\latest-item-results.txt
 
 echo. & echo * cbf-latest-item: %cbf-latest-item%
 
