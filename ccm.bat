@@ -1,8 +1,9 @@
 :_
 
 @echo off
+if "%~1" == "" goto c
 if "%~1" == "?" goto help
-goto main
+goto %1
 
 
 
@@ -11,11 +12,19 @@ goto main
 
 cls
 
-echo. & echo  * Compile CMAC macros.
+echo. & echo  * CMAC operations.
 
-echo. & echo    Usage: %~n0
+echo. & echo    Usage: %~n0 [space separated parameter(s)]
 
-echo. & echo  * Batch file style: Single purpose
+echo. & echo  * Parameter 1:
+echo    Alias of the operation you wish to run.
+echo    If blank, compile CMAC macros.
+echo    If "o", open CMAC files.
+
+echo. & echo  * Batch file style: Multipurpose
+
+echo. & echo  * Samples:
+echo    %~n0 o
 
 exit/b
 
@@ -32,8 +41,31 @@ Nov-3-2023
 
 
 :_
-:main
+:o
+:ocf
+echo. & echo * Open CMAC files.
+call t ql>nul
+call me Aliases.s>nul
+call me Clif.s>nul
+call me Finder.s>nul
+call me Format.s>nul
+call me "Jonathan's_Macros.s">nul
+call me ListMgr.s>nul
+call me Regexes.s>nul
+call me Searcher.s>nul
+call me Shared.s>nul
 
+exit/b
+lu: Mar-20-2026
+lu: Nov-3-2023
+
+
+
+:_
+:c
+:ccm
+
+echo. & echo * Compile CMAC macros.
 echo.
 
 set macro_folder=%dropbox%\Multi-Edit_2008_Config_Files\Mac
@@ -85,6 +117,10 @@ rem :"c:\program files (x86)\multi-edit 2008\cmacwin.exe"
 rem :cmacwin.exe
 
 exit/b
+
+lu:
+Nov-3-2023
+Feb-19-2019
 
 
 
