@@ -2540,6 +2540,7 @@ Note: I edit Quickla in Dropbox but the official GitHub repository is on local.
 
 
 ::_
+:cm
 :drql
 :ql
 :qldr
