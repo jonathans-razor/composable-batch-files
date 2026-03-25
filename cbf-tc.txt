@@ -26,7 +26,6 @@ browser-  Defines the behavior of calling browsers.
      buq  Quickly back up and restore any registered file.
        c  Clear without modifying the path.
       ca  Go to a folder and clear the screen.
-     ccm  Compile CMAC macros.
       cf  Execute the Confluence DCV for the passed in alias.
    cbf-2  Shows more CBF files.
   cbf-el  CBF Error Level Codes.
