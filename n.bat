@@ -5205,6 +5205,18 @@ how to make api call with vuex
 
 
 ::_
+:kvele
+echo. & echo * KV Electric.
+call n fvpi
+set cbf-pt=%cbf-pt%\kv electric 1900x1900-000000-80-0-0.jpg
+exit/b
+
+lu:
+Mar-31-2026
+
+
+
+::_
 :fun
 :funn
 :humo
