@@ -5206,7 +5206,8 @@ how to make api call with vuex
 
 ::_
 :pin1
-echo. & echo * %1.
+echo. & echo * %1 - .
+rem qq
 set cbf-url=https://www.pinterest.com/pin/109353097191156656/
 exit/b
 
@@ -5216,58 +5217,10 @@ Mar-31-2026
 
 
 ::_
-:pin2
-echo. & echo * %1.
-set cbf-url=https://www.pinterest.com/search/pins/?q=daniel%%20richter
-exit/b
-
-lu:
-Mar-31-2026
-
-
-
-::_
-:pinl1
-echo. & echo * %1 - local.
-call n b4
-set cbf-pt=%cbf-pt%\db4c93888414133416efdf0e9bc7edc2.jpg
-exit/b
-
-lu:
-Mar-31-2026
-
-
-
-::_
-:pinl2
-echo. & echo * %1 - local.
-call n b4
-set cbf-pt=%cbf-pt%\2756788202219627ac52c8effdfe0a15.jpg
-exit/b
-
-lu:
-Mar-31-2026
-
-
-
-::_
-:pinl3
-echo. & echo * %1 - local.
-call n b4
-set cbf-pt=%cbf-pt%\e91888e1963110aac7dc53c0473e4f0e.jpg
-exit/b
-
-lu:
-Mar-31-2026
-
-
-
-::_
-:usmap
-echo. & echo * US map.
-call n b4
-rem qq
-set cbf-pt=%dropbox%\pictures\educational\united states map.gif
+:kvele
+echo. & echo * KV Electric.
+call n fvpi
+set cbf-pt=%cbf-pt%\kv electric 1900x1900-000000-80-0-0.jpg
 exit/b
 
 lu:
