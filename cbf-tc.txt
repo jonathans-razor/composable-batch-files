@@ -63,7 +63,7 @@ browser-  Defines the behavior of calling browsers.
       dk  Docker.
       dn  Dot Net Core (skw dotnet). (skw supported-languages-series-jj)
   dogsay  Talking dog.
-      dr  Create and delete directories. (skw mcd, folder)
+      dr  Create and delete directories. (skw mcd, folder doctor :))
       dt  Current date copied to clipboard.
       dw  Run NG UI from a dedicated command line window.
        e  Edit a file based on a file choice algorithm.

@@ -5266,7 +5266,6 @@ Mar-31-2026
 :usmap
 echo. & echo * US map.
 call n b4
-rem qq
 set cbf-pt=%dropbox%\pictures\educational\united states map.gif
 exit/b
 
@@ -8153,6 +8152,7 @@ Nov-22-2023
 
 ::_
 :tf
+:tran
 echo. & echo * Transfer folder.
 set cbf-pt=%dropbox%\Transfer
 exit/b
