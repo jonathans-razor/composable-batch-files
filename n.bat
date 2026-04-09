@@ -1148,6 +1148,15 @@ Nov-2-2018
 
 
 ::_
+:j0
+echo. & echo * j.asc.
+call n rold>nul
+set cbf-fn=%cbf-pt%\j.asc
+exit/b
+
+
+
+::_
 :j1
 :j2
 

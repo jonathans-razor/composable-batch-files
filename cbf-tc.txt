@@ -5,6 +5,7 @@ Composable Batch Files (CBF) - Table of Contents
       `--'      `--'      `--'      `--'      `--' 
 
     File  Description
+       0  Switch focus from the command prompt to Multi-Edit via editing of the j0.asc file.
        a  Cd .. and td accelerator.
       ak  Awk.
       an  Validate application name.
