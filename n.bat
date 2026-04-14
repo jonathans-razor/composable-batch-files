@@ -5274,12 +5274,21 @@ Mar-31-2026
 ::_
 :usmap
 echo. & echo * US map.
-call n b4
 set cbf-pt=%dropbox%\pictures\educational\united states map.gif
 exit/b
-
 lu:
 Mar-31-2026
+
+
+
+::_
+:canmap
+echo. & echo * Map of the provinces of Canada.
+call n educ
+set cbf-pt=%cbf-pt%\map of the provinces of Canada.webp
+exit/b
+lu:
+Apr-14-2026
 
 
 
