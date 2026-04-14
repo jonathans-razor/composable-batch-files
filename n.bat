@@ -5366,7 +5366,6 @@ lu: Sep-4-2025
 
 
 ::_
-:b
 :b4
 set cbf-pd=Breakaway 4.
 echo. & echo * %cbf-pd%
@@ -5375,6 +5374,19 @@ set cbf-pt=%cbf-pt%\%cbf-pd%
 exit/b
 lu: Nov-3-2025
 The theme was 'dream house', Amalfi photos and the usual internet downloads.
+
+
+
+::_
+:b
+:b5
+set cbf-pd=Breakaway 5.
+echo. & echo * %cbf-pd%
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+exit/b
+lu: Apr-14-2026
+Need some new material.
 
 
 
