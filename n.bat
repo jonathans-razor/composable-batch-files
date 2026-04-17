@@ -8201,4 +8201,13 @@ exit/b
 
 
 
+:_
+:sfvc
+echo. & echo * VS Code Settings file.
+set cbf-pt=C:\Users\[elided]\AppData\Roaming\Code\User\settings.json
+exit/b
+lu: Apr-17-2026
+
+
+
 :_ (!ef, !efn)
