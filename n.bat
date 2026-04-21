@@ -4511,21 +4511,6 @@ exit/b
 
 
 :_
-:map
-
-echo. & echo * map-of-the-united-states.
-
-call n educ>nul
-set cbf-fn=%cbf-pt%\map-of-the-united-states.webp
-
-exit/b
-
-:skw
-map of the united states
-
-
-
-:_
 :bci
 
 echo. & echo * Better code imagery.
@@ -5209,7 +5194,7 @@ how to make api call with vuex
 
 
 
-:_+ Pictures (!fcpict)
+:_+ Pictures (!fcpict) (skw run_razor examples)
 
 
 
@@ -5272,12 +5257,25 @@ Mar-31-2026
 
 
 ::_
+:map
 :usmap
 echo. & echo * US map.
 set cbf-pt=%dropbox%\pictures\educational\united states map.gif
 exit/b
 lu:
 Mar-31-2026
+
+skw:
+map of the united states
+
+
+
+::_
+:map2
+echo. & echo * map-of-the-united-states.
+call n educ>nul
+set cbf-fn=%cbf-pt%\map-of-the-united-states.webp
+exit/b
 
 
 
