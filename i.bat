@@ -273,6 +273,10 @@ rem Associated batch file: gs.bat
 set cbf-gs=
 
 :
+rem Google Slides
+set cbf-gsl=
+
+:
 rem Hello
 set cbf-hello=
 
