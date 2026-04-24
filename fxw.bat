@@ -98,7 +98,7 @@ exit/b
 :_
 :gh
 
-call gh jj
+call gh jj>nul
 
 exit/b
 
