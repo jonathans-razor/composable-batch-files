@@ -1742,7 +1742,27 @@ Feb-13-2019
 
 
 
-:_+ Visual Studio Code
+:_+ Visual Studio Code (!fycvc)
+
+
+
+::_
+:seja
+:vcset
+
+echo. & echo * Visual Studio Code user settings file.
+
+call n apda>nul
+set cbf-fn=%cbf-pt%\code\user\settings.json
+
+exit/b
+
+lu: 
+Apr-17-2026
+Dec-14-2023
+
+skw VS Code Settings file.
+C:\Users\[elided]\AppData\Roaming\Code\User\settings.json
 
 
 
@@ -4020,21 +4040,6 @@ exit/b
 
 lu: 
 Dec-5-2023
-
-
-
-:_
-:seja
-
-echo. & echo * Visual Studio Code user settings file.
-
-call n apda>nul
-set cbf-fn=%cbf-pt%\code\user\settings.json
-
-exit/b
-
-lu: 
-Dec-14-2023
 
 
 
@@ -8197,15 +8202,6 @@ Oct-7-2019
 echo. & echo * Hiking Trail Ratings.
 set cbf-gs=https://docs.google.com/spreadsheets/d/1x8lKI_eGb60S9414byIJi8thCBUtthcrrh5mE90QlJc/edit?gid=0#gid=0
 exit/b
-
-
-
-:_
-:sfvc
-echo. & echo * VS Code Settings file.
-set cbf-pt=C:\Users\[elided]\AppData\Roaming\Code\User\settings.json
-exit/b
-lu: Apr-17-2026
 
 
 
