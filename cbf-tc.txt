@@ -141,7 +141,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       kl  Kill a process.
       kr  Chrome browser.
        l  Load path onto clipboard.
-      ld  Use a DCV to load a cbf variable onto the clipboard.
+      ld  Use a DCV to load a cbf variable onto the clipboard. Load nickname data to clipboad?
       le  Leet code tester.
       lf  Load file name or contents onto clipboard. (skw copy to clipboard)
       lh  Execute the localhost DCV for the passed in alias.
@@ -159,7 +159,6 @@ example-  Prefix for files written by other authors for learning and comparison 
   mirror  Attempts to demonstrate how is easy it is to see what commands are running.
       mv  Move files using function routing.
        n  Nicknames path dictionary, a. k. a. the data layer.
-       qq
       nd  Use Node to compile and run JavaScript files. (skw supported-languages-series-jj)
      net  A wrapper around the netstat command.
      ney  An empty nicknames dictionary, useful for starting over.
