@@ -73,6 +73,7 @@ exit/b
 call el /c>nul
 call i /c>nul
 
+echo. & echo * Error Level: %errorlevel% - qjq - cbf-: %cbf-% - Apr-27-2026-4-23-PM-1
 
 
 :_
