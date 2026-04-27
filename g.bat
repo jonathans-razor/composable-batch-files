@@ -4574,4 +4574,16 @@ exit/b
 
 
 
+:_
+:rcrr
+echo. & echo * Remove corrupted Remote References.
+call t c
+cd .git/refs/remotes/origin
+echo 'y' | del *.*
+call t c
+git pull --prune
+exit/b
+
+
+
 :_ (!efg)
