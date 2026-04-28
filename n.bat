@@ -4641,24 +4641,6 @@ ones-series-jj
 
 
 ::_
-:f
-:ff
-:ffb
-:ffbs
-
-echo. & echo * Function first bash scripts.
-
-set cbf-gh=https://github.com/jonathans-razor/function-first-bash-scripts
-set cbf-pt=%dropbox%\it\function-first-bash-scripts
-
-exit/b
-
-lu:
-Sep-9-2023
-
-
-
-::_
 :cbfgp
 :ghp
 
@@ -4733,6 +4715,43 @@ exit/b
 
 lu: 
 Nov-10-2023
+
+
+
+:_+ Function First Family (!fycff)
+
+
+
+::_
+:f
+:ff
+:ffb
+:ffbs
+
+echo. & echo * Function first bash scripts.
+
+set cbf-gh=https://github.com/jonathans-razor/function-first-bash-scripts
+set cbf-pt=%dropbox%\it\function-first-bash-scripts
+
+exit/b
+
+lu:
+Sep-9-2023
+
+
+
+::_
+:mafi
+
+echo. & echo * Makefile.
+
+set cbf-pt=%dropbox%\it\function-first-bash-scripts
+set cbf-fn=%cbf-pt%\Makefile
+
+exit/b
+
+lu:
+Sep-9-2023
 
 
 
