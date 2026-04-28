@@ -541,7 +541,9 @@ exit/b
 
 :_
 
-echo. & echo * ho
+echo. & echo * Apr-28-2026-11-39-AM.
+
+if "%cbf-default-text-editor%" == "" err cbf-default-text-editor is blank which causes downstream problems.
 
 
 

@@ -134,6 +134,7 @@ if "%cbf-default-browser%"=="" echo. & echo * Warning: cbf-default-browser is bl
 :
 rem Default Text Editor
 rem set cbf-default-text-editor=
+if "%cbf-default-text-editor%" == "" call err cbf-default-text-editor is blank which causes downstream problems.
 
 :
 rem Default Secondary Dictionary. 
