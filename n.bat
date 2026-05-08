@@ -5332,6 +5332,17 @@ Sep-25-2020
 
 
 ::_
+:b1
+set cbf-pd=Breakaway.
+echo. & echo * %cbf-pd%
+call n pict
+set cbf-pt=%cbf-pt%\Breakaway
+exit/b
+lu: May-6-2026
+
+
+
+::_
 :b2
 set cbf-pd=Breakaway 2. Girlfriend safe.
 echo. & echo * %cbf-pd%
@@ -5525,12 +5536,27 @@ Apr-27-2026
 
 ::_
 :mala
-echo. & echo * Malaria.
+echo. & echo * Malaria countries.
 call n educ>nul
 set cbf-pt=%cbf-pt%\malaria 2026-04-23_06-25-46.avif
 exit/b
 lu:
 Apr-27-2026
+
+
+
+:_+ Funny Food (!fufd, !hufd)
+
+
+
+::_
+:fufd1
+echo. & echo * Funny food 1.
+call n b1>nul
+set cbf-pt=%cbf-pt%\funny food download.jfif
+exit/b
+lu:
+May-6-2026
 
 
 
