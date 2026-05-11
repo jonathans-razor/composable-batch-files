@@ -8195,7 +8195,7 @@ exit/b
 :_
 :wlfash
 echo. & echo * Fashion wish list
-call pn jona>nul
+call pn pict>nul
 set cbf-pt=%cbf-pt%\fashion wish list
 exit/b
 
