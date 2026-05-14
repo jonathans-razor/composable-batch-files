@@ -605,8 +605,8 @@ May-30-2023
 
 echo. & echo * Shoe Weights.
 
-call n exs>nul
-set cbf-ex=%cbf-pt%\Shoe Weights.xlsx
+call n pict>nul
+set cbf-pt=%cbf-pt%\shoes
 set cbf-gs=https://docs.google.com/spreadsheets/d/1_F2hoEwMmbB9B8Oqt4cV1O-4T_6gAyDaJdoX4-OORYU/edit#gid=523644252           
 
 exit/b
