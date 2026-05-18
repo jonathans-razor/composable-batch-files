@@ -4223,7 +4223,6 @@ exit/b
 
 :_
 :rsdn
-:rsgg
 :rsjv
 :rsjs
 :rsph
@@ -8214,6 +8213,7 @@ exit/b
 
 
 ::_
+:asgg
 :gas
 echo. & echo * Google advanced search.
 set cbf-url=http://www.google.com/advanced_search?hl=en
@@ -8222,19 +8222,23 @@ exit/b
 
 
 ::_
-:gg
-:gghp
-:lens
-echo. & echo * Google home page.
-set cbf-url=http://www.google.com
+:ais
+:aisgg
+:gais
+echo. & echo * Google advanced image search.
+set cbf-url=http://images.google.com/advanced_image_search
 exit/b
 
 
+
 ::_
-:gais
-:gi
-echo. & echo * Google advanced image search.
-set cbf-url=http://images.google.com/advanced_image_search
+:gg
+:gghp
+:gis
+:lens
+:rsgg
+echo. & echo * Google home page.
+set cbf-url=http://www.google.com
 exit/b
 
 
