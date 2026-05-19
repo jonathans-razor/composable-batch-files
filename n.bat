@@ -2576,6 +2576,7 @@ Note: I edit Quickla in Dropbox but the official GitHub repository is on local.
 
 echo. & echo * Quickla CMAC.
 
+set cbf-gs=https://docs.google.com/spreadsheets/d/1GysSBXcT1QvJw1njJIqeHAUp484sc_P6UzGIIOcn6X4/edit?gid=0#gid=0
 set cbf-pt=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit
 set cbf-gh=https://github.com/jonathans-razor/Quickla-for-Multi-Edit.git
 
@@ -5504,6 +5505,7 @@ map of the united states
 
 ::_
 :map2
+:usmap2
 echo. & echo * map-of-the-united-states.
 call n educ>nul
 set cbf-fn=%cbf-pt%\map-of-the-united-states.webp
