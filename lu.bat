@@ -64,6 +64,7 @@ echo. & echo * Read last updated.
 
 call t c>nul
 echo.
+echo The last time I updated SP7 was: 
 type last-updated.txt
 
 exit/b
