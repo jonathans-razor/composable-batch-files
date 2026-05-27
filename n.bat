@@ -8282,4 +8282,12 @@ exit/b
 
 
 
+:_
+:ai
+echo. & echo * AI Tools Comparison and Analysis.
+set cbf-gs=https://docs.google.com/spreadsheets/d/19wZRcfEane2XeXJcQb7Mlnu2CbnA5JdaCpmAojKfPyE/edit?gid=0#gid=0
+exit/b
+
+
+
 :_ (!ef, !efn)
