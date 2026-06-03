@@ -1,4 +1,4 @@
-:_ (!n)
+:_ (!n) Nicknames Dicionary
 
 @echo off
 
@@ -5486,6 +5486,16 @@ exit/b
 
 
 :_+ Maps (!fycmaps)
+
+
+
+::_
+:freemap
+echo. & echo * Freeest countries.
+set cbf-url=https://www.zerohedge.com/geopolitical/finland-flourishes-freedom-flounders-land-free
+exit/b
+lu:
+Jun-2-2026
 
 
 

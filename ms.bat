@@ -5,6 +5,7 @@ echo.
 echo * Price log.
 
 echo.
+echo 441 Jun-2-2026
 echo 425 May-28-2026
 echo 418 May-19-2026
 echo 404 May-13-2026
