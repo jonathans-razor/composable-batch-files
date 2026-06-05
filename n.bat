@@ -5218,273 +5218,6 @@ how to make api call with vuex
 
 
 
-:_+ Pictures (!fycpicts) (skw run_razor examples)
-
-
-
-::_
-:pin1
-echo. & echo * %1.
-set cbf-url=https://www.pinterest.com/pin/109353097191156656/
-exit/b
-
-lu:
-Mar-31-2026
-
-
-
-::_
-:pin2
-echo. & echo * %1.
-set cbf-url=https://www.pinterest.com/search/pins/?q=daniel%%20richter
-exit/b
-
-lu:
-Mar-31-2026
-
-
-
-::_
-:pinl1
-echo. & echo * %1 - local.
-call n b4
-set cbf-pt=%cbf-pt%\db4c93888414133416efdf0e9bc7edc2.jpg
-exit/b
-
-lu:
-Mar-31-2026
-
-
-
-::_
-:pinl2
-echo. & echo * %1 - local.
-call n b4
-set cbf-pt=%cbf-pt%\2756788202219627ac52c8effdfe0a15.jpg
-exit/b
-
-lu:
-Mar-31-2026
-
-
-
-::_
-:pinl3
-echo. & echo * %1 - local.
-call n b4
-set cbf-pt=%cbf-pt%\e91888e1963110aac7dc53c0473e4f0e.jpg
-exit/b
-
-lu:
-Mar-31-2026
-
-
-
-::_
-:kvele
-echo. & echo * KV Electric.
-call n fvpi
-set cbf-pt=%cbf-pt%\kv electric 1900x1900-000000-80-0-0.jpg
-exit/b
-
-lu:
-Mar-31-2026
-
-
-
-::_
-:fun
-:funn
-:humo
-
-set cbf-pd=humor
-
-echo. & echo * %cbf-pd%.
-
-call n pict
-set cbf-pt=%cbf-pt%\humor
-
-exit/b
-
-skw: picture/humor, picture\humor, humorous pictures, funny pictures
-
-
-
-::_
-:we
-echo. & echo * Wines.
-call n pi>nul
-set cbf-pt=%cbf-pt%\wines
-exit/b
-
-
-
-::_
-:pi
-:pict
-echo. & echo * Pictures.
-set cbf-pt=%dropbox%\pictures
-exit/b
-
-lu:
-Sep-25-2020
-
-
-
-::_
-:b1
-set cbf-pd=Breakaway.
-echo. & echo * %cbf-pd%
-call n pict
-set cbf-pt=%cbf-pt%\Breakaway
-exit/b
-lu: May-6-2026
-
-
-
-::_
-:b2
-set cbf-pd=Breakaway 2. Girlfriend safe.
-echo. & echo * %cbf-pd%
-call n pict
-set cbf-pt=%cbf-pt%\Breakaway-2
-exit/b
-lu: Aug-12-2024
-
-
-
-::_
-:b3
-set cbf-pd=Breakaway 3.
-echo. & echo * %cbf-pd%
-call n pict
-set cbf-pt=%cbf-pt%\Breakaway 3
-exit/b
-lu: Sep-4-2025
-
-
-
-::_
-:b4
-set cbf-pd=Breakaway 4.
-echo. & echo * %cbf-pd%
-call n pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-exit/b
-lu: Nov-3-2025
-The theme was 'dream house', Amalfi photos and the usual internet downloads.
-
-
-
-::_
-:b
-:b5
-set cbf-pd=Breakaway 5.
-echo. & echo * %cbf-pd%
-call n pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-exit/b
-lu: Apr-14-2026
-Need some new material.
-
-
-
-::_
-:b-old
-
-set cbf-pd=Breakaway
-
-echo. & echo * %cbf-pd%.
-
-call n pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:fv
-:fvpi
-:fvpict
-:hura
-
-set cbf-pd=Favorites
-
-echo. & echo * %cbf-pd%. All time favorite pictures.
-
-call n pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:nex
-:nx
-
-echo. & echo * New and exciting.
-call n dr
-set cbf-pt=%cbf-pt%\pictures\new and exciting
-
-exit/b
-
-
-
-::_
-:baar
-
-echo. & echo * Bahamian art.
-
-call n pict
-set cbf-pd=bahamian art
-set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:wosa
-
-set cbf-pd=Work Safe
-
-echo. & echo * %cbf-pd%.
-
-call n pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:educ
-
-set cbf-pd=Educational
-
-echo. & echo * %cbf-pd%.
-
-call n pict
-set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:mipi
-
-echo. & echo * Miscellaneous pictures.
-
-call n pict
-set cbf-pt=%cbf-pt%\miscellany
-
-exit/b
-
-
-
 :_+ Maps (!fycmaps)
 
 
@@ -8296,6 +8029,271 @@ exit/b
 :ai
 echo. & echo * AI Tools Comparison and Analysis.
 set cbf-gs=https://docs.google.com/spreadsheets/d/19wZRcfEane2XeXJcQb7Mlnu2CbnA5JdaCpmAojKfPyE/edit?gid=0#gid=0
+exit/b
+
+
+
+:_+ Pictures (!fycpicts) (skw run_razor examples)
+
+
+
+::_
+:pin1
+echo. & echo * %1.
+set cbf-url=https://www.pinterest.com/pin/109353097191156656/
+exit/b
+
+lu:
+Mar-31-2026
+
+
+
+::_
+:pin2
+echo. & echo * %1.
+set cbf-url=https://www.pinterest.com/search/pins/?q=daniel%%20richter
+exit/b
+
+lu:
+Mar-31-2026
+
+
+
+::_
+:pinl1
+echo. & echo * %1 - local.
+call n b4
+set cbf-pt=%cbf-pt%\db4c93888414133416efdf0e9bc7edc2.jpg
+exit/b
+
+lu:
+Mar-31-2026
+
+
+
+::_
+:pinl2
+echo. & echo * %1 - local.
+call n b4
+set cbf-pt=%cbf-pt%\2756788202219627ac52c8effdfe0a15.jpg
+exit/b
+
+lu:
+Mar-31-2026
+
+
+
+::_
+:pinl3
+echo. & echo * %1 - local.
+call n b4
+set cbf-pt=%cbf-pt%\e91888e1963110aac7dc53c0473e4f0e.jpg
+exit/b
+
+lu:
+Mar-31-2026
+
+
+
+::_
+:kvele
+echo. & echo * KV Electric.
+call n fvpi
+set cbf-pt=%cbf-pt%\kv electric 1900x1900-000000-80-0-0.jpg
+exit/b
+
+lu:
+Mar-31-2026
+
+
+
+::_
+:fun
+:funn
+:humo
+
+set cbf-pd=humor
+
+echo. & echo * %cbf-pd%.
+
+call n pict
+set cbf-pt=%cbf-pt%\humor
+
+exit/b
+
+skw: picture/humor, picture\humor, humorous pictures, funny pictures
+
+
+
+::_
+:we
+echo. & echo * Wines.
+call n pi>nul
+set cbf-pt=%cbf-pt%\wines
+exit/b
+
+
+
+::_
+:pi
+:pict
+echo. & echo * Pictures.
+set cbf-pt=%dropbox%\pictures
+exit/b
+
+lu:
+Sep-25-2020
+
+
+
+::_
+:b1
+set cbf-pd=Breakaway.
+echo. & echo * %cbf-pd%
+call n pict
+set cbf-pt=%cbf-pt%\Breakaway
+exit/b
+lu: May-6-2026
+
+
+
+::_
+:b2
+set cbf-pd=Breakaway 2. Girlfriend safe.
+echo. & echo * %cbf-pd%
+call n pict
+set cbf-pt=%cbf-pt%\Breakaway-2
+exit/b
+lu: Aug-12-2024
+
+
+
+::_
+:b3
+set cbf-pd=Breakaway 3.
+echo. & echo * %cbf-pd%
+call n pict
+set cbf-pt=%cbf-pt%\Breakaway 3
+exit/b
+lu: Sep-4-2025
+
+
+
+::_
+:b4
+set cbf-pd=Breakaway 4.
+echo. & echo * %cbf-pd%
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+exit/b
+lu: Nov-3-2025
+The theme was 'dream house', Amalfi photos and the usual internet downloads.
+
+
+
+::_
+:b
+:b5
+set cbf-pd=Breakaway 5.
+echo. & echo * %cbf-pd%
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+exit/b
+lu: Apr-14-2026
+Need some new material.
+
+
+
+::_
+:hc2
+echo. & echo * Hot chicks 2.
+call pn jona>nul
+set cbf-pt=%cbf-pt%\pictures\hot chicks 2
+exit/b
+
+lu:
+Jun-26-2023
+
+
+
+::_
+:fv
+:fvpi
+:fvpict
+:hura
+
+set cbf-pd=Favorites
+
+echo. & echo * %cbf-pd%. All time favorite pictures.
+
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+
+exit/b
+
+
+
+::_
+:nex
+:nx
+
+echo. & echo * New and exciting.
+call n dr
+set cbf-pt=%cbf-pt%\pictures\new and exciting
+
+exit/b
+
+
+
+::_
+:baar
+
+echo. & echo * Bahamian art.
+
+call n pict
+set cbf-pd=bahamian art
+set cbf-pt=%cbf-pt%\%cbf-pd%
+
+exit/b
+
+
+
+::_
+:wosa
+
+set cbf-pd=Work Safe
+
+echo. & echo * %cbf-pd%.
+
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+
+exit/b
+
+
+
+::_
+:educ
+
+set cbf-pd=Educational
+
+echo. & echo * %cbf-pd%.
+
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+
+exit/b
+
+
+
+::_
+:mipi
+
+echo. & echo * Miscellaneous pictures.
+
+call n pict
+set cbf-pt=%cbf-pt%\miscellany
+
 exit/b
 
 
