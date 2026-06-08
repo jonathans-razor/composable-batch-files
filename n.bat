@@ -8147,6 +8147,18 @@ Sep-25-2020
 
 
 ::_
+:nex
+:nx
+
+echo. & echo * New and exciting.
+call n dr
+set cbf-pt=%cbf-pt%\pictures\new and exciting
+
+exit/b
+
+
+
+::_
 :b1
 set cbf-pd=Breakaway.
 echo. & echo * %cbf-pd%
@@ -8205,6 +8217,17 @@ Need some new material.
 
 
 ::_
+:risq
+set cbf-pd=Risque, a folder not work or girlfriend safe.
+echo. & echo * %cbf-pd%
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+exit/b
+lu: Jun-5-2026
+
+
+
+::_
 :hc2
 echo. & echo * Hot chicks 2.
 call pn jona>nul
@@ -8228,18 +8251,6 @@ echo. & echo * %cbf-pd%. All time favorite pictures.
 
 call n pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
-
-exit/b
-
-
-
-::_
-:nex
-:nx
-
-echo. & echo * New and exciting.
-call n dr
-set cbf-pt=%cbf-pt%\pictures\new and exciting
 
 exit/b
 
@@ -8294,6 +8305,16 @@ echo. & echo * Miscellaneous pictures.
 call n pict
 set cbf-pt=%cbf-pt%\miscellany
 
+exit/b
+
+
+
+:_
+:roth
+echo. & echo * Roth Consolidation.
+call pn fn>nul
+set cbf-pt=%cbf-pt%\roth consolidation
+set cbf-png=%cbf-pt%\roth jun-8-2026.PNG
 exit/b
 
 

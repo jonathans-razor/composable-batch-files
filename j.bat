@@ -250,14 +250,6 @@ if not "%cbf-png%" == "" (
   )
 )
 
-:I commented this out because I am not sure this is desired behavior.
-rem if not "%cbf-pt%" == "" (
-  rem if exist "%cbf-pt%" (
-    rem echo. & echo * Go to path. Aug-15-2021_8_41_PM
-    rem call t %1
-rem  )
-rem )
-
 :
 if not "%cbf-gi%" == "" (
   call sf %1>nul
