@@ -7937,6 +7937,7 @@ exit/b
 
 
 :_
+:fash
 :wlfash
 echo. & echo * Fashion wish list
 call pn pict>nul
@@ -8150,7 +8151,7 @@ Sep-25-2020
 :nex
 :nx
 
-echo. & echo * New and exciting.
+echo. & echo * New and exciting. This was actually the first of the 'breakaway style' folders.
 call n dr
 set cbf-pt=%cbf-pt%\pictures\new and exciting
 
