@@ -88,6 +88,7 @@ example-  Prefix for files written by other authors for learning and comparison 
     fisa  Filename sapien. Use any application to open any file.
       fl  For loops using function routing.
       fn  Validate and set a filename value.
+     fnm  Open the filename associated with cbf-fn.
       fq  Open file using its fully qualified filename.
       fs  Filenames search.
      fsp  Perennial filenames search.

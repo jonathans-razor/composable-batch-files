@@ -5,6 +5,13 @@ Composable Batch Files (CBF) - Style Guide
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
        `--'      `--'      `--'      `--'      `--' 
 
+:Jun-12-2026: Parallel correlation between a batch file name and the cbf suffix. For example, 
+cbf parameter named cbf-fnm can be opened with the batch file fnm.
+
+:May-27-2025: If you had to design a system that associates a cbf variable with a batch file, 
+what would be the most memorable way to do it? One might argue the batch file pt2 should be 
+associated with the cbf variable 'cbf-pt2'. That may be as simple as possible.
+
 :Feb-18-2024: Because I want to be able to look credentials up on my phone, z references 
 should not be placed in files other than ch.asc.
 

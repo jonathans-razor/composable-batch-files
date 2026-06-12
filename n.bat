@@ -3883,7 +3883,7 @@ Aug-28-2023
 echo. & echo * CBF style guide.
 
 call n cbf>nul
-set cbf-fn=%cbf-pt%\cbf-sg.txt
+set cbf-fn=%cbf-pt%\cbf-sgd.txt
 
 exit/b
 
