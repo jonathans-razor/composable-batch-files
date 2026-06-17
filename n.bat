@@ -8315,7 +8315,7 @@ exit/b
 echo. & echo * Roth Consolidation.
 call pn fn>nul
 set cbf-pt=%cbf-pt%\roth consolidation
-set cbf-png=%cbf-pt%\roth jun-8-2026.PNG
+set cbf-png=%cbf-pt%\roth jun-17-2026.PNG
 exit/b
 
 
