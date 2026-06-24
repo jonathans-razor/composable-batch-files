@@ -8320,4 +8320,12 @@ exit/b
 
 
 
+:_
+:gsp
+echo. & echo * Google sphere.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1J6C8UcSqdkQSOgZezH0Q79AG5sYWjLVjXEQCK-51MW8/edit?gid=0#gid=0
+exit/b
+
+
+
 :_ (!ef, !efn)

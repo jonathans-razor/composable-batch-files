@@ -2,22 +2,23 @@ call st msft
 cls
 echo. 
 
-echo * Price log.
+echo * Microsoft Price log.
 
 echo.
-echo 380 Jun-18-2026x
-echo 384 Jun-17-2026
-echo 391 Jun-16-2026
-echo 430 Jun-4-2026
-echo 441 Jun-2-2026
-echo 425 May-28-2026
-echo 418 May-19-2026
-echo 404 May-13-2026
-echo 424 May-7-2026
-echo 393 Feb-5-2026
-echo 430 Jan-30-2026
-echo 420 Jan-29-2026
-echo 480 Jan-28-2026
-echo 491 Nov-20-2025
-echo 488 Nov-19-2025
-echo 511 Sep-23-2025
+echo  374  Jun-23-2026
+echo  380  Jun-18-2026x
+echo  384  Jun-17-2026
+echo  391  Jun-16-2026
+echo  430  Jun-4-2026
+echo  441  Jun-2-2026
+echo  425  May-28-2026
+echo  418  May-19-2026
+echo  404  May-13-2026
+echo  424  May-7-2026
+echo  393  Feb-5-2026
+echo  430  Jan-30-2026
+echo  420  Jan-29-2026
+echo  480  Jan-28-2026
+echo  491  Nov-20-2025
+echo  488  Nov-19-2025
+echo  511  Sep-23-2025
