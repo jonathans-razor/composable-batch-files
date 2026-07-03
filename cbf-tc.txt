@@ -217,6 +217,7 @@ example-  Prefix for files written by other authors for learning and comparison 
     rzrp  Multi-Edit abstraction layer for running CBF files, with a pause, for debugging.
        s  Check updated git status. Has td parameter.
     sail  Display the success sailor.
+    scan  Scan disk.
      sdv  Set dictionary value.
     senc  Sencha.
      sep  Show separator graphic.

@@ -1,2 +1,3 @@
 @echo off
-browser-actor %0 %1
+sf ghp kr
+rem browser-actor %0 %1

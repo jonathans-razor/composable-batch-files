@@ -4642,7 +4642,7 @@ ones-series-jj
 
 ::_
 :cbfgp
-:ghp
+:ghpa
 
 echo. & echo * CBF on GitHub Pages.
 
@@ -7959,7 +7959,6 @@ exit/b
 
 
 ::_
-:asgg
 :gas
 echo. & echo * Google advanced search.
 set cbf-url=http://www.google.com/advanced_search?hl=en
@@ -7968,9 +7967,7 @@ exit/b
 
 
 ::_
-:ais
-:aisgg
-:gais
+:gai
 echo. & echo * Google advanced image search.
 set cbf-url=http://images.google.com/advanced_image_search
 exit/b
@@ -7978,11 +7975,7 @@ exit/b
 
 
 ::_
-:gg
-:gghp
-:gis
-:lens
-:rsgg
+:ghp
 echo. & echo * Google home page.
 set cbf-url=http://www.google.com
 exit/b

@@ -57,6 +57,7 @@ rem Note: This list is alphabetical by the CBF variable name, and not its descri
 
 :
 rem Application
+rem Associated lc: sf
 set cbf-app=
 
 :
@@ -405,6 +406,10 @@ rem Ugh. I am seeing parameter wars now. May-23-2022 In order for j.bat to work,
 set cbf-parameter=
 
 :
+rem Pipe to File
+set cbf_parameter_total=
+
+:
 rem Parser
 set cbf-parser=
 
@@ -413,26 +418,22 @@ rem Project Designator
 set cbf-pd=
 
 :
+rem Parameter Total
+set cbf_pipe_to_file=
+
+:
 rem Package JSON
 set cbf-pj=
 
 :
 rem PNG
 set cbf-png=
+set cbf-png2=
+set cbf-png3=
 
 :
 rem Production Website
 set cbf-po=
-
-:
-rem Pull Requests
-set cbf-pr=
-
-:
-rem Png
-set cbf-png=
-set cbf-png2=
-set cbf-png3=
 
 :
 rem PowerPoint
@@ -441,6 +442,14 @@ set cbf-ppt=
 :
 rem PowerPoint with Macros Enabled
 set cbf-pptm=
+
+:
+rem Pull Requests
+set cbf-pr=
+
+:
+rem Previous Path.
+set cbf-previous-pt=
 
 :
 rem Path
@@ -455,41 +464,25 @@ rem PIV URL.
 set cbf-purl=
 
 :
-rem Previous Path.
-set cbf-previous-pt=
+rem Python Results
+set cbf-python-results=
 
 :
 rem Microsoft Teams Recorded Meeting
 set cbf-reme=
 
 :
-rem Pipe to File
-set cbf_parameter_total=
-
-:
-rem Python Results
-set cbf-python-results=
-
-:
-rem Previous Path
-set cbf-previous-path=
-
-:
-rem Parameter Total
-set cbf_pipe_to_file=
-
-:
 rem Repository
 rem set cbf-repo=
-
-:
-rem Releases
-set cbf-rl=
 
 :
 rem Reserved Path
 rem Commented for now because it causes an issue. Jun-11-2021
 rem set cbf-reserved-path=
+
+:
+rem Releases
+set cbf-rl=
 
 :
 rem Search Subfolders
