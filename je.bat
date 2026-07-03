@@ -14,7 +14,7 @@ set cbf-filep=* Summary: Surf the Jenkins internet site.
 
 echo. & echo * Route callers.
 
-if "%~1" == "" fxw %0 %1 %2 %3
+if "%~1" == "" xxdw %0 %1 %2 %3
 if "%~1" == ""-help- goto help
 
 if "%~1" == "?" goto help

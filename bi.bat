@@ -41,5 +41,5 @@ exit/b
 :_
 :main
 rem echo p1: %1
-fxw %0 %1
+xxdw %0 %1
 exit/b

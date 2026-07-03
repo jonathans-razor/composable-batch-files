@@ -1,3 +1,3 @@
 @echo off
 echo. & echo * Run demo DCV.
-fxw %0 %1
+xxdw %0 %1

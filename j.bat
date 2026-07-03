@@ -179,7 +179,7 @@ if not "%cbf-url%" == "" (
 
 :
 if not "%cbf-gd%" == "" (
-  rem call fxw gd %1 %2 %3
+  rem call xxdw gd %1 %2 %3
   set cbf-parameter=%cbf-gd%
   call r
   exit/b

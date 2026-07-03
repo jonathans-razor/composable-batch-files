@@ -968,7 +968,7 @@ Jan-24-2018
 
 
 ::_
-:ffx
+:fx
 
 echo. & echo * Firefox.
 
@@ -5223,6 +5223,18 @@ how to make api call with vuex
 
 
 ::_
+:dmmap
+:metrmap
+echo. & echo * DC metro map.
+set cbf-pt=%dropbox%\pictures\educational
+set cbf-fn=%cbf-pt%\dc metro map.png
+exit/b
+lu:
+Jul-3-2026
+
+
+
+::_
 :freemap
 echo. & echo * Freeest countries.
 set cbf-url=https://www.zerohedge.com/geopolitical/finland-flourishes-freedom-flounders-land-free
@@ -5236,7 +5248,8 @@ Jun-2-2026
 :map
 :usmap
 echo. & echo * US map.
-set cbf-pt=%dropbox%\pictures\educational\united states map.gif
+set cbf-pt=%dropbox%\pictures\educational
+set cbf-fn=%cbf-pt%\united states map.gif
 exit/b
 lu:
 Mar-31-2026

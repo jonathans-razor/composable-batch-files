@@ -1,3 +1,3 @@
 @echo off
 echo. & echo * Leverage DCV.
-fxw %0 %1 %2 %3
+xxdw %0 %1 %2 %3

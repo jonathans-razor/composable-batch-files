@@ -233,7 +233,7 @@ exit/b
 :_
 :main
 
-rem echo. & echo * FXW main.
+rem echo. & echo * xxdw main.
 @echo on
 fx %2 %1 %3
 @echo off

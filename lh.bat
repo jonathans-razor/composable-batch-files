@@ -62,7 +62,7 @@ exit/b
 :_
 :main
 
-fxw %0 %1 %2 %3
+xxdw %0 %1 %2 %3
 
 exit/b
 

@@ -2,4 +2,4 @@
 echo.
 echo * Surf to a YouTube website.
 set cbf-yt=
-fxw %0 %1 %2 ffx
+xxdw %0 %1 %2 ffx

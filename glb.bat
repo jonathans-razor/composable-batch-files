@@ -40,5 +40,5 @@ exit/b
 
 :_
 :main
-fxw %0 %1
+xxdw %0 %1
 exit/b

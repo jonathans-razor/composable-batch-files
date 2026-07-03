@@ -83,7 +83,6 @@ example-  Prefix for files written by other authors for learning and comparison 
        f  Surf to T3 Chat.
       fa  Windows file associations.
       fe  Check for the existence of a file based on the passed in filename alias.
-     ffx  Firefox browser.
      fib  Show Fibonacci numbers.
     fisa  Filename sapien. Use any application to open any file.
       fl  For loops using function routing.
@@ -93,8 +92,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       fs  Filenames search.
      fsp  Perennial filenames search.
     ftpr  File type presence in current folder checker.
-      fx  Open any file with any application using a DCV.
-     fxw  A wrapper around fx.bat.
+      fx  Firefox browser.
        g  Git. One of the earliest CBFs.
       gd  Surf to Google Docs website.
       gg  Go. (skw supported-languages-series-jj)
@@ -268,6 +266,8 @@ qq
      xac  Execute an application alias with a filename in the current folder.
      xaf  Execute an application alias with a filename alias.
      xml  Edit an XML DCV file in VSC.
+     xxd  Open any file with any application using a DCV.
+    xxdw  A wrapper around xxd.bat.
       ya  Yarn.
      yml  Edit DCV file in NotePad++ for file type yml.
       yt  Execute the YouTube DCV for the passed in alias.

@@ -2,4 +2,4 @@
 echo.
 echo * Surf to a Bookmarked website.
 set cbf-bm=
-fxw %0 %1 %2 %3
+xxdw %0 %1 %2 %3
