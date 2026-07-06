@@ -40,7 +40,7 @@ exit/b
 
 echo. & echo * Open the Bookmarks Default page.
 
-call fx v %1 kr>nul
+call xxd v %1 kr>nul
 
 exit/b
 
@@ -51,7 +51,7 @@ exit/b
 
 echo. & echo * Open the Confluence Homepage.
 
-call fx cfrp %1 kr>nul
+call xxd cfrp %1 kr>nul
 
 exit/b
 
@@ -62,7 +62,7 @@ exit/b
 
 echo. & echo * Demo series collection.
 
-call fx demo-series-0 url kr>nul
+call xxd demo-series-0 url kr>nul
 
 exit/b
 
@@ -71,7 +71,7 @@ exit/b
 :_
 :docs
 
-call fx ph docs>nul
+call xxd ph docs>nul
 
 exit/b
 
@@ -80,7 +80,7 @@ exit/b
 :_
 :gd
 
-call fx rt %1 br>nul
+call xxd rt %1 br>nul
 
 exit/b
 
@@ -116,7 +116,7 @@ exit/b
 :_
 :gs
 
-call fx rt %1 nt
+call xxd rt %1 nt
 
 exit/b
 
@@ -128,7 +128,7 @@ exit/b
 echo. & echo * Jenkins root.
 
 echo.
-call fx jero %1 kr
+call xxd jero %1 kr
 
 exit/b
 
@@ -139,7 +139,7 @@ exit/b
 
 echo. & echo * Default Jira ticket.
 
-call fx np ji kr
+call xxd np ji kr
 
 exit/b
 
@@ -165,7 +165,7 @@ This makes the error message more understandable. Feb-23-2024
 :lh
 rem echo. & echo * Default Localhost.
 
-call fx 4200 lh br
+call xxd 4200 lh br
 
 exit/b
 
@@ -178,7 +178,7 @@ echo. & echo * CVT pull requests webpage.
 
 echo.
 @echo on
-call fx cvt %1 kr>nul
+call xxd cvt %1 kr>nul
 
 exit/b
 
@@ -190,7 +190,7 @@ exit/b
 echo. & echo * Art Playbook releases webpage.
 
 echo.
-call fx cp %1 kr>nul
+call xxd cp %1 kr>nul
 
 exit/b
 
@@ -202,7 +202,7 @@ exit/b
 echo. & echo * Vault home page.
 
 echo.
-call fx et %1 kr>nul
+call xxd et %1 kr>nul
 
 exit/b
 
@@ -213,7 +213,7 @@ exit/b
 
 echo. & echo * Wikipedia home page.
 
-call fx wi %1 kr>nul
+call xxd wi %1 kr>nul
 
 exit/b
 
@@ -224,7 +224,7 @@ exit/b
 
 echo. & echo * YouTube home page. This is never called because I want to use Firefox.
 
-call fx yt yt ffx>nul
+call xxd yt yt ffx>nul
 
 exit/b
 
@@ -235,7 +235,7 @@ exit/b
 
 rem echo. & echo * xxdw main.
 @echo on
-fx %2 %1 %3
+xxd %2 %1 %3
 @echo off
 
 exit/b
