@@ -4695,6 +4695,37 @@ Jan-24-2018
 
 
 ::_
+:teho
+
+echo. & echo *  Texas Holdem.
+
+call n repo>nul
+set cbf-pt=%cbf-pt%\texas-holdem
+
+set cbf-fn=%cbf-pt%\index.md
+set cbf-gh=https://github.com/jonathans-razor/texas-holdem.git
+set cbf-gh2=https://github.com/jonathans-razor/texas-holdem/blob/main/index.md
+set cbf-url=https://jonathans-razor.github.io/texas-holdem/
+
+exit/b
+
+lu:
+Jul-8-2026
+
+
+
+::_
+:twis
+echo. & echo *  Twist.
+set cbf-url=https://github.com/jonathans-razor/composable-batch-files/blob/main/twist.md
+exit/b
+
+lu:
+Jul-8-2026
+
+
+
+::_
 :pat
 
 echo. & echo * Personal Access Token.
