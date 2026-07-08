@@ -1,5 +1,5 @@
 
-##Rules for the Texas Holdem variant named 'Twist'.
+## Rules for the Texas Holdem variant named 'Twist'.
 
 There variation is regular Texas Holdem until after the first showdown.
 
