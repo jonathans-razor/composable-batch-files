@@ -5,6 +5,8 @@ echo.
 echo * Microsoft Price log.
 
 echo.     
+echo  393  Jul-7-2026
+echo  387  Jul-6-2026
 echo  385  Jul-1-2026
 echo  374  Jun-23-2026
 echo  380  Jun-18-2026x
