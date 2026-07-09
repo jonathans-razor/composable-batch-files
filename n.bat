@@ -1233,7 +1233,7 @@ exit/b
 
 
 ::_
-:time
+:timex
 
 echo. & echo * Time.
 
