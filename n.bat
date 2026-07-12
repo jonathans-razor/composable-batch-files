@@ -8207,17 +8207,18 @@ set cbf-pt=%cbf-pt%\Breakaway
 exit/b
 lu: May-6-2026
 
+Breakaway Sizes
 
+ Date         Bytes          Name
+ -----------  -------------  -----------------------------------------------------------------
 
-::_
-:b2
-set cbf-pd=Breakaway 2. Girlfriend safe.
-echo. & echo * %cbf-pd%
-call n pict
-set cbf-pt=%cbf-pt%\Breakaway-2
-exit/b
-lu: Aug-12-2024
+:Jul-10-2026  1,081,977,463  New and Exciting
 
+:Jul-10-2026    423,354,831  Breakaway
+
+ :Jul-10-2026   499,046,382  Breakaway 4
+
+:Jul-10-2026     34,304,257  Breakaway 5
 
 
 ::_
@@ -8247,6 +8248,18 @@ The theme was 'dream house', Amalfi photos and the usual internet downloads.
 :b
 :b5
 set cbf-pd=Breakaway 5.
+echo. & echo * %cbf-pd%
+call n pict
+set cbf-pt=%cbf-pt%\%cbf-pd%
+exit/b
+lu: Apr-14-2026
+Need some new material.
+
+
+
+::_
+:b6
+set cbf-pd=Breakaway 6. Girlfriend safe.
 echo. & echo * %cbf-pd%
 call n pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
