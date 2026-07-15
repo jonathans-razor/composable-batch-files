@@ -8380,4 +8380,13 @@ exit/b
 
 
 
+:_
+:csr
+:fifr
+echo. & echo * CMAC Search Registry. (!-fifr)
+set cbf-gs=https://docs.google.com/spreadsheets/d/1lYz1wWxcYoO_af-LNLub5s19S_RgV7m5sK26IOYDDyQ/edit?gid=0#gid=0
+exit/b
+
+
+
 :_ (!ef, !efn)
