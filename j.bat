@@ -1,7 +1,7 @@
 :_
 @echo off
 
-if "%~1" == "" jj
+if "%~1" == "" t
 if "%~1" == "?" goto help
 
 goto validate-input
