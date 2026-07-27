@@ -7293,19 +7293,6 @@ exit/b
 
 
 :_
-:ze
-:zero
-:zh
-
-echo. & echo * Zero hedge.
-
-set cbf-url=https://www.zerohedge.com
-
-exit/b
-
-
-
-:_
 :hirb
 
 echo. & echo * History of racquetball.
@@ -8221,6 +8208,7 @@ Breakaway Sizes
 :Jul-10-2026     34,304,257  Breakaway 5
 
 
+
 ::_
 :b3
 set cbf-pd=Breakaway 3.
@@ -8385,6 +8373,22 @@ exit/b
 :fifr
 echo. & echo * CMAC Search Registry. (!-fifr)
 set cbf-gs=https://docs.google.com/spreadsheets/d/1lYz1wWxcYoO_af-LNLub5s19S_RgV7m5sK26IOYDDyQ/edit?gid=0#gid=0
+exit/b
+
+
+
+:_
+:cnn
+echo. & echo * Surf to CNN.
+set cbf-url=https://www.cnn.com
+exit/b
+
+
+
+:_
+:zh
+echo. & echo * Surf to CNN.
+set cbf-url=https://www.zerohedge.com
 exit/b
 
 
