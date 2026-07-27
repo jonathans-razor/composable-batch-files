@@ -220,6 +220,7 @@ example-  Prefix for files written by other authors for learning and comparison 
     senc  Sencha.
      sep  Show separator graphic.
       sf  Surf to websites. A DCV is optional.
+      sh  Shut down the computer.
       sl  Language functions aggregate runner. (skw supported-languages-series-jj)
      slf  Batch that supports language functions.
      sln  Open a Visual Studio solution. Has td parameter.
