@@ -5,6 +5,7 @@ echo.
 echo * Nvidia Price log.
 
 echo.
+echo  197  Jul-28-2026
 echo  201  Jun-23-2026
 echo  208  Nov-3-2025
 echo  203  Oct-30-2025
