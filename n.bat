@@ -8210,17 +8210,6 @@ Breakaway Sizes
 
 
 ::_
-:b3
-set cbf-pd=Breakaway 3.
-echo. & echo * %cbf-pd%
-call n pict
-set cbf-pt=%cbf-pt%\Breakaway 3
-exit/b
-lu: Sep-4-2025
-
-
-
-::_
 :b4
 set cbf-pd=Breakaway 4.
 echo. & echo * %cbf-pd%
@@ -8252,8 +8241,17 @@ echo. & echo * %cbf-pd%
 call n pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
 exit/b
-lu: Apr-14-2026
-Need some new material.
+
+
+
+::_
+:b7
+set cbf-pd=Breakaway 7. Current screen save folder.
+echo. & echo * %cbf-pd%
+call n pict
+set cbf-pt=%cbf-pt%\Samsung S24 Ultra - Pictures Moved to Dropbox on Jul-28-2026
+exit/b
+lu: Jul-29-2026
 
 
 
