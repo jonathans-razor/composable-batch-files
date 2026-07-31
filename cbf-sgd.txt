@@ -5,6 +5,9 @@ Composable Batch Files (CBF) - Style Guide
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::
        `--'      `--'      `--'      `--'      `--' 
 
+:Jul-30-2026: Windows Batch Scripting files that are function-based, modularized and easy to 
+use and understand.
+
 :Jun-12-2026: Parallel correlation between a batch file name and the cbf suffix. For example, 
 cbf parameter named cbf-fnm can be opened with the batch file fnm.
 

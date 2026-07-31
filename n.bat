@@ -668,7 +668,7 @@ Jun-26-2023
 
 echo. & echo * A folder.
 
-if exist c:\a set cbf-pt=c:\a
+if exist C:\a set cbf-pt=c:\a
 if exist w:\a set cbf-pt=w:\a
 rem export cbf-pt=/c/a
 
@@ -2586,23 +2586,6 @@ exit/b
 
 lu:
 Jun-27-2023
-
-
-
-:_
-:dr
-:drop
-
-echo. & echo * Dropbox.
-
-set cbf-pt=%dropbox%
-if exist d:\Dropbox set cbf-pt=d:\Dropbox
-set cbf-url=http://www.dropbox.com
-
-exit/b
-
-lu:
-Sep-9-2021
 
 
 
@@ -4633,12 +4616,33 @@ lu:
 Jan-26-2024
 Jul-18-2023
 
-rem:
-about: Windows Batch Scripting files that are function-based, modularized and easy to use and 
-understand.
-
 skw:
 ones-series-jj
+
+
+
+::_
+:dr
+:drop
+echo. & echo * Dropbox.
+set cbf-pt=%dropbox%
+if exist d:\Dropbox set cbf-pt=d:\Dropbox
+set cbf-url=http://www.dropbox.com
+exit/b
+lu:
+Sep-9-2021
+
+
+
+::_
+:bucbf
+:cbfbu
+echo. & echo * CBF Backups.
+call pn bu
+set cbf-pt=%cbf-pt%\CBF
+exit/b
+lu:
+Jul-30-2026
 
 
 
@@ -8246,10 +8250,12 @@ exit/b
 
 ::_
 :b7
-set cbf-pd=Breakaway 7. Current screen save folder.
+:pfs
+set cbf-pd=Breakaway 7. Current screen save folder. Picture folder survey.
 echo. & echo * %cbf-pd%
 call n pict
 set cbf-pt=%cbf-pt%\Samsung S24 Ultra - Pictures Moved to Dropbox on Jul-28-2026
+set cbf-gs=https://docs.google.com/spreadsheets/d/1mrjyDYQvAONeQoiFwwMUPLFk0oqJWnt9tLWSWCSveoQ/edit?gid=0#gid=0
 exit/b
 lu: Jul-29-2026
 
