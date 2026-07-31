@@ -4195,7 +4195,6 @@ Feb-1-2019
 
 if /i "%computername%" == "asus" goto set_white_list_settings_2
 if /i "%computername%" == "buzz" goto set_white_list_settings_2
-rem qq
 if /i "%computername%" == "xps" goto set_white_list_settings_2
 
 exit/b

@@ -1364,7 +1364,6 @@ Apr-7-2022
 
 echo. & echo * Testing computer name with function: %1.
 
-rem qq
 echo %computername% | find /i "xps">nul
 
 if errorlevel 1 echo one

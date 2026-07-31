@@ -4261,17 +4261,14 @@ exit/b
 :_
 :nort
 :nt
-
 echo. & echo * Norton browser.
-
-rem qq
 set cbf-app=%localappdata%\Norton\Browser\Application\NortonBrowser.exe
 if /i %computername%==cheyenne set cbf-app=C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Norton Private Browser.lnk
 set cbf-gs=https://docs.google.com/spreadsheets/u/1/
-
 exit/b
-
-:rem
+lu:
+Jul-31-2026
+rem
 Has nice PDF edeiting capability. Jan-22-2024
 
 
