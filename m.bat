@@ -4073,7 +4073,6 @@ Nov-9-2023
 ::_
 :lnk-cheyenne
 echo. & echo * Initialize environment for %1. Jul-31-2026-12-53-PM
-rem qq
 set path=%dropbox%\savannah\belfry;%path%
 call %0 set-default-browser br
 call n repo
