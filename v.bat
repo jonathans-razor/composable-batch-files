@@ -1343,13 +1343,14 @@ exit/b
 
 
 ::_
-:
+:teco1
 
-echo. & echo * Testing computer name.
+echo. & echo * Testing computer name with function: %1.
 
 if %computername%==xps echo 1
 if %computername%==XPS echo 2
 if /i %computername%==xps echo 3
+if /i %computername%==cheyenne echo 4
 
 exit/b
 
@@ -1359,10 +1360,11 @@ Apr-7-2022
 
 
 ::_
-:teco
+:teco2
 
-echo. & echo * Testing computer name 2.
+echo. & echo * Testing computer name with function: %1.
 
+rem qq
 echo %computername% | find /i "xps">nul
 
 if errorlevel 1 echo one

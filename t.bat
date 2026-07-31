@@ -56,7 +56,7 @@ goto main
 
 :_
 :ta
-echo. & echo * Ta at Jul-31-2026-12-43-PM.
+echo. & echo * Ta.
 call %0 a
 rem cls
 exit/b
