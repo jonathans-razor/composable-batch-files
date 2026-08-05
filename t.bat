@@ -58,7 +58,7 @@ goto main
 :ta
 echo. & echo * Ta.
 call %0 a
-rem cls
+cls
 exit/b
 
 
