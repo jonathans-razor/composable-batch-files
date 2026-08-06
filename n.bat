@@ -8253,7 +8253,7 @@ exit/b
 set cbf-pd=Breakaway 7. Current screen save folder. Picture folder survey.
 echo. & echo * %cbf-pd%
 call n pict
-set cbf-pt=%cbf-pt%\Samsung S6 Backup on Jan-24-2016
+set cbf-pt=%cbf-pt%\Samsung S7 Backup on Apr-20-2017
 set cbf-gs=https://docs.google.com/spreadsheets/d/1mrjyDYQvAONeQoiFwwMUPLFk0oqJWnt9tLWSWCSveoQ/edit?gid=0#gid=0
 exit/b
 lu: Jul-29-2026
