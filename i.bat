@@ -593,6 +593,10 @@ call el
 
 echo.
 set cbf
+echo.
+set computername
+set dropbox
+set savannah
 
 exit/b
 
