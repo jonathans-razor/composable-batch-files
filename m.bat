@@ -4053,18 +4053,16 @@ exit/b
 ::_
 :init-xps
 :lnk-xps
-
 echo. & echo * Initialize environment for %1.
-
 set path=%my documents%\savannah\belfry;%path%
-
 call %0 set-default-browser br
 call n repo
 call %0 set-default-text-editor me
 call set-default-secondary-dictionary.bat
-
 exit/b
 
+lu:
+Aug-24-2026
 fcd:
 Nov-9-2023
 
@@ -4073,13 +4071,14 @@ Nov-9-2023
 ::_
 :lnk-cheyenne
 echo. & echo * Initialize environment for %1. Jul-31-2026-12-53-PM
-set path=%dropbox%\savannah\belfry;%path%
+set path=%my doucments%\savannah\belfry;%path%
 call %0 set-default-browser br
 call n repo
 call %0 set-default-text-editor no
 call set-default-secondary-dictionary.bat
 exit/b
 lu:
+Aug-24-2026
 Jul-31-2026
 
 

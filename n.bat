@@ -1625,15 +1625,12 @@ Mar-1-2020
 ::_
 :ro
 :drro
-
-echo. & echo * Reach out.
-
+echo. & echo * Reach out on dropbox.
 set cbf-pt=%dropbox%\savannah\reach out
-set cbf-fn=%cbf-pt%\message to ipad.txt
-
 exit/b
 
 lu:
+Aug-24-2026
 Jun-30-2023
 
 
@@ -1641,14 +1638,12 @@ Jun-30-2023
 ::_
 :ldro
 :rold
-
-echo. & echo * Reach out local drive.
-
+echo. & echo * Reach out on local drive.
 set cbf-pt=%my documents%\savannah\reach out
-
 exit/b
 
 lu:
+Aug-24-2026
 Jun-30-2023
 
 
@@ -7565,6 +7560,7 @@ exit/b
 
 
 :_
+:md
 :mydo
 echo. & echo * My documents.
 set cbf-pt=%my documents%
@@ -8239,7 +8235,7 @@ exit/b
 set cbf-pd=Breakaway 7. Current screen save folder. Picture folder survey.
 echo. & echo * %cbf-pd%
 call n pict
-set cbf-pt=%cbf-pt%\Samsung S20 Backup on Dec-21-2020
+set cbf-pt=%cbf-pt%\Samsung S20 Backup on Dec-29-2020
 set cbf-gs=https://docs.google.com/spreadsheets/d/1mrjyDYQvAONeQoiFwwMUPLFk0oqJWnt9tLWSWCSveoQ/edit?gid=0#gid=0
 exit/b
 lu: Jul-29-2026
