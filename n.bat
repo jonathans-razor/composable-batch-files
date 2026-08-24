@@ -1565,7 +1565,7 @@ certified monogamous CBF
 
 
 ::_
-:sv
+:drsv
 echo. & echo * Dropbox Savannah.
 set cbf-pt=%dropbox%\savannah
 exit/b
@@ -1577,6 +1577,7 @@ certified monogamous CBF
 
 ::_
 :ldsv
+:sv
 echo. & echo * Local drive Savannah.
 set cbf-pt=%savannah%
 exit/b
