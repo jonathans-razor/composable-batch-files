@@ -10,7 +10,6 @@ if "%~1" == "?" goto help
 if "%~1" == "" goto help
 
 goto %1
-test
 
 
 
