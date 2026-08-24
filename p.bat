@@ -59,7 +59,7 @@ call rf r>nul
 
 :
 call sep aa-diamond-bridge
-call t ql || exit/b
+call t drql || exit/b
 call g dirt || exit/b
 
 :

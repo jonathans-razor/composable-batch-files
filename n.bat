@@ -831,7 +831,7 @@ Jul-10-2023
 
 echo. & echo * 8.
 
-call n bel>nul
+call n ldbelf>nul
 
 set cbf-fn=%cbf-pt%\8.bat
 
@@ -2546,37 +2546,32 @@ Jul-18-2023
 
 
 ::_
-:qlld
-
-echo. & echo * Quickla on local.
-
-set cbf-pt=C:\Users\jonat\Documents\savannah\cmac\Quickla-for-Multi-Edit
-
+:cm
+:drql
+:qldr
+echo. & echo * Quickla on Dropbox.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1GysSBXcT1QvJw1njJIqeHAUp484sc_P6UzGIIOcn6X4/edit?gid=0#gid=0
+set cbf-pt=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit
+set cbf-gh=https://github.com/jonathans-razor/Quickla-for-Multi-Edit.git
 exit/b
-
 lu:
-May-24-2023
-
-Note: I edit Quickla in Dropbox but the official GitHub repository is on local.
+Aug-23-2026
+Jun-27-2023
 
 
 
 ::_
-:cm
-:drql
+:ldql
 :ql
-:qldr
-
-echo. & echo * Quickla CMAC.
-
-set cbf-gs=https://docs.google.com/spreadsheets/d/1GysSBXcT1QvJw1njJIqeHAUp484sc_P6UzGIIOcn6X4/edit?gid=0#gid=0
-set cbf-pt=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit
-set cbf-gh=https://github.com/jonathans-razor/Quickla-for-Multi-Edit.git
-
+echo. & echo * Quickla on local.
+set cbf-pt=C:\Users\jonat\Documents\savannah\cmac\Quickla-for-Multi-Edit
 exit/b
 
 lu:
-Jun-27-2023
+Aug-23-2026
+May-24-2023
+
+Note: The official GitHub repository is on local.
 
 
 
@@ -8244,7 +8239,7 @@ exit/b
 set cbf-pd=Breakaway 7. Current screen save folder. Picture folder survey.
 echo. & echo * %cbf-pd%
 call n pict
-set cbf-pt=%cbf-pt%\Samsung S20 Backup on Aug-1-2020
+set cbf-pt=%cbf-pt%\Samsung S20 Backup on Dec-21-2020
 set cbf-gs=https://docs.google.com/spreadsheets/d/1mrjyDYQvAONeQoiFwwMUPLFk0oqJWnt9tLWSWCSveoQ/edit?gid=0#gid=0
 exit/b
 lu: Jul-29-2026

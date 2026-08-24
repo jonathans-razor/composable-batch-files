@@ -177,6 +177,7 @@ example-  Prefix for files written by other authors for learning and comparison 
    ofdcv  Open folder using a DCV.
     offn  Open folder where only the filename is known.
      ofp  Transform directory to parent folder.
+      oi  Open files.
       op  Openssl.
     opat  Oracle patching.
      orr  Status of officially registered repos.

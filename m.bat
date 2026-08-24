@@ -4056,7 +4056,7 @@ exit/b
 
 echo. & echo * Initialize environment for %1.
 
-set path=%dropbox%\savannah\belfry;%path%
+set path=%my documents%\savannah\belfry;%path%
 
 call %0 set-default-browser br
 call n repo
