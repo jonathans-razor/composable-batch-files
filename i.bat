@@ -596,6 +596,7 @@ set cbf
 echo.
 set computername
 set dropbox
+set my documents
 set savannah
 
 exit/b

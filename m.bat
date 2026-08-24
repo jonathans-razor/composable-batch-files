@@ -4070,8 +4070,9 @@ Nov-9-2023
 
 ::_
 :lnk-cheyenne
-echo. & echo * Initialize environment for %1. Jul-31-2026-12-53-PM
-set path=%my doucments%\savannah\belfry;%path%
+echo. & echo * Initialize environment for %1. Aug-24-2026 3:43 PM
+rem qq
+set path=%my documents%\savannah\belfry;%path%
 call %0 set-default-browser br
 call n repo
 call %0 set-default-text-editor no
