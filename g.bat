@@ -4149,13 +4149,15 @@ cat ~/.gitconfig
 
 echo. & echo * Set GitHub author and email. Note: Please don't confuse this with the Bitbucket author signature.
 
-rem qq
 git config --global user.name "jonathans-razor"
 git config --global user.email "jonathan.r.jones.1066@gmail.com"
 rem git config --global user.name "jonathan-r-jones"
 rem git config --global user.email "jonathan.r.jones.3@gmail.com"
 
 exit/b
+
+lu:
+Aug-24-2026
 
 
 
