@@ -2558,6 +2558,8 @@ lu:
 Aug-23-2026
 Jun-27-2023
 
+Note: The official GitHub repository is here.
+
 
 
 ::_
@@ -2570,8 +2572,6 @@ exit/b
 lu:
 Aug-23-2026
 May-24-2023
-
-Note: The official GitHub repository is on local.
 
 
 
