@@ -3454,475 +3454,6 @@ exit/b
 
 
 
-:_+ Configuration and Author Settings (!fcc, !fcconfig)
-
-Verb Prefixes
-e = Edit
-g = Get
-h = Show
-s = Set
-u = Unset
-
-Noun Prefixes
-a = All
-l = Local
-g = Global
-s = System
-
-cat ~/.gitconfig
-
-
-
-::_
-:s-pat
-echo. & echo * Cache the personal access token credential.
-git config --global credential.helper cache
-exit/b
-lu:
-Apr-7-2022
-
-
-
-::_
-:s-cred
-
-echo. & echo * Store credentials.
-
-git config --global credential.helper store
-
-exit/b
-
-lu:
-Dec-3-2024
-
-
-
-::_
-:sg-lofi
-
-echo. & echo * Fix long filenames issue for global configuration.
-
-git config --global core.longpaths true
-
-exit/b
-
-lu:
-Nov-22-2022
-
-skw:
-filename too long github
-
-
-
-::_
-:sl-lofi
-
-echo. & echo * Fix long filenames issue for local configuration.
-
-git config core.longpaths true
-
-exit/b
-
-lu:
-Dec-9-2016
-
-skw:
-filename too long github
-
-
-
-::_
-:h-a
-
-echo. & echo * Show all configuration settings.
-
-rem show configuration, git-config
-cls
-call :g-s
-call :g-g
-call :g-l
-
-exit/b
-
-skw:
-git settings
-
-
-
-::_
-:sg-sslf
-
-echo. & echo * Set global ssl verify to false.
-
-echo.
-git config --global http.sslVerify false
-
-exit/b
-
-lu:
-Jan-26-2022
-
-
-
-::_
-:s-asr
-
-echo. & echo * Set push.autoSetupRemote to true.
-
-git config --global push.autoSetupRemote true
-
-exit/b
-
-
-
-::_
-:s-sslt
-
-echo. & echo * Set local http.sslverify to true.
-
-git config http.sslverify true
-
-exit/b
-
-
-
-::_
-:s-crlf
-
-echo. & echo * When it comes to line endings, emulate what RestSharper has adopted.
-
-rem See: https://github.com/restsharp/RestSharp/blob/develop/CONTRIBUTING.md
-
-git config --global core.autocrlf true
-
-exit/b
-
-lu:
-May-31-2018
-
-Footnote
->< >< ><
-
-The folllowing command is used for Mac and Linux I think. Jan-27-2022
-git config --global core.autocrlf input
-
-git config --global core.autocrlf true
-
-
-
-::_
-:coau
-
-echo. & echo * Configure author.
-
-git config user.name "[put--name-of-user-of-interest-here]"
-
-exit/b
-
-
-
-::_
-:s-aust
-
-echo. & echo * Run author and store.
-
-call %0 au
-
-call %0 stor
-
-exit/b
-
-lu:
-Dec-5-2018
-
-
-
-::_
-:s-g
-
-echo. & echo * Add global setting.
-
-git config --global %1 %2
-
-exit/b
-
-
-
-::_
-:au
-:auth
-:author
-:s-auth
-
-echo. & echo * Set GitHub author and email. Note: Please don't confuse this with the Bitbucket author signature.
-
-git config --global user.name "jonathan-r-jones"
-git config --global user.email "jonathan.r.jones.3@gmail.com"
-
-exit/b
-
-
-
-::_
-:au-bit
-:author_bit
-:s-aubit
-
-echo. & echo * Configure BitBucket author and email. Note: Please don't confuse this with the GitHub author signature.
-
-@echo on
-git config --global user.name "Jonathan17"
-git config --global user.email "jonathan.r.jones@nesassociates.com"
-@echo off
-
-exit/b
-
-
-
-::_
-:author_devops
-:s-author-devops
-
-echo. & echo * Configure BitBucket author and email.
-
-@echo on
-git config --global user.name "mercury_devops"
-git config --global user.email "nes.mercury@nesassociates.com"
-@echo off
-
-exit/b
-
-
-
-
-::_
-:heop
-
-echo. & echo * Credential helper options.
-
-git config credential.helper "$helper $options"
-
-exit/b
-
-
-
-::_
-:s-uncach
-:uncach
-:unstor
-
-echo. & echo * Uncache/unstore global credential.
-
-git config --global --unset credential.helper
-
-exit/b
-
-lu:
-Dec-21-2022 Seemed to work.
-Jan-20-2022
-
-
-
-::_
-:unstor-g2
-
-echo. & echo * Uncache/unstore global credential.
-
-git config --global --unset credential.https
-
-exit/b
-
-
-
-::_
-:unstor-s
-
-echo. & echo * Uncache/unstore system credential.
-
-git config --system --unset credential.helper
-
-exit/b
-
-lu:
-Dec-21-2022 Seemed to work.
-
-
-
-::_
-:g-sg
-
-echo. & echo * Show system and global configuration settings. Note local settings are not shown.
-
-call :g-s
-
-call :g-g
-
-exit/b
-
-git config --list
-
-Footnote
->< >< ><
-
-:Local configuration settings will overwrite global and global will overwrite system.
-
-list - 20 lines
-s http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
-s http.sslbackend=openssl
-s diff.astextplain.textconv=astextplain
-s filter.lfs.clean=git-lfs clean -- %f
-s filter.lfs.smudge=git-lfs smudge -- %f
-s filter.lfs.process=git-lfs filter-process
-s filter.lfs.required=true
-s credential.helper=manager-core
-s g core.autocrlf=true
-s core.fscache=true
-s core.symlinks=true
-s pull.rebase=false
-s credential.https://dev.azure.com.usehttppath=true
-s init.defaultbranch=main
-g user.name=Jonathan R. Jones
-g user.email=jonathan.r.jones.3@gmail.com
-g gui.recentrepo=C:/projects/netbeans/sencha
-g gui.recentrepo=C:/projects/netbeans/mercury6
-g ui.recentrepo=D:/aa/repositories/fgt
-g s core.autocrlf=true
-
-system - 14 lines
-http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
-http.sslbackend=openssl
-diff.astextplain.textconv=astextplain
-filter.lfs.clean=git-lfs clean -- %f
-filter.lfs.smudge=git-lfs smudge -- %f
-filter.lfs.process=git-lfs filter-process
-filter.lfs.required=true
-credential.helper=manager-core
-core.autocrlf=true
-core.fscache=true
-core.symlinks=true
-pull.rebase=false
-credential.https://dev.azure.com.usehttppath=true
-init.defaultbranch=main
-
-global - 6 lines
-user.name=Jonathan R. Jones
-user.email=jonathan.r.jones.3@gmail.com
-gui.recentrepo=C:/projects/netbeans/sencha
-gui.recentrepo=C:/projects/netbeans/mercury6
-gui.recentrepo=D:/aa/repositories/fgt
-core.autocrlf=true
-
-local - 9 lines
-core.repositoryformatversion=0
-core.filemode=false
-core.bare=false
-core.logallrefupdates=true
-core.ignorecase=true
-remote.origin.url=git@github.com:jonathan-r-jones/Composable-Batch-Files.git
-remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
-branch.master.remote=origin
-branch.master.merge=refs/heads/master
-
-
-
-::_
-:g-s
-
-echo. & echo * Show system configuration settings.
-
-echo.
-git config --system --list
-
-exit/b
-
-
-
-::_
-:g-g
-
-echo. & echo * Show global configuration settings.
-
-echo.
-git config --global --list
-
-exit/b
-
-
-
-::_
-:g-l
-
-echo. & echo * Show local configuration settings
-
-echo.
-git config --local --list
-
-exit/b
-
-
-
-::_
-:authwk
-:g-auwk
-
-echo. & echo * Author for work email.
-
-call k authwk
-
-exit/b
-
-
-
-::_
-:eg
-
-echo. & echo * Edit the current global configuration.
-
-echo.
-git config --global --edit
-
-exit/b
-
-
-
-::_
-:ug-ue
-
-echo. & echo * Unset global user name.
-
-echo.
-git config --global --unset user.name
-git config --global --unset user.email
-
-exit/b
-
-lu:
-Dec-21-2022
-Jan-27-2022
-
-skw:
-How to unset a variable.
-
-
-
-::_
-:sl-c
-:stor
-:s-stor
-
-echo. & echo * Store credentials locally so that Git stops asking for credentials after each push.
-
-git config credential.helper store
-
-exit/b
-
-Footnote
->< >< ><
-
-I used this on my VDI on Jan-20-2022 to store my Personal Access Token so I wouldn't have to retype every time.
-
-
-
 :_+ Git Status Evaluation Family
 
 
@@ -4588,6 +4119,478 @@ lu:
 Apr-27-2026
 
 How do you fix the github error that says 'did not set all necessary objects'?
+
+
+
+:_+ Configuration and Author Settings (!fcc, !fcconfig)
+
+Verb Prefixes
+e = Edit
+g = Get
+h = Show
+s = Set
+u = Unset
+
+Noun Prefixes
+a = All
+l = Local
+g = Global
+s = System
+
+cat ~/.gitconfig
+
+
+
+::_
+:au
+:auth
+:author
+:s-auth
+
+echo. & echo * Set GitHub author and email. Note: Please don't confuse this with the Bitbucket author signature.
+
+rem qq
+git config --global user.name "jonathans-razor"
+git config --global user.email "jonathan.r.jones.1066@gmail.com"
+rem git config --global user.name "jonathan-r-jones"
+rem git config --global user.email "jonathan.r.jones.3@gmail.com"
+
+exit/b
+
+
+
+::_
+:h-a
+echo. & echo * Show all configuration settings.
+rem show configuration, git-config
+cls
+call :g-s
+call :g-g
+call :g-l
+exit/b
+
+lu:
+Aug-24-2026
+
+skw:
+git settings
+
+
+
+::_
+:s-pat
+echo. & echo * Cache the personal access token credential.
+git config --global credential.helper cache
+exit/b
+lu:
+Apr-7-2022
+
+
+
+::_
+:s-cred
+
+echo. & echo * Store credentials.
+
+git config --global credential.helper store
+
+exit/b
+
+lu:
+Dec-3-2024
+
+
+
+::_
+:sg-lofi
+
+echo. & echo * Fix long filenames issue for global configuration.
+
+git config --global core.longpaths true
+
+exit/b
+
+lu:
+Nov-22-2022
+
+skw:
+filename too long github
+
+
+
+::_
+:sl-lofi
+
+echo. & echo * Fix long filenames issue for local configuration.
+
+git config core.longpaths true
+
+exit/b
+
+lu:
+Dec-9-2016
+
+skw:
+filename too long github
+
+
+
+::_
+:sg-sslf
+
+echo. & echo * Set global ssl verify to false.
+
+echo.
+git config --global http.sslVerify false
+
+exit/b
+
+lu:
+Jan-26-2022
+
+
+
+::_
+:s-asr
+
+echo. & echo * Set push.autoSetupRemote to true.
+
+git config --global push.autoSetupRemote true
+
+exit/b
+
+
+
+::_
+:s-sslt
+
+echo. & echo * Set local http.sslverify to true.
+
+git config http.sslverify true
+
+exit/b
+
+
+
+::_
+:s-crlf
+
+echo. & echo * When it comes to line endings, emulate what RestSharper has adopted.
+
+rem See: https://github.com/restsharp/RestSharp/blob/develop/CONTRIBUTING.md
+
+git config --global core.autocrlf true
+
+exit/b
+
+lu:
+May-31-2018
+
+Footnote
+>< >< ><
+
+The folllowing command is used for Mac and Linux I think. Jan-27-2022
+git config --global core.autocrlf input
+
+git config --global core.autocrlf true
+
+
+
+::_
+:coau
+
+echo. & echo * Configure author.
+
+git config user.name "[put--name-of-user-of-interest-here]"
+
+exit/b
+
+
+
+::_
+:s-aust
+
+echo. & echo * Run author and store.
+
+call %0 au
+
+call %0 stor
+
+exit/b
+
+lu:
+Dec-5-2018
+
+
+
+::_
+:s-g
+
+echo. & echo * Add global setting.
+
+git config --global %1 %2
+
+exit/b
+
+
+
+::_
+:au-bit
+:author_bit
+:s-aubit
+
+echo. & echo * Configure BitBucket author and email. Note: Please don't confuse this with the GitHub author signature.
+
+@echo on
+git config --global user.name "Jonathan17"
+git config --global user.email "jonathan.r.jones@nesassociates.com"
+@echo off
+
+exit/b
+
+
+
+::_
+:author_devops
+:s-author-devops
+
+echo. & echo * Configure BitBucket author and email.
+
+@echo on
+git config --global user.name "mercury_devops"
+git config --global user.email "nes.mercury@nesassociates.com"
+@echo off
+
+exit/b
+
+
+
+
+::_
+:heop
+
+echo. & echo * Credential helper options.
+
+git config credential.helper "$helper $options"
+
+exit/b
+
+
+
+::_
+:s-uncach
+:uncach
+:unstor
+
+echo. & echo * Uncache/unstore global credential.
+
+git config --global --unset credential.helper
+
+exit/b
+
+lu:
+Dec-21-2022 Seemed to work.
+Jan-20-2022
+
+
+
+::_
+:unstor-g2
+
+echo. & echo * Uncache/unstore global credential.
+
+git config --global --unset credential.https
+
+exit/b
+
+
+
+::_
+:unstor-s
+
+echo. & echo * Uncache/unstore system credential.
+
+git config --system --unset credential.helper
+
+exit/b
+
+lu:
+Dec-21-2022 Seemed to work.
+
+
+
+::_
+:g-sg
+
+echo. & echo * Show system and global configuration settings. Note local settings are not shown.
+
+call :g-s
+
+call :g-g
+
+exit/b
+
+git config --list
+
+Footnote
+>< >< ><
+
+:Local configuration settings will overwrite global and global will overwrite system.
+
+list - 20 lines
+s http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+s http.sslbackend=openssl
+s diff.astextplain.textconv=astextplain
+s filter.lfs.clean=git-lfs clean -- %f
+s filter.lfs.smudge=git-lfs smudge -- %f
+s filter.lfs.process=git-lfs filter-process
+s filter.lfs.required=true
+s credential.helper=manager-core
+s g core.autocrlf=true
+s core.fscache=true
+s core.symlinks=true
+s pull.rebase=false
+s credential.https://dev.azure.com.usehttppath=true
+s init.defaultbranch=main
+g user.name=Jonathan R. Jones
+g user.email=jonathan.r.jones.3@gmail.com
+g gui.recentrepo=C:/projects/netbeans/sencha
+g gui.recentrepo=C:/projects/netbeans/mercury6
+g ui.recentrepo=D:/aa/repositories/fgt
+g s core.autocrlf=true
+
+system - 14 lines
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager-core
+core.autocrlf=true
+core.fscache=true
+core.symlinks=true
+pull.rebase=false
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=main
+
+global - 6 lines
+user.name=Jonathan R. Jones
+user.email=jonathan.r.jones.3@gmail.com
+gui.recentrepo=C:/projects/netbeans/sencha
+gui.recentrepo=C:/projects/netbeans/mercury6
+gui.recentrepo=D:/aa/repositories/fgt
+core.autocrlf=true
+
+local - 9 lines
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+remote.origin.url=git@github.com:jonathan-r-jones/Composable-Batch-Files.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+
+
+
+::_
+:g-s
+
+echo. & echo * Show system configuration settings.
+
+echo.
+git config --system --list
+
+exit/b
+
+
+
+::_
+:g-g
+
+echo. & echo * Show global configuration settings.
+
+echo.
+git config --global --list
+
+exit/b
+
+
+
+::_
+:g-l
+
+echo. & echo * Show local configuration settings
+
+echo.
+git config --local --list
+
+exit/b
+
+
+
+::_
+:authwk
+:g-auwk
+
+echo. & echo * Author for work email.
+
+call k authwk
+
+exit/b
+
+
+
+::_
+:eg
+
+echo. & echo * Edit the current global configuration.
+
+echo.
+git config --global --edit
+
+exit/b
+
+
+
+::_
+:ug-ue
+
+echo. & echo * Unset global user name.
+
+echo.
+git config --global --unset user.name
+git config --global --unset user.email
+
+exit/b
+
+lu:
+Dec-21-2022
+Jan-27-2022
+
+skw:
+How to unset a variable.
+
+
+
+::_
+:sl-c
+:stor
+:s-stor
+
+echo. & echo * Store credentials locally so that Git stops asking for credentials after each push.
+
+git config credential.helper store
+
+exit/b
+
+Footnote
+>< >< ><
+
+I used this on my VDI on Jan-20-2022 to store my Personal Access Token so I wouldn't have to retype every time.
 
 
 
