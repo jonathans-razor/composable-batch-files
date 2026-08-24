@@ -75,7 +75,7 @@ exit/b
 :_
 :main
 
-set cbf-previous-path=%cd%
+set cbf-previous-pt=%cd%
 
 cd /d "%cbf-pt%"
 

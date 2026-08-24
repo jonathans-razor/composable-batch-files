@@ -80,7 +80,7 @@ exit/b
 :_
 :main
 rem echo. & echo * PT2: cbf-pt2: %cbf-pt2%
-set cbf-previous-path=%cd%
+set cbf-previous-pt=%cd%
 cd /d "%cbf-pt2%"
 exit/b
 
