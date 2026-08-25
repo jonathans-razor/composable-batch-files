@@ -4051,6 +4051,18 @@ exit/b
 
 
 ::_
+:start-cheyenne
+
+echo. & echo * Start Cheyenne.
+
+call %0 lnk-cheyenne
+call m a
+
+exit/b
+
+
+
+::_
 :init-xps
 :lnk-xps
 echo. & echo * Initialize environment for %1.
@@ -4071,6 +4083,7 @@ Nov-9-2023
 ::_
 :lnk-cheyenne
 echo. & echo * Initialize environment for %1. Aug-24-2026 3:43 PM
+set composable-batch-files=C:\Users\Owner\Dropbox\IT\composable-batch-files
 set path=%my documents%\savannah\belfry;%path%
 set path=%dropbox%\Software\Tools;%path%
 call %0 set-default-browser br
