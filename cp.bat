@@ -824,62 +824,6 @@ Mar-03-2022
 
 
 
-:_+ Multi-Edit Config
-
-
-
-::_
-:copy_from_me_sz
-
-echo. & echo * Copy Multi-Edit config files from share-zone.
-
-echo.
-
-call t mecfg
-
-echo.
-xcopy /d /h /r /s /y %share-zone%\Multi-Edit_2008_Config_Files 
-
-exit/b
-
-lu:
-Dec-27-2018
-
-
-
-::_
-:copy_to_sz
-
-echo. & echo * Copy Multi-Edit config files to share-zone.
-
-echo.
-
-call t mecfg
-
-echo.
-xcopy /d /h /r /s /y %share-zone%\Multi-Edit_2008_Config_Files 
-
-exit/b
-
-lu:
-Dec-27-2018
-
-
-
-::_
-:cfg_dr_to_local
-
-echo. & echo * Copy Multi-Edit configuration files from dropbox to my local drive.
-
-echo. & echo * Now do vice versa.
-
-echo.
-xcopy /d /r /s /y "%dropbox%\Multi-Edit_2008_Config_Files" "%Multi-Edit_2008_Config_Files%"
-
-exit/b
-
-
-
 :_
 :cp
 :cps
@@ -1505,6 +1449,70 @@ copy leetcode-template.js %2.js
 call vc %2.js
 
 exit/b
+
+
+
+:_+ Multi-Edit Config Family (!fymecfg)
+
+
+
+::_
+:mecfg
+echo. & echo * Copy Multi-Edit configuration files from dropbox to my local drive.
+call n mecfg>nul
+echo.
+xcopy /d /r /s /y "%dropbox%\Multi-Edit_2008_Config_Files" "%cbf-pt%"
+exit/b
+
+
+
+::_
+:cfg_dr_to_local
+
+echo. & echo * Copy Multi-Edit configuration files from dropbox to my local drive - old.
+
+echo.
+xcopy /d /r /s /y "%dropbox%\Multi-Edit_2008_Config_Files" "%Multi-Edit_2008_Config_Files%"
+
+exit/b
+
+
+
+::_
+:copy_from_me_sz
+
+echo. & echo * Copy Multi-Edit config files from share-zone.
+
+echo.
+
+call t mecfg
+
+echo.
+xcopy /d /h /r /s /y %share-zone%\Multi-Edit_2008_Config_Files 
+
+exit/b
+
+lu:
+Dec-27-2018
+
+
+
+::_
+:copy_to_sz
+
+echo. & echo * Copy Multi-Edit config files to share-zone.
+
+echo.
+
+call t mecfg
+
+echo.
+xcopy /d /h /r /s /y %share-zone%\Multi-Edit_2008_Config_Files 
+
+exit/b
+
+lu:
+Dec-27-2018
 
 
 

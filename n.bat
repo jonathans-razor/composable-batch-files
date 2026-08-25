@@ -1591,30 +1591,29 @@ Jan-25-2021
 
 
 ::_
-:bel
-:belf
-
+:drbel
+:drbelf
 echo. & echo * Belfry.
-
 set cbf-pt=%dropbox%\savannah\belfry
-
 exit/b
 
 lu:
+Aug-24-2026
 Aug-24-2018
 
 
 
 ::_
+:bel
+:belf
+:ldbel
 :ldbelf
-
 echo. & echo * Local drive Belfy.
-
 set cbf-pt=%savannah%\belfry
-
 exit/b
 
-lu: 
+lu:
+Aug-24-2026
 Mar-1-2020
 
 
@@ -1624,7 +1623,6 @@ Mar-1-2020
 
 
 ::_
-:ro
 :drro
 echo. & echo * Reach out on dropbox.
 set cbf-pt=%dropbox%\savannah\reach out
@@ -1638,7 +1636,7 @@ Jun-30-2023
 
 ::_
 :ldro
-:rold
+:ro
 echo. & echo * Reach out on local drive.
 set cbf-pt=%my documents%\savannah\reach out
 exit/b
@@ -1646,88 +1644,6 @@ exit/b
 lu:
 Aug-24-2026
 Jun-30-2023
-
-
-
-:_+ Multi-Edit Configuration Files
-
-
-
-::_
-:mecfg
-
-echo. & echo * Multi-Edit Config file folder.
-
-set cbf-pt=%appdata%\Multi Edit Software\Multi-Edit\11\Config.04
-
-exit/b
-
-lu:
-Dec-7-2018
-
-skw:
-Multi-Edit Config Files
-
-
-
-::_
-:drmecfg
-:mecfg_dr
-
-echo. & echo * Dropbox Multi-Edit Config files.
-
-set cbf-pt=%dropbox%\Multi-Edit_2008_Config_Files
-
-exit/b
-
-lu:
-Dec-7-2018
-
-
-
-::_
-:mecfgbui
-
-echo. & echo * Multi-Edit Config Files Backups inside dated backups.
-
-set cbf-pt=%dropbox%\Backups\Savannah
-
-exit/b
-
-lu:
-Oct-1-2024
-
-(sanctioned duplicate entry)
-
-
-
-::_
-:bumecfg
-:mecfgbu
-:mecfg_bu
-
-echo. & echo * Multi-Edit Config Files Backups.
-
-set cbf-pt=%dropbox%\Backups\Multi-Edit Config Files
-
-exit/b
-
-lu:
-Jan-3-2018
-
-
-
-::_
-:smecfg
-
-echo. & echo * Multi-Edit Config file folder in Share-Zone.
-
-set cbf-pt=%share-zone%\Multi-Edit_2008_Config_Files
-
-exit/b
-
-lu:
-Feb-13-2019
 
 
 
@@ -8376,6 +8292,83 @@ exit/b
 echo. & echo * Surf to CNN.
 set cbf-url=https://www.zerohedge.com
 exit/b
+
+
+
+:_+ Multi-Edit Configuration Files
+
+
+
+::_
+:mecfg
+echo. & echo * Multi-Edit Config file folder.
+set cbf-pt=%appdata%\Multi Edit Software\Multi-Edit\11\Config.04
+exit/b
+
+lu:
+Aug-24-2026
+Dec-7-2018
+
+skw:
+Multi-Edit Config Files
+
+
+
+::_
+:drmecfg
+:mecfg_dr
+echo. & echo * Dropbox Multi-Edit Config files.
+set cbf-pt=%dropbox%\Multi-Edit_2008_Config_Files
+exit/b
+
+lu:
+Dec-7-2018
+
+
+
+::_
+:mecfgbui
+
+echo. & echo * Multi-Edit Config Files Backups inside dated backups.
+
+set cbf-pt=%dropbox%\Backups\Savannah
+
+exit/b
+
+lu:
+Oct-1-2024
+
+(sanctioned duplicate entry)
+
+
+
+::_
+:bumecfg
+:mecfgbu
+:mecfg_bu
+
+echo. & echo * Multi-Edit Config Files Backups.
+
+set cbf-pt=%dropbox%\Backups\Multi-Edit Config Files
+
+exit/b
+
+lu:
+Jan-3-2018
+
+
+
+::_
+:smecfg
+
+echo. & echo * Multi-Edit Config file folder in Share-Zone.
+
+set cbf-pt=%share-zone%\Multi-Edit_2008_Config_Files
+
+exit/b
+
+lu:
+Feb-13-2019
 
 
 

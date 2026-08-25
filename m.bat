@@ -4072,9 +4072,10 @@ Nov-9-2023
 :lnk-cheyenne
 echo. & echo * Initialize environment for %1. Aug-24-2026 3:43 PM
 set path=%my documents%\savannah\belfry;%path%
+set path=%dropbox%\Software\Tools;%path%
 call %0 set-default-browser br
 call n repo
-call %0 set-default-text-editor no
+call %0 set-default-text-editor me
 call set-default-secondary-dictionary.bat
 exit/b
 lu:
@@ -4572,7 +4573,6 @@ echo. & echo * Open XPS affinity files.
 
 set cbf-fn-list="%my documents%\savannah\reach out\J.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CH.asc"
-attrib -r "%my documents%\savannah\reach out\cc.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\DI.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CI.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CC.asc"
