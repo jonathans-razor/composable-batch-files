@@ -595,6 +595,7 @@ call el
 echo.
 set cbf
 echo.
+set composable-batch-files
 set computername
 set dropbox
 set my documents

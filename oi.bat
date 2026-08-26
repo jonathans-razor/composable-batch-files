@@ -80,6 +80,7 @@ Apr-8-2022
 
 
 :_
+:cm
 :ql
 echo. & echo * Quickla.
 call t ldql>nul
@@ -100,13 +101,9 @@ Aug-23-2026
 
 :_
 :ql2
-
 echo. & echo * Quickla.
-
 set cbf-fn-list="%my documents%\savannah\cmac\Quickla-for-Multi-Edit\regexes.s"
-
 start mew32 %cbf-fn-list%
-
 exit/b
 
 lu:

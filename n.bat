@@ -4161,7 +4161,7 @@ exit/b
 :nt
 echo. & echo * Norton browser.
 set cbf-app=%localappdata%\Norton\Browser\Application\NortonBrowser.exe
-if /i %computername%==cheyenne set cbf-app=C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Norton Private Browser.lnk
+if /i %computername%==cheyenne set cbf-app=C:\Program Files\Norton\Browser\Application\NortonBrowser.exe
 set cbf-gs=https://docs.google.com/spreadsheets/u/1/
 exit/b
 lu:
