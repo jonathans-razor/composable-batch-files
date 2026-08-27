@@ -7889,34 +7889,6 @@ exit/b
 
 
 
-:_+ Google Family (!fycgg)
-
-
-
-::_
-:gas
-echo. & echo * Google advanced search.
-set cbf-url=http://www.google.com/advanced_search?hl=en
-exit/b
-
-
-
-::_
-:gai
-echo. & echo * Google advanced image search.
-set cbf-url=http://images.google.com/advanced_image_search
-exit/b
-
-
-
-::_
-:ghp
-echo. & echo * Google home page.
-set cbf-url=http://www.google.com
-exit/b
-
-
-
 :_+ Travel and Transfer
 
 
@@ -8369,6 +8341,35 @@ exit/b
 
 lu:
 Feb-13-2019
+
+
+
+:_+ Google Family (!fycgg)
+
+
+
+::_
+:gg
+:ghp
+echo. & echo * Google home page.
+set cbf-url=http://www.google.com
+exit/b
+
+
+
+::_
+:gas
+echo. & echo * Google advanced search.
+set cbf-url=http://www.google.com/advanced_search?hl=en
+exit/b
+
+
+
+::_
+:gai
+echo. & echo * Google advanced image search.
+set cbf-url=http://images.google.com/advanced_image_search
+exit/b
 
 
 

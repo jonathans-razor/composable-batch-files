@@ -1,1 +1,2 @@
+@echo off
 j netw
