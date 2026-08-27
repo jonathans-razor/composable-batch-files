@@ -8349,7 +8349,6 @@ Feb-13-2019
 
 
 ::_
-:gg
 :ghp
 echo. & echo * Google home page.
 set cbf-url=http://www.google.com
