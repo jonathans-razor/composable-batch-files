@@ -2488,6 +2488,16 @@ May-24-2023
 
 
 
+::_
+:ql
+echo. & echo * Quikla folder.
+set cbf-pt=%savannah%\cmac\Quickla-for-Multi-Edit
+exit/b
+lu:
+Aug-25-2026
+
+
+
 :_
 :arp
 
