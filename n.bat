@@ -2458,11 +2458,9 @@ Jul-18-2023
 
 
 ::_
-:cm
 :drql
 :qldr
 echo. & echo * Quickla on Dropbox.
-set cbf-gs=https://docs.google.com/spreadsheets/d/1GysSBXcT1QvJw1njJIqeHAUp484sc_P6UzGIIOcn6X4/edit?gid=0#gid=0
 set cbf-pt=%dropbox%\savannah\cmac\Quickla-for-Multi-Edit
 set cbf-gh=https://github.com/jonathans-razor/Quickla-for-Multi-Edit.git
 exit/b
@@ -2475,9 +2473,12 @@ Note: The official GitHub repository is here.
 
 
 ::_
+:cm
 :ldql
 :ql
 echo. & echo * Quickla on local.
+rem qq
+set cbf-gs=https://docs.google.com/spreadsheets/d/1GysSBXcT1QvJw1njJIqeHAUp484sc_P6UzGIIOcn6X4/edit?gid=0#gid=0
 set cbf-pt=C:\Users\jonat\Documents\savannah\cmac\Quickla-for-Multi-Edit
 exit/b
 
