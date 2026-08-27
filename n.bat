@@ -2476,7 +2476,6 @@ Note: The official GitHub repository is here.
 :ldql
 :ql
 echo. & echo * Quickla on local.
-rem qq
 set cbf-gh=https://github.com/jonathans-razor/Quickla-for-Multi-Edit.git
 set cbf-gs=https://docs.google.com/spreadsheets/d/1GysSBXcT1QvJw1njJIqeHAUp484sc_P6UzGIIOcn6X4/edit?gid=0#gid=0
 set cbf-pt=C:\Users\jonat\Documents\savannah\cmac\Quickla-for-Multi-Edit
@@ -2485,16 +2484,6 @@ exit/b
 lu:
 Aug-23-2026
 May-24-2023
-
-
-
-::_
-:ql
-echo. & echo * Quikla folder.
-set cbf-pt=%savannah%\cmac\Quickla-for-Multi-Edit
-exit/b
-lu:
-Aug-25-2026
 
 
 

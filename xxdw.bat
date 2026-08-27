@@ -98,16 +98,8 @@ exit/b
 :_
 :gh
 
-call gh jj>nul
-
-exit/b
-
-
-
-:_
-:gh2
-
-call sf cfgh
+rem call gh jj>nul
+call xxd rt %1 nt
 
 exit/b
 
@@ -232,10 +224,8 @@ exit/b
 
 :_
 :main
-
 rem echo. & echo * xxdw main.
 @echo on
 xxd %2 %1 %3
 @echo off
-
 exit/b
