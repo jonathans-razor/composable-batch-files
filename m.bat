@@ -4039,11 +4039,11 @@ Mar-19-2024
 
 
 ::_
-:start-xps
+:start-cheyenne
 
-echo. & echo * Start XPS.
+echo. & echo * Start Cheyenne.
 
-call %0 lnk-xps
+call %0 lnk-cheyenne
 call m a
 
 exit/b
@@ -4051,11 +4051,28 @@ exit/b
 
 
 ::_
-:start-cheyenne
+:lnk-cheyenne
+echo. & echo * Initialize environment for %1. Aug-24-2026 3:43 PM
+set composable-batch-files=C:\Users\Owner\Dropbox\IT\composable-batch-files
+set path=%my documents%\savannah\belfry;%path%
+set path=%dropbox%\Software\Tools;%path%
+call %0 set-default-browser br
+call n repo
+call %0 set-default-text-editor me
+call set-default-secondary-dictionary.bat
+exit/b
+lu:
+Aug-24-2026
+Jul-31-2026
 
-echo. & echo * Start Cheyenne.
 
-call %0 lnk-cheyenne
+
+::_
+:start-xps
+
+echo. & echo * Start XPS.
+
+call %0 lnk-xps
 call m a
 
 exit/b
@@ -4077,23 +4094,6 @@ lu:
 Aug-24-2026
 fcd:
 Nov-9-2023
-
-
-
-::_
-:lnk-cheyenne
-echo. & echo * Initialize environment for %1. Aug-24-2026 3:43 PM
-set composable-batch-files=C:\Users\Owner\Dropbox\IT\composable-batch-files
-set path=%my documents%\savannah\belfry;%path%
-set path=%dropbox%\Software\Tools;%path%
-call %0 set-default-browser br
-call n repo
-call %0 set-default-text-editor me
-call set-default-secondary-dictionary.bat
-exit/b
-lu:
-Aug-24-2026
-Jul-31-2026
 
 
 
