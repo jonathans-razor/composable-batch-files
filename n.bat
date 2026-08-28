@@ -2733,43 +2733,6 @@ lu:
 
 
 
-:_+ Family Gmail (!fcgmai)
-
-
-
-::_
-:gmai
-:gmail
-:j3
-
-echo. & echo * Gmail.
-
-call an kr
-set cbf-ax=https://mail.google.com
-set cbf-url=https://mail.google.com
-
-exit/b
-
-lu:
-Sep-7-2023
-
-
-
-::_
-:j7
-
-echo. & echo * Gmail.
-
-call an edge
-set cbf-url=https://mail.google.com
-
-exit/b
-
-lu:
-Sep-21-2023
-
-
-
 :_
 :aa
 :perm
@@ -8369,6 +8332,53 @@ exit/b
 echo. & echo * Google advanced image search.
 set cbf-url=http://images.google.com/advanced_image_search
 exit/b
+
+
+
+:_
+:arg
+:aarg
+echo. & echo * Aaargh.
+set cbf-url=https://www.meetup.com/AARGGH/
+exit/b
+
+
+
+:_+ Family Gmail (!fcgmai)
+
+
+
+::_
+:gma
+:gmai
+:gmail
+:j3
+
+echo. & echo * Gmail.
+
+call an br
+set cbf-ax=https://mail.google.com
+set cbf-url=https://mail.google.com
+
+exit/b
+
+lu:
+Sep-7-2023
+
+
+
+::_
+:j7
+
+echo. & echo * Gmail.
+
+call an edge
+set cbf-url=https://mail.google.com
+
+exit/b
+
+lu:
+Sep-21-2023
 
 
 
