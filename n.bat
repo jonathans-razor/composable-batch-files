@@ -8382,4 +8382,19 @@ Sep-21-2023
 
 
 
+:_
+:test
+echo. & echo * 
+rem  qq
+call n >nul
+set cbf-pt=%cbf-pt%\
+set cbf-lh=
+set cbf-srv=
+set cbf-=
+set cbf-=
+set cbf-url=
+exit/b
+
+
+
 :_ (!ef, !efn)
