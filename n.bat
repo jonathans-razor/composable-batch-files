@@ -1160,7 +1160,7 @@ exit/b
 
 ::_
 :j1
-:j2
+:j22
 
 echo. & echo * %1.txt.
 
@@ -1198,7 +1198,7 @@ exit/b
 
 ::_
 :j5
-:j6
+:j66
 
 echo. & echo * %1.txt. A more permanent recyclable file.
 call n pm>nul
@@ -8353,7 +8353,163 @@ exit/b
 
 
 
-:_+ Family Gmail (!fcgmai)
+:_+ Family Gmail (!fcgma)
+
+
+
+::_ (!-h7)
+:h7
+echo. & echo * Gmail for %1.
+call an nt
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_ (!-j2)
+:j2
+echo. & echo * Gmail for %1.
+call an ed
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_
+:j3 (!-j3)
+echo. & echo * Gmail for %1.
+call an ed
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_ (!-j6)
+:j6
+echo. & echo * Gmail for %1.
+call an ed
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_ (!-j7)
+:j7
+echo. & echo * Gmail for %1.
+call an br
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_ (!-jr)
+:jr
+echo. & echo * Gmail for %1.
+call an ed
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_ (!-hotm)
+:hotm
+echo. & echo * Hotmail for %1.
+call an ed
+set cbf-url=http://www.hotmail.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_ (!-k0)
+:k0
+echo. & echo * Gmail for %1.
+call an ed
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_ (!-l8)
+:l8
+echo. & echo * Gmail for %1.
+call an ed
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_ (!-mia)
+:mia
+echo. & echo * Gmail for %1.
+call an ed
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_ (!-r8)
+:r8
+echo. & echo * Gmail for %1.
+call an kr
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_ (!-un)
+:un
+echo. & echo * Gmail for %1.
+call an ed
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
+
+
+
+::_ (!-yuge)
+:yuge
+echo. & echo * Gmail for %1.
+call an fx
+set cbf-url=https://mail.google.com
+exit/b
+
+lu:
+Aug-31-2026
 
 
 
@@ -8362,32 +8518,14 @@ exit/b
 :gmai
 :gmail
 :j3
-
 echo. & echo * Gmail.
-
 call an br
 set cbf-ax=https://mail.google.com
 set cbf-url=https://mail.google.com
-
 exit/b
 
 lu:
 Sep-7-2023
-
-
-
-::_
-:j7
-
-echo. & echo * Gmail.
-
-call an edge
-set cbf-url=https://mail.google.com
-
-exit/b
-
-lu:
-Sep-21-2023
 
 
 
