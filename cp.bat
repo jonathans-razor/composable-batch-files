@@ -983,7 +983,7 @@ if "%~2" == "?" goto help
 if "%~2" == "" goto help
 call t cbf
 echo.
-copy csr.bat %2.bat
+copy /-y csr.bat %2.bat
 exit/b
 
 :help
