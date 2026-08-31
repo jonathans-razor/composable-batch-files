@@ -5120,10 +5120,19 @@ how to make api call with vuex
 
 
 ::_
+:maps
+echo. & echo * Maps.
+call n pict>nul
+set cbf-pt=%cbf-pt%\maps
+exit/b
+
+
+
+::_
 :dmmap
 :metrmap
 echo. & echo * DC metro map.
-set cbf-pt=%dropbox%\pictures\educational
+set cbf-pt=%dropbox%\maps\educational
 set cbf-fn=%cbf-pt%\dc metro map.png
 exit/b
 lu:
@@ -5145,7 +5154,7 @@ Jun-2-2026
 :map
 :usmap
 echo. & echo * US map.
-set cbf-pt=%dropbox%\pictures\educational
+set cbf-pt=%dropbox%\pictures\maps
 set cbf-fn=%cbf-pt%\united states map.gif
 exit/b
 lu:
@@ -5160,7 +5169,7 @@ map of the united states
 :map2
 :usmap2
 echo. & echo * map-of-the-united-states.
-call n educ>nul
+call n maps>nul
 set cbf-fn=%cbf-pt%\map-of-the-united-states.webp
 exit/b
 
@@ -5169,7 +5178,7 @@ exit/b
 ::_
 :canmap
 echo. & echo * Map of the provinces of Canada.
-call n educ>nul
+call n maps>nul
 set cbf-pt=%cbf-pt%\map of the provinces of Canada.webp
 exit/b
 lu:
@@ -5180,7 +5189,7 @@ Apr-14-2026
 ::_
 :stma
 echo. & echo * Strait of Malacca.
-call n educ>nul
+call n maps>nul
 set cbf-pt=%cbf-pt%\Strait_of_Malacca.jpg
 exit/b
 lu:
@@ -5191,7 +5200,7 @@ Apr-27-2026
 ::_
 :mala
 echo. & echo * Malaria countries.
-call n educ>nul
+call n maps>nul
 set cbf-pt=%cbf-pt%\malaria 2026-04-23_06-25-46.avif
 exit/b
 lu:
@@ -8379,21 +8388,6 @@ exit/b
 
 lu:
 Sep-21-2023
-
-
-
-:_
-:test
-echo. & echo * 
-rem  qq
-call n >nul
-set cbf-pt=%cbf-pt%\
-set cbf-lh=
-set cbf-srv=
-set cbf-=
-set cbf-=
-set cbf-url=
-exit/b
 
 
 
