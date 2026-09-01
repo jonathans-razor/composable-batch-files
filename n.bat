@@ -2355,7 +2355,8 @@ Note: The official GitHub repository is here.
 echo. & echo * Quickla on local.
 set cbf-gh=https://github.com/jonathans-razor/Quickla-for-Multi-Edit.git
 set cbf-gs=https://docs.google.com/spreadsheets/d/1GysSBXcT1QvJw1njJIqeHAUp484sc_P6UzGIIOcn6X4/edit?gid=0#gid=0
-set cbf-pt=C:\Users\jonat\Documents\savannah\cmac\Quickla-for-Multi-Edit
+rem set cbf-pt=C:\Users\jonat\Documents\savannah\cmac\Quickla-for-Multi-Edit
+set cbf-pt=C:\Users\Owner\Documents\savannah\cmac\Quickla-for-Multi-Edit
 exit/b
 
 lu:
