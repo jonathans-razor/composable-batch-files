@@ -1145,129 +1145,6 @@ Nov-2-2018
 
 
 
-:_+ J Files (!fccj)
-
-
-
-::_
-:j0
-echo. & echo * j.asc.
-call n rold>nul
-set cbf-fn=%cbf-pt%\j.asc
-exit/b
-
-
-
-::_
-:j1
-:j22
-
-echo. & echo * %1.txt.
-
-set cbf-pt=c:\a
-if exist w:\a set cbf-pt=w:\a
-set cbf-fn=%cbf-pt%\%1.txt
-
-exit/b
-
-
-
-::_
-:j1j
-
-echo. & echo * j1.json.
-
-set cbf-pt=c:\a
-set cbf-fn=%cbf-pt%\%1.json
-
-exit/b
-
-
-
-::_
-:j1x
-
-echo. & echo * j1.xml.
-
-call n a>nul
-set cbf-fn=%cbf-pt%\j1.xml
-
-exit/b
-
-
-
-::_
-:j5
-:j66
-
-echo. & echo * %1.txt. A more permanent recyclable file.
-call n pm>nul
-set cbf-fn=%cbf-pt%\%1.txt
-
-exit/b
-
-
-
-::_
-:npt
-
-echo. & echo * NP text.
-
-call n 1m>nul
-set cbf-fn=%cbf-pt%\%1.txt
-
-exit/b
-
-
-
-::_
-:np2t
-
-echo. & echo * NP2 text.
-
-call n 1m>nul
-set cbf-fn=%cbf-pt%\%1.txt
-
-exit/b
-
-
-
-::_
-:timex
-
-echo. & echo * Time.
-
-call n tmp>nul
-set cbf-fn=%cbf-pt%\%1.txt
-
-exit/b
-
-
-
-::_
-:date
-
-echo. & echo * Date.
-
-call n tmp>nul
-set cbf-fn=%cbf-pt%\%1.txt
-
-exit/b
-
-
-
-::_
-:dtt
-
-echo. & echo * Date and time.
-
-call n tmp>nul
-set cbf-fn=%cbf-pt%\%1.txt
-
-exit/b
-
-
-
 :_+ Blank Documents
 
 
@@ -8537,7 +8414,6 @@ Sep-7-2023
 :f1
 :f2
 echo. & echo * %1.txt.
-rem  qq
 call n a>nul
 set cbf-fn=%cbf-pt%\%1.txt
 exit/b
@@ -8550,7 +8426,6 @@ fcd: Sep-1-2026
 :f3
 :f4
 echo. & echo * %1.txt.
-rem  qq
 call n ro>nul
 set cbf-fn=%cbf-pt%\%1.txt
 exit/b
