@@ -8070,7 +8070,7 @@ The theme was 'dream house', Amalfi photos and the usual internet downloads.
 ::_
 :b
 :b5
-set cbf-pd=Breakaway 5.
+set cbf-pd=Breakaway 5
 echo. & echo * %cbf-pd%
 call n pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
@@ -8526,6 +8526,38 @@ exit/b
 
 lu:
 Sep-7-2023
+
+
+
+:_+ F1 Family (!fycf1)
+
+
+
+::_
+:f1
+:f2
+echo. & echo * %1.txt.
+rem  qq
+call n a>nul
+set cbf-fn=%cbf-pt%\%1.txt
+exit/b
+
+fcd: Sep-1-2026
+
+
+
+::_
+:f3
+:f4
+echo. & echo * %1.txt.
+rem  qq
+call n ro>nul
+set cbf-fn=%cbf-pt%\%1.txt
+exit/b
+
+fcd: Sep-1-2026
+
+
 
 
 
