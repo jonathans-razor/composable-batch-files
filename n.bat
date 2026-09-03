@@ -1633,15 +1633,14 @@ Jan-8-2020
 
 
 ::_
+:busv
 :svbu
-
 echo. & echo * Savannah backups.
-
 set cbf-pt=%dropbox%\backups\savannah
-
 exit/b
 
 lu:
+Sep-2-2026
 Jan-8-2020
 
 
@@ -8435,6 +8434,37 @@ exit/b
 fcd: Sep-1-2026
 
 
+
+
+
+:_+ Date and Time
+
+
+
+::_
+:time
+echo. & echo * Time.
+call n tmp>nul
+set cbf-fn=%cbf-pt%\%1.txt
+exit/b
+
+
+
+::_
+:date
+echo. & echo * Date.
+call n tmp>nul
+set cbf-fn=%cbf-pt%\%1.txt
+exit/b
+
+
+
+::_
+:dtt
+echo. & echo * Date and time.
+call n tmp>nul
+set cbf-fn=%cbf-pt%\%1.txt
+exit/b
 
 
 

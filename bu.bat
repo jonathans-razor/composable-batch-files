@@ -325,16 +325,6 @@ exit/b
 
 
 :_
-:sv
-echo. & echo * Savannah.
-call pn belf>nul
-"Back up Savannah files to Dropbox folder.bat"
-exit/b
-creation date: Jul-3-2023
-
-
-
-:_
 :qlr
 echo. & echo * Reverse back up Quick Launch files from local to Dropbox.
 
@@ -408,6 +398,26 @@ echo. & echo Parameter Descriptions:
 echo. & echo Parameter 2: If equal to "/r", restore instead of back up the brc file.
 
 exit/b
+
+
+
+:_
+:sv
+echo. & echo * Savannah.
+call pn belf>nul
+"Back up Savannah files to Dropbox folder.bat"
+exit/b
+creation date: Jul-3-2023
+
+
+
+:_
+:cbf
+echo. & echo * CBF.
+rem Once Dropbox is done syncing, get this to work.
+rem qjq
+exit/b
+creation date: Sep-3-2026
 
 
 

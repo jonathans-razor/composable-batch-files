@@ -144,7 +144,6 @@ exit/b
 
 call :copy-date-to-clipboard
 call :copy-time-to-clipboard
-rem qq
 call n dtt>nul
 set cbf-date-and-time=%cbf-date%-%cbf-time%
 echo %cbf-date-and-time%>%cbf-fn%
