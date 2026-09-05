@@ -1646,6 +1646,30 @@ Jan-8-2020
 
 
 ::_
+:butest
+:testbu
+echo. & echo * Test backups.
+set cbf-pt=%dropbox%\backups\test
+exit/b
+
+lu:
+Sep-2-2026
+
+
+
+::_
+:bucbf
+:cbfbu
+echo. & echo * CBF backups.
+set cbf-pt=%dropbox%\backups\cbf
+exit/b
+
+lu:
+Sep-2-2026
+
+
+
+::_
 :bu
 
 echo. & echo * Backups.
@@ -2608,22 +2632,6 @@ exit/b
 
 lu:
  Aug-31-2023
-
-
-
-:_
-:aa
-:perm
-
-echo. & echo * Aa, a.k.a. permanent folders for Jonathan.
-
-if exist "c:\aa" set cbf-pt=c:\aa
-if exist "d:\aa" set cbf-pt=d:\aa
-
-exit/b
-
-lu:
-Nov-2-2018
 
 
 
@@ -8464,6 +8472,29 @@ exit/b
 echo. & echo * Date and time.
 call n tmp>nul
 set cbf-fn=%cbf-pt%\%1.txt
+exit/b
+
+
+
+:_
+:aa
+:perm
+echo. & echo * Aa, a.k.a. permanent folders for Jonathan.
+if exist "c:\aa" set cbf-pt=c:\aa
+if exist "d:\aa" set cbf-pt=d:\aa
+exit/b
+
+lu:
+Sep-3-2026
+Nov-2-2018
+
+
+
+:_
+:soft
+echo. & echo * Software.
+call n dr>nul
+set cbf-pt=%cbf-pt%\software
 exit/b
 
 

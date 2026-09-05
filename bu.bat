@@ -414,9 +414,43 @@ creation date: Jul-3-2023
 :_
 :cbf
 echo. & echo * CBF.
-rem Once Dropbox is done syncing, get this to work.
-rem qjq
+call n cbfbu
+
+echo. & echo * Exit if the backup folder doesn't exist.
+
+rem qq
+cd /d %dropbox%\Backups\cbf
+
+dir | find /i "%cd%">nul
+
+if errorlevel 1 (
+  echo. & echo * Error: The Backups\cbf folder does NOT exist on this computer.
+  exit/b
+)
+
+echo. & echo * Create and go to the temporary folder.
+
+Get_JDate>%tmp%\JDate.txt
+set /p JDate=<%tmp%\JDate.txt
+set Current_JDate=%JDate%
+
+cd /d "%dropbox%\Backups\cbf
+
+call of
+
+echo. & echo * Current Folder Sep-3-2026: %cd%
+
+if /i not exist "%Current_JDate%" md "%Current_JDate%"
+
+cd /d %Current_JDate%
+
+echo. & echo * Current Folder Sep-3-2026.2: %cd%
+
+echo. & echo * Copy the files.
+echo.
+xcopy /h /s /y "%composable-batch-files%"
 exit/b
+
 creation date: Sep-3-2026
 
 
