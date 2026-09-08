@@ -7884,7 +7884,8 @@ skw: picture/humor, picture\humor, humorous pictures, funny pictures
 
 
 ::_
-:we
+:wes
+:wines
 echo. & echo * Wines.
 call n pi>nul
 set cbf-pt=%cbf-pt%\wines

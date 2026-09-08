@@ -39,7 +39,7 @@ echo            fp  Copy an aliased file to a aliased folder.
 echo         mecfg  The Multi-Edit config files seem to be corrupt, so copy mecfg files from dropbox to local.
 echo            pc  Copy folder aliased files to current folder.
 echo            pp  Copy all files from alias path param 1 to alias path param 2.
-echo            te  Copy te.bat to a new batch file.
+echo            tm  Copy tm.bat to a new batch file.
 echo           teb  Copy te to a new bash file.
 echo            vc  Copy VDI file to CBF.
 echo.
@@ -1010,7 +1010,7 @@ if "%~2" == "" goto help
 call t cbf
 
 echo.
-copy te.bat %2.bat
+copy tm.bat %2.bat
 
 call e %2.bat
 
