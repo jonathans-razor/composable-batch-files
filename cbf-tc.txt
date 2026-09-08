@@ -240,10 +240,10 @@ example-  Prefix for files written by other authors for learning and comparison 
 	   tdh  Transform directory to home folder.
      tdp  Transform directory to parent folder.
      tdr  Transform directory by appending a relative path onto a base path.
-      te  Golden image template used for creating new batch files.
       tf  Terraform.
       tk  Taskkill.
       tl  Tasklist.
+      tm  Golden image template used for creating new batch files.
     touc  Wrapper around Git Touch command, which updates file dates to the current date.
       tr  Tar.
       ts  TypeScript transpiler.

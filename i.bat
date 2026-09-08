@@ -469,6 +469,10 @@ rem Python Results
 set cbf-python-results=
 
 :
+rem Question
+set cbf-question=
+
+:
 rem Microsoft Teams Recorded Meeting
 set cbf-reme=
 

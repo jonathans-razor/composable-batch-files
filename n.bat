@@ -6397,7 +6397,6 @@ link color: 3686a8
 
 
 ::_
-:el
 :eltz
 
 echo. & echo * Eltz.
@@ -8496,6 +8495,16 @@ echo. & echo * Software.
 call n dr>nul
 set cbf-pt=%cbf-pt%\software
 exit/b
+
+
+
+:_
+:el
+echo. & echo * Extraterrestrial life.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1uY10DsyG-0ToMWt1L_tHuKFuHs2RfuNI-5JRFILQ750/edit?gid=0#gid=0
+set cbf-question=Which places other the Earth have the highest chance of having life?
+exit/b
+
 
 
 
