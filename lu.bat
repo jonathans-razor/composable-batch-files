@@ -60,7 +60,7 @@ echo. & echo * Write last updated.
 call t c>nul
 call dt>nul
 type %cbf-fn%>last-updated.txt
-echo %computername%>>last-updated.txt
+echo From Computer: %computername%>>last-updated.txt
 echo.
 type last-updated.txt
 exit/b
