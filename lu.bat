@@ -30,7 +30,8 @@ echo   %~n0 w
 exit/b
 
 lu: 
- Apr-11-2024-1-58-PM
+ Sep-8-2026-8-06-PM
+Apr-11-2024-1-58-PM
 
 
 
@@ -42,48 +43,26 @@ lu:
 
 
 :_
-:old
-
-cls
-
-echo. & echo * Last updated.
-
-rem call sdv lu
-rem call n lu
-
-exit/b
-
-
-
-:_
 :read
-
 cls
-
 echo. & echo * Read last updated.
-
 call t c>nul
 echo.
-echo The last time I updated SP7 was: 
 type last-updated.txt
-
 exit/b
 
 
 
 :_
 :write
-
 cls
-
 echo. & echo * Write last updated.
-
 call t c>nul
 call dt>nul
 type %cbf-fn%>last-updated.txt
+echo %computername%>>last-updated.txt
 echo.
 type last-updated.txt
-
 exit/b
 
 
