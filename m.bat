@@ -4034,301 +4034,6 @@ Mar-19-2024
 
 
 
-:_+ Initialization Family (!fcinit, !fclnk)
-
-
-
-::_
-:start-cheyenne
-
-echo. & echo * Start Cheyenne.
-
-call %0 lnk-cheyenne
-call m a
-
-exit/b
-
-
-
-::_
-:lnk-cheyenne
-echo. & echo * Initialize environment for %1. Aug-24-2026 3:43 PM
-set composable-batch-files=C:\Users\Owner\Dropbox\IT\composable-batch-files
-set path=%my documents%\savannah\belfry;%path%
-set path=%dropbox%\Software\Tools;%path%
-call %0 set-default-browser br
-call n repo
-call %0 set-default-text-editor me
-call set-default-secondary-dictionary.bat
-exit/b
-lu:
-Aug-24-2026
-Jul-31-2026
-
-
-
-::_
-:start-xps
-
-echo. & echo * Start XPS.
-
-call %0 lnk-xps
-call m a
-
-exit/b
-
-
-
-::_
-:init-xps
-:lnk-xps
-echo. & echo * Initialize environment for %1.
-set path=%my documents%\savannah\belfry;%path%
-call %0 set-default-browser br
-call n repo
-call %0 set-default-text-editor me
-call set-default-secondary-dictionary.bat
-exit/b
-
-lu:
-Aug-24-2026
-fcd:
-Nov-9-2023
-
-
-
-::_
-:set-default-browser
-:sdb
-
-echo. & echo * Set default browser.
-
-if "%~2" == "" call an edge
-if not "%~2" == "" call an %2
-
-set cbf-default-browser=%cbf-app%
-
-exit/b
-
-lu:
-Nov-9-2023
-Aug-8-2018
-
-
-
-::_
-:sdte
-:set-default-text-editor
-
-echo. & echo * Set default text editor.
-
-if "%~2" == "" call n no
-if not "%~2" == "" call n %2
-
-set cbf-default-text-editor=%cbf-app%
-
-exit/b
-
-
-
-::_
-:lnk_right
-
-title=Right Justified CBF
-
-call %0 big
-
-call t a
-
-cls
-
-exit/b
-
-
-
-::_
-:lnk_chef
-
-title=Chef
-
-set homedrive=c:
-
-set homepath=\Users\[put--name-of-user-of-interest-here]
-
-call %0 big
-
-call t a
-
-cls
-
-exit/b
-
-
-
-::_
-:lnk_linux
-
-title=Linux
-
-call %0 big
-
-call t a
-
-cls
-
-exit/b
-
-
-
-::_
-:initialize_environment_router
-
-echo. & echo * Initialize environment router.
-
-echo %computername% | find /i "lipt">nul
-
-if %errorlevel% == 0 (
-   echo.
-   echo * Computer name contains "lipt".
-   call %0 initialize_big_environment
-   exit/b
-)
-
-call %0 initialize_environment
-
-exit/b
-
-lu:
-Feb-1-2019
-
-
-
-::_
-:set_white_list_settings_1
-
-if /i "%computername%" == "asus" goto set_white_list_settings_2
-if /i "%computername%" == "buzz" goto set_white_list_settings_2
-if /i "%computername%" == "xps" goto set_white_list_settings_2
-
-exit/b
-
-
-
-::_
-:set_white_list_settings_2
-
-set share-zone=%dropbox%\it\share-zone
-set path=%dropbox%\savannah\belfry;%path%
-
-exit/b
-
-
-
-::_
-:initialize-default-text-editor
-
-echo. & echo * Initialize default text editor.
-
-if /i "%computername%" == "asus" call m set-default-text-editor no
-if /i "%computername%" == "sp7" call m set-default-text-editor no
-if /i "%computername%" == "xps" call m set-default-text-editor me
-if "%cbf-default-text-editor%" == "" call m set-default-text-editor no
-
-exit/b
-
-lu:
-Nov-2-2018
-
-
-
-::_
-:big
-:ibe
-:ige
-:initialize_big_environment
-
-echo. & echo * Initialize ATOI environment.
-
-call %0 initialize_environment
-
-call %0 set_big_path
-
-call %0 set_default_browser kr
-
-call %0 set-default-text-editor sm
-
-set aa=c:\aa
-set cbf-repo=C:\Users\[put--name-of-user-of-interest-here]\j
-set composable-batch-files=C:\Users\[put--name-of-user-of-interest-here]\j\Composable-Batch-Files
-set JAVA_TOOL_OPTIONS=
-set KITCHEN_YAML=.kitchen-aws.yml
-set machinename=atoi
-
-call ni full_pem
-set SSH_KEY_PATH=%cbf-full-pem%
-
-cls
-
-exit/b
-
-lu:
-Dec-4-2018
-
-
-
-::_
-:lnk-xam
-
-echo. & echo * Initialize CBF environment on XAM.
-
-title=CBF
-
-call %0 initialize_environment
-
-call t a
-
-cls
-
-exit/b
-
-
-
-::_
-:lnk_cbf
-
-echo. & echo * Initialize CBF environment.
-
-title=CBF
-
-call %0 big
-
-call t a
-
-cls
-
-exit/b
-
-
-
-::_
-:lnk-code
-
-echo. & echo * Initialize VS Code environment.
-
-title=VS Code
-
-call %0 big
-
-call t a
-
-cls
-
-code
-
-exit/b
-
-
-
 :_
 :lu
 :ulul
@@ -4891,6 +4596,298 @@ exit
 
 lu:
 Mar-18-2019
+
+
+
+:_+ Initialization Family (!fcinit, !fclnk)
+
+
+
+::_
+:start-cheyenne
+echo. & echo * Start Cheyenne.
+call %0 lnk-cheyenne
+call m a
+exit/b
+
+
+
+::_
+:lnk-cheyenne
+echo. & echo * Initialize environment for %1. Aug-24-2026 3:43 PM
+set composable-batch-files=C:\Users\Owner\Dropbox\IT\composable-batch-files
+set path=%my documents%\savannah\belfry;%path%
+set path=%dropbox%\Software\Tools;%path%
+call %0 set-default-browser br
+call n repo
+call %0 set-default-text-editor me
+call set-default-secondary-dictionary.bat
+exit/b
+lu:
+Aug-24-2026
+Jul-31-2026
+
+
+
+::_
+:start-xps
+
+echo. & echo * Start XPS.
+
+call %0 lnk-xps
+call m a
+
+exit/b
+
+
+
+::_
+:init-xps
+:lnk-xps
+echo. & echo * Initialize environment for %1.
+set path=%my documents%\savannah\belfry;%path%
+call %0 set-default-browser br
+call n repo
+call %0 set-default-text-editor me
+call set-default-secondary-dictionary.bat
+exit/b
+
+lu:
+Aug-24-2026
+fcd:
+Nov-9-2023
+
+
+
+::_
+:set-default-browser
+:sdb
+
+echo. & echo * Set default browser.
+
+if "%~2" == "" call an edge
+if not "%~2" == "" call an %2
+
+set cbf-default-browser=%cbf-app%
+
+exit/b
+
+lu:
+Nov-9-2023
+Aug-8-2018
+
+
+
+::_
+:sdte
+:set-default-text-editor
+
+echo. & echo * Set default text editor.
+
+if "%~2" == "" call n no
+if not "%~2" == "" call n %2
+
+set cbf-default-text-editor=%cbf-app%
+
+exit/b
+
+
+
+::_
+:lnk_right
+
+title=Right Justified CBF
+
+call %0 big
+
+call t a
+
+cls
+
+exit/b
+
+
+
+::_
+:lnk_chef
+
+title=Chef
+
+set homedrive=c:
+
+set homepath=\Users\[put--name-of-user-of-interest-here]
+
+call %0 big
+
+call t a
+
+cls
+
+exit/b
+
+
+
+::_
+:lnk_linux
+
+title=Linux
+
+call %0 big
+
+call t a
+
+cls
+
+exit/b
+
+
+
+::_
+:initialize_environment_router
+
+echo. & echo * Initialize environment router.
+
+echo %computername% | find /i "lipt">nul
+
+if %errorlevel% == 0 (
+   echo.
+   echo * Computer name contains "lipt".
+   call %0 initialize_big_environment
+   exit/b
+)
+
+call %0 initialize_environment
+
+exit/b
+
+lu:
+Feb-1-2019
+
+
+
+::_
+:set_white_list_settings_1
+
+if /i "%computername%" == "asus" goto set_white_list_settings_2
+if /i "%computername%" == "buzz" goto set_white_list_settings_2
+if /i "%computername%" == "xps" goto set_white_list_settings_2
+
+exit/b
+
+
+
+::_
+:set_white_list_settings_2
+
+set share-zone=%dropbox%\it\share-zone
+set path=%dropbox%\savannah\belfry;%path%
+
+exit/b
+
+
+
+::_
+:initialize-default-text-editor
+
+echo. & echo * Initialize default text editor.
+
+if /i "%computername%" == "asus" call m set-default-text-editor no
+if /i "%computername%" == "sp7" call m set-default-text-editor no
+if /i "%computername%" == "xps" call m set-default-text-editor me
+if "%cbf-default-text-editor%" == "" call m set-default-text-editor no
+
+exit/b
+
+lu:
+Nov-2-2018
+
+
+
+::_
+:big
+:ibe
+:ige
+:initialize_big_environment
+
+echo. & echo * Initialize ATOI environment.
+
+call %0 initialize_environment
+
+call %0 set_big_path
+
+call %0 set_default_browser kr
+
+call %0 set-default-text-editor sm
+
+set aa=c:\aa
+set cbf-repo=C:\Users\[put--name-of-user-of-interest-here]\j
+set composable-batch-files=C:\Users\[put--name-of-user-of-interest-here]\j\Composable-Batch-Files
+set JAVA_TOOL_OPTIONS=
+set KITCHEN_YAML=.kitchen-aws.yml
+set machinename=atoi
+
+call ni full_pem
+set SSH_KEY_PATH=%cbf-full-pem%
+
+cls
+
+exit/b
+
+lu:
+Dec-4-2018
+
+
+
+::_
+:lnk-xam
+
+echo. & echo * Initialize CBF environment on XAM.
+
+title=CBF
+
+call %0 initialize_environment
+
+call t a
+
+cls
+
+exit/b
+
+
+
+::_
+:lnk_cbf
+
+echo. & echo * Initialize CBF environment.
+
+title=CBF
+
+call %0 big
+
+call t a
+
+cls
+
+exit/b
+
+
+
+::_
+:lnk-code
+
+echo. & echo * Initialize VS Code environment.
+
+title=VS Code
+
+call %0 big
+
+call t a
+
+cls
+
+code
+
+exit/b
 
 
 
