@@ -7325,15 +7325,6 @@ exit/b
 
 
 :_
-:osp
-echo. & echo * Open summerize photo.
-call pn pavi>nul
-set cbf-fn=%cbf-pt%\summerize configuration 20241016_153245.jpg
-exit/b
-
-
-
-:_
 :md
 :mydo
 echo. & echo * My documents.

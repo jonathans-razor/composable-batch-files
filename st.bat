@@ -4,6 +4,7 @@
 if "%~1" == "" gs st
 if "%~1" == "?" goto help
 if "%~1" == "/a" goto all
+if "%~2" == "q" goto question
 
 goto main
 
@@ -69,6 +70,20 @@ call an kr>nul
 set cbf-parameter=https://finance.yahoo.com/quote/%cbf-stock%
 
 call r
+
+exit/b
+
+
+
+set cbf-question=Which places other the Earth have the highest chance of having life?
+
+
+
+:_
+:question
+
+set cbf-question=Is '%1' a good investment?
+start "" "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" "https://www.google.com/search?q=%cbf-question%"
 
 exit/b
 
