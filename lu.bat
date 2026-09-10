@@ -5,6 +5,7 @@ title CBF: %0
 
 if "%~1" == "" goto read
 if "%~1" == "?" goto help
+if "%~1" == "l" goto read-log
 
 goto write
 
@@ -54,6 +55,17 @@ exit/b
 
 
 :_
+:read-log
+cls
+echo. & echo * Read last updated log.
+call t c>nul
+echo.
+type last-updated-log.txt
+exit/b
+
+
+
+:_
 :write
 cls
 echo. & echo * Write last updated.
@@ -61,6 +73,10 @@ call t c>nul
 call dt>nul
 type %cbf-fn%>last-updated.txt
 echo From Computer: %computername%>>last-updated.txt
+
+echo.>>last-updated-log.txt
+type %cbf-fn%>>last-updated-log.txt
+echo From Computer: %computername%>>last-updated-log.txt
 echo.
 type last-updated.txt
 exit/b
