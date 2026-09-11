@@ -46,7 +46,7 @@ Apr-11-2024-1-58-PM
 :_
 :read
 cls
-echo. & echo * Read last updated.
+echo. & echo * Show last updated.
 call t c>nul
 echo.
 type last-updated.txt
@@ -57,7 +57,7 @@ exit/b
 :_
 :read-log
 cls
-echo. & echo * Read last updated log.
+echo. & echo * Show last updated log.
 call t c>nul
 echo.
 type last-updated-log.txt
@@ -68,7 +68,7 @@ exit/b
 :_
 :write
 cls
-echo. & echo * Write last updated.
+echo. & echo * Update last updated.
 call t c>nul
 call dt>nul
 type %cbf-fn%>last-updated.txt

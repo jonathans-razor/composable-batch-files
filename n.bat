@@ -6558,7 +6558,7 @@ Feb-3-2020
 
 
 :_
-:demo
+:demof
 
 echo. & echo * Demo file.
 

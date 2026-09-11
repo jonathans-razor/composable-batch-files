@@ -4262,7 +4262,7 @@ May-26-2020
 
 ::_
 :do
-:demo
+:demof
 :pres
 
 echo. & echo * Open presentation files.

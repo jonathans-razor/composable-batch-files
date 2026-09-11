@@ -250,6 +250,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       ty  Modernized type command. Use Microsoft Edge to view a file chosen based on a decision algorithm.
      tyf  Reopen or see search results that have been piped to a file.
      tyi  Use type command to view calculus file in Internet Explorer.
+       u  Bing shortcut.
      ujt  Update java timestamp.
       un  Communicates that the intent is only to change the URL for a passed in alias.
      unz  Unzip.
@@ -264,7 +265,6 @@ example-  Prefix for files written by other authors for learning and comparison 
       wp  Use Wordpad and sfn to edit a file.
      wpd  Use Wordpad to edit DCV files.
        w  Unassigned.
-       x  Bing shortcut.
      xac  Execute an application alias with a filename in the current folder.
      xaf  Execute an application alias with a filename alias.
      xml  Edit an XML DCV file in VSC.
