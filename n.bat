@@ -1718,12 +1718,10 @@ May-06-2022
 
 ::_
 :shot
+:snt
 :snto
-
 echo. & echo * Snipping tool.
-
 set cbf-app=%windir%\system32\SnippingTool.exe
-
 exit/b
 
 lu:
@@ -4857,15 +4855,10 @@ Jan-26-2024
 :bog
 :bogu
 :bogus
-:et
-
 echo. & echo * Bogus CBF for error testing.
-
 call n a
 set cbf-fn=%cbf-pt%\j 5.txt
-
 exit/b
-
 lu:
 Mar-31-2022
 
