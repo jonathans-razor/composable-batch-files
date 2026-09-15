@@ -2665,20 +2665,6 @@ Sep-22-2023
 
 
 :_
-:brow
-
-echo. & echo * Browsers.
-
-set cbf-gs=https://docs.google.com/spreadsheets/d/10tSDycsuYNkc2ACvw9YeclwAwKIiHNpX7YN7PzpcV9Y/edit#gid=2066608253
-
-exit/b
-
-lu:
-Sep-22-2023
-
-
-
-:_
 :bl
 :blr
 
@@ -8492,6 +8478,15 @@ set cbf-gs=https://docs.google.com/spreadsheets/d/1uY10DsyG-0ToMWt1L_tHuKFuHs2Rf
 set cbf-question=Which places other the Earth have the highest chance of having life?
 exit/b
 
+
+
+
+:_
+:mffl
+:llog
+echo. & echo * Meridian Football Field Lights Log.
+set cbf-gs=https://docs.google.com/spreadsheets/d/16qaNTgeibe2bPNNIzr9OUd-cjoRLK7NRj8E5bjj3U2I/edit?gid=0#gid=0
+exit/b
 
 
 
