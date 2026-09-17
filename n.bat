@@ -8383,10 +8383,8 @@ exit/b
 echo. & echo * Gemini.
 set cbf-url=https://bard.google.com
 exit/b
-
 lu:
 Sep-7-2023
-
 Best code generator.
 
 
