@@ -4018,16 +4018,6 @@ exit/b
 
 
 
-:_
-:gisu
-echo. & echo * Google image search - upload an image.
-set cbf-url=https://images.google.com/imghp?hl=en^^^&gws_rd=ssl
-exit/b
-
-(!-gis)
-
-
-
 :_ IP Address family (!fcip)
 
 
