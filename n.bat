@@ -2693,139 +2693,6 @@ Sep-25-2023
 
 
 
-:_+ AI Family
-
-
-
-::_
-:bn
-:bing
-:new-bing
-
-echo. & echo * New Bing.
-
-call an ed>nul
-set cbf-url=https://www.bing.com/search?toncp=0^^^&FORM=hpcodx^^^&q=Bing+AI^^^&showconv=1
-
-exit/b
-
-rem call n c>nul
-rem set cbf-lnk=%cbf-pt%\bing.url
-
-https://www.bing.com/search?toncp=0&FORM=hpcodx&q=Bing+AI&showconv=1
-https://www.bing.com/search?q=Bing+AI
-https://www.bing.com/search?q=Bing+AI&showconv=1
-
-lu:
-Jan-10-2024
-Oct-9-2023
-
-Uses up-to-date data.
-
-
-
-::_
-:t3c
-echo. & echo * T3 Chat.
-set cbf-url=https://t3.chat/chat/welcome
-exit/b
-
-lu:
-Apr-6-2025
-
-
-
-::_
-:bard
-
-echo. & echo * Bard.
-
-set cbf-url=https://bard.google.com/
-
-exit/b
-
-lu:
-Sep-7-2023
-
-Best code generator.
-
-
-
-::_
-:chat
-:gpt
-
-echo. & echo * ChatGPT.
-
-call an edge>nul
-set cbf-url=https://chat.openai.com
-set cbf-url2=https://chat.openai.com/auth/login
-
-exit/b
-
-lu:
-Sep-7-2023
-
-Data is out of date.
-
-
-
-::_
-:clai
-
-echo. & echo * Claude.ai.
-
-set cbf-url=https://claude.ai/chats
-
-exit/b
-
-lu:
-Sep-7-2023
-
-
-
-::_
-:perp
-
-echo. & echo * Perplexity.ai.
-
-set cbf-url=https://www.perplexity.ai
-
-exit/b
-
-lu:
-Sep-20-2023
-
-
-
-::_
-:jasp
-
-echo. & echo * Jasper.ai.
-
-set cbf-url=https://www.jasper.ai
-
-exit/b
-
-lu:
-Sep-20-2023
-
-
-
-::_
-:ubdu
-
-echo. & echo * Uberduck.ai. Make Music WithAI Vocals.
-
-set cbf-url=https://www.uberduck.ai
-
-exit/b
-
-lu:
-Sep-20-2023
-
-
-
 :_
 :iw
 
@@ -8477,6 +8344,112 @@ exit/b
 echo. & echo * Meridian Football Field Lights Log.
 set cbf-gs=https://docs.google.com/spreadsheets/d/16qaNTgeibe2bPNNIzr9OUd-cjoRLK7NRj8E5bjj3U2I/edit?gid=0#gid=0
 exit/b
+
+
+
+:_+ AI Question Links (!-lkai, !qlk, !lkq, !fyq) (skw AI Search Options)
+
+
+
+::_
+:clau
+echo. & echo * Claude.
+set cbf-url=https://claude.ai/new
+exit/b
+
+lu:
+Sep-7-2023
+
+
+
+::_
+:chat
+echo. & echo * ChatGpt.
+set cbf-url=https://chatgpt.com
+exit/b
+
+
+
+::_
+:perp
+echo. & echo * Perplexity.
+set cbf-url=https://www.perplexity.ai
+exit/b
+
+
+
+::_
+:gemi
+echo. & echo * Gemini.
+set cbf-url=https://bard.google.com
+exit/b
+
+lu:
+Sep-7-2023
+
+Best code generator.
+
+
+
+::_
+:bn
+:bing
+:copi
+:new-bing
+
+echo. & echo * Copilot, a.k.a. New Bing.
+
+call an ed>nul
+set cbf-url=https://www.bing.com/search?toncp=0^^^&FORM=hpcodx^^^&q=Bing+AI^^^&showconv=1
+
+exit/b
+
+rem call n c>nul
+rem set cbf-lnk=%cbf-pt%\bing.url
+
+https://www.bing.com/search?toncp=0&FORM=hpcodx&q=Bing+AI&showconv=1
+https://www.bing.com/search?q=Bing+AI
+https://www.bing.com/search?q=Bing+AI&showconv=1
+
+lu:
+Jan-10-2024
+Oct-9-2023
+
+Uses up-to-date data.
+
+
+
+::_
+:t3c
+echo. & echo * T3 Chat.
+set cbf-url=https://t3.chat/chat/welcome
+exit/b
+
+lu:
+Apr-6-2025
+
+
+
+::_
+:grok
+echo. & echo * Grok.
+set cbf-url=https://www.grok.com
+exit/b
+
+
+
+:_ AI Family (!-lkai, !fyai)
+
+
+
+::_
+:ubdu
+echo. & echo * Uberduck.ai. AI Vocals and Text To Speech. Make Music WithAI Vocals.
+set cbf-url=https://www.uberduck.ai
+exit/b
+
+lu:
+Sep-20-2023
 
 
 
