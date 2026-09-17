@@ -37,7 +37,7 @@ echo            ff  Use filename alias 1 to "save as" filename alias 2.
 echo             j  Copy csr.bat to new j.template batch file.
 echo            fp  Copy an aliased file to a aliased folder.
 echo         mecfg  The Multi-Edit config files seem to be corrupt, so copy mecfg files from dropbox to local.
-echo            pc  Copy folder aliased files to current folder.
+echo            pc  Copy folder aliased files to current folder. (Used successfully Sep-17-2026).
 echo            pp  Copy all files from alias path param 1 to alias path param 2.
 echo            tm  Copy tm.bat to a new batch file.
 echo           teb  Copy te to a new bash file.

@@ -2671,6 +2671,8 @@ Sep-22-2023
 echo. & echo * Better life registry.
 
 set cbf-gs=https://docs.google.com/spreadsheets/d/10q6Lde4zafkKnqeSZq8uhgMI4c82DynKiL3dKAcpqGY/edit#gid=101239705
+           https://docs.google.com/spreadsheets/d/10q6Lde4zafkKnqeSZq8uhgMI4c82DynKiL3dKAcpqGY/edit?gid=1458451568#gid=1458451568
+           https://docs.google.com/spreadsheets/d/1hjqdTeh34Fo715o3-bx8OeZlj-d-Rw5JSKysrp_pbzw/edit?gid=640439828#gid=640439828
 
 exit/b
 
@@ -4206,6 +4208,7 @@ Jan-26-2024
 Jul-18-2023
 
 skw:
+cbf demo
 ones-series-jj
 
 
@@ -8448,6 +8451,16 @@ exit/b
 
 lu:
 Sep-20-2023
+
+
+
+:_
+:gs
+:gsbu
+echo. & echo * Google Sheets backup folder.
+call n bu>nul
+set cbf-pt=%cbf-pt%\Google Sheets
+exit/b
 
 
 
