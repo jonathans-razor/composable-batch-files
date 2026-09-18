@@ -2667,15 +2667,9 @@ Sep-22-2023
 :_
 :bl
 :blr
-
 echo. & echo * Better life registry.
-
 set cbf-gs=https://docs.google.com/spreadsheets/d/10q6Lde4zafkKnqeSZq8uhgMI4c82DynKiL3dKAcpqGY/edit#gid=101239705
-           https://docs.google.com/spreadsheets/d/10q6Lde4zafkKnqeSZq8uhgMI4c82DynKiL3dKAcpqGY/edit?gid=1458451568#gid=1458451568
-           https://docs.google.com/spreadsheets/d/1hjqdTeh34Fo715o3-bx8OeZlj-d-Rw5JSKysrp_pbzw/edit?gid=640439828#gid=640439828
-
 exit/b
-
 lu:
 Sep-25-2023
 
@@ -8062,15 +8056,6 @@ exit/b
 
 
 
-:_
-:arg
-:aarg
-echo. & echo * Aaargh.
-set cbf-url=https://www.meetup.com/AARGGH/
-exit/b
-
-
-
 :_+ Family Gmail (!fcgma)
 
 
@@ -8460,6 +8445,29 @@ Sep-20-2023
 echo. & echo * Google Sheets backup folder.
 call n bu>nul
 set cbf-pt=%cbf-pt%\Google Sheets
+exit/b
+
+
+
+:_
+:arg
+:aarg
+echo. & echo * Aaargh.
+call n pict>nul
+set cbf-pt=%cbf-pt%\AI Generated
+set cbf-url=https://www.meetup.com/AARGGH/
+exit/b
+
+
+
+:_+ Image Generation Links (!-lkig, !lkig)
+
+
+
+::_
+:igge
+echo. & echo * Gemini Image generation.
+set cbf-url=https://gemini.google.com/app
 exit/b
 
 
