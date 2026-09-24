@@ -33,14 +33,14 @@ echo   %0 arte gh2 kr
 echo. & echo   This is a Windows Explorer location!
 echo   %0 aws pt2 wiex
 
-echo. & echo   %0 owok yt ffx
-echo   %0 hbit bi edge
-echo   %0 gh jj edge
+echo. & echo   %0 owok yt fx
+echo   %0 hbit bi ed
+echo   %0 gh jj ed
 echo   %0 wl app vsc
 echo   %0 nd fz vc
 echo   %0 vu gha
 echo   %0 vu gha br
-echo   %0 hq yt11 ffx
+echo   %0 hq yt11 fx
 
 exit/b
 

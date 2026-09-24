@@ -13,7 +13,7 @@ goto main
 :help
 cls
 
-echo. & echo * A wrapper around fx.bat. Execute the namesake DCV for the passed in alias.
+echo. & echo * A wrapper around xxd.bat. Execute the namesake DCV for the passed in alias.
 
 echo. & echo   Usage: %0 [space separated parameter(s)]
 
@@ -69,24 +69,6 @@ exit/b
 
 
 :_
-:docs
-
-call xxd ph docs>nul
-
-exit/b
-
-
-
-:_
-:gd
-
-call xxd rt %1 br>nul
-
-exit/b
-
-
-
-:_
 :gb
 
 call sf cfgh
@@ -96,32 +78,32 @@ exit/b
 
 
 :_
-:gh
+:gdocs
+call xxd rt %1 nt>nul
+exit/b
 
+
+
+:_
+:gh
 rem call gh jj>nul
 call xxd rt %1 nt
-
 exit/b
 
 
 
 :_
 :gs
-
 call xxd rt %1 nt
-
 exit/b
 
 
 
 :_
 :je
-
 echo. & echo * Jenkins root.
-
 echo.
 call xxd jero %1 kr
-
 exit/b
 
 

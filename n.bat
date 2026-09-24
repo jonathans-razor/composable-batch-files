@@ -7082,34 +7082,6 @@ exit/b
 
 
 
-:_+ Google Docs
-
-
-
-::_
-:godo
-
-echo. & echo * Google Docs.
-
-set cbf-gd=http://docs.google.com
-
-exit/b
-
-
-
-::_
-:sc
-  
-echo. & echo * Google Docs spell checker.
-
-call an br
-
-set cbf-gd=https://docs.google.com/document/d/1Nn2yT-QO6Pefuk5g2qDZfVox_VF0dHDiLGNjaimMWOE/edit
-
-exit/b
-
-
-
 :_
 :elch
 echo. & echo * Electric Chargers.
@@ -8449,18 +8421,27 @@ exit/b
 
 
 
-:_
-:arg
-:aarg
-echo. & echo * Aaargh.
-call n pict>nul
-set cbf-pt=%cbf-pt%\AI Generated
-set cbf-url=https://www.meetup.com/AARGGH/
+:_+ Google Docs
+
+
+
+::_
+:gdocs
+echo. & echo * Google Docs.
+set cbf-gdocs=http://docs.google.com
 exit/b
 
 
 
-:_+ Image Generation Links (!-lkig, !lkig)
+::_
+:aust
+echo. & echo * Austrian trip.
+set cbf-gdocs=https://docs.google.com/document/d/1Nn2yT-QO6Pefuk5g2qDZfVox_VF0dHDiLGNjaimMWOE/edit?tab=t.0
+exit/b
+
+
+
+:_+ Image Generation Links (!ig, !-ig)
 
 
 
@@ -8468,6 +8449,18 @@ exit/b
 :igge
 echo. & echo * Gemini Image generation.
 set cbf-url=https://gemini.google.com/app
+exit/b
+
+
+
+::_
+:arg
+:aarg
+:ig
+echo. & echo * Aaargh.
+call n pict>nul
+set cbf-pt=%cbf-pt%\AI Generated
+set cbf-url=https://www.meetup.com/AARGGH/
 exit/b
 
 

@@ -293,6 +293,12 @@ if not "%cbf-pdf%" == "" (
 )
  
 :
+if not "%cbf-gdocs%" == "" (
+  call xxd %1 gdocs nt>nul
+  exit/b
+)
+
+:
 if not "%cbf-pt%" == "" (
   explorer %cbf-pt% 
   exit/b

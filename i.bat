@@ -267,8 +267,8 @@ set cbf-go=
 set cbf-go2=
 
 :
-rem Graphic
-set cbf-graphic=
+rem Google Docs
+set cbf-gdocs=
 
 :
 rem Google Sheets
@@ -278,6 +278,10 @@ set cbf-gs=
 :
 rem Google Slides
 set cbf-gsl=
+
+:
+rem Graphic
+set cbf-graphic=
 
 :
 rem Hello
