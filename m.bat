@@ -4289,7 +4289,7 @@ Dec-15-2023
 :aff
 :aff-xps
 
-echo. & echo * Open XPS affinity files.
+echo. & echo * Open affinity files.
 
 set cbf-fn-list="%my documents%\savannah\reach out\J.asc"
 set cbf-fn-list=%cbf-fn-list% "%my documents%\savannah\reach out\CH.asc"

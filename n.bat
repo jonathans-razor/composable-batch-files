@@ -8465,4 +8465,13 @@ exit/b
 
 
 
+:_
+:nf
+:nfl
+echo. & echo * NFL Weekly Tracker.
+set cbf-gs=https://docs.google.com/spreadsheets/d/15dn5jM8XM1Si11FBnLYYaskKBfyVcvBw1QTO57_yRU8/edit?gid=0#gid=0
+exit/b
+
+
+
 :_ (!ef, !efn)
