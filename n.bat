@@ -8458,7 +8458,7 @@ exit/b
 :arg
 :aarg
 :ig
-echo. & echo * Aaargh.
+echo. & echo * Aaarggh.
 call n pict>nul
 set cbf-pt=%cbf-pt%\AI Generated
 set cbf-url=https://www.meetup.com/AARGGH/

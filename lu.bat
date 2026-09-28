@@ -6,6 +6,7 @@ title CBF: %0
 if "%~1" == "" goto read
 if "%~1" == "?" goto help
 if "%~1" == "l" goto read-log
+if "%~1" == "log" goto read-log
 
 goto write
 
