@@ -8446,6 +8446,7 @@ exit/b
 
 
 ::_
+:gem
 :igge
 echo. & echo * Gemini Image generation.
 set cbf-url=https://gemini.google.com/app
