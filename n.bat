@@ -2669,6 +2669,7 @@ Sep-22-2023
 :blr
 echo. & echo * Better life registry.
 set cbf-gs=https://docs.google.com/spreadsheets/d/10q6Lde4zafkKnqeSZq8uhgMI4c82DynKiL3dKAcpqGY/edit#gid=101239705
+set cbf-url=
 exit/b
 lu:
 Sep-25-2023
