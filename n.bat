@@ -8325,8 +8325,31 @@ Sep-7-2023
 
 ::_
 :chat
+:gpt
 echo. & echo * ChatGpt.
 set cbf-url=https://chatgpt.com
+exit/b
+
+
+
+::_
+:gem
+:gemi
+echo. & echo * Gemini.
+set cbf-url=https://bard.google.com
+exit/b
+lu:
+Sep-29-2026
+Sep-7-2023
+Best code generator. Does image generation as well. 
+Sanctioned Duplicate CBF.
+
+
+
+::_
+:grok
+echo. & echo * Grok.
+set cbf-url=https://www.grok.com
 exit/b
 
 
@@ -8340,13 +8363,13 @@ exit/b
 
 
 ::_
-:gemi
-echo. & echo * Gemini.
-set cbf-url=https://bard.google.com
+:t3c
+echo. & echo * T3 Chat.
+set cbf-url=https://t3.chat/chat/welcome
 exit/b
+
 lu:
-Sep-7-2023
-Best code generator.
+Apr-6-2025
 
 
 
@@ -8375,25 +8398,6 @@ Jan-10-2024
 Oct-9-2023
 
 Uses up-to-date data.
-
-
-
-::_
-:t3c
-echo. & echo * T3 Chat.
-set cbf-url=https://t3.chat/chat/welcome
-exit/b
-
-lu:
-Apr-6-2025
-
-
-
-::_
-:grok
-echo. & echo * Grok.
-set cbf-url=https://www.grok.com
-exit/b
 
 
 
