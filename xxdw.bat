@@ -70,15 +70,13 @@ exit/b
 
 :_
 :gb
-
 call sf cfgh
-
 exit/b
 
 
 
 :_
-:gdocs
+:gd
 call xxd rt %1 nt>nul
 exit/b
 

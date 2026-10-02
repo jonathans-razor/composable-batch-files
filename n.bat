@@ -2323,8 +2323,8 @@ Oct-31-2023
 
 echo. & echo * Root.
 
-set cbf-gh=https://github.com/jonathans-razor
 set cbf-gd=https://docs.google.com/document/u/0/
+set cbf-gh=https://github.com/jonathans-razor
 set cbf-gs=https://docs.google.com/spreadsheets/u/1/
 set cbf-yt=https://www.youtube.com
 
@@ -3861,6 +3861,7 @@ exit/b
 echo. & echo * Norton browser.
 set cbf-app=%localappdata%\Norton\Browser\Application\NortonBrowser.exe
 if /i %computername%==cheyenne set cbf-app=C:\Program Files\Norton\Browser\Application\NortonBrowser.exe
+set cbf-gd=http://docs.google.com
 set cbf-gs=https://docs.google.com/spreadsheets/u/1/
 exit/b
 lu:
@@ -8431,9 +8432,17 @@ exit/b
 
 
 ::_
-:gdocs
+:gd
 echo. & echo * Google Docs.
-set cbf-gdocs=http://docs.google.com
+set cbf-gd=http://docs.google.com
+exit/b
+
+
+
+::_
+:nvdad
+echo. & echo * Google Docs.
+set cbf-gd=https://docs.google.com/document/d/1SKgDd46EwgqMZFnlNzoW9Un9yeMXoHLpfTKZpMiFs44/edit?tab=t.0
 exit/b
 
 
@@ -8441,7 +8450,7 @@ exit/b
 ::_
 :aust
 echo. & echo * Austrian trip.
-set cbf-gdocs=https://docs.google.com/document/d/1Nn2yT-QO6Pefuk5g2qDZfVox_VF0dHDiLGNjaimMWOE/edit?tab=t.0
+set cbf-gd=https://docs.google.com/document/d/1Nn2yT-QO6Pefuk5g2qDZfVox_VF0dHDiLGNjaimMWOE/edit?tab=t.0
 exit/b
 
 

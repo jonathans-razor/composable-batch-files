@@ -267,10 +267,6 @@ set cbf-go=
 set cbf-go2=
 
 :
-rem Google Docs
-set cbf-gdocs=
-
-:
 rem Google Sheets
 rem Associated batch file: gs.bat
 set cbf-gs=
