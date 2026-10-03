@@ -7893,14 +7893,6 @@ exit/b
 
 
 :_
-:gsp
-echo. & echo * Google sphere.
-set cbf-gs=https://docs.google.com/spreadsheets/d/1J6C8UcSqdkQSOgZezH0Q79AG5sYWjLVjXEQCK-51MW8/edit?gid=0#gid=0
-exit/b
-
-
-
-:_
 :csr
 :fifr
 echo. & echo * CMAC Search Registry. (!-fifr)
@@ -7999,34 +7991,6 @@ exit/b
 
 lu:
 Feb-13-2019
-
-
-
-:_+ Google Family (!fycgg)
-
-
-
-::_
-:ghp
-echo. & echo * Google home page.
-set cbf-url=http://www.google.com
-exit/b
-
-
-
-::_
-:gas
-echo. & echo * Google advanced search.
-set cbf-url=http://www.google.com/advanced_search?hl=en
-exit/b
-
-
-
-::_
-:gai
-echo. & echo * Google advanced image search.
-set cbf-url=http://images.google.com/advanced_image_search
-exit/b
 
 
 
@@ -8191,7 +8155,6 @@ Aug-31-2026
 
 
 ::_
-:gma
 :gmai
 :gmail
 :j3
@@ -8485,6 +8448,50 @@ exit/b
 :nfl
 echo. & echo * NFL Weekly Tracker.
 set cbf-gs=https://docs.google.com/spreadsheets/d/15dn5jM8XM1Si11FBnLYYaskKBfyVcvBw1QTO57_yRU8/edit?gid=0#gid=0
+exit/b
+
+
+
+:_
+:gsp
+echo. & echo * Google sphere.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1J6C8UcSqdkQSOgZezH0Q79AG5sYWjLVjXEQCK-51MW8/edit?gid=0#gid=0
+exit/b
+
+
+
+:_+ Google Family (!fycg)
+
+
+
+::_
+:ghp
+echo. & echo * Google home page.
+set cbf-url=http://www.google.com
+exit/b
+
+
+
+::_
+:gas
+echo. & echo * Google advanced search.
+set cbf-url=http://www.google.com/advanced_search?hl=en
+exit/b
+
+
+
+::_
+:gai
+echo. & echo * Google advanced image search.
+set cbf-url=http://images.google.com/advanced_image_search
+exit/b
+
+
+
+::_
+:gma
+echo. & echo * Google my activity.
+set cbf-url=https://myactivity.google.com/myactivity?pli=1
 exit/b
 
 
