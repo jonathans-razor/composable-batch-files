@@ -1672,6 +1672,17 @@ Sep-2-2026
 
 
 ::_
+:buql
+echo. & echo * QL backups.
+set cbf-pt=%dropbox%\backups\ql
+exit/b
+
+lu:
+Oct-3-2026
+
+
+
+::_
 :bu
 
 echo. & echo * Backups.
@@ -8452,10 +8463,22 @@ exit/b
 
 
 
-:_
+:_+ Spheres
+
+
+
+::_
 :gsp
 echo. & echo * Google sphere.
 set cbf-gs=https://docs.google.com/spreadsheets/d/1J6C8UcSqdkQSOgZezH0Q79AG5sYWjLVjXEQCK-51MW8/edit?gid=0#gid=0
+exit/b
+
+
+
+::_
+:stsp
+echo. & echo * Stock sphere.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1AywMyahphlz55qvnEWut7Wi4Hs8XrPt3cShNM4YHV3Q/edit?gid=0#gid=0
 exit/b
 
 
@@ -8492,6 +8515,14 @@ exit/b
 :gma
 echo. & echo * Google my activity.
 set cbf-url=https://myactivity.google.com/myactivity?pli=1
+exit/b
+
+
+
+:_ (!-homi)
+:homi
+echo. & echo * Genus homo.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1454Ff1uzDSSPSOkeAAM5X19nZybCq0nINWu3EZ0PPhc/edit?gid=0#gid=0
 exit/b
 
 
