@@ -1,8 +1,7 @@
 :_
 @echo off
-echo. & echo * 
+echo. & echo * Open favorite podcasts.
 if "%~1" == "?" goto help
-goto %1
 goto main
 goto preprocess
 
@@ -38,6 +37,13 @@ exit/b
 
 :_
 :main
+call j tuca
+call j hoyt
+call j subs
+call j joro
+call j bapr
+rem qq
+call j fiio
 
 exit/b
 

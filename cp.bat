@@ -972,125 +972,6 @@ exit/b
 
 
 
-:_ + TE Family (!fcte)
-
-
-
-::_
-:j
-echo. & echo * Create a new j template batch file.
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-call t cbf
-echo.
-copy /-y csr.bat %2.bat
-exit/b
-
-:help
-
-cls
-echo. & echo * Parameter Descriptions:
-echo   Parameter 2: Targeted batch file, without extension, to copy the template to.
-
-exit/b
-
-lu:
-Jul-15-2026
-
-
-
-::_
-:te
-
-echo. & echo * Turn the template file into a new batch file.
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-
-call t cbf
-
-echo.
-copy tm.bat %2.bat
-
-call e %2.bat
-
-exit/b
-
-:help
-
-cls
-echo. & echo * Parameter Descriptions:
-echo   Parameter 2: Targeted batch file, without extension, to copy the template to.
-
-exit/b
-
-lu:
-Feb-18-2022
-
-
-
-::_
-:sp
-
-echo. & echo * Turn the template file into a new batch file.
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-
-call t cbf
-
-echo.
-copy sparse.bat %2.bat
-
-call e %2.bat
-
-exit/b
-
-:help
-
-cls
-echo. & echo * Parameter Descriptions:
-echo   Parameter 2: Targeted batch file, without extension, to copy the template to.
-
-exit/b
-
-lu:
-Jan-12-2024
-
-
-
-::_
-:tef
-
-echo. & echo * Turn the FF template file into a new bash file.
-
-if "%~2" == "?" goto help
-if "%~2" == "" goto help
-
-call t f
-
-echo.
-copy te.sh %~2.sh
-
-@echo on
-call e %~2.sh
-
-exit/b
-
-
-:help
-
-echo. & echo * Parameter Description(s):
-echo   Parameter 2: Targeted bash file, without extension, to copy the template to.
-
-exit/b
-
-lu:
-Sep-30-2023
-Jul-6-2022
-
-
-
 :_
 :js
 :py
@@ -1513,6 +1394,116 @@ exit/b
 
 lu:
 Dec-27-2018
+
+
+
+:_ + TE Family (!fcte)
+
+
+
+::_
+:j
+echo. & echo * Create a new j template batch file.
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+call t cbf
+echo.
+copy /-y csr.bat %2.bat
+exit/b
+
+:help
+cls
+echo. & echo * Parameter Descriptions:
+echo   Parameter 2: Targeted batch file, without extension, to copy the template to.
+exit/b
+
+lu:
+Jul-15-2026
+
+
+
+::_
+:te
+echo. & echo * Turn the template file into a new batch file.
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+call t cbf
+echo.
+copy /-y tm.bat %2.bat
+call e %2.bat
+exit/b
+
+:help
+cls
+echo. & echo * Parameter Descriptions:
+echo   Parameter 2: Targeted batch file, without extension, to copy the template to.
+exit/b
+
+lu:
+Oct-5-2026
+Feb-18-2022
+
+
+
+::_
+:sp
+
+echo. & echo * Turn the template file into a new batch file.
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+call t cbf
+
+echo.
+copy sparse.bat %2.bat
+
+call e %2.bat
+
+exit/b
+
+:help
+
+cls
+echo. & echo * Parameter Descriptions:
+echo   Parameter 2: Targeted batch file, without extension, to copy the template to.
+
+exit/b
+
+lu:
+Jan-12-2024
+
+
+
+::_
+:tef
+
+echo. & echo * Turn the FF template file into a new bash file.
+
+if "%~2" == "?" goto help
+if "%~2" == "" goto help
+
+call t f
+
+echo.
+copy te.sh %~2.sh
+
+@echo on
+call e %~2.sh
+
+exit/b
+
+
+:help
+
+echo. & echo * Parameter Description(s):
+echo   Parameter 2: Targeted bash file, without extension, to copy the template to.
+
+exit/b
+
+lu:
+Sep-30-2023
+Jul-6-2022
 
 
 

@@ -4652,9 +4652,21 @@ call %0 set-default-browser br
 call n repo
 call %0 set-default-text-editor me
 call set-default-secondary-dictionary.bat
+call j brei
+call j fox 
+call j fano
+call j fci 
+call j reut 
+call j scne 
+call j cnn
+call j wash 
+call j nyt 
+call j revo
+call j zh
 exit/b
 
 lu:
+Oct-5-2026
 Aug-24-2026
 fcd:
 Nov-9-2023

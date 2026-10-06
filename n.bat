@@ -1052,7 +1052,7 @@ Jan-24-2018
 
 
 ::_
-:op
+:ope
 
 echo. & echo * Opera.
 
@@ -7824,15 +7824,11 @@ Jun-26-2023
 
 
 ::_
-:fv
 :fvpi
 :fvpict
 :hura
-
 set cbf-pd=Favorites
-
 echo. & echo * %cbf-pd%. All time favorite pictures.
-
 call n pict
 set cbf-pt=%cbf-pt%\%cbf-pd%
 
@@ -7914,7 +7910,7 @@ exit/b
 
 :_
 :cnn
-echo. & echo * Surf to CNN.
+echo. & echo * CNN.
 set cbf-url=https://www.cnn.com
 exit/b
 
@@ -7922,7 +7918,7 @@ exit/b
 
 :_
 :zh
-echo. & echo * Surf to CNN.
+echo. & echo * Zero Hedge.
 set cbf-url=https://www.zerohedge.com
 exit/b
 
@@ -8523,6 +8519,158 @@ exit/b
 :homi
 echo. & echo * Genus homo.
 set cbf-gs=https://docs.google.com/spreadsheets/d/1454Ff1uzDSSPSOkeAAM5X19nZybCq0nINWu3EZ0PPhc/edit?gid=0#gid=0
+exit/b
+
+
+
+:_+ News (!newsfyc)
+
+
+
+::_
+:brei
+echo. & echo * Breitbart.
+set cbf-url=https://www.breitbart.com
+exit/b
+
+
+
+::_
+:cnn
+echo. & echo * CNN.
+set cbf-url=https://edition.cnn.com
+exit/b
+
+
+
+::_
+:zh
+echo. & echo * ZH.
+set cbf-url=https://www.zerohedge.com
+exit/b
+
+
+
+::_
+:wsj
+echo. & echo * WSJ.
+set cbf-url=http://www.wsj.com
+exit/b
+
+
+
+::_
+:wash
+echo. & echo * Washington Post.
+set cbf-url=http://www.washingtonpost.com
+exit/b
+
+
+
+::_
+:scne
+echo. & echo * Science News.
+set cbf-url=https://www.sciencenews.org
+exit/b
+
+
+
+::_
+:revo
+echo. & echo * Revolver.
+set cbf-url=https://revolver.news
+exit/b
+
+
+
+::_
+:reut
+echo. & echo * Reuters.
+set cbf-url=https://www.reuters.com
+exit/b
+
+
+
+::_
+:nyt
+echo. & echo * NYT.
+set cbf-url=http://www.nytimes.com
+exit/b
+
+
+
+::_
+:fox
+echo. & echo * Fox.
+set cbf-url=http://www.foxnews.com
+exit/b
+
+
+
+::_
+:fano
+echo. & echo * Fairfax now.
+set cbf-url=https://www.ffxnow.com
+exit/b
+
+
+
+::_
+:fci
+echo. & echo * FCI.
+set cbf-url=http://fallschurchindependent.com
+exit/b
+
+
+
+:_+ Podcasts (!fycpc)
+
+
+
+::_
+:tuca
+echo. & echo * Tucker Carlson.
+set cbf-url=https://www.youtube.com/@TuckerCarlson/videos
+exit/b
+
+
+
+::_
+:hoyt
+echo. & echo * YouTube home.
+set cbf-url=https://www.youtube.com
+exit/b
+
+
+
+::_
+:subs
+echo. & echo * Subscriptions.
+set cbf-url=https://www.youtube.com/feed/subscriptions?flow=1
+exit/b
+
+
+
+::_
+:joro
+echo. & echo * Joe Rogan.
+set cbf-url=https://www.youtube.com/@joerogan/videos
+exit/b
+
+
+
+::_
+:bapr
+echo. & echo * Basically Primitive.
+set cbf-url=https://www.youtube.com/@Basically-Primitive
+exit/b
+
+
+
+::_
+:fiio
+echo. & echo * Fireship.
+set cbf-url=https://www.youtube.com/@Fireship/videos
 exit/b
 
 
