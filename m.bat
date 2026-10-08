@@ -4610,19 +4610,8 @@ Mar-18-2019
 echo. & echo * Start Cheyenne.
 call %0 lnk-cheyenne
 call m a
-rem qjq
+rem qq
 exit/b
-call j brei
-call j fox 
-call j fano
-call j fci 
-call j reut 
-call j scne 
-call j cnn
-call j wash 
-call j nyt 
-call j revo
-call j zh
 exit/b
 
 

@@ -8988,7 +8988,14 @@ exit/b
 :fv
 echo. & echo * Run %1.bat.
 set cbf-batch-file=x
-rem qjq
+exit/b
+
+
+
+:_
+:fv2
+echo. & echo * Run %1.bat.
+set cbf-batch-file=x
 exit/b
 
 
@@ -8996,8 +9003,15 @@ exit/b
 :_
 :oct-8-2026
 echo. & echo * Hello world.
-rem qq
 rem set cbf-url=https://www.zerohedge.com
+set cbf-batch-file=x
+exit/b
+
+
+
+:_
+:rh
+echo. & echo * Run %1.bat.
 set cbf-batch-file=x
 exit/b
 
