@@ -37,32 +37,32 @@ exit/b
 
 :_
 :main
-call sf spra fx
-call sf lasc fx
-call sf tele fx
-call sf stek fx
-call sf pide fx
-call sf ormy fx
-call sf clra fx
-call sf bima fx
-call sf daga fx
-call sf az fx
-call sf theo fx
-call sf afwn fx
-call sf efp fx
-call sf reen fx
-call sf hidad fx
-call sf cudr fx
-call sf itp fx
-call sf tws fx
-call sf fcm fx
-call sf rist fx
-call sf lefr fx
-call sf very fx
-call sf dobr fx
-call sf trav fx
-call sf maka fx
-call sf tobr fx
+call sf spra
+call sf lasc
+call sf tele
+call sf stek
+call sf pide
+call sf ormy
+call sf clra
+call sf bima
+call sf daga
+call sf az
+call sf theo
+call sf afwn
+call sf efp
+call sf reen
+call sf hidad
+call sf cudr
+call sf itp
+call sf tws
+call sf fcm
+call sf rist
+call sf lefr
+call sf very
+call sf dobr
+call sf trav
+call sf maka
+call sf tobr
 
 exit/b
 

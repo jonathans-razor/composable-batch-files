@@ -73,9 +73,8 @@ set cbf-app-location=
 rem Ax Clipboard Loader
 set cbf-ax=
 
-:
-rem ?
-set cbf-bm=
+:Batch File
+set cbf-batch-file=
 
 :
 rem Bitbucket

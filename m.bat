@@ -4610,6 +4610,8 @@ Mar-18-2019
 echo. & echo * Start Cheyenne.
 call %0 lnk-cheyenne
 call m a
+rem qjq
+exit/b
 call j brei
 call j fox 
 call j fano
@@ -4888,19 +4890,12 @@ exit/b
 
 ::_
 :lnk-code
-
 echo. & echo * Initialize VS Code environment.
-
 title=VS Code
-
 call %0 big
-
 call t a
-
 cls
-
 code
-
 exit/b
 
 

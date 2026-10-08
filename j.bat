@@ -202,6 +202,13 @@ if not "%cbf-app-quoteless%" == "" (
 )
 
 :
+if not "%cbf-batch-file%" == "" (
+  rem echo. & echo * Run batch file. Oct-8-2026-4-56-PM
+  call %1
+  exit/b
+)
+
+:
 rem Note: This code block needs to be below the URL code block. Sep-19-2023
 if not "%cbf-app%" == "" (
   rem echo. & echo * Run an application. {cbf-app is non-blank. Aug-29-2023_11_59_AM}
