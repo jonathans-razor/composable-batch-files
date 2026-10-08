@@ -8387,16 +8387,6 @@ Sep-20-2023
 
 
 
-:_
-:gs
-:gsbu
-echo. & echo * Google Sheets backup folder.
-call n bu>nul
-set cbf-pt=%cbf-pt%\Google Sheets
-exit/b
-
-
-
 :_+ Google Docs
 
 
@@ -8623,37 +8613,277 @@ exit/b
 
 
 
-:_+ Podcasts (!fycpc)
+rem qjq
+:_+ Favorites 2 (!fycfv2)
+
+
+::_
+:spra
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@TheSpaceRaceYT/videos
+exit/b
+
+
+
+::_
+:lasc
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@Late_Science/videos
+exit/b
+
+
+
+::_
+:tele
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@TechLead/videos
+exit/b
+
+
+
+::_
+:stek
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@drekberg/videos
+exit/b
+
+
+
+::_
+:pide
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@pilot-debrief/videos
+exit/b
+
+
+
+::_
+:ormy
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@TheOrdinaryMystery
+exit/b
+
+
+::_
+:clra
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@ClubRandomPodcast/videos
+exit/b
+
+
+
+::_
+:bima
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@RealTime/videos
+exit/b
+
+
+
+::_
+:daga
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@DavesGarage/videos
+exit/b
+
+
+
+::_
+:az
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@a16z/videos
+exit/b
+
+
+
+::_
+:theo
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@t3dotgg/videos
+exit/b
+
+
+
+::_
+:afwn
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@AFNick/videos
+exit/b
+
+
+
+::_
+:efp
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@EricAtThePeakFP/videos
+exit/b
+
+
+
+::_
+:reen
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@RealEngineering/videos
+exit/b
+
+
+
+::_
+:hidad
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@Historydad_ai
+exit/b
+
+
+
+::_
+:cudr
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@CuriousDroid/videos
+exit/b
+
+
+
+::_
+:itp
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@ImaginethePhysics/videos
+exit/b
+
+
+
+::_
+:tws
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@RyanShawtech/videos
+exit/b
+
+
+
+::_
+:fcm
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@1stClassMaths/videos
+exit/b
+
+
+
+::_
+:rist
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@RickStevesEuropeOfficial/videos
+exit/b
+
+
+
+::_
+:lefr
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@lexfridman/videos
+exit/b
+
+
+
+::_
+:very
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@veritasium/videos
+exit/b
+
+
+
+::_
+:dobr
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@thedorbrothers/videos
+exit/b
+
+
+
+::_
+:trav
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@TraversyMedia/videos
+exit/b
+
+
+
+::_
+:maka
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/@MarkusK./videos
+exit/b
+
+
+
+::_
+:tobr
+echo. & echo * %1.
+set cbf-url=https://www.youtube.com/channel/UCvQrivswRDGK0lZ_AcUHp8g/videos
+exit/b
+
+
+
+:_+ Google Sheets (!fycgs)
+
+
+
+::_
+:gs
+echo. & echo * Google Sheets.
+set cbf-gs=https://docs.google.com/spreadsheets/u/1/
+exit/b
+
+
+
+::_
+:gsbu
+echo. & echo * Google Sheets backup folder.
+call n bu>nul
+set cbf-pt=%cbf-pt%\Google Sheets
+exit/b
+
+
+
+:_
+:ytsp
+echo. & echo * YouTube sphere.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1InLSx-dKjP_Ze3kKYWPcnj-1vLJvh76oDUJf36VonQk/edit?gid=0#gid=0
+exit/b
+
+
+
+:_+ YouTube (!fycyt)
+
+
+
+::_
+:ythp
+echo. & echo * YouTube home page.
+call an fx>nul
+set cbf-url=http://www.youtube.com
+exit/b
+
+
+
+:_+ Favorite YouTube Channels (!fycfv, !-yt)
 
 
 
 ::_
 :tuca
 echo. & echo * Tucker Carlson.
+call an fx>nul
 set cbf-url=https://www.youtube.com/@TuckerCarlson/videos
 exit/b
 
 
 
-::_
-:hoyt
-echo. & echo * YouTube home.
-set cbf-url=https://www.youtube.com
-exit/b
-
-
-
-::_
-:subs
-echo. & echo * Subscriptions.
-set cbf-url=https://www.youtube.com/feed/subscriptions?flow=1
-exit/b
-
-
-
+rem qjq
 ::_
 :joro
 echo. & echo * Joe Rogan.
+call an fx>nul
 set cbf-url=https://www.youtube.com/@joerogan/videos
 exit/b
 
@@ -8662,6 +8892,7 @@ exit/b
 ::_
 :bapr
 echo. & echo * Basically Primitive.
+call an fx>nul
 set cbf-url=https://www.youtube.com/@Basically-Primitive
 exit/b
 
@@ -8670,9 +8901,63 @@ exit/b
 ::_
 :fiio
 echo. & echo * Fireship.
+call an fx>nul
 set cbf-url=https://www.youtube.com/@Fireship/videos
 exit/b
 
 
 
-:_ (!ef, !efn)
+:_+ Poplular Playlists Family (!fycpop)
+
+
+
+::_
+:wl
+echo. & echo * Watch later.
+call an fx>nul
+set cbf-url=https://www.youtube.com/playlist?list=WL
+exit/b
+
+
+
+::_
+:mw
+echo. & echo * Man up and watch.
+call an fx>nul
+set cbf-url=https://www.youtube.com/playlist?list=PLV-KEAAMgUZAv-yTNAaLWbpi0jLE-HUvh
+exit/b
+
+
+
+::_
+:hiyt
+echo. & echo * YouTube history.
+call an fx>nul
+set cbf-url=https://www.youtube.com/feed/history
+exit/b
+
+
+
+::_
+:egpy
+echo. & echo * Eric's playlist.
+call an fx>nul
+set cbf-url=https://www.youtube.com/playlist?list=PLV-KEAAMgUZANEgK4dZOLj5SRkUTJjVbc
+exit/b
+
+
+
+::_+ YouTube Management (!mgmtyt)
+
+
+
+::_
+:subs
+echo. & echo * YouTube Subscriptions.
+call an fx>nul
+set cbf-url=https://www.youtube.com/feed/subscriptions?flow=1
+exit/b
+
+
+
+:_ (! ef, !efn)
