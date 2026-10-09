@@ -8303,15 +8303,23 @@ exit/b
 
 
 
-::_
+::_ (!-gem)
 :gem
 :gemi
 echo. & echo * Gemini.
-set cbf-url=https://bard.google.com
+set cbf-url=https://gemini.google.com/app
 exit/b
+
 lu:
+Oct-8-2026
 Sep-29-2026
 Sep-7-2023
+
+Formerly:
+https://bard.google.com
+
+Synonymous with Nano Banana.
+
 Best code generator. Does image generation as well. 
 Sanctioned Duplicate CBF.
 
@@ -8411,31 +8419,6 @@ exit/b
 :aust
 echo. & echo * Austrian trip.
 set cbf-gd=https://docs.google.com/document/d/1Nn2yT-QO6Pefuk5g2qDZfVox_VF0dHDiLGNjaimMWOE/edit?tab=t.0
-exit/b
-
-
-
-:_+ Image Generation Links (!ig, !-ig)
-
-
-
-::_
-:gem
-:igge
-echo. & echo * Gemini Image generation.
-set cbf-url=https://gemini.google.com/app
-exit/b
-
-
-
-::_
-:arg
-:aarg
-:ig
-echo. & echo * Aaarggh.
-call n pict>nul
-set cbf-pt=%cbf-pt%\AI Generated
-set cbf-url=https://www.meetup.com/AARGGH/
 exit/b
 
 
@@ -9015,6 +8998,33 @@ echo. & echo * Run %1.bat.
 set cbf-batch-file=x
 exit/b
 
+
+
+:_+ Image Generation Links (!ig, !-ig)
+
+
+
+::_ (!-gem)
+:sdgem
+:igge
+echo. & echo * Gemini Image generation.
+set cbf-url=https://gemini.google.com/app
+exit/b
+
+
+
+::_
+:2sha
+:arg
+:aarg
+:ig
+echo. & echo * Aaarggh.
+call n pict>nul
+set cbf-pt=%cbf-pt%\AI Generated
+set cbf-url=https://www.meetup.com/AARGGH/
+exit/b
+
+skw 2 sharks
 
 
 :_ (! ef, !efn)

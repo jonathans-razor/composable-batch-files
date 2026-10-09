@@ -4610,8 +4610,6 @@ Mar-18-2019
 echo. & echo * Start Cheyenne.
 call %0 lnk-cheyenne
 call m a
-rem qq
-exit/b
 exit/b
 
 
