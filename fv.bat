@@ -1,6 +1,6 @@
 :_
 @echo off
-echo. & echo * Open favorite podcasts.
+echo. & echo * Open favorite YouTube channels.
 if "%~1" == "?" goto help
 goto main
 goto preprocess

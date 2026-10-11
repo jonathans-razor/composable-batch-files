@@ -4155,11 +4155,8 @@ exit/b
 
 :_
 :telog
-
 echo. & echo * Tennis log.
-
 set cbf-gs=https://docs.google.com/spreadsheets/d/1rnoBNQugS6OKo26lPwY2ppc7_DIRwaYx2lZPQFmMeMA/edit#gid=0
-
 exit/b
 
 
@@ -7539,7 +7536,7 @@ exit/b
 
 
 
-:_
+:_ (!-fash)
 :fash
 :wlfash
 echo. & echo * Fashion wish list
@@ -8969,7 +8966,7 @@ exit/b
 
 :_
 :fv
-echo. & echo * Run %1.bat.
+echo. & echo * Open favorite YouTube channels. Run %1.bat.
 set cbf-batch-file=x
 exit/b
 
@@ -9025,6 +9022,14 @@ set cbf-url=https://www.meetup.com/AARGGH/
 exit/b
 
 skw 2 sharks
+
+
+:_
+:bulog
+echo. & echo * Backup log.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1fnG71AaL7p5BIGSxh1wEHCpUF9i2z_srArpSV_5pVJE/edit?gid=0#gid=0
+exit/b
+
 
 
 :_ (! ef, !efn)
