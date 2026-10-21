@@ -478,8 +478,6 @@ Ansible, Bash, C#, Java Code Keepers
 skw:
 :ck
 (!-ck)
-:hist
-
 :bash commands
 
 :linux commands
@@ -8871,6 +8869,46 @@ exit/b
 
 
 
+:_+ Ancient Humans
+
+
+
+::_
+:bapr
+echo. & echo * Basically Primitive.
+call an fx>nul
+set cbf-url=https://www.youtube.com/@Basically-Primitive
+exit/b
+
+
+
+::_
+:mack
+echo. & echo * Mack.
+call an fx>nul
+set cbf-url=https://www.youtube.com/channel/UCaS30yIIV6y2zqSnHGdIGMQ
+exit/b
+
+
+
+::_
+:stik
+echo. & echo * Stickly.
+call an fx>nul
+set cbf-url=https://www.youtube.com/channel/UC53wkzZ3aXyeH9-eIgi17WA
+exit/b
+
+
+
+::_
+:tren
+echo. & echo * Trenn.
+call an fx>nul
+set cbf-url=https://www.youtube.com/@TrennOfficial
+exit/b
+
+
+
 :_+ Favorite YouTube Channels (!fycfv, !-yt)
 
 
@@ -8889,15 +8927,6 @@ exit/b
 echo. & echo * Joe Rogan.
 call an fx>nul
 set cbf-url=https://www.youtube.com/@joerogan/videos
-exit/b
-
-
-
-::_
-:bapr
-echo. & echo * Basically Primitive.
-call an fx>nul
-set cbf-url=https://www.youtube.com/@Basically-Primitive
 exit/b
 
 
@@ -8989,14 +9018,6 @@ exit/b
 
 
 
-:_
-:rh
-echo. & echo * Run %1.bat.
-set cbf-batch-file=x
-exit/b
-
-
-
 :_+ Image Generation Links (!ig, !-ig)
 
 
@@ -9011,7 +9032,6 @@ exit/b
 
 
 ::_
-:2sha
 :arg
 :aarg
 :ig
@@ -9028,6 +9048,14 @@ skw 2 sharks
 :bulog
 echo. & echo * Backup log.
 set cbf-gs=https://docs.google.com/spreadsheets/d/1fnG71AaL7p5BIGSxh1wEHCpUF9i2z_srArpSV_5pVJE/edit?gid=0#gid=0
+exit/b
+
+
+
+:_
+:rh
+echo. & echo * Run %1.bat.
+set cbf-batch-file=x
 exit/b
 
 

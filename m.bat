@@ -3022,7 +3022,6 @@ Dec-19-2018
 :loca
 :rcl
 :rulo
-:rc
 
 echo. & echo * How to run riverstone locally, the overarching process.
 
