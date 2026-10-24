@@ -46,6 +46,31 @@ code execution area  Batch file style (bfs) where the router routes execution to
          error code  fn.bat returns an error code of 2 for file not exists.
  evaluated filename  Filename, filename alias or batch file prefix for a batch file 
    parameter         that lives in either the CBF or Share-zone folder.
+             exit/b  Terminates the current batch script or subroutine without closing the command prompt window.
+                     I dislike the fact that most people use capitalized version of the this command or that contains a space before the slash b.
+		     You can read official documentation for this command on Microsoft Learn or check detailed 
+		     syntax on SS64.
+
+How It Works
+
+- Stays Open: Unlike a plain EXIT command which closes cmd.
+
+exe, using /B keeps the command 
+shell open.
+
+- Returns Control: It exits the active batch file or subroutine and hands control back to the 
+calling script or command line.
+
+- Sets Error Code: You can pass an optional number (EXIT /B <exitCode>) to set the 
+%ERRORLEVEL% variable for error tracking.
+
+- Without a Number: Running EXIT /B with no number keeps the current %ERRORLEVEL% value 
+intact.
+
+Are you trying to use EXIT /B inside a batch file, a subroutine, or troubleshoot an errorlevel 
+issue? Let me know and I can help write or fix the script.
+
+
                   f  Filename alias, when used in a batch file name.
                  fn  Filename in the general sense. For example, j1.txt is a filename as 
                      is poker.xlsx.
@@ -59,6 +84,29 @@ code execution area  Batch file style (bfs) where the router routes execution to
                      disparate, atomic functions which are called via a function alias, 
                      a.k.a. function routing. Example(s): g.bat, m.bat.
                  lu  Last updated. The last time the file was updated.
+              nul/2  :nul>2: In Windows command prompts and batch files, >nul 2>&1 (often typed or misremembered as 
+nul>2 or >nul 2>nul) is a command-line redirection idiom used to completely silence or hide 
+all output from a command.
+
+How It Works
+
+- >nul: Redirects standard output (stdout), which is the normal text or data a program prints, 
+to the nul device (Windows' digital "bit bucket" or black hole that discards everything). It 
+is shorthand for 1>nul.
+
+- 2>&1: Redirects standard error (stderr), stream number 2, so that it goes to the exact same 
+destination as stream number 1 (which is nul).
+
+Common Variations
+
+- >nul 2>nul: Explicitly sends both standard output and standard error to the nul device 
+separately, achieving the exact same silencing result (though slightly less concise).
+
+- 1>nul 2>nul: The explicit numeric version of the same command.
+
+If you are trying to write a specific batch script or capture errors instead of hiding them, 
+let me know what command you are running and I can help you write the right syntax.
+
                   p  Path alias, when used in a batch file name
                 po_  Prefix which stands for "path only" meaning the a cbf definition only 
                      has 1 variable set, viz. cbf-pt
