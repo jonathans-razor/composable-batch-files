@@ -242,6 +242,7 @@ example-  Prefix for files written by other authors for learning and comparison 
       Has td parameter. vu  Vue. wi  Open the Wikipedia page for the passed in alias. wl  Run 
       WebLogic startup commands. wo  Run Word with or without a filename alias parameter. wp  
       Use Wordpad and sfn to edit a file. wpd  Use Wordpad to edit DCV files. w  Unassigned. 
+       x  Shut down the computer.
      xac  Execute an application alias with a filename in the current folder.
      xaf  Execute an application alias with a filename alias.
      xml  Edit an XML DCV file in VSC.

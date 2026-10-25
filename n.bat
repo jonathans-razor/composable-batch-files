@@ -2419,7 +2419,6 @@ Apr-17-2019
 ::_
 :bases
 :bashs
-:sh
 :shor
 :taba
 :taskbar
