@@ -49,17 +49,11 @@ Jan-16-2019
 
 
 :_
-
 :main
-
 echo. & echo * Rzr batch file's main function.
-
 cd\
-
 call %0 %1 %2 %3 %4 %5 %6
-
 echo.
-
 exit
 
 
