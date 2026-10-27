@@ -4176,16 +4176,23 @@ Jun-27-2023
 
 
 ::_
+:tode
+echo. & echo * Top Demoable CBFs.
+set cbf-gs=https://docs.google.com/spreadsheets/d/1oDL5jPYWqjjmGYEMmHZBykuOuxdha8RFnErpEd64vrY/edit#gid=0
+exit/b
+
+
+
+::_
 :c
 :cbf
-
 echo. & echo * Composable batch files.
 
 set cbf-branch=main
 set cbf-cn=git@github.com:jonathans-razor/Composable-Batch-Files.git
 set cbf-gh=https://github.com/jonathans-razor/Composable-Batch-Files
 
-rem Top Useful Demoable Cbfs Spreadsheet:
+rem Top Demoable Cbfs Spreadsheet:
 set cbf-gs=https://docs.google.com/spreadsheets/d/1oDL5jPYWqjjmGYEMmHZBykuOuxdha8RFnErpEd64vrY/edit#gid=0
 
 echo %computername%| find /i "ones">nul
@@ -9016,13 +9023,12 @@ exit/b
 
 
 
-:_+ Image Generation Links (!ig, !-ig)
+:_+ Image Generation Links (!lkig, !-ig)
 
 
 
 ::_ (!-gem)
-:sdgem
-:igge
+:ig
 echo. & echo * Gemini Image generation.
 set cbf-url=https://gemini.google.com/app
 exit/b
@@ -9032,7 +9038,6 @@ exit/b
 ::_
 :arg
 :aarg
-:ig
 echo. & echo * Aaarggh.
 call n pict>nul
 set cbf-pt=%cbf-pt%\AI Generated
