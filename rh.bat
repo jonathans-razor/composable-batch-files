@@ -1,6 +1,6 @@
 :_
 @echo off
-echo. & echo * Open favorite podcasts.
+echo. & echo * Read headlines.
 if "%~1" == "?" goto help
 goto main
 goto preprocess

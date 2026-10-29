@@ -8985,6 +8985,15 @@ exit/b
 
 
 
+::_ (!-goat)
+:goat
+echo. & echo * GOAT playlist. Best youtube videos.
+call an fx>nul
+set cbf-url=https://www.youtube.com/watch?v=L2M6hRfCp0k
+exit/b
+
+
+
 ::_+ YouTube Management (!mgmtyt)
 
 
