@@ -912,7 +912,7 @@ exit/b
 :_
 :pv
 echo. & echo * PV CBFs.
-call n bel
+call n bel>nul
 set cbf-fn=%cbf-pt%\pv.bat
 exit/b
 
