@@ -911,13 +911,9 @@ exit/b
 
 :_
 :pv
-
 echo. & echo * PV CBFs.
-
 call n bel
-
 set cbf-fn=%cbf-pt%\pv.bat
-
 exit/b
 
 lu:
