@@ -844,13 +844,9 @@ Jun-1-2022
 
 :_
 :sasu
-
 echo. & echo * Savannah summary.
-
 call n ro>nul
-
 set cbf-fn=%cbf-pt%\%cbf-pd%\savannah summary.txt
-
 exit/b
 
 lu:
