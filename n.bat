@@ -8968,11 +8968,21 @@ exit/b
 
 
 
-::_
+::_ (funny-video-series)
 :egpy
-echo. & echo * Eric's playlist.
+:pyeg
+echo. & echo * Eric's video playlist.
 call an fx>nul
 set cbf-url=https://www.youtube.com/playlist?list=PLV-KEAAMgUZANEgK4dZOLj5SRkUTJjVbc
+exit/b
+
+
+
+::_
+:shpy
+echo. & echo * Shama's music playlist.
+call an fx>nul
+set cbf-url=https://www.youtube.com/playlist?list=PLPeEfKrT1YwU
 exit/b
 
 
