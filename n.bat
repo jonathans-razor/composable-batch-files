@@ -7586,7 +7586,7 @@ exit/b
 
 
 
-:_
+:_ (!-ai)
 :ai
 echo. & echo * AI Tools Comparison and Analysis.
 set cbf-gs=https://docs.google.com/spreadsheets/d/19wZRcfEane2XeXJcQb7Mlnu2CbnA5JdaCpmAojKfPyE/edit?gid=0#gid=0
@@ -8969,8 +8969,8 @@ exit/b
 
 
 ::_ (funny-video-series)
-:egpy
-:pyeg
+:egvpy
+:vpyeg
 echo. & echo * Eric's video playlist.
 call an fx>nul
 set cbf-url=https://www.youtube.com/playlist?list=PLV-KEAAMgUZANEgK4dZOLj5SRkUTJjVbc
@@ -8979,7 +8979,7 @@ exit/b
 
 
 ::_
-:shpy
+:shmpy
 echo. & echo * Shama's music playlist.
 call an fx>nul
 set cbf-url=https://www.youtube.com/playlist?list=PLPeEfKrT1YwU
