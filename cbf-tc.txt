@@ -221,28 +221,54 @@ example-  Prefix for files written by other authors for learning and comparison 
     sail  Display the success sailor.
     scan  Scan disk.
      sdv  Set dictionary value. Helpful in creating 2 dictionaries, 1 public say and 1 
-    private. senc  Sencha. sep  Show separator graphic. sf  Surf to websites. A DCV is 
-      optional. sh  Shut down the computer. sl  Language functions aggregate runner. (skw 
-      supported-languages-series-jj) slf  Batch that supports language functions. sln  Open a 
-     Visual Studio solution. Has td parameter. sm  Use Sublime and sfn to edit a file. smd  
-     Use Sublime to edit DCV files. splu  Splunk DCV. src  Says hello from the CBF folder. srv  
-     Run server for local web application. st  Stock checker. t  Transform directory. td  Call 
-      t.bat then d.bat. tdb  Back button for transform directory. tdc  Transform directory to 
-     favorite child folder of alias. tdd  Transform to a folder using a DCV. tdh  Transform 
-     directory to home folder. tdp  Transform directory to parent folder. tdr  Transform 
-     directory by appending a relative path onto a base path. tf  Terraform. tk  Taskkill. tl  
-      Tasklist. tm  Golden image template used for creating new batch files. touc  Wrapper 
-    around Git Touch command, which updates file dates to the current date. tr  Tar. ts  
-      TypeScript transpiler. ty  Modernized type command. Use Microsoft Edge to view a file 
-      chosen based on a decision algorithm. tyf  Reopen or see search results that have been 
-     piped to a file. tyi  Use type command to view calculus file in Internet Explorer. u  
-       Bing shortcut. ujt  Update java timestamp. un  Communicates that the intent is only to 
-      change the URL for a passed in alias. unz  Unzip. utc  Convert UTC to EST. v  Vetted 
-       (Useful for copying-and-pasting). va  Surf to a Vault webpage. vc  Visual Studio Code. 
-      Has td parameter. vu  Vue. wi  Open the Wikipedia page for the passed in alias. wl  Run 
-      WebLogic startup commands. wo  Run Word with or without a filename alias parameter. wp  
-      Use Wordpad and sfn to edit a file. wpd  Use Wordpad to edit DCV files. w  Unassigned. 
-       x  Shut down the computer.
+          private. 
+    senc  Sencha. 
+     sep  Show separator graphic. 
+      sf  Surf to websites. A DCV is optional. 
+      sl  Individual stock lookup.
+     slf  Batch that supports language functions. 
+     sln  Open a Visual Studio solution. Has td parameter. 
+      sm  Use Sublime and sfn to edit a file. 
+     smd  Use Sublime to edit DCV files. 
+    splu  Splunk DCV. src  Says hello from the CBF folder. 
+     srv  Run server for local web application. 
+      st  Stock checker. 
+    sula  Language functions aggregate runner. (skw supported-languages-series-jj) 
+       t  Transform directory. 
+      td  Call t.bat then d.bat. 
+     tdb  Back button for transform directory. 
+     tdc  Transform directory to favorite child folder of alias. 
+     tdd  Transform to a folder using a DCV. 
+     tdh  Transform directory to home folder. 
+     tdp  Transform directory to parent folder. 
+     tdr  Transform directory by appending a relative path onto a base path. 
+      tf  Terraform. 
+      tk  Taskkill. 
+      tl  Tasklist. 
+      tm  Golden image template used for creating new batch files. 
+    touc  Wrapper around Git Touch command, which updates file dates to the current date. 
+      tr  Tar. 
+      ts  TypeScript transpiler. 
+      ty  Modernized type command. Use Microsoft Edge to view a file chosen based on a decision 
+          algorithm. 
+     tyf  Reopen or see search results that have been piped to a file. 
+     tyi  Use type command to view calculus file in Internet Explorer. 
+       u  Bing shortcut. 
+     ujt  Update java timestamp. 
+      un  Communicates that the intent is only to change the URL for a passed in alias. 
+     unz  Unzip. 
+     utc  Convert UTC to EST. 
+       v  Vetted (Useful for copying-and-pasting). 
+      va  Surf to a Vault webpage. 
+      vc  Visual Studio Code. Has td parameter. 
+      vu  Vue. 
+      wi  Open the Wikipedia page for the passed in alias. 
+      wl  Run WebLogic startup commands. 
+      wo  Run Word with or without a filename alias parameter. 
+      wp  Use Wordpad and sfn to edit a file. 
+     wpd  Use Wordpad to edit DCV files. 
+       w  Unassigned. 
+       x  Shut down the computer. 
      xac  Execute an application alias with a filename in the current folder.
      xaf  Execute an application alias with a filename alias.
      xml  Edit an XML DCV file in VSC.
