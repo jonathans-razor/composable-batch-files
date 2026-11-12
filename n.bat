@@ -8428,7 +8428,7 @@ exit/b
 
 
 
-::_
+::_ (!-gsp)
 :gsp
 echo. & echo * Google sphere.
 set cbf-gs=https://docs.google.com/spreadsheets/d/1J6C8UcSqdkQSOgZezH0Q79AG5sYWjLVjXEQCK-51MW8/edit?gid=0#gid=0
@@ -8436,7 +8436,7 @@ exit/b
 
 
 
-::_
+::_ (!-stsp)
 :stsp
 echo. & echo * Stock sphere.
 set cbf-gs=https://docs.google.com/spreadsheets/d/1AywMyahphlz55qvnEWut7Wi4Hs8XrPt3cShNM4YHV3Q/edit?gid=0#gid=0
@@ -8858,7 +8858,7 @@ exit/b
 
 
 
-::_
+::_ (!-yt)
 :ytsp
 echo. & echo * YouTube sphere.
 set cbf-gs=https://docs.google.com/spreadsheets/d/1InLSx-dKjP_Ze3kKYWPcnj-1vLJvh76oDUJf36VonQk/edit?gid=0#gid=0
